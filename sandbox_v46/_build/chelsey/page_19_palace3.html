@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Chelsey — Palace Detail 3</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-pal { grid-template-rows: 1fr !important; gap: 0; }
+  .pal-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 4mm; overflow: hidden; }
+  .pal-card { background: var(--bg-card); border: 0.4mm solid var(--gold-soft); border-radius: 2mm; padding: 4mm 5mm; display: grid; grid-template-rows: auto auto auto auto auto; gap: 2mm; overflow: hidden; position: relative; }
+
+  .pal-head { display: grid; grid-template-columns: auto 1fr auto; gap: 3mm; align-items: baseline; border-bottom: 0.2mm solid var(--gold-soft); padding-bottom: 1.5mm; }
+  .pal-name { font-family: 'Noto Serif TC', serif; font-size: 14pt; color: var(--red); font-weight: 700; letter-spacing: 2px; }
+  .pal-name .id { display: block; font-family: 'Inter', sans-serif; font-size: 6pt; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; font-weight: 500; margin-top: 0.3mm; }
+  .pal-branch { text-align: center; font-family: 'Noto Serif TC', serif; font-size: 11pt; color: var(--text); font-weight: 600; }
+  .pal-branch .id { display: block; font-size: 5.5pt; color: var(--text-muted); font-style: italic; margin-top: 0.3mm; }
+  .pal-age { font-family: 'Playfair Display', serif; font-size: 8.5pt; color: var(--gold); font-weight: 700; text-align: right; letter-spacing: 0.5px; }
+  .pal-age .lbl { display: block; font-size: 5.5pt; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; font-weight: 500; margin-top: 0.3mm; }
+
+  .pal-stars { display: flex; gap: 2mm; flex-wrap: wrap; align-items: center; }
+  .pal-star { background: linear-gradient(135deg, white, #FFF8E1); border: 0.3mm solid var(--gold-soft); border-radius: 1.5mm; padding: 1.5mm 3mm; display: grid; grid-template-columns: auto auto; gap: 2mm; align-items: baseline; }
+  .pal-star.main { border-color: var(--gold); background: linear-gradient(135deg, #FFF8E1, #F5EBD0); }
+  .pal-star-hz { font-family: 'Noto Serif TC', serif; font-size: 11pt; color: var(--red); font-weight: 700; line-height: 1; }
+  .pal-star-id { font-size: 6.5pt; color: var(--text-muted); font-style: italic; letter-spacing: 0.3px; }
+  .hua { display: inline-block; font-family: 'Inter', sans-serif; font-size: 5.5pt; color: white; padding: 0.3mm 1.2mm; border-radius: 0.8mm; letter-spacing: 0.5px; margin-left: 1mm; font-weight: 700; }
+  .hua.lu { background: var(--green); }
+  .hua.qua { background: var(--red-bad); }
+
+  .pal-insight { background: linear-gradient(90deg, var(--gold-bg), transparent); border-left: 0.8mm solid var(--gold); border-radius: 0 1mm 1mm 0; padding: 1.5mm 3mm; font-family: 'Playfair Display', serif; font-size: 9.5pt; color: var(--red); line-height: 1.3; font-weight: 600; font-style: italic; }
+  .pal-insight .hz { font-family: 'Noto Serif TC', serif; color: var(--text); font-style: normal; font-weight: 700; }
+
+  .pal-body { font-size: 6.8pt; line-height: 1.35; color: var(--text); overflow: hidden; }
+  .pal-body strong { color: var(--red); }
+  .pal-body .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+
+  .pal-actions { display: grid; gap: 1.2mm; border-top: 0.2mm dashed var(--gold-soft); padding-top: 1.5mm; }
+  .pal-action { display: grid; grid-template-columns: 4mm 1fr; gap: 2mm; font-size: 7.2pt; line-height: 1.4; color: var(--text); }
+  .pal-action .ico { color: var(--green); font-weight: 700; }
+  .pal-action strong { color: var(--red); }
+  .pal-action .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">19</div>
+    <div class="h-titles"><div class="h-cn">官 田 福 父</div><div class="h-id">Karir · Properti · Berkah · Orangtua</div></div>
+    <div class="h-section">Bagian II · Zi Wei 紫微</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Tikus-Merah.svg" alt="Tikus"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Chelsey · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">子 Tikus</span></div>
+      <div class="subject-detail">Detail 4 istana lingkaran-luar — pencapaian &amp; warisan</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">戊土 · Tanah Gunung</div></div>
+  </div>
+
+  <main class="content content-pal">
+    <div class="pal-grid">
+
+      <!-- 官祿 KARIR -->
+      <div class="pal-card">
+        <div class="pal-head">
+          <div class="pal-name">官祿<span class="id">Guān Lù · Karir</span></div>
+          <div class="pal-branch">子<span class="id">Tikus</span></div>
+          <div class="pal-age">46–55<span class="lbl">大限 9</span></div>
+        </div>
+        <div class="pal-stars">
+          <div class="pal-star main"><span class="pal-star-hz">貪狼</span><span class="pal-star-id">Tān Láng · Hasrat</span><span class="hua qua">權</span></div>
+        </div>
+        <div class="pal-insight">"<span class="hz">藝術家、政治家、事業家</span>" — Seniman, politikus, pengusaha.</div>
+        <div class="pal-body">
+          <span class="hz">貪狼 + 化權</span> = dorongan karir yang kuat di bidang aliran. Cocok: <strong>tenaga air, distribusi, keuangan</strong>. Format <span class="hz">偏印格</span> butuh "panggung tidak konvensional" — hindari peran murni administratif.
+        </div>
+        <div class="pal-actions">
+          <div class="pal-action"><span class="ico">▸</span><span>Di <span class="hz">七殺 大運</span>: peran "tokoh berani bicara" — komentator, advisor, board</span></div>
+          <div class="pal-action"><span class="ico">▸</span><span>Reputasi = aset utama umur 60-an. Jawab "<strong>tidak</strong>" lebih sering dari "ya"</span></div>
+        </div>
+      </div>
+
+      <!-- 田宅 PROPERTI -->
+      <div class="pal-card">
+        <div class="pal-head">
+          <div class="pal-name">田宅<span class="id">Tián Zhái · Properti</span></div>
+          <div class="pal-branch">亥<span class="id">Babi</span></div>
+          <div class="pal-age">36–45<span class="lbl">大限 10</span></div>
+        </div>
+        <div class="pal-stars">
+          <div class="pal-star main"><span class="pal-star-hz">天同</span><span class="pal-star-id">Tiān Tóng · Welas</span></div>
+        </div>
+        <div class="pal-insight">"<span class="hz">紫微星與土有緣</span>" — Properti dinamis, arah hoki <span class="hz">西</span> Barat.</div>
+        <div class="pal-body">
+          Sibuk dengan urusan properti — natural untuk <span class="hz">戊土 + 紫微-bumi</span>. Mulai dari <strong>mengelola apartemen / kos</strong> lebih sesuai daripada tanah kosong (土 statis). Arah keberuntungan: <strong>BARAT</strong>.
+        </div>
+        <div class="pal-actions">
+          <div class="pal-action"><span class="ico">▸</span><span>Di <span class="hz">七殺 大運</span>: <strong>konsolidasi</strong>, lepas properti yang menguras energi (sengketa)</span></div>
+          <div class="pal-action"><span class="ico">▸</span><span>Hindari spekulasi properti sekarang — bukan fase "gas full akuisisi"</span></div>
+        </div>
+      </div>
+
+      <!-- 福德 BERKAH -->
+      <div class="pal-card">
+        <div class="pal-head">
+          <div class="pal-name">福德<span class="id">Fú Dé · Berkah</span></div>
+          <div class="pal-branch">戌<span class="id">Anjing</span></div>
+          <div class="pal-age">26–35<span class="lbl">大限 11</span></div>
+        </div>
+        <div class="pal-stars">
+          <div class="pal-star main"><span class="pal-star-hz">天相</span><span class="pal-star-id">Tiān Xiàng · Penengah</span><span class="hua lu">祿</span></div>
+          <div class="pal-star"><span class="pal-star-hz">右弼</span><span class="pal-star-id">Yòu Bì · Sahabat</span></div>
+        </div>
+        <div class="pal-insight">"<span class="hz">穩重而使人感到濃厚的人情味</span>" — Tenang, hangat, makin tua makin berkah.</div>
+        <div class="pal-body">
+          Pola <strong>"lambat di awal, makin tua makin berkah"</strong> sangat cocok dengan <span class="hz">偏印格</span>. Energi Anda dirancang untuk <strong>maraton</strong>, bukan sprint. Umur 60-an = mulai panen. <span class="hz">天相 化祿</span> = berkah aliran.
+        </div>
+        <div class="pal-actions">
+          <div class="pal-action"><span class="ico">▸</span><span>Peran <strong>"#2 strategis"</strong> (CEO bayangan / advisor) sering lebih berdampak daripada #1</span></div>
+          <div class="pal-action"><span class="ico">▸</span><span>Hangatkan relasi lama — kebajikan yang ditanam <strong>siap dipanen</strong>, bukan ditanam baru</span></div>
+        </div>
+      </div>
+
+      <!-- 父母 ORANGTUA -->
+      <div class="pal-card">
+        <div class="pal-head">
+          <div class="pal-name">父母<span class="id">Fù Mǔ · Orangtua</span></div>
+          <div class="pal-branch">酉<span class="id">Ayam</span></div>
+          <div class="pal-age">16–25<span class="lbl">大限 12</span></div>
+        </div>
+        <div class="pal-stars">
+          <div class="pal-star main"><span class="pal-star-hz">破軍</span><span class="pal-star-id">Pò Jūn · Pelopor</span></div>
+        </div>
+        <div class="pal-insight">"<span class="hz">樂天派</span>" — Orangtua optimis, cerdas, penuh kebijaksanaan hidup.</div>
+        <div class="pal-body">
+          Orangtua tipe <strong>optimis-cerdas</strong> — guru hidup Anda yang sebenarnya. Banyak pola eksekusi Anda diwarisi dari mereka. <span class="hz">破軍</span> = pelopor, energi disrupsi yang Anda warisi sebagai daya gerak.
+        </div>
+        <div class="pal-actions">
+          <div class="pal-action"><span class="ico">▸</span><span>Bila ada gesekan — <strong>bahasa apresiasi</strong> sebelum kritik</span></div>
+          <div class="pal-action"><span class="ico">▸</span><span>Bila orangtua sudah tiada: dialog batin / ziarah → meneruskan transmisi nilai ke anak</span></div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      Chelsey sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏財</span> (15–24) — menjajaki peluang & jaringan. Periode 15–34 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+    </div>
+    <div class="footer-meta"><span>Halaman 19 / 23</span><span>Chelsey · Ramalan 命</span></div>
+  </footer>
+</section>
+</body>
+</html>

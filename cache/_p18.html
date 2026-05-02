@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Ramalan Henry — 命理分析</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Ma+Shan+Zheng&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   XINGQIAO FORTUNE ID — Frozen Design System
+   Versi 2.0 (anti-overflow, visualization-first)
+   ============================================================ */
+
+:root {
+  --merah-imperial: #b91c1c;
+  --merah-deep: #7a0d0d;
+  --emas-rich: #c9a04c;
+  --emas-light: #e8c87a;
+  --cream-paper: #f7f0e0;
+  --aged-paper: #ede0bf;
+  --ink-black: #2a1a0a;
+  --ink-soft: #4a3220;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 0; }
+html, body {
+  background: #222;
+  font-family: 'Noto Serif', Georgia, serif;
+  color: var(--ink-black);
+}
+
+/* ===== PAGE BASE — pakai grid eksplisit anti-overflow ===== */
+.page {
+  width: 210mm; height: 297mm;
+  background: linear-gradient(135deg, var(--cream-paper) 0%, var(--aged-paper) 100%);
+  padding: 24mm 26mm 20mm 26mm;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex; flex-direction: column;
+  page-break-after: always;
+}
+.page:last-child { page-break-after: auto; }
+.page::before {
+  content: ""; position: absolute;
+  top: 14mm; right: 14mm; bottom: 14mm; left: 14mm;
+  border: 1.5px solid var(--emas-rich);
+  pointer-events: none;
+}
+.page::after {
+  content: ""; position: absolute;
+  top: 18mm; right: 18mm; bottom: 18mm; left: 18mm;
+  border: 0.5px solid var(--emas-light);
+  pointer-events: none;
+}
+.page-num {
+  position: absolute; left: 0; right: 0; bottom: 6mm;
+  text-align: center; font-size: 9pt; color: var(--emas-rich);
+  font-family: 'Noto Serif TC', serif; letter-spacing: 3px; z-index: 2;
+}
+.page-num::before, .page-num::after {
+  content: "\2756"; margin: 0 12px; color: var(--emas-light); font-size: 8pt;
+}
+
+/* Page using grid for explicit row heights */
+.page.grid-page {
+  display: grid;
+  row-gap: 3mm;
+}
+
+/* ===== Typography ===== */
+h2 {
+  font-family: 'Noto Serif TC', serif; color: var(--merah-deep);
+  font-size: 18pt; letter-spacing: 1px; line-height: 1.3;
+  overflow-wrap: break-word; max-width: 100%;
+}
+h3 {
+  font-family: 'Noto Serif TC', serif; color: var(--merah-imperial);
+  font-size: 12pt; margin: 3mm 0 1.5mm;
+}
+.subtitle { font-family: 'Cormorant Garamond', serif; color: var(--ink-soft);
+  font-size: 10pt; font-style: italic; letter-spacing: 2px; }
+.cite-row { font-family: 'Noto Serif TC', serif; color: var(--merah-imperial);
+  font-weight: 700; font-size: 9pt; text-align: right; margin-bottom: 2mm; }
+.divider { text-align: center; color: var(--emas-rich); font-size: 9pt;
+  letter-spacing: 8px; }
+p { font-size: 10pt; line-height: 1.6; word-wrap: break-word;
+  margin-bottom: 2mm; max-width: 100%; }
+.cn { font-family: 'Noto Serif TC', serif; color: var(--merah-deep);
+  font-weight: 600; line-break: anywhere; }
+
+/* ===== Cards ===== */
+.card {
+  background: rgba(255,253,245,0.6);
+  border: 1px solid var(--emas-light); border-radius: 2mm;
+  padding: 3mm 4mm; margin: 2mm 0; max-width: 100%;
+}
+.card.merah { border-color: var(--merah-imperial);
+  background: linear-gradient(135deg, rgba(185,28,28,0.04), rgba(122,13,13,0.08)); }
+.card.emas { border-color: var(--emas-rich);
+  background: linear-gradient(135deg, rgba(201,160,76,0.08), rgba(232,200,122,0.12)); }
+.card-title { font-family: 'Noto Serif TC', serif; color: var(--merah-deep);
+  font-weight: 700; font-size: 11pt; margin-bottom: 1.5mm; }
+
+/* ===== Section Block (chart container) ===== */
+.section-block {
+  background: rgba(255,253,245,0.45);
+  border: 0.5px solid var(--emas-light); border-radius: 2mm;
+  padding: 2.5mm 3mm; height: 100%;
+  display: flex; flex-direction: column; gap: 1.5mm;
+}
+.section-title {
+  font-family: 'Noto Serif TC', serif; color: var(--merah-deep);
+  font-weight: 700; font-size: 11pt; letter-spacing: 1px;
+  display: flex; align-items: center; gap: 2.5mm; line-height: 1;
+}
+.section-title::before { content: ""; width: 3mm; height: 0.4mm;
+  background: var(--merah-imperial); }
+.section-title small { font-family: 'Cormorant Garamond', serif;
+  font-style: italic; color: var(--ink-soft); font-size: 9pt;
+  font-weight: 400; margin-left: auto; }
+
+/* ===== Transcript Box ===== */
+.transcript {
+  background: rgba(201,160,76,0.07);
+  border: 0.5px solid var(--emas-light);
+  padding: 3mm 4mm; margin: 2mm 0; border-radius: 1mm;
+  font-family: 'Noto Serif TC', serif; color: var(--ink-black);
+  font-size: 10pt; line-height: 1.7;
+}
+.transcript .lbl { display: block; font-size: 8.5pt; color: var(--merah-imperial);
+  font-weight: 700; letter-spacing: 1px; margin-bottom: 1.5mm; }
+
+/* ===== Bar Chart (Wu Xing & generic) ===== */
+.bar-row {
+  display: grid; grid-template-columns: 28mm 1fr 30mm;
+  align-items: center; gap: 2.5mm; font-size: 9pt; margin: 1mm 0;
+}
+.bar-label { font-family: 'Noto Serif TC', serif; color: var(--ink-black);
+  display: flex; align-items: center; gap: 1.5mm; }
+.bar-label .ch { font-family: 'Ma Shan Zheng', cursive;
+  font-size: 13pt; line-height: 1; }
+.bar-label small { font-size: 7.5pt; color: var(--ink-soft); }
+.bar-track { height: 4mm; background: rgba(201,160,76,0.12);
+  border-radius: 50px; position: relative; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 50px;
+  display: flex; align-items: center; padding-left: 1.5mm;
+  color: white; font-weight: 700; font-size: 7.5pt;
+  font-family: 'Cormorant Garamond', serif; }
+.bar-tag { font-size: 7.5pt; color: var(--ink-soft);
+  font-style: italic; text-align: right; line-height: 1.2; }
+.bar-fill.jin { background: linear-gradient(90deg, #64748b, #94a3b8); }
+.bar-fill.mu  { background: linear-gradient(90deg, #16a34a, #4ade80); }
+.bar-fill.shui{ background: linear-gradient(90deg, #0284c7, #38bdf8); }
+.bar-fill.huo { background: linear-gradient(90deg, #dc2626, #f87171); }
+.bar-fill.tu  { background: linear-gradient(90deg, #a16207, #eab308); }
+
+/* ===== Pillar Cells (4-pilar chart) ===== */
+.pillar-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2mm; }
+.pillar-cell {
+  border: 1px solid var(--emas-rich); background: rgba(255,253,245,0.6);
+  text-align: center; padding: 3mm 1mm;
+}
+.pillar-cell.dm { border-color: var(--merah-imperial); border-width: 2px;
+  background: rgba(185,28,28,0.06); }
+.pillar-label { font-family: 'Noto Serif TC', serif; font-size: 8.5pt;
+  color: var(--ink-soft); letter-spacing: 1px; }
+.pillar-stem, .pillar-branch {
+  font-family: 'Ma Shan Zheng', cursive; font-size: 26pt;
+  color: var(--merah-imperial); line-height: 1.1; margin: 1.5mm 0;
+}
+.pillar-cell.dm .pillar-stem, .pillar-cell.dm .pillar-branch {
+  color: var(--merah-deep);
+}
+.pillar-element { font-size: 8pt; color: var(--ink-soft);
+  margin-top: 1mm; line-height: 1.3; }
+.dm-badge {
+  display: inline-block; padding: 0.5mm 2.5mm;
+  background: var(--merah-imperial); color: var(--cream-paper);
+  font-family: 'Noto Serif TC', serif; font-size: 8pt;
+  border-radius: 2mm; margin-top: 1mm;
+}
+
+/* ===== Timeline (Da Yun) ===== */
+.timeline-track {
+  height: 6mm; background: rgba(201,160,76,0.08);
+  border-radius: 50px; position: relative; display: flex;
+}
+.timeline-seg {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  font-family: 'Noto Serif TC', serif; font-size: 7pt;
+  color: var(--ink-soft); border-right: 1px dashed rgba(201,160,76,0.4);
+  position: relative; line-height: 1; padding: 0.5mm;
+}
+.timeline-seg:last-child { border-right: none; }
+.timeline-seg.now {
+  background: linear-gradient(135deg, var(--merah-imperial), var(--merah-deep));
+  color: var(--cream-paper); font-weight: 700; border-radius: 50px;
+}
+.timeline-seg.now::after {
+  content: "\25BC"; position: absolute; top: -3mm;
+  left: 50%; transform: translateX(-50%);
+  font-size: 6pt; color: var(--merah-imperial);
+}
+.timeline-labels { display: flex; justify-content: space-between;
+  padding: 0 1mm; }
+.timeline-labels span { font-family: 'Cormorant Garamond', serif;
+  font-size: 7.5pt; color: var(--ink-soft); }
+
+/* ===== Compatibility Grid ===== */
+.compat-grid { display: grid; grid-template-columns: repeat(6, 1fr);
+  gap: 1.5mm; margin: 2mm 0; max-width: 100%; }
+.compat-cell {
+  text-align: center; border: 1px solid var(--emas-light);
+  padding: 1.5mm 1mm; border-radius: 2mm;
+  background: rgba(255,253,245,0.5); overflow: hidden;
+}
+.compat-cell.lucky { border-color: var(--merah-imperial);
+  background: linear-gradient(135deg, rgba(185,28,28,0.08), rgba(232,200,122,0.12)); }
+.compat-cell.warning { border-color: #a16207; background: rgba(161,98,7,0.05); }
+.compat-cell .label { font-family: 'Noto Serif TC', serif; font-size: 8pt;
+  color: var(--merah-deep); font-weight: 600; margin-top: 0.5mm; }
+.compat-cell .ch { font-family: 'Ma Shan Zheng', cursive;
+  font-size: 12pt; color: var(--merah-imperial); }
+.compat-cell .relation { font-size: 7pt; color: var(--ink-soft);
+  margin-top: 0.5mm; }
+.compat-cell img.shio-mini { width: 14mm; height: 9mm;
+  display: block; margin: 0 auto; }
+
+/* ===== Shio SVG sizing =====
+   Shio SVG files only have viewBox (no width/height). Render.py injects
+   class="shio-svg" on root <svg>. Default + per-context sizing here. */
+svg { max-width: 100%; height: auto; }
+
+/* Default for any inline shio SVG: keep it bounded to a reasonable size
+   so a stray placement never blows out the page. */
+.shio-svg { width: 100%; height: auto; max-width: 30mm; display: block; margin: 0 auto; }
+
+/* Per-context overrides (must come AFTER the default) */
+.cover .shio-wrap .shio-svg { max-width: 80mm; max-height: 50mm; }
+.shio-portrait { width: 50mm; margin: 0 auto; display: block; }
+.shio-portrait .shio-svg { max-width: 50mm; max-height: 35mm; }
+.compat-cell .shio-svg { max-width: 22mm; max-height: 15mm; margin: 0 auto 0.5mm; }
+
+/* ===== Cover ===== */
+.cover {
+  background: radial-gradient(ellipse at center, #3d0a0a 0%, #1a0303 100%);
+  color: var(--emas-light); text-align: center;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+}
+.cover::before, .cover::after { border-color: var(--emas-rich) !important; }
+.cover .title-cn { font-family: 'Ma Shan Zheng', cursive;
+  font-size: 50pt; color: var(--emas-rich); letter-spacing: 8px;
+  text-shadow: 0 0 20px rgba(201,160,76,0.4); margin-bottom: 4mm; }
+.cover .subtitle { color: var(--emas-light); font-size: 12pt;
+  letter-spacing: 6px; margin-bottom: 2mm; font-style: normal; }
+.cover .name { font-family: 'Cormorant Garamond', serif;
+  font-size: 36pt; color: var(--cream-paper); letter-spacing: 6px;
+  font-weight: 600; margin: 5mm 0; }
+.cover .meta { font-family: 'Noto Serif', serif; color: var(--emas-light);
+  font-size: 10pt; letter-spacing: 3px; line-height: 2; }
+.cover .shio-wrap { margin: 4mm auto; width: 80mm; height: 50mm;
+  display: flex; align-items: center; justify-content: center;
+  filter: drop-shadow(0 0 18px rgba(201,160,76,0.5)); }
+.cover .seal { margin-top: 4mm; width: 28mm; height: 28mm;
+  border: 2px solid var(--emas-rich); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Ma Shan Zheng', cursive; color: var(--emas-rich);
+  font-size: 18pt; }
+
+/* ===== Section Opener ===== */
+.section-opener {
+  background: linear-gradient(135deg, var(--cream-paper), var(--aged-paper) 70%, #e0c897);
+  justify-content: center; align-items: center; text-align: center;
+}
+.section-opener .roman { font-family: 'Cormorant Garamond', serif;
+  font-size: 28pt; color: var(--emas-rich); letter-spacing: 4px;
+  font-weight: 500; }
+.section-opener .title-cn { font-family: 'Ma Shan Zheng', cursive;
+  font-size: 56pt; color: var(--merah-imperial); margin: 4mm 0;
+  letter-spacing: 12px; }
+.section-opener .label-id { font-family: 'Noto Serif TC', serif;
+  font-size: 14pt; color: var(--ink-soft); letter-spacing: 4px;
+  margin-bottom: 4mm; }
+.section-opener .desc { font-size: 10pt; max-width: 120mm;
+  color: var(--ink-soft); font-style: italic; line-height: 1.7;
+  margin-top: 5mm; }
+
+/* ===== Karakter / Action / Pesan utility cards ===== */
+.karakter-card {
+  background: linear-gradient(135deg, rgba(185,28,28,0.04), rgba(232,200,122,0.10));
+  border: 1px solid var(--emas-rich); border-radius: 2mm;
+  padding: 2mm 2mm; text-align: center;
+  display: grid; grid-template-rows: 14mm auto auto auto;
+  align-items: center; justify-items: center; gap: 0.5mm;
+}
+.karakter-card .ico-wrap {
+  width: 13mm; height: 13mm; border-radius: 50%;
+  background: linear-gradient(135deg, var(--merah-imperial), var(--merah-deep));
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Ma Shan Zheng', cursive; color: var(--cream-paper);
+  font-size: 14pt; line-height: 1;
+}
+
+/* ===== Year Badge (Liu Nian) ===== */
+.year-badge {
+  display: inline-block; padding: 1mm 4mm;
+  background: linear-gradient(135deg, var(--merah-imperial), var(--merah-deep));
+  color: var(--cream-paper); font-family: 'Cormorant Garamond', serif;
+  font-size: 13pt; font-weight: 600; border-radius: 50px;
+  margin-right: 3mm; letter-spacing: 2px;
+}
+
+/* ===== Image safety ===== */
+img { max-width: 100%; height: auto; object-fit: contain; }
+table { width: 100%; max-width: 100%; border-collapse: collapse;
+  table-layout: fixed; font-size: 9.5pt; margin: 2mm 0; }
+td, th { border: 1px solid var(--emas-rich); padding: 2mm;
+  vertical-align: top; word-wrap: break-word; line-height: 1.45; }
+ul { margin-left: 5mm; line-height: 1.55; font-size: 9.5pt; }
+ul li { margin-bottom: 1mm; }
+
+</style>
+</head>
+<body><section class="page">
+  <h2>紫微 Detail — 命宮 · 兄弟 · 夫妻 · 子女</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <h3>命宮 · Palace Diri</h3><div class="transcript"><span class="lbl">Transkrip Asli (命宮)</span><div class="cn">巨門星：行動性的運動。具有對人生不斷地刺激地行動。性格如火般地強烈，地地感情記憶深刻、做事有實踐力、不好[?]，雖剛強但缺乏緩衝[?]。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Palace 命宮 (Diri) Anda dihuni bintang 巨門 (Ju Men) dan beresonansi dengan tema 廉貞 (Lian Zhen).<br><br>• Tipe karakter aksi — gerak hidup terus mendorong Anda untuk melakukan, mencoba, dan tidak diam.<br>• Karakter “seperti api” — emosional, intens, ingatan emosional yang dalam.<br>• Punya daya eksekusi nyata: dipikirkan langsung dijalankan.<br>• Tegas dan kokoh, tetapi sering kurang “buffer” halus untuk meredam benturan.<br>• Kombinasi 巨門 + 廉貞 secara klasik menggambarkan tokoh berjiwa pejuang yang bersuara — perlu menjaga ucapan agar tidak terlalu tajam.<br>[Beberapa baris transkrip foto kurang tajam dan ditandai dengan [?]]</p></div><h3>兄弟 · Saudara</h3><div class="card"><div class="card-title">兄弟 · 兄弟</div><p><em>Foto kategori ini tidak tersedia di folder. Bagian ini di-skip secara sengaja.</em></p></div><h3>夫妻 · Pasangan</h3><div class="transcript"><span class="lbl">Transkrip Asli (夫妻)</span><div class="cn">外觀上似乎是熱情的一對。相會的瞬間立刻燃起熊熊烈火，但愛之火很可能立刻就消失。但在與對方分手時相當乾脆，絕不會糾纏不清。您似乎是早婚的人，但是可能的話盡量晚婚，才能有幸福和諧的婚姻生活。男性常能與頭腦聰明的優秀女子結婚，女性則與才氣縱橫的男人結婚。與太陰星同宮的男人可獲美女為妻。天梁星同宮者，是金童玉女型的夫婦。有凶星阻擾時，夫妻情感惡劣，恐有離別之處。
+太陰星象徵情澈皎潔的月光，因此男女都是天真爛漫的類型。再與文昌、文曲同宮的話，更見教養的優秀。男人可獲文靜且情感細膩的女子為妻。女性或許會與清廉的藝術家類型結婚吧！與太陽星同宮，夫妻生活圓滿。與天機星同宮者，更是令人羨慕不已的金童玉女型夫妻。但如凶星同宮則恐有離婚的可能。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Dari luar, Anda dan pasangan tampak sebagai pasangan yang penuh gairah. Begitu bertemu, api cinta menyala besar — tetapi api itu juga bisa cepat padam. Namun saat berpisah Anda tegas; tidak menggantung-gantung urusan.<br><br>Anda cenderung menikah muda; tetapi bila memungkinkan, lebih baik tunda — pernikahan yang lebih matang akan membawa keharmonisan.<br><br>Pria dengan pola ini sering menikahi wanita cerdas dan berbakat. Wanita dengan pola ini menikahi pria berbakat dan berkarisma.<br><br>Bila bintang 太陰 (Tai Yin) bersanding di palace pasangan: pria mendapatkan istri yang lembut dan rupawan.<br>Bila bersama 天梁 (Tian Liang): pasangan ideal “pangeran-putri”.<br>Bila bersama 太陽 (Tai Yang): kehidupan rumah tangga utuh &amp; bahagia.<br>Bila bersama 天機 (Tian Ji): pasangan idaman yang dikagumi banyak orang.<br>Bila ada bintang yang kurang baik: hubungan suami-istri perlu kerja ekstra; ada potensi perpisahan — namun bukan kepastian.</p></div><h3>子女 · Anak</h3><div class="transcript"><span class="lbl">Transkrip Asli (子女)</span><div class="cn">您的孩子是孝敬雙親的乖孩子。
+兒女宮有天府的吉星庇護，您的兒女為數必不少吧！兒女們各自長大成人後，必也會為了孝敬您而盡心盡力吧！但萬一有凶星同宮的話，雖也仍會有兒女，可是並不會帶給您多大的益處。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Anak Anda adalah anak-anak yang berbakti pada orangtua.<br>Palace 子女 (Anak) Anda dilindungi bintang baik 天府 (Tian Fu) — kemungkinan jumlah anak tidak sedikit. Setelah dewasa, mereka akan berbakti pada Anda dengan sepenuh hati.<br>Bila ada bintang yang kurang baik di palace yang sama, anak tetap ada tetapi mungkin tidak banyak memberi keuntungan praktis kepada Anda.</p></div>
+  <div class="page-num">2</div>
+</section>
+</body></html>

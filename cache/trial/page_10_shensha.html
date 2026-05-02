@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Henry — 神煞 Star Catalog</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-ss { grid-template-rows: 70mm 1fr 30mm !important; gap: 5mm; }
+
+  /* HERO active star */
+  .ss-hero {
+    background: linear-gradient(135deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 5mm 6mm;
+    display: grid;
+    grid-template-columns: 70mm 1fr;
+    gap: 6mm; align-items: center;
+    overflow: hidden; position: relative;
+  }
+  .ss-hero::before {
+    content: '驛'; position: absolute;
+    top: -10mm; right: -4mm;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 110pt; color: rgba(139,26,26,0.04);
+    font-weight: 700; line-height: 1;
+  }
+  .ss-hero-glyph {
+    background: white;
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 5mm 4mm;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 1.5mm;
+  }
+  .ssh-eb { font-size: 6.5pt; color: var(--red); letter-spacing: 3px; text-transform: uppercase; font-weight: 700; }
+  .ssh-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 44pt;
+    color: var(--red); font-weight: 700; line-height: 1;
+    letter-spacing: 4px;
+    text-shadow: 0 1mm 2mm rgba(139,26,26,0.15);
+  }
+  .ssh-id {
+    font-family: 'Playfair Display', serif; font-size: 11pt;
+    color: var(--text); font-style: italic;
+  }
+  .ssh-pinyin { font-size: 8pt; color: var(--text-muted); letter-spacing: 1px; }
+  .ssh-active {
+    background: var(--red); color: white;
+    font-size: 7pt; padding: 1mm 3mm; border-radius: 5mm;
+    letter-spacing: 2px; font-weight: 700;
+    margin-top: 2mm;
+  }
+
+  .ss-hero-content { display: grid; grid-template-rows: auto auto 1fr; gap: 2mm; overflow: hidden; }
+  .ssc-eb { font-size: 7pt; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
+  .ssc-headline {
+    font-family: 'Playfair Display', serif; font-size: 14pt;
+    color: var(--red); line-height: 1.25; font-weight: 600;
+  }
+  .ssc-headline .hz { font-family: 'Noto Serif TC', serif; color: var(--text); font-weight: 700; margin: 0 1mm; }
+  .ssc-body {
+    font-size: 7pt; line-height: 1.4; color: var(--text);
+    border-top: 0.2mm solid var(--gold-soft); padding-top: 1.5mm;
+    overflow: hidden;
+  }
+  .ssc-body strong { color: var(--red); }
+  .ssc-body .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+
+  /* CATALOG GRID — 8 dormant + 1 active highlighted */
+  .ss-catalog-frame {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    display: grid; grid-template-rows: auto 1fr;
+    gap: 2.5mm; overflow: hidden;
+  }
+  .ssc-eyebrow {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 0.3mm solid var(--gold-soft); padding-bottom: 1.5mm;
+  }
+  .ssc-eyebrow .label { font-family: 'Noto Serif TC', serif; font-size: 12pt; color: var(--red); letter-spacing: 4px; font-weight: 600; }
+  .ssc-eyebrow .id { font-family: 'Playfair Display', serif; font-size: 9pt; font-style: italic; color: var(--text-muted); margin-left: 4mm; }
+  .ssc-eyebrow .meta { font-size: 6.5pt; color: var(--text-muted); letter-spacing: 1.5px; text-transform: uppercase; }
+
+  .ss-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2.5mm;
+    overflow: hidden;
+  }
+  .ss-card {
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 1.5mm;
+    padding: 2.5mm 3mm;
+    background: white;
+    display: grid; grid-template-rows: auto auto 1fr;
+    gap: 1mm; overflow: hidden;
+    opacity: 0.55;
+    position: relative;
+  }
+  .ss-card.active {
+    opacity: 1;
+    background: linear-gradient(180deg, #FFF8E1, #F5EBD0);
+    border: 0.5mm solid var(--gold);
+    box-shadow: 0 0 0 0.3mm rgba(201,169,97,0.25);
+  }
+  .ss-card.active::before {
+    content: '★'; position: absolute;
+    top: 1mm; right: 2mm;
+    font-size: 8pt; color: var(--red); font-weight: 700;
+  }
+  .ssc-card-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 14pt; color: var(--red);
+    font-weight: 700; line-height: 1; letter-spacing: 1px;
+  }
+  .ss-card:not(.active) .ssc-card-hz { color: var(--text-muted); }
+  .ssc-card-id {
+    font-family: 'Playfair Display', serif; font-size: 7.5pt;
+    color: var(--text); font-weight: 600; font-style: italic;
+  }
+  .ssc-card-desc {
+    font-size: 6.5pt; color: var(--text-muted);
+    line-height: 1.4;
+    display: -webkit-box; -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .ss-card.active .ssc-card-desc { color: var(--text); }
+
+  /* INSIGHT */
+  .ss-insight {
+    background: var(--green-bg);
+    border-left: 1mm solid var(--green);
+    border-radius: 0 1.5mm 1.5mm 0;
+    padding: 3mm 5mm;
+    display: grid; grid-template-columns: auto 1fr;
+    gap: 5mm; align-items: center;
+    overflow: hidden;
+  }
+  .ssi-label {
+    font-family: 'Noto Serif TC', serif; font-size: 14pt;
+    color: var(--green); font-weight: 700;
+    border-right: 0.3mm solid var(--green); padding-right: 5mm;
+    letter-spacing: 2px;
+  }
+  .ssi-text {
+    font-size: 8pt; line-height: 1.45; color: var(--text);
+    display: -webkit-box; -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .ssi-text strong { color: var(--green); }
+  .ssi-text .hz { font-family: 'Noto Serif TC', serif; color: var(--green); font-weight: 600; }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">10</div>
+    <div class="h-titles"><div class="h-cn">神 煞</div><div class="h-id">Bintang Nasib</div></div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Henry · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
+      <div class="subject-detail">1 bintang aktif · katalog 神煞 (Shén Shà · Auspicious/Inauspicious Stars)</div>
+    </div>
+    <div class="subject-dm"><div class="label">Day Master</div><div class="value">庚金 · Logam Yang</div></div>
+  </div>
+
+  <main class="content content-ss">
+
+    <!-- ACTIVE STAR HERO -->
+    <div class="ss-hero">
+      <div class="ss-hero-glyph">
+        <div class="ssh-eb">★ Bintang Aktif</div>
+        <div class="ssh-hz">驛馬</div>
+        <div class="ssh-id">"Kuda Pos"</div>
+        <div class="ssh-pinyin">Yì Mǎ</div>
+        <div class="ssh-active">★ ACTIVE NOW ★</div>
+      </div>
+
+      <div class="ss-hero-content">
+        <div class="ssc-eb">Tema</div>
+        <div class="ssc-headline">
+          Sibuk &amp; suka <span class="hz">bergerak</span> — pola hidup natural Anda
+        </div>
+        <div class="ssc-body">
+          <span class="hz">驛馬</span> di bagan Anda + Day Master <span class="hz">庚金</span> + 大運 <span class="hz">丙辰</span> dinamis = pola hidup <strong>"gerak"</strong> adalah natural state, bukan kebetulan. Manfaatkan untuk perjalanan bermakna (ziarah, edukasi, kunjungan keluarga jauh). Bila ada gejolak hunian/pekerjaan — itu sinyal 驛馬 minta disalurkan; pindah ruangan / redekorasi / perjalanan 1-2 minggu sering cukup.
+        </div>
+      </div>
+    </div>
+
+    <!-- CATALOG GRID 8 dormant -->
+    <div class="ss-catalog-frame">
+      <div class="ssc-eyebrow">
+        <div>
+          <span class="label">神 煞 名 錄</span>
+          <span class="id">Katalog Bintang Klasik</span>
+        </div>
+        <div class="meta">8 DORMANT · TIDAK AKTIF DI BAGAN HENRY</div>
+      </div>
+
+      <div class="ss-grid">
+        <div class="ss-card">
+          <div class="ssc-card-hz">天乙貴人</div>
+          <div class="ssc-card-id">Tiān Yǐ · Noble Helper</div>
+          <div class="ssc-card-desc">Bintang penolong dari kalangan terhormat — tidak aktif di bagan ini</div>
+        </div>
+        <div class="ss-card">
+          <div class="ssc-card-hz">文昌</div>
+          <div class="ssc-card-id">Wén Chāng · Scholar</div>
+          <div class="ssc-card-desc">Bintang akademik &amp; keilmuan — dormant</div>
+        </div>
+        <div class="ss-card">
+          <div class="ssc-card-hz">將星</div>
+          <div class="ssc-card-id">Jiāng Xīng · General</div>
+          <div class="ssc-card-desc">Bintang panglima — kepemimpinan militer/komando — dormant</div>
+        </div>
+        <div class="ss-card">
+          <div class="ssc-card-hz">桃花</div>
+          <div class="ssc-card-id">Táo Huā · Peach Blossom</div>
+          <div class="ssc-card-desc">Bintang Bunga Persik — daya tarik &amp; relasi asmara — dormant</div>
+        </div>
+        <div class="ss-card">
+          <div class="ssc-card-hz">華蓋</div>
+          <div class="ssc-card-id">Huá Gài · Canopy</div>
+          <div class="ssc-card-desc">Bintang spiritual — kontemplasi &amp; seni religi — dormant</div>
+        </div>
+        <div class="ss-card">
+          <div class="ssc-card-hz">劫煞</div>
+          <div class="ssc-card-id">Jié Shà · Robbery</div>
+          <div class="ssc-card-desc">Bintang sial — pencurian/penipuan — dormant (untunglah)</div>
+        </div>
+        <div class="ss-card">
+          <div class="ssc-card-hz">紅鸞</div>
+          <div class="ssc-card-id">Hóng Luán · Red Phoenix</div>
+          <div class="ssc-card-desc">Bintang pernikahan — pertanda jodoh — dormant</div>
+        </div>
+        <div class="ss-card">
+          <div class="ssc-card-hz">天德</div>
+          <div class="ssc-card-id">Tiān Dé · Heavenly Virtue</div>
+          <div class="ssc-card-desc">Bintang kebajikan surgawi — perlindungan moral — dormant</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INSIGHT -->
+    <div class="ss-insight">
+      <div class="ssi-label">建議</div>
+      <div class="ssi-text">
+        <strong>Saran:</strong> Karena <span class="hz">驛馬</span> dominan, jaga <strong>dokumen &amp; administrasi tetap rapi</strong> — itu modal bergerak yang sering diabaikan. Manfaatkan ritme gerak untuk perjalanan bermakna (edukasi · ziarah · reuni keluarga jauh) — bukan sekadar plesir.
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      Bagan klasik mengenal 32 bintang nasib — Anda hanya punya 1 aktif (<span style="font-family:'Noto Serif TC',serif;color:var(--red)">驛馬</span>). Itu bukan miskin, melainkan <em>bagan yang fokus</em>.
+    </div>
+    <div class="footer-meta"><span>Halaman 10 / 23</span><span>Henry · Ramalan 命</span></div>
+  </footer>
+</section>
+</body>
+</html>

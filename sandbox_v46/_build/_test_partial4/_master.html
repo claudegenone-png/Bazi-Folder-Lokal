@@ -1,0 +1,3343 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Test Ramalan PDF</title>
+<link rel="stylesheet" href="file:///_build/_test_partial4/style.css">
+<style>
+
+/* === page_01_cover.html === */
+
+  .page.cover {
+    padding: 0; display: flex; align-items: stretch;
+    background: radial-gradient(ellipse at center top, #FFF8E1 0%, var(--bg) 60%, var(--gold-bg) 100%);
+  }
+  .cover-frame {
+    flex: 1; margin: 14mm;
+    border: 0.5mm double var(--gold);
+    border-radius: 2mm;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto auto auto;
+    gap: 5mm; padding: 14mm 16mm;
+    position: relative; overflow: hidden;
+    text-align: center;
+  }
+  .cover-frame::before, .cover-frame::after {
+    content: ''; position: absolute;
+    width: 22mm; height: 22mm;
+    border: 0.4mm solid var(--gold);
+    pointer-events: none;
+  }
+  .cover-frame::before { top: 4mm; left: 4mm; border-right: none; border-bottom: none; }
+  .cover-frame::after { bottom: 4mm; right: 4mm; border-left: none; border-top: none; }
+
+  .cv-watermark {
+    position: absolute; font-family: 'Noto Serif TC', serif;
+    color: rgba(139,26,26,0.04); font-weight: 700;
+    pointer-events: none; user-select: none;
+  }
+  .cv-watermark.tl { top: 6mm; left: 12mm; font-size: 80pt; line-height: 1; transform: rotate(-8deg); }
+  .cv-watermark.br { bottom: 6mm; right: 12mm; font-size: 60pt; line-height: 1; transform: rotate(6deg); }
+
+  .cv-eyebrow {
+    font-family: 'Inter', sans-serif; font-size: 8.5pt;
+    letter-spacing: 5px; color: var(--gold);
+    text-transform: uppercase; font-weight: 600;
+    border-bottom: 0.3mm solid var(--gold-soft);
+    padding-bottom: 4mm; padding-top: 4mm;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .cv-title-cn {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 110pt; font-weight: 700;
+    color: var(--red); line-height: 1;
+    text-shadow: 0 2mm 6mm rgba(139,26,26,0.18);
+    letter-spacing: 16px;
+    margin-top: 4mm;
+  }
+  .cv-title-id {
+    font-family: 'Playfair Display', serif;
+    font-size: 16pt; font-style: italic;
+    color: var(--text); letter-spacing: 4px;
+    margin-top: 2mm;
+  }
+  .cv-shio-frame {
+    width: 70mm; height: 70mm; margin: 6mm auto 2mm;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #FFFEF8 0%, #F5EBD0 100%);
+    border: 0.8mm solid var(--gold);
+    box-shadow: 0 4mm 12mm rgba(201,169,97,0.3);
+    display: flex; align-items: center; justify-content: center;
+    padding: 8mm; position: relative;
+  }
+  .cv-shio-frame img { width: 100%; height: 100%; object-fit: contain; }
+  .cv-shio-frame::after {
+    content: '丑 · KERBAU';
+    position: absolute; bottom: -3mm; left: 50%;
+    transform: translateX(-50%);
+    background: var(--red); color: white;
+    font-family: 'Noto Serif TC', serif; font-size: 8pt;
+    padding: 1.5mm 5mm; border-radius: 4mm;
+    letter-spacing: 3px; font-weight: 600;
+    white-space: nowrap;
+    box-shadow: 0 1mm 3mm rgba(0,0,0,0.2);
+  }
+
+  .cv-name-row {
+    display: flex; align-items: baseline; justify-content: center;
+    gap: 6mm; margin-top: 4mm;
+  }
+  .cv-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 36pt; color: var(--text);
+    font-weight: 600; line-height: 1;
+  }
+  .cv-name-cn {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 28pt; color: var(--red);
+    font-weight: 700; line-height: 1;
+    letter-spacing: 4px;
+  }
+
+  /* INFO PANEL — persegi merah berisi data subjek */
+  .cv-info-panel {
+    background: linear-gradient(135deg, #8B1A1A 0%, #6E1414 100%);
+    color: white;
+    border-radius: 2mm;
+    padding: 5mm 9mm;
+    margin: 4mm auto 0;
+    max-width: 158mm;
+    box-shadow: 0 2mm 6mm rgba(139,26,26,0.25);
+    text-align: left;
+    font-size: 9pt;
+    line-height: 1.65;
+  }
+  .cv-info-panel .row {
+    display: grid;
+    grid-template-columns: 50mm 3mm 1fr;
+    gap: 0;
+    align-items: baseline;
+    white-space: nowrap;
+  }
+  .cv-info-panel .lbl {
+    color: #F5EBD0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    font-size: 8.5pt;
+  }
+  .cv-info-panel .colon { color: #C9A961; font-weight: 600; }
+  .cv-info-panel .val {
+    color: white;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .cv-info-panel .val .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: #F5EBD0; font-weight: 700;
+    margin: 0 1mm;
+  }
+  .cv-info-panel .val em {
+    color: #E5D3A1; font-style: italic;
+    font-weight: 400; font-size: 8pt;
+  }
+  .cv-meta {
+    display: grid; grid-template-columns: 1fr auto 1fr;
+    gap: 6mm; align-items: center;
+    border-top: 0.3mm solid var(--gold-soft);
+    padding-top: 5mm;
+    font-size: 8.5pt; color: var(--text);
+  }
+  .cv-meta .item { display: flex; flex-direction: column; gap: 1mm; }
+  .cv-meta .item .lbl {
+    font-size: 6.5pt; color: var(--gold);
+    letter-spacing: 2px; text-transform: uppercase; font-weight: 600;
+  }
+  .cv-meta .item .val {
+    font-family: 'Noto Serif TC', serif; font-size: 11pt;
+    color: var(--red); font-weight: 600; letter-spacing: 1px;
+  }
+  .cv-meta .item .val .id {
+    display: block; font-family: 'Inter', sans-serif;
+    font-size: 7pt; color: var(--text-muted);
+    font-weight: 500; margin-top: 0.5mm; font-style: italic;
+  }
+  .cv-meta .seal {
+    width: 18mm; height: 18mm; background: var(--red);
+    color: white; font-family: 'Noto Serif TC', serif;
+    font-size: 16pt; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 1mm; transform: rotate(-3deg);
+    box-shadow: 0 2mm 4mm rgba(139,26,26,0.3);
+    letter-spacing: 1px;
+  }
+
+  .cv-footer {
+    font-size: 7pt; color: var(--text-muted);
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+
+
+/* === page_02_toc.html === */
+
+  .content-toc { grid-template-rows: 1fr !important; }
+  .toc-frame {
+    background: var(--bg-card); border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm; padding: 3mm 5mm;
+    display: flex; flex-direction: column;
+    gap: 1.5mm; overflow: hidden;
+  }
+  .toc-eyebrow {
+    text-align: center;
+    border-bottom: 0.3mm solid var(--gold-soft);
+    padding-bottom: 1.5mm;
+    flex-shrink: 0;
+  }
+  .toc-eyebrow .cn {
+    font-family: 'Noto Serif TC', serif; font-size: 14pt;
+    color: var(--red); letter-spacing: 5px; font-weight: 700;
+    line-height: 1;
+  }
+  .toc-eyebrow .id {
+    font-family: 'Playfair Display', serif; font-size: 8pt;
+    font-style: italic; color: var(--text-muted);
+    margin-top: 0.3mm; letter-spacing: 1.2px;
+  }
+
+  .toc-list { display: flex; flex-direction: column; gap: 0.5mm; flex: 1; min-height: 0; }
+
+  .toc-section {
+    display: grid; grid-template-columns: 10mm 1fr;
+    gap: 2.5mm; align-items: center;
+    padding: 0.6mm 2mm;
+    background-color: #F5EBD0;
+    background: linear-gradient(90deg, var(--gold-bg), transparent);
+    border-left: 0.7mm solid var(--gold);
+    border-radius: 0 1mm 1mm 0;
+    flex-shrink: 0;
+  }
+  .toc-section .num {
+    font-family: 'Noto Serif TC', serif; font-size: 10pt;
+    color: var(--red); letter-spacing: 1px; font-weight: 700;
+  }
+  .toc-section .title {
+    font-family: 'Noto Serif TC', serif; font-size: 8.5pt;
+    color: var(--red); font-weight: 700; letter-spacing: 1.5px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .toc-section .title .id {
+    font-family: 'Playfair Display', serif; font-size: 6.8pt;
+    font-style: italic; color: var(--text); margin-left: 2mm;
+    letter-spacing: 0.3px; font-weight: 400;
+  }
+
+  .toc-rows { display: flex; flex-direction: column; gap: 0; flex-shrink: 0; }
+  .toc-row {
+    display: grid; grid-template-columns: 9mm 5mm 1fr;
+    gap: 2mm; align-items: baseline;
+    padding: 0.5mm 2mm 0.5mm 5mm;
+    border-bottom: 0.15mm dotted var(--gold-soft);
+    font-size: 7pt;
+  }
+  .toc-row:last-child { border-bottom: none; }
+  .toc-row .pg {
+    font-family: 'Playfair Display', serif;
+    font-size: 7.5pt; color: var(--gold);
+    font-weight: 700; text-align: right;
+  }
+  .toc-row .ico {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 8.5pt; color: var(--red); font-weight: 600;
+    text-align: center; line-height: 1;
+  }
+  .toc-row .name {
+    color: var(--text); font-weight: 500; line-height: 1.2;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .toc-row .name strong { color: var(--red); font-family: 'Noto Serif TC', serif; margin-right: 1.2mm; }
+  .toc-row .gloss { font-size: 6pt; color: var(--text-muted); font-style: italic; margin-left: 1mm; }
+
+  .toc-foot {
+    text-align: center;
+    font-size: 6.5pt; color: var(--text-muted);
+    letter-spacing: 1px; text-transform: uppercase;
+    border-top: 0.3mm solid var(--gold-soft);
+    padding-top: 1.2mm; font-style: italic;
+    flex-shrink: 0;
+  }
+  .toc-foot .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; margin: 0 1mm; }
+
+
+/* === page_03_intro.html === */
+
+  section.page.no-bar { grid-template-rows: 14mm 1fr 22mm !important; }
+  .content-intro { grid-template-rows: 60mm 1fr 28mm !important; gap: 5mm; }
+
+  .intro-hero {
+    background: linear-gradient(135deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 5mm 8mm;
+    display: grid; grid-template-columns: 1fr auto;
+    gap: 6mm; align-items: center;
+    overflow: hidden; position: relative;
+  }
+  .intro-hero::before {
+    content: '引'; position: absolute;
+    bottom: -6mm; right: -2mm;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 80pt; color: rgba(139,26,26,0.05);
+    font-weight: 700; line-height: 1;
+  }
+  .intro-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 14pt; color: var(--text);
+    line-height: 1.4; font-style: italic;
+  }
+  .intro-quote .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-style: normal; font-weight: 700; }
+  .intro-quote-attrib {
+    font-size: 7.5pt; color: var(--gold);
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-top: 2mm; font-weight: 600;
+  }
+  .intro-seal {
+    width: 22mm; height: 22mm; background: var(--red);
+    color: white; font-family: 'Noto Serif TC', serif;
+    font-size: 18pt; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 1.5mm; transform: rotate(-3deg);
+    box-shadow: 0 2mm 5mm rgba(139,26,26,0.3);
+    letter-spacing: 1px;
+  }
+
+  .intro-cards {
+    display: grid; grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4mm;
+    overflow: hidden;
+  }
+  .intro-card {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 3.5mm 5mm;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 1.5mm;
+    overflow: hidden;
+  }
+  .ic-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 22pt; color: var(--gold);
+    font-weight: 700; line-height: 1;
+    display: flex; align-items: center; gap: 3mm;
+  }
+  .ic-num .hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 18pt; color: var(--red);
+  }
+  .ic-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 11pt; color: var(--text);
+    font-weight: 600;
+    border-bottom: 0.2mm solid var(--gold-soft);
+    padding-bottom: 1.5mm;
+  }
+  .ic-body {
+    font-size: 8pt; line-height: 1.5;
+    color: var(--text);
+    display: -webkit-box; -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .ic-body strong { color: var(--red); }
+  .ic-body .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+
+  .intro-disclaimer {
+    background: var(--red-bad-bg);
+    border-left: 1mm solid var(--red-bad);
+    border-radius: 0 1.5mm 1.5mm 0;
+    padding: 3mm 5mm;
+    display: grid; grid-template-columns: auto 1fr;
+    gap: 4mm; align-items: center;
+    overflow: hidden;
+  }
+  .id-label {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 16pt; color: var(--red-bad);
+    font-weight: 700;
+  }
+  .id-text {
+    font-size: 7.5pt; line-height: 1.4;
+    color: var(--text);
+    display: -webkit-box; -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .id-text strong { color: var(--red-bad); }
+
+
+/* === page_profile.html === */
+
+  /* PAGE-SPECIFIC: Profile */
+  .content-profile {
+    grid-template-rows: 95mm 50mm 30mm !important;
+    gap: 5mm;
+  }
+
+  /* 4-PILLAR GRAND DISPLAY */
+  .pilar-grand {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.5mm;
+    overflow: hidden;
+  }
+  .pilar-tablet {
+    background: var(--bg-card);
+    border: 0.4mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 4mm 2mm 3mm;
+    display: grid;
+    grid-template-rows: auto 1fr auto 1fr auto;
+    gap: 1.5mm;
+    position: relative;
+    overflow: hidden;
+  }
+  .pilar-tablet::before {
+    content: ''; position: absolute;
+    top: -10mm; right: -10mm;
+    width: 30mm; height: 30mm;
+    background-color: transparent;
+    background-image: radial-gradient(circle, rgba(201,169,97,0.07) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .pilar-tablet.day-master {
+    background: linear-gradient(180deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.6mm solid var(--gold);
+    box-shadow: 0 0 0 0.5mm rgba(201,169,97,0.18);
+  }
+  .t-eyebrow {
+    font-size: 6.5pt; color: var(--gold);
+    letter-spacing: 2px; text-transform: uppercase;
+    text-align: center; font-weight: 600;
+    border-bottom: 0.2mm solid var(--gold-soft);
+    padding-bottom: 1.2mm;
+    display: flex; flex-direction: column; gap: 0.3mm;
+  }
+  .t-eyebrow .cn {
+    font-family: 'Noto Serif TC', serif; font-size: 8pt;
+    color: var(--text); letter-spacing: 1px; font-weight: 600;
+  }
+  .pilar-tablet.day-master .t-eyebrow .cn { color: var(--red); }
+
+  .t-block {
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 1.5mm;
+  }
+  .t-hanzi {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 38pt; font-weight: 600;
+    color: var(--text); line-height: 1;
+  }
+  .pilar-tablet.day-master .t-hanzi.stem {
+    color: var(--red); font-weight: 700;
+    text-shadow: 0 0 1mm rgba(139,26,26,0.1);
+  }
+  .t-pill {
+    font-size: 7pt; color: var(--text-muted);
+    background: rgba(201,169,97,0.12);
+    padding: 0.5mm 2.5mm; border-radius: 5mm;
+    letter-spacing: 0.3px; text-align: center;
+    max-width: 100%; overflow: hidden;
+    text-overflow: ellipsis; white-space: nowrap;
+  }
+  .t-pill .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red); font-weight: 600; margin-right: 1.5mm;
+  }
+  .pilar-tablet.day-master .t-pill {
+    background: rgba(139,26,26,0.08);
+    color: var(--text);
+  }
+  .t-divider {
+    border-top: 0.3mm dashed var(--gold-soft);
+    width: 70%; margin: 0 auto;
+  }
+  .dm-crown {
+    position: absolute;
+    top: -0.5mm; right: 50%;
+    transform: translateX(50%);
+    background: var(--red);
+    color: white;
+    font-size: 6pt;
+    padding: 0.8mm 3mm;
+    border-radius: 0 0 2mm 2mm;
+    letter-spacing: 1.5px; font-weight: 600;
+    white-space: nowrap;
+  }
+
+  /* WUXING SECTION */
+  .wuxing-section {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    display: grid;
+    grid-template-columns: 50mm 1fr;
+    gap: 5mm;
+    overflow: hidden;
+  }
+  .wux-title-block {
+    border-right: 0.3mm solid var(--gold-soft);
+    padding-right: 5mm;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .wux-eyebrow {
+    font-family: 'Inter', sans-serif; font-size: 7pt;
+    color: var(--gold); letter-spacing: 2.5px;
+    text-transform: uppercase; font-weight: 600;
+  }
+  .wux-title {
+    font-family: 'Noto Serif TC', serif; font-size: 16pt;
+    color: var(--red); font-weight: 600; margin-top: 1mm;
+    letter-spacing: 4px;
+  }
+  .wux-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 9.5pt; font-style: italic;
+    color: var(--text-muted); margin-top: 0.5mm;
+  }
+  .wux-insight {
+    font-size: 7.8pt; color: var(--text);
+    margin-top: 2.5mm; line-height: 1.5;
+    display: -webkit-box; -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .wux-insight strong { color: var(--red); }
+
+  .wux-bars-area {
+    display: grid;
+    grid-template-rows: auto 11mm auto;
+    gap: 1.5mm;
+    align-content: center;
+  }
+  .wux-axis-top {
+    display: flex; justify-content: space-between;
+    font-size: 6.2pt; color: var(--text-muted);
+    letter-spacing: 0.5px;
+  }
+  .wux-stack {
+    display: flex; height: 100%;
+    border-radius: 1.5mm; overflow: hidden;
+    box-shadow: inset 0 0 0 0.3mm rgba(201,169,97,0.4);
+  }
+  .wux-stack > .seg {
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    color: white; gap: 0.3mm;
+    position: relative;
+    border-right: 0.2mm solid rgba(255,255,255,0.4);
+  }
+  .wux-stack > .seg:last-child { border-right: none; }
+  .wux-stack > .seg .hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 11pt; font-weight: 700; line-height: 1;
+  }
+  .wux-stack > .seg .pct {
+    font-family: 'Inter', sans-serif; font-size: 6.5pt;
+    opacity: 0.95; letter-spacing: 0.3px;
+  }
+  .seg.el-jin   { background-color: #B5A063; background-image: linear-gradient(180deg, #C9B57A, #A89358); }
+  .seg.el-tu    { background-color: #A07E5C; background-image: linear-gradient(180deg, #B89070, #8C6E47); }
+  .seg.el-shui  { background-color: #4A7BA0; background-image: linear-gradient(180deg, #5990B8, #3A6B8C); }
+  .seg.el-mu    { background-color: #5A8C4A; background-image: linear-gradient(180deg, #6FA85A, #4D7A3A); }
+  .seg.el-huo   { background-color: #A84A4A; background-image: linear-gradient(180deg, #C45F5F, #8C3535); }
+  .seg { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+
+  .wux-tags {
+    display: flex; gap: 2mm; flex-wrap: wrap;
+    font-size: 6.5pt; letter-spacing: 0.5px;
+  }
+  .wux-tag {
+    padding: 0.5mm 2mm; border-radius: 5mm;
+    font-weight: 600;
+    display: flex; align-items: center; gap: 1.5mm;
+  }
+  .wux-tag.self { background: rgba(139,26,26,0.1); color: var(--red); border: 0.2mm solid var(--red); }
+  .wux-tag.fav  { background: var(--green-bg); color: var(--green); border: 0.2mm solid var(--green); }
+  .wux-tag.unfav{ background: var(--red-bad-bg); color: var(--red-bad); border: 0.2mm solid var(--red-bad); }
+  .wux-tag .hz { font-family: 'Noto Serif TC', serif; font-size: 8pt; }
+
+  /* FORMAT STRIP */
+  .format-strip {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 4mm; overflow: hidden;
+  }
+  .fmt-card, .ys-card {
+    border-radius: 2mm; padding: 3mm 4mm;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 4mm; align-items: center;
+    overflow: hidden;
+  }
+  .fmt-card {
+    background: linear-gradient(135deg, #FFFEF8 0%, #F5EBD0 100%);
+    border: 0.4mm solid var(--gold);
+  }
+  .fmt-glyph {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 24pt; color: var(--red);
+    font-weight: 700; line-height: 1;
+  }
+  .fmt-meta { display: flex; flex-direction: column; gap: 0.5mm; min-width: 0; }
+  .fmt-eyebrow {
+    font-size: 6.5pt; color: var(--gold);
+    letter-spacing: 2px; text-transform: uppercase; font-weight: 600;
+  }
+  .fmt-name {
+    font-family: 'Noto Serif TC', serif; font-size: 12pt;
+    color: var(--text); font-weight: 600; line-height: 1.1;
+  }
+  .fmt-pinyin {
+    font-family: 'Playfair Display', serif; font-size: 8.5pt;
+    font-style: italic; color: var(--text-muted);
+  }
+
+  .ys-card.fav   { background: var(--green-bg); border: 0.4mm solid var(--green); }
+  .ys-card.unfav { background: var(--red-bad-bg); border: 0.4mm solid var(--red-bad); }
+  .ys-glyph {
+    display: flex; gap: 1.5mm; align-items: center;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 22pt; font-weight: 700; line-height: 1;
+  }
+  .fav .ys-glyph { color: var(--green); }
+  .unfav .ys-glyph { color: var(--red-bad); opacity: 0.75; }
+  .ys-meta { display: flex; flex-direction: column; gap: 0.5mm; min-width: 0; }
+  .ys-eyebrow {
+    font-size: 6.5pt; letter-spacing: 2px;
+    text-transform: uppercase; font-weight: 600;
+  }
+  .fav .ys-eyebrow   { color: var(--green); }
+  .unfav .ys-eyebrow { color: var(--red-bad); }
+  .ys-name {
+    font-family: 'Noto Serif TC', serif; font-size: 11pt;
+    font-weight: 600; line-height: 1.1;
+  }
+  .fav .ys-name   { color: var(--text); }
+  .unfav .ys-name { color: var(--text); }
+  .ys-desc {
+    font-size: 6.8pt; color: var(--text-muted);
+    line-height: 1.35; margin-top: 0.3mm;
+    display: -webkit-box; -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+
+
+/* === page_05_bazi_opener.html === */
+
+  .page.opener {
+    padding: 0;
+    background: radial-gradient(ellipse at center, #FFF8E1 0%, var(--bg) 70%, var(--gold-bg) 100%);
+  }
+  .opener-frame {
+    flex: 1; margin: 14mm;
+    border: 0.5mm double var(--gold);
+    border-radius: 2mm;
+    height: calc(297mm - 28mm);
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    gap: 6mm; padding: 16mm 14mm;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .opener-frame::before, .opener-frame::after {
+    content: ''; position: absolute;
+    width: 24mm; height: 24mm;
+    border: 0.4mm solid var(--gold);
+    pointer-events: none;
+  }
+  .opener-frame::before { top: 4mm; left: 4mm; border-right: none; border-bottom: none; }
+  .opener-frame::after { bottom: 4mm; right: 4mm; border-left: none; border-top: none; }
+
+  .op-watermark {
+    position: absolute; font-family: 'Noto Serif TC', serif;
+    font-size: 200pt; color: rgba(139,26,26,0.04);
+    font-weight: 700; pointer-events: none;
+    top: 50%; left: 50%; transform: translate(-50%,-50%);
+    line-height: 1;
+  }
+
+  .op-eyebrow {
+    font-family: 'Inter', sans-serif; font-size: 10pt;
+    letter-spacing: 12px; color: var(--gold);
+    text-transform: uppercase; font-weight: 600;
+    border-bottom: 0.3mm solid var(--gold-soft);
+    padding-bottom: 6mm; padding-top: 4mm;
+  }
+  .op-eyebrow .roman {
+    font-family: 'Playfair Display', serif;
+    font-size: 16pt; color: var(--red);
+    font-weight: 700; letter-spacing: 4px;
+    display: block; margin-top: 2mm;
+  }
+
+  .op-hero {
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 4mm;
+  }
+  .op-cn-big {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 130pt; font-weight: 700;
+    color: var(--red); line-height: 0.9;
+    letter-spacing: 18px;
+    text-shadow: 0 3mm 8mm rgba(139,26,26,0.15);
+  }
+  .op-cn-sub {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 22pt; font-weight: 600;
+    color: var(--text); letter-spacing: 8px;
+    margin-top: 2mm;
+  }
+  .op-pinyin {
+    font-family: 'Playfair Display', serif;
+    font-size: 14pt; font-style: italic;
+    color: var(--text); letter-spacing: 2px;
+    margin-top: 2mm;
+  }
+  .op-id {
+    font-family: 'Inter', sans-serif; font-size: 11pt;
+    color: var(--text-muted); letter-spacing: 2px;
+    margin-top: 1mm; max-width: 130mm;
+    line-height: 1.5;
+  }
+
+  .op-pages {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 3mm;
+    border-top: 0.3mm solid var(--gold-soft);
+    padding-top: 4mm;
+  }
+  .op-page-card {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 1.5mm;
+    padding: 2mm 3mm;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2.5mm; align-items: center;
+    overflow: hidden; min-width: 0;
+    text-align: left;
+  }
+  .op-page-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 13pt; color: var(--gold);
+    font-weight: 700;
+  }
+  .op-page-info { min-width: 0; overflow: hidden; }
+  .op-page-cn {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 10pt; color: var(--red);
+    font-weight: 600; letter-spacing: 1px;
+  }
+  .op-page-id {
+    font-size: 7pt; color: var(--text-muted);
+    letter-spacing: 0.3px;
+  }
+
+  .op-credits {
+    font-size: 7.5pt; color: var(--text-muted);
+    letter-spacing: 2px; text-transform: uppercase;
+    font-style: italic;
+  }
+
+
+/* === page_06_daymaster.html === */
+
+  .content-dm { grid-template-rows: 100mm 60mm 1fr !important; gap: 4mm; }
+
+  .dm-hero {
+    display: grid; grid-template-columns: 1fr 70mm; gap: 5mm;
+    overflow: hidden;
+  }
+  .dm-radar-frame {
+    background: var(--bg-card); border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm; padding: 3mm;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  .dm-radar-frame svg { width: 100%; height: 100%; max-height: 95mm; }
+
+  .dm-card {
+    background: linear-gradient(180deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 5mm;
+    display: grid; grid-template-rows: auto auto auto auto 1fr auto;
+    gap: 1.5mm;
+    overflow: hidden;
+    text-align: center;
+  }
+  .dmc-eyebrow {
+    font-size: 6.5pt; color: var(--gold);
+    letter-spacing: 3px; text-transform: uppercase; font-weight: 700;
+  }
+  .dmc-stem {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 56pt; color: var(--red);
+    font-weight: 700; line-height: 1;
+    text-shadow: 0 1mm 3mm rgba(139,26,26,0.15);
+  }
+  .dmc-element {
+    font-family: 'Noto Serif TC', serif; font-size: 14pt;
+    color: var(--text); font-weight: 600; letter-spacing: 4px;
+  }
+  .dmc-pinyin {
+    font-family: 'Playfair Display', serif;
+    font-size: 10pt; font-style: italic; color: var(--text);
+  }
+  .dmc-traits {
+    display: flex; flex-direction: column; gap: 0.8mm;
+    text-align: left; font-size: 7.5pt; line-height: 1.4;
+    color: var(--text);
+    border-top: 0.2mm solid var(--gold-soft);
+    padding-top: 2mm;
+  }
+  .dmc-trait { display: grid; grid-template-columns: 4mm 1fr; gap: 1.5mm; }
+  .dmc-trait .ico { color: var(--gold); font-weight: 700; }
+  .dmc-trait strong { color: var(--red); }
+  .dmc-strength {
+    background: rgba(139,26,26,0.08);
+    border-radius: 1mm; padding: 1.5mm 2mm;
+    font-size: 7pt; font-weight: 600; color: var(--red);
+    letter-spacing: 1px; text-transform: uppercase;
+  }
+  .dmc-strength .val { font-family: 'Playfair Display', serif; font-size: 10pt; }
+
+  .dm-elements {
+    display: grid; grid-template-columns: repeat(5, 1fr);
+    gap: 3mm; overflow: hidden;
+  }
+  .dme-card {
+    border-radius: 2mm; padding: 3mm;
+    display: grid; grid-template-rows: auto auto auto 1fr auto;
+    gap: 1mm; align-items: start;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  .dme.el-jin   { background: linear-gradient(180deg, #C9B57A, #A89358); }
+  .dme.el-mu    { background: linear-gradient(180deg, #6FA85A, #4D7A3A); }
+  .dme.el-shui  { background: linear-gradient(180deg, #5990B8, #3A6B8C); }
+  .dme.el-huo   { background: linear-gradient(180deg, #C45F5F, #8C3535); }
+  .dme.el-tu    { background: linear-gradient(180deg, #B89070, #8C6E47); }
+  .dme-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 24pt;
+    font-weight: 700; line-height: 1;
+  }
+  .dme-name {
+    font-family: 'Playfair Display', serif; font-size: 9pt;
+    font-weight: 600; letter-spacing: 1px;
+  }
+  .dme-val {
+    font-family: 'Playfair Display', serif; font-size: 14pt;
+    font-weight: 700; line-height: 1;
+    margin-top: 1mm;
+  }
+  .dme-bar {
+    height: 2mm; background: rgba(255,255,255,0.25);
+    border-radius: 1mm; overflow: hidden; margin-top: 1mm;
+  }
+  .dme-bar-fill {
+    height: 100%; background: rgba(255,255,255,0.85);
+    border-radius: 1mm;
+  }
+  .dme-role {
+    font-size: 6.2pt; letter-spacing: 1px;
+    background: rgba(0,0,0,0.2); padding: 0.5mm 1.5mm;
+    border-radius: 5mm; text-transform: uppercase;
+    font-weight: 600;
+  }
+  .dme-tag-self { color: #FFD700; font-weight: 700; }
+
+  /* Yong Shen insight */
+  .dm-yongshen {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4mm;
+    overflow: hidden;
+  }
+  .ys-block {
+    border-radius: 2mm; padding: 4mm 5mm;
+    display: grid; grid-template-rows: auto auto 1fr;
+    gap: 1.5mm; overflow: hidden;
+  }
+  .ys-block.fav   { background: var(--green-bg); border: 0.5mm solid var(--green); }
+  .ys-block.unfav { background: var(--red-bad-bg); border: 0.5mm solid var(--red-bad); }
+  .ys-block .ys-eb {
+    font-size: 7pt; letter-spacing: 2.5px;
+    text-transform: uppercase; font-weight: 700;
+  }
+  .ys-block.fav .ys-eb   { color: var(--green); }
+  .ys-block.unfav .ys-eb { color: var(--red-bad); }
+  .ys-block .ys-title {
+    display: flex; align-items: baseline; gap: 3mm;
+  }
+  .ys-block .ys-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 22pt; font-weight: 700; line-height: 1;
+  }
+  .ys-block.fav .ys-hz   { color: var(--green); }
+  .ys-block.unfav .ys-hz { color: var(--red-bad); opacity: 0.85; }
+  .ys-block .ys-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 11pt; font-style: italic; color: var(--text);
+  }
+  .ys-block .ys-body {
+    font-size: 8pt; line-height: 1.5; color: var(--text);
+    border-top: 0.2mm solid rgba(0,0,0,0.08);
+    padding-top: 1.5mm;
+    display: -webkit-box; -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .ys-body .hz { font-family: 'Noto Serif TC', serif; font-weight: 600; }
+  .ys-block.fav .ys-body .hz   { color: var(--green); }
+  .ys-block.unfav .ys-body .hz { color: var(--red-bad); }
+
+
+/* === page_08_xingqing.html === */
+
+  .content-xq { grid-template-rows: 95mm 1fr !important; gap: 5mm; }
+
+  .xq-hero { display: grid; grid-template-columns: 1fr 60mm; gap: 5mm; overflow: hidden; }
+  .xq-radar-frame {
+    background: var(--bg-card); border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm; padding: 3mm;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  .xq-radar-frame svg { width: 100%; height: 100%; max-height: 89mm; }
+
+  .xq-motto {
+    background: linear-gradient(180deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    display: grid; grid-template-rows: auto auto auto auto auto 1fr auto;
+    gap: 2mm; overflow: hidden; text-align: center;
+  }
+  .xqm-eb { font-size: 6.5pt; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; font-weight: 700; }
+  .xqm-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 30pt;
+    color: var(--red); font-weight: 700; line-height: 1;
+    letter-spacing: 4px;
+  }
+  .xqm-id { font-family: 'Playfair Display', serif; font-size: 11pt; font-style: italic; color: var(--text); }
+  .xqm-divider { border-top: 0.3mm solid var(--gold-soft); }
+  .xqm-archetype { font-size: 7pt; color: var(--gold); letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; }
+  .xqm-quote {
+    font-family: 'Playfair Display', serif; font-size: 9.5pt;
+    font-style: italic; color: var(--text); line-height: 1.45;
+    display: -webkit-box; -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .xqm-quote .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-style: normal; font-weight: 700; }
+  .xqm-tag {
+    background: var(--red); color: white;
+    font-family: 'Noto Serif TC', serif; font-size: 8pt;
+    padding: 1mm 3mm; border-radius: 5mm;
+    letter-spacing: 2px; font-weight: 600;
+    align-self: center; justify-self: center;
+  }
+
+  .xq-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm;
+    overflow: hidden;
+  }
+  .xq-card {
+    border-radius: 2mm; padding: 4mm 5mm;
+    display: grid; grid-template-rows: auto auto 1fr;
+    gap: 2mm; overflow: hidden;
+  }
+  .xq-card.power    { background: linear-gradient(180deg, #FFF8E1, #F5EBD0); border: 0.5mm solid var(--gold); }
+  .xq-card.shadow   { background: linear-gradient(180deg, #F8EFD4, #ECDDC9); border: 0.5mm solid var(--yellow); }
+  .xq-card.optimum  { background: linear-gradient(180deg, #E8F0EA, #D9E8DD); border: 0.5mm solid var(--green); }
+  .xqc-eb {
+    font-size: 7pt; letter-spacing: 2.5px;
+    text-transform: uppercase; font-weight: 700;
+  }
+  .xq-card.power   .xqc-eb { color: var(--gold); }
+  .xq-card.shadow  .xqc-eb { color: var(--yellow); }
+  .xq-card.optimum .xqc-eb { color: var(--green); }
+  .xqc-title {
+    display: flex; align-items: baseline; gap: 3mm;
+    border-bottom: 0.2mm solid rgba(0,0,0,0.08);
+    padding-bottom: 2mm;
+  }
+  .xqc-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 20pt;
+    color: var(--red); font-weight: 700; line-height: 1;
+  }
+  .xq-card.shadow .xqc-hz { color: #8C6E47; }
+  .xq-card.optimum .xqc-hz { color: var(--green); }
+  .xqc-name { font-family: 'Playfair Display', serif; font-size: 11pt; color: var(--text); font-style: italic; font-weight: 600; }
+  .xqc-list { font-size: 8pt; line-height: 1.55; color: var(--text); display: flex; flex-direction: column; gap: 1.5mm; }
+  .xqc-item { display: grid; grid-template-columns: 4mm 1fr; gap: 2mm; }
+  .xqc-item .ico { color: var(--gold); font-weight: 700; }
+  .xq-card.shadow .xqc-item .ico { color: var(--yellow); }
+  .xq-card.optimum .xqc-item .ico { color: var(--green); }
+  .xqc-item strong { color: var(--red); }
+  .xqc-item .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+
+
+/* === page_20_kesimpulan.html === */
+
+  .content-kes { grid-template-rows: 32mm 78mm 1fr 18mm !important; gap: 3mm; }
+
+  /* HEADLINE BIG */
+  .kes-headline {
+    background: linear-gradient(135deg, #8B1A1A 0%, #6E1414 100%);
+    color: white; border-radius: 2mm;
+    padding: 5mm 8mm;
+    display: grid; grid-template-columns: auto 1fr auto;
+    gap: 6mm; align-items: center;
+    overflow: hidden; position: relative;
+  }
+  .kes-headline::before {
+    content: '結'; position: absolute;
+    bottom: -10mm; right: -2mm;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 80pt; color: rgba(255,255,255,0.06);
+    font-weight: 700; line-height: 1;
+  }
+  .kh-stamp {
+    width: 22mm; height: 22mm; background: white; color: var(--red);
+    font-family: 'Noto Serif TC', serif; font-size: 18pt; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 1.5mm; transform: rotate(-3deg);
+    box-shadow: 0 2mm 4mm rgba(0,0,0,0.2);
+    letter-spacing: 1px;
+  }
+  .kh-text { min-width: 0; }
+  .kh-eb {
+    font-size: 7pt; color: rgba(245,235,208,0.8);
+    letter-spacing: 4px; text-transform: uppercase;
+    font-weight: 600; margin-bottom: 1.5mm;
+  }
+  .kh-quote {
+    font-family: 'Playfair Display', serif; font-size: 17pt;
+    color: #F5EBD0; line-height: 1.25; font-style: italic;
+    font-weight: 600;
+  }
+  .kh-quote .hz { font-family: 'Noto Serif TC', serif; color: white; font-style: normal; font-weight: 700; }
+  .kh-num {
+    text-align: center; min-width: 22mm;
+    border-left: 0.3mm solid rgba(255,255,255,0.3);
+    padding-left: 5mm;
+  }
+  .kh-num .big {
+    font-family: 'Playfair Display', serif; font-size: 26pt;
+    color: #F5EBD0; font-weight: 700; line-height: 1;
+  }
+  .kh-num .lbl {
+    font-size: 6.5pt; color: rgba(245,235,208,0.7);
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-top: 1mm;
+  }
+
+  /* STATS GRID */
+  .kes-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 3mm; overflow: hidden;
+  }
+  .kes-stat {
+    background: var(--bg-card);
+    border: 0.4mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 3mm 4mm;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 1mm; overflow: hidden;
+    position: relative;
+  }
+  .kes-stat::before {
+    content: ''; position: absolute;
+    top: 0; left: 0; width: 100%; height: 1mm;
+  }
+  .kes-stat.s1::before { background: linear-gradient(90deg, var(--gold), transparent); }
+  .kes-stat.s2::before { background: linear-gradient(90deg, var(--red), transparent); }
+  .kes-stat.s3::before { background: linear-gradient(90deg, var(--green), transparent); }
+  .kes-stat.s4::before { background: linear-gradient(90deg, #4A7BA0, transparent); }
+  .kes-stat.s5::before { background: linear-gradient(90deg, #B85050, transparent); }
+  .kes-stat.s6::before { background: linear-gradient(90deg, #8C6E47, transparent); }
+
+  .ks-eb {
+    font-size: 6pt; letter-spacing: 2px;
+    text-transform: uppercase; font-weight: 700;
+    color: var(--gold);
+  }
+  .ks-num {
+    font-family: 'Playfair Display', serif; font-size: 19pt;
+    color: var(--red); font-weight: 700; line-height: 1;
+    display: flex; align-items: baseline; gap: 2mm;
+  }
+  .ks-num .hz {
+    font-family: 'Noto Serif TC', serif; font-size: 18pt;
+    line-height: 1;
+  }
+  .ks-num .unit {
+    font-family: 'Inter', sans-serif; font-size: 8pt;
+    color: var(--text-muted); font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  .ks-title {
+    font-family: 'Playfair Display', serif; font-size: 10pt;
+    color: var(--text); font-weight: 600; line-height: 1.2;
+    border-top: 0.2mm solid var(--gold-soft); padding-top: 1.2mm;
+  }
+  .ks-desc {
+    font-size: 6.5pt; color: var(--text-muted);
+    line-height: 1.35;
+    display: -webkit-box; -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .ks-desc .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+
+  /* HIDUP MAP — visual summary */
+  .kes-lifemap {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    display: grid; grid-template-rows: auto 1fr;
+    gap: 3mm; overflow: hidden;
+  }
+  .klm-eyebrow {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 0.3mm solid var(--gold-soft); padding-bottom: 1.5mm;
+  }
+  .klm-eyebrow .label { font-family: 'Noto Serif TC', serif; font-size: 12pt; color: var(--red); letter-spacing: 4px; font-weight: 600; }
+  .klm-eyebrow .id { font-family: 'Playfair Display', serif; font-size: 9pt; font-style: italic; color: var(--text-muted); margin-left: 4mm; }
+  .klm-eyebrow .meta { font-size: 6.5pt; color: var(--text-muted); letter-spacing: 1.5px; text-transform: uppercase; }
+
+  .klm-content {
+    display: grid; grid-template-columns: 1fr 70mm;
+    gap: 5mm; overflow: hidden;
+  }
+
+  .klm-narrative {
+    display: grid; grid-template-rows: 1fr 1fr 1fr;
+    gap: 2mm; overflow: hidden;
+  }
+  .klm-row {
+    display: grid; grid-template-columns: 14mm 1fr;
+    gap: 3mm; align-items: center;
+    padding: 2mm 3mm;
+    background: linear-gradient(90deg, var(--gold-bg), transparent);
+    border-left: 1mm solid var(--gold);
+    border-radius: 0 1mm 1mm 0;
+    overflow: hidden;
+  }
+  .klm-row.now {
+    background: linear-gradient(90deg, rgba(139,26,26,0.08), transparent);
+    border-left-color: var(--red);
+  }
+  .klm-row-icon {
+    font-family: 'Noto Serif TC', serif; font-size: 16pt;
+    color: var(--red); font-weight: 700; text-align: center; line-height: 1;
+  }
+  .klm-row-text {
+    font-size: 7pt; line-height: 1.3; color: var(--text);
+    overflow: hidden;
+  }
+  .klm-row-text strong { color: var(--red); }
+  .klm-row-text .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 700; }
+  .klm-row-text .lbl {
+    display: block; font-size: 6pt; color: var(--gold);
+    letter-spacing: 1.5px; text-transform: uppercase;
+    font-weight: 600; margin-bottom: 0.5mm;
+  }
+
+  .klm-position {
+    background: linear-gradient(180deg, #FFF8E1, #F5EBD0);
+    border: 0.4mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 4mm 4mm;
+    display: grid; grid-template-rows: auto auto auto 1fr auto;
+    gap: 1.5mm;
+    text-align: center; overflow: hidden;
+  }
+  .klp-eb { font-size: 6.5pt; color: var(--gold); letter-spacing: 2.5px; text-transform: uppercase; font-weight: 700; }
+  .klp-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 32pt;
+    color: var(--red); font-weight: 700; line-height: 1;
+    letter-spacing: 4px;
+  }
+  .klp-id { font-family: 'Playfair Display', serif; font-size: 10pt; color: var(--text); font-style: italic; font-weight: 600; }
+  .klp-bar {
+    display: flex; gap: 0.5mm; height: 6mm;
+    border-radius: 3mm; overflow: hidden;
+    background: rgba(0,0,0,0.05); padding: 0.5mm;
+  }
+  .klp-bar-cell { flex: 1; border-radius: 1mm; background: rgba(201,169,97,0.3); }
+  .klp-bar-cell.past { background: rgba(201,169,97,0.4); }
+  .klp-bar-cell.now { background: linear-gradient(180deg, #C45F5F, #8C3535); }
+  .klp-bar-cell.future { background: rgba(201,169,97,0.15); }
+  .klp-meta {
+    font-size: 7pt; color: var(--text-muted);
+    letter-spacing: 0.5px; line-height: 1.4;
+  }
+  .klp-meta strong { color: var(--red); font-family: 'Noto Serif TC', serif; }
+
+  .kes-bridge {
+    background: linear-gradient(90deg, var(--gold-bg), transparent);
+    border-left: 1mm solid var(--gold);
+    border-radius: 0 1.5mm 1.5mm 0;
+    padding: 3mm 5mm;
+    display: grid; grid-template-columns: 1fr auto;
+    gap: 5mm; align-items: center;
+    overflow: hidden;
+  }
+  .kbg-text {
+    font-family: 'Playfair Display', serif; font-size: 10pt;
+    color: var(--text); line-height: 1.4; font-style: italic;
+    display: -webkit-box; -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .kbg-text strong { color: var(--red); font-style: normal; }
+  .kbg-text .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-style: normal; font-weight: 700; }
+  .kbg-arrow {
+    background: var(--red); color: white;
+    font-family: 'Playfair Display', serif; font-size: 9pt;
+    font-weight: 600;
+    padding: 2mm 4mm; border-radius: 5mm;
+    letter-spacing: 1px; white-space: nowrap;
+  }
+  .kbg-arrow .hz { font-family: 'Noto Serif TC', serif; margin-right: 1mm; }
+
+
+/* === page_synthesis.html === */
+
+  /* PAGE: Synthesis */
+  .content-synth {
+    grid-template-rows: 30mm 50mm 70mm 32mm !important;
+    gap: 4mm;
+  }
+
+  /* HEADLINE INSIGHT */
+  .syn-headline {
+    background: linear-gradient(135deg, #FFFEF8 0%, #F5EBD0 50%, #FFFEF8 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 4mm 8mm;
+    display: grid;
+    grid-template-columns: 16mm 1fr 16mm;
+    gap: 4mm;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .syn-headline::before {
+    content: '命'; position: absolute;
+    bottom: -8mm; right: -4mm;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 60pt; color: rgba(139,26,26,0.04);
+    font-weight: 700; line-height: 1;
+    pointer-events: none;
+  }
+  .syn-seal {
+    width: 16mm; height: 16mm;
+    background: var(--red);
+    color: white;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 14pt; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 1mm;
+    box-shadow: 0 1mm 3mm rgba(139,26,26,0.3);
+    transform: rotate(-3deg);
+  }
+  .syn-headline-text {
+    text-align: center; min-width: 0; overflow: hidden;
+  }
+  .syn-eyebrow {
+    font-size: 6.5pt; color: var(--gold);
+    letter-spacing: 4px; text-transform: uppercase;
+    font-weight: 700; margin-bottom: 1mm;
+  }
+  .syn-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 16pt; color: var(--red);
+    line-height: 1.2; font-style: italic;
+    font-weight: 600;
+  }
+  .syn-quote .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--text); font-style: normal;
+    font-weight: 700; margin: 0 1mm;
+  }
+  .syn-attrib {
+    font-size: 6.5pt; color: var(--text-muted);
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-top: 1.5mm;
+  }
+
+  /* TRIO CARDS */
+  .syn-trio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4mm;
+    overflow: hidden;
+  }
+  .syn-card {
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 1.5mm;
+    overflow: hidden;
+    position: relative;
+  }
+  .syn-card.strength {
+    background: linear-gradient(180deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+  }
+  .syn-card.challenge {
+    background: linear-gradient(180deg, #F8EFD4 0%, #ECDDC9 100%);
+    border: 0.5mm solid var(--yellow);
+  }
+  .syn-card.action {
+    background: linear-gradient(180deg, #E8F0EA 0%, #D9E8DD 100%);
+    border: 0.5mm solid var(--green);
+  }
+  .syn-card-num {
+    position: absolute;
+    top: -1mm; right: -1mm;
+    width: 12mm; height: 12mm;
+    background: white;
+    border: 0.4mm solid;
+    border-radius: 0 2mm 0 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 14pt; font-weight: 700;
+    line-height: 1;
+  }
+  .strength .syn-card-num { color: var(--gold); border-color: var(--gold); }
+  .challenge .syn-card-num { color: var(--yellow); border-color: var(--yellow); }
+  .action .syn-card-num { color: var(--green); border-color: var(--green); }
+
+  .syn-card-eyebrow {
+    font-size: 6.5pt; letter-spacing: 2.5px;
+    text-transform: uppercase; font-weight: 700;
+  }
+  .strength .syn-card-eyebrow { color: var(--gold); }
+  .challenge .syn-card-eyebrow { color: var(--yellow); }
+  .action .syn-card-eyebrow { color: var(--green); }
+
+  .syn-card-title {
+    display: flex; align-items: baseline; gap: 2mm;
+    flex-wrap: wrap; min-width: 0;
+  }
+  .syn-card-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 18pt; color: var(--red);
+    font-weight: 700; line-height: 1;
+  }
+  .challenge .syn-card-hz { color: #8C6E47; }
+  .action .syn-card-hz { color: var(--green); }
+  .syn-card-id {
+    font-family: 'Playfair Display', serif;
+    font-size: 10pt; color: var(--text);
+    font-style: italic; font-weight: 600;
+  }
+
+  .syn-card-body {
+    font-size: 7.8pt; line-height: 1.5;
+    color: var(--text);
+    border-top: 0.2mm solid rgba(0,0,0,0.1);
+    padding-top: 1.5mm;
+    display: -webkit-box; -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .syn-card-body strong { color: var(--red); }
+  .syn-card-body .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red); font-weight: 600;
+  }
+
+  /* ACTION ITEMS */
+  .syn-actions-frame {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 3.5mm 5mm;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 2mm;
+    overflow: hidden;
+  }
+  .syn-actions-eyebrow {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 0.3mm solid var(--gold-soft);
+    padding-bottom: 1.5mm;
+  }
+  .syn-actions-eyebrow .label {
+    font-family: 'Noto Serif TC', serif; font-size: 12pt;
+    color: var(--red); letter-spacing: 4px; font-weight: 600;
+  }
+  .syn-actions-eyebrow .id {
+    font-family: 'Playfair Display', serif; font-size: 9pt;
+    font-style: italic; color: var(--text-muted); margin-left: 4mm;
+  }
+  .syn-actions-eyebrow .meta {
+    font-size: 6.5pt; color: var(--text-muted);
+    letter-spacing: 1.5px; text-transform: uppercase;
+  }
+
+  .syn-action-list {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1.5mm;
+    overflow: hidden;
+  }
+  .syn-action {
+    display: grid;
+    grid-template-columns: 9mm 1fr auto;
+    gap: 4mm; align-items: center;
+    padding: 1.5mm 3mm;
+    background: white;
+    border-left: 1mm solid var(--gold);
+    border-radius: 0 1mm 1mm 0;
+    overflow: hidden;
+  }
+  .syn-action-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 16pt; color: var(--red);
+    font-weight: 700; line-height: 1;
+    text-align: center;
+    border-right: 0.3mm solid var(--gold-soft);
+    padding-right: 2mm;
+  }
+  .syn-action-content { min-width: 0; overflow: hidden; }
+  .syn-action-title {
+    font-size: 9.5pt; font-weight: 600;
+    color: var(--text); line-height: 1.2;
+  }
+  .syn-action-title strong { color: var(--red); }
+  .syn-action-title .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red); font-weight: 700; margin: 0 1mm;
+  }
+  .syn-action-context {
+    font-size: 7pt; color: var(--text-muted);
+    line-height: 1.35; margin-top: 0.5mm;
+    display: -webkit-box; -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .syn-action-tag {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 7pt; color: var(--gold);
+    background: var(--gold-bg);
+    padding: 0.5mm 2mm;
+    border-radius: 5mm;
+    border: 0.2mm solid var(--gold-soft);
+    letter-spacing: 0.5px; font-weight: 600;
+    white-space: nowrap;
+  }
+
+  /* MANTRA + TIMELINE */
+  .syn-bottom {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 4mm;
+    overflow: hidden;
+  }
+  .syn-mantra {
+    background: linear-gradient(135deg, #8B1A1A 0%, #6E1414 100%);
+    color: white;
+    border-radius: 2mm;
+    padding: 4mm 6mm;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5mm;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .syn-mantra::before {
+    content: '"'; position: absolute;
+    top: -3mm; left: 2mm;
+    font-family: 'Playfair Display', serif;
+    font-size: 50pt; color: rgba(255,255,255,0.1);
+    line-height: 1; font-weight: 700;
+  }
+  .syn-mantra-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 22pt; font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 1;
+    color: #F5EBD0;
+    text-shadow: 0 1mm 2mm rgba(0,0,0,0.2);
+  }
+  .syn-mantra-text { min-width: 0; overflow: hidden; }
+  .syn-mantra-eyebrow {
+    font-size: 6pt; color: rgba(245,235,208,0.7);
+    letter-spacing: 3px; text-transform: uppercase;
+    font-weight: 600; margin-bottom: 1mm;
+  }
+  .syn-mantra-pinyin {
+    font-family: 'Playfair Display', serif;
+    font-size: 9.5pt; font-style: italic;
+    color: #E5D3A1;
+  }
+  .syn-mantra-meaning {
+    font-size: 7.2pt; line-height: 1.35; margin-top: 1mm;
+    color: rgba(255,255,255,0.92);
+    overflow: hidden;
+  }
+
+  .syn-timeline-mini {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 3mm 4mm;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 1.5mm;
+    overflow: hidden;
+  }
+  .stm-eyebrow {
+    font-size: 6pt; color: var(--gold);
+    letter-spacing: 2px; text-transform: uppercase;
+    font-weight: 700;
+  }
+  .stm-bar {
+    display: flex; gap: 0.4mm;
+    height: 100%; align-items: stretch;
+  }
+  .stm-cell {
+    flex: 1;
+    border-radius: 0.6mm;
+    background: rgba(0,0,0,0.04);
+    position: relative;
+    min-width: 0;
+  }
+  .stm-cell.past   { background: #ECDDC9; opacity: 0.55; }
+  .stm-cell.now    {
+    background: linear-gradient(180deg, #C45F5F, #8C3535);
+    box-shadow: 0 0 0 0.3mm var(--gold);
+  }
+  .stm-cell.next   {
+    background: rgba(196,95,95,0.4);
+    border: 0.2mm dashed var(--red-bad);
+  }
+  .stm-cell.future { background: rgba(0,0,0,0.05); }
+  .stm-now-label {
+    position: absolute; top: -2.5mm; left: 50%;
+    transform: translateX(-50%);
+    background: var(--red); color: white;
+    font-size: 5pt; padding: 0.3mm 1.5mm;
+    border-radius: 1mm; letter-spacing: 1px; font-weight: 700;
+    white-space: nowrap;
+  }
+  .stm-axis {
+    display: flex; justify-content: space-between;
+    font-size: 5.8pt; color: var(--text-muted);
+    letter-spacing: 0.3px;
+  }
+  .stm-axis .now-mark {
+    color: var(--red); font-weight: 700;
+  }
+
+
+/* === page_22_glossary.html === */
+
+  section.page.no-bar { grid-template-rows: 14mm 1fr 22mm !important; }
+  .content-glo { grid-template-rows: 1fr !important; gap: 0; }
+
+  .glo-frame {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    display: flex; flex-direction: column;
+    gap: 2.5mm; overflow: hidden;
+  }
+  .glo-eyebrow {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 0.3mm solid var(--gold-soft); padding-bottom: 1.5mm;
+    flex-shrink: 0;
+  }
+  .glo-eyebrow .label { font-family: 'Noto Serif TC', serif; font-size: 13pt; color: var(--red); letter-spacing: 4px; font-weight: 600; }
+  .glo-eyebrow .id { font-family: 'Playfair Display', serif; font-size: 9pt; font-style: italic; color: var(--text-muted); margin-left: 4mm; }
+  .glo-eyebrow .meta { font-size: 6.5pt; color: var(--text-muted); letter-spacing: 1.5px; text-transform: uppercase; }
+
+  /* Each section = full-width strip stacked vertically */
+  .glo-section {
+    display: flex; flex-direction: column; gap: 1.2mm;
+    overflow: hidden;
+  }
+  .glo-section-head {
+    display: flex; align-items: baseline; gap: 3mm;
+    background: linear-gradient(90deg, var(--gold-bg), transparent);
+    border-left: 1mm solid var(--gold);
+    border-radius: 0 1mm 1mm 0;
+    padding: 1.2mm 3mm;
+  }
+  .glo-section-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 11pt;
+    color: var(--red); font-weight: 700; letter-spacing: 2px;
+    line-height: 1;
+  }
+  .glo-section-id {
+    font-family: 'Playfair Display', serif; font-size: 8.5pt;
+    color: var(--text); font-weight: 600; font-style: italic;
+  }
+  .glo-section-count {
+    font-family: 'Inter', sans-serif; font-size: 6pt;
+    color: var(--text-muted); letter-spacing: 1.5px;
+    text-transform: uppercase; margin-left: auto;
+  }
+
+  /* Term grid — multi-column flexible */
+  .glo-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8mm 5mm;
+    padding-left: 4mm;
+  }
+  .glo-list.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .glo-row {
+    display: grid; grid-template-columns: 16mm 1fr;
+    gap: 2mm; align-items: baseline;
+    padding: 0.6mm 0;
+    border-bottom: 0.12mm dotted var(--gold-soft);
+    font-size: 7pt;
+    line-height: 1.25;
+    overflow: hidden; min-width: 0;
+  }
+  .glo-term {
+    font-family: 'Noto Serif TC', serif; font-size: 8.5pt;
+    color: var(--red); font-weight: 700; line-height: 1;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .glo-term .py {
+    font-family: 'Playfair Display', serif; font-size: 5.8pt;
+    color: var(--text-muted); font-style: italic;
+    display: block; margin-top: 0.3mm;
+    font-weight: 500; letter-spacing: 0.3px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .glo-meaning {
+    color: var(--text); font-size: 6.8pt; line-height: 1.3;
+    overflow: hidden;
+    display: -webkit-box; -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .glo-meaning strong { color: var(--red); }
+
+
+/* === page_23_disclaimer.html === */
+
+  .content-dis { grid-template-rows: 50mm 1fr 35mm !important; gap: 5mm; }
+
+  .dis-hero {
+    background: linear-gradient(135deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 5mm 8mm;
+    display: grid; grid-template-columns: auto 1fr;
+    gap: 6mm; align-items: center;
+    overflow: hidden; position: relative;
+  }
+  .dis-hero::before {
+    content: '告'; position: absolute;
+    bottom: -10mm; right: -2mm;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 90pt; color: rgba(139,26,26,0.04);
+    font-weight: 700; line-height: 1;
+  }
+  .dh-seal {
+    width: 22mm; height: 22mm; background: var(--red); color: white;
+    font-family: 'Noto Serif TC', serif; font-size: 16pt; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 1.5mm; transform: rotate(-3deg);
+    letter-spacing: 1px;
+    box-shadow: 0 2mm 4mm rgba(139,26,26,0.3);
+  }
+  .dh-text { min-width: 0; }
+  .dh-eb { font-size: 7pt; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; font-weight: 700; }
+  .dh-quote {
+    font-family: 'Playfair Display', serif; font-size: 14pt;
+    color: var(--text); line-height: 1.35; font-style: italic;
+    margin-top: 1.5mm; font-weight: 600;
+  }
+  .dh-quote .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-style: normal; font-weight: 700; }
+
+  /* Cards */
+  .dis-cards {
+    display: grid; grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4mm; overflow: hidden;
+  }
+  .dc-card {
+    border-radius: 2mm; padding: 3mm 4mm;
+    display: grid; grid-template-rows: auto auto 1fr;
+    gap: 1mm; overflow: hidden;
+  }
+  .dc-hz { font-size: 14pt !important; }
+  .dc-name { font-size: 9.5pt !important; }
+  .dc-list { font-size: 6.5pt !important; line-height: 1.3 !important; }
+  .dc-card.dont {
+    background: var(--red-bad-bg);
+    border: 0.4mm solid var(--red-bad);
+  }
+  .dc-card.do {
+    background: var(--green-bg);
+    border: 0.4mm solid var(--green);
+  }
+  .dc-card.scope {
+    background: var(--bg-card);
+    border: 0.4mm solid var(--gold-soft);
+  }
+  .dc-card.legal {
+    background: var(--bg-card);
+    border: 0.4mm solid var(--gold-soft);
+  }
+  .dc-eb {
+    font-size: 7pt; letter-spacing: 2.5px;
+    text-transform: uppercase; font-weight: 700;
+  }
+  .dc-card.dont  .dc-eb { color: var(--red-bad); }
+  .dc-card.do    .dc-eb { color: var(--green); }
+  .dc-card.scope .dc-eb { color: var(--gold); }
+  .dc-card.legal .dc-eb { color: var(--gold); }
+  .dc-title {
+    display: flex; align-items: baseline; gap: 3mm;
+    border-bottom: 0.2mm solid rgba(0,0,0,0.08);
+    padding-bottom: 1.5mm;
+  }
+  .dc-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 18pt;
+    font-weight: 700; line-height: 1;
+  }
+  .dc-card.dont  .dc-hz { color: var(--red-bad); }
+  .dc-card.do    .dc-hz { color: var(--green); }
+  .dc-card.scope .dc-hz { color: var(--red); }
+  .dc-card.legal .dc-hz { color: var(--red); }
+  .dc-name { font-family: 'Playfair Display', serif; font-size: 11pt; color: var(--text); font-style: italic; font-weight: 600; }
+  .dc-list { font-size: 7pt; line-height: 1.35; color: var(--text); display: flex; flex-direction: column; gap: 1.2mm; }
+  .dc-item { display: grid; grid-template-columns: 4mm 1fr; gap: 2mm; }
+  .dc-item .ico { font-weight: 700; }
+  .dc-card.dont  .dc-item .ico { color: var(--red-bad); }
+  .dc-card.do    .dc-item .ico { color: var(--green); }
+  .dc-card.scope .dc-item .ico { color: var(--gold); }
+  .dc-card.legal .dc-item .ico { color: var(--gold); }
+  .dc-item strong { color: var(--red); }
+  .dc-item .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+
+  /* Closing */
+  .dis-close {
+    background: linear-gradient(135deg, #8B1A1A 0%, #6E1414 100%);
+    color: white; border-radius: 2mm;
+    padding: 5mm 8mm;
+    display: grid; grid-template-columns: 1fr auto;
+    gap: 6mm; align-items: center;
+    overflow: hidden; position: relative;
+  }
+  .dc-close-text { min-width: 0; overflow: hidden; }
+  .dc-close-eb {
+    font-size: 6.5pt; color: rgba(245,235,208,0.7);
+    letter-spacing: 3px; text-transform: uppercase;
+    font-weight: 600; margin-bottom: 1mm;
+  }
+  .dc-close-quote {
+    font-family: 'Playfair Display', serif; font-size: 12pt;
+    color: #F5EBD0; line-height: 1.4; font-style: italic;
+    display: -webkit-box; -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .dc-close-quote .hz { font-family: 'Noto Serif TC', serif; color: white; font-style: normal; font-weight: 700; }
+  .dc-close-mark {
+    font-family: 'Noto Serif TC', serif; font-size: 30pt;
+    color: #F5EBD0; font-weight: 700; line-height: 1;
+    letter-spacing: 4px;
+    text-shadow: 0 1mm 3mm rgba(0,0,0,0.2);
+  }
+
+
+
+@page { size: A4 portrait; margin: 0; }
+html, body { background: white !important; margin: 0 !important; padding: 0 !important; }
+.page {
+  page-break-after: always !important;
+  page-break-inside: avoid !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+.page:last-child { page-break-after: auto !important; }
+.ind-icon, .toc-row .ico, .pal-action .ico, .dc-item .ico, .xqc-item .ico {
+  font-family: 'Segoe UI Emoji','Segoe UI Symbol','Inter',system-ui,sans-serif !important;
+}
+</style>
+</head>
+<body>
+
+<section class="page cover">
+  <div class="cover-frame">
+    <span class="cv-watermark tl">福</span>
+    <span class="cv-watermark br">壽</span>
+
+    <div class="cv-eyebrow">命 · Laporan Ramalan Tionghoa Klasik · 命</div>
+
+    <div>
+      <div class="cv-title-cn">命</div>
+      <div class="cv-title-id">Mìng — Takdir &amp; Bagan Hidup</div>
+    </div>
+
+    <div>
+      <div class="cv-shio-frame"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Kerbau-Merah.svg" alt="Kerbau"></div>
+      <div class="cv-name-row">
+        <div class="cv-name">Test</div>
+        <div class="cv-name-cn">測</div>
+      </div>
+
+      <div class="cv-info-panel">
+        <div class="row"><span class="lbl">Tanggal Lahir (Indonesia)</span><span class="colon">:</span><span class="val">28 Oktober 2009 <em>(Rabu)</em></span></div>
+        <div class="row"><span class="lbl">Tanggal Lahir (Tionghoa)</span><span class="colon">:</span><span class="val">tanggal 11 bulan 9 tahun <span class="hz">己丑</span> <em>(Ji Chou · 2009)</em></span></div>
+        <div class="row"><span class="lbl">Waktu Lahir</span><span class="colon">:</span><span class="val">pukul 11:25 <em>(siang · 午時)</em></span></div>
+        <div class="row"><span class="lbl">Shio</span><span class="colon">:</span><span class="val"><span class="hz">丑</span> Kerbau</span></div>
+        <div class="row"><span class="lbl">Penguasa Hari</span><span class="colon">:</span><span class="val">Api Matahari <span class="hz">丙火</span></span></div>
+        <div class="row"><span class="lbl">Elemen Utama</span><span class="colon">:</span><span class="val">Logam <span class="hz">金</span></span></div>
+      </div>
+    </div>
+
+    <div class="cv-footer">
+      四柱論命附加紫微斗數 · Laporan 23 Halaman · Mei 2026
+    </div>
+  </div>
+</section>
+
+
+<section class="page no-bar">
+  <header class="page-header">
+    <div class="h-num">02</div>
+    <div class="h-titles">
+      <div class="h-cn">目 錄</div>
+      <div class="h-id">Daftar Isi</div>
+    </div>
+    <div class="h-section">Pendahuluan</div>
+  </header>
+
+  <main class="content content-toc">
+    <div class="toc-frame">
+      <div class="toc-eyebrow">
+        <div class="cn">目 錄</div>
+        <div class="id">Mù Lù — Peta Perjalanan Bagan Anda</div>
+      </div>
+
+      <div class="toc-list">
+<!--TOC_AUTO-->
+        <div class="toc-section">
+          <div class="num">序</div>
+          <div class="title">序 言<span class="id">Pendahuluan · Pages 1–4</span></div>
+        </div>
+        <div class="toc-rows">
+          <div class="toc-row"><div class="pg">01</div><div class="ico">命</div><div class="name"><strong>命</strong>SAMPUL</div><div></div></div>
+          <div class="toc-row"><div class="pg">02</div><div class="ico">目</div><div class="name"><strong>目錄</strong>DAFTAR ISI</div><div></div></div>
+          <div class="toc-row"><div class="pg">03</div><div class="ico">引</div><div class="name"><strong>引言</strong>PENGANTAR</div><div></div></div>
+          <div class="toc-row"><div class="pg">04</div><div class="ico">身</div><div class="name"><strong>身份</strong>PROFIL DIRI</div><div></div></div>
+        </div>
+        <div class="toc-section">
+          <div class="num">壹</div>
+          <div class="title">八字 / 紫微<span class="id">Bagian Inti · Pages 5–8</span></div>
+        </div>
+        <div class="toc-rows">
+          <div class="toc-row"><div class="pg">05</div><div class="ico">八</div><div class="name"><strong>八字</strong>BA ZI</div><div></div></div>
+          <div class="toc-row"><div class="pg">06</div><div class="ico">日</div><div class="name"><strong>日主</strong>PENGUASA HARI</div><div></div></div>
+          <div class="toc-row"><div class="pg">07</div><div class="ico">婚</div><div class="name"><strong>婚配</strong>PASANGAN</div><div></div></div>
+          <div class="toc-row"><div class="pg">08</div><div class="ico">性</div><div class="name"><strong>性情</strong>KEPRIBADIAN</div><div></div></div>
+        </div>
+        <div class="toc-section">
+          <div class="num">叁</div>
+          <div class="title">總 結<span class="id">Penutup · Pages 9–12</span></div>
+        </div>
+        <div class="toc-rows">
+          <div class="toc-row"><div class="pg">09</div><div class="ico">總</div><div class="name"><strong>總結</strong>KESIMPULAN</div><div></div></div>
+          <div class="toc-row"><div class="pg">10</div><div class="ico">合</div><div class="name"><strong>合一</strong>SINTESIS</div><div></div></div>
+          <div class="toc-row"><div class="pg">11</div><div class="ico">詞</div><div class="name"><strong>詞彙</strong>GLOSARIUM</div><div></div></div>
+          <div class="toc-row"><div class="pg">12</div><div class="ico">免</div><div class="name"><strong>免責</strong>PENAFIAN</div><div></div></div>
+        </div>
+<!--/TOC_AUTO-->
+      </div>
+
+      <div class="toc-foot">
+        <span class="hz">命</span> Setiap bab membentuk satu peta · <span class="hz">運</span> Anda yang menentukan arah <span class="hz">命</span>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      Bagan ini bukan ramalan kaku, melainkan <em>peta pola</em>: 23 halaman menyajikan karakter, hubungan, fase hidup, dan saran praktis berdasarkan 四柱論命 + 紫微斗數 + 陽宅.
+    </div>
+    <div class="footer-meta">
+      <span>Halaman 2 / 12</span>
+      <span>Ramalan 命</span>
+    </div>
+  </footer>
+</section>
+
+
+<section class="page no-bar">
+  <header class="page-header">
+    <div class="h-num">03</div>
+    <div class="h-titles">
+      <div class="h-cn">引 言</div>
+      <div class="h-id">Pengantar &amp; Cara Membaca</div>
+    </div>
+    <div class="h-section">Pendahuluan</div>
+  </header>
+
+  <main class="content content-intro">
+
+    <div class="intro-hero">
+      <div>
+        <div class="intro-quote">
+          "<span class="hz">命</span> bukan vonis. Ia adalah <strong>pola yang telah ditanam</strong> sejak lahir — sedangkan <strong>pilihan harian</strong> adalah air yang menyiraminya. Bagan ini cermin pola; kunci tetap di tangan Anda."
+        </div>
+        <div class="intro-quote-attrib">— Filosofi Klasik Bazi 八字 &amp; Zi Wei 紫微</div>
+      </div>
+      <div class="intro-seal">命運</div>
+    </div>
+
+    <div class="intro-cards">
+
+      <div class="intro-card">
+        <div class="ic-num">1<span class="hz">柱</span></div>
+        <div class="ic-title">Apa Itu 八字四柱?</div>
+        <div class="ic-body">
+          <strong>BaZi (八字)</strong> = "Delapan Karakter" = 4 pilar (Tahun · Bulan · Hari · Jam) yang masing-masing punya 1 Stem (天干) + 1 Branch (地支). Total 8 karakter Hanzi yang merangkum DNA energi Anda. <strong>Penguasa Hari</strong> (日主, Pilar Hari) adalah inti dari semua analisis di Bagian I — semua interpretasi dikalibrasi terhadap stem Pilar Hari Anda.
+        </div>
+      </div>
+
+      <div class="intro-card">
+        <div class="ic-num">2<span class="hz">微</span></div>
+        <div class="ic-title">Apa Itu 紫微斗數?</div>
+        <div class="ic-body">
+          <strong>Zi Wei Dou Shu (紫微斗數)</strong> = "Pemetaan Bintang Ungu" = sistem 12 istana (宮) yang masing-masing dihuni bintang-bintang nasib. Mengukur bidang hidup spesifik: <span class="hz">命</span> diri, <span class="hz">夫妻</span> pasangan, <span class="hz">財帛</span> rezeki, <span class="hz">官祿</span> karir, dst. Bagian II laporan ini.
+        </div>
+      </div>
+
+      <div class="intro-card">
+        <div class="ic-num">3<span class="hz">讀</span></div>
+        <div class="ic-title">Cara Membaca</div>
+        <div class="ic-body">
+          Setiap halaman punya <strong>1 visualisasi anchor</strong> + caption ringkas. Hanzi besar = jangkar makna, Latin di sekelilingnya = penjelasan. Color encoding: <strong>hijau</strong> = baik / 喜用神; <strong>merah</strong> = waspada / 忌神; <strong>emas</strong> = neutral / dasar. Halaman 22 berisi glossary lengkap.
+        </div>
+      </div>
+
+      <div class="intro-card">
+        <div class="ic-num">4<span class="hz">用</span></div>
+        <div class="ic-title">Cara Pakai</div>
+        <div class="ic-body">
+          Baca <strong>halaman 4 (Profil)</strong> dan <strong>halaman 21 (Aksi)</strong> dulu — itu inti praktis. Halaman tafsir di tengah adalah konteks pendalaman. Kembali ke laporan ini setiap pergantian fase hidup (pensiun, anak menikah, pindah kota) — interpretasi-nya akan terasa berbeda di setiap musim.
+        </div>
+      </div>
+
+    </div>
+
+    <div class="intro-disclaimer">
+      <div class="id-label">⚠</div>
+      <div class="id-text">
+        <strong>Disclaimer:</strong> Ramalan Tionghoa adalah bagian dari budaya klasik, <strong>bukan ilmu pasti</strong>. Bagan ini tidak menggantikan keputusan medis, hukum, atau finansial profesional. Pakai sebagai referensi tradisi &amp; eksplorasi diri — keputusan tetap ada di tangan Anda.
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      Bagan dibaca seperti peta lama: jangan ditelan mentah, juga jangan dibuang. Kebijaksanaannya muncul saat Anda <em>memeriksa diri di cerminnya</em>.
+    </div>
+    <div class="footer-meta">
+      <span>Halaman 3 / 12</span>
+      <span>Ramalan 命</span>
+    </div>
+  </footer>
+</section>
+
+
+<section class="page">
+
+  <!-- KEPALA -->
+  <header class="page-header">
+    <div class="h-num">04</div>
+    <div class="h-titles">
+      <div class="h-cn">四 柱</div>
+      <div class="h-id">Empat Pilar Nasib</div>
+    </div>
+    <div class="h-section">Profil &amp; Bagan Utama</div>
+  </header>
+
+  <!-- BAR SUBJEK -->
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Kerbau-Merah.svg" alt="Kerbau"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Test · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">丑 Kerbau</span></div>
+      <div class="subject-detail">28 Oktober 2009 · 11:25 · Wanita · 民國 98 年 9 月 11 日</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">丙火 · Api Matahari</div>
+    </div>
+  </div>
+
+  <!-- KONTEN -->
+  <main class="content content-profile">
+
+    <!-- TAMPILAN AGUNG 4-PILAR -->
+    <div class="pilar-grand">
+
+      <!-- JAM (時) -->
+      <div class="pilar-tablet" data-pos="hour">
+        <div class="t-eyebrow">
+          <span class="cn">時 柱</span>
+          <span>Pilar Jam</span>
+        </div>
+        <div class="t-block">
+          <div class="t-hanzi stem">甲</div>
+          <div class="t-pill"><span class="hz">木</span>Kayu Yang</div>
+        </div>
+        <div class="t-divider"></div>
+        <div class="t-block">
+          <div class="t-hanzi branch">午</div>
+          <div class="t-pill"><span class="hz">馬</span>Kuda</div>
+        </div>
+      </div>
+
+      <!-- DAY (日) — PENGUASA HARI -->
+      <div class="pilar-tablet day-master" data-pos="day">
+        <div class="dm-crown">★ 日主 · PENGUASA HARI ★</div>
+        <div class="t-eyebrow">
+          <span class="cn">日 柱</span>
+          <span>Pilar Hari</span>
+        </div>
+        <div class="t-block">
+          <div class="t-hanzi stem">丙</div>
+          <div class="t-pill"><span class="hz">火</span>Api Yang</div>
+        </div>
+        <div class="t-divider"></div>
+        <div class="t-block">
+          <div class="t-hanzi branch">午</div>
+          <div class="t-pill"><span class="hz">馬</span>Kuda</div>
+        </div>
+      </div>
+
+      <!-- BULAN (月) -->
+      <div class="pilar-tablet" data-pos="month">
+        <div class="t-eyebrow">
+          <span class="cn">月 柱</span>
+          <span>Pilar Bulan</span>
+        </div>
+        <div class="t-block">
+          <div class="t-hanzi stem">甲</div>
+          <div class="t-pill"><span class="hz">木</span>Kayu Yang</div>
+        </div>
+        <div class="t-divider"></div>
+        <div class="t-block">
+          <div class="t-hanzi branch">戌</div>
+          <div class="t-pill"><span class="hz">狗</span>Anjing</div>
+        </div>
+      </div>
+
+      <!-- TAHUN (年) -->
+      <div class="pilar-tablet" data-pos="year">
+        <div class="t-eyebrow">
+          <span class="cn">年 柱</span>
+          <span>Pilar Tahun</span>
+        </div>
+        <div class="t-block">
+          <div class="t-hanzi stem">己</div>
+          <div class="t-pill"><span class="hz">土</span>Tanah Yin</div>
+        </div>
+        <div class="t-divider"></div>
+        <div class="t-block">
+          <div class="t-hanzi branch">丑</div>
+          <div class="t-pill"><span class="hz">牛</span>Kerbau</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BAGIAN WU XING -->
+    <div class="wuxing-section">
+      <div class="wux-title-block">
+        <div class="wux-eyebrow">五 行 分 布</div>
+        <div class="wux-title">五 行</div>
+        <div class="wux-subtitle">Lima Elemen</div>
+        <div class="wux-insight">
+          <strong>Logam &amp; Air dominan</strong> (金 28.6% · 水 28.6%) didukung Tanah (土 21.4%). Penguasa Hari 丙火 cenderung lemah karena ditekan dua 巳 火 — energinya perlu sokongan <strong>金 水</strong> (logam menopang, air meredam api), hindari tambahan <strong>火 木</strong>.
+        </div>
+      </div>
+
+      <div class="wux-bars-area">
+        <div class="wux-axis-top"><span>0</span><span>2</span><span>4</span><span>6</span><span>4.0 Total</span></div>
+        <div class="wux-stack">
+          <div class="seg el-mu"    style="flex:2.0"><span class="hz">木</span><span class="pct">50.0%</span></div>
+          <div class="seg el-tu"    style="flex:1.0"><span class="hz">土</span><span class="pct">25.0%</span></div>
+          <div class="seg el-huo"   style="flex:1.0"><span class="hz">火</span><span class="pct">25.0%</span></div>
+          <div class="seg el-shui"  style="flex:0.0"><span class="hz">水</span><span class="pct">0%</span></div>
+          <div class="seg el-jin"   style="flex:0.0"><span class="hz">金</span><span class="pct">0%</span></div>
+        </div>
+        <div class="wux-tags">
+          <span class="wux-tag self"><span class="hz">金</span>DIRI · 4.0</span>
+          <span class="wux-tag fav"><span class="hz">金 水</span>MENDUKUNG</span>
+          <span class="wux-tag unfav"><span class="hz">火 木</span>KURANG MENDUKUNG</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STRIP FORMAT + 喜忌 -->
+    <div class="format-strip">
+
+      <div class="fmt-card">
+        <div class="fmt-glyph">食神</div>
+        <div class="fmt-meta">
+          <div class="fmt-eyebrow">格 局 · Format</div>
+          <div class="fmt-name">食神格</div>
+          <div class="fmt-pinyin">Shi Shen Ge — "Pencipta Lembut"</div>
+        </div>
+      </div>
+
+      <div class="ys-card fav">
+        <div class="ys-glyph">金</div>
+        <div class="ys-meta">
+          <div class="ys-eyebrow">喜 用 神</div>
+          <div class="ys-name">Logam</div>
+          <div class="ys-desc">Penopang &amp; Pengarah</div>
+        </div>
+      </div>
+
+      <div class="ys-card unfav">
+        <div class="ys-glyph">火<span style="opacity:0.5">·</span>木</div>
+        <div class="ys-meta">
+          <div class="ys-eyebrow">忌 神</div>
+          <div class="ys-name">Api &amp; Kayu</div>
+          <div class="ys-desc">Pelumat &amp; pemicu</div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- KAKI -->
+  <footer class="footer">
+    <div class="footer-caption">
+      <ul><li>Personality only A</li><li>Personality only B</li></ul>
+    </div>
+    <div class="footer-meta">
+      <span>Halaman 4 / 12</span>
+      <span>Test · Ramalan 命</span>
+    </div>
+  </footer>
+
+</section>
+
+
+<section class="page opener" style="display:flex;flex-direction:column">
+  <div class="opener-frame">
+    <span class="op-watermark">字</span>
+
+    <div class="op-eyebrow">
+      壹 · Bab Satu
+      <span class="roman">BAGIAN I</span>
+    </div>
+
+    <div class="op-hero">
+      <div class="op-cn-big">八 字</div>
+      <div class="op-cn-sub">四 柱 論 命</div>
+      <div class="op-pinyin">Bā Zì · Sì Zhù Lùn Mìng</div>
+      <div class="op-id">Sistem "Delapan Karakter Empat Pilar" — analisis nasib berdasarkan kombinasi 4 stem &amp; 4 branch dari tanggal lahir Anda</div>
+    </div>
+
+    <div class="op-pages">
+      <div class="op-page-card">
+        <div class="op-page-num">06</div>
+        <div class="op-page-info"><div class="op-page-cn">日主 + 五行</div><div class="op-page-id">Penguasa Hari Radar</div></div>
+      </div>
+      <div class="op-page-card">
+        <div class="op-page-num">07</div>
+        <div class="op-page-info"><div class="op-page-cn">婚配</div><div class="op-page-id">Hūn Pèi · Kompatibilitas</div></div>
+      </div>
+      <div class="op-page-card">
+        <div class="op-page-num">08</div>
+        <div class="op-page-info"><div class="op-page-cn">性情</div><div class="op-page-id">Xìng Qíng · Kepribadian</div></div>
+      </div>
+      <div class="op-page-card">
+        <div class="op-page-num">09</div>
+        <div class="op-page-info"><div class="op-page-cn">全局總論</div><div class="op-page-id">Quán Jú · Keluarga</div></div>
+      </div>
+      <div class="op-page-card">
+        <div class="op-page-num">10</div>
+        <div class="op-page-info"><div class="op-page-cn">神煞</div><div class="op-page-id">Shén Shà · Katalog Bintang</div></div>
+      </div>
+      <div class="op-page-card">
+        <div class="op-page-num">11</div>
+        <div class="op-page-info"><div class="op-page-cn">財富</div><div class="op-page-id">Cái Fù · Rezeki</div></div>
+      </div>
+      <div class="op-page-card">
+        <div class="op-page-num">12</div>
+        <div class="op-page-info"><div class="op-page-cn">事業</div><div class="op-page-id">Shì Yè · Karir</div></div>
+      </div>
+      <div class="op-page-card">
+        <div class="op-page-num">13</div>
+        <div class="op-page-info"><div class="op-page-cn">陽宅</div><div class="op-page-id">Yáng Zhái · Feng Shui</div></div>
+      </div>
+      <div class="op-page-card">
+        <div class="op-page-num">14</div>
+        <div class="op-page-info"><div class="op-page-cn">大運</div><div class="op-page-id">Dà Yùn · Lini Masa</div></div>
+      </div>
+    </div>
+
+    <div class="op-credits">Halaman 5 · Pembuka Bab Bagian I · Ramalan 命</div>
+  </div>
+</section>
+
+
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">06</div>
+    <div class="h-titles">
+      <div class="h-cn">日 主 · 五 行</div>
+      <div class="h-id">Penguasa Hari &amp; Lima Elemen</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Kerbau-Merah.svg" alt="Kerbau"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Test · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">丑 Kerbau</span></div>
+      <div class="subject-detail">Penguasa Hari analisis · 五行 distribusi · 喜用 / 忌神</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">丙火 · Api Matahari</div>
+    </div>
+  </div>
+
+  <main class="content content-dm">
+
+    <!-- HERO: Radar + Kartu Penguasa Hari -->
+    <div class="dm-hero">
+
+      <div class="dm-radar-frame">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <!-- Concentric pentagonal grid -->
+          <polygon points="200,153 244,182 227,234 173,234 156,182" fill="none" stroke="#E5D3A1" stroke-width="0.5"/>
+          <polygon points="200,107 289,164 254,267 146,267 111,164" fill="none" stroke="#E5D3A1" stroke-width="0.5"/>
+          <polygon points="200,60 333,157 282,313 118,313 67,157" fill="none" stroke="#C9A961" stroke-width="0.8"/>
+
+          <!-- Axes -->
+          <line x1="200" y1="200" x2="200" y2="60" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="200" y1="200" x2="333" y2="157" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="200" y1="200" x2="282" y2="313" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="200" y1="200" x2="118" y2="313" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="200" y1="200" x2="67"  y2="157" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+
+          <!-- Michele's polygon (filled) — values: 金 0.7, 水 2.0, 火 0.8, 土 2.0, 木 3.0 -->
+          <polygon points="200,166 291,170 223,231 144,278 63,156"
+            fill="rgba(139,26,26,0.18)" stroke="#8B1A1A" stroke-width="1.5"/>
+
+          <!-- Vertex dots -->
+          <circle cx="200" cy="166" r="3" fill="#A89358"/>
+          <circle cx="291" cy="170" r="3" fill="#3A6B8C"/>
+          <circle cx="223" cy="231" r="3" fill="#8C3535"/>
+          <circle cx="144" cy="278" r="3" fill="#8C6E47"/>
+          <circle cx="63"  cy="156" r="3" fill="#4D7A3A"/>
+
+          <!-- Center -->
+          <circle cx="200" cy="200" r="3" fill="#C9A961"/>
+
+          <!-- Labels -->
+          <g font-family="Noto Serif TC,serif">
+            <!-- 金 top -->
+            <text x="200" y="40" text-anchor="middle" font-size="18" fill="#8B1A1A" font-weight="700">金</text>
+            <text x="200" y="52" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Logam · 0.0</text>
+            <!-- 水 right -->
+            <text x="358" y="148" text-anchor="middle" font-size="18" fill="#3A6B8C" font-weight="700">水</text>
+            <text x="358" y="160" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Air · 0.0</text>
+            <!-- 火 lower-right — Penguasa Hari ★ -->
+            <text x="305" y="338" text-anchor="middle" font-size="18" fill="#8C3535" font-weight="700">火</text>
+            <text x="305" y="350" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Api · 1.0 ★</text>
+            <!-- 土 lower-left -->
+            <text x="95" y="338" text-anchor="middle" font-size="18" fill="#8C6E47" font-weight="700">土</text>
+            <text x="95" y="350" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Tanah · 1.0</text>
+            <!-- 木 left -->
+            <text x="42" y="148" text-anchor="middle" font-size="18" fill="#4D7A3A" font-weight="700">木</text>
+            <text x="42" y="160" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Kayu · 2.0</text>
+          </g>
+
+          <!-- Scale ticks -->
+          <text x="206" y="153" font-size="5.5" fill="#6B5B3F">1</text>
+          <text x="206" y="107" font-size="5.5" fill="#6B5B3F">2</text>
+          <text x="206" y="60"  font-size="5.5" fill="#6B5B3F">3</text>
+        </svg>
+      </div>
+
+      <div class="dm-card">
+        <div class="dmc-eyebrow">本 命 · Penguasa Hari</div>
+        <div class="dmc-stem">甲</div>
+        <div class="dmc-element">木 · Logam Yin</div>
+        <div class="dmc-pinyin">Jiǎ Mù — "Pohon Besar"</div>
+        <div class="dmc-traits">
+          <div class="dmc-trait"><span class="ico">◆</span><span><strong>Pendiri</strong>, kreatif, idealis</span></div>
+          <div class="dmc-trait"><span class="ico">◆</span><span>Pohon kuat — butuh <strong>dipangkas</strong> agar berbuah</span></div>
+          <div class="dmc-trait"><span class="ico">◆</span><span>Mekar dengan <span style="font-family:'Noto Serif TC',serif;color:var(--red);font-weight:700">火</span> (ekspresi) + <span style="font-family:'Noto Serif TC',serif;color:var(--red);font-weight:700">金</span> (disiplin)</span></div>
+        </div>
+        <div class="dmc-strength">Status: <span class="val">KUAT</span> · 旺</div>
+      </div>
+
+    </div>
+
+    <!-- 5 ELEMENT CARDS -->
+    <div class="dm-elements">
+      <div class="dme dme-card el-mu">
+        <div class="dme-hz">木</div>
+        <div class="dme-name">Kayu · Mù</div>
+        <div class="dme-val">2.0</div>
+        <div class="dme-bar"><div class="dme-bar-fill" style="width:67%"></div></div>
+        <div class="dme-role">Netral</div>
+      </div>
+      <div class="dme dme-card el-tu">
+        <div class="dme-hz">土</div>
+        <div class="dme-name">Tanah · Tǔ</div>
+        <div class="dme-val">1.0</div>
+        <div class="dme-bar"><div class="dme-bar-fill" style="width:33%"></div></div>
+        <div class="dme-role">Netral</div>
+      </div>
+      <div class="dme dme-card el-huo">
+        <div class="dme-hz">火</div>
+        <div class="dme-name">Api · Huǒ</div>
+        <div class="dme-val">1.0 <span class="dme-tag-self">★ DIRI</span></div>
+        <div class="dme-bar"><div class="dme-bar-fill" style="width:33%"></div></div>
+        <div class="dme-role">Penguasa Hari</div>
+      </div>
+      <div class="dme dme-card el-shui">
+        <div class="dme-hz">水</div>
+        <div class="dme-name">Air · Shuǐ</div>
+        <div class="dme-val">0.0</div>
+        <div class="dme-bar"><div class="dme-bar-fill" style="width:0%"></div></div>
+        <div class="dme-role">Netral</div>
+      </div>
+      <div class="dme dme-card el-jin">
+        <div class="dme-hz">金</div>
+        <div class="dme-name">Logam · Jīn</div>
+        <div class="dme-val">0.0</div>
+        <div class="dme-bar"><div class="dme-bar-fill" style="width:0%"></div></div>
+        <div class="dme-role" style="background:rgba(45,106,79,0.7);">喜 Mendukung</div>
+      </div>
+    </div>
+
+    <!-- YONG SHEN STRIP -->
+    <div class="dm-yongshen">
+
+      <div class="ys-block fav">
+        <div class="ys-eb">喜 用 神 · Yong Shen · Mendukung</div>
+        <div class="ys-title">
+          <span class="ys-hz">火 金</span>
+          <span class="ys-name">Api &amp; Logam — Penyalur &amp; Pemangkas</span>
+        </div>
+        <div class="ys-body">
+          <strong>火</strong> (Huǒ · Api) menyalurkan energi <span class="hz">丙火</span> Anda yang berlimpah jadi karya ekspresif (seni, tulis, ide). <strong>金</strong> (Jīn · Logam) menjadi "kapak" yang memangkas pertumbuhan berlebih — disiplin &amp; struktur. Aktif pakai <strong>warna merah, oranye, putih, emas</strong>; bekerja di bidang ekspresi (penulisan, performance, fashion, lighting, broadcasting).
+        </div>
+      </div>
+
+      <div class="ys-block unfav">
+        <div class="ys-eb">忌 神 · Ji Shen · Kurang Mendukung</div>
+        <div class="ys-title">
+          <span class="ys-hz">水 木</span>
+          <span class="ys-name">Air &amp; Kayu — Penambah Dominasi</span>
+        </div>
+        <div class="ys-body">
+          <strong>水</strong> (Shuǐ · Air) — Air berlebih membuat akar pohon membusuk; sudah ada 2.0, jangan ditambah. <strong>木</strong> (Mù · Kayu) — sesama Kayu memperberat dominasi Anda yang sudah 3.0. Hindari hijau berlebih, basah/lembap, dan industri kayu-perkayuan.
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      Overall only
+    </div>
+    <div class="footer-meta">
+      <span>Halaman 6 / 12</span>
+      <span>Test · Ramalan 命</span>
+    </div>
+  </footer>
+</section>
+
+
+<section class="page">
+
+  <!-- KEPALA -->
+  <header class="page-header">
+    <div class="h-num">07</div>
+    <div class="h-titles">
+      <div class="h-cn">婚 配</div>
+      <div class="h-id">Kompatibilitas Jodoh</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <!-- BAR SUBJEK -->
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Kerbau-Merah.svg" alt="Kerbau"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Test · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">丑 Kerbau</span></div>
+      <div class="subject-detail">28 Oktober 2009 · 11:25 · Wanita · Umur 16 tahun</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">丙火 · Api Matahari</div>
+    </div>
+  </div>
+
+  <!-- KONTEN -->
+  <main class="content content-marriage">
+
+    <!-- BINGKAI RODA -->
+    <div class="wheel-frame">
+      <div class="wheel-svg">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <!-- Lingkaran latar -->
+          <circle cx="200" cy="200" r="180" fill="none" stroke="#E5D3A1" stroke-width="0.5"/>
+          <circle cx="200" cy="200" r="170" fill="#FFFEF8" stroke="#E5D3A1" stroke-width="0.5"/>
+          <circle cx="200" cy="200" r="115" fill="none" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+
+          <!-- Salib kompas -->
+          <line x1="200" y1="30" x2="200" y2="370" stroke="#E5D3A1" stroke-width="0.3" stroke-dasharray="1,3"/>
+          <line x1="30" y1="200" x2="370" y2="200" stroke="#E5D3A1" stroke-width="0.3" stroke-dasharray="1,3"/>
+
+          <!-- Relationship lines (drawn before badges) -->
+          <!-- Triple harmony 丑-巳-酉 (green triangle) -->
+          <polygon points="272.5,74.4 272.5,325.6 55,200"
+            fill="rgba(45,106,79,0.06)" stroke="#2D6A4F" stroke-width="1.2" stroke-dasharray="4,3"/>
+          <!-- Pair 丑-子 (gold solid) -->
+          <line x1="272.5" y1="74.4" x2="200" y2="55"
+            stroke="#C9A961" stroke-width="1.5"/>
+          <!-- Clash 丑-未 (red dashed) -->
+          <line x1="272.5" y1="74.4" x2="127.5" y2="325.6"
+            stroke="#A03434" stroke-width="1.5" stroke-dasharray="6,3"/>
+          <!-- Harm 丑-午 (yellow dotted) -->
+          <line x1="272.5" y1="74.4" x2="200" y2="345"
+            stroke="#B8860B" stroke-width="1.2" stroke-dasharray="2,3"/>
+          <!-- Punish 丑-戌 (red short-dashed) -->
+          <line x1="272.5" y1="74.4" x2="74.4" y2="127.5"
+            stroke="#A03434" stroke-width="1.2" stroke-dasharray="3,2"/>
+          <!-- Break 丑-辰 (red dotted) -->
+          <line x1="272.5" y1="74.4" x2="325.6" y2="272.5"
+            stroke="#A03434" stroke-width="1.2" stroke-dasharray="1,3"/>
+
+          <!-- Pusat -->
+          <circle cx="200" cy="200" r="22" fill="#FFFEF8" stroke="#C9A961" stroke-width="1"/>
+          <text x="200" y="194" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="11" fill="#8B1A1A" font-weight="600">本命</text>
+          <text x="200" y="208" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#6B5B3F" letter-spacing="1">ANDA</text>
+
+          <!-- 12 badge shio -->
+          <!-- i=0 子 Tikus (PAIR — 丑-子 六合) -->
+          <g>
+            <circle cx="200" cy="55" r="22" fill="#FFF8E1" stroke="#C9A961" stroke-width="1.8"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Tikus-Merah.svg" x="181" y="36" width="38" height="38"/>
+            <text x="200" y="22" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#C9A961" font-weight="700">子</text>
+          </g>
+          <!-- i=1 丑 Kerbau (DIRI) -->
+          <g>
+            <circle cx="272.5" cy="74.4" r="30" fill="#FFF8E1" stroke="#8B1A1A" stroke-width="2"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Kerbau-Merah.svg" x="246.5" y="48.4" width="52" height="52"/>
+            <text x="295" y="46" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="15" fill="#8B1A1A" font-weight="700">丑</text>
+          </g>
+          <!-- i=2 寅 Harimau (neutral) -->
+          <g>
+            <circle cx="325.6" cy="127.5" r="20" fill="#F5EBD0" stroke="#D8C896" stroke-width="0.8"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Harimau-Hitam.svg" x="308.6" y="110.5" width="34" height="34" opacity="0.6"/>
+            <text x="368" y="100" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#6B5B3F">寅</text>
+          </g>
+          <!-- i=3 卯 Kelinci (neutral) -->
+          <g>
+            <circle cx="345" cy="200" r="20" fill="#F5EBD0" stroke="#D8C896" stroke-width="0.8"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Kelinci-Hitam.svg" x="328" y="183" width="34" height="34" opacity="0.6"/>
+            <text x="382" y="204" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#6B5B3F">卯</text>
+          </g>
+          <!-- i=4 辰 Naga (BREAK — 丑-辰 破) -->
+          <g>
+            <circle cx="325.6" cy="272.5" r="22" fill="#F4DCDC" stroke="#A03434" stroke-width="1.5"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Naga-Merah.svg" x="306.6" y="253.5" width="38" height="38"/>
+            <text x="368" y="306" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#A03434" font-weight="600">辰</text>
+          </g>
+          <!-- i=5 巳 Ular (TRIPLE — 丑-巳-酉 三合) -->
+          <g>
+            <circle cx="272.5" cy="325.6" r="24" fill="#E8F0EA" stroke="#2D6A4F" stroke-width="2"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Ular-Merah.svg" x="252.5" y="305.6" width="40" height="40"/>
+            <text x="295" y="358" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="14" fill="#2D6A4F" font-weight="700">巳</text>
+          </g>
+          <!-- i=6 午 Kuda (HARM — 丑-午 六害) -->
+          <g>
+            <circle cx="200" cy="345" r="22" fill="#F8EFD4" stroke="#B8860B" stroke-width="1.8"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Kuda-Merah.svg" x="181" y="326" width="38" height="38"/>
+            <text x="200" y="382" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#B8860B" font-weight="600">午</text>
+          </g>
+          <!-- i=7 未 Kambing (CLASH — 丑-未 六沖) -->
+          <g>
+            <circle cx="127.5" cy="325.6" r="22" fill="#F4DCDC" stroke="#A03434" stroke-width="1.8"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Kambing-Merah.svg" x="108.5" y="306.6" width="38" height="38"/>
+            <text x="105" y="362" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#A03434" font-weight="600">未</text>
+          </g>
+          <!-- i=8 申 Monyet (neutral) -->
+          <g>
+            <circle cx="74.4" cy="272.5" r="20" fill="#F5EBD0" stroke="#D8C896" stroke-width="0.8"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Monyet-Hitam.svg" x="57.4" y="255.5" width="34" height="34" opacity="0.6"/>
+            <text x="32" y="306" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#6B5B3F">申</text>
+          </g>
+          <!-- i=9 酉 Ayam (TRIPLE — 丑-巳-酉 三合) -->
+          <g>
+            <circle cx="55" cy="200" r="24" fill="#E8F0EA" stroke="#2D6A4F" stroke-width="2"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Ayam-Merah.svg" x="35" y="180" width="40" height="40"/>
+            <text x="22" y="204" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="14" fill="#2D6A4F" font-weight="700">酉</text>
+          </g>
+          <!-- i=10 戌 Anjing (PUNISH — 丑-戌 三刑) -->
+          <g>
+            <circle cx="74.4" cy="127.5" r="22" fill="#F4DCDC" stroke="#A03434" stroke-width="1.5"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Anjing-Merah.svg" x="55.4" y="108.5" width="38" height="38"/>
+            <text x="32" y="100" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#A03434" font-weight="600">戌</text>
+          </g>
+          <!-- i=11 亥 Babi (neutral) -->
+          <g>
+            <circle cx="127.5" cy="74.4" r="20" fill="#F5EBD0" stroke="#D8C896" stroke-width="0.8"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Babi-Hitam.svg" x="110.5" y="57.4" width="34" height="34" opacity="0.6"/>
+            <text x="85" y="42" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#6B5B3F">亥</text>
+          </g>
+        </svg>
+      </div>
+
+      <!-- LEGENDA -->
+      <div class="wheel-legend">
+        <div class="legend-title">Hubungan</div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#FFF8E1;border-color:#8B1A1A"></div>
+          <div class="lbl"><span class="cn">本命 丑</span><span class="id">DIRI ANDA</span></div>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#E8F0EA;border-color:#2D6A4F"></div>
+          <div class="lbl"><span class="cn">三合 SāN HÉ</span><span class="id">SEGITIGA HARMONI</span></div>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#FFF8E1;border-color:#C9A961"></div>
+          <div class="lbl"><span class="cn">六合 LIù HÉ</span><span class="id">PASANGAN COCOK</span></div>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#F4DCDC;border-color:#A03434"></div>
+          <div class="lbl"><span class="cn">六沖 LIù CHōNG</span><span class="id">BENTROK LANGSUNG</span></div>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#F8EFD4;border-color:#B8860B"></div>
+          <div class="lbl"><span class="cn">六害 LIù HàI</span><span class="id">MENGHAMBAT HALUS</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRID KOMPATIBILITAS -->
+    <div class="compat-grid">
+      <!-- COCOK -->
+      <div class="compat-card good">
+        <div class="compat-title">
+          <span class="badge">宜 COCOK</span>
+          <span style="color:var(--green);">Pasangan Selaras</span>
+        </div>
+        <div class="shio-list">
+          <div class="shio-row">
+            <div class="icon"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Tikus-Merah.svg" alt="Tikus"></div>
+            <div class="info">
+              <div class="name"><span class="hz">子</span>Tikus<span class="tag">六合 · COCOK</span></div>
+              <div class="reason">Pair harmony.</div>
+            </div>
+          </div>
+          <div class="shio-row">
+            <div class="icon"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Ular-Merah.svg" alt="Ular"></div>
+            <div class="info">
+              <div class="name"><span class="hz">巳</span>Ular<span class="tag">三合 · BESAR JAYA</span></div>
+              <div class="reason">Triple harmony.</div>
+            </div>
+          </div>
+          <div class="shio-row">
+            <div class="icon"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Ayam-Merah.svg" alt="Ayam"></div>
+            <div class="info">
+              <div class="name"><span class="hz">酉</span>Ayam<span class="tag">三合 · BESAR JAYA</span></div>
+              <div class="reason">Triple harmony.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HINDARI -->
+      <div class="compat-card bad">
+        <div class="compat-title">
+          <span class="badge">忌 HINDARI</span>
+          <span style="color:var(--red-bad);">Berisiko Bentrok</span>
+        </div>
+        <div class="shio-list">
+          <div class="shio-row">
+            <div class="icon"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Naga-Merah.svg" alt="Naga"></div>
+            <div class="info">
+              <div class="name"><span class="hz">辰</span>Naga<span class="tag">破 · MERETAKKAN</span></div>
+              <div class="reason">Pemecah.</div>
+            </div>
+          </div>
+          <div class="shio-row">
+            <div class="icon"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Kuda-Merah.svg" alt="Kuda"></div>
+            <div class="info">
+              <div class="name"><span class="hz">午</span>Kuda<span class="tag">六害 · MENGHAMBAT</span></div>
+              <div class="reason">Halangan halus.</div>
+            </div>
+          </div>
+          <div class="shio-row">
+            <div class="icon"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Kambing-Merah.svg" alt="Kambing"></div>
+            <div class="info">
+              <div class="name"><span class="hz">未</span>Kambing<span class="tag">六沖 · BENTROK</span></div>
+              <div class="reason">Bentrok langsung.</div>
+            </div>
+          </div>
+          <div class="shio-row">
+            <div class="icon"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Anjing-Merah.svg" alt="Anjing"></div>
+            <div class="info">
+              <div class="name"><span class="hz">戌</span>Anjing<span class="tag">三刑 · GESEKAN</span></div>
+              <div class="reason">Hukuman.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- KAKI -->
+  <footer class="footer">
+    <div class="footer-caption">
+      Pasangan ber-shio Kelinci &amp; Kambing memberikan dukungan natural; bila pasangan dekat ber-shio Ular atau Monyet, kompensasi lewat ruang istirahat &amp; komunikasi terjadwal. Hindari pula pasangan sesama Babi (自刑 · konflik diri).
+    </div>
+    <div class="footer-meta">
+      <span>Halaman 7 / 12</span>
+      <span>Test · Ramalan 命</span>
+    </div>
+  </footer>
+
+</section>
+
+
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">08</div>
+    <div class="h-titles"><div class="h-cn">性 情</div><div class="h-id">Kepribadian</div></div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Kerbau-Merah.svg" alt="Kerbau"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Test · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">丑 Kerbau</span></div>
+      <div class="subject-detail">Profil karakter berdasarkan 丙火 + 食神格 + posisi 寅</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">丙火 · Api Matahari</div></div>
+  </div>
+
+  <main class="content content-xq">
+
+    <div class="xq-hero">
+      <div class="xq-radar-frame">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <!-- 6-axis hexagonal grid -->
+          <polygon points="200,140 252,170 252,230 200,260 148,230 148,170" fill="none" stroke="#E5D3A1" stroke-width="0.5"/>
+          <polygon points="200,80 304,140 304,260 200,320 96,260 96,140" fill="none" stroke="#E5D3A1" stroke-width="0.5"/>
+          <polygon points="200,40 339,120 339,280 200,360 61,280 61,120" fill="none" stroke="#C9A961" stroke-width="0.7"/>
+
+          <!-- Axes -->
+          <line x1="200" y1="200" x2="200" y2="40"  stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="200" y1="200" x2="339" y2="120" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="200" y1="200" x2="339" y2="280" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="200" y1="200" x2="200" y2="360" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="200" y1="200" x2="61"  y2="280" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="200" y1="200" x2="61"  y2="120" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+
+          <!-- Henry trait polygon (values: 固執9, 創新8, 俠義8, 急性7, 剛硬9, 表現6 / max 10 -> r 144 max -->
+          <polygon points="200,70 325,128 311,267 200,302 89,251 75,141"
+            fill="rgba(139,26,26,0.18)" stroke="#8B1A1A" stroke-width="1.5"/>
+
+          <!-- vertex dots -->
+          <circle cx="200" cy="70"  r="3" fill="#8B1A1A"/>
+          <circle cx="325" cy="128" r="3" fill="#8B1A1A"/>
+          <circle cx="311" cy="267" r="3" fill="#8B1A1A"/>
+          <circle cx="200" cy="302" r="3" fill="#8B1A1A"/>
+          <circle cx="89"  cy="251" r="3" fill="#8B1A1A"/>
+          <circle cx="75"  cy="141" r="3" fill="#8B1A1A"/>
+
+          <!-- Labels -->
+          <g font-family="Noto Serif TC,serif">
+            <text x="200" y="22" text-anchor="middle" font-size="14" fill="#8B1A1A" font-weight="700">固執</text>
+            <text x="200" y="33" text-anchor="middle" font-size="6" fill="#6B5B3F" font-style="italic">Gù Zhí · Teguh · 9</text>
+
+            <text x="358" y="113" text-anchor="middle" font-size="14" fill="#8B1A1A" font-weight="700">創新</text>
+            <text x="358" y="124" text-anchor="middle" font-size="6" fill="#6B5B3F" font-style="italic">Chuàng Xīn · Inovatif · 8</text>
+
+            <text x="358" y="290" text-anchor="middle" font-size="14" fill="#8B1A1A" font-weight="700">俠義</text>
+            <text x="358" y="301" text-anchor="middle" font-size="6" fill="#6B5B3F" font-style="italic">Xiá Yì · Ksatria · 8</text>
+
+            <text x="200" y="382" text-anchor="middle" font-size="14" fill="#8B1A1A" font-weight="700">急性</text>
+            <text x="200" y="393" text-anchor="middle" font-size="6" fill="#6B5B3F" font-style="italic">Jí Xìng · Cepat panas · 7</text>
+
+            <text x="42" y="290" text-anchor="middle" font-size="14" fill="#8B1A1A" font-weight="700">表現</text>
+            <text x="42" y="301" text-anchor="middle" font-size="6" fill="#6B5B3F" font-style="italic">Biǎo Xiàn · Sorotan · 6</text>
+
+            <text x="42" y="113" text-anchor="middle" font-size="14" fill="#8B1A1A" font-weight="700">剛硬</text>
+            <text x="42" y="124" text-anchor="middle" font-size="6" fill="#6B5B3F" font-style="italic">Gāng Yìng · Tegas keras · 9</text>
+          </g>
+
+          <text x="206" y="143" font-size="5.5" fill="#6B5B3F">3</text>
+          <text x="206" y="83"  font-size="5.5" fill="#6B5B3F">7</text>
+          <text x="206" y="43"  font-size="5.5" fill="#6B5B3F">10</text>
+        </svg>
+      </div>
+
+      <div class="xq-motto">
+        <div class="xqm-eb">本 性 · Inti Karakter</div>
+        <div class="xqm-hz">劍</div>
+        <div class="xqm-id">Pedang Belum Ditempa</div>
+        <div class="xqm-divider"></div>
+        <div class="xqm-archetype">Archetype</div>
+        <div class="xqm-quote">
+          "<span class="hz">剛健不魯莽</span>, <span class="hz">獨立而無懼</span>" — Tegar tanpa ceroboh, mandiri tanpa rasa takut. Pejuang yang punya prinsip; daya eksekusi tinggi diimbangi dengan jiwa ksatria.
+        </div>
+        <div class="xqm-tag">侠 義 之 士</div>
+      </div>
+    </div>
+
+    <div class="xq-cards">
+
+      <div class="xq-card power">
+        <div class="xqc-eb">魄 力 · Kekuatan</div>
+        <div class="xqc-title"><span class="xqc-hz">優勢</span><span class="xqc-name">Yōu Shì · Keunggulan</span></div>
+        <div class="xqc-list">
+          <div class="xqc-item"><span class="ico">◆</span><span><strong>Daya eksekusi tinggi</strong> — terpikir langsung jalan, tidak banyak ragu</span></div>
+          <div class="xqc-item"><span class="ico">◆</span><span><span class="hz">才華洋溢</span> bakat melimpah + inovatif (Cái Huá Yáng Yì)</span></div>
+          <div class="xqc-item"><span class="ico">◆</span><span><span class="hz">俠義之心</span> jiwa ksatria — siap bantu yang lebih lemah</span></div>
+          <div class="xqc-item"><span class="ico">◆</span><span>Tegar &amp; mandiri tanpa menyerang — independen sejati</span></div>
+        </div>
+      </div>
+
+      <div class="xq-card shadow">
+        <div class="xqc-eb">陰 影 · Shadow</div>
+        <div class="xqc-title"><span class="xqc-hz">隱 患</span><span class="xqc-name">Yǐn Huàn · Sisi Gelap</span></div>
+        <div class="xqc-list">
+          <div class="xqc-item"><span class="ico">◆</span><span><span class="hz">主觀 + 急性</span> subjektif &amp; cepat panas — mudah memutus terlalu cepat</span></div>
+          <div class="xqc-item"><span class="ico">◆</span><span>Memberi sambil <strong>berharap dihargai</strong> — kekecewaan bila tak terbalas</span></div>
+          <div class="xqc-item"><span class="ico">◆</span><span><strong>Suka jadi sorotan</strong> — energi terlalu fokus ke pengakuan luar</span></div>
+          <div class="xqc-item"><span class="ico">◆</span><span><span class="hz">缺緩衝</span> kurang "buffer" halus — bicara terlalu tajam</span></div>
+        </div>
+      </div>
+
+      <div class="xq-card optimum">
+        <div class="xqc-eb">最 佳 · Optimum</div>
+        <div class="xqc-title"><span class="xqc-hz">應 用</span><span class="xqc-name">Yīng Yòng · Cara Optimal</span></div>
+        <div class="xqc-list">
+          <div class="xqc-item"><span class="ico">◆</span><span>Peran <strong>mentor / penasihat</strong> — bukan front-line operator</span></div>
+          <div class="xqc-item"><span class="ico">◆</span><span>Pakai <span class="hz">水</span> (Air) sebagai <strong>pendingin 24 jam</strong> sebelum kirim pesan emosional</span></div>
+          <div class="xqc-item"><span class="ico">◆</span><span>Niatkan memberi sebagai <strong>investasi karakter</strong>, bukan transaksi</span></div>
+          <div class="xqc-item"><span class="ico">◆</span><span>Anggap kritik dari <strong>pasangan &amp; saudari</strong> = data, bukan serangan</span></div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      <ul><li>Personality only A</li><li>Personality only B</li></ul>
+    </div>
+    <div class="footer-meta"><span>Halaman 8 / 12</span><span>Test · Ramalan 命</span></div>
+  </footer>
+</section>
+
+
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">20</div>
+    <div class="h-titles"><div class="h-cn">總 結</div><div class="h-id">Kesimpulan Bagan — Gambaran Besar</div></div>
+    <div class="h-section">Bagian III · Penutup</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Kerbau-Merah.svg" alt="Kerbau"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Test · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">丑 Kerbau</span></div>
+      <div class="subject-detail">Distilasi seluruh laporan dalam 1 halaman</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">丙火 · Api Matahari</div></div>
+  </div>
+
+  <main class="content content-kes">
+
+    <!-- JUDUL -->
+    <div class="kes-headline">
+      <div class="kh-stamp">命運</div>
+      <div class="kh-text">
+        <div class="kh-eb">Inti Seluruh Laporan</div>
+        <div class="kh-quote">
+          "Anda <span class="hz">丙火</span> Logam Yin yang <strong>kuat &amp; sedang ditempa <span class="hz">七殺</span></strong> — fase pemurnian sebelum panen <span class="hz">福德</span>."
+        </div>
+      </div>
+      <div class="kh-num">
+        <div class="big">64</div>
+        <div class="lbl">Umur</div>
+      </div>
+    </div>
+
+    <!-- GRID STATISTIK -->
+    <div class="kes-stats">
+
+      <div class="kes-stat s1">
+        <div class="ks-eb">Penguasa Hari · 日主</div>
+        <div class="ks-num"><span class="hz">丙火</span><span class="unit">KUAT · 旺</span></div>
+        <div class="ks-title">Logam Yin Kuat</div>
+        <div class="ks-desc">Jumlah Wu Xing 8.0 — <span class="hz">金</span> 2.3 + <span class="hz">土</span> 2.0 = 53.7% dominasi metal-tanah</div>
+      </div>
+
+      <div class="kes-stat s2">
+        <div class="ks-eb">Format · 格局</div>
+        <div class="ks-num"><span class="hz">偏印</span><span class="unit">FORMAT</span></div>
+        <div class="ks-title">Zheng Guan Ge — Penjaga Disiplin</div>
+        <div class="ks-desc">Format yang butuh "panggung tidak konvensional"; cocok untuk peran arsitek senior</div>
+      </div>
+
+      <div class="kes-stat s3">
+        <div class="ks-eb">Yong Shen · 喜用神</div>
+        <div class="ks-num"><span class="hz">水 木</span><span class="unit">MENDUKUNG</span></div>
+        <div class="ks-title">Air &amp; Kayu — Pengalir + Penumbuh</div>
+        <div class="ks-desc">Industri searah: penerbitan, pendidikan, perdagangan, logistik, kerajinan kayu</div>
+      </div>
+
+      <div class="kes-stat s4">
+        <div class="ks-eb">Da Yun · 大運</div>
+        <div class="ks-num">6<span class="unit">/ 10 — <span class="hz">丙辰 七殺</span></span></div>
+        <div class="ks-title">Fase Pemurnian (55–64)</div>
+        <div class="ks-desc"><span class="hz">火</span> Api menempa <span class="hz">金</span> Logam — tegangan tinggi, peluang transformatif</div>
+      </div>
+
+      <div class="kes-stat s5">
+        <div class="ks-eb">Da Xian · 大限</div>
+        <div class="ks-num"><span class="hz">僕役</span><span class="unit">56–65</span></div>
+        <div class="ks-title">Istana Pertemanan · Era Jejaring</div>
+        <div class="ks-desc"><span class="hz">紫微</span> di palace teman = lingkar pertemanan bermutu pemimpin</div>
+      </div>
+
+      <div class="kes-stat s6">
+        <div class="ks-eb">Kompatibilitas · 婚配</div>
+        <div class="ks-num">3 <span class="unit">cocok / 2 hindari</span></div>
+        <div class="ks-title">Cocok: <span style="font-family:'Noto Serif TC',serif;color:var(--red);font-weight:700">午 戌 亥</span></div>
+        <div class="ks-desc">Hindari: <span class="hz">申 巳</span> · Trigram <span class="hz">坤</span> · West Kelompok hunian</div>
+      </div>
+
+    </div>
+
+    <!-- HIDUP MAP -->
+    <div class="kes-lifemap">
+      <div class="klm-eyebrow">
+        <div>
+          <span class="label">人 生 地 圖</span>
+          <span class="id">Peta Hidup — Anda Berada di Sini</span>
+        </div>
+        <div class="meta">SUMMARY · BIG PICTURE</div>
+      </div>
+
+      <div class="klm-content">
+
+        <div class="klm-narrative">
+          <div class="klm-row">
+            <div class="klm-row-icon">過</div>
+            <div class="klm-row-text">
+              <span class="lbl">MASA LALU · Lalu</span>
+              <strong>5 fase telah dilalui</strong> — fondasi (金), belajar &amp; mengalir (水水), tumbuh &amp; membangun (木木). Telah teruji.
+            </div>
+          </div>
+          <div class="klm-row now">
+            <div class="klm-row-icon">今</div>
+            <div class="klm-row-text">
+              <span class="lbl">SEKARANG · Sekarang</span>
+              <strong>Fase Pemurnian <span class="hz">七殺</span></strong> — tekanan 火 menempa Logam Anda. Saat eksekutor handal jadi <strong>tokoh berbicara</strong>.
+            </div>
+          </div>
+          <div class="klm-row">
+            <div class="klm-row-icon">未</div>
+            <div class="klm-row-text">
+              <span class="lbl">BERIKUTNYA · Berikutnya</span>
+              Setelah 64: <span class="hz">丁巳 (正官)</span> lebih tenang &amp; terstruktur. Hasil pemurnian sekarang akan terbayar — <strong>masa panen</strong>.
+            </div>
+          </div>
+        </div>
+
+        <div class="klm-position">
+          <div class="klp-eb">Posisi Sekarang</div>
+          <div class="klp-hz">夏</div>
+          <div class="klp-id">Xià — "Musim Panas Hidup"</div>
+          <div class="klp-bar">
+            <div class="klp-bar-cell past"></div>
+            <div class="klp-bar-cell past"></div>
+            <div class="klp-bar-cell past"></div>
+            <div class="klp-bar-cell past"></div>
+            <div class="klp-bar-cell past"></div>
+            <div class="klp-bar-cell now"></div>
+            <div class="klp-bar-cell future"></div>
+            <div class="klp-bar-cell future"></div>
+            <div class="klp-bar-cell future"></div>
+            <div class="klp-bar-cell future"></div>
+          </div>
+          <div class="klp-meta">Fase 6 dari 10 · Umur <strong>55-64</strong> · <strong>火 Api</strong> dominan · Pemurnian sebelum panen</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- JEMBATAN KE AKSI -->
+    <div class="kes-bridge">
+      <div class="kbg-text">
+        Inti laporan sudah ringkas di sini. <strong>Halaman berikut</strong> menerjemahkan kesimpulan ini menjadi <span class="hz">五則行動</span> — 5 langkah praktis yang bisa Anda jalani mulai hari ini.
+      </div>
+      <div class="kbg-arrow"><span class="hz">→</span> Halaman 21</div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      Overall only
+    </div>
+    <div class="footer-meta"><span>Halaman 9 / 12</span><span>Test · Ramalan 命</span></div>
+  </footer>
+</section>
+
+
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">21</div>
+    <div class="h-titles">
+      <div class="h-cn">總 結</div>
+      <div class="h-id">Sintesis &amp; Saran Aksi</div>
+    </div>
+    <div class="h-section">Bagian III · Penutup</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Kerbau-Merah.svg" alt="Kerbau"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Test · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">丑 Kerbau</span></div>
+      <div class="subject-detail">28 Oktober 2009 · 11:25 · Wanita · Umur 16 tahun</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">丙火 · Api Matahari</div>
+    </div>
+  </div>
+
+  <main class="content content-synth">
+
+    <!-- WAWASAN UTAMA -->
+    <div class="syn-headline">
+      <div class="syn-seal">命</div>
+      <div class="syn-headline-text">
+        <div class="syn-eyebrow">Inti Bagan Anda</div>
+        <div class="syn-quote">
+          Anda <span class="hz">丙火</span> Logam Yin yang sedang mekar di fase <span class="hz">食神</span> — saatnya berkarya &amp; berekspresi.
+        </div>
+        <div class="syn-attrib">Penguasa Hari Kuat · 食神格 · Zheng Guan Ge</div>
+      </div>
+      <div class="syn-seal" style="transform:rotate(3deg);">運</div>
+    </div>
+
+    <!-- KARTU TRIO -->
+    <div class="syn-trio">
+
+      <div class="syn-card strength">
+        <div class="syn-card-num">力</div>
+        <div class="syn-card-eyebrow">Kekuatan</div>
+        <div class="syn-card-title">
+          <span class="syn-card-hz">魄力</span>
+          <span class="syn-card-id">Pò Lì</span>
+        </div>
+        <div class="syn-card-body">
+          <strong>Kreativitas + ketekunan.</strong> Kombinasi <span class="hz">丙火</span> + <span class="hz">食神格</span> = pemikir kreatif yang punya stamina. Bakat sastra, seni, ekspresi — multi-talented.
+        </div>
+      </div>
+
+      <div class="syn-card challenge">
+        <div class="syn-card-num">驗</div>
+        <div class="syn-card-eyebrow">Tantangan</div>
+        <div class="syn-card-title">
+          <span class="syn-card-hz">考驗</span>
+          <span class="syn-card-id">Kǎo Yàn</span>
+        </div>
+        <div class="syn-card-body">
+          <strong>Energi mandeg bila tidak disalurkan.</strong> Kayu (35%) + Air (24%) sudah dominan. Tanpa output, idealisme jadi kekecewaan; "harimau jadi ekor ular".
+        </div>
+      </div>
+
+      <div class="syn-card action">
+        <div class="syn-card-num">為</div>
+        <div class="syn-card-eyebrow">Tindakan</div>
+        <div class="syn-card-title">
+          <span class="syn-card-hz">作為</span>
+          <span class="syn-card-id">Zuò Wéi</span>
+        </div>
+        <div class="syn-card-body">
+          <strong>Salurkan ke <span class="hz">火 金</span>.</strong> Peran terbaik: kreator, edukator, performer, fashion/branding. Industri ekspresi (penulisan, performance, fotografi, beauty, lighting, broadcasting).
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 5 DAFTAR AKSI -->
+    <div class="syn-actions-frame">
+      <div class="syn-actions-eyebrow">
+        <div>
+          <span class="label">行 動 五 則</span>
+          <span class="id">Lima Langkah Praktis</span>
+        </div>
+        <div class="meta">SARAN APLIKATIF · 1—5</div>
+      </div>
+
+      <div class="syn-action-list">
+
+        <div class="syn-action">
+          <div class="syn-action-num">1</div>
+          <div class="syn-action-content">
+            <div class="syn-action-title">Pakai elemen <span class="hz">水</span> sebagai <strong>pendingin</strong> sebelum eksekusi</div>
+            <div class="syn-action-context">Diam → amati → baru bertindak. Hindari reaksi keras instan di fase 七殺 ini.</div>
+          </div>
+          <div class="syn-action-tag">水 · Air</div>
+        </div>
+
+        <div class="syn-action">
+          <div class="syn-action-num">2</div>
+          <div class="syn-action-content">
+            <div class="syn-action-title">Batasi spekulatif <strong>maksimal 20% modal</strong> — sisanya di rezeki stabil</div>
+            <div class="syn-action-context">七殺 mendatangkan peluang besar yang juga berisiko besar — disiplin alokasi.</div>
+          </div>
+          <div class="syn-action-tag">正財 · Stabil</div>
+        </div>
+
+        <div class="syn-action">
+          <div class="syn-action-num">3</div>
+          <div class="syn-action-content">
+            <div class="syn-action-title">Ambil peran <strong>arsitek senior &amp; mentor</strong>, bukan operasional harian</div>
+            <div class="syn-action-context">Energi 丙火 senior paling bernilai saat membentuk orang lain.</div>
+          </div>
+          <div class="syn-action-tag">官祿 · Karir</div>
+        </div>
+
+        <div class="syn-action">
+          <div class="syn-action-num">4</div>
+          <div class="syn-action-content">
+            <div class="syn-action-title">Pilih partner ber-<span class="hz">喜用神</span> <strong>水 / 木</strong> — komunikatif &amp; edukatif</div>
+            <div class="syn-action-context">Pasangan/rekan tipe air-kayu melengkapi; sesama 丙火 mengulang dominasi logam.</div>
+          </div>
+          <div class="syn-action-tag">夫妻 · Pasangan</div>
+        </div>
+
+        <div class="syn-action">
+          <div class="syn-action-num">5</div>
+          <div class="syn-action-content">
+            <div class="syn-action-title">Anggap kritik dari saudari &amp; pasangan sebagai <strong>data</strong>, bukan serangan</div>
+            <div class="syn-action-context">Mereka adalah "sensor" karakter Anda — sumber feedback paling jujur untuk 食神格.</div>
+          </div>
+          <div class="syn-action-tag">兄弟 · Keluarga</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MANTRA + LINI MASA MINI -->
+    <div class="syn-bottom">
+
+      <!-- MANTRA -->
+      <div class="syn-mantra">
+        <div class="syn-mantra-hz">文武相濟</div>
+        <div class="syn-mantra-text">
+          <div class="syn-mantra-eyebrow">Pegangan · 您 的 箴 言</div>
+          <div class="syn-mantra-pinyin">Wén Wǔ Xiāng Jì</div>
+          <div class="syn-mantra-meaning">"Halus dan tegas <strong>saling menyempurnakan</strong>" — kekuatan 丙火 Anda mencapai puncaknya saat disalurkan oleh 火 (ekspresi) dan dipangkas oleh 金 (disiplin).</div>
+        </div>
+      </div>
+
+      <!-- LINI MASA MINI -->
+      <div class="syn-timeline-mini">
+        <div class="stm-eyebrow">Posisi 大運 · Da Yun Phase</div>
+        <div class="stm-bar">
+          <div class="stm-cell past"></div>
+          <div class="stm-cell past"></div>
+          <div class="stm-cell past"></div>
+          <div class="stm-cell past"></div>
+          <div class="stm-cell past"></div>
+          <div class="stm-cell now"><div class="stm-now-label">★ ANDA · 丙辰</div></div>
+          <div class="stm-cell next"></div>
+          <div class="stm-cell future"></div>
+          <div class="stm-cell future"></div>
+          <div class="stm-cell future"></div>
+        </div>
+        <div class="stm-axis">
+          <span>5</span><span>15</span><span>25</span><span>35</span><span>45</span>
+          <span class="now-mark">55</span><span>65</span><span>75</span><span>85</span><span>95</span><span>104</span>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      Overall only
+    </div>
+    <div class="footer-meta">
+      <span>Halaman 10 / 12</span>
+      <span>Test · Ramalan 命</span>
+    </div>
+  </footer>
+</section>
+
+
+<section class="page no-bar">
+  <header class="page-header">
+    <div class="h-num">22</div>
+    <div class="h-titles"><div class="h-cn">辭 典</div><div class="h-id">Glossary Istilah</div></div>
+    <div class="h-section">Bagian III · Penutup</div>
+  </header>
+
+  <main class="content content-glo">
+    <div class="glo-frame">
+      <div class="glo-eyebrow">
+        <div>
+          <span class="label">辭 典</span>
+          <span class="id">Cí Diǎn — Daftar Istilah</span>
+        </div>
+        <div class="meta">5 KATEGORI · 44 ISTILAH</div>
+      </div>
+
+      <!-- Bagian 1: Dasar BaZi -->
+      <div class="glo-section">
+        <div class="glo-section-head">
+          <span class="glo-section-hz">八字 基礎</span>
+          <span class="glo-section-id">Dasar BaZi</span>
+          <span class="glo-section-count">8 istilah</span>
+        </div>
+        <div class="glo-list">
+          <div class="glo-row"><div class="glo-term">八字<span class="py">Bā Zì</span></div><div class="glo-meaning">"Delapan Karakter" — sistem 4 pilar</div></div>
+          <div class="glo-row"><div class="glo-term">四柱<span class="py">Sì Zhù</span></div><div class="glo-meaning">"Empat Pilar" — Tahun · Bulan · Hari · Jam</div></div>
+          <div class="glo-row"><div class="glo-term">日主<span class="py">Rì Zhǔ</span></div><div class="glo-meaning"><strong>Penguasa Hari</strong> — Stem dari pilar Hari, inti diri</div></div>
+          <div class="glo-row"><div class="glo-term">天干<span class="py">Tiān Gān</span></div><div class="glo-meaning">10 Batang Langit (Tian Gan) (甲乙丙丁戊己庚辛壬癸)</div></div>
+          <div class="glo-row"><div class="glo-term">地支<span class="py">Dì Zhī</span></div><div class="glo-meaning">12 Cabang Bumi (Di Zhi) = 12 shio (子丑寅卯...)</div></div>
+          <div class="glo-row"><div class="glo-term">格局<span class="py">Gé Jú</span></div><div class="glo-meaning">"Format" — pola dasar kepribadian</div></div>
+          <div class="glo-row"><div class="glo-term">十神<span class="py">Shí Shén</span></div><div class="glo-meaning">"10 Dewa" — relasi pilar terhadap Penguasa Hari</div></div>
+          <div class="glo-row"><div class="glo-term">大運<span class="py">Dà Yùn</span></div><div class="glo-meaning"><strong>"Great Cycles"</strong> — fase 10 tahunan</div></div>
+        </div>
+      </div>
+
+      <!-- Bagian 2: Wu Xing -->
+      <div class="glo-section">
+        <div class="glo-section-head">
+          <span class="glo-section-hz">五行 元素</span>
+          <span class="glo-section-id">Lima Elemen</span>
+          <span class="glo-section-count">8 istilah</span>
+        </div>
+        <div class="glo-list">
+          <div class="glo-row"><div class="glo-term">五行<span class="py">Wǔ Xíng</span></div><div class="glo-meaning">5 Elemen — siklus generatif/destruktif energi</div></div>
+          <div class="glo-row"><div class="glo-term">金<span class="py">Jīn</span></div><div class="glo-meaning"><strong>Logam</strong> — ketegasan, eksekusi, ketajaman</div></div>
+          <div class="glo-row"><div class="glo-term">木<span class="py">Mù</span></div><div class="glo-meaning"><strong>Kayu</strong> — pertumbuhan, fleksibilitas, edukasi</div></div>
+          <div class="glo-row"><div class="glo-term">水<span class="py">Shuǐ</span></div><div class="glo-meaning"><strong>Air</strong> — aliran, refleksi, intelek</div></div>
+          <div class="glo-row"><div class="glo-term">火<span class="py">Huǒ</span></div><div class="glo-meaning"><strong>Api</strong> — semangat, transformasi, ekspresi</div></div>
+          <div class="glo-row"><div class="glo-term">土<span class="py">Tǔ</span></div><div class="glo-meaning"><strong>Tanah</strong> — stabilitas, akumulasi, pondasi</div></div>
+          <div class="glo-row"><div class="glo-term">喜用神<span class="py">Xǐ Yòng Shén</span></div><div class="glo-meaning">Elemen <strong>mendukung</strong> Anda (水木)</div></div>
+          <div class="glo-row"><div class="glo-term">忌神<span class="py">Jì Shén</span></div><div class="glo-meaning">Elemen <strong>unmendukung</strong> Anda (金土)</div></div>
+        </div>
+      </div>
+
+      <!-- Bagian 3: Bintang Zi Wei -->
+      <div class="glo-section">
+        <div class="glo-section-head">
+          <span class="glo-section-hz">紫微 主星</span>
+          <span class="glo-section-id">Bintang Utama Zi Wei</span>
+          <span class="glo-section-count">8 istilah</span>
+        </div>
+        <div class="glo-list">
+          <div class="glo-row"><div class="glo-term">紫微<span class="py">Zǐ Wēi</span></div><div class="glo-meaning"><strong>Bintang Kaisar</strong> — kepemimpinan, prestige</div></div>
+          <div class="glo-row"><div class="glo-term">天府<span class="py">Tiān Fǔ</span></div><div class="glo-meaning"><strong>Lumbung Stabilitas</strong> — kekayaan, tenang</div></div>
+          <div class="glo-row"><div class="glo-term">廉貞<span class="py">Lián Zhēn</span></div><div class="glo-meaning"><strong>Integritas</strong> — karir politik</div></div>
+          <div class="glo-row"><div class="glo-term">天梁<span class="py">Tiān Liáng</span></div><div class="glo-meaning"><strong>Pelindung</strong> — kebijaksanaan (身主)</div></div>
+          <div class="glo-row"><div class="glo-term">巨門<span class="py">Jù Mén</span></div><div class="glo-meaning"><strong>Pintu Besar</strong> — komunikasi, argumentasi</div></div>
+          <div class="glo-row"><div class="glo-term">七殺<span class="py">Qī Shā</span></div><div class="glo-meaning"><strong>Tujuh Pembunuh</strong> — pemurnian, transformasi</div></div>
+          <div class="glo-row"><div class="glo-term">貪狼<span class="py">Tān Láng</span></div><div class="glo-meaning"><strong>Serigala Tamak</strong> — daya tarik, hasrat</div></div>
+          <div class="glo-row"><div class="glo-term">化 4類<span class="py">Sì Huà</span></div><div class="glo-meaning"><strong>祿</strong>=Berkah · <strong>權</strong>=Kuasa · <strong>科</strong>=Reputasi · <strong>忌</strong>=Tantangan</div></div>
+        </div>
+      </div>
+
+      <!-- Bagian 4: 12 Palaces -->
+      <div class="glo-section">
+        <div class="glo-section-head">
+          <span class="glo-section-hz">十二宮</span>
+          <span class="glo-section-id">12 Istana Zi Wei</span>
+          <span class="glo-section-count">12 istilah</span>
+        </div>
+        <div class="glo-list cols-3">
+          <div class="glo-row"><div class="glo-term">命宮<span class="py">Mìng Gōng</span></div><div class="glo-meaning">Diri / Diri</div></div>
+          <div class="glo-row"><div class="glo-term">兄弟<span class="py">Xiōng Dì</span></div><div class="glo-meaning">Saudara / Saudara</div></div>
+          <div class="glo-row"><div class="glo-term">夫妻<span class="py">Fū Qī</span></div><div class="glo-meaning">Pasangan / Pasangan</div></div>
+          <div class="glo-row"><div class="glo-term">子女<span class="py">Zǐ Nǚ</span></div><div class="glo-meaning">Anak / Anak</div></div>
+          <div class="glo-row"><div class="glo-term">財帛<span class="py">Cái Bó</span></div><div class="glo-meaning">Rezeki / Aliran Rezeki</div></div>
+          <div class="glo-row"><div class="glo-term">疾厄<span class="py">Jí È</span></div><div class="glo-meaning">Kesehatan / Kesehatan</div></div>
+          <div class="glo-row"><div class="glo-term">遷移<span class="py">Qiān Yí</span></div><div class="glo-meaning">Perpindahan / Perpindahan</div></div>
+          <div class="glo-row"><div class="glo-term">僕役<span class="py">Pú Yì</span></div><div class="glo-meaning">Bawahan / Teman</div></div>
+          <div class="glo-row"><div class="glo-term">官祿<span class="py">Guān Lù</span></div><div class="glo-meaning">Karir / Karir</div></div>
+          <div class="glo-row"><div class="glo-term">田宅<span class="py">Tián Zhái</span></div><div class="glo-meaning">Properti / Properti</div></div>
+          <div class="glo-row"><div class="glo-term">福德<span class="py">Fú Dé</span></div><div class="glo-meaning">Berkah / Berkah</div></div>
+          <div class="glo-row"><div class="glo-term">父母<span class="py">Fù Mǔ</span></div><div class="glo-meaning">Orangtua / Orangtua</div></div>
+        </div>
+      </div>
+
+      <!-- Bagian 5: Istilah Lain -->
+      <div class="glo-section">
+        <div class="glo-section-head">
+          <span class="glo-section-hz">其 他</span>
+          <span class="glo-section-id">Istilah Lain</span>
+          <span class="glo-section-count">12 istilah</span>
+        </div>
+        <div class="glo-list cols-3">
+          <div class="glo-row"><div class="glo-term">陽宅<span class="py">Yáng Zhái</span></div><div class="glo-meaning">Feng Shui Hunian</div></div>
+          <div class="glo-row"><div class="glo-term">八卦<span class="py">Bā Guà</span></div><div class="glo-meaning">8 Trigrams (☰☷☵☲...)</div></div>
+          <div class="glo-row"><div class="glo-term">坤<span class="py">Kūn</span></div><div class="glo-meaning">Trigram Bumi (Henry's gua)</div></div>
+          <div class="glo-row"><div class="glo-term">神煞<span class="py">Shén Shà</span></div><div class="glo-meaning">Bintang nasib</div></div>
+          <div class="glo-row"><div class="glo-term">驛馬<span class="py">Yì Mǎ</span></div><div class="glo-meaning">"Kuda Pos" — gerak/perjalanan</div></div>
+          <div class="glo-row"><div class="glo-term">三合<span class="py">Sān Hé</span></div><div class="glo-meaning">Triple Harmony — kompatibilitas</div></div>
+          <div class="glo-row"><div class="glo-term">六合<span class="py">Liù Hé</span></div><div class="glo-meaning">Pair Harmony — pasangan cocok</div></div>
+          <div class="glo-row"><div class="glo-term">六沖<span class="py">Liù Chōng</span></div><div class="glo-meaning">Direct Clash — bentrok shio</div></div>
+          <div class="glo-row"><div class="glo-term">六害<span class="py">Liù Hài</span></div><div class="glo-meaning">Subtle Harm — gangguan halus</div></div>
+          <div class="glo-row"><div class="glo-term">正/偏財<span class="py">Zhèng / Piān Cái</span></div><div class="glo-meaning">Rezeki tetap / tak terduga</div></div>
+          <div class="glo-row"><div class="glo-term">大限<span class="py">Dà Xiàn</span></div><div class="glo-meaning">10-tahun di Zi Wei (per palace)</div></div>
+          <div class="glo-row"><div class="glo-term">命/身主<span class="py">Mìng / Shēn Zhǔ</span></div><div class="glo-meaning">Penguasa Hidup / Penguasa Tubuh</div></div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      Daftar istilah ini membantu Anda kembali ke laporan kapan saja tanpa harus mengingat seluruh kosakata. <span style="font-family:'Noto Serif TC',serif;color:var(--red)">辭典</span> adalah jembatan antar bab.
+    </div>
+    <div class="footer-meta"><span>Halaman 11 / 12</span><span>Ramalan 命</span></div>
+  </footer>
+</section>
+
+
+<section class="page no-bar">
+  <header class="page-header">
+    <div class="h-num">23</div>
+    <div class="h-titles"><div class="h-cn">告 白</div><div class="h-id">Disclaimer &amp; Etika</div></div>
+    <div class="h-section">Bagian III · Penutup</div>
+  </header>
+
+  <main class="content content-dis">
+
+    <div class="dis-hero">
+      <div class="dh-seal">告白</div>
+      <div class="dh-text">
+        <div class="dh-eb">Etika &amp; Batasan</div>
+        <div class="dh-quote">
+          Bagan ini adalah <span class="hz">peta pola</span>, bukan vonis. Pakai sebagai referensi tradisi &amp; <strong>eksplorasi diri</strong> — keputusan tetap di tangan Anda.
+        </div>
+      </div>
+    </div>
+
+    <div class="dis-cards">
+
+      <div class="dc-card dont">
+        <div class="dc-eb">不 用 · Yang Tidak Dilakukan</div>
+        <div class="dc-title"><span class="dc-hz">禁忌</span><span class="dc-name">Jìn Jì · Larangan Etis</span></div>
+        <div class="dc-list">
+          <div class="dc-item"><span class="ico">✗</span><span>Tidak ada <strong>prediksi kematian</strong> dalam bentuk apapun</span></div>
+          <div class="dc-item"><span class="ico">✗</span><span>Tidak ada kalimat absolut ("PASTI akan...", "TIDAK MUNGKIN...")</span></div>
+          <div class="dc-item"><span class="ico">✗</span><span>Tidak ada <strong>diagnosa medis/hukum</strong> spesifik</span></div>
+          <div class="dc-item"><span class="ico">✗</span><span>Tidak ada bahasa menakutkan atau intimidasi</span></div>
+        </div>
+      </div>
+
+      <div class="dc-card do">
+        <div class="dc-eb">必 行 · Yang Dijamin</div>
+        <div class="dc-title"><span class="dc-hz">原則</span><span class="dc-name">Yuán Zé · Prinsip Etis</span></div>
+        <div class="dc-list">
+          <div class="dc-item"><span class="ico">✓</span><span>Bahasa <strong>pemberdayaan</strong>: "kecenderungan", "trend", "potensi"</span></div>
+          <div class="dc-item"><span class="ico">✓</span><span>Bahasa negatif <strong>dibalik konstruktif</strong>: "tantangan ini bisa diatasi dengan ..."</span></div>
+          <div class="dc-item"><span class="ico">✓</span><span>Saran berbasis <strong>data dari foto</strong>, bukan opini bebas</span></div>
+          <div class="dc-item"><span class="ico">✓</span><span>Pengakuan: <strong>budaya, bukan ilmu pasti</strong></span></div>
+        </div>
+      </div>
+
+      <div class="dc-card scope">
+        <div class="dc-eb">範 圍 · Cakupan</div>
+        <div class="dc-title"><span class="dc-hz">範圍</span><span class="dc-name">Fàn Wéi · Scope</span></div>
+        <div class="dc-list">
+          <div class="dc-item"><span class="ico">◆</span><span>Sumber data: <strong>foto output software</strong> 四柱論命附加紫微斗數 V2.6 (NCC Taiwan)</span></div>
+          <div class="dc-item"><span class="ico">◆</span><span>Methodology multi-school: <span class="hz">三命通會</span>, <span class="hz">子平真詮</span>, <span class="hz">滴天髓</span></span></div>
+          <div class="dc-item"><span class="ico">◆</span><span>Cakupan: 八字 + 紫微 + 陽宅 (BaZi-based, bukan 八宅)</span></div>
+          <div class="dc-item"><span class="ico">◆</span><span>Tidak menambah prediksi <strong>di luar foto</strong></span></div>
+        </div>
+      </div>
+
+      <div class="dc-card legal">
+        <div class="dc-eb">法 律 · Pernyataan Hukum</div>
+        <div class="dc-title"><span class="dc-hz">聲明</span><span class="dc-name">Shēng Míng · Pernyataan</span></div>
+        <div class="dc-list">
+          <div class="dc-item"><span class="ico">◆</span><span>Bagan ini <strong>tidak menggantikan</strong> keputusan medis profesional</span></div>
+          <div class="dc-item"><span class="ico">◆</span><span><strong>Tidak menggantikan</strong> nasihat hukum atau finansial</span></div>
+          <div class="dc-item"><span class="ico">◆</span><span>Tidak menjamin akurasi terjemahan istilah klasik (lihat <span class="hz">辭典</span> halaman 22)</span></div>
+          <div class="dc-item"><span class="ico">◆</span><span>Subjek &amp; pembuat tidak bertanggung jawab atas keputusan berdasarkan laporan ini</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="dis-close">
+      <div class="dc-close-text">
+        <div class="dc-close-eb">Penutup</div>
+        <div class="dc-close-quote">
+          "<span class="hz">命由己造，相由心生</span>" — Takdir dibentuk oleh diri sendiri; wajah lahir dari hati. Bagan ini cermin pola; <strong>kunci tetap di tangan Anda</strong>.
+        </div>
+      </div>
+      <div class="dc-close-mark">完</div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      <em>Mìng Yóu Jǐ Zào — Xiāng Yóu Xīn Shēng</em>. Terima kasih sudah membaca; semoga laporan ini menjadi peta yang berguna untuk perjalanan Anda berikutnya. <span style="font-family:'Noto Serif TC',serif;color:var(--red)">福壽財</span>.
+    </div>
+    <div class="footer-meta"><span>Halaman 12 / 12 · SELESAI</span><span>Ramalan 命</span></div>
+  </footer>
+</section>
+
+
+</body>
+</html>

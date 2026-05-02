@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Michele — 事業 Karir &amp; Profesi</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* Page-specific additions */
+  .insight-card {
+    background: linear-gradient(160deg, #FFFEF8 0%, #F5EBD0 100%);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 5mm;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 2.5mm;
+    overflow: hidden;
+  }
+  .insight-eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 7pt;
+    letter-spacing: 3px;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .insight-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 14pt;
+    color: var(--red);
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  .insight-body {
+    font-size: 8.5pt;
+    line-height: 1.55;
+    color: var(--text);
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .insight-body strong { color: var(--red); font-weight: 600; }
+  .insight-body .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red);
+    font-weight: 600;
+  }
+  .insight-tags {
+    display: flex; gap: 2mm; flex-wrap: wrap;
+    margin-top: 1mm;
+  }
+  .insight-tag {
+    background: var(--green-bg);
+    color: var(--green);
+    font-size: 7pt;
+    padding: 0.8mm 2.5mm;
+    border-radius: 5mm;
+    border: 0.2mm solid var(--green);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .insight-tag.bad {
+    background: var(--red-bad-bg);
+    color: var(--red-bad);
+    border-color: var(--red-bad);
+  }
+
+  /* Industri row with fit bar */
+  .ind-row { grid-template-columns: 9mm 1fr 28mm !important; }
+  .fit-col {
+    display: flex; flex-direction: column; gap: 0.8mm;
+    align-items: stretch; justify-content: center;
+    min-width: 0;
+  }
+  .fit-bar-track {
+    height: 2.5mm;
+    background: rgba(0,0,0,0.05);
+    border-radius: 1.25mm;
+    overflow: hidden;
+  }
+  .fit-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--green) 0%, #4FA77F 100%);
+    border-radius: 1.25mm;
+  }
+  .ind-row:not(.top) .fit-bar-fill {
+    background: linear-gradient(90deg, var(--gold) 0%, #DCC68A 100%);
+  }
+  .fit-meta {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 6.5pt; color: var(--text-muted);
+    letter-spacing: 0.5px;
+  }
+  .fit-meta .score {
+    font-family: 'Playfair Display', serif;
+    font-size: 9pt;
+    color: var(--text);
+    font-weight: 600;
+  }
+  .ind-row.top .fit-meta .score { color: var(--green); }
+</style>
+</head>
+<body>
+<section class="page">
+
+  <!-- KEPALA -->
+  <header class="page-header">
+    <div class="h-num">12</div>
+    <div class="h-titles">
+      <div class="h-cn">事 業</div>
+      <div class="h-id">Karir &amp; Profesi</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <!-- BAR SUBJEK -->
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Babi-Merah.svg" alt="Babi"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Michele · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">亥 Babi</span></div>
+      <div class="subject-detail">22 Juli 1995 · 14:48 · Wanita · Umur 30 tahun · 大運 丙辰 (七殺)</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">甲木 · Kayu Pohon Besar</div>
+    </div>
+  </div>
+
+  <!-- KONTEN -->
+  <main class="content content-career">
+
+    <!-- WU XING STRIP -->
+    <div class="wuxing-strip">
+      <div class="label">五 行</div>
+      <div class="wuxing-bar">
+        <div class="wux-cell self">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:100%"></div></div>
+          <div class="wux-label">金 Logam<span class="v">2.3</span></div>
+        </div>
+        <div class="wux-cell unfav">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:87%"></div></div>
+          <div class="wux-label">土 Tanah<span class="v">2.0</span></div>
+        </div>
+        <div class="wux-cell fav">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:74%"></div></div>
+          <div class="wux-label">水 Air<span class="v">1.7</span></div>
+        </div>
+        <div class="wux-cell fav">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:61%"></div></div>
+          <div class="wux-label">木 Kayu<span class="v">1.4</span></div>
+        </div>
+        <div class="wux-cell">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:26%"></div></div>
+          <div class="wux-label">火 Api<span class="v">0.6</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN: INSIGHT + INDUSTRI -->
+    <div class="career-main">
+
+      <!-- WAWASAN -->
+      <div class="insight-card">
+        <div class="insight-eyebrow">Wawasan Utama</div>
+        <div class="insight-title">Logam dominan — energi butuh dialirkan, bukan ditumpuk</div>
+        <div class="insight-body">
+          Penguasa Hari <span class="hz">甲木</span> sudah kuat (2.3); ditambah unsur <span class="hz">土</span> (Tanah) yang menyuburkannya, dominasi Logam ini perlu disalurkan. <strong>Industri ber-unsur 水 (Air) &amp; 木 (Kayu)</strong> akan mengalirkan kekuatan Anda menjadi karya — bukan tertimbun statis.<br><br>
+          Di umur 64 dengan fase 大運 <span class="hz">丙辰 (七殺)</span>, peran natural Anda: <strong>arsitek senior, penasihat, perantara strategis</strong> — bukan operasional harian.
+        </div>
+        <div class="insight-tags">
+          <span class="insight-tag">水 ALIRAN</span>
+          <span class="insight-tag">木 PERTUMBUHAN</span>
+          <span class="insight-tag bad">金 STATIS</span>
+          <span class="insight-tag bad">土 BERAT</span>
+        </div>
+      </div>
+
+      <!-- INDUSTRI LIST -->
+      <div class="industri-list">
+        <div class="ind-header">5 Bidang Paling Searah</div>
+
+        <div class="ind-row top">
+          <div class="ind-icon">📚</div>
+          <div class="ind-info">
+            <div class="ind-name">Penerbitan &amp; Buku<span class="hz">出版</span></div>
+            <div class="ind-reason">Unsur 木 — menyalurkan logam jadi karya tertulis. Sangat sesuai untuk fase senior.</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-meta"><span>FIT</span><span class="score">95</span></div>
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:95%"></div></div>
+          </div>
+        </div>
+
+        <div class="ind-row top">
+          <div class="ind-icon">🎓</div>
+          <div class="ind-info">
+            <div class="ind-name">Pendidikan<span class="hz">教育</span></div>
+            <div class="ind-reason">Unsur 木 — menumbuhkan generasi berikutnya, peran mentor cocok dengan 甲木 senior.</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-meta"><span>FIT</span><span class="score">90</span></div>
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:90%"></div></div>
+          </div>
+        </div>
+
+        <div class="ind-row">
+          <div class="ind-icon">🚛</div>
+          <div class="ind-info">
+            <div class="ind-name">Logistik &amp; Distribusi<span class="hz">運輸</span></div>
+            <div class="ind-reason">Unsur 水 — gerak &amp; aliran. 驛馬 di bagan Anda mendukung pola hidup yang dinamis.</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-meta"><span>FIT</span><span class="score">82</span></div>
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:82%"></div></div>
+          </div>
+        </div>
+
+        <div class="ind-row">
+          <div class="ind-icon">🏪</div>
+          <div class="ind-info">
+            <div class="ind-name">Perdagangan &amp; Trading<span class="hz">貿易</span></div>
+            <div class="ind-reason">Unsur 水 — menukar nilai antar pihak; cocok dengan 偏財 + 正財 yang sama-sama berlimpah.</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-meta"><span>FIT</span><span class="score">78</span></div>
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:78%"></div></div>
+          </div>
+        </div>
+
+        <div class="ind-row">
+          <div class="ind-icon">🪵</div>
+          <div class="ind-info">
+            <div class="ind-name">Kerajinan Kayu &amp; Seni<span class="hz">工藝</span></div>
+            <div class="ind-reason">Unsur 木 — kerja tangan halus. Mengalihkan ketegasan 甲木 ke detail estetik.</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-meta"><span>FIT</span><span class="score">72</span></div>
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:72%"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- AVOID -->
+    <div class="avoid-strip">
+      <div class="avoid-label">忌 Hindari</div>
+      <div class="avoid-text">
+        Industri <strong>金 (Logam berat, mining, persenjataan)</strong> &amp; <strong>土 (properti tanah-kering, semen, mineral statis)</strong> — menambah dominasi yang sudah kuat, menyebabkan energi macet &amp; profit lambat.
+      </div>
+    </div>
+
+  </main>
+
+  <!-- KAKI -->
+  <footer class="footer">
+    <div class="footer-caption">
+      Bila membuka usaha baru, partner ber-喜用神 火/金 (tipe komunikatif &amp; edukatif) akan lebih melengkapi daripada partner sesama 甲木 yang mengulang dominasi Logam.
+    </div>
+    <div class="footer-meta">
+      <span>Halaman 12 / 23</span>
+      <span>Michele · Ramalan 命</span>
+    </div>
+  </footer>
+
+</section>
+</body>
+</html>

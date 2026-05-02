@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Lin Wen Jin — Palace Detail 1</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-pal { grid-template-rows: 1fr !important; gap: 0; }
+
+  .pal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4mm; overflow: hidden;
+  }
+  .pal-card {
+    background: var(--bg-card);
+    border: 0.4mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 2mm;
+    overflow: hidden;
+    position: relative;
+  }
+  .pal-card.life {
+    background: linear-gradient(180deg, #FFF8E1, #F5EBD0);
+    border: 0.5mm solid var(--gold);
+  }
+  .pal-card::before {
+    content: ''; position: absolute;
+    top: 0; right: 0; width: 14mm; height: 14mm;
+    background: radial-gradient(circle at top right, rgba(201,169,97,0.15) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .pal-head {
+    display: grid; grid-template-columns: auto 1fr auto;
+    gap: 3mm; align-items: baseline;
+    border-bottom: 0.2mm solid var(--gold-soft);
+    padding-bottom: 1.5mm;
+  }
+  .pal-name {
+    font-family: 'Noto Serif TC', serif; font-size: 14pt;
+    color: var(--red); font-weight: 700; letter-spacing: 2px;
+  }
+  .pal-name .id {
+    display: block; font-family: 'Inter', sans-serif;
+    font-size: 6pt; color: var(--text-muted);
+    letter-spacing: 1px; text-transform: uppercase;
+    font-weight: 500; margin-top: 0.3mm;
+  }
+  .pal-branch {
+    text-align: center;
+    font-family: 'Noto Serif TC', serif; font-size: 11pt;
+    color: var(--text); font-weight: 600;
+  }
+  .pal-branch .id {
+    display: block; font-size: 5.5pt; color: var(--text-muted);
+    font-style: italic; margin-top: 0.3mm;
+  }
+  .pal-age {
+    font-family: 'Playfair Display', serif; font-size: 8.5pt;
+    color: var(--gold); font-weight: 700;
+    text-align: right; letter-spacing: 0.5px;
+  }
+  .pal-age .lbl {
+    display: block; font-size: 5.5pt; color: var(--text-muted);
+    letter-spacing: 1px; text-transform: uppercase;
+    font-weight: 500; margin-top: 0.3mm;
+  }
+
+  .pal-stars {
+    display: flex; gap: 2mm; flex-wrap: wrap;
+    align-items: center;
+  }
+  .pal-star {
+    background: linear-gradient(135deg, white, #FFF8E1);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 1.5mm;
+    padding: 1.5mm 3mm;
+    display: grid; grid-template-columns: auto auto;
+    gap: 2mm; align-items: baseline;
+  }
+  .pal-star.main { border-color: var(--gold); background: linear-gradient(135deg, #FFF8E1, #F5EBD0); }
+  .pal-star-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 11pt;
+    color: var(--red); font-weight: 700; line-height: 1;
+  }
+  .pal-star-id { font-size: 6.5pt; color: var(--text-muted); font-style: italic; letter-spacing: 0.3px; }
+
+  .pal-insight {
+    background: linear-gradient(90deg, var(--gold-bg), transparent);
+    border-left: 0.8mm solid var(--gold);
+    border-radius: 0 1mm 1mm 0;
+    padding: 1.5mm 3mm;
+    font-family: 'Playfair Display', serif; font-size: 9.5pt;
+    color: var(--red); line-height: 1.3; font-weight: 600; font-style: italic;
+  }
+  .pal-insight .hz { font-family: 'Noto Serif TC', serif; color: var(--text); font-style: normal; font-weight: 700; }
+
+  .pal-body {
+    font-size: 6.8pt; line-height: 1.35; color: var(--text);
+    overflow: hidden;
+  }
+  .pal-body strong { color: var(--red); }
+  .pal-body .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+
+  .pal-actions {
+    display: grid; gap: 1.2mm;
+    border-top: 0.2mm dashed var(--gold-soft); padding-top: 1.5mm;
+  }
+  .pal-action {
+    display: grid; grid-template-columns: 4mm 1fr; gap: 2mm;
+    font-size: 7.2pt; line-height: 1.4; color: var(--text);
+  }
+  .pal-action .ico { color: var(--green); font-weight: 700; }
+  .pal-action strong { color: var(--red); }
+  .pal-action .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">17</div>
+    <div class="h-titles"><div class="h-cn">命 兄 夫 子</div><div class="h-id">Diri · Saudara · Pasangan · Anak</div></div>
+    <div class="h-section">Bagian II · Zi Wei 紫微</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Lin Wen Jin · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
+      <div class="subject-detail">Detail 4 istana lingkaran-dalam — diri &amp; relasi inti</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">乙木 · Kayu Yin (Tunas)</div></div>
+  </div>
+
+  <main class="content content-pal">
+    <div class="pal-grid">
+
+      <!-- 命宮 DIRI -->
+      <div class="pal-card life">
+        <div class="pal-head">
+          <div class="pal-name">命宮<span class="id">Mìng Gōng · Diri</span></div>
+          <div class="pal-branch">申<span class="id">Monyet</span></div>
+          <div class="pal-age">6–15<span class="lbl">大限 1</span></div>
+        </div>
+        <div class="pal-stars">
+          <div class="pal-star main"><span class="pal-star-hz">巨門</span><span class="pal-star-id">Jù Mén · Pintu Besar</span></div>
+          <div class="pal-star main"><span class="pal-star-hz">廉貞</span><span class="pal-star-id">Tān Láng · Hasrat Kreatif</span></div>
+        </div>
+        <div class="pal-insight">"<span class="hz">行動性的運動</span>" — Tipe aksi: terus mendorong, tidak diam.</div>
+        <div class="pal-body">
+          Karakter <strong>seperti api</strong> — emosional &amp; intens, ingatan emosional dalam. Daya eksekusi nyata: dipikirkan langsung dijalankan. Tegas tetapi sering kurang "buffer" untuk meredam benturan.
+        </div>
+        <div class="pal-actions">
+          <div class="pal-action"><span class="ico">▸</span><span><strong>Tunda 24 jam</strong> sebelum kirim pesan emosional</span></div>
+          <div class="pal-action"><span class="ico">▸</span><span>Pakai ingatan emosional untuk <strong>cerita-pemberi-makna</strong>, bukan amunisi konflik lama</span></div>
+        </div>
+      </div>
+
+      <!-- 兄弟 SAUDARA -->
+      <div class="pal-card">
+        <div class="pal-head">
+          <div class="pal-name">兄弟<span class="id">Xiōng Dì · Saudara</span></div>
+          <div class="pal-branch">未<span class="id">Kambing</span></div>
+          <div class="pal-age">116–125<span class="lbl">大限 2</span></div>
+        </div>
+        <div class="pal-stars">
+          <div class="pal-star main"><span class="pal-star-hz">太陰</span><span class="pal-star-id">Tài Yīn · Bulan</span></div>
+        </div>
+        <div class="pal-insight"><span class="hz">太陰</span> di palace saudara — relasi yang halus &amp; reflektif.</div>
+        <div class="pal-body">
+          Saudari Anda halus &amp; sensitif (sifat <span class="hz">太陰</span> = bulan, intuitif). Mereka adalah <strong>"sensor karakter"</strong> Anda yang paling jujur. Kritik mereka jarang dilampiaskan, tetapi saat keluar = signal penting.
+        </div>
+        <div class="pal-actions">
+          <div class="pal-action"><span class="ico">▸</span><span>Bila saudari sebut Anda terlalu keras — anggap <strong>data, bukan serangan</strong></span></div>
+          <div class="pal-action"><span class="ico">▸</span><span>Inisiatif komunikasi rutin — jangan tunggu mereka yang menjangkau</span></div>
+        </div>
+      </div>
+
+      <!-- 夫妻 PASANGAN -->
+      <div class="pal-card">
+        <div class="pal-head">
+          <div class="pal-name">夫妻<span class="id">Fū Qī · Pasangan</span></div>
+          <div class="pal-branch">午<span class="id">Kuda</span></div>
+          <div class="pal-age">106–115<span class="lbl">大限 3</span></div>
+        </div>
+        <div class="pal-stars">
+          <div class="pal-star main"><span class="pal-star-hz">太陽</span><span class="pal-star-id">Tài Yáng · Matahari</span></div>
+          <div class="pal-star main"><span class="pal-star-hz">巨門</span><span class="pal-star-id">Jù Mén · Komunikasi (化忌)</span></div>
+        </div>
+        <div class="pal-insight">"<span class="hz">熱情的一對</span>" — Pasangan penuh gairah; api cepat menyala &amp; cepat padam.</div>
+        <div class="pal-body">
+          Pasangan <strong>cerdas &amp; berbakat</strong> (太陽 = matahari, ekstrover). <span class="hz">巨門 化忌</span> = potensi gesekan komunikasi. Solusi: bangun <strong>ritual harian</strong> (sarapan / teh sore) untuk menjaga bara.
+        </div>
+        <div class="pal-actions">
+          <div class="pal-action"><span class="ico">▸</span><span>Beri pasangan <strong>panggung</strong> &amp; otonomi keuangan rumah tangga</span></div>
+          <div class="pal-action"><span class="ico">▸</span><span>Konflik kecil <strong>selesaikan hari ini</strong> — jangan dipendam</span></div>
+        </div>
+      </div>
+
+      <!-- 子女 ANAK -->
+      <div class="pal-card">
+        <div class="pal-head">
+          <div class="pal-name">子女<span class="id">Zǐ Nǚ · Anak</span></div>
+          <div class="pal-branch">巳<span class="id">Ular</span></div>
+          <div class="pal-age">96–105<span class="lbl">大限 4</span></div>
+        </div>
+        <div class="pal-stars">
+          <div class="pal-star main"><span class="pal-star-hz">天府</span><span class="pal-star-id">Tiān Fǔ · Lumbung Stabilitas</span></div>
+        </div>
+        <div class="pal-insight">"<span class="hz">孝敬雙親</span>" — Anak yang berbakti &amp; menampung.</div>
+        <div class="pal-body">
+          <span class="hz">天府</span> di palace anak = mereka tipe <strong>"lumbung"</strong> (penjaga &amp; menampung). Anak laki-laki Anda berbudi &amp; lembut hati. Setelah dewasa akan berbakti dengan sepenuh hati.
+        </div>
+        <div class="pal-actions">
+          <div class="pal-action"><span class="ico">▸</span><span>Peran Anda: <strong>memberi panggung &amp; restu</strong>, bukan menyetir</span></div>
+          <div class="pal-action"><span class="ico">▸</span><span>Transfer pengetahuan dalam <strong>tulisan</strong> — bukan hanya verbal</span></div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      Lingkaran inti Anda — diri yang berapi, saudari yang halus, pasangan yang cerah, anak yang stabil. <span style="font-family:'Noto Serif TC',serif;color:var(--red)">家</span> Anda berimbang; tugasnya menjaga, bukan mengubah.
+    </div>
+    <div class="footer-meta"><span>Halaman 17 / 23</span><span>Lin Wen Jin · Ramalan 命</span></div>
+  </footer>
+</section>
+</body>
+</html>

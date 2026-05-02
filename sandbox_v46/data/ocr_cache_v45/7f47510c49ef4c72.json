@@ -1,0 +1,19 @@
+{
+  "screen_type": "tafsir",
+  "tafsir_section": "hun_pei",
+  "marriage": {
+    "cocok_branches": [
+      "丑",
+      "辰",
+      "巳"
+    ],
+    "hindari_branches": [
+      "子",
+      "卯",
+      "酉",
+      "戌"
+    ]
+  },
+  "_photo": "WhatsApp Image 2026-05-02 at 21.07.03 (2).jpg",
+  "_hash": "7f47510c49ef4c72"
+}

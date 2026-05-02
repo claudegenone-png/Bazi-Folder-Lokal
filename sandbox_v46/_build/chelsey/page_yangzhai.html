@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Chelsey — 陽宅 Feng Shui Hunian</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* PAGE: Yang Zhai */
+  section.page.no-bar { grid-template-rows: 14mm 1fr 22mm !important; }
+  .content-yangzhai {
+    grid-template-rows: 100mm 1fr !important;
+    gap: 5mm;
+  }
+
+  /* COMPASS HERO */
+  .yz-hero {
+    display: grid;
+    grid-template-columns: 1fr 60mm;
+    gap: 5mm;
+    overflow: hidden;
+  }
+  .yz-compass-frame {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 3mm;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  .yz-compass-frame svg { width: 100%; height: 100%; max-height: 94mm; }
+
+  .yz-gua-panel {
+    background: linear-gradient(180deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    display: grid;
+    grid-template-rows: auto auto auto auto 1fr auto;
+    gap: 2mm;
+    overflow: hidden;
+    text-align: center;
+  }
+  .yz-gua-eyebrow {
+    font-size: 6.5pt; color: var(--gold);
+    letter-spacing: 3px; text-transform: uppercase; font-weight: 700;
+  }
+  .yz-trigram {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 36pt; color: var(--red);
+    line-height: 1; font-weight: 400;
+    text-shadow: 0 1mm 2mm rgba(139,26,26,0.15);
+  }
+  .yz-gua-name {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 22pt; color: var(--red);
+    font-weight: 700; letter-spacing: 4px; line-height: 1;
+  }
+  .yz-gua-pinyin {
+    font-family: 'Playfair Display', serif;
+    font-size: 11pt; font-style: italic;
+    color: var(--text);
+  }
+  .yz-gua-meaning {
+    font-size: 7pt; line-height: 1.35;
+    color: var(--text);
+    border-top: 0.2mm solid var(--gold-soft);
+    padding-top: 1.5mm;
+    overflow: hidden;
+  }
+  .yz-gua-meaning strong { color: var(--red); }
+  .yz-gua-axis {
+    font-size: 6.5pt; color: var(--text-muted);
+    font-style: italic;
+    border-top: 0.2mm solid var(--gold-soft);
+    padding-top: 1.5mm;
+    letter-spacing: 0.3px;
+  }
+  .yz-gua-axis .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red); font-weight: 600;
+  }
+
+  /* ZONE GRID */
+  .yz-zones-frame {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 2.5mm;
+    overflow: hidden;
+  }
+  .yz-zones-eyebrow {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 0.3mm solid var(--gold-soft); padding-bottom: 1.5mm;
+  }
+  .yz-zones-eyebrow .label {
+    font-family: 'Noto Serif TC', serif; font-size: 13pt;
+    color: var(--red); letter-spacing: 4px; font-weight: 600;
+  }
+  .yz-zones-eyebrow .id {
+    font-family: 'Playfair Display', serif; font-size: 9pt;
+    font-style: italic; color: var(--text-muted); margin-left: 4mm;
+  }
+  .yz-zones-eyebrow .meta {
+    font-size: 6.5pt; color: var(--text-muted);
+    letter-spacing: 1.5px; text-transform: uppercase;
+  }
+
+  .yz-zones-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 3mm;
+    overflow: hidden;
+  }
+  .yz-zone {
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 2.5mm 3mm;
+    background: var(--bg-card);
+    display: grid;
+    grid-template-columns: 22mm 1fr;
+    gap: 3mm;
+    align-items: stretch;
+    overflow: hidden;
+    min-width: 0;
+  }
+  .yz-zone.warn {
+    background: var(--red-bad-bg);
+    border-color: var(--red-bad);
+  }
+
+  .yz-zone-label {
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center;
+    border-right: 0.2mm dashed var(--gold-soft);
+    padding-right: 2mm;
+  }
+  .yz-zone.warn .yz-zone-label {
+    border-right-color: var(--red-bad);
+  }
+  .yz-zone-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 28pt; color: var(--red);
+    font-weight: 700; line-height: 1;
+  }
+  .yz-zone.warn .yz-zone-hz { color: var(--red-bad); opacity: 0.85; }
+  .yz-zone-id {
+    font-family: 'Playfair Display', serif;
+    font-size: 8.5pt; color: var(--text);
+    margin-top: 1mm; font-style: italic;
+    letter-spacing: 0.5px;
+  }
+  .yz-zone-pinyin {
+    font-size: 5.5pt; color: var(--text-muted);
+    letter-spacing: 0.5px; margin-top: 0.3mm;
+    font-style: italic;
+  }
+
+  .yz-zone-dirs {
+    display: flex; flex-direction: column;
+    justify-content: center; gap: 1.5mm;
+    overflow: hidden;
+  }
+  .yz-zone-headline {
+    font-size: 6pt; color: var(--gold);
+    letter-spacing: 1.5px; text-transform: uppercase;
+    font-weight: 700; margin-bottom: 0.5mm;
+  }
+  .yz-zone.warn .yz-zone-headline { color: var(--red-bad); }
+  .yz-dir-pills {
+    display: flex; gap: 1mm; flex-wrap: wrap;
+  }
+  .yz-pill {
+    display: inline-flex; align-items: center; gap: 1mm;
+    background: var(--green-bg);
+    border: 0.2mm solid var(--green);
+    color: var(--green);
+    font-size: 6pt; font-weight: 600;
+    padding: 0.5mm 1.5mm;
+    border-radius: 5mm;
+    letter-spacing: 0.3px;
+  }
+  .yz-pill.bad {
+    background: var(--red-bad-bg);
+    border-color: var(--red-bad);
+    color: var(--red-bad);
+  }
+  .yz-pill .hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 7pt; font-weight: 700;
+  }
+  .yz-zone-note {
+    font-size: 5.8pt; color: var(--text-muted);
+    line-height: 1.3; margin-top: 1mm;
+    font-style: italic;
+  }
+
+  /* compass styles */
+  .dir-label-cn { font-family: 'Noto Serif TC', serif; font-weight: 700; }
+  .dir-label-id { font-family: 'Inter', sans-serif; }
+  .dir-trigram { font-family: 'Noto Serif TC', serif; font-weight: 400; }
+</style>
+</head>
+<body>
+<section class="page no-bar">
+  <header class="page-header">
+    <div class="h-num">13</div>
+    <div class="h-titles">
+      <div class="h-cn">陽 宅</div>
+      <div class="h-id">Feng Shui Hunian</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <main class="content content-yangzhai">
+
+    <!-- HERO KOMPAS -->
+    <div class="yz-hero">
+      <div class="yz-compass-frame">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <!-- Ornamen luar -->
+          <circle cx="200" cy="200" r="186" fill="none" stroke="#E5D3A1" stroke-width="0.6"/>
+          <circle cx="200" cy="200" r="178" fill="#FFFEF8" stroke="#C9A961" stroke-width="0.4"/>
+          <circle cx="200" cy="200" r="118" fill="none" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,3"/>
+
+          <!-- Garis sumbu utama -->
+          <line x1="200" y1="22" x2="200" y2="378" stroke="#E5D3A1" stroke-width="0.3" stroke-dasharray="2,3"/>
+          <line x1="22" y1="200" x2="378" y2="200" stroke="#E5D3A1" stroke-width="0.3" stroke-dasharray="2,3"/>
+
+          <!-- Subject's NW-SE axis (巽卦 line) -->
+          <line x1="97.5" y1="97.5" x2="302.5" y2="302.5"
+            stroke="#C9A961" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.7"/>
+
+          <!-- 8 badge arah -->
+          <!-- N 坎 -->
+          <g>
+            <circle cx="200" cy="55" r="30" fill="#E8F0EA" stroke="#2D6A4F" stroke-width="1.2"/>
+            <text x="200" y="48" text-anchor="middle" class="dir-trigram" font-size="13" fill="#2D6A4F">☵</text>
+            <text x="200" y="62" text-anchor="middle" class="dir-label-cn" font-size="13" fill="#2D6A4F" font-weight="700">北</text>
+            <text x="200" y="74" text-anchor="middle" class="dir-label-id" font-size="6" fill="#2D6A4F" font-style="italic">U · Kǎn · Air</text>
+          </g>
+          <!-- NE 艮 -->
+          <g>
+            <circle cx="302.5" cy="97.5" r="30" fill="#FFFEF8" stroke="#D8C896" stroke-width="0.6"/>
+            <text x="302.5" y="90.5" text-anchor="middle" class="dir-trigram" font-size="13" fill="#6B5B3F">☶</text>
+            <text x="302.5" y="104.5" text-anchor="middle" class="dir-label-cn" font-size="13" fill="#2C2416">東北</text>
+            <text x="302.5" y="116.5" text-anchor="middle" class="dir-label-id" font-size="6" fill="#6B5B3F" font-style="italic">TL · Gèn · Gunung</text>
+          </g>
+          <!-- E 震 -->
+          <g>
+            <circle cx="345" cy="200" r="30" fill="#E8F0EA" stroke="#2D6A4F" stroke-width="1.2"/>
+            <text x="345" y="193" text-anchor="middle" class="dir-trigram" font-size="13" fill="#2D6A4F">☳</text>
+            <text x="345" y="207" text-anchor="middle" class="dir-label-cn" font-size="13" fill="#2D6A4F" font-weight="700">東</text>
+            <text x="345" y="219" text-anchor="middle" class="dir-label-id" font-size="6" fill="#2D6A4F" font-style="italic">T · Zhèn · Petir</text>
+          </g>
+          <!-- SE 巽 (SELF — TRIGRAM ANDA) -->
+          <g>
+            <circle cx="302.5" cy="302.5" r="36" fill="#FFF8E1" stroke="#8B1A1A" stroke-width="2"/>
+            <text x="302.5" y="292.5" text-anchor="middle" class="dir-trigram" font-size="15" fill="#8B1A1A">☴</text>
+            <text x="302.5" y="308.5" text-anchor="middle" class="dir-label-cn" font-size="14" fill="#8B1A1A" font-weight="700">東南</text>
+            <text x="302.5" y="321.5" text-anchor="middle" class="dir-label-id" font-size="6.5" fill="#8B1A1A" font-style="italic" font-weight="600">TG · Xùn · ANGIN</text>
+            <text x="302.5" y="347.5" text-anchor="middle" font-size="6" fill="#8B1A1A" font-weight="700" letter-spacing="1">★ TRIGRAM ANDA ★</text>
+          </g>
+          <!-- S 離 -->
+          <g>
+            <circle cx="200" cy="345" r="30" fill="#E8F0EA" stroke="#2D6A4F" stroke-width="1.2"/>
+            <text x="200" y="338" text-anchor="middle" class="dir-trigram" font-size="13" fill="#2D6A4F">☲</text>
+            <text x="200" y="352" text-anchor="middle" class="dir-label-cn" font-size="13" fill="#2D6A4F" font-weight="700">南</text>
+            <text x="200" y="364" text-anchor="middle" class="dir-label-id" font-size="6" fill="#2D6A4F" font-style="italic">S · Lí · Api</text>
+          </g>
+          <!-- SW 坤 -->
+          <g>
+            <circle cx="97.5" cy="302.5" r="30" fill="#FFFEF8" stroke="#D8C896" stroke-width="0.6"/>
+            <text x="97.5" y="295.5" text-anchor="middle" class="dir-trigram" font-size="13" fill="#6B5B3F">☷</text>
+            <text x="97.5" y="309.5" text-anchor="middle" class="dir-label-cn" font-size="13" fill="#2C2416">西南</text>
+            <text x="97.5" y="321.5" text-anchor="middle" class="dir-label-id" font-size="6" fill="#6B5B3F" font-style="italic">BD · Kūn · Bumi</text>
+          </g>
+          <!-- W 兌 -->
+          <g>
+            <circle cx="55" cy="200" r="30" fill="#FFFEF8" stroke="#D8C896" stroke-width="0.6"/>
+            <text x="55" y="193" text-anchor="middle" class="dir-trigram" font-size="13" fill="#6B5B3F">☱</text>
+            <text x="55" y="207" text-anchor="middle" class="dir-label-cn" font-size="13" fill="#2C2416">西</text>
+            <text x="55" y="219" text-anchor="middle" class="dir-label-id" font-size="6" fill="#6B5B3F" font-style="italic">B · Duì · Danau</text>
+          </g>
+          <!-- NW 乾 -->
+          <g>
+            <circle cx="97.5" cy="97.5" r="30" fill="#FFFEF8" stroke="#D8C896" stroke-width="0.6"/>
+            <text x="97.5" y="90.5" text-anchor="middle" class="dir-trigram" font-size="13" fill="#6B5B3F">☰</text>
+            <text x="97.5" y="104.5" text-anchor="middle" class="dir-label-cn" font-size="13" fill="#2C2416">西北</text>
+            <text x="97.5" y="116.5" text-anchor="middle" class="dir-label-id" font-size="6" fill="#6B5B3F" font-style="italic">BL · Qián · Langit</text>
+          </g>
+
+          <!-- Center marker: house + axis -->
+          <g>
+            <circle cx="200" cy="200" r="32" fill="#FFFEF8" stroke="#C9A961" stroke-width="1.2"/>
+            <!-- house icon -->
+            <path d="M 184 208 L 200 192 L 216 208 L 216 218 L 184 218 Z"
+              fill="none" stroke="#8B1A1A" stroke-width="1.2" stroke-linejoin="round"/>
+            <rect x="195" y="211" width="6" height="7" fill="#8B1A1A"/>
+            <text x="200" y="232" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic" letter-spacing="1">RUMAH</text>
+          </g>
+
+          <!-- Axis label (top-right) -->
+          <text x="376" y="32" text-anchor="end" font-size="6" fill="#C9A961" font-weight="600" letter-spacing="1.5">UTARA · U</text>
+          <text x="24" y="32" font-size="5.5" fill="#C9A961" font-style="italic">八卦 BĀ GUÀ</text>
+          <text x="24" y="378" font-size="5.5" fill="#C9A961" font-style="italic">8 ARAH MATA ANGIN</text>
+        </svg>
+      </div>
+
+      <!-- PANEL SAMPING GUA -->
+      <div class="yz-gua-panel">
+        <div class="yz-gua-eyebrow">本 命 卦 · Trigram Pribadi</div>
+        <div class="yz-trigram">☴</div>
+        <div class="yz-gua-name">巽</div>
+        <div class="yz-gua-pinyin">Xùn — "Angin"</div>
+        <div class="yz-gua-meaning">
+          <strong>坎</strong> melambangkan <strong>Air yang mengalir &amp; menembus</strong>. Sifat kelompok ini: bijaksana, intuitif, adaptif, kreatif. Cocok dengan 戊土 Anda yang butuh nutrisi air &amp; ruang berkembang.
+        </div>
+        <div class="yz-gua-axis">
+          <span>Sumbu hoki:</span> <span class="hz">東南</span>↔<span class="hz">西北</span><br>
+          TG ↔ BL · garis emas di kompas
+        </div>
+      </div>
+    </div>
+
+    <!-- MATRIKS ZONA -->
+    <div class="yz-zones-frame">
+      <div class="yz-zones-eyebrow">
+        <div>
+          <span class="label">六 大 方 位</span>
+          <span class="id">Enam Zona Hunian — Penempatan Optimal</span>
+        </div>
+        <div class="meta">巽卦 XÙN GUA · KELOMPOK TIMUR</div>
+      </div>
+
+      <div class="yz-zones-grid">
+
+        <!-- 門 PINTU -->
+        <div class="yz-zone">
+          <div class="yz-zone-label">
+            <div class="yz-zone-hz">門</div>
+            <div class="yz-zone-id">Pintu Utama</div>
+            <div class="yz-zone-pinyin">Mén · Pintu</div>
+          </div>
+          <div class="yz-zone-dirs">
+            <div class="yz-zone-headline">✓ Arah Optimal</div>
+            <div class="yz-dir-pills">
+              <span class="yz-pill"><span class="hz">東南</span>TG</span>
+              <span class="yz-pill"><span class="hz">南</span>S</span>
+              <span class="yz-pill"><span class="hz">東</span>T</span>
+            </div>
+            <div class="yz-zone-note">Aliran qi masuk dari Tenggara/Selatan menyalurkan 戊土 ke ekspresi.</div>
+          </div>
+        </div>
+
+        <!-- 灶 DAPUR -->
+        <div class="yz-zone">
+          <div class="yz-zone-label">
+            <div class="yz-zone-hz">灶</div>
+            <div class="yz-zone-id">Dapur</div>
+            <div class="yz-zone-pinyin">Zào · Tungku</div>
+          </div>
+          <div class="yz-zone-dirs">
+            <div class="yz-zone-headline">✓ Arah Optimal</div>
+            <div class="yz-dir-pills">
+              <span class="yz-pill"><span class="hz">西向東</span>B→T</span>
+            </div>
+            <div class="yz-zone-note">Tungku duduk di Barat menghadap Timur — Logam membakar Kayu jadi Api mendukung.</div>
+          </div>
+        </div>
+
+        <!-- 房 KAMAR -->
+        <div class="yz-zone">
+          <div class="yz-zone-label">
+            <div class="yz-zone-hz">房</div>
+            <div class="yz-zone-id">Kamar Tidur</div>
+            <div class="yz-zone-pinyin">Fáng · Kamar</div>
+          </div>
+          <div class="yz-zone-dirs">
+            <div class="yz-zone-headline">✓ Arah Optimal</div>
+            <div class="yz-dir-pills">
+              <span class="yz-pill"><span class="hz">東</span>T</span>
+              <span class="yz-pill"><span class="hz">北</span>U</span>
+              <span class="yz-pill"><span class="hz">南</span>S</span>
+              <span class="yz-pill"><span class="hz">東南</span>TG</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 床 RANJANG -->
+        <div class="yz-zone">
+          <div class="yz-zone-label">
+            <div class="yz-zone-hz">床</div>
+            <div class="yz-zone-id">Ranjang</div>
+            <div class="yz-zone-pinyin">Chuáng · Tempat Tidur</div>
+          </div>
+          <div class="yz-zone-dirs">
+            <div class="yz-zone-headline">✓ Arah Optimal</div>
+            <div class="yz-dir-pills">
+              <span class="yz-pill"><span class="hz">北</span>U</span>
+              <span class="yz-pill"><span class="hz">東</span>T</span>
+              <span class="yz-pill"><span class="hz">南</span>S</span>
+              <span class="yz-pill"><span class="hz">東南</span>TG</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 神 ALTAR -->
+        <div class="yz-zone">
+          <div class="yz-zone-label">
+            <div class="yz-zone-hz">神</div>
+            <div class="yz-zone-id">Altar</div>
+            <div class="yz-zone-pinyin">Shén · Tempat Sembahyang</div>
+          </div>
+          <div class="yz-zone-dirs">
+            <div class="yz-zone-headline">✓ Arah Optimal</div>
+            <div class="yz-dir-pills">
+              <span class="yz-pill"><span class="hz">東</span>T</span>
+              <span class="yz-pill"><span class="hz">東南</span>TG</span>
+            </div>
+            <div class="yz-zone-note">Tambahan arah hoki tahunan (本年大利方) bisa ditambahkan.</div>
+          </div>
+        </div>
+
+        <!-- 廁 KAMAR MANDI (warn) -->
+        <div class="yz-zone warn">
+          <div class="yz-zone-label">
+            <div class="yz-zone-hz">廁</div>
+            <div class="yz-zone-id">Kamar Mandi</div>
+            <div class="yz-zone-pinyin">Cè · Kamar Mandi</div>
+          </div>
+          <div class="yz-zone-dirs">
+            <div class="yz-zone-headline">⚠ Arah "Penekan"</div>
+            <div class="yz-dir-pills">
+              <span class="yz-pill bad"><span class="hz">西北</span>BL</span>
+              <span class="yz-pill bad"><span class="hz">東北</span>TL</span>
+              <span class="yz-pill bad"><span class="hz">西南</span>BD</span>
+            </div>
+            <div class="yz-zone-note">Kamar Mandi di arah "buruk" justru menekan qi negatif — strategi klasik.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- LEGEND ARAH SINGKATAN -->
+      <div style="margin-top:3mm; padding:2.5mm 4mm; background:var(--bg-card); border:0.3mm solid var(--gold-soft); border-radius:1.5mm; font-size:6.5pt; line-height:1.5; color:var(--text-muted); display:grid; grid-template-columns:repeat(4, 1fr); gap:1mm 4mm;">
+        <span><strong style="color:var(--red);">U</strong> = Utara</span>
+        <span><strong style="color:var(--red);">TL</strong> = Timur Laut</span>
+        <span><strong style="color:var(--red);">T</strong> = Timur</span>
+        <span><strong style="color:var(--red);">TG</strong> = Tenggara</span>
+        <span><strong style="color:var(--red);">S</strong> = Selatan</span>
+        <span><strong style="color:var(--red);">BD</strong> = Barat Daya</span>
+        <span><strong style="color:var(--red);">B</strong> = Barat</span>
+        <span><strong style="color:var(--red);">BL</strong> = Barat Laut</span>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      Chelsey sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏財</span> (15–24) — menjajaki peluang & jaringan. Periode 15–34 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+    </div>
+    <div class="footer-meta">
+      <span>Halaman 13 / 23</span>
+      <span>Chelsey · Ramalan 命</span>
+    </div>
+  </footer>
+</section>
+</body>
+</html>

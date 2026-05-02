@@ -1,0 +1,124 @@
+{
+  "_subject_id": "michele",
+  "_extract_count": 0,
+  "_source": "V5 native compute (lunar-python + py-iztro), no OCR",
+  "name_id": "Michele",
+  "name_hanzi": "?",
+  "gender_hz": "陰女",
+  "birth_solar": "1995-07-22 14:00",
+  "birth_lunar_text": "一九九五年六月廿五",
+  "pillars": {
+    "year": {
+      "stem_hz": "乙",
+      "branch_hz": "亥",
+      "ten_god_hz": "劫財"
+    },
+    "month": {
+      "stem_hz": "癸",
+      "branch_hz": "未",
+      "ten_god_hz": "正印"
+    },
+    "day": {
+      "stem_hz": "甲",
+      "branch_hz": "寅",
+      "ten_god_hz": "命主"
+    },
+    "hour": {
+      "stem_hz": "辛",
+      "branch_hz": "未",
+      "ten_god_hz": "正官"
+    }
+  },
+  "wuxing": {
+    "jin": 1,
+    "shui": 2,
+    "mu": 5,
+    "huo": 2,
+    "tu": 2
+  },
+  "yong_shen_hz": "金 水",
+  "ji_shen_hz": "金",
+  "format_hz": "正印格",
+  "da_yun": [
+    {
+      "age_start": 7,
+      "age_end": 16,
+      "stem_hz": "甲",
+      "branch_hz": "申"
+    },
+    {
+      "age_start": 17,
+      "age_end": 26,
+      "stem_hz": "乙",
+      "branch_hz": "酉"
+    },
+    {
+      "age_start": 27,
+      "age_end": 36,
+      "stem_hz": "丙",
+      "branch_hz": "戌"
+    },
+    {
+      "age_start": 37,
+      "age_end": 46,
+      "stem_hz": "丁",
+      "branch_hz": "亥"
+    },
+    {
+      "age_start": 47,
+      "age_end": 56,
+      "stem_hz": "戊",
+      "branch_hz": "子"
+    },
+    {
+      "age_start": 57,
+      "age_end": 66,
+      "stem_hz": "己",
+      "branch_hz": "丑"
+    },
+    {
+      "age_start": 67,
+      "age_end": 76,
+      "stem_hz": "庚",
+      "branch_hz": "寅"
+    },
+    {
+      "age_start": 77,
+      "age_end": 86,
+      "stem_hz": "辛",
+      "branch_hz": "卯"
+    },
+    {
+      "age_start": 87,
+      "age_end": 96,
+      "stem_hz": "壬",
+      "branch_hz": "辰"
+    },
+    {
+      "age_start": 97,
+      "age_end": 106,
+      "stem_hz": "癸",
+      "branch_hz": "巳"
+    }
+  ],
+  "marriage": {
+    "cocok_branches": [
+      "戌",
+      "午",
+      "亥"
+    ],
+    "hindari_branches": [
+      "申",
+      "巳"
+    ]
+  },
+  "yang_zhai_gua_hz": "震",
+  "zi_wei": {
+    "ming_zhu_hz": "貪狼",
+    "shen_zhu_hz": "天機",
+    "ming_gong_branch_hz": "子",
+    "shen_gong_branch_hz": "寅",
+    "wu_xing_ju_hz": "火六局",
+    "shi_jun_hz": "子"
+  }
+}

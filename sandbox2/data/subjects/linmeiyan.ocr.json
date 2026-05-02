@@ -1,0 +1,60 @@
+{
+  "_subject_id": "linmeiyan",
+  "_extract_count": 29,
+  "_source": "OCR via Read tool (Claude Code) — 29 photos from Xing Qiao NCC V2.6 software",
+  "name_id": "Lin Mei Yan",
+  "name_hanzi": "林媚嫣",
+  "gender_hz": "陰女",
+  "birth_solar": "1989-05-13 07:45",
+  "birth_lunar_text": "農曆民國 78 年 4 月 9 日 7 時 45 分",
+  "pillars": {
+    "year":  {"stem_hz": "己", "branch_hz": "巳", "ten_god_hz": "七殺"},
+    "month": {"stem_hz": "己", "branch_hz": "巳", "ten_god_hz": "七殺"},
+    "day":   {"stem_hz": "癸", "branch_hz": "酉", "ten_god_hz": "命主"},
+    "hour":  {"stem_hz": "丙", "branch_hz": "辰", "ten_god_hz": "正財"}
+  },
+  "wuxing": {
+    "jin": 2,
+    "shui": 4,
+    "mu": 1,
+    "huo": 4,
+    "tu": 5
+  },
+  "yong_shen_hz": "水 金",
+  "ji_shen_hz": "火 土",
+  "format_hz": "七殺格",
+  "da_yun": [
+    {"age_start": 9,  "age_end": 18,  "stem_hz": "庚", "branch_hz": "午"},
+    {"age_start": 19, "age_end": 28,  "stem_hz": "辛", "branch_hz": "未"},
+    {"age_start": 29, "age_end": 38,  "stem_hz": "壬", "branch_hz": "申"},
+    {"age_start": 39, "age_end": 48,  "stem_hz": "癸", "branch_hz": "酉"},
+    {"age_start": 49, "age_end": 58,  "stem_hz": "甲", "branch_hz": "戌"},
+    {"age_start": 59, "age_end": 68,  "stem_hz": "乙", "branch_hz": "亥"},
+    {"age_start": 69, "age_end": 78,  "stem_hz": "丙", "branch_hz": "子"},
+    {"age_start": 79, "age_end": 88,  "stem_hz": "丁", "branch_hz": "丑"},
+    {"age_start": 89, "age_end": 98,  "stem_hz": "戊", "branch_hz": "寅"},
+    {"age_start": 99, "age_end": 108, "stem_hz": "己", "branch_hz": "卯"}
+  ],
+  "marriage": {
+    "cocok_branches": ["酉", "丑"],
+    "hindari_branches": ["寅", "亥"]
+  },
+  "yang_zhai_gua_hz": "巽",
+  "zi_wei": {
+    "ming_zhu_hz": "貪狼",
+    "shen_zhu_hz": "天機",
+    "ming_gong_branch_hz": "申",
+    "shen_gong_branch_hz": "辰",
+    "wu_xing_ju_hz": "木三局",
+    "shi_jun_hz": "寅"
+  },
+  "raw_texts": [
+    "全局總論: 配偶較囉唆且較不講道理。兒子比較重感情，比較節儉。較不擅於思考。兄弟的話不太能接受。比較有權力。離鄉背井，會搬離出生地較遠的地方居住。你所喜歡的配偶對象與父母親較合得來。",
+    "神煞: 寡宿(形孤骨露、面無和氣、六親終有也如無)。天醫(在醫界一定成名，為人敬仰，可作良醫)。福星貴(名望高、權威大、智能雖高、但自信過度，易招大敗須慎之)。",
+    "性情: 聰明秀氣、不喜拘束、好奇、反理則、只知有自己而不知有他人、有利己之心、外間的聰明、重識人多、擇友多不慎、重著修虛榮、比較會與人唱反調。怪異、胸藏不測之機、不願關心別人也、不願被別人關心、不喜言談、沉默、但常生不久之妄想、封閉中帶些表達慾、淡泊中稍想小名、有宗教心。重視他人對自己的肯定、敏感多幻想喜新厭舊、不喜成規定俗、心念多變動、喜鑽牛角尖、注重原則、喜文藝、柔情內向。",
+    "婚配 — 忌: 配相虎、蛇、豬。家境然無困苦及失敗。夫妻說無甜話。子息缺少。災厄禍百端。晚景不祥之運格也。宜: 配相牛、雞大吉，其他生相次吉。福祿驚鸞、智勇雙全、意志堅銳、奏成功業、足立實地、名利俱全、一生幸福富貴。",
+    "陽宅: 巽卦。宅宜坐南向北及坐北向南大吉。門路宜開南方、北方、東方吉。爐灶宜安西向東吉。房間宜安東南方、東方、北方、南方。床位宜安南方、北方、東方、東南方。神位宜安東南方、東方、東南方、北方本年大利方位。坑廁安於各凶方、東北方、西北方、西方、西南方。",
+    "事業: 文具、出版、書店、農業蔬果、木材、傢俱、裝潢、紙、木器或工藝、花苗園藝、雜草、市定、教育、公務員、政治、宗教家。鋼鐵工廠、五金行、採礦、汽車、機械、科學家、律師、歌影星、音樂家、武術館、會計、金融界。",
+    "古書云 (三命通會註): 壬癸日生水為主，根基惟在火與土，春秋來往發財官，冬夏東行為得所。"
+  ]
+}

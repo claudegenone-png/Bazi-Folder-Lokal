@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Lin Wen Jin — 總結 Kesimpulan Bagan</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-kes { grid-template-rows: 32mm 78mm 1fr 18mm !important; gap: 3mm; }
+
+  /* HEADLINE BIG */
+  .kes-headline {
+    background: linear-gradient(135deg, #8B1A1A 0%, #6E1414 100%);
+    color: white; border-radius: 2mm;
+    padding: 5mm 8mm;
+    display: grid; grid-template-columns: auto 1fr auto;
+    gap: 6mm; align-items: center;
+    overflow: hidden; position: relative;
+  }
+  .kes-headline::before {
+    content: '結'; position: absolute;
+    bottom: -10mm; right: -2mm;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 80pt; color: rgba(255,255,255,0.06);
+    font-weight: 700; line-height: 1;
+  }
+  .kh-stamp {
+    width: 22mm; height: 22mm; background: white; color: var(--red);
+    font-family: 'Noto Serif TC', serif; font-size: 18pt; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 1.5mm; transform: rotate(-3deg);
+    box-shadow: 0 2mm 4mm rgba(0,0,0,0.2);
+    letter-spacing: 1px;
+  }
+  .kh-text { min-width: 0; }
+  .kh-eb {
+    font-size: 7pt; color: rgba(245,235,208,0.8);
+    letter-spacing: 4px; text-transform: uppercase;
+    font-weight: 600; margin-bottom: 1.5mm;
+  }
+  .kh-quote {
+    font-family: 'Playfair Display', serif; font-size: 17pt;
+    color: #F5EBD0; line-height: 1.25; font-style: italic;
+    font-weight: 600;
+  }
+  .kh-quote .hz { font-family: 'Noto Serif TC', serif; color: white; font-style: normal; font-weight: 700; }
+  .kh-num {
+    text-align: center; min-width: 22mm;
+    border-left: 0.3mm solid rgba(255,255,255,0.3);
+    padding-left: 5mm;
+  }
+  .kh-num .big {
+    font-family: 'Playfair Display', serif; font-size: 26pt;
+    color: #F5EBD0; font-weight: 700; line-height: 1;
+  }
+  .kh-num .lbl {
+    font-size: 6.5pt; color: rgba(245,235,208,0.7);
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-top: 1mm;
+  }
+
+  /* STATS GRID */
+  .kes-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 3mm; overflow: hidden;
+  }
+  .kes-stat {
+    background: var(--bg-card);
+    border: 0.4mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 3mm 4mm;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 1mm; overflow: hidden;
+    position: relative;
+  }
+  .kes-stat::before {
+    content: ''; position: absolute;
+    top: 0; left: 0; width: 100%; height: 1mm;
+  }
+  .kes-stat.s1::before { background: linear-gradient(90deg, var(--gold), transparent); }
+  .kes-stat.s2::before { background: linear-gradient(90deg, var(--red), transparent); }
+  .kes-stat.s3::before { background: linear-gradient(90deg, var(--green), transparent); }
+  .kes-stat.s4::before { background: linear-gradient(90deg, #4A7BA0, transparent); }
+  .kes-stat.s5::before { background: linear-gradient(90deg, #B85050, transparent); }
+  .kes-stat.s6::before { background: linear-gradient(90deg, #8C6E47, transparent); }
+
+  .ks-eb {
+    font-size: 6pt; letter-spacing: 2px;
+    text-transform: uppercase; font-weight: 700;
+    color: var(--gold);
+  }
+  .ks-num {
+    font-family: 'Playfair Display', serif; font-size: 19pt;
+    color: var(--red); font-weight: 700; line-height: 1;
+    display: flex; align-items: baseline; gap: 2mm;
+  }
+  .ks-num .hz {
+    font-family: 'Noto Serif TC', serif; font-size: 18pt;
+    line-height: 1;
+  }
+  .ks-num .unit {
+    font-family: 'Inter', sans-serif; font-size: 8pt;
+    color: var(--text-muted); font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  .ks-title {
+    font-family: 'Playfair Display', serif; font-size: 10pt;
+    color: var(--text); font-weight: 600; line-height: 1.2;
+    border-top: 0.2mm solid var(--gold-soft); padding-top: 1.2mm;
+  }
+  .ks-desc {
+    font-size: 6.5pt; color: var(--text-muted);
+    line-height: 1.35;
+    display: -webkit-box; -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .ks-desc .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+
+  /* HIDUP MAP — visual summary */
+  .kes-lifemap {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    display: grid; grid-template-rows: auto 1fr;
+    gap: 3mm; overflow: hidden;
+  }
+  .klm-eyebrow {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 0.3mm solid var(--gold-soft); padding-bottom: 1.5mm;
+  }
+  .klm-eyebrow .label { font-family: 'Noto Serif TC', serif; font-size: 12pt; color: var(--red); letter-spacing: 4px; font-weight: 600; }
+  .klm-eyebrow .id { font-family: 'Playfair Display', serif; font-size: 9pt; font-style: italic; color: var(--text-muted); margin-left: 4mm; }
+  .klm-eyebrow .meta { font-size: 6.5pt; color: var(--text-muted); letter-spacing: 1.5px; text-transform: uppercase; }
+
+  .klm-content {
+    display: grid; grid-template-columns: 1fr 70mm;
+    gap: 5mm; overflow: hidden;
+  }
+
+  .klm-narrative {
+    display: grid; grid-template-rows: 1fr 1fr 1fr;
+    gap: 2mm; overflow: hidden;
+  }
+  .klm-row {
+    display: grid; grid-template-columns: 14mm 1fr;
+    gap: 3mm; align-items: center;
+    padding: 2mm 3mm;
+    background: linear-gradient(90deg, var(--gold-bg), transparent);
+    border-left: 1mm solid var(--gold);
+    border-radius: 0 1mm 1mm 0;
+    overflow: hidden;
+  }
+  .klm-row.now {
+    background: linear-gradient(90deg, rgba(139,26,26,0.08), transparent);
+    border-left-color: var(--red);
+  }
+  .klm-row-icon {
+    font-family: 'Noto Serif TC', serif; font-size: 16pt;
+    color: var(--red); font-weight: 700; text-align: center; line-height: 1;
+  }
+  .klm-row-text {
+    font-size: 7pt; line-height: 1.3; color: var(--text);
+    overflow: hidden;
+  }
+  .klm-row-text strong { color: var(--red); }
+  .klm-row-text .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 700; }
+  .klm-row-text .lbl {
+    display: block; font-size: 6pt; color: var(--gold);
+    letter-spacing: 1.5px; text-transform: uppercase;
+    font-weight: 600; margin-bottom: 0.5mm;
+  }
+
+  .klm-position {
+    background: linear-gradient(180deg, #FFF8E1, #F5EBD0);
+    border: 0.4mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 4mm 4mm;
+    display: grid; grid-template-rows: auto auto auto 1fr auto;
+    gap: 1.5mm;
+    text-align: center; overflow: hidden;
+  }
+  .klp-eb { font-size: 6.5pt; color: var(--gold); letter-spacing: 2.5px; text-transform: uppercase; font-weight: 700; }
+  .klp-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 32pt;
+    color: var(--red); font-weight: 700; line-height: 1;
+    letter-spacing: 4px;
+  }
+  .klp-id { font-family: 'Playfair Display', serif; font-size: 10pt; color: var(--text); font-style: italic; font-weight: 600; }
+  .klp-bar {
+    display: flex; gap: 0.5mm; height: 6mm;
+    border-radius: 3mm; overflow: hidden;
+    background: rgba(0,0,0,0.05); padding: 0.5mm;
+  }
+  .klp-bar-cell { flex: 1; border-radius: 1mm; background: rgba(201,169,97,0.3); }
+  .klp-bar-cell.past { background: rgba(201,169,97,0.4); }
+  .klp-bar-cell.now { background: linear-gradient(180deg, #C45F5F, #8C3535); }
+  .klp-bar-cell.future { background: rgba(201,169,97,0.15); }
+  .klp-meta {
+    font-size: 7pt; color: var(--text-muted);
+    letter-spacing: 0.5px; line-height: 1.4;
+  }
+  .klp-meta strong { color: var(--red); font-family: 'Noto Serif TC', serif; }
+
+  .kes-bridge {
+    background: linear-gradient(90deg, var(--gold-bg), transparent);
+    border-left: 1mm solid var(--gold);
+    border-radius: 0 1.5mm 1.5mm 0;
+    padding: 3mm 5mm;
+    display: grid; grid-template-columns: 1fr auto;
+    gap: 5mm; align-items: center;
+    overflow: hidden;
+  }
+  .kbg-text {
+    font-family: 'Playfair Display', serif; font-size: 10pt;
+    color: var(--text); line-height: 1.4; font-style: italic;
+    display: -webkit-box; -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .kbg-text strong { color: var(--red); font-style: normal; }
+  .kbg-text .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-style: normal; font-weight: 700; }
+  .kbg-arrow {
+    background: var(--red); color: white;
+    font-family: 'Playfair Display', serif; font-size: 9pt;
+    font-weight: 600;
+    padding: 2mm 4mm; border-radius: 5mm;
+    letter-spacing: 1px; white-space: nowrap;
+  }
+  .kbg-arrow .hz { font-family: 'Noto Serif TC', serif; margin-right: 1mm; }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">20</div>
+    <div class="h-titles"><div class="h-cn">總 結</div><div class="h-id">Kesimpulan Bagan — Gambaran Besar</div></div>
+    <div class="h-section">Bagian III · Penutup</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Lin Wen Jin · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
+      <div class="subject-detail">Distilasi seluruh laporan dalam 1 halaman</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">乙木 · Kayu Yin (Tunas)</div></div>
+  </div>
+
+  <main class="content content-kes">
+
+    <!-- JUDUL -->
+    <div class="kes-headline">
+      <div class="kh-stamp">命運</div>
+      <div class="kh-text">
+        <div class="kh-eb">Inti Seluruh Laporan</div>
+        <div class="kh-quote">
+          "Anda <span class="hz">乙木</span> Kayu Yin yang <strong>kuat &amp; sedang ditempa <span class="hz">七殺</span></strong> — fase pemurnian sebelum panen <span class="hz">福德</span>."
+        </div>
+      </div>
+      <div class="kh-num">
+        <div class="big">64</div>
+        <div class="lbl">Umur</div>
+      </div>
+    </div>
+
+    <!-- GRID STATISTIK -->
+    <div class="kes-stats">
+
+      <div class="kes-stat s1">
+        <div class="ks-eb">Penguasa Hari · 日主</div>
+        <div class="ks-num"><span class="hz">乙木</span><span class="unit">KUAT · 旺</span></div>
+        <div class="ks-title">Kayu Yin Kuat</div>
+        <div class="ks-desc">Jumlah Wu Xing 8.0 — <span class="hz">金</span> 2.3 + <span class="hz">土</span> 2.0 = 53.7% dominasi metal-tanah</div>
+      </div>
+
+      <div class="kes-stat s2">
+        <div class="ks-eb">Format · 格局</div>
+        <div class="ks-num"><span class="hz">偏印</span><span class="unit">FORMAT</span></div>
+        <div class="ks-title">Jie Cai Ge — Pejuang Sejajar</div>
+        <div class="ks-desc">Format yang butuh "panggung tidak konvensional"; cocok untuk peran arsitek senior</div>
+      </div>
+
+      <div class="kes-stat s3">
+        <div class="ks-eb">Yong Shen · 喜用神</div>
+        <div class="ks-num"><span class="hz">水 木</span><span class="unit">MENDUKUNG</span></div>
+        <div class="ks-title">Air &amp; Kayu — Pengalir + Penumbuh</div>
+        <div class="ks-desc">Industri searah: penerbitan, pendidikan, perdagangan, logistik, kerajinan kayu</div>
+      </div>
+
+      <div class="kes-stat s4">
+        <div class="ks-eb">Da Yun · 大運</div>
+        <div class="ks-num">6<span class="unit">/ 10 — <span class="hz">丙辰 七殺</span></span></div>
+        <div class="ks-title">Fase Pemurnian (55–64)</div>
+        <div class="ks-desc"><span class="hz">火</span> Api menempa <span class="hz">金</span> Logam — tegangan tinggi, peluang transformatif</div>
+      </div>
+
+      <div class="kes-stat s5">
+        <div class="ks-eb">Da Xian · 大限</div>
+        <div class="ks-num"><span class="hz">僕役</span><span class="unit">56–65</span></div>
+        <div class="ks-title">Istana Pertemanan · Era Jejaring</div>
+        <div class="ks-desc"><span class="hz">紫微</span> di palace teman = lingkar pertemanan bermutu pemimpin</div>
+      </div>
+
+      <div class="kes-stat s6">
+        <div class="ks-eb">Kompatibilitas · 婚配</div>
+        <div class="ks-num">3 <span class="unit">cocok / 2 hindari</span></div>
+        <div class="ks-title">Cocok: <span style="font-family:'Noto Serif TC',serif;color:var(--red);font-weight:700">午 戌 亥</span></div>
+        <div class="ks-desc">Hindari: <span class="hz">申 巳</span> · Trigram <span class="hz">坤</span> · West Kelompok hunian</div>
+      </div>
+
+    </div>
+
+    <!-- HIDUP MAP -->
+    <div class="kes-lifemap">
+      <div class="klm-eyebrow">
+        <div>
+          <span class="label">人 生 地 圖</span>
+          <span class="id">Peta Hidup — Anda Berada di Sini</span>
+        </div>
+        <div class="meta">SUMMARY · BIG PICTURE</div>
+      </div>
+
+      <div class="klm-content">
+
+        <div class="klm-narrative">
+          <div class="klm-row">
+            <div class="klm-row-icon">過</div>
+            <div class="klm-row-text">
+              <span class="lbl">MASA LALU · Lalu</span>
+              <strong>5 fase telah dilalui</strong> — fondasi (金), belajar &amp; mengalir (水水), tumbuh &amp; membangun (木木). Telah teruji.
+            </div>
+          </div>
+          <div class="klm-row now">
+            <div class="klm-row-icon">今</div>
+            <div class="klm-row-text">
+              <span class="lbl">SEKARANG · Sekarang</span>
+              <strong>Fase Pemurnian <span class="hz">七殺</span></strong> — tekanan 火 menempa Logam Anda. Saat eksekutor handal jadi <strong>tokoh berbicara</strong>.
+            </div>
+          </div>
+          <div class="klm-row">
+            <div class="klm-row-icon">未</div>
+            <div class="klm-row-text">
+              <span class="lbl">BERIKUTNYA · Berikutnya</span>
+              Setelah 64: <span class="hz">丁巳 (正官)</span> lebih tenang &amp; terstruktur. Hasil pemurnian sekarang akan terbayar — <strong>masa panen</strong>.
+            </div>
+          </div>
+        </div>
+
+        <div class="klm-position">
+          <div class="klp-eb">Posisi Sekarang</div>
+          <div class="klp-hz">夏</div>
+          <div class="klp-id">Xià — "Musim Panas Hidup"</div>
+          <div class="klp-bar">
+            <div class="klp-bar-cell past"></div>
+            <div class="klp-bar-cell past"></div>
+            <div class="klp-bar-cell past"></div>
+            <div class="klp-bar-cell past"></div>
+            <div class="klp-bar-cell past"></div>
+            <div class="klp-bar-cell now"></div>
+            <div class="klp-bar-cell future"></div>
+            <div class="klp-bar-cell future"></div>
+            <div class="klp-bar-cell future"></div>
+            <div class="klp-bar-cell future"></div>
+          </div>
+          <div class="klp-meta">Fase 6 dari 10 · Umur <strong>55-64</strong> · <strong>火 Api</strong> dominan · Pemurnian sebelum panen</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- JEMBATAN KE AKSI -->
+    <div class="kes-bridge">
+      <div class="kbg-text">
+        Inti laporan sudah ringkas di sini. <strong>Halaman berikut</strong> menerjemahkan kesimpulan ini menjadi <span class="hz">五則行動</span> — 5 langkah praktis yang bisa Anda jalani mulai hari ini.
+      </div>
+      <div class="kbg-arrow"><span class="hz">→</span> Halaman 21</div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      Bagan menyajikan <em>pola</em>; halaman ini menyajikan <em>distilasi</em>. Semua diagram, tafsir, dan tabel sebelumnya — berkumpul jadi satu kalimat: <strong>Logam yang ditempa Api siap jadi pedang yang bermakna</strong>.
+    </div>
+    <div class="footer-meta"><span>Halaman 20 / 23</span><span>Lin Wen Jin · Ramalan 命</span></div>
+  </footer>
+</section>
+</body>
+</html>

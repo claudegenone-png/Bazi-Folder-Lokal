@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Lin Ru Yi — 八字 Pembuka Bab</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .page.opener {
+    padding: 0;
+    background: radial-gradient(ellipse at center, #FFF8E1 0%, var(--bg) 70%, var(--gold-bg) 100%);
+  }
+  .opener-frame {
+    flex: 1; margin: 14mm;
+    border: 0.5mm double var(--gold);
+    border-radius: 2mm;
+    height: calc(297mm - 28mm);
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    gap: 6mm; padding: 16mm 14mm;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .opener-frame::before, .opener-frame::after {
+    content: ''; position: absolute;
+    width: 24mm; height: 24mm;
+    border: 0.4mm solid var(--gold);
+    pointer-events: none;
+  }
+  .opener-frame::before { top: 4mm; left: 4mm; border-right: none; border-bottom: none; }
+  .opener-frame::after { bottom: 4mm; right: 4mm; border-left: none; border-top: none; }
+
+  .op-watermark {
+    position: absolute; font-family: 'Noto Serif TC', serif;
+    font-size: 200pt; color: rgba(139,26,26,0.04);
+    font-weight: 700; pointer-events: none;
+    top: 50%; left: 50%; transform: translate(-50%,-50%);
+    line-height: 1;
+  }
+
+  .op-eyebrow {
+    font-family: 'Inter', sans-serif; font-size: 10pt;
+    letter-spacing: 12px; color: var(--gold);
+    text-transform: uppercase; font-weight: 600;
+    border-bottom: 0.3mm solid var(--gold-soft);
+    padding-bottom: 6mm; padding-top: 4mm;
+  }
+  .op-eyebrow .roman {
+    font-family: 'Playfair Display', serif;
+    font-size: 16pt; color: var(--red);
+    font-weight: 700; letter-spacing: 4px;
+    display: block; margin-top: 2mm;
+  }
+
+  .op-hero {
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 4mm;
+  }
+  .op-cn-big {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 130pt; font-weight: 700;
+    color: var(--red); line-height: 0.9;
+    letter-spacing: 18px;
+    text-shadow: 0 3mm 8mm rgba(139,26,26,0.15);
+  }
+  .op-cn-sub {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 22pt; font-weight: 600;
+    color: var(--text); letter-spacing: 8px;
+    margin-top: 2mm;
+  }
+  .op-pinyin {
+    font-family: 'Playfair Display', serif;
+    font-size: 14pt; font-style: italic;
+    color: var(--text); letter-spacing: 2px;
+    margin-top: 2mm;
+  }
+  .op-id {
+    font-family: 'Inter', sans-serif; font-size: 11pt;
+    color: var(--text-muted); letter-spacing: 2px;
+    margin-top: 1mm; max-width: 130mm;
+    line-height: 1.5;
+  }
+
+  .op-pages {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 3mm;
+    border-top: 0.3mm solid var(--gold-soft);
+    padding-top: 4mm;
+  }
+  .op-page-card {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 1.5mm;
+    padding: 2mm 3mm;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2.5mm; align-items: center;
+    overflow: hidden; min-width: 0;
+    text-align: left;
+  }
+  .op-page-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 13pt; color: var(--gold);
+    font-weight: 700;
+  }
+  .op-page-info { min-width: 0; overflow: hidden; }
+  .op-page-cn {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 10pt; color: var(--red);
+    font-weight: 600; letter-spacing: 1px;
+  }
+  .op-page-id {
+    font-size: 7pt; color: var(--text-muted);
+    letter-spacing: 0.3px;
+  }
+
+  .op-credits {
+    font-size: 7.5pt; color: var(--text-muted);
+    letter-spacing: 2px; text-transform: uppercase;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<section class="page opener" style="display:flex;flex-direction:column">
+  <div class="opener-frame">
+    <span class="op-watermark">字</span>
+
+    <div class="op-eyebrow">
+      壹 · Bab Satu
+      <span class="roman">BAGIAN I</span>
+    </div>
+
+    <div class="op-hero">
+      <div class="op-cn-big">八 字</div>
+      <div class="op-cn-sub">四 柱 論 命</div>
+      <div class="op-pinyin">Bā Zì · Sì Zhù Lùn Mìng</div>
+      <div class="op-id">Sistem "Delapan Karakter Empat Pilar" — analisis nasib berdasarkan kombinasi 4 stem &amp; 4 branch dari tanggal lahir Anda</div>
+    </div>
+
+    <div class="op-pages">
+      <div class="op-page-card">
+        <div class="op-page-num">06</div>
+        <div class="op-page-info"><div class="op-page-cn">日主 + 五行</div><div class="op-page-id">Penguasa Hari Radar</div></div>
+      </div>
+      <div class="op-page-card">
+        <div class="op-page-num">07</div>
+        <div class="op-page-info"><div class="op-page-cn">婚配</div><div class="op-page-id">Hūn Pèi · Kompatibilitas</div></div>
+      </div>
+      <div class="op-page-card">
+        <div class="op-page-num">08</div>
+        <div class="op-page-info"><div class="op-page-cn">性情</div><div class="op-page-id">Xìng Qíng · Kepribadian</div></div>
+      </div>
+      <div class="op-page-card">
+        <div class="op-page-num">09</div>
+        <div class="op-page-info"><div class="op-page-cn">全局總論</div><div class="op-page-id">Quán Jú · Keluarga</div></div>
+      </div>
+      <div class="op-page-card">
+        <div class="op-page-num">10</div>
+        <div class="op-page-info"><div class="op-page-cn">神煞</div><div class="op-page-id">Shén Shà · Katalog Bintang</div></div>
+      </div>
+      <div class="op-page-card">
+        <div class="op-page-num">11</div>
+        <div class="op-page-info"><div class="op-page-cn">財富</div><div class="op-page-id">Cái Fù · Rezeki</div></div>
+      </div>
+      <div class="op-page-card">
+        <div class="op-page-num">12</div>
+        <div class="op-page-info"><div class="op-page-cn">事業</div><div class="op-page-id">Shì Yè · Karir</div></div>
+      </div>
+      <div class="op-page-card">
+        <div class="op-page-num">13</div>
+        <div class="op-page-info"><div class="op-page-cn">陽宅</div><div class="op-page-id">Yáng Zhái · Feng Shui</div></div>
+      </div>
+      <div class="op-page-card">
+        <div class="op-page-num">14</div>
+        <div class="op-page-info"><div class="op-page-cn">大運</div><div class="op-page-id">Dà Yùn · Lini Masa</div></div>
+      </div>
+    </div>
+
+    <div class="op-credits">Halaman 5 · Pembuka Bab Bagian I · Henry · Ramalan 命</div>
+  </div>
+</section>
+</body>
+</html>

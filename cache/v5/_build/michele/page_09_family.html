@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Michele — 全局總論 Pandangan Keluarga</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-fam { grid-template-rows: 30mm 1fr 22mm !important; gap: 5mm; }
+
+  .fam-headline {
+    background: linear-gradient(135deg, #FFFEF8 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 4mm 6mm;
+    display: grid; grid-template-columns: auto 1fr auto;
+    gap: 6mm; align-items: center;
+    overflow: hidden;
+  }
+  .fh-seal {
+    width: 18mm; height: 18mm; background: var(--red); color: white;
+    font-family: 'Noto Serif TC', serif; font-size: 14pt; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 1.5mm; transform: rotate(-3deg);
+    letter-spacing: 1px;
+  }
+  .fh-text { text-align: center; }
+  .fh-eb { font-size: 6.5pt; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; font-weight: 700; }
+  .fh-quote {
+    font-family: 'Playfair Display', serif; font-size: 12pt;
+    color: var(--text); line-height: 1.3; font-style: italic;
+    margin-top: 1mm;
+  }
+  .fh-quote .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-style: normal; font-weight: 700; }
+  .fh-meta { font-family: 'Noto Serif TC', serif; font-size: 14pt; color: var(--red); font-weight: 700; letter-spacing: 2px; line-height: 1; }
+
+  .fam-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4mm; overflow: hidden;
+  }
+  .fam-card {
+    border-radius: 2mm; padding: 4mm 5mm;
+    background: var(--bg-card);
+    border: 0.4mm solid var(--gold-soft);
+    display: grid;
+    grid-template-columns: 24mm 1fr;
+    gap: 4mm; align-items: stretch;
+    overflow: hidden;
+    position: relative;
+  }
+  .fam-icon-block {
+    background: linear-gradient(180deg, #FFF8E1, #F5EBD0);
+    border-radius: 1.5mm;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 3mm 2mm; text-align: center;
+    border: 0.3mm solid var(--gold-soft);
+  }
+  .fic-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 26pt;
+    color: var(--red); font-weight: 700; line-height: 1;
+  }
+  .fic-id {
+    font-family: 'Playfair Display', serif; font-size: 9pt;
+    color: var(--text); font-weight: 600; letter-spacing: 1px;
+    margin-top: 1.5mm;
+  }
+  .fic-pinyin { font-size: 6pt; color: var(--text-muted); font-style: italic; margin-top: 0.3mm; }
+  .fic-vibe {
+    font-size: 6pt; color: var(--gold); letter-spacing: 1px;
+    text-transform: uppercase; font-weight: 600; margin-top: 1.5mm;
+    border-top: 0.2mm solid var(--gold-soft); padding-top: 1mm; width: 100%;
+  }
+
+  .fam-content {
+    display: grid; grid-template-rows: auto auto 1fr; gap: 1.5mm;
+    overflow: hidden; min-width: 0;
+  }
+  .fc-eb { font-size: 6.5pt; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
+  .fc-headline {
+    font-family: 'Playfair Display', serif; font-size: 11pt;
+    color: var(--red); line-height: 1.25; font-weight: 600;
+  }
+  .fc-headline .hz { font-family: 'Noto Serif TC', serif; color: var(--text); font-weight: 700; margin: 0 0.5mm; }
+  .fc-body {
+    font-size: 7.8pt; line-height: 1.45; color: var(--text);
+    border-top: 0.2mm solid var(--gold-soft); padding-top: 1.5mm;
+    display: -webkit-box; -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .fc-body strong { color: var(--red); }
+  .fc-body .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+
+  .fam-strip {
+    background: var(--green-bg);
+    border-left: 1mm solid var(--green);
+    border-radius: 0 1.5mm 1.5mm 0;
+    padding: 3mm 5mm;
+    display: grid; grid-template-columns: auto 1fr;
+    gap: 5mm; align-items: center;
+    overflow: hidden;
+  }
+  .fs-label {
+    font-family: 'Noto Serif TC', serif; font-size: 14pt;
+    color: var(--green); font-weight: 700;
+    border-right: 0.3mm solid var(--green); padding-right: 5mm;
+    letter-spacing: 2px;
+  }
+  .fs-text {
+    font-size: 8pt; line-height: 1.45; color: var(--text);
+    display: -webkit-box; -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .fs-text strong { color: var(--green); }
+  .fs-text .hz { font-family: 'Noto Serif TC', serif; color: var(--green); font-weight: 600; }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">09</div>
+    <div class="h-titles"><div class="h-cn">全 局 總 論</div><div class="h-id">Pandangan Keluarga</div></div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Babi-Merah.svg" alt="Babi"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Michele · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">亥 Babi</span></div>
+      <div class="subject-detail">Pandangan menyeluruh tentang relasi keluarga &amp; kepemimpinan</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">甲木 · Pohon Besar</div></div>
+  </div>
+
+  <main class="content content-fam">
+
+    <div class="fam-headline">
+      <div class="fh-seal">家</div>
+      <div class="fh-text">
+        <div class="fh-eb">總 論 · Gambaran Besar</div>
+        <div class="fh-quote">
+          "Eksekutor handal yang <span class="hz">bukan</span> pemegang kekuasaan besar — itu kekuatan, <span class="hz">bukan</span> kekurangan."
+        </div>
+      </div>
+      <div class="fh-meta">執行者</div>
+    </div>
+
+    <div class="fam-grid">
+
+      <!-- Pasangan -->
+      <div class="fam-card">
+        <div class="fam-icon-block">
+          <div class="fic-hz">配偶</div>
+          <div class="fic-id">Pasangan</div>
+          <div class="fic-pinyin">Pèi Ǒu · Pasangan</div>
+          <div class="fic-vibe">Cerdas · Ekstrover</div>
+        </div>
+        <div class="fam-content">
+          <div class="fc-eb">配偶 · Pasangan</div>
+          <div class="fc-headline">Pasangan <span class="hz">cerdas</span> &amp; ekstrover — komplementer untuk Anda</div>
+          <div class="fc-body">
+            Pasangan Anda <strong>cerdas, ekstrover, agak terburu-buru</strong>. Ini komplementer untuk <span class="hz">甲木</span> yang condong introspektif: biarkan dia jadi "suara keluar", Anda jadi "otak proses". Beri panggung &amp; otonomi keuangan rumah tangga.
+          </div>
+        </div>
+      </div>
+
+      <!-- Anak -->
+      <div class="fam-card">
+        <div class="fam-icon-block">
+          <div class="fic-hz">兒子</div>
+          <div class="fic-id">Anak</div>
+          <div class="fic-pinyin">Ér Zǐ · Anak</div>
+          <div class="fic-vibe">Lembut · Berbakti</div>
+        </div>
+        <div class="fam-content">
+          <div class="fc-eb">兒女 · Anak</div>
+          <div class="fc-headline">Anak laki-laki <span class="hz">仁慈</span> — berbudi &amp; lembut hati</div>
+          <div class="fc-body">
+            Anak laki-laki Anda <strong>cukup berbudi &amp; lembut hati</strong>. Palace 子女 dengan <span class="hz">天府</span> mengindikasikan stabilitas keluarga. Peran Anda: <strong>memberi mereka panggung</strong>, bukan menutupi mereka.
+          </div>
+        </div>
+      </div>
+
+      <!-- Saudari -->
+      <div class="fam-card">
+        <div class="fam-icon-block">
+          <div class="fic-hz">姊妹</div>
+          <div class="fic-id">Saudari</div>
+          <div class="fic-pinyin">Zǐ Mèi · Sisters</div>
+          <div class="fic-vibe">Sensor · Penyeimbang</div>
+        </div>
+        <div class="fam-content">
+          <div class="fc-eb">姊妹 · Sisters</div>
+          <div class="fc-headline">Saran saudari <span class="hz">sulit</span> Anda terima — itu sinyal</div>
+          <div class="fc-body">
+            Anda <strong>kurang mudah menerima saran dari saudari kandung</strong>. Saat mereka sebut Anda terlalu keras — anggap itu <strong>data</strong>, bukan serangan. Mereka adalah "sensor" karakter Anda yang paling jujur.
+          </div>
+        </div>
+      </div>
+
+      <!-- Otoritas -->
+      <div class="fam-card">
+        <div class="fam-icon-block">
+          <div class="fic-hz">領導</div>
+          <div class="fic-id">Kepemimpinan</div>
+          <div class="fic-pinyin">Lǐng Dǎo · Leadership</div>
+          <div class="fic-vibe">Eksekutor &gt; Penguasa</div>
+        </div>
+        <div class="fam-content">
+          <div class="fc-eb">領導 · Leadership</div>
+          <div class="fc-headline">Eksekutor handal · <span class="hz">bukan</span> pemegang kekuasaan besar</div>
+          <div class="fc-body">
+            <strong>Kemampuan kepemimpinan terbatas</strong> di skala besar — tetapi sebagai <strong>eksekutor handal</strong> Anda langka. Banyak organisasi mati karena pemimpin tidak punya orang seperti Anda. Negosiasikan ruang otonomi di awal kerjasama.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="fam-strip">
+      <div class="fs-label">提示</div>
+      <div class="fs-text">
+        <strong>Saran:</strong> di umur 60-an, peran Anda di keluarga adalah <strong>"penyalur jalur"</strong>, bukan "pemberi instruksi". Ekstrover-pasangan + lembut-anak = keluarga yang sudah stabil — Anda tinggal <span class="hz">守</span> (Shǒu, "menjaga"), bukan <span class="hz">攻</span> (Gōng, "menyerang").
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      Michele sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">食神</span> (25–34) — mengalirkan ide jadi karya. Periode 25–44 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+    </div>
+    <div class="footer-meta"><span>Halaman 9 / 23</span><span>Michele · Ramalan 命</span></div>
+  </footer>
+</section>
+</body>
+</html>

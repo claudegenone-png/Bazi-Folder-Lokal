@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Mike — Palace Detail 2</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-pal { grid-template-rows: 1fr !important; gap: 0; }
+  .pal-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 4mm; overflow: hidden; }
+  .pal-card { background: var(--bg-card); border: 0.4mm solid var(--gold-soft); border-radius: 2mm; padding: 4mm 5mm; display: grid; grid-template-rows: auto auto auto auto auto; gap: 2mm; overflow: hidden; position: relative; }
+  .pal-card.body { background: linear-gradient(180deg, #DCE8F1, #C9DBE9); border: 0.5mm solid #4A7BA0; }
+  .pal-card.now-da { background: linear-gradient(180deg, #FFF8E1, #F5EBD0); border: 0.5mm solid var(--gold); box-shadow: 0 0 0 0.3mm rgba(160,52,52,0.15); }
+  .pal-card.now-da::before { content: 'KINI · 大限'; position: absolute; top: -0.8mm; right: 2mm; background: var(--red); color: white; font-size: 5pt; padding: 0.4mm 1.5mm; border-radius: 0 0 1.5mm 1.5mm; letter-spacing: 1px; font-weight: 700; }
+
+  .pal-head { display: grid; grid-template-columns: auto 1fr auto; gap: 3mm; align-items: baseline; border-bottom: 0.2mm solid var(--gold-soft); padding-bottom: 1.5mm; }
+  .pal-name { font-family: 'Noto Serif TC', serif; font-size: 14pt; color: var(--red); font-weight: 700; letter-spacing: 2px; }
+  .pal-name .id { display: block; font-family: 'Inter', sans-serif; font-size: 6pt; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; font-weight: 500; margin-top: 0.3mm; }
+  .pal-branch { text-align: center; font-family: 'Noto Serif TC', serif; font-size: 11pt; color: var(--text); font-weight: 600; }
+  .pal-branch .id { display: block; font-size: 5.5pt; color: var(--text-muted); font-style: italic; margin-top: 0.3mm; }
+  .pal-age { font-family: 'Playfair Display', serif; font-size: 8.5pt; color: var(--gold); font-weight: 700; text-align: right; letter-spacing: 0.5px; }
+  .pal-age .lbl { display: block; font-size: 5.5pt; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; font-weight: 500; margin-top: 0.3mm; }
+  .pal-card.now-da .pal-age { color: var(--red); }
+
+  .pal-stars { display: flex; gap: 2mm; flex-wrap: wrap; align-items: center; }
+  .pal-star { background: linear-gradient(135deg, white, #FFF8E1); border: 0.3mm solid var(--gold-soft); border-radius: 1.5mm; padding: 1.5mm 3mm; display: grid; grid-template-columns: auto auto; gap: 2mm; align-items: baseline; }
+  .pal-star.main { border-color: var(--gold); background: linear-gradient(135deg, #FFF8E1, #F5EBD0); }
+  .pal-star-hz { font-family: 'Noto Serif TC', serif; font-size: 11pt; color: var(--red); font-weight: 700; line-height: 1; }
+  .pal-star-id { font-size: 6.5pt; color: var(--text-muted); font-style: italic; letter-spacing: 0.3px; }
+
+  .pal-insight { background: linear-gradient(90deg, var(--gold-bg), transparent); border-left: 0.8mm solid var(--gold); border-radius: 0 1mm 1mm 0; padding: 1.5mm 3mm; font-family: 'Playfair Display', serif; font-size: 9.5pt; color: var(--red); line-height: 1.3; font-weight: 600; font-style: italic; }
+  .pal-insight .hz { font-family: 'Noto Serif TC', serif; color: var(--text); font-style: normal; font-weight: 700; }
+
+  .pal-body { font-size: 6.8pt; line-height: 1.35; color: var(--text); overflow: hidden; }
+  .pal-body strong { color: var(--red); }
+  .pal-body .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+
+  .pal-actions { display: grid; gap: 1.2mm; border-top: 0.2mm dashed var(--gold-soft); padding-top: 1.5mm; }
+  .pal-action { display: grid; grid-template-columns: 4mm 1fr; gap: 2mm; font-size: 7.2pt; line-height: 1.4; color: var(--text); }
+  .pal-action .ico { color: var(--green); font-weight: 700; }
+  .pal-action strong { color: var(--red); }
+  .pal-action .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">18</div>
+    <div class="h-titles"><div class="h-cn">財 疾 遷 僕</div><div class="h-id">Rezeki · Sehat · Pindah · Teman</div></div>
+    <div class="h-section">Bagian II · Zi Wei 紫微</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Anjing-Merah.svg" alt="Anjing"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Mike · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">戌 Anjing</span></div>
+      <div class="subject-detail">Detail 4 istana operasional — sumber daya &amp; pergerakan</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">戊土 · Tanah Gunung</div></div>
+  </div>
+
+  <main class="content content-pal">
+    <div class="pal-grid">
+
+      <!-- 財帛 REZEKI -->
+      <div class="pal-card">
+        <div class="pal-head">
+          <div class="pal-name">財帛<span class="id">Cái Bó · Rezeki</span></div>
+          <div class="pal-branch">辰<span class="id">Naga</span></div>
+          <div class="pal-age">86–95<span class="lbl">大限 5</span></div>
+        </div>
+        <div class="pal-stars">
+          <div class="pal-star main"><span class="pal-star-hz">武曲</span><span class="pal-star-id">Wǔ Qū · Disiplin Uang</span></div>
+          <div class="pal-star main"><span class="pal-star-hz">文昌</span><span class="pal-star-id">Wén Chāng · Akademik</span></div>
+        </div>
+        <div class="pal-insight">"<span class="hz">正經地儲蓄</span>" — Menabung disiplin, lihai mengelola.</div>
+        <div class="pal-body">
+          Kombinasi <strong>langka</strong>: hemat &amp; jujur dalam menabung, sekaligus <strong>lihai memutar</strong> uang. <span class="hz">武曲 + 文昌</span> = disiplin militeris + ilmu pengelolaan finansial.
+        </div>
+        <div class="pal-actions">
+          <div class="pal-action"><span class="ico">▸</span><span>Pakai struktur formal — <strong>rekening tujuan terpisah</strong> agar disiplin tidak bergantung mood</span></div>
+          <div class="pal-action"><span class="ico">▸</span><span>Sisihkan 5-10% rezeki ke filantropi — <span class="hz">水流</span> "air mengalir keluar"</span></div>
+        </div>
+      </div>
+
+      <!-- 疾厄 KESEHATAN (Penguasa Tubuh) -->
+      <div class="pal-card body">
+        <div class="pal-head">
+          <div class="pal-name">疾厄<span class="id">Jí È · Kesehatan</span></div>
+          <div class="pal-branch">卯<span class="id">Kelinci</span></div>
+          <div class="pal-age">76–85<span class="lbl">大限 6</span></div>
+        </div>
+        <div class="pal-stars">
+          <div class="pal-star main"><span class="pal-star-hz">天梁</span><span class="pal-star-id">Tiān Jī · Strategi (身主)</span></div>
+        </div>
+        <div class="pal-insight">"<span class="hz">易患肝病</span>" — Liver, mata, pinggang perlu dijaga.</div>
+        <div class="pal-body">
+          Trend: <strong>liver, nyeri saraf wajah, insomnia, pinggang &amp; kaki</strong>. <span class="hz">天梁</span> sebagai 身主 = bintang pelindung; kesehatan terjaga bila pola hidup teratur. Pola Logam-keras minim relaksasi — perlu hidrasi &amp; tidur.
+        </div>
+        <div class="pal-actions">
+          <div class="pal-action"><span class="ico">▸</span><span><strong>Check-up liver tahunan</strong> + latihan postur untuk pinggang</span></div>
+          <div class="pal-action"><span class="ico">▸</span><span>Kurangi screen-time setelah jam 9 malam — Logam butuh "gelap" untuk reset</span></div>
+        </div>
+      </div>
+
+      <!-- 遷移 PERJALANAN — current 大限 area is 僕役 but here 遷移 -->
+      <div class="pal-card">
+        <div class="pal-head">
+          <div class="pal-name">遷移<span class="id">Qiān Yí · Perpindahan</span></div>
+          <div class="pal-branch">寅<span class="id">Harimau</span></div>
+          <div class="pal-age">66–75<span class="lbl">大限 7</span></div>
+        </div>
+        <div class="pal-stars">
+          <div class="pal-star main"><span class="pal-star-hz">七殺</span><span class="pal-star-id">Qī Shā · Pemurnian</span></div>
+        </div>
+        <div class="pal-insight">"<span class="hz">驛馬</span>" — Pindah lancar; hidup tak pernah benar-benar tenang.</div>
+        <div class="pal-body">
+          Setiap perpindahan/perubahan cenderung <strong>lancar</strong>; hambatan jarang serius. <span class="hz">七殺</span> di sini = pola hidup dinamis adalah natural state Anda — bukan kutukan. Pakai untuk <strong>shift peran</strong>, bukan ganti industri total.
+        </div>
+        <div class="pal-actions">
+          <div class="pal-action"><span class="ico">▸</span><span>Stuck? Pindah lingkungan <strong>1-2 minggu</strong> sering cukup mereset</span></div>
+          <div class="pal-action"><span class="ico">▸</span><span>Tahan reaksi cepat, tetap proses emosi (jurnal/dialog) — jangan dipendam total</span></div>
+        </div>
+      </div>
+
+      <!-- 僕役 TEMAN — CURRENT 大限 -->
+      <div class="pal-card now-da">
+        <div class="pal-head">
+          <div class="pal-name">僕役<span class="id">Pú Yì · Pertemanan</span></div>
+          <div class="pal-branch">丑<span class="id">Kerbau</span></div>
+          <div class="pal-age">56–65<span class="lbl">大限 8 · SEKARANG</span></div>
+        </div>
+        <div class="pal-stars">
+          <div class="pal-star main"><span class="pal-star-hz">紫微</span><span class="pal-star-id">Zǐ Wēi · Kaisar</span></div>
+          <div class="pal-star"><span class="pal-star-hz">左輔</span><span class="pal-star-id">Zuǒ Fǔ · Mentor</span></div>
+        </div>
+        <div class="pal-insight">"<span class="hz">慢吞吞</span>" — Bawahan loyal seperti sapi; teman bermutu pemimpin.</div>
+        <div class="pal-body">
+          <span class="hz">紫微</span> di palace teman = lingkar pertemanan Anda <strong>bermutu pemimpin</strong>. Tetapi bawahan langsung condong <strong>lambat-loyal</strong> — beri instruksi tertulis &amp; deadline 30% lebih longgar dari ekspektasi awal.
+        </div>
+        <div class="pal-actions">
+          <div class="pal-action"><span class="ico">▸</span><span>Tahan godaan "ganti tim" — <strong>tim lama yang dilatih ulang</strong> sering lebih untung</span></div>
+          <div class="pal-action"><span class="ico">▸</span><span>Aktif network ke kalangan pemimpin — fase ini puncaknya</span></div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      Mike sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏財</span> (8–17) — menjajaki peluang & jaringan. Periode 8–27 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+    </div>
+    <div class="footer-meta"><span>Halaman 18 / 23</span><span>Mike · Ramalan 命</span></div>
+  </footer>
+</section>
+</body>
+</html>

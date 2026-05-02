@@ -1,0 +1,51 @@
+{
+  "_subject_id": "banzi4",
+  "_extract_count": 28,
+  "_source": "OCR via Read tool (Claude Code V4.5) — 28 photos from Xing Qiao NCC V2.6 software",
+  "name_id": "Bryant",
+  "name_hanzi": "布萊恩",
+  "gender_hz": "陰男",
+  "birth_solar": "1991-09-04 12:51",
+  "birth_lunar_text": "農曆民國 80 年 7 月 26 日 12 時 51 分",
+  "pillars": {
+    "year":  {"stem_hz": "辛", "branch_hz": "未", "ten_god_hz": "偏財"},
+    "month": {"stem_hz": "丙", "branch_hz": "申", "ten_god_hz": "劫財"},
+    "day":   {"stem_hz": "丁", "branch_hz": "丑", "ten_god_hz": "命主"},
+    "hour":  {"stem_hz": "丙", "branch_hz": "午", "ten_god_hz": "劫財"}
+  },
+  "wuxing": {
+    "jin": 3,
+    "shui": 2,
+    "mu": 1,
+    "huo": 5,
+    "tu": 4
+  },
+  "yong_shen_hz": "土 金",
+  "ji_shen_hz": "火 木",
+  "format_hz": "偏財格",
+  "da_yun": [
+    {"age_start": 10,  "age_end": 19,  "stem_hz": "乙", "branch_hz": "未"},
+    {"age_start": 20,  "age_end": 29,  "stem_hz": "甲", "branch_hz": "午"},
+    {"age_start": 30,  "age_end": 39,  "stem_hz": "癸", "branch_hz": "巳"},
+    {"age_start": 40,  "age_end": 49,  "stem_hz": "壬", "branch_hz": "辰"},
+    {"age_start": 50,  "age_end": 59,  "stem_hz": "辛", "branch_hz": "卯"},
+    {"age_start": 60,  "age_end": 69,  "stem_hz": "庚", "branch_hz": "寅"},
+    {"age_start": 70,  "age_end": 79,  "stem_hz": "己", "branch_hz": "丑"},
+    {"age_start": 80,  "age_end": 89,  "stem_hz": "戊", "branch_hz": "子"},
+    {"age_start": 90,  "age_end": 99,  "stem_hz": "丁", "branch_hz": "亥"},
+    {"age_start": 100, "age_end": 109, "stem_hz": "丙", "branch_hz": "戌"}
+  ],
+  "marriage": {
+    "cocok_branches": ["卯", "午", "亥"],
+    "hindari_branches": ["子", "丑", "戌"]
+  },
+  "yang_zhai_gua_hz": "離",
+  "zi_wei": {
+    "ming_zhu_hz": "祿存",
+    "shen_zhu_hz": "天相",
+    "ming_gong_branch_hz": "寅",
+    "shen_gong_branch_hz": "寅",
+    "wu_xing_ju_hz": "木三局",
+    "shi_jun_hz": "子"
+  }
+}

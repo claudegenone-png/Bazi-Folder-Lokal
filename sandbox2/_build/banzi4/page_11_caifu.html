@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Bryant — 財富 Rezeki</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-cf { grid-template-rows: 70mm 1fr 30mm !important; gap: 5mm; }
+
+  /* DUAL METER */
+  .cf-meters { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; overflow: hidden; }
+  .cf-meter {
+    border-radius: 2mm; padding: 4mm 5mm;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr auto;
+    gap: 1.5mm;
+    overflow: hidden; position: relative;
+  }
+  .cf-meter.zheng {
+    background: linear-gradient(135deg, #FFFEF8 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+  }
+  .cf-meter.pian {
+    background: linear-gradient(135deg, #E8F0EA 0%, #D9E8DD 100%);
+    border: 0.5mm solid var(--green);
+  }
+  .cfm-eb { font-size: 7pt; letter-spacing: 2.5px; text-transform: uppercase; font-weight: 700; }
+  .cf-meter.zheng .cfm-eb { color: var(--gold); }
+  .cf-meter.pian .cfm-eb { color: var(--green); }
+
+  .cfm-title { display: flex; align-items: baseline; gap: 3mm; }
+  .cfm-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 26pt;
+    color: var(--red); font-weight: 700; line-height: 1;
+  }
+  .cf-meter.pian .cfm-hz { color: var(--green); }
+  .cfm-name { font-family: 'Playfair Display', serif; font-size: 11pt; font-weight: 600; color: var(--text); font-style: italic; }
+  .cfm-pinyin { font-size: 7pt; color: var(--text-muted); letter-spacing: 0.5px; font-style: italic; }
+
+  .cfm-gauge {
+    height: 9mm; background: rgba(0,0,0,0.04);
+    border-radius: 4.5mm;
+    overflow: hidden; position: relative;
+    border: 0.3mm solid rgba(0,0,0,0.08);
+  }
+  .cfm-gauge-fill {
+    height: 100%; border-radius: 4.5mm;
+    display: flex; align-items: center; justify-content: flex-end;
+    padding: 0 3mm; color: white;
+    font-family: 'Playfair Display', serif; font-size: 11pt;
+    font-weight: 700; letter-spacing: 1px;
+  }
+  .cf-meter.zheng .cfm-gauge-fill {
+    width: 90%; background: linear-gradient(90deg, var(--gold), #B89758);
+  }
+  .cf-meter.pian .cfm-gauge-fill {
+    width: 85%; background: linear-gradient(90deg, var(--green), #4FA77F);
+  }
+  .cfm-gauge-scale {
+    display: flex; justify-content: space-between;
+    font-size: 6pt; color: var(--text-muted);
+    letter-spacing: 0.3px; padding: 0 1mm;
+  }
+  .cfm-tag {
+    background: rgba(0,0,0,0.06);
+    font-size: 6.5pt; color: var(--text);
+    padding: 0.5mm 2mm; border-radius: 5mm;
+    letter-spacing: 0.5px; align-self: start;
+    text-align: center;
+  }
+  .cfm-tag .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 700; margin-right: 1.5mm; }
+  .cf-meter.pian .cfm-tag .hz { color: var(--green); }
+  .cfm-desc {
+    font-size: 7.8pt; line-height: 1.5; color: var(--text);
+    border-top: 0.2mm solid rgba(0,0,0,0.08); padding-top: 1.5mm;
+    display: -webkit-box; -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .cfm-desc strong { color: var(--red); }
+  .cf-meter.pian .cfm-desc strong { color: var(--green); }
+
+  /* RULES */
+  .cf-rules-frame {
+    background: var(--bg-card); border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm; padding: 4mm 5mm;
+    display: grid; grid-template-rows: auto 1fr; gap: 2.5mm;
+    overflow: hidden;
+  }
+  .cfr-eyebrow {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 0.3mm solid var(--gold-soft); padding-bottom: 1.5mm;
+  }
+  .cfr-eyebrow .label { font-family: 'Noto Serif TC', serif; font-size: 12pt; color: var(--red); letter-spacing: 4px; font-weight: 600; }
+  .cfr-eyebrow .id { font-family: 'Playfair Display', serif; font-size: 9pt; font-style: italic; color: var(--text-muted); margin-left: 4mm; }
+  .cfr-eyebrow .meta { font-size: 6.5pt; color: var(--text-muted); letter-spacing: 1.5px; text-transform: uppercase; }
+
+  .cf-rules-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3mm; overflow: hidden;
+  }
+  .cf-rule {
+    background: white;
+    border-left: 1mm solid var(--gold);
+    border-radius: 0 1mm 1mm 0;
+    padding: 2.5mm 3.5mm;
+    display: grid; grid-template-columns: 8mm 1fr;
+    gap: 3mm; align-items: center;
+    overflow: hidden;
+  }
+  .cf-rule.warn { border-left-color: var(--red-bad); background: var(--red-bad-bg); }
+  .cf-rule.tip  { border-left-color: var(--green); background: var(--green-bg); }
+  .cfr-num {
+    font-family: 'Playfair Display', serif; font-size: 14pt;
+    color: var(--gold); font-weight: 700; line-height: 1; text-align: center;
+    border-right: 0.3mm solid var(--gold-soft); padding-right: 2mm;
+  }
+  .cf-rule.warn .cfr-num { color: var(--red-bad); border-right-color: var(--red-bad); }
+  .cf-rule.tip  .cfr-num { color: var(--green); border-right-color: var(--green); }
+  .cfr-content { min-width: 0; overflow: hidden; }
+  .cfr-title { font-size: 9pt; font-weight: 600; color: var(--text); line-height: 1.2; }
+  .cfr-title strong { color: var(--red); }
+  .cfr-title .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 700; }
+  .cfr-context {
+    font-size: 6.5pt; color: var(--text-muted);
+    line-height: 1.3; margin-top: 0.8mm;
+    overflow: hidden;
+  }
+
+  /* HEADLINE */
+  .cf-headline {
+    background: linear-gradient(135deg, #8B1A1A 0%, #6E1414 100%);
+    color: white;
+    border-radius: 2mm;
+    padding: 3.5mm 6mm;
+    display: grid; grid-template-columns: auto 1fr auto;
+    gap: 5mm; align-items: center;
+    overflow: hidden; position: relative;
+  }
+  .cfh-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 22pt;
+    color: #F5EBD0; font-weight: 700; line-height: 1;
+    letter-spacing: 4px;
+  }
+  .cfh-text {
+    font-family: 'Playfair Display', serif; font-size: 11pt;
+    line-height: 1.4; font-style: italic;
+    color: rgba(255,255,255,0.95);
+  }
+  .cfh-text strong { color: #F5EBD0; font-style: normal; }
+  .cfh-text .hz { font-family: 'Noto Serif TC', serif; color: #F5EBD0; font-style: normal; font-weight: 700; }
+  .cfh-num { text-align: right; }
+  .cfh-num .big {
+    font-family: 'Playfair Display', serif; font-size: 22pt;
+    color: #F5EBD0; font-weight: 700; line-height: 1;
+  }
+  .cfh-num .lbl {
+    font-size: 6.5pt; color: rgba(245,235,208,0.7);
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">11</div>
+    <div class="h-titles"><div class="h-cn">財 富</div><div class="h-id">Kekayaan &amp; Rezeki</div></div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Kambing-Merah.svg" alt="Kambing"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Bryant · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">未 Kambing</span></div>
+      <div class="subject-detail">Sumber rezeki tetap (正財) &amp; tak terduga (偏財) sama-sama berlimpah</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">丁火 · Api Lilin</div></div>
+  </div>
+
+  <main class="content content-cf">
+
+    <!-- DUAL METER -->
+    <div class="cf-meters">
+
+      <div class="cf-meter zheng">
+        <div class="cfm-eb">正 財 · Zhèng Cái</div>
+        <div class="cfm-title">
+          <span class="cfm-hz">正財</span>
+          <div>
+            <div class="cfm-name">Rezeki Tetap</div>
+            <div class="cfm-pinyin">Zhèng Cái — Pendapatan Stabil</div>
+          </div>
+        </div>
+        <div class="cfm-gauge"><div class="cfm-gauge-fill">90%</div></div>
+        <div class="cfm-gauge-scale"><span>0</span><span>50</span><span>100</span></div>
+        <div class="cfm-tag"><span class="hz">關係密切</span>Relasi dekat · Mudah masuk</div>
+        <div class="cfm-desc">
+          Sumber: <strong>gaji, hasil tetap, dividen</strong>. Relasi <span class="hz">密切</span> = dekat &amp; konsisten. Pondasi finansial Anda sangat kokoh — pakai untuk tujuan jangka panjang.
+        </div>
+      </div>
+
+      <div class="cf-meter pian">
+        <div class="cfm-eb">偏 財 · Piān Cái</div>
+        <div class="cfm-title">
+          <span class="cfm-hz">偏財</span>
+          <div>
+            <div class="cfm-name">Rezeki Tak Terduga</div>
+            <div class="cfm-pinyin">Piān Cái — Rejeki Tak Terduga</div>
+          </div>
+        </div>
+        <div class="cfm-gauge"><div class="cfm-gauge-fill">85%</div></div>
+        <div class="cfm-gauge-scale"><span>0</span><span>50</span><span>100</span></div>
+        <div class="cfm-tag"><span class="hz">關係疏遠</span>Relasi jauh · Tetap masuk</div>
+        <div class="cfm-desc">
+          Sumber: <strong>komisi, bonus, hasil investasi, hasil spekulasi</strong>. Relasi <span class="hz">疏遠</span> = jauh &amp; tidak terprediksi, tetap mudah masuk. Kombinasi sangat langka.
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RULES -->
+    <div class="cf-rules-frame">
+      <div class="cfr-eyebrow">
+        <div>
+          <span class="label">理 財 法 則</span>
+          <span class="id">Aturan Emas Mengelola Rezeki</span>
+        </div>
+        <div class="meta">4 RULES · UMUR 60+</div>
+      </div>
+
+      <div class="cf-rules-grid">
+
+        <div class="cf-rule">
+          <div class="cfr-num">1</div>
+          <div class="cfr-content">
+            <div class="cfr-title"><span class="hz">正</span>untuk fondasi · <span class="hz">偏</span>untuk eksperimen</div>
+            <div class="cfr-context">Rezeki tetap (gaji/hasil rutin) buat tujuan jangka panjang. Rezeki tak terduga buat eksperimen — jangan dibalik.</div>
+          </div>
+        </div>
+
+        <div class="cf-rule tip">
+          <div class="cfr-num">2</div>
+          <div class="cfr-content">
+            <div class="cfr-title">Sektor <strong>aliran</strong> &gt; <strong>akumulasi statis</strong></div>
+            <div class="cfr-context">Logistik · perdagangan · distribusi cocok dengan <span class="hz">喜用神</span> 水木 Anda. Hindari emas batangan / properti tanah-kering.</div>
+          </div>
+        </div>
+
+        <div class="cf-rule warn">
+          <div class="cfr-num">3</div>
+          <div class="cfr-content">
+            <div class="cfr-title">Di <span class="hz">大運 七殺</span>: <strong>max 20% modal</strong> spekulatif</div>
+            <div class="cfr-context">七殺 mendatangkan peluang besar yang juga berisiko besar. Komitmen aturan dulu — sebelum peluang datang.</div>
+          </div>
+        </div>
+
+        <div class="cf-rule tip">
+          <div class="cfr-num">4</div>
+          <div class="cfr-content">
+            <div class="cfr-title">Setiap <span class="hz">偏財</span> sisihkan <strong>≥ 30% defensif</strong></div>
+            <div class="cfr-context">Bonus / hasil komisi langsung ke tabungan / investasi defensif sebelum digunakan. Itu disiplin paling tinggi ROI.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- JUDUL -->
+    <div class="cf-headline">
+      <div class="cfh-hz">流</div>
+      <div class="cfh-text">
+        <strong>Liú</strong> — "Mengalir". Rezeki Anda paling lancar saat ada gerak: distribusi, pendidikan, perdagangan. <span class="hz">水</span> &amp; <span class="hz">木</span> menjadi pintu cashflow Anda.
+      </div>
+      <div class="cfh-num">
+        <div class="big">175%</div>
+        <div class="lbl">Jumlah Rezeki</div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      Bryant sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">七殺</span> (29–38) — menempa diri lewat tekanan. Periode 29–48 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+    </div>
+    <div class="footer-meta"><span>Halaman 11 / 23</span><span>Bryant · Ramalan 命</span></div>
+  </footer>
+</section>
+</body>
+</html>

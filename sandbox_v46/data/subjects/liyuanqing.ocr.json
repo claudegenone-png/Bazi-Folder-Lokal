@@ -1,0 +1,124 @@
+{
+  "_subject_id": "liyuanqing",
+  "_extract_count": 29,
+  "_source": "OCR via Read tool (Claude Code V4.5) — 29 photos from Xing Qiao NCC V2.6 software",
+  "name_id": "Li Yuan Qing",
+  "name_hanzi": "李元卿",
+  "gender_hz": "陰男",
+  "birth_solar": "1959-07-02 13:30",
+  "birth_lunar_text": "農曆民國 48 年 5 月 27 日 13 時 30 分",
+  "pillars": {
+    "year": {
+      "stem_hz": "己",
+      "branch_hz": "亥",
+      "ten_god_hz": "偏財"
+    },
+    "month": {
+      "stem_hz": "庚",
+      "branch_hz": "午",
+      "ten_god_hz": "正官"
+    },
+    "day": {
+      "stem_hz": "乙",
+      "branch_hz": "酉",
+      "ten_god_hz": "命主"
+    },
+    "hour": {
+      "stem_hz": "癸",
+      "branch_hz": "未",
+      "ten_god_hz": "偏印"
+    }
+  },
+  "wuxing": {
+    "jin": 2,
+    "shui": 3,
+    "mu": 4,
+    "huo": 3,
+    "tu": 2
+  },
+  "yong_shen_hz": "火 水",
+  "ji_shen_hz": "金 土",
+  "format_hz": "偏財格",
+  "da_yun": [
+    {
+      "age_start": 9,
+      "age_end": 18,
+      "stem_hz": "己",
+      "branch_hz": "巳"
+    },
+    {
+      "age_start": 19,
+      "age_end": 28,
+      "stem_hz": "戊",
+      "branch_hz": "辰"
+    },
+    {
+      "age_start": 29,
+      "age_end": 38,
+      "stem_hz": "丁",
+      "branch_hz": "卯"
+    },
+    {
+      "age_start": 39,
+      "age_end": 48,
+      "stem_hz": "丙",
+      "branch_hz": "寅"
+    },
+    {
+      "age_start": 49,
+      "age_end": 58,
+      "stem_hz": "乙",
+      "branch_hz": "丑"
+    },
+    {
+      "age_start": 59,
+      "age_end": 68,
+      "stem_hz": "甲",
+      "branch_hz": "子"
+    },
+    {
+      "age_start": 69,
+      "age_end": 78,
+      "stem_hz": "癸",
+      "branch_hz": "亥"
+    },
+    {
+      "age_start": 79,
+      "age_end": 88,
+      "stem_hz": "壬",
+      "branch_hz": "戌"
+    },
+    {
+      "age_start": 89,
+      "age_end": 98,
+      "stem_hz": "辛",
+      "branch_hz": "酉"
+    },
+    {
+      "age_start": 99,
+      "age_end": 108,
+      "stem_hz": "庚",
+      "branch_hz": "申"
+    }
+  ],
+  "marriage": {
+    "cocok_branches": [
+      "未",
+      "卯"
+    ],
+    "hindari_branches": [
+      "巳",
+      "申",
+      "亥"
+    ]
+  },
+  "yang_zhai_gua_hz": "坤",
+  "zi_wei": {
+    "ming_zhu_hz": "巨門",
+    "shen_zhu_hz": "天機",
+    "ming_gong_branch_hz": "亥",
+    "shen_gong_branch_hz": "丑",
+    "wu_xing_ju_hz": "火六局",
+    "shi_jun_hz": "卯"
+  }
+}

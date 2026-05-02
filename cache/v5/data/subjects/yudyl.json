@@ -1,0 +1,350 @@
+{
+  "subject_id": "yudyl",
+  "_built_by": "build_from_ocr.py V4.3",
+  "identity": {
+    "name_id": "Yudy L",
+    "name_hanzi": "?",
+    "gender_id": "Pria",
+    "birth_date": "1963-01-29",
+    "birth_time": "12:00",
+    "birth_day_name": "Selasa",
+    "birth_period_id": "siang",
+    "birth_hour_branch_hz": "午",
+    "birth_hour_period_label": "siang · 午時",
+    "lunar_date_text_new": "tanggal 5 bulan 1 tahun 壬寅 (Ren Yin · 1963)",
+    "lunar_year_pillar_hz": "壬寅",
+    "lunar_republic_text": "民國 52 年 1 月 5 日",
+    "age_at_report": 63
+  },
+  "shio": {
+    "branch_hz": "寅",
+    "branch_pinyin": "Yín",
+    "id": "Harimau",
+    "id_upper": "HARIMAU",
+    "svg_red": "Harimau-Merah.svg",
+    "svg_black": "Harimau-Hitam.svg"
+  },
+  "day_master": {
+    "stem_hz": "壬",
+    "stem_element_hz": "水",
+    "stem_element_id": "Air",
+    "polarity_id": "Yang",
+    "label_id": "Air Sungai",
+    "label_long_id": "Air",
+    "pinyin": "Rén 水",
+    "strength_id": "Kuat",
+    "strength_hz": "旺"
+  },
+  "pillars": {
+    "year": {
+      "stem_hz": "壬",
+      "branch_hz": "寅",
+      "stem_id": "Ren",
+      "branch_id": "Yin"
+    },
+    "month": {
+      "stem_hz": "癸",
+      "branch_hz": "丑",
+      "stem_id": "Gui",
+      "branch_id": "Chou"
+    },
+    "day": {
+      "stem_hz": "壬",
+      "branch_hz": "申",
+      "stem_id": "Ren",
+      "branch_id": "Shen",
+      "is_day_master": true
+    },
+    "hour": {
+      "stem_hz": "丙",
+      "branch_hz": "午",
+      "stem_id": "Bing",
+      "branch_id": "Wu"
+    }
+  },
+  "wuxing": {
+    "jin": {
+      "value": 1.0,
+      "percent": 7.7,
+      "label_id": "Logam"
+    },
+    "shui": {
+      "value": 5.0,
+      "percent": 38.5,
+      "label_id": "Air"
+    },
+    "mu": {
+      "value": 1.0,
+      "percent": 7.7,
+      "label_id": "Kayu"
+    },
+    "huo": {
+      "value": 3.0,
+      "percent": 23.1,
+      "label_id": "Api"
+    },
+    "tu": {
+      "value": 3.0,
+      "percent": 23.1,
+      "label_id": "Tanah"
+    },
+    "total": 13.0,
+    "self_value": 5.0,
+    "self_strength_id": "KUAT"
+  },
+  "yong_shen": {
+    "elements_hz": "土 金",
+    "elements_id": "Tanah & Logam",
+    "label_id": "Penopang & Pengarah"
+  },
+  "ji_shen": {
+    "elements_hz": "土",
+    "elements_id": "Tanah",
+    "label_id": "Pelumat & Pemicu"
+  },
+  "format": {
+    "hz": "劫財格",
+    "pinyin": "Jie Cai Ge",
+    "label_id": "Saudara Sebanding"
+  },
+  "da_yun": {
+    "start_age": 2,
+    "direction_id": "forward",
+    "current_index": 6,
+    "axis_marks": [
+      2,
+      12,
+      22,
+      32,
+      42,
+      52,
+      62,
+      72,
+      82,
+      92,
+      102
+    ],
+    "cycles": [
+      {
+        "n": 1,
+        "age_start": 2,
+        "age_end": 11,
+        "stem_hz": "甲",
+        "branch_hz": "寅",
+        "ten_god_hz": "食神",
+        "ten_god_id": "Pencipta",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 2,
+        "age_start": 12,
+        "age_end": 21,
+        "stem_hz": "乙",
+        "branch_hz": "卯",
+        "ten_god_hz": "傷官",
+        "ten_god_id": "Kritikus Tajam",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 3,
+        "age_start": 22,
+        "age_end": 31,
+        "stem_hz": "丙",
+        "branch_hz": "辰",
+        "ten_god_hz": "偏財",
+        "ten_god_id": "Rezeki Bisnis",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 4,
+        "age_start": 32,
+        "age_end": 41,
+        "stem_hz": "丁",
+        "branch_hz": "巳",
+        "ten_god_hz": "正財",
+        "ten_god_id": "Rezeki Tetap",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 5,
+        "age_start": 42,
+        "age_end": 51,
+        "stem_hz": "戊",
+        "branch_hz": "午",
+        "ten_god_hz": "七殺",
+        "ten_god_id": "Pemurnian",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 6,
+        "age_start": 52,
+        "age_end": 61,
+        "stem_hz": "己",
+        "branch_hz": "未",
+        "ten_god_hz": "正官",
+        "ten_god_id": "Otoritas",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 7,
+        "age_start": 62,
+        "age_end": 71,
+        "stem_hz": "庚",
+        "branch_hz": "申",
+        "ten_god_hz": "偏印",
+        "ten_god_id": "Mentor",
+        "element_class": "el-jin",
+        "is_current": true
+      },
+      {
+        "n": 8,
+        "age_start": 72,
+        "age_end": 81,
+        "stem_hz": "辛",
+        "branch_hz": "酉",
+        "ten_god_hz": "正印",
+        "ten_god_id": "Pelajaran",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 9,
+        "age_start": 82,
+        "age_end": 91,
+        "stem_hz": "壬",
+        "branch_hz": "戌",
+        "ten_god_hz": "比肩",
+        "ten_god_id": "Pundak Sama",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 10,
+        "age_start": 92,
+        "age_end": 101,
+        "stem_hz": "癸",
+        "branch_hz": "亥",
+        "ten_god_hz": "劫財",
+        "ten_god_id": "Saudara Sebanding",
+        "element_class": "el-shui"
+      }
+    ],
+    "seasons": [
+      {
+        "el_class": "s-mu",
+        "el_hz": "木",
+        "name_id": "Pemurnian Awal",
+        "age_start": 2,
+        "age_end": 21
+      },
+      {
+        "el_class": "s-huo",
+        "el_hz": "火",
+        "name_id": "Belajar & Mentor",
+        "age_start": 22,
+        "age_end": 41
+      },
+      {
+        "el_class": "s-tu",
+        "el_hz": "土",
+        "name_id": "Berbagi Panggung",
+        "age_start": 42,
+        "age_end": 61
+      },
+      {
+        "el_class": "s-jin",
+        "el_hz": "金",
+        "name_id": "Berkarya Tenang",
+        "age_start": 62,
+        "age_end": 81,
+        "is_current": true
+      },
+      {
+        "el_class": "s-shui",
+        "el_hz": "水",
+        "name_id": "Memetik Rezeki",
+        "age_start": 82,
+        "age_end": 101
+      }
+    ],
+    "spotlight_headline_html": "Fase <span class=\"hz\">偏印</span> (Mentor Bayangan) — periode utama untuk intuisi & jalur tidak konvensional",
+    "spotlight_tag_tone_html": "Logam · ketegasan",
+    "spotlight_tag_combo_html": "Hikmat Diam",
+    "spotlight_tag_combo_pair": [
+      "庚",
+      "申"
+    ],
+    "spotlight_bullets_html": [
+      "<strong>Fokus utama</strong> — pilar <span class=\"hz\">偏印</span> mendorong Anda untuk intuisi & jalur tidak konvensional. Selaraskan agenda 10 tahun ini ke arah tersebut.",
+      "<strong>Energi 金</strong> — batang <span class=\"hz\">庚</span> (金) berinteraksi dengan Day Master <span class=\"hz\">壬</span> (水); tone fase: Logam · ketegasan.",
+      "<strong>Cabang <span class=\"hz\">申</span></strong> menentukan medan harian — kebiasaan, lingkungan, dan relasi yang dibangun di rentang umur 62–71 akan jadi pondasi fase berikutnya.",
+      "<strong>Setelah 71</strong> masuk <span class=\"hz\">辛酉 (正印)</span> — menyerap ilmu & dukungan tetua. Siapkan transisi sekarang."
+    ],
+    "footer_caption_html": "Yudy L sedang di fase <span style=\"font-family:'Noto Serif TC',serif;color:var(--red)\">偏印</span> (62–71) — intuisi & jalur tidak konvensional. Periode 62–81 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir."
+  },
+  "marriage": {
+    "self_branch_index": 2,
+    "cocok": [
+      {
+        "branch_hz": "子",
+        "id": "Tikus",
+        "relationship_hz": "三合",
+        "relationship_id": "TRIPLE",
+        "reason_id": "Triple harmony."
+      },
+      {
+        "branch_hz": "辰",
+        "id": "Naga",
+        "relationship_hz": "三合",
+        "relationship_id": "TRIPLE",
+        "reason_id": "Triple harmony."
+      },
+      {
+        "branch_hz": "巳",
+        "id": "Ular",
+        "relationship_hz": "六害",
+        "relationship_id": "MENGHAMBAT",
+        "reason_id": "Selaras."
+      }
+    ],
+    "hindari": [
+      {
+        "branch_hz": "寅",
+        "id": "Harimau",
+        "relationship_hz": "六沖",
+        "relationship_id": "BENTROK",
+        "reason_id": "Bentrok langsung."
+      },
+      {
+        "branch_hz": "亥",
+        "id": "Babi",
+        "relationship_hz": "六合",
+        "relationship_id": "PAIR",
+        "reason_id": "Bentrok."
+      }
+    ]
+  },
+  "yang_zhai": {
+    "gua_hz": "坎",
+    "gua_pinyin": "Kǎn",
+    "gua_label_id": "Air",
+    "gua_direction_id": "Utara",
+    "gua_direction_abbr": "U",
+    "group_id": "Timur",
+    "sumbu_hoki_hz": "北↔南",
+    "sumbu_hoki_id": "U ↔ S",
+    "trigram_symbol": "☵"
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "廉貞",
+    "shen_zhu_hz": "天梁",
+    "ming_gong_hz": "申",
+    "shen_gong_hz": "申",
+    "wu_xing_ju_hz": "土五局",
+    "shi_jun_hz": "申",
+    "ming_gong_id": "Istana Hidup · Monyet",
+    "shen_gong_id": "Istana Tubuh · Monyet",
+    "shi_jun_id": "Penguasa Waktu · Monyet",
+    "ming_zhu_id": "Penguasa Hidup",
+    "shen_zhu_id": "Penguasa Tubuh",
+    "wu_xing_ju_id": "Aliran Tanah Lima"
+  }
+}

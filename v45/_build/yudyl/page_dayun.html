@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Yudy L — 大運 Garis Hidup</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* PAGE-SPECIFIC: Da Yun Lini Masa */
+  .content-dayun {
+    grid-template-rows: 56mm 80mm 1fr !important;
+    gap: 5mm;
+  }
+
+  /* HIDUPLINE — 10 cycles */
+  .lifeline-frame {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 4mm 5mm 3mm;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 2mm;
+  }
+  .ll-eyebrow {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 0.2mm solid var(--gold-soft); padding-bottom: 1.5mm;
+  }
+  .ll-eyebrow .label {
+    font-family: 'Noto Serif TC', serif; font-size: 12pt;
+    color: var(--red); letter-spacing: 4px; font-weight: 600;
+  }
+  .ll-eyebrow .label-id {
+    font-family: 'Playfair Display', serif; font-size: 9pt;
+    font-style: italic; color: var(--text-muted); margin-left: 4mm;
+  }
+  .ll-eyebrow .label-meta {
+    font-size: 7pt; color: var(--text-muted);
+    letter-spacing: 1.5px; text-transform: uppercase;
+  }
+
+  .lifeline {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1mm;
+    align-items: stretch;
+  }
+  .ll-cell {
+    border-radius: 1.5mm;
+    border: 0.3mm solid;
+    padding: 1.5mm 1mm;
+    display: grid; grid-template-rows: auto 1fr auto;
+    gap: 1mm;
+    text-align: center;
+    overflow: hidden; position: relative;
+    min-width: 0;
+  }
+  .ll-cell .age {
+    font-family: 'Inter', sans-serif; font-size: 6pt;
+    color: var(--text-muted); letter-spacing: 0.3px;
+  }
+  .ll-cell .gz {
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 700; line-height: 1;
+    display: flex; flex-direction: column; gap: 0.5mm;
+    align-items: center; justify-content: center;
+  }
+  .ll-cell .gz .s, .ll-cell .gz .b { font-size: 12pt; }
+  .ll-cell .ss {
+    font-family: 'Noto Serif TC', serif; font-size: 6.5pt;
+    padding: 0.3mm 1mm; border-radius: 3mm;
+    background: rgba(255,255,255,0.6);
+    letter-spacing: 0.3px;
+  }
+  .ll-cell .ss-id {
+    font-size: 4.8pt; color: var(--text-muted);
+    font-style: italic; margin-top: 0.5mm;
+    line-height: 1; letter-spacing: 0.2px;
+    text-align: center;
+  }
+  .ll-cell.current .ss-id { color: var(--red); font-weight: 600; }
+  .ll-cell.past    { opacity: 0.55; }
+  .ll-cell.current {
+    box-shadow: 0 0 0 0.6mm var(--gold), 0 1mm 3mm rgba(201,169,97,0.3);
+    transform: scale(1.06);
+    z-index: 2;
+  }
+  .ll-cell.current .age { font-weight: 700; color: var(--red); }
+  .ll-cell.current::after {
+    content: '★ ANDA';
+    position: absolute; top: -1mm; left: 50%;
+    transform: translateX(-50%);
+    background: var(--red); color: white;
+    font-size: 5.5pt; padding: 0.4mm 1.8mm;
+    border-radius: 3mm; letter-spacing: 1px;
+    font-weight: 700;
+  }
+  /* Element tints */
+  .ll-cell.el-jin   { background: #F5EFD9; border-color: #B5A063; }
+  .ll-cell.el-shui  { background: #DCE8F1; border-color: #4A7BA0; }
+  .ll-cell.el-mu    { background: #DEEBD3; border-color: #5A8C4A; }
+  .ll-cell.el-huo   { background: #F4D9D9; border-color: #B85050; }
+  .ll-cell.el-tu    { background: #ECDDC9; border-color: #8C6E47; }
+  .ll-cell.el-jin   .gz { color: #6E5C2C; }
+  .ll-cell.el-shui  .gz { color: #2D4F66; }
+  .ll-cell.el-mu    .gz { color: #2F5325; }
+  .ll-cell.el-huo   .gz { color: #6F2929; }
+  .ll-cell.el-tu    .gz { color: #5A4427; }
+
+  .ll-axis {
+    display: flex; justify-content: space-between;
+    font-size: 6pt; color: var(--text-muted);
+    padding: 0 0.5mm; letter-spacing: 0.5px;
+  }
+
+  /* SPOTLIGHT — Current cycle */
+  .spotlight {
+    background-color: #F5EBD0 !important;
+    background-image: linear-gradient(135deg, #FFF8E1 0%, #F5EBD0 60%, #ECDDC9 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2.5mm;
+    padding: 5mm 6mm;
+    display: grid;
+    grid-template-columns: 64mm 1fr;
+    gap: 6mm;
+    overflow: hidden;
+    position: relative;
+  }
+  /* .spotlight::before overlay removed — laptop PDF viewers render radial-gradient
+     as opaque white instead of transparent. Decorative effect (8% red glow) was
+     barely visible anyway. See memory: bug_pdf_gradient_white_box.md (Lin Mei Yan case) */
+  .sp-left {
+    background-color: #FFFFFF !important;
+    border: 0.4mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 3mm 4mm;
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    gap: 2mm;
+    text-align: center;
+    overflow: hidden;
+  }
+  .sp-eyebrow {
+    font-size: 6.5pt; color: var(--red);
+    letter-spacing: 3px; text-transform: uppercase;
+    font-weight: 700;
+  }
+  .sp-gz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 56pt; font-weight: 700;
+    color: var(--red); line-height: 1;
+    display: flex; justify-content: center; gap: 3mm;
+    text-shadow: 0 1mm 2mm rgba(139,26,26,0.12);
+  }
+  .sp-element-disc {
+    width: 14mm; height: 14mm; border-radius: 50%;
+    margin: 0 auto;
+    background-color: #5A8C4A;
+    background-image: linear-gradient(180deg, #6FA85A, #4D7A3A);
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-family: 'Noto Serif TC', serif;
+    font-size: 14pt; font-weight: 700;
+    box-shadow: 0 1mm 3mm rgba(184,80,80,0.4);
+  }
+  .sp-element-disc.s-jin   { background-color: #B5A063; background-image: linear-gradient(180deg, #C9B57A, #A89358); }
+  .sp-element-disc.s-shui  { background-color: #4A7BA0; background-image: linear-gradient(180deg, #5990B8, #3A6B8C); }
+  .sp-element-disc.s-mu    { background-color: #5A8C4A; background-image: linear-gradient(180deg, #6FA85A, #4D7A3A); }
+  .sp-element-disc.s-huo   { background-color: #A84A4A; background-image: linear-gradient(180deg, #C45F5F, #8C3535); }
+  .sp-element-disc.s-tu    { background-color: #A07E5C; background-image: linear-gradient(180deg, #B89070, #8C6E47); }
+  .sp-age {
+    font-family: 'Playfair Display', serif;
+    font-size: 11pt; color: var(--text);
+    letter-spacing: 2px;
+    border-top: 0.2mm solid var(--gold-soft);
+    padding-top: 1.5mm;
+  }
+  .sp-age .now { color: var(--red); font-weight: 700; }
+
+  .sp-right {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 2.5mm; min-width: 0;
+  }
+  .sp-tags { display: flex; gap: 2mm; flex-wrap: wrap; }
+  .sp-tag {
+    font-size: 6.5pt;
+    padding: 0.7mm 2.5mm; border-radius: 5mm;
+    background-color: #FFFFFF !important; border: 0.2mm solid var(--gold-soft);
+    color: var(--text-muted); letter-spacing: 0.5px;
+    display: flex; align-items: center; gap: 1.5mm;
+  }
+  .sp-tag.primary {
+    background-color: var(--red) !important; color: white; border-color: var(--red);
+    font-weight: 600;
+  }
+  .sp-tag .hz { font-family: 'Noto Serif TC', serif; font-weight: 700; }
+
+  .sp-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 14pt; color: var(--red);
+    line-height: 1.2; font-weight: 600;
+  }
+  .sp-headline .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--text); font-weight: 700; margin: 0 1mm;
+  }
+
+  .sp-bullets {
+    display: grid; gap: 1.5mm;
+    align-content: start; min-height: 0;
+  }
+  .sp-bullet {
+    display: grid; grid-template-columns: 5mm 1fr;
+    gap: 2mm; align-items: flex-start;
+    overflow: hidden;
+  }
+  .sp-bullet .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 11pt; color: var(--red);
+    font-weight: 700; line-height: 1;
+    border-right: 0.3mm solid var(--gold);
+    padding-right: 1mm; text-align: right;
+  }
+  .sp-bullet .txt {
+    font-size: 7.8pt; line-height: 1.4;
+    color: var(--text);
+    display: -webkit-box; -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .sp-bullet .txt strong { color: var(--red); }
+  .sp-bullet .txt .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red); font-weight: 600;
+  }
+
+  /* HIDUP SEASONS */
+  .seasons-frame {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 3mm 4mm;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 1.5mm;
+  }
+  .seasons-eyebrow {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 0.2mm solid var(--gold-soft); padding-bottom: 1mm;
+  }
+  .seasons-eyebrow .label {
+    font-family: 'Noto Serif TC', serif; font-size: 10pt;
+    color: var(--red); letter-spacing: 3px; font-weight: 600;
+  }
+  .seasons-eyebrow .id {
+    font-family: 'Playfair Display', serif; font-size: 8.5pt;
+    font-style: italic; color: var(--text-muted);
+  }
+
+  .seasons-bar {
+    display: flex; gap: 0.6mm;
+    height: 100%;
+    align-items: stretch;
+  }
+  .season {
+    border-radius: 1.2mm;
+    padding: 2mm 2.5mm;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 0.8mm;
+    overflow: hidden; min-width: 0;
+    position: relative;
+  }
+  .season .s-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 16pt; font-weight: 700;
+    line-height: 1; color: white;
+  }
+  .season .s-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 8pt; font-weight: 600;
+    color: rgba(255,255,255,0.95);
+    line-height: 1.15;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  }
+  .season .s-age {
+    font-size: 6.5pt; color: rgba(255,255,255,0.85);
+    letter-spacing: 0.5px;
+  }
+  .season.s-jin   { background-color: #B5A063; background-image: linear-gradient(180deg, #C9B57A, #A89358); }
+  .season.s-shui  { background-color: #4A7BA0; background-image: linear-gradient(180deg, #5990B8, #3A6B8C); }
+  .season.s-mu    { background-color: #5A8C4A; background-image: linear-gradient(180deg, #6FA85A, #4D7A3A); }
+  .season.s-huo   { background-color: #A84A4A; background-image: linear-gradient(180deg, #C45F5F, #8C3535); }
+  .season.s-tu    { background-color: #A07E5C; background-image: linear-gradient(180deg, #B89070, #8C6E47); }
+  .season, .ll-cell, .spotlight, .sp-element-disc { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+
+  .season.current {
+    box-shadow: 0 0 0 0.6mm var(--gold), 0 1mm 4mm rgba(201,169,97,0.4);
+    z-index: 1;
+  }
+  .season.current::after {
+    content: '★ ANDA';
+    position: absolute; top: -1.2mm; left: 50%;
+    transform: translateX(-50%);
+    background: var(--red); color: white;
+    font-size: 5.5pt; padding: 0.4mm 2mm;
+    border-radius: 3mm; letter-spacing: 1px;
+    font-weight: 700;
+  }
+
+  .seasons-axis {
+    display: flex; justify-content: space-between;
+    font-size: 6pt; color: var(--text-muted);
+    letter-spacing: 0.5px; padding-top: 0.5mm;
+  }
+</style>
+</head>
+<body>
+<section class="page">
+
+  <!-- KEPALA -->
+  <header class="page-header">
+    <div class="h-num">14</div>
+    <div class="h-titles">
+      <div class="h-cn">大 運</div>
+      <div class="h-id">Garis Hidup 10 Tahunan</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <!-- BAR SUBJEK -->
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Yudy L · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
+      <div class="subject-detail">29 Januari 1963 · 13:30 · Pria · Umur 63 tahun</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">壬水 · Air Sungai</div>
+    </div>
+  </div>
+
+  <!-- KONTEN -->
+  <main class="content content-dayun">
+
+    <!-- HIDUPLINE 10 cycles -->
+    <div class="lifeline-frame">
+      <div class="ll-eyebrow">
+        <div>
+          <span class="label">十 大 運</span>
+          <span class="label-id">10 Fase Sepuluh Tahunan</span>
+        </div>
+        <div class="label-meta">Fase 7 dari 10 · Fase Sekarang</div>
+      </div>
+
+      <div class="lifeline">
+        <div class="ll-cell past el-mu">
+          <div class="age">2–11</div>
+          <div class="gz"><span class="s">甲</span><span class="b">寅</span></div>
+          <div class="ss">食神</div>
+          <div class="ss-id">Pencipta</div>
+        </div>
+        <div class="ll-cell past el-mu">
+          <div class="age">12–21</div>
+          <div class="gz"><span class="s">乙</span><span class="b">卯</span></div>
+          <div class="ss">傷官</div>
+          <div class="ss-id">Kritikus Tajam</div>
+        </div>
+        <div class="ll-cell past el-huo">
+          <div class="age">22–31</div>
+          <div class="gz"><span class="s">丙</span><span class="b">辰</span></div>
+          <div class="ss">偏財</div>
+          <div class="ss-id">Rezeki Bisnis</div>
+        </div>
+        <div class="ll-cell past el-huo">
+          <div class="age">32–41</div>
+          <div class="gz"><span class="s">丁</span><span class="b">巳</span></div>
+          <div class="ss">正財</div>
+          <div class="ss-id">Rezeki Tetap</div>
+        </div>
+        <div class="ll-cell past el-tu">
+          <div class="age">42–51</div>
+          <div class="gz"><span class="s">戊</span><span class="b">午</span></div>
+          <div class="ss">七殺</div>
+          <div class="ss-id">Pemurnian</div>
+        </div>
+        <div class="ll-cell past el-tu">
+          <div class="age">52–61</div>
+          <div class="gz"><span class="s">己</span><span class="b">未</span></div>
+          <div class="ss">正官</div>
+          <div class="ss-id">Otoritas</div>
+        </div>
+        <div class="ll-cell current el-jin">
+          <div class="age">62–71</div>
+          <div class="gz"><span class="s">庚</span><span class="b">申</span></div>
+          <div class="ss">偏印</div>
+          <div class="ss-id">Mentor</div>
+        </div>
+        <div class="ll-cell el-jin">
+          <div class="age">72–81</div>
+          <div class="gz"><span class="s">辛</span><span class="b">酉</span></div>
+          <div class="ss">正印</div>
+          <div class="ss-id">Pelajaran</div>
+        </div>
+        <div class="ll-cell el-shui">
+          <div class="age">82–91</div>
+          <div class="gz"><span class="s">壬</span><span class="b">戌</span></div>
+          <div class="ss">比肩</div>
+          <div class="ss-id">Pundak Sama</div>
+        </div>
+        <div class="ll-cell el-shui">
+          <div class="age">92–101</div>
+          <div class="gz"><span class="s">癸</span><span class="b">亥</span></div>
+          <div class="ss">劫財</div>
+          <div class="ss-id">Saudara Sebanding</div>
+        </div>
+      </div>
+
+      <div class="ll-axis">
+        <span>2</span><span>12</span><span>22</span><span>32</span><span>42</span>
+        <span>52</span><span>62</span><span>72</span><span>82</span><span>92</span><span>102</span>
+      </div>
+    </div>
+
+    <!-- SOROTAN siklus sekarang -->
+    <div class="spotlight">
+
+      <div class="sp-left">
+        <div class="sp-eyebrow">FASE 7 · SEKARANG</div>
+        <div class="sp-gz"><span>庚</span><span>申</span></div>
+        <div class="sp-element-disc s-jin">金</div>
+        <div class="sp-age">Umur <span class="now">62 — 71</span></div>
+      </div>
+
+      <div class="sp-right">
+        <div class="sp-tags">
+          <span class="sp-tag primary"><span class="hz">偏印</span>Piān Yìn · Mentor</span>
+          <span class="sp-tag"><span class="hz">金</span>Logam · ketegasan</span>
+          <span class="sp-tag"><span class="hz">庚</span>+<span class="hz">申</span>Hikmat Diam</span>
+        </div>
+
+        <div class="sp-headline">
+          Fase <span class="hz">偏印</span> (Mentor Bayangan) — periode utama untuk intuisi & jalur tidak konvensional
+        </div>
+
+        <div class="sp-bullets">
+          <div class="sp-bullet">
+            <div class="num">1</div>
+            <div class="txt"><strong>Fokus utama</strong> — pilar <span class="hz">偏印</span> mendorong Anda untuk intuisi & jalur tidak konvensional. Selaraskan agenda 10 tahun ini ke arah tersebut.</div>
+          </div>
+          <div class="sp-bullet">
+            <div class="num">2</div>
+            <div class="txt"><strong>Energi 金</strong> — batang <span class="hz">庚</span> (金) berinteraksi dengan Day Master <span class="hz">壬</span> (水); tone fase: Logam · ketegasan.</div>
+          </div>
+          <div class="sp-bullet">
+            <div class="num">3</div>
+            <div class="txt"><strong>Cabang <span class="hz">申</span></strong> menentukan medan harian — kebiasaan, lingkungan, dan relasi yang dibangun di rentang umur 62–71 akan jadi pondasi fase berikutnya.</div>
+          </div>
+          <div class="sp-bullet">
+            <div class="num">4</div>
+            <div class="txt"><strong>Setelah 71</strong> masuk <span class="hz">辛酉 (正印)</span> — menyerap ilmu & dukungan tetua. Siapkan transisi sekarang.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HIDUP SEASONS -->
+    <div class="seasons-frame">
+      <div class="seasons-eyebrow">
+        <div>
+          <span class="label">五 行 季 節</span>
+          <span class="id" style="margin-left:4mm;">Musim Hidup · Pola Elemen Dominan</span>
+        </div>
+        <div class="label-meta" style="font-size:6.5pt;color:var(--text-muted);letter-spacing:1px;">100 TAHUN · 6 BAB</div>
+      </div>
+
+      <div class="seasons-bar">
+        <div class="season s-mu" style="flex:20">
+          <div class="s-hz">木</div>
+          <div class="s-name">Pemurnian Awal</div>
+          <div class="s-age">2–21</div>
+        </div>
+        <div class="season s-huo" style="flex:20">
+          <div class="s-hz">火</div>
+          <div class="s-name">Belajar &amp; Mentor</div>
+          <div class="s-age">22–41</div>
+        </div>
+        <div class="season s-tu" style="flex:20">
+          <div class="s-hz">土</div>
+          <div class="s-name">Berbagi Panggung</div>
+          <div class="s-age">42–61</div>
+        </div>
+        <div class="season s-jin current" style="flex:20">
+          <div class="s-hz">金</div>
+          <div class="s-name">Berkarya Tenang</div>
+          <div class="s-age">62–81</div>
+        </div>
+        <div class="season s-shui" style="flex:20">
+          <div class="s-hz">水</div>
+          <div class="s-name">Memetik Rezeki</div>
+          <div class="s-age">82–101</div>
+        </div>
+      </div>
+
+      <div class="seasons-axis">
+        <span>2</span><span>22</span><span>42</span><span>62</span><span>82</span><span>101</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- KAKI -->
+  <footer class="footer">
+    <div class="footer-caption">
+      Yudy L sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏印</span> (62–71) — intuisi & jalur tidak konvensional. Periode 62–81 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+    </div>
+    <div class="footer-meta">
+      <span>Halaman 14 / 23</span>
+      <span>Yudy L · Ramalan 命</span>
+    </div>
+  </footer>
+
+</section>
+</body>
+</html>

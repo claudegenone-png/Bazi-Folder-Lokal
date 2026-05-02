@@ -1,0 +1,51 @@
+{
+  "_subject_id": "linwenhan",
+  "_extract_count": 17,
+  "_source": "OCR via Read tool (Claude Code) — 17 photos from Xing Qiao NCC V2.6 software",
+  "name_id": "Lin Wen Han",
+  "name_hanzi": "林文漢",
+  "gender_hz": "陽男",
+  "birth_solar": "1993-04-17 03:50",
+  "birth_lunar_text": "農曆民國 82 年 3 月 26 日 3 時 50 分",
+  "pillars": {
+    "year":  {"stem_hz": "癸", "branch_hz": "酉", "ten_god_hz": "正財"},
+    "month": {"stem_hz": "丙", "branch_hz": "辰", "ten_god_hz": "偏印"},
+    "day":   {"stem_hz": "戊", "branch_hz": "辰", "ten_god_hz": "命主"},
+    "hour":  {"stem_hz": "甲", "branch_hz": "寅", "ten_god_hz": "七殺"}
+  },
+  "wuxing": {
+    "jin": 1,
+    "shui": 2,
+    "mu": 2,
+    "huo": 1,
+    "tu": 3
+  },
+  "yong_shen_hz": "金 火",
+  "ji_shen_hz": "水 木",
+  "format_hz": "七殺格",
+  "da_yun": [
+    {"age_start": 5,   "age_end": 14,  "stem_hz": "乙", "branch_hz": "卯"},
+    {"age_start": 15,  "age_end": 24,  "stem_hz": "甲", "branch_hz": "寅"},
+    {"age_start": 25,  "age_end": 34,  "stem_hz": "癸", "branch_hz": "丑"},
+    {"age_start": 35,  "age_end": 44,  "stem_hz": "壬", "branch_hz": "子"},
+    {"age_start": 45,  "age_end": 54,  "stem_hz": "辛", "branch_hz": "亥"},
+    {"age_start": 55,  "age_end": 64,  "stem_hz": "庚", "branch_hz": "戌"},
+    {"age_start": 65,  "age_end": 74,  "stem_hz": "己", "branch_hz": "酉"},
+    {"age_start": 75,  "age_end": 84,  "stem_hz": "戊", "branch_hz": "申"},
+    {"age_start": 85,  "age_end": 94,  "stem_hz": "丁", "branch_hz": "未"},
+    {"age_start": 95,  "age_end": 104, "stem_hz": "丙", "branch_hz": "午"}
+  ],
+  "marriage": {
+    "cocok_branches": ["丑", "辰", "巳"],
+    "hindari_branches": ["子", "卯", "酉", "戌"]
+  },
+  "yang_zhai_gua_hz": "兌",
+  "zi_wei": {
+    "ming_zhu_hz": "祿存",
+    "shen_zhu_hz": "天同",
+    "ming_gong_branch_hz": "寅",
+    "shen_gong_branch_hz": "午",
+    "wu_xing_ju_hz": "水二局",
+    "shi_jun_hz": "子"
+  }
+}

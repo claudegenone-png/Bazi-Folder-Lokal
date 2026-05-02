@@ -1,0 +1,154 @@
+{
+  "subject": {
+    "birth_solar": "1962-10-29 05:00",
+    "gender": "M",
+    "shio_branch": "寅",
+    "shio_id": "Macan",
+    "shio_filename": "Macan"
+  },
+  "pilar": {
+    "year": {
+      "stem": "壬",
+      "branch": "寅",
+      "stem_id": "壬 (水 陽)",
+      "branch_id": "Macan"
+    },
+    "month": {
+      "stem": "庚",
+      "branch": "戌",
+      "stem_id": "庚 (金 陽)",
+      "branch_id": "Anjing"
+    },
+    "day": {
+      "stem": "庚",
+      "branch": "子",
+      "stem_id": "庚 (金 陽)",
+      "branch_id": "Tikus"
+    },
+    "hour": {
+      "stem": "己",
+      "branch": "卯",
+      "stem_id": "己 (土 陰)",
+      "branch_id": "Kelinci"
+    }
+  },
+  "day_master": {
+    "stem": "庚",
+    "element": "金",
+    "element_id": "Logam",
+    "yin_yang": "陽",
+    "label_id": "庚金 — Logam 陽"
+  },
+  "wu_xing": {
+    "金": 2.3,
+    "木": 1.4,
+    "水": 1.7,
+    "火": 0.6,
+    "土": 2.0
+  },
+  "da_yun": [
+    {
+      "age_start": 5,
+      "age_end": 14,
+      "stem": "辛",
+      "branch": "亥",
+      "gz": "辛亥",
+      "shi_shen": "劫財",
+      "element": "金"
+    },
+    {
+      "age_start": 15,
+      "age_end": 24,
+      "stem": "壬",
+      "branch": "子",
+      "gz": "壬子",
+      "shi_shen": "食神",
+      "element": "水"
+    },
+    {
+      "age_start": 25,
+      "age_end": 34,
+      "stem": "癸",
+      "branch": "丑",
+      "gz": "癸丑",
+      "shi_shen": "傷官",
+      "element": "水"
+    },
+    {
+      "age_start": 35,
+      "age_end": 44,
+      "stem": "甲",
+      "branch": "寅",
+      "gz": "甲寅",
+      "shi_shen": "偏財",
+      "element": "木"
+    },
+    {
+      "age_start": 45,
+      "age_end": 54,
+      "stem": "乙",
+      "branch": "卯",
+      "gz": "乙卯",
+      "shi_shen": "正財",
+      "element": "木"
+    },
+    {
+      "age_start": 55,
+      "age_end": 64,
+      "stem": "丙",
+      "branch": "辰",
+      "gz": "丙辰",
+      "shi_shen": "七殺",
+      "element": "火"
+    },
+    {
+      "age_start": 65,
+      "age_end": 74,
+      "stem": "丁",
+      "branch": "巳",
+      "gz": "丁巳",
+      "shi_shen": "正官",
+      "element": "火"
+    },
+    {
+      "age_start": 75,
+      "age_end": 84,
+      "stem": "戊",
+      "branch": "午",
+      "gz": "戊午",
+      "shi_shen": "偏印",
+      "element": "土"
+    },
+    {
+      "age_start": 85,
+      "age_end": 94,
+      "stem": "己",
+      "branch": "未",
+      "gz": "己未",
+      "shi_shen": "正印",
+      "element": "土"
+    },
+    {
+      "age_start": 95,
+      "age_end": 104,
+      "stem": "庚",
+      "branch": "申",
+      "gz": "庚申",
+      "shi_shen": "比肩",
+      "element": "金"
+    }
+  ],
+  "format": {
+    "shi_shen": "偏印",
+    "name_cn": "偏印格",
+    "name_pinyin": "Pian Yin Ge"
+  },
+  "favorable": [
+    "土",
+    "金"
+  ],
+  "unfavorable": [
+    "水",
+    "木"
+  ]
+}

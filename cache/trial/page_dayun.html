@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Henry — 大運 Garis Hidup</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* PAGE-SPECIFIC: Da Yun Timeline */
+  .content-dayun {
+    grid-template-rows: 56mm 80mm 1fr !important;
+    gap: 5mm;
+  }
+
+  /* LIFELINE — 10 cycles */
+  .lifeline-frame {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 4mm 5mm 3mm;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 2mm;
+  }
+  .ll-eyebrow {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 0.2mm solid var(--gold-soft); padding-bottom: 1.5mm;
+  }
+  .ll-eyebrow .label {
+    font-family: 'Noto Serif TC', serif; font-size: 12pt;
+    color: var(--red); letter-spacing: 4px; font-weight: 600;
+  }
+  .ll-eyebrow .label-id {
+    font-family: 'Playfair Display', serif; font-size: 9pt;
+    font-style: italic; color: var(--text-muted); margin-left: 4mm;
+  }
+  .ll-eyebrow .label-meta {
+    font-size: 7pt; color: var(--text-muted);
+    letter-spacing: 1.5px; text-transform: uppercase;
+  }
+
+  .lifeline {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1mm;
+    align-items: stretch;
+  }
+  .ll-cell {
+    border-radius: 1.5mm;
+    border: 0.3mm solid;
+    padding: 1.5mm 1mm;
+    display: grid; grid-template-rows: auto 1fr auto;
+    gap: 1mm;
+    text-align: center;
+    overflow: hidden; position: relative;
+    min-width: 0;
+  }
+  .ll-cell .age {
+    font-family: 'Inter', sans-serif; font-size: 6pt;
+    color: var(--text-muted); letter-spacing: 0.3px;
+  }
+  .ll-cell .gz {
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 700; line-height: 1;
+    display: flex; flex-direction: column; gap: 0.5mm;
+    align-items: center; justify-content: center;
+  }
+  .ll-cell .gz .s, .ll-cell .gz .b { font-size: 12pt; }
+  .ll-cell .ss {
+    font-family: 'Noto Serif TC', serif; font-size: 6.5pt;
+    padding: 0.3mm 1mm; border-radius: 3mm;
+    background: rgba(255,255,255,0.6);
+    letter-spacing: 0.3px;
+  }
+  .ll-cell.past    { opacity: 0.55; }
+  .ll-cell.current {
+    box-shadow: 0 0 0 0.6mm var(--gold), 0 1mm 3mm rgba(201,169,97,0.3);
+    transform: scale(1.06);
+    z-index: 2;
+  }
+  .ll-cell.current .age { font-weight: 700; color: var(--red); }
+  .ll-cell.current::after {
+    content: '★ ANDA';
+    position: absolute; top: -1mm; left: 50%;
+    transform: translateX(-50%);
+    background: var(--red); color: white;
+    font-size: 5.5pt; padding: 0.4mm 1.8mm;
+    border-radius: 3mm; letter-spacing: 1px;
+    font-weight: 700;
+  }
+  /* Element tints */
+  .ll-cell.el-jin   { background: #F5EFD9; border-color: #B5A063; }
+  .ll-cell.el-shui  { background: #DCE8F1; border-color: #4A7BA0; }
+  .ll-cell.el-mu    { background: #DEEBD3; border-color: #5A8C4A; }
+  .ll-cell.el-huo   { background: #F4D9D9; border-color: #B85050; }
+  .ll-cell.el-tu    { background: #ECDDC9; border-color: #8C6E47; }
+  .ll-cell.el-jin   .gz { color: #6E5C2C; }
+  .ll-cell.el-shui  .gz { color: #2D4F66; }
+  .ll-cell.el-mu    .gz { color: #2F5325; }
+  .ll-cell.el-huo   .gz { color: #6F2929; }
+  .ll-cell.el-tu    .gz { color: #5A4427; }
+
+  .ll-axis {
+    display: flex; justify-content: space-between;
+    font-size: 6pt; color: var(--text-muted);
+    padding: 0 0.5mm; letter-spacing: 0.5px;
+  }
+
+  /* SPOTLIGHT — Current cycle */
+  .spotlight {
+    background: linear-gradient(135deg, #FFF8E1 0%, #F5EBD0 60%, #ECDDC9 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2.5mm;
+    padding: 5mm 6mm;
+    display: grid;
+    grid-template-columns: 64mm 1fr;
+    gap: 6mm;
+    overflow: hidden;
+    position: relative;
+  }
+  .spotlight::before {
+    content: ''; position: absolute;
+    top: -10mm; right: -10mm;
+    width: 50mm; height: 50mm;
+    background: radial-gradient(circle, rgba(184,80,80,0.08) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  .sp-left {
+    background: white;
+    border: 0.4mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 3mm 4mm;
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    gap: 2mm;
+    text-align: center;
+    overflow: hidden;
+  }
+  .sp-eyebrow {
+    font-size: 6.5pt; color: var(--red);
+    letter-spacing: 3px; text-transform: uppercase;
+    font-weight: 700;
+  }
+  .sp-gz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 56pt; font-weight: 700;
+    color: var(--red); line-height: 1;
+    display: flex; justify-content: center; gap: 3mm;
+    text-shadow: 0 1mm 2mm rgba(139,26,26,0.12);
+  }
+  .sp-element-disc {
+    width: 14mm; height: 14mm; border-radius: 50%;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #C45F5F, #8C3535);
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-family: 'Noto Serif TC', serif;
+    font-size: 14pt; font-weight: 700;
+    box-shadow: 0 1mm 3mm rgba(184,80,80,0.4);
+  }
+  .sp-age {
+    font-family: 'Playfair Display', serif;
+    font-size: 11pt; color: var(--text);
+    letter-spacing: 2px;
+    border-top: 0.2mm solid var(--gold-soft);
+    padding-top: 1.5mm;
+  }
+  .sp-age .now { color: var(--red); font-weight: 700; }
+
+  .sp-right {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 2.5mm; min-width: 0;
+  }
+  .sp-tags { display: flex; gap: 2mm; flex-wrap: wrap; }
+  .sp-tag {
+    font-size: 6.5pt;
+    padding: 0.7mm 2.5mm; border-radius: 5mm;
+    background: white; border: 0.2mm solid var(--gold-soft);
+    color: var(--text-muted); letter-spacing: 0.5px;
+    display: flex; align-items: center; gap: 1.5mm;
+  }
+  .sp-tag.primary {
+    background: var(--red); color: white; border-color: var(--red);
+    font-weight: 600;
+  }
+  .sp-tag .hz { font-family: 'Noto Serif TC', serif; font-weight: 700; }
+
+  .sp-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 14pt; color: var(--red);
+    line-height: 1.2; font-weight: 600;
+  }
+  .sp-headline .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--text); font-weight: 700; margin: 0 1mm;
+  }
+
+  .sp-bullets {
+    display: grid; gap: 1.5mm;
+    align-content: start; min-height: 0;
+  }
+  .sp-bullet {
+    display: grid; grid-template-columns: 5mm 1fr;
+    gap: 2mm; align-items: flex-start;
+    overflow: hidden;
+  }
+  .sp-bullet .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 11pt; color: var(--red);
+    font-weight: 700; line-height: 1;
+    border-right: 0.3mm solid var(--gold);
+    padding-right: 1mm; text-align: right;
+  }
+  .sp-bullet .txt {
+    font-size: 7.8pt; line-height: 1.4;
+    color: var(--text);
+    display: -webkit-box; -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .sp-bullet .txt strong { color: var(--red); }
+  .sp-bullet .txt .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red); font-weight: 600;
+  }
+
+  /* LIFE SEASONS */
+  .seasons-frame {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 3mm 4mm;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 1.5mm;
+  }
+  .seasons-eyebrow {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 0.2mm solid var(--gold-soft); padding-bottom: 1mm;
+  }
+  .seasons-eyebrow .label {
+    font-family: 'Noto Serif TC', serif; font-size: 10pt;
+    color: var(--red); letter-spacing: 3px; font-weight: 600;
+  }
+  .seasons-eyebrow .id {
+    font-family: 'Playfair Display', serif; font-size: 8.5pt;
+    font-style: italic; color: var(--text-muted);
+  }
+
+  .seasons-bar {
+    display: flex; gap: 0.6mm;
+    height: 100%;
+    align-items: stretch;
+  }
+  .season {
+    border-radius: 1.2mm;
+    padding: 2mm 2.5mm;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 0.8mm;
+    overflow: hidden; min-width: 0;
+    position: relative;
+  }
+  .season .s-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 16pt; font-weight: 700;
+    line-height: 1; color: white;
+  }
+  .season .s-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 8pt; font-weight: 600;
+    color: rgba(255,255,255,0.95);
+    line-height: 1.15;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  }
+  .season .s-age {
+    font-size: 6.5pt; color: rgba(255,255,255,0.85);
+    letter-spacing: 0.5px;
+  }
+  .season.s-jin   { background: linear-gradient(180deg, #C9B57A, #A89358); }
+  .season.s-shui  { background: linear-gradient(180deg, #5990B8, #3A6B8C); }
+  .season.s-mu    { background: linear-gradient(180deg, #6FA85A, #4D7A3A); }
+  .season.s-huo   { background: linear-gradient(180deg, #C45F5F, #8C3535); }
+  .season.s-tu    { background: linear-gradient(180deg, #B89070, #8C6E47); }
+
+  .season.current {
+    box-shadow: 0 0 0 0.6mm var(--gold), 0 1mm 4mm rgba(201,169,97,0.4);
+    z-index: 1;
+  }
+  .season.current::after {
+    content: '★ ANDA';
+    position: absolute; top: -1.2mm; left: 50%;
+    transform: translateX(-50%);
+    background: var(--red); color: white;
+    font-size: 5.5pt; padding: 0.4mm 2mm;
+    border-radius: 3mm; letter-spacing: 1px;
+    font-weight: 700;
+  }
+
+  .seasons-axis {
+    display: flex; justify-content: space-between;
+    font-size: 6pt; color: var(--text-muted);
+    letter-spacing: 0.5px; padding-top: 0.5mm;
+  }
+</style>
+</head>
+<body>
+<section class="page">
+
+  <!-- HEADER -->
+  <header class="page-header">
+    <div class="h-num">14</div>
+    <div class="h-titles">
+      <div class="h-cn">大 運</div>
+      <div class="h-id">Garis Hidup · Timeline 10 Tahunan</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <!-- SUBJECT BAR -->
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Henry · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
+      <div class="subject-detail">29 Oktober 1962 · 05:10 · Pria · Umur 64 tahun</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Day Master</div>
+      <div class="value">庚金 · Logam Yang</div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <main class="content content-dayun">
+
+    <!-- LIFELINE 10 cycles -->
+    <div class="lifeline-frame">
+      <div class="ll-eyebrow">
+        <div>
+          <span class="label">十 大 運</span>
+          <span class="label-id">10 Fase Sepuluh Tahunan</span>
+        </div>
+        <div class="label-meta">Cycle 6 of 10 · Fase Sekarang</div>
+      </div>
+
+      <div class="lifeline">
+        <div class="ll-cell past el-jin">
+          <div class="age">5–14</div>
+          <div class="gz"><span class="s">辛</span><span class="b">亥</span></div>
+          <div class="ss">劫財</div>
+        </div>
+        <div class="ll-cell past el-shui">
+          <div class="age">15–24</div>
+          <div class="gz"><span class="s">壬</span><span class="b">子</span></div>
+          <div class="ss">食神</div>
+        </div>
+        <div class="ll-cell past el-shui">
+          <div class="age">25–34</div>
+          <div class="gz"><span class="s">癸</span><span class="b">丑</span></div>
+          <div class="ss">傷官</div>
+        </div>
+        <div class="ll-cell past el-mu">
+          <div class="age">35–44</div>
+          <div class="gz"><span class="s">甲</span><span class="b">寅</span></div>
+          <div class="ss">偏財</div>
+        </div>
+        <div class="ll-cell past el-mu">
+          <div class="age">45–54</div>
+          <div class="gz"><span class="s">乙</span><span class="b">卯</span></div>
+          <div class="ss">正財</div>
+        </div>
+        <div class="ll-cell current el-huo">
+          <div class="age">55–64</div>
+          <div class="gz"><span class="s">丙</span><span class="b">辰</span></div>
+          <div class="ss">七殺</div>
+        </div>
+        <div class="ll-cell el-huo">
+          <div class="age">65–74</div>
+          <div class="gz"><span class="s">丁</span><span class="b">巳</span></div>
+          <div class="ss">正官</div>
+        </div>
+        <div class="ll-cell el-tu">
+          <div class="age">75–84</div>
+          <div class="gz"><span class="s">戊</span><span class="b">午</span></div>
+          <div class="ss">偏印</div>
+        </div>
+        <div class="ll-cell el-tu">
+          <div class="age">85–94</div>
+          <div class="gz"><span class="s">己</span><span class="b">未</span></div>
+          <div class="ss">正印</div>
+        </div>
+        <div class="ll-cell el-jin">
+          <div class="age">95–104</div>
+          <div class="gz"><span class="s">庚</span><span class="b">申</span></div>
+          <div class="ss">比肩</div>
+        </div>
+      </div>
+
+      <div class="ll-axis">
+        <span>5</span><span>15</span><span>25</span><span>35</span><span>45</span>
+        <span>55</span><span>65</span><span>75</span><span>85</span><span>95</span><span>104</span>
+      </div>
+    </div>
+
+    <!-- SPOTLIGHT current cycle -->
+    <div class="spotlight">
+
+      <div class="sp-left">
+        <div class="sp-eyebrow">FASE 6 · SEKARANG</div>
+        <div class="sp-gz"><span>丙</span><span>辰</span></div>
+        <div class="sp-element-disc">火</div>
+        <div class="sp-age">Umur <span class="now">55 — 64</span></div>
+      </div>
+
+      <div class="sp-right">
+        <div class="sp-tags">
+          <span class="sp-tag primary"><span class="hz">七殺</span>Qī Shā · Pemurnian</span>
+          <span class="sp-tag"><span class="hz">火</span>Api · transformatif</span>
+          <span class="sp-tag"><span class="hz">丙</span>vs<span class="hz">庚</span>Tegangan tinggi</span>
+        </div>
+
+        <div class="sp-headline">
+          Fase pemurnian <span class="hz">七殺</span> — tekanan besar yang menempa kepemimpinan
+        </div>
+
+        <div class="sp-bullets">
+          <div class="sp-bullet">
+            <div class="num">1</div>
+            <div class="txt"><strong>Tantangan menempa karakter</strong> — <span class="hz">丙火</span> "menyerang" <span class="hz">庚金</span> Anda; itu yang membentuk Logam jadi pedang siap tempur, bukan ancaman.</div>
+          </div>
+          <div class="sp-bullet">
+            <div class="num">2</div>
+            <div class="txt"><strong>Pakai elemen <span class="hz">水</span></strong> sebagai pendingin — diam, amati, baru eksekusi. Hindari reaksi keras instan di fase ini.</div>
+          </div>
+          <div class="sp-bullet">
+            <div class="num">3</div>
+            <div class="txt"><strong>Peluang spekulatif tinggi</strong> — batasi maksimal 20% modal untuk peluang berisiko, sisanya tetap di <span class="hz">正財</span> stabil.</div>
+          </div>
+          <div class="sp-bullet">
+            <div class="num">4</div>
+            <div class="txt"><strong>Setelah 64</strong> masuk <span class="hz">丁巳 (正官)</span> — fase lebih tenang &amp; terstruktur, hasil pemurnian sekarang akan terbayar.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LIFE SEASONS -->
+    <div class="seasons-frame">
+      <div class="seasons-eyebrow">
+        <div>
+          <span class="label">五 行 季 節</span>
+          <span class="id" style="margin-left:4mm;">Musim Hidup · Pola Elemen Dominan</span>
+        </div>
+        <div class="label-meta" style="font-size:6.5pt;color:var(--text-muted);letter-spacing:1px;">100 TAHUN · 6 BAB</div>
+      </div>
+
+      <div class="seasons-bar">
+        <div class="season s-jin"  style="flex:10">
+          <div class="s-hz">金</div>
+          <div class="s-name">Fondasi</div>
+          <div class="s-age">5–14</div>
+        </div>
+        <div class="season s-shui" style="flex:20">
+          <div class="s-hz">水</div>
+          <div class="s-name">Belajar &amp; Mengalir</div>
+          <div class="s-age">15–34</div>
+        </div>
+        <div class="season s-mu"   style="flex:20">
+          <div class="s-hz">木</div>
+          <div class="s-name">Tumbuh &amp; Membangun</div>
+          <div class="s-age">35–54</div>
+        </div>
+        <div class="season s-huo current" style="flex:20">
+          <div class="s-hz">火</div>
+          <div class="s-name">Puncak &amp; Pemurnian</div>
+          <div class="s-age">55–74</div>
+        </div>
+        <div class="season s-tu"   style="flex:20">
+          <div class="s-hz">土</div>
+          <div class="s-name">Stabilisasi</div>
+          <div class="s-age">75–94</div>
+        </div>
+        <div class="season s-jin"  style="flex:10">
+          <div class="s-hz">金</div>
+          <div class="s-name">Panen</div>
+          <div class="s-age">95–104</div>
+        </div>
+      </div>
+
+      <div class="seasons-axis">
+        <span>5</span><span>25</span><span>45</span><span>65</span><span>85</span><span>104</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-caption">
+      Anda berada di "musim panas" hidup — fase pemurnian <span style="font-family:'Noto Serif TC',serif;color:var(--red)">七殺</span> yang menempa karakter sebelum panen. Kekuatan terbesar Anda lahir dari tekanan yang sedang Anda hadapi sekarang.
+    </div>
+    <div class="footer-meta">
+      <span>Halaman 14 / 23</span>
+      <span>Henry · Ramalan 命</span>
+    </div>
+  </footer>
+
+</section>
+</body>
+</html>

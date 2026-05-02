@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Tommy — 紫微 Pembuka Bab</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .page.opener {
+    padding: 0;
+    background: radial-gradient(ellipse at center, #FFF8E1 0%, var(--bg) 70%, var(--gold-bg) 100%);
+  }
+  .opener-frame {
+    flex: 1; margin: 14mm;
+    border: 0.5mm double var(--gold);
+    border-radius: 2mm;
+    height: calc(297mm - 28mm);
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    gap: 6mm; padding: 16mm 14mm;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .opener-frame::before, .opener-frame::after {
+    content: ''; position: absolute;
+    width: 24mm; height: 24mm;
+    border: 0.4mm solid var(--gold);
+    pointer-events: none;
+  }
+  .opener-frame::before { top: 4mm; left: 4mm; border-right: none; border-bottom: none; }
+  .opener-frame::after { bottom: 4mm; right: 4mm; border-left: none; border-top: none; }
+
+  .op-watermark {
+    position: absolute; font-family: 'Noto Serif TC', serif;
+    font-size: 200pt; color: rgba(139,26,26,0.04);
+    font-weight: 700; pointer-events: none;
+    top: 50%; left: 50%; transform: translate(-50%,-50%);
+    line-height: 1;
+  }
+
+  .op-eyebrow {
+    font-family: 'Inter', sans-serif; font-size: 10pt;
+    letter-spacing: 12px; color: var(--gold);
+    text-transform: uppercase; font-weight: 600;
+    border-bottom: 0.3mm solid var(--gold-soft);
+    padding-bottom: 6mm; padding-top: 4mm;
+  }
+  .op-eyebrow .roman {
+    font-family: 'Playfair Display', serif;
+    font-size: 16pt; color: var(--red);
+    font-weight: 700; letter-spacing: 4px;
+    display: block; margin-top: 2mm;
+  }
+
+  .op-hero {
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 4mm;
+  }
+  .op-cn-big {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 110pt; font-weight: 700;
+    color: var(--red); line-height: 0.9;
+    letter-spacing: 12px;
+    text-shadow: 0 3mm 8mm rgba(139,26,26,0.15);
+  }
+  .op-cn-sub {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 22pt; font-weight: 600;
+    color: var(--text); letter-spacing: 8px;
+    margin-top: 2mm;
+  }
+  .op-pinyin {
+    font-family: 'Playfair Display', serif;
+    font-size: 14pt; font-style: italic;
+    color: var(--text); letter-spacing: 2px;
+    margin-top: 2mm;
+  }
+  .op-id {
+    font-family: 'Inter', sans-serif; font-size: 11pt;
+    color: var(--text-muted); letter-spacing: 2px;
+    margin-top: 1mm; max-width: 140mm;
+    line-height: 1.5;
+  }
+
+  .op-pages {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    gap: 3mm;
+    border-top: 0.3mm solid var(--gold-soft);
+    padding-top: 4mm;
+  }
+  .op-page-card {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 1.5mm;
+    padding: 2.5mm 3mm;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2.5mm; align-items: center;
+    overflow: hidden; min-width: 0;
+    text-align: left;
+  }
+  .op-page-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 13pt; color: var(--gold);
+    font-weight: 700;
+  }
+  .op-page-info { min-width: 0; overflow: hidden; }
+  .op-page-cn {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 10pt; color: var(--red);
+    font-weight: 600; letter-spacing: 1px;
+  }
+  .op-page-id {
+    font-size: 7pt; color: var(--text-muted);
+    letter-spacing: 0.3px;
+  }
+
+  .op-credits {
+    font-size: 7.5pt; color: var(--text-muted);
+    letter-spacing: 2px; text-transform: uppercase;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<section class="page opener" style="display:flex;flex-direction:column">
+  <div class="opener-frame">
+    <span class="op-watermark">紫</span>
+
+    <div class="op-eyebrow">
+      貳 · Bab Dua
+      <span class="roman">BAGIAN II</span>
+    </div>
+
+    <div class="op-hero">
+      <div class="op-cn-big">紫 微 斗 數</div>
+      <div class="op-cn-sub">十 二 宮 命 盤</div>
+      <div class="op-pinyin">Zǐ Wēi Dǒu Shù · Shí Èr Gōng</div>
+      <div class="op-id">Pemetaan "Bintang Ungu &amp; Konstelasi 12 Istana" — sistem yang membagi hidup ke 12 bidang spesifik (diri · pasangan · anak · rezeki · sehat · karir · properti · berkah · orangtua · saudara · pindah · teman) dan menempatkan bintang nasib di setiap istana</div>
+    </div>
+
+    <div class="op-pages">
+      <div class="op-page-card">
+        <div class="op-page-num">16</div>
+        <div class="op-page-info"><div class="op-page-cn">十二宮 Overview</div><div class="op-page-id">12 Palace Grid · Center Info</div></div>
+      </div>
+      <div class="op-page-card">
+        <div class="op-page-num">17</div>
+        <div class="op-page-info"><div class="op-page-cn">命 兄 夫 子</div><div class="op-page-id">Diri · Saudara · Pasangan · Anak</div></div>
+      </div>
+      <div class="op-page-card">
+        <div class="op-page-num">18</div>
+        <div class="op-page-info"><div class="op-page-cn">財 疾 遷 僕</div><div class="op-page-id">Wealth · Kesehatan · Perpindahan · Pertemanan</div></div>
+      </div>
+      <div class="op-page-card">
+        <div class="op-page-num">19</div>
+        <div class="op-page-info"><div class="op-page-cn">官 田 福 父</div><div class="op-page-id">Career · Properti · Berkah · Orangtua</div></div>
+      </div>
+    </div>
+
+    <div class="op-credits">Halaman 15 · Pembuka Bab Bagian II · Tommy · Ramalan 命</div>
+  </div>
+</section>
+</body>
+</html>

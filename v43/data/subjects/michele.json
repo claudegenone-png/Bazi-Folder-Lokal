@@ -1,0 +1,142 @@
+{
+  "$schema": "../subject.schema.json",
+  "subject_id": "michele",
+  "identity": {
+    "name_id": "Michele",
+    "name_hanzi": "米雪",
+    "gender_id": "Wanita",
+    "gender_hz": "陰女",
+    "birth_date": "1995-07-22",
+    "birth_time": "14:48",
+    "birth_day_name": "Sabtu",
+    "birth_period_id": "siang",
+    "birth_hour_branch_hz": "未",
+    "birth_hour_period_label": "siang · 未時",
+    "lunar_date_text_new": "tanggal 25 bulan 6 tahun 乙亥 (Yi Hai · 1995)",
+    "lunar_republic_text": "民國 84 年 6 月 25 日",
+    "age_at_report": 30
+  },
+  "shio": {
+    "branch_hz": "亥",
+    "branch_pinyin": "Hài",
+    "id": "Babi",
+    "id_upper": "BABI",
+    "svg_red": "Babi-Merah.svg",
+    "svg_black": "Babi-Hitam.svg"
+  },
+  "day_master": {
+    "stem_hz": "甲",
+    "stem_element_hz": "木",
+    "stem_element_id": "Kayu",
+    "polarity_id": "Yang",
+    "label_id": "Pohon Besar",
+    "label_long_id": "Pohon Besar",
+    "pinyin": "Jiǎ Mù",
+    "strength_id": "Kuat",
+    "strength_hz": "旺"
+  },
+  "pillars": {
+    "year":  {"stem_hz": "乙", "branch_hz": "亥", "stem_id": "Yi",  "branch_id": "Hai"},
+    "month": {"stem_hz": "癸", "branch_hz": "未", "stem_id": "Gui", "branch_id": "Wei"},
+    "day":   {"stem_hz": "甲", "branch_hz": "寅", "stem_id": "Jia", "branch_id": "Yin", "is_day_master": true},
+    "hour":  {"stem_hz": "辛", "branch_hz": "未", "stem_id": "Xin", "branch_id": "Wei"}
+  },
+  "wuxing": {
+    "mu":   {"value": 3.0, "percent": 35.3, "label_id": "Kayu"},
+    "shui": {"value": 2.0, "percent": 23.5, "label_id": "Air"},
+    "tu":   {"value": 2.0, "percent": 23.5, "label_id": "Tanah"},
+    "huo":  {"value": 0.8, "percent":  9.4, "label_id": "Api"},
+    "jin":  {"value": 0.7, "percent":  8.3, "label_id": "Logam"},
+    "total": 8.5,
+    "self_value": 3.0,
+    "self_strength_id": "KUAT"
+  },
+  "yong_shen": {
+    "elements_hz": "火 金",
+    "elements_id": "Api & Logam",
+    "label_id": "Penyalur & pemangkas"
+  },
+  "ji_shen": {
+    "elements_hz": "水 木",
+    "elements_id": "Air & Kayu",
+    "label_id": "Penambah dominasi"
+  },
+  "format": {
+    "hz": "傷官格",
+    "glyph_hz": "傷官",
+    "pinyin": "Shang Guan Ge",
+    "label_id": "Pemikir Kreatif"
+  },
+  "mantra": {
+    "hz": "剛柔相濟",
+    "pinyin": "Gāng Róu Xiāng Jì",
+    "meaning_id": "Tegas dan lembut saling menyempurnakan — kekuatan 甲木 Anda mencapai puncaknya hanya saat dilembutkan oleh 火 金"
+  },
+  "wuxing_insight_id": "<strong>Kayu dominan</strong> (木 35.3%) didukung Air (水 23.5%). Penguasa Hari 甲木 sangat kuat — energinya butuh disalurkan ke unsur <strong>火 金</strong> (output &amp; pemangkasan), bukan ditambah Air/Kayu lagi.",
+  "da_yun": {
+    "start_age": 5,
+    "direction_id": "forward",
+    "current_index": 2,
+    "axis_marks": [5, 15, 25, 35, 45, 55, 65, 75, 85, 95, 104],
+    "cycles": [
+      {"n":1, "age_start": 5, "age_end":14, "stem_hz":"甲","branch_hz":"申","ten_god_hz":"比肩","ten_god_id":"Pundak Sama","element_class":"el-mu"},
+      {"n":2, "age_start":15, "age_end":24, "stem_hz":"乙","branch_hz":"酉","ten_god_hz":"劫財","ten_god_id":"Perampok Harta","element_class":"el-mu"},
+      {"n":3, "age_start":25, "age_end":34, "stem_hz":"丙","branch_hz":"戌","ten_god_hz":"食神","ten_god_id":"Pencipta","element_class":"el-huo","is_current":true},
+      {"n":4, "age_start":35, "age_end":44, "stem_hz":"丁","branch_hz":"亥","ten_god_hz":"傷官","ten_god_id":"Kritikus Tajam","element_class":"el-huo"},
+      {"n":5, "age_start":45, "age_end":54, "stem_hz":"戊","branch_hz":"子","ten_god_hz":"偏財","ten_god_id":"Rezeki Bisnis","element_class":"el-tu"},
+      {"n":6, "age_start":55, "age_end":64, "stem_hz":"己","branch_hz":"丑","ten_god_hz":"正財","ten_god_id":"Rezeki Tetap","element_class":"el-tu"},
+      {"n":7, "age_start":65, "age_end":74, "stem_hz":"庚","branch_hz":"寅","ten_god_hz":"七殺","ten_god_id":"Pemurnian","element_class":"el-jin"},
+      {"n":8, "age_start":75, "age_end":84, "stem_hz":"辛","branch_hz":"卯","ten_god_hz":"正官","ten_god_id":"Otoritas","element_class":"el-jin"},
+      {"n":9, "age_start":85, "age_end":94, "stem_hz":"壬","branch_hz":"辰","ten_god_hz":"偏印","ten_god_id":"Mentor","element_class":"el-shui"},
+      {"n":10,"age_start":95,"age_end":104,"stem_hz":"癸","branch_hz":"巳","ten_god_hz":"正印","ten_god_id":"Pelajaran","element_class":"el-shui"}
+    ],
+    "spotlight_headline_html": "Fase ekspresi <span class=\"hz\">食神</span> — kayu Anda akhirnya menyalurkan energi jadi karya",
+    "spotlight_tag_tone_html": "Api · ekspresif",
+    "spotlight_tag_combo_html": "Output Mekar",
+    "spotlight_tag_combo_pair": ["丙","甲"],
+    "spotlight_bullets_html": [
+      "<strong>Saatnya berkarya</strong> — <span class=\"hz\">丙火</span> menyalurkan <span class=\"hz\">甲木</span> Anda jadi ekspresi: tulis, ajar, performance, branding. Energi mengalir keluar dengan natural.",
+      "<strong>Bangun fondasi karir kreatif</strong> — fase 食神 adalah peak untuk produksi karya intelektual. Investasi sekarang akan dipanen di fase berikutnya.",
+      "<strong>Cari mentor &amp; jaringan</strong> — <span class=\"hz\">戌</span> branch (Anjing) bawa stabilitas relasi. Pilih kolaborator yang setia &amp; visioner.",
+      "<strong>Setelah 34</strong> masuk <span class=\"hz\">丁亥 (傷官)</span> — fase lebih kritis &amp; berani memberontak. Persiapkan reputasi yang kokoh sekarang."
+    ],
+    "seasons": [
+      {"el_class":"s-mu",  "el_hz":"木","name_id":"Tunas & Tumbuh",       "age_start":5, "age_end":24},
+      {"el_class":"s-huo", "el_hz":"火","name_id":"Mekar & Berkarya",    "age_start":25,"age_end":44,"is_current":true},
+      {"el_class":"s-tu",  "el_hz":"土","name_id":"Stabilisasi",         "age_start":45,"age_end":64},
+      {"el_class":"s-jin", "el_hz":"金","name_id":"Memetik & Memilah",   "age_start":65,"age_end":84},
+      {"el_class":"s-shui","el_hz":"水","name_id":"Refleksi & Bijaksana","age_start":85,"age_end":104}
+    ]
+  },
+  "marriage": {
+    "self_branch_index": 11,
+    "cocok": [
+      {"branch_hz":"卯","id":"Kelinci","relationship_hz":"三合","relationship_id":"BESAR JAYA","reason_id":"Membentuk segitiga harmoni 亥-卯-未. Pasangan paling natural untuk 甲木 yang kreatif."},
+      {"branch_hz":"未","id":"Kambing","relationship_hz":"三合","relationship_id":"BESAR JAYA","reason_id":"Penutup segitiga 亥-卯-未. Lembut & setia — melengkapi sensitivitas Anda."},
+      {"branch_hz":"寅","id":"Harimau","relationship_hz":"六合","relationship_id":"COCOK","reason_id":"Pasangan 亥-寅. Berani & visioner, melengkapi sifat reflektif Anda."}
+    ],
+    "hindari": [
+      {"branch_hz":"巳","id":"Ular","relationship_hz":"六沖","relationship_id":"BENTROK","reason_id":"Bentrok langsung 亥-巳. Pola karakter saling menentang — komunikasi sering gesek & mengganggu kesetiaan."},
+      {"branch_hz":"申","id":"Monyet","relationship_hz":"六害","relationship_id":"MENGHAMBAT","reason_id":"Halangan halus 亥-申. Tidak frontal, tetapi melelahkan jangka panjang & merintangi pertumbuhan."}
+    ]
+  },
+  "yang_zhai": {
+    "gua_hz": "坎",
+    "gua_pinyin": "Kǎn",
+    "gua_label_id": "Air",
+    "gua_direction_id": "Utara",
+    "gua_direction_abbr": "U",
+    "group_id": "Timur",
+    "sumbu_hoki_hz": "北↔南",
+    "sumbu_hoki_id": "U ↔ S",
+    "trigram_symbol": "☵"
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "貪狼", "ming_zhu_id": "Penguasa Hidup · Hasrat",
+    "shen_zhu_hz": "天機", "shen_zhu_id": "Penguasa Tubuh · Strategi",
+    "ming_gong_hz": "子",  "ming_gong_id": "Istana Hidup · Tikus",
+    "shen_gong_hz": "寅",  "shen_gong_id": "Istana Tubuh · Harimau",
+    "wu_xing_ju_hz": "火六局","wu_xing_ju_id": "Aliran Api Enam",
+    "shi_jun_hz": "寅",    "shi_jun_id": "Penguasa Waktu · Harimau"
+  }
+}

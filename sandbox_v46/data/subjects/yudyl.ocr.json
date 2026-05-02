@@ -1,0 +1,51 @@
+{
+  "_subject_id": "yudyl",
+  "_extract_count": 31,
+  "_source": "OCR via Read tool (Claude Code V4.5) — 31 photos from Xing Qiao NCC V2.6 software",
+  "name_id": "Yudy L",
+  "name_hanzi": "尤迪",
+  "gender_hz": "陽男",
+  "birth_solar": "1963-01-29 13:30",
+  "birth_lunar_text": "農曆民國 52 年 1 月 5 日 13 時 30 分",
+  "pillars": {
+    "year":  {"stem_hz": "壬", "branch_hz": "寅", "ten_god_hz": "比肩"},
+    "month": {"stem_hz": "癸", "branch_hz": "丑", "ten_god_hz": "劫財"},
+    "day":   {"stem_hz": "壬", "branch_hz": "申", "ten_god_hz": "命主"},
+    "hour":  {"stem_hz": "丁", "branch_hz": "未", "ten_god_hz": "正財"}
+  },
+  "wuxing": {
+    "jin": 2,
+    "shui": 4,
+    "mu": 2,
+    "huo": 2,
+    "tu": 3
+  },
+  "yong_shen_hz": "木 火",
+  "ji_shen_hz": "金 水",
+  "format_hz": "比肩格",
+  "da_yun": [
+    {"age_start": 3,  "age_end": 12,  "stem_hz": "甲", "branch_hz": "寅"},
+    {"age_start": 13, "age_end": 22,  "stem_hz": "乙", "branch_hz": "卯"},
+    {"age_start": 23, "age_end": 32,  "stem_hz": "丙", "branch_hz": "辰"},
+    {"age_start": 33, "age_end": 42,  "stem_hz": "丁", "branch_hz": "巳"},
+    {"age_start": 43, "age_end": 52,  "stem_hz": "戊", "branch_hz": "午"},
+    {"age_start": 53, "age_end": 62,  "stem_hz": "己", "branch_hz": "未"},
+    {"age_start": 63, "age_end": 72,  "stem_hz": "庚", "branch_hz": "申"},
+    {"age_start": 73, "age_end": 82,  "stem_hz": "辛", "branch_hz": "酉"},
+    {"age_start": 83, "age_end": 92,  "stem_hz": "壬", "branch_hz": "戌"},
+    {"age_start": 93, "age_end": 102, "stem_hz": "癸", "branch_hz": "亥"}
+  ],
+  "marriage": {
+    "cocok_branches": ["午", "戌"],
+    "hindari_branches": ["巳", "申"]
+  },
+  "yang_zhai_gua_hz": "坎",
+  "zi_wei": {
+    "ming_zhu_hz": "武曲",
+    "shen_zhu_hz": "天同",
+    "ming_gong_branch_hz": "午",
+    "shen_gong_branch_hz": "未",
+    "wu_xing_ju_hz": "火六局",
+    "shi_jun_hz": "卯"
+  }
+}

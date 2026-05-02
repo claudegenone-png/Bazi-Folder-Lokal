@@ -1,0 +1,51 @@
+{
+  "_source": "Direct image read (Claude Read tool, no API)",
+  "_photos_dir": "C:/Users/sukam/Downloads/banzi1",
+  "name_id": "Mike",
+  "name_hanzi": "米克",
+  "gender_hz": "陽男",
+  "gender_id": "Pria",
+  "birth_solar": "2018-09-13 12:23",
+  "birth_lunar_text": "民國 107 年 8 月 4 日 12 時 23 分",
+  "pillars": {
+    "year":  {"stem_hz": "戊", "branch_hz": "戌"},
+    "month": {"stem_hz": "辛", "branch_hz": "酉"},
+    "day":   {"stem_hz": "戊", "branch_hz": "申"},
+    "hour":  {"stem_hz": "戊", "branch_hz": "午"}
+  },
+  "wuxing": {
+    "jin": 3,
+    "shui": 1,
+    "mu": 0,
+    "huo": 2,
+    "tu": 6
+  },
+  "yong_shen_hz": "金 水",
+  "ji_shen_hz": "土",
+  "format_hz": "傷官格",
+  "marriage": {
+    "cocok_branches": ["寅", "卯", "午"],
+    "hindari_branches": ["丑", "辰", "未", "酉"]
+  },
+  "yang_zhai_gua_hz": "離",
+  "zi_wei": {
+    "ming_zhu_hz": "貪狼",
+    "shen_zhu_hz": "天機",
+    "ming_gong_branch_hz": "子",
+    "shen_gong_branch_hz": "寅",
+    "wu_xing_ju_hz": "火六局",
+    "shi_jun_hz": "寅"
+  },
+  "da_yun": [
+    {"age_start": 10, "stem_hz": "壬", "branch_hz": "戌"},
+    {"age_start": 20, "stem_hz": "癸", "branch_hz": "亥"},
+    {"age_start": 30, "stem_hz": "甲", "branch_hz": "子"},
+    {"age_start": 40, "stem_hz": "乙", "branch_hz": "丑"},
+    {"age_start": 50, "stem_hz": "丙", "branch_hz": "寅"},
+    {"age_start": 60, "stem_hz": "丁", "branch_hz": "卯"},
+    {"age_start": 70, "stem_hz": "戊", "branch_hz": "辰"},
+    {"age_start": 80, "stem_hz": "己", "branch_hz": "巳"},
+    {"age_start": 90, "stem_hz": "庚", "branch_hz": "午"},
+    {"age_start": 100, "stem_hz": "辛", "branch_hz": "未"}
+  ]
+}

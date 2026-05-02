@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Lin Wen Han — Cover</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .page.cover {
+    padding: 0; display: flex; align-items: stretch;
+    background: radial-gradient(ellipse at center top, #FFF8E1 0%, var(--bg) 60%, var(--gold-bg) 100%);
+  }
+  .cover-frame {
+    flex: 1; margin: 14mm;
+    border: 0.5mm double var(--gold);
+    border-radius: 2mm;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto auto auto;
+    gap: 5mm; padding: 14mm 16mm;
+    position: relative; overflow: hidden;
+    text-align: center;
+  }
+  .cover-frame::before, .cover-frame::after {
+    content: ''; position: absolute;
+    width: 22mm; height: 22mm;
+    border: 0.4mm solid var(--gold);
+    pointer-events: none;
+  }
+  .cover-frame::before { top: 4mm; left: 4mm; border-right: none; border-bottom: none; }
+  .cover-frame::after { bottom: 4mm; right: 4mm; border-left: none; border-top: none; }
+
+  .cv-watermark {
+    position: absolute; font-family: 'Noto Serif TC', serif;
+    color: rgba(139,26,26,0.04); font-weight: 700;
+    pointer-events: none; user-select: none;
+  }
+  .cv-watermark.tl { top: 6mm; left: 12mm; font-size: 80pt; line-height: 1; transform: rotate(-8deg); }
+  .cv-watermark.br { bottom: 6mm; right: 12mm; font-size: 60pt; line-height: 1; transform: rotate(6deg); }
+
+  .cv-eyebrow {
+    font-family: 'Inter', sans-serif; font-size: 8.5pt;
+    letter-spacing: 5px; color: var(--gold);
+    text-transform: uppercase; font-weight: 600;
+    border-bottom: 0.3mm solid var(--gold-soft);
+    padding-bottom: 4mm; padding-top: 4mm;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .cv-title-cn {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 110pt; font-weight: 700;
+    color: var(--red); line-height: 1;
+    text-shadow: 0 2mm 6mm rgba(139,26,26,0.18);
+    letter-spacing: 16px;
+    margin-top: 4mm;
+  }
+  .cv-title-id {
+    font-family: 'Playfair Display', serif;
+    font-size: 16pt; font-style: italic;
+    color: var(--text); letter-spacing: 4px;
+    margin-top: 2mm;
+  }
+  .cv-shio-frame {
+    width: 70mm; height: 70mm; margin: 6mm auto 2mm;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #FFFEF8 0%, #F5EBD0 100%);
+    border: 0.8mm solid var(--gold);
+    box-shadow: 0 4mm 12mm rgba(201,169,97,0.3);
+    display: flex; align-items: center; justify-content: center;
+    padding: 8mm; position: relative;
+  }
+  .cv-shio-frame img { width: 100%; height: 100%; object-fit: contain; }
+  .cv-shio-frame::after {
+    content: '酉 · AYAM';
+    position: absolute; bottom: -3mm; left: 50%;
+    transform: translateX(-50%);
+    background: var(--red); color: white;
+    font-family: 'Noto Serif TC', serif; font-size: 8pt;
+    padding: 1.5mm 5mm; border-radius: 4mm;
+    letter-spacing: 3px; font-weight: 600;
+    white-space: nowrap;
+    box-shadow: 0 1mm 3mm rgba(0,0,0,0.2);
+  }
+
+  .cv-name-row {
+    display: flex; align-items: baseline; justify-content: center;
+    gap: 6mm; margin-top: 4mm;
+  }
+  .cv-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 36pt; color: var(--text);
+    font-weight: 600; line-height: 1;
+  }
+  .cv-name-cn {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 28pt; color: var(--red);
+    font-weight: 700; line-height: 1;
+    letter-spacing: 4px;
+  }
+
+  /* INFO PANEL — persegi merah berisi data subjek */
+  .cv-info-panel {
+    background: linear-gradient(135deg, #8B1A1A 0%, #6E1414 100%);
+    color: white;
+    border-radius: 2mm;
+    padding: 5mm 9mm;
+    margin: 4mm auto 0;
+    max-width: 158mm;
+    box-shadow: 0 2mm 6mm rgba(139,26,26,0.25);
+    text-align: left;
+    font-size: 9pt;
+    line-height: 1.65;
+  }
+  .cv-info-panel .row {
+    display: grid;
+    grid-template-columns: 50mm 3mm 1fr;
+    gap: 0;
+    align-items: baseline;
+    white-space: nowrap;
+  }
+  .cv-info-panel .lbl {
+    color: #F5EBD0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    font-size: 8.5pt;
+  }
+  .cv-info-panel .colon { color: #C9A961; font-weight: 600; }
+  .cv-info-panel .val {
+    color: white;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .cv-info-panel .val .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: #F5EBD0; font-weight: 700;
+    margin: 0 1mm;
+  }
+  .cv-info-panel .val em {
+    color: #E5D3A1; font-style: italic;
+    font-weight: 400; font-size: 8pt;
+  }
+  .cv-meta {
+    display: grid; grid-template-columns: 1fr auto 1fr;
+    gap: 6mm; align-items: center;
+    border-top: 0.3mm solid var(--gold-soft);
+    padding-top: 5mm;
+    font-size: 8.5pt; color: var(--text);
+  }
+  .cv-meta .item { display: flex; flex-direction: column; gap: 1mm; }
+  .cv-meta .item .lbl {
+    font-size: 6.5pt; color: var(--gold);
+    letter-spacing: 2px; text-transform: uppercase; font-weight: 600;
+  }
+  .cv-meta .item .val {
+    font-family: 'Noto Serif TC', serif; font-size: 11pt;
+    color: var(--red); font-weight: 600; letter-spacing: 1px;
+  }
+  .cv-meta .item .val .id {
+    display: block; font-family: 'Inter', sans-serif;
+    font-size: 7pt; color: var(--text-muted);
+    font-weight: 500; margin-top: 0.5mm; font-style: italic;
+  }
+  .cv-meta .seal {
+    width: 18mm; height: 18mm; background: var(--red);
+    color: white; font-family: 'Noto Serif TC', serif;
+    font-size: 16pt; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 1mm; transform: rotate(-3deg);
+    box-shadow: 0 2mm 4mm rgba(139,26,26,0.3);
+    letter-spacing: 1px;
+  }
+
+  .cv-footer {
+    font-size: 7pt; color: var(--text-muted);
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+<section class="page cover">
+  <div class="cover-frame">
+    <span class="cv-watermark tl">福</span>
+    <span class="cv-watermark br">壽</span>
+
+    <div class="cv-eyebrow">命 · Laporan Ramalan Tionghoa Klasik · 命</div>
+
+    <div>
+      <div class="cv-title-cn">命</div>
+      <div class="cv-title-id">Mìng — Takdir &amp; Bagan Hidup</div>
+    </div>
+
+    <div>
+      <div class="cv-shio-frame"><img src="Ayam-Merah.svg" alt="Ayam"></div>
+      <div class="cv-name-row">
+        <div class="cv-name">Lin Wen Han</div>
+        <div class="cv-name-cn">林文漢</div>
+      </div>
+
+      <div class="cv-info-panel">
+        <div class="row"><span class="lbl">Tanggal Lahir (Indonesia)</span><span class="colon">:</span><span class="val">17 April 1993 <em>(Sabtu)</em></span></div>
+        <div class="row"><span class="lbl">Tanggal Lahir (Tionghoa)</span><span class="colon">:</span><span class="val">tanggal 26 bulan 3 tahun <span class="hz">癸酉</span> <em>(Gui You · 1993)</em></span></div>
+        <div class="row"><span class="lbl">Waktu Lahir</span><span class="colon">:</span><span class="val">pukul 03:50 <em>(malam · 寅時)</em></span></div>
+        <div class="row"><span class="lbl">Shio</span><span class="colon">:</span><span class="val"><span class="hz">酉</span> Ayam</span></div>
+        <div class="row"><span class="lbl">Penguasa Hari</span><span class="colon">:</span><span class="val">Tanah Gunung <span class="hz">戊土</span></span></div>
+        <div class="row"><span class="lbl">Elemen Utama</span><span class="colon">:</span><span class="val">Logam &amp; Api <span class="hz">金 火</span></span></div>
+      </div>
+    </div>
+
+    <div class="cv-footer">
+      四柱論命附加紫微斗數 · Laporan 23 Halaman · Mei 2026
+    </div>
+  </div>
+</section>
+</body>
+</html>

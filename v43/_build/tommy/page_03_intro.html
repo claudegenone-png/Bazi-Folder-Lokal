@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Tommy — Pengantar</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-intro { grid-template-rows: 60mm 1fr 28mm !important; gap: 5mm; }
+
+  .intro-hero {
+    background: linear-gradient(135deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 5mm 8mm;
+    display: grid; grid-template-columns: 1fr auto;
+    gap: 6mm; align-items: center;
+    overflow: hidden; position: relative;
+  }
+  .intro-hero::before {
+    content: '引'; position: absolute;
+    bottom: -6mm; right: -2mm;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 80pt; color: rgba(139,26,26,0.05);
+    font-weight: 700; line-height: 1;
+  }
+  .intro-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 14pt; color: var(--text);
+    line-height: 1.4; font-style: italic;
+  }
+  .intro-quote .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-style: normal; font-weight: 700; }
+  .intro-quote-attrib {
+    font-size: 7.5pt; color: var(--gold);
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-top: 2mm; font-weight: 600;
+  }
+  .intro-seal {
+    width: 22mm; height: 22mm; background: var(--red);
+    color: white; font-family: 'Noto Serif TC', serif;
+    font-size: 18pt; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 1.5mm; transform: rotate(-3deg);
+    box-shadow: 0 2mm 5mm rgba(139,26,26,0.3);
+    letter-spacing: 1px;
+  }
+
+  .intro-cards {
+    display: grid; grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4mm;
+    overflow: hidden;
+  }
+  .intro-card {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 3.5mm 5mm;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 1.5mm;
+    overflow: hidden;
+  }
+  .ic-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 22pt; color: var(--gold);
+    font-weight: 700; line-height: 1;
+    display: flex; align-items: center; gap: 3mm;
+  }
+  .ic-num .hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 18pt; color: var(--red);
+  }
+  .ic-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 11pt; color: var(--text);
+    font-weight: 600;
+    border-bottom: 0.2mm solid var(--gold-soft);
+    padding-bottom: 1.5mm;
+  }
+  .ic-body {
+    font-size: 8pt; line-height: 1.5;
+    color: var(--text);
+    display: -webkit-box; -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .ic-body strong { color: var(--red); }
+  .ic-body .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+
+  .intro-disclaimer {
+    background: var(--red-bad-bg);
+    border-left: 1mm solid var(--red-bad);
+    border-radius: 0 1.5mm 1.5mm 0;
+    padding: 3mm 5mm;
+    display: grid; grid-template-columns: auto 1fr;
+    gap: 4mm; align-items: center;
+    overflow: hidden;
+  }
+  .id-label {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 16pt; color: var(--red-bad);
+    font-weight: 700;
+  }
+  .id-text {
+    font-size: 7.5pt; line-height: 1.4;
+    color: var(--text);
+    display: -webkit-box; -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .id-text strong { color: var(--red-bad); }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">03</div>
+    <div class="h-titles">
+      <div class="h-cn">引 言</div>
+      <div class="h-id">Pengantar &amp; Cara Membaca</div>
+    </div>
+    <div class="h-section">Pendahuluan</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Tikus-Merah.svg" alt="Tikus"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Tommy · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">子 Tikus</span></div>
+      <div class="subject-detail">Selamat datang di laporan ramalan Anda</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">丙火 · Api Matahari</div>
+    </div>
+  </div>
+
+  <main class="content content-intro">
+
+    <div class="intro-hero">
+      <div>
+        <div class="intro-quote">
+          "<span class="hz">命</span> bukan vonis. Ia adalah <strong>pola yang telah ditanam</strong> sejak lahir — sedangkan <strong>pilihan harian</strong> adalah air yang menyiraminya. Bagan ini cermin pola; kunci tetap di tangan Anda."
+        </div>
+        <div class="intro-quote-attrib">— Filosofi Klasik Bazi 八字 &amp; Zi Wei 紫微</div>
+      </div>
+      <div class="intro-seal">命運</div>
+    </div>
+
+    <div class="intro-cards">
+
+      <div class="intro-card">
+        <div class="ic-num">1<span class="hz">柱</span></div>
+        <div class="ic-title">Apa Itu 八字四柱?</div>
+        <div class="ic-body">
+          <strong>BaZi (八字)</strong> = "Delapan Karakter" = 4 pilar (Tahun · Bulan · Hari · Jam) yang masing-masing punya 1 Stem (天干) + 1 Branch (地支). Total 8 karakter Hanzi yang merangkum DNA energi Anda. <strong>Penguasa Hari</strong> Anda — <span class="hz">丙火</span> (Kayu Yang) — adalah inti dari semua analisis di Bagian I.
+        </div>
+      </div>
+
+      <div class="intro-card">
+        <div class="ic-num">2<span class="hz">微</span></div>
+        <div class="ic-title">Apa Itu 紫微斗數?</div>
+        <div class="ic-body">
+          <strong>Zi Wei Dou Shu (紫微斗數)</strong> = "Pemetaan Bintang Ungu" = sistem 12 istana (宮) yang masing-masing dihuni bintang-bintang nasib. Mengukur bidang hidup spesifik: <span class="hz">命</span> diri, <span class="hz">夫妻</span> pasangan, <span class="hz">財帛</span> rezeki, <span class="hz">官祿</span> karir, dst. Bagian II laporan ini.
+        </div>
+      </div>
+
+      <div class="intro-card">
+        <div class="ic-num">3<span class="hz">讀</span></div>
+        <div class="ic-title">Cara Membaca</div>
+        <div class="ic-body">
+          Setiap halaman punya <strong>1 visualisasi anchor</strong> + caption ringkas. Hanzi besar = jangkar makna, Latin di sekelilingnya = penjelasan. Color encoding: <strong>hijau</strong> = baik / 喜用神; <strong>merah</strong> = waspada / 忌神; <strong>emas</strong> = neutral / dasar. Halaman 22 berisi glossary lengkap.
+        </div>
+      </div>
+
+      <div class="intro-card">
+        <div class="ic-num">4<span class="hz">用</span></div>
+        <div class="ic-title">Cara Pakai</div>
+        <div class="ic-body">
+          Baca <strong>halaman 4 (Profil)</strong> dan <strong>halaman 21 (Aksi)</strong> dulu — itu inti praktis. Halaman tafsir di tengah adalah konteks pendalaman. Kembali ke laporan ini setiap pergantian fase hidup (pensiun, anak menikah, pindah kota) — interpretasi-nya akan terasa berbeda di setiap musim.
+        </div>
+      </div>
+
+    </div>
+
+    <div class="intro-disclaimer">
+      <div class="id-label">⚠</div>
+      <div class="id-text">
+        <strong>Disclaimer:</strong> Ramalan Tionghoa adalah bagian dari budaya klasik, <strong>bukan ilmu pasti</strong>. Bagan ini tidak menggantikan keputusan medis, hukum, atau finansial profesional. Pakai sebagai referensi tradisi &amp; eksplorasi diri — keputusan tetap ada di tangan Anda.
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      Bagan dibaca seperti peta lama: jangan ditelan mentah, juga jangan dibuang. Kebijaksanaannya muncul saat Anda <em>memeriksa diri di cerminnya</em>.
+    </div>
+    <div class="footer-meta">
+      <span>Halaman 3 / 23</span>
+      <span>Tommy · Ramalan 命</span>
+    </div>
+  </footer>
+</section>
+</body>
+</html>

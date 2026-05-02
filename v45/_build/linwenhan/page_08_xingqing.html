@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Lin Wen Han — 性情 Kepribadian</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-xq { grid-template-rows: 95mm 1fr !important; gap: 5mm; }
+
+  .xq-hero { display: grid; grid-template-columns: 1fr 60mm; gap: 5mm; overflow: hidden; }
+  .xq-radar-frame {
+    background: var(--bg-card); border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm; padding: 3mm;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  .xq-radar-frame svg { width: 100%; height: 100%; max-height: 89mm; }
+
+  .xq-motto {
+    background: linear-gradient(180deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    display: grid; grid-template-rows: auto auto auto auto auto 1fr auto;
+    gap: 2mm; overflow: hidden; text-align: center;
+  }
+  .xqm-eb { font-size: 6.5pt; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; font-weight: 700; }
+  .xqm-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 30pt;
+    color: var(--red); font-weight: 700; line-height: 1;
+    letter-spacing: 4px;
+  }
+  .xqm-id { font-family: 'Playfair Display', serif; font-size: 11pt; font-style: italic; color: var(--text); }
+  .xqm-divider { border-top: 0.3mm solid var(--gold-soft); }
+  .xqm-archetype { font-size: 7pt; color: var(--gold); letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; }
+  .xqm-quote {
+    font-family: 'Playfair Display', serif; font-size: 9.5pt;
+    font-style: italic; color: var(--text); line-height: 1.45;
+    display: -webkit-box; -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .xqm-quote .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-style: normal; font-weight: 700; }
+  .xqm-tag {
+    background: var(--red); color: white;
+    font-family: 'Noto Serif TC', serif; font-size: 8pt;
+    padding: 1mm 3mm; border-radius: 5mm;
+    letter-spacing: 2px; font-weight: 600;
+    align-self: center; justify-self: center;
+  }
+
+  .xq-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm;
+    overflow: hidden;
+  }
+  .xq-card {
+    border-radius: 2mm; padding: 4mm 5mm;
+    display: grid; grid-template-rows: auto auto 1fr;
+    gap: 2mm; overflow: hidden;
+  }
+  .xq-card.power    { background: linear-gradient(180deg, #FFF8E1, #F5EBD0); border: 0.5mm solid var(--gold); }
+  .xq-card.shadow   { background: linear-gradient(180deg, #F8EFD4, #ECDDC9); border: 0.5mm solid var(--yellow); }
+  .xq-card.optimum  { background: linear-gradient(180deg, #E8F0EA, #D9E8DD); border: 0.5mm solid var(--green); }
+  .xqc-eb {
+    font-size: 7pt; letter-spacing: 2.5px;
+    text-transform: uppercase; font-weight: 700;
+  }
+  .xq-card.power   .xqc-eb { color: var(--gold); }
+  .xq-card.shadow  .xqc-eb { color: var(--yellow); }
+  .xq-card.optimum .xqc-eb { color: var(--green); }
+  .xqc-title {
+    display: flex; align-items: baseline; gap: 3mm;
+    border-bottom: 0.2mm solid rgba(0,0,0,0.08);
+    padding-bottom: 2mm;
+  }
+  .xqc-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 20pt;
+    color: var(--red); font-weight: 700; line-height: 1;
+  }
+  .xq-card.shadow .xqc-hz { color: #8C6E47; }
+  .xq-card.optimum .xqc-hz { color: var(--green); }
+  .xqc-name { font-family: 'Playfair Display', serif; font-size: 11pt; color: var(--text); font-style: italic; font-weight: 600; }
+  .xqc-list { font-size: 8pt; line-height: 1.55; color: var(--text); display: flex; flex-direction: column; gap: 1.5mm; }
+  .xqc-item { display: grid; grid-template-columns: 4mm 1fr; gap: 2mm; }
+  .xqc-item .ico { color: var(--gold); font-weight: 700; }
+  .xq-card.shadow .xqc-item .ico { color: var(--yellow); }
+  .xq-card.optimum .xqc-item .ico { color: var(--green); }
+  .xqc-item strong { color: var(--red); }
+  .xqc-item .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">08</div>
+    <div class="h-titles"><div class="h-cn">性 情</div><div class="h-id">Kepribadian</div></div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Ayam-Merah.svg" alt="Ayam"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Lin Wen Han · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">酉 Ayam</span></div>
+      <div class="subject-detail">Profil karakter berdasarkan 戊土 + 七殺格 + posisi 寅</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">戊土 · Tanah Gunung</div></div>
+  </div>
+
+  <main class="content content-xq">
+
+    <div class="xq-hero">
+      <div class="xq-radar-frame">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <!-- 6-axis hexagonal grid -->
+          <polygon points="200,140 252,170 252,230 200,260 148,230 148,170" fill="none" stroke="#E5D3A1" stroke-width="0.5"/>
+          <polygon points="200,80 304,140 304,260 200,320 96,260 96,140" fill="none" stroke="#E5D3A1" stroke-width="0.5"/>
+          <polygon points="200,40 339,120 339,280 200,360 61,280 61,120" fill="none" stroke="#C9A961" stroke-width="0.7"/>
+
+          <!-- Axes -->
+          <line x1="200" y1="200" x2="200" y2="40"  stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="200" y1="200" x2="339" y2="120" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="200" y1="200" x2="339" y2="280" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="200" y1="200" x2="200" y2="360" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="200" y1="200" x2="61"  y2="280" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="200" y1="200" x2="61"  y2="120" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+
+          <!-- Henry trait polygon (values: 固執9, 創新8, 俠義8, 急性7, 剛硬9, 表現6 / max 10 -> r 144 max -->
+          <polygon points="200,70 325,128 311,267 200,302 89,251 75,141"
+            fill="rgba(139,26,26,0.18)" stroke="#8B1A1A" stroke-width="1.5"/>
+
+          <!-- vertex dots -->
+          <circle cx="200" cy="70"  r="3" fill="#8B1A1A"/>
+          <circle cx="325" cy="128" r="3" fill="#8B1A1A"/>
+          <circle cx="311" cy="267" r="3" fill="#8B1A1A"/>
+          <circle cx="200" cy="302" r="3" fill="#8B1A1A"/>
+          <circle cx="89"  cy="251" r="3" fill="#8B1A1A"/>
+          <circle cx="75"  cy="141" r="3" fill="#8B1A1A"/>
+
+          <!-- Labels -->
+          <g font-family="Noto Serif TC,serif">
+            <text x="200" y="22" text-anchor="middle" font-size="14" fill="#8B1A1A" font-weight="700">固執</text>
+            <text x="200" y="33" text-anchor="middle" font-size="6" fill="#6B5B3F" font-style="italic">Gù Zhí · Teguh · 9</text>
+
+            <text x="358" y="113" text-anchor="middle" font-size="14" fill="#8B1A1A" font-weight="700">創新</text>
+            <text x="358" y="124" text-anchor="middle" font-size="6" fill="#6B5B3F" font-style="italic">Chuàng Xīn · Inovatif · 8</text>
+
+            <text x="358" y="290" text-anchor="middle" font-size="14" fill="#8B1A1A" font-weight="700">俠義</text>
+            <text x="358" y="301" text-anchor="middle" font-size="6" fill="#6B5B3F" font-style="italic">Xiá Yì · Ksatria · 8</text>
+
+            <text x="200" y="382" text-anchor="middle" font-size="14" fill="#8B1A1A" font-weight="700">急性</text>
+            <text x="200" y="393" text-anchor="middle" font-size="6" fill="#6B5B3F" font-style="italic">Jí Xìng · Cepat panas · 7</text>
+
+            <text x="42" y="290" text-anchor="middle" font-size="14" fill="#8B1A1A" font-weight="700">表現</text>
+            <text x="42" y="301" text-anchor="middle" font-size="6" fill="#6B5B3F" font-style="italic">Biǎo Xiàn · Sorotan · 6</text>
+
+            <text x="42" y="113" text-anchor="middle" font-size="14" fill="#8B1A1A" font-weight="700">剛硬</text>
+            <text x="42" y="124" text-anchor="middle" font-size="6" fill="#6B5B3F" font-style="italic">Gāng Yìng · Tegas keras · 9</text>
+          </g>
+
+          <text x="206" y="143" font-size="5.5" fill="#6B5B3F">3</text>
+          <text x="206" y="83"  font-size="5.5" fill="#6B5B3F">7</text>
+          <text x="206" y="43"  font-size="5.5" fill="#6B5B3F">10</text>
+        </svg>
+      </div>
+
+      <div class="xq-motto">
+        <div class="xqm-eb">本 性 · Inti Karakter</div>
+        <div class="xqm-hz">劍</div>
+        <div class="xqm-id">Pedang Belum Ditempa</div>
+        <div class="xqm-divider"></div>
+        <div class="xqm-archetype">Archetype</div>
+        <div class="xqm-quote">
+          "<span class="hz">剛健不魯莽</span>, <span class="hz">獨立而無懼</span>" — Tegar tanpa ceroboh, mandiri tanpa rasa takut. Pejuang yang punya prinsip; daya eksekusi tinggi diimbangi dengan jiwa ksatria.
+        </div>
+        <div class="xqm-tag">侠 義 之 士</div>
+      </div>
+    </div>
+
+    <div class="xq-cards">
+
+      <div class="xq-card power">
+        <div class="xqc-eb">魄 力 · Kekuatan</div>
+        <div class="xqc-title"><span class="xqc-hz">優勢</span><span class="xqc-name">Yōu Shì · Keunggulan</span></div>
+        <div class="xqc-list">
+          <div class="xqc-item"><span class="ico">◆</span><span><strong>Daya eksekusi tinggi</strong> — terpikir langsung jalan, tidak banyak ragu</span></div>
+          <div class="xqc-item"><span class="ico">◆</span><span><span class="hz">才華洋溢</span> bakat melimpah + inovatif (Cái Huá Yáng Yì)</span></div>
+          <div class="xqc-item"><span class="ico">◆</span><span><span class="hz">俠義之心</span> jiwa ksatria — siap bantu yang lebih lemah</span></div>
+          <div class="xqc-item"><span class="ico">◆</span><span>Tegar &amp; mandiri tanpa menyerang — independen sejati</span></div>
+        </div>
+      </div>
+
+      <div class="xq-card shadow">
+        <div class="xqc-eb">陰 影 · Shadow</div>
+        <div class="xqc-title"><span class="xqc-hz">隱 患</span><span class="xqc-name">Yǐn Huàn · Sisi Gelap</span></div>
+        <div class="xqc-list">
+          <div class="xqc-item"><span class="ico">◆</span><span><span class="hz">主觀 + 急性</span> subjektif &amp; cepat panas — mudah memutus terlalu cepat</span></div>
+          <div class="xqc-item"><span class="ico">◆</span><span>Memberi sambil <strong>berharap dihargai</strong> — kekecewaan bila tak terbalas</span></div>
+          <div class="xqc-item"><span class="ico">◆</span><span><strong>Suka jadi sorotan</strong> — energi terlalu fokus ke pengakuan luar</span></div>
+          <div class="xqc-item"><span class="ico">◆</span><span><span class="hz">缺緩衝</span> kurang "buffer" halus — bicara terlalu tajam</span></div>
+        </div>
+      </div>
+
+      <div class="xq-card optimum">
+        <div class="xqc-eb">最 佳 · Optimum</div>
+        <div class="xqc-title"><span class="xqc-hz">應 用</span><span class="xqc-name">Yīng Yòng · Cara Optimal</span></div>
+        <div class="xqc-list">
+          <div class="xqc-item"><span class="ico">◆</span><span>Peran <strong>mentor / penasihat</strong> — bukan front-line operator</span></div>
+          <div class="xqc-item"><span class="ico">◆</span><span>Pakai <span class="hz">水</span> (Air) sebagai <strong>pendingin 24 jam</strong> sebelum kirim pesan emosional</span></div>
+          <div class="xqc-item"><span class="ico">◆</span><span>Niatkan memberi sebagai <strong>investasi karakter</strong>, bukan transaksi</span></div>
+          <div class="xqc-item"><span class="ico">◆</span><span>Anggap kritik dari <strong>pasangan &amp; saudari</strong> = data, bukan serangan</span></div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      Lin Wen Han sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">正財</span> (24–33) — membangun aset & komitmen panjang. Periode 24–43 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+    </div>
+    <div class="footer-meta"><span>Halaman 8 / 23</span><span>Lin Wen Han · Ramalan 命</span></div>
+  </footer>
+</section>
+</body>
+</html>

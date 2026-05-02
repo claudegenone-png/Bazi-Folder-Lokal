@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Ramalan Henry — 命理分析</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Ma+Shan+Zheng&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   XINGQIAO FORTUNE ID — Frozen Design System
+   Versi 2.0 (anti-overflow, visualization-first)
+   ============================================================ */
+
+:root {
+  --merah-imperial: #b91c1c;
+  --merah-deep: #7a0d0d;
+  --emas-rich: #c9a04c;
+  --emas-light: #e8c87a;
+  --cream-paper: #f7f0e0;
+  --aged-paper: #ede0bf;
+  --ink-black: #2a1a0a;
+  --ink-soft: #4a3220;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 0; }
+html, body {
+  background: #222;
+  font-family: 'Noto Serif', Georgia, serif;
+  color: var(--ink-black);
+}
+
+/* ===== PAGE BASE — pakai grid eksplisit anti-overflow ===== */
+.page {
+  width: 210mm; height: 297mm;
+  background: linear-gradient(135deg, var(--cream-paper) 0%, var(--aged-paper) 100%);
+  padding: 24mm 26mm 20mm 26mm;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex; flex-direction: column;
+  page-break-after: always;
+}
+.page:last-child { page-break-after: auto; }
+.page::before {
+  content: ""; position: absolute;
+  top: 14mm; right: 14mm; bottom: 14mm; left: 14mm;
+  border: 1.5px solid var(--emas-rich);
+  pointer-events: none;
+}
+.page::after {
+  content: ""; position: absolute;
+  top: 18mm; right: 18mm; bottom: 18mm; left: 18mm;
+  border: 0.5px solid var(--emas-light);
+  pointer-events: none;
+}
+.page-num {
+  position: absolute; left: 0; right: 0; bottom: 6mm;
+  text-align: center; font-size: 9pt; color: var(--emas-rich);
+  font-family: 'Noto Serif TC', serif; letter-spacing: 3px; z-index: 2;
+}
+.page-num::before, .page-num::after {
+  content: "\2756"; margin: 0 12px; color: var(--emas-light); font-size: 8pt;
+}
+
+/* Page using grid for explicit row heights */
+.page.grid-page {
+  display: grid;
+  row-gap: 3mm;
+}
+
+/* ===== Typography ===== */
+h2 {
+  font-family: 'Noto Serif TC', serif; color: var(--merah-deep);
+  font-size: 18pt; letter-spacing: 1px; line-height: 1.3;
+  overflow-wrap: break-word; max-width: 100%;
+}
+h3 {
+  font-family: 'Noto Serif TC', serif; color: var(--merah-imperial);
+  font-size: 12pt; margin: 3mm 0 1.5mm;
+}
+.subtitle { font-family: 'Cormorant Garamond', serif; color: var(--ink-soft);
+  font-size: 10pt; font-style: italic; letter-spacing: 2px; }
+.cite-row { font-family: 'Noto Serif TC', serif; color: var(--merah-imperial);
+  font-weight: 700; font-size: 9pt; text-align: right; margin-bottom: 2mm; }
+.divider { text-align: center; color: var(--emas-rich); font-size: 9pt;
+  letter-spacing: 8px; }
+p { font-size: 10pt; line-height: 1.6; word-wrap: break-word;
+  margin-bottom: 2mm; max-width: 100%; }
+.cn { font-family: 'Noto Serif TC', serif; color: var(--merah-deep);
+  font-weight: 600; line-break: anywhere; }
+
+/* ===== Cards ===== */
+.card {
+  background: rgba(255,253,245,0.6);
+  border: 1px solid var(--emas-light); border-radius: 2mm;
+  padding: 3mm 4mm; margin: 2mm 0; max-width: 100%;
+}
+.card.merah { border-color: var(--merah-imperial);
+  background: linear-gradient(135deg, rgba(185,28,28,0.04), rgba(122,13,13,0.08)); }
+.card.emas { border-color: var(--emas-rich);
+  background: linear-gradient(135deg, rgba(201,160,76,0.08), rgba(232,200,122,0.12)); }
+.card-title { font-family: 'Noto Serif TC', serif; color: var(--merah-deep);
+  font-weight: 700; font-size: 11pt; margin-bottom: 1.5mm; }
+
+/* ===== Section Block (chart container) ===== */
+.section-block {
+  background: rgba(255,253,245,0.45);
+  border: 0.5px solid var(--emas-light); border-radius: 2mm;
+  padding: 2.5mm 3mm; height: 100%;
+  display: flex; flex-direction: column; gap: 1.5mm;
+}
+.section-title {
+  font-family: 'Noto Serif TC', serif; color: var(--merah-deep);
+  font-weight: 700; font-size: 11pt; letter-spacing: 1px;
+  display: flex; align-items: center; gap: 2.5mm; line-height: 1;
+}
+.section-title::before { content: ""; width: 3mm; height: 0.4mm;
+  background: var(--merah-imperial); }
+.section-title small { font-family: 'Cormorant Garamond', serif;
+  font-style: italic; color: var(--ink-soft); font-size: 9pt;
+  font-weight: 400; margin-left: auto; }
+
+/* ===== Transcript Box ===== */
+.transcript {
+  background: rgba(201,160,76,0.07);
+  border: 0.5px solid var(--emas-light);
+  padding: 3mm 4mm; margin: 2mm 0; border-radius: 1mm;
+  font-family: 'Noto Serif TC', serif; color: var(--ink-black);
+  font-size: 10pt; line-height: 1.7;
+}
+.transcript .lbl { display: block; font-size: 8.5pt; color: var(--merah-imperial);
+  font-weight: 700; letter-spacing: 1px; margin-bottom: 1.5mm; }
+
+/* ===== Bar Chart (Wu Xing & generic) ===== */
+.bar-row {
+  display: grid; grid-template-columns: 28mm 1fr 30mm;
+  align-items: center; gap: 2.5mm; font-size: 9pt; margin: 1mm 0;
+}
+.bar-label { font-family: 'Noto Serif TC', serif; color: var(--ink-black);
+  display: flex; align-items: center; gap: 1.5mm; }
+.bar-label .ch { font-family: 'Ma Shan Zheng', cursive;
+  font-size: 13pt; line-height: 1; }
+.bar-label small { font-size: 7.5pt; color: var(--ink-soft); }
+.bar-track { height: 4mm; background: rgba(201,160,76,0.12);
+  border-radius: 50px; position: relative; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 50px;
+  display: flex; align-items: center; padding-left: 1.5mm;
+  color: white; font-weight: 700; font-size: 7.5pt;
+  font-family: 'Cormorant Garamond', serif; }
+.bar-tag { font-size: 7.5pt; color: var(--ink-soft);
+  font-style: italic; text-align: right; line-height: 1.2; }
+.bar-fill.jin { background: linear-gradient(90deg, #64748b, #94a3b8); }
+.bar-fill.mu  { background: linear-gradient(90deg, #16a34a, #4ade80); }
+.bar-fill.shui{ background: linear-gradient(90deg, #0284c7, #38bdf8); }
+.bar-fill.huo { background: linear-gradient(90deg, #dc2626, #f87171); }
+.bar-fill.tu  { background: linear-gradient(90deg, #a16207, #eab308); }
+
+/* ===== Pillar Cells (4-pilar chart) ===== */
+.pillar-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2mm; }
+.pillar-cell {
+  border: 1px solid var(--emas-rich); background: rgba(255,253,245,0.6);
+  text-align: center; padding: 3mm 1mm;
+}
+.pillar-cell.dm { border-color: var(--merah-imperial); border-width: 2px;
+  background: rgba(185,28,28,0.06); }
+.pillar-label { font-family: 'Noto Serif TC', serif; font-size: 8.5pt;
+  color: var(--ink-soft); letter-spacing: 1px; }
+.pillar-stem, .pillar-branch {
+  font-family: 'Ma Shan Zheng', cursive; font-size: 26pt;
+  color: var(--merah-imperial); line-height: 1.1; margin: 1.5mm 0;
+}
+.pillar-cell.dm .pillar-stem, .pillar-cell.dm .pillar-branch {
+  color: var(--merah-deep);
+}
+.pillar-element { font-size: 8pt; color: var(--ink-soft);
+  margin-top: 1mm; line-height: 1.3; }
+.dm-badge {
+  display: inline-block; padding: 0.5mm 2.5mm;
+  background: var(--merah-imperial); color: var(--cream-paper);
+  font-family: 'Noto Serif TC', serif; font-size: 8pt;
+  border-radius: 2mm; margin-top: 1mm;
+}
+
+/* ===== Timeline (Da Yun) ===== */
+.timeline-track {
+  height: 6mm; background: rgba(201,160,76,0.08);
+  border-radius: 50px; position: relative; display: flex;
+}
+.timeline-seg {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  font-family: 'Noto Serif TC', serif; font-size: 7pt;
+  color: var(--ink-soft); border-right: 1px dashed rgba(201,160,76,0.4);
+  position: relative; line-height: 1; padding: 0.5mm;
+}
+.timeline-seg:last-child { border-right: none; }
+.timeline-seg.now {
+  background: linear-gradient(135deg, var(--merah-imperial), var(--merah-deep));
+  color: var(--cream-paper); font-weight: 700; border-radius: 50px;
+}
+.timeline-seg.now::after {
+  content: "\25BC"; position: absolute; top: -3mm;
+  left: 50%; transform: translateX(-50%);
+  font-size: 6pt; color: var(--merah-imperial);
+}
+.timeline-labels { display: flex; justify-content: space-between;
+  padding: 0 1mm; }
+.timeline-labels span { font-family: 'Cormorant Garamond', serif;
+  font-size: 7.5pt; color: var(--ink-soft); }
+
+/* ===== Compatibility Grid ===== */
+.compat-grid { display: grid; grid-template-columns: repeat(6, 1fr);
+  gap: 1.5mm; margin: 2mm 0; max-width: 100%; }
+.compat-cell {
+  text-align: center; border: 1px solid var(--emas-light);
+  padding: 1.5mm 1mm; border-radius: 2mm;
+  background: rgba(255,253,245,0.5); overflow: hidden;
+}
+.compat-cell.lucky { border-color: var(--merah-imperial);
+  background: linear-gradient(135deg, rgba(185,28,28,0.08), rgba(232,200,122,0.12)); }
+.compat-cell.warning { border-color: #a16207; background: rgba(161,98,7,0.05); }
+.compat-cell .label { font-family: 'Noto Serif TC', serif; font-size: 8pt;
+  color: var(--merah-deep); font-weight: 600; margin-top: 0.5mm; }
+.compat-cell .ch { font-family: 'Ma Shan Zheng', cursive;
+  font-size: 12pt; color: var(--merah-imperial); }
+.compat-cell .relation { font-size: 7pt; color: var(--ink-soft);
+  margin-top: 0.5mm; }
+.compat-cell img.shio-mini { width: 14mm; height: 9mm;
+  display: block; margin: 0 auto; }
+
+/* ===== Shio SVG sizing =====
+   Shio SVG files only have viewBox (no width/height). Render.py injects
+   class="shio-svg" on root <svg>. Default + per-context sizing here. */
+svg { max-width: 100%; height: auto; }
+
+/* Default for any inline shio SVG: keep it bounded to a reasonable size
+   so a stray placement never blows out the page. */
+.shio-svg { width: 100%; height: auto; max-width: 30mm; display: block; margin: 0 auto; }
+
+/* Per-context overrides (must come AFTER the default) */
+.cover .shio-wrap .shio-svg { max-width: 80mm; max-height: 50mm; }
+.shio-portrait { width: 50mm; margin: 0 auto; display: block; }
+.shio-portrait .shio-svg { max-width: 50mm; max-height: 35mm; }
+.compat-cell .shio-svg { max-width: 22mm; max-height: 15mm; margin: 0 auto 0.5mm; }
+
+/* ===== Cover ===== */
+.cover {
+  background: radial-gradient(ellipse at center, #3d0a0a 0%, #1a0303 100%);
+  color: var(--emas-light); text-align: center;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+}
+.cover::before, .cover::after { border-color: var(--emas-rich) !important; }
+.cover .title-cn { font-family: 'Ma Shan Zheng', cursive;
+  font-size: 50pt; color: var(--emas-rich); letter-spacing: 8px;
+  text-shadow: 0 0 20px rgba(201,160,76,0.4); margin-bottom: 4mm; }
+.cover .subtitle { color: var(--emas-light); font-size: 12pt;
+  letter-spacing: 6px; margin-bottom: 2mm; font-style: normal; }
+.cover .name { font-family: 'Cormorant Garamond', serif;
+  font-size: 36pt; color: var(--cream-paper); letter-spacing: 6px;
+  font-weight: 600; margin: 5mm 0; }
+.cover .meta { font-family: 'Noto Serif', serif; color: var(--emas-light);
+  font-size: 10pt; letter-spacing: 3px; line-height: 2; }
+.cover .shio-wrap { margin: 4mm auto; width: 80mm; height: 50mm;
+  display: flex; align-items: center; justify-content: center;
+  filter: drop-shadow(0 0 18px rgba(201,160,76,0.5)); }
+.cover .seal { margin-top: 4mm; width: 28mm; height: 28mm;
+  border: 2px solid var(--emas-rich); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Ma Shan Zheng', cursive; color: var(--emas-rich);
+  font-size: 18pt; }
+
+/* ===== Section Opener ===== */
+.section-opener {
+  background: linear-gradient(135deg, var(--cream-paper), var(--aged-paper) 70%, #e0c897);
+  justify-content: center; align-items: center; text-align: center;
+}
+.section-opener .roman { font-family: 'Cormorant Garamond', serif;
+  font-size: 28pt; color: var(--emas-rich); letter-spacing: 4px;
+  font-weight: 500; }
+.section-opener .title-cn { font-family: 'Ma Shan Zheng', cursive;
+  font-size: 56pt; color: var(--merah-imperial); margin: 4mm 0;
+  letter-spacing: 12px; }
+.section-opener .label-id { font-family: 'Noto Serif TC', serif;
+  font-size: 14pt; color: var(--ink-soft); letter-spacing: 4px;
+  margin-bottom: 4mm; }
+.section-opener .desc { font-size: 10pt; max-width: 120mm;
+  color: var(--ink-soft); font-style: italic; line-height: 1.7;
+  margin-top: 5mm; }
+
+/* ===== Karakter / Action / Pesan utility cards ===== */
+.karakter-card {
+  background: linear-gradient(135deg, rgba(185,28,28,0.04), rgba(232,200,122,0.10));
+  border: 1px solid var(--emas-rich); border-radius: 2mm;
+  padding: 2mm 2mm; text-align: center;
+  display: grid; grid-template-rows: 14mm auto auto auto;
+  align-items: center; justify-items: center; gap: 0.5mm;
+}
+.karakter-card .ico-wrap {
+  width: 13mm; height: 13mm; border-radius: 50%;
+  background: linear-gradient(135deg, var(--merah-imperial), var(--merah-deep));
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Ma Shan Zheng', cursive; color: var(--cream-paper);
+  font-size: 14pt; line-height: 1;
+}
+
+/* ===== Year Badge (Liu Nian) ===== */
+.year-badge {
+  display: inline-block; padding: 1mm 4mm;
+  background: linear-gradient(135deg, var(--merah-imperial), var(--merah-deep));
+  color: var(--cream-paper); font-family: 'Cormorant Garamond', serif;
+  font-size: 13pt; font-weight: 600; border-radius: 50px;
+  margin-right: 3mm; letter-spacing: 2px;
+}
+
+/* ===== Image safety ===== */
+img { max-width: 100%; height: auto; object-fit: contain; }
+table { width: 100%; max-width: 100%; border-collapse: collapse;
+  table-layout: fixed; font-size: 9.5pt; margin: 2mm 0; }
+td, th { border: 1px solid var(--emas-rich); padding: 2mm;
+  vertical-align: top; word-wrap: break-word; line-height: 1.45; }
+ul { margin-left: 5mm; line-height: 1.55; font-size: 9.5pt; }
+ul li { margin-bottom: 1mm; }
+
+</style>
+</head>
+<body><section class="page">
+  <h2>Profil Subjek</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <div style="display:grid;grid-template-columns:55mm 1fr;gap:6mm;align-items:center;margin-top:4mm;">
+    <div style="text-align:center;">
+      <div class="shio-portrait"><svg class="shio-svg" preserveAspectRatio="xMidYMid meet" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166.23 99.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a50404;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m32.6,41.36c0,.8-.4,1.6-1.2,2.1-.8.5-1.8.5-2.6.2-.8-.3-1.5-.9-2-1.6-.4-.7-.6-1.7-.2-2.4.1.8.4,1.4.9,1.9s1,.9,1.7,1.1c.6.2,1.3.3,1.9.1.5-.3,1-.8,1.5-1.4Zm22.9-12.4c-2.4-1.8-5.1-1.8-7.2-.2,2.2-.5,4.4-.1,6.2,1.4,1.6,1.2,3,3.3,2.5,5.4.9-.8,1-4.7-1.5-6.6Zm28.9,6.3c.7-.6,1.2-3.4-.5-5.2-1.6-1.7-3.6-1.9-5.4-1,1.7-.1,3.3.5,4.5,1.8,1.1,1.1,1.9,2.9,1.4,4.4Zm-24.2,10.8c.9-.8,1.4-2,1.5-3.2s-.2-2.6-1.1-3.4c-.9-.9-2.2-1.1-3.3-.9,1,.4,1.9.9,2.4,1.6s.6,1.6.5,2.5-.4,1.8-1,2.6c-.5.8-1.3,1.4-2.3,1.8,1.2.3,2.5-.2,3.3-1Zm-6.2,7.1c1,.5,2.2.7,3.3.5,1.1-.2,2.3-.9,2.8-2,.6-1.1.4-2.3-.1-3.2-.1,1.1-.3,2-.8,2.7-.5.6-1.3,1-2.2,1.2-.9.2-1.8.1-2.6-.1-.9-.3-1.7-.7-2.3-1.6.1,1,.9,2,1.9,2.5Zm18-1.4c-.6.5-1.4.8-2.2.8s-1.7-.1-2.5-.5-1.5-.9-1.9-1.8c-.1,1,.5,2.1,1.4,2.7.9.7,2,1,3,1,1.1,0,2.3-.5,2.9-1.5.7-.9.7-2.1.3-3-.1.9-.4,1.8-1,2.3Zm2.1-10.1c.3.7.4,1.6.1,2.4-.2.8-.7,1.6-1.3,2.3-.6.6-1.4,1.2-2.4,1.3,1,.4,2.2.1,3.1-.5.9-.7,1.6-1.6,1.9-2.7s.2-2.4-.5-3.4-1.9-1.4-2.9-1.3c.9.6,1.7,1.2,2,1.9Zm10,5.5c-.5.4-1.1.6-1.8.7-.7,0-1.4-.1-2-.4s-1.2-.8-1.6-1.5c-.1.8.4,1.7,1.1,2.2s1.6.8,2.5.8,1.8-.4,2.4-1.2c.5-.8.6-1.7.3-2.5-.1.8-.4,1.5-.9,1.9Zm-11.8-10.2c.9-.7,1.5-4.3-.6-6.4-2-2.1-4.5-2.4-6.7-1.2,2.1-.1,4.1.6,5.6,2.2,1.4,1.3,2.4,3.5,1.7,5.4Zm-38.6,2.9c.9-.2,1.7-.7,2.2-1.4.6-.7.9-1.7.6-2.6-.2-.9-1-1.6-1.8-1.8.5.7.9,1.3.9,2s-.2,1.3-.7,1.8c-.4.5-1,1-1.6,1.3s-1.4.4-2.2.3c.7.5,1.7.6,2.6.4Zm2.1-8c.9-.2,2.4-2.7,1.5-4.9-.9-2.1-2.6-3.2-4.6-2.9,1.6.5,2.8,1.7,3.5,3.3.6,1.4.6,3.4-.4,4.5Zm-7-.5c.5-.4.6-1,.2-1.5s-1-.6-1.5-.2-.6,1-.2,1.5c.3.5,1,.6,1.5.2Zm74,16.8c-.6.5-1.4.8-2.2.8s-1.7-.1-2.5-.5-1.5-.9-1.9-1.8c-.1,1,.5,2.1,1.4,2.7.9.7,2,1,3,1,1.1,0,2.3-.5,2.9-1.5.7-.9.7-2.1.3-3,0,.9-.4,1.8-1,2.3Zm8.9-22.3c-1.7-1-3.5-.8-4.8.4,1.4-.5,2.9-.4,4.2.5,1.1.6,2.2,2,2.1,3.4.6-.7.3-3.2-1.5-4.3Zm-8.5,7.5c.9-.7,1.5-4.3-.6-6.4-2-2.1-4.5-2.4-6.7-1.2,2.1-.1,4.1.6,5.6,2.2,1.4,1.3,2.3,3.5,1.7,5.4Zm-16.6,5.2c-.6-.8-1.5-1.1-2.4-1.1.7.4,1.3.9,1.6,1.5.3.6.3,1.3.1,2-.2.7-.5,1.3-1,1.8s-1.1.9-2,1.1c.8.3,1.8.1,2.5-.4s1.3-1.3,1.5-2.2c.4-.8.3-1.9-.3-2.7Zm29.6-1.7c.5-.6.8-1.4.8-2.2s-.3-1.7-1-2.2-1.5-.6-2.2-.3c.7.2,1.3.4,1.7.9.4.4.5,1,.5,1.6s-.2,1.2-.4,1.8c-.3.6-.7,1.1-1.4,1.4.7,0,1.5-.4,2-1Zm-10.3.6c-.7-1-1.9-1.4-2.9-1.3.9.5,1.7,1.1,2,1.9.3.7.4,1.6.1,2.4-.2.8-.7,1.6-1.3,2.3-.6.6-1.4,1.2-2.4,1.3,1,.4,2.2.1,3.1-.5.9-.7,1.6-1.6,1.9-2.7.3-1.1.3-2.4-.5-3.4Zm43,19.2c-15.2,4.4-20.9-6.6-20.9-6.6,0,0,4.2,19.2,12.8,22.6,1.5.6,2.6,1.8,2.8,3.4,1.6,9.1,1.3,15.9.8,19.7-.3,2.1-2,3.8-4.2,3.9-2.6.1-6.1.2-9,.1-2.1-.1-2.9-2.9-1.1-4.1,1-.6,2.2-.9,3.2-1,1.3-.1,2.3-1.2,2.4-2.5.5-5.1-.7-8.8-3.8-11.4-3.2-2.8-16.8-10.8-21-19.8-.8-1.6-.6-3.5.4-5,3-4.9,4.1-10.4,4.1-11.8-1.6,6.6-6.1,12.9-10.6,17.4-3.8,3.9-2.4,15.9.2,20.6.7,1.3.6,2.9-.4,4-3,3.7-7.4,6.9-10.1,9.7-1.1,1.2-2.6,1.9-4.3,2-2.4.2-4.7.1-6.7,0-3-.2-3.9-4.3-1.1-5.5.3-.1.5-.2.8-.2,2.8-.2,7.2-.2,7.2-.2,0,0,1.4-3.9,2.6-6.6.5-1.1.5-2.3,0-3.4-2.6-5.8-5.4-13.5-4.4-20.2-10.2,6.7-25.5,2.2-27.4,1.9-1.9-.3-4.8-1.1-7.1,1.2,0,0,1,15.2-4.6,26.4-.8,1.5-2.3,2.5-3.9,2.7-3.7.4-7.2-.3-9.3-.8-1.6-.4-2.4-2.2-1.6-3.6.3-.4.7-.8,1.3-.9,2.2-.4,6.8.6,6.4-3.8s-.7-14.4.8-16.9c-5.2,5.8-11.1,4.8-13.8,8.5-1.6,2.2-.8,4.9,1.8,5.9,4.5,1.8,1.5,7.5-2.1,5.7,0,0-.1,0-.1-.1-4-2.1-3.9-1.9-5.4-1.9-1.6.1-3.3-2-4.6-6.6-1.2-4.6-1.9-7.6,1.9-11.1s9.3-6,8.1-11.1c-1.2-5.1-5.8-10.8-5.2-15-4.3-1.2-8.1-1.4-10.5,1.5-2.2,2.7-6.5,2.9-8.7.5-.3-.4-.3-1,.1-1.3.8-.8.6-1.4-.4-1.1-1.2.4-4.2-.6-4.3-2.9-.1-2.3,1.9-4.6,2-6s-2.2-4.6-.5-7.6,2.8-3.9,2.8-3.9c0,0-3.6-.8-3.6-4.6s6.4-2.8,6.8,1.6c.4.6,1.5.2,1.9,0,3.7-1.6,7.1-.7,7.7.1-.5-4.8,4.9-4.6,6.1-2.6,1.1,1.9.8,3.7.1,4.9,4.1,1,9.3-2.2,17.7-1.5,8.4.7,14.6,9.4,36.7,2.9,22.1-6.4,38.4-1.1,47.4,8.4,9.1,9.5,6,20.1,18.7,20.1s20.7-19.5,10.7-25.5c-12.5-7.4-32.7-3.7-32.7-15.8s7.1-9.7,8.9-8.2c1.8,1.5-.1,4.1-.6,6.9-.3,2.1,0,4.1,7.2,4.9,7.4.8,21.1,4,26.8,12.8,5.6,9.2,0,26.4-15.2,30.8ZM63.6,29.56c3.1.6,5.5,2.3,5.5,2.3l-3.2-.5,3.1,2.3-1.5-.3,2.5,2.2-2-.7,2.6,2.3-2-1s2.7,2.9,2.5,2.8c-.3-.1-2.1-1.5-2.1-1.4.1.1,3,3.5,2.9,3.5-.1-.1-2.3-1.6-2.3-1.6,0,0,2.5,3.8,2.2,3.5-.3-.4-2-1.8-2-1.8l1.9,3.4-1.8-1.6,1.4,3.3-1.6-1.8.5,1.9-.9-.8.6,2.5-1-1.5s.5,3.5.4,3.3-1.1-2.4-1.1-2.4v2.4l-.9-1.4-.4,1.9c-.9-.1-1.7-1-2-1.5-.5,2.4,1,4.3,2.2,5.1,3.4,2.2,9.2-1.8,6.4-5.6,5.2-.9,4.1-10.5-1.1-10.1,6.2-5.6-2.8-14.9-8.8-8.7Zm-24.7-7.1c1,1.3,1.9,2.7,2.5,4.1s1,2.8,1,4.2-.3,2.9-.8,4.3-1.2,2.9-1.9,4.3c-.7,1.5-1.6,2.8-2.6,4.1-1,1.3-2.2,2.4-3.2,3.8-1,1.3-1.8,2.8-2.3,4.4s-.9,3.3-.7,5h.2c.6-1.6,1.2-3,1.9-4.4.7-1.4,1.5-2.7,2.3-4.2.7-1.4,1.4-2.9,2.3-4.3s1.9-2.6,3-3.9,2-2.6,2.8-4.2c.7-1.5,1.3-3.3,1.2-5.1-.1-1.8-.7-3.6-1.8-5-1-1.4-2.3-2.5-3.7-3.4l-.2.3Zm-20.5-3.4c1.1-.5,2.8.1,3.5,2.2.9-3.7-2.6-4.3-3.5-2.2Zm-6.8,1.1c-.9.4-1.6,1-2.2,1.7s-1,1.6-1.2,2.5-.2,1.9.2,2.7c0-.9.3-1.7.6-2.5.3-.8.7-1.5,1.2-2.1,1-1.3,2.4-2.2,4.1-2.7-.9-.1-1.9,0-2.7.4Zm-1.1,9.4c2.2,0,3.7-.8,4.3-2.9-1.2-.7-4.1-.2-4.3,2.9Zm-4.8-9.3c-.5-1.6-2.3-2.5-3.5-2.3.8,1.7,2.6,2.4,3.5,2.3Zm-3.8,6.2c.2,1.5,1.1,3.7,2.6,2.2-.1-2.5-1.5-3.6-2.6-2.2Zm2.8,10.5c-.8,0-1.8-.1-2.6-.1-.4,0-.7.4-.6.8.2.4.4.7.6,1,.3.4.9.5,1.3.2s.9-.6,1.6-1c.3-.3.2-.9-.3-.9Zm2.5-14.2c.7-1.2,1.8-2.2,3.2-3.1-1.6.1-3.2,1.1-4,2.6-.4.7-.7,1.6-.7,2.4s.2,1.7.7,2.3c-.2-1.6.1-3,.8-4.2Zm6.3,12.6c.9-.5,1.7-1.1,2.4-1.9.7-.7,1.2-1.7,1.4-2.6-.6.8-1.2,1.5-2,2.1-.7.6-1.5,1.1-2.3,1.5-1.6.9-3.4,1.6-5.3,2.3,2.1.1,4.1-.5,5.8-1.4Zm-4.9,2.6c2,.4,4,.1,5.9-.6.9-.4,1.8-.8,2.6-1.5.8-.6,1.5-1.5,1.8-2.4-.7.7-1.4,1.3-2.2,1.8-.8.5-1.7.9-2.5,1.2-1.8.7-3.7,1.1-5.6,1.5Zm11.2-1.4c-.8.6-1.6,1.1-2.5,1.4s-1.8.6-2.7.8c-1.8.4-3.7.5-5.7.7,1.9.7,3.9.7,5.9.3,1-.2,2-.6,2.8-1.1,1-.5,1.8-1.2,2.2-2.1Zm4.6-11.6c.3-.3.5-.7.4-1.1-.1-.8-.6-1.2-1.2-1.3h-.1s-.1.1,0,.1c.3.4.4.9.3,1.1s-.3.2-.7.2-.7-.1-1.3-.1c-.6-.1-1.2,0-1.8.2-.6.2-1.2.5-1.7,1.1-.5.5-.8,1.4-.7,2.2.2,1.6,1.5,2.2,2.3,2.7s1.6,1.2,2,2c.4.9.3,1.8.1,2.6-.4,1.5-1.7,2.8-3,4.5v.1c0,.1.1.1.1.1,1-.2,2-.7,2.9-1.4.8-.7,1.6-1.7,1.7-3s-.6-2.3-1.1-3.2c-.6-.9-1.2-1.7-1.8-2.5-.3-.4-.6-.8-.8-1.1-.2-.3-.3-.7-.3-.9,0-.4.4-.8,1.1-1,.3-.1.7-.2,1.1-.3.2,0,.5,0,.8-.1s.6-.1.9-.2c.2-.3.5-.4.8-.7Zm1.9,8.1c1.1.5,1.4-.6,1.4-.6.2,1.6,2.3,1,1.7-.6,1.6.6,2-1.5.7-1.6,1.6-1,0-2.3-1.1-1.4.7-1.8-1.3-2.1-1.8-.4-1.1-1.9-2.7.7-.9,1.4-.4-.1-1.6-.1-1.6.9s.8,1,1.9.7c-.5.1-1.4,1.1-.3,1.6Zm6.8,7.7c4.1.9,6.2-6.5,2.2-7.8,6.4-2.4,2.6-12-3.7-9.2,2.1,1.4,3.4,3.4,3.4,3.4l-2.2-1.3,1.6,2.7-1-.7,1.1,2.4-1.3-1.1,1.2,2.4-1.2-1.3s1.2,2.9,1,2.8-1.1-1.7-1.1-1.6,1.1,3.5,1,3.4-1.2-1.9-1.2-1.9c0,0,.7,3.6.6,3.2s-.9-1.9-.9-1.9l.3,3.1-.8-1.7v2.8l-.7-1.8-.2,1.6-.4-.9-.3,2.1-.3-1.4s-.7,2.7-.7,2.6c0-.2-.1-2.1-.1-2.1l-.7,1.8-.2-1.3-.9,1.3c-.6-.3-1-1.2-1-1.7-1.1,1.6-.6,3.5.1,4.4,1.9,2.7,7.3,1.4,6.4-2.3Zm10.3,17.8c0-.5,0-1-.1-1.4-.1-.5-.3-1-.5-1.4-.5-.8-1.1-1.5-1.9-2s-1.6-1-2.6-1.1c-1-.2-2.2.1-3.1.8-.9.7-1.4,1.6-1.7,2.7-.1.6-.2,1.2.1,1.9.2.7.7,1.2,1.3,1.5.6.3,1.1.4,1.7.4.3,0,.6-.1.8-.1.3-.1.5-.2.8-.3.5-.3.9-.7,1.1-1.1.1-.2.2-.5.2-.7s0-.5-.1-.7c0-.1-.1-.1-.1-.1q-.1,0-.1.1h0c-.3.8-.9,1.2-1.5,1.4-.6.1-1.3-.1-1.7-.4-.1-.2-.3-.3-.3-.5s0-.4.1-.7c.2-.6.5-1.2.9-1.7s.9-.8,1.7-1c.7-.1,1.5,0,2.2.4s1.3,1,1.6,1.7c.1.4.2.7.2,1.1s-.1.8-.2,1.1c-.5,1.5-1.6,2.5-2.8,2.8-.6.2-1.3.1-1.9,0-.2-.1-.9-.2-1.4-.2h-.8c-.3,0-.5.1-.8.1-1.1.2-2,.7-2.8,1.5-.8.7-1.4,1.7-1.6,2.9-.2,1.1.2,2.2.8,3,.6.8,1.4,1.3,2.2,1.8q.1,0,.2-.1v-.1h0c-.5-.7-1-1.4-1.2-2.2-.2-.7-.2-1.4,0-2,.5-1.1,1.7-1.9,3-2.1.2,0,.3-.1.5-.1h.5c.3,0,.5.1,1.1.1,1,.1,2.1.1,3.2-.4,1-.4,1.9-1.1,2.5-2,.2-.9.5-1.9.5-2.9Zm4.4.5c0-1.3-.6-2.4-1.1-3.4s-1-2-1.2-3c-.3-1-.4-2-.4-3s.2-1.9.4-2.9c.5-1.9,1.2-3.9,1.9-6.1l-.2-.1c-1.7,1.5-3,3.4-3.8,5.6-.7,2.2-.3,5,1.1,6.8.6.9,1.3,1.8,1.6,2.8.4,1,.3,2.1.1,3-.2.9-.4,1.9-.8,2.8-.3,1-.8,1.9-1.1,3.1l.2.1c.9-.7,1.7-1.5,2.3-2.5.5-.8,1-2,1-3.2Zm3.7-13.9c.5.1.6-.4.5-1,.1.3.6.9.9.3s-.3-.8-.3-.8c.9-.1.6-1.2-.2-1,.4-.9-.7-1.2-.8-.5-.5-.9-1.3-.1-.8.6-.9-.5-1.2.6-.3.9-1.1.5.2,1.5.7.5-.2.3-.3,1,.3,1Zm-.2,4.3c-.1,2.6,1.7,4.3,3.1,5,4,1.8,9.3-3.4,5.7-6.9,5.2-1.8,2.6-11.6-2.8-10.3,5.6-7.1-5.3-15.4-10.5-7.8,3.3.2,6.2,1.5,6.2,1.5h-3.5l3.6,1.9h-1.6l2.9,1.9-2.2-.4,3.1,1.9-2.3-.7s3.3,2.5,3,2.5-2.5-1.2-2.4-1.1,3.7,3.2,3.5,3.2c-.1-.1-2.6-1.3-2.6-1.3,0,0,3.3,3.6,2.9,3.2s-2.3-1.6-2.3-1.6l2.5,3.3-2.1-1.4,1.9,3.2-2-1.6.8,1.9-1.1-.7,1,2.6-1.3-1.4s1.1,3.5,1,3.4c-.1-.2-1.6-2.3-1.6-2.3l.4,2.5-1.1-1.3-.1,2c-.7,0-1.7-.8-2.1-1.2Zm29.4,5.1c-2.3,1-4.6,1.7-7,2.2s-4.7.9-7.1,1c-2.4.2-4.8.2-7.2.1-2.4-.1-4.8-.4-7.3-.7,2.2,1.1,4.7,1.8,7.2,2.3,2.5.4,5,.5,7.5.4,2.5-.2,5-.7,7.4-1.5,2.4-.9,4.7-2.1,6.5-3.8Zm4.6-10c4.2-.7,3.3-8.4-.9-8.1,5.1-4.7-2.2-12.2-7-7.2,2.5.5,4.5,1.9,4.5,1.9l-2.6-.4,2.5,1.9-1.2-.2,2,1.8-1.6-.5,2.1,1.8-1.6-.8s2.2,2.3,2,2.2-1.7-1.2-1.7-1.1c.1.1,2.4,2.9,2.3,2.8s-1.8-1.3-1.8-1.3c0,0,2,3.1,1.8,2.8-.3-.3-1.6-1.5-1.6-1.5l1.5,2.8-1.4-1.3,1.1,2.6-1.3-1.4.4,1.5-.7-.6.5,2.1-.8-1.2s.4,2.8.3,2.6c-.1-.1-.9-1.9-.9-1.9v2l-.7-1.1-.3,1.5c-.7-.1-1.4-.8-1.6-1.2-.4,1.9.8,3.5,1.8,4.1,2.5,1.8,7.1-1.5,4.9-4.6Zm5,.6c.5-1.3,1.1-2.6,1.8-4,1.4-2.6,1.5-6.2.2-9-1.4-2.8-3.5-4.9-6-6.5l-.1.1c1.5,2.5,3.1,4.8,4.2,7.2.5,1.2.9,2.4,1,3.7.1,1.3,0,2.6-.3,4-.2,1.4-.7,2.7-1.3,4-.6,1.3-1.4,2.5-1.9,4-.9,2.8-.8,6,.4,8.7h.2c.1-1.5.2-2.9.3-4.2.1-1.4.4-2.7.7-4,.2-1.2.3-2.6.8-4Zm12.1,14.6c0-1.1-.3-2.1-.8-2.9-.2-.4-.5-.8-.9-1.2-.3-.4-.7-.7-1.1-.9-.8-.5-1.8-.7-2.7-.7s-1.9.1-2.8.5c-.9.4-1.8,1.2-2.2,2.3-.4,1.1-.3,2.1,0,3.2.2.5.5,1.1,1.1,1.5.5.5,1.3.6,1.9.6.6-.1,1.2-.2,1.6-.6.2-.1.4-.3.6-.5.2-.2.3-.4.5-.7.3-.5.4-1,.3-1.6,0-.3-.1-.5-.2-.7-.1-.2-.3-.4-.4-.6,0-.1-.1-.1-.2,0,0,0-.1.1,0,.1h0c.2.9-.1,1.5-.6,2-.5.4-1.2.6-1.7.6-.2-.1-.4-.1-.5-.3-.1-.1-.2-.3-.3-.6-.1-.6-.2-1.3-.1-1.9.1-.6.4-1.2.9-1.7s1.3-.8,2.1-.8,1.6.2,2.2.6c.3.2.6.5.7.8.2.3.3.7.4,1.1.4,1.5,0,2.9-.8,3.9-.4.5-1,.8-1.6,1-.2.1-.8.3-1.3.5-.2.1-.5.3-.7.4-.2.2-.4.4-.6.5-.8.8-1.3,1.7-1.6,2.8-.3,1-.3,2.2.2,3.3.5,1,1.4,1.8,2.3,2.1.9.4,1.9.4,2.8.3.1,0,.1-.1.1-.1,0,0,0-.1-.1-.1h0c-.8-.4-1.6-.7-2.1-1.2-.6-.5-.9-1.1-1-1.7-.2-1.2.5-2.5,1.4-3.4.1-.1.2-.2.4-.3.1-.1.3-.2.4-.3.3-.1.5-.2,1-.5.9-.4,1.8-1.1,2.5-2,.5-.7.8-1.7.9-2.8Zm1.9-14.8c5.2-.9,4.1-10.5-1.1-10.1,6.3-5.8-2.7-15.2-8.7-8.9,3.1.6,5.5,2.3,5.5,2.3l-3.2-.5,3.1,2.3-1.5-.3,2.5,2.2-2-.7,2.6,2.3-2-1s2.7,2.9,2.5,2.8c-.3-.1-2.1-1.5-2.1-1.4.1.1,3,3.5,2.9,3.5-.1-.1-2.3-1.6-2.3-1.6,0,0,2.5,3.8,2.2,3.5-.3-.4-2-1.8-2-1.8l1.9,3.4-1.8-1.6,1.4,3.3-1.6-1.8.5,1.9-.9-.8.6,2.5-1-1.5s.5,3.5.4,3.3-1.1-2.4-1.1-2.4v2.4l-.9-1.4-.4,1.9c-.9-.1-1.7-1-2-1.5-.5,2.4,1,4.3,2.2,5.1,3.4,2.4,9.1-1.6,6.3-5.4Zm5.8,1.6c.4-.9-.7-1.2-.8-.5-.5-.9-1.3-.1-.8.6-.9-.5-1.2.6-.3.9-1.1.5.2,1.5.7.5-.1.2-.1.8.4.9s.6-.4.5-1c.1.3.6.9.9.3.3-.6-.3-.8-.3-.8.9,0,.6-1.1-.3-.9Zm6.2-8.8c3.3-1.6.8-7.9-2.6-6.6,3.2-5.1-4.7-9.8-7.6-4.4,2.2-.1,4.2.5,4.2.5l-2.3.3,2.6,1-1.2.1,2.1,1-1.5-.1,2.2,1-1.6-.3s2.4,1.4,2.2,1.4-1.7-.6-1.7-.5c.1,0,2.7,1.9,2.6,1.8-.1,0-1.8-.7-1.8-.7,0,0,2.4,2.1,2.1,1.9-.3-.2-1.7-.9-1.7-.9l1.9,2-1.5-.8,1.5,2-1.4-.9.7,1.2-.8-.4.9,1.6-1-.8s1,2.3.9,2.2c-.1-.1-1.2-1.4-1.2-1.4l.5,1.7-.9-.8.1,1.3c-.6.1-1.3-.4-1.6-.6.1,1.7,1.5,2.7,2.4,3.1,2.9,1,6.1-2.8,3.5-4.9Zm9.7,32.1c-.9-1.1-1.1-2.8-.6-4.2.1-.2.1-.4.2-.5.1-.2.2-.3.2-.5.2-.3.3-.5.7-1.1.7-1,1.2-2.2,1.3-3.5s-.1-2.6-.8-3.6c-.6-1.1-1.5-1.9-2.5-2.4-.5-.3-1-.5-1.5-.7s-1.1-.2-1.7-.2c-1.1,0-2.2.4-3.1.9-.9.5-1.9,1.2-2.6,2.1-.7.9-1.1,2.3-.9,3.6.3,1.3.9,2.3,1.9,3.2.5.4,1.2.8,2,.9s1.6-.1,2.2-.5c.6-.4,1-1,1.3-1.6.2-.3.2-.6.3-.9s.1-.6.1-.9c0-.6-.2-1.3-.6-1.8-.1-.3-.4-.4-.7-.6-.2-.2-.5-.2-.8-.3-.1,0-.2,0-.2.1v.2h0c.7.7.8,1.6.6,2.3-.2.7-.8,1.3-1.3,1.6-.3.1-.5.1-.7,0-.2,0-.4-.2-.7-.4-.5-.5-1-1.2-1.2-1.8-.3-.6-.4-1.4-.1-2.2.3-.8.8-1.6,1.6-2.1s1.7-.8,2.6-.7c.5,0,.8.2,1.2.4.4.2.8.5,1.1.8,1.3,1.3,1.8,2.9,1.5,4.3-.2.7-.5,1.4-1,2-.2.2-.7.8-1,1.3-.2.3-.3.6-.4.9-.1.3-.2.6-.3.9-.3,1.2-.3,2.5,0,3.7s1,2.4,2.1,3.1c1.1.8,2.4,1,3.5.8,1.2-.1,2.1-.7,3-1.3.1,0,.1-.1,0-.2l-.1-.1h0c-1,.1-2,.2-2.9,0-.5-.1-1.2-.5-1.7-1Zm32.7-43.4c-.9-1.8-2.4-3.2-4.1-4.3-1.7-1.1-3.5-1.9-5.4-2.6-3.8-1.4-7.7-2.2-11.5-3-1.9-.4-3.9-.8-5.7-1.4-1.9-.5-3.7-1.3-5-2.6-1.3-1.3-2-3.3-1.7-5.2.1-.9.4-1.9,1-2.7.5-.8,1.4-1.5,2.4-1.5-1-.1-2,.6-2.6,1.4s-1.1,1.8-1.3,2.8c-.4,2,.2,4.2,1.6,5.8,1.4,1.6,3.4,2.4,5.3,3,1.9.6,3.9,1,5.8,1.5,3.9.8,7.8,1.6,11.5,2.8,1.9.6,3.7,1.3,5.4,2.3.8.5,1.7,1,2.4,1.7.7.5,1.3,1.2,1.9,2Zm2,16.8c-1.4,2.7-3.5,5-6,6.7-2.5,1.6-5.4,2.8-8.3,3.3-2.9.5-6,.4-8.9-.4s-5.5-2.5-7.4-5c.7,1.3,1.8,2.5,3,3.5s2.7,1.7,4.1,2.2c3,1,6.2,1.1,9.3.6,3.1-.6,6.1-1.8,8.6-3.6,1.3-.9,2.4-2,3.4-3.2.9-1.3,1.7-2.7,2.2-4.1Zm2.4-10.3c.1-2.9-.8-5.8-2.5-8.1-.4-.6-.9-1.1-1.4-1.6l-.7-.8-.8-.7c-1.1-.9-2.3-1.6-3.6-2.2,1.1.9,2.3,1.6,3.2,2.6l.8.7.7.8c.4.5.9,1,1.2,1.6,1.5,2.3,2.3,4.9,2.2,7.6s-1,5.3-2.3,7.7c-.3.6-.7,1.2-1.1,1.8-.4.6-.8,1.1-1.2,1.7l-1.4,1.6-1.5,1.5c2.3-1.6,4.3-3.6,5.8-6,1.6-2.5,2.6-5.3,2.6-8.2Zm-46.9,5.4c0,.7,0,1.3-.3,1.8s-.8.8-1.3,1c-.6.2-1.2.2-1.8.1s-1.2-.4-1.7-.9c.1.7.7,1.3,1.4,1.6.7.3,1.5.3,2.2.1.7-.2,1.4-.8,1.7-1.5.4-.8.2-1.6-.2-2.2Z"/>
+</svg></div>
+      <div style="margin-top:2mm;font-family:'Ma Shan Zheng',cursive;
+                  color:var(--merah-imperial);font-size:22pt;">屬Macan</div>
+    </div>
+    <div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:24pt;
+                  color:var(--ink-black);font-weight:700;letter-spacing:2px;">
+        Henry
+      </div>
+      <p style="font-size:10pt;color:var(--ink-soft);margin-top:1mm;">
+        1962-10-29 05:00
+        · 民國 51 年 10 月 2 日 5 時 10 分<br>
+        Gender: <strong>Laki-laki (男)</strong>
+      </p>
+      <div class="card merah" style="margin-top:3mm;">
+        <div class="card-title">Day Master · 日主</div>
+        <p style="font-size:13pt;font-family:'Noto Serif TC',serif;color:var(--merah-deep);">
+          庚金 — <strong>Logam 陽</strong>
+        </p>
+        <p style="font-size:9pt;color:var(--ink-soft);">
+          Format (格局): <strong>偏印格</strong> (Pian Yin Ge)
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin-top:6mm;">Empat Pilar (四柱)</h3>
+  <div class="pillar-grid">
+        <div class="pillar-cell">
+          <div class="pillar-label">年柱 · Pilar Tahun</div>
+          <div class="pillar-stem">壬</div>
+          <div class="pillar-branch">寅</div>
+          <div class="pillar-element">水 陽 · 木<br>Macan</div>
+          
+        </div>
+        <div class="pillar-cell">
+          <div class="pillar-label">月柱 · Pilar Bulan</div>
+          <div class="pillar-stem">庚</div>
+          <div class="pillar-branch">戌</div>
+          <div class="pillar-element">金 陽 · 土<br>Anjing</div>
+          
+        </div>
+        <div class="pillar-cell dm">
+          <div class="pillar-label">日柱 · Pilar Hari (Diri)</div>
+          <div class="pillar-stem">庚</div>
+          <div class="pillar-branch">子</div>
+          <div class="pillar-element">金 陽 · 水<br>Tikus</div>
+          <div class="dm-badge">日主 Day Master</div>
+        </div>
+        <div class="pillar-cell">
+          <div class="pillar-label">時柱 · Pilar Jam</div>
+          <div class="pillar-stem">己</div>
+          <div class="pillar-branch">卯</div>
+          <div class="pillar-element">土 陰 · 木<br>Kelinci</div>
+          
+        </div></div>
+
+  <div class="info-grid" style="margin-top:5mm;">
+    <div class="info-card" style="border-color:#16a34a;">
+      <div class="info-card-title" style="color:#16a34a;">✓ 喜用神 — Elemen Beruntung</div>
+      <p>水 Air · 木 Kayu</p>
+    </div>
+    <div class="info-card" style="border-color:#a16207;">
+      <div class="info-card-title" style="color:#a16207;">⚠ 忌神 — Elemen Hindari</div>
+      <p>金 Logam · 土 Tanah</p>
+    </div>
+  </div>
+  <div class="page-num">IV</div>
+</section>
+</body></html>

@@ -1,0 +1,370 @@
+{
+  "subject": {
+    "name": "Henry",
+    "gender": "M",
+    "birth_solar": "1962-10-29 05:10",
+    "birth_lunar": "民國 51 年 10 月 2 日 5 時 10 分"
+  },
+  "ziwei_meta": {
+    "life_lord": "廉貞",
+    "body_lord": "天梁",
+    "life_palace": "申",
+    "body_palace": "寅",
+    "five_element_school": "土五局",
+    "time_lord": "午"
+  },
+  "current_age": 64,
+  "transcripts": {
+    "性情": {
+      "hanzi": "◎固執、寡慾、堅定立場，強調自我價值，剛健但不魯莽，富於處事能力，但不兇猛、果斷，操作能力強。\n◎才華洋溢、創新，戀執自己的表現，堅持自己的言論，重視他人對自己的肯定，施恩予人，卻希望別人感激，主觀、急性，想到什麼事情就馬上做。\n◎具俠義心，強健但不魯莽，自主但不侵犯，獨立而無懼，剛硬而不兇猛，粗曠豪爽，愛出風頭。",
+      "indonesia": "◎ Teguh pendirian, hasrat sederhana, mantap memegang prinsip; menekankan harga diri sendiri. Kuat-tegar tanpa ceroboh, kaya kemampuan menangani perkara — tetapi tidak ganas. Tegas dan punya daya eksekusi yang tinggi.\n◎ Bakat melimpah, inovatif, melekat pada cara mengekspresikan diri, gigih dengan pendapat sendiri, sangat menghargai pengakuan orang lain. Suka memberi kebaikan, sekaligus berharap orang lain berterima kasih. Subyektif, cepat panas, terpikir sesuatu langsung jalan.\n◎ Punya jiwa ksatria; kuat tapi tidak gegabah, mandiri tapi tidak mengganggu orang, independen tanpa rasa takut. Tegar tetapi tidak ganas, kasar-terbuka jujur, suka menjadi sorotan.",
+      "tafsir": [
+        "Kombinasi 庚金 + 偏印格 yang Anda bawa membuat tegar dan cepat eksekusi adalah kekuatan inti — dipakai dengan tepat, ini menjadi modal kepemimpinan teknis yang langka.",
+        "Sifat “suka jadi sorotan” di umur 60-an cocok dialihkan ke peran mentor / penasihat — energi pejuang Anda lebih bernilai saat membentuk orang lain daripada ikut bersaing langsung.",
+        "Karena Anda “memberi sambil berharap dihargai”, latih ekspektasi: niatkan memberi sebagai investasi karakter, bukan transaksi. Kepuasan jadi lebih konsisten.",
+        "Di fase 大運 丙辰 (七殺, 55-64) sekarang, sisi keras Anda sedang diuji. Pakai elemen 水 (Air) — diam-tenang-mengamati — untuk mendinginkan keputusan sebelum eksekusi.",
+        "Saudari kandung dan pasangan adalah “sensor” karakter Anda. Saat mereka sebut Anda terlalu keras, anggap itu data, bukan serangan."
+      ]
+    },
+    "全局總論": {
+      "hanzi": "配偶聰明，比較外向，較急性子。\n兒子比較仁慈。\n比較不歡被人管束。\n姊妹的話不太能接受。\n較無領導能力，並且無法掌握大權。",
+      "indonesia": "Pasangan Anda cerdas, cenderung ekstrover, agak terburu-buru.\nAnak laki-laki cukup berbudi & lembut hati.\nAnda tidak begitu suka dikekang atau diatur orang lain.\nKurang mudah menerima saran dari saudari kandung.\nKemampuan kepemimpinan terbatas; trend hidup Anda lebih sebagai eksekutor handal daripada pemegang kekuasaan besar.",
+      "tafsir": [
+        "Pola “bukan pemegang kekuasaan besar tapi eksekutor handal” adalah keunggulan, bukan kekurangan — banyak organisasi mati karena pemimpin tidak punya orang seperti Anda.",
+        "Pasangan yang cerdas + ekstrover adalah pasangan komplementer untuk 庚金 yang condong introspektif; biarkan dia jadi “suara keluar”, Anda jadi “otak proses”.",
+        "Anak laki-laki yang lembut hati di palace 子女 dengan 天府 mengindikasikan stabilitas keluarga — peran Anda di umur ini adalah memberi mereka panggung, bukan menutupi mereka.",
+        "Resistensi pada saudari & atasan = tanda Anda butuh otonomi tinggi. Negosiasikan ruang gerak di awal kerjasama, jangan tunggu konflik."
+      ]
+    },
+    "神煞": {
+      "hanzi": "【驛馬】\n・勞碌好動、奔波遠行、多旅行運、住家及事業多變動。",
+      "indonesia": "Bintang Yi Ma (驛馬 — Kuda Pos):\n• Sibuk dan suka bergerak, sering bepergian jauh, banyak peluang traveling, hunian maupun pekerjaan sering berubah.",
+      "tafsir": [
+        "Bintang 驛馬 di bagan Anda + Day Master 庚金 + 大運 丙辰 yang dinamis = pola hidup “gerak” adalah natural state, bukan kebetulan. Memaksa diam justru bikin macet.",
+        "Manfaatkan 驛馬 di umur 60-an untuk perjalanan yang punya makna: ziarah, edukasi, kunjungan keluarga jauh — bukan sekadar plesir.",
+        "Bila ada gejolak di hunian / pekerjaan, baca itu sebagai sinyal 驛馬 minta disalurkan. Pindah ruangan, redekorasi, atau perjalanan 1-2 minggu sering kali cukup.",
+        "Karena 驛馬 mendorong banyak perubahan, jaga dokumen & administrasi tetap rapi — itu modal bergerak yang sering diabaikan."
+      ]
+    },
+    "財富": {
+      "hanzi": "偏財源豐厚，偏財關係疏遠，容易得到。\n正財源豐厚，正財關係密切，容易得到。\n※ 正財：投資性的財源，如薪資。 偏財：投機性的財源，如佣金。",
+      "indonesia": "Sumber rezeki tak-terduga (偏財 / Pian Cai) berlimpah; relasinya jauh tetapi mudah masuk.\nSumber rezeki tetap (正財 / Zheng Cai) juga berlimpah; relasinya dekat dan mudah masuk.\n※ 正財 = penghasilan stabil seperti gaji. 偏財 = pendapatan spekulatif seperti komisi, bonus, hasil investasi.",
+      "tafsir": [
+        "Kombinasi 正財 + 偏財 yang sama-sama berlimpah jarang. Aturan emas: 正財 (gaji/hasil tetap) untuk pondasi & jangka panjang, 偏財 (komisi/spekulasi) untuk eksperimen — jangan dibalik.",
+        "庚金 strong + 喜用神 水木: rezeki Anda lebih lancar di sektor yang berkaitan dengan aliran (logistik, perdagangan, distribusi) daripada akumulasi statis.",
+        "Di 大運 丙辰 sekarang, hindari over-leveraging. 七殺 cenderung memunculkan peluang besar yang juga berisiko besar; pakai aturan max 20% modal untuk peluang spekulatif.",
+        "Latih disiplin: setiap rezeki tak terduga (偏財) langsung sisihkan ≥30% ke tabungan / investasi defensif sebelum digunakan."
+      ]
+    },
+    "婚配": {
+      "hanzi": "忌：配相蛇、猴。\n夫妻相剋，或不和，憂愁不絕，無成功之望，有破敗之嫌，一生難免空虛寂寞之感，致傷疾短命之苦。\n宜：配相馬、狗大吉相豬吉凶相半。其他生肖次吉。\n永結同心，德望日高終成大業，富榮譽，福壽興家之大吉，子孫昌盛矣。",
+      "indonesia": "HINDARI shio Ular (蛇) dan Monyet (猴):\nPasangan saling menentang atau tidak harmonis. Ada bayangan kesedihan berkepanjangan, sulit sukses, kemungkinan goyah. Hidup sulit lepas dari rasa kosong-sepi.\n\nCOCOK shio Kuda (馬) dan Anjing (狗) — sangat baik. Babi (豬) — campuran baik & buruk. Shio lain cukup baik.\nBersatu hati selamanya, reputasi kebajikan kian tinggi, akhirnya berhasil besar, kaya & terhormat, rezeki + umur + keluarga makmur, keturunan berkembang.",
+      "tafsir": [
+        "Hindari shio Ular & Monyet bukan vonis — itu sinyal pola karakter yang berisiko bentrok dengan 庚金 Anda. Kalau pasangan dekat ber-shio itu, kompensasi lewat komunikasi & batas waktu istirahat.",
+        "Shio Kuda + Anjing (三合 dengan Macan) adalah dukungan natural — di lingkungan kerja, prioritaskan kerja sama dengan mereka untuk proyek penting.",
+        "Saran “lebih baik telat menikah” sudah lewat di kasus Anda; tafsir ulang: jaga pernikahan dengan ritme “api yang stabil” — fokus pada konsistensi harian, bukan ledakan emosi.",
+        "Pasangan cerdas + ekstrover adalah pelengkap, bukan saingan. Beri panggung, beri otonomi keuangan rumah tangga — itu cara 庚金 menampung 太陰 di palace 夫妻."
+      ]
+    },
+    "事業": {
+      "hanzi": "◎ 文具、出版、書店、農業蔬果、木材、傢俱、裝潢、紙、木器或工藝、花卉園藝、煙草、布疋、教育、公務員、政治、宗教家。\n◎ 流動攤販、運動家、介紹中人、醫生、清潔隊、記者、護士、導遊、馬戲團、航海漁業、冷凍業、水產業、碼頭工、消防隊、貿易公司。",
+      "indonesia": "Industri yang searah:\n◎ Alat tulis, penerbitan, toko buku, agrikultur sayur-buah, kayu olahan, furnitur, dekorasi & interior, kertas, kerajinan kayu / kriya seni, taman bunga & lansekap, tembakau, tekstil, pendidikan, pegawai negeri, politik, tokoh keagamaan.\n◎ Pedagang keliling, atlet & olahraga, perantara/agen, dokter, jasa kebersihan, jurnalis, perawat, pemandu wisata, sirkus & pertunjukan, pelayaran-perikanan, pendinginan/freezing, hasil laut, buruh pelabuhan, pemadam kebakaran, perusahaan dagang.",
+      "tafsir": [
+        "Daftar industri klasik panjang, tapi yang paling sesuai dengan 喜用神 水木 Anda: penerbitan, pendidikan, perdagangan, logistik, kerajinan kayu/seni — semua mengalir & menumbuhkan.",
+        "Industri yang berunsur 金 dan 土 (logam berat, mining, properti tanah-kering) disebut software, tapi waspada: itu menambah dominasi 庚金 yang sudah kuat — energi macet, profit lambat.",
+        "Di umur 60-an + 大運 丙辰, peran terbaik adalah “arsitek senior / penasihat” — bisnis yang mengandalkan reputasi & jaringan, bukan operasional harian melelahkan.",
+        "Bila membuka usaha baru, partner 喜用神 水/木 (orang air/kayu — biasanya tipe komunikatif/edukatif) lebih cocok daripada partner sesama 庚金."
+      ]
+    },
+    "陽宅": {
+      "hanzi": "坤卦\n◎宅宜坐東北向西南或西南向東北大吉。門路宜開西方或西北方吉。爐灶宜安東方西方吉。房間宜安西方、西北方、西南方、東北方。床位宜安西方、西南方、東北方、西北吉。神位宜安西方、西北方、西南方東北及本年大利方向吉，坑廁安於北方、東方、東南方、南方。",
+      "indonesia": "Hexagram Kun (坤卦) — bumi/tanah, simbol penerima yang stabil.\n\n• Arah hadap rumah terbaik: dari Timur Laut menghadap Barat Daya, atau Barat Daya menghadap Timur Laut.\n• Pintu utama: bukaan ke Barat atau Barat Laut.\n• Kompor (爐灶): pasang di area Timur atau Barat.\n• Kamar tidur: bagian Barat, Barat Laut, Barat Daya, atau Timur Laut.\n• Posisi ranjang: ke arah Barat, Barat Daya, Timur Laut, Barat Laut.\n• Altar: Barat, Barat Laut, Barat Daya & Timur Laut, plus arah keberuntungan tahunan.\n• Toilet/WC: aman di Utara, Timur, Tenggara, atau Selatan.",
+      "tafsir": [
+        "Hexagram 坤 di bagan rumah Anda menggarisbawahi tema “stabilitas + penerima” — rumah Anda berperan sebagai pondasi, bukan panggung.",
+        "Arah hadap Timur Laut ↔ Barat Daya selaras dengan format 偏印格 Anda; manfaatkan untuk meja kerja & ruang baca — fokus mental Anda paling tajam di sumbu ini.",
+        "Pintu utama di Barat / Barat Laut OK secara teori, tapi tambahkan elemen 水 (akuarium kecil, fountain mini, atau sekadar warna biru gelap) di area tersebut untuk menghidupkan 喜用神 Anda.",
+        "Kompor di Timur / Barat aman; hindari menambah unsur Tanah berat (batu besar, gerabah jumbo) di area dapur — itu memperberat 忌神 土 Anda.",
+        "Toilet di Utara / Timur / Tenggara / Selatan aman; periksa instalasi air rutin — 水 yang bocor di area “netral” bisa jadi penanda gangguan rezeki kecil."
+      ]
+    },
+    "古書云": {
+      "hanzi": "三命通會註：\n詩曰：庚辛日主號金千，木火相生福自專，年月時中如會合，東西運步定居官。\n滴天髓：庚金帶煞，剛健為最，得水而清，得火而銳，土潤則生，土乾則脆，能贏甲兄，輸於乙妹。\n詩云：九月河魁性最剛，漫云比物易收歛，洪爐巨火能成就，鈍鐵頑金賴主張，海窟沖龍生此露，山頭合虎敵文章，天羅雖是迷魂陣，火命逢之獨有傷。\n金頑鈍性偏剛，火制功成怕水鄉，夏產東南過煅煉，秋生西北亦光芒，水深反是他相剋，木旺能令我自償，戊己干支重過土，不逢沖破即埋藏。",
+      "indonesia": "Catatan dari kitab klasik 三命通會 (San Ming Tong Hui):\n\n«Day Master 庚辛 disebut “Logam dari Surga”. Bila Kayu & Api saling menumbuhkan — rezeki datang sendiri. Bila Tahun, Bulan, dan Jam saling cocok — gerakan Timur & Barat menentukan posisi.»\n\nDari 滴天髓 (Di Tian Sui):\n«庚 (Logam Yang) yang membawa shaqi paling kuat saat tegar. Bertemu Air → menjadi jernih. Bertemu Api → menjadi tajam. Tanah lembap menumbuhkan; tanah kering menjadi rapuh. Mampu menang atas “kakak” 甲 (Kayu Yang), tetapi kalah dari “adik” 乙 (Kayu Yin).»\n\nPuisi klasik: «Bulan ke-9 — sifat “He Kui” paling tegas. Jangan pikir hal serupa mudah disatukan. Tungku besar & api raksasa-lah yang sanggup menempa Anda. Besi tumpul dan logam keras hanya berserah pada keputusan Anda. Naga di gua laut menampakkan embun ini; harimau gunung beradu dengan karya tulis. Meski Tian Luo seolah perangkap pikiran — bagi yang berformat Api, justru harus waspada akan luka.»\n\n«Logam keras tumpul memang condong tegar. Api bisa menempa, tapi tetap takut wilayah Air. Kelahiran musim panas dari Tenggara akan dimatangkan oleh tempaan; kelahiran musim gugur dari Barat Laut juga bersinar. Air terlalu dalam justru menelan; Kayu yang kuat membiarkan saya menebusnya sendiri. Tanah dari 戊己 yang berlapis-lapis — bila tidak bertabrakan/pecah, akan terkubur saja.»\n\nIntinya: Day Master Anda 庚 (Logam Yang Keras) butuh tempaan agar matang. Yang menempa adalah Api dan Air; yang menumbuhkan adalah Tanah lembap; yang menumpulkan adalah Tanah kering yang berlebih.",
+      "tafsir": [
+        "Garis besar kitab klasik konsisten: 庚金 Anda butuh ditempa Api & dibersihkan Air — bukan dilindungi terus-menerus. Tantangan yang datang adalah “tempaan”, bukan hukuman.",
+        "Kalimat “kalah dari adik 乙 (Kayu Yin)” menjelaskan pola Anda: lawan paling sulit ditangani adalah orang lemah-lembut yang sabar — mereka tidak bisa Anda tebas dengan ketegasan.",
+        "Pesan praktis: jangan cari medan datar. Kelas Anda baru muncul saat menghadapi masalah berat — atur hidup supaya selalu ada satu “tantangan layak” di depan.",
+        "Hindari lingkungan terlalu kering (忌 土 berlebih) maupun air terlalu dalam (terlalu banyak distraksi/spekulasi). Cari ekuilibrium — ini juga sesuai dengan 偏印格 yang butuh keseimbangan input."
+      ]
+    },
+    "命宮": {
+      "hanzi": "巨門星：行動性的運動。具有對人生不斷地刺激地行動。性格如火般地強烈，地地感情記憶深刻、做事有實踐力、不好[?]，雖剛強但缺乏緩衝[?]。",
+      "indonesia": "Palace 命宮 (Diri) Anda dihuni bintang 巨門 (Ju Men) dan beresonansi dengan tema 廉貞 (Lian Zhen).\n\n• Tipe karakter aksi — gerak hidup terus mendorong Anda untuk melakukan, mencoba, dan tidak diam.\n• Karakter “seperti api” — emosional, intens, ingatan emosional yang dalam.\n• Punya daya eksekusi nyata: dipikirkan langsung dijalankan.\n• Tegas dan kokoh, tetapi sering kurang “buffer” halus untuk meredam benturan.\n• Kombinasi 巨門 + 廉貞 secara klasik menggambarkan tokoh berjiwa pejuang yang bersuara — perlu menjaga ucapan agar tidak terlalu tajam.\n[Beberapa baris transkrip foto kurang tajam dan ditandai dengan [?]]",
+      "tafsir": [
+        "巨門 + resonansi 廉貞 di 命宮 申 Anda = tipe komunikator-pejuang. Kekuatan utama: artikulasi tajam dan eksekusi cepat — keduanya langka dimiliki bersamaan.",
+        "Sisi “seperti api” mudah membakar. Aturan praktis untuk umur 60-an: tunda respon 24 jam sebelum mengirim pesan/email yang emosional.",
+        "Ingatan emosional yang dalam adalah modal sebagai mentor / cerita-pemberi-makna — namun jangan dipakai sebagai amunisi konflik lama.",
+        "Day Master 庚金 + 命宮 申 (rumah Logam) = lapisan ganda Logam. Itu sebab Anda kokoh, tapi juga sebab Anda butuh ekstra Air (relaksasi, refleksi) supaya tidak getas.",
+        "Peran ideal di 大運 丙辰 sekarang: bukan front-line, tapi “suara keras yang dipakai sengaja” — pengarah, juri, kritikus konstruktif."
+      ]
+    },
+    "夫妻": {
+      "hanzi": "外觀上似乎是熱情的一對。相會的瞬間立刻燃起熊熊烈火，但愛之火很可能立刻就消失。但在與對方分手時相當乾脆，絕不會糾纏不清。您似乎是早婚的人，但是可能的話盡量晚婚，才能有幸福和諧的婚姻生活。男性常能與頭腦聰明的優秀女子結婚，女性則與才氣縱橫的男人結婚。與太陰星同宮的男人可獲美女為妻。天梁星同宮者，是金童玉女型的夫婦。有凶星阻擾時，夫妻情感惡劣，恐有離別之處。\n太陰星象徵情澈皎潔的月光，因此男女都是天真爛漫的類型。再與文昌、文曲同宮的話，更見教養的優秀。男人可獲文靜且情感細膩的女子為妻。女性或許會與清廉的藝術家類型結婚吧！與太陽星同宮，夫妻生活圓滿。與天機星同宮者，更是令人羨慕不已的金童玉女型夫妻。但如凶星同宮則恐有離婚的可能。",
+      "indonesia": "Dari luar, Anda dan pasangan tampak sebagai pasangan yang penuh gairah. Begitu bertemu, api cinta menyala besar — tetapi api itu juga bisa cepat padam. Namun saat berpisah Anda tegas; tidak menggantung-gantung urusan.\n\nAnda cenderung menikah muda; tetapi bila memungkinkan, lebih baik tunda — pernikahan yang lebih matang akan membawa keharmonisan.\n\nPria dengan pola ini sering menikahi wanita cerdas dan berbakat. Wanita dengan pola ini menikahi pria berbakat dan berkarisma.\n\nBila bintang 太陰 (Tai Yin) bersanding di palace pasangan: pria mendapatkan istri yang lembut dan rupawan.\nBila bersama 天梁 (Tian Liang): pasangan ideal “pangeran-putri”.\nBila bersama 太陽 (Tai Yang): kehidupan rumah tangga utuh & bahagia.\nBila bersama 天機 (Tian Ji): pasangan idaman yang dikagumi banyak orang.\nBila ada bintang yang kurang baik: hubungan suami-istri perlu kerja ekstra; ada potensi perpisahan — namun bukan kepastian.",
+      "tafsir": [
+        "Pola “api cepat menyala lalu cepat padam” adalah ciri 庚金 + palace 夫妻 yang dinamis. Solusi: bangun ritual harian (sarapan/teh sore bersama) — itu yang menjaga bara.",
+        "Kelebihan Anda dalam berpisah dengan tegas (tidak menggantung) sebenarnya berkah — di umur sekarang, terapkan ini untuk konflik kecil: selesaikan hari ini, jangan dipendam.",
+        "Saran “晚婚” sudah tidak relevan secara harfiah, tapi prinsipnya hidup: matangkan setiap fase pernikahan baru (anak menikah, pensiun, pindah rumah) sebagai 'pernikahan ulang'.",
+        "Pasangan + Wen Chang/Wen Qu yang disebut transkrip = kalau pasangan Anda artistik/edukatif, dukung secara finansial; itu langsung memperkuat 喜用神 Anda.",
+        "Hindari menjadi “api yang membakar” saat lelah; pakai sinyal pribadi (mis. minum air) sebelum percakapan berat dengan pasangan."
+      ]
+    },
+    "子女": {
+      "hanzi": "您的孩子是孝敬雙親的乖孩子。\n兒女宮有天府的吉星庇護，您的兒女為數必不少吧！兒女們各自長大成人後，必也會為了孝敬您而盡心盡力吧！但萬一有凶星同宮的話，雖也仍會有兒女，可是並不會帶給您多大的益處。",
+      "indonesia": "Anak Anda adalah anak-anak yang berbakti pada orangtua.\nPalace 子女 (Anak) Anda dilindungi bintang baik 天府 (Tian Fu) — kemungkinan jumlah anak tidak sedikit. Setelah dewasa, mereka akan berbakti pada Anda dengan sepenuh hati.\nBila ada bintang yang kurang baik di palace yang sama, anak tetap ada tetapi mungkin tidak banyak memberi keuntungan praktis kepada Anda.",
+      "tafsir": [
+        "天府 di palace 子女 = anak Anda sebenarnya “lumbung” — mereka tipe yang menjaga & menampung. Peran Anda bukan lagi menyetir, tapi memberi ruang & restu.",
+        "Anak laki-laki yang berbakti perlu didorong mengambil tanggung jawab sendiri, jangan dilindungi terus — kalau tidak, kebaikan mereka akan mandeg.",
+        "Di umur 60-an, transfer pengetahuan adalah hadiah terbesar untuk anak — terstruktur (catat dalam tulisan), bukan hanya verbal.",
+        "Kalau Anda merasa anak “tidak memberi cukup”, baca ulang tafsir asli: peringatannya tentang “apabila ada bintang jahat”. Tanpa itu, dukungan mereka adalah natural — biarkan datang dengan ritme mereka."
+      ]
+    },
+    "疾厄": {
+      "hanzi": "易患肝病。顏面神經痛。及失眠引起的神經衰弱。幼年時期曾受傷或受腫包之苦，及患足腰的疾病吧！如有其他吉星同宮者，健康絕對沒問題。與貪狼同宮，則易患腰部的疾病。如有其他凶星阻擾的話，恐會有神經痛、腰痛的毛病。\n孩童時代常為腫包所苦吧！與武曲星同宮者，易為眼病所苦。與廉貞星同宮者，手足易受傷。",
+      "indonesia": "Trend kesehatan yang perlu diperhatikan:\n• Mudah ada keluhan liver/hati.\n• Nyeri saraf wajah; insomnia yang menyebabkan kelelahan saraf.\n• Masa kecil pernah cedera atau menderita bengkak/benjolan; rentan masalah kaki & pinggang.\n\nBila bintang baik lain bersanding di palace 疾厄 — kesehatan terjaga.\nBila bersama 貪狼 (Tan Lang) — pinggang lebih rentan.\nBila bersama 武曲 (Wu Qu) — mata lebih rentan.\nBila bersama 廉貞 (Lian Zhen) — kaki & tangan rentan cedera.\nBila ada bintang kurang baik — bisa muncul nyeri saraf dan nyeri pinggang berulang.\n\nSaran: pemeriksaan rutin liver, jaga pola tidur, dan latihan postur untuk pinggang akan banyak membantu.",
+      "tafsir": [
+        "庚金 dengan unsur 金 dominan + transkrip menyebut liver, mata, kaki-pinggang: pola Logam-keras yang minim relaksasi. 喜用神 水 Anda secara fisik = hidrasi cukup + tidur teratur.",
+        "Untuk masa kecil yang sering bengkak/cedera + 大運 丙辰 (七殺, fase tegang): periksa stress level, bukan hanya gula/tensi — 七殺 sering bermanifestasi di sistem saraf.",
+        "Latihan postur (pinggang) dan check-up liver tahunan adalah dua investasi kesehatan dengan ROI tertinggi untuk pola Anda.",
+        "Mata mudah lelah: kurangi screen-time setelah jam 9 malam — Logam butuh “gelap” untuk reset.",
+        "Sumber stres terbesar untuk 庚金 sering bukan beban kerja, tapi konflik nilai. Jaga diri dari relasi yang membuat Anda merasa “diperlakukan tidak fair” berkepanjangan."
+      ]
+    },
+    "遷移": {
+      "hanzi": "每次嘗試任何移動時，皆能順利地進展。大概不會有什麼障礙。似乎仍無法安渡平穩無事的人生。利用旅行、轉業、搬家，或許可解決眼前的許多困擾。您是屬於可獲得年長者愛護的人，所以無論改變何種職業都不會有什麼困擾。與太陰星同宮者，出外雖會遭逢不幸，但卻反可因禍而致福。不過，如與巨門星同宮的話，每次轉業、搬家就更加一分的勞累。\n每遇到任何變化時總有倒楣的事臨頭。例如搬家後發現新居是設備不全的住家，或轉某到新公司時才知道此公司紛爭不絕，或甚至於不久即關門大吉等等。反正走到哪兒哪兒就有倒楣事在等著。當在沒有時間保持心情的平靜。可能的話，凡事盡量不求變化，即使遭遇任何不愉快的事件，最好也能隱忍在內心裡。",
+      "indonesia": "Setiap kali Anda mencoba pindah/bergerak, semuanya cenderung lancar; hambatan jarang serius. Namun hidup Anda sulit benar-benar “tenang dan datar” — selalu ada gerak. Memanfaatkan perjalanan, pindah profesi, atau pindah rumah sering kali bisa menyelesaikan banyak kekhawatiran sekarang.\n\nAnda adalah tipe yang mendapat kasih sayang dari orang yang lebih tua, jadi pindah profesi apapun tidak akan terlalu menyusahkan.\n\nBila 太陰 (Tai Yin) bersanding di palace 遷移: keluar mungkin temui kesialan kecil — tetapi sialnya berbalik jadi berkah.\nBila 巨門 (Ju Men) bersanding: setiap kali pindah profesi/rumah jadi lebih melelahkan.\n\nDi sisi lain, ada catatan klasik: setiap perubahan datang dengan masalah kecil — misal pindah rumah ternyata fasilitasnya tidak lengkap, atau perusahaan baru ternyata banyak konflik internal. Saran tradisi: bila tidak benar-benar perlu, jangan terlalu sering cari perubahan; bila menghadapi hal yang tidak menyenangkan, lebih bijak ditahan dalam hati daripada langsung diledakkan.",
+      "tafsir": [
+        "Pola “gerakan lancar tapi hidup tidak pernah tenang” adalah karakter 寅 + 驛馬 + 庚金 — bukan kutukan, itu energi natural. Resep: bukan menghindari gerakan, tapi memilih ritme yang Anda mampu.",
+        "Saat Anda merasa stuck, satu intervensi paling murah: 1-2 minggu pindah lingkungan (rumah saudara, cottage, hotel kerja) — sering itu cukup mereset 大運 丙辰.",
+        "Saran klasik “tahan emosi di dalam” perlu di-update: tahan reaksi cepat, tapi tetap proses emosi (jurnal, bicara dengan teman) — kalau dipendam total, Logam jadi karat.",
+        "Pindah profesi di umur 60-an = mungkin, tapi sebaiknya dalam bentuk shift peran (dari operasional ke advisory) bukan ganti industri total."
+      ]
+    },
+    "財帛": {
+      "hanzi": "正經地儲蓄金錢，另一方面又能高明地運用儲蓄金。",
+      "indonesia": "Anda menabung dengan disiplin & jujur, dan di saat bersamaan juga lihai mengelola tabungan untuk kebutuhan yang lebih besar.\n\nKombinasi langka: orang yang hemat sekaligus paham cara “memutar” uang.",
+      "tafsir": [
+        "Disiplin menabung Anda + lihai mengelola tabungan = pasangan yang langka. Skala-up: gunakan struktur formal (rekening tujuan terpisah) — supaya disiplin tidak bergantung mood.",
+        "Di 大運 七殺 sekarang, tantangan: peluang besar berisiko besar muncul lebih sering. Komitmen aturan dulu (max % portofolio) sebelum peluang datang.",
+        "庚金 + 喜用神 水: pertimbangkan kelas aset yang “mengalir” — bonds, dividen, saham consumer staples — bukan emas/properti yang mengeras.",
+        "Beri 5-10% rezeki ke filantropi/keluarga besar setiap bulan: itu “air mengalir keluar” yang justru menjaga aliran masuk tetap lancar — sesuai prinsip 喜用神 Anda."
+      ]
+    },
+    "官祿": {
+      "hanzi": "可當藝術家、政治家、事業家，特別是與水力、流通、金融等有關的工作，從事色情方面的工作也不錯吧！",
+      "indonesia": "Karir formal yang searah:\n• Seniman, politikus, pengusaha.\n• Khususnya pekerjaan yang berkaitan dengan tenaga air (perairan, hidro), distribusi/sirkulasi (logistik, perdagangan), dan keuangan.\n• Industri hiburan dewasa juga disebut sebagai opsi dalam catatan asli — diserahkan ke Anda sebagai pilihan etis pribadi.",
+      "tafsir": [
+        "Catatan klasik menyebut beberapa industri (termasuk hiburan dewasa) — saring sesuai etika & nilai pribadi Anda. Tafsir pakai prinsip elemen 水 + 木: pilih yang berdaya alir & berbudi pendidik.",
+        "Politik / pengusaha / seniman cocok karena format 偏印格 Anda butuh “panggung tidak konvensional”. Hindari peran murni administratif — itu memboroskan modal karakter Anda.",
+        "Di 七殺 大運, Anda pas berperan sebagai “tokoh yang berani bicara” — komentator, advisor industri, board member. Bukan eksekutif lapangan.",
+        "Reputasi adalah aset utama umur 60-an — jaga dengan menjawab “tidak” lebih sering daripada “ya”. Setiap proyek yang ditolak dengan elegan justru meningkatkan nilai Anda."
+      ]
+    },
+    "田宅": {
+      "hanzi": "暗示為不動產而奔波，或終歸於空無。\n擁有土地、房屋。從經營公寓開始著手可致富。如有凶星同宮阻擾時，好不容易賺到的不動產，到順來也不得不拱手讓人。紫微星與土有緣，可能的話，盡量移居住於多土的地方較適合吧！與吉星同宮者，可得勝人一籌的不動產，遇到凶星者必導致破產。是多變化的不動產運。可能獲得意料不到的不動產，或非法手段取得的土地房屋。西方大吉。",
+      "indonesia": "Tanda bahwa Anda akan banyak sibuk dengan urusan properti — atau, sebaliknya, justru pada akhirnya berkurang.\n\n• Memiliki tanah dan rumah; memulai dari mengelola apartemen / rumah sewa adalah jalan kekayaan yang searah.\n• Bila ada bintang kurang baik bersanding: properti yang susah-susah didapat bisa terpaksa diserahkan ke pihak lain.\n• Bintang 紫微 (Zi Wei) berjodoh dengan unsur Tanah — kalau bisa, tinggal di daerah yang berciri “tanah” (perbukitan, area dengan pondasi kokoh) lebih cocok.\n• Bila bintang baik bersanding: properti Anda lebih unggul dari rata-rata.\n• Bila bintang sangat tidak menguntungkan bersanding: hindari spekulasi properti tanpa hitungan matang.\n\nTrend: perubahan properti yang dinamis. Bisa dapat properti tidak terduga.\n\nArah keberuntungan properti: BARAT.",
+      "tafsir": [
+        "Sinyal “sibuk dengan properti” sangat khas 庚金 + 紫微-bumi. Selama Anda mengerti aturan main, properti memang “lapangan permainan” natural Anda — dengan disiplin.",
+        "Mulai dari mengelola apartemen (kos / sewa) lebih sesuai 喜用神 水 (aliran cashflow) daripada investasi tanah kosong (土 statis).",
+        "Arah keberuntungan Barat — pertimbangkan ini untuk fokus akuisisi properti, atau orientasi ruang kerja di rumah utama.",
+        "Hindari spekulasi properti di 大運 七殺 ini; ini bukan fase “gas full akuisisi”. Konsolidasi & lepas properti yang menguras energi (sengketa, sewa macet) lebih bernilai.",
+        "Bila ada properti dari “sumber tidak jelas” muncul (warisan rebutan, pembagian rumit) — selesaikan secara legal & transparan, jangan diam-diam. Itu salah satu trigger 七殺 yang bisa berlarut."
+      ]
+    },
+    "僕役": {
+      "hanzi": "就像一頭牛那般慢吞吞的遲鈍部下。",
+      "indonesia": "Bawahan / staf di sekitar Anda seperti seekor sapi — lambat dan kurang sigap dalam merespons.\n\nReframing: tipe loyal-pekerja-keras yang tidak cepat panik. Cocok untuk pekerjaan yang butuh konsistensi. Kurang cocok untuk pekerjaan yang menuntut respons cepat — Anda perlu memberi instruksi yang lebih jelas dan deadline yang lebih longgar.",
+      "tafsir": [
+        "Bawahan “lambat seperti sapi” = sebenarnya tipe loyal-konsisten. 庚金 yang serba cepat sering frustasi; reframing: mereka adalah pondasi, bukan akselerator.",
+        "Beri instruksi tertulis + deadline yang lebih longgar 30% dari ekspektasi awal — output naik signifikan, konflik turun.",
+        "Cocok untuk peran berulang & detail-oriented (pembukuan, maintenance, customer service rutin). Jangan paksa mereka di peran inovatif.",
+        "Di 大運 七殺, godaan untuk “ganti tim” akan besar. Tahan sebentar — sering kali tim lama yang dilatih ulang lebih untung daripada cari baru."
+      ]
+    },
+    "父母": {
+      "hanzi": "雙親本身，或您與雙親之間易起變化的暗示。\n如位於子、亥之宮內的人，雙親都可享長壽，親子關係也圓滿。您的雙親頗明事理，享受人生而能平安渡愉快的日子，是樂天派的類型。處世方式也高明。您在雙親薰陶下，自然而然地，也學會了處世方法吧！與武曲星、廉貞星同宮者，與雙親有所衝突吧！",
+      "indonesia": "Petunjuk bahwa orangtua sendiri, atau hubungan Anda dengan orangtua, mudah berubah.\n\nBila palace 父母 berada di 子 (Tikus) atau 亥 (Babi): orangtua bisa hidup panjang umur, hubungan orangtua-anak harmonis. Orangtua Anda paham hidup, menikmati hidup dengan damai dan ceria — tipe optimis. Cara mereka menghadapi dunia juga cerdas. Di bawah pengaruh mereka, secara alami Anda pun belajar cara hidup tersebut.\n\nBila bersama 武曲 (Wu Qu) atau 廉貞 (Lian Zhen): mungkin ada gesekan dengan orangtua — perlu dikomunikasikan dengan tenang.",
+      "tafsir": [
+        "Konfigurasi palace 父母 yang “mudah berubah” + orangtua optimis = relasi Anda dengan beliau adalah tarik-ulur antara stabilitas mereka & kebutuhan otonomi Anda.",
+        "Tipe orangtua optimis-cerdas adalah guru hidup Anda yang sebenarnya — banyak pola eksekusi Anda diwarisi dari mereka, sadari & syukuri.",
+        "Bila ada gesekan (terutama bila pola 武曲/廉貞 muncul): biasanya bukan soal isu, tapi soal cara penyampaian. Pakai bahasa apresiasi sebelum kritik.",
+        "Di umur 60-an dengan orangtua mungkin sudah lansia atau sudah tiada: pakai dialog batin / ritual ziarah sebagai cara meneruskan transmisi nilai. Itu juga memperkuat palace 父母 Anda untuk diteruskan ke anak."
+      ]
+    },
+    "福德": {
+      "hanzi": "穩重而使人感到濃厚的人情味。\n剛開始時雖無啥顯眼之處，但隨著時日，福德也因之而俱增。您待人處世態度溫和柔軟，但稍欠缺積極性，在努力獲得成功的果實之前，必得經過一段時日吧！凶星進入的話，無法長保平穩，是不安定的人生。\n凡事無法稱心如意，如能在健康下留心，自然可得財運之賜，獲得滿意的人生。不要太出風頭，以擔任某人的輔佐角色採取行動的話，最後必有所成就。",
+      "indonesia": "Anda tenang & stabil, dan memberikan kesan kemanusiaan yang hangat.\n\nDi awal mungkin tidak menonjol, tetapi seiring waktu, “rekening” berkah Anda juga ikut tumbuh. Sikap Anda pada orang lain lembut — tetapi memang kurang proaktif. Buah keberhasilan butuh waktu untuk matang.\n\nBila ada bintang kurang baik masuk: stabilitas susah dijaga jangka panjang — hidup terasa kurang menentu.\n\nTidak segala hal bisa berjalan sesuai keinginan, tetapi bila Anda menjaga kesehatan, rezeki akan datang dengan sendirinya, dan kehidupan menjadi memuaskan. Jangan terlalu cari sorotan — bila Anda berperan sebagai pendamping/wakil orang lain, pada akhirnya Anda pasti berhasil.",
+      "tafsir": [
+        "Pola “lambat di awal, makin tua makin berkah” cocok dengan 偏印格 — energi Anda dirancang untuk maraton, bukan sprint. Umur 60-an adalah mulai panen.",
+        "Sisi “kurang proaktif” yang disebut transkrip bukan kelemahan — itu kompensasi untuk eksekusi cepat di sisi lain. Anda butuh rest mode untuk reload.",
+        "Saran “jadi pendamping/wakil” sangat sesuai untuk 大運 丙辰 sekarang: peran #2 yang strategis (CEO bayangan / board member) sering lebih berdampak daripada #1 di panggung.",
+        "Jaga kesehatan = kunci utama membuka rezeki di umur ini. 福德 dan 疾厄 saling menopang — investasi kesehatan = investasi rezeki secara langsung.",
+        "Hangatkan relasi dengan orang-orang yang sudah lama mengenal Anda. Kebajikan yang sudah ditanam (transkrip menyebut 'kemanusiaan yang hangat') sudah bertumbuh — saatnya panen, bukan menanam baru."
+      ]
+    }
+  },
+  "chart": {
+    "subject": {
+      "birth_solar": "1962-10-29 05:00",
+      "gender": "M",
+      "shio_branch": "寅",
+      "shio_id": "Macan",
+      "shio_filename": "Macan"
+    },
+    "pilar": {
+      "year": {
+        "stem": "壬",
+        "branch": "寅",
+        "stem_id": "壬 (水 陽)",
+        "branch_id": "Macan"
+      },
+      "month": {
+        "stem": "庚",
+        "branch": "戌",
+        "stem_id": "庚 (金 陽)",
+        "branch_id": "Anjing"
+      },
+      "day": {
+        "stem": "庚",
+        "branch": "子",
+        "stem_id": "庚 (金 陽)",
+        "branch_id": "Tikus"
+      },
+      "hour": {
+        "stem": "己",
+        "branch": "卯",
+        "stem_id": "己 (土 陰)",
+        "branch_id": "Kelinci"
+      }
+    },
+    "day_master": {
+      "stem": "庚",
+      "element": "金",
+      "element_id": "Logam",
+      "yin_yang": "陽",
+      "label_id": "庚金 — Logam 陽"
+    },
+    "wu_xing": {
+      "金": 2.3,
+      "木": 1.4,
+      "水": 1.7,
+      "火": 0.6,
+      "土": 2.0
+    },
+    "da_yun": [
+      {
+        "age_start": 5,
+        "age_end": 14,
+        "stem": "辛",
+        "branch": "亥",
+        "gz": "辛亥",
+        "shi_shen": "劫財",
+        "element": "金"
+      },
+      {
+        "age_start": 15,
+        "age_end": 24,
+        "stem": "壬",
+        "branch": "子",
+        "gz": "壬子",
+        "shi_shen": "食神",
+        "element": "水"
+      },
+      {
+        "age_start": 25,
+        "age_end": 34,
+        "stem": "癸",
+        "branch": "丑",
+        "gz": "癸丑",
+        "shi_shen": "傷官",
+        "element": "水"
+      },
+      {
+        "age_start": 35,
+        "age_end": 44,
+        "stem": "甲",
+        "branch": "寅",
+        "gz": "甲寅",
+        "shi_shen": "偏財",
+        "element": "木"
+      },
+      {
+        "age_start": 45,
+        "age_end": 54,
+        "stem": "乙",
+        "branch": "卯",
+        "gz": "乙卯",
+        "shi_shen": "正財",
+        "element": "木"
+      },
+      {
+        "age_start": 55,
+        "age_end": 64,
+        "stem": "丙",
+        "branch": "辰",
+        "gz": "丙辰",
+        "shi_shen": "七殺",
+        "element": "火"
+      },
+      {
+        "age_start": 65,
+        "age_end": 74,
+        "stem": "丁",
+        "branch": "巳",
+        "gz": "丁巳",
+        "shi_shen": "正官",
+        "element": "火"
+      },
+      {
+        "age_start": 75,
+        "age_end": 84,
+        "stem": "戊",
+        "branch": "午",
+        "gz": "戊午",
+        "shi_shen": "偏印",
+        "element": "土"
+      },
+      {
+        "age_start": 85,
+        "age_end": 94,
+        "stem": "己",
+        "branch": "未",
+        "gz": "己未",
+        "shi_shen": "正印",
+        "element": "土"
+      },
+      {
+        "age_start": 95,
+        "age_end": 104,
+        "stem": "庚",
+        "branch": "申",
+        "gz": "庚申",
+        "shi_shen": "比肩",
+        "element": "金"
+      }
+    ],
+    "format": {
+      "shi_shen": "偏印",
+      "name_cn": "偏印格",
+      "name_pinyin": "Pian Yin Ge"
+    },
+    "favorable": [
+      "水",
+      "木"
+    ],
+    "unfavorable": [
+      "金",
+      "土"
+    ]
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "subject_id": "michele",
+  "_built_by": "build_from_ocr.py V4.3",
+  "identity": {
+    "name_id": "Michele",
+    "name_hanzi": "米雪",
+    "gender_id": "Wanita",
+    "birth_date": "1995-07-22",
+    "birth_time": "14:00",
+    "birth_day_name": "Sabtu",
+    "birth_period_id": "siang",
+    "birth_hour_branch_hz": "未",
+    "birth_hour_period_label": "siang · 未時",
+    "lunar_date_text_new": "tanggal 25 bulan 6 tahun 乙亥 (Yi Hai · 1995)",
+    "lunar_year_pillar_hz": "乙亥",
+    "lunar_republic_text": "民國 84 年 6 月 25 日",
+    "age_at_report": 30
+  },
+  "shio": {
+    "branch_hz": "亥",
+    "branch_pinyin": "Hài",
+    "id": "Babi",
+    "id_upper": "BABI",
+    "svg_red": "Babi-Merah.svg",
+    "svg_black": "Babi-Hitam.svg"
+  },
+  "day_master": {
+    "stem_hz": "甲",
+    "stem_element_hz": "木",
+    "stem_element_id": "Kayu",
+    "polarity_id": "Yang",
+    "label_id": "Pohon Besar",
+    "label_long_id": "Kayu",
+    "pinyin": "Jiǎ 木",
+    "strength_id": "Kuat",
+    "strength_hz": "旺"
+  },
+  "pillars": {
+    "year": {
+      "stem_hz": "乙",
+      "branch_hz": "亥",
+      "stem_id": "Yi",
+      "branch_id": "Hai"
+    },
+    "month": {
+      "stem_hz": "癸",
+      "branch_hz": "未",
+      "stem_id": "Gui",
+      "branch_id": "Wei"
+    },
+    "day": {
+      "stem_hz": "甲",
+      "branch_hz": "寅",
+      "stem_id": "Jia",
+      "branch_id": "Yin",
+      "is_day_master": true
+    },
+    "hour": {
+      "stem_hz": "辛",
+      "branch_hz": "未",
+      "stem_id": "Xin",
+      "branch_id": "Wei"
+    }
+  },
+  "wuxing": {
+    "jin": {
+      "value": 1.0,
+      "percent": 8.3,
+      "label_id": "Logam"
+    },
+    "shui": {
+      "value": 2.0,
+      "percent": 16.7,
+      "label_id": "Air"
+    },
+    "mu": {
+      "value": 5.0,
+      "percent": 41.7,
+      "label_id": "Kayu"
+    },
+    "huo": {
+      "value": 2.0,
+      "percent": 16.7,
+      "label_id": "Api"
+    },
+    "tu": {
+      "value": 2.0,
+      "percent": 16.7,
+      "label_id": "Tanah"
+    },
+    "total": 12.0,
+    "self_value": 5.0,
+    "self_strength_id": "KUAT"
+  },
+  "yong_shen": {
+    "elements_hz": "金 水",
+    "elements_id": "Logam & Air",
+    "label_id": "Penopang & Pengarah"
+  },
+  "ji_shen": {
+    "elements_hz": "金",
+    "elements_id": "Logam",
+    "label_id": "Pelumat & Pemicu"
+  },
+  "format": {
+    "hz": "正印格",
+    "pinyin": "Zheng Yin Ge",
+    "label_id": "Pelajar Tekun"
+  },
+  "da_yun": {
+    "start_age": 5,
+    "direction_id": "forward",
+    "current_index": 2,
+    "axis_marks": [
+      5,
+      15,
+      25,
+      35,
+      45,
+      55,
+      65,
+      75,
+      85,
+      95,
+      105
+    ],
+    "cycles": [
+      {
+        "n": 1,
+        "age_start": 5,
+        "age_end": 14,
+        "stem_hz": "甲",
+        "branch_hz": "申",
+        "ten_god_hz": "比肩",
+        "ten_god_id": "Pundak Sama",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 2,
+        "age_start": 15,
+        "age_end": 24,
+        "stem_hz": "乙",
+        "branch_hz": "酉",
+        "ten_god_hz": "劫財",
+        "ten_god_id": "Saudara Sebanding",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 3,
+        "age_start": 25,
+        "age_end": 34,
+        "stem_hz": "丙",
+        "branch_hz": "戌",
+        "ten_god_hz": "食神",
+        "ten_god_id": "Pencipta",
+        "element_class": "el-huo",
+        "is_current": true
+      },
+      {
+        "n": 4,
+        "age_start": 35,
+        "age_end": 44,
+        "stem_hz": "丁",
+        "branch_hz": "亥",
+        "ten_god_hz": "傷官",
+        "ten_god_id": "Kritikus Tajam",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 5,
+        "age_start": 45,
+        "age_end": 54,
+        "stem_hz": "戊",
+        "branch_hz": "子",
+        "ten_god_hz": "偏財",
+        "ten_god_id": "Rezeki Bisnis",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 6,
+        "age_start": 55,
+        "age_end": 64,
+        "stem_hz": "己",
+        "branch_hz": "丑",
+        "ten_god_hz": "正財",
+        "ten_god_id": "Rezeki Tetap",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 7,
+        "age_start": 65,
+        "age_end": 74,
+        "stem_hz": "庚",
+        "branch_hz": "寅",
+        "ten_god_hz": "七殺",
+        "ten_god_id": "Pemurnian",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 8,
+        "age_start": 75,
+        "age_end": 84,
+        "stem_hz": "辛",
+        "branch_hz": "卯",
+        "ten_god_hz": "正官",
+        "ten_god_id": "Otoritas",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 9,
+        "age_start": 85,
+        "age_end": 94,
+        "stem_hz": "壬",
+        "branch_hz": "辰",
+        "ten_god_hz": "偏印",
+        "ten_god_id": "Mentor",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 10,
+        "age_start": 95,
+        "age_end": 104,
+        "stem_hz": "癸",
+        "branch_hz": "巳",
+        "ten_god_hz": "正印",
+        "ten_god_id": "Pelajaran",
+        "element_class": "el-shui"
+      }
+    ],
+    "seasons": [
+      {
+        "el_class": "s-mu",
+        "el_hz": "木",
+        "name_id": "Pemurnian Awal",
+        "age_start": 5,
+        "age_end": 24
+      },
+      {
+        "el_class": "s-huo",
+        "el_hz": "火",
+        "name_id": "Belajar & Mentor",
+        "age_start": 25,
+        "age_end": 44,
+        "is_current": true
+      },
+      {
+        "el_class": "s-tu",
+        "el_hz": "土",
+        "name_id": "Berbagi Panggung",
+        "age_start": 45,
+        "age_end": 64
+      },
+      {
+        "el_class": "s-jin",
+        "el_hz": "金",
+        "name_id": "Berkarya Tenang",
+        "age_start": 65,
+        "age_end": 84
+      },
+      {
+        "el_class": "s-shui",
+        "el_hz": "水",
+        "name_id": "Memetik Rezeki",
+        "age_start": 85,
+        "age_end": 104
+      }
+    ],
+    "spotlight_headline_html": "Fase <span class=\"hz\">食神</span> (Pencipta) — periode utama untuk mengalirkan ide jadi karya",
+    "spotlight_tag_tone_html": "Api · ekspresi",
+    "spotlight_tag_combo_html": "Output Mekar",
+    "spotlight_tag_combo_pair": [
+      "丙",
+      "戌"
+    ],
+    "spotlight_bullets_html": [
+      "<strong>Fokus utama</strong> — pilar <span class=\"hz\">食神</span> mendorong Anda untuk mengalirkan ide jadi karya. Selaraskan agenda 10 tahun ini ke arah tersebut.",
+      "<strong>Energi 火</strong> — batang <span class=\"hz\">丙</span> (火) berinteraksi dengan Day Master <span class=\"hz\">甲</span> (木); tone fase: Api · ekspresi.",
+      "<strong>Cabang <span class=\"hz\">戌</span></strong> menentukan medan harian — kebiasaan, lingkungan, dan relasi yang dibangun di rentang umur 25–34 akan jadi pondasi fase berikutnya.",
+      "<strong>Setelah 34</strong> masuk <span class=\"hz\">丁亥 (傷官)</span> — berekspresi tajam & memberontak halus. Siapkan transisi sekarang."
+    ],
+    "footer_caption_html": "Michele sedang di fase <span style=\"font-family:'Noto Serif TC',serif;color:var(--red)\">食神</span> (25–34) — mengalirkan ide jadi karya. Periode 25–44 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir."
+  },
+  "marriage": {
+    "self_branch_index": 11,
+    "cocok": [
+      {
+        "branch_hz": "戌",
+        "id": "Anjing",
+        "relationship_hz": "三合",
+        "relationship_id": "TRIPLE",
+        "reason_id": "Triple harmony."
+      },
+      {
+        "branch_hz": "午",
+        "id": "Kuda",
+        "relationship_hz": "三合",
+        "relationship_id": "TRIPLE",
+        "reason_id": "Triple harmony."
+      },
+      {
+        "branch_hz": "亥",
+        "id": "Babi",
+        "relationship_hz": "三合",
+        "relationship_id": "TRIPLE",
+        "reason_id": "Triple harmony."
+      }
+    ],
+    "hindari": [
+      {
+        "branch_hz": "申",
+        "id": "Monyet",
+        "relationship_hz": "六害",
+        "relationship_id": "MENGHAMBAT",
+        "reason_id": "Halangan halus."
+      },
+      {
+        "branch_hz": "巳",
+        "id": "Ular",
+        "relationship_hz": "六沖",
+        "relationship_id": "BENTROK",
+        "reason_id": "Bentrok langsung."
+      }
+    ]
+  },
+  "yang_zhai": {
+    "gua_hz": "震",
+    "gua_pinyin": "Zhèn",
+    "gua_label_id": "Petir",
+    "gua_direction_id": "Timur",
+    "gua_direction_abbr": "T",
+    "group_id": "Timur",
+    "sumbu_hoki_hz": "東↔西",
+    "sumbu_hoki_id": "T ↔ B",
+    "trigram_symbol": "☳"
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "貪狼",
+    "shen_zhu_hz": "天機",
+    "ming_gong_hz": "子",
+    "shen_gong_hz": "寅",
+    "wu_xing_ju_hz": "火六局",
+    "shi_jun_hz": "子",
+    "ming_gong_id": "Istana Hidup · Tikus",
+    "shen_gong_id": "Istana Tubuh · Harimau",
+    "shi_jun_id": "Penguasa Waktu · Tikus",
+    "ming_zhu_id": "Penguasa Hidup",
+    "shen_zhu_id": "Penguasa Tubuh",
+    "wu_xing_ju_id": "Aliran Api Enam"
+  }
+}

@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Daftar Isi · Template Shared</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-toc { grid-template-rows: 1fr !important; }
+  .toc-frame {
+    background: var(--bg-card); border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm; padding: 3mm 5mm;
+    display: flex; flex-direction: column;
+    gap: 1.5mm; overflow: hidden;
+  }
+  .toc-eyebrow {
+    text-align: center;
+    border-bottom: 0.3mm solid var(--gold-soft);
+    padding-bottom: 1.5mm;
+    flex-shrink: 0;
+  }
+  .toc-eyebrow .cn {
+    font-family: 'Noto Serif TC', serif; font-size: 14pt;
+    color: var(--red); letter-spacing: 5px; font-weight: 700;
+    line-height: 1;
+  }
+  .toc-eyebrow .id {
+    font-family: 'Playfair Display', serif; font-size: 8pt;
+    font-style: italic; color: var(--text-muted);
+    margin-top: 0.3mm; letter-spacing: 1.2px;
+  }
+
+  .toc-list { display: flex; flex-direction: column; gap: 0.5mm; flex: 1; min-height: 0; }
+
+  .toc-section {
+    display: grid; grid-template-columns: 10mm 1fr;
+    gap: 2.5mm; align-items: center;
+    padding: 0.6mm 2mm;
+    background-color: #F5EBD0;
+    background: linear-gradient(90deg, var(--gold-bg), transparent);
+    border-left: 0.7mm solid var(--gold);
+    border-radius: 0 1mm 1mm 0;
+    flex-shrink: 0;
+  }
+  .toc-section .num {
+    font-family: 'Noto Serif TC', serif; font-size: 10pt;
+    color: var(--red); letter-spacing: 1px; font-weight: 700;
+  }
+  .toc-section .title {
+    font-family: 'Noto Serif TC', serif; font-size: 8.5pt;
+    color: var(--red); font-weight: 700; letter-spacing: 1.5px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .toc-section .title .id {
+    font-family: 'Playfair Display', serif; font-size: 6.8pt;
+    font-style: italic; color: var(--text); margin-left: 2mm;
+    letter-spacing: 0.3px; font-weight: 400;
+  }
+
+  .toc-rows { display: flex; flex-direction: column; gap: 0; flex-shrink: 0; }
+  .toc-row {
+    display: grid; grid-template-columns: 9mm 5mm 1fr;
+    gap: 2mm; align-items: baseline;
+    padding: 0.5mm 2mm 0.5mm 5mm;
+    border-bottom: 0.15mm dotted var(--gold-soft);
+    font-size: 7pt;
+  }
+  .toc-row:last-child { border-bottom: none; }
+  .toc-row .pg {
+    font-family: 'Playfair Display', serif;
+    font-size: 7.5pt; color: var(--gold);
+    font-weight: 700; text-align: right;
+  }
+  .toc-row .ico {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 8.5pt; color: var(--red); font-weight: 600;
+    text-align: center; line-height: 1;
+  }
+  .toc-row .name {
+    color: var(--text); font-weight: 500; line-height: 1.2;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .toc-row .name strong { color: var(--red); font-family: 'Noto Serif TC', serif; margin-right: 1.2mm; }
+  .toc-row .gloss { font-size: 6pt; color: var(--text-muted); font-style: italic; margin-left: 1mm; }
+
+  .toc-foot {
+    text-align: center;
+    font-size: 6.5pt; color: var(--text-muted);
+    letter-spacing: 1px; text-transform: uppercase;
+    border-top: 0.3mm solid var(--gold-soft);
+    padding-top: 1.2mm; font-style: italic;
+    flex-shrink: 0;
+  }
+  .toc-foot .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; margin: 0 1mm; }
+</style>
+</head>
+<body>
+<section class="page no-bar">
+  <header class="page-header">
+    <div class="h-num">02</div>
+    <div class="h-titles">
+      <div class="h-cn">目 錄</div>
+      <div class="h-id">Daftar Isi</div>
+    </div>
+    <div class="h-section">Pendahuluan</div>
+  </header>
+
+  <main class="content content-toc">
+    <div class="toc-frame">
+      <div class="toc-eyebrow">
+        <div class="cn">目 錄</div>
+        <div class="id">Mù Lù — Peta Perjalanan Bagan Anda</div>
+      </div>
+
+      <div class="toc-list">
+<!--TOC_AUTO-->
+        <!-- BAGIAN 0: PENDAHULUAN -->
+        <div class="toc-section">
+          <div class="num">序</div>
+          <div class="title">序 言<span class="id">Pendahuluan · Pages 1–4</span></div>
+        </div>
+        <div class="toc-rows">
+          <div class="toc-row"><div class="pg">01</div><div class="ico">封</div><div class="name">Cover<span class="gloss">— Sampul</span></div><div></div></div>
+          <div class="toc-row"><div class="pg">02</div><div class="ico">目</div><div class="name">Daftar Isi<span class="gloss">— Mù Lù 目錄 (halaman ini)</span></div><div></div></div>
+          <div class="toc-row"><div class="pg">03</div><div class="ico">引</div><div class="name">Pengantar &amp; Cara Membaca<span class="gloss">— Yǐn Yán 引言</span></div><div></div></div>
+          <div class="toc-row"><div class="pg">04</div><div class="ico">柱</div><div class="name"><strong>四柱</strong>Profil &amp; Empat Pilar<span class="gloss">— Sì Zhù · Empat Pilar</span></div><div></div></div>
+        </div>
+
+        <!-- BAGIAN I: BAZI -->
+        <div class="toc-section">
+          <div class="num">壹</div>
+          <div class="title">八 字 四 柱<span class="id">Bagian I · BaZi · Pages 5–14</span></div>
+        </div>
+        <div class="toc-rows">
+          <div class="toc-row"><div class="pg">05</div><div class="ico">·</div><div class="name">Pembuka Bab — 八字 BaZi</div><div></div></div>
+          <div class="toc-row"><div class="pg">06</div><div class="ico">主</div><div class="name"><strong>日主</strong>Penguasa Hari &amp; 五行 Wu Xing Radar<span class="gloss">— Rì Zhǔ + Wǔ Xíng</span></div><div></div></div>
+          <div class="toc-row"><div class="pg">07</div><div class="ico">配</div><div class="name"><strong>婚配</strong>Kompatibilitas Jodoh<span class="gloss">— Hūn Pèi · Kompatibilitas</span></div><div></div></div>
+          <div class="toc-row"><div class="pg">08</div><div class="ico">情</div><div class="name"><strong>性情</strong>Kepribadian<span class="gloss">— Xìng Qíng · Kepribadian</span></div><div></div></div>
+          <div class="toc-row"><div class="pg">09</div><div class="ico">論</div><div class="name"><strong>全局總論</strong>Pandangan Keluarga<span class="gloss">— Quán Jú Zǒng Lùn</span></div><div></div></div>
+          <div class="toc-row"><div class="pg">10</div><div class="ico">煞</div><div class="name"><strong>神煞</strong>Bintang Nasib<span class="gloss">— Shén Shà · Bintang Berkah</span></div><div></div></div>
+          <div class="toc-row"><div class="pg">11</div><div class="ico">財</div><div class="name"><strong>財富</strong>Kekayaan &amp; Rezeki<span class="gloss">— Cái Fù · Rezeki</span></div><div></div></div>
+          <div class="toc-row"><div class="pg">12</div><div class="ico">業</div><div class="name"><strong>事業</strong>Karir &amp; Profesi<span class="gloss">— Shì Yè · Karir</span></div><div></div></div>
+          <div class="toc-row"><div class="pg">13</div><div class="ico">宅</div><div class="name"><strong>陽宅</strong>Feng Shui Hunian<span class="gloss">— Yáng Zhái · Home Feng Shui</span></div><div></div></div>
+          <div class="toc-row"><div class="pg">14</div><div class="ico">運</div><div class="name"><strong>大運</strong>Garis Hidup<span class="gloss">— Dà Yùn · Siklus 10 Tahunan</span></div><div></div></div>
+        </div>
+
+        <!-- BAGIAN II: ZI WEI -->
+        <div class="toc-section">
+          <div class="num">貳</div>
+          <div class="title">紫 微 斗 數<span class="id">Bagian II · Zi Wei · Pages 15–19</span></div>
+        </div>
+        <div class="toc-rows">
+          <div class="toc-row"><div class="pg">15</div><div class="ico">·</div><div class="name">Pembuka Bab — 紫微 Zi Wei</div><div></div></div>
+          <div class="toc-row"><div class="pg">16</div><div class="ico">宫</div><div class="name"><strong>十二宮</strong>Overview 12 Istana<span class="gloss">— Shí Èr Gōng · 12 Palaces</span></div><div></div></div>
+          <div class="toc-row"><div class="pg">17</div><div class="ico">命</div><div class="name">Detail: <strong>命 兄 夫 子</strong>Diri · Saudara · Pasangan · Anak</div><div></div></div>
+          <div class="toc-row"><div class="pg">18</div><div class="ico">財</div><div class="name">Detail: <strong>財 疾 遷 僕</strong>Rezeki · Sehat · Pindah · Teman</div><div></div></div>
+          <div class="toc-row"><div class="pg">19</div><div class="ico">官</div><div class="name">Detail: <strong>官 田 福 父</strong>Karir · Properti · Berkah · Orangtua</div><div></div></div>
+        </div>
+
+        <!-- BAGIAN III: PENUTUP -->
+        <div class="toc-section">
+          <div class="num">叁</div>
+          <div class="title">總 結<span class="id">Bagian III · Penutup · Pages 20–23</span></div>
+        </div>
+        <div class="toc-rows">
+          <div class="toc-row"><div class="pg">20</div><div class="ico">結</div><div class="name"><strong>總結</strong>Kesimpulan Bagan<span class="gloss">— Zǒng Jié · Gambaran Besar Synthesis</span></div><div></div></div>
+          <div class="toc-row"><div class="pg">21</div><div class="ico">為</div><div class="name"><strong>行動</strong>Saran Aksi 5 Langkah<span class="gloss">— Xíng Dòng · Practical Steps</span></div><div></div></div>
+          <div class="toc-row"><div class="pg">22</div><div class="ico">辭</div><div class="name"><strong>辭典</strong>Glossary Istilah<span class="gloss">— Cí Diǎn · Daftar Istilah</span></div><div></div></div>
+          <div class="toc-row"><div class="pg">23</div><div class="ico">告</div><div class="name"><strong>告白</strong>Disclaimer &amp; Etika<span class="gloss">— Gào Bái · Ethics</span></div><div></div></div>
+        </div>
+<!--/TOC_AUTO-->
+      </div>
+
+      <div class="toc-foot">
+        <span class="hz">命</span> Setiap bab membentuk satu peta · <span class="hz">運</span> Anda yang menentukan arah <span class="hz">命</span>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      Bagan ini bukan ramalan kaku, melainkan <em>peta pola</em>: 23 halaman menyajikan karakter, hubungan, fase hidup, dan saran praktis berdasarkan 四柱論命 + 紫微斗數 + 陽宅.
+    </div>
+    <div class="footer-meta">
+      <span>Halaman 2 / 23</span>
+      <span>Ramalan 命</span>
+    </div>
+  </footer>
+</section>
+</body>
+</html>

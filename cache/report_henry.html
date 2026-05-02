@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Ramalan Henry — 命理分析</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Ma+Shan+Zheng&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   XINGQIAO FORTUNE ID — Frozen Design System
+   Versi 2.0 (anti-overflow, visualization-first)
+   ============================================================ */
+
+:root {
+  --merah-imperial: #b91c1c;
+  --merah-deep: #7a0d0d;
+  --emas-rich: #c9a04c;
+  --emas-light: #e8c87a;
+  --cream-paper: #f7f0e0;
+  --aged-paper: #ede0bf;
+  --ink-black: #2a1a0a;
+  --ink-soft: #4a3220;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 0; }
+html, body {
+  background: #222;
+  font-family: 'Noto Serif', Georgia, serif;
+  color: var(--ink-black);
+}
+
+/* ===== PAGE BASE — pakai grid eksplisit anti-overflow ===== */
+.page {
+  width: 210mm; height: 297mm;
+  background: linear-gradient(135deg, var(--cream-paper) 0%, var(--aged-paper) 100%);
+  padding: 24mm 26mm 20mm 26mm;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex; flex-direction: column;
+  page-break-after: always;
+}
+.page:last-child { page-break-after: auto; }
+.page::before {
+  content: ""; position: absolute;
+  top: 14mm; right: 14mm; bottom: 14mm; left: 14mm;
+  border: 1.5px solid var(--emas-rich);
+  pointer-events: none;
+}
+.page::after {
+  content: ""; position: absolute;
+  top: 18mm; right: 18mm; bottom: 18mm; left: 18mm;
+  border: 0.5px solid var(--emas-light);
+  pointer-events: none;
+}
+.page-num {
+  position: absolute; left: 0; right: 0; bottom: 6mm;
+  text-align: center; font-size: 9pt; color: var(--emas-rich);
+  font-family: 'Noto Serif TC', serif; letter-spacing: 3px; z-index: 2;
+}
+.page-num::before, .page-num::after {
+  content: "\2756"; margin: 0 12px; color: var(--emas-light); font-size: 8pt;
+}
+
+/* Page using grid for explicit row heights */
+.page.grid-page {
+  display: grid;
+  row-gap: 3mm;
+}
+
+/* ===== Typography ===== */
+h2 {
+  font-family: 'Noto Serif TC', serif; color: var(--merah-deep);
+  font-size: 18pt; letter-spacing: 1px; line-height: 1.3;
+  overflow-wrap: break-word; max-width: 100%;
+}
+h3 {
+  font-family: 'Noto Serif TC', serif; color: var(--merah-imperial);
+  font-size: 12pt; margin: 3mm 0 1.5mm;
+}
+.subtitle { font-family: 'Cormorant Garamond', serif; color: var(--ink-soft);
+  font-size: 10pt; font-style: italic; letter-spacing: 2px; }
+.cite-row { font-family: 'Noto Serif TC', serif; color: var(--merah-imperial);
+  font-weight: 700; font-size: 9pt; text-align: right; margin-bottom: 2mm; }
+.divider { text-align: center; color: var(--emas-rich); font-size: 9pt;
+  letter-spacing: 8px; }
+p { font-size: 10pt; line-height: 1.6; word-wrap: break-word;
+  margin-bottom: 2mm; max-width: 100%; }
+.cn { font-family: 'Noto Serif TC', serif; color: var(--merah-deep);
+  font-weight: 600; line-break: anywhere; }
+
+/* ===== Cards ===== */
+.card {
+  background: rgba(255,253,245,0.6);
+  border: 1px solid var(--emas-light); border-radius: 2mm;
+  padding: 3mm 4mm; margin: 2mm 0; max-width: 100%;
+}
+.card.merah { border-color: var(--merah-imperial);
+  background: linear-gradient(135deg, rgba(185,28,28,0.04), rgba(122,13,13,0.08)); }
+.card.emas { border-color: var(--emas-rich);
+  background: linear-gradient(135deg, rgba(201,160,76,0.08), rgba(232,200,122,0.12)); }
+.card-title { font-family: 'Noto Serif TC', serif; color: var(--merah-deep);
+  font-weight: 700; font-size: 11pt; margin-bottom: 1.5mm; }
+
+/* ===== Section Block (chart container) ===== */
+.section-block {
+  background: rgba(255,253,245,0.45);
+  border: 0.5px solid var(--emas-light); border-radius: 2mm;
+  padding: 2.5mm 3mm; height: 100%;
+  display: flex; flex-direction: column; gap: 1.5mm;
+}
+.section-title {
+  font-family: 'Noto Serif TC', serif; color: var(--merah-deep);
+  font-weight: 700; font-size: 11pt; letter-spacing: 1px;
+  display: flex; align-items: center; gap: 2.5mm; line-height: 1;
+}
+.section-title::before { content: ""; width: 3mm; height: 0.4mm;
+  background: var(--merah-imperial); }
+.section-title small { font-family: 'Cormorant Garamond', serif;
+  font-style: italic; color: var(--ink-soft); font-size: 9pt;
+  font-weight: 400; margin-left: auto; }
+
+/* ===== Transcript Box ===== */
+.transcript {
+  background: rgba(201,160,76,0.07);
+  border: 0.5px solid var(--emas-light);
+  padding: 3mm 4mm; margin: 2mm 0; border-radius: 1mm;
+  font-family: 'Noto Serif TC', serif; color: var(--ink-black);
+  font-size: 10pt; line-height: 1.7;
+}
+.transcript .lbl { display: block; font-size: 8.5pt; color: var(--merah-imperial);
+  font-weight: 700; letter-spacing: 1px; margin-bottom: 1.5mm; }
+
+/* ===== Bar Chart (Wu Xing & generic) ===== */
+.bar-row {
+  display: grid; grid-template-columns: 28mm 1fr 30mm;
+  align-items: center; gap: 2.5mm; font-size: 9pt; margin: 1mm 0;
+}
+.bar-label { font-family: 'Noto Serif TC', serif; color: var(--ink-black);
+  display: flex; align-items: center; gap: 1.5mm; }
+.bar-label .ch { font-family: 'Ma Shan Zheng', cursive;
+  font-size: 13pt; line-height: 1; }
+.bar-label small { font-size: 7.5pt; color: var(--ink-soft); }
+.bar-track { height: 4mm; background: rgba(201,160,76,0.12);
+  border-radius: 50px; position: relative; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 50px;
+  display: flex; align-items: center; padding-left: 1.5mm;
+  color: white; font-weight: 700; font-size: 7.5pt;
+  font-family: 'Cormorant Garamond', serif; }
+.bar-tag { font-size: 7.5pt; color: var(--ink-soft);
+  font-style: italic; text-align: right; line-height: 1.2; }
+.bar-fill.jin { background: linear-gradient(90deg, #64748b, #94a3b8); }
+.bar-fill.mu  { background: linear-gradient(90deg, #16a34a, #4ade80); }
+.bar-fill.shui{ background: linear-gradient(90deg, #0284c7, #38bdf8); }
+.bar-fill.huo { background: linear-gradient(90deg, #dc2626, #f87171); }
+.bar-fill.tu  { background: linear-gradient(90deg, #a16207, #eab308); }
+
+/* ===== Pillar Cells (4-pilar chart) ===== */
+.pillar-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2mm; }
+.pillar-cell {
+  border: 1px solid var(--emas-rich); background: rgba(255,253,245,0.6);
+  text-align: center; padding: 3mm 1mm;
+}
+.pillar-cell.dm { border-color: var(--merah-imperial); border-width: 2px;
+  background: rgba(185,28,28,0.06); }
+.pillar-label { font-family: 'Noto Serif TC', serif; font-size: 8.5pt;
+  color: var(--ink-soft); letter-spacing: 1px; }
+.pillar-stem, .pillar-branch {
+  font-family: 'Ma Shan Zheng', cursive; font-size: 26pt;
+  color: var(--merah-imperial); line-height: 1.1; margin: 1.5mm 0;
+}
+.pillar-cell.dm .pillar-stem, .pillar-cell.dm .pillar-branch {
+  color: var(--merah-deep);
+}
+.pillar-element { font-size: 8pt; color: var(--ink-soft);
+  margin-top: 1mm; line-height: 1.3; }
+.dm-badge {
+  display: inline-block; padding: 0.5mm 2.5mm;
+  background: var(--merah-imperial); color: var(--cream-paper);
+  font-family: 'Noto Serif TC', serif; font-size: 8pt;
+  border-radius: 2mm; margin-top: 1mm;
+}
+
+/* ===== Timeline (Da Yun) ===== */
+.timeline-track {
+  height: 6mm; background: rgba(201,160,76,0.08);
+  border-radius: 50px; position: relative; display: flex;
+}
+.timeline-seg {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  font-family: 'Noto Serif TC', serif; font-size: 7pt;
+  color: var(--ink-soft); border-right: 1px dashed rgba(201,160,76,0.4);
+  position: relative; line-height: 1; padding: 0.5mm;
+}
+.timeline-seg:last-child { border-right: none; }
+.timeline-seg.now {
+  background: linear-gradient(135deg, var(--merah-imperial), var(--merah-deep));
+  color: var(--cream-paper); font-weight: 700; border-radius: 50px;
+}
+.timeline-seg.now::after {
+  content: "\25BC"; position: absolute; top: -3mm;
+  left: 50%; transform: translateX(-50%);
+  font-size: 6pt; color: var(--merah-imperial);
+}
+.timeline-labels { display: flex; justify-content: space-between;
+  padding: 0 1mm; }
+.timeline-labels span { font-family: 'Cormorant Garamond', serif;
+  font-size: 7.5pt; color: var(--ink-soft); }
+
+/* ===== Compatibility Grid ===== */
+.compat-grid { display: grid; grid-template-columns: repeat(6, 1fr);
+  gap: 1.5mm; margin: 2mm 0; max-width: 100%; }
+.compat-cell {
+  text-align: center; border: 1px solid var(--emas-light);
+  padding: 1.5mm 1mm; border-radius: 2mm;
+  background: rgba(255,253,245,0.5); overflow: hidden;
+}
+.compat-cell.lucky { border-color: var(--merah-imperial);
+  background: linear-gradient(135deg, rgba(185,28,28,0.08), rgba(232,200,122,0.12)); }
+.compat-cell.warning { border-color: #a16207; background: rgba(161,98,7,0.05); }
+.compat-cell .label { font-family: 'Noto Serif TC', serif; font-size: 8pt;
+  color: var(--merah-deep); font-weight: 600; margin-top: 0.5mm; }
+.compat-cell .ch { font-family: 'Ma Shan Zheng', cursive;
+  font-size: 12pt; color: var(--merah-imperial); }
+.compat-cell .relation { font-size: 7pt; color: var(--ink-soft);
+  margin-top: 0.5mm; }
+.compat-cell img.shio-mini { width: 14mm; height: 9mm;
+  display: block; margin: 0 auto; }
+
+/* ===== Shio SVG sizing =====
+   Shio SVG files only have viewBox (no width/height). Render.py injects
+   class="shio-svg" on root <svg>. Default + per-context sizing here. */
+svg { max-width: 100%; height: auto; }
+
+/* Default for any inline shio SVG: keep it bounded to a reasonable size
+   so a stray placement never blows out the page. */
+.shio-svg { width: 100%; height: auto; max-width: 30mm; display: block; margin: 0 auto; }
+
+/* Per-context overrides (must come AFTER the default) */
+.cover .shio-wrap .shio-svg { max-width: 80mm; max-height: 50mm; }
+.shio-portrait { width: 50mm; margin: 0 auto; display: block; }
+.shio-portrait .shio-svg { max-width: 50mm; max-height: 35mm; }
+.compat-cell .shio-svg { max-width: 22mm; max-height: 15mm; margin: 0 auto 0.5mm; }
+
+/* ===== Cover ===== */
+.cover {
+  background: radial-gradient(ellipse at center, #3d0a0a 0%, #1a0303 100%);
+  color: var(--emas-light); text-align: center;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+}
+.cover::before, .cover::after { border-color: var(--emas-rich) !important; }
+.cover .title-cn { font-family: 'Ma Shan Zheng', cursive;
+  font-size: 50pt; color: var(--emas-rich); letter-spacing: 8px;
+  text-shadow: 0 0 20px rgba(201,160,76,0.4); margin-bottom: 4mm; }
+.cover .subtitle { color: var(--emas-light); font-size: 12pt;
+  letter-spacing: 6px; margin-bottom: 2mm; font-style: normal; }
+.cover .name { font-family: 'Cormorant Garamond', serif;
+  font-size: 36pt; color: var(--cream-paper); letter-spacing: 6px;
+  font-weight: 600; margin: 5mm 0; }
+.cover .meta { font-family: 'Noto Serif', serif; color: var(--emas-light);
+  font-size: 10pt; letter-spacing: 3px; line-height: 2; }
+.cover .shio-wrap { margin: 4mm auto; width: 80mm; height: 50mm;
+  display: flex; align-items: center; justify-content: center;
+  filter: drop-shadow(0 0 18px rgba(201,160,76,0.5)); }
+.cover .seal { margin-top: 4mm; width: 28mm; height: 28mm;
+  border: 2px solid var(--emas-rich); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Ma Shan Zheng', cursive; color: var(--emas-rich);
+  font-size: 18pt; }
+
+/* ===== Section Opener ===== */
+.section-opener {
+  background: linear-gradient(135deg, var(--cream-paper), var(--aged-paper) 70%, #e0c897);
+  justify-content: center; align-items: center; text-align: center;
+}
+.section-opener .roman { font-family: 'Cormorant Garamond', serif;
+  font-size: 28pt; color: var(--emas-rich); letter-spacing: 4px;
+  font-weight: 500; }
+.section-opener .title-cn { font-family: 'Ma Shan Zheng', cursive;
+  font-size: 56pt; color: var(--merah-imperial); margin: 4mm 0;
+  letter-spacing: 12px; }
+.section-opener .label-id { font-family: 'Noto Serif TC', serif;
+  font-size: 14pt; color: var(--ink-soft); letter-spacing: 4px;
+  margin-bottom: 4mm; }
+.section-opener .desc { font-size: 10pt; max-width: 120mm;
+  color: var(--ink-soft); font-style: italic; line-height: 1.7;
+  margin-top: 5mm; }
+
+/* ===== Karakter / Action / Pesan utility cards ===== */
+.karakter-card {
+  background: linear-gradient(135deg, rgba(185,28,28,0.04), rgba(232,200,122,0.10));
+  border: 1px solid var(--emas-rich); border-radius: 2mm;
+  padding: 2mm 2mm; text-align: center;
+  display: grid; grid-template-rows: 14mm auto auto auto;
+  align-items: center; justify-items: center; gap: 0.5mm;
+}
+.karakter-card .ico-wrap {
+  width: 13mm; height: 13mm; border-radius: 50%;
+  background: linear-gradient(135deg, var(--merah-imperial), var(--merah-deep));
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Ma Shan Zheng', cursive; color: var(--cream-paper);
+  font-size: 14pt; line-height: 1;
+}
+
+/* ===== Year Badge (Liu Nian) ===== */
+.year-badge {
+  display: inline-block; padding: 1mm 4mm;
+  background: linear-gradient(135deg, var(--merah-imperial), var(--merah-deep));
+  color: var(--cream-paper); font-family: 'Cormorant Garamond', serif;
+  font-size: 13pt; font-weight: 600; border-radius: 50px;
+  margin-right: 3mm; letter-spacing: 2px;
+}
+
+/* ===== Info Grid (multi-column card layout) ===== */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3mm;
+  margin: 2mm 0;
+  max-width: 100%;
+}
+.info-grid-3 { grid-template-columns: repeat(3, 1fr); }
+.info-card {
+  background: rgba(255,253,245,0.55);
+  border: 0.7px solid var(--emas-rich);
+  border-radius: 2mm;
+  padding: 2.5mm 3mm;
+  font-size: 9.5pt;
+  line-height: 1.5;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+.info-card-title {
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 700;
+  color: var(--merah-deep);
+  font-size: 10pt;
+  margin-bottom: 1.2mm;
+}
+.info-card ul { margin-left: 4mm; font-size: 8.5pt; line-height: 1.45; }
+.info-card p { font-size: 9pt; line-height: 1.55; margin: 0; }
+
+/* ===== Timeline (untuk 大運 detail / saran action) ===== */
+.timeline { position: relative; padding-left: 5mm; margin: 3mm 0; }
+.timeline::before {
+  content: ''; position: absolute; left: 1.5mm; top: 0; bottom: 0;
+  width: 1px; background: linear-gradient(180deg, var(--emas-rich), var(--merah-imperial));
+}
+.timeline-item {
+  position: relative; padding-bottom: 3mm; font-size: 10pt; line-height: 1.55;
+}
+.timeline-item::before {
+  content: ''; position: absolute; left: -4.5mm; top: 1.5mm;
+  width: 2.5mm; height: 2.5mm; border-radius: 50%;
+  background: var(--merah-imperial); border: 0.7px solid var(--emas-rich);
+}
+.timeline-item strong { color: var(--merah-deep); display: block; margin-bottom: 0.5mm; }
+
+blockquote {
+  border-left: 3px solid var(--merah-imperial);
+  padding: 2mm 4mm; margin: 2.5mm 0;
+  background: rgba(232,200,122,0.10);
+  font-style: italic; color: var(--ink-soft);
+  font-size: 10pt; line-height: 1.6;
+}
+
+/* ===== Image safety ===== */
+img { max-width: 100%; height: auto; object-fit: contain; }
+table { width: 100%; max-width: 100%; border-collapse: collapse;
+  table-layout: fixed; font-size: 9.5pt; margin: 2mm 0; }
+td, th { border: 1px solid var(--emas-rich); padding: 2mm;
+  vertical-align: top; word-wrap: break-word; line-height: 1.45; }
+ul { margin-left: 5mm; line-height: 1.55; font-size: 9.5pt; }
+ul li { margin-bottom: 1mm; }
+
+</style>
+</head>
+<body>
+
+<section class="page cover">
+  <div class="shio-wrap"><svg class="shio-svg" preserveAspectRatio="xMidYMid meet" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166.23 99.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a50404;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m32.6,41.36c0,.8-.4,1.6-1.2,2.1-.8.5-1.8.5-2.6.2-.8-.3-1.5-.9-2-1.6-.4-.7-.6-1.7-.2-2.4.1.8.4,1.4.9,1.9s1,.9,1.7,1.1c.6.2,1.3.3,1.9.1.5-.3,1-.8,1.5-1.4Zm22.9-12.4c-2.4-1.8-5.1-1.8-7.2-.2,2.2-.5,4.4-.1,6.2,1.4,1.6,1.2,3,3.3,2.5,5.4.9-.8,1-4.7-1.5-6.6Zm28.9,6.3c.7-.6,1.2-3.4-.5-5.2-1.6-1.7-3.6-1.9-5.4-1,1.7-.1,3.3.5,4.5,1.8,1.1,1.1,1.9,2.9,1.4,4.4Zm-24.2,10.8c.9-.8,1.4-2,1.5-3.2s-.2-2.6-1.1-3.4c-.9-.9-2.2-1.1-3.3-.9,1,.4,1.9.9,2.4,1.6s.6,1.6.5,2.5-.4,1.8-1,2.6c-.5.8-1.3,1.4-2.3,1.8,1.2.3,2.5-.2,3.3-1Zm-6.2,7.1c1,.5,2.2.7,3.3.5,1.1-.2,2.3-.9,2.8-2,.6-1.1.4-2.3-.1-3.2-.1,1.1-.3,2-.8,2.7-.5.6-1.3,1-2.2,1.2-.9.2-1.8.1-2.6-.1-.9-.3-1.7-.7-2.3-1.6.1,1,.9,2,1.9,2.5Zm18-1.4c-.6.5-1.4.8-2.2.8s-1.7-.1-2.5-.5-1.5-.9-1.9-1.8c-.1,1,.5,2.1,1.4,2.7.9.7,2,1,3,1,1.1,0,2.3-.5,2.9-1.5.7-.9.7-2.1.3-3-.1.9-.4,1.8-1,2.3Zm2.1-10.1c.3.7.4,1.6.1,2.4-.2.8-.7,1.6-1.3,2.3-.6.6-1.4,1.2-2.4,1.3,1,.4,2.2.1,3.1-.5.9-.7,1.6-1.6,1.9-2.7s.2-2.4-.5-3.4-1.9-1.4-2.9-1.3c.9.6,1.7,1.2,2,1.9Zm10,5.5c-.5.4-1.1.6-1.8.7-.7,0-1.4-.1-2-.4s-1.2-.8-1.6-1.5c-.1.8.4,1.7,1.1,2.2s1.6.8,2.5.8,1.8-.4,2.4-1.2c.5-.8.6-1.7.3-2.5-.1.8-.4,1.5-.9,1.9Zm-11.8-10.2c.9-.7,1.5-4.3-.6-6.4-2-2.1-4.5-2.4-6.7-1.2,2.1-.1,4.1.6,5.6,2.2,1.4,1.3,2.4,3.5,1.7,5.4Zm-38.6,2.9c.9-.2,1.7-.7,2.2-1.4.6-.7.9-1.7.6-2.6-.2-.9-1-1.6-1.8-1.8.5.7.9,1.3.9,2s-.2,1.3-.7,1.8c-.4.5-1,1-1.6,1.3s-1.4.4-2.2.3c.7.5,1.7.6,2.6.4Zm2.1-8c.9-.2,2.4-2.7,1.5-4.9-.9-2.1-2.6-3.2-4.6-2.9,1.6.5,2.8,1.7,3.5,3.3.6,1.4.6,3.4-.4,4.5Zm-7-.5c.5-.4.6-1,.2-1.5s-1-.6-1.5-.2-.6,1-.2,1.5c.3.5,1,.6,1.5.2Zm74,16.8c-.6.5-1.4.8-2.2.8s-1.7-.1-2.5-.5-1.5-.9-1.9-1.8c-.1,1,.5,2.1,1.4,2.7.9.7,2,1,3,1,1.1,0,2.3-.5,2.9-1.5.7-.9.7-2.1.3-3,0,.9-.4,1.8-1,2.3Zm8.9-22.3c-1.7-1-3.5-.8-4.8.4,1.4-.5,2.9-.4,4.2.5,1.1.6,2.2,2,2.1,3.4.6-.7.3-3.2-1.5-4.3Zm-8.5,7.5c.9-.7,1.5-4.3-.6-6.4-2-2.1-4.5-2.4-6.7-1.2,2.1-.1,4.1.6,5.6,2.2,1.4,1.3,2.3,3.5,1.7,5.4Zm-16.6,5.2c-.6-.8-1.5-1.1-2.4-1.1.7.4,1.3.9,1.6,1.5.3.6.3,1.3.1,2-.2.7-.5,1.3-1,1.8s-1.1.9-2,1.1c.8.3,1.8.1,2.5-.4s1.3-1.3,1.5-2.2c.4-.8.3-1.9-.3-2.7Zm29.6-1.7c.5-.6.8-1.4.8-2.2s-.3-1.7-1-2.2-1.5-.6-2.2-.3c.7.2,1.3.4,1.7.9.4.4.5,1,.5,1.6s-.2,1.2-.4,1.8c-.3.6-.7,1.1-1.4,1.4.7,0,1.5-.4,2-1Zm-10.3.6c-.7-1-1.9-1.4-2.9-1.3.9.5,1.7,1.1,2,1.9.3.7.4,1.6.1,2.4-.2.8-.7,1.6-1.3,2.3-.6.6-1.4,1.2-2.4,1.3,1,.4,2.2.1,3.1-.5.9-.7,1.6-1.6,1.9-2.7.3-1.1.3-2.4-.5-3.4Zm43,19.2c-15.2,4.4-20.9-6.6-20.9-6.6,0,0,4.2,19.2,12.8,22.6,1.5.6,2.6,1.8,2.8,3.4,1.6,9.1,1.3,15.9.8,19.7-.3,2.1-2,3.8-4.2,3.9-2.6.1-6.1.2-9,.1-2.1-.1-2.9-2.9-1.1-4.1,1-.6,2.2-.9,3.2-1,1.3-.1,2.3-1.2,2.4-2.5.5-5.1-.7-8.8-3.8-11.4-3.2-2.8-16.8-10.8-21-19.8-.8-1.6-.6-3.5.4-5,3-4.9,4.1-10.4,4.1-11.8-1.6,6.6-6.1,12.9-10.6,17.4-3.8,3.9-2.4,15.9.2,20.6.7,1.3.6,2.9-.4,4-3,3.7-7.4,6.9-10.1,9.7-1.1,1.2-2.6,1.9-4.3,2-2.4.2-4.7.1-6.7,0-3-.2-3.9-4.3-1.1-5.5.3-.1.5-.2.8-.2,2.8-.2,7.2-.2,7.2-.2,0,0,1.4-3.9,2.6-6.6.5-1.1.5-2.3,0-3.4-2.6-5.8-5.4-13.5-4.4-20.2-10.2,6.7-25.5,2.2-27.4,1.9-1.9-.3-4.8-1.1-7.1,1.2,0,0,1,15.2-4.6,26.4-.8,1.5-2.3,2.5-3.9,2.7-3.7.4-7.2-.3-9.3-.8-1.6-.4-2.4-2.2-1.6-3.6.3-.4.7-.8,1.3-.9,2.2-.4,6.8.6,6.4-3.8s-.7-14.4.8-16.9c-5.2,5.8-11.1,4.8-13.8,8.5-1.6,2.2-.8,4.9,1.8,5.9,4.5,1.8,1.5,7.5-2.1,5.7,0,0-.1,0-.1-.1-4-2.1-3.9-1.9-5.4-1.9-1.6.1-3.3-2-4.6-6.6-1.2-4.6-1.9-7.6,1.9-11.1s9.3-6,8.1-11.1c-1.2-5.1-5.8-10.8-5.2-15-4.3-1.2-8.1-1.4-10.5,1.5-2.2,2.7-6.5,2.9-8.7.5-.3-.4-.3-1,.1-1.3.8-.8.6-1.4-.4-1.1-1.2.4-4.2-.6-4.3-2.9-.1-2.3,1.9-4.6,2-6s-2.2-4.6-.5-7.6,2.8-3.9,2.8-3.9c0,0-3.6-.8-3.6-4.6s6.4-2.8,6.8,1.6c.4.6,1.5.2,1.9,0,3.7-1.6,7.1-.7,7.7.1-.5-4.8,4.9-4.6,6.1-2.6,1.1,1.9.8,3.7.1,4.9,4.1,1,9.3-2.2,17.7-1.5,8.4.7,14.6,9.4,36.7,2.9,22.1-6.4,38.4-1.1,47.4,8.4,9.1,9.5,6,20.1,18.7,20.1s20.7-19.5,10.7-25.5c-12.5-7.4-32.7-3.7-32.7-15.8s7.1-9.7,8.9-8.2c1.8,1.5-.1,4.1-.6,6.9-.3,2.1,0,4.1,7.2,4.9,7.4.8,21.1,4,26.8,12.8,5.6,9.2,0,26.4-15.2,30.8ZM63.6,29.56c3.1.6,5.5,2.3,5.5,2.3l-3.2-.5,3.1,2.3-1.5-.3,2.5,2.2-2-.7,2.6,2.3-2-1s2.7,2.9,2.5,2.8c-.3-.1-2.1-1.5-2.1-1.4.1.1,3,3.5,2.9,3.5-.1-.1-2.3-1.6-2.3-1.6,0,0,2.5,3.8,2.2,3.5-.3-.4-2-1.8-2-1.8l1.9,3.4-1.8-1.6,1.4,3.3-1.6-1.8.5,1.9-.9-.8.6,2.5-1-1.5s.5,3.5.4,3.3-1.1-2.4-1.1-2.4v2.4l-.9-1.4-.4,1.9c-.9-.1-1.7-1-2-1.5-.5,2.4,1,4.3,2.2,5.1,3.4,2.2,9.2-1.8,6.4-5.6,5.2-.9,4.1-10.5-1.1-10.1,6.2-5.6-2.8-14.9-8.8-8.7Zm-24.7-7.1c1,1.3,1.9,2.7,2.5,4.1s1,2.8,1,4.2-.3,2.9-.8,4.3-1.2,2.9-1.9,4.3c-.7,1.5-1.6,2.8-2.6,4.1-1,1.3-2.2,2.4-3.2,3.8-1,1.3-1.8,2.8-2.3,4.4s-.9,3.3-.7,5h.2c.6-1.6,1.2-3,1.9-4.4.7-1.4,1.5-2.7,2.3-4.2.7-1.4,1.4-2.9,2.3-4.3s1.9-2.6,3-3.9,2-2.6,2.8-4.2c.7-1.5,1.3-3.3,1.2-5.1-.1-1.8-.7-3.6-1.8-5-1-1.4-2.3-2.5-3.7-3.4l-.2.3Zm-20.5-3.4c1.1-.5,2.8.1,3.5,2.2.9-3.7-2.6-4.3-3.5-2.2Zm-6.8,1.1c-.9.4-1.6,1-2.2,1.7s-1,1.6-1.2,2.5-.2,1.9.2,2.7c0-.9.3-1.7.6-2.5.3-.8.7-1.5,1.2-2.1,1-1.3,2.4-2.2,4.1-2.7-.9-.1-1.9,0-2.7.4Zm-1.1,9.4c2.2,0,3.7-.8,4.3-2.9-1.2-.7-4.1-.2-4.3,2.9Zm-4.8-9.3c-.5-1.6-2.3-2.5-3.5-2.3.8,1.7,2.6,2.4,3.5,2.3Zm-3.8,6.2c.2,1.5,1.1,3.7,2.6,2.2-.1-2.5-1.5-3.6-2.6-2.2Zm2.8,10.5c-.8,0-1.8-.1-2.6-.1-.4,0-.7.4-.6.8.2.4.4.7.6,1,.3.4.9.5,1.3.2s.9-.6,1.6-1c.3-.3.2-.9-.3-.9Zm2.5-14.2c.7-1.2,1.8-2.2,3.2-3.1-1.6.1-3.2,1.1-4,2.6-.4.7-.7,1.6-.7,2.4s.2,1.7.7,2.3c-.2-1.6.1-3,.8-4.2Zm6.3,12.6c.9-.5,1.7-1.1,2.4-1.9.7-.7,1.2-1.7,1.4-2.6-.6.8-1.2,1.5-2,2.1-.7.6-1.5,1.1-2.3,1.5-1.6.9-3.4,1.6-5.3,2.3,2.1.1,4.1-.5,5.8-1.4Zm-4.9,2.6c2,.4,4,.1,5.9-.6.9-.4,1.8-.8,2.6-1.5.8-.6,1.5-1.5,1.8-2.4-.7.7-1.4,1.3-2.2,1.8-.8.5-1.7.9-2.5,1.2-1.8.7-3.7,1.1-5.6,1.5Zm11.2-1.4c-.8.6-1.6,1.1-2.5,1.4s-1.8.6-2.7.8c-1.8.4-3.7.5-5.7.7,1.9.7,3.9.7,5.9.3,1-.2,2-.6,2.8-1.1,1-.5,1.8-1.2,2.2-2.1Zm4.6-11.6c.3-.3.5-.7.4-1.1-.1-.8-.6-1.2-1.2-1.3h-.1s-.1.1,0,.1c.3.4.4.9.3,1.1s-.3.2-.7.2-.7-.1-1.3-.1c-.6-.1-1.2,0-1.8.2-.6.2-1.2.5-1.7,1.1-.5.5-.8,1.4-.7,2.2.2,1.6,1.5,2.2,2.3,2.7s1.6,1.2,2,2c.4.9.3,1.8.1,2.6-.4,1.5-1.7,2.8-3,4.5v.1c0,.1.1.1.1.1,1-.2,2-.7,2.9-1.4.8-.7,1.6-1.7,1.7-3s-.6-2.3-1.1-3.2c-.6-.9-1.2-1.7-1.8-2.5-.3-.4-.6-.8-.8-1.1-.2-.3-.3-.7-.3-.9,0-.4.4-.8,1.1-1,.3-.1.7-.2,1.1-.3.2,0,.5,0,.8-.1s.6-.1.9-.2c.2-.3.5-.4.8-.7Zm1.9,8.1c1.1.5,1.4-.6,1.4-.6.2,1.6,2.3,1,1.7-.6,1.6.6,2-1.5.7-1.6,1.6-1,0-2.3-1.1-1.4.7-1.8-1.3-2.1-1.8-.4-1.1-1.9-2.7.7-.9,1.4-.4-.1-1.6-.1-1.6.9s.8,1,1.9.7c-.5.1-1.4,1.1-.3,1.6Zm6.8,7.7c4.1.9,6.2-6.5,2.2-7.8,6.4-2.4,2.6-12-3.7-9.2,2.1,1.4,3.4,3.4,3.4,3.4l-2.2-1.3,1.6,2.7-1-.7,1.1,2.4-1.3-1.1,1.2,2.4-1.2-1.3s1.2,2.9,1,2.8-1.1-1.7-1.1-1.6,1.1,3.5,1,3.4-1.2-1.9-1.2-1.9c0,0,.7,3.6.6,3.2s-.9-1.9-.9-1.9l.3,3.1-.8-1.7v2.8l-.7-1.8-.2,1.6-.4-.9-.3,2.1-.3-1.4s-.7,2.7-.7,2.6c0-.2-.1-2.1-.1-2.1l-.7,1.8-.2-1.3-.9,1.3c-.6-.3-1-1.2-1-1.7-1.1,1.6-.6,3.5.1,4.4,1.9,2.7,7.3,1.4,6.4-2.3Zm10.3,17.8c0-.5,0-1-.1-1.4-.1-.5-.3-1-.5-1.4-.5-.8-1.1-1.5-1.9-2s-1.6-1-2.6-1.1c-1-.2-2.2.1-3.1.8-.9.7-1.4,1.6-1.7,2.7-.1.6-.2,1.2.1,1.9.2.7.7,1.2,1.3,1.5.6.3,1.1.4,1.7.4.3,0,.6-.1.8-.1.3-.1.5-.2.8-.3.5-.3.9-.7,1.1-1.1.1-.2.2-.5.2-.7s0-.5-.1-.7c0-.1-.1-.1-.1-.1q-.1,0-.1.1h0c-.3.8-.9,1.2-1.5,1.4-.6.1-1.3-.1-1.7-.4-.1-.2-.3-.3-.3-.5s0-.4.1-.7c.2-.6.5-1.2.9-1.7s.9-.8,1.7-1c.7-.1,1.5,0,2.2.4s1.3,1,1.6,1.7c.1.4.2.7.2,1.1s-.1.8-.2,1.1c-.5,1.5-1.6,2.5-2.8,2.8-.6.2-1.3.1-1.9,0-.2-.1-.9-.2-1.4-.2h-.8c-.3,0-.5.1-.8.1-1.1.2-2,.7-2.8,1.5-.8.7-1.4,1.7-1.6,2.9-.2,1.1.2,2.2.8,3,.6.8,1.4,1.3,2.2,1.8q.1,0,.2-.1v-.1h0c-.5-.7-1-1.4-1.2-2.2-.2-.7-.2-1.4,0-2,.5-1.1,1.7-1.9,3-2.1.2,0,.3-.1.5-.1h.5c.3,0,.5.1,1.1.1,1,.1,2.1.1,3.2-.4,1-.4,1.9-1.1,2.5-2,.2-.9.5-1.9.5-2.9Zm4.4.5c0-1.3-.6-2.4-1.1-3.4s-1-2-1.2-3c-.3-1-.4-2-.4-3s.2-1.9.4-2.9c.5-1.9,1.2-3.9,1.9-6.1l-.2-.1c-1.7,1.5-3,3.4-3.8,5.6-.7,2.2-.3,5,1.1,6.8.6.9,1.3,1.8,1.6,2.8.4,1,.3,2.1.1,3-.2.9-.4,1.9-.8,2.8-.3,1-.8,1.9-1.1,3.1l.2.1c.9-.7,1.7-1.5,2.3-2.5.5-.8,1-2,1-3.2Zm3.7-13.9c.5.1.6-.4.5-1,.1.3.6.9.9.3s-.3-.8-.3-.8c.9-.1.6-1.2-.2-1,.4-.9-.7-1.2-.8-.5-.5-.9-1.3-.1-.8.6-.9-.5-1.2.6-.3.9-1.1.5.2,1.5.7.5-.2.3-.3,1,.3,1Zm-.2,4.3c-.1,2.6,1.7,4.3,3.1,5,4,1.8,9.3-3.4,5.7-6.9,5.2-1.8,2.6-11.6-2.8-10.3,5.6-7.1-5.3-15.4-10.5-7.8,3.3.2,6.2,1.5,6.2,1.5h-3.5l3.6,1.9h-1.6l2.9,1.9-2.2-.4,3.1,1.9-2.3-.7s3.3,2.5,3,2.5-2.5-1.2-2.4-1.1,3.7,3.2,3.5,3.2c-.1-.1-2.6-1.3-2.6-1.3,0,0,3.3,3.6,2.9,3.2s-2.3-1.6-2.3-1.6l2.5,3.3-2.1-1.4,1.9,3.2-2-1.6.8,1.9-1.1-.7,1,2.6-1.3-1.4s1.1,3.5,1,3.4c-.1-.2-1.6-2.3-1.6-2.3l.4,2.5-1.1-1.3-.1,2c-.7,0-1.7-.8-2.1-1.2Zm29.4,5.1c-2.3,1-4.6,1.7-7,2.2s-4.7.9-7.1,1c-2.4.2-4.8.2-7.2.1-2.4-.1-4.8-.4-7.3-.7,2.2,1.1,4.7,1.8,7.2,2.3,2.5.4,5,.5,7.5.4,2.5-.2,5-.7,7.4-1.5,2.4-.9,4.7-2.1,6.5-3.8Zm4.6-10c4.2-.7,3.3-8.4-.9-8.1,5.1-4.7-2.2-12.2-7-7.2,2.5.5,4.5,1.9,4.5,1.9l-2.6-.4,2.5,1.9-1.2-.2,2,1.8-1.6-.5,2.1,1.8-1.6-.8s2.2,2.3,2,2.2-1.7-1.2-1.7-1.1c.1.1,2.4,2.9,2.3,2.8s-1.8-1.3-1.8-1.3c0,0,2,3.1,1.8,2.8-.3-.3-1.6-1.5-1.6-1.5l1.5,2.8-1.4-1.3,1.1,2.6-1.3-1.4.4,1.5-.7-.6.5,2.1-.8-1.2s.4,2.8.3,2.6c-.1-.1-.9-1.9-.9-1.9v2l-.7-1.1-.3,1.5c-.7-.1-1.4-.8-1.6-1.2-.4,1.9.8,3.5,1.8,4.1,2.5,1.8,7.1-1.5,4.9-4.6Zm5,.6c.5-1.3,1.1-2.6,1.8-4,1.4-2.6,1.5-6.2.2-9-1.4-2.8-3.5-4.9-6-6.5l-.1.1c1.5,2.5,3.1,4.8,4.2,7.2.5,1.2.9,2.4,1,3.7.1,1.3,0,2.6-.3,4-.2,1.4-.7,2.7-1.3,4-.6,1.3-1.4,2.5-1.9,4-.9,2.8-.8,6,.4,8.7h.2c.1-1.5.2-2.9.3-4.2.1-1.4.4-2.7.7-4,.2-1.2.3-2.6.8-4Zm12.1,14.6c0-1.1-.3-2.1-.8-2.9-.2-.4-.5-.8-.9-1.2-.3-.4-.7-.7-1.1-.9-.8-.5-1.8-.7-2.7-.7s-1.9.1-2.8.5c-.9.4-1.8,1.2-2.2,2.3-.4,1.1-.3,2.1,0,3.2.2.5.5,1.1,1.1,1.5.5.5,1.3.6,1.9.6.6-.1,1.2-.2,1.6-.6.2-.1.4-.3.6-.5.2-.2.3-.4.5-.7.3-.5.4-1,.3-1.6,0-.3-.1-.5-.2-.7-.1-.2-.3-.4-.4-.6,0-.1-.1-.1-.2,0,0,0-.1.1,0,.1h0c.2.9-.1,1.5-.6,2-.5.4-1.2.6-1.7.6-.2-.1-.4-.1-.5-.3-.1-.1-.2-.3-.3-.6-.1-.6-.2-1.3-.1-1.9.1-.6.4-1.2.9-1.7s1.3-.8,2.1-.8,1.6.2,2.2.6c.3.2.6.5.7.8.2.3.3.7.4,1.1.4,1.5,0,2.9-.8,3.9-.4.5-1,.8-1.6,1-.2.1-.8.3-1.3.5-.2.1-.5.3-.7.4-.2.2-.4.4-.6.5-.8.8-1.3,1.7-1.6,2.8-.3,1-.3,2.2.2,3.3.5,1,1.4,1.8,2.3,2.1.9.4,1.9.4,2.8.3.1,0,.1-.1.1-.1,0,0,0-.1-.1-.1h0c-.8-.4-1.6-.7-2.1-1.2-.6-.5-.9-1.1-1-1.7-.2-1.2.5-2.5,1.4-3.4.1-.1.2-.2.4-.3.1-.1.3-.2.4-.3.3-.1.5-.2,1-.5.9-.4,1.8-1.1,2.5-2,.5-.7.8-1.7.9-2.8Zm1.9-14.8c5.2-.9,4.1-10.5-1.1-10.1,6.3-5.8-2.7-15.2-8.7-8.9,3.1.6,5.5,2.3,5.5,2.3l-3.2-.5,3.1,2.3-1.5-.3,2.5,2.2-2-.7,2.6,2.3-2-1s2.7,2.9,2.5,2.8c-.3-.1-2.1-1.5-2.1-1.4.1.1,3,3.5,2.9,3.5-.1-.1-2.3-1.6-2.3-1.6,0,0,2.5,3.8,2.2,3.5-.3-.4-2-1.8-2-1.8l1.9,3.4-1.8-1.6,1.4,3.3-1.6-1.8.5,1.9-.9-.8.6,2.5-1-1.5s.5,3.5.4,3.3-1.1-2.4-1.1-2.4v2.4l-.9-1.4-.4,1.9c-.9-.1-1.7-1-2-1.5-.5,2.4,1,4.3,2.2,5.1,3.4,2.4,9.1-1.6,6.3-5.4Zm5.8,1.6c.4-.9-.7-1.2-.8-.5-.5-.9-1.3-.1-.8.6-.9-.5-1.2.6-.3.9-1.1.5.2,1.5.7.5-.1.2-.1.8.4.9s.6-.4.5-1c.1.3.6.9.9.3.3-.6-.3-.8-.3-.8.9,0,.6-1.1-.3-.9Zm6.2-8.8c3.3-1.6.8-7.9-2.6-6.6,3.2-5.1-4.7-9.8-7.6-4.4,2.2-.1,4.2.5,4.2.5l-2.3.3,2.6,1-1.2.1,2.1,1-1.5-.1,2.2,1-1.6-.3s2.4,1.4,2.2,1.4-1.7-.6-1.7-.5c.1,0,2.7,1.9,2.6,1.8-.1,0-1.8-.7-1.8-.7,0,0,2.4,2.1,2.1,1.9-.3-.2-1.7-.9-1.7-.9l1.9,2-1.5-.8,1.5,2-1.4-.9.7,1.2-.8-.4.9,1.6-1-.8s1,2.3.9,2.2c-.1-.1-1.2-1.4-1.2-1.4l.5,1.7-.9-.8.1,1.3c-.6.1-1.3-.4-1.6-.6.1,1.7,1.5,2.7,2.4,3.1,2.9,1,6.1-2.8,3.5-4.9Zm9.7,32.1c-.9-1.1-1.1-2.8-.6-4.2.1-.2.1-.4.2-.5.1-.2.2-.3.2-.5.2-.3.3-.5.7-1.1.7-1,1.2-2.2,1.3-3.5s-.1-2.6-.8-3.6c-.6-1.1-1.5-1.9-2.5-2.4-.5-.3-1-.5-1.5-.7s-1.1-.2-1.7-.2c-1.1,0-2.2.4-3.1.9-.9.5-1.9,1.2-2.6,2.1-.7.9-1.1,2.3-.9,3.6.3,1.3.9,2.3,1.9,3.2.5.4,1.2.8,2,.9s1.6-.1,2.2-.5c.6-.4,1-1,1.3-1.6.2-.3.2-.6.3-.9s.1-.6.1-.9c0-.6-.2-1.3-.6-1.8-.1-.3-.4-.4-.7-.6-.2-.2-.5-.2-.8-.3-.1,0-.2,0-.2.1v.2h0c.7.7.8,1.6.6,2.3-.2.7-.8,1.3-1.3,1.6-.3.1-.5.1-.7,0-.2,0-.4-.2-.7-.4-.5-.5-1-1.2-1.2-1.8-.3-.6-.4-1.4-.1-2.2.3-.8.8-1.6,1.6-2.1s1.7-.8,2.6-.7c.5,0,.8.2,1.2.4.4.2.8.5,1.1.8,1.3,1.3,1.8,2.9,1.5,4.3-.2.7-.5,1.4-1,2-.2.2-.7.8-1,1.3-.2.3-.3.6-.4.9-.1.3-.2.6-.3.9-.3,1.2-.3,2.5,0,3.7s1,2.4,2.1,3.1c1.1.8,2.4,1,3.5.8,1.2-.1,2.1-.7,3-1.3.1,0,.1-.1,0-.2l-.1-.1h0c-1,.1-2,.2-2.9,0-.5-.1-1.2-.5-1.7-1Zm32.7-43.4c-.9-1.8-2.4-3.2-4.1-4.3-1.7-1.1-3.5-1.9-5.4-2.6-3.8-1.4-7.7-2.2-11.5-3-1.9-.4-3.9-.8-5.7-1.4-1.9-.5-3.7-1.3-5-2.6-1.3-1.3-2-3.3-1.7-5.2.1-.9.4-1.9,1-2.7.5-.8,1.4-1.5,2.4-1.5-1-.1-2,.6-2.6,1.4s-1.1,1.8-1.3,2.8c-.4,2,.2,4.2,1.6,5.8,1.4,1.6,3.4,2.4,5.3,3,1.9.6,3.9,1,5.8,1.5,3.9.8,7.8,1.6,11.5,2.8,1.9.6,3.7,1.3,5.4,2.3.8.5,1.7,1,2.4,1.7.7.5,1.3,1.2,1.9,2Zm2,16.8c-1.4,2.7-3.5,5-6,6.7-2.5,1.6-5.4,2.8-8.3,3.3-2.9.5-6,.4-8.9-.4s-5.5-2.5-7.4-5c.7,1.3,1.8,2.5,3,3.5s2.7,1.7,4.1,2.2c3,1,6.2,1.1,9.3.6,3.1-.6,6.1-1.8,8.6-3.6,1.3-.9,2.4-2,3.4-3.2.9-1.3,1.7-2.7,2.2-4.1Zm2.4-10.3c.1-2.9-.8-5.8-2.5-8.1-.4-.6-.9-1.1-1.4-1.6l-.7-.8-.8-.7c-1.1-.9-2.3-1.6-3.6-2.2,1.1.9,2.3,1.6,3.2,2.6l.8.7.7.8c.4.5.9,1,1.2,1.6,1.5,2.3,2.3,4.9,2.2,7.6s-1,5.3-2.3,7.7c-.3.6-.7,1.2-1.1,1.8-.4.6-.8,1.1-1.2,1.7l-1.4,1.6-1.5,1.5c2.3-1.6,4.3-3.6,5.8-6,1.6-2.5,2.6-5.3,2.6-8.2Zm-46.9,5.4c0,.7,0,1.3-.3,1.8s-.8.8-1.3,1c-.6.2-1.2.2-1.8.1s-1.2-.4-1.7-.9c.1.7.7,1.3,1.4,1.6.7.3,1.5.3,2.2.1.7-.2,1.4-.8,1.7-1.5.4-.8.2-1.6-.2-2.2Z"/>
+</svg></div>
+  <div class="title-cn">命理分析</div>
+  <div class="subtitle">RAMALAN NASIB &middot; LAPORAN LENGKAP</div>
+  <div class="name">Henry</div>
+  <div class="meta">1962-10-29 05:00<br>屬 Macan · 寅</div>
+  <div class="seal">命</div>
+</section>
+<section class="page">
+  <h2 style="text-align:center;">Daftar Isi · 目錄</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <table style="margin-top:6mm;">
+    <tr><td style="width:18mm;text-align:center;font-family:'Cormorant Garamond',serif;color:var(--emas-rich);font-weight:600;">01</td><td>Pengantar & Disclaimer Etika</td></tr><tr><td style="width:18mm;text-align:center;font-family:'Cormorant Garamond',serif;color:var(--emas-rich);font-weight:600;">02</td><td>Profil Subjek & Chart 4 Pilar</td></tr><tr><td colspan="2" style="background:rgba(185,28,28,0.08);color:var(--merah-deep);font-weight:700;font-family:'Noto Serif TC',serif;text-align:center;letter-spacing:3px;padding:3mm;">BAGIAN I — 八字四柱 BAZI</td></tr><tr><td style="width:18mm;text-align:center;font-family:'Cormorant Garamond',serif;color:var(--emas-rich);font-weight:600;">03</td><td>Day Master & Wu Xing Balance</td></tr><tr><td style="width:18mm;text-align:center;font-family:'Cormorant Garamond',serif;color:var(--emas-rich);font-weight:600;">04</td><td>性情 Kepribadian</td></tr><tr><td style="width:18mm;text-align:center;font-family:'Cormorant Garamond',serif;color:var(--emas-rich);font-weight:600;">05</td><td>全局總論 Ringkasan Menyeluruh</td></tr><tr><td style="width:18mm;text-align:center;font-family:'Cormorant Garamond',serif;color:var(--emas-rich);font-weight:600;">06</td><td>神煞 Bintang Nasib</td></tr><tr><td style="width:18mm;text-align:center;font-family:'Cormorant Garamond',serif;color:var(--emas-rich);font-weight:600;">07</td><td>財富 Kekayaan</td></tr><tr><td style="width:18mm;text-align:center;font-family:'Cormorant Garamond',serif;color:var(--emas-rich);font-weight:600;">08</td><td>婚配 Kompatibilitas Pernikahan</td></tr><tr><td style="width:18mm;text-align:center;font-family:'Cormorant Garamond',serif;color:var(--emas-rich);font-weight:600;">09</td><td>事業 Karir & Profesi</td></tr><tr><td style="width:18mm;text-align:center;font-family:'Cormorant Garamond',serif;color:var(--emas-rich);font-weight:600;">10</td><td>陽宅 Feng Shui Hunian</td></tr><tr><td style="width:18mm;text-align:center;font-family:'Cormorant Garamond',serif;color:var(--emas-rich);font-weight:600;">11</td><td>大運 Timeline Hidup</td></tr><tr><td colspan="2" style="background:rgba(185,28,28,0.08);color:var(--merah-deep);font-weight:700;font-family:'Noto Serif TC',serif;text-align:center;letter-spacing:3px;padding:3mm;">BAGIAN II — 紫微斗數 ZI WEI</td></tr><tr><td style="width:18mm;text-align:center;font-family:'Cormorant Garamond',serif;color:var(--emas-rich);font-weight:600;">12</td><td>12 Palace Overview</td></tr><tr><td style="width:18mm;text-align:center;font-family:'Cormorant Garamond',serif;color:var(--emas-rich);font-weight:600;">13</td><td>命宮 · 兄弟 · 夫妻 · 子女</td></tr><tr><td style="width:18mm;text-align:center;font-family:'Cormorant Garamond',serif;color:var(--emas-rich);font-weight:600;">14</td><td>財帛 · 疾厄 · 遷移 · 僕役</td></tr><tr><td style="width:18mm;text-align:center;font-family:'Cormorant Garamond',serif;color:var(--emas-rich);font-weight:600;">15</td><td>官祿 · 田宅 · 福德 · 父母</td></tr><tr><td colspan="2" style="background:rgba(185,28,28,0.08);color:var(--merah-deep);font-weight:700;font-family:'Noto Serif TC',serif;text-align:center;letter-spacing:3px;padding:3mm;">BAGIAN III — PENUTUP</td></tr><tr><td style="width:18mm;text-align:center;font-family:'Cormorant Garamond',serif;color:var(--emas-rich);font-weight:600;">16</td><td>Sintesis & Saran Action</td></tr><tr><td style="width:18mm;text-align:center;font-family:'Cormorant Garamond',serif;color:var(--emas-rich);font-weight:600;">17</td><td>Glossary Istilah Tionghoa</td></tr><tr><td style="width:18mm;text-align:center;font-family:'Cormorant Garamond',serif;color:var(--emas-rich);font-weight:600;">18</td><td>Disclaimer & Catatan Etika</td></tr>
+  </table>
+  <div class="page-num">II</div>
+</section>
+<section class="page">
+  <h2>Pengantar</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <p>Laporan ini adalah konversi setia dari output software ramalan Taiwan
+  <span class="cn">星僑五術 — 四柱論命附加紫微斗數 V2.6</span>
+  ke dalam Bahasa Indonesia, dengan ditambah visualisasi yang dihasilkan
+  dari perhitungan deterministik (BaZi calculator + tabel kompatibilitas shio).</p>
+
+  <p>Sistem yang digunakan menggabungkan tiga ranah klasik:</p>
+  <div class="info-grid">
+    <div class="info-card">
+      <div class="info-card-title">八字四柱 — BaZi</div>
+      <p>Empat Pilar (Tahun, Bulan, Hari, Jam) sebagai cetakan watak dan trend
+      hidup. Day Master adalah inti diri Anda.</p>
+    </div>
+    <div class="info-card">
+      <div class="info-card-title">紫微斗數 — Zi Wei</div>
+      <p>Astrologi 12 Palace dengan 14 bintang utama yang memetakan area
+      kehidupan: keluarga, karir, rezeki, kesehatan, dll.</p>
+    </div>
+    <div class="info-card">
+      <div class="info-card-title">陽宅 — Yang Zhai</div>
+      <p>Feng shui hunian berbasis BaZi pribadi: arah hadap, tata ruang,
+      titik beruntung untuk pintu, ranjang, dan altar.</p>
+    </div>
+    <div class="info-card">
+      <div class="info-card-title">⚖ Etika</div>
+      <p>Laporan ini bersifat <em>referensi tradisi</em>. Tidak menggantikan
+      keputusan medis, hukum, atau finansial profesional. Tidak ada prediksi
+      kematian. Bahasa diorientasikan ke pemberdayaan.</p>
+    </div>
+  </div>
+  <blockquote>
+    Ramalan Tionghoa membaca <em>kecenderungan</em> dan <em>trend</em>, bukan
+    nasib mati. Kemampuan untuk memilih dan bertindak tetap ada di tangan Anda.
+  </blockquote>
+  <div class="page-num">III</div>
+</section>
+<section class="page">
+  <h2>Profil Subjek</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <div style="display:grid;grid-template-columns:55mm 1fr;gap:6mm;align-items:center;margin-top:4mm;">
+    <div style="text-align:center;">
+      <div class="shio-portrait"><svg class="shio-svg" preserveAspectRatio="xMidYMid meet" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166.23 99.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a50404;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m32.6,41.36c0,.8-.4,1.6-1.2,2.1-.8.5-1.8.5-2.6.2-.8-.3-1.5-.9-2-1.6-.4-.7-.6-1.7-.2-2.4.1.8.4,1.4.9,1.9s1,.9,1.7,1.1c.6.2,1.3.3,1.9.1.5-.3,1-.8,1.5-1.4Zm22.9-12.4c-2.4-1.8-5.1-1.8-7.2-.2,2.2-.5,4.4-.1,6.2,1.4,1.6,1.2,3,3.3,2.5,5.4.9-.8,1-4.7-1.5-6.6Zm28.9,6.3c.7-.6,1.2-3.4-.5-5.2-1.6-1.7-3.6-1.9-5.4-1,1.7-.1,3.3.5,4.5,1.8,1.1,1.1,1.9,2.9,1.4,4.4Zm-24.2,10.8c.9-.8,1.4-2,1.5-3.2s-.2-2.6-1.1-3.4c-.9-.9-2.2-1.1-3.3-.9,1,.4,1.9.9,2.4,1.6s.6,1.6.5,2.5-.4,1.8-1,2.6c-.5.8-1.3,1.4-2.3,1.8,1.2.3,2.5-.2,3.3-1Zm-6.2,7.1c1,.5,2.2.7,3.3.5,1.1-.2,2.3-.9,2.8-2,.6-1.1.4-2.3-.1-3.2-.1,1.1-.3,2-.8,2.7-.5.6-1.3,1-2.2,1.2-.9.2-1.8.1-2.6-.1-.9-.3-1.7-.7-2.3-1.6.1,1,.9,2,1.9,2.5Zm18-1.4c-.6.5-1.4.8-2.2.8s-1.7-.1-2.5-.5-1.5-.9-1.9-1.8c-.1,1,.5,2.1,1.4,2.7.9.7,2,1,3,1,1.1,0,2.3-.5,2.9-1.5.7-.9.7-2.1.3-3-.1.9-.4,1.8-1,2.3Zm2.1-10.1c.3.7.4,1.6.1,2.4-.2.8-.7,1.6-1.3,2.3-.6.6-1.4,1.2-2.4,1.3,1,.4,2.2.1,3.1-.5.9-.7,1.6-1.6,1.9-2.7s.2-2.4-.5-3.4-1.9-1.4-2.9-1.3c.9.6,1.7,1.2,2,1.9Zm10,5.5c-.5.4-1.1.6-1.8.7-.7,0-1.4-.1-2-.4s-1.2-.8-1.6-1.5c-.1.8.4,1.7,1.1,2.2s1.6.8,2.5.8,1.8-.4,2.4-1.2c.5-.8.6-1.7.3-2.5-.1.8-.4,1.5-.9,1.9Zm-11.8-10.2c.9-.7,1.5-4.3-.6-6.4-2-2.1-4.5-2.4-6.7-1.2,2.1-.1,4.1.6,5.6,2.2,1.4,1.3,2.4,3.5,1.7,5.4Zm-38.6,2.9c.9-.2,1.7-.7,2.2-1.4.6-.7.9-1.7.6-2.6-.2-.9-1-1.6-1.8-1.8.5.7.9,1.3.9,2s-.2,1.3-.7,1.8c-.4.5-1,1-1.6,1.3s-1.4.4-2.2.3c.7.5,1.7.6,2.6.4Zm2.1-8c.9-.2,2.4-2.7,1.5-4.9-.9-2.1-2.6-3.2-4.6-2.9,1.6.5,2.8,1.7,3.5,3.3.6,1.4.6,3.4-.4,4.5Zm-7-.5c.5-.4.6-1,.2-1.5s-1-.6-1.5-.2-.6,1-.2,1.5c.3.5,1,.6,1.5.2Zm74,16.8c-.6.5-1.4.8-2.2.8s-1.7-.1-2.5-.5-1.5-.9-1.9-1.8c-.1,1,.5,2.1,1.4,2.7.9.7,2,1,3,1,1.1,0,2.3-.5,2.9-1.5.7-.9.7-2.1.3-3,0,.9-.4,1.8-1,2.3Zm8.9-22.3c-1.7-1-3.5-.8-4.8.4,1.4-.5,2.9-.4,4.2.5,1.1.6,2.2,2,2.1,3.4.6-.7.3-3.2-1.5-4.3Zm-8.5,7.5c.9-.7,1.5-4.3-.6-6.4-2-2.1-4.5-2.4-6.7-1.2,2.1-.1,4.1.6,5.6,2.2,1.4,1.3,2.3,3.5,1.7,5.4Zm-16.6,5.2c-.6-.8-1.5-1.1-2.4-1.1.7.4,1.3.9,1.6,1.5.3.6.3,1.3.1,2-.2.7-.5,1.3-1,1.8s-1.1.9-2,1.1c.8.3,1.8.1,2.5-.4s1.3-1.3,1.5-2.2c.4-.8.3-1.9-.3-2.7Zm29.6-1.7c.5-.6.8-1.4.8-2.2s-.3-1.7-1-2.2-1.5-.6-2.2-.3c.7.2,1.3.4,1.7.9.4.4.5,1,.5,1.6s-.2,1.2-.4,1.8c-.3.6-.7,1.1-1.4,1.4.7,0,1.5-.4,2-1Zm-10.3.6c-.7-1-1.9-1.4-2.9-1.3.9.5,1.7,1.1,2,1.9.3.7.4,1.6.1,2.4-.2.8-.7,1.6-1.3,2.3-.6.6-1.4,1.2-2.4,1.3,1,.4,2.2.1,3.1-.5.9-.7,1.6-1.6,1.9-2.7.3-1.1.3-2.4-.5-3.4Zm43,19.2c-15.2,4.4-20.9-6.6-20.9-6.6,0,0,4.2,19.2,12.8,22.6,1.5.6,2.6,1.8,2.8,3.4,1.6,9.1,1.3,15.9.8,19.7-.3,2.1-2,3.8-4.2,3.9-2.6.1-6.1.2-9,.1-2.1-.1-2.9-2.9-1.1-4.1,1-.6,2.2-.9,3.2-1,1.3-.1,2.3-1.2,2.4-2.5.5-5.1-.7-8.8-3.8-11.4-3.2-2.8-16.8-10.8-21-19.8-.8-1.6-.6-3.5.4-5,3-4.9,4.1-10.4,4.1-11.8-1.6,6.6-6.1,12.9-10.6,17.4-3.8,3.9-2.4,15.9.2,20.6.7,1.3.6,2.9-.4,4-3,3.7-7.4,6.9-10.1,9.7-1.1,1.2-2.6,1.9-4.3,2-2.4.2-4.7.1-6.7,0-3-.2-3.9-4.3-1.1-5.5.3-.1.5-.2.8-.2,2.8-.2,7.2-.2,7.2-.2,0,0,1.4-3.9,2.6-6.6.5-1.1.5-2.3,0-3.4-2.6-5.8-5.4-13.5-4.4-20.2-10.2,6.7-25.5,2.2-27.4,1.9-1.9-.3-4.8-1.1-7.1,1.2,0,0,1,15.2-4.6,26.4-.8,1.5-2.3,2.5-3.9,2.7-3.7.4-7.2-.3-9.3-.8-1.6-.4-2.4-2.2-1.6-3.6.3-.4.7-.8,1.3-.9,2.2-.4,6.8.6,6.4-3.8s-.7-14.4.8-16.9c-5.2,5.8-11.1,4.8-13.8,8.5-1.6,2.2-.8,4.9,1.8,5.9,4.5,1.8,1.5,7.5-2.1,5.7,0,0-.1,0-.1-.1-4-2.1-3.9-1.9-5.4-1.9-1.6.1-3.3-2-4.6-6.6-1.2-4.6-1.9-7.6,1.9-11.1s9.3-6,8.1-11.1c-1.2-5.1-5.8-10.8-5.2-15-4.3-1.2-8.1-1.4-10.5,1.5-2.2,2.7-6.5,2.9-8.7.5-.3-.4-.3-1,.1-1.3.8-.8.6-1.4-.4-1.1-1.2.4-4.2-.6-4.3-2.9-.1-2.3,1.9-4.6,2-6s-2.2-4.6-.5-7.6,2.8-3.9,2.8-3.9c0,0-3.6-.8-3.6-4.6s6.4-2.8,6.8,1.6c.4.6,1.5.2,1.9,0,3.7-1.6,7.1-.7,7.7.1-.5-4.8,4.9-4.6,6.1-2.6,1.1,1.9.8,3.7.1,4.9,4.1,1,9.3-2.2,17.7-1.5,8.4.7,14.6,9.4,36.7,2.9,22.1-6.4,38.4-1.1,47.4,8.4,9.1,9.5,6,20.1,18.7,20.1s20.7-19.5,10.7-25.5c-12.5-7.4-32.7-3.7-32.7-15.8s7.1-9.7,8.9-8.2c1.8,1.5-.1,4.1-.6,6.9-.3,2.1,0,4.1,7.2,4.9,7.4.8,21.1,4,26.8,12.8,5.6,9.2,0,26.4-15.2,30.8ZM63.6,29.56c3.1.6,5.5,2.3,5.5,2.3l-3.2-.5,3.1,2.3-1.5-.3,2.5,2.2-2-.7,2.6,2.3-2-1s2.7,2.9,2.5,2.8c-.3-.1-2.1-1.5-2.1-1.4.1.1,3,3.5,2.9,3.5-.1-.1-2.3-1.6-2.3-1.6,0,0,2.5,3.8,2.2,3.5-.3-.4-2-1.8-2-1.8l1.9,3.4-1.8-1.6,1.4,3.3-1.6-1.8.5,1.9-.9-.8.6,2.5-1-1.5s.5,3.5.4,3.3-1.1-2.4-1.1-2.4v2.4l-.9-1.4-.4,1.9c-.9-.1-1.7-1-2-1.5-.5,2.4,1,4.3,2.2,5.1,3.4,2.2,9.2-1.8,6.4-5.6,5.2-.9,4.1-10.5-1.1-10.1,6.2-5.6-2.8-14.9-8.8-8.7Zm-24.7-7.1c1,1.3,1.9,2.7,2.5,4.1s1,2.8,1,4.2-.3,2.9-.8,4.3-1.2,2.9-1.9,4.3c-.7,1.5-1.6,2.8-2.6,4.1-1,1.3-2.2,2.4-3.2,3.8-1,1.3-1.8,2.8-2.3,4.4s-.9,3.3-.7,5h.2c.6-1.6,1.2-3,1.9-4.4.7-1.4,1.5-2.7,2.3-4.2.7-1.4,1.4-2.9,2.3-4.3s1.9-2.6,3-3.9,2-2.6,2.8-4.2c.7-1.5,1.3-3.3,1.2-5.1-.1-1.8-.7-3.6-1.8-5-1-1.4-2.3-2.5-3.7-3.4l-.2.3Zm-20.5-3.4c1.1-.5,2.8.1,3.5,2.2.9-3.7-2.6-4.3-3.5-2.2Zm-6.8,1.1c-.9.4-1.6,1-2.2,1.7s-1,1.6-1.2,2.5-.2,1.9.2,2.7c0-.9.3-1.7.6-2.5.3-.8.7-1.5,1.2-2.1,1-1.3,2.4-2.2,4.1-2.7-.9-.1-1.9,0-2.7.4Zm-1.1,9.4c2.2,0,3.7-.8,4.3-2.9-1.2-.7-4.1-.2-4.3,2.9Zm-4.8-9.3c-.5-1.6-2.3-2.5-3.5-2.3.8,1.7,2.6,2.4,3.5,2.3Zm-3.8,6.2c.2,1.5,1.1,3.7,2.6,2.2-.1-2.5-1.5-3.6-2.6-2.2Zm2.8,10.5c-.8,0-1.8-.1-2.6-.1-.4,0-.7.4-.6.8.2.4.4.7.6,1,.3.4.9.5,1.3.2s.9-.6,1.6-1c.3-.3.2-.9-.3-.9Zm2.5-14.2c.7-1.2,1.8-2.2,3.2-3.1-1.6.1-3.2,1.1-4,2.6-.4.7-.7,1.6-.7,2.4s.2,1.7.7,2.3c-.2-1.6.1-3,.8-4.2Zm6.3,12.6c.9-.5,1.7-1.1,2.4-1.9.7-.7,1.2-1.7,1.4-2.6-.6.8-1.2,1.5-2,2.1-.7.6-1.5,1.1-2.3,1.5-1.6.9-3.4,1.6-5.3,2.3,2.1.1,4.1-.5,5.8-1.4Zm-4.9,2.6c2,.4,4,.1,5.9-.6.9-.4,1.8-.8,2.6-1.5.8-.6,1.5-1.5,1.8-2.4-.7.7-1.4,1.3-2.2,1.8-.8.5-1.7.9-2.5,1.2-1.8.7-3.7,1.1-5.6,1.5Zm11.2-1.4c-.8.6-1.6,1.1-2.5,1.4s-1.8.6-2.7.8c-1.8.4-3.7.5-5.7.7,1.9.7,3.9.7,5.9.3,1-.2,2-.6,2.8-1.1,1-.5,1.8-1.2,2.2-2.1Zm4.6-11.6c.3-.3.5-.7.4-1.1-.1-.8-.6-1.2-1.2-1.3h-.1s-.1.1,0,.1c.3.4.4.9.3,1.1s-.3.2-.7.2-.7-.1-1.3-.1c-.6-.1-1.2,0-1.8.2-.6.2-1.2.5-1.7,1.1-.5.5-.8,1.4-.7,2.2.2,1.6,1.5,2.2,2.3,2.7s1.6,1.2,2,2c.4.9.3,1.8.1,2.6-.4,1.5-1.7,2.8-3,4.5v.1c0,.1.1.1.1.1,1-.2,2-.7,2.9-1.4.8-.7,1.6-1.7,1.7-3s-.6-2.3-1.1-3.2c-.6-.9-1.2-1.7-1.8-2.5-.3-.4-.6-.8-.8-1.1-.2-.3-.3-.7-.3-.9,0-.4.4-.8,1.1-1,.3-.1.7-.2,1.1-.3.2,0,.5,0,.8-.1s.6-.1.9-.2c.2-.3.5-.4.8-.7Zm1.9,8.1c1.1.5,1.4-.6,1.4-.6.2,1.6,2.3,1,1.7-.6,1.6.6,2-1.5.7-1.6,1.6-1,0-2.3-1.1-1.4.7-1.8-1.3-2.1-1.8-.4-1.1-1.9-2.7.7-.9,1.4-.4-.1-1.6-.1-1.6.9s.8,1,1.9.7c-.5.1-1.4,1.1-.3,1.6Zm6.8,7.7c4.1.9,6.2-6.5,2.2-7.8,6.4-2.4,2.6-12-3.7-9.2,2.1,1.4,3.4,3.4,3.4,3.4l-2.2-1.3,1.6,2.7-1-.7,1.1,2.4-1.3-1.1,1.2,2.4-1.2-1.3s1.2,2.9,1,2.8-1.1-1.7-1.1-1.6,1.1,3.5,1,3.4-1.2-1.9-1.2-1.9c0,0,.7,3.6.6,3.2s-.9-1.9-.9-1.9l.3,3.1-.8-1.7v2.8l-.7-1.8-.2,1.6-.4-.9-.3,2.1-.3-1.4s-.7,2.7-.7,2.6c0-.2-.1-2.1-.1-2.1l-.7,1.8-.2-1.3-.9,1.3c-.6-.3-1-1.2-1-1.7-1.1,1.6-.6,3.5.1,4.4,1.9,2.7,7.3,1.4,6.4-2.3Zm10.3,17.8c0-.5,0-1-.1-1.4-.1-.5-.3-1-.5-1.4-.5-.8-1.1-1.5-1.9-2s-1.6-1-2.6-1.1c-1-.2-2.2.1-3.1.8-.9.7-1.4,1.6-1.7,2.7-.1.6-.2,1.2.1,1.9.2.7.7,1.2,1.3,1.5.6.3,1.1.4,1.7.4.3,0,.6-.1.8-.1.3-.1.5-.2.8-.3.5-.3.9-.7,1.1-1.1.1-.2.2-.5.2-.7s0-.5-.1-.7c0-.1-.1-.1-.1-.1q-.1,0-.1.1h0c-.3.8-.9,1.2-1.5,1.4-.6.1-1.3-.1-1.7-.4-.1-.2-.3-.3-.3-.5s0-.4.1-.7c.2-.6.5-1.2.9-1.7s.9-.8,1.7-1c.7-.1,1.5,0,2.2.4s1.3,1,1.6,1.7c.1.4.2.7.2,1.1s-.1.8-.2,1.1c-.5,1.5-1.6,2.5-2.8,2.8-.6.2-1.3.1-1.9,0-.2-.1-.9-.2-1.4-.2h-.8c-.3,0-.5.1-.8.1-1.1.2-2,.7-2.8,1.5-.8.7-1.4,1.7-1.6,2.9-.2,1.1.2,2.2.8,3,.6.8,1.4,1.3,2.2,1.8q.1,0,.2-.1v-.1h0c-.5-.7-1-1.4-1.2-2.2-.2-.7-.2-1.4,0-2,.5-1.1,1.7-1.9,3-2.1.2,0,.3-.1.5-.1h.5c.3,0,.5.1,1.1.1,1,.1,2.1.1,3.2-.4,1-.4,1.9-1.1,2.5-2,.2-.9.5-1.9.5-2.9Zm4.4.5c0-1.3-.6-2.4-1.1-3.4s-1-2-1.2-3c-.3-1-.4-2-.4-3s.2-1.9.4-2.9c.5-1.9,1.2-3.9,1.9-6.1l-.2-.1c-1.7,1.5-3,3.4-3.8,5.6-.7,2.2-.3,5,1.1,6.8.6.9,1.3,1.8,1.6,2.8.4,1,.3,2.1.1,3-.2.9-.4,1.9-.8,2.8-.3,1-.8,1.9-1.1,3.1l.2.1c.9-.7,1.7-1.5,2.3-2.5.5-.8,1-2,1-3.2Zm3.7-13.9c.5.1.6-.4.5-1,.1.3.6.9.9.3s-.3-.8-.3-.8c.9-.1.6-1.2-.2-1,.4-.9-.7-1.2-.8-.5-.5-.9-1.3-.1-.8.6-.9-.5-1.2.6-.3.9-1.1.5.2,1.5.7.5-.2.3-.3,1,.3,1Zm-.2,4.3c-.1,2.6,1.7,4.3,3.1,5,4,1.8,9.3-3.4,5.7-6.9,5.2-1.8,2.6-11.6-2.8-10.3,5.6-7.1-5.3-15.4-10.5-7.8,3.3.2,6.2,1.5,6.2,1.5h-3.5l3.6,1.9h-1.6l2.9,1.9-2.2-.4,3.1,1.9-2.3-.7s3.3,2.5,3,2.5-2.5-1.2-2.4-1.1,3.7,3.2,3.5,3.2c-.1-.1-2.6-1.3-2.6-1.3,0,0,3.3,3.6,2.9,3.2s-2.3-1.6-2.3-1.6l2.5,3.3-2.1-1.4,1.9,3.2-2-1.6.8,1.9-1.1-.7,1,2.6-1.3-1.4s1.1,3.5,1,3.4c-.1-.2-1.6-2.3-1.6-2.3l.4,2.5-1.1-1.3-.1,2c-.7,0-1.7-.8-2.1-1.2Zm29.4,5.1c-2.3,1-4.6,1.7-7,2.2s-4.7.9-7.1,1c-2.4.2-4.8.2-7.2.1-2.4-.1-4.8-.4-7.3-.7,2.2,1.1,4.7,1.8,7.2,2.3,2.5.4,5,.5,7.5.4,2.5-.2,5-.7,7.4-1.5,2.4-.9,4.7-2.1,6.5-3.8Zm4.6-10c4.2-.7,3.3-8.4-.9-8.1,5.1-4.7-2.2-12.2-7-7.2,2.5.5,4.5,1.9,4.5,1.9l-2.6-.4,2.5,1.9-1.2-.2,2,1.8-1.6-.5,2.1,1.8-1.6-.8s2.2,2.3,2,2.2-1.7-1.2-1.7-1.1c.1.1,2.4,2.9,2.3,2.8s-1.8-1.3-1.8-1.3c0,0,2,3.1,1.8,2.8-.3-.3-1.6-1.5-1.6-1.5l1.5,2.8-1.4-1.3,1.1,2.6-1.3-1.4.4,1.5-.7-.6.5,2.1-.8-1.2s.4,2.8.3,2.6c-.1-.1-.9-1.9-.9-1.9v2l-.7-1.1-.3,1.5c-.7-.1-1.4-.8-1.6-1.2-.4,1.9.8,3.5,1.8,4.1,2.5,1.8,7.1-1.5,4.9-4.6Zm5,.6c.5-1.3,1.1-2.6,1.8-4,1.4-2.6,1.5-6.2.2-9-1.4-2.8-3.5-4.9-6-6.5l-.1.1c1.5,2.5,3.1,4.8,4.2,7.2.5,1.2.9,2.4,1,3.7.1,1.3,0,2.6-.3,4-.2,1.4-.7,2.7-1.3,4-.6,1.3-1.4,2.5-1.9,4-.9,2.8-.8,6,.4,8.7h.2c.1-1.5.2-2.9.3-4.2.1-1.4.4-2.7.7-4,.2-1.2.3-2.6.8-4Zm12.1,14.6c0-1.1-.3-2.1-.8-2.9-.2-.4-.5-.8-.9-1.2-.3-.4-.7-.7-1.1-.9-.8-.5-1.8-.7-2.7-.7s-1.9.1-2.8.5c-.9.4-1.8,1.2-2.2,2.3-.4,1.1-.3,2.1,0,3.2.2.5.5,1.1,1.1,1.5.5.5,1.3.6,1.9.6.6-.1,1.2-.2,1.6-.6.2-.1.4-.3.6-.5.2-.2.3-.4.5-.7.3-.5.4-1,.3-1.6,0-.3-.1-.5-.2-.7-.1-.2-.3-.4-.4-.6,0-.1-.1-.1-.2,0,0,0-.1.1,0,.1h0c.2.9-.1,1.5-.6,2-.5.4-1.2.6-1.7.6-.2-.1-.4-.1-.5-.3-.1-.1-.2-.3-.3-.6-.1-.6-.2-1.3-.1-1.9.1-.6.4-1.2.9-1.7s1.3-.8,2.1-.8,1.6.2,2.2.6c.3.2.6.5.7.8.2.3.3.7.4,1.1.4,1.5,0,2.9-.8,3.9-.4.5-1,.8-1.6,1-.2.1-.8.3-1.3.5-.2.1-.5.3-.7.4-.2.2-.4.4-.6.5-.8.8-1.3,1.7-1.6,2.8-.3,1-.3,2.2.2,3.3.5,1,1.4,1.8,2.3,2.1.9.4,1.9.4,2.8.3.1,0,.1-.1.1-.1,0,0,0-.1-.1-.1h0c-.8-.4-1.6-.7-2.1-1.2-.6-.5-.9-1.1-1-1.7-.2-1.2.5-2.5,1.4-3.4.1-.1.2-.2.4-.3.1-.1.3-.2.4-.3.3-.1.5-.2,1-.5.9-.4,1.8-1.1,2.5-2,.5-.7.8-1.7.9-2.8Zm1.9-14.8c5.2-.9,4.1-10.5-1.1-10.1,6.3-5.8-2.7-15.2-8.7-8.9,3.1.6,5.5,2.3,5.5,2.3l-3.2-.5,3.1,2.3-1.5-.3,2.5,2.2-2-.7,2.6,2.3-2-1s2.7,2.9,2.5,2.8c-.3-.1-2.1-1.5-2.1-1.4.1.1,3,3.5,2.9,3.5-.1-.1-2.3-1.6-2.3-1.6,0,0,2.5,3.8,2.2,3.5-.3-.4-2-1.8-2-1.8l1.9,3.4-1.8-1.6,1.4,3.3-1.6-1.8.5,1.9-.9-.8.6,2.5-1-1.5s.5,3.5.4,3.3-1.1-2.4-1.1-2.4v2.4l-.9-1.4-.4,1.9c-.9-.1-1.7-1-2-1.5-.5,2.4,1,4.3,2.2,5.1,3.4,2.4,9.1-1.6,6.3-5.4Zm5.8,1.6c.4-.9-.7-1.2-.8-.5-.5-.9-1.3-.1-.8.6-.9-.5-1.2.6-.3.9-1.1.5.2,1.5.7.5-.1.2-.1.8.4.9s.6-.4.5-1c.1.3.6.9.9.3.3-.6-.3-.8-.3-.8.9,0,.6-1.1-.3-.9Zm6.2-8.8c3.3-1.6.8-7.9-2.6-6.6,3.2-5.1-4.7-9.8-7.6-4.4,2.2-.1,4.2.5,4.2.5l-2.3.3,2.6,1-1.2.1,2.1,1-1.5-.1,2.2,1-1.6-.3s2.4,1.4,2.2,1.4-1.7-.6-1.7-.5c.1,0,2.7,1.9,2.6,1.8-.1,0-1.8-.7-1.8-.7,0,0,2.4,2.1,2.1,1.9-.3-.2-1.7-.9-1.7-.9l1.9,2-1.5-.8,1.5,2-1.4-.9.7,1.2-.8-.4.9,1.6-1-.8s1,2.3.9,2.2c-.1-.1-1.2-1.4-1.2-1.4l.5,1.7-.9-.8.1,1.3c-.6.1-1.3-.4-1.6-.6.1,1.7,1.5,2.7,2.4,3.1,2.9,1,6.1-2.8,3.5-4.9Zm9.7,32.1c-.9-1.1-1.1-2.8-.6-4.2.1-.2.1-.4.2-.5.1-.2.2-.3.2-.5.2-.3.3-.5.7-1.1.7-1,1.2-2.2,1.3-3.5s-.1-2.6-.8-3.6c-.6-1.1-1.5-1.9-2.5-2.4-.5-.3-1-.5-1.5-.7s-1.1-.2-1.7-.2c-1.1,0-2.2.4-3.1.9-.9.5-1.9,1.2-2.6,2.1-.7.9-1.1,2.3-.9,3.6.3,1.3.9,2.3,1.9,3.2.5.4,1.2.8,2,.9s1.6-.1,2.2-.5c.6-.4,1-1,1.3-1.6.2-.3.2-.6.3-.9s.1-.6.1-.9c0-.6-.2-1.3-.6-1.8-.1-.3-.4-.4-.7-.6-.2-.2-.5-.2-.8-.3-.1,0-.2,0-.2.1v.2h0c.7.7.8,1.6.6,2.3-.2.7-.8,1.3-1.3,1.6-.3.1-.5.1-.7,0-.2,0-.4-.2-.7-.4-.5-.5-1-1.2-1.2-1.8-.3-.6-.4-1.4-.1-2.2.3-.8.8-1.6,1.6-2.1s1.7-.8,2.6-.7c.5,0,.8.2,1.2.4.4.2.8.5,1.1.8,1.3,1.3,1.8,2.9,1.5,4.3-.2.7-.5,1.4-1,2-.2.2-.7.8-1,1.3-.2.3-.3.6-.4.9-.1.3-.2.6-.3.9-.3,1.2-.3,2.5,0,3.7s1,2.4,2.1,3.1c1.1.8,2.4,1,3.5.8,1.2-.1,2.1-.7,3-1.3.1,0,.1-.1,0-.2l-.1-.1h0c-1,.1-2,.2-2.9,0-.5-.1-1.2-.5-1.7-1Zm32.7-43.4c-.9-1.8-2.4-3.2-4.1-4.3-1.7-1.1-3.5-1.9-5.4-2.6-3.8-1.4-7.7-2.2-11.5-3-1.9-.4-3.9-.8-5.7-1.4-1.9-.5-3.7-1.3-5-2.6-1.3-1.3-2-3.3-1.7-5.2.1-.9.4-1.9,1-2.7.5-.8,1.4-1.5,2.4-1.5-1-.1-2,.6-2.6,1.4s-1.1,1.8-1.3,2.8c-.4,2,.2,4.2,1.6,5.8,1.4,1.6,3.4,2.4,5.3,3,1.9.6,3.9,1,5.8,1.5,3.9.8,7.8,1.6,11.5,2.8,1.9.6,3.7,1.3,5.4,2.3.8.5,1.7,1,2.4,1.7.7.5,1.3,1.2,1.9,2Zm2,16.8c-1.4,2.7-3.5,5-6,6.7-2.5,1.6-5.4,2.8-8.3,3.3-2.9.5-6,.4-8.9-.4s-5.5-2.5-7.4-5c.7,1.3,1.8,2.5,3,3.5s2.7,1.7,4.1,2.2c3,1,6.2,1.1,9.3.6,3.1-.6,6.1-1.8,8.6-3.6,1.3-.9,2.4-2,3.4-3.2.9-1.3,1.7-2.7,2.2-4.1Zm2.4-10.3c.1-2.9-.8-5.8-2.5-8.1-.4-.6-.9-1.1-1.4-1.6l-.7-.8-.8-.7c-1.1-.9-2.3-1.6-3.6-2.2,1.1.9,2.3,1.6,3.2,2.6l.8.7.7.8c.4.5.9,1,1.2,1.6,1.5,2.3,2.3,4.9,2.2,7.6s-1,5.3-2.3,7.7c-.3.6-.7,1.2-1.1,1.8-.4.6-.8,1.1-1.2,1.7l-1.4,1.6-1.5,1.5c2.3-1.6,4.3-3.6,5.8-6,1.6-2.5,2.6-5.3,2.6-8.2Zm-46.9,5.4c0,.7,0,1.3-.3,1.8s-.8.8-1.3,1c-.6.2-1.2.2-1.8.1s-1.2-.4-1.7-.9c.1.7.7,1.3,1.4,1.6.7.3,1.5.3,2.2.1.7-.2,1.4-.8,1.7-1.5.4-.8.2-1.6-.2-2.2Z"/>
+</svg></div>
+      <div style="margin-top:2mm;font-family:'Ma Shan Zheng',cursive;
+                  color:var(--merah-imperial);font-size:22pt;">屬Macan</div>
+    </div>
+    <div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:24pt;
+                  color:var(--ink-black);font-weight:700;letter-spacing:2px;">
+        Henry
+      </div>
+      <p style="font-size:10pt;color:var(--ink-soft);margin-top:1mm;">
+        1962-10-29 05:00
+        · 民國 51 年 10 月 2 日 5 時 10 分<br>
+        Gender: <strong>Laki-laki (男)</strong>
+      </p>
+      <div class="card merah" style="margin-top:3mm;">
+        <div class="card-title">Day Master · 日主</div>
+        <p style="font-size:13pt;font-family:'Noto Serif TC',serif;color:var(--merah-deep);">
+          庚金 — <strong>Logam 陽</strong>
+        </p>
+        <p style="font-size:9pt;color:var(--ink-soft);">
+          Format (格局): <strong>偏印格</strong> (Pian Yin Ge)
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin-top:6mm;">Empat Pilar (四柱)</h3>
+  <div class="pillar-grid">
+        <div class="pillar-cell">
+          <div class="pillar-label">年柱 · Pilar Tahun</div>
+          <div class="pillar-stem">壬</div>
+          <div class="pillar-branch">寅</div>
+          <div class="pillar-element">水 陽 · 木<br>Macan</div>
+          
+        </div>
+        <div class="pillar-cell">
+          <div class="pillar-label">月柱 · Pilar Bulan</div>
+          <div class="pillar-stem">庚</div>
+          <div class="pillar-branch">戌</div>
+          <div class="pillar-element">金 陽 · 土<br>Anjing</div>
+          
+        </div>
+        <div class="pillar-cell dm">
+          <div class="pillar-label">日柱 · Pilar Hari (Diri)</div>
+          <div class="pillar-stem">庚</div>
+          <div class="pillar-branch">子</div>
+          <div class="pillar-element">金 陽 · 水<br>Tikus</div>
+          <div class="dm-badge">日主 Day Master</div>
+        </div>
+        <div class="pillar-cell">
+          <div class="pillar-label">時柱 · Pilar Jam</div>
+          <div class="pillar-stem">己</div>
+          <div class="pillar-branch">卯</div>
+          <div class="pillar-element">土 陰 · 木<br>Kelinci</div>
+          
+        </div></div>
+
+  <div class="info-grid" style="margin-top:5mm;">
+    <div class="info-card" style="border-color:#16a34a;">
+      <div class="info-card-title" style="color:#16a34a;">✓ 喜用神 — Elemen Beruntung</div>
+      <p>水 Air · 木 Kayu</p>
+    </div>
+    <div class="info-card" style="border-color:#a16207;">
+      <div class="info-card-title" style="color:#a16207;">⚠ 忌神 — Elemen Hindari</div>
+      <p>金 Logam · 土 Tanah</p>
+    </div>
+  </div>
+  <div class="page-num">IV</div>
+</section>
+<section class="page section-opener">
+  <div class="roman">BAGIAN I</div>
+  <div class="title-cn">八字四柱</div>
+  <div class="label-id">BaZi · Empat Pilar Nasib</div>
+  <p class="desc">Bacaan dari empat pilar lahir. Day Master sebagai inti, didukung 5 elemen dan 10 dewa, untuk membaca watak dan trend hidup.</p>
+</section>
+<section class="page">
+  <h2>Day Master & Wu Xing Balance</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <div class="card merah">
+    <div class="card-title">Inti Diri Anda</div>
+    <p>Day Master Anda adalah <strong class="cn">庚金</strong>
+    (Logam 陽). Inilah cetakan watak inti Anda — bagaimana
+    Anda memandang dunia dan apa yang membuat Anda merasa hidup.</p>
+  </div>
+
+  <h3>Distribusi 5 Elemen di Bagan</h3>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:4mm;align-items:center;">
+    <div><svg viewBox="0 0 220 220" preserveAspectRatio="xMidYMid meet" style="width:100%;max-width:120mm;height:auto;display:block;margin:0 auto;"><polygon points="110.0,90.8 128.3,104.1 121.3,125.6 98.7,125.6 91.7,104.1" fill="none" stroke="#c9a04c" stroke-width="0.4" opacity="0.5"/><polygon points="110.0,71.5 146.6,98.1 132.6,141.1 87.4,141.1 73.4,98.1" fill="none" stroke="#c9a04c" stroke-width="0.4" opacity="0.5"/><polygon points="110.0,52.2 164.9,92.2 143.9,156.7 76.1,156.7 55.1,92.2" fill="none" stroke="#c9a04c" stroke-width="0.4" opacity="0.5"/><polygon points="110.0,33.0 183.2,86.2 155.3,172.3 64.7,172.3 36.8,86.2" fill="none" stroke="#c9a04c" stroke-width="0.9" opacity="1"/><line x1="110.0" y1="110.0" x2="110.0" y2="33.0" stroke="#e8c87a" stroke-width="0.4"/><line x1="110.0" y1="110.0" x2="183.2" y2="86.2" stroke="#e8c87a" stroke-width="0.4"/><line x1="110.0" y1="110.0" x2="155.3" y2="172.3" stroke="#e8c87a" stroke-width="0.4"/><line x1="110.0" y1="110.0" x2="64.7" y2="172.3" stroke="#e8c87a" stroke-width="0.4"/><line x1="110.0" y1="110.0" x2="36.8" y2="86.2" stroke="#e8c87a" stroke-width="0.4"/><polygon points="110.0,63.1 129.1,103.8 149.4,164.2 64.7,172.3 55.9,92.4" fill="rgba(185,28,28,0.25)" stroke="#b91c1c" stroke-width="1.5"/><text x="110.0" y="19.0" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif TC" font-size="11" fill="#7a0d0d" font-weight="700">木</text><text x="110.0" y="30.0" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif" font-size="8" fill="#5c4a36">Kayu 1.4</text><text x="196.5" y="81.9" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif TC" font-size="11" fill="#7a0d0d" font-weight="700">火</text><text x="196.5" y="92.9" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif" font-size="8" fill="#5c4a36">Api 0.6</text><text x="163.5" y="183.6" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif TC" font-size="11" fill="#7a0d0d" font-weight="700">土</text><text x="163.5" y="194.6" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif" font-size="8" fill="#5c4a36">Tanah 2.0</text><text x="56.5" y="183.6" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif TC" font-size="11" fill="#7a0d0d" font-weight="700">金</text><text x="56.5" y="194.6" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif" font-size="8" fill="#5c4a36">Logam 2.3</text><text x="23.5" y="81.9" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif TC" font-size="11" fill="#7a0d0d" font-weight="700">水</text><text x="23.5" y="92.9" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif" font-size="8" fill="#5c4a36">Air 1.7</text></svg></div>
+    <div>
+        <div class="bar-row">
+          <div class="bar-label"><span class="ch">金</span>
+            <span>Logam<br><small>2.3</small></span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill jin" style="width:100.0%;">2.3</div>
+          </div>
+          <div class="bar-tag"></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span class="ch">木</span>
+            <span>Kayu<br><small>1.4</small></span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill mu" style="width:60.9%;">1.4</div>
+          </div>
+          <div class="bar-tag"></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span class="ch">水</span>
+            <span>Air<br><small>1.7</small></span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill shui" style="width:73.9%;">1.7</div>
+          </div>
+          <div class="bar-tag"></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span class="ch">火</span>
+            <span>Api<br><small>0.6</small></span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill huo" style="width:26.1%;">0.6</div>
+          </div>
+          <div class="bar-tag"></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span class="ch">土</span>
+            <span>Tanah<br><small>2.0</small></span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill tu" style="width:87.0%;">2.0</div>
+          </div>
+          <div class="bar-tag"></div>
+        </div></div>
+  </div>
+
+  <div class="card emas">
+    <div class="card-title">Bacaan Praktis</div>
+    <p>Elemen yang <em>kurang</em> bisa Anda perkuat lewat warna, arah, profesi, dan
+    relasi. Elemen yang <em>berlebih</em> perlu disalurkan agar tidak macet.</p>
+  </div>
+  <div class="page-num">1</div>
+</section>
+<section class="page">
+  <h2>古書云 — Catatan dari Kitab Klasik</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <div class="transcript"><span class="lbl">Transkrip Asli (古書云)</span><div class="cn">三命通會註：
+詩曰：庚辛日主號金千，木火相生福自專，年月時中如會合，東西運步定居官。
+滴天髓：庚金帶煞，剛健為最，得水而清，得火而銳，土潤則生，土乾則脆，能贏甲兄，輸於乙妹。
+詩云：九月河魁性最剛，漫云比物易收歛，洪爐巨火能成就，鈍鐵頑金賴主張，海窟沖龍生此露，山頭合虎敵文章，天羅雖是迷魂陣，火命逢之獨有傷。
+金頑鈍性偏剛，火制功成怕水鄉，夏產東南過煅煉，秋生西北亦光芒，水深反是他相剋，木旺能令我自償，戊己干支重過土，不逢沖破即埋藏。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Catatan dari kitab klasik 三命通會 (San Ming Tong Hui):<br><br>«Day Master 庚辛 disebut “Logam dari Surga”. Bila Kayu &amp; Api saling menumbuhkan — rezeki datang sendiri. Bila Tahun, Bulan, dan Jam saling cocok — gerakan Timur &amp; Barat menentukan posisi.»<br><br>Dari 滴天髓 (Di Tian Sui):<br>«庚 (Logam Yang) yang membawa shaqi paling kuat saat tegar. Bertemu Air → menjadi jernih. Bertemu Api → menjadi tajam. Tanah lembap menumbuhkan; tanah kering menjadi rapuh. Mampu menang atas “kakak” 甲 (Kayu Yang), tetapi kalah dari “adik” 乙 (Kayu Yin).»<br><br>Puisi klasik: «Bulan ke-9 — sifat “He Kui” paling tegas. Jangan pikir hal serupa mudah disatukan. Tungku besar &amp; api raksasa-lah yang sanggup menempa Anda. Besi tumpul dan logam keras hanya berserah pada keputusan Anda. Naga di gua laut menampakkan embun ini; harimau gunung beradu dengan karya tulis. Meski Tian Luo seolah perangkap pikiran — bagi yang berformat Api, justru harus waspada akan luka.»<br><br>«Logam keras tumpul memang condong tegar. Api bisa menempa, tapi tetap takut wilayah Air. Kelahiran musim panas dari Tenggara akan dimatangkan oleh tempaan; kelahiran musim gugur dari Barat Laut juga bersinar. Air terlalu dalam justru menelan; Kayu yang kuat membiarkan saya menebusnya sendiri. Tanah dari 戊己 yang berlapis-lapis — bila tidak bertabrakan/pecah, akan terkubur saja.»<br><br>Intinya: Day Master Anda 庚 (Logam Yang Keras) butuh tempaan agar matang. Yang menempa adalah Api dan Air; yang menumbuhkan adalah Tanah lembap; yang menumpulkan adalah Tanah kering yang berlebih.</p></div><div class="card merah"><div class="card-title">Tafsir &amp; Saran Praktis</div><ul style="margin:0 0 0 5mm;font-size:9.5pt;line-height:1.55;"><li>Garis besar kitab klasik konsisten: 庚金 Anda butuh ditempa Api &amp; dibersihkan Air — bukan dilindungi terus-menerus. Tantangan yang datang adalah “tempaan”, bukan hukuman.</li><li>Kalimat “kalah dari adik 乙 (Kayu Yin)” menjelaskan pola Anda: lawan paling sulit ditangani adalah orang lemah-lembut yang sabar — mereka tidak bisa Anda tebas dengan ketegasan.</li><li>Pesan praktis: jangan cari medan datar. Kelas Anda baru muncul saat menghadapi masalah berat — atur hidup supaya selalu ada satu “tantangan layak” di depan.</li><li>Hindari lingkungan terlalu kering (忌 土 berlebih) maupun air terlalu dalam (terlalu banyak distraksi/spekulasi). Cari ekuilibrium — ini juga sesuai dengan 偏印格 yang butuh keseimbangan input.</li></ul></div>
+  <div class="page-num">2</div>
+</section>
+<section class="page">
+  <h2>性情 — Kepribadian</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <div class="transcript"><span class="lbl">Transkrip Asli (性情)</span><div class="cn">◎固執、寡慾、堅定立場，強調自我價值，剛健但不魯莽，富於處事能力，但不兇猛、果斷，操作能力強。
+◎才華洋溢、創新，戀執自己的表現，堅持自己的言論，重視他人對自己的肯定，施恩予人，卻希望別人感激，主觀、急性，想到什麼事情就馬上做。
+◎具俠義心，強健但不魯莽，自主但不侵犯，獨立而無懼，剛硬而不兇猛，粗曠豪爽，愛出風頭。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>◎ Teguh pendirian, hasrat sederhana, mantap memegang prinsip; menekankan harga diri sendiri. Kuat-tegar tanpa ceroboh, kaya kemampuan menangani perkara — tetapi tidak ganas. Tegas dan punya daya eksekusi yang tinggi.<br>◎ Bakat melimpah, inovatif, melekat pada cara mengekspresikan diri, gigih dengan pendapat sendiri, sangat menghargai pengakuan orang lain. Suka memberi kebaikan, sekaligus berharap orang lain berterima kasih. Subyektif, cepat panas, terpikir sesuatu langsung jalan.<br>◎ Punya jiwa ksatria; kuat tapi tidak gegabah, mandiri tapi tidak mengganggu orang, independen tanpa rasa takut. Tegar tetapi tidak ganas, kasar-terbuka jujur, suka menjadi sorotan.</p></div><div class="card merah"><div class="card-title">Tafsir &amp; Saran Praktis</div><ul style="margin:0 0 0 5mm;font-size:9.5pt;line-height:1.55;"><li>Kombinasi 庚金 + 偏印格 yang Anda bawa membuat tegar dan cepat eksekusi adalah kekuatan inti — dipakai dengan tepat, ini menjadi modal kepemimpinan teknis yang langka.</li><li>Sifat “suka jadi sorotan” di umur 60-an cocok dialihkan ke peran mentor / penasihat — energi pejuang Anda lebih bernilai saat membentuk orang lain daripada ikut bersaing langsung.</li><li>Karena Anda “memberi sambil berharap dihargai”, latih ekspektasi: niatkan memberi sebagai investasi karakter, bukan transaksi. Kepuasan jadi lebih konsisten.</li><li>Di fase 大運 丙辰 (七殺, 55-64) sekarang, sisi keras Anda sedang diuji. Pakai elemen 水 (Air) — diam-tenang-mengamati — untuk mendinginkan keputusan sebelum eksekusi.</li><li>Saudari kandung dan pasangan adalah “sensor” karakter Anda. Saat mereka sebut Anda terlalu keras, anggap itu data, bukan serangan.</li></ul></div>
+  <div class="page-num">3</div>
+</section>
+<section class="page">
+  <h2>全局總論 — Ringkasan Menyeluruh</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <div class="transcript"><span class="lbl">Transkrip Asli (全局總論)</span><div class="cn">配偶聰明，比較外向，較急性子。
+兒子比較仁慈。
+比較不歡被人管束。
+姊妹的話不太能接受。
+較無領導能力，並且無法掌握大權。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Pasangan Anda cerdas, cenderung ekstrover, agak terburu-buru.<br>Anak laki-laki cukup berbudi &amp; lembut hati.<br>Anda tidak begitu suka dikekang atau diatur orang lain.<br>Kurang mudah menerima saran dari saudari kandung.<br>Kemampuan kepemimpinan terbatas; trend hidup Anda lebih sebagai eksekutor handal daripada pemegang kekuasaan besar.</p></div><div class="card merah"><div class="card-title">Tafsir &amp; Saran Praktis</div><ul style="margin:0 0 0 5mm;font-size:9.5pt;line-height:1.55;"><li>Pola “bukan pemegang kekuasaan besar tapi eksekutor handal” adalah keunggulan, bukan kekurangan — banyak organisasi mati karena pemimpin tidak punya orang seperti Anda.</li><li>Pasangan yang cerdas + ekstrover adalah pasangan komplementer untuk 庚金 yang condong introspektif; biarkan dia jadi “suara keluar”, Anda jadi “otak proses”.</li><li>Anak laki-laki yang lembut hati di palace 子女 dengan 天府 mengindikasikan stabilitas keluarga — peran Anda di umur ini adalah memberi mereka panggung, bukan menutupi mereka.</li><li>Resistensi pada saudari &amp; atasan = tanda Anda butuh otonomi tinggi. Negosiasikan ruang gerak di awal kerjasama, jangan tunggu konflik.</li></ul></div>
+  <div class="page-num">4</div>
+</section>
+<section class="page">
+  <h2>神煞 — Bintang Nasib (Shensha)</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <div class="transcript"><span class="lbl">Transkrip Asli (神煞)</span><div class="cn">【驛馬】
+・勞碌好動、奔波遠行、多旅行運、住家及事業多變動。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Bintang Yi Ma (驛馬 — Kuda Pos):<br>• Sibuk dan suka bergerak, sering bepergian jauh, banyak peluang traveling, hunian maupun pekerjaan sering berubah.</p></div><div class="card merah"><div class="card-title">Tafsir &amp; Saran Praktis</div><ul style="margin:0 0 0 5mm;font-size:9.5pt;line-height:1.55;"><li>Bintang 驛馬 di bagan Anda + Day Master 庚金 + 大運 丙辰 yang dinamis = pola hidup “gerak” adalah natural state, bukan kebetulan. Memaksa diam justru bikin macet.</li><li>Manfaatkan 驛馬 di umur 60-an untuk perjalanan yang punya makna: ziarah, edukasi, kunjungan keluarga jauh — bukan sekadar plesir.</li><li>Bila ada gejolak di hunian / pekerjaan, baca itu sebagai sinyal 驛馬 minta disalurkan. Pindah ruangan, redekorasi, atau perjalanan 1-2 minggu sering kali cukup.</li><li>Karena 驛馬 mendorong banyak perubahan, jaga dokumen &amp; administrasi tetap rapi — itu modal bergerak yang sering diabaikan.</li></ul></div>
+  <div class="page-num">5</div>
+</section>
+<section class="page">
+  <h2>財富 — Kekayaan</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <div class="transcript"><span class="lbl">Transkrip Asli (財富)</span><div class="cn">偏財源豐厚，偏財關係疏遠，容易得到。
+正財源豐厚，正財關係密切，容易得到。
+※ 正財：投資性的財源，如薪資。 偏財：投機性的財源，如佣金。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Sumber rezeki tak-terduga (偏財 / Pian Cai) berlimpah; relasinya jauh tetapi mudah masuk.<br>Sumber rezeki tetap (正財 / Zheng Cai) juga berlimpah; relasinya dekat dan mudah masuk.<br>※ 正財 = penghasilan stabil seperti gaji. 偏財 = pendapatan spekulatif seperti komisi, bonus, hasil investasi.</p></div><div class="card merah"><div class="card-title">Tafsir &amp; Saran Praktis</div><ul style="margin:0 0 0 5mm;font-size:9.5pt;line-height:1.55;"><li>Kombinasi 正財 + 偏財 yang sama-sama berlimpah jarang. Aturan emas: 正財 (gaji/hasil tetap) untuk pondasi &amp; jangka panjang, 偏財 (komisi/spekulasi) untuk eksperimen — jangan dibalik.</li><li>庚金 strong + 喜用神 水木: rezeki Anda lebih lancar di sektor yang berkaitan dengan aliran (logistik, perdagangan, distribusi) daripada akumulasi statis.</li><li>Di 大運 丙辰 sekarang, hindari over-leveraging. 七殺 cenderung memunculkan peluang besar yang juga berisiko besar; pakai aturan max 20% modal untuk peluang spekulatif.</li><li>Latih disiplin: setiap rezeki tak terduga (偏財) langsung sisihkan ≥30% ke tabungan / investasi defensif sebelum digunakan.</li></ul></div>
+  <div class="page-num">6</div>
+</section>
+<section class="page">
+  <h2>婚配 — Kompatibilitas Pernikahan</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <div style="width:100%;max-width:90mm;margin:0 auto;"><svg viewBox="0 0 240 240" preserveAspectRatio="xMidYMid meet" style="width:100%;max-width:130mm;height:auto;display:block;margin:0 auto;"><path d="M 93.9 22.6 A 100.8 100.8 0 0 1 146.1 22.6 L 132.4 73.6 A 48.0 48.0 0 0 0 107.6 73.6 Z" fill="#ede0bf" stroke="#f7f0e0" stroke-width="1"/><text x="120.0" y="45.6" text-anchor="middle" dominant-baseline="middle" font-family="Ma Shan Zheng" font-size="14" fill="#2a1a0a">子</text><text x="120.0" y="9.2" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif TC" font-size="8" fill="#5c4a36">平</text><path d="M 146.1 22.6 A 100.8 100.8 0 0 1 191.3 48.7 L 153.9 86.1 A 48.0 48.0 0 0 0 132.4 73.6 Z" fill="#ede0bf" stroke="#f7f0e0" stroke-width="1"/><text x="157.2" y="55.6" text-anchor="middle" dominant-baseline="middle" font-family="Ma Shan Zheng" font-size="14" fill="#2a1a0a">丑</text><text x="175.4" y="24.0" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif TC" font-size="8" fill="#5c4a36">平</text><path d="M 191.3 48.7 A 100.8 100.8 0 0 1 217.4 93.9 L 166.4 107.6 A 48.0 48.0 0 0 0 153.9 86.1 Z" fill="#7a0d0d" stroke="#f7f0e0" stroke-width="1"/><text x="184.4" y="82.8" text-anchor="middle" dominant-baseline="middle" font-family="Ma Shan Zheng" font-size="14" fill="#f7f0e0">寅</text><path d="M 217.4 93.9 A 100.8 100.8 0 0 1 217.4 146.1 L 166.4 132.4 A 48.0 48.0 0 0 0 166.4 107.6 Z" fill="#ede0bf" stroke="#f7f0e0" stroke-width="1"/><text x="194.4" y="120.0" text-anchor="middle" dominant-baseline="middle" font-family="Ma Shan Zheng" font-size="14" fill="#2a1a0a">卯</text><text x="230.8" y="120.0" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif TC" font-size="8" fill="#5c4a36">平</text><path d="M 217.4 146.1 A 100.8 100.8 0 0 1 191.3 191.3 L 153.9 153.9 A 48.0 48.0 0 0 0 166.4 132.4 Z" fill="#ede0bf" stroke="#f7f0e0" stroke-width="1"/><text x="184.4" y="157.2" text-anchor="middle" dominant-baseline="middle" font-family="Ma Shan Zheng" font-size="14" fill="#2a1a0a">辰</text><text x="216.0" y="175.4" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif TC" font-size="8" fill="#5c4a36">平</text><path d="M 191.3 191.3 A 100.8 100.8 0 0 1 146.1 217.4 L 132.4 166.4 A 48.0 48.0 0 0 0 153.9 153.9 Z" fill="#3a1010" stroke="#f7f0e0" stroke-width="1"/><text x="157.2" y="184.4" text-anchor="middle" dominant-baseline="middle" font-family="Ma Shan Zheng" font-size="14" fill="#f7f0e0">巳</text><text x="175.4" y="216.0" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif TC" font-size="8" fill="#5c4a36">三刑</text><path d="M 146.1 217.4 A 100.8 100.8 0 0 1 93.9 217.4 L 107.6 166.4 A 48.0 48.0 0 0 0 132.4 166.4 Z" fill="#b91c1c" stroke="#f7f0e0" stroke-width="1"/><text x="120.0" y="194.4" text-anchor="middle" dominant-baseline="middle" font-family="Ma Shan Zheng" font-size="14" fill="#f7f0e0">午</text><text x="120.0" y="230.8" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif TC" font-size="8" fill="#5c4a36">三合</text><path d="M 93.9 217.4 A 100.8 100.8 0 0 1 48.7 191.3 L 86.1 153.9 A 48.0 48.0 0 0 0 107.6 166.4 Z" fill="#ede0bf" stroke="#f7f0e0" stroke-width="1"/><text x="82.8" y="184.4" text-anchor="middle" dominant-baseline="middle" font-family="Ma Shan Zheng" font-size="14" fill="#2a1a0a">未</text><text x="64.6" y="216.0" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif TC" font-size="8" fill="#5c4a36">平</text><path d="M 48.7 191.3 A 100.8 100.8 0 0 1 22.6 146.1 L 73.6 132.4 A 48.0 48.0 0 0 0 86.1 153.9 Z" fill="#3a1010" stroke="#f7f0e0" stroke-width="1"/><text x="55.6" y="157.2" text-anchor="middle" dominant-baseline="middle" font-family="Ma Shan Zheng" font-size="14" fill="#f7f0e0">申</text><text x="24.0" y="175.4" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif TC" font-size="8" fill="#5c4a36">六沖</text><path d="M 22.6 146.1 A 100.8 100.8 0 0 1 22.6 93.9 L 73.6 107.6 A 48.0 48.0 0 0 0 73.6 132.4 Z" fill="#ede0bf" stroke="#f7f0e0" stroke-width="1"/><text x="45.6" y="120.0" text-anchor="middle" dominant-baseline="middle" font-family="Ma Shan Zheng" font-size="14" fill="#2a1a0a">酉</text><text x="9.2" y="120.0" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif TC" font-size="8" fill="#5c4a36">平</text><path d="M 22.6 93.9 A 100.8 100.8 0 0 1 48.7 48.7 L 86.1 86.1 A 48.0 48.0 0 0 0 73.6 107.6 Z" fill="#b91c1c" stroke="#f7f0e0" stroke-width="1"/><text x="55.6" y="82.8" text-anchor="middle" dominant-baseline="middle" font-family="Ma Shan Zheng" font-size="14" fill="#f7f0e0">戌</text><text x="24.0" y="64.6" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif TC" font-size="8" fill="#5c4a36">三合</text><path d="M 48.7 48.7 A 100.8 100.8 0 0 1 93.9 22.6 L 107.6 73.6 A 48.0 48.0 0 0 0 86.1 86.1 Z" fill="#c9a04c" stroke="#f7f0e0" stroke-width="1"/><text x="82.8" y="55.6" text-anchor="middle" dominant-baseline="middle" font-family="Ma Shan Zheng" font-size="14" fill="#2a1a0a">亥</text><text x="64.6" y="24.0" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif TC" font-size="8" fill="#5c4a36">六合</text><circle cx="120.0" cy="120.0" r="47.0" fill="#f7f0e0" stroke="#b91c1c" stroke-width="1.5"/><text x="120.0" y="116.0" text-anchor="middle" dominant-baseline="middle" font-family="Ma Shan Zheng" font-size="20" fill="#b91c1c">寅</text><text x="120.0" y="132.0" text-anchor="middle" dominant-baseline="middle" font-family="Noto Serif" font-size="8" fill="#5c4a36">Macan</text></svg></div>
+
+  <h3 style="margin-top:3mm;">三合 Trinitas Harmoni — Sangat Cocok</h3>
+  <div style="display:flex;flex-wrap:wrap;gap:2mm;justify-content:center;margin:1.5mm 0;">
+            <div class="compat-cell lucky"
+                 style="width:30mm;flex:0 0 auto;">
+              <svg class="shio-svg" preserveAspectRatio="xMidYMid meet" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 154.53 105.64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a50404;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m75.8,56.4c.5.3.9.9,1,1.5s-.1,1.3-.4,1.8-.9,1-1.6,1.1-1.3-.3-1.7-.7c.6.2,1.1.3,1.6.1.4-.1.8-.5,1.1-.9.3-.4.4-.9.5-1.4-.1-.5-.2-1-.5-1.5Zm1.7-3.7l-4,.8,2,1-2.2-.6,2,1.1-2.1-.6,2.8,3.6-3.2-2.7,2.6,3.3-2.7-2.3,2.2,2.8-3.2-2.7,2.6,3.3-3.5-3-1.5,4.4.5-4.1-1.3,4,.4-3.6-1.2,3.4.5-4.1-1.3,4,.6-4.7-.1-.1-4.2,1.8,3.4-2.4-3.8,1.7,3-2.1-3.3,1.4,3.4-2.4-3.8,1.7,3.7-2.6-4.1-1.7,4.1.8-3.8-1.6,3.5.7-3.3-1.4,4.1.8-3.8-1.6,4.1.8-.6-3.9,1.4,3.3-.5-3.6,1.2,2.9-.4-3.1,1.4,3.3-.5-3.6,1.6,3.8h0l3-2.9-2,3.1,2.6-2.5-1.7,2.7,2.3-2.2-1.9,3.1h0l2.6-2.5-2,3.1h4.5l-3.8.7h3.8l-3.2.6h3.3l-3.8.7,3.6-.1h0Zm-6.5-2.9c-1.6-.8-3.6-.2-4.4,1.4-.8,1.6-.2,3.6,1.4,4.4,1.6.8,3.6.2,4.4-1.4s.2-3.6-1.4-4.4Zm20.2-3.2c.7-.5.9-1.4.5-2.1-.5-.7-1.4-.9-2.1-.5-.7.5-.9,1.4-.5,2.1.4.8,1.4,1,2.1.5Zm-13.4,3.1c-.5-.4-1.2-.5-1.8-.3.6.1,1,.4,1.4.7.3.4.6.8.7,1.3s.1,1,0,1.4c-.2.4-.6.8-1.1,1.1.6,0,1.2-.2,1.6-.8s.4-1.3.3-1.9-.5-1.2-1.1-1.5Zm-16.3,9c-.4-.3-.8-.6-1-1.1-.3-.4-.4-.9-.3-1.4s.4-.9.8-1.3c-.6.1-1.2.5-1.4,1.2-.3.6-.1,1.4.2,1.9.3.6.9,1,1.5,1.2s1.3.2,1.8-.2c-.6.2-1.2,0-1.6-.3Zm3.4-13.8c.3-.4.7-.8,1.2-1s1-.3,1.5-.2.9.5,1.3,1c-.1-.6-.4-1.3-1.1-1.6s-1.4-.2-2,.1-1.1.8-1.4,1.4c-.3.6-.3,1.4,0,1.9,0-.7.2-1.2.5-1.6Zm7.5.4c.5-.1,1-.1,1.5,0s.9.3,1.2.7c.3.4.4.9.4,1.5.3-.5.4-1.2.1-1.8s-.9-1-1.5-1.2c-.6-.1-1.3-.1-1.9.2s-1,.8-1.1,1.4c.4-.4.8-.7,1.3-.8Zm-3.5,16.6c-.5.2-1,.3-1.5.2-.5,0-.9-.2-1.3-.5-.3-.3-.5-.8-.6-1.4-.2.5-.3,1.2.1,1.8s1.1.9,1.7.9,1.3-.1,1.8-.5.9-1,.9-1.6c-.2.6-.6.9-1.1,1.1Zm31.7-3.5l-2.5-.2,2.4.8-2.1-.2,2,.7-2.4-.2h0l2.3.8-2.6-.3,1.4,2.7-1.6-2,1.2,2.3-1.4-1.8,1,2-1.6-2,1.2,2.3-1.7-2.2v1.5l-.3-1.5v1.5l-.3-1.5-1.3,2.8.6-2.8-1.2,2.6.5-2.4-1,2.2.6-2.8-1.2,2.6.7-3.1-3.1.5,2.7-1-2.8.4,2.3-.9-2.4.4,2.7-1-2.8.4,3-1.1v-.1l-2.4-2,2.5,1.3-2.2-1.8,2.2,1.1-1.9-1.5,2.5,1.3-2.2-1.8,2.7,1.4-.2-3,.8,2.7-.2-2.8.7,2.4-.2-2.4.8,2.7-.2-2.8.8,2.7,2.2-1.6-1.6,1.9,2-1.4-1.4,1.6,1.7-1.2-1.6,1.9,2-1.4-1.8,2.1h0l2.7,1.2Zm-3,0c0-1.2-1-2.2-2.2-2.2s-2.2,1-2.2,2.2,1,2.2,2.2,2.2,2.2-1,2.2-2.2Zm-36.8-10.8c.4-.2.9-.3,1.5-.2-.5-.3-1.1-.5-1.8-.3-.7.2-1.1.8-1.3,1.4-.2.6-.2,1.3,0,1.9.2.6.7,1.1,1.3,1.3-.4-.4-.6-.9-.7-1.4s0-1,.1-1.5c.2-.5.5-.9.9-1.2Zm59,2.5c-1,.6-2,.7-2.9.6-.9-.1-1.8-.5-2.6-1-.8-.5-1.3-1.2-1.6-2.1-.2-.8,0-1.8.4-2.9-.9.7-1.6,1.8-1.5,3,0,1.3.9,2.4,1.9,3.1,1,.7,2.2,1,3.4.9,1.2,0,2.4-.6,2.9-1.6Zm5.9-1.5c.2,1,0,2-.3,2.8-.4.8-1,1.5-1.7,2.1-.7.5-1.5.9-2.3.8-.8,0-1.7-.5-2.5-1.2.3,1,1.1,1.9,2.3,2.2,1.2.3,2.5-.1,3.4-.8s1.6-1.7,1.8-2.8c.2-1,0-2.3-.7-3.1Zm-17-11.6c.2-2.4,1.3-4.3,3.1-5.6-2.6.5-4.4,2.5-4.6,5.5-.2,3.1,2.7,5.6,3.9,5.6-1.9-1.1-2.6-3.5-2.4-5.5Zm42.8,1c-3.6,1.1-7.9,1.1-8.2-3.1-.3-6.2-8.2-2.1-11.9-11.2-7.2,21.6,4.7,25.6-1.7,33.1,0,0,8.2,3.4,14.3,1.8,1-.3,2.2.2,2.7,1.1.8,1.4,1.3,2.7,1.6,3.7.4,1.4-.1,2.9-1.2,3.9-1.4,1.3-3.4,4-3.4,9.3-.1,8.6-5.7,12-6.8,13,2.6,2.6,5.5,5.6,8.7,5.3.9-.1,1.8.4,2.2,1.2,2,3.9,2.1,5.7,2.1,5.7,0,0-5.6,2.2-9.8,1.8,0,0-5.8-3-7.4-7.5s-11.8-25.6-22.1-28.5c-15,4.9-25.8,2.2-29.2.3,2.3,4.1.3,9.6-1.3,12.7-.8,1.6-.7,3.5.3,5,2.4,3.7,7.2,10.1,12,11.3,2.3.5,4,2.4,4.5,4.7.4,1.6.5,2.8.5,2.8,0,0-8.8,3.2-15.7-.7-1.4-6.3-6.7-14.6-10.3-18.3-.8-.9-1.2-2.1-.8-3.3,1.7-5.8-3.3-14.4-6.8-16.5-1.2,6.3-10.5,12.4-17.7,14.8-1.9.6-3.3,2.2-3.8,4.1-1.2,5.6.1,10.3,1.8,11.4,2.1,1.3,2.8,6,2.1,8-4.4,1.2-9.8-.5-10.5-1.1-.8-1.9-2.3-3.6-3.1-5-.5-.9-.3-2,.5-2.7,3.6-3.4,7-12.8,7.1-19,0-1.2.6-2.3,1.5-3.1,6.4-5.2,6.7-7,6.7-7,0,0-3.1-10.2,3.3-18.4-9.7,9.8-30.3,3.9-30.1,24.2-2-6.8-.5-12.8,5.9-17.4-7.7,2.2-13.6,10.2-14.5,17.5-1.7-5.6,2.9-15.8,8.5-19.4-9.2,4.6-13.1,11-14.8,17.4-1.2-5,3.1-13,6.6-15.2C4.8,57.1,1,62.9,0,65c4.8-14.7,18.7-19.6,24.3-19.7,5.7-.1,8.6,2.5,15.8-3.1s15.4-3.3,16.5-2.7c6.4-4.9,14-6.8,24.7-3.2s19.5-3.2,19.5-3.2c0,0-8.8-1.5-.9-6.9,7.8-5.4-3.2-4.2,3.8-8.6,9.5-5.9-1.9-6.5,4.3-9.1,6.2-2.6,14.2-1.9,11.7-4.8-2.5-2.9,8.2-4.5,18.7-1C140.3,3.2,143.6,1.7,144.3,0c.5,1.6-1.1,3.8-1.1,3.8,0,0,1.7-1.1,4.2-1.4-1.8,1.9-3.8,5.1-3.8,5.1,0,0,4.2,4.4,5.2,11.2.7,4.6,3.4,9.5,5.2,13,1.3,2.5.1,5.4-2.5,6.3Zm-95.7,8.7c-1.2,1.8-2.2,3.8-2.8,5.9-.6,2.1-.9,4.4-.2,6.4-.2-1.1-.1-2.1.1-3.1.1-.5.2-1,.3-1.5s.3-1,.5-1.5c.7-2,1.7-3.8,2.9-5.5s2.6-3.3,4.1-4.7c.8-.7,1.6-1.3,2.5-1.9.5-.3.9-.5,1.4-.8.5-.2,1-.4,1.5-.6-.5.1-1,.3-1.6.4-.5.2-1,.4-1.5.6-1,.5-1.9,1-2.8,1.7-1.7,1.1-3.2,2.8-4.4,4.6Zm-14.8,4.7c-2,.3-4,.4-6.1.9-1,.3-2,.6-2.9,1.1s-1.8,1.1-2.4,2c1.7-1.1,3.6-1.6,5.6-2.1,1-.3,2-.5,2.9-.8,1-.3,2-.6,2.9-1.1Zm9.1-6.5h0c-2.4,1.3-4.8,2.3-7.3,3.2-1.2.5-2.5.9-3.8,1.2s-2.6.5-4,.7c-2.7.3-5.4.7-8,1.6-2.6.9-5.1,2.3-6.8,4.5l.1.1c2.1-1.6,4.5-2.7,7.1-3.5,2.5-.8,5.1-1.4,7.7-2,1.3-.3,2.6-.6,3.9-.9.7-.1,1.3-.2,2-.3s1.3-.2,2-.4c2.7-.9,5.2-2.2,7.1-4.2Zm4.2-2.8h0c-1.9-.9-4-1.3-6.2-1-2.1.2-4.2,1.2-5.9,2.4s-3.2,2.7-5,3.7c-.5.2-.9.5-1.4.7l-.7.3c-.2.1-.5.1-.7.2-1,.2-2,.1-3,0-2.1-.2-4.1-.5-6.2-.5s-4.2.2-6.3.8c-4.1,1.2-7.7,3.7-10.6,6.6l.1.1c3.4-2.4,6.9-4.6,10.9-5.6,1.9-.5,4-.8,6-.9,2-.1,4.1.1,6.2.1,1,0,2.1.1,3.2-.2.3-.1.5-.1.8-.2l.7-.3c.5-.2,1-.4,1.4-.7,1.8-1,3.5-2.3,5.3-3.3,1.7-1.1,3.6-2,5.5-2.3,1.8-.6,3.8-.3,5.9.1Zm4.9,21.7c-.2,1.2-.8,2.2-1.4,3.1-.7.9-1.5,1.7-2.3,2.5-.9.8-1.8,1.5-2.7,2.2s-1.9,1.3-2.9,2c2.3-.6,4.5-1.8,6.3-3.5.9-.8,1.7-1.8,2.3-2.8.5-1,.9-2.3.7-3.5Zm19.8,8.8c-.2-1.3-.6-2.6-1.3-3.8-.6-1.2-1.5-2.2-2.5-3,.7,1.1,1.3,2.2,1.8,3.4s.8,2.4,1,3.6c.2,1.2.3,2.5.2,3.8,0,1.3-.1,2.5-.4,3.8.7-1.1,1-2.4,1.2-3.8.2-1.3.2-2.7,0-4Zm-3.4-23.7c3.6-5.6-3.5-7.6-5.8-2.9-.4-6.7-7.4-4.7-6.3,1.3-6.3-4.4-7.6,6.1-.8,5.8-1.4.1-5.2,1.9-3.8,5.1,1.4,3.2,4.1,2,7.1-.6-1.5,1.3-3,6,1.3,5.9s3.6-4.1,3.6-4.1c3.2,4.9,8.9-.2,4.6-4.5,6.4-.3,4.3-7.8.1-6ZM122.9,3.9c2.1,0,4.1-.1,6.1-.1s4,.1,6,.6c-.8-.7-1.9-1-2.9-1.3s-2.1-.3-3.1-.4c-1,0-2.1.1-3.1.3-1,.3-2,.5-3,.9Zm-11.3,5.6c1.6-.3,3.1-.5,4.6-.7s3.1-.4,4.6-.5,3.1-.2,4.6-.2,3.1.1,4.7.3c-1.5-.6-3-.9-4.6-1.1-1.6-.1-3.2-.1-4.8,0-3.1.3-6.2.9-9.1,2.2Zm13.7,22.7c.1-1.7.3-3.4.7-5.1.5-1.6,1.1-3.2,2-4.8-1.2,1.3-2.1,2.9-2.7,4.5-.6,1.7-.9,3.5-1,5.3s.1,3.6.4,5.3.8,3.4.9,5.2c.2-1.8,0-3.5-.2-5.3-.1-1.7-.2-3.4-.1-5.1Zm-15.8-17.9c1.3-.4,2.6-.8,3.9-1.2s2.6-.7,3.9-1,2.6-.5,3.9-.7,2.6-.2,4-.2c-1.3-.4-2.7-.6-4.1-.5-1.4,0-2.7.2-4.1.5-2.7.5-5.2,1.5-7.5,3.1Zm12.9,31.2c.8-.9,1.1-2.1,1.1-3.3s-.2-2.4-.4-3.5c-.5-2.3-1.1-4.4-1.3-6.7-.3,1.1-.3,2.3-.3,3.5.1,1.2.3,2.3.5,3.4.2,1.1.5,2.2.6,3.3.2,1.1.2,2.2-.2,3.3Zm-18.2-26c2.8-1,5.6-2,8.4-2.9,1.4-.4,2.8-.8,4.2-1.2,1.4-.3,2.9-.6,4.3-.9-1.5-.2-3-.1-4.5.1-1.5.2-2.9.6-4.4,1-2.8.9-5.5,2.1-8,3.9Zm0,4.8c1.2-.7,2.4-1.3,3.6-1.9,1.2-.6,2.4-1.2,3.6-1.8s2.4-1,3.7-1.5c1.3-.4,2.5-.8,3.9-1-1.4-.1-2.8,0-4.1.3-1.3.3-2.7.8-3.9,1.3-2.6,1.1-4.9,2.6-6.8,4.6Zm3.4,1.6c1.3-.7,2.6-1.4,3.9-2s2.7-1.2,4.1-1.7c-1.5.1-3,.5-4.4,1s-2.8,1.1-4.1,1.9c-2.6,1.5-5.1,3.2-7.1,5.4,2.6-1.7,5.1-3.2,7.6-4.6Zm-7.3,17.3c-2.4.9-.9,5.4,1.6,4.7-.6,3.1,4.6,3.5,5.5-.5-3.6-.8-6.3-6.8-4-9.8-3.6-.7-7.1,4.3-3.1,5.6Zm-14.6,8.3c-.3-1.1-.5-2.2-1-3.1-.4-1-1-1.9-1.6-2.8-.6-.9-1.4-1.6-2.2-2.3.4,1,1,1.9,1.3,2.8.4,1,.8,1.9,1,2.8.3.9.4,1.9.6,2.9,0,1,.1,1.9,0,2.9-.2,1.9-.6,3.8-1.3,5.7-.7,1.9-1.6,3.7-2.7,5.5,1.7-1.3,3.1-3,4.1-4.8,1-1.9,1.7-4,1.9-6.2.2-1.2.1-2.3-.1-3.4Zm3.5-3.8c-.2.5-.4,2.2,1,2.3s1.5-1,1.2-2.6c.2.8,1.5,2.2,2.3.7s-.7-2.1-.7-2.1c2.3-.1,1.7-3.1-.6-2.5,1.1-2.2-1.9-3-2.1-1.2-1.2-2.3-3.3-.3-2.1,1.4-2.4-1.2-3.1,1.6-.8,2.4-2.7,1.5.6,4,1.8,1.6Zm10.3,8.9c3.9-2.4.5-5.9-2.8-3.3.6-5.2-6.1-2.7-3.7,1.4-.5-.8-2.8-2.6-4.3-.7-1.5,1.9.1,3.1,2.6,4.1-1.2-.5-4.6,0-3.1,2.6s3.6.9,3.6.9c-1.9,3.4,2.9,5.3,4.2,1.4,2.1,3.6,6,0,3.6-1.9,4.5.3,3.5-4.6-.1-4.5Zm8.3,4c.7-1.4-1.2-1.9-1.4-.8-.8-1.5-2.1-.2-1.4.9-1.6-.8-2,1-.5,1.6-1.8.9.4,2.5,1.2.9-.2.3-.2,1.4.6,1.5.9.1,1-.7.8-1.7.1.5.9,1.4,1.5.5.5-1-.5-1.3-.5-1.3,1.6-.1,1.2-2-.3-1.6Zm8.9-4.6c-2.4,1.3-7-.8-7.2-3.6-2.4,1.4-2,6,1,4.8-.9,1.7,2.2,3.5,3.3,1.9,1.1,2,4.3-.3,2.9-3.1Zm10.3-3c.5-1.5.3-4-1.7-5.6.1.6,0,1.9-.6,2.6l-1.6-1.2.2,1.8-1.6-2s.7,2.5.7,2.7-1.9-3-1.9-3l.2,1.9-1.2-2.5-.2,1.2-.9-1.9-.1,2.5-1.1-3.6-.3,2.5-.8-4s-.4,2.2-.4,2.8-.5-4.3-.5-4.3c0,0-.7,2.7-.8,2.8,0,.1,0-4.6,0-4.8s-.6,2.2-.8,2.5c-.2.2.1-3.9.1-3.9l-1,2.2.6-3.6-1.2,1.9.5-3.5-1,1.2,1-4-2.3,2.6s.9-3,2.9-5.6c-9.1-1-10.1,12.6-1,13.1-4.5,3.2,1.1,11.7,5.9,8.9.2,5,7.6,4.4,8.9.3Zm-3.9,9.6c1.2-.2,2.3-.8,3.2-1.6.5-.4.9-.8,1.2-1.3.3-.5.7-1,.7-1.7-.9.8-1.8,1.5-2.6,2.2-.4.4-.9.7-1.3,1.1-.4.4-.8.8-1.2,1.3Zm2.1,3.9s2.1,9.2,7,15.2c1-1.2,7.8-10,8.3-15.8-3,1.4-9.5,2-15.3.6Zm11-54.8c-1.2-.4-2.7-.4-4,.2-1.3.6-2.4,1.7-2.9,3.1-.5,1.3-.6,2.8-.3,4.1.3,1.3.9,2.6,2,3.4-.4-1.3-.5-2.4-.4-3.6,0-1.1.2-2.2.6-3.2s1-1.8,1.9-2.5c.7-.6,1.8-1,3.1-1.5Zm4.2,2.1c-.5,2.2.1,3.8,2.2,4.6.8-1,.8-4.5-2.2-4.6Zm11.9,19.2c0-.8-.6-1.4-1.4-1.4s-1.4.6-1.4,1.4.6,1.4,1.4,1.4,1.4-.6,1.4-1.4Z"/>
+</svg>
+              <div class="ch">午</div>
+              <div class="label">Kuda</div>
+              <div class="relation" style="font-size:6.5pt;">三合 Sangat Cocok</div>
+            </div>
+            <div class="compat-cell lucky"
+                 style="width:30mm;flex:0 0 auto;">
+              <svg class="shio-svg" preserveAspectRatio="xMidYMid meet" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94.16 73.1">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a50404;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m26.58,9.48c.1-.6.5-1.1,1.1-1.4.6-.3,1.2-.4,1.9-.2.6.1,1.2.5,1.5,1.1.3.6.2,1.3-.1,1.8,0-.6-.1-1.1-.4-1.5s-.7-.6-1.2-.7c-.5-.1-1-.1-1.5,0-.5.2-.9.4-1.3.9Zm7.1,5.3c.1.5.1,1,0,1.4-.2.4-.6.8-1.1,1.1.6,0,1.2-.2,1.6-.8.4-.6.4-1.3.3-1.9-.2-.6-.6-1.2-1.1-1.5-.5-.4-1.2-.5-1.8-.3.6.1,1,.4,1.4.7.3.3.6.8.7,1.3Zm-13.3-6.6c.3-.4.7-.8,1.2-1s1-.3,1.4-.2c.5.1.9.5,1.3,1-.1-.6-.4-1.3-1.1-1.6-.7-.3-1.4-.2-2,.1-.6.3-1.1.8-1.4,1.4s-.3,1.4,0,1.9c.1-.6.3-1.1.6-1.6Zm33.3,34.6l-3.2.2,3.2.6-2.8.2,2.7.5-3.2.2,3.2.6-3.6.2h0l1.6,3.4-2-2.5,1.4,2.9-1.9-2.1,1.2,2.5-2-2.5h0l1.4,2.9-2-2.6-1.3,3.7.5-3.4-1.3,3.4.4-3-1,2.8.5-3.4-1.1,3.2.5-3.6-1.5,1.3,1.1-1.7-1.5,1.4,1.1-1.6-3.8,1.3,3.2-1.9-3.5,1.2,2.8-1.6-3,1,3.2-1.9-3.5,1.2,3.5-2.1-3.3-2.5,3.3,1.6-2.9-2.3,2.9,1.4-2.5-2,3.3,1.6-2.9-2.3,3.8,1.9.1-.1-.3-4.1,1,3.6-.3-3.7.9,3.1-.2-3.2,1,3.6-.3-3.7,1.1,3.8,2.7-2.9-1.9,3.2,2.5-2.6-1.6,2.8,2.2-2.4-1.9,3.2,2.5-2.7-1.9,3.2,3.4.7Zm-4.9-.7c-1.1-1.1-2.8-1.1-3.9-.1s-1.1,2.7-.1,3.8,2.7,1.1,3.8.1c1.1-1,1.2-2.7.2-3.8Zm-17.2-20.8c0,.5-.2,1-.5,1.4s-.6.7-1.1.9c-.5.1-1,.1-1.6-.1.4.4,1,.8,1.7.7.7-.1,1.3-.5,1.6-1.1.3-.6.5-1.2.4-1.8-.1-.6-.4-1.3-1-1.5.5.5.6,1,.5,1.5Zm-1.2,11.4c.7-.5.9-1.4.5-2.1-.5-.7-1.4-.9-2.1-.5-.7.5-.9,1.4-.5,2.1.5.8,1.4,1,2.1.5Zm-13.4-10.6c-.4-.3-.8-.6-1-1.1-.3-.4-.4-.9-.3-1.4.1-.5.4-.9.8-1.3-.6.1-1.2.5-1.4,1.2-.3.6-.1,1.4.2,1.9.3.6.9,1,1.5,1.2.6.2,1.3.2,1.8-.2-.7.1-1.2-.1-1.6-.3Zm.6-9.9l4.1.8-.6-3.9,1.4,3.3-.5-3.5,1.2,2.9-.4-3.1,1.4,3.3-.5-3.6,1.6,3.8h0l3-2.9-2,3.1,2.6-2.5-1.7,2.7,2.3-2.2-1.9,3.1h0l2.6-2.5-2,3.1h4.5l-3.7.6h3.8l-3.2.6h3.3l-3.8.7h3.9l-4,.8,2,1-2.2-.6,2,1.1-2.1-.6,2.8,3.6-3.2-2.7,2.6,3.3-2.9-2.2,2.2,2.8-3.2-2.7,2.6,3.3-3.5-3-1.5,4.4.5-4.1-1.3,4,.4-3.6-1.2,3.4.5-4.1-1.3,4,.6-4.7-.1-.1-4.2,1.7,3.4-2.4-3.9,1.7,3-2.1-3.3,1.4,3.4-2.4-3.8,1.7,3.7-2.6-4.1-1.7,4.1.8-3.8-1.6,3.5.7-3.4-1.5,4.1.8-3.8-1.6Zm5.8,6.8c1.6.8,3.6.2,4.4-1.4s.2-3.6-1.4-4.4-3.6-.2-4.4,1.4c-.8,1.6-.2,3.5,1.4,4.4Zm1,6.2c-.5.2-1,.3-1.5.2-.5,0-.9-.2-1.3-.5-.3-.3-.5-.8-.6-1.4-.2.5-.3,1.2.1,1.8.4.6,1.1.9,1.7.9s1.3-.1,1.8-.5.9-1,.9-1.6c-.2.6-.6.9-1.1,1.1Zm-8.4-10.2c-.4-.4-.6-.9-.7-1.4-.1-.5,0-1,.1-1.5.2-.5.4-.9.8-1.1.4-.2.9-.3,1.5-.2-.5-.4-1.1-.5-1.8-.3s-1.1.8-1.3,1.4c-.2.6-.2,1.3,0,1.9.4.5.8,1,1.4,1.2Zm-.1,11.3c-2.2-.9-4.6-.2-6.2,2.1-1.7,2.4-.6,5.7.3,6.2-.9-1.7-.3-3.9.8-5.4,1.3-1.7,3-2.7,5.1-2.9Zm-2.7,18.4c-1,0-1.8-.4-2.5-.9s-1.2-1.2-1.5-2-.5-1.6-.2-2.3c.2-.8.9-1.4,1.7-2.1-1,.1-2,.6-2.6,1.7-.6,1-.5,2.3,0,3.3s1.2,1.9,2.2,2.3c.8.4,2,.5,2.9,0Zm4.9-13.2c-1.1.9-.9,2.7-.5,3-.3-.9.3-1.9,1-2.5.8-.7,1.8-1,2.8-.8-1-.6-2.2-.6-3.3.3Zm-1.3,16.8c-.7.4-1.5.7-2.3.8s-1.6,0-2.2-.5c-.6-.4-1.1-1.2-1.4-2.1-.2.9,0,2,.8,2.9.8.8,2,1.1,3,1s2-.6,2.8-1.3c.7-.7,1.2-1.8,1-2.8-.4.9-1,1.6-1.7,2Zm76.7-19.4c-4,7.9-10.6-2.5-10.6-2.5,0,0,4.2,8.5,1.5,12.7s1.2,8-3.4,13.4,3.2,10.2-8.2,10.4c2.1,3.1-4.4,6-7.5,4.8,2.1,3.9-7,7.5-9.1,4-3.4-5.7-12.4-1.1-14.4-3.7s-.6-8.5-8.2-7.5c-7.6,1-9.8,2.2-7.3,4.3,2.5,2.2.9,5.9-4.4,4.7-5.3-1.2-7.9-3-7.7-8.9-3.1-1.5-3.2-4.2-3.2-4.2,0,0-5.1-1.9-5.3-7.4C4.98,35.38-.72,35.48.08,27.28.88,19.08,5.48,10.48,9.68,8.18s5.8-2.8,9.2-6.1c3.4-3.2,10.7-2.4,13.6.3s7.7,3.2,7.5,11.5c3.3-3.2,7.4-.8,7.4-.8,0,0,2.1-9.6,11-8.5,2.9-2,5.7-2,8.1-1,7.1-4.3,12.7,3.4,14.5,6.4s16.5,11,12.5,18.9Zm-29.1-13.6c0,1,.8,1.8,1.8,1.8s1.8-.8,1.8-1.8-.8-1.8-1.8-1.8-1.8.8-1.8,1.8Zm-2.6,7.7h0c-.2-.2-.3-.3-.5-.3-.5-.1-1.1.2-1.2.7-.3,1-1,2-2,2.6-.5.3-1.1.5-1.7.5s-1.3-.1-2-.3c.4.6,1.1,1,1.8,1.3.8.2,1.6.2,2.4,0,1.1-.3,2.1-1.1,2.7-2,1.1.8,2.5,1.2,3.8,1.1.9-.1,1.8-.5,2.5-1.1.6-.7,1-1.5.9-2.3-.4.7-1,1.2-1.6,1.5s-1.3.4-1.9.3c-1.2-.3-2.4-1-3.2-2Zm-3.1-4.3c-.5.4-.4,1.2.1,1.5,1.1.7,2.7.8,3.9-.6.4-.5.2-1.4-.5-1.6-1.1-.2-2.6,0-3.5.7Zm1-2.2c.1-1.1,0-2.1,0-3,0-1,0-1.9.1-2.8.1-.9.2-1.8.3-2.8s.4-1.9.5-3c-1.7,1.4-2.6,3.5-2.8,5.6-.2,2.2.5,4.4,1.9,6Zm-6.1,1.4c0,1,.8,1.8,1.8,1.8s1.8-.8,1.8-1.8-.8-1.8-1.8-1.8c-1,.1-1.8.9-1.8,1.8Zm-11.7,4.7c.3,1.1,1,2.2,2,2.8.5.3,1.1.5,1.7.6.6,0,1.5-.2,1.9-.8.7-1,.8-2.3.2-3.3-.3-.5-.8-.9-1.3-1s-1,0-1.5.1c1,0,1.7.5,1.9,1.2s-.1,1.5-.5,1.9c-.2.1-.3.1-.6.1s-.6-.2-.8-.4c-.5-.4-.9-1-1.1-1.7-.2-.7-.1-1.4.1-2.2.2-.8.5-1.6.9-2.3.4-.7.9-1.4,1.6-1.8.6-.5,1.5-.5,2.4-.1-.3-.4-.7-.8-1.2-.9-.5-.2-1.1-.1-1.6.1-1,.4-1.8,1-2.5,1.8-.7.8-1.1,1.7-1.5,2.6-.2.5-.3,1-.4,1.5.1.7.2,1.2.3,1.8Zm-7.5,14.2c-1,.9-2.3,1.5-3.6,2.5-1.3.9-2.3,2.4-2.8,3.8-.4,1.5-.5,3-.4,4.5.4-1.4.7-2.9,1.3-4.1.6-1.3,1.5-2.2,2.7-2.9,2.3-1.3,5.8-2.6,6.8-6.3.3-1.8-.1-3.3-.3-4.8-.3-1.4-.5-2.8-.5-4.2,0-2.8,1.3-5.4,3.1-7.8-.6.5-1.1,1-1.7,1.5-.5.6-1,1.1-1.4,1.8-.9,1.3-1.4,2.8-1.6,4.4-.2,1.6,0,3.2.2,4.6.2,1.5.5,2.9.2,4,0,.3-.2.5-.3.8-.2.2-.3.5-.5.7-.3.6-.7,1.1-1.2,1.5Zm-7.8-4.4c-2.7,1.3.6,3.8,1.8,1.4-.2.5-.4,2.2,1,2.3s1.5-1,1.2-2.6c.2.8,1.5,2.2,2.3.7s-.7-2.1-.7-2.1c2.3-.1,1.7-3.1-.6-2.5,1.1-2.2-1.9-3-2.1-1.2-1.2-2.3-3.3-.3-2.1,1.4-2.4-1-3.1,1.8-.8,2.6Zm-8.3-15.8c-1.4.1-5.2,1.9-3.8,5.1s4.1,2,7.1-.6c-1.5,1.3-3,6,1.3,5.9s3.6-4.1,3.6-4.1c3.2,4.9,8.9-.2,4.6-4.5,6.1-.4,4.1-7.9-.1-6,3.6-5.6-3.5-7.6-5.8-2.9-.4-6.7-7.4-4.7-6.3,1.3-6.1-4.4-7.4,6.1-.6,5.8Zm3.9,14.5c-2.7-2.3-7.5,1.1-4.7,4.2-2.5-.4-3.4,4.1-1,4.8-2,2.3,2.8,5.4,4.6.9-4-1.1-2.3-7,1.1-9.9Zm-14.5-11.3c-1.8.9.4,2.5,1.2.9-.2.3-.2,1.4.6,1.5.9.1,1-.7.8-1.7.1.5.9,1.5,1.5.5.5-1-.5-1.3-.5-1.3,1.5-.1,1.1-2-.4-1.6.7-1.4-1.2-1.9-1.4-.8-.8-1.5-2.1-.2-1.4.9-1.5-.7-1.9,1.1-.4,1.6Zm11.1,25.4c-.2.5-.9,1.5-1.7,1.7l-.6-1.7-.6,1.5-.3-2.3s-.7,2.3-.7,2.4,0-3.2,0-3.2l-1,1.4.2-2.5-.8.9.2-1.9-1.3,1.9.8-3.3-1.5,1.8,1.3-3.5s-1.4,1.6-1.6,2c-.3.4,1.6-3.6,1.6-3.6,0,0-1.8,1.8-1.9,1.8-.1.1,2.2-3.6,2.2-3.7.1-.1-1.5,1.5-1.8,1.6-.2.1,2-3,2-3l-1.8,1.2,2.2-2.5-1.7.9,2-2.5-1.4.5,2.7-2.7-3,.9s2.1-1.9,5-3c-6.6-5.1-13.9,5-7.1,9.7-5,.4-4.7,9.6.4,9.8-2.1,4,3.9,7.1,6.9,4.5.9-.9,2.1-3,1.3-5.1Zm19.8,12.4c-.2-1.9-1.2-3.8-2.7-5.1s-3.4-2.2-5.4-2.5c-2-.3-4-.2-5.9.3s-3.7,1.4-4.9,2.9c1.7-.8,3.5-1.2,5.2-1.4,1.8-.2,3.5-.1,5.2.2s3.3.8,4.8,1.8c1.5.9,2.7,2.2,3.7,3.8Zm13.7-16.6c5.1-3.8-2.7-7.6-4.3-2.2.3-1.1-.1-4.6-2.9-4.3s-2.6,2.7-1.5,5.7c-.6-1.5-3.8-4-4.9-.6-1.1,3.4,2.2,4,2.2,4-4.7,1.2-2.2,7,2.3,4.8-1.4,4.9,5,5.3,4.7,1.6,3.4,4.3,6.8-.7,3.8-3.7,5.3,1.4,5.7-4.6.6-5.3Zm28.3-7.4c0-1.5-.6-3.7-1.6-5.5-1.2-2.2-4.3-2.7-6.1-.9-5.2,5.2-14.7,5-21,1.3-.9-.5-2-.3-2.7.4-1.3,1.2-3.4,2-3.4,2,0,0,3.5-.1,4.4,2.2,2.2-2,4.1-1,4.5,3.2,2.2-1.4,4-.3,3.6,3,1.7-.4,5.2.8,2.2,7.2,5.3-2.2,5,3.8,4.4,6.9,3.3-2.9,10.2-.1,7.2,7.3,8.2-5.7,1.5-14,1.5-14,0,0,2.4.2,4.4,3.2.5-6.3-3.8-13.3-3.8-13.3,0,0,3,.6,5.4,3.8.5-6.2-4.1-9.2-4.1-9.2,0,0,2.6-.8,5.1,2.4Zm7.9-12.9c-.2-.5-.7-.9-1.1-1.2-.9-.5-1.9-.5-2.8-.5-.5,0-.9.1-1.3.1-.2,0-.4,0-.6.1h-.5c-.6,0-1.1-.3-1.5-.7-.8-1-1-2.6-1.2-4.2l-.1-1.2c0-.5-.1-.9-.3-1.4-.3-.9-.7-1.8-1.3-2.5-.6-.8-1.3-1.4-2.2-1.8-.9-.4-2-.6-3-.3-.5.1-1,.3-1.4.8-.4.4-.7,1-.7,1.5-.1,1.1.2,2,.8,2.8.3.4.7.8,1.3.8.5,0,1-.1,1.4-.5.2-.2.4-.4.4-.7s-.1-.5-.2-.7c-.3-.4-.7-.5-1.1-.7.3.2.7.5.8.9.2.3,0,.6-.3.8-.3.1-.7.2-1,.1-.2-.1-.4-.3-.6-.6-.3-.6-.5-1.4-.3-2,.1-.6.6-.8,1.2-1,1.3-.2,2.6.6,3.4,1.8.4.6.7,1.2.9,1.9.1.3.2.7.2,1.1,0,.3.1.8.1,1.2.1.9.2,1.7.5,2.6.2.9.6,1.8,1.3,2.6.7.8,1.9,1.3,2.9,1.3.3,0,.5,0,.7-.1.2,0,.5-.1.7-.1.4-.1.8-.2,1.1-.2.8-.1,1.5-.1,2.1.1s.9.7.8,1.4c-.1.7-.4,1.5-.9,2s-1.4.1-1.7-.7c.1.4.3.8.6,1.1.4.3,1,.3,1.4.1.4-.2.7-.6,1-1s.4-.8.6-1.3c.1-.6.1-1.2-.1-1.7ZM17.98,39.78c-.5-.1-.8-.4-1.1-.7-.3-.3-.4-.7-.5-1.1-.1-.4,0-.8.2-1.2.2-.3.6-.6,1-.8-.5-.1-1.1.1-1.5.5s-.5,1.1-.4,1.6.4,1,.8,1.4c.4.3,1,.4,1.5.3Zm.1,2.3c-.4,0-.8-.2-1-.5-.3-.3-.4-.7-.4-1.2-.2.4-.2,1,0,1.5.3.5.8.8,1.3.8.5.1,1.1,0,1.5-.3s.8-.7.8-1.2c-.3.4-.6.6-1,.8-.4.1-.8.2-1.2.1Z"/>
+</svg>
+              <div class="ch">戌</div>
+              <div class="label">Anjing</div>
+              <div class="relation" style="font-size:6.5pt;">三合 Sangat Cocok</div>
+            </div></div>
+
+  <h3>六合 Pasangan Harmonis — Cocok</h3>
+  <div style="display:flex;flex-wrap:wrap;gap:2mm;justify-content:center;margin:1.5mm 0;">
+            <div class="compat-cell lucky"
+                 style="width:30mm;flex:0 0 auto;">
+              <svg class="shio-svg" preserveAspectRatio="xMidYMid meet" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123.42 76.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a50404;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m34.3,38.5l3.2,2.7-2.2-2.8,2.7,2.3-2.6-3.3,3.2,2.7-2.8-3.6,2.1.6-2-1.1,2.2.6-2-1,4-.8h-3.8l3.8-.7h-3.3l3.2-.6h-3.8l3.8-.7h-4.5l2-3.1-2.6,2.5h0l1.9-3.1-2.3,2.2,1.7-2.7-2.6,2.5,2-3.1-3,2.9h0l-1.6-3.8.5,3.6-1.4-3.3.4,3.1-1.2-2.9.5,3.6-1.4-3.3.6,3.9-4.1-.8,3.8,1.6-4.1-.8,3.3,1.4-3.5-.7,3.8,1.6-4.1-.8,4.1,1.7-3.7,2.6,3.8-1.7-3.4,2.4,3.3-1.4-3,2.1,3.8-1.7-3.4,2.4,4.2-1.8.1.1-.6,4.7,1.3-4-.5,4.1,1.2-3.4-.4,3.6,1.3-4-.5,4.1,1.5-4.4,3.5,3-2.4-3.2Zm-3.6-.8c-1.6-.8-2.2-2.8-1.4-4.4s2.8-2.2,4.4-1.4c1.6.8,2.2,2.8,1.4,4.4s-2.8,2.2-4.4,1.4Zm2.2,5.2c0,.6-.4,1.2-.9,1.6s-1.2.5-1.8.5c-.6-.1-1.3-.4-1.7-.9-.4-.6-.3-1.3-.1-1.8.1.6.3,1.1.6,1.4s.8.5,1.3.5,1,0,1.5-.2c.4-.2.8-.6,1.1-1.1Zm6.2-1.1c-.3.5-.9,1-1.6,1.1-.7.1-1.3-.3-1.7-.7.6.2,1.1.3,1.6.1.4-.1.8-.5,1.1-.9s.4-.9.5-1.4c0-.5,0-1-.4-1.5.5.3.9.9,1,1.5,0,.6-.2,1.3-.5,1.8Zm10-15.6c-1.2,2-1.6,5-.2,7.1-1.3-.5-3.2-4.7-1.4-8,1.8-3.1,4.7-4.4,7.7-3.6-2.6.5-4.8,2-6.1,4.5Zm-6.2,20.3c.4.6.2,1.3-.4,1.7s-1.3.2-1.7-.4-.2-1.3.4-1.7,1.3-.2,1.7.4Zm7.7-.3c-1.3-.5-2.5-1.5-3.2-2.7s-1-2.9-.5-4.3c.6-1.4,1.9-2.3,3.1-2.5-.9.9-1.7,1.9-1.8,2.9-.2,1,.1,2.1.7,3,.5.9,1.3,1.8,2.3,2.4s2.1,1,3.4.8c-1.1.8-2.7.9-4,.4Zm-10.4-14c-.4-.4-.8-.6-1.4-.7.6-.2,1.3-.1,1.8.3s.9.9,1.1,1.5c.2.6.1,1.4-.3,1.9-.4.6-1.1.8-1.6.8.5-.3.9-.6,1.1-1.1.2-.4.2-.9,0-1.4-.1-.5-.4-.9-.7-1.3Zm-6.4-4c.1-.6.5-1.1,1.1-1.4s1.2-.4,1.9-.2c.6.1,1.3.5,1.5,1.2.3.6.2,1.3-.1,1.8,0-.6-.1-1.1-.4-1.5-.3-.4-.7-.6-1.2-.7s-1-.1-1.5,0c-.4.1-.9.4-1.3.8Zm-8,13c-.5.4-1.2.4-1.8.2-.6-.2-1.1-.7-1.5-1.2-.3-.6-.5-1.3-.2-1.9.2-.6.8-1,1.4-1.2-.4.4-.7.9-.8,1.3-.1.5,0,.9.3,1.4.2.4.6.8,1,1.1.5.2,1,.3,1.6.3Zm1.3-12.6c-.4-.5-.3-1.3,0-1.9s.8-1.1,1.4-1.4c.6-.3,1.4-.4,2-.1.7.3,1,1,1.1,1.6-.4-.5-.8-.9-1.3-1s-1,0-1.5.2-.9.6-1.2,1-.5.9-.5,1.6Zm-4.4,2.2c-.2.5-.2,1-.1,1.5.1.5.3,1,.7,1.4-.6-.1-1.1-.7-1.3-1.3-.2-.6-.2-1.3,0-1.9s.7-1.2,1.3-1.4c.7-.2,1.3,0,1.8.3-.6-.1-1.1,0-1.5.2-.4.3-.7.7-.9,1.2Zm38.8,16.4c.4,1.2,0,2.7-.8,3.7-.8,1.1-2,1.8-3.4,2.1-1.3.3-2.9.1-4-.8s-1.5-2.3-1.4-3.6c.6,1.1,1.2,2.1,2.1,2.5.9.5,1.9.5,2.9.3s2-.7,2.8-1.4c.9-.7,1.6-1.6,1.8-2.8Zm25-6.1c-1.2.1-2.4-.2-3.4-.9-1-.7-1.8-1.8-1.9-3.1-.1-1.3.6-2.4,1.5-3-.4,1-.6,2-.4,2.9.2.8.8,1.5,1.6,2.1.7.5,1.7.9,2.6,1s1.9,0,2.9-.6c-.5,1-1.7,1.6-2.9,1.6Zm8.8-3.1c.8.8,1,2,.7,3.1s-.9,2.1-1.8,2.8c-.9.7-2.2,1.1-3.4.8-1.2-.3-2-1.3-2.3-2.2.8.7,1.7,1.1,2.5,1.2.8,0,1.6-.3,2.3-.8.7-.5,1.3-1.3,1.7-2.1.3-.8.5-1.8.3-2.8Zm-17.7,5.6c.5.9.4,2.2-.2,3.2-.5,1-1.5,1.8-2.5,2.2-1.1.4-2.4.5-3.4-.1-1.1-.6-1.6-1.8-1.6-2.8.6.9,1.3,1.5,2.1,1.8s1.7.2,2.5-.2c.8-.3,1.6-.9,2.1-1.5.5-.7.9-1.5,1-2.6ZM119.2,7.9c-5.6-.5-2,2-2,2-2,5-10.8,5.8-14.1,4-.8-.4-1.8-.8-3-1.1,1.6-6.5-4.2-14.7-6.8-12.4-2.7,2.5.4,5.5-2.4,11.2-1.9.1-3.8.4-5.2,1.1-5,2.4-17.8,4.6-27.9,1.8-8.2-2.3-19.5-3.2-29.9,1.6-2.8,1.3-5.3,3.1-7.4,5.2h0c-1.2-.9-2.5-1.7-4-2.2s-3.2-.6-4.8-.3c-.4.1-.8.2-1.2.3-1.2-.5-2.6-.7-3.9-.5C3.6,19,1.1,21.1,0,23.6Q0,23.7.1,23.8h.2c.8-1.1,1.8-2,2.9-2.6,1.1-.6,2.4-1,3.6-1,.5,0,1,.1,1.4.2-.3.2-.5.3-.8.5-1.2,1-2.3,2.2-3,3.7-.3.8-.7,1.6-.6,2.8,0,.6.4,1.3.7,1.7.4.5.8.8,1.2,1,1.7.9,3.3,1,5,.7.8-.1,1.6-.4,2.4-.9.8-.5,1.5-1.3,1.8-2.2.4-.9.4-1.9.2-2.7-.2-.8-.5-1.5-.8-2.2-.2-.4-.4-.7-.6-1,1.7,0,3.5.6,5,1.8-1,1.4-1.9,2.8-2.6,4.4-1,2.3-1.7,4.9-1.6,7.7.2,8.5,8.4,15.5,8.4,15.5,0,0,3.4,2.7,2.6,5.9-.8,3.2.8,4.4,3.3,6.8,1.7,1.5,2.3,5.5,2.5,8.1.1,1.2,1,2.2,2.2,2.5,2,.5,4.5,1.4,6.8.4.4-.2.3-.8-.1-.9-1-.2-1.9-.8-1.9-.8,0,0,1.1-.2,2-.6.5-.2.4-.9-.1-1-1.3-.2-3-1.3-4.4-4.2-2.1-4.2,1.8-7.6.2-11.7,3.8-.5,11.8,2.3,24.2,2.1,10.1-.2,13.1-3,13.9-4-.5.9-1.7,3.1-1.4,5,.3,2.4,3.8,7.5,3.5,11.2-.1.8-.2,1.6-.5,2.2-.5,1.5.4,3.1,2,3.5h.1c1.9.4,3.9.8,5.5.8.5,0,.6-.6.3-.8-.9-.6-1.7-1.4-1.7-1.4,0,0,1.4.3,2.7-.1.4-.1.5-.6.1-.8-3.8-2.5-2.4-8.2.1-10.9,2.6-2.9,7.1-8.8,7.8-12.9,5-1.1,6.8-8.6,6.8-8.6,0,0,1-1.6,7.8-5.4,12.1-6.5,13.8-14.5,15.1-19.5s2.6-7.7-3.1-8.2ZM12.3,26.6c-.3.7-1.1,1.1-2.2,1.2-1,.1-2.2-.1-3-.5-.2-.1-.3-.2-.3-.3-.1-.1,0-.1,0-.1,0-.2.1-.7.3-1.1.5-.9,1.2-1.9,2.1-2.6.6-.5,1.2-.8,1.9-1.1.4.5.7,1,.9,1.5.5,1.2.7,2.4.3,3Zm19.1-9.8c2.4-1.1,5-1.7,7.7-2,.7-.1,1.3-.1,2-.1h1l1,.1c1.3.1,2.7.4,3.9.6l7.5,1.5c2.5.5,5.1.8,7.7.9,2.6.1,5.1-.1,7.7-.3,2.5-.2,5.1-.2,7.6-.5s5-.6,7.4-1.6l.1.2c-1,.8-2.2,1.5-3.4,1.9-1.2.5-2.5.8-3.8,1l-1.9.3-2,.2c-1.3.1-2.6.1-3.9.1-2.6-.1-5.2-.5-7.8-.7s-5.2-.3-7.7-.5c-2.6-.1-5.2-.3-7.8-.8-2.5-.4-5-.5-7.4-.3-4.9.3-9.8,1.8-14.4,4.3l-.1-.2c1.9-1.6,4.2-3,6.6-4.1Zm11.7,6.9c-.5,1-1.4,0-1.5-.5.2,1,.1,1.8-.8,1.7s-.8-1.2-.6-1.5c-.8,1.6-3-.1-1.2-.9-1.5-.5-1.1-2.3.5-1.6-.8-1.1.6-2.4,1.4-.9.1-1.2,2.1-.7,1.4.8,1.5-.4,1.9,1.5.4,1.6,0-.1,1,.3.4,1.3Zm-10.1,36.9c-.3-.8-.6-1.5-.8-2.2l-.7-2c-.2-.7-.4-1.4-.6-2.1-.2-.7-.4-1.5-.4-2.4.7.4,1.3,1,1.8,1.7.5.6.9,1.4,1.1,2.1.5,1.6.6,3.5-.4,4.9Zm.8-19s.7,4-3.6,4.1-2.7-4.6-1.3-5.9c-3,2.6-5.7,3.8-7.1.6-1.4-3.2,2.4-5,3.8-5.1-6.8.3-5.6-10.1.8-5.8-1.2-6.1,5.8-8,6.3-1.3,2.3-4.7,9.4-2.7,5.8,2.9,4.2-1.8,6.2,5.7.1,6,4.1,4.2-1.6,9.3-4.8,4.5Zm10.2,6.2s1.2.4.6,1.7-1.7,0-1.8-.6c.2,1.2.1,2.2-1,2.1s-1-1.5-.8-1.9c-1,1.9-3.7-.1-1.5-1.1-1.9-.6-1.3-2.9.6-1.9-.9-1.4.7-3,1.7-1.1.2-1.4,2.5-.8,1.7.9,1.8-.6,2.3,1.7.5,1.9Zm16.8,4.7c-3.4,3.8-11.7.8-9.5-4.7-6.5.6-8.3-11.3-1.9-12.5-9.5-5-1.6-19.2,7.6-13.6-3.5,1.8-5.9,4.6-5.9,4.6l3.8-1.6-3,3.8,1.7-.8-2.3,3.5,2.2-1.4-2.4,3.6,2.1-1.9s-2.4,4.3-2.1,4.2,2.1-2.5,2.1-2.3-2.4,5.3-2.3,5.1c.1-.1,2.2-2.7,2.2-2.7,0,0-1.8,5.5-1.6,4.9.3-.6,1.8-2.8,1.8-2.8l-1.2,4.8,1.6-2.5-.6,4.4,1.4-2.7.1,2.5.8-1.2.1,3.3.8-2.1s.5,4.4.5,4.1c.1-.2.6-3.3.6-3.3l.8,3,.6-2,1.1,2.1c1.1-.4,1.7-1.8,2-2.4,1.3,2.4.1,5.2-1.1,6.6Zm16.9-4.4c-2.4,3.6-9.6,2.2-8.6-2.7-5.4,1.4-8.4-8.3-3.3-10.2-8.6-2.9-3.9-15.8,4.6-12.3-2.7,1.9-4.3,4.6-4.3,4.6l2.9-1.9-2,3.6,1.3-.9-1.4,3.2,1.6-1.5-1.5,3.3,1.5-1.8s-1.4,3.9-1.2,3.7c.2-.2,1.4-2.3,1.4-2.2s-1.3,4.7-1.2,4.6,1.5-2.5,1.5-2.5c0,0-.8,4.8-.6,4.3.1-.5,1.1-2.6,1.1-2.6l-.3,4.1,1-2.3.1,3.8.8-2.4.4,2.1.5-1.1.5,2.7.3-1.9s1,3.6,1,3.4.1-2.8.1-2.8l1,2.4.2-1.8,1.2,1.6c.8-.5,1.2-1.7,1.3-2.3,1.5,2.1.9,4.6.1,5.8Zm9.3,3.8c-.5,1.6-1.3,3.1-2.2,4.4-.9,1.3-2,2.5-2.9,3.7s-1.7,2.5-2.2,4c-.4-1.6.2-3.4.9-4.9.8-1.5,1.7-2.8,2.6-4.1.9-1.3,1.7-2.5,2.4-3.9.7-1.3,1.2-2.8,1.7-4.4.3,1.9.2,3.6-.3,5.2Zm9.6-9.6c-1.3,4.1-8.7,4.7-9-.3-4.8,2.8-10.4-5.7-5.9-8.9-9-.5-8-14.1,1.1-13.1-2,2.6-2.9,5.6-2.9,5.6l2.3-2.6-1,4,1-1.2-.5,3.5,1.2-1.9-.6,3.6,1-2.2s-.3,4.2-.1,3.9.7-2.6.7-2.5,0,4.9,0,4.8.8-2.8.8-2.8c0,0,.5,4.8.5,4.3s.4-2.8.4-2.8l.8,4,.3-2.5,1.1,3.6.1-2.5.9,1.9.2-1.2,1.2,2.5-.2-1.9s1.9,3.2,1.9,3-.7-2.7-.7-2.7l1.6,2-.2-1.8,1.6,1.2c.7-.7.7-2,.6-2.6,2.1,1.6,2.2,4.1,1.8,5.6Zm4.1-20.5c-1.1,0-2-.9-2-2s.9-2,2-2,2,.9,2,2-.9,2-2,2Zm-20,10.1c-1.2.1-4.1-2.5-3.9-5.6.2-3,2-5,4.6-5.5-1.8,1.3-2.9,3.2-3.1,5.6-.2,2,.5,4.4,2.4,5.5Zm-16.3-4c-.7,1.8-.7,4.4.8,5.9-1.2-.3-3.3-3.5-2.2-6.4,1.1-2.8,3.3-4.3,5.9-4-2.1.7-3.7,2.2-4.5,4.5Zm7.2,15.6c-.8.8-2.1,1.1-3.2.8-1.2-.2-2.2-.9-3-1.8s-1.2-2.2-.9-3.5,1.2-2.1,2.3-2.5c-.7.9-1.1,1.8-1.1,2.7s.4,1.7.9,2.4c.6.7,1.4,1.3,2.2,1.7.7.3,1.7.4,2.8.2Z"/>
+</svg>
+              <div class="ch">亥</div>
+              <div class="label">Babi</div>
+              <div class="relation" style="font-size:6.5pt;">六合 Harmonis</div>
+            </div></div>
+
+  <h3>Hindari (沖 / 害 / 刑)</h3>
+  <div style="display:flex;flex-wrap:wrap;gap:2mm;justify-content:center;margin:1.5mm 0;">
+            <div class="compat-cell warning"
+                 style="width:30mm;flex:0 0 auto;">
+              <svg class="shio-svg" preserveAspectRatio="xMidYMid meet" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.03 82.22">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m33.33,39.98c-.6,0-1-.5-1-1,0-.6.5-1,1-1s1,.5,1,1c0,.6-.4,1-1,1Zm-10.3-3.5c.6,0,1-.5,1-1s-.5-1-1-1-1,.5-1,1,.5,1,1,1Zm38.4-12.4c-.6,0-1,.5-1,1,0,.6.5,1,1,1s1-.5,1-1c0-.6-.4-1-1-1Zm-3.6,14.8c-.6,0-1,.5-1,1,0,.6.5,1,1,1s1-.5,1-1c0-.6-.5-1-1-1Zm-39.7,8.2c.8,0,1.4-.6,1.4-1.4s-.6-1.4-1.4-1.4-1.4.6-1.4,1.4c0,.8.7,1.4,1.4,1.4Zm10-7.8c0-.6-.5-1-1-1s-1,.5-1,1c0,.6.5,1,1,1s1-.5,1-1Zm15.8,5.6c0,.6.5,1,1,1s1-.5,1-1c0-.6-.5-1-1-1s-1,.4-1,1Zm-33.6,6c.6,0,1-.5,1-1,0-.6-.5-1-1-1s-1,.5-1,1,.4,1,1,1Zm-4.6,7.3c.7,0,1.3-.6,1.3-1.3s-.6-1.3-1.3-1.3-1.3.6-1.3,1.3c0,.7.6,1.3,1.3,1.3Zm64.3,14.5c-1.2,2.2-3.9,2.2-4.9.7-.3,1.1-.5,2.4,1.4,3.6,0,0-3-.1-2.4-4.1.3-2.1-1.3-4.1-3.4-4.8l-.1.1c-2.5,1.4-6.4-2.1-7.7-4.4s-3.8-4-5,.4-8.1,7.4-12.4,7.9c2.9.1,7-.6,9.6-2.8-5.8,11.2-15.4,14-26.2,12.6S-.57,68.58.03,59.28s9.2-18.1,19.6-19.1c-2.5-5.1,1.3-21.8,8.1-26.8s10.4.3,10.4.3c-2.5-3.9-5.1-4.2-7.6-3.8-4.9.7-9.5,6.4-10.6,12.4-1.1,5.7-3.5,12.9-9.6,10.8s-3.8-12.8,1.1-18.7c3.6-4.3,3.2-9.7,1.4-13.4-.3-.7.6-1.3,1.1-.8,4.9,5.2,1.9,12.7.2,15.4-2,3.2-5.9,10.1-2.5,11.7s4.6-4.8,4.9-7.2,2-15.1,14-15.9c12-.8,14.7,8.9,14.7,8.9,0,0-1.2-5.1-3.4-6.6,6.7-2.4,14.9.9,19.1,4.3,4.1,3.4,10.3,12.3,6.1,27.9-4.1,15.1-22.8,14.5-28.4,14.1-5.6-.4-25.2-3.4-25.2,11.1s15.8,11,19.5,7.9c-4.9-.8-7.4-5.2-6.6-9.5s3.4-8.3,11.2-7.6c7.1.7,6.6,6.5,3.4,9,3.4-1.8,2.3-3.4,6.1-7.3,3.8-3.9,9.7-.5,12.6,1.9,2.5,2.1,3.9,6.6,2.3,8.9,3.8,1.1,2.3,9.3,8.1,5.5ZM35.43,6.88c0-.7-.6-1.2-1.2-1.2s-1.2.6-1.2,1.2.6,1.2,1.2,1.2c.7.1,1.2-.5,1.2-1.2Zm-1.1,50.4c0,.8.6,1.4,1.4,1.4s1.4-.6,1.4-1.4-.6-1.4-1.4-1.4-1.4.6-1.4,1.4Zm4.4,7c.2-3.3-2.4-5.1-4.8-2.9-2.4,2.1,2.8,4.9,4.8,2.9Zm-5.7.7c-.4,0-.8.3-.8.8s.3.8.8.8.8-.3.8-.8-.4-.8-.8-.8Zm-2.6-6c0,.8.7,1.5,1.5,1.5s1.5-.7,1.5-1.5-.7-1.5-1.5-1.5-1.5.7-1.5,1.5Zm-.4,4.1c0,.6.5,1,1,1,.6,0,1-.5,1-1,0-.6-.5-1-1-1s-1,.5-1,1ZM49.43,11.98c-.4-.1-1.6.1-1,1,.5.9,1.3.3,1.3.3-.6,1.2,1.1,1.8,1.5.4.8,1.2,2.1-.1,1.2-.7,1.6.1,1.1-1.6-.1-1.5,1.3-.9.1-2.1-1-1.1.1-1.8-2.1-.8-1.3.5-.2-.3-1-.8-1.5-.2-.6.6,0,1,.9,1.3Zm-2.5,4.1c1.4,5.5,2.4,17.8-4.4,23.8-6.6,5.7-10.4,5.6-14.8,5.4,0,0,8.8,2.2,15.3-4.6,13.4,1.3,15.6-11.1,14-16.1-1.7-4.9-7-8.2-10.1-8.5Zm9.2,1.1c-.4-.1-1.6.1-1,1,.5.9,1.3.3,1.3.3-.6,1.2,1.1,1.8,1.5.4.8,1.2,2.1-.1,1.2-.7,1.6.1,1.1-1.6-.1-1.5,1.3-.9.1-2.1-1-1.1.1-1.8-2.1-.8-1.3.5-.2-.3-1-.8-1.5-.2-.5.6,0,1,.9,1.3Zm6.6,15.8c1.3-.6.3-2.1-.5-1.3.4-1.5-1.4-1.4-1.5-.2-.6-1.5-2-.5-1.3.8-1.7-.5-1.2,1.9.3,1.3-.3.1-1,.8-.5,1.4s1.1.1,1.5-.7c-.2.4-.2,1.6.7,1.2,1-.4.5-1.2.5-1.2,1.2.9,2.1-.7.8-1.3Zm-4.8,4.6c-1.2,0-2.2,1-2.2,2.2s1,2.2,2.2,2.2,2.2-1,2.2-2.2-1.1-2.2-2.2-2.2Zm5.7-12.6c0-1.3-1.1-2.4-2.4-2.4s-2.4,1.1-2.4,2.4,1.1,2.4,2.4,2.4,2.4-1,2.4-2.4Zm-9.8,18.8c1.3-.6.3-2.1-.5-1.3.4-1.5-1.4-1.4-1.5-.2-.6-1.5-2-.5-1.3.8-1.7-.5-1.2,1.9.3,1.3-.3.1-1,.8-.5,1.4s1.1.1,1.5-.7c-.2.4-.2,1.6.7,1.2,1-.4.5-1.2.5-1.2,1.2.9,2-.7.8-1.3Zm-8.9-1.1c-1.2,0-2.2,1-2.2,2.2s1,2.2,2.2,2.2,2.2-1,2.2-2.2c-.1-1.3-1.1-2.2-2.2-2.2Zm-2.3-19.4c-.8,0-1.4.6-1.4,1.4s.6,1.4,1.4,1.4,1.4-.6,1.4-1.4c0-.7-.6-1.4-1.4-1.4Zm-1.9-8.9c0,.7.6,1.2,1.2,1.2s1.2-.6,1.2-1.2-.6-1.2-1.2-1.2-1.2.5-1.2,1.2Zm-2,25c-1.2,1-2.6,1.8-4,2.5-2.9,1.3-6.2,1.9-9.5,1.8,3.2.7,6.8.5,10-.7s6.1-3.4,8-6.2c1.9-2.9,2.9-6.3,3.1-9.7.1-1.7,0-3.4-.2-5-.3-1.7-.6-3.3-1-4.9.3,3.3.5,6.6.1,9.8s-1.4,6.3-3.2,8.9c-.9,1.3-2,2.5-3.3,3.5Zm-11.7,1.9c1.2,0,2.1-1,2.1-2.1s-1-2.1-2.1-2.1-2.1,1-2.1,2.1.9,2.1,2.1,2.1Zm6.2-.2c1.2,0,2.1-1,2.1-2.1s-1-2.1-2.1-2.1-2.1,1-2.1,2.1.9,2.1,2.1,2.1Zm5.1-3.8c.9,0,1.7-.7,1.7-1.7s-.8-1.6-1.7-1.6-1.7.7-1.7,1.7c0,.9.7,1.6,1.7,1.6Zm-9.5-11.4c-1.6,3.2-3.1,12.6,4.4,9.3s7.6-12.6,6.1-18.2c-7,1.1-8.9,5.8-10.5,8.9Zm-.8-10.1c0,.7.6,1.2,1.2,1.2s1.2-.6,1.2-1.2-.6-1.2-1.2-1.2c-.6,0-1.2.5-1.2,1.2Zm-1.8,18c-.1-2,.1-3.9.5-5.8.4-1.8,1.1-3.6,2.1-5.2.9-1.6,2.2-3.1,3.6-4.3,1.4-1.2,3.1-2.1,5-2.8-2,.1-4,.7-5.7,1.9-1.7,1.1-3.1,2.7-4.2,4.5-1,1.8-1.7,3.8-1.9,5.8-.3,1.9-.1,4,.6,5.9Zm-3.9-9.7c0,.8.6,1.4,1.4,1.4s1.4-.6,1.4-1.4-.6-1.4-1.4-1.4c-.7,0-1.4.6-1.4,1.4Zm-1.5,11.1c0,1.1.9,2,2,2s2-.9,2-2-.9-2-2-2-2,.9-2,2Zm-5.2,10.5c0,1.4,1.1,2.5,2.5,2.5s2.5-1.1,2.5-2.5-1.1-2.5-2.5-2.5-2.5,1.1-2.5,2.5Zm-4.8,13.9c-1.1,4.8.8,9.8,4.3,12.9-1.6-1.7-2.8-3.8-3.5-6s-.7-4.6-.1-6.8c.6-2.2,1.8-4.2,3.5-5.6,1.7-1.4,4-2,6.2-2.6,4.5-1,9.2-1.1,13.8-1.1,2.3,0,4.7.1,7,.2l3.5.2c1.2.1,2.4,0,3.6-.1,2.4-.3,4.8-.9,7-2s4.1-2.6,5.8-4.4c1.6-1.8,2.9-3.9,3.8-6.2.4-1.1.7-2.4.8-3.6s.2-2.4.2-3.5c.1-4.7-.6-9.6-2.9-13.8-2.3-4.2-6.1-7.4-10.5-9.1,2.1,1.1,4.1,2.3,5.8,3.9,1.7,1.6,3.1,3.5,4.1,5.5,2.1,4.1,2.6,8.9,2.4,13.5-.1,1.2-.2,2.3-.3,3.5-.1,1.1-.4,2.2-.8,3.3-.8,2.1-2,4-3.6,5.7-1.5,1.6-3.4,3-5.4,4s-4.2,1.6-6.5,1.8c-1.1.1-2.3.2-3.4.1l-3.5-.1c-2.3-.1-4.7-.1-7-.1-4.7.1-9.5.2-14.1,1.4-1.2.3-2.3.7-3.4,1.1-1.1.5-2.2,1-3.1,1.9-2,1.4-3.2,3.6-3.7,6Zm3.2,13.8c-.6,0-1,.4-1,1s.4,1,1,1,1-.4,1-1c0-.5-.4-1-1-1Zm-5.4-22.9c-.4.2-1.3,1-.6,1.8.7.7,1.3.1,1.9-.9-.3.5-.3,1.9.9,1.5s.6-1.5.6-1.5c1.4,1,2.4-.9.8-1.7,1.7-.7.4-2.6-.6-1.7.4-1.9-1.7-1.8-1.9-.2-.8-1.8-2.5-.6-1.6,1-2.1-.6-1.4,2.5.5,1.7Zm-3.8,8.5c-.2.4-.3,1.9.9,2s1.3-.9,1-2.2c.1.6,1.2,1.9,1.9.6.7-1.3-.6-1.8-.6-1.8,2-.1,1.4-2.6-.5-2.1.9-1.9-1.6-2.5-1.8-1-1-2-2.8-.2-1.8,1.2-2-1-2.6,1.4-.7,2.1-2.3,1.1.6,3.3,1.6,1.2Zm3.9,7.2c0-1.5-1.2-2.7-2.7-2.7s-2.7,1.2-2.7,2.7,1.2,2.7,2.7,2.7c1.5-.1,2.7-1.3,2.7-2.7Zm1.5,6.7c.9,0,1.5-.7,1.5-1.5,0-.9-.7-1.5-1.5-1.5-.9,0-1.5.7-1.5,1.5s.7,1.5,1.5,1.5Zm23.1,4.2c-2.6,1-5.3,1.8-8.1,2s-5.6,0-8.2-.8c-2.7-.8-5.2-2-7.6-3.6,2,2.1,4.5,3.7,7.3,4.7s5.8,1.4,8.7,1.1,5.8-1.1,8.5-2.4c2.6-1.3,5-3.1,6.9-5.3-2.4,1.8-4.9,3.2-7.5,4.3Zm13.6-14.5c-.4,1.2-1.2,2.1-2.1,2.9-.9.8-1.9,1.4-2.9,1.9-2.1,1-4.4,1.8-6.7,1.7-1-.1-2.3-.4-3.3-.8-1-.4-1.9-1.1-2.5-2s-.8-2-.9-3.2c0-1.2.1-2.4.3-3.6-.5,1.1-.9,2.3-1.1,3.6-.1,1.3,0,2.6.6,3.9.6,1.2,1.8,2.1,3,2.7.6.3,1.2.5,1.8.7s1.3.3,2,.3c2.7.1,5.1-.8,7.3-2.2,1.1-.7,2.1-1.5,2.9-2.4.9-1.1,1.5-2.3,1.6-3.5Zm9.8.7c-.6-.7-1.5-1-2-.5s-.4,1.3.2,2,1.5,1,2,.5c.5-.4.4-1.3-.2-2Zm-50.7,1.4c-.8,0-1.4.6-1.4,1.4s.6,1.4,1.4,1.4,1.4-.6,1.4-1.4c0-.7-.6-1.4-1.4-1.4Z"/>
+</svg>
+              <div class="ch">巳</div>
+              <div class="label">Ular</div>
+              <div class="relation" style="font-size:6.5pt;">三刑 Konflik Tiga</div>
+            </div>
+            <div class="compat-cell warning"
+                 style="width:30mm;flex:0 0 auto;">
+              <svg class="shio-svg" preserveAspectRatio="xMidYMid meet" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.5 106.63">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m77.8,49.15l2.4-4.1-3.2,3.5,2.4-4.1-2.7,3,2.1-3.5-3.2,3.5,2.4-4.1-3.4,3.7-1.4-4.9.3,4.7-1.3-4.6.3,4.1-1.1-3.9.3,4.7-1.3-4.6.4,5.2-.1.1-4.8-2.4,3.7,2.9-4.2-2.1,3.2,2.5-3.7-1.8,3.7,2.9-4.2-2.1,4.2,3.2-4.5,2.7,4.5-1.5-4.1,2.4,3.9-1.3-3.5,2.1,4.4-1.3-4.1,2.4,4.9-1.7-1.4,2.1,1.9-1.7-1.4,2.1,1.9-1.7-.7,4.6,1.4-4.1-.6,4.3,1.2-3.5-.5,3.7,1.4-4.1-.6,4.3,1.7-4.8,2.6,3.3-1.7-3.7h0l2.6,3.2-1.5-3.2,2.2,2.8-1.8-3.8,2.6,3.3-2-4.3h0l4.6-.3-4-.8,4.1-.3-3.5-.7,3.5-.2-4-.8,4.1-.3-4.4-1Zm-2,4.9c-1.4,1.3-3.6,1.3-4.9-.1s-1.3-3.6.1-4.9,3.6-1.3,4.9.1c1.3,1.4,1.3,3.6-.1,4.9Zm14.9,1.5c.5.7.2,1.7-.5,2.1-.7.5-1.7.2-2.1-.5-.5-.7-.2-1.7.5-2.1.7-.4,1.7-.2,2.1.5Zm-37-7.4c-.4-.7.1-3.1,1.9-4,1.8-.8,3.5-.5,4.6.8-1.3-.6-2.8-.6-4.2.1-1.2.6-2.3,1.8-2.3,3.1Zm-.4,11c.6-.1,1.2-.3,1.7-.7-.2.7-.8,1.2-1.5,1.4-.7.2-1.5.2-2.2-.1-.7-.3-1.3-.9-1.5-1.6-.2-.8.1-1.5.5-2-.1.7-.1,1.3.2,1.8.2.5.7.8,1.2,1,.4.2,1,.3,1.6.2Zm38.3-11.1c-.5.4-1.2.7-1.9.5s-1.3-.8-1.6-1.4c-.3-.7-.3-1.4-.1-2.1s.7-1.3,1.3-1.5c-.4.5-.6,1-.7,1.6,0,.6.1,1.1.3,1.6s.5.9,1,1.1c.5.3,1.1.3,1.7.2Zm43.9,47.5c-1.3-6.9-10.2-9.4-15-11.9-5.3-2.8-8.8-13.1-17.3-16.8,0-6.3,6-12,5.8-17.7,5.1.3,7-2.9,6.2-6.8,5.1-4.6,5.8-12.6-3.5-15.8s-17.6.7-17.7,9.3c-7.5,4.3-6.4.5-19.1-.2s-23.8,6.1-30.1,15.9c-8.8-1.4-8.2-18.5-7.4-30.1.8-11.6-8-27.9-23.8-18.8S-2.9,35.55,4.7,40.15c6,3.6,13.2,3.3,17.9-3.1.7-1-.6-2.2-1.5-1.4-9.6,8.4-17.7,2-16.8-9.4C5.3,13.05,13.5,4.85,21.7,5.75s12,10.1,9.8,24.8.9,19.6,12.1,29.9c3.6,3.2,8.8,10.9,11.8,17.2,1.7,3,.6,12.6-3.1,17.1-2,2.5-3.3,4.8-4.1,6.5-.5,1,.3,2.2,1.4,2.2,1.6,0,3.2-.7,4.9-1.1,2.4-.6,5.9,1.2,7.6,2.2.6.4,1.4.2,1.8-.3.6-.6.5-1.6-.1-2.1-1.4-1.3-4.1-2.9-9.1-3.3-.4,0-.6-.4-.5-.7,3.7-9.2,16.6-13.1,12.2-22.5,9.1,6.8,1.5,17.8-.8,20.8-.6.8-.6,1.9,0,2.6v.1c.7.8,2,.9,2.9.4,3.7-2,7.1-1.1,8.7-.5.5.2,1,0,1.3-.4h0c.6-.8,0-2-1-2-1.7-.1-3.6-.5-5.4-.8-.8-.1-1.3-1.1-.8-1.8,7.1-11.3,7.5-16.5,1.9-24.4,2.6-.1,14-1.8,17.1-7.1,0,0-1.8,5.1-1.1,10.5s6.9,13,8.2,19.9c1,5.4-2,9.1-4.9,10.9-.2.1-.4.4-.3.7.1.3.4.4.6.4,1.4-.2,3.1-.9,4.2-2.6,0,.5-.1,1.8-1.3,3.7-.1.2-.1.4.1.5.1.1.3.1.5,0,1.4-1.1,2.2-2.5,2.5-3.8.1.6.1,1.4-.1,2.4,0,.1,0,.3.2.4.1.1.3,0,.4-.1,8-10.5-.9-25.2-1.2-31.9,2.7,5.2,10.6,4.4,14.7,7.6s9.1,9.7,12.9,10.2c2.9.4,3.8,3.4,3.3,6-.1.3.1.6.4.7.3.1.6,0,.7-.3.8-1.4.9-3.1.9-3.1,0,0,1,.9,1.8,2.2.1.2.3.3.5.2s.3-.3.3-.5c-.2-2-1.4-3.4-1.4-3.4,0,0,1.2.6,2.4,2.9.1.2.3.3.5.2.3-.2.4-.5.4-.7Zm-27.2-47.6c-1.6-.9-1.8-2.6-1.8-2.6,3.8-1.1,6.7-.4,7.4-.1-1.7,2.8-4,3.5-5.6,2.7Zm8.6-11.3c.3,1-.5,3.1-2.3,3.2-.3,0-.7.2-.9.5l-.1.1c-.2.3-.2.7-.1,1,.3.7.7,1.8.6,2.8-1.7-1-4.2-1.2-8,0,.3-1.3,1.7-2.3,2.5-2.8.2-.1.3-.3.3-.4,0-.2,0-.4-.1-.6-.2-.3-.5-.4-.8-.3-2.9.6-5.5-2.4-3.9-5.2,1.7-3,6-2.1,7.9,1.3,2.2-3,4.6-.7,4.9.4Zm-7.1-9.4c.8.3,1.5.7,2.2,1.3.6.6,1.2,1.2,1.6,2,.4.7.7,1.6.6,2.4-.2-.8-.7-1.4-1.2-2s-1-1.1-1.6-1.6-1.2-.9-1.9-1.3-1.4-.7-2.2-1c.8-.2,1.7-.1,2.5.2Zm-5.7.6c.9,0,1.9.1,2.8.4.9.3,1.7.8,2.4,1.4s1.3,1.5,1.2,2.5c-.4-.8-1-1.4-1.7-1.8-.7-.5-1.5-.8-2.3-1.1-.8-.3-1.6-.5-2.5-.6-.8-.1-1.7-.2-2.6,0,.8-.6,1.8-.8,2.7-.8Zm-7.4,5.7c.7-.6,1.9-1.3,4.1-1.1.5.1.9.6.9,1.1-.1.5-.6.9-1.1.9-.8-.1-1.9-.1-2.5.5-.5.4-.6,1.2-.5,2.2.1.8.4,1,.6,1,.6.2,1.6-.1,2.2-.5.4-.4,1.1-.3,1.4.1.4.4.3,1.1-.1,1.4-.7.6-1.9,1.1-3,1.1-.4,0-.8-.1-1.2-.2-.6-.2-1.6-.9-1.8-2.7-.3-2,.4-3.2,1-3.8Zm-46.5,21.9c-3.1-1.8-.1-7.7,3.1-6.2-2.7-5.3,5.2-8.2,8.1-4-5.8,2.7-10.4,10.2-5.3,13.3-4.1,5.4-9.6-.7-5.9-3.1Zm6.8-1.4c-1.5-.5-1-2.3.5-1.6-.8-1.1.6-2.4,1.4-.9.1-1.2,2.1-.7,1.4.8,1.5-.4,1.9,1.5.4,1.6,0,0,1,.4.5,1.3-.5,1-1.4,0-1.5-.5.2,1,.1,1.8-.8,1.7-.9-.1-.8-1.2-.6-1.5-1,1.6-3.1,0-1.3-.9Zm6.9,29.3c-.8,1.8-2.2,3.2-3.7,4.3,1.2-1.4,2.3-2.9,2.9-4.6.6-1.7.7-3.5.4-5.2-.3-1.8-1-3.4-1.8-5.1-.8-1.6-1.7-3.2-2.6-4.9,1.2,1.4,2.4,2.9,3.3,4.5,1,1.6,1.7,3.4,2.1,5.3.4,1.9.3,3.9-.6,5.7Zm11.2-16.7c-2,.1-4-.1-6-.5s-3.9-.9-5.8-1.6c-.4-.2-.8-.3-1.3-.5.5.7,1,1.4,1.4,2.2,1.2,2.1,2.2,4.4,2.5,6.7-.9-2.2-2.2-4.1-3.6-6-.7-.9-1.4-1.8-2.2-2.7-.8-.9-1.6-1.7-2.4-2.3-.4-.3-.5-.9-.2-1.3s.8-.5,1.2-.3h0c1.7.9,3.5,1.6,5.3,2.3,1.8.7,3.6,1.3,5.5,1.7,1.9.5,3.7.8,5.7,1,1.9.2,3.8.2,5.8-.3-1.9,1.2-3.9,1.5-5.9,1.6Zm4.6-12.2c3.9,3.9-.5,10.2-4.8,4.8.4,4.8-7.8,4.2-6-2-5.7,2.7-8.8-4.7-2.9-6.2,0,0-4.2-.7-2.8-5,1.4-4.4,5.5-1.1,6.3.8-1.5-3.9-1.8-7,1.9-7.3,3.7-.3,4.1,4.1,3.8,5.6,2.1-6.9,12-2,5.5,2.8,6.2.7,5.8,8.4-1,6.5Zm9.6,6.6c-1.4-.1-1.2-1.8-1-2.3-1.2,2.4-4.6-.1-1.8-1.4-2.3-.8-1.6-3.6.8-2.4-1.2-1.7.9-3.7,2.1-1.4.2-1.8,3.2-1,2.1,1.2,2.3-.6,2.9,2.4.6,2.5,0,0,1.5.6.7,2.1s-2.1,0-2.3-.7c.3,1.4.2,2.6-1.2,2.4Zm3.6,17.2c-.8-1.4-1.3-3-1.6-4.7-.5-3.3.2-6.6,1.3-9.6-.3,3.2-.8,6.4-.3,9.5.2,1.5.7,3,1.3,4.5s1.3,2.9,2,4.4c-1-1.3-2-2.7-2.7-4.1Zm-.8-29.5c-2.4,2.2-6.6-2-4.4-4.4-3.8-1-.9-7.8,4.2-4.3-3.6,4.1,2.6,9.2,8.2,9.8-1.2,4.4-8.8,4.2-8-1.1Zm5.3,21.5c-2.3-6.5,2.6-9.1,3.9-12.2,1.3-3.2.7-6.3-.6-7.9,4.1,2.9,3.2,7.1.9,10.6-2.3,3.4-4.5,4.2-4.2,9.5Zm1.7-19.9c-.6,1.4-1.9,2.2-3.7,2s-2.9-2.2-2.8-2.9c.4,1.2,1.7,1.9,2.9,2,1.4.2,2.7-.2,3.6-1.1Zm-9.9-10.1c-.5.1-1,.4-1.4.7-.4.3-.7.8-.7,1.2-.1.5.1,1,.4,1.6-.5-.3-1-.9-1-1.6s.3-1.4.8-1.8,1.2-.7,1.8-.7c.7,0,1.4.2,1.7.8-.5-.3-1.1-.3-1.6-.2Zm-38.9,14.3c-.4-.6-.6-1.4-.6-2.2.1-.8.4-1.6,1.1-2.1s1.6-.4,2.2-.1c-.7.1-1.3.3-1.7.7-.4.4-.6,1-.7,1.6s0,1.2.3,1.8c.2.6.6,1.1,1.3,1.5-.7-.1-1.5-.6-1.9-1.2Zm59-17.6c0,.9-.7,1.5-1.5,1.5s-1.5-.7-1.5-1.5.7-1.5,1.5-1.5c.9-.1,1.5.6,1.5,1.5Zm3.7.6c0-.7.6-1.3,1.3-1.3s1.3.6,1.3,1.3-.6,1.3-1.3,1.3-1.3-.6-1.3-1.3Z"/>
+</svg>
+              <div class="ch">申</div>
+              <div class="label">Monyet</div>
+              <div class="relation" style="font-size:6.5pt;">六沖 Bertentangan</div>
+            </div></div>
+
+  <div class="transcript"><span class="lbl">Transkrip Asli (婚配)</span><div class="cn">忌：配相蛇、猴。
+夫妻相剋，或不和，憂愁不絕，無成功之望，有破敗之嫌，一生難免空虛寂寞之感，致傷疾短命之苦。
+宜：配相馬、狗大吉相豬吉凶相半。其他生肖次吉。
+永結同心，德望日高終成大業，富榮譽，福壽興家之大吉，子孫昌盛矣。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>HINDARI shio Ular (蛇) dan Monyet (猴):<br>Pasangan saling menentang atau tidak harmonis. Ada bayangan kesedihan berkepanjangan, sulit sukses, kemungkinan goyah. Hidup sulit lepas dari rasa kosong-sepi.<br><br>COCOK shio Kuda (馬) dan Anjing (狗) — sangat baik. Babi (豬) — campuran baik &amp; buruk. Shio lain cukup baik.<br>Bersatu hati selamanya, reputasi kebajikan kian tinggi, akhirnya berhasil besar, kaya &amp; terhormat, rezeki + umur + keluarga makmur, keturunan berkembang.</p></div><div class="card merah"><div class="card-title">Tafsir &amp; Saran Praktis</div><ul style="margin:0 0 0 5mm;font-size:9.5pt;line-height:1.55;"><li>Hindari shio Ular &amp; Monyet bukan vonis — itu sinyal pola karakter yang berisiko bentrok dengan 庚金 Anda. Kalau pasangan dekat ber-shio itu, kompensasi lewat komunikasi &amp; batas waktu istirahat.</li><li>Shio Kuda + Anjing (三合 dengan Macan) adalah dukungan natural — di lingkungan kerja, prioritaskan kerja sama dengan mereka untuk proyek penting.</li><li>Saran “lebih baik telat menikah” sudah lewat di kasus Anda; tafsir ulang: jaga pernikahan dengan ritme “api yang stabil” — fokus pada konsistensi harian, bukan ledakan emosi.</li><li>Pasangan cerdas + ekstrover adalah pelengkap, bukan saingan. Beri panggung, beri otonomi keuangan rumah tangga — itu cara 庚金 menampung 太陰 di palace 夫妻.</li></ul></div>
+  <div class="page-num">7</div>
+</section>
+<section class="page">
+  <h2>事業 — Karir & Profesi</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <div class="transcript"><span class="lbl">Transkrip Asli (事業)</span><div class="cn">◎ 文具、出版、書店、農業蔬果、木材、傢俱、裝潢、紙、木器或工藝、花卉園藝、煙草、布疋、教育、公務員、政治、宗教家。
+◎ 流動攤販、運動家、介紹中人、醫生、清潔隊、記者、護士、導遊、馬戲團、航海漁業、冷凍業、水產業、碼頭工、消防隊、貿易公司。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Industri yang searah:<br>◎ Alat tulis, penerbitan, toko buku, agrikultur sayur-buah, kayu olahan, furnitur, dekorasi &amp; interior, kertas, kerajinan kayu / kriya seni, taman bunga &amp; lansekap, tembakau, tekstil, pendidikan, pegawai negeri, politik, tokoh keagamaan.<br>◎ Pedagang keliling, atlet &amp; olahraga, perantara/agen, dokter, jasa kebersihan, jurnalis, perawat, pemandu wisata, sirkus &amp; pertunjukan, pelayaran-perikanan, pendinginan/freezing, hasil laut, buruh pelabuhan, pemadam kebakaran, perusahaan dagang.</p></div><div class="card merah"><div class="card-title">Tafsir &amp; Saran Praktis</div><ul style="margin:0 0 0 5mm;font-size:9.5pt;line-height:1.55;"><li>Daftar industri klasik panjang, tapi yang paling sesuai dengan 喜用神 水木 Anda: penerbitan, pendidikan, perdagangan, logistik, kerajinan kayu/seni — semua mengalir &amp; menumbuhkan.</li><li>Industri yang berunsur 金 dan 土 (logam berat, mining, properti tanah-kering) disebut software, tapi waspada: itu menambah dominasi 庚金 yang sudah kuat — energi macet, profit lambat.</li><li>Di umur 60-an + 大運 丙辰, peran terbaik adalah “arsitek senior / penasihat” — bisnis yang mengandalkan reputasi &amp; jaringan, bukan operasional harian melelahkan.</li><li>Bila membuka usaha baru, partner 喜用神 水/木 (orang air/kayu — biasanya tipe komunikatif/edukatif) lebih cocok daripada partner sesama 庚金.</li></ul></div>
+  <h3>Industri per Elemen (★ = sesuai 喜用神 Anda)</h3>
+  <div class="info-grid info-grid-3" style="grid-template-columns:repeat(3,1fr);">
+    
+        <div class="info-card" style="">
+          <div class="info-card-title">金 Logam</div>
+          <ul style="font-size:9pt;"><li>Logam, mesin, otomotif</li><li>Keuangan, asuransi</li><li>Hukum, militer</li><li>IT hardware</li></ul>
+        </div>
+        <div class="info-card" style="border-color:var(--merah-imperial);">
+          <div class="info-card-title">木 Kayu ★</div>
+          <ul style="font-size:9pt;"><li>Pendidikan, riset</li><li>Tekstil, furniture</li><li>Pertanian, kehutanan</li><li>Penerbitan</li></ul>
+        </div>
+        <div class="info-card" style="border-color:var(--merah-imperial);">
+          <div class="info-card-title">水 Air ★</div>
+          <ul style="font-size:9pt;"><li>Logistik, shipping</li><li>F&B beverage</li><li>Pariwisata, perhotelan</li><li>Komunikasi</li></ul>
+        </div>
+        <div class="info-card" style="">
+          <div class="info-card-title">火 Api</div>
+          <ul style="font-size:9pt;"><li>Energi, listrik</li><li>Hiburan, fashion</li><li>Pemasaran, branding</li><li>Kuliner panas</li></ul>
+        </div>
+        <div class="info-card" style="">
+          <div class="info-card-title">土 Tanah</div>
+          <ul style="font-size:9pt;"><li>Properti, konstruksi</li><li>Pertambangan</li><li>Konsultasi, manajemen</li><li>Layanan publik</li></ul>
+        </div>
+  </div>
+  <div class="page-num">8</div>
+</section>
+<section class="page">
+  <h2>陽宅 — Feng Shui Hunian</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <div class="transcript"><span class="lbl">Transkrip Asli (陽宅)</span><div class="cn">坤卦
+◎宅宜坐東北向西南或西南向東北大吉。門路宜開西方或西北方吉。爐灶宜安東方西方吉。房間宜安西方、西北方、西南方、東北方。床位宜安西方、西南方、東北方、西北吉。神位宜安西方、西北方、西南方東北及本年大利方向吉，坑廁安於北方、東方、東南方、南方。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Hexagram Kun (坤卦) — bumi/tanah, simbol penerima yang stabil.<br><br>• Arah hadap rumah terbaik: dari Timur Laut menghadap Barat Daya, atau Barat Daya menghadap Timur Laut.<br>• Pintu utama: bukaan ke Barat atau Barat Laut.<br>• Kompor (爐灶): pasang di area Timur atau Barat.<br>• Kamar tidur: bagian Barat, Barat Laut, Barat Daya, atau Timur Laut.<br>• Posisi ranjang: ke arah Barat, Barat Daya, Timur Laut, Barat Laut.<br>• Altar: Barat, Barat Laut, Barat Daya &amp; Timur Laut, plus arah keberuntungan tahunan.<br>• Toilet/WC: aman di Utara, Timur, Tenggara, atau Selatan.</p></div><div class="card merah"><div class="card-title">Tafsir &amp; Saran Praktis</div><ul style="margin:0 0 0 5mm;font-size:9.5pt;line-height:1.55;"><li>Hexagram 坤 di bagan rumah Anda menggarisbawahi tema “stabilitas + penerima” — rumah Anda berperan sebagai pondasi, bukan panggung.</li><li>Arah hadap Timur Laut ↔ Barat Daya selaras dengan format 偏印格 Anda; manfaatkan untuk meja kerja &amp; ruang baca — fokus mental Anda paling tajam di sumbu ini.</li><li>Pintu utama di Barat / Barat Laut OK secara teori, tapi tambahkan elemen 水 (akuarium kecil, fountain mini, atau sekadar warna biru gelap) di area tersebut untuk menghidupkan 喜用神 Anda.</li><li>Kompor di Timur / Barat aman; hindari menambah unsur Tanah berat (batu besar, gerabah jumbo) di area dapur — itu memperberat 忌神 土 Anda.</li><li>Toilet di Utara / Timur / Tenggara / Selatan aman; periksa instalasi air rutin — 水 yang bocor di area “netral” bisa jadi penanda gangguan rezeki kecil.</li></ul></div>
+  <div class="page-num">9</div>
+</section>
+<section class="page">
+  <h2>大運 — Timeline Hidup 10-Tahunan</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <p>Setiap fase 10 tahun membawa kombinasi 干支 (stem-branch) dan 十神 (Ten Gods)
+  yang berbeda. Fase saat ini ditandai dengan border merah tebal.</p>
+  <svg viewBox="0 0 320 110" preserveAspectRatio="xMidYMid meet" style="width:100%;max-width:160mm;height:auto;display:block;margin:0 auto;"><rect x="8" y="24" width="304" height="58" fill="rgba(201,160,76,0.06)" stroke="#e8c87a" stroke-width="0.5"/><rect x="8.0" y="24" width="29.4" height="58" fill="#94a3b8" opacity="0.55"/><text x="23.2" y="65.0" text-anchor="middle" font-family="Ma Shan Zheng" font-size="11" fill="#f7f0e0">辛亥</text><text x="23.2" y="92.0" text-anchor="middle" font-family="Noto Serif" font-size="7" fill="#5c4a36">5-14</text><text x="23.2" y="20.0" text-anchor="middle" font-family="Noto Serif TC" font-size="7.5" fill="#7a0d0d">劫財</text><rect x="38.4" y="24" width="29.4" height="58" fill="#0284c7" opacity="0.55"/><text x="53.6" y="65.0" text-anchor="middle" font-family="Ma Shan Zheng" font-size="11" fill="#f7f0e0">壬子</text><text x="53.6" y="92.0" text-anchor="middle" font-family="Noto Serif" font-size="7" fill="#5c4a36">15-24</text><text x="53.6" y="20.0" text-anchor="middle" font-family="Noto Serif TC" font-size="7.5" fill="#7a0d0d">食神</text><rect x="68.8" y="24" width="29.4" height="58" fill="#0284c7" opacity="0.55"/><text x="84.0" y="65.0" text-anchor="middle" font-family="Ma Shan Zheng" font-size="11" fill="#f7f0e0">癸丑</text><text x="84.0" y="92.0" text-anchor="middle" font-family="Noto Serif" font-size="7" fill="#5c4a36">25-34</text><text x="84.0" y="20.0" text-anchor="middle" font-family="Noto Serif TC" font-size="7.5" fill="#7a0d0d">傷官</text><rect x="99.2" y="24" width="29.4" height="58" fill="#16a34a" opacity="0.55"/><text x="114.4" y="65.0" text-anchor="middle" font-family="Ma Shan Zheng" font-size="11" fill="#f7f0e0">甲寅</text><text x="114.4" y="92.0" text-anchor="middle" font-family="Noto Serif" font-size="7" fill="#5c4a36">35-44</text><text x="114.4" y="20.0" text-anchor="middle" font-family="Noto Serif TC" font-size="7.5" fill="#7a0d0d">偏財</text><rect x="129.6" y="24" width="29.4" height="58" fill="#16a34a" opacity="0.55"/><text x="144.8" y="65.0" text-anchor="middle" font-family="Ma Shan Zheng" font-size="11" fill="#f7f0e0">乙卯</text><text x="144.8" y="92.0" text-anchor="middle" font-family="Noto Serif" font-size="7" fill="#5c4a36">45-54</text><text x="144.8" y="20.0" text-anchor="middle" font-family="Noto Serif TC" font-size="7.5" fill="#7a0d0d">正財</text><rect x="160.0" y="24" width="29.4" height="58" fill="#dc2626" opacity="0.95"/><rect x="160.0" y="24" width="29.4" height="58" fill="none" stroke="#7a0d0d" stroke-width="1.5"/><text x="175.2" y="65.0" text-anchor="middle" font-family="Ma Shan Zheng" font-size="11" fill="#f7f0e0">丙辰</text><text x="175.2" y="92.0" text-anchor="middle" font-family="Noto Serif" font-size="7" fill="#5c4a36">55-64</text><text x="175.2" y="20.0" text-anchor="middle" font-family="Noto Serif TC" font-size="7.5" fill="#7a0d0d">七殺</text><rect x="190.4" y="24" width="29.4" height="58" fill="#dc2626" opacity="0.55"/><text x="205.6" y="65.0" text-anchor="middle" font-family="Ma Shan Zheng" font-size="11" fill="#f7f0e0">丁巳</text><text x="205.6" y="92.0" text-anchor="middle" font-family="Noto Serif" font-size="7" fill="#5c4a36">65-74</text><text x="205.6" y="20.0" text-anchor="middle" font-family="Noto Serif TC" font-size="7.5" fill="#7a0d0d">正官</text><rect x="220.8" y="24" width="29.4" height="58" fill="#a16207" opacity="0.55"/><text x="236.0" y="65.0" text-anchor="middle" font-family="Ma Shan Zheng" font-size="11" fill="#f7f0e0">戊午</text><text x="236.0" y="92.0" text-anchor="middle" font-family="Noto Serif" font-size="7" fill="#5c4a36">75-84</text><text x="236.0" y="20.0" text-anchor="middle" font-family="Noto Serif TC" font-size="7.5" fill="#7a0d0d">偏印</text><rect x="251.2" y="24" width="29.4" height="58" fill="#a16207" opacity="0.55"/><text x="266.4" y="65.0" text-anchor="middle" font-family="Ma Shan Zheng" font-size="11" fill="#f7f0e0">己未</text><text x="266.4" y="92.0" text-anchor="middle" font-family="Noto Serif" font-size="7" fill="#5c4a36">85-94</text><text x="266.4" y="20.0" text-anchor="middle" font-family="Noto Serif TC" font-size="7.5" fill="#7a0d0d">正印</text><rect x="281.6" y="24" width="29.4" height="58" fill="#94a3b8" opacity="0.55"/><text x="296.8" y="65.0" text-anchor="middle" font-family="Ma Shan Zheng" font-size="11" fill="#f7f0e0">庚申</text><text x="296.8" y="92.0" text-anchor="middle" font-family="Noto Serif" font-size="7" fill="#5c4a36">95-104</text><text x="296.8" y="20.0" text-anchor="middle" font-family="Noto Serif TC" font-size="7.5" fill="#7a0d0d">比肩</text></svg>
+  <h3 style="margin-top:5mm;">Detail Setiap Fase</h3>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:2mm;">
+    
+        <div class="card" style="padding:2mm 3mm;">
+          <strong class="cn">辛亥</strong>
+          <span style="font-size:9pt;color:var(--ink-soft);">
+            (5–14 thn) — 十神: 劫財 —
+            Elemen: Logam
+          </span>
+        </div>
+        <div class="card" style="padding:2mm 3mm;">
+          <strong class="cn">壬子</strong>
+          <span style="font-size:9pt;color:var(--ink-soft);">
+            (15–24 thn) — 十神: 食神 —
+            Elemen: Air
+          </span>
+        </div>
+        <div class="card" style="padding:2mm 3mm;">
+          <strong class="cn">癸丑</strong>
+          <span style="font-size:9pt;color:var(--ink-soft);">
+            (25–34 thn) — 十神: 傷官 —
+            Elemen: Air
+          </span>
+        </div>
+        <div class="card" style="padding:2mm 3mm;">
+          <strong class="cn">甲寅</strong>
+          <span style="font-size:9pt;color:var(--ink-soft);">
+            (35–44 thn) — 十神: 偏財 —
+            Elemen: Kayu
+          </span>
+        </div>
+        <div class="card" style="padding:2mm 3mm;">
+          <strong class="cn">乙卯</strong>
+          <span style="font-size:9pt;color:var(--ink-soft);">
+            (45–54 thn) — 十神: 正財 —
+            Elemen: Kayu
+          </span>
+        </div>
+        <div class="card merah" style="padding:2mm 3mm;">
+          <strong class="cn">丙辰</strong>
+          <span style="font-size:9pt;color:var(--ink-soft);">
+            (55–64 thn) — 十神: 七殺 —
+            Elemen: Api
+          </span>
+        </div>
+        <div class="card" style="padding:2mm 3mm;">
+          <strong class="cn">丁巳</strong>
+          <span style="font-size:9pt;color:var(--ink-soft);">
+            (65–74 thn) — 十神: 正官 —
+            Elemen: Api
+          </span>
+        </div>
+        <div class="card" style="padding:2mm 3mm;">
+          <strong class="cn">戊午</strong>
+          <span style="font-size:9pt;color:var(--ink-soft);">
+            (75–84 thn) — 十神: 偏印 —
+            Elemen: Tanah
+          </span>
+        </div>
+        <div class="card" style="padding:2mm 3mm;">
+          <strong class="cn">己未</strong>
+          <span style="font-size:9pt;color:var(--ink-soft);">
+            (85–94 thn) — 十神: 正印 —
+            Elemen: Tanah
+          </span>
+        </div>
+        <div class="card" style="padding:2mm 3mm;">
+          <strong class="cn">庚申</strong>
+          <span style="font-size:9pt;color:var(--ink-soft);">
+            (95–104 thn) — 十神: 比肩 —
+            Elemen: Logam
+          </span>
+        </div>
+  </div>
+  <div class="page-num">10</div>
+</section>
+<section class="page section-opener">
+  <div class="roman">BAGIAN II</div>
+  <div class="title-cn">紫微斗數</div>
+  <div class="label-id">Zi Wei Dou Shu · 12 Palace</div>
+  <p class="desc">Astrologi bintang ungu yang membagi hidup ke dalam dua belas area: diri, keluarga, rezeki, kesehatan, dan seterusnya.</p>
+</section>
+<section class="page">
+  <h2>紫微斗數 — 12 Palace</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <p>Zi Wei membagi hidup ke dalam 12 area (palace). Tiap palace dihuni
+  bintang-bintang yang menentukan watak area tersebut.</p>
+  
+  <h3 style="margin-top:1mm;">Konfigurasi Bagan</h3>
+  <div class="info-grid info-grid-3" style="grid-template-columns:repeat(3,1fr);gap:2mm;">
+    <div class="info-card" style="text-align:center;"><div class="info-card-title">命主<br><small style="font-weight:400;color:var(--ink-soft);">Life Lord</small></div><p style="font-size:14pt;font-family:'Ma Shan Zheng',cursive;color:var(--merah-deep);">廉貞</p></div><div class="info-card" style="text-align:center;"><div class="info-card-title">身主<br><small style="font-weight:400;color:var(--ink-soft);">Body Lord</small></div><p style="font-size:14pt;font-family:'Ma Shan Zheng',cursive;color:var(--merah-deep);">天梁</p></div><div class="info-card" style="text-align:center;"><div class="info-card-title">命宮<br><small style="font-weight:400;color:var(--ink-soft);">Life Palace</small></div><p style="font-size:14pt;font-family:'Ma Shan Zheng',cursive;color:var(--merah-deep);">申</p></div><div class="info-card" style="text-align:center;"><div class="info-card-title">身宮<br><small style="font-weight:400;color:var(--ink-soft);">Body Palace</small></div><p style="font-size:14pt;font-family:'Ma Shan Zheng',cursive;color:var(--merah-deep);">寅</p></div><div class="info-card" style="text-align:center;"><div class="info-card-title">五行局<br><small style="font-weight:400;color:var(--ink-soft);">Five-Element School</small></div><p style="font-size:14pt;font-family:'Ma Shan Zheng',cursive;color:var(--merah-deep);">土五局</p></div><div class="info-card" style="text-align:center;"><div class="info-card-title">子年斗君<br><small style="font-weight:400;color:var(--ink-soft);">Time Lord</small></div><p style="font-size:14pt;font-family:'Ma Shan Zheng',cursive;color:var(--merah-deep);">午</p></div>
+  </div>
+  <h3 style="margin-top:3mm;">Ringkasan 12 Palace</h3>
+  <div class="info-grid info-grid-3" style="grid-template-columns:repeat(3,1fr);gap:2mm;">
+    
+        <div class="info-card">
+          <div class="info-card-title">命宮 · Palace Diri</div>
+          <p style="font-size:8pt;">Palace 命宮 (Diri) Anda dihuni bintang 巨門 (Ju Men) dan beresonansi dengan tema 廉貞 (Lian Zhen).
+
+• Tipe karakter …</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">兄弟 · Saudara</div>
+          <p style="font-size:8pt;">—</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">夫妻 · Pasangan</div>
+          <p style="font-size:8pt;">Dari luar, Anda dan pasangan tampak sebagai pasangan yang penuh gairah. Begitu bertemu, api cinta menyala besa…</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">子女 · Anak</div>
+          <p style="font-size:8pt;">Anak Anda adalah anak-anak yang berbakti pada orangtua.
+Palace 子女 (Anak) Anda dilindungi bintang baik 天府 (Tian…</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">財帛 · Rezeki Harian</div>
+          <p style="font-size:8pt;">Anda menabung dengan disiplin &amp; jujur, dan di saat bersamaan juga lihai mengelola tabungan untuk kebutuhan yan…</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">疾厄 · Kesehatan</div>
+          <p style="font-size:8pt;">Trend kesehatan yang perlu diperhatikan:
+• Mudah ada keluhan liver/hati.
+• Nyeri saraf wajah; insomnia yang me…</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">遷移 · Perpindahan</div>
+          <p style="font-size:8pt;">Setiap kali Anda mencoba pindah/bergerak, semuanya cenderung lancar; hambatan jarang serius. Namun hidup Anda …</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">僕役 · Bawahan & Teman</div>
+          <p style="font-size:8pt;">Bawahan / staf di sekitar Anda seperti seekor sapi — lambat dan kurang sigap dalam merespons.
+
+Reframing: tipe…</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">官祿 · Karir Formal</div>
+          <p style="font-size:8pt;">Karir formal yang searah:
+• Seniman, politikus, pengusaha.
+• Khususnya pekerjaan yang berkaitan dengan tenaga …</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">田宅 · Properti & Rumah</div>
+          <p style="font-size:8pt;">Tanda bahwa Anda akan banyak sibuk dengan urusan properti — atau, sebaliknya, justru pada akhirnya berkurang.
+…</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">福德 · Berkah & Karma</div>
+          <p style="font-size:8pt;">Anda tenang &amp; stabil, dan memberikan kesan kemanusiaan yang hangat.
+
+Di awal mungkin tidak menonjol, tetapi se…</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">父母 · Orangtua</div>
+          <p style="font-size:8pt;">Petunjuk bahwa orangtua sendiri, atau hubungan Anda dengan orangtua, mudah berubah.
+
+Bila palace 父母 berada di …</p>
+        </div>
+  </div>
+  <div class="page-num">1</div>
+</section>
+<section class="page">
+  <h2>紫微 Detail — 命宮 · 兄弟 · 夫妻 · 子女</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <h3>命宮 · Palace Diri</h3><div class="transcript"><span class="lbl">Transkrip Asli (命宮)</span><div class="cn">巨門星：行動性的運動。具有對人生不斷地刺激地行動。性格如火般地強烈，地地感情記憶深刻、做事有實踐力、不好[?]，雖剛強但缺乏緩衝[?]。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Palace 命宮 (Diri) Anda dihuni bintang 巨門 (Ju Men) dan beresonansi dengan tema 廉貞 (Lian Zhen).<br><br>• Tipe karakter aksi — gerak hidup terus mendorong Anda untuk melakukan, mencoba, dan tidak diam.<br>• Karakter “seperti api” — emosional, intens, ingatan emosional yang dalam.<br>• Punya daya eksekusi nyata: dipikirkan langsung dijalankan.<br>• Tegas dan kokoh, tetapi sering kurang “buffer” halus untuk meredam benturan.<br>• Kombinasi 巨門 + 廉貞 secara klasik menggambarkan tokoh berjiwa pejuang yang bersuara — perlu menjaga ucapan agar tidak terlalu tajam.<br>[Beberapa baris transkrip foto kurang tajam dan ditandai dengan [?]]</p></div><div class="card merah"><div class="card-title">Tafsir &amp; Saran Praktis</div><ul style="margin:0 0 0 5mm;font-size:9.5pt;line-height:1.55;"><li>巨門 + resonansi 廉貞 di 命宮 申 Anda = tipe komunikator-pejuang. Kekuatan utama: artikulasi tajam dan eksekusi cepat — keduanya langka dimiliki bersamaan.</li><li>Sisi “seperti api” mudah membakar. Aturan praktis untuk umur 60-an: tunda respon 24 jam sebelum mengirim pesan/email yang emosional.</li><li>Ingatan emosional yang dalam adalah modal sebagai mentor / cerita-pemberi-makna — namun jangan dipakai sebagai amunisi konflik lama.</li><li>Day Master 庚金 + 命宮 申 (rumah Logam) = lapisan ganda Logam. Itu sebab Anda kokoh, tapi juga sebab Anda butuh ekstra Air (relaksasi, refleksi) supaya tidak getas.</li><li>Peran ideal di 大運 丙辰 sekarang: bukan front-line, tapi “suara keras yang dipakai sengaja” — pengarah, juri, kritikus konstruktif.</li></ul></div><h3>兄弟 · Saudara</h3><div class="card"><div class="card-title">兄弟 · 兄弟</div><p><em>Foto kategori ini tidak tersedia di folder. Bagian ini di-skip secara sengaja.</em></p></div><h3>夫妻 · Pasangan</h3><div class="transcript"><span class="lbl">Transkrip Asli (夫妻)</span><div class="cn">外觀上似乎是熱情的一對。相會的瞬間立刻燃起熊熊烈火，但愛之火很可能立刻就消失。但在與對方分手時相當乾脆，絕不會糾纏不清。您似乎是早婚的人，但是可能的話盡量晚婚，才能有幸福和諧的婚姻生活。男性常能與頭腦聰明的優秀女子結婚，女性則與才氣縱橫的男人結婚。與太陰星同宮的男人可獲美女為妻。天梁星同宮者，是金童玉女型的夫婦。有凶星阻擾時，夫妻情感惡劣，恐有離別之處。
+太陰星象徵情澈皎潔的月光，因此男女都是天真爛漫的類型。再與文昌、文曲同宮的話，更見教養的優秀。男人可獲文靜且情感細膩的女子為妻。女性或許會與清廉的藝術家類型結婚吧！與太陽星同宮，夫妻生活圓滿。與天機星同宮者，更是令人羨慕不已的金童玉女型夫妻。但如凶星同宮則恐有離婚的可能。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Dari luar, Anda dan pasangan tampak sebagai pasangan yang penuh gairah. Begitu bertemu, api cinta menyala besar — tetapi api itu juga bisa cepat padam. Namun saat berpisah Anda tegas; tidak menggantung-gantung urusan.<br><br>Anda cenderung menikah muda; tetapi bila memungkinkan, lebih baik tunda — pernikahan yang lebih matang akan membawa keharmonisan.<br><br>Pria dengan pola ini sering menikahi wanita cerdas dan berbakat. Wanita dengan pola ini menikahi pria berbakat dan berkarisma.<br><br>Bila bintang 太陰 (Tai Yin) bersanding di palace pasangan: pria mendapatkan istri yang lembut dan rupawan.<br>Bila bersama 天梁 (Tian Liang): pasangan ideal “pangeran-putri”.<br>Bila bersama 太陽 (Tai Yang): kehidupan rumah tangga utuh &amp; bahagia.<br>Bila bersama 天機 (Tian Ji): pasangan idaman yang dikagumi banyak orang.<br>Bila ada bintang yang kurang baik: hubungan suami-istri perlu kerja ekstra; ada potensi perpisahan — namun bukan kepastian.</p></div><div class="card merah"><div class="card-title">Tafsir &amp; Saran Praktis</div><ul style="margin:0 0 0 5mm;font-size:9.5pt;line-height:1.55;"><li>Pola “api cepat menyala lalu cepat padam” adalah ciri 庚金 + palace 夫妻 yang dinamis. Solusi: bangun ritual harian (sarapan/teh sore bersama) — itu yang menjaga bara.</li><li>Kelebihan Anda dalam berpisah dengan tegas (tidak menggantung) sebenarnya berkah — di umur sekarang, terapkan ini untuk konflik kecil: selesaikan hari ini, jangan dipendam.</li><li>Saran “晚婚” sudah tidak relevan secara harfiah, tapi prinsipnya hidup: matangkan setiap fase pernikahan baru (anak menikah, pensiun, pindah rumah) sebagai &#x27;pernikahan ulang&#x27;.</li><li>Pasangan + Wen Chang/Wen Qu yang disebut transkrip = kalau pasangan Anda artistik/edukatif, dukung secara finansial; itu langsung memperkuat 喜用神 Anda.</li><li>Hindari menjadi “api yang membakar” saat lelah; pakai sinyal pribadi (mis. minum air) sebelum percakapan berat dengan pasangan.</li></ul></div><h3>子女 · Anak</h3><div class="transcript"><span class="lbl">Transkrip Asli (子女)</span><div class="cn">您的孩子是孝敬雙親的乖孩子。
+兒女宮有天府的吉星庇護，您的兒女為數必不少吧！兒女們各自長大成人後，必也會為了孝敬您而盡心盡力吧！但萬一有凶星同宮的話，雖也仍會有兒女，可是並不會帶給您多大的益處。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Anak Anda adalah anak-anak yang berbakti pada orangtua.<br>Palace 子女 (Anak) Anda dilindungi bintang baik 天府 (Tian Fu) — kemungkinan jumlah anak tidak sedikit. Setelah dewasa, mereka akan berbakti pada Anda dengan sepenuh hati.<br>Bila ada bintang yang kurang baik di palace yang sama, anak tetap ada tetapi mungkin tidak banyak memberi keuntungan praktis kepada Anda.</p></div><div class="card merah"><div class="card-title">Tafsir &amp; Saran Praktis</div><ul style="margin:0 0 0 5mm;font-size:9.5pt;line-height:1.55;"><li>天府 di palace 子女 = anak Anda sebenarnya “lumbung” — mereka tipe yang menjaga &amp; menampung. Peran Anda bukan lagi menyetir, tapi memberi ruang &amp; restu.</li><li>Anak laki-laki yang berbakti perlu didorong mengambil tanggung jawab sendiri, jangan dilindungi terus — kalau tidak, kebaikan mereka akan mandeg.</li><li>Di umur 60-an, transfer pengetahuan adalah hadiah terbesar untuk anak — terstruktur (catat dalam tulisan), bukan hanya verbal.</li><li>Kalau Anda merasa anak “tidak memberi cukup”, baca ulang tafsir asli: peringatannya tentang “apabila ada bintang jahat”. Tanpa itu, dukungan mereka adalah natural — biarkan datang dengan ritme mereka.</li></ul></div>
+  <div class="page-num">2</div>
+</section>
+<section class="page">
+  <h2>紫微 Detail — 財帛 · 疾厄 · 遷移 · 僕役</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <h3>財帛 · Rezeki Harian</h3><div class="transcript"><span class="lbl">Transkrip Asli (財帛)</span><div class="cn">正經地儲蓄金錢，另一方面又能高明地運用儲蓄金。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Anda menabung dengan disiplin &amp; jujur, dan di saat bersamaan juga lihai mengelola tabungan untuk kebutuhan yang lebih besar.<br><br>Kombinasi langka: orang yang hemat sekaligus paham cara “memutar” uang.</p></div><div class="card merah"><div class="card-title">Tafsir &amp; Saran Praktis</div><ul style="margin:0 0 0 5mm;font-size:9.5pt;line-height:1.55;"><li>Disiplin menabung Anda + lihai mengelola tabungan = pasangan yang langka. Skala-up: gunakan struktur formal (rekening tujuan terpisah) — supaya disiplin tidak bergantung mood.</li><li>Di 大運 七殺 sekarang, tantangan: peluang besar berisiko besar muncul lebih sering. Komitmen aturan dulu (max % portofolio) sebelum peluang datang.</li><li>庚金 + 喜用神 水: pertimbangkan kelas aset yang “mengalir” — bonds, dividen, saham consumer staples — bukan emas/properti yang mengeras.</li><li>Beri 5-10% rezeki ke filantropi/keluarga besar setiap bulan: itu “air mengalir keluar” yang justru menjaga aliran masuk tetap lancar — sesuai prinsip 喜用神 Anda.</li></ul></div><h3>疾厄 · Kesehatan</h3><div class="transcript"><span class="lbl">Transkrip Asli (疾厄)</span><div class="cn">易患肝病。顏面神經痛。及失眠引起的神經衰弱。幼年時期曾受傷或受腫包之苦，及患足腰的疾病吧！如有其他吉星同宮者，健康絕對沒問題。與貪狼同宮，則易患腰部的疾病。如有其他凶星阻擾的話，恐會有神經痛、腰痛的毛病。
+孩童時代常為腫包所苦吧！與武曲星同宮者，易為眼病所苦。與廉貞星同宮者，手足易受傷。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Trend kesehatan yang perlu diperhatikan:<br>• Mudah ada keluhan liver/hati.<br>• Nyeri saraf wajah; insomnia yang menyebabkan kelelahan saraf.<br>• Masa kecil pernah cedera atau menderita bengkak/benjolan; rentan masalah kaki &amp; pinggang.<br><br>Bila bintang baik lain bersanding di palace 疾厄 — kesehatan terjaga.<br>Bila bersama 貪狼 (Tan Lang) — pinggang lebih rentan.<br>Bila bersama 武曲 (Wu Qu) — mata lebih rentan.<br>Bila bersama 廉貞 (Lian Zhen) — kaki &amp; tangan rentan cedera.<br>Bila ada bintang kurang baik — bisa muncul nyeri saraf dan nyeri pinggang berulang.<br><br>Saran: pemeriksaan rutin liver, jaga pola tidur, dan latihan postur untuk pinggang akan banyak membantu.</p></div><div class="card merah"><div class="card-title">Tafsir &amp; Saran Praktis</div><ul style="margin:0 0 0 5mm;font-size:9.5pt;line-height:1.55;"><li>庚金 dengan unsur 金 dominan + transkrip menyebut liver, mata, kaki-pinggang: pola Logam-keras yang minim relaksasi. 喜用神 水 Anda secara fisik = hidrasi cukup + tidur teratur.</li><li>Untuk masa kecil yang sering bengkak/cedera + 大運 丙辰 (七殺, fase tegang): periksa stress level, bukan hanya gula/tensi — 七殺 sering bermanifestasi di sistem saraf.</li><li>Latihan postur (pinggang) dan check-up liver tahunan adalah dua investasi kesehatan dengan ROI tertinggi untuk pola Anda.</li><li>Mata mudah lelah: kurangi screen-time setelah jam 9 malam — Logam butuh “gelap” untuk reset.</li><li>Sumber stres terbesar untuk 庚金 sering bukan beban kerja, tapi konflik nilai. Jaga diri dari relasi yang membuat Anda merasa “diperlakukan tidak fair” berkepanjangan.</li></ul></div><h3>遷移 · Perpindahan</h3><div class="transcript"><span class="lbl">Transkrip Asli (遷移)</span><div class="cn">每次嘗試任何移動時，皆能順利地進展。大概不會有什麼障礙。似乎仍無法安渡平穩無事的人生。利用旅行、轉業、搬家，或許可解決眼前的許多困擾。您是屬於可獲得年長者愛護的人，所以無論改變何種職業都不會有什麼困擾。與太陰星同宮者，出外雖會遭逢不幸，但卻反可因禍而致福。不過，如與巨門星同宮的話，每次轉業、搬家就更加一分的勞累。
+每遇到任何變化時總有倒楣的事臨頭。例如搬家後發現新居是設備不全的住家，或轉某到新公司時才知道此公司紛爭不絕，或甚至於不久即關門大吉等等。反正走到哪兒哪兒就有倒楣事在等著。當在沒有時間保持心情的平靜。可能的話，凡事盡量不求變化，即使遭遇任何不愉快的事件，最好也能隱忍在內心裡。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Setiap kali Anda mencoba pindah/bergerak, semuanya cenderung lancar; hambatan jarang serius. Namun hidup Anda sulit benar-benar “tenang dan datar” — selalu ada gerak. Memanfaatkan perjalanan, pindah profesi, atau pindah rumah sering kali bisa menyelesaikan banyak kekhawatiran sekarang.<br><br>Anda adalah tipe yang mendapat kasih sayang dari orang yang lebih tua, jadi pindah profesi apapun tidak akan terlalu menyusahkan.<br><br>Bila 太陰 (Tai Yin) bersanding di palace 遷移: keluar mungkin temui kesialan kecil — tetapi sialnya berbalik jadi berkah.<br>Bila 巨門 (Ju Men) bersanding: setiap kali pindah profesi/rumah jadi lebih melelahkan.<br><br>Di sisi lain, ada catatan klasik: setiap perubahan datang dengan masalah kecil — misal pindah rumah ternyata fasilitasnya tidak lengkap, atau perusahaan baru ternyata banyak konflik internal. Saran tradisi: bila tidak benar-benar perlu, jangan terlalu sering cari perubahan; bila menghadapi hal yang tidak menyenangkan, lebih bijak ditahan dalam hati daripada langsung diledakkan.</p></div><div class="card merah"><div class="card-title">Tafsir &amp; Saran Praktis</div><ul style="margin:0 0 0 5mm;font-size:9.5pt;line-height:1.55;"><li>Pola “gerakan lancar tapi hidup tidak pernah tenang” adalah karakter 寅 + 驛馬 + 庚金 — bukan kutukan, itu energi natural. Resep: bukan menghindari gerakan, tapi memilih ritme yang Anda mampu.</li><li>Saat Anda merasa stuck, satu intervensi paling murah: 1-2 minggu pindah lingkungan (rumah saudara, cottage, hotel kerja) — sering itu cukup mereset 大運 丙辰.</li><li>Saran klasik “tahan emosi di dalam” perlu di-update: tahan reaksi cepat, tapi tetap proses emosi (jurnal, bicara dengan teman) — kalau dipendam total, Logam jadi karat.</li><li>Pindah profesi di umur 60-an = mungkin, tapi sebaiknya dalam bentuk shift peran (dari operasional ke advisory) bukan ganti industri total.</li></ul></div><h3>僕役 · Bawahan & Teman</h3><div class="transcript"><span class="lbl">Transkrip Asli (僕役)</span><div class="cn">就像一頭牛那般慢吞吞的遲鈍部下。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Bawahan / staf di sekitar Anda seperti seekor sapi — lambat dan kurang sigap dalam merespons.<br><br>Reframing: tipe loyal-pekerja-keras yang tidak cepat panik. Cocok untuk pekerjaan yang butuh konsistensi. Kurang cocok untuk pekerjaan yang menuntut respons cepat — Anda perlu memberi instruksi yang lebih jelas dan deadline yang lebih longgar.</p></div><div class="card merah"><div class="card-title">Tafsir &amp; Saran Praktis</div><ul style="margin:0 0 0 5mm;font-size:9.5pt;line-height:1.55;"><li>Bawahan “lambat seperti sapi” = sebenarnya tipe loyal-konsisten. 庚金 yang serba cepat sering frustasi; reframing: mereka adalah pondasi, bukan akselerator.</li><li>Beri instruksi tertulis + deadline yang lebih longgar 30% dari ekspektasi awal — output naik signifikan, konflik turun.</li><li>Cocok untuk peran berulang &amp; detail-oriented (pembukuan, maintenance, customer service rutin). Jangan paksa mereka di peran inovatif.</li><li>Di 大運 七殺, godaan untuk “ganti tim” akan besar. Tahan sebentar — sering kali tim lama yang dilatih ulang lebih untung daripada cari baru.</li></ul></div>
+  <div class="page-num">3</div>
+</section>
+<section class="page">
+  <h2>紫微 Detail — 官祿 · 田宅 · 福德 · 父母</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <h3>官祿 · Karir Formal</h3><div class="transcript"><span class="lbl">Transkrip Asli (官祿)</span><div class="cn">可當藝術家、政治家、事業家，特別是與水力、流通、金融等有關的工作，從事色情方面的工作也不錯吧！</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Karir formal yang searah:<br>• Seniman, politikus, pengusaha.<br>• Khususnya pekerjaan yang berkaitan dengan tenaga air (perairan, hidro), distribusi/sirkulasi (logistik, perdagangan), dan keuangan.<br>• Industri hiburan dewasa juga disebut sebagai opsi dalam catatan asli — diserahkan ke Anda sebagai pilihan etis pribadi.</p></div><div class="card merah"><div class="card-title">Tafsir &amp; Saran Praktis</div><ul style="margin:0 0 0 5mm;font-size:9.5pt;line-height:1.55;"><li>Catatan klasik menyebut beberapa industri (termasuk hiburan dewasa) — saring sesuai etika &amp; nilai pribadi Anda. Tafsir pakai prinsip elemen 水 + 木: pilih yang berdaya alir &amp; berbudi pendidik.</li><li>Politik / pengusaha / seniman cocok karena format 偏印格 Anda butuh “panggung tidak konvensional”. Hindari peran murni administratif — itu memboroskan modal karakter Anda.</li><li>Di 七殺 大運, Anda pas berperan sebagai “tokoh yang berani bicara” — komentator, advisor industri, board member. Bukan eksekutif lapangan.</li><li>Reputasi adalah aset utama umur 60-an — jaga dengan menjawab “tidak” lebih sering daripada “ya”. Setiap proyek yang ditolak dengan elegan justru meningkatkan nilai Anda.</li></ul></div><h3>田宅 · Properti & Rumah</h3><div class="transcript"><span class="lbl">Transkrip Asli (田宅)</span><div class="cn">暗示為不動產而奔波，或終歸於空無。
+擁有土地、房屋。從經營公寓開始著手可致富。如有凶星同宮阻擾時，好不容易賺到的不動產，到順來也不得不拱手讓人。紫微星與土有緣，可能的話，盡量移居住於多土的地方較適合吧！與吉星同宮者，可得勝人一籌的不動產，遇到凶星者必導致破產。是多變化的不動產運。可能獲得意料不到的不動產，或非法手段取得的土地房屋。西方大吉。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Tanda bahwa Anda akan banyak sibuk dengan urusan properti — atau, sebaliknya, justru pada akhirnya berkurang.<br><br>• Memiliki tanah dan rumah; memulai dari mengelola apartemen / rumah sewa adalah jalan kekayaan yang searah.<br>• Bila ada bintang kurang baik bersanding: properti yang susah-susah didapat bisa terpaksa diserahkan ke pihak lain.<br>• Bintang 紫微 (Zi Wei) berjodoh dengan unsur Tanah — kalau bisa, tinggal di daerah yang berciri “tanah” (perbukitan, area dengan pondasi kokoh) lebih cocok.<br>• Bila bintang baik bersanding: properti Anda lebih unggul dari rata-rata.<br>• Bila bintang sangat tidak menguntungkan bersanding: hindari spekulasi properti tanpa hitungan matang.<br><br>Trend: perubahan properti yang dinamis. Bisa dapat properti tidak terduga.<br><br>Arah keberuntungan properti: BARAT.</p></div><div class="card merah"><div class="card-title">Tafsir &amp; Saran Praktis</div><ul style="margin:0 0 0 5mm;font-size:9.5pt;line-height:1.55;"><li>Sinyal “sibuk dengan properti” sangat khas 庚金 + 紫微-bumi. Selama Anda mengerti aturan main, properti memang “lapangan permainan” natural Anda — dengan disiplin.</li><li>Mulai dari mengelola apartemen (kos / sewa) lebih sesuai 喜用神 水 (aliran cashflow) daripada investasi tanah kosong (土 statis).</li><li>Arah keberuntungan Barat — pertimbangkan ini untuk fokus akuisisi properti, atau orientasi ruang kerja di rumah utama.</li><li>Hindari spekulasi properti di 大運 七殺 ini; ini bukan fase “gas full akuisisi”. Konsolidasi &amp; lepas properti yang menguras energi (sengketa, sewa macet) lebih bernilai.</li><li>Bila ada properti dari “sumber tidak jelas” muncul (warisan rebutan, pembagian rumit) — selesaikan secara legal &amp; transparan, jangan diam-diam. Itu salah satu trigger 七殺 yang bisa berlarut.</li></ul></div><h3>福德 · Berkah & Karma</h3><div class="transcript"><span class="lbl">Transkrip Asli (福德)</span><div class="cn">穩重而使人感到濃厚的人情味。
+剛開始時雖無啥顯眼之處，但隨著時日，福德也因之而俱增。您待人處世態度溫和柔軟，但稍欠缺積極性，在努力獲得成功的果實之前，必得經過一段時日吧！凶星進入的話，無法長保平穩，是不安定的人生。
+凡事無法稱心如意，如能在健康下留心，自然可得財運之賜，獲得滿意的人生。不要太出風頭，以擔任某人的輔佐角色採取行動的話，最後必有所成就。</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Anda tenang &amp; stabil, dan memberikan kesan kemanusiaan yang hangat.<br><br>Di awal mungkin tidak menonjol, tetapi seiring waktu, “rekening” berkah Anda juga ikut tumbuh. Sikap Anda pada orang lain lembut — tetapi memang kurang proaktif. Buah keberhasilan butuh waktu untuk matang.<br><br>Bila ada bintang kurang baik masuk: stabilitas susah dijaga jangka panjang — hidup terasa kurang menentu.<br><br>Tidak segala hal bisa berjalan sesuai keinginan, tetapi bila Anda menjaga kesehatan, rezeki akan datang dengan sendirinya, dan kehidupan menjadi memuaskan. Jangan terlalu cari sorotan — bila Anda berperan sebagai pendamping/wakil orang lain, pada akhirnya Anda pasti berhasil.</p></div><div class="card merah"><div class="card-title">Tafsir &amp; Saran Praktis</div><ul style="margin:0 0 0 5mm;font-size:9.5pt;line-height:1.55;"><li>Pola “lambat di awal, makin tua makin berkah” cocok dengan 偏印格 — energi Anda dirancang untuk maraton, bukan sprint. Umur 60-an adalah mulai panen.</li><li>Sisi “kurang proaktif” yang disebut transkrip bukan kelemahan — itu kompensasi untuk eksekusi cepat di sisi lain. Anda butuh rest mode untuk reload.</li><li>Saran “jadi pendamping/wakil” sangat sesuai untuk 大運 丙辰 sekarang: peran #2 yang strategis (CEO bayangan / board member) sering lebih berdampak daripada #1 di panggung.</li><li>Jaga kesehatan = kunci utama membuka rezeki di umur ini. 福德 dan 疾厄 saling menopang — investasi kesehatan = investasi rezeki secara langsung.</li><li>Hangatkan relasi dengan orang-orang yang sudah lama mengenal Anda. Kebajikan yang sudah ditanam (transkrip menyebut &#x27;kemanusiaan yang hangat&#x27;) sudah bertumbuh — saatnya panen, bukan menanam baru.</li></ul></div><h3>父母 · Orangtua</h3><div class="transcript"><span class="lbl">Transkrip Asli (父母)</span><div class="cn">雙親本身，或您與雙親之間易起變化的暗示。
+如位於子、亥之宮內的人，雙親都可享長壽，親子關係也圓滿。您的雙親頗明事理，享受人生而能平安渡愉快的日子，是樂天派的類型。處世方式也高明。您在雙親薰陶下，自然而然地，也學會了處世方法吧！與武曲星、廉貞星同宮者，與雙親有所衝突吧！</div></div><div class="card emas"><div class="card-title">Terjemahan Indonesia</div><p>Petunjuk bahwa orangtua sendiri, atau hubungan Anda dengan orangtua, mudah berubah.<br><br>Bila palace 父母 berada di 子 (Tikus) atau 亥 (Babi): orangtua bisa hidup panjang umur, hubungan orangtua-anak harmonis. Orangtua Anda paham hidup, menikmati hidup dengan damai dan ceria — tipe optimis. Cara mereka menghadapi dunia juga cerdas. Di bawah pengaruh mereka, secara alami Anda pun belajar cara hidup tersebut.<br><br>Bila bersama 武曲 (Wu Qu) atau 廉貞 (Lian Zhen): mungkin ada gesekan dengan orangtua — perlu dikomunikasikan dengan tenang.</p></div><div class="card merah"><div class="card-title">Tafsir &amp; Saran Praktis</div><ul style="margin:0 0 0 5mm;font-size:9.5pt;line-height:1.55;"><li>Konfigurasi palace 父母 yang “mudah berubah” + orangtua optimis = relasi Anda dengan beliau adalah tarik-ulur antara stabilitas mereka &amp; kebutuhan otonomi Anda.</li><li>Tipe orangtua optimis-cerdas adalah guru hidup Anda yang sebenarnya — banyak pola eksekusi Anda diwarisi dari mereka, sadari &amp; syukuri.</li><li>Bila ada gesekan (terutama bila pola 武曲/廉貞 muncul): biasanya bukan soal isu, tapi soal cara penyampaian. Pakai bahasa apresiasi sebelum kritik.</li><li>Di umur 60-an dengan orangtua mungkin sudah lansia atau sudah tiada: pakai dialog batin / ritual ziarah sebagai cara meneruskan transmisi nilai. Itu juga memperkuat palace 父母 Anda untuk diteruskan ke anak.</li></ul></div>
+  <div class="page-num">4</div>
+</section>
+<section class="page section-opener">
+  <div class="roman">BAGIAN III</div>
+  <div class="title-cn">綜合 · 結語</div>
+  <div class="label-id">Sintesis & Penutup</div>
+  <p class="desc">Benang merah, saran praktis, glossary, dan catatan etika.</p>
+</section>
+<section class="page">
+  <h2>Sintesis & Saran Action</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <p>Benang merah bagan Anda:</p>
+  <div class="card merah">
+    <div class="card-title">Inti</div>
+    <p>Day Master <span class="cn">庚金</span>
+    (Logam 陽) — Format <strong>偏印格</strong>.
+    Fokus hidup Anda berputar di sekitar tema yang dibawa oleh format ini.</p>
+  </div>
+
+  <h3>Saran Praktis</h3>
+  <div class="timeline">
+    <div class="timeline-item"><strong>Bulanan</strong>
+      <p>Cek elemen 喜用神 Anda — tambah aktivitas, warna, atau lingkungan
+      yang menguatkan elemen tersebut.</p></div>
+    <div class="timeline-item"><strong>Tahunan</strong>
+      <p>Lihat di fase 大運 mana Anda berada (lihat halaman timeline).
+      Sesuaikan keputusan besar dengan tema fase tersebut.</p></div>
+    <div class="timeline-item"><strong>Pernikahan & Kerjasama</strong>
+      <p>Perhatikan tabel 三合/六合 sebagai panduan partner ideal,
+      bukan aturan kaku. Karakter pribadi tetap nomor satu.</p></div>
+    <div class="timeline-item"><strong>Karir</strong>
+      <p>Pilih industri yang elemennya cocok dengan 喜用神 (★) untuk
+      flow yang lebih lancar.</p></div>
+  </div>
+  <div class="page-num">1</div>
+</section>
+<section class="page">
+  <h2>Glossary Istilah Tionghoa</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <table><tr><td class="cn" style="width:25mm;text-align:center;">八字</td><td style="width:30mm;font-style:italic;color:var(--ink-soft);">Bā Zì</td><td>Empat Pilar berdasarkan tahun, bulan, hari, jam lahir</td></tr><tr><td class="cn" style="width:25mm;text-align:center;">日主</td><td style="width:30mm;font-style:italic;color:var(--ink-soft);">Rì Zhǔ</td><td>Day Master — stem hari lahir, inti diri</td></tr><tr><td class="cn" style="width:25mm;text-align:center;">天干</td><td style="width:30mm;font-style:italic;color:var(--ink-soft);">Tiān Gān</td><td>10 Heavenly Stems</td></tr><tr><td class="cn" style="width:25mm;text-align:center;">地支</td><td style="width:30mm;font-style:italic;color:var(--ink-soft);">Dì Zhī</td><td>12 Earthly Branches</td></tr><tr><td class="cn" style="width:25mm;text-align:center;">十神</td><td style="width:30mm;font-style:italic;color:var(--ink-soft);">Shí Shén</td><td>Ten Gods — relasi 10 stem dengan day master</td></tr><tr><td class="cn" style="width:25mm;text-align:center;">五行</td><td style="width:30mm;font-style:italic;color:var(--ink-soft);">Wǔ Xíng</td><td>5 Elemen: 金木水火土</td></tr><tr><td class="cn" style="width:25mm;text-align:center;">喜用神</td><td style="width:30mm;font-style:italic;color:var(--ink-soft);">Xǐ Yòng Shén</td><td>Elemen beruntung yang mendukung diri</td></tr><tr><td class="cn" style="width:25mm;text-align:center;">忌神</td><td style="width:30mm;font-style:italic;color:var(--ink-soft);">Jì Shén</td><td>Elemen yang perlu dihindari</td></tr><tr><td class="cn" style="width:25mm;text-align:center;">大運</td><td style="width:30mm;font-style:italic;color:var(--ink-soft);">Dà Yùn</td><td>Major cycles 10-tahunan</td></tr><tr><td class="cn" style="width:25mm;text-align:center;">流年</td><td style="width:30mm;font-style:italic;color:var(--ink-soft);">Liú Nián</td><td>Annual luck flow</td></tr><tr><td class="cn" style="width:25mm;text-align:center;">格局</td><td style="width:30mm;font-style:italic;color:var(--ink-soft);">Gé Jú</td><td>Format bagan / pola dasar</td></tr><tr><td class="cn" style="width:25mm;text-align:center;">紫微斗數</td><td style="width:30mm;font-style:italic;color:var(--ink-soft);">Zǐ Wēi Dòu Shù</td><td>Astrologi bintang ungu</td></tr><tr><td class="cn" style="width:25mm;text-align:center;">命宮</td><td style="width:30mm;font-style:italic;color:var(--ink-soft);">Mìng Gōng</td><td>Palace Diri / Hidup</td></tr><tr><td class="cn" style="width:25mm;text-align:center;">三合</td><td style="width:30mm;font-style:italic;color:var(--ink-soft);">Sān Hé</td><td>Trinitas Harmoni shio</td></tr><tr><td class="cn" style="width:25mm;text-align:center;">六合</td><td style="width:30mm;font-style:italic;color:var(--ink-soft);">Liù Hé</td><td>Pasangan Harmonis</td></tr><tr><td class="cn" style="width:25mm;text-align:center;">六沖</td><td style="width:30mm;font-style:italic;color:var(--ink-soft);">Liù Chōng</td><td>Konflik langsung</td></tr><tr><td class="cn" style="width:25mm;text-align:center;">六害</td><td style="width:30mm;font-style:italic;color:var(--ink-soft);">Liù Hài</td><td>Saling melukai</td></tr><tr><td class="cn" style="width:25mm;text-align:center;">陽宅</td><td style="width:30mm;font-style:italic;color:var(--ink-soft);">Yáng Zhái</td><td>Feng shui rumah hunian</td></tr></table>
+  <div class="page-num">2</div>
+</section>
+<section class="page">
+  <h2>Disclaimer & Etika</h2>
+  <div class="divider">❖ ❖ ❖</div>
+  <blockquote>
+    Laporan ini adalah <strong>referensi tradisi & eksplorasi diri</strong>,
+    bukan ilmu pasti. Tidak menggantikan keputusan medis, hukum, atau
+    finansial profesional.
+  </blockquote>
+  <h3>Apa yang dilakukan laporan ini</h3>
+  <ul>
+    <li>Mengkonversi hasil software 星僑 V2.6 ke Bahasa Indonesia secara setia.</li>
+    <li>Menambah visualisasi yang dihitung deterministik dari data lahir.</li>
+    <li>Memberikan glossary dan struktur baca yang mudah.</li>
+  </ul>
+  <h3>Apa yang TIDAK dilakukan</h3>
+  <ul>
+    <li>Tidak memberi prediksi kematian, dalam bentuk apapun.</li>
+    <li>Tidak menjamin akurasi terjemahan untuk istilah klasik —
+        glossary diberikan sebagai pegangan.</li>
+    <li>Tidak menambah ramalan baru yang tidak ada di foto sumber.</li>
+  </ul>
+  <p style="margin-top:5mm;font-size:9pt;color:var(--ink-soft);text-align:center;">
+    Generated 2026-04-30 · xingqiao-fortune-id v1.0
+  </p>
+  <div class="page-num">3</div>
+</section>
+</body>
+</html>

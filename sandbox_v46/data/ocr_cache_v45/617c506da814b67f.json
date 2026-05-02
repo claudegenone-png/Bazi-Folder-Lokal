@@ -1,0 +1,90 @@
+{
+  "screen_type": "bazi_chart",
+  "name_id": "Lin Wen Han",
+  "name_hz": "林文漢",
+  "gender_hz": "男",
+  "birth_solar": "1993-04-17 03:50",
+  "birth_lunar_text": "農曆癸酉年3月26日3時50分",
+  "pillars": {
+    "year": {
+      "stem_hz": "癸",
+      "branch_hz": "酉"
+    },
+    "month": {
+      "stem_hz": "丙",
+      "branch_hz": "辰"
+    },
+    "day": {
+      "stem_hz": "戊",
+      "branch_hz": "辰"
+    },
+    "hour": {
+      "stem_hz": "甲",
+      "branch_hz": "寅"
+    }
+  },
+  "wuxing": {
+    "jin": 1,
+    "shui": 2,
+    "mu": 1,
+    "huo": 1,
+    "tu": 3
+  },
+  "yong_shen_hz": "金火",
+  "ji_shen_hz": "水木",
+  "format_hz": "七殺",
+  "da_yun": [
+    {
+      "age": 5,
+      "stem_hz": "乙",
+      "branch_hz": "卯"
+    },
+    {
+      "age": 15,
+      "stem_hz": "甲",
+      "branch_hz": "寅"
+    },
+    {
+      "age": 25,
+      "stem_hz": "癸",
+      "branch_hz": "丑"
+    },
+    {
+      "age": 35,
+      "stem_hz": "壬",
+      "branch_hz": "子"
+    },
+    {
+      "age": 45,
+      "stem_hz": "辛",
+      "branch_hz": "亥"
+    },
+    {
+      "age": 55,
+      "stem_hz": "庚",
+      "branch_hz": "戌"
+    },
+    {
+      "age": 65,
+      "stem_hz": "己",
+      "branch_hz": "酉"
+    },
+    {
+      "age": 75,
+      "stem_hz": "戊",
+      "branch_hz": "申"
+    },
+    {
+      "age": 85,
+      "stem_hz": "丁",
+      "branch_hz": "未"
+    },
+    {
+      "age": 95,
+      "stem_hz": "丙",
+      "branch_hz": "午"
+    }
+  ],
+  "_photo": "WhatsApp Image 2026-05-02 at 21.07.01.jpg",
+  "_hash": "617c506da814b67f"
+}

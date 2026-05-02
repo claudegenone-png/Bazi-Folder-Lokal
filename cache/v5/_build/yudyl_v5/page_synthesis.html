@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Yudy L — Sintesis &amp; Saran Aksi</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* PAGE: Synthesis */
+  .content-synth {
+    grid-template-rows: 30mm 50mm 70mm 32mm !important;
+    gap: 4mm;
+  }
+
+  /* HEADLINE INSIGHT */
+  .syn-headline {
+    background: linear-gradient(135deg, #FFFEF8 0%, #F5EBD0 50%, #FFFEF8 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 4mm 8mm;
+    display: grid;
+    grid-template-columns: 16mm 1fr 16mm;
+    gap: 4mm;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .syn-headline::before {
+    content: '命'; position: absolute;
+    bottom: -8mm; right: -4mm;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 60pt; color: rgba(139,26,26,0.04);
+    font-weight: 700; line-height: 1;
+    pointer-events: none;
+  }
+  .syn-seal {
+    width: 16mm; height: 16mm;
+    background: var(--red);
+    color: white;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 14pt; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 1mm;
+    box-shadow: 0 1mm 3mm rgba(139,26,26,0.3);
+    transform: rotate(-3deg);
+  }
+  .syn-headline-text {
+    text-align: center; min-width: 0; overflow: hidden;
+  }
+  .syn-eyebrow {
+    font-size: 6.5pt; color: var(--gold);
+    letter-spacing: 4px; text-transform: uppercase;
+    font-weight: 700; margin-bottom: 1mm;
+  }
+  .syn-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 16pt; color: var(--red);
+    line-height: 1.2; font-style: italic;
+    font-weight: 600;
+  }
+  .syn-quote .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--text); font-style: normal;
+    font-weight: 700; margin: 0 1mm;
+  }
+  .syn-attrib {
+    font-size: 6.5pt; color: var(--text-muted);
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-top: 1.5mm;
+  }
+
+  /* TRIO CARDS */
+  .syn-trio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4mm;
+    overflow: hidden;
+  }
+  .syn-card {
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 1.5mm;
+    overflow: hidden;
+    position: relative;
+  }
+  .syn-card.strength {
+    background: linear-gradient(180deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+  }
+  .syn-card.challenge {
+    background: linear-gradient(180deg, #F8EFD4 0%, #ECDDC9 100%);
+    border: 0.5mm solid var(--yellow);
+  }
+  .syn-card.action {
+    background: linear-gradient(180deg, #E8F0EA 0%, #D9E8DD 100%);
+    border: 0.5mm solid var(--green);
+  }
+  .syn-card-num {
+    position: absolute;
+    top: -1mm; right: -1mm;
+    width: 12mm; height: 12mm;
+    background: white;
+    border: 0.4mm solid;
+    border-radius: 0 2mm 0 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 14pt; font-weight: 700;
+    line-height: 1;
+  }
+  .strength .syn-card-num { color: var(--gold); border-color: var(--gold); }
+  .challenge .syn-card-num { color: var(--yellow); border-color: var(--yellow); }
+  .action .syn-card-num { color: var(--green); border-color: var(--green); }
+
+  .syn-card-eyebrow {
+    font-size: 6.5pt; letter-spacing: 2.5px;
+    text-transform: uppercase; font-weight: 700;
+  }
+  .strength .syn-card-eyebrow { color: var(--gold); }
+  .challenge .syn-card-eyebrow { color: var(--yellow); }
+  .action .syn-card-eyebrow { color: var(--green); }
+
+  .syn-card-title {
+    display: flex; align-items: baseline; gap: 2mm;
+    flex-wrap: wrap; min-width: 0;
+  }
+  .syn-card-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 18pt; color: var(--red);
+    font-weight: 700; line-height: 1;
+  }
+  .challenge .syn-card-hz { color: #8C6E47; }
+  .action .syn-card-hz { color: var(--green); }
+  .syn-card-id {
+    font-family: 'Playfair Display', serif;
+    font-size: 10pt; color: var(--text);
+    font-style: italic; font-weight: 600;
+  }
+
+  .syn-card-body {
+    font-size: 7.8pt; line-height: 1.5;
+    color: var(--text);
+    border-top: 0.2mm solid rgba(0,0,0,0.1);
+    padding-top: 1.5mm;
+    display: -webkit-box; -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .syn-card-body strong { color: var(--red); }
+  .syn-card-body .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red); font-weight: 600;
+  }
+
+  /* ACTION ITEMS */
+  .syn-actions-frame {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 3.5mm 5mm;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 2mm;
+    overflow: hidden;
+  }
+  .syn-actions-eyebrow {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 0.3mm solid var(--gold-soft);
+    padding-bottom: 1.5mm;
+  }
+  .syn-actions-eyebrow .label {
+    font-family: 'Noto Serif TC', serif; font-size: 12pt;
+    color: var(--red); letter-spacing: 4px; font-weight: 600;
+  }
+  .syn-actions-eyebrow .id {
+    font-family: 'Playfair Display', serif; font-size: 9pt;
+    font-style: italic; color: var(--text-muted); margin-left: 4mm;
+  }
+  .syn-actions-eyebrow .meta {
+    font-size: 6.5pt; color: var(--text-muted);
+    letter-spacing: 1.5px; text-transform: uppercase;
+  }
+
+  .syn-action-list {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1.5mm;
+    overflow: hidden;
+  }
+  .syn-action {
+    display: grid;
+    grid-template-columns: 9mm 1fr auto;
+    gap: 4mm; align-items: center;
+    padding: 1.5mm 3mm;
+    background: white;
+    border-left: 1mm solid var(--gold);
+    border-radius: 0 1mm 1mm 0;
+    overflow: hidden;
+  }
+  .syn-action-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 16pt; color: var(--red);
+    font-weight: 700; line-height: 1;
+    text-align: center;
+    border-right: 0.3mm solid var(--gold-soft);
+    padding-right: 2mm;
+  }
+  .syn-action-content { min-width: 0; overflow: hidden; }
+  .syn-action-title {
+    font-size: 9.5pt; font-weight: 600;
+    color: var(--text); line-height: 1.2;
+  }
+  .syn-action-title strong { color: var(--red); }
+  .syn-action-title .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red); font-weight: 700; margin: 0 1mm;
+  }
+  .syn-action-context {
+    font-size: 7pt; color: var(--text-muted);
+    line-height: 1.35; margin-top: 0.5mm;
+    display: -webkit-box; -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .syn-action-tag {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 7pt; color: var(--gold);
+    background: var(--gold-bg);
+    padding: 0.5mm 2mm;
+    border-radius: 5mm;
+    border: 0.2mm solid var(--gold-soft);
+    letter-spacing: 0.5px; font-weight: 600;
+    white-space: nowrap;
+  }
+
+  /* MANTRA + TIMELINE */
+  .syn-bottom {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 4mm;
+    overflow: hidden;
+  }
+  .syn-mantra {
+    background: linear-gradient(135deg, #8B1A1A 0%, #6E1414 100%);
+    color: white;
+    border-radius: 2mm;
+    padding: 4mm 6mm;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5mm;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .syn-mantra::before {
+    content: '"'; position: absolute;
+    top: -3mm; left: 2mm;
+    font-family: 'Playfair Display', serif;
+    font-size: 50pt; color: rgba(255,255,255,0.1);
+    line-height: 1; font-weight: 700;
+  }
+  .syn-mantra-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 22pt; font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 1;
+    color: #F5EBD0;
+    text-shadow: 0 1mm 2mm rgba(0,0,0,0.2);
+  }
+  .syn-mantra-text { min-width: 0; overflow: hidden; }
+  .syn-mantra-eyebrow {
+    font-size: 6pt; color: rgba(245,235,208,0.7);
+    letter-spacing: 3px; text-transform: uppercase;
+    font-weight: 600; margin-bottom: 1mm;
+  }
+  .syn-mantra-pinyin {
+    font-family: 'Playfair Display', serif;
+    font-size: 9.5pt; font-style: italic;
+    color: #E5D3A1;
+  }
+  .syn-mantra-meaning {
+    font-size: 7.2pt; line-height: 1.35; margin-top: 1mm;
+    color: rgba(255,255,255,0.92);
+    overflow: hidden;
+  }
+
+  .syn-timeline-mini {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 3mm 4mm;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 1.5mm;
+    overflow: hidden;
+  }
+  .stm-eyebrow {
+    font-size: 6pt; color: var(--gold);
+    letter-spacing: 2px; text-transform: uppercase;
+    font-weight: 700;
+  }
+  .stm-bar {
+    display: flex; gap: 0.4mm;
+    height: 100%; align-items: stretch;
+  }
+  .stm-cell {
+    flex: 1;
+    border-radius: 0.6mm;
+    background: rgba(0,0,0,0.04);
+    position: relative;
+    min-width: 0;
+  }
+  .stm-cell.past   { background: #ECDDC9; opacity: 0.55; }
+  .stm-cell.now    {
+    background: linear-gradient(180deg, #C45F5F, #8C3535);
+    box-shadow: 0 0 0 0.3mm var(--gold);
+  }
+  .stm-cell.next   {
+    background: rgba(196,95,95,0.4);
+    border: 0.2mm dashed var(--red-bad);
+  }
+  .stm-cell.future { background: rgba(0,0,0,0.05); }
+  .stm-now-label {
+    position: absolute; top: -2.5mm; left: 50%;
+    transform: translateX(-50%);
+    background: var(--red); color: white;
+    font-size: 5pt; padding: 0.3mm 1.5mm;
+    border-radius: 1mm; letter-spacing: 1px; font-weight: 700;
+    white-space: nowrap;
+  }
+  .stm-axis {
+    display: flex; justify-content: space-between;
+    font-size: 5.8pt; color: var(--text-muted);
+    letter-spacing: 0.3px;
+  }
+  .stm-axis .now-mark {
+    color: var(--red); font-weight: 700;
+  }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">21</div>
+    <div class="h-titles">
+      <div class="h-cn">總 結</div>
+      <div class="h-id">Sintesis &amp; Saran Aksi</div>
+    </div>
+    <div class="h-section">Bagian III · Penutup</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Yudy L · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
+      <div class="subject-detail">29 Januari 1963 · 13:30 · Pria · Umur 63 tahun</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">壬水 · Air Sungai</div>
+    </div>
+  </div>
+
+  <main class="content content-synth">
+
+    <!-- WAWASAN UTAMA -->
+    <div class="syn-headline">
+      <div class="syn-seal">命</div>
+      <div class="syn-headline-text">
+        <div class="syn-eyebrow">Inti Bagan Anda</div>
+        <div class="syn-quote">
+          Anda <span class="hz">壬水</span> Logam Yin yang sedang mekar di fase <span class="hz">食神</span> — saatnya berkarya &amp; berekspresi.
+        </div>
+        <div class="syn-attrib">Penguasa Hari Kuat · 比肩格 · Zheng Guan Ge</div>
+      </div>
+      <div class="syn-seal" style="transform:rotate(3deg);">運</div>
+    </div>
+
+    <!-- KARTU TRIO -->
+    <div class="syn-trio">
+
+      <div class="syn-card strength">
+        <div class="syn-card-num">力</div>
+        <div class="syn-card-eyebrow">Kekuatan</div>
+        <div class="syn-card-title">
+          <span class="syn-card-hz">魄力</span>
+          <span class="syn-card-id">Pò Lì</span>
+        </div>
+        <div class="syn-card-body">
+          <strong>Kreativitas + ketekunan.</strong> Kombinasi <span class="hz">壬水</span> + <span class="hz">比肩格</span> = pemikir kreatif yang punya stamina. Bakat sastra, seni, ekspresi — multi-talented.
+        </div>
+      </div>
+
+      <div class="syn-card challenge">
+        <div class="syn-card-num">驗</div>
+        <div class="syn-card-eyebrow">Tantangan</div>
+        <div class="syn-card-title">
+          <span class="syn-card-hz">考驗</span>
+          <span class="syn-card-id">Kǎo Yàn</span>
+        </div>
+        <div class="syn-card-body">
+          <strong>Energi mandeg bila tidak disalurkan.</strong> Kayu (35%) + Air (24%) sudah dominan. Tanpa output, idealisme jadi kekecewaan; "harimau jadi ekor ular".
+        </div>
+      </div>
+
+      <div class="syn-card action">
+        <div class="syn-card-num">為</div>
+        <div class="syn-card-eyebrow">Tindakan</div>
+        <div class="syn-card-title">
+          <span class="syn-card-hz">作為</span>
+          <span class="syn-card-id">Zuò Wéi</span>
+        </div>
+        <div class="syn-card-body">
+          <strong>Salurkan ke <span class="hz">火 金</span>.</strong> Peran terbaik: kreator, edukator, performer, fashion/branding. Industri ekspresi (penulisan, performance, fotografi, beauty, lighting, broadcasting).
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 5 DAFTAR AKSI -->
+    <div class="syn-actions-frame">
+      <div class="syn-actions-eyebrow">
+        <div>
+          <span class="label">行 動 五 則</span>
+          <span class="id">Lima Langkah Praktis</span>
+        </div>
+        <div class="meta">SARAN APLIKATIF · 1—5</div>
+      </div>
+
+      <div class="syn-action-list">
+
+        <div class="syn-action">
+          <div class="syn-action-num">1</div>
+          <div class="syn-action-content">
+            <div class="syn-action-title">Pakai elemen <span class="hz">水</span> sebagai <strong>pendingin</strong> sebelum eksekusi</div>
+            <div class="syn-action-context">Diam → amati → baru bertindak. Hindari reaksi keras instan di fase 七殺 ini.</div>
+          </div>
+          <div class="syn-action-tag">水 · Air</div>
+        </div>
+
+        <div class="syn-action">
+          <div class="syn-action-num">2</div>
+          <div class="syn-action-content">
+            <div class="syn-action-title">Batasi spekulatif <strong>maksimal 20% modal</strong> — sisanya di rezeki stabil</div>
+            <div class="syn-action-context">七殺 mendatangkan peluang besar yang juga berisiko besar — disiplin alokasi.</div>
+          </div>
+          <div class="syn-action-tag">正財 · Stabil</div>
+        </div>
+
+        <div class="syn-action">
+          <div class="syn-action-num">3</div>
+          <div class="syn-action-content">
+            <div class="syn-action-title">Ambil peran <strong>arsitek senior &amp; mentor</strong>, bukan operasional harian</div>
+            <div class="syn-action-context">Energi 壬水 senior paling bernilai saat membentuk orang lain.</div>
+          </div>
+          <div class="syn-action-tag">官祿 · Karir</div>
+        </div>
+
+        <div class="syn-action">
+          <div class="syn-action-num">4</div>
+          <div class="syn-action-content">
+            <div class="syn-action-title">Pilih partner ber-<span class="hz">喜用神</span> <strong>水 / 木</strong> — komunikatif &amp; edukatif</div>
+            <div class="syn-action-context">Pasangan/rekan tipe air-kayu melengkapi; sesama 壬水 mengulang dominasi logam.</div>
+          </div>
+          <div class="syn-action-tag">夫妻 · Pasangan</div>
+        </div>
+
+        <div class="syn-action">
+          <div class="syn-action-num">5</div>
+          <div class="syn-action-content">
+            <div class="syn-action-title">Anggap kritik dari saudari &amp; pasangan sebagai <strong>data</strong>, bukan serangan</div>
+            <div class="syn-action-context">Mereka adalah "sensor" karakter Anda — sumber feedback paling jujur untuk 比肩格.</div>
+          </div>
+          <div class="syn-action-tag">兄弟 · Keluarga</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MANTRA + LINI MASA MINI -->
+    <div class="syn-bottom">
+
+      <!-- MANTRA -->
+      <div class="syn-mantra">
+        <div class="syn-mantra-hz">文武相濟</div>
+        <div class="syn-mantra-text">
+          <div class="syn-mantra-eyebrow">Pegangan · 您 的 箴 言</div>
+          <div class="syn-mantra-pinyin">Wén Wǔ Xiāng Jì</div>
+          <div class="syn-mantra-meaning">"Halus dan tegas <strong>saling menyempurnakan</strong>" — kekuatan 壬水 Anda mencapai puncaknya saat disalurkan oleh 火 (ekspresi) dan dipangkas oleh 金 (disiplin).</div>
+        </div>
+      </div>
+
+      <!-- LINI MASA MINI -->
+      <div class="syn-timeline-mini">
+        <div class="stm-eyebrow">Posisi 大運 · Da Yun Phase</div>
+        <div class="stm-bar">
+          <div class="stm-cell past"></div>
+          <div class="stm-cell past"></div>
+          <div class="stm-cell past"></div>
+          <div class="stm-cell past"></div>
+          <div class="stm-cell past"></div>
+          <div class="stm-cell now"><div class="stm-now-label">★ ANDA · 丙辰</div></div>
+          <div class="stm-cell next"></div>
+          <div class="stm-cell future"></div>
+          <div class="stm-cell future"></div>
+          <div class="stm-cell future"></div>
+        </div>
+        <div class="stm-axis">
+          <span>5</span><span>15</span><span>25</span><span>35</span><span>45</span>
+          <span class="now-mark">55</span><span>65</span><span>75</span><span>85</span><span>95</span><span>104</span>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      Yudy L sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏印</span> (62–71) — intuisi & jalur tidak konvensional. Periode 62–81 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+    </div>
+    <div class="footer-meta">
+      <span>Halaman 21 / 23</span>
+      <span>Yudy L · Ramalan 命</span>
+    </div>
+  </footer>
+</section>
+</body>
+</html>

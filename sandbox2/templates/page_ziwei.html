@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Lin Ru Yi — 紫微斗數 12 Palace</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* PAGE: Zi Wei 12 Palace Grid */
+  .content-ziwei {
+    grid-template-rows: 1fr !important;
+    gap: 0;
+  }
+
+  .zw-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1.8mm;
+    overflow: hidden;
+  }
+  .zw-cell {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 1.5mm;
+    padding: 2mm 2.2mm;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 1mm;
+    overflow: hidden;
+    position: relative;
+    min-width: 0; min-height: 0;
+  }
+
+  .zw-cell.life {
+    background: linear-gradient(180deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    box-shadow: 0 0 0 0.3mm rgba(201,169,97,0.3);
+  }
+  .zw-cell.life::before {
+    content: '★ 命 HIDUP'; position: absolute;
+    top: -0.8mm; right: 1.5mm;
+    background: var(--red); color: white;
+    font-size: 5pt; padding: 0.3mm 1.5mm;
+    border-radius: 0 0 1.5mm 1.5mm; letter-spacing: 1px; font-weight: 700;
+  }
+  .zw-cell.body::before {
+    content: '☉ 身 BADAN'; position: absolute;
+    top: -0.8mm; right: 1.5mm;
+    background: #4A7BA0; color: white;
+    font-size: 5pt; padding: 0.3mm 1.5mm;
+    border-radius: 0 0 1.5mm 1.5mm; letter-spacing: 1px; font-weight: 700;
+  }
+  .zw-cell.now {
+    border-color: var(--red);
+    box-shadow: 0 0 0 0.4mm rgba(160,52,52,0.25);
+  }
+  .zw-cell.now::after {
+    content: 'KINI'; position: absolute;
+    bottom: 0.5mm; left: 1.5mm;
+    background: var(--red); color: white;
+    font-size: 4.5pt; padding: 0.2mm 1.2mm;
+    border-radius: 1mm; letter-spacing: 1px; font-weight: 700;
+  }
+
+  .zw-head {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1mm; align-items: baseline;
+    border-bottom: 0.2mm solid var(--gold-soft);
+    padding-bottom: 0.8mm;
+  }
+  .zw-palace {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 8.5pt; color: var(--red);
+    font-weight: 700; letter-spacing: 1px;
+    line-height: 1.1;
+  }
+  .zw-palace .id {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 5.2pt; color: var(--text-muted);
+    letter-spacing: 0.6px; font-weight: 500;
+    text-transform: uppercase; margin-top: 0.2mm;
+  }
+  .zw-branch {
+    text-align: right;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 9.5pt; color: var(--text);
+    font-weight: 600; line-height: 1;
+  }
+  .zw-branch .id {
+    display: block;
+    font-size: 5pt; color: var(--text-muted);
+    letter-spacing: 0.4px;
+  }
+
+  .zw-stars {
+    display: flex; flex-direction: column;
+    gap: 1mm; align-content: start;
+    overflow: hidden;
+  }
+  .zw-star {
+    display: flex; flex-direction: column; align-items: flex-start; gap: 0.2mm;
+    font-family: 'Noto Serif TC', serif;
+    overflow: hidden;
+  }
+  .zw-star.main {
+    font-size: 9pt; color: var(--text); font-weight: 600;
+  }
+  .zw-star.minor {
+    font-size: 7.2pt; color: var(--text-muted); font-weight: 500;
+  }
+  .zw-star .id {
+    font-family: 'Inter', sans-serif;
+    font-size: 5.2pt; color: var(--text-muted);
+    letter-spacing: 0.2px; font-style: italic;
+    line-height: 1.15;
+    overflow: hidden;
+  }
+  .zw-star .hua {
+    display: inline-block;
+    font-family: 'Inter', sans-serif; font-size: 5.5pt;
+    color: white; padding: 0.2mm 1mm;
+    border-radius: 0.8mm; letter-spacing: 0.5px;
+    margin-left: 0.5mm; font-weight: 700;
+  }
+  .hua.lu  { background: var(--green); }
+  .hua.qua { background: var(--red-bad); }
+  .hua.ke  { background: var(--gold); }
+  .hua.ji  { background: #6B5B3F; }
+
+  .zw-foot {
+    display: flex; justify-content: space-between;
+    font-size: 5.5pt; color: var(--text-muted);
+    letter-spacing: 0.3px;
+    border-top: 0.2mm dashed var(--gold-soft);
+    padding-top: 0.6mm;
+  }
+  .zw-foot .age { font-weight: 600; color: var(--text); }
+  .zw-cell.now .zw-foot .age { color: var(--red); }
+
+  /* CENTER INFO BOX */
+  .zw-center {
+    grid-column: 2 / 4; grid-row: 2 / 4;
+    background: linear-gradient(135deg, #FFFEF8 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 2mm;
+    overflow: hidden;
+    position: relative;
+  }
+  .zw-center::before {
+    content: '紫'; position: absolute;
+    top: -8mm; right: -6mm;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 80pt; color: rgba(139,26,26,0.04);
+    font-weight: 700; line-height: 1;
+    pointer-events: none;
+  }
+  .zwc-eyebrow {
+    font-family: 'Inter', sans-serif; font-size: 6pt;
+    color: var(--gold); letter-spacing: 3px;
+    text-transform: uppercase; font-weight: 700;
+    text-align: center;
+  }
+  .zwc-title {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 18pt; color: var(--red);
+    text-align: center; letter-spacing: 6px;
+    font-weight: 700; line-height: 1;
+  }
+  .zwc-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 9pt; font-style: italic;
+    color: var(--text-muted); text-align: center;
+    border-bottom: 0.2mm solid var(--gold-soft);
+    padding-bottom: 2mm;
+  }
+  .zwc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2mm 4mm;
+    align-content: center;
+  }
+  .zwc-row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2mm; align-items: baseline;
+    overflow: hidden;
+  }
+  .zwc-row .lbl {
+    font-family: 'Inter', sans-serif;
+    font-size: 5.5pt; color: var(--gold);
+    letter-spacing: 1.5px; text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 0.5mm;
+    border-bottom: 0.2mm solid var(--gold-soft);
+  }
+  .zwc-row .val {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 11pt; color: var(--red);
+    font-weight: 700; line-height: 1;
+  }
+  .zwc-row .val .id {
+    display: block;
+    font-family: 'Inter', sans-serif; font-size: 5.5pt;
+    color: var(--text-muted); font-weight: 500;
+    margin-top: 0.5mm; letter-spacing: 0.3px;
+    font-style: italic;
+  }
+  .zwc-legend {
+    display: flex; gap: 2mm; flex-wrap: wrap;
+    justify-content: center;
+    border-top: 0.2mm solid var(--gold-soft);
+    padding-top: 2mm;
+  }
+  .zwc-leg {
+    font-size: 5.5pt; color: var(--text);
+    display: flex; align-items: center; gap: 1mm;
+    font-weight: 500;
+  }
+  .zwc-leg .dot {
+    width: 2.5mm; height: 2mm; border-radius: 0.5mm;
+    color: white; font-size: 4.5pt;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .zwc-leg .hz {
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 700; color: var(--red);
+  }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">16</div>
+    <div class="h-titles">
+      <div class="h-cn">紫 微 斗 數</div>
+      <div class="h-id">12 Istana Bintang Ungu</div>
+    </div>
+    <div class="h-section">Bagian II · Zi Wei 紫微</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Babi-Merah.svg" alt="Babi"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Lin Ru Yi · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">亥 Babi</span></div>
+      <div class="subject-detail">30 Mei 1995 · 10:35 · Wanita · Umur 30 tahun · 五行局: <strong style="color:var(--red)">火六局</strong></div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">辛金 · Logam Halus</div>
+    </div>
+  </div>
+
+  <main class="content content-ziwei">
+    <div class="zw-grid">
+
+      <!-- BARIS 1 -->
+      <!-- 巳 子女 Anak -->
+      <div class="zw-cell" style="grid-column:1;grid-row:1">
+        <div class="zw-head">
+          <div class="zw-palace">子女<span class="id">ANAK</span></div>
+          <div class="zw-branch">巳<span class="id">Ular</span></div>
+        </div>
+        <div class="zw-stars">
+          <div class="zw-star main">天府<span class="id">Tiān Fǔ · Stabilitas</span></div>
+        </div>
+        <div class="zw-foot"><span class="age">96–105</span><span>限 4</span></div>
+      </div>
+
+      <!-- 午 夫妻 Pasangan -->
+      <div class="zw-cell" style="grid-column:2;grid-row:1">
+        <div class="zw-head">
+          <div class="zw-palace">夫妻<span class="id">PASANGAN</span></div>
+          <div class="zw-branch">午<span class="id">Kuda</span></div>
+        </div>
+        <div class="zw-stars">
+          <div class="zw-star main">太陽<span class="id">Tài Yáng · Matahari</span></div>
+          <div class="zw-star main">巨門<span class="id">Jù Mén · Komunikasi</span><span class="hua ji">忌 HALANG</span></div>
+        </div>
+        <div class="zw-foot"><span class="age">106–115</span><span>限 3</span></div>
+      </div>
+
+      <!-- 未 兄弟 Saudara -->
+      <div class="zw-cell" style="grid-column:3;grid-row:1">
+        <div class="zw-head">
+          <div class="zw-palace">兄弟<span class="id">SAUDARA</span></div>
+          <div class="zw-branch">未<span class="id">Kambing</span></div>
+        </div>
+        <div class="zw-stars">
+          <div class="zw-star main">太陰<span class="id">Tài Yīn · Bulan</span></div>
+        </div>
+        <div class="zw-foot"><span class="age">116–125</span><span>限 2</span></div>
+      </div>
+
+      <!-- 申 命宮 Diri -->
+      <div class="zw-cell life" style="grid-column:4;grid-row:1">
+        <div class="zw-head">
+          <div class="zw-palace">命宮<span class="id">DIRI</span></div>
+          <div class="zw-branch">申<span class="id">Monyet</span></div>
+        </div>
+        <div class="zw-stars">
+          <div class="zw-star main">廉貞<span class="id">Tān Láng · Hasrat Kreatif</span><span class="hua ke">科 REPUTASI</span></div>
+          <div class="zw-star main">天府<span class="id">Tiān Fǔ · Stabilitas</span></div>
+          <div class="zw-star minor">左輔<span class="id">Zuǒ Fǔ · Mentor</span></div>
+        </div>
+        <div class="zw-foot"><span class="age">6–15</span><span>限 1</span></div>
+      </div>
+
+      <!-- BARIS 2 -->
+      <!-- 辰 財帛 Rezeki -->
+      <div class="zw-cell" style="grid-column:1;grid-row:2">
+        <div class="zw-head">
+          <div class="zw-palace">財帛<span class="id">REZEKI</span></div>
+          <div class="zw-branch">辰<span class="id">Naga</span></div>
+        </div>
+        <div class="zw-stars">
+          <div class="zw-star main">武曲<span class="id">Wǔ Qū · Disiplin Uang</span></div>
+          <div class="zw-star main">文昌<span class="id">Wén Chāng · Akademik</span></div>
+        </div>
+        <div class="zw-foot"><span class="age">86–95</span><span>限 5</span></div>
+      </div>
+
+      <!-- TENGAH -->
+      <div class="zw-center">
+        <div class="zwc-eyebrow">命 盤 中 樞 · Pusat Bagan</div>
+        <div class="zwc-title">紫 微 斗 數</div>
+        <div class="zwc-subtitle">Zǐ Wēi Dǒu Shù — Pemetaan Bintang Ungu</div>
+
+        <div class="zwc-grid">
+          <div class="zwc-row">
+            <div class="lbl">命主</div>
+            <div class="val">貪狼<span class="id">Penguasa Hidup · Hasrat</span></div>
+          </div>
+          <div class="zwc-row">
+            <div class="lbl">身主</div>
+            <div class="val">天機<span class="id">Penguasa Tubuh · Strategi</span></div>
+          </div>
+          <div class="zwc-row">
+            <div class="lbl">命宮</div>
+            <div class="val">子<span class="id">Istana Hidup · Tikus</span></div>
+          </div>
+          <div class="zwc-row">
+            <div class="lbl">身宮</div>
+            <div class="val">寅<span class="id">Istana Tubuh · Harimau</span></div>
+          </div>
+          <div class="zwc-row">
+            <div class="lbl">五行局</div>
+            <div class="val">火六局<span class="id">Aliran Api Enam</span></div>
+          </div>
+          <div class="zwc-row">
+            <div class="lbl">時君</div>
+            <div class="val">寅<span class="id">Penguasa Waktu · Harimau</span></div>
+          </div>
+        </div>
+
+        <div class="zwc-legend">
+          <div class="zwc-leg"><span class="dot" style="background:var(--green)">祿</span><span class="hz">化祿</span> Berkah</div>
+          <div class="zwc-leg"><span class="dot" style="background:var(--red-bad)">權</span><span class="hz">化權</span> Kuasa</div>
+          <div class="zwc-leg"><span class="dot" style="background:var(--gold)">科</span><span class="hz">化科</span> Reputasi</div>
+          <div class="zwc-leg"><span class="dot" style="background:#6B5B3F">忌</span><span class="hz">化忌</span> Tantangan</div>
+        </div>
+      </div>
+
+      <!-- 酉 父母 Orangtua -->
+      <div class="zw-cell" style="grid-column:4;grid-row:2">
+        <div class="zw-head">
+          <div class="zw-palace">父母<span class="id">ORANGTUA</span></div>
+          <div class="zw-branch">酉<span class="id">Ayam</span></div>
+        </div>
+        <div class="zw-stars">
+          <div class="zw-star main">破軍<span class="id">Pò Jūn · Pelopor</span></div>
+        </div>
+        <div class="zw-foot"><span class="age">16–25</span><span>限 12</span></div>
+      </div>
+
+      <!-- BARIS 3 -->
+      <!-- 卯 疾厄 Kesehatan -->
+      <div class="zw-cell body" style="grid-column:1;grid-row:3">
+        <div class="zw-head">
+          <div class="zw-palace">疾厄<span class="id">KESEHATAN</span></div>
+          <div class="zw-branch">卯<span class="id">Kelinci</span></div>
+        </div>
+        <div class="zw-stars">
+          <div class="zw-star main">天梁<span class="id">Tiān Liáng · Pelindung</span></div>
+        </div>
+        <div class="zw-foot"><span class="age">76–85</span><span>限 6</span></div>
+      </div>
+
+      <!-- 戌 福德 Berkah -->
+      <div class="zw-cell" style="grid-column:4;grid-row:3">
+        <div class="zw-head">
+          <div class="zw-palace">福德<span class="id">BERKAH</span></div>
+          <div class="zw-branch">戌<span class="id">Anjing</span></div>
+        </div>
+        <div class="zw-stars">
+          <div class="zw-star main">天相<span class="id">Tiān Xiàng · Penengah</span><span class="hua lu">祿 BERKAH</span></div>
+          <div class="zw-star minor">右弼<span class="id">Yòu Bì · Sahabat</span></div>
+        </div>
+        <div class="zw-foot"><span class="age">26–35</span><span>限 11</span></div>
+      </div>
+
+      <!-- BARIS 4 -->
+      <!-- 寅 遷移 Perpindahan -->
+      <div class="zw-cell" style="grid-column:1;grid-row:4">
+        <div class="zw-head">
+          <div class="zw-palace">遷移<span class="id">PERJALANAN</span></div>
+          <div class="zw-branch">寅<span class="id">Harimau</span></div>
+        </div>
+        <div class="zw-stars">
+          <div class="zw-star main">七殺<span class="id">Qī Shā · Pemurnian</span></div>
+        </div>
+        <div class="zw-foot"><span class="age">66–75</span><span>限 7</span></div>
+      </div>
+
+      <!-- 丑 僕役 Pertemanan — KINI -->
+      <div class="zw-cell now" style="grid-column:2;grid-row:4">
+        <div class="zw-head">
+          <div class="zw-palace">僕役<span class="id">TEMAN</span></div>
+          <div class="zw-branch">丑<span class="id">Kerbau</span></div>
+        </div>
+        <div class="zw-stars">
+          <div class="zw-star main">紫微<span class="id">Zǐ Wēi · Kaisar</span></div>
+          <div class="zw-star minor">左輔<span class="id">Zuǒ Fǔ · Mentor</span></div>
+        </div>
+        <div class="zw-foot"><span class="age">56–65</span><span>限 8</span></div>
+      </div>
+
+      <!-- 子 官祿 Karir -->
+      <div class="zw-cell" style="grid-column:3;grid-row:4">
+        <div class="zw-head">
+          <div class="zw-palace">官祿<span class="id">KARIR</span></div>
+          <div class="zw-branch">子<span class="id">Tikus</span></div>
+        </div>
+        <div class="zw-stars">
+          <div class="zw-star main">貪狼<span class="id">Tān Láng · Hasrat</span><span class="hua qua">權 KUASA</span></div>
+        </div>
+        <div class="zw-foot"><span class="age">46–55</span><span>限 9</span></div>
+      </div>
+
+      <!-- 亥 田宅 Properti -->
+      <div class="zw-cell" style="grid-column:4;grid-row:4">
+        <div class="zw-head">
+          <div class="zw-palace">田宅<span class="id">PROPERTI</span></div>
+          <div class="zw-branch">亥<span class="id">Babi</span></div>
+        </div>
+        <div class="zw-stars">
+          <div class="zw-star main">天同<span class="id">Tiān Tóng · Welas</span></div>
+        </div>
+        <div class="zw-foot"><span class="age">36–45</span><span>限 10</span></div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-caption">
+      Saat ini Anda berada di <span style="font-family:'Noto Serif TC',serif;color:var(--red)">大限 僕役</span> (umur 56-65, Istana Pertemanan) — fokus dekade ini ada di pertemanan &amp; jejaring; <span style="font-family:'Noto Serif TC',serif;color:var(--red)">紫微</span> (Bintang Kaisar) di sini berarti teman-teman bermutu pemimpin.
+    </div>
+    <div class="footer-meta">
+      <span>Halaman 16 / 23</span>
+      <span>Lin Ru Yi · Ramalan 命</span>
+    </div>
+  </footer>
+</section>
+</body>
+</html>
