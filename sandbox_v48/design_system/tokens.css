@@ -73,6 +73,17 @@
 
 /* === Page shell — A4 portrait === */
 @page { size: A4 portrait; margin: 0; }
+
+/* CRITICAL FOR MOBILE PDF: force ALL elements (incl pseudo-elements) to preserve
+   colors/backgrounds in print rendering. Without this, gradients/colored boxes
+   get stripped to white in mobile PDF readers (Adobe Mobile, Foxit, default Android).
+   This is THE key rule from V4.5 that makes PDFs portable. */
+*, *::before, *::after {
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+  color-adjust: exact !important;
+}
+
 html, body {
   margin: 0; padding: 0; background: white;
   font-family: var(--font-body);
@@ -80,7 +91,6 @@ html, body {
   color: var(--color-ink);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
-  print-color-adjust: exact; -webkit-print-color-adjust: exact;
 }
 
 .page {
