@@ -1,0 +1,142 @@
+/* V4.8 Design Tokens — Premium Report + Tionghoa Luxury Restrained
+   Single source of truth: tap variables from page templates only. */
+
+:root {
+  /* === Color: Tionghoa luxury palette === */
+  --color-red:        #8B1A1A;
+  --color-red-deep:   #6E1414;
+  --color-red-soft:   rgba(139, 26, 26, 0.08);
+  --color-gold:       #C9A961;
+  --color-gold-deep:  #A8843E;
+  --color-gold-soft:  rgba(201, 169, 97, 0.35);
+  --color-gold-tint:  rgba(201, 169, 97, 0.10);
+  --color-cream:      #FBF7F0;
+  --color-cream-deep: #F4E8CC;
+  --color-paper:      #FFFCF6;
+
+  --color-ink:        #2A1810;
+  --color-ink-soft:   #4A3A2A;
+  --color-muted:      #6A5240;
+  --color-faint:      #8B7256;
+
+  --color-success:    #2E6E2C;
+  --color-success-bg: rgba(76, 140, 73, 0.08);
+  --color-warn:       #9C4A14;
+  --color-warn-bg:    rgba(166, 89, 23, 0.08);
+  --color-danger:     #7A1414;
+  --color-danger-bg:  rgba(139, 26, 26, 0.08);
+
+  /* === Type scale === */
+  --font-serif-tc:    'Noto Serif TC', 'Noto Serif SC', serif;
+  --font-display:     'Playfair Display', 'Noto Serif TC', serif;
+  --font-body:        'Inter', 'Helvetica Neue', sans-serif;
+
+  --type-hero:        28pt;
+  --type-title:       18pt;
+  --type-h1:          16pt;
+  --type-h2:          13pt;
+  --type-h3:          11.5pt;
+  --type-body:        9.5pt;
+  --type-small:       8.5pt;
+  --type-tiny:        7.5pt;
+  --type-micro:       6.5pt;
+
+  /* === Spacing (mm) === */
+  --sp-1: 1mm;
+  --sp-2: 2mm;
+  --sp-3: 3mm;
+  --sp-4: 4mm;
+  --sp-5: 5mm;
+  --sp-6: 6mm;
+  --sp-8: 8mm;
+  --sp-10: 10mm;
+  --sp-14: 14mm;
+  --sp-20: 20mm;
+
+  /* === Radius === */
+  --r-sm: 1mm;
+  --r-md: 2mm;
+  --r-lg: 3mm;
+  --r-xl: 5mm;
+
+  /* === Border weight === */
+  --bw-hair: 0.15mm;
+  --bw-thin: 0.25mm;
+  --bw-med:  0.5mm;
+  --bw-thick:0.8mm;
+
+  /* === Shadow === */
+  --sh-soft: 0 0 0 var(--bw-thin) var(--color-gold-soft);
+  --sh-card: 0 0.5mm 1.2mm rgba(42, 24, 16, 0.08), 0 0 0 var(--bw-thin) var(--color-gold-soft);
+  --sh-deep: 0 1mm 2.5mm rgba(42, 24, 16, 0.15), 0 0 0 var(--bw-thin) var(--color-gold-soft);
+}
+
+/* === Page shell — A4 portrait === */
+@page { size: A4 portrait; margin: 0; }
+html, body {
+  margin: 0; padding: 0; background: white;
+  font-family: var(--font-body);
+  font-size: var(--type-body);
+  color: var(--color-ink);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  print-color-adjust: exact; -webkit-print-color-adjust: exact;
+}
+
+.page {
+  width: 210mm; height: 297mm;
+  position: relative;
+  background: var(--color-paper);
+  page-break-after: always;
+  print-color-adjust: exact; -webkit-print-color-adjust: exact;
+  /* Visual page boundary indicator (HTML preview only) */
+  border-bottom: 0.4mm dashed rgba(201, 169, 97, 0.4);
+  margin-bottom: 4mm;
+}
+.page:last-child { page-break-after: auto; border-bottom: none; margin-bottom: 0; }
+.page.cover { border-bottom: none; margin-bottom: 0; }
+
+/* PDF print: force fixed page height + remove preview ornaments */
+@media print {
+  html, body { background: white !important; margin: 0 !important; padding: 0 !important; }
+  .page {
+    width: 210mm !important; height: 297mm !important;
+    margin: 0 !important; border-bottom: none !important;
+    box-shadow: none !important;
+    page-break-after: always !important;
+  }
+  .page:last-child { page-break-after: auto !important; }
+}
+
+/* Universal anti-split: keep visual cards intact across page breaks */
+.card, .trait-card, .yc-card, .rk-chip, .rk-saran,
+.toc-grp-head, .toc-detail-row, .ch-block,
+.callout, .quote-block, .verse-block,
+.bz-pilar, .pilar-card, .yc-card,
+.cv-frame, .toc-lead, .peng-hero {
+  break-inside: avoid; page-break-inside: avoid;
+}
+
+/* === Typography utilities === */
+.hz { font-family: var(--font-serif-tc); }
+.serif { font-family: var(--font-serif-tc); }
+.display { font-family: var(--font-display); }
+.uppercase { text-transform: uppercase; letter-spacing: 1px; }
+.muted { color: var(--color-muted); }
+.faint { color: var(--color-faint); }
+
+/* === Hanzi-with-translation primitive === */
+.hz-tt { display: inline-flex; flex-direction: column; align-items: center; line-height: 1; vertical-align: middle; margin: 0 0.4mm; }
+.hz-tt > .hz { font-size: 1em; font-weight: 600; color: var(--color-red); line-height: 1.1; }
+.hz-tt > .tt { font-size: 0.62em; line-height: 1.1; color: var(--color-muted); margin-top: 0.4mm; max-width: 18mm; text-align: center; word-break: break-word; }
+
+/* === Card primitive === */
+.card { background: var(--color-paper); border: var(--bw-hair) solid var(--color-gold-soft); border-radius: var(--r-md); padding: var(--sp-3) var(--sp-4); box-shadow: var(--sh-soft); }
+.card.primary { border-left: var(--bw-thick) solid var(--color-red); }
+.card.gold { border-left: var(--bw-thick) solid var(--color-gold); }
+.card.muted { background: var(--color-gold-tint); }
+
+/* === Section divider ornament === */
+.divider { display: flex; align-items: center; gap: var(--sp-2); margin: var(--sp-4) 0; color: var(--color-gold); }
+.divider::before, .divider::after { content: ""; flex: 1; height: var(--bw-hair); background: linear-gradient(90deg, transparent 0%, var(--color-gold-soft) 50%, transparent 100%); }
+.divider .ornament { font-family: var(--font-serif-tc); color: var(--color-gold); font-size: var(--type-small); }

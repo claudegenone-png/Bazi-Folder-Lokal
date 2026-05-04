@@ -118,3 +118,52 @@ V4.5 promoted ke production penuh → no suffix. Cuma V4.3 yang masih bersuffix 
 ## Kalau user kasih path SAJA tanpa versi
 
 Default = **V4.5** (paling cepat + hemat token, design+konten identik V4.3). Kasih tahu user "default V4.5, kalau mau V4.3 atau V3 kasih `pakai V4.3` / `pakai V3`".
+
+
+---
+
+## V4.8 (MD-driven, sandbox testing)
+
+**Trigger format:** user kirim path **MD file** (bukan foto) + `v4.8` / `V4.8`.
+
+```
+C:\Users\sukam\Downloads\laporan_xxx.md
+v4.8
+```
+
+Atau satu baris:
+```
+C:\Users\sukam\Downloads\laporan_xxx.md v4.8
+```
+
+### Yang langsung dilakukan (tanpa nanya):
+
+1. Verify file MD exists. Kalau tidak ada → kasih tahu user, stop.
+2. Run:
+   ```powershell
+   cd "$env:USERPROFILE\OneDrive\Documents\Ramalan\sandbox_v48"
+   python v48.py "<path-md>"
+   ```
+3. Output HTML otomatis tersimpan di:
+   ```
+   OneDrive\Documents\Ramalan\#result\{YYYY-MM-DD}\_test_v48\full_{Name}.html
+   ```
+4. Report ke user:
+   - Path HTML output (clickable)
+   - Jumlah halaman
+   - Section count + UNKNOWN topics (kalau ada — dari extraction report)
+   - Kalau extraction error → surface tanpa retry
+
+### Aturan V4.8
+
+- **Input = MD file**, BUKAN foto. Kalau user kasih folder foto + `v4.8` → kasih tahu V4.8 hanya terima MD, tolak.
+- **Output = HTML** (PDF export V4.8 belum di-wire).
+- **DILARANG** modifikasi `sandbox_v48/templates/` atau `sandbox_v48/extractors/` saat autorun. Itu mode editing terpisah.
+- Multi-file: kalau user kasih beberapa MD path → render satu per satu, list semua HTML output.
+- Kalau Python error import → kemungkinan OneDrive belum selesai sync. Tunggu 30 detik dan retry sekali; kalau masih error, surface ke user.
+
+### Speed/token
+
+- ~5-15 detik per MD (pure stdlib, no LLM call dalam pipeline V4.8).
+- Tidak ada vision token cost (extractor murni regex).
+
