@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Li Xiang An, 事業 Karir &amp; Profesi</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* Page-specific additions */
+  .insight-card {
+    background: linear-gradient(160deg, #FFFEF8 0%, #F5EBD0 100%);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 5mm;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 2.5mm;
+    overflow: hidden;
+  }
+  .insight-eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 7pt;
+    letter-spacing: 3px;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .insight-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 14pt;
+    color: var(--red);
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  .insight-body {
+    font-size: 7.5pt;
+    line-height: 1.45;
+    color: var(--text);
+  }
+  .insight-body strong { color: var(--red); font-weight: 600; }
+  .insight-body .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red);
+    font-weight: 600;
+  }
+  .insight-tags {
+    display: flex; gap: 2mm; flex-wrap: wrap;
+    margin-top: 1mm;
+  }
+  .insight-tag {
+    background: var(--green-bg);
+    color: var(--green);
+    font-size: 7pt;
+    padding: 0.8mm 2.5mm;
+    border-radius: 5mm;
+    border: 0.2mm solid var(--green);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .insight-tag.bad {
+    background: var(--red-bad-bg);
+    color: var(--red-bad);
+    border-color: var(--red-bad);
+  }
+
+  /* Industri row with fit bar */
+  .ind-row { grid-template-columns: 9mm 1fr 28mm !important; }
+  .fit-col {
+    display: flex; flex-direction: column; gap: 0.8mm;
+    align-items: stretch; justify-content: center;
+    min-width: 0;
+  }
+  .fit-bar-track {
+    height: 2.5mm;
+    background: rgba(0,0,0,0.05);
+    border-radius: 1.25mm;
+    overflow: hidden;
+  }
+  .fit-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--green) 0%, #4FA77F 100%);
+    border-radius: 1.25mm;
+  }
+  .ind-row:not(.top) .fit-bar-fill {
+    background: linear-gradient(90deg, var(--gold) 0%, #DCC68A 100%);
+  }
+  .fit-meta {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 6.5pt; color: var(--text-muted);
+    letter-spacing: 0.5px;
+  }
+  .fit-meta .score {
+    font-family: 'Playfair Display', serif;
+    font-size: 9pt;
+    color: var(--text);
+    font-weight: 600;
+  }
+  .ind-row.top .fit-meta .score { color: var(--green); }
+</style>
+</head>
+<body>
+<section class="page">
+
+  <!-- KEPALA -->
+  <header class="page-header">
+    <div class="h-num">12</div>
+    <div class="h-titles">
+      <div class="h-cn">事 業</div>
+      <div class="h-id">Karir &amp; Profesi</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <!-- BAR SUBJEK -->
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Kuda-Merah.svg" alt="Kuda"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Li Xiang An · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">午 Kuda</span></div>
+      <div class="subject-detail">16 Agustus 1990 · 12:00 · Pria · Umur 37 tahun · 大運 丁亥 (偏財)</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">癸水 · Air Hujan</div>
+    </div>
+  </div>
+
+  <!-- KONTEN -->
+  <main class="content content-career">
+
+    <!-- WU XING STRIP -->
+    <div class="wuxing-strip">
+      <div class="label">五 行</div>
+      <div class="wuxing-bar">
+<!-- TAFSIR:_career_wuxing -->
+        <div class="wux-cell unfav">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:100%"></div></div>
+          <div class="wux-label">土 Tanah<span class="v">5</span></div>
+        </div>
+        <div class="wux-cell fav">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:60%"></div></div>
+          <div class="wux-label">金 Logam<span class="v">3</span></div>
+        </div>
+        <div class="wux-cell self">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:60%"></div></div>
+          <div class="wux-label">水 Air<span class="v">3</span></div>
+        </div>
+        <div class="wux-cell">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:40%"></div></div>
+          <div class="wux-label">火 Api<span class="v">2</span></div>
+        </div>
+        <div class="wux-cell">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:20%"></div></div>
+          <div class="wux-label">木 Kayu<span class="v">1</span></div>
+        </div>
+<!-- /TAFSIR -->
+      </div>
+    </div>
+
+    <!-- MAIN: INSIGHT + INDUSTRI -->
+    <div class="career-main">
+
+      <!-- WAWASAN -->
+      <div class="insight-card">
+        <div class="insight-eyebrow">Wawasan Utama</div>
+        <div class="insight-title"><!-- TAFSIR:_career_title -->Logam adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini<!-- /TAFSIR --></div>
+        <div class="insight-body">
+<!-- TAFSIR:career --><p>Karir Li Xiang An optimal di bidang yang menuntut struktur, ketelitian, dan analisis. Foto <strong>事業</strong> menyebut dua kelompok besar yang searah dan layar Zi Wei mendukung profesi yang berhubungan dengan informasi, hukum, dan teknik.</p><ul><li><strong>"<span class="hz">律師</span> / Hukum &amp; Pengacara"</strong> (unsur 金), foto 事業 sebut langsung sebagai bidang searah, cocok dengan format 正官.</li><li><strong>"<span class="hz">會計</span> / Akuntansi &amp; Audit"</strong> (unsur 金), foto 事業 sebut langsung, ketelitian dan struktur sesuai DM 癸水 logam.</li><li><strong>"<span class="hz">金融界</span> / Keuangan &amp; Perbankan"</strong> (unsur 金), foto 事業 sebut langsung, kekuatan analisis cocok di sektor finansial.</li><li><strong>"<span class="hz">機械</span> / Teknik &amp; Mesin"</strong> (unsur 金), foto 事業 sebut langsung, sistematis dan struktural.</li><li><strong>"<span class="hz">出版</span> / Penerbitan &amp; Media"</strong> (unsur 木), foto 事業 sebut langsung, mendukung pengembangan ide dan tulisan.</li></ul><!-- /TAFSIR -->
+        </div>
+        <div class="insight-tags">
+<!-- TAFSIR:_career_tags -->
+          <span class="insight-tag">金 "STRUKTUR"</span>
+          <span class="insight-tag">水 "ANALISIS"</span>
+          <span class="insight-tag bad">土 "BIROKRASI BERAT"</span>
+          <span class="insight-tag bad">火 "PANGGUNG BISING"</span>
+        <!-- /TAFSIR -->
+        </div>
+      </div>
+
+      <!-- INDUSTRI LIST -->
+      <div class="industri-list">
+        <div class="ind-header">5 Bidang Paling Searah</div>
+<!-- TAFSIR:_career_industri -->
+        <div class="ind-row top">
+          <div class="ind-icon">⚙️</div>
+          <div class="ind-info">
+            <div class="ind-name">"<span class="hz">律師</span> / Hukum &amp; Pengacara"</div>
+            <div class="ind-reason">Unsur 金, foto 事業 sebut langsung sebagai bidang searah, cocok dengan format 正官.</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:95%"></div></div>
+          </div>
+        </div>
+        <div class="ind-row top">
+          <div class="ind-icon">⚙️</div>
+          <div class="ind-info">
+            <div class="ind-name">"<span class="hz">會計</span> / Akuntansi &amp; Audit"</div>
+            <div class="ind-reason">Unsur 金, foto 事業 sebut langsung, ketelitian dan struktur sesuai DM 癸水 logam.</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:88%"></div></div>
+          </div>
+        </div>
+        <div class="ind-row">
+          <div class="ind-icon">⚙️</div>
+          <div class="ind-info">
+            <div class="ind-name">"<span class="hz">金融界</span> / Keuangan &amp; Perbankan"</div>
+            <div class="ind-reason">Unsur 金, foto 事業 sebut langsung, kekuatan analisis cocok di sektor finansial.</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:82%"></div></div>
+          </div>
+        </div>
+        <div class="ind-row">
+          <div class="ind-icon">⚙️</div>
+          <div class="ind-info">
+            <div class="ind-name">"<span class="hz">機械</span> / Teknik &amp; Mesin"</div>
+            <div class="ind-reason">Unsur 金, foto 事業 sebut langsung, sistematis dan struktural.</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:76%"></div></div>
+          </div>
+        </div>
+        <div class="ind-row">
+          <div class="ind-icon">🌳</div>
+          <div class="ind-info">
+            <div class="ind-name">"<span class="hz">出版</span> / Penerbitan &amp; Media"</div>
+            <div class="ind-reason">Unsur 木, foto 事業 sebut langsung, mendukung pengembangan ide dan tulisan.</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:70%"></div></div>
+          </div>
+        </div>
+<!-- /TAFSIR -->
+      </div>
+    </div>
+
+    <!-- AVOID -->
+    <div class="avoid-strip">
+      <div class="avoid-label">忌 Hindari</div>
+      <div class="avoid-text">
+<!-- TAFSIR:_career_avoid -->Industri ber-unsur <strong>土 (Tanah)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.<!-- /TAFSIR -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- KAKI -->
+  <footer class="footer">
+    <div class="footer-meta">
+      <span>Halaman 12 / 24</span>
+    </div>
+  </footer>
+
+</section>
+</body>
+</html>

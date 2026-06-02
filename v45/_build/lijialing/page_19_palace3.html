@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Li Jia Ling, Palace Detail 3</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-pal { grid-template-rows: 1fr !important; gap: 0; }
+  .pal-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 4mm; overflow: hidden; }
+  .pal-card { background: var(--bg-card); border: 0.4mm solid var(--gold-soft); border-radius: 2mm; padding: 4mm 5mm; display: grid; grid-template-rows: auto 1fr 22mm; gap: 2mm; overflow: hidden; position: relative; }
+
+  .pal-head { display: grid; grid-template-columns: auto 1fr auto; gap: 3mm; align-items: baseline; border-bottom: 0.2mm solid var(--gold-soft); padding-bottom: 1.5mm; }
+  .pal-name { display: block; line-height: 1.1; }
+  .pal-name .pn-id { display: block; font-family: 'Playfair Display', serif; font-size: 14pt; color: var(--red); font-weight: 700; letter-spacing: 0.3px; }
+  .pal-name .pn-meta { display: block; font-family: 'Inter', sans-serif; font-size: 7.5pt; color: var(--text-muted); letter-spacing: 0.5px; margin-top: 1mm; font-style: italic; }
+  .pal-name .pn-meta .hz { font-family: 'Noto Serif TC', serif; color: var(--text); font-style: normal; font-weight: 600; margin-left: 1.5mm; }
+  .pal-branch { text-align: center; font-family: 'Noto Serif TC', serif; font-size: 11pt; color: var(--text); font-weight: 600; }
+  .pal-branch .id { display: block; font-size: 5.5pt; color: var(--text-muted); font-style: italic; margin-top: 0.3mm; }
+  .pal-age { font-family: 'Playfair Display', serif; font-size: 8.5pt; color: var(--gold); font-weight: 700; text-align: right; letter-spacing: 0.5px; }
+  .pal-age .lbl { display: block; font-size: 5.5pt; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; font-weight: 500; margin-top: 0.3mm; }
+
+  .pal-stars { display: flex; gap: 2mm; flex-wrap: wrap; align-items: center; }
+  .pal-star { background: linear-gradient(135deg, white, #FFF8E1); border: 0.3mm solid var(--gold-soft); border-radius: 1.5mm; padding: 1.5mm 3mm; display: grid; grid-template-columns: auto auto; gap: 2mm; align-items: baseline; }
+  .pal-star.main { border-color: var(--gold); background: linear-gradient(135deg, #FFF8E1, #F5EBD0); }
+  .pal-star-hz { font-family: 'Noto Serif TC', serif; font-size: 11pt; color: var(--red); font-weight: 700; line-height: 1; }
+  .pal-star-id { font-size: 6.5pt; color: var(--text-muted); font-style: italic; letter-spacing: 0.3px; }
+  .hua { display: inline-block; font-family: 'Inter', sans-serif; font-size: 5.5pt; color: white; padding: 0.3mm 1.2mm; border-radius: 0.8mm; letter-spacing: 0.5px; margin-left: 1mm; font-weight: 700; }
+  .hua.lu { background: var(--green); }
+  .hua.qua { background: var(--red-bad); }
+
+  .pal-insight { background: linear-gradient(90deg, var(--gold-bg), transparent); border-left: 0.8mm solid var(--gold); border-radius: 0 1mm 1mm 0; padding: 1.5mm 3mm; font-family: 'Playfair Display', serif; font-size: 9.5pt; color: var(--red); line-height: 1.3; font-weight: 600; font-style: italic; }
+  .pal-insight .hz { font-family: 'Noto Serif TC', serif; color: var(--text); font-style: normal; font-weight: 700; }
+
+  .pal-body { font-size: 7.5pt; line-height: 1.45; color: var(--text); overflow: hidden; }
+  .pal-body strong { color: var(--red); }
+  .pal-body .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+
+  .pal-actions { display: grid; gap: 1.2mm; border-top: 0.2mm dashed var(--gold-soft); padding-top: 1.5mm; }
+  .pal-actions-header { font-family: 'Playfair Display', serif; font-size: 11pt; color: var(--green); font-weight: 700; letter-spacing: 0.5px; margin-bottom: 1.2mm; }
+  .pal-action { display: grid; grid-template-columns: 4mm 1fr; gap: 2mm; font-size: 7.5pt; line-height: 1.45; color: var(--text); }
+  .pal-action .ico { color: var(--green); font-weight: 700; }
+  .pal-action strong { color: var(--red); }
+  .pal-action .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">19</div>
+    <div class="h-titles"><div class="h-cn">官 田 福 父</div><div class="h-id">Karir · Properti · Berkah · Orangtua</div></div>
+    <div class="h-section">Bagian II · Zi Wei 紫微</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Naga-Merah.svg" alt="Naga"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Li Jia Ling · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">辰 Naga</span></div>
+      <div class="subject-detail">Detail 4 istana lingkaran-luar, pencapaian &amp; warisan</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">丁火 · Api Lilin</div></div>
+  </div>
+
+  <main class="content content-pal">
+    <div class="pal-grid">
+
+      <!-- 官祿 KARIR -->
+      <div class="pal-card"><!-- TAFSIR:_p3_guanlu --><div class="pal-head"><div class="pal-name"><span class="pn-id">Karir</span><span class="pn-meta">Guān Lù<span class="hz">官祿</span></span></div></div><div class="pal-body">Istana Karir dihuni <strong>Bintang Bendahara</strong> (<span class="hz">武曲</span>) berdampingan dengan <strong>Bintang Gudang</strong> (<span class="hz">天府</span>). Foto 官祿 menyebut Li Jia Ling cocok di bidang yang berkaitan dengan logam, mesin, atau pekerjaan teknis. Cocok menjadi profesional, pengusaha mandiri, atau di bidang akuntansi dan keuangan. Tantangan: hati-hati dengan masalah yang muncul akibat keterlibatan keuangan dengan rekan kerja.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Pertahankan transparansi keuangan di setiap kerja sama profesional, dokumentasikan dengan baik.</span></div></div><!-- /TAFSIR --></div>
+
+      <!-- 田宅 PROPERTI -->
+      <div class="pal-card"><!-- TAFSIR:_p3_tianzhai --><div class="pal-head"><div class="pal-name"><span class="pn-id">Properti</span><span class="pn-meta">Tián Zhái<span class="hz">田宅</span></span></div></div><div class="pal-body">Istana Properti dihuni <strong>Bintang Bulan</strong> (<span class="hz">太陰</span>), menandakan rezeki properti yang lembut tetapi konsisten. Foto 田宅 menyebut Li Jia Ling sangat menyukai properti dan punya rezeki di bidang ini, terutama saat berada di shio yang baik. Properti dekat air (sungai, danau) atau dengan elemen kayu (taman, hutan kecil) memberi keberuntungan ekstra. Hindari membeli secara impulsif tanpa riset.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Investasi properti jangka panjang dengan riset matang, prioritas lokasi dekat air atau hijau.</span></div></div><!-- /TAFSIR --></div>
+
+      <!-- 福德 BERKAH -->
+      <div class="pal-card"><!-- TAFSIR:_p3_fude --><div class="pal-head"><div class="pal-name"><span class="pn-id">Berkah</span><span class="pn-meta">Fú Dé<span class="hz">福德</span></span></div></div><div class="pal-body">Istana Berkah dihuni <strong>Bintang Bulan</strong> (<span class="hz">太陰</span>) yang membuat Li Jia Ling cenderung peka, romantis, dan introspektif. Foto 福德 menyebut watak rentan mengalami kelelahan batin tanpa alasan jelas, namun juga punya kapasitas menikmati hidup yang besar bila stabil. Penting untuk membangun rutinitas spiritual atau hobi yang menenangkan. Hindari konsumsi konten emosional berlebih yang menguras energi.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Bangun rutinitas meditasi atau hobi tenang harian untuk menjaga keseimbangan batin.</span></div></div><!-- /TAFSIR --></div>
+
+      <!-- 父母 ORANG TUA -->
+      <div class="pal-card"><!-- TAFSIR:_p3_fumu --><div class="pal-head"><div class="pal-name"><span class="pn-id">Orang Tua</span><span class="pn-meta">Fù Mǔ<span class="hz">父母</span></span></div></div><div class="pal-body">Istana Orang Tua dihuni <strong>Bintang Gudang</strong> (<span class="hz">天府</span>), menandakan orang tua yang stabil dan ekonomi keluarga relatif berkecukupan. Foto 父母 menyebut hubungan dengan orang tua bisa diwarnai gesekan kepribadian sejak kecil, tetapi pada akhirnya hangat dan saling memahami. Komunikasi yang lebih terbuka di usia dewasa akan menyembuhkan luka kecil masa lalu. Orang tua adalah pilar finansial dan emosional yang penting.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Inisiatif komunikasi terbuka dengan orang tua, jangan tunda perdamaian kecil yang tertunda.</span></div></div><!-- /TAFSIR --></div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-meta"><span>Halaman 19 / 24</span></div>
+  </footer>
+</section>
+</body>
+</html>

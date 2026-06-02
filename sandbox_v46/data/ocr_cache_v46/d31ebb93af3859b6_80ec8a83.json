@@ -1,0 +1,20 @@
+{
+  "screen_type": "detail",
+  "name_id": "YUDY L",
+  "gender_hz": "陽男",
+  "birth_lunar_text": "民國 52 年 1 月 5 日 13 時 30 分",
+  "detail_sections": {
+    "僕役": {
+      "hz": "您的部下是腦筋聰明、敏捷的類型。能擁有腦筋聰明才幹卓絕的部下。但如果您的部下宮位於丑、未之宮內，或正在『空亡』的位置時，部下與您必互相交惡。與太陰星同宮，無法獲得部下的助協。與巨門星同宮者，能得才幹超人一等的部下輔佐。",
+      "id_summary": [
+        "Bawahan cenderung bertipe cerdas dan gesit, berpotensi memiliki bawahan yang sangat cakap dan berbakat.",
+        "Jika istana Pu Yi berada di cabang Chou atau Wei, atau berada dalam posisi 'Kong Wang' (kekosongan), hubungan dengan bawahan cenderung memburuk dan saling berseberangan.",
+        "Jika bintang Tai Yin berada di istana yang sama, sulit mendapatkan dukungan dari bawahan.",
+        "Jika bintang Ju Men berada di istana yang sama, akan mendapat bawahan dengan kemampuan di atas rata-rata."
+      ],
+      "_photo": "WhatsApp Image 2026-05-02 at 12.58.29.jpeg"
+    }
+  },
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.29.jpeg",
+  "_hash": "d31ebb93af3859b6_80ec8a83"
+}

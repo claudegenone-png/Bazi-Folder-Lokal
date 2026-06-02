@@ -1,0 +1,27 @@
+{
+  "screen_type": "detail",
+  "name_id": "YUDY L",
+  "gender_hz": "陰男",
+  "birth_lunar_text": "農曆民國 52 年 1 月 5 日 13 時 30 分",
+  "detail_sections": {
+    "古書云": {
+      "hz": "三命通會註：詩目：壬癸日生水為主，根基惟在火與土，春秋來往發財官，冬夏東行為得所。滴天髓：壬水通河，能洩金氣，剛中之德，過流不滯，通根透癸，沖天奔地，化則有情，從則相濟。詩云：隆冬建丑怯冰霜，誰識天時轉二陽，暖土鼓能生萬物，寒金難難直抵深藏，刑沖成未非無用，頻繁雜蛇信有方，若在日時多水木，直須行入冥冥鄉。水汪洋併百川，漫流天下細無邊，干文多愁成漂蕩，火土重逢潤本源，養性結胎須未午，長生歸祿屬乾坤，身強原自無財祿，西北行程厄少年。",
+      "_uncertain": true,
+      "_ambiguous_chars": [
+        "詩目 (might be 詩曰 — format standar klasik)",
+        "寒金難難 (might be 寒金雖難 or 寒金難以)",
+        "頻繁雜蛇信有方 (beberapa karakter kurang jelas di baris ini)",
+        "干文多愁 (might be 干支多愁)"
+      ],
+      "id_summary": [
+        "Klasik San Ming Tong Hui: hari master air (壬癸) berakar pada api dan tanah; musim semi-gugur cocok untuk harta dan jabatan, musim dingin-panas lebih baik bergerak ke timur.",
+        "Di Tian Sui: 壬水mengalir bagaikan sungai besar, melepas energi logam dengan teguh; akar dalam memancar ke langit—jika bertransformasi penuh perasaan, jika mengikuti saling mendukung.",
+        "Puisi pertama: musim dingin panjang penuh es, ketika musim berganti tanah hangat mampu menumbuhkan segala sesuatu; benturan dan hukuman tidak selalu buruk; banyak air-kayu di pilar hari/jam perlu diwaspadai.",
+        "Puisi kedua: seperti samudra yang mengaliri ratusan sungai; jika bertemu api dan tanah akan mendapat keseimbangan dan sumber daya; puncak kejayaan terkait arah barat laut, namun harta tidak mudah didapat di usia muda."
+      ],
+      "_photo": "WhatsApp Image 2026-05-02 at 12.58.31.jpeg"
+    }
+  },
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.31.jpeg",
+  "_hash": "5b829221e5256330_80ec8a83"
+}

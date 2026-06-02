@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Wu Huan Yang, 事業 Karir &amp; Profesi</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* Page-specific additions */
+  .insight-card {
+    background: linear-gradient(160deg, #FFFEF8 0%, #F5EBD0 100%);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 5mm;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 2.5mm;
+    overflow: hidden;
+  }
+  .insight-eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 7pt;
+    letter-spacing: 3px;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .insight-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 14pt;
+    color: var(--red);
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  .insight-body {
+    font-size: 7.5pt;
+    line-height: 1.45;
+    color: var(--text);
+  }
+  .insight-body strong { color: var(--red); font-weight: 600; }
+  .insight-body .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red);
+    font-weight: 600;
+  }
+  .insight-tags {
+    display: flex; gap: 2mm; flex-wrap: wrap;
+    margin-top: 1mm;
+  }
+  .insight-tag {
+    background: var(--green-bg);
+    color: var(--green);
+    font-size: 7pt;
+    padding: 0.8mm 2.5mm;
+    border-radius: 5mm;
+    border: 0.2mm solid var(--green);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .insight-tag.bad {
+    background: var(--red-bad-bg);
+    color: var(--red-bad);
+    border-color: var(--red-bad);
+  }
+
+  /* Industri row with fit bar */
+  .ind-row { grid-template-columns: 9mm 1fr 28mm !important; }
+  .fit-col {
+    display: flex; flex-direction: column; gap: 0.8mm;
+    align-items: stretch; justify-content: center;
+    min-width: 0;
+  }
+  .fit-bar-track {
+    height: 2.5mm;
+    background: rgba(0,0,0,0.05);
+    border-radius: 1.25mm;
+    overflow: hidden;
+  }
+  .fit-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--green) 0%, #4FA77F 100%);
+    border-radius: 1.25mm;
+  }
+  .ind-row:not(.top) .fit-bar-fill {
+    background: linear-gradient(90deg, var(--gold) 0%, #DCC68A 100%);
+  }
+  .fit-meta {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 6.5pt; color: var(--text-muted);
+    letter-spacing: 0.5px;
+  }
+  .fit-meta .score {
+    font-family: 'Playfair Display', serif;
+    font-size: 9pt;
+    color: var(--text);
+    font-weight: 600;
+  }
+  .ind-row.top .fit-meta .score { color: var(--green); }
+</style>
+</head>
+<body>
+<section class="page">
+
+  <!-- KEPALA -->
+  <header class="page-header">
+    <div class="h-num">12</div>
+    <div class="h-titles">
+      <div class="h-cn">事 業</div>
+      <div class="h-id">Karir &amp; Profesi</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <!-- BAR SUBJEK -->
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Naga-Merah.svg" alt="Naga"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Wu Huan Yang · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">辰 Naga</span></div>
+      <div class="subject-detail">13 Mei 1964 · 00:50 · Pria · Umur 63 tahun · 大運 乙亥 (傷官)</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">壬水 · Air Sungai</div>
+    </div>
+  </div>
+
+  <!-- KONTEN -->
+  <main class="content content-career">
+
+    <!-- WU XING STRIP -->
+    <div class="wuxing-strip">
+      <div class="label">五 行</div>
+      <div class="wuxing-bar">
+<!-- TAFSIR:_career_wuxing -->
+        <div class="wux-cell unfav">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:100%"></div></div>
+          <div class="wux-label">土 Tanah<span class="v">3</span></div>
+        </div>
+        <div class="wux-cell self">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:67%"></div></div>
+          <div class="wux-label">水 Air<span class="v">2</span></div>
+        </div>
+        <div class="wux-cell fav">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:33%"></div></div>
+          <div class="wux-label">金 Logam<span class="v">1</span></div>
+        </div>
+        <div class="wux-cell">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:33%"></div></div>
+          <div class="wux-label">木 Kayu<span class="v">1</span></div>
+        </div>
+        <div class="wux-cell unfav">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:33%"></div></div>
+          <div class="wux-label">火 Api<span class="v">1</span></div>
+        </div>
+<!-- /TAFSIR -->
+      </div>
+    </div>
+
+    <!-- MAIN: INSIGHT + INDUSTRI -->
+    <div class="career-main">
+
+      <!-- WAWASAN -->
+      <div class="insight-card">
+        <div class="insight-eyebrow">Wawasan Utama</div>
+        <div class="insight-title"><!-- TAFSIR:_career_title -->Logam &amp; Air adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini<!-- /TAFSIR --></div>
+        <div class="insight-body">
+<!-- TAFSIR:career --><p>Wu Huan Yang paling bersinar di bidang yang menggabungkan otoritas formal, integritas, dan kemampuan mengelola sumber daya lintas wilayah. <strong>Format Pejabat Lurus</strong> (<span class="hz">正官格</span>) menunjuk pada karir di pemerintahan, hukum, pendidikan, atau lembaga formal lain. Software menyebut potensi besar di bidang publishing, pendidikan, kayu/properti, manufaktur logam, hukum, jurnalisme, dan keuangan.</p><ul><li><strong>Penerbitan &amp; Pendidikan</strong> (unsur 木), Bintang Akademik kuat mendukung karir penulisan, pengajaran, dan riset</li><li><strong>Hukum &amp; Advokasi</strong> (unsur 金), Format Pejabat Lurus selaras dengan karir hukum dan penegakan aturan</li><li><strong>Properti &amp; Konstruksi</strong> (unsur 木), Industri kayu dan properti memperkuat aset jangka panjang</li><li><strong>Keuangan &amp; Akuntansi</strong> (unsur 金), Daya analitis dan disiplin angka mendukung karir finansial</li><li><strong>Manufaktur &amp; Mesin</strong> (unsur 金), Industri logam berat sesuai dengan dorongan eksekusi tegas</li></ul><!-- /TAFSIR -->
+        </div>
+        <div class="insight-tags">
+<!-- TAFSIR:_career_tags -->
+          <span class="insight-tag">金 STRUKTUR & EKSEKUSI</span>
+          <span class="insight-tag">水 ALIRAN & ADAPTASI</span>
+          <span class="insight-tag bad">火 PERSAINGAN BERLEBIH</span>
+          <span class="insight-tag bad">土 STAGNASI</span>
+        <!-- /TAFSIR -->
+        </div>
+      </div>
+
+      <!-- INDUSTRI LIST -->
+      <div class="industri-list">
+        <div class="ind-header">5 Bidang Paling Searah</div>
+<!-- TAFSIR:_career_industri -->
+        <div class="ind-row top">
+          <div class="ind-icon">🌳</div>
+          <div class="ind-info">
+            <div class="ind-name">Penerbitan &amp; Pendidikan</div>
+            <div class="ind-reason">Unsur 木, Bintang Akademik kuat mendukung karir penulisan, pengajaran, dan riset</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:95%"></div></div>
+          </div>
+        </div>
+        <div class="ind-row top">
+          <div class="ind-icon">⚙️</div>
+          <div class="ind-info">
+            <div class="ind-name">Hukum &amp; Advokasi</div>
+            <div class="ind-reason">Unsur 金, Format Pejabat Lurus selaras dengan karir hukum dan penegakan aturan</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:88%"></div></div>
+          </div>
+        </div>
+        <div class="ind-row">
+          <div class="ind-icon">🌳</div>
+          <div class="ind-info">
+            <div class="ind-name">Properti &amp; Konstruksi</div>
+            <div class="ind-reason">Unsur 木, Industri kayu dan properti memperkuat aset jangka panjang</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:82%"></div></div>
+          </div>
+        </div>
+        <div class="ind-row">
+          <div class="ind-icon">⚙️</div>
+          <div class="ind-info">
+            <div class="ind-name">Keuangan &amp; Akuntansi</div>
+            <div class="ind-reason">Unsur 金, Daya analitis dan disiplin angka mendukung karir finansial</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:76%"></div></div>
+          </div>
+        </div>
+        <div class="ind-row">
+          <div class="ind-icon">⚙️</div>
+          <div class="ind-info">
+            <div class="ind-name">Manufaktur &amp; Mesin</div>
+            <div class="ind-reason">Unsur 金, Industri logam berat sesuai dengan dorongan eksekusi tegas</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:70%"></div></div>
+          </div>
+        </div>
+<!-- /TAFSIR -->
+      </div>
+    </div>
+
+    <!-- AVOID -->
+    <div class="avoid-strip">
+      <div class="avoid-label">忌 Hindari</div>
+      <div class="avoid-text">
+<!-- TAFSIR:_career_avoid -->Industri ber-unsur <strong>火 (Api)</strong> &amp; <strong>土 (Tanah)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.<!-- /TAFSIR -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- KAKI -->
+  <footer class="footer">
+    <div class="footer-meta">
+      <span>Halaman 12 / 24</span>
+    </div>
+  </footer>
+
+</section>
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Li Jia Ling, Penguasa Hari &amp; Wu Xing Radar</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-dm { grid-template-rows: 92mm 40mm 1fr !important; gap: 3mm; }
+
+  .dm-hero {
+    display: grid; grid-template-columns: 1fr 70mm; gap: 5mm;
+    overflow: hidden;
+  }
+  .dm-radar-frame {
+    background: var(--bg-card); border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm; padding: 3mm;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  .dm-radar-frame svg { width: 100%; height: 100%; max-height: 95mm; }
+
+  .dm-card {
+    background: linear-gradient(180deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 5mm;
+    display: grid; grid-template-rows: auto auto auto auto 1fr auto;
+    gap: 1.5mm;
+    overflow: hidden;
+    text-align: center;
+  }
+  .dmc-eyebrow {
+    font-size: 6.5pt; color: var(--gold);
+    letter-spacing: 3px; text-transform: uppercase; font-weight: 700;
+  }
+  .dmc-stem {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 56pt; color: var(--red);
+    font-weight: 700; line-height: 1;
+    text-shadow: 0 1mm 3mm rgba(139,26,26,0.15);
+  }
+  .dmc-element {
+    font-family: 'Noto Serif TC', serif; font-size: 14pt;
+    color: var(--text); font-weight: 600; letter-spacing: 4px;
+  }
+  .dmc-pinyin {
+    font-family: 'Playfair Display', serif;
+    font-size: 10pt; font-style: italic; color: var(--text);
+  }
+  .dmc-traits {
+    display: flex; flex-direction: column; gap: 0.8mm;
+    text-align: left; font-size: 7.5pt; line-height: 1.4;
+    color: var(--text);
+    border-top: 0.2mm solid var(--gold-soft);
+    padding-top: 2mm;
+  }
+  .dmc-trait { display: grid; grid-template-columns: 4mm 1fr; gap: 1.5mm; }
+  .dmc-trait .ico { color: var(--gold); font-weight: 700; }
+  .dmc-trait strong { color: var(--red); }
+  .dmc-strength {
+    background: rgba(139,26,26,0.08);
+    border-radius: 1mm; padding: 1.5mm 2mm;
+    font-size: 7pt; font-weight: 600; color: var(--red);
+    letter-spacing: 1px; text-transform: uppercase;
+  }
+  .dmc-strength .val { font-family: 'Playfair Display', serif; font-size: 10pt; }
+
+  .dm-elements {
+    display: grid; grid-template-columns: repeat(5, 1fr);
+    gap: 3mm; overflow: hidden;
+  }
+  .dme-card {
+    border-radius: 2mm; padding: 2mm 3mm;
+    display: grid; grid-template-rows: auto auto auto 1fr auto;
+    gap: 0.5mm; align-items: start;
+    overflow: visible; /* allow ti_xiang badge to overflow corner */
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  /* 體相 badge — pojok kanan-atas, foto-source seasonal status */
+  .dme-tixiang {
+    position: absolute; top: -2mm; right: -2mm;
+    width: 7mm; height: 7mm;
+    border-radius: 50%;
+    color: white; font-size: 9pt; font-weight: 700;
+    line-height: 7mm; text-align: center;
+    font-family: 'Noto Serif TC', serif;
+    border: 0.4mm solid var(--bg);
+    box-shadow: 0 0.3mm 1mm rgba(0,0,0,0.25);
+    z-index: 2;
+  }
+  .dme-tixiang.wang  { background: #2D6A4F; }  /* 旺 hijau gelap = puncak */
+  .dme-tixiang.xiang { background: #6FA85A; }  /* 相 hijau muda = pendukung */
+  .dme-tixiang.xiu   { background: #C9A961; }  /* 休 gold = istirahat */
+  .dme-tixiang.qiu   { background: #A07E5C; }  /* 囚 coklat = terkurung */
+  .dme-tixiang.si    { background: #888888; }  /* 死 abu = mati */
+
+  /* 體相 LEGEND footer — compact horizontal */
+  .ti-xiang-legend {
+    display: flex; gap: 4mm; flex-wrap: wrap;
+    font-size: 7pt; color: var(--text-muted);
+    align-items: center; padding: 1.5mm 4mm;
+    margin-top: 2mm;
+    border-top: 0.2mm solid var(--gold-soft);
+  }
+  .ti-xiang-legend .lg-title {
+    font-size: 7pt; color: var(--gold);
+    letter-spacing: 2.5px; font-weight: 600; margin-right: 2mm;
+  }
+  .ti-xiang-legend .dot {
+    display: inline-block;
+    width: 4mm; height: 4mm; border-radius: 50%;
+    color: white; font-size: 6.5pt; font-weight: 700;
+    line-height: 4mm; text-align: center; margin-right: 1mm;
+    vertical-align: middle;
+  }
+  .ti-xiang-legend .dot.wang  { background: #2D6A4F; }
+  .ti-xiang-legend .dot.xiang { background: #6FA85A; }
+  .ti-xiang-legend .dot.xiu   { background: #C9A961; }
+  .ti-xiang-legend .dot.qiu   { background: #A07E5C; }
+  .ti-xiang-legend .dot.si    { background: #888888; }
+  .dme.el-jin   { background: linear-gradient(180deg, #C9B57A, #A89358); }
+  .dme.el-mu    { background: linear-gradient(180deg, #6FA85A, #4D7A3A); }
+  .dme.el-shui  { background: linear-gradient(180deg, #5990B8, #3A6B8C); }
+  .dme.el-huo   { background: linear-gradient(180deg, #C45F5F, #8C3535); }
+  .dme.el-tu    { background: linear-gradient(180deg, #B89070, #8C6E47); }
+  .dme-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 16pt;
+    font-weight: 700; line-height: 1;
+  }
+  .dme-name {
+    font-family: 'Playfair Display', serif; font-size: 7.5pt;
+    font-weight: 600; letter-spacing: 1px;
+  }
+  .dme-val {
+    font-family: 'Playfair Display', serif; font-size: 10pt;
+    font-weight: 700; line-height: 1;
+    margin-top: 0.5mm;
+  }
+  .dme-bar {
+    height: 2mm; background: rgba(255,255,255,0.25);
+    border-radius: 1mm; overflow: hidden; margin-top: 1mm;
+  }
+  .dme-bar-fill {
+    height: 100%; background: rgba(255,255,255,0.85);
+    border-radius: 1mm;
+  }
+  .dme-role {
+    font-size: 5.5pt; letter-spacing: 0.5px;
+    background: rgba(0,0,0,0.2); padding: 0.3mm 1.5mm;
+    border-radius: 5mm; text-transform: uppercase;
+    font-weight: 600;
+  }
+  .dme-tag-self { color: #FFD700; font-weight: 700; }
+  /* V4.5 null-safety: subdue empty radar / cards when MD data missing. */
+  .dme.empty, .dm-radar-frame .empty { opacity: 0.45; }
+
+  /* Yong Shen insight */
+  .dm-yongshen {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4mm;
+    overflow: hidden;
+  }
+  .ys-block {
+    border-radius: 2mm; padding: 4mm 5mm;
+    display: grid; grid-template-rows: auto auto 1fr;
+    gap: 1.5mm; overflow: hidden;
+  }
+  .ys-block.fav   { background: var(--green-bg); border: 0.5mm solid var(--green); }
+  .ys-block.unfav { background: var(--red-bad-bg); border: 0.5mm solid var(--red-bad); }
+  .ys-block .ys-eb {
+    font-size: 7pt; letter-spacing: 2.5px;
+    text-transform: uppercase; font-weight: 700;
+  }
+  .ys-block.fav .ys-eb   { color: var(--green); }
+  .ys-block.unfav .ys-eb { color: var(--red-bad); }
+  .ys-block .ys-title {
+    display: flex; align-items: baseline; gap: 2mm;
+    white-space: nowrap;
+  }
+  .ys-block .ys-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 14pt; font-weight: 700; line-height: 1;
+  }
+  .ys-block.fav .ys-hz   { color: var(--green); }
+  .ys-block.unfav .ys-hz { color: var(--red-bad); opacity: 0.85; }
+  .ys-block .ys-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 9pt; font-style: italic; color: var(--text);
+  }
+  .ys-block .ys-body {
+    font-size: 8pt; line-height: 1.5; color: var(--text);
+    border-top: 0.2mm solid rgba(0,0,0,0.08);
+    padding-top: 1.5mm;
+    overflow: hidden;
+  }
+  .ys-body .hz { font-family: 'Noto Serif TC', serif; font-weight: 600; }
+  .ys-block.fav .ys-body .hz   { color: var(--green); }
+  .ys-block.unfav .ys-body .hz { color: var(--red-bad); }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">06</div>
+    <div class="h-titles">
+      <div class="h-cn">日 主 · 五 行</div>
+      <div class="h-id">Penguasa Hari &amp; Lima Elemen</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Naga-Merah.svg" alt="Naga"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Li Jia Ling · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">辰 Naga</span></div>
+      <div class="subject-detail">Penguasa Hari analisis · 五行 distribusi · 喜用 / 忌神</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">丁火 · Api Lilin</div>
+    </div>
+  </div>
+
+  <main class="content content-dm">
+
+    <!-- HERO: Radar + Kartu Penguasa Hari -->
+    <div class="dm-hero">
+
+      <div class="dm-radar-frame">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <!-- Concentric pentagonal grid -->
+          <polygon points="200,153 244,182 227,234 173,234 156,182" fill="none" stroke="#E5D3A1" stroke-width="0.5"/>
+          <polygon points="200,107 289,164 254,267 146,267 111,164" fill="none" stroke="#E5D3A1" stroke-width="0.5"/>
+          <polygon points="200,60 333,157 282,313 118,313 67,157" fill="none" stroke="#C9A961" stroke-width="0.8"/>
+
+          <!-- Axes -->
+          <line x1="200" y1="200" x2="200" y2="60" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="200" y1="200" x2="333" y2="157" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="200" y1="200" x2="282" y2="313" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="200" y1="200" x2="118" y2="313" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="200" y1="200" x2="67"  y2="157" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+
+          <!-- Subject's wuxing polygon (regenerated per subject) -->
+          <polygon points="200,144 279.8,174.2 249.2,267.8 118,313 146.8,182.8"
+            fill="rgba(139,26,26,0.18)" stroke="#8B1A1A" stroke-width="1.5"/>
+          <circle cx="200" cy="144" r="3" fill="#A89358"/>
+          <circle cx="279.8" cy="174.2" r="3" fill="#3A6B8C"/>
+          <circle cx="249.2" cy="267.8" r="3" fill="#8C3535"/>
+          <circle cx="118" cy="313" r="3" fill="#8C6E47"/>
+          <circle cx="146.8" cy="182.8" r="3" fill="#4D7A3A"/>
+
+          <!-- Center -->
+          <circle cx="200" cy="200" r="3" fill="#C9A961"/>
+
+          <!-- Labels -->
+          <g font-family="Noto Serif TC,serif">
+            <!-- 金 top -->
+            <text x="200" y="40" text-anchor="middle" font-size="18" fill="#8B1A1A" font-weight="700">金</text>
+            <text x="200" y="52" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Logam · 2.0</text>
+            <!-- 水 right -->
+            <text x="358" y="148" text-anchor="middle" font-size="18" fill="#3A6B8C" font-weight="700">水</text>
+            <text x="358" y="160" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Air · 3.0</text>
+            <!-- 火 lower-right, Penguasa Hari ★ -->
+            <text x="305" y="338" text-anchor="middle" font-size="18" fill="#8C3535" font-weight="700">火</text>
+            <text x="305" y="350" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Api · 3.0 ★</text>
+            <!-- 土 lower-left -->
+            <text x="95" y="338" text-anchor="middle" font-size="18" fill="#8C6E47" font-weight="700">土</text>
+            <text x="95" y="350" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Tanah · 5.0</text>
+            <!-- 木 left -->
+            <text x="42" y="148" text-anchor="middle" font-size="18" fill="#4D7A3A" font-weight="700">木</text>
+            <text x="42" y="160" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Kayu · 2.0</text>
+          </g>
+
+          <!-- Scale ticks -->
+          <text x="206" y="153" font-size="5.5" fill="#6B5B3F">1.7</text>
+          <text x="206" y="107" font-size="5.5" fill="#6B5B3F">3.3</text>
+          <text x="206" y="60"  font-size="5.5" fill="#6B5B3F">5</text>
+        </svg>
+      </div>
+
+      <div class="dm-card">
+<!-- TAFSIR:_dmcard -->
+        <div class="dmc-eyebrow">本 命 · Penguasa Hari</div>
+        <div class="dmc-stem">丁</div>
+        <div class="dmc-element">火 · Api Yin</div>
+        <div class="dmc-pinyin">Dīng 火, "Api Lilin"</div>
+        <div class="dmc-traits">
+          <div class="dmc-trait"><span class="ico">◆</span><span><strong>Halus</strong>, intens, terkonsentrasi</span></div>
+          <div class="dmc-trait"><span class="ico">◆</span><span>Pemurnian, memberi terang yang spesifik</span></div>
+          <div class="dmc-trait"><span class="ico">◆</span><span>Mekar dengan kayu (umpan) + logam (cetakan)</span></div>
+        </div>
+        <div class="dmc-strength">Status: <span class="val">LEMAH</span> · 弱</div>
+      <!-- /TAFSIR -->
+      </div>
+
+    </div>
+
+    <!-- 5 ELEMENT CARDS -->
+    <div class="dm-elements">
+      <div class="dme dme-card el-tu">
+        <div class="dme-hz">土</div>
+        <div class="dme-name">Tanah · Tǔ</div>
+        <div class="dme-val">5</div>
+        <div class="dme-bar"><div class="dme-bar-fill" style="width:100%"></div></div>
+        <div class="dme-role">Netral</div>
+      </div>
+      <div class="dme dme-card el-shui">
+        <span class="dme-tixiang qiu">囚</span>
+        <div class="dme-hz">水</div>
+        <div class="dme-name">Air · Shuǐ</div>
+        <div class="dme-val">3</div>
+        <div class="dme-bar"><div class="dme-bar-fill" style="width:60%"></div></div>
+        <div class="dme-role" style="background:rgba(45,106,79,0.7);">喜 Mendukung</div>
+      </div>
+      <div class="dme dme-card el-huo">
+        <span class="dme-tixiang wang">旺</span>
+        <div class="dme-hz">火</div>
+        <div class="dme-name">Api · Huǒ</div>
+        <div class="dme-val">3 <span class="dme-tag-self">★ DIRI</span></div>
+        <div class="dme-bar"><div class="dme-bar-fill" style="width:60%"></div></div>
+        <div class="dme-role">Penguasa Hari</div>
+      </div>
+      <div class="dme dme-card el-mu">
+        <span class="dme-tixiang xiang">相</span>
+        <div class="dme-hz">木</div>
+        <div class="dme-name">Kayu · Mù</div>
+        <div class="dme-val">2</div>
+        <div class="dme-bar"><div class="dme-bar-fill" style="width:40%"></div></div>
+        <div class="dme-role">Netral</div>
+      </div>
+      <div class="dme dme-card el-jin">
+        <span class="dme-tixiang si">死</span>
+        <div class="dme-hz">金</div>
+        <div class="dme-name">Logam · Jīn</div>
+        <div class="dme-val">2</div>
+        <div class="dme-bar"><div class="dme-bar-fill" style="width:40%"></div></div>
+        <div class="dme-role">Netral</div>
+      </div>
+    </div>
+
+    <!-- YONG SHEN STRIP -->
+    <div class="dm-yongshen">
+
+      <div class="ys-block fav">
+        <div class="ys-eb">喜 用 神 · Yong Shen · Mendukung</div>
+        <div class="ys-title">
+          <span class="ys-hz">水</span>
+          <span class="ys-name">Air, Penopang &amp; Pengarah</span>
+        </div>
+        <div class="ys-body">
+<!-- TAFSIR:daymaster -->Li Jia Ling adalah <strong>Api Yin</strong> (<span class="hz">丁火</span>) yang lemah, dengan <strong>Tanah</strong> (<span class="hz">土</span>) dominan (5 unit) menguras nyala. <strong>Air</strong> (<span class="hz">水</span>) berperan sebagai <strong>用神 utama</strong> untuk menetralkan tanah berlebih, sementara <strong>Kayu</strong> (<span class="hz">木</span>) sebagai <strong>喜用神 pendukung</strong> yang memberi makanan bagi api batin.<!-- /TAFSIR -->
+        </div>
+      </div>
+
+      <div class="ys-block unfav">
+        <div class="ys-eb">忌 神 · Ji Shen · Kurang Mendukung</div>
+        <div class="ys-title">
+          <span class="ys-hz">火</span>
+          <span class="ys-name">Api, Pelumat &amp; Pemicu</span>
+        </div>
+        <div class="ys-body">
+<!-- TAFSIR:_jishen_body -->Hindari penambahan <strong>Api</strong> (<span class="hz">火</span>) sebagai <strong>忌神</strong> dan <strong>Logam</strong> (<span class="hz">金</span>) sebagai <strong>仇神</strong> karena akan memperparah ketidakseimbangan. Lingkungan terlalu panas (tekanan kompetitif tinggi) atau terlalu dingin/keras (struktur kaku, kritik tajam) menguras energi inti.<!-- /TAFSIR -->
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 體相 LEGEND — explain seasonal status badges di dme-card -->
+    <div class="ti-xiang-legend">
+      <span class="lg-title">體 相</span>
+      <span><span class="dot wang">旺</span> Puncak</span>
+      <span><span class="dot xiang">相</span> Pendukung</span>
+      <span><span class="dot xiu">休</span> Istirahat</span>
+      <span><span class="dot qiu">囚</span> Terkurung</span>
+      <span><span class="dot si">死</span> Mati</span>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-meta">
+      <span>Halaman 6 / 24</span>
+    </div>
+  </footer>
+</section>
+</body>
+</html>

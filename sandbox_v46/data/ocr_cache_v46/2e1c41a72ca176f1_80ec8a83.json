@@ -1,0 +1,63 @@
+{
+  "screen_type": "detail",
+  "name_id": "YUBY L",
+  "gender_hz": "陰男",
+  "birth_lunar_text": "農曆民國 52年 1月 5日 13時 30分",
+  "detail_sections": {
+    "神煞": {
+      "hz": "【驛馬】\n· 常常好動、奔波逢行、多旅行運、住家及事業多變動。\n【寡宿】\n· 肝膽青露、面無和氣、六親終有也如無。\n【元辰大耗】\n· 手腳阻礙、不別是非、寒酸、貪飲好情、聲雄性溝、不遵禮法、一生多災。",
+      "id_summary": [
+        "Bintang 驛馬: selalu aktif bergerak, banyak perjalanan jauh, tempat tinggal dan pekerjaan sering berpindah-pindah",
+        "Bintang 寡宿: wajah kurang ramah, meskipun memiliki sanak saudara namun hubungan seperti tidak ada",
+        "Bintang 元辰大耗: sering terhambat, sulit membedakan benar-salah, tidak menaati norma, banyak musibah sepanjang hidup"
+      ],
+      "_photo": "WhatsApp Image 2026-05-02 at 12.58.24 (1).jpeg",
+      "_uncertain": true,
+      "_ambiguous_chars": [
+        "寡宿 (second star name unclear — first character might be 孤 or 茅; 寡宿 inferred from context 六親終有也如無)",
+        "肝膽青露 (might be 肝膽俱露 or 肝膽清露)",
+        "聲雄性溝 (unusual phrase — might be 聲雄性剛)"
+      ]
+    }
+  },
+  "shen_sha_stars": [
+    {
+      "star_hz": "驛馬",
+      "id": "Yi Ma",
+      "paragraph_hz": "常常好動、奔波逢行、多旅行運、住家及事業多變動。",
+      "id_summary": [
+        "Selalu aktif bergerak, senang bepergian jauh dan banyak perjalanan",
+        "Tempat tinggal dan pekerjaan cenderung sering berpindah dan berubah"
+      ]
+    },
+    {
+      "star_hz": "寡宿",
+      "id": "Gua Su",
+      "paragraph_hz": "肝膽青露、面無和氣、六親終有也如無。",
+      "id_summary": [
+        "Wajah kurang ramah dan hangat dalam bergaul",
+        "Meskipun memiliki sanak keluarga, hubungan emosional sangat renggang seolah tidak ada"
+      ],
+      "_uncertain": true,
+      "_ambiguous_chars": [
+        "寡宿 (star name first character unclear — could be 孤辰 or 茅宿; 寡宿 chosen based on contextual description)"
+      ]
+    },
+    {
+      "star_hz": "元辰大耗",
+      "id": "Yuan Chen Da Hao",
+      "paragraph_hz": "手腳阻礙、不別是非、寒酸、貪飲好情、聲雄性溝、不遵禮法、一生多災。",
+      "id_summary": [
+        "Sering menghadapi hambatan fisik/praktis dalam keseharian",
+        "Sulit membedakan benar dan salah, hidup serba kekurangan, cenderung suka minum dan bersenang-senang",
+        "Tidak menaati etika dan hukum, sepanjang hidup banyak menghadapi bencana dan musibah"
+      ],
+      "_uncertain": true,
+      "_ambiguous_chars": [
+        "聲雄性溝 (karakter terakhir mungkin 剛 bukan 溝)"
+      ]
+    }
+  ],
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.24 (1).jpeg",
+  "_hash": "2e1c41a72ca176f1_80ec8a83"
+}

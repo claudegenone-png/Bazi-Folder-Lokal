@@ -1,0 +1,17 @@
+{
+  "screen_type": "chart_main",
+  "name_id": "YUBY L",
+  "gender_hz": "陰男",
+  "birth_lunar_text": "農曆民國 52年 1月 5日 13時 30分",
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.23.jpeg",
+  "_uncertain": true,
+  "_ambiguous_chars": [
+    "陰男 (inferred from birth year 癸卯 = yin stem; not directly legible from photo due to angle)",
+    "pillar stems/branches unreadable due to image angle and resolution",
+    "wuxing scores unreadable",
+    "yong_ji_shen rows unreadable",
+    "formats/格局 row unreadable",
+    "da_yun stem/branch pairs unreadable — age columns partially visible but insufficient for reliable extraction"
+  ],
+  "_hash": "bdef8e553a33cf8b_80ec8a83"
+}

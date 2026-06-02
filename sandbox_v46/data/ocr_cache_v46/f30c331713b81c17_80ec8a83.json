@@ -1,0 +1,24 @@
+{
+  "screen_type": "detail",
+  "name_id": "YUDY L",
+  "gender_hz": "男",
+  "birth_lunar_text": "農曆民國 52 年 1 月 5 日 13 時 30 分",
+  "detail_sections": {
+    "子女": {
+      "hz": "雖是孩子但屬於可託付一切的類型。您能擁有一群懂重的兒女。但卻似乎稍有神經過敏的傾向。如有凶星同宮的話，則與兒女緣薄。太陰星在兒女宮的人所養育的兒女是感受性豐富、文才卓越的孩子，可能的話，盡量協助他們往這方面去發展才氣。",
+      "id_summary": [
+        "Anak-anak termasuk tipe yang dapat diandalkan dan dipercaya untuk segala hal.",
+        "Berpotensi memiliki anak-anak yang dihargai/dihormati, namun cenderung sedikit hipersensitif secara emosional.",
+        "Jika ada bintang buruk (凶星) di istana yang sama, hubungan dengan anak-anak dapat merenggang.",
+        "Bintang Tai Yin (太陰) di istana anak-anak menunjukkan anak-anak kaya rasa dan unggul dalam seni/sastra; disarankan untuk mendukung dan memfasilitasi bakat mereka."
+      ],
+      "_photo": "WhatsApp Image 2026-05-02 at 12.58.27 (1).jpeg",
+      "_uncertain": true,
+      "_ambiguous_chars": [
+        "懂重 (likely 懂事 — sensible/well-behaved; 重 may be misread due to BBS font rendering)"
+      ]
+    }
+  },
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.27 (1).jpeg",
+  "_hash": "f30c331713b81c17_80ec8a83"
+}

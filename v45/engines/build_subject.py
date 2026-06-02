@@ -68,7 +68,15 @@ def _element_class(stem_hz: str) -> str:
 
 
 def build_da_yun(start_age: int, direction: str, month_pillar: dict, day_master_stem: str) -> list:
-    """Generate 10 da yun cycles. direction='forward' or 'backward'."""
+    """Generate 10 da yun cycles. direction='forward' or 'backward'.
+
+    FULL-MD MODE: returns [] when any required input is None (MD didn't supply Da Yun data).
+    """
+    if start_age is None or direction is None or not month_pillar or not day_master_stem:
+        return []
+    if not month_pillar.get("stem_hz") or not month_pillar.get("branch_hz"):
+        return []
+
     stems = list(STEMS.keys())  # 甲乙丙丁戊己庚辛壬癸
     branches = BRANCH_ORDER     # 子丑寅卯辰巳午未申酉戌亥
 
@@ -200,22 +208,23 @@ def build_subject(core: dict) -> dict:
 
 
 def _build_da_yun_block(core: dict) -> dict:
-    cycles = build_da_yun(
-        core["da_yun_start_age"],
-        core.get("da_yun_direction", "forward"),
-        core["pillars"]["month"],
-        core["pillars"]["day"]["stem_hz"]
-    )
+    start = core.get("da_yun_start_age")
+    direction = core.get("da_yun_direction")
+    month_pillar = (core.get("pillars") or {}).get("month") or {}
+    day_pillar = (core.get("pillars") or {}).get("day") or {}
+    dm_stem = day_pillar.get("stem_hz")
+
+    cycles = build_da_yun(start, direction, month_pillar, dm_stem)
     cur_idx = core.get("da_yun_current_index", 0)
-    if 0 <= cur_idx < len(cycles):
+    if cycles and 0 <= cur_idx < len(cycles):
         cycles[cur_idx]["is_current"] = True
 
-    start = core["da_yun_start_age"]
+    axis_marks = [start + i * 10 for i in range(11)] if start is not None else []
     return {
         "start_age": start,
-        "direction_id": core.get("da_yun_direction", "forward"),
+        "direction_id": direction,
         "current_index": cur_idx,
-        "axis_marks": [start + i * 10 for i in range(11)],
+        "axis_marks": axis_marks,
         "cycles": cycles,
     }
 

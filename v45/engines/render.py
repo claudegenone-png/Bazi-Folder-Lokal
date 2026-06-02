@@ -1,4 +1,4 @@
-"""Sandbox1 Render Engine — JSON → 23 HTML pages → PDF.
+"""Sandbox1 Render Engine, JSON → 23 HTML pages → PDF.
 
 Strategy: Templates = verbatim copies of Michele V3 pages.
 Reference values = Michele's actual data baked into engine constants.
@@ -29,7 +29,8 @@ PAGE_ORDER = [
     "page_10_shensha.html","page_11_caifu.html","page_career.html",
     "page_yangzhai.html","page_dayun.html","page_15_ziwei_opener.html",
     "page_ziwei.html","page_17_palace1.html","page_18_palace2.html",
-    "page_19_palace3.html","page_20_kesimpulan.html","page_synthesis.html",
+    "page_19_palace3.html","page_19b_penutup_opener.html",
+    "page_20_kesimpulan.html","page_synthesis.html",
     "page_22_glossary.html","page_23_disclaimer.html"
 ]
 
@@ -40,7 +41,7 @@ CHROME_PATHS = [
 ]
 
 # ============================================================
-# MICHELE REFERENCE — exact values pulled from cache/michele templates
+# MICHELE REFERENCE, exact values pulled from cache/michele templates
 # ============================================================
 MICHELE = {  # name kept for backward compat; this is now LinRuYi reference
     "name_id": "Lin Ru Yi",
@@ -81,7 +82,7 @@ MICHELE = {  # name kept for backward compat; this is now LinRuYi reference
         "fav_hz": "金 水",
         "unfav_hz": "火 木",
         "axis_max": "14 Total",
-        "insight_id": "<strong>Logam &amp; Air dominan</strong> (金 28.6% · 水 28.6%) didukung Tanah (土 21.4%). Penguasa Hari 辛金 cenderung lemah karena ditekan dua 巳 火 — energinya perlu sokongan <strong>金 水</strong> (logam menopang, air meredam api), hindari tambahan <strong>火 木</strong>.",
+        "insight_id": "<strong>Logam &amp; Air dominan</strong> (金 28.6% · 水 28.6%) didukung Tanah (土 21.4%). Penguasa Hari 辛金 cenderung lemah karena ditekan dua 巳 火, energinya perlu sokongan <strong>金 水</strong> (logam menopang, air meredam api), hindari tambahan <strong>火 木</strong>.",
     },
     "format": {
         "hz": "正官格",
@@ -116,11 +117,203 @@ MICHELE = {  # name kept for backward compat; this is now LinRuYi reference
 }
 
 # ============================================================
+# NULL SAFETY (FULL-MD MODE: any field may be None)
+# ============================================================
+
+EM_DASH = "—"
+
+# Element-class fallback used when day_master.stem_element_hz is missing.
+_FALLBACK_ELEMENT_CLASS = "mu"
+
+
+def _safe_str(v, default: str = EM_DASH) -> str:
+    """Return v as string, or default if v is None / blank."""
+    if v is None:
+        return default
+    s = str(v).strip()
+    if s == "" or s.lower() == "none":
+        return default
+    return s
+
+
+def _safe_num(v, default: float = 0.0) -> float:
+    """Return v as float, or default if v is None / non-numeric."""
+    if v is None:
+        return default
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return default
+
+
+def _normalize_subject_for_render(subject: dict) -> dict:
+    """Walk subject dict and replace None fields with safe placeholders so
+    downstream substitution + SVG geometry never crashes on null MD fields.
+
+    Mutates a shallow-copied dict (originals untouched). Adds `_empty: True`
+    flag on dicts where every numeric field was None — used by regen_* to
+    visually subdue empty SVG/grid placeholders.
+    """
+    s = dict(subject)  # shallow copy at top level
+
+    # -------- identity --------
+    iden = dict(s.get("identity") or {})
+    for k in ("name_id", "name_hanzi", "gender_id", "birth_day_name",
+              "birth_period_id", "birth_hour_period_label",
+              "lunar_date_text_new", "lunar_republic_text"):
+        if iden.get(k) is None:
+            iden[k] = EM_DASH
+    if iden.get("birth_date") is None:
+        iden["birth_date"] = "1900-01-01"  # geometry placeholder; rendered as "—" via subst
+    if iden.get("birth_time") is None:
+        iden["birth_time"] = EM_DASH
+    if iden.get("age_at_report") is None:
+        iden["age_at_report"] = EM_DASH
+    s["identity"] = iden
+
+    # -------- shio --------
+    shio = dict(s.get("shio") or {})
+    for k in ("branch_hz", "id", "id_upper", "svg_red"):
+        if shio.get(k) is None:
+            shio[k] = EM_DASH
+    s["shio"] = shio
+
+    # -------- day_master --------
+    dm = dict(s.get("day_master") or {})
+    for k in ("stem_hz", "stem_element_hz", "label_id", "strength_id"):
+        if dm.get(k) is None:
+            dm[k] = EM_DASH
+    s["day_master"] = dm
+
+    # -------- pillars (each slot dict) --------
+    pillars = dict(s.get("pillars") or {})
+    for slot in ("year", "month", "day", "hour"):
+        p = dict(pillars.get(slot) or {})
+        for k in ("stem_hz", "branch_hz"):
+            if p.get(k) is None:
+                p[k] = EM_DASH
+        pillars[slot] = p
+    s["pillars"] = pillars
+
+    # -------- wuxing (numeric) --------
+    wx_in = s.get("wuxing")
+    if wx_in is None:
+        wx_in = {}
+    wx = {}
+    all_empty = True
+    for el in ("jin", "shui", "mu", "huo", "tu"):
+        cell = dict((wx_in.get(el) or {}))
+        v = cell.get("value")
+        p = cell.get("percent")
+        if v is not None or p is not None:
+            all_empty = False
+        cell["value"] = _safe_num(v, 0.0)
+        cell["percent"] = _safe_num(p, 0.0)
+        if cell.get("label_id") is None:
+            cell["label_id"] = EM_DASH
+        wx[el] = cell
+    wx["total"] = wx_in.get("total") if wx_in.get("total") is not None else (EM_DASH if all_empty else 0)
+    wx["self_value"] = wx_in.get("self_value") if wx_in.get("self_value") is not None else (EM_DASH if all_empty else 0)
+    wx["self_el_hz"] = _safe_str(wx_in.get("self_el_hz"))
+    wx["fav_hz"] = _safe_str(wx_in.get("fav_hz"))
+    wx["unfav_hz"] = _safe_str(wx_in.get("unfav_hz"))
+    wx["axis_max"] = _safe_str(wx_in.get("axis_max"))
+    wx["insight_id"] = wx_in.get("insight_id")  # may be None → regen builds default
+    wx["_empty"] = all_empty
+    s["wuxing"] = wx
+
+    # -------- format / yong_shen / ji_shen / mantra (string dicts) --------
+    for key, fields in [
+        ("format",   ("hz", "glyph_hz", "pinyin", "label_id")),
+        ("yong_shen",("elements_hz", "elements_id", "glyph_hz", "name_id",
+                     "desc_id", "label_id")),
+        ("ji_shen",  ("elements_hz", "elements_id", "glyph_hz", "name_id",
+                     "desc_id", "label_id")),
+        ("mantra",   ("hz", "pinyin")),
+    ]:
+        d = dict(s.get(key) or {})
+        for f in fields:
+            if d.get(f) is None:
+                d[f] = EM_DASH
+        s[key] = d
+
+    # -------- zi_wei --------
+    zw = dict(s.get("zi_wei") or {})
+    for f in ("ming_zhu_hz", "ming_zhu_id", "shen_zhu_hz", "shen_zhu_id",
+              "ming_gong_hz", "ming_gong_id", "shen_gong_hz", "shen_gong_id",
+              "wu_xing_ju_hz", "wu_xing_ju_id", "shi_jun_hz", "shi_jun_id"):
+        if zw.get(f) is None:
+            zw[f] = EM_DASH
+    s["zi_wei"] = zw
+
+    # -------- marriage (lists may be None) --------
+    mar_in = s.get("marriage") or {}
+    mar = dict(mar_in)
+    cocok = mar.get("cocok")
+    hind = mar.get("hindari")
+    mar["cocok"] = list(cocok) if cocok else []
+    mar["hindari"] = list(hind) if hind else []
+    mar["_empty"] = (not mar["cocok"]) and (not mar["hindari"])
+    s["marriage"] = mar
+
+    # -------- shen_sha_list --------
+    ssl = s.get("shen_sha_list")
+    s["shen_sha_list"] = list(ssl) if ssl else []
+
+    # -------- yang_zhai (string fields) --------
+    yz_in = s.get("yang_zhai")
+    if yz_in is not None:
+        yz = dict(yz_in)
+        if yz.get("gua_hz") is None:
+            # Mark empty; apply_blocks will skip compass regen but blank the static
+            # LinRuYi text labels (gua name, pinyin, group) so reader sees "—".
+            yz["_empty"] = True
+        s["yang_zhai"] = yz
+
+    # -------- da_yun --------
+    dy_in = s.get("da_yun")
+    dy = dict(dy_in) if isinstance(dy_in, dict) else {}
+    cycles = dy.get("cycles") or []
+    norm_cycles = []
+    for c in cycles:
+        cc = dict(c or {})
+        for f in ("stem_hz", "branch_hz", "ten_god_hz", "ten_god_id"):
+            if cc.get(f) is None:
+                cc[f] = EM_DASH
+        for f in ("age_start", "age_end", "n"):
+            if cc.get(f) is None:
+                cc[f] = EM_DASH
+        if cc.get("element_class") is None:
+                cc["element_class"] = "el-" + _FALLBACK_ELEMENT_CLASS
+        norm_cycles.append(cc)
+    if not norm_cycles:
+        # Render 10 placeholder cells so lifeline grid keeps its 10-cell shape.
+        for i in range(10):
+            norm_cycles.append({
+                "n": i + 1,
+                "stem_hz": EM_DASH, "branch_hz": EM_DASH,
+                "ten_god_hz": EM_DASH, "ten_god_id": EM_DASH,
+                "age_start": EM_DASH, "age_end": EM_DASH,
+                "element_class": "el-" + _FALLBACK_ELEMENT_CLASS,
+            })
+        dy["_empty"] = True
+    dy["cycles"] = norm_cycles
+    if dy.get("current_index") is None:
+        dy["current_index"] = 0
+    s["da_yun"] = dy
+
+    return s
+
+
+# ============================================================
 # SUBSTITUTION HELPERS
 # ============================================================
 
-def html_amp(s: str) -> str:
-    """Escape ' & ' → ' &amp; ' (only standalone ampersand+space, won't double-encode)."""
+def html_amp(s) -> str:
+    """Escape ' & ' → ' &amp; ' (only standalone ampersand+space, won't double-encode).
+    FULL-MD MODE: null-safe — None → EM_DASH placeholder."""
+    if s is None:
+        return EM_DASH
     return s.replace(" & ", " &amp; ")
 
 
@@ -157,6 +350,29 @@ def build_pillar_pairs(michele_pillar, subject_pillar):
     s_branch = subject_pillar["branch_hz"]
     if m_stem == s_stem and m_branch == s_branch:
         return []
+    # Null-safe: subject MD may return "—" placeholder for unknown pillars.
+    if s_stem not in STEMS or s_branch not in BRANCHES:
+        m_s = STEMS[m_stem]; m_b = BRANCHES[m_branch]
+        NL = chr(10)
+        parts_m = [
+            f'<div class="t-hanzi stem">{m_stem}</div>',
+            f'          <div class="t-pill"><span class="hz">{m_s["el_hz"]}</span>{m_s["el_id"]} {m_s["polarity_id"]}</div>',
+            '        </div>',
+            '        <div class="t-divider"></div>',
+            '        <div class="t-block">',
+            f'          <div class="t-hanzi branch">{m_branch}</div>',
+            f'          <div class="t-pill"><span class="hz">{m_b["shio_radical_hz"]}</span>{m_b["shio_id"]}</div>',
+        ]
+        parts_s = [
+            f'<div class="t-hanzi stem">{EM_DASH}</div>',
+            f'          <div class="t-pill"><span class="hz">{EM_DASH}</span>{EM_DASH}</div>',
+            '        </div>',
+            '        <div class="t-divider"></div>',
+            '        <div class="t-block">',
+            f'          <div class="t-hanzi branch">{EM_DASH}</div>',
+            f'          <div class="t-pill"><span class="hz">{EM_DASH}</span>{EM_DASH}</div>',
+        ]
+        return [(NL.join(parts_m), NL.join(parts_s))]
     m_s = STEMS[m_stem]; s_s = STEMS[s_stem]
     m_b = BRANCHES[m_branch]; s_b = BRANCHES[s_branch]
     NL = chr(10)
@@ -201,7 +417,7 @@ def build_substitutions(subject: dict) -> list[tuple[str,str]]:
         f'<span class="val">{MICHELE["birth_date_text"]} <em>({MICHELE["birth_day_name"]})</em></span>',
         f'<span class="val">{s_birth_date} <em>({s_day_name})</em></span>'
     ))
-    # Cover row 2: Tanggal Lahir (Tionghoa) — substitute the prefix "tanggal X bulan Y" only;
+    # Cover row 2: Tanggal Lahir (Tionghoa), substitute the prefix "tanggal X bulan Y" only;
     # the year hz <span> + (Yi Hai · YYYY) <em> handled via shared lunar_year_pillar_hz sub
     # Michele template prefix: "tanggal 2 bulan 5"
     s_lunar_new = iden.get("lunar_date_text_new", "")
@@ -211,7 +427,7 @@ def build_substitutions(subject: dict) -> list[tuple[str,str]]:
         s_prefix = s_lunar_new.split(" tahun ")[0]
         if m_prefix != s_prefix:
             pairs.append((m_prefix, s_prefix))
-        # Year label part "(Yi Hai · 1995)" — extract from inside <em>...</em>
+        # Year label part "(Yi Hai · 1995)", extract from inside <em>...</em>
         # Format: "tanggal X bulan Y tahun ZZ (Yi Hai · YYYY)"
         if "(" in s_lunar_new and "(" in MICHELE["lunar_date_text_new"]:
             m_paren = "(" + MICHELE["lunar_date_text_new"].split("(", 1)[1]  # "(Yi Hai · 1995)"
@@ -234,8 +450,11 @@ def build_substitutions(subject: dict) -> list[tuple[str,str]]:
                   f"'{shio['branch_hz']} · {shio['id_upper']}'"))
 
     # ============ NAME ============
-    if iden.get("name_hanzi") and iden["name_hanzi"] != MICHELE["name_hanzi"]:
-        pairs.append((MICHELE["name_hanzi"], iden["name_hanzi"]))
+    nh = (iden.get("name_hanzi") or "").strip()
+    if nh and nh not in ("null", "_", "-") and nh != MICHELE["name_hanzi"]:
+        pairs.append((MICHELE["name_hanzi"], nh))
+    elif not nh or nh in ("null", "_", "-"):
+        pairs.append((MICHELE["name_hanzi"], ""))
     pairs.append((MICHELE["name_id"], iden["name_id"]))
 
     # ============ GENDER ============
@@ -249,6 +468,18 @@ def build_substitutions(subject: dict) -> list[tuple[str,str]]:
     # ============ AGE ============
     pairs.append((f"Umur {MICHELE['age_at_report']} tahun",
                   f"Umur {iden['age_at_report']} tahun"))
+
+    # ============ CURRENT DA YUN CYCLE (subject-bar 大運 label) ============
+    # Template static "大運 丙辰 (七殺)" — replace dengan cur_cycle subject ini.
+    da_yun = subject.get("da_yun") or {}
+    cycles = da_yun.get("cycles") or []
+    cur_idx = da_yun.get("current_index", 0)
+    if cycles and 0 <= cur_idx < len(cycles):
+        cc = cycles[cur_idx]
+        cur_gz = f"{cc.get('stem_hz','') or ''}{cc.get('branch_hz','') or ''}"
+        cur_tg = cc.get("ten_god_hz") or ""
+        if cur_gz and cur_tg:
+            pairs.append(("大運 丙辰 (七殺)", f"大運 {cur_gz} ({cur_tg})"))
 
     # ============ SUBJECT-BAR LUNAR REPUBLIC ============
     # Michele: "民國 84 年 6 月 25 日"
@@ -283,9 +514,12 @@ def build_substitutions(subject: dict) -> list[tuple[str,str]]:
     pairs.append((f"{MICHELE['dm_stem_hz']}{MICHELE['dm_element_hz']}",
                   f"{dm['stem_hz']}{dm['stem_element_hz']}"))
 
-    # DM long label "(Logam Yin)" → "(Kayu Yang)" — used in footer captions
+    # DM long label "(Logam Yin)" → "(Kayu Yang)", used in footer captions
     m_dm_long = f"({STEMS[MICHELE['dm_stem_hz']]['el_id']} {STEMS[MICHELE['dm_stem_hz']]['polarity_id']})"
-    s_dm_long = f"({STEMS[dm['stem_hz']]['el_id']} {STEMS[dm['stem_hz']]['polarity_id']})"
+    if dm['stem_hz'] in STEMS:
+        s_dm_long = f"({STEMS[dm['stem_hz']]['el_id']} {STEMS[dm['stem_hz']]['polarity_id']})"
+    else:
+        s_dm_long = f"({EM_DASH})"
     if m_dm_long != s_dm_long:
         pairs.append((m_dm_long, s_dm_long))
 
@@ -299,7 +533,7 @@ def build_substitutions(subject: dict) -> list[tuple[str,str]]:
         pairs.extend(build_pillar_pairs(MICHELE["pillars"][slot], pillars[slot]))
 
     # ============ WUXING (page_profile) ============
-    # Skip simple field subs — handled via block replacement in apply_blocks().
+    # Skip simple field subs, handled via block replacement in apply_blocks().
     pass
 
     # ============ FORMAT card (page_profile) ============
@@ -313,8 +547,8 @@ def build_substitutions(subject: dict) -> list[tuple[str,str]]:
         pairs.append((f'<div class="fmt-name">{m_f["hz"]}</div>',
                       f'<div class="fmt-name">{fmt["hz"]}</div>'))
         # pinyin label
-        pairs.append((f'<div class="fmt-pinyin">{m_f["pinyin"]} — "{m_f["label_id"]}"</div>',
-                      f'<div class="fmt-pinyin">{fmt["pinyin"]} — "{fmt["label_id"]}"</div>'))
+        pairs.append((f'<div class="fmt-pinyin">{m_f["pinyin"]}, "{m_f["label_id"]}"</div>',
+                      f'<div class="fmt-pinyin">{fmt["pinyin"]}, "{fmt["label_id"]}"</div>'))
 
     # ============ YONG SHEN card ============
     ys = subject.get("yong_shen")
@@ -326,6 +560,11 @@ def build_substitutions(subject: dict) -> list[tuple[str,str]]:
                       f'<div class="ys-name">{html_amp(ys["elements_id"])}</div>'))
         pairs.append((f'<div class="ys-desc">{m_ys["desc_id"]}</div>',
                       f'<div class="ys-desc">{html_amp(ys["label_id"])}</div>'))
+        # Page 6 ys-block.fav (span variant): <span class="ys-hz">火 金</span> + <span class="ys-name">Api & Logam, Penyalur & Pemangkas</span>
+        pairs.append(('<span class="ys-hz">火 金</span>',
+                      f'<span class="ys-hz">{ys["elements_hz"]}</span>'))
+        pairs.append(('<span class="ys-name">Api &amp; Logam, Penyalur &amp; Pemangkas</span>',
+                      f'<span class="ys-name">{html_amp(ys["elements_id"])}, {html_amp(ys["label_id"])}</span>'))
 
     # ============ JI SHEN card ============
     js = subject.get("ji_shen")
@@ -337,6 +576,10 @@ def build_substitutions(subject: dict) -> list[tuple[str,str]]:
                       f'<div class="ys-name">{html_amp(js["elements_id"])}</div>'))
         pairs.append((f'<div class="ys-desc">{m_js["desc_id"]}</div>',
                       f'<div class="ys-desc">{html_amp(js["label_id"])}</div>'))
+        pairs.append(('<span class="ys-hz">水 木</span>',
+                      f'<span class="ys-hz">{js["elements_hz"]}</span>'))
+        pairs.append(('<span class="ys-name">Air &amp; Kayu, Penambah Dominasi</span>',
+                      f'<span class="ys-name">{html_amp(js["elements_id"])}, {html_amp(js["label_id"])}</span>'))
 
     # ============ MANTRA ============
     mt = subject.get("mantra")
@@ -383,7 +626,7 @@ def build_substitutions(subject: dict) -> list[tuple[str,str]]:
 
 
 # ============================================================
-# BLOCK REPLACEMENT — for structures that need regeneration
+# BLOCK REPLACEMENT, for structures that need regeneration
 # ============================================================
 
 ELEMENT_HZ = {"mu":"木", "shui":"水", "tu":"土", "huo":"火", "jin":"金"}
@@ -392,25 +635,29 @@ ELEMENT_HZ = {"mu":"木", "shui":"水", "tu":"土", "huo":"火", "jin":"金"}
 def regen_wuxing_stack(wx: dict) -> str:
     """Generate <div class=\"wux-stack\">...</div> with segments sorted by value desc.
     Format matches Michele's template: padding spaces BETWEEN class attr and style attr.
+
+    Null-safe: if wx._empty, render 5 segments at flex:1 with "—" labels (subdued).
     """
+    if wx.get("_empty"):
+        lines = ['<div class="wux-stack empty" style="opacity:0.3">']
+        for el in ELEMENT_HZ:
+            cls = f"el-{el}"
+            pad = " " * (9 - len(cls))
+            lines.append(f'          <div class="seg {cls}"{pad}style="flex:1"><span class="hz">{ELEMENT_HZ[el]}</span><span class="pct">{EM_DASH}</span></div>')
+        lines.append('        </div>')
+        return '\n'.join(lines)
     items = sorted(
         [(el, wx[el]["value"], wx[el]["percent"]) for el in ELEMENT_HZ],
         key=lambda x: -x[1]
     )
     lines = ['<div class="wux-stack">']
     for el, val, pct in items:
-        # Pad after closing quote of class attr to align style= column
-        # Michele: class="seg el-mu"<spaces>style="..."  where total width post-class fixed
         cls = f"el-{el}"
         pad = " " * (9 - len(cls))
-        # value e.g., 3.0, 0.0, 2.5
-        v_str = f"{val:g}" if val != int(val) else f"{int(val)}.0"
-        # percent: 35.3% or 0% (integer percent if 0 → no decimal)
-        if pct == int(pct):
-            p_str = f"{int(pct)}%" if pct == 0 else f"{int(pct)}.0%"
-        else:
-            p_str = f"{pct}%"
-        lines.append(f'          <div class="seg {cls}"{pad}style="flex:{v_str}"><span class="hz">{ELEMENT_HZ[el]}</span><span class="pct">{p_str}</span></div>')
+        # Raw count from MD (integer if whole). User asked NOT to show as percentage.
+        # The flex:val keeps bar width proportional, but label shows the count itself.
+        v_str = f"{int(val)}" if val == int(val) else f"{val:.1f}"
+        lines.append(f'          <div class="seg {cls}"{pad}style="flex:{val:g}"><span class="hz">{ELEMENT_HZ[el]}</span><span class="pct">{v_str}</span></div>')
     lines.append('        </div>')
     return '\n'.join(lines)
 
@@ -427,7 +674,7 @@ def replace_block(content: str, open_tag_pattern: str, new_inner: str, count: in
         return content
     start = m.start()
     after_open = m.end()
-    # Find matching close — balance count of <div and </div
+    # Find matching close, balance count of <div and </div
     depth = 1
     pos = after_open
     while depth > 0 and pos < len(content):
@@ -447,27 +694,36 @@ def replace_block(content: str, open_tag_pattern: str, new_inner: str, count: in
 
 
 def regen_lifeline(da_yun: dict) -> str:
-    """Generate <div class=\"lifeline\">...</div> with 10 cells."""
+    """Generate <div class=\"lifeline\">...</div> with 10 cells.
+    Null-safe: missing cycle fields fall back to "—" placeholders."""
     lines = ['<div class="lifeline">']
-    for c in da_yun["cycles"]:
+    cycles = da_yun.get("cycles") or []
+    for c in cycles:
         cls_parts = ["ll-cell"]
         if c.get("is_current"):
             cls_parts.append("current")
-        elif c["age_end"] < c.get("_anchor", 0):
-            # not used
-            pass
-        # past = before current
-        cls_parts.append(c["element_class"])
+        el_cls = c.get("element_class") or "el-mu"
+        cls_parts.append(el_cls)
         # past detection: cycle index < current_index
         current_idx = da_yun.get("current_index", 0)
-        if c["n"] - 1 < current_idx:
+        n = c.get("n")
+        if isinstance(n, int) and isinstance(current_idx, int) and n - 1 < current_idx:
             cls_parts.insert(1, "past")
         cls = " ".join(cls_parts)
-        lines.append(f'        <div class="{cls}">')
-        lines.append(f'          <div class="age">{c["age_start"]}–{c["age_end"]}</div>')
-        lines.append(f'          <div class="gz"><span class="s">{c["stem_hz"]}</span><span class="b">{c["branch_hz"]}</span></div>')
-        lines.append(f'          <div class="ss">{c["ten_god_hz"]}</div>')
-        lines.append(f'          <div class="ss-id">{c["ten_god_id"]}</div>')
+        age_start = c.get("age_start")
+        age_end = c.get("age_end")
+        age_str = f"{age_start}–{age_end}" if age_start not in (None, EM_DASH) and age_end not in (None, EM_DASH) else EM_DASH
+        stem_hz = c.get("stem_hz") or EM_DASH
+        branch_hz = c.get("branch_hz") or EM_DASH
+        ten_god_hz = c.get("ten_god_hz") or EM_DASH
+        ten_god_id = c.get("ten_god_id") or EM_DASH
+        is_empty = (stem_hz == EM_DASH and branch_hz == EM_DASH)
+        cell_style = ' style="opacity:0.35"' if is_empty else ''
+        lines.append(f'        <div class="{cls}"{cell_style}>')
+        lines.append(f'          <div class="age">{age_str}</div>')
+        lines.append(f'          <div class="gz"><span class="s">{stem_hz}</span><span class="b">{branch_hz}</span></div>')
+        lines.append(f'          <div class="ss">{ten_god_hz}</div>')
+        lines.append(f'          <div class="ss-id">{ten_god_id}</div>')
         lines.append(f'        </div>')
     lines.append('      </div>')
     return '\n'.join(lines)
@@ -475,7 +731,10 @@ def regen_lifeline(da_yun: dict) -> str:
 
 def regen_lifeline_axis(da_yun: dict) -> str:
     """Generate <div class=\"ll-axis\">...</div>."""
-    marks = da_yun["axis_marks"]
+    # FULL-MD MODE: da_yun may be empty/missing axis_marks if MD has null da_yun
+    marks = da_yun.get("axis_marks") if isinstance(da_yun, dict) else None
+    if not marks:
+        marks = [EM_DASH] * 11  # fallback: 5+6 placeholder spans
     # Michele format: 5 spans on one line, 6 spans on another
     line1 = ''.join(f'<span>{m}</span>' for m in marks[:5])
     line2 = ''.join(f'<span>{m}</span>' for m in marks[5:])
@@ -498,8 +757,13 @@ def regen_spotlight(da_yun: dict, dm: dict) -> str:
     """
     cur_idx = da_yun.get("current_index", 0)
     cur = da_yun["cycles"][cur_idx]
-    el_hz = STEMS[cur["stem_hz"]]["el_hz"]
-    el_id = STEMS[cur["stem_hz"]]["el_id"]
+    cur_stem = cur.get("stem_hz")
+    if cur_stem in STEMS:
+        el_hz = STEMS[cur_stem]["el_hz"]
+        el_id = STEMS[cur_stem]["el_id"]
+    else:
+        el_hz = EM_DASH
+        el_id = EM_DASH
     el_class = cur.get("element_class", "el-mu").replace("el-", "s-")
     bullets = da_yun.get("spotlight_bullets_html", da_yun.get("spotlight_bullets", []))
     bullets_html = '\n'.join(
@@ -525,16 +789,10 @@ def regen_spotlight(da_yun: dict, dm: dict) -> str:
         f'        <div class="sp-eyebrow">FASE {cur["n"]} · SEKARANG</div>\n'
         f'        <div class="sp-gz"><span>{cur["stem_hz"]}</span><span>{cur["branch_hz"]}</span></div>\n'
         f'        <div class="sp-element-disc {el_class}">{el_hz}</div>\n'
-        f'        <div class="sp-age">Umur <span class="now">{cur["age_start"]} — {cur["age_end"]}</span></div>\n'
+        f'        <div class="sp-age">Umur <span class="now">{cur["age_start"]}-{cur["age_end"]}</span></div>\n'
         '      </div>\n'
         '\n'
         '      <div class="sp-right">\n'
-        '        <div class="sp-tags">\n'
-        f'          <span class="sp-tag primary"><span class="hz">{cur["ten_god_hz"]}</span>{ten_god_pinyin} · {cur["ten_god_id"]}</span>\n'
-        f'          <span class="sp-tag"><span class="hz">{el_hz}</span>{tag_tone}</span>\n'
-        f'          <span class="sp-tag"><span class="hz">{combo_pair[0]}</span>+<span class="hz">{combo_pair[1]}</span>{tag_combo}</span>\n'
-        '        </div>\n'
-        '\n'
         '        <div class="sp-headline">\n'
         f'          {headline}\n'
         '        </div>\n'
@@ -585,15 +843,15 @@ def regen_seasons_axis(da_yun: dict) -> str:
 
 
 # ============================================================
-# MARRIAGE WHEEL SVG — 12 cells + relationship lines
+# MARRIAGE WHEEL SVG, 12 cells + relationship lines
 # ============================================================
 
 # Relationship → wheel cell styling
 WHEEL_STYLE = {
     "self": {
-        "r": 30, "fill": "#FFF8E1", "stroke": "#8B1A1A", "sw": 2,
+        "r": 30, "fill": "#FF8C42", "stroke": "#000000", "sw": 2.5,
         "img_size": 52, "img_color": "Merah", "img_opacity": None,
-        "text_color": "#8B1A1A", "text_weight": 700, "text_size": 15,
+        "text_color": "#FF8C42", "text_weight": 700, "text_size": 17,
     },
     "triple": {
         "r": 24, "fill": "#E8F0EA", "stroke": "#2D6A4F", "sw": 2,
@@ -601,9 +859,9 @@ WHEEL_STYLE = {
         "text_color": "#2D6A4F", "text_weight": 700, "text_size": 14,
     },
     "pair": {
-        "r": 22, "fill": "#FFF8E1", "stroke": "#C9A961", "sw": 1.8,
+        "r": 22, "fill": "#D4EDDA", "stroke": "#2D6A4F", "sw": 2.2,
         "img_size": 38, "img_color": "Merah", "img_opacity": None,
-        "text_color": "#C9A961", "text_weight": 700, "text_size": 13,
+        "text_color": "#2D6A4F", "text_weight": 700, "text_size": 13,
     },
     "clash": {
         "r": 22, "fill": "#F4DCDC", "stroke": "#A03434", "sw": 1.8,
@@ -615,12 +873,12 @@ WHEEL_STYLE = {
         "img_size": 38, "img_color": "Merah", "img_opacity": None,
         "text_color": "#B8860B", "text_weight": 600, "text_size": 13,
     },
-    "punish": {  # 三刑 — use clash-style red
+    "punish": {  # 三刑, use clash-style red
         "r": 22, "fill": "#F4DCDC", "stroke": "#A03434", "sw": 1.5,
         "img_size": 38, "img_color": "Merah", "img_opacity": None,
         "text_color": "#A03434", "text_weight": 600, "text_size": 13,
     },
-    "break": {  # 破 — use clash-style red
+    "break": {  # 破, use clash-style red
         "r": 22, "fill": "#F4DCDC", "stroke": "#A03434", "sw": 1.5,
         "img_size": 38, "img_color": "Merah", "img_opacity": None,
         "text_color": "#A03434", "text_weight": 600, "text_size": 13,
@@ -639,12 +897,23 @@ REL_HZ_TO_KEY = {
     "六害": "harm",
     "三刑": "punish",
     "破": "break",
+    # Generic placeholders — used when foto NCC tidak categorize cocok/hindari ke
+    # kategori klasik. Map ke pair/clash style untuk visual line. Label di compat-card
+    # akan tampil "Cocok"/"Hindari" generik (no fake 六合/六沖 Hanzi).
+    "cocok": "pair",
+    "hindari": "clash",
 }
 
 
 def _wheel_cell_svg(idx: int, branch_hz: str, rel_key: str, comment_label: str) -> str:
     """Generate one <g>...</g> SVG group for a wheel cell."""
     cx, cy, lx, ly = WHEEL_POSITIONS[idx]
+    # For self cell, push hanzi label further from circle (breathing room)
+    if rel_key == "self":
+        dx = lx - cx
+        dy = ly - cy
+        lx = cx + dx * 1.45
+        ly = cy + dy * 1.45
     style = WHEEL_STYLE[rel_key]
     shio_id = BRANCHES[branch_hz]["shio_id"]
     img_file = f"{shio_id}-{style['img_color']}.svg"
@@ -654,7 +923,7 @@ def _wheel_cell_svg(idx: int, branch_hz: str, rel_key: str, comment_label: str) 
     if style["img_opacity"]:
         img_attrs += f' opacity="{style["img_opacity"]}"'
 
-    # Text element — weight optional
+    # Text element, weight optional
     text_attrs = f'x="{lx}" y="{ly}" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="{style["text_size"]}" fill="{style["text_color"]}"'
     if style["text_weight"]:
         text_attrs += f' font-weight="{style["text_weight"]}"'
@@ -670,9 +939,38 @@ def _wheel_cell_svg(idx: int, branch_hz: str, rel_key: str, comment_label: str) 
 
 
 def regen_wheel_svg(subject: dict) -> str:
-    """Generate the inner SVG for marriage wheel (everything inside <svg>...</svg>)."""
-    marriage = subject["marriage"]
-    self_hz = subject["shio"]["branch_hz"]
+    """Generate the inner SVG for marriage wheel (everything inside <svg>...</svg>).
+
+    Null-safe: if self branch unknown, render 12 neutral cells, no highlights.
+    """
+    marriage = subject.get("marriage") or {}
+    self_hz = subject.get("shio", {}).get("branch_hz")
+    if self_hz not in BRANCH_ORDER:
+        # Render 12 neutral cells, no relationship lines, no self highlight.
+        cell_svg = []
+        for idx in range(12):
+            b_hz = BRANCH_ORDER[idx]
+            comment = f"i={idx} {b_hz} {BRANCHES[b_hz]['shio_id']} (neutral)"
+            cell_svg.append(_wheel_cell_svg(idx, b_hz, "neutral", comment))
+        center_svg = (
+            '          <!-- Pusat -->\n'
+            '          <circle cx="200" cy="200" r="22" fill="#FFFEF8" stroke="#C9A961" stroke-width="1"/>\n'
+            f'          <text x="200" y="194" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="11" fill="#8B1A1A" font-weight="600">{EM_DASH}</text>\n'
+            '          <text x="200" y="208" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#6B5B3F" letter-spacing="1">ANDA</text>'
+        )
+        bg = (
+            '          <circle cx="200" cy="200" r="180" fill="none" stroke="#E5D3A1" stroke-width="0.5"/>\n'
+            '          <circle cx="200" cy="200" r="170" fill="#FFFEF8" stroke="#E5D3A1" stroke-width="0.5"/>\n'
+            '          <circle cx="200" cy="200" r="115" fill="none" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>\n'
+            '          <line x1="200" y1="30" x2="200" y2="370" stroke="#E5D3A1" stroke-width="0.3" stroke-dasharray="1,3"/>\n'
+            '          <line x1="30" y1="200" x2="370" y2="200" stroke="#E5D3A1" stroke-width="0.3" stroke-dasharray="1,3"/>'
+        )
+        return (
+            '<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">\n'
+            + bg + '\n' + center_svg + '\n'
+            + '\n'.join(cell_svg) + '\n'
+            + '        </svg>'
+        )
     self_idx = BRANCH_ORDER.index(self_hz)
 
     # Build relationship map: branch_idx → rel_key
@@ -687,6 +985,8 @@ def regen_wheel_svg(subject: dict) -> str:
     for item in marriage.get("cocok", []):
         b_hz = item["branch_hz"]
         idx = BRANCH_ORDER.index(b_hz)
+        if idx == self_idx:  # never override self position
+            continue
         key = REL_HZ_TO_KEY.get(item["relationship_hz"], "neutral")
         rel_map[idx] = key
         if key == "triple": cocok_branches.append(idx)
@@ -694,6 +994,8 @@ def regen_wheel_svg(subject: dict) -> str:
     for item in marriage.get("hindari", []):
         b_hz = item["branch_hz"]
         idx = BRANCH_ORDER.index(b_hz)
+        if idx == self_idx:  # never override self position (e.g., self-刑 in foto)
+            continue
         key = REL_HZ_TO_KEY.get(item["relationship_hz"], "neutral")
         rel_map[idx] = key
         if key == "clash": clash_branches.append(idx)
@@ -720,13 +1022,13 @@ def regen_wheel_svg(subject: dict) -> str:
             f'            fill="rgba(45,106,79,0.06)" stroke="#2D6A4F" stroke-width="1.2" stroke-dasharray="4,3"/>'
         )
 
-    # Pair: gold solid line
+    # Pair: green solid line (cocok = hijau)
     for idx in pair_branches:
         cx, cy, _, _ = WHEEL_POSITIONS[idx]
         line_svg.append(
-            f'          <!-- Pair {self_hz}-{BRANCH_ORDER[idx]} (gold solid) -->\n'
+            f'          <!-- Pair {self_hz}-{BRANCH_ORDER[idx]} (green solid) -->\n'
             f'          <line x1="{self_cx:g}" y1="{self_cy:g}" x2="{cx:g}" y2="{cy:g}"\n'
-            f'            stroke="#C9A961" stroke-width="1.5"/>'
+            f'            stroke="#2D6A4F" stroke-width="2.2"/>'
         )
 
     # Clash: red dashed
@@ -767,7 +1069,7 @@ def regen_wheel_svg(subject: dict) -> str:
 
     # 12 cells
     cell_svg = []
-    # Comment label format matches Michele: "i=N branch_hz shio_id (TYPE — self_hz-branch_hz rel_hz)"
+    # Comment label format matches Michele: "i=N branch_hz shio_id (TYPE, self_hz-branch_hz rel_hz)"
     rel_label_map = {
         "self": "DIRI",
         "triple": "TRIPLE",
@@ -796,15 +1098,15 @@ def regen_wheel_svg(subject: dict) -> str:
         elif key == "neutral":
             comment = f"i={idx} {b_hz} {BRANCHES[b_hz]['shio_id']} (neutral)"
         elif key == "triple":
-            comment = f"i={idx} {b_hz} {BRANCHES[b_hz]['shio_id']} (TRIPLE — {triple_full_label} 三合)"
+            comment = f"i={idx} {b_hz} {BRANCHES[b_hz]['shio_id']} (TRIPLE, {triple_full_label} 三合)"
         else:
             rel_hz = rel_hz_map.get(key, "")
-            comment = f"i={idx} {b_hz} {BRANCHES[b_hz]['shio_id']} ({rel_label_map[key]} — {self_hz}-{b_hz} {rel_hz})"
+            comment = f"i={idx} {b_hz} {BRANCHES[b_hz]['shio_id']} ({rel_label_map[key]}, {self_hz}-{b_hz} {rel_hz})"
         cell_svg.append(_wheel_cell_svg(idx, b_hz, key, comment))
 
     # Note: This regen function returns the inner content of the wheel-svg's
     # <svg>...</svg> (everything between the svg open and close).
-    # The BG circles + cross axes are NOT part of regen — they're static.
+    # The BG circles + cross axes are NOT part of regen, they're static.
     # Only relationship lines + center label + 12 cells are regenerated.
 
     # Center label
@@ -843,8 +1145,74 @@ def regen_wheel_svg(subject: dict) -> str:
     )
 
 
+def regen_wheel_legend(subject: dict) -> str:
+    """Generate dynamic <div class="wheel-legend">...</div> based on actual marriage
+    relationship values present. Shows only categories that exist in MD data —
+    no fake hardcoded entries.
+    """
+    marriage = subject.get("marriage") or {}
+    self_hz = (subject.get("shio") or {}).get("branch_hz") or EM_DASH
+
+    # Collect unique rel_hz values used in cocok + hindari
+    rel_used = set()
+    for item in (marriage.get("cocok") or []) + (marriage.get("hindari") or []):
+        rh = item.get("relationship_hz")
+        if rh:
+            rel_used.add(rh)
+
+    # Style/label table per rel_hz (matches wheel line drawing colors)
+    LEGEND_STYLES = {
+        "三合":   ('<svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#2D6A4F" stroke-width="1.6" stroke-dasharray="4,3"/></svg>',
+                   "三合 SāN HÉ", "SEGITIGA HARMONI"),
+        "六合":   ('<svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#2D6A4F" stroke-width="1.8"/></svg>',
+                   "六合 LIù HÉ", "PASANGAN COCOK"),
+        "六沖":   ('<svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#A03434" stroke-width="1.6" stroke-dasharray="6,3"/></svg>',
+                   "六沖 LIù CHōNG", "BENTROK LANGSUNG"),
+        "六害":   ('<svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#B8860B" stroke-width="1.4" stroke-dasharray="2,3"/></svg>',
+                   "六害 LIù HàI", "MENGHAMBAT HALUS"),
+        "三刑":   ('<svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#A03434" stroke-width="1.4" stroke-dasharray="3,2"/></svg>',
+                   "三刑 SāN XíNG", "HUKUMAN GESEKAN"),
+        "破":     ('<svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#A03434" stroke-width="1.4" stroke-dasharray="1,3"/></svg>',
+                   "破 Pò", "MERETAKKAN"),
+        # Generic placeholders — used when foto NCC didn't categorize
+        "cocok":  ('<svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#2D6A4F" stroke-width="2.2"/></svg>',
+                   "Cocok", "PASANGAN HARMONIS"),
+        "hindari":('<svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#A03434" stroke-width="2.0" stroke-dasharray="6,3"/></svg>',
+                   "Hindari", "RISIKO BENTROK"),
+    }
+
+    # Order: classical first (foto-categorized), then generic (foto flat)
+    ORDER = ["三合", "六合", "六沖", "六害", "三刑", "破", "cocok", "hindari"]
+
+    items = []
+    # DIRI ANDA — always first
+    items.append(
+        '        <div class="legend-item">\n'
+        '          <div class="legend-dot" style="background:#FF8C42;border-color:#000000;border-width:0.5mm"></div>\n'
+        f'          <div class="lbl"><span class="cn" style="color:#FF8C42;font-weight:700">本命 {self_hz}</span><span class="id">DIRI ANDA</span></div>\n'
+        '        </div>'
+    )
+    # Add only relationships actually present in data
+    for rel_hz in ORDER:
+        if rel_hz in rel_used and rel_hz in LEGEND_STYLES:
+            svg, cn, idn = LEGEND_STYLES[rel_hz]
+            items.append(
+                '        <div class="legend-item">\n'
+                f'          {svg}\n'
+                f'          <div class="lbl"><span class="cn">{cn}</span><span class="id">{idn}</span></div>\n'
+                '        </div>'
+            )
+
+    return (
+        '<div class="wheel-legend">\n'
+        '        <div class="legend-title">Hubungan</div>\n'
+        + '\n'.join(items) + '\n'
+        '      </div>'
+    )
+
+
 # ============================================================
-# COMPAT GRID — cocok + hindari rows
+# COMPAT GRID, cocok + hindari rows
 # ============================================================
 
 REL_BADGE_LABEL = {
@@ -854,25 +1222,50 @@ REL_BADGE_LABEL = {
     "六害": "六害 · MENGHAMBAT",
     "三刑": "三刑 · GESEKAN",
     "破":   "破 · MERETAKKAN",
+    # Generic (foto tidak categorize) — no fake Hanzi
+    "cocok":   "COCOK",
+    "hindari": "HINDARI",
 }
 
 
 def regen_compat_card(card_type: str, items: list[dict], title_color: str, badge_text: str) -> str:
     """card_type: 'good' | 'bad'."""
+    if not items:
+        return (
+            f'<div class="compat-card {card_type} empty" style="opacity:0.6">\n'
+            f'        <div class="compat-title">\n'
+            f'          <span class="badge">{badge_text}</span>\n'
+            f'          <span style="color:{title_color};">{"Pasangan Selaras" if card_type == "good" else "Berisiko Bentrok"}</span>\n'
+            f'        </div>\n'
+            f'        <div class="shio-list">\n'
+            f'          <div class="shio-row" style="justify-content:center;text-align:center;padding:6mm;color:#6B5B3F;font-style:italic;">Data tidak tersedia</div>\n'
+            f'        </div>\n'
+            f'      </div>'
+        )
     rows = []
     for item in items:
         b_hz = item["branch_hz"]
         shio_id = BRANCHES[b_hz]["shio_id"]
         img_file = f"{shio_id}-Merah.svg"
-        rel_label = REL_BADGE_LABEL.get(item["relationship_hz"],
-                                         f"{item['relationship_hz']} · {item.get('relationship_id', '')}")
-        reason = html_amp(item["reason_id"])
+        # FULL-MD MODE: relationship_hz from MD (foto layar 婚配 grouping). Null → no label tag.
+        rel_hz = item.get("relationship_hz")
+        rel_id = item.get("relationship_id")
+        if rel_hz:
+            rel_label = REL_BADGE_LABEL.get(rel_hz, f"{rel_hz} · {rel_id or ''}".rstrip(" ·"))
+            tag_html = f'<span class="tag">{rel_label}</span>'
+        else:
+            tag_html = ''  # no label badge if MD didn't provide relationship
+        reason = html_amp(item.get("reason_id"))
+        if reason == EM_DASH:
+            reason_html = ''  # hide reason row entirely if null (avoid "—" placeholder visible)
+        else:
+            reason_html = f'              <div class="reason">{reason}</div>\n'
         rows.append(
             f'          <div class="shio-row">\n'
             f'            <div class="icon"><img src="{img_file}" alt="{shio_id}"></div>\n'
             f'            <div class="info">\n'
-            f'              <div class="name"><span class="hz">{b_hz}</span>{shio_id}<span class="tag">{rel_label}</span></div>\n'
-            f'              <div class="reason">{reason}</div>\n'
+            f'              <div class="name"><span class="hz">{b_hz}</span>{shio_id}{tag_html}</div>\n'
+            f'{reason_html}'
             f'            </div>\n'
             f'          </div>'
         )
@@ -891,7 +1284,7 @@ def regen_compat_card(card_type: str, items: list[dict], title_color: str, badge
 
 
 # ============================================================
-# DAY MASTER — radar polygon + 5 element cards
+# DAY MASTER, radar polygon + 5 element cards
 # ============================================================
 
 # Radar axis endpoints at scale=3 (max). Order: 金(top), 水(TR), 火(BR), 土(BL), 木(TL).
@@ -904,23 +1297,82 @@ RADAR_AXES = {
     "mu":   ("木", 67,  157, "#4D7A3A", 42,  148, "Kayu"),
 }
 RADAR_CENTER = (200, 200)
-RADAR_MAX = 3  # scale 3 = full axis
 
 
-def _radar_vertex(el: str, value: float) -> tuple[float, float]:
+_EL_HZ_NAME = {"jin":("金","Logam"),"shui":("水","Air"),"mu":("木","Kayu"),"huo":("火","Api"),"tu":("土","Tanah")}
+_HZ_TO_KEY = {"金":"jin","水":"shui","木":"mu","火":"huo","土":"tu"}
+
+
+def _build_wuxing_insight(subject: dict) -> str:
+    """Auto-generate the Wu Xing insight paragraph from data (no LinRuYi hardcode)."""
+    wx = subject.get("wuxing") or {}
+    if not wx:
+        return ""
+    if wx.get("_empty"):
+        return f'<span style="opacity:0.5;font-style:italic;">Data Wu Xing tidak tersedia. {EM_DASH}</span>'
+    items = [(k, wx[k]["value"]) for k in ["jin","shui","mu","huo","tu"]]
+    items.sort(key=lambda x: x[1], reverse=True)
+    top1, top2, top3 = items[0], items[1], items[2]
+    hz1, name1 = _EL_HZ_NAME[top1[0]]
+    hz2, name2 = _EL_HZ_NAME[top2[0]]
+    hz3, name3 = _EL_HZ_NAME[top3[0]]
+    def _v(val):
+        return f"{int(val)}" if val == int(val) else f"{val:.1f}"
+    dm = subject.get("day_master") or {}
+    dm_stem = dm.get("stem_hz","")
+    dm_el = dm.get("stem_element_hz","")
+    dm_strength = dm.get("strength_id","")
+    yong = (subject.get("yong_shen") or {}).get("elements_hz","")
+    ji = (subject.get("ji_shen") or {}).get("elements_hz","")
+    return (
+        f'<strong>{name1} &amp; {name2} dominan</strong> '
+        f'({hz1} {_v(top1[1])} · {hz2} {_v(top2[1])}) '
+        f'didukung {name3} ({hz3} {_v(top3[1])}). '
+        f'Penguasa Hari {dm_stem}{dm_el} cenderung {dm_strength.lower()}, '
+        f'energinya perlu sokongan <strong>{yong}</strong>, '
+        f'hindari tambahan <strong>{ji}</strong>.'
+    )
+
+
+def _radar_max(wx: dict) -> float:
+    """Dynamic radar scale: ceil of max wuxing value, min 3."""
+    import math
+    mx = max(wx[el]["value"] for el in ["jin","shui","huo","tu","mu"])
+    return max(3.0, float(math.ceil(mx)))
+
+
+def _radar_vertex(el: str, value: float, scale: float) -> tuple[float, float]:
     """Compute (x, y) of polygon vertex for element at given value."""
     cx, cy = RADAR_CENTER
     _, ex, ey, _, _, _, _ = RADAR_AXES[el]
-    t = value / RADAR_MAX
+    t = value / scale
     return (cx + (ex - cx) * t, cy + (ey - cy) * t)
 
 
 def regen_radar_polygon(wx: dict) -> str:
-    """Generate the SVG snippet replacing Michele's polygon + 5 vertex dots."""
+    """Generate the SVG snippet replacing Michele's polygon + 5 vertex dots.
+
+    Null-safe: if wx._empty, render a tiny near-center polygon w/ transparent stroke
+    so the radar grid is visible but no misleading shape is drawn.
+    """
+    if wx.get("_empty"):
+        cx, cy = RADAR_CENTER
+        # 5 vertices clustered at center
+        pts = [(cx, cy)] * 5
+        pts_str = " ".join(f"{x:g},{y:g}" for x, y in pts)
+        poly = (
+            f'          <polygon points="{pts_str}"\n'
+            f'            fill="rgba(139,26,26,0.0)" stroke="transparent" stroke-width="0"/>'
+        )
+        dots = []
+        for el in ["jin","shui","huo","tu","mu"]:
+            dots.append(f'          <circle cx="{cx:g}" cy="{cy:g}" r="0" fill="transparent"/>')
+        return poly + '\n' + '\n'.join(dots)
+    scale = _radar_max(wx)
     # Polygon vertex order: 金 → 水 → 火 → 土 → 木
     pts = []
     for el in ["jin", "shui", "huo", "tu", "mu"]:
-        x, y = _radar_vertex(el, wx[el]["value"])
+        x, y = _radar_vertex(el, wx[el]["value"], scale)
         pts.append((x, y))
     pts_str = " ".join(f"{x:g},{y:g}" for x, y in pts)
     poly = (
@@ -940,9 +1392,21 @@ def regen_radar_polygon(wx: dict) -> str:
 def regen_radar_labels(wx: dict, dm_element_class: str) -> str:
     """Generate the 5 element label texts inside the <g font-family="Noto Serif TC,serif"> group."""
     # Order matches Michele: 金 top, 水 right, 火 LR, 土 LL, 木 left
+    empty = wx.get("_empty", False)
     parts = []
     for el in ["jin", "shui", "huo", "tu", "mu"]:
         hz, ex, ey, color, lx, ly, label_id = RADAR_AXES[el]
+        if empty:
+            v_str = EM_DASH
+            star = ""
+            comment_pos = {"jin":"金 top","shui":"水 right","huo":"火 lower-right","tu":"土 lower-left","mu":"木 left"}
+            comment = f"<!-- {comment_pos[el]} -->"
+            parts.append(
+                f'            {comment}\n'
+                f'            <text x="{lx}" y="{ly}" text-anchor="middle" font-size="18" fill="{color}" font-weight="700">{hz}</text>\n'
+                f'            <text x="{lx}" y="{ly + 12}" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">{label_id} · {EM_DASH}</text>'
+            )
+            continue
         v = wx[el]["value"]
         # Format value: 3.0, 2.5, 0.8, 0.0
         v_str = f"{v:g}" if v != int(v) else f"{int(v)}.0"
@@ -954,7 +1418,7 @@ def regen_radar_labels(wx: dict, dm_element_class: str) -> str:
         }
         comment = f"<!-- {comment_pos[el]} -->"
         if el == dm_element_class:
-            comment = f"<!-- {comment_pos[el]} — Penguasa Hari ★ -->"
+            comment = f"<!-- {comment_pos[el]}, Penguasa Hari ★ -->"
         parts.append(
             f'            {comment}\n'
             f'            <text x="{lx}" y="{ly}" text-anchor="middle" font-size="18" fill="{color}" font-weight="700">{hz}</text>\n'
@@ -967,6 +1431,23 @@ def regen_dm_element_cards(subject: dict) -> str:
     """Generate <div class="dm-elements">...</div> with 5 cards sorted by value desc."""
     wx = subject["wuxing"]
     dm_el = _wuxing_class_from_dm(subject["day_master"])  # e.g., 'mu', 'huo'
+    if wx.get("_empty"):
+        # Subdued empty cards, no role badges, "—" values.
+        pinyin_map = {"mu":"Mù","shui":"Shuǐ","tu":"Tǔ","huo":"Huǒ","jin":"Jīn"}
+        cards = []
+        for el in ELEMENT_HZ:
+            hz = ELEMENT_HZ[el]
+            label = (wx[el].get("label_id") or EM_DASH)
+            cards.append(
+                f'      <div class="dme dme-card el-{el} empty" style="opacity:0.45">\n'
+                f'        <div class="dme-hz">{hz}</div>\n'
+                f'        <div class="dme-name">{label} · {pinyin_map[el]}</div>\n'
+                f'        <div class="dme-val">{EM_DASH}</div>\n'
+                f'        <div class="dme-bar"><div class="dme-bar-fill" style="width:0%"></div></div>\n'
+                f'        <div class="dme-role">{EM_DASH}</div>\n'
+                f'      </div>'
+            )
+        return '<div class="dm-elements">\n' + '\n'.join(cards) + '\n    </div>'
     yong_shen_el_hz = subject["yong_shen"]["elements_hz"]  # e.g., "火 金"
     ji_shen_el_hz = subject["ji_shen"]["elements_hz"]      # e.g., "水 木"
     yong_set = set(yong_shen_el_hz.split())
@@ -978,10 +1459,16 @@ def regen_dm_element_cards(subject: dict) -> str:
     )
     pinyin_map = {"mu": "Mù", "shui": "Shuǐ", "tu": "Tǔ", "huo": "Huǒ", "jin": "Jīn"}
     cards = []
+    radar_scale = _radar_max(subject["wuxing"])
+    # 體相 badge mapping: foto-source 5-element seasonal status
+    TIXIANG_CLASS = {"旺": "wang", "相": "xiang", "休": "xiu", "囚": "qiu", "死": "si"}
+    ti_xiang = subject.get("ti_xiang") or {}
     for el, val, pct, label in items:
-        v_str = f"{val:g}" if val != int(val) else f"{int(val)}.0"
-        # Bar width: value / RADAR_MAX (3) * 100, integer
-        width_pct = round(val / RADAR_MAX * 100)
+        # Show raw count from MD (integer if whole, decimal only if fractional). User
+        # asked NOT to show as percentage — just the raw count from MD wuxing fields.
+        v_str = f"{int(val)}" if val == int(val) else f"{val:.1f}"
+        # Bar width relative to dynamic radar scale
+        width_pct = round(val / radar_scale * 100)
         # Role badge logic
         is_dm = (el == dm_el)
         hz = ELEMENT_HZ[el]
@@ -999,9 +1486,16 @@ def regen_dm_element_cards(subject: dict) -> str:
             else:
                 role_html = '<div class="dme-role">Netral</div>'
 
+        # 體相 seasonal badge (foto-source MD; null = no badge)
+        tx_status = ti_xiang.get(el)
+        if tx_status and tx_status in TIXIANG_CLASS:
+            tx_html = f'<span class="dme-tixiang {TIXIANG_CLASS[tx_status]}">{tx_status}</span>\n        '
+        else:
+            tx_html = ''
+
         cards.append(
             f'      <div class="dme dme-card el-{el}">\n'
-            f'        <div class="dme-hz">{hz}</div>\n'
+            f'        {tx_html}<div class="dme-hz">{hz}</div>\n'
             f'        <div class="dme-name">{label} · {pinyin_map[el]}</div>\n'
             f'        <div class="dme-val">{val_html}</div>\n'
             f'        <div class="dme-bar"><div class="dme-bar-fill" style="width:{width_pct}%"></div></div>\n'
@@ -1012,13 +1506,14 @@ def regen_dm_element_cards(subject: dict) -> str:
 
 
 def _wuxing_class_from_dm(dm: dict) -> str:
-    """Map DM element_hz to css element class key (mu/shui/tu/huo/jin)."""
+    """Map DM element_hz to css element class key (mu/shui/tu/huo/jin).
+    Null-safe: returns 'mu' fallback if element unknown/None."""
     hz_to_key = {"木": "mu", "水": "shui", "土": "tu", "火": "huo", "金": "jin"}
-    return hz_to_key[dm["stem_element_hz"]]
+    return hz_to_key.get(dm.get("stem_element_hz"), _FALLBACK_ELEMENT_CLASS)
 
 
 # ============================================================
-# YANG ZHAI — compass + zone matrix
+# YANG ZHAI, compass + zone matrix
 # ============================================================
 
 def _compass_axis_endpoints(self_pos: str) -> tuple[tuple[float,float], tuple[float,float]]:
@@ -1042,7 +1537,7 @@ def _compass_axis_endpoints(self_pos: str) -> tuple[tuple[float,float], tuple[fl
 
 
 def regen_compass_svg(yang_zhai: dict, dm: dict) -> str:
-    """Generate the inner SVG for Yang Zhai compass — bg + axis line + 8 badges + center + corner labels."""
+    """Generate the inner SVG for Yang Zhai compass, bg + axis line + 8 badges + center + corner labels."""
     self_gua = yang_zhai["gua_hz"]
     self_t = TRIGRAMS[self_gua]
     self_pos = self_t["pos"]
@@ -1065,9 +1560,9 @@ def regen_compass_svg(yang_zhai: dict, dm: dict) -> str:
     for gua_hz, t in TRIGRAMS.items():
         cx, cy = COMPASS_POSITIONS[t["pos"]]
         if gua_hz == self_gua:
-            # Self badge — r=36, red border, ★ TRIGRAM ANDA badge
+            # Self badge, r=36, red border, ★ TRIGRAM ANDA badge
             badge_svg.append(
-                f'          <!-- {t["pos"]} {gua_hz} (SELF — TRIGRAM ANDA) -->\n'
+                f'          <!-- {t["pos"]} {gua_hz} (SELF, TRIGRAM ANDA) -->\n'
                 f'          <g>\n'
                 f'            <circle cx="{cx:g}" cy="{cy:g}" r="36" fill="#FFF8E1" stroke="#8B1A1A" stroke-width="2"/>\n'
                 f'            <text x="{cx:g}" y="{cy-10:g}" text-anchor="middle" class="dir-trigram" font-size="15" fill="#8B1A1A">{t["symbol"]}</text>\n'
@@ -1077,7 +1572,7 @@ def regen_compass_svg(yang_zhai: dict, dm: dict) -> str:
                 f'          </g>'
             )
         elif t["group"] == self_t["group"]:
-            # Same group — green border (East Group → green if self also East)
+            # Same group, green border (East Group → green if self also East)
             badge_svg.append(
                 f'          <!-- {t["pos"]} {gua_hz} -->\n'
                 f'          <g>\n'
@@ -1088,7 +1583,7 @@ def regen_compass_svg(yang_zhai: dict, dm: dict) -> str:
                 f'          </g>'
             )
         else:
-            # Other group — neutral cream
+            # Other group, neutral cream
             badge_svg.append(
                 f'          <!-- {t["pos"]} {gua_hz} -->\n'
                 f'          <g>\n'
@@ -1183,13 +1678,119 @@ TEN_GOD_PINYIN = {
 }
 
 
+def regen_dm_score_strip(subject: dict) -> str:
+    """Generate <div class="dm-score-strip">...</div> with DM pos/neg scores from MD.
+    Format scores: 3678 → "+3.678" (integer with period as thousands separator).
+    Strength label (LEMAH/KUAT/SEIMBANG): prefer MD `dm_strength_label_id`. Kalau null,
+    derive dari pos vs neg (pos > neg = Kuat, pos < neg = Lemah, ≤10% diff = Seimbang).
+    """
+    pos = subject.get("dm_pos_score")
+    neg = subject.get("dm_neg_score")
+    dm = subject.get("day_master") or {}
+    strength_id_md = dm.get("strength_id")
+    strength_hz_md = dm.get("strength_hz")
+
+    def _fmt(n):
+        if n is None or n == EM_DASH:
+            return EM_DASH
+        try:
+            iv = int(n)
+            return f"{iv:,}".replace(",", ".")
+        except (ValueError, TypeError):
+            return EM_DASH
+
+    pos_str = _fmt(pos)
+    neg_str = _fmt(neg)
+
+    # Derive strength label dari pos/neg score sebagai fallback (kalau MD null)
+    delta_str = EM_DASH
+    delta_note = ""
+    derived_strength_id = None
+    derived_strength_hz = None
+    try:
+        p = float(pos) if pos not in (None, EM_DASH) else None
+        n = float(neg) if neg not in (None, EM_DASH) else None
+        if p is not None and n is not None:
+            delta = p - n
+            total = p + n
+            balanced_threshold = total * 0.1  # ≤10% diff = seimbang
+            if abs(delta) <= balanced_threshold:
+                derived_strength_id = "Seimbang"
+                derived_strength_hz = "平"
+            elif delta > 0:
+                derived_strength_id = "Kuat"
+                derived_strength_hz = "旺"
+            else:
+                derived_strength_id = "Lemah"
+                derived_strength_hz = "弱"
+            if delta < 0:
+                delta_str = f"−{abs(int(delta)):,}".replace(",", ".")
+                delta_note = "penekan dominan"
+            elif delta > 0:
+                delta_str = f"+{int(delta):,}".replace(",", ".")
+                delta_note = "pendukung dominan"
+            else:
+                delta_str = "0"
+                delta_note = "seimbang"
+    except (ValueError, TypeError):
+        pass
+
+    # MD label wins over derived
+    strength_id = (strength_id_md or derived_strength_id or EM_DASH).upper()
+    strength_hz = strength_hz_md or derived_strength_hz or EM_DASH
+
+    pos_sign = f"+{pos_str}" if pos_str != EM_DASH else EM_DASH
+    neg_sign = f"-{neg_str}" if neg_str != EM_DASH else EM_DASH
+
+    footer_info = (
+        '<strong>Skor Kekuatan DM (日主旺度)</strong> = bandingan kekuatan total unsur '
+        'yang <span class="pos-text">mendukung Day Master</span> (印 + 比劫) vs yang '
+        '<span class="neg-text">menekan Day Master</span> (財 + 官殺 + 食傷). '
+        'Bila <span class="pos-text">pendukung lebih besar → DM kuat (旺)</span>: '
+        'subjek mandiri, tahan tekanan, butuh tantangan/sasaran agar berkembang. '
+        'Bila <span class="neg-text">penekan lebih besar → DM lemah (弱)</span>: '
+        'subjek butuh sokongan unsur 用神 / 喜用神 untuk balance, hindari penambahan '
+        'beban dari unsur 忌神 / 仇神.'
+    )
+
+    return (
+        '<div class="dm-score-strip">\n'
+        '      <div class="dms-title-block">\n'
+        '        <div class="dms-eyebrow">日 主 旺 度</div>\n'
+        '        <div class="dms-title-hz">旺 度</div>\n'
+        '        <div class="dms-subtitle">Skor Kekuatan DM</div>\n'
+        f'        <div class="dms-status-pill"><span class="hz">{strength_hz}</span> {strength_id}</div>\n'
+        '      </div>\n'
+        '      <div class="dms-content">\n'
+        '        <div class="dms-row pos">\n'
+        '          <span class="arrow">▲</span>\n'
+        f'          <span class="num">{pos_sign}</span>\n'
+        '          <span class="name">Pendukung</span>\n'
+        '        </div>\n'
+        '        <div class="dms-row neg">\n'
+        '          <span class="arrow">▼</span>\n'
+        f'          <span class="num">{neg_sign}</span>\n'
+        '          <span class="name">Penekan</span>\n'
+        '        </div>\n'
+        f'        <div class="dms-delta-bottom">Selisih Δ <span class="delta-num">{delta_str}</span> · {delta_note}</div>\n'
+        '      </div>\n'
+        f'      <div class="dms-footer-info">{footer_info}</div>\n'
+        '    </div>'
+    )
+
+
 def apply_blocks(content: str, subject: dict, fname: str = "") -> str:
     """Block-level regeneration of complex structures.
     fname: source template filename, used to scope page-specific replacements.
     """
+    # DM Score Strip (page_profile only) — pos/neg scores from MD foto 批命備註
+    if fname == "page_profile.html":
+        new_dms = regen_dm_score_strip(subject)
+        content = replace_block(content, r'<div class="dm-score-strip">', new_dms)
+
     wx = subject.get("wuxing")
     if wx:
-        # Wu Xing stack — replace whole <div class="wux-stack">...</div>
+        # Wu Xing stack, replace whole <div class="wux-stack">...</div>
         new_stack = regen_wuxing_stack(wx)
         content = replace_block(content, r'<div class="wux-stack">', new_stack)
 
@@ -1206,18 +1807,21 @@ def apply_blocks(content: str, subject: dict, fname: str = "") -> str:
         )
         content = replace_block(content, r'<div class="wux-tags">', new_tags)
 
-        # Wu Xing axis max
+        # Wu Xing axis max — show integer total (raw count from MD)
+        _total_val = wx.get("total", 0)
+        _total_str = f"{int(_total_val)}" if _total_val == int(_total_val) else f"{_total_val:g}"
         content = re.sub(
             r'(<div class="wux-axis-top"><span>0</span><span>2</span><span>4</span><span>6</span><span>)[\d.]+\s*Total(</span></div>)',
-            rf'\g<1>{wx["total"]} Total\g<2>',
+            rf'\g<1>{_total_str} Total\g<2>',
             content
         )
 
-        # Wu Xing insight (only replace if subject provided one)
-        if subject.get("wuxing_insight_id"):
+        # Wu Xing insight, auto-generate from data (no LinRuYi fallback)
+        insight_html = subject.get("wuxing_insight_id") or _build_wuxing_insight(subject)
+        if insight_html:
             new_insight = (
                 '<div class="wux-insight">\n          '
-                + subject["wuxing_insight_id"]
+                + insight_html
                 + '\n        </div>'
             )
             content = replace_block(content, r'<div class="wux-insight">', new_insight)
@@ -1243,14 +1847,14 @@ def apply_blocks(content: str, subject: dict, fname: str = "") -> str:
         content = replace_block(content, r'<div class="seasons-bar">', regen_seasons_bar(da_yun))
         # Seasons axis
         content = replace_block(content, r'<div class="seasons-axis">', regen_seasons_axis(da_yun))
-        # Seasons-eyebrow label-meta — only update if subject provides override
+        # Seasons-eyebrow label-meta, only update if subject provides override
         if da_yun.get("seasons_label_text"):
             content = re.sub(
                 r'(class="label-meta"[^>]*>)100 TAHUN · [^<]+(</div>)',
                 rf'\g<1>{da_yun["seasons_label_text"]}\g<2>',
                 content
             )
-        # Footer caption (page_dayun) — narrative for current cycle
+        # Footer caption (page_dayun), narrative for current cycle
         if da_yun.get("footer_caption_html"):
             content = replace_block(content, r'<div class="footer-caption">',
                                     f'<div class="footer-caption">\n      {da_yun["footer_caption_html"]}\n    </div>')
@@ -1264,10 +1868,24 @@ def apply_blocks(content: str, subject: dict, fname: str = "") -> str:
         # then replace through the 5 circles after it.
         pat = re.compile(
             r'<polygon points="[^"]+"\s*\n\s*fill="rgba\(139,26,26,0\.18\)"[^/]*/>'
+            r'(\s*\n\s*<!--[^>]*-->)?'
             r'(\s*\n\s*<circle[^/]*/>){5}',
             re.DOTALL
         )
         content = pat.sub(new_radar.lstrip(), content)
+        # Replace grid scale labels (1, 2, 3 → dynamic max/3, 2max/3, max)
+        scale = _radar_max(wx)
+        def _fmt(v):
+            return f"{v:.1f}".rstrip('0').rstrip('.') if v != int(v) else str(int(v))
+        content = re.sub(
+            r'(<text x="206" y="153"[^>]*>)\s*1\s*(</text>)',
+            rf'\g<1>{_fmt(scale/3)}\g<2>', content)
+        content = re.sub(
+            r'(<text x="206" y="107"[^>]*>)\s*2\s*(</text>)',
+            rf'\g<1>{_fmt(2*scale/3)}\g<2>', content)
+        content = re.sub(
+            r'(<text x="206" y="60"[^>]*>)\s*3\s*(</text>)',
+            rf'\g<1>{_fmt(scale)}\g<2>', content)
         # Replace the labels group (5 element labels)
         new_labels = regen_radar_labels(wx, dm_el)
         content = re.sub(
@@ -1279,21 +1897,252 @@ def apply_blocks(content: str, subject: dict, fname: str = "") -> str:
         new_cards = regen_dm_element_cards(subject)
         content = replace_block(content, r'<div class="dm-elements">', new_cards)
 
+    # Zi Wei 12 Palace overview (page_ziwei), rotate palace names based on ming_gong,
+    # strip stars + age (C-minimal: palace name + branch + shio only).
+    if fname == "page_ziwei.html":
+        zw = subject.get("zi_wei") or {}
+        ming = zw.get("ming_gong_hz")
+        if ming:
+            # 12 branches CCW (perimeter of 4x3 grid going CCW)
+            CCW = ["巳","辰","卯","寅","丑","子","亥","戌","酉","申","未","午"]
+            # Standard palace order, CCW from ming_gong
+            PALACES = [
+                ("命宮", "DIRI"),       ("兄弟", "SAUDARA"),
+                ("夫妻", "PASANGAN"),   ("子女", "ANAK"),
+                ("財帛", "REZEKI"),     ("疾厄", "KESEHATAN"),
+                ("遷移", "PERPINDAHAN"), ("僕役", "SAHABAT"),
+                ("官祿", "KARIR"),       ("田宅", "PROPERTI"),
+                ("福德", "BERKAH"),     ("父母", "ORANG TUA"),
+            ]
+            try:
+                i0 = CCW.index(ming)
+            except ValueError:
+                i0 = None
+            if i0 is not None:
+                # Build branch → (palace_hz, palace_id) map
+                branch_palace = {}
+                for j, (phz, pid) in enumerate(PALACES):
+                    branch_palace[CCW[(i0 + j) % 12]] = (phz, pid)
+                # Replace palace name per cell. Pattern:
+                # group1 = whitespace between palace and branch divs
+                # group2 = "<div class=\"zw-branch\">"
+                # group3 = branch hanzi
+                # group4 = "<span class=\"id\">...</span></div>"
+                def _swap_palace(m):
+                    branch = m.group(3)
+                    pp = branch_palace.get(branch)
+                    if not pp:
+                        return m.group(0)
+                    phz, pid = pp
+                    new_palace = f'<div class="zw-palace">{phz}<span class="id">{pid}</span></div>'
+                    return new_palace + m.group(1) + m.group(2) + branch + m.group(4)
+                content = re.sub(
+                    r'<div class="zw-palace">[^<]+(?:<span[^>]*>[^<]+</span>)?</div>'
+                    r'(\s*\n\s*)(<div class="zw-branch">)([子丑寅卯辰巳午未申酉戌亥])(<span class="id">[^<]+</span></div>)',
+                    _swap_palace, content
+                )
+        # Strip hardcoded `body` and `now` classes (template was for Lin Ru Yi only,
+        # body palace + decade highlight aren't computed for other subjects).
+        content = re.sub(r'class="zw-cell body"', 'class="zw-cell"', content)
+        content = re.sub(r'class="zw-cell now"', 'class="zw-cell"', content)
+        # Strip BADAN/KINI badges (from removed body/now classes).
+        # Hide stars (engine ZW main-star compute incomplete).
+        # Reposition 大限 age range to top-right of cell as "Umur X-Y".
+        # Inject red shio SVG with circle border per cell, uniform size.
+        hide_css = (
+            '\n.zw-stars{display:none!important;}\n'
+            '.zw-foot{display:none!important;}\n'
+            '.zw-branch{display:none!important;}\n'
+            '.zw-cell.life::before{display:none!important;}\n'
+            '.zw-cell{position:relative;display:grid!important;'
+            'grid-template-rows:auto 1fr;align-content:stretch;'
+            'padding:2.5mm!important;gap:1mm;}\n'
+            '.zw-head{padding-right:14mm;}\n'
+            '.zw-shio-wrap{display:flex;flex-direction:column;'
+            'align-items:center;justify-content:center;gap:0.8mm;'
+            'min-width:0;min-height:0;}\n'
+            '.zw-shio-circle{width:18mm;height:18mm;border-radius:50%;'
+            'border:0.4mm solid var(--gold-soft);background:#FFFEF8;'
+            'display:flex;align-items:center;justify-content:center;'
+            'overflow:hidden;flex-shrink:0;}\n'
+            '.zw-shio-circle img{width:15mm;height:15mm;object-fit:contain;}\n'
+            '.zw-cell.life .zw-shio-circle{border-color:var(--gold);'
+            'background:linear-gradient(180deg,#FFF8E1 0%,#F5EBD0 100%);'
+            'box-shadow:0 0 0 0.3mm rgba(201,169,97,0.35);}\n'
+            '.zw-shio-name{font-family:"Inter",sans-serif;font-size:6pt;'
+            'color:var(--text-muted);letter-spacing:0.5px;'
+            'text-transform:uppercase;font-weight:600;line-height:1;}\n'
+            '.zw-age-tag{position:absolute;top:1.5mm;right:1.5mm;'
+            'font-family:"Playfair Display",serif;font-size:5.5pt;'
+            'color:var(--text-muted);font-weight:600;letter-spacing:0.2px;'
+            'background:rgba(255,255,255,0.85);padding:0.3mm 1.2mm;'
+            'border-radius:0.8mm;white-space:nowrap;'
+            'border:0.2mm solid var(--gold-soft);}\n'
+            '.zw-cell.now-phase{box-shadow:0 0 0 0.5mm var(--red);}\n'
+            '.zw-cell.now-phase .zw-age-tag{background:var(--red);color:#fff;'
+            'font-weight:700;border-color:var(--red);}\n'
+        )
+        content = content.replace('</style>', hide_css + '</style>', 1)
+
+        # Replace center box content with mini ID card (engine data, layperson-friendly).
+        iden = subject.get("identity") or {}
+        dm = subject.get("day_master") or {}
+        name_id = iden.get("name_id", "")
+        name_hz = (iden.get("name_hanzi") or "").strip()
+        if name_hz in ("null", "_", "-"): name_hz = ""
+        bdate = iden.get("birth_date", "")
+        btime = iden.get("birth_time", "")
+        gender = iden.get("gender_id", "")
+        # Format birth date Indonesian
+        ID_MONTHS = ["", "Januari","Februari","Maret","April","Mei","Juni",
+                     "Juli","Agustus","September","Oktober","November","Desember"]
+        bdate_id = ""
+        m_d = re.match(r'(\d{4})-(\d{2})-(\d{2})', bdate or "")
+        if m_d:
+            y, mo, d = int(m_d.group(1)), int(m_d.group(2)), int(m_d.group(3))
+            bdate_id = f"{d} {ID_MONTHS[mo]} {y}"
+        dm_hz = dm.get("stem_hz", "") + dm.get("stem_element_hz", "")
+        dm_id = dm.get("label_id", "")
+        hz_row = (f'        <div class="zwc-name-hz">{name_hz}</div>' + chr(10) if name_hz else '')
+        NL = chr(10)
+        new_center_inner = (
+            NL + '        <div class="zwc-eyebrow">Identitas Bagan</div>' + NL
+            + '        <div class="zwc-name-block">' + NL
+            + hz_row
+            + f'          <div class="zwc-name-id">{name_id}</div>' + NL
+            + '        </div>' + NL
+            + '        <div class="zwc-info">' + NL
+            + f'          <div class="zwc-info-row"><span class="lbl">Lahir</span><span class="val">{bdate_id}</span></div>' + NL
+            + f'          <div class="zwc-info-row"><span class="lbl">Jam</span><span class="val">{btime} · {gender}</span></div>' + NL
+            + f'          <div class="zwc-info-row"><span class="lbl">Penguasa Hari</span><span class="val"><span class="hz">{dm_hz}</span> · {dm_id}</span></div>' + NL
+            + '        </div>' + NL + '      '
+        )
+        content = re.sub(
+            r'(<div class="zw-center">)[\s\S]*?(</div>\s*(?:<!--[^>]*-->\s*)?<div class="zw-cell)',
+            lambda mm: mm.group(1) + new_center_inner + mm.group(2),
+            content, count=1
+        )
+        # Inject CSS for the new ID card layout
+        center_css = (
+            '\n.zwc-name-hz{font-family:"Noto Serif TC",serif;font-size:24pt;'
+            'color:var(--red);font-weight:700;text-align:center;line-height:1;'
+            'letter-spacing:4px;margin-top:1mm;}\n'
+            '.zwc-name-id{font-family:"Playfair Display",serif;font-size:11pt;'
+            'color:var(--text);text-align:center;font-style:italic;font-weight:600;'
+            'border-bottom:0.2mm solid var(--gold-soft);padding-bottom:2mm;}\n'
+            '.zwc-info{display:grid;gap:1.5mm;align-content:center;'
+            'padding:1mm 1mm 0;}\n'
+            '.zwc-info-row{display:grid;grid-template-columns:auto 1fr;'
+            'gap:2mm;align-items:baseline;}\n'
+            '.zwc-info-row .lbl{font-family:"Inter",sans-serif;font-size:5.5pt;'
+            'color:var(--gold);letter-spacing:1.5px;text-transform:uppercase;'
+            'font-weight:700;white-space:nowrap;}\n'
+            '.zwc-info-row .val{font-family:"Inter",sans-serif;font-size:7.5pt;'
+            'color:var(--text);font-weight:500;text-align:right;}\n'
+            '.zwc-info-row .val .hz{font-family:"Noto Serif TC",serif;'
+            'color:var(--red);font-weight:700;}\n'
+        )
+        content = content.replace('</style>', center_css + '</style>', 1)
+
+        # Per-cell rebuild: replace stars+foot with shio-wrap containing
+        # red shio SVG circle + Umur tag below it.
+        def _rebuild_cell(m):
+            cell_open = m.group(1)
+            head = m.group(2)
+            indo = m.group(4)
+            age_a, age_b = m.group(5), m.group(6)
+            new_inner = (
+                f'<div class="zw-age-tag">Umur {age_a}-{age_b}</div>\n        '
+                f'{head}\n'
+                f'        <div class="zw-shio-wrap">'
+                f'<div class="zw-shio-circle">'
+                f'<img src="{indo}-Merah.svg" alt="{indo}"></div>'
+                f'<div class="zw-shio-name">{indo}</div>'
+                f'</div>\n      '
+            )
+            return cell_open + new_inner + '</div>'
+
+        content = re.sub(
+            r'(<div class="zw-cell[^"]*"[^>]*>\s*)'
+            r'(<div class="zw-head">[\s\S]*?'
+            r'<div class="zw-branch">([子丑寅卯辰巳午未申酉戌亥])<span class="id">([^<]+)</span></div>\s*</div>)'
+            r'[\s\S]*?<span class="age">(\d+)[–-](\d+)</span>'
+            r'[\s\S]*?</div>\s*</div>',
+            _rebuild_cell, content
+        )
+
+        # Highlight cell containing subject's current age.
+        age = (subject.get("identity") or {}).get("age_at_report", 0)
+        if age:
+            def _highlight(m):
+                a, b = int(m.group(2)), int(m.group(3))
+                if a <= age <= b:
+                    head = m.group(1)
+                    if "now-phase" in head:
+                        return m.group(0)
+                    head = head.replace('class="zw-cell', 'class="zw-cell now-phase', 1)
+                    return head + m.group(0)[len(m.group(1)):]
+                return m.group(0)
+            content = re.sub(
+                r'(<div class="zw-cell[^"]*"[^>]*>\s*'
+                r'<div class="zw-age-tag">Umur )(\d+)\-(\d+)(</div>)',
+                _highlight, content
+            )
+        # Mark ming_gong cell as "life" (already in template for 申; rotate it)
+        if ming:
+            # Strip "life" class first, then add to ming_gong's cell
+            content = re.sub(r'<div class="zw-cell life"', '<div class="zw-cell"', content)
+            # Add "life" to the cell containing ming_gong branch
+            content = re.sub(
+                r'(<div class="zw-cell)("\s+style="[^"]+">\s*\n\s*<div class="zw-head">\s*\n\s*<div class="zw-palace">命宮)',
+                r'\1 life\2', content, count=1
+            )
+
+    # Personality 6-axis radar + motto (page_08_xingqing only)
+    if fname == "page_08_xingqing.html":
+        poly = subject.get("_xq_radar_poly")
+        labels = subject.get("_xq_radar_labels")
+        motto = subject.get("_xq_motto") or []
+        if poly:
+            # Replace LinRuYi polygon + 6 vertex circles
+            pat = re.compile(
+                r'<polygon points="[^"]+"\s*\n\s*fill="rgba\(139,26,26,0\.18\)"[^/]*/>'
+                r'(\s*\n\s*<!--[^>]*-->)?'
+                r'(\s*\n\s*<circle[^/]*/>){6}',
+                re.DOTALL
+            )
+            content = pat.sub(poly.lstrip(), content)
+        if labels:
+            content = re.sub(
+                r'<g font-family="Noto Serif TC,serif">.*?</g>',
+                labels.lstrip(),
+                content, count=1, flags=re.DOTALL
+            )
+        if len(motto) >= 4:
+            xqm_hz, xqm_id, xqm_arch, xqm_tag = motto
+            content = re.sub(r'(<div class="xqm-hz">)[^<]+(</div>)',
+                             rf'\g<1>{xqm_hz}\g<2>', content)
+            content = re.sub(r'(<div class="xqm-id">)[^<]+(</div>)',
+                             rf'\g<1>{xqm_id}\g<2>', content)
+            content = re.sub(r'(<div class="xqm-archetype">)[^<]+(</div>)',
+                             rf'\g<1>{xqm_arch}\g<2>', content)
+            content = re.sub(r'(<div class="xqm-tag">)[^<]+(</div>)',
+                             rf'\g<1>{xqm_tag}\g<2>', content)
+
     # Marriage blocks (page_marriage only)
     marriage = subject.get("marriage")
     if marriage and fname == "page_marriage.html":
-        # Wheel legend self branch label "本命 亥" → "本命 {self}"
-        self_hz = subject["shio"]["branch_hz"]
-        if self_hz != "亥":
-            content = content.replace("本命 亥", f"本命 {self_hz}")
         # Wheel SVG inside <div class="wheel-svg"><svg>...</svg></div>
-        # Find <svg> opening inside wheel-svg and replace whole svg
         new_svg = regen_wheel_svg(subject)
         content = re.sub(
             r'<svg viewBox="0 0 400 400"[^>]*>.*?</svg>',
             new_svg,
             content, count=1, flags=re.DOTALL
         )
+        # Wheel legend — replace static template legend with dynamic one
+        # (only show categories actually present in MD data, no fake hardcoded entries)
+        new_legend = regen_wheel_legend(subject)
+        content = replace_block(content, r'<div class="wheel-legend">', new_legend)
         # Cocok grid (good)
         cocok_html = regen_compat_card("good", marriage.get("cocok", []),
                                        "var(--green)", "宜 COCOK")
@@ -1309,6 +2158,16 @@ def apply_blocks(content: str, subject: dict, fname: str = "") -> str:
 
     # Yang Zhai blocks (page_yangzhai only)
     yang_zhai = subject.get("yang_zhai")
+    if yang_zhai and yang_zhai.get("_empty") and fname == "page_yangzhai.html":
+        # Null-safe fallback: blank the static LinRuYi gua labels with "—".
+        for old, new in [
+            ('<div class="yz-trigram">☵</div>', f'<div class="yz-trigram" style="opacity:0.4">{EM_DASH}</div>'),
+            ('<div class="yz-gua-name">坎</div>', f'<div class="yz-gua-name" style="opacity:0.4">{EM_DASH}</div>'),
+            ('Kǎn, "Air"', EM_DASH),
+            ('坎卦 KǍN GUA · KELOMPOK TIMUR', f'{EM_DASH} · KELOMPOK {EM_DASH}'),
+        ]:
+            content = content.replace(old, new)
+        return content
     if yang_zhai and fname == "page_yangzhai.html":
         # Compass SVG
         new_svg = regen_compass_svg(yang_zhai, subject["day_master"])
@@ -1330,8 +2189,8 @@ def apply_blocks(content: str, subject: dict, fname: str = "") -> str:
                 f'<div class="yz-gua-name">{yang_zhai["gua_hz"]}</div>'
             )
             content = content.replace(
-                f'Kǎn — "Air"',
-                f'{s_t["pinyin"]} — "{s_t["label_id"]}"'
+                f'Kǎn, "Air"',
+                f'{s_t["pinyin"]}, "{s_t["label_id"]}"'
             )
 
         # Side panel meaning (subject override)
@@ -1407,9 +2266,45 @@ SHARED_PAGES = {
 }
 
 
+_TAFSIR_ANCHOR_RE = re.compile(
+    r"<!--\s*TAFSIR:(\w+)\s*-->(.*?)<!--\s*/TAFSIR\s*-->",
+    re.DOTALL
+)
+
+
+def inject_tafsir_blocks(html: str, tafsir_blocks: dict) -> str:
+    """Find <!-- TAFSIR:slug -->...<!-- /TAFSIR --> markers in template and
+    replace inner content with MD-derived block. If slug missing in MD, keep
+    LinRuYi default (the content between markers).
+    """
+    if not tafsir_blocks:
+        return html
+    def repl(m):
+        slug = m.group(1).strip()
+        replacement = tafsir_blocks.get(slug)
+        if replacement:
+            return f"<!-- TAFSIR:{slug} -->{replacement}<!-- /TAFSIR -->"
+        return m.group(0)  # keep original
+    return _TAFSIR_ANCHOR_RE.sub(repl, html)
+
+
 def render_pages(subject, out_dir):
     out_dir.mkdir(parents=True, exist_ok=True)
+    # Null-safety pass: convert None fields to safe placeholders ("—" for text,
+    # 0 for SVG geometry, [] for relationship lists). Layout/template unchanged.
+    subject = _normalize_subject_for_render(subject)
     pairs = build_substitutions(subject)
+    raw_tafsir = subject.get("_tafsir") or {}
+    # Null TAFSIR slugs → "—" placeholder (LOW RISK fallback per V4.5 plan)
+    tafsir_blocks = {
+        slug: (val if val is not None else f'<p style="color:#6B5B3F;font-style:italic;opacity:0.6;">{EM_DASH}</p>')
+        for slug, val in raw_tafsir.items()
+    }
+    # Cover footer auto-date placeholder
+    months_id = ["", "Januari","Februari","Maret","April","Mei","Juni",
+                 "Juli","Agustus","September","Oktober","November","Desember"]
+    today_str = f"{months_id[time.localtime().tm_mon]} {time.localtime().tm_year}"
+    pairs.append(("{{REPORT_DATE}}", today_str))
 
     rendered = []
     for fname in PAGE_ORDER:
@@ -1429,6 +2324,8 @@ def render_pages(subject, out_dir):
             if search and search != replace:
                 content = content.replace(search, replace)
         content = apply_blocks(content, subject, fname)
+        # MD tafsir injection, replaces LinRuYi default prose at anchored locations
+        content = inject_tafsir_blocks(content, tafsir_blocks)
         dst.write_text(content, encoding="utf-8")
         rendered.append(dst)
     return rendered
@@ -1490,6 +2387,25 @@ html, body {{ background: white !important; margin: 0 !important; padding: 0 !im
 </head>
 <body>
 {bodies}
+<script>
+(function(){{
+  function fit(el){{
+    if (!el.clientHeight) return;
+    var fs = parseFloat(getComputedStyle(el).fontSize);
+    var safety = 0;
+    while (el.scrollHeight > el.clientHeight + 1 && fs > 5 && safety < 80){{
+      fs -= 0.25;
+      el.style.fontSize = fs + 'px';
+      safety++;
+    }}
+  }}
+  function run(){{
+    document.querySelectorAll('.ys-body, .fc-body, .pal-card, .cfm-desc, .kek-body, .tan-body, .tin-body, .ind-card, .shen-paragraf, .kc-paragraph, .xq-body, .auto-fit').forEach(fit);
+  }}
+  if (document.readyState === 'complete') run();
+  else window.addEventListener('load', run);
+}})();
+</script>
 </body>
 </html>
 """
@@ -1498,10 +2414,8 @@ html, body {{ background: white !important; margin: 0 !important; padding: 0 !im
     return master_path
 
 
-def run_chrome(master_html: Path, out_pdf: Path) -> Path:
+def _chrome_to_text_pdf(master_html: Path, tmp_pdf: Path) -> None:
     chrome = find_chrome()
-    out_pdf.parent.mkdir(parents=True, exist_ok=True)
-    tmp_pdf = Path(os.environ.get("TEMP", ".")) / f"_pdf_sb1_{os.getpid()}.pdf"
     src_url = "file:///" + str(master_html).replace("\\", "/")
     args = [
         chrome,
@@ -1518,12 +2432,46 @@ def run_chrome(master_html: Path, out_pdf: Path) -> Path:
     subprocess.run(args, capture_output=True, timeout=90)
     if not tmp_pdf.exists():
         raise RuntimeError("Chrome did not produce PDF")
+
+
+def _flatten_to_image_pdf(text_pdf: Path, out_pdf: Path, dpi: int = 300) -> None:
+    """Rasterize each page of text_pdf to PNG and pack into a new image-only PDF.
+    Eliminates cross-viewer rendering inconsistency (mobile vs laptop)."""
+    import fitz
+    from PIL import Image
+    doc = fitz.open(text_pdf)
+    images = []
+    for page in doc:
+        pix = page.get_pixmap(dpi=dpi)
+        img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+        images.append(img)
+    doc.close()
+    if not images:
+        raise RuntimeError("PDF has no pages to flatten")
+    images[0].save(
+        out_pdf, save_all=True, append_images=images[1:],
+        format="PDF", resolution=dpi
+    )
+
+
+def run_chrome(master_html: Path, out_pdf: Path) -> Path:
+    out_pdf.parent.mkdir(parents=True, exist_ok=True)
+    tmp_pdf = Path(os.environ.get("TEMP", ".")) / f"_pdf_sb1_{os.getpid()}.pdf"
+    _chrome_to_text_pdf(master_html, tmp_pdf)
+    flat_pdf = tmp_pdf.with_name(tmp_pdf.stem + "_flat.pdf")
+    _flatten_to_image_pdf(tmp_pdf, flat_pdf)
     try:
-        shutil.move(str(tmp_pdf), str(out_pdf))
+        tmp_pdf.unlink(missing_ok=True)
+    except Exception:
+        pass
+    if not flat_pdf.exists():
+        raise RuntimeError("Image PDF not produced")
+    try:
+        shutil.move(str(flat_pdf), str(out_pdf))
         return out_pdf
     except (PermissionError, OSError):
         alt = out_pdf.with_name(out_pdf.stem + f"_{time.strftime('%H%M%S')}.pdf")
-        shutil.move(str(tmp_pdf), str(alt))
+        shutil.move(str(flat_pdf), str(alt))
         return alt
 
 
@@ -1548,9 +2496,10 @@ def render_subject(subject_id: str) -> Path:
 
     today = time.strftime("%Y-%m-%d")
     name = subject["identity"]["name_id"]
-    hanzi = subject["identity"]["name_hanzi"]
+    hanzi = (subject["identity"].get("name_hanzi") or "").strip()
+    if hanzi in ("_", "-", "null"): hanzi = ""
     birth = subject["identity"]["birth_date"]
-    pdf_name = f"{name}-{hanzi}-{birth}.pdf"
+    pdf_name = f"{name}-{hanzi}-{birth}.pdf" if hanzi else f"{name}-{birth}.pdf"
     out_pdf = ROOT.parent / "#result" / today / pdf_name
 
     print(f"[3/4] Chrome → PDF...")

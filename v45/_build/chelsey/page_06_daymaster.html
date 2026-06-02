@@ -2,10 +2,10 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Chelsey — Penguasa Hari &amp; Wu Xing Radar</title>
+<title>Chelsey, Penguasa Hari &amp; Wu Xing Radar</title>
 <link rel="stylesheet" href="style.css">
 <style>
-  .content-dm { grid-template-rows: 100mm 60mm 1fr !important; gap: 4mm; }
+  .content-dm { grid-template-rows: 92mm 40mm 1fr !important; gap: 3mm; }
 
   .dm-hero {
     display: grid; grid-template-columns: 1fr 70mm; gap: 5mm;
@@ -70,9 +70,9 @@
     gap: 3mm; overflow: hidden;
   }
   .dme-card {
-    border-radius: 2mm; padding: 3mm;
+    border-radius: 2mm; padding: 2mm 3mm;
     display: grid; grid-template-rows: auto auto auto 1fr auto;
-    gap: 1mm; align-items: start;
+    gap: 0.5mm; align-items: start;
     overflow: hidden;
     color: white;
     text-align: center;
@@ -84,17 +84,17 @@
   .dme.el-huo   { background: linear-gradient(180deg, #C45F5F, #8C3535); }
   .dme.el-tu    { background: linear-gradient(180deg, #B89070, #8C6E47); }
   .dme-hz {
-    font-family: 'Noto Serif TC', serif; font-size: 24pt;
+    font-family: 'Noto Serif TC', serif; font-size: 16pt;
     font-weight: 700; line-height: 1;
   }
   .dme-name {
-    font-family: 'Playfair Display', serif; font-size: 9pt;
+    font-family: 'Playfair Display', serif; font-size: 7.5pt;
     font-weight: 600; letter-spacing: 1px;
   }
   .dme-val {
-    font-family: 'Playfair Display', serif; font-size: 14pt;
+    font-family: 'Playfair Display', serif; font-size: 10pt;
     font-weight: 700; line-height: 1;
-    margin-top: 1mm;
+    margin-top: 0.5mm;
   }
   .dme-bar {
     height: 2mm; background: rgba(255,255,255,0.25);
@@ -105,12 +105,14 @@
     border-radius: 1mm;
   }
   .dme-role {
-    font-size: 6.2pt; letter-spacing: 1px;
-    background: rgba(0,0,0,0.2); padding: 0.5mm 1.5mm;
+    font-size: 5.5pt; letter-spacing: 0.5px;
+    background: rgba(0,0,0,0.2); padding: 0.3mm 1.5mm;
     border-radius: 5mm; text-transform: uppercase;
     font-weight: 600;
   }
   .dme-tag-self { color: #FFD700; font-weight: 700; }
+  /* V4.5 null-safety: subdue empty radar / cards when MD data missing. */
+  .dme.empty, .dm-radar-frame .empty { opacity: 0.45; }
 
   /* Yong Shen insight */
   .dm-yongshen {
@@ -131,24 +133,24 @@
   .ys-block.fav .ys-eb   { color: var(--green); }
   .ys-block.unfav .ys-eb { color: var(--red-bad); }
   .ys-block .ys-title {
-    display: flex; align-items: baseline; gap: 3mm;
+    display: flex; align-items: baseline; gap: 2mm;
+    white-space: nowrap;
   }
   .ys-block .ys-hz {
     font-family: 'Noto Serif TC', serif;
-    font-size: 22pt; font-weight: 700; line-height: 1;
+    font-size: 14pt; font-weight: 700; line-height: 1;
   }
   .ys-block.fav .ys-hz   { color: var(--green); }
   .ys-block.unfav .ys-hz { color: var(--red-bad); opacity: 0.85; }
   .ys-block .ys-name {
     font-family: 'Playfair Display', serif;
-    font-size: 11pt; font-style: italic; color: var(--text);
+    font-size: 9pt; font-style: italic; color: var(--text);
   }
   .ys-block .ys-body {
     font-size: 8pt; line-height: 1.5; color: var(--text);
     border-top: 0.2mm solid rgba(0,0,0,0.08);
     padding-top: 1.5mm;
-    display: -webkit-box; -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical; overflow: hidden;
+    overflow: hidden;
   }
   .ys-body .hz { font-family: 'Noto Serif TC', serif; font-weight: 600; }
   .ys-block.fav .ys-body .hz   { color: var(--green); }
@@ -197,16 +199,14 @@
           <line x1="200" y1="200" x2="118" y2="313" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
           <line x1="200" y1="200" x2="67"  y2="157" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
 
-          <!-- Michele's polygon (filled) — values: 金 0.7, 水 2.0, 火 0.8, 土 2.0, 木 3.0 -->
-          <polygon points="200,166 291,170 223,231 144,278 63,156"
+          <!-- Michele's polygon (filled), values: 金 0.7, 水 2.0, 火 0.8, 土 2.0, 木 3.0 -->
+          <polygon points="200,200 266.5,178.5 241,256.5 118,313 133.5,178.5"
             fill="rgba(139,26,26,0.18)" stroke="#8B1A1A" stroke-width="1.5"/>
-
-          <!-- Vertex dots -->
-          <circle cx="200" cy="166" r="3" fill="#A89358"/>
-          <circle cx="291" cy="170" r="3" fill="#3A6B8C"/>
-          <circle cx="223" cy="231" r="3" fill="#8C3535"/>
-          <circle cx="144" cy="278" r="3" fill="#8C6E47"/>
-          <circle cx="63"  cy="156" r="3" fill="#4D7A3A"/>
+          <circle cx="200" cy="200" r="3" fill="#A89358"/>
+          <circle cx="266.5" cy="178.5" r="3" fill="#3A6B8C"/>
+          <circle cx="241" cy="256.5" r="3" fill="#8C3535"/>
+          <circle cx="118" cy="313" r="3" fill="#8C6E47"/>
+          <circle cx="133.5" cy="178.5" r="3" fill="#4D7A3A"/>
 
           <!-- Center -->
           <circle cx="200" cy="200" r="3" fill="#C9A961"/>
@@ -215,79 +215,81 @@
           <g font-family="Noto Serif TC,serif">
             <!-- 金 top -->
             <text x="200" y="40" text-anchor="middle" font-size="18" fill="#8B1A1A" font-weight="700">金</text>
-            <text x="200" y="52" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Logam · 1.0</text>
+            <text x="200" y="52" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Logam · 0.0</text>
             <!-- 水 right -->
             <text x="358" y="148" text-anchor="middle" font-size="18" fill="#3A6B8C" font-weight="700">水</text>
-            <text x="358" y="160" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Air · 1.0</text>
+            <text x="358" y="160" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Air · 2.0</text>
             <!-- 火 lower-right -->
             <text x="305" y="338" text-anchor="middle" font-size="18" fill="#8C3535" font-weight="700">火</text>
-            <text x="305" y="350" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Api · 1.0</text>
-            <!-- 土 lower-left — Penguasa Hari ★ -->
+            <text x="305" y="350" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Api · 2.0</text>
+            <!-- 土 lower-left, Penguasa Hari ★ -->
             <text x="95" y="338" text-anchor="middle" font-size="18" fill="#8C6E47" font-weight="700">土</text>
-            <text x="95" y="350" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Tanah · 2.0 ★</text>
+            <text x="95" y="350" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Tanah · 4.0 ★</text>
             <!-- 木 left -->
             <text x="42" y="148" text-anchor="middle" font-size="18" fill="#4D7A3A" font-weight="700">木</text>
-            <text x="42" y="160" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Kayu · 3.0</text>
+            <text x="42" y="160" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Kayu · 2.0</text>
           </g>
 
           <!-- Scale ticks -->
-          <text x="206" y="153" font-size="5.5" fill="#6B5B3F">1</text>
-          <text x="206" y="107" font-size="5.5" fill="#6B5B3F">2</text>
-          <text x="206" y="60"  font-size="5.5" fill="#6B5B3F">3</text>
+          <text x="206" y="153" font-size="5.5" fill="#6B5B3F">1.3</text>
+          <text x="206" y="107" font-size="5.5" fill="#6B5B3F">2.7</text>
+          <text x="206" y="60"  font-size="5.5" fill="#6B5B3F">4</text>
         </svg>
       </div>
 
       <div class="dm-card">
+<!-- TAFSIR:_dmcard -->
         <div class="dmc-eyebrow">本 命 · Penguasa Hari</div>
-        <div class="dmc-stem">甲</div>
-        <div class="dmc-element">木 · Logam Yin</div>
-        <div class="dmc-pinyin">Jiǎ Mù — "Pohon Besar"</div>
+        <div class="dmc-stem">戊</div>
+        <div class="dmc-element">土 · Tanah Yang</div>
+        <div class="dmc-pinyin">Wù 土, "Gunung"</div>
         <div class="dmc-traits">
-          <div class="dmc-trait"><span class="ico">◆</span><span><strong>Pendiri</strong>, kreatif, idealis</span></div>
-          <div class="dmc-trait"><span class="ico">◆</span><span>Pohon kuat — butuh <strong>dipangkas</strong> agar berbuah</span></div>
-          <div class="dmc-trait"><span class="ico">◆</span><span>Mekar dengan <span style="font-family:'Noto Serif TC',serif;color:var(--red);font-weight:700">火</span> (ekspresi) + <span style="font-family:'Noto Serif TC',serif;color:var(--red);font-weight:700">金</span> (disiplin)</span></div>
+          <div class="dmc-trait"><span class="ico">◆</span><span><strong>Stabil</strong>, dapat diandalkan, tegas</span></div>
+          <div class="dmc-trait"><span class="ico">◆</span><span>Pondasi, orang lain bersandar pada Anda</span></div>
+          <div class="dmc-trait"><span class="ico">◆</span><span>Mekar dengan api (kehangatan) + logam (kanal)</span></div>
         </div>
-        <div class="dmc-strength">Status: <span class="val">KUAT</span> · 旺</div>
+        <div class="dmc-strength">Status: <span class="val">LEMAH</span> · None</div>
+      <!-- /TAFSIR -->
       </div>
 
     </div>
 
     <!-- 5 ELEMENT CARDS -->
     <div class="dm-elements">
-      <div class="dme dme-card el-mu">
-        <div class="dme-hz">木</div>
-        <div class="dme-name">Kayu · Mù</div>
-        <div class="dme-val">3.0</div>
-        <div class="dme-bar"><div class="dme-bar-fill" style="width:100%"></div></div>
-        <div class="dme-role" style="background:rgba(160,52,52,0.5);">忌 Kurang Mendukung</div>
-      </div>
       <div class="dme dme-card el-tu">
         <div class="dme-hz">土</div>
         <div class="dme-name">Tanah · Tǔ</div>
-        <div class="dme-val">2.0 <span class="dme-tag-self">★ DIRI</span></div>
-        <div class="dme-bar"><div class="dme-bar-fill" style="width:67%"></div></div>
+        <div class="dme-val">4.0 <span class="dme-tag-self">★ DIRI</span></div>
+        <div class="dme-bar"><div class="dme-bar-fill" style="width:100%"></div></div>
         <div class="dme-role">Penguasa Hari</div>
+      </div>
+      <div class="dme dme-card el-mu">
+        <div class="dme-hz">木</div>
+        <div class="dme-name">Kayu · Mù</div>
+        <div class="dme-val">2.0</div>
+        <div class="dme-bar"><div class="dme-bar-fill" style="width:50%"></div></div>
+        <div class="dme-role" style="background:rgba(45,106,79,0.7);">喜 Mendukung</div>
       </div>
       <div class="dme dme-card el-shui">
         <div class="dme-hz">水</div>
         <div class="dme-name">Air · Shuǐ</div>
-        <div class="dme-val">1.0</div>
-        <div class="dme-bar"><div class="dme-bar-fill" style="width:33%"></div></div>
+        <div class="dme-val">2.0</div>
+        <div class="dme-bar"><div class="dme-bar-fill" style="width:50%"></div></div>
         <div class="dme-role" style="background:rgba(45,106,79,0.7);">喜 Mendukung</div>
       </div>
       <div class="dme dme-card el-huo">
         <div class="dme-hz">火</div>
         <div class="dme-name">Api · Huǒ</div>
-        <div class="dme-val">1.0</div>
-        <div class="dme-bar"><div class="dme-bar-fill" style="width:33%"></div></div>
-        <div class="dme-role">Netral</div>
+        <div class="dme-val">2.0</div>
+        <div class="dme-bar"><div class="dme-bar-fill" style="width:50%"></div></div>
+        <div class="dme-role" style="background:rgba(160,52,52,0.5);">忌 Kurang Mendukung</div>
       </div>
       <div class="dme dme-card el-jin">
         <div class="dme-hz">金</div>
         <div class="dme-name">Logam · Jīn</div>
-        <div class="dme-val">1.0</div>
-        <div class="dme-bar"><div class="dme-bar-fill" style="width:33%"></div></div>
-        <div class="dme-role" style="background:rgba(45,106,79,0.7);">喜 Mendukung</div>
+        <div class="dme-val">0.0</div>
+        <div class="dme-bar"><div class="dme-bar-fill" style="width:0%"></div></div>
+        <div class="dme-role">Netral</div>
       </div>
     </div>
 
@@ -297,22 +299,22 @@
       <div class="ys-block fav">
         <div class="ys-eb">喜 用 神 · Yong Shen · Mendukung</div>
         <div class="ys-title">
-          <span class="ys-hz">火 金</span>
-          <span class="ys-name">Api &amp; Logam — Penyalur &amp; Pemangkas</span>
+          <span class="ys-hz">火 土</span>
+          <span class="ys-name">Air &amp; Kayu, Penopang &amp; Pengarah</span>
         </div>
         <div class="ys-body">
-          <strong>火</strong> (Huǒ · Api) menyalurkan energi <span class="hz">戊土</span> Anda yang berlimpah jadi karya ekspresif (seni, tulis, ide). <strong>金</strong> (Jīn · Logam) menjadi "kapak" yang memangkas pertumbuhan berlebih — disiplin &amp; struktur. Aktif pakai <strong>warna merah, oranye, putih, emas</strong>; bekerja di bidang ekspresi (penulisan, performance, fashion, lighting, broadcasting).
+<!-- TAFSIR:daymaster --><strong>水</strong> (Shuǐ · Air), pendingin & adaptasi; mengalirkan kekuatan jadi pergerakan. <strong>木</strong> (Mù · Kayu), pertumbuhan, idealisme, dan kreativitas yang menumbuhkan.<!-- /TAFSIR -->
         </div>
       </div>
 
       <div class="ys-block unfav">
         <div class="ys-eb">忌 神 · Ji Shen · Kurang Mendukung</div>
         <div class="ys-title">
-          <span class="ys-hz">水 木</span>
-          <span class="ys-name">Air &amp; Kayu — Penambah Dominasi</span>
+          <span class="ys-hz">火 土</span>
+          <span class="ys-name">Api &amp; Tanah, Pelumat &amp; Pemicu</span>
         </div>
         <div class="ys-body">
-          <strong>水</strong> (Shuǐ · Air) — Air berlebih membuat akar pohon membusuk; sudah ada 2.0, jangan ditambah. <strong>木</strong> (Mù · Kayu) — sesama Kayu memperberat dominasi Anda yang sudah 3.0. Hindari hijau berlebih, basah/lembap, dan industri kayu-perkayuan.
+<!-- TAFSIR:_jishen_body --><strong>火</strong> (Huǒ · Api), Api berlebih membakar habis sumber daya; hindari merah-jingga dominan, panas/kering, dan reaksi cepat tanpa pendinginan. <strong>土</strong> (Tǔ · Tanah), Tanah berlebih membuat stagnasi; hindari berat/lembam, kebiasaan menumpuk, dan resisten terhadap perubahan.<!-- /TAFSIR -->
         </div>
       </div>
 
@@ -321,12 +323,8 @@
   </main>
 
   <footer class="footer">
-    <div class="footer-caption">
-      Chelsey sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏財</span> (15–24) — menjajaki peluang & jaringan. Periode 15–34 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
-    </div>
     <div class="footer-meta">
-      <span>Halaman 6 / 23</span>
-      <span>Chelsey · Ramalan 命</span>
+      <span>Halaman 6 / 24</span>
     </div>
   </footer>
 </section>

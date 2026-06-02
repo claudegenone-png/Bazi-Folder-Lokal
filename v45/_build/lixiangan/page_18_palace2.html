@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Li Xiang An, Palace Detail 2</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-pal { grid-template-rows: 1fr !important; gap: 0; }
+  .pal-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 4mm; overflow: hidden; }
+  .pal-card { background: var(--bg-card); border: 0.4mm solid var(--gold-soft); border-radius: 2mm; padding: 4mm 5mm; display: grid; grid-template-rows: auto 1fr 22mm; gap: 2mm; overflow: hidden; position: relative; }
+  .pal-card.body { background: linear-gradient(180deg, #DCE8F1, #C9DBE9); border: 0.5mm solid #4A7BA0; }
+  .pal-card.now-da { background: linear-gradient(180deg, #FFF8E1, #F5EBD0); border: 0.5mm solid var(--gold); box-shadow: 0 0 0 0.3mm rgba(160,52,52,0.15); }
+  .pal-card.now-da::before { content: 'KINI · 大限'; position: absolute; top: -0.8mm; right: 2mm; background: var(--red); color: white; font-size: 5pt; padding: 0.4mm 1.5mm; border-radius: 0 0 1.5mm 1.5mm; letter-spacing: 1px; font-weight: 700; }
+
+  .pal-head { display: grid; grid-template-columns: auto 1fr auto; gap: 3mm; align-items: baseline; border-bottom: 0.2mm solid var(--gold-soft); padding-bottom: 1.5mm; }
+  .pal-name { display: block; line-height: 1.1; }
+  .pal-name .pn-id { display: block; font-family: 'Playfair Display', serif; font-size: 14pt; color: var(--red); font-weight: 700; letter-spacing: 0.3px; }
+  .pal-name .pn-meta { display: block; font-family: 'Inter', sans-serif; font-size: 7.5pt; color: var(--text-muted); letter-spacing: 0.5px; margin-top: 1mm; font-style: italic; }
+  .pal-name .pn-meta .hz { font-family: 'Noto Serif TC', serif; color: var(--text); font-style: normal; font-weight: 600; margin-left: 1.5mm; }
+  .pal-branch { text-align: center; font-family: 'Noto Serif TC', serif; font-size: 11pt; color: var(--text); font-weight: 600; }
+  .pal-branch .id { display: block; font-size: 5.5pt; color: var(--text-muted); font-style: italic; margin-top: 0.3mm; }
+  .pal-age { font-family: 'Playfair Display', serif; font-size: 8.5pt; color: var(--gold); font-weight: 700; text-align: right; letter-spacing: 0.5px; }
+  .pal-age .lbl { display: block; font-size: 5.5pt; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; font-weight: 500; margin-top: 0.3mm; }
+  .pal-card.now-da .pal-age { color: var(--red); }
+
+  .pal-stars { display: flex; gap: 2mm; flex-wrap: wrap; align-items: center; }
+  .pal-star { background: linear-gradient(135deg, white, #FFF8E1); border: 0.3mm solid var(--gold-soft); border-radius: 1.5mm; padding: 1.5mm 3mm; display: grid; grid-template-columns: auto auto; gap: 2mm; align-items: baseline; }
+  .pal-star.main { border-color: var(--gold); background: linear-gradient(135deg, #FFF8E1, #F5EBD0); }
+  .pal-star-hz { font-family: 'Noto Serif TC', serif; font-size: 11pt; color: var(--red); font-weight: 700; line-height: 1; }
+  .pal-star-id { font-size: 6.5pt; color: var(--text-muted); font-style: italic; letter-spacing: 0.3px; }
+
+  .pal-insight { background: linear-gradient(90deg, var(--gold-bg), transparent); border-left: 0.8mm solid var(--gold); border-radius: 0 1mm 1mm 0; padding: 1.5mm 3mm; font-family: 'Playfair Display', serif; font-size: 9.5pt; color: var(--red); line-height: 1.3; font-weight: 600; font-style: italic; }
+  .pal-insight .hz { font-family: 'Noto Serif TC', serif; color: var(--text); font-style: normal; font-weight: 700; }
+
+  .pal-body { font-size: 7.5pt; line-height: 1.45; color: var(--text); overflow: hidden; }
+  .pal-body strong { color: var(--red); }
+  .pal-body .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+
+  .pal-actions { display: grid; gap: 1.2mm; border-top: 0.2mm dashed var(--gold-soft); padding-top: 1.5mm; }
+  .pal-actions-header { font-family: 'Playfair Display', serif; font-size: 11pt; color: var(--green); font-weight: 700; letter-spacing: 0.5px; margin-bottom: 1.2mm; }
+  .pal-action { display: grid; grid-template-columns: 4mm 1fr; gap: 2mm; font-size: 7.5pt; line-height: 1.45; color: var(--text); }
+  .pal-action .ico { color: var(--green); font-weight: 700; }
+  .pal-action strong { color: var(--red); }
+  .pal-action .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">18</div>
+    <div class="h-titles"><div class="h-cn">財 疾 遷 僕</div><div class="h-id">Rezeki · Sehat · Pindah · Teman</div></div>
+    <div class="h-section">Bagian II · Zi Wei 紫微</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Kuda-Merah.svg" alt="Kuda"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Li Xiang An · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">午 Kuda</span></div>
+      <div class="subject-detail">Detail 4 istana operasional, sumber daya &amp; pergerakan</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">癸水 · Air Hujan</div></div>
+  </div>
+
+  <main class="content content-pal">
+    <div class="pal-grid">
+
+      <!-- 財帛 REZEKI -->
+      <div class="pal-card"><!-- TAFSIR:_p2_caibo --><div class="pal-head"><div class="pal-name"><span class="pn-id">Rezeki</span><span class="pn-meta">Cái Bó<span class="hz">財帛</span></span></div></div><div class="pal-body">Istana Rezeki dengan <span class="hz">天機</span> menandai pola finansial yang dinamis, sering berubah strategi. Penghasilan datang dari kombinasi kerja, ide, dan peluang. Cocok untuk peran konsultatif atau bisnis berbasis pengetahuan. Hati-hati pengeluaran impulsif, pisahkan dompet pribadi dan proyek agar arus kas tetap rapi.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Catat pemasukan dan pengeluaran harian secara konsisten.</span></div></div><!-- /TAFSIR --></div>
+
+      <!-- 疾厄 KESEHATAN -->
+      <div class="pal-card"><!-- TAFSIR:_p2_jie_e --><div class="pal-head"><div class="pal-name"><span class="pn-id">Kesehatan</span><span class="pn-meta">Jí È<span class="hz">疾厄</span></span></div></div><div class="pal-body">Istana Kesehatan dengan <span class="hz">貪狼</span> menandai kekuatan tubuh dasar yang baik, namun rentan keluhan saluran nafas, paru, dan saluran pencernaan terutama usus besar. Jaga pola makan teratur, hindari rokok dan alkohol berlebih. Olahraga ringan dan rutinitas tidur menjadi penjaga utama stamina jangka panjang.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Cek kesehatan rutin tahunan, fokus paru dan pencernaan.</span></div></div><!-- /TAFSIR --></div>
+
+      <!-- 遷移 PERPINDAHAN -->
+      <div class="pal-card"><!-- TAFSIR:_p2_qianyi --><div class="pal-head"><div class="pal-name"><span class="pn-id">Perpindahan</span><span class="pn-meta">Qiān Yí<span class="hz">遷移</span></span></div></div><div class="pal-body">Istana Perpindahan dengan <span class="hz">天同</span> memberi keberuntungan saat Li Xiang An bepergian, pindah kerja, atau pindah rumah. Perubahan lingkungan justru memicu kemajuan. Hindari aktivitas berlebih di malam hari saat perjalanan. Cocok membangun karir di kota besar atau lintas wilayah, dengan jaringan yang luas.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Jadikan perjalanan sebagai sarana belajar dan membangun relasi.</span></div></div><!-- /TAFSIR --></div>
+
+      <!-- 僕役 PERTEMANAN -->
+      <div class="pal-card"><!-- TAFSIR:_p2_puyi --><div class="pal-head"><div class="pal-name"><span class="pn-id">Pertemanan</span><span class="pn-meta">Pú Yì<span class="hz">僕役</span></span></div></div><div class="pal-body">Istana Sahabat menandai relasi pertemanan yang ramai namun butuh seleksi. Banyak teman senang berkumpul, namun yang benar-benar dapat dipercaya tidak banyak. Hindari relasi yang berbasis konsumsi alkohol dan gosip. Bangun lingkar kecil sahabat sejati yang bisa diajak kerja sama jangka panjang.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Investasikan waktu pada 3-5 sahabat inti.</span></div></div><!-- /TAFSIR --></div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-meta"><span>Halaman 18 / 24</span></div>
+  </footer>
+</section>
+</body>
+</html>

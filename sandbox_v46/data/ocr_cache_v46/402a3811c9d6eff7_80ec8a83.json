@@ -1,0 +1,31 @@
+{
+  "screen_type": "liu_nian",
+  "name_id": "YUDY L",
+  "gender_hz": "陰男",
+  "birth_lunar_text": "農曆民國 52 年 1 月 5 日 13 時 30 分",
+  "liu_nian_per_year": [
+    {
+      "year_gregorian": 2027,
+      "year_hz": "丁未",
+      "age": 65,
+      "paragraph_hz": "今年所付出的勞力與腦力，表面上看起來能與金錢成對比。能得到貴人的幫助，實質上可以達到相當的理想。心情比較不穩定。事業會變動。官符：官符入命來，官事及悲衰，父母妻財剋，心煩底處災。火殺：火殺流年入命主，官非口舌刑剋有，孝服疾病鬼賊防，持過運至亦享通。欲防小人所害。忌一四七或十一月之令，凡事小心。閒事少管，可保平安。易招陰邪，怪疾，小人暗害，損財。數厄、搜於交際手腕，較無雄心壯志，滿足於現狀者居多；與生身父母之緣分較為淡薄，常為人養子女或入贅者居多；又養乃為長生之入口，故只要努力進取，仍可獲得較高且大的成就。",
+      "_uncertain": true,
+      "_ambiguous_chars": [
+        "搜 (might be 疏 — 'lemah dalam pergaulan sosial')"
+      ],
+      "id_summary": [
+        "Jerih payah setara dengan hasil finansial; mendapat bantuan orang berpengaruh dan cita-cita cukup tinggi yang dapat tercapai.",
+        "Suasana hati tidak stabil, karier mengalami perubahan.",
+        "Bintang Guan Fu masuk: rawan sengketa hukum/birokrasi, hubungan dengan orang tua dan pasangan tertekan, banyak kekhawatiran.",
+        "Bintang Huo Sha masuk: waspadai sengketa lisan, penyakit, dan orang jahat; hindari bulan ke-1, 4, 7, atau 11—kelola urusan dengan hati-hati agar selamat; jangan ikut campur urusan orang lain demi menghindari kerugian finansial dan gangguan spiritual.",
+        "Kemampuan sosial kurang kuat dan cenderung puas dengan kondisi yang ada; hubungan dengan orang tua kandung renggang, namun dengan ketekunan tetap bisa meraih pencapaian besar."
+      ],
+      "sub_warnings": [
+        "官符：官符入命來，官事及悲衰，父母妻財剋，心煩底處災。",
+        "火殺：火殺流年入命主，官非口舌刑剋有，孝服疾病鬼賊防，持過運至亦享通。欲防小人所害。忌一四七或十一月之令，凡事小心。閒事少管，可保平安。易招陰邪，怪疾，小人暗害，損財。"
+      ]
+    }
+  ],
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.31 (2).jpeg",
+  "_hash": "402a3811c9d6eff7_80ec8a83"
+}

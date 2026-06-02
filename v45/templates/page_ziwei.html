@@ -2,14 +2,66 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Lin Ru Yi — 紫微斗數 12 Palace</title>
+<title>Lin Ru Yi, 紫微斗數 12 Palace</title>
 <link rel="stylesheet" href="style.css">
 <style>
   /* PAGE: Zi Wei 12 Palace Grid */
   .content-ziwei {
-    grid-template-rows: 1fr !important;
-    gap: 0;
+    grid-template-rows: 1fr 34mm !important;
+    gap: 3mm;
   }
+
+  /* Footer explainer (cara baca bagan) */
+  .zw-explain {
+    background: linear-gradient(180deg, #FFFEF8 0%, #F5EBD0 100%);
+    border: 0.4mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 3mm 5mm;
+    display: grid;
+    grid-template-columns: 22mm 1fr;
+    gap: 5mm;
+    align-items: center;
+    overflow: hidden;
+  }
+  .zw-explain-title {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 14pt; color: var(--red);
+    font-weight: 700; line-height: 1.1;
+    text-align: center;
+    border-right: 0.3mm solid var(--gold-soft);
+    padding-right: 3mm;
+  }
+  .zw-explain-title .id-sub {
+    display: block; font-family: 'Inter', sans-serif;
+    font-size: 5.5pt; color: var(--text-muted);
+    letter-spacing: 1.5px; margin-top: 1mm;
+    text-transform: uppercase; font-weight: 600;
+  }
+  .zw-explain-body {
+    font-size: 6.8pt; line-height: 1.45;
+    color: var(--text); min-width: 0;
+    display: grid; gap: 1.2mm;
+    align-content: center;
+  }
+  .zw-explain-body strong { color: var(--red); }
+  .zw-explain-body .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red); font-weight: 600;
+  }
+  .zw-explain-row {
+    display: grid;
+    grid-template-columns: 22mm 1fr;
+    column-gap: 3mm;
+    align-items: start;
+  }
+  .zw-explain-label {
+    font-size: 6pt; letter-spacing: 1px;
+    color: var(--gold); font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.55;
+    padding-top: 0.2mm;
+  }
+  .zw-explain-text { display: block; }
 
   .zw-grid {
     display: grid;
@@ -24,7 +76,8 @@
     border-radius: 1.5mm;
     padding: 2mm 2.2mm;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 1fr;
+    align-content: center;
     gap: 1mm;
     overflow: hidden;
     position: relative;
@@ -147,10 +200,15 @@
     border-radius: 2mm;
     padding: 4mm 5mm;
     display: grid;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
     gap: 2mm;
     overflow: hidden;
     position: relative;
+  }
+  .zwc-name-block {
+    display: flex; flex-direction: column;
+    justify-content: flex-start; align-items: center;
+    gap: 1.5mm; min-height: 0;
   }
   .zw-center::before {
     content: '紫'; position: absolute;
@@ -216,6 +274,22 @@
     justify-content: center;
     border-top: 0.2mm solid var(--gold-soft);
     padding-top: 2mm;
+  }
+  .zwc-help {
+    display: grid;
+    gap: 1.8mm;
+    align-content: center;
+    font-size: 7.2pt; line-height: 1.45;
+    color: var(--text);
+    padding-top: 2mm;
+  }
+  .zwc-help-row { display: block; }
+  .zwc-help strong { color: var(--red); }
+  .zwc-help .lifehint {
+    background: linear-gradient(180deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.3mm solid var(--gold);
+    padding: 0.3mm 1.5mm; border-radius: 1mm;
+    font-weight: 600;
   }
   .zwc-leg {
     font-size: 5.5pt; color: var(--text);
@@ -330,7 +404,7 @@
       <div class="zw-center">
         <div class="zwc-eyebrow">命 盤 中 樞 · Pusat Bagan</div>
         <div class="zwc-title">紫 微 斗 數</div>
-        <div class="zwc-subtitle">Zǐ Wēi Dǒu Shù — Pemetaan Bintang Ungu</div>
+        <div class="zwc-subtitle">Zǐ Wēi Dǒu Shù, Pemetaan Bintang Ungu</div>
 
         <div class="zwc-grid">
           <div class="zwc-row">
@@ -418,7 +492,7 @@
         <div class="zw-foot"><span class="age">66–75</span><span>限 7</span></div>
       </div>
 
-      <!-- 丑 僕役 Pertemanan — KINI -->
+      <!-- 丑 僕役 Pertemanan, KINI -->
       <div class="zw-cell now" style="grid-column:2;grid-row:4">
         <div class="zw-head">
           <div class="zw-palace">僕役<span class="id">TEMAN</span></div>
@@ -456,15 +530,34 @@
       </div>
 
     </div>
+
+    <!-- PENJELASAN BAGAN -->
+    <div class="zw-explain">
+      <div class="zw-explain-title">
+        紫微<br>斗數
+        <span class="id-sub">Cara Baca</span>
+      </div>
+      <div class="zw-explain-body">
+        <div class="zw-explain-row">
+          <span class="zw-explain-label">Bagan ini</span>
+          <span class="zw-explain-text">Peta nasib <strong>Zi Wei Dou Shu</strong> berisi <strong>12 istana kehidupan</strong>, masing-masing menempati 1 cabang shio dan diisi bintang-bintang yang membentuk nasib bidang itu.</span>
+        </div>
+        <div class="zw-explain-row">
+          <span class="zw-explain-label">Cara baca</span>
+          <span class="zw-explain-text">Mulai dari istana <strong>Diri</strong> (kotak emas, sorotan utama). Tiap istana = 1 bidang hidup, bintang di dalamnya = energi yang bekerja di bidang itu.</span>
+        </div>
+        <div class="zw-explain-row">
+          <span class="zw-explain-label">Lebih lanjut</span>
+          <span class="zw-explain-text">Halaman berikutnya akan menjelaskan tiap area satu per satu, lengkap dengan apa yang perlu Anda perhatikan dan tindakan praktisnya.</span>
+        </div>
+      </div>
+    </div>
+
   </main>
 
   <footer class="footer">
-    <div class="footer-caption">
-      Saat ini Anda berada di <span style="font-family:'Noto Serif TC',serif;color:var(--red)">大限 僕役</span> (umur 56-65, Istana Pertemanan) — fokus dekade ini ada di pertemanan &amp; jejaring; <span style="font-family:'Noto Serif TC',serif;color:var(--red)">紫微</span> (Bintang Kaisar) di sini berarti teman-teman bermutu pemimpin.
-    </div>
     <div class="footer-meta">
-      <span>Halaman 16 / 23</span>
-      <span>Lin Ru Yi · Ramalan 命</span>
+      <span>Halaman 16 / 24</span>
     </div>
   </footer>
 </section>

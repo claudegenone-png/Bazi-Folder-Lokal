@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Yudy L Ramalan PDF</title>
-<link rel="stylesheet" href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/_build/yudyl/style.css">
+<link rel="stylesheet" href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/_build/yudyl/style.css">
 <style>
 
 /* === page_01_cover.html === */
@@ -2024,357 +2024,6 @@
   }
 
 
-/* === page_15_ziwei_opener.html === */
-
-  .page.opener {
-    padding: 0;
-    background: radial-gradient(ellipse at center, #FFF8E1 0%, var(--bg) 70%, var(--gold-bg) 100%);
-  }
-  .opener-frame {
-    flex: 1; margin: 14mm;
-    border: 0.5mm double var(--gold);
-    border-radius: 2mm;
-    height: calc(297mm - 28mm);
-    display: grid;
-    grid-template-rows: auto 1fr auto auto;
-    gap: 6mm; padding: 16mm 14mm;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-  }
-  .opener-frame::before, .opener-frame::after {
-    content: ''; position: absolute;
-    width: 24mm; height: 24mm;
-    border: 0.4mm solid var(--gold);
-    pointer-events: none;
-  }
-  .opener-frame::before { top: 4mm; left: 4mm; border-right: none; border-bottom: none; }
-  .opener-frame::after { bottom: 4mm; right: 4mm; border-left: none; border-top: none; }
-
-  .op-watermark {
-    position: absolute; font-family: 'Noto Serif TC', serif;
-    font-size: 200pt; color: rgba(139,26,26,0.04);
-    font-weight: 700; pointer-events: none;
-    top: 50%; left: 50%; transform: translate(-50%,-50%);
-    line-height: 1;
-  }
-
-  .op-eyebrow {
-    font-family: 'Inter', sans-serif; font-size: 10pt;
-    letter-spacing: 12px; color: var(--gold);
-    text-transform: uppercase; font-weight: 600;
-    border-bottom: 0.3mm solid var(--gold-soft);
-    padding-bottom: 6mm; padding-top: 4mm;
-  }
-  .op-eyebrow .roman {
-    font-family: 'Playfair Display', serif;
-    font-size: 16pt; color: var(--red);
-    font-weight: 700; letter-spacing: 4px;
-    display: block; margin-top: 2mm;
-  }
-
-  .op-hero {
-    display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-    gap: 4mm;
-  }
-  .op-cn-big {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 110pt; font-weight: 700;
-    color: var(--red); line-height: 0.9;
-    letter-spacing: 12px;
-    text-shadow: 0 3mm 8mm rgba(139,26,26,0.15);
-  }
-  .op-cn-sub {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 22pt; font-weight: 600;
-    color: var(--text); letter-spacing: 8px;
-    margin-top: 2mm;
-  }
-  .op-pinyin {
-    font-family: 'Playfair Display', serif;
-    font-size: 14pt; font-style: italic;
-    color: var(--text); letter-spacing: 2px;
-    margin-top: 2mm;
-  }
-  .op-id {
-    font-family: 'Inter', sans-serif; font-size: 11pt;
-    color: var(--text-muted); letter-spacing: 2px;
-    margin-top: 1mm; max-width: 140mm;
-    line-height: 1.5;
-  }
-
-  .op-pages {
-    display: grid; grid-template-columns: repeat(2, 1fr);
-    gap: 3mm;
-    border-top: 0.3mm solid var(--gold-soft);
-    padding-top: 4mm;
-  }
-  .op-page-card {
-    background: var(--bg-card);
-    border: 0.3mm solid var(--gold-soft);
-    border-radius: 1.5mm;
-    padding: 2.5mm 3mm;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 2.5mm; align-items: center;
-    overflow: hidden; min-width: 0;
-    text-align: left;
-  }
-  .op-page-num {
-    font-family: 'Playfair Display', serif;
-    font-size: 13pt; color: var(--gold);
-    font-weight: 700;
-  }
-  .op-page-info { min-width: 0; overflow: hidden; }
-  .op-page-cn {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 10pt; color: var(--red);
-    font-weight: 600; letter-spacing: 1px;
-  }
-  .op-page-id {
-    font-size: 7pt; color: var(--text-muted);
-    letter-spacing: 0.3px;
-  }
-
-  .op-credits {
-    font-size: 7.5pt; color: var(--text-muted);
-    letter-spacing: 2px; text-transform: uppercase;
-    font-style: italic;
-  }
-
-
-/* === page_ziwei.html === */
-
-  /* PAGE: Zi Wei 12 Palace Grid */
-  .content-ziwei {
-    grid-template-rows: 1fr !important;
-    gap: 0;
-  }
-
-  .zw-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 1.8mm;
-    overflow: hidden;
-  }
-  .zw-cell {
-    background: var(--bg-card);
-    border: 0.3mm solid var(--gold-soft);
-    border-radius: 1.5mm;
-    padding: 2mm 2.2mm;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    gap: 1mm;
-    overflow: hidden;
-    position: relative;
-    min-width: 0; min-height: 0;
-  }
-
-  .zw-cell.life {
-    background: linear-gradient(180deg, #FFF8E1 0%, #F5EBD0 100%);
-    border: 0.5mm solid var(--gold);
-    box-shadow: 0 0 0 0.3mm rgba(201,169,97,0.3);
-  }
-  .zw-cell.life::before {
-    content: '★ 命 HIDUP'; position: absolute;
-    top: -0.8mm; right: 1.5mm;
-    background: var(--red); color: white;
-    font-size: 5pt; padding: 0.3mm 1.5mm;
-    border-radius: 0 0 1.5mm 1.5mm; letter-spacing: 1px; font-weight: 700;
-  }
-  .zw-cell.body::before {
-    content: '☉ 身 BADAN'; position: absolute;
-    top: -0.8mm; right: 1.5mm;
-    background: #4A7BA0; color: white;
-    font-size: 5pt; padding: 0.3mm 1.5mm;
-    border-radius: 0 0 1.5mm 1.5mm; letter-spacing: 1px; font-weight: 700;
-  }
-  .zw-cell.now {
-    border-color: var(--red);
-    box-shadow: 0 0 0 0.4mm rgba(160,52,52,0.25);
-  }
-  .zw-cell.now::after {
-    content: 'KINI'; position: absolute;
-    bottom: 0.5mm; left: 1.5mm;
-    background: var(--red); color: white;
-    font-size: 4.5pt; padding: 0.2mm 1.2mm;
-    border-radius: 1mm; letter-spacing: 1px; font-weight: 700;
-  }
-
-  .zw-head {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 1mm; align-items: baseline;
-    border-bottom: 0.2mm solid var(--gold-soft);
-    padding-bottom: 0.8mm;
-  }
-  .zw-palace {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 8.5pt; color: var(--red);
-    font-weight: 700; letter-spacing: 1px;
-    line-height: 1.1;
-  }
-  .zw-palace .id {
-    display: block;
-    font-family: 'Inter', sans-serif;
-    font-size: 5.2pt; color: var(--text-muted);
-    letter-spacing: 0.6px; font-weight: 500;
-    text-transform: uppercase; margin-top: 0.2mm;
-  }
-  .zw-branch {
-    text-align: right;
-    font-family: 'Noto Serif TC', serif;
-    font-size: 9.5pt; color: var(--text);
-    font-weight: 600; line-height: 1;
-  }
-  .zw-branch .id {
-    display: block;
-    font-size: 5pt; color: var(--text-muted);
-    letter-spacing: 0.4px;
-  }
-
-  .zw-stars {
-    display: flex; flex-direction: column;
-    gap: 1mm; align-content: start;
-    overflow: hidden;
-  }
-  .zw-star {
-    display: flex; flex-direction: column; align-items: flex-start; gap: 0.2mm;
-    font-family: 'Noto Serif TC', serif;
-    overflow: hidden;
-  }
-  .zw-star.main {
-    font-size: 9pt; color: var(--text); font-weight: 600;
-  }
-  .zw-star.minor {
-    font-size: 7.2pt; color: var(--text-muted); font-weight: 500;
-  }
-  .zw-star .id {
-    font-family: 'Inter', sans-serif;
-    font-size: 5.2pt; color: var(--text-muted);
-    letter-spacing: 0.2px; font-style: italic;
-    line-height: 1.15;
-    overflow: hidden;
-  }
-  .zw-star .hua {
-    display: inline-block;
-    font-family: 'Inter', sans-serif; font-size: 5.5pt;
-    color: white; padding: 0.2mm 1mm;
-    border-radius: 0.8mm; letter-spacing: 0.5px;
-    margin-left: 0.5mm; font-weight: 700;
-  }
-  .hua.lu  { background: var(--green); }
-  .hua.qua { background: var(--red-bad); }
-  .hua.ke  { background: var(--gold); }
-  .hua.ji  { background: #6B5B3F; }
-
-  .zw-foot {
-    display: flex; justify-content: space-between;
-    font-size: 5.5pt; color: var(--text-muted);
-    letter-spacing: 0.3px;
-    border-top: 0.2mm dashed var(--gold-soft);
-    padding-top: 0.6mm;
-  }
-  .zw-foot .age { font-weight: 600; color: var(--text); }
-  .zw-cell.now .zw-foot .age { color: var(--red); }
-
-  /* CENTER INFO BOX */
-  .zw-center {
-    grid-column: 2 / 4; grid-row: 2 / 4;
-    background: linear-gradient(135deg, #FFFEF8 0%, #F5EBD0 100%);
-    border: 0.5mm solid var(--gold);
-    border-radius: 2mm;
-    padding: 4mm 5mm;
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
-    gap: 2mm;
-    overflow: hidden;
-    position: relative;
-  }
-  .zw-center::before {
-    content: '紫'; position: absolute;
-    top: -8mm; right: -6mm;
-    font-family: 'Noto Serif TC', serif;
-    font-size: 80pt; color: rgba(139,26,26,0.04);
-    font-weight: 700; line-height: 1;
-    pointer-events: none;
-  }
-  .zwc-eyebrow {
-    font-family: 'Inter', sans-serif; font-size: 6pt;
-    color: var(--gold); letter-spacing: 3px;
-    text-transform: uppercase; font-weight: 700;
-    text-align: center;
-  }
-  .zwc-title {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 18pt; color: var(--red);
-    text-align: center; letter-spacing: 6px;
-    font-weight: 700; line-height: 1;
-  }
-  .zwc-subtitle {
-    font-family: 'Playfair Display', serif;
-    font-size: 9pt; font-style: italic;
-    color: var(--text-muted); text-align: center;
-    border-bottom: 0.2mm solid var(--gold-soft);
-    padding-bottom: 2mm;
-  }
-  .zwc-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2mm 4mm;
-    align-content: center;
-  }
-  .zwc-row {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 2mm; align-items: baseline;
-    overflow: hidden;
-  }
-  .zwc-row .lbl {
-    font-family: 'Inter', sans-serif;
-    font-size: 5.5pt; color: var(--gold);
-    letter-spacing: 1.5px; text-transform: uppercase;
-    font-weight: 600;
-    padding-bottom: 0.5mm;
-    border-bottom: 0.2mm solid var(--gold-soft);
-  }
-  .zwc-row .val {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 11pt; color: var(--red);
-    font-weight: 700; line-height: 1;
-  }
-  .zwc-row .val .id {
-    display: block;
-    font-family: 'Inter', sans-serif; font-size: 5.5pt;
-    color: var(--text-muted); font-weight: 500;
-    margin-top: 0.5mm; letter-spacing: 0.3px;
-    font-style: italic;
-  }
-  .zwc-legend {
-    display: flex; gap: 2mm; flex-wrap: wrap;
-    justify-content: center;
-    border-top: 0.2mm solid var(--gold-soft);
-    padding-top: 2mm;
-  }
-  .zwc-leg {
-    font-size: 5.5pt; color: var(--text);
-    display: flex; align-items: center; gap: 1mm;
-    font-weight: 500;
-  }
-  .zwc-leg .dot {
-    width: 2.5mm; height: 2mm; border-radius: 0.5mm;
-    color: white; font-size: 4.5pt;
-    font-family: 'Inter', sans-serif; font-weight: 700;
-    display: flex; align-items: center; justify-content: center;
-  }
-  .zwc-leg .hz {
-    font-family: 'Noto Serif TC', serif;
-    font-weight: 700; color: var(--red);
-  }
-
-
 /* === page_17_palace1.html === */
 
   .content-pal { grid-template-rows: 1fr !important; gap: 0; }
@@ -3375,7 +3024,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
     </div>
 
     <div>
-      <div class="cv-shio-frame"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Harimau-Merah.svg" alt="Harimau"></div>
+      <div class="cv-shio-frame"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Harimau-Merah.svg" alt="Harimau"></div>
       <div class="cv-name-row">
         <div class="cv-name">Yudy L</div>
         <div class="cv-name-cn">尤迪</div>
@@ -3387,7 +3036,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
         <div class="row"><span class="lbl">Waktu Lahir</span><span class="colon">:</span><span class="val">pukul 13:30 <em>(siang · 未時)</em></span></div>
         <div class="row"><span class="lbl">Shio</span><span class="colon">:</span><span class="val"><span class="hz">寅</span> Harimau</span></div>
         <div class="row"><span class="lbl">Penguasa Hari</span><span class="colon">:</span><span class="val">Air Sungai <span class="hz">壬水</span></span></div>
-        <div class="row"><span class="lbl">Elemen Utama</span><span class="colon">:</span><span class="val">Kayu &amp; Api <span class="hz">木 火</span></span></div>
+        <div class="row"><span class="lbl">Elemen Utama</span><span class="colon">:</span><span class="val">Kayu <span class="hz">木</span></span></div>
       </div>
     </div>
 
@@ -3416,62 +3065,47 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
       </div>
 
       <div class="toc-list">
-
-        <!-- BAGIAN 0: PENDAHULUAN -->
+<!--TOC_AUTO-->
         <div class="toc-section">
           <div class="num">序</div>
           <div class="title">序 言<span class="id">Pendahuluan · Pages 1–4</span></div>
         </div>
         <div class="toc-rows">
-          <div class="toc-row"><div class="pg">01</div><div class="ico">封</div><div class="name">Cover<span class="gloss">— Sampul</span></div><div></div></div>
-          <div class="toc-row"><div class="pg">02</div><div class="ico">目</div><div class="name">Daftar Isi<span class="gloss">— Mù Lù 目錄 (halaman ini)</span></div><div></div></div>
-          <div class="toc-row"><div class="pg">03</div><div class="ico">引</div><div class="name">Pengantar &amp; Cara Membaca<span class="gloss">— Yǐn Yán 引言</span></div><div></div></div>
-          <div class="toc-row"><div class="pg">04</div><div class="ico">柱</div><div class="name"><strong>四柱</strong>Profil &amp; Empat Pilar<span class="gloss">— Sì Zhù · Empat Pilar</span></div><div></div></div>
+          <div class="toc-row"><div class="pg">01</div><div class="ico">命</div><div class="name"><strong>命</strong>SAMPUL</div><div></div></div>
+          <div class="toc-row"><div class="pg">02</div><div class="ico">目</div><div class="name"><strong>目錄</strong>DAFTAR ISI</div><div></div></div>
+          <div class="toc-row"><div class="pg">03</div><div class="ico">引</div><div class="name"><strong>引言</strong>PENGANTAR</div><div></div></div>
+          <div class="toc-row"><div class="pg">04</div><div class="ico">身</div><div class="name"><strong>身份</strong>PROFIL DIRI</div><div></div></div>
         </div>
-
-        <!-- BAGIAN I: BAZI -->
         <div class="toc-section">
           <div class="num">壹</div>
-          <div class="title">八 字 四 柱<span class="id">Bagian I · BaZi · Pages 5–14</span></div>
+          <div class="title">八字 / 紫微<span class="id">Bagian Inti · Pages 5–17</span></div>
         </div>
         <div class="toc-rows">
-          <div class="toc-row"><div class="pg">05</div><div class="ico">·</div><div class="name">Pembuka Bab — 八字 BaZi</div><div></div></div>
-          <div class="toc-row"><div class="pg">06</div><div class="ico">主</div><div class="name"><strong>日主</strong>Penguasa Hari &amp; 五行 Wu Xing Radar<span class="gloss">— Rì Zhǔ + Wǔ Xíng</span></div><div></div></div>
-          <div class="toc-row"><div class="pg">07</div><div class="ico">配</div><div class="name"><strong>婚配</strong>Kompatibilitas Jodoh<span class="gloss">— Hūn Pèi · Kompatibilitas</span></div><div></div></div>
-          <div class="toc-row"><div class="pg">08</div><div class="ico">情</div><div class="name"><strong>性情</strong>Kepribadian<span class="gloss">— Xìng Qíng · Kepribadian</span></div><div></div></div>
-          <div class="toc-row"><div class="pg">09</div><div class="ico">論</div><div class="name"><strong>全局總論</strong>Pandangan Keluarga<span class="gloss">— Quán Jú Zǒng Lùn</span></div><div></div></div>
-          <div class="toc-row"><div class="pg">10</div><div class="ico">煞</div><div class="name"><strong>神煞</strong>Bintang Nasib<span class="gloss">— Shén Shà · Bintang Berkah</span></div><div></div></div>
-          <div class="toc-row"><div class="pg">11</div><div class="ico">財</div><div class="name"><strong>財富</strong>Kekayaan &amp; Rezeki<span class="gloss">— Cái Fù · Rezeki</span></div><div></div></div>
-          <div class="toc-row"><div class="pg">12</div><div class="ico">業</div><div class="name"><strong>事業</strong>Karir &amp; Profesi<span class="gloss">— Shì Yè · Karir</span></div><div></div></div>
-          <div class="toc-row"><div class="pg">13</div><div class="ico">宅</div><div class="name"><strong>陽宅</strong>Feng Shui Hunian<span class="gloss">— Yáng Zhái · Home Feng Shui</span></div><div></div></div>
-          <div class="toc-row"><div class="pg">14</div><div class="ico">運</div><div class="name"><strong>大運</strong>Garis Hidup<span class="gloss">— Dà Yùn · Siklus 10 Tahunan</span></div><div></div></div>
+          <div class="toc-row"><div class="pg">05</div><div class="ico">八</div><div class="name"><strong>八字</strong>BA ZI</div><div></div></div>
+          <div class="toc-row"><div class="pg">06</div><div class="ico">日</div><div class="name"><strong>日主</strong>PENGUASA HARI</div><div></div></div>
+          <div class="toc-row"><div class="pg">07</div><div class="ico">婚</div><div class="name"><strong>婚配</strong>PASANGAN</div><div></div></div>
+          <div class="toc-row"><div class="pg">08</div><div class="ico">性</div><div class="name"><strong>性情</strong>KEPRIBADIAN</div><div></div></div>
+          <div class="toc-row"><div class="pg">09</div><div class="ico">家</div><div class="name"><strong>家庭</strong>KELUARGA</div><div></div></div>
+          <div class="toc-row"><div class="pg">10</div><div class="ico">神</div><div class="name"><strong>神煞</strong>BINTANG NASIB</div><div></div></div>
+          <div class="toc-row"><div class="pg">11</div><div class="ico">財</div><div class="name"><strong>財富</strong>REZEKI</div><div></div></div>
+          <div class="toc-row"><div class="pg">12</div><div class="ico">事</div><div class="name"><strong>事業</strong>KARIR</div><div></div></div>
+          <div class="toc-row"><div class="pg">13</div><div class="ico">陽</div><div class="name"><strong>陽宅</strong>RUMAH</div><div></div></div>
+          <div class="toc-row"><div class="pg">14</div><div class="ico">大</div><div class="name"><strong>大運</strong>DA YUN</div><div></div></div>
+          <div class="toc-row"><div class="pg">15</div><div class="ico">命</div><div class="name"><strong>命宮一</strong>PALACE INTI</div><div></div></div>
+          <div class="toc-row"><div class="pg">16</div><div class="ico">命</div><div class="name"><strong>命宮二</strong>PALACE OPERASIONAL</div><div></div></div>
+          <div class="toc-row"><div class="pg">17</div><div class="ico">命</div><div class="name"><strong>命宮三</strong>PALACE WARISAN</div><div></div></div>
         </div>
-
-        <!-- BAGIAN II: ZI WEI -->
-        <div class="toc-section">
-          <div class="num">貳</div>
-          <div class="title">紫 微 斗 數<span class="id">Bagian II · Zi Wei · Pages 15–19</span></div>
-        </div>
-        <div class="toc-rows">
-          <div class="toc-row"><div class="pg">15</div><div class="ico">·</div><div class="name">Pembuka Bab — 紫微 Zi Wei</div><div></div></div>
-          <div class="toc-row"><div class="pg">16</div><div class="ico">宫</div><div class="name"><strong>十二宮</strong>Overview 12 Istana<span class="gloss">— Shí Èr Gōng · 12 Palaces</span></div><div></div></div>
-          <div class="toc-row"><div class="pg">17</div><div class="ico">命</div><div class="name">Detail: <strong>命 兄 夫 子</strong>Diri · Saudara · Pasangan · Anak</div><div></div></div>
-          <div class="toc-row"><div class="pg">18</div><div class="ico">財</div><div class="name">Detail: <strong>財 疾 遷 僕</strong>Rezeki · Sehat · Pindah · Teman</div><div></div></div>
-          <div class="toc-row"><div class="pg">19</div><div class="ico">官</div><div class="name">Detail: <strong>官 田 福 父</strong>Karir · Properti · Berkah · Orangtua</div><div></div></div>
-        </div>
-
-        <!-- BAGIAN III: PENUTUP -->
         <div class="toc-section">
           <div class="num">叁</div>
-          <div class="title">總 結<span class="id">Bagian III · Penutup · Pages 20–23</span></div>
+          <div class="title">總 結<span class="id">Penutup · Pages 18–21</span></div>
         </div>
         <div class="toc-rows">
-          <div class="toc-row"><div class="pg">20</div><div class="ico">結</div><div class="name"><strong>總結</strong>Kesimpulan Bagan<span class="gloss">— Zǒng Jié · Gambaran Besar Synthesis</span></div><div></div></div>
-          <div class="toc-row"><div class="pg">21</div><div class="ico">為</div><div class="name"><strong>行動</strong>Saran Aksi 5 Langkah<span class="gloss">— Xíng Dòng · Practical Steps</span></div><div></div></div>
-          <div class="toc-row"><div class="pg">22</div><div class="ico">辭</div><div class="name"><strong>辭典</strong>Glossary Istilah<span class="gloss">— Cí Diǎn · Daftar Istilah</span></div><div></div></div>
-          <div class="toc-row"><div class="pg">23</div><div class="ico">告</div><div class="name"><strong>告白</strong>Disclaimer &amp; Etika<span class="gloss">— Gào Bái · Ethics</span></div><div></div></div>
+          <div class="toc-row"><div class="pg">18</div><div class="ico">總</div><div class="name"><strong>總結</strong>KESIMPULAN</div><div></div></div>
+          <div class="toc-row"><div class="pg">19</div><div class="ico">合</div><div class="name"><strong>合一</strong>SINTESIS</div><div></div></div>
+          <div class="toc-row"><div class="pg">20</div><div class="ico">詞</div><div class="name"><strong>詞彙</strong>GLOSARIUM</div><div></div></div>
+          <div class="toc-row"><div class="pg">21</div><div class="ico">免</div><div class="name"><strong>免責</strong>PENAFIAN</div><div></div></div>
         </div>
-
+<!--/TOC_AUTO-->
       </div>
 
       <div class="toc-foot">
@@ -3485,7 +3119,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
       Bagan ini bukan ramalan kaku, melainkan <em>peta pola</em>: 23 halaman menyajikan karakter, hubungan, fase hidup, dan saran praktis berdasarkan 四柱論命 + 紫微斗數 + 陽宅.
     </div>
     <div class="footer-meta">
-      <span>Halaman 2 / 23</span>
+      <span>Halaman 2 / 21</span>
       <span>Ramalan 命</span>
     </div>
   </footer>
@@ -3564,7 +3198,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
       Bagan dibaca seperti peta lama: jangan ditelan mentah, juga jangan dibuang. Kebijaksanaannya muncul saat Anda <em>memeriksa diri di cerminnya</em>.
     </div>
     <div class="footer-meta">
-      <span>Halaman 3 / 23</span>
+      <span>Halaman 3 / 21</span>
       <span>Ramalan 命</span>
     </div>
   </footer>
@@ -3585,7 +3219,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
 
   <!-- BAR SUBJEK -->
   <div class="subject-bar">
-    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Harimau-Merah.svg" alt="Harimau"></div>
     <div class="subject-meta">
       <div class="subject-name">Yudy L · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
       <div class="subject-detail">29 Januari 1963 · 13:30 · Pria · 民國 52 年 1 月 5 日</div>
@@ -3695,8 +3329,8 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
         </div>
         <div class="wux-tags">
           <span class="wux-tag self"><span class="hz">水</span>DIRI · 4.0</span>
-          <span class="wux-tag fav"><span class="hz">木 火</span>MENDUKUNG</span>
-          <span class="wux-tag unfav"><span class="hz">金 水</span>KURANG MENDUKUNG</span>
+          <span class="wux-tag fav"><span class="hz">木</span>MENDUKUNG</span>
+          <span class="wux-tag unfav"><span class="hz">水</span>KURANG MENDUKUNG</span>
         </div>
       </div>
     </div>
@@ -3705,28 +3339,28 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
     <div class="format-strip">
 
       <div class="fmt-card">
-        <div class="fmt-glyph">比肩</div>
+        <div class="fmt-glyph">正官</div>
         <div class="fmt-meta">
           <div class="fmt-eyebrow">格 局 · Format</div>
-          <div class="fmt-name">比肩格</div>
-          <div class="fmt-pinyin">Bi Jian Ge — "Pundak Sama"</div>
+          <div class="fmt-name">正官格</div>
+          <div class="fmt-pinyin">Zheng Guan Ge — "Penjaga Disiplin"</div>
         </div>
       </div>
 
       <div class="ys-card fav">
-        <div class="ys-glyph">木<span style="opacity:0.5">·</span>火</div>
+        <div class="ys-glyph">木</div>
         <div class="ys-meta">
           <div class="ys-eyebrow">喜 用 神</div>
-          <div class="ys-name">Kayu &amp; Api</div>
+          <div class="ys-name">Kayu</div>
           <div class="ys-desc">Penopang &amp; Pengarah</div>
         </div>
       </div>
 
       <div class="ys-card unfav">
-        <div class="ys-glyph">金<span style="opacity:0.5">·</span>水</div>
+        <div class="ys-glyph">水</div>
         <div class="ys-meta">
           <div class="ys-eyebrow">忌 神</div>
-          <div class="ys-name">Logam &amp; Air</div>
+          <div class="ys-name">Air</div>
           <div class="ys-desc">Pelumat &amp; Pemicu</div>
         </div>
       </div>
@@ -3738,10 +3372,10 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
   <!-- KAKI -->
   <footer class="footer">
     <div class="footer-caption">
-      Yudy L sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏印</span> (62–71) — intuisi & jalur tidak konvensional. Periode 62–81 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+      Teguh dalam berpikir, pendirian yang kuat, kokoh namun tidak kasar, kaya akan kemampuan menangani masalah, tegas, kemampuan operasional yang kuat. Tidak suka memaksakan diri, bisa menyatu dan lebur, memiliki hati yang peduli, memberi tanpa memperhitungkan kembaliannya, memiliki perhatian yang tanpa syarat. Memiliki keberanian, tidak mau kalah, kemampuan pengambilan keputusan yang kuat, kemampuan kepemimpinan yang kuat. Pandai dalam variasi, tidak mau melanggar orang juga tidak mau dilanggar oleh orang. Tertarik pada sastra, pikiran mengalir lancar, suka berpetualang ke luar, pandai menangkap peluang, pandai strategi peperangan, serba bisa dalam sastra maupun militer.
     </div>
     <div class="footer-meta">
-      <span>Halaman 4 / 23</span>
+      <span>Halaman 4 / 21</span>
       <span>Yudy L · Ramalan 命</span>
     </div>
   </footer>
@@ -3820,7 +3454,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
   </header>
 
   <div class="subject-bar">
-    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Harimau-Merah.svg" alt="Harimau"></div>
     <div class="subject-meta">
       <div class="subject-name">Yudy L · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
       <div class="subject-detail">Penguasa Hari analisis · 五行 distribusi · 喜用 / 忌神</div>
@@ -3933,14 +3567,14 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
         <div class="dme-name">Api · Huǒ</div>
         <div class="dme-val">2.0</div>
         <div class="dme-bar"><div class="dme-bar-fill" style="width:67%"></div></div>
-        <div class="dme-role" style="background:rgba(45,106,79,0.7);">喜 Mendukung</div>
+        <div class="dme-role">Netral</div>
       </div>
       <div class="dme dme-card el-jin">
         <div class="dme-hz">金</div>
         <div class="dme-name">Logam · Jīn</div>
         <div class="dme-val">2.0</div>
         <div class="dme-bar"><div class="dme-bar-fill" style="width:67%"></div></div>
-        <div class="dme-role" style="background:rgba(160,52,52,0.5);">忌 Kurang Mendukung</div>
+        <div class="dme-role">Netral</div>
       </div>
     </div>
 
@@ -3975,10 +3609,10 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
 
   <footer class="footer">
     <div class="footer-caption">
-      Yudy L sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏印</span> (62–71) — intuisi & jalur tidak konvensional. Periode 62–81 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+      <ul><li>Pasangan relatif cerewet dan cenderung tidak masuk akal.</li><li>Anak lebih mementingkan perasaan dan relatif irit.</li><li>Perkataan ibu tidak bisa diterima, relatif pendiam.</li><li>Tidak takut ayah, tidak bisa menerima nasihat ayah.</li><li>Relatif tidak memiliki kemampuan kepemimpinan, dan tidak bisa meraih kesempatan besar.</li><li>Dalam bergaul relatif jujur dan tulus.</li><li>Ada awal tanpa akhir, kepala harimau ekor ular, dalam melakukan sesuatu ada kepala tanpa ekor.</li></ul>
     </div>
     <div class="footer-meta">
-      <span>Halaman 6 / 23</span>
+      <span>Halaman 6 / 21</span>
       <span>Yudy L · Ramalan 命</span>
     </div>
   </footer>
@@ -3999,7 +3633,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
 
   <!-- BAR SUBJEK -->
   <div class="subject-bar">
-    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Harimau-Merah.svg" alt="Harimau"></div>
     <div class="subject-meta">
       <div class="subject-name">Yudy L · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
       <div class="subject-detail">29 Januari 1963 · 13:30 · Pria · Umur 63 tahun</div>
@@ -4030,6 +3664,9 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
           <!-- Triple harmony 寅-午-戌 (green triangle) -->
           <polygon points="325.6,127.5 200,345 74.4,127.5"
             fill="rgba(45,106,79,0.06)" stroke="#2D6A4F" stroke-width="1.2" stroke-dasharray="4,3"/>
+          <!-- Pair 寅-亥 (gold solid) -->
+          <line x1="325.6" y1="127.5" x2="127.5" y2="74.4"
+            stroke="#C9A961" stroke-width="1.5"/>
           <!-- Clash 寅-申 (red dashed) -->
           <line x1="325.6" y1="127.5" x2="74.4" y2="272.5"
             stroke="#A03434" stroke-width="1.5" stroke-dasharray="6,3"/>
@@ -4046,74 +3683,74 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
           <!-- i=0 子 Tikus (neutral) -->
           <g>
             <circle cx="200" cy="55" r="20" fill="#F5EBD0" stroke="#D8C896" stroke-width="0.8"/>
-            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Tikus-Hitam.svg" x="183" y="38" width="34" height="34" opacity="0.6"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Tikus-Hitam.svg" x="183" y="38" width="34" height="34" opacity="0.6"/>
             <text x="200" y="22" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#6B5B3F">子</text>
           </g>
           <!-- i=1 丑 Kerbau (neutral) -->
           <g>
             <circle cx="272.5" cy="74.4" r="20" fill="#F5EBD0" stroke="#D8C896" stroke-width="0.8"/>
-            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Kerbau-Hitam.svg" x="255.5" y="57.4" width="34" height="34" opacity="0.6"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Kerbau-Hitam.svg" x="255.5" y="57.4" width="34" height="34" opacity="0.6"/>
             <text x="295" y="46" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#6B5B3F">丑</text>
           </g>
           <!-- i=2 寅 Harimau (DIRI) -->
           <g>
             <circle cx="325.6" cy="127.5" r="30" fill="#FFF8E1" stroke="#8B1A1A" stroke-width="2"/>
-            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Harimau-Merah.svg" x="299.6" y="101.5" width="52" height="52"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Harimau-Merah.svg" x="299.6" y="101.5" width="52" height="52"/>
             <text x="368" y="100" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="15" fill="#8B1A1A" font-weight="700">寅</text>
           </g>
           <!-- i=3 卯 Kelinci (neutral) -->
           <g>
             <circle cx="345" cy="200" r="20" fill="#F5EBD0" stroke="#D8C896" stroke-width="0.8"/>
-            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Kelinci-Hitam.svg" x="328" y="183" width="34" height="34" opacity="0.6"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Kelinci-Hitam.svg" x="328" y="183" width="34" height="34" opacity="0.6"/>
             <text x="382" y="204" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#6B5B3F">卯</text>
           </g>
           <!-- i=4 辰 Naga (neutral) -->
           <g>
             <circle cx="325.6" cy="272.5" r="20" fill="#F5EBD0" stroke="#D8C896" stroke-width="0.8"/>
-            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Naga-Hitam.svg" x="308.6" y="255.5" width="34" height="34" opacity="0.6"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Naga-Hitam.svg" x="308.6" y="255.5" width="34" height="34" opacity="0.6"/>
             <text x="368" y="306" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#6B5B3F">辰</text>
           </g>
           <!-- i=5 巳 Ular (HARM — 寅-巳 六害) -->
           <g>
             <circle cx="272.5" cy="325.6" r="22" fill="#F8EFD4" stroke="#B8860B" stroke-width="1.8"/>
-            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Ular-Merah.svg" x="253.5" y="306.6" width="38" height="38"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Ular-Merah.svg" x="253.5" y="306.6" width="38" height="38"/>
             <text x="295" y="358" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#B8860B" font-weight="600">巳</text>
           </g>
           <!-- i=6 午 Kuda (TRIPLE — 寅-午-戌 三合) -->
           <g>
             <circle cx="200" cy="345" r="24" fill="#E8F0EA" stroke="#2D6A4F" stroke-width="2"/>
-            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Kuda-Merah.svg" x="180" y="325" width="40" height="40"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Kuda-Merah.svg" x="180" y="325" width="40" height="40"/>
             <text x="200" y="382" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="14" fill="#2D6A4F" font-weight="700">午</text>
           </g>
           <!-- i=7 未 Kambing (neutral) -->
           <g>
             <circle cx="127.5" cy="325.6" r="20" fill="#F5EBD0" stroke="#D8C896" stroke-width="0.8"/>
-            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Kambing-Hitam.svg" x="110.5" y="308.6" width="34" height="34" opacity="0.6"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Kambing-Hitam.svg" x="110.5" y="308.6" width="34" height="34" opacity="0.6"/>
             <text x="105" y="362" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#6B5B3F">未</text>
           </g>
           <!-- i=8 申 Monyet (CLASH — 寅-申 六沖) -->
           <g>
             <circle cx="74.4" cy="272.5" r="22" fill="#F4DCDC" stroke="#A03434" stroke-width="1.8"/>
-            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Monyet-Merah.svg" x="55.4" y="253.5" width="38" height="38"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Monyet-Merah.svg" x="55.4" y="253.5" width="38" height="38"/>
             <text x="32" y="306" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#A03434" font-weight="600">申</text>
           </g>
           <!-- i=9 酉 Ayam (neutral) -->
           <g>
             <circle cx="55" cy="200" r="20" fill="#F5EBD0" stroke="#D8C896" stroke-width="0.8"/>
-            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Ayam-Hitam.svg" x="38" y="183" width="34" height="34" opacity="0.6"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Ayam-Hitam.svg" x="38" y="183" width="34" height="34" opacity="0.6"/>
             <text x="22" y="204" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#6B5B3F">酉</text>
           </g>
           <!-- i=10 戌 Anjing (TRIPLE — 寅-午-戌 三合) -->
           <g>
             <circle cx="74.4" cy="127.5" r="24" fill="#E8F0EA" stroke="#2D6A4F" stroke-width="2"/>
-            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Anjing-Merah.svg" x="54.4" y="107.5" width="40" height="40"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Anjing-Merah.svg" x="54.4" y="107.5" width="40" height="40"/>
             <text x="32" y="100" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="14" fill="#2D6A4F" font-weight="700">戌</text>
           </g>
-          <!-- i=11 亥 Babi (neutral) -->
+          <!-- i=11 亥 Babi (PAIR — 寅-亥 六合) -->
           <g>
-            <circle cx="127.5" cy="74.4" r="20" fill="#F5EBD0" stroke="#D8C896" stroke-width="0.8"/>
-            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Babi-Hitam.svg" x="110.5" y="57.4" width="34" height="34" opacity="0.6"/>
-            <text x="85" y="42" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#6B5B3F">亥</text>
+            <circle cx="127.5" cy="74.4" r="22" fill="#FFF8E1" stroke="#C9A961" stroke-width="1.8"/>
+            <image href="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Babi-Merah.svg" x="108.5" y="55.4" width="38" height="38"/>
+            <text x="85" y="42" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#C9A961" font-weight="700">亥</text>
           </g>
         </svg>
       </div>
@@ -4154,17 +3791,24 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
         </div>
         <div class="shio-list">
           <div class="shio-row">
-            <div class="icon"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Kuda-Merah.svg" alt="Kuda"></div>
+            <div class="icon"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Kuda-Merah.svg" alt="Kuda"></div>
             <div class="info">
               <div class="name"><span class="hz">午</span>Kuda<span class="tag">三合 · BESAR JAYA</span></div>
               <div class="reason">Triple harmony.</div>
             </div>
           </div>
           <div class="shio-row">
-            <div class="icon"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Anjing-Merah.svg" alt="Anjing"></div>
+            <div class="icon"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Anjing-Merah.svg" alt="Anjing"></div>
             <div class="info">
               <div class="name"><span class="hz">戌</span>Anjing<span class="tag">三合 · BESAR JAYA</span></div>
               <div class="reason">Triple harmony.</div>
+            </div>
+          </div>
+          <div class="shio-row">
+            <div class="icon"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Babi-Merah.svg" alt="Babi"></div>
+            <div class="info">
+              <div class="name"><span class="hz">亥</span>Babi<span class="tag">六合 · COCOK</span></div>
+              <div class="reason">Pair harmony.</div>
             </div>
           </div>
         </div>
@@ -4178,14 +3822,14 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
         </div>
         <div class="shio-list">
           <div class="shio-row">
-            <div class="icon"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Ular-Merah.svg" alt="Ular"></div>
+            <div class="icon"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Ular-Merah.svg" alt="Ular"></div>
             <div class="info">
               <div class="name"><span class="hz">巳</span>Ular<span class="tag">六害 · MENGHAMBAT</span></div>
               <div class="reason">Halangan halus.</div>
             </div>
           </div>
           <div class="shio-row">
-            <div class="icon"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Monyet-Merah.svg" alt="Monyet"></div>
+            <div class="icon"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Monyet-Merah.svg" alt="Monyet"></div>
             <div class="info">
               <div class="name"><span class="hz">申</span>Monyet<span class="tag">六沖 · BENTROK</span></div>
               <div class="reason">Bentrok langsung.</div>
@@ -4200,10 +3844,10 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
   <!-- KAKI -->
   <footer class="footer">
     <div class="footer-caption">
-      Yudy L sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏印</span> (62–71) — intuisi & jalur tidak konvensional. Periode 62–81 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+      Hubungan suami-istri seperti saling menghormati tamu. Suami-istri keduanya saling memahami kehidupan pribadi masing-masing, sehingga tidak akan bertengkar karena alasan apapun. Bagi yang satu istana dengan Tianfu, suami-istri adalah orang yang berkemauan keras, namun tidak terduga bisa harmonis dan saling mencintai dalam waktu yang lama. Pria walaupun termasuk tipe tenang, namun akan menikahi wanita yang berwatak keras kepala. Tanlang adalah bintang perceraian, jika tidak menikah terlambat, maka pasti melangkah ke jalan perceraian.
     </div>
     <div class="footer-meta">
-      <span>Halaman 7 / 23</span>
+      <span>Halaman 7 / 21</span>
       <span>Yudy L · Ramalan 命</span>
     </div>
   </footer>
@@ -4219,10 +3863,10 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
   </header>
 
   <div class="subject-bar">
-    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Harimau-Merah.svg" alt="Harimau"></div>
     <div class="subject-meta">
       <div class="subject-name">Yudy L · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
-      <div class="subject-detail">Profil karakter berdasarkan 壬水 + 比肩格 + posisi 寅</div>
+      <div class="subject-detail">Profil karakter berdasarkan 壬水 + 正官格 + posisi 寅</div>
     </div>
     <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">壬水 · Air Sungai</div></div>
   </div>
@@ -4338,9 +3982,9 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
 
   <footer class="footer">
     <div class="footer-caption">
-      Yudy L sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏印</span> (62–71) — intuisi & jalur tidak konvensional. Periode 62–81 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+      Teguh dalam berpikir, pendirian yang kuat, kokoh namun tidak kasar, kaya akan kemampuan menangani masalah, tegas, kemampuan operasional yang kuat. Tidak suka memaksakan diri, bisa menyatu dan lebur, memiliki hati yang peduli, memberi tanpa memperhitungkan kembaliannya, memiliki perhatian yang tanpa syarat. Memiliki keberanian, tidak mau kalah, kemampuan pengambilan keputusan yang kuat, kemampuan kepemimpinan yang kuat. Pandai dalam variasi, tidak mau melanggar orang juga tidak mau dilanggar oleh orang. Tertarik pada sastra, pikiran mengalir lancar, suka berpetualang ke luar, pandai menangkap peluang, pandai strategi peperangan, serba bisa dalam sastra maupun militer.
     </div>
-    <div class="footer-meta"><span>Halaman 8 / 23</span><span>Yudy L · Ramalan 命</span></div>
+    <div class="footer-meta"><span>Halaman 8 / 21</span><span>Yudy L · Ramalan 命</span></div>
   </footer>
 </section>
 
@@ -4353,7 +3997,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
   </header>
 
   <div class="subject-bar">
-    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Harimau-Merah.svg" alt="Harimau"></div>
     <div class="subject-meta">
       <div class="subject-name">Yudy L · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
       <div class="subject-detail">Pandangan menyeluruh tentang relasi keluarga &amp; kepemimpinan</div>
@@ -4457,9 +4101,9 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
 
   <footer class="footer">
     <div class="footer-caption">
-      Yudy L sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏印</span> (62–71) — intuisi & jalur tidak konvensional. Periode 62–81 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+      Tidak suka melakukan kesalahan yang memalukan orang tua. Berada di dalam istana Zi dan Hai, adalah hubungan orang tua-anak yang sempurna. Anda memiliki orang tua yang bijaksana, keluarga penuh dengan suasana yang menyenangkan dan cerdas. Orang tua Anda adalah orang yang berpribadian terbuka, terutama ayah sebagai pilar keluarga, memimpin seluruh keluarga. Bahkan setelah dewasa, Anda mungkin masih mengandalkan orang tua dalam hati. Namun orang tua hanya memperhatikan Anda saat Anda membutuhkan energi dan perhatian mereka.
     </div>
-    <div class="footer-meta"><span>Halaman 9 / 23</span><span>Yudy L · Ramalan 命</span></div>
+    <div class="footer-meta"><span>Halaman 9 / 21</span><span>Yudy L · Ramalan 命</span></div>
   </footer>
 </section>
 
@@ -4472,7 +4116,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
   </header>
 
   <div class="subject-bar">
-    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Harimau-Merah.svg" alt="Harimau"></div>
     <div class="subject-meta">
       <div class="subject-name">Yudy L · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
       <div class="subject-detail">1 bintang aktif · katalog 神煞 (Shén Shà · Bintang Berkah / Halangan)</div>
@@ -4569,9 +4213,9 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
 
   <footer class="footer">
     <div class="footer-caption">
-      Yudy L sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏印</span> (62–71) — intuisi & jalur tidak konvensional. Periode 62–81 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+      <em style="opacity:.4">[Bagian ini tidak tersedia dari foto sumber.]</em>
     </div>
-    <div class="footer-meta"><span>Halaman 10 / 23</span><span>Yudy L · Ramalan 命</span></div>
+    <div class="footer-meta"><span>Halaman 10 / 21</span><span>Yudy L · Ramalan 命</span></div>
   </footer>
 </section>
 
@@ -4584,7 +4228,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
   </header>
 
   <div class="subject-bar">
-    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Harimau-Merah.svg" alt="Harimau"></div>
     <div class="subject-meta">
       <div class="subject-name">Yudy L · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
       <div class="subject-detail">Sumber rezeki tetap (正財) &amp; tak terduga (偏財) sama-sama berlimpah</div>
@@ -4696,9 +4340,9 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
 
   <footer class="footer">
     <div class="footer-caption">
-      Yudy L sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏印</span> (62–71) — intuisi & jalur tidak konvensional. Periode 62–81 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+      Penggunaan uang cenderung berhati-hati, tidak bisa memanfaatkan uang dengan cerdik. Bintang Tianfu di istana keuangan adalah bintang keberuntungan sandang-pangan. Ditambah dengan bintang-bintang baik lain yang satu istana membantu, bisa membuat usaha Anda semakin bersinar. Walaupun Tianfu adalah bintang baik, jika ada bintang jahat lain yang menghalangi, bukan sering berfoya-foya ya justru menjadi kecanduan boros. Setidaknya Anda tidak perlu khawatir dibelenggu oleh uang.
     </div>
-    <div class="footer-meta"><span>Halaman 11 / 23</span><span>Yudy L · Ramalan 命</span></div>
+    <div class="footer-meta"><span>Halaman 11 / 21</span><span>Yudy L · Ramalan 命</span></div>
   </footer>
 </section>
 
@@ -4717,7 +4361,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
 
   <!-- BAR SUBJEK -->
   <div class="subject-bar">
-    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Harimau-Merah.svg" alt="Harimau"></div>
     <div class="subject-meta">
       <div class="subject-name">Yudy L · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
       <div class="subject-detail">29 Januari 1963 · 13:30 · Pria · Umur 63 tahun · 大運 丙辰 (七殺)</div>
@@ -4857,10 +4501,10 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
   <!-- KAKI -->
   <footer class="footer">
     <div class="footer-caption">
-      Yudy L sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏印</span> (62–71) — intuisi & jalur tidak konvensional. Periode 62–81 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+      Dokter bedah, teknisi, biarawan, pedagang logam mulia. Daya pengamatan yang tajam dan kemampuan ekspresi yang luar biasa, sehingga cocok untuk penulis laporan, novelis, pelukis, serta pekerjaan yang berkaitan dengan media massa. Juga cocok untuk pekerjaan di bidang keagamaan. Bisa memiliki karir yang stabil. Kelemahannya adalah meskipun sudah merencanakan berbagai hal secara terperinci, namun hasilnya seringkali tidak bisa sepenuhnya menjalankan rencana, atau mudah dipengaruhi oleh suasana di sekitarnya. Bagi yang satu istana dengan Tianji dan Taiyin, dalam perusahaan bisa naik ke tingkat manajer.
     </div>
     <div class="footer-meta">
-      <span>Halaman 12 / 23</span>
+      <span>Halaman 12 / 21</span>
       <span>Yudy L · Ramalan 命</span>
     </div>
   </footer>
@@ -5125,10 +4769,10 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
 
   <footer class="footer">
     <div class="footer-caption">
-      Yudy L sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏印</span> (62–71) — intuisi & jalur tidak konvensional. Periode 62–81 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+      Rumah sebaiknya menghadap utara ke selatan atau selatan ke utara sangat baik. Posisi altar dewa: Timur dan Tenggara sangat baik dan merupakan arah keberuntungan besar tahun ini. Pintu dan jalan: Timur Selatan, Selatan, Timur sangat baik. Posisi kompor sebaiknya dipasang menghadap barat ke timur. Posisi kamar dan tempat tidur: Utara, Timur, Selatan, Tenggara sangat baik. Posisi toilet sebaiknya dipasang di Barat Laut, Timur Laut, Barat Daya.
     </div>
     <div class="footer-meta">
-      <span>Halaman 13 / 23</span>
+      <span>Halaman 13 / 21</span>
       <span>Yudy L · Ramalan 命</span>
     </div>
   </footer>
@@ -5149,7 +4793,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
 
   <!-- BAR SUBJEK -->
   <div class="subject-bar">
-    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Harimau-Merah.svg" alt="Harimau"></div>
     <div class="subject-meta">
       <div class="subject-name">Yudy L · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
       <div class="subject-detail">29 Januari 1963 · 13:30 · Pria · Umur 63 tahun</div>
@@ -5255,31 +4899,16 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
       <div class="sp-right">
         <div class="sp-tags">
           <span class="sp-tag primary"><span class="hz">偏印</span>Piān Yìn · Mentor</span>
-          <span class="sp-tag"><span class="hz">金</span>Logam · ketegasan</span>
-          <span class="sp-tag"><span class="hz">庚</span>+<span class="hz">申</span>Hikmat Diam</span>
+          <span class="sp-tag"><span class="hz">金</span>Logam · ekspresif</span>
+          <span class="sp-tag"><span class="hz">庚</span>+<span class="hz">申</span>Kombinasi</span>
         </div>
 
         <div class="sp-headline">
-          Fase <span class="hz">偏印</span> (Mentor Bayangan) — periode utama untuk intuisi & jalur tidak konvensional
+          
         </div>
 
         <div class="sp-bullets">
-          <div class="sp-bullet">
-            <div class="num">1</div>
-            <div class="txt"><strong>Fokus utama</strong> — pilar <span class="hz">偏印</span> mendorong Anda untuk intuisi & jalur tidak konvensional. Selaraskan agenda 10 tahun ini ke arah tersebut.</div>
-          </div>
-          <div class="sp-bullet">
-            <div class="num">2</div>
-            <div class="txt"><strong>Energi 金</strong> — batang <span class="hz">庚</span> (金) berinteraksi dengan Day Master <span class="hz">壬</span> (水); tone fase: Logam · ketegasan.</div>
-          </div>
-          <div class="sp-bullet">
-            <div class="num">3</div>
-            <div class="txt"><strong>Cabang <span class="hz">申</span></strong> menentukan medan harian — kebiasaan, lingkungan, dan relasi yang dibangun di rentang umur 62–71 akan jadi pondasi fase berikutnya.</div>
-          </div>
-          <div class="sp-bullet">
-            <div class="num">4</div>
-            <div class="txt"><strong>Setelah 71</strong> masuk <span class="hz">辛酉 (正印)</span> — menyerap ilmu & dukungan tetua. Siapkan transisi sekarang.</div>
-          </div>
+
         </div>
       </div>
     </div>
@@ -5297,27 +4926,27 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
       <div class="seasons-bar">
         <div class="season s-mu" style="flex:20">
           <div class="s-hz">木</div>
-          <div class="s-name">Pemurnian Awal</div>
+          <div class="s-name">Fase 1</div>
           <div class="s-age">2–21</div>
         </div>
         <div class="season s-huo" style="flex:20">
           <div class="s-hz">火</div>
-          <div class="s-name">Belajar &amp; Mentor</div>
+          <div class="s-name">Fase 2</div>
           <div class="s-age">22–41</div>
         </div>
         <div class="season s-tu" style="flex:20">
           <div class="s-hz">土</div>
-          <div class="s-name">Berbagi Panggung</div>
+          <div class="s-name">Fase 3</div>
           <div class="s-age">42–61</div>
         </div>
         <div class="season s-jin current" style="flex:20">
           <div class="s-hz">金</div>
-          <div class="s-name">Berkarya Tenang</div>
+          <div class="s-name">Fase 4</div>
           <div class="s-age">62–81</div>
         </div>
         <div class="season s-shui" style="flex:20">
           <div class="s-hz">水</div>
-          <div class="s-name">Memetik Rezeki</div>
+          <div class="s-name">Fase 5</div>
           <div class="s-age">82–101</div>
         </div>
       </div>
@@ -5332,289 +4961,14 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
   <!-- KAKI -->
   <footer class="footer">
     <div class="footer-caption">
-      Yudy L sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏印</span> (62–71) — intuisi & jalur tidak konvensional. Periode 62–81 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+      <em style="opacity:.4">[Bagian ini tidak tersedia dari foto sumber.]</em>
     </div>
     <div class="footer-meta">
-      <span>Halaman 14 / 23</span>
+      <span>Halaman 14 / 21</span>
       <span>Yudy L · Ramalan 命</span>
     </div>
   </footer>
 
-</section>
-
-
-<section class="page opener" style="display:flex;flex-direction:column">
-  <div class="opener-frame">
-    <span class="op-watermark">紫</span>
-
-    <div class="op-eyebrow">
-      貳 · Bab Dua
-      <span class="roman">BAGIAN II</span>
-    </div>
-
-    <div class="op-hero">
-      <div class="op-cn-big">紫 微 斗 數</div>
-      <div class="op-cn-sub">十 二 宮 命 盤</div>
-      <div class="op-pinyin">Zǐ Wēi Dǒu Shù · Shí Èr Gōng</div>
-      <div class="op-id">Pemetaan "Bintang Ungu &amp; Konstelasi 12 Istana" — sistem yang membagi hidup ke 12 bidang spesifik (diri · pasangan · anak · rezeki · sehat · karir · properti · berkah · orangtua · saudara · pindah · teman) dan menempatkan bintang nasib di setiap istana</div>
-    </div>
-
-    <div class="op-pages">
-      <div class="op-page-card">
-        <div class="op-page-num">16</div>
-        <div class="op-page-info"><div class="op-page-cn">十二宮 Ringkasan</div><div class="op-page-id">Grid 12 Istana · Info Pusat</div></div>
-      </div>
-      <div class="op-page-card">
-        <div class="op-page-num">17</div>
-        <div class="op-page-info"><div class="op-page-cn">命 兄 夫 子</div><div class="op-page-id">Diri · Saudara · Pasangan · Anak</div></div>
-      </div>
-      <div class="op-page-card">
-        <div class="op-page-num">18</div>
-        <div class="op-page-info"><div class="op-page-cn">財 疾 遷 僕</div><div class="op-page-id">Rezeki · Kesehatan · Perpindahan · Pertemanan</div></div>
-      </div>
-      <div class="op-page-card">
-        <div class="op-page-num">19</div>
-        <div class="op-page-info"><div class="op-page-cn">官 田 福 父</div><div class="op-page-id">Karir · Properti · Berkah · Orangtua</div></div>
-      </div>
-    </div>
-
-    <div class="op-credits">Halaman 15 · Pembuka Bab Bagian II · Ramalan 命</div>
-  </div>
-</section>
-
-
-<section class="page">
-  <header class="page-header">
-    <div class="h-num">16</div>
-    <div class="h-titles">
-      <div class="h-cn">紫 微 斗 數</div>
-      <div class="h-id">12 Istana Bintang Ungu</div>
-    </div>
-    <div class="h-section">Bagian II · Zi Wei 紫微</div>
-  </header>
-
-  <div class="subject-bar">
-    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Harimau-Merah.svg" alt="Harimau"></div>
-    <div class="subject-meta">
-      <div class="subject-name">Yudy L · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
-      <div class="subject-detail">29 Januari 1963 · 13:30 · Pria · Umur 63 tahun · 五行局: <strong style="color:var(--red)">火六局</strong></div>
-    </div>
-    <div class="subject-dm">
-      <div class="label">Penguasa Hari</div>
-      <div class="value">壬水 · Air Sungai</div>
-    </div>
-  </div>
-
-  <main class="content content-ziwei">
-    <div class="zw-grid">
-
-      <!-- BARIS 1 -->
-      <!-- 巳 子女 Anak -->
-      <div class="zw-cell" style="grid-column:1;grid-row:1">
-        <div class="zw-head">
-          <div class="zw-palace">子女<span class="id">ANAK</span></div>
-          <div class="zw-branch">巳<span class="id">Ular</span></div>
-        </div>
-        <div class="zw-stars">
-          <div class="zw-star main">天府<span class="id">Tiān Fǔ · Stabilitas</span></div>
-        </div>
-        <div class="zw-foot"><span class="age">96–105</span><span>限 4</span></div>
-      </div>
-
-      <!-- 午 夫妻 Pasangan -->
-      <div class="zw-cell" style="grid-column:2;grid-row:1">
-        <div class="zw-head">
-          <div class="zw-palace">夫妻<span class="id">PASANGAN</span></div>
-          <div class="zw-branch">午<span class="id">Kuda</span></div>
-        </div>
-        <div class="zw-stars">
-          <div class="zw-star main">太陽<span class="id">Tài Yáng · Matahari</span></div>
-          <div class="zw-star main">巨門<span class="id">Jù Mén · Komunikasi</span><span class="hua ji">忌 HALANG</span></div>
-        </div>
-        <div class="zw-foot"><span class="age">106–115</span><span>限 3</span></div>
-      </div>
-
-      <!-- 未 兄弟 Saudara -->
-      <div class="zw-cell" style="grid-column:3;grid-row:1">
-        <div class="zw-head">
-          <div class="zw-palace">兄弟<span class="id">SAUDARA</span></div>
-          <div class="zw-branch">未<span class="id">Kambing</span></div>
-        </div>
-        <div class="zw-stars">
-          <div class="zw-star main">太陰<span class="id">Tài Yīn · Bulan</span></div>
-        </div>
-        <div class="zw-foot"><span class="age">116–125</span><span>限 2</span></div>
-      </div>
-
-      <!-- 申 命宮 Diri -->
-      <div class="zw-cell life" style="grid-column:4;grid-row:1">
-        <div class="zw-head">
-          <div class="zw-palace">命宮<span class="id">DIRI</span></div>
-          <div class="zw-branch">申<span class="id">Monyet</span></div>
-        </div>
-        <div class="zw-stars">
-          <div class="zw-star main">廉貞<span class="id">Tān Láng · Hasrat Kreatif</span><span class="hua ke">科 REPUTASI</span></div>
-          <div class="zw-star main">天府<span class="id">Tiān Fǔ · Stabilitas</span></div>
-          <div class="zw-star minor">左輔<span class="id">Zuǒ Fǔ · Mentor</span></div>
-        </div>
-        <div class="zw-foot"><span class="age">6–15</span><span>限 1</span></div>
-      </div>
-
-      <!-- BARIS 2 -->
-      <!-- 辰 財帛 Rezeki -->
-      <div class="zw-cell" style="grid-column:1;grid-row:2">
-        <div class="zw-head">
-          <div class="zw-palace">財帛<span class="id">REZEKI</span></div>
-          <div class="zw-branch">辰<span class="id">Naga</span></div>
-        </div>
-        <div class="zw-stars">
-          <div class="zw-star main">武曲<span class="id">Wǔ Qū · Disiplin Uang</span></div>
-          <div class="zw-star main">文昌<span class="id">Wén Chāng · Akademik</span></div>
-        </div>
-        <div class="zw-foot"><span class="age">86–95</span><span>限 5</span></div>
-      </div>
-
-      <!-- TENGAH -->
-      <div class="zw-center">
-        <div class="zwc-eyebrow">命 盤 中 樞 · Pusat Bagan</div>
-        <div class="zwc-title">紫 微 斗 數</div>
-        <div class="zwc-subtitle">Zǐ Wēi Dǒu Shù — Pemetaan Bintang Ungu</div>
-
-        <div class="zwc-grid">
-          <div class="zwc-row">
-            <div class="lbl">命主</div>
-            <div class="val">武曲<span class="id">Penguasa Hidup</span></div>
-          </div>
-          <div class="zwc-row">
-            <div class="lbl">身主</div>
-            <div class="val">天同<span class="id">Penguasa Tubuh</span></div>
-          </div>
-          <div class="zwc-row">
-            <div class="lbl">命宮</div>
-            <div class="val">午<span class="id">Istana Hidup · Kuda</span></div>
-          </div>
-          <div class="zwc-row">
-            <div class="lbl">身宮</div>
-            <div class="val">未<span class="id">Istana Tubuh · Kambing</span></div>
-          </div>
-          <div class="zwc-row">
-            <div class="lbl">五行局</div>
-            <div class="val">火六局<span class="id">Aliran Api Enam</span></div>
-          </div>
-          <div class="zwc-row">
-            <div class="lbl">時君</div>
-            <div class="val">卯<span class="id">Penguasa Waktu · Kelinci</span></div>
-          </div>
-        </div>
-
-        <div class="zwc-legend">
-          <div class="zwc-leg"><span class="dot" style="background:var(--green)">祿</span><span class="hz">化祿</span> Berkah</div>
-          <div class="zwc-leg"><span class="dot" style="background:var(--red-bad)">權</span><span class="hz">化權</span> Kuasa</div>
-          <div class="zwc-leg"><span class="dot" style="background:var(--gold)">科</span><span class="hz">化科</span> Reputasi</div>
-          <div class="zwc-leg"><span class="dot" style="background:#6B5B3F">忌</span><span class="hz">化忌</span> Tantangan</div>
-        </div>
-      </div>
-
-      <!-- 酉 父母 Orangtua -->
-      <div class="zw-cell" style="grid-column:4;grid-row:2">
-        <div class="zw-head">
-          <div class="zw-palace">父母<span class="id">ORANGTUA</span></div>
-          <div class="zw-branch">酉<span class="id">Ayam</span></div>
-        </div>
-        <div class="zw-stars">
-          <div class="zw-star main">破軍<span class="id">Pò Jūn · Pelopor</span></div>
-        </div>
-        <div class="zw-foot"><span class="age">16–25</span><span>限 12</span></div>
-      </div>
-
-      <!-- BARIS 3 -->
-      <!-- 卯 疾厄 Kesehatan -->
-      <div class="zw-cell body" style="grid-column:1;grid-row:3">
-        <div class="zw-head">
-          <div class="zw-palace">疾厄<span class="id">KESEHATAN</span></div>
-          <div class="zw-branch">卯<span class="id">Kelinci</span></div>
-        </div>
-        <div class="zw-stars">
-          <div class="zw-star main">天梁<span class="id">Tiān Liáng · Pelindung</span></div>
-        </div>
-        <div class="zw-foot"><span class="age">76–85</span><span>限 6</span></div>
-      </div>
-
-      <!-- 戌 福德 Berkah -->
-      <div class="zw-cell" style="grid-column:4;grid-row:3">
-        <div class="zw-head">
-          <div class="zw-palace">福德<span class="id">BERKAH</span></div>
-          <div class="zw-branch">戌<span class="id">Anjing</span></div>
-        </div>
-        <div class="zw-stars">
-          <div class="zw-star main">天相<span class="id">Tiān Xiàng · Penengah</span><span class="hua lu">祿 BERKAH</span></div>
-          <div class="zw-star minor">右弼<span class="id">Yòu Bì · Sahabat</span></div>
-        </div>
-        <div class="zw-foot"><span class="age">26–35</span><span>限 11</span></div>
-      </div>
-
-      <!-- BARIS 4 -->
-      <!-- 寅 遷移 Perpindahan -->
-      <div class="zw-cell" style="grid-column:1;grid-row:4">
-        <div class="zw-head">
-          <div class="zw-palace">遷移<span class="id">PERJALANAN</span></div>
-          <div class="zw-branch">寅<span class="id">Harimau</span></div>
-        </div>
-        <div class="zw-stars">
-          <div class="zw-star main">七殺<span class="id">Qī Shā · Pemurnian</span></div>
-        </div>
-        <div class="zw-foot"><span class="age">66–75</span><span>限 7</span></div>
-      </div>
-
-      <!-- 丑 僕役 Pertemanan — KINI -->
-      <div class="zw-cell now" style="grid-column:2;grid-row:4">
-        <div class="zw-head">
-          <div class="zw-palace">僕役<span class="id">TEMAN</span></div>
-          <div class="zw-branch">丑<span class="id">Kerbau</span></div>
-        </div>
-        <div class="zw-stars">
-          <div class="zw-star main">紫微<span class="id">Zǐ Wēi · Kaisar</span></div>
-          <div class="zw-star minor">左輔<span class="id">Zuǒ Fǔ · Mentor</span></div>
-        </div>
-        <div class="zw-foot"><span class="age">56–65</span><span>限 8</span></div>
-      </div>
-
-      <!-- 子 官祿 Karir -->
-      <div class="zw-cell" style="grid-column:3;grid-row:4">
-        <div class="zw-head">
-          <div class="zw-palace">官祿<span class="id">KARIR</span></div>
-          <div class="zw-branch">子<span class="id">Tikus</span></div>
-        </div>
-        <div class="zw-stars">
-          <div class="zw-star main">貪狼<span class="id">Tān Láng · Hasrat</span><span class="hua qua">權 KUASA</span></div>
-        </div>
-        <div class="zw-foot"><span class="age">46–55</span><span>限 9</span></div>
-      </div>
-
-      <!-- 亥 田宅 Properti -->
-      <div class="zw-cell" style="grid-column:4;grid-row:4">
-        <div class="zw-head">
-          <div class="zw-palace">田宅<span class="id">PROPERTI</span></div>
-          <div class="zw-branch">亥<span class="id">Babi</span></div>
-        </div>
-        <div class="zw-stars">
-          <div class="zw-star main">天同<span class="id">Tiān Tóng · Welas</span></div>
-        </div>
-        <div class="zw-foot"><span class="age">36–45</span><span>限 10</span></div>
-      </div>
-
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-caption">
-      Yudy L sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏印</span> (62–71) — intuisi & jalur tidak konvensional. Periode 62–81 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
-    </div>
-    <div class="footer-meta">
-      <span>Halaman 16 / 23</span>
-      <span>Yudy L · Ramalan 命</span>
-    </div>
-  </footer>
 </section>
 
 
@@ -5626,7 +4980,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
   </header>
 
   <div class="subject-bar">
-    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Harimau-Merah.svg" alt="Harimau"></div>
     <div class="subject-meta">
       <div class="subject-name">Yudy L · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
       <div class="subject-detail">Detail 4 istana lingkaran-dalam — diri &amp; relasi inti</div>
@@ -5724,9 +5078,9 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
 
   <footer class="footer">
     <div class="footer-caption">
-      Yudy L sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏印</span> (62–71) — intuisi & jalur tidak konvensional. Periode 62–81 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+      Dokter bedah, teknisi, biarawan, pedagang logam mulia. Daya pengamatan yang tajam dan kemampuan ekspresi yang luar biasa, sehingga cocok untuk penulis laporan, novelis, pelukis, serta pekerjaan yang berkaitan dengan media massa. Juga cocok untuk pekerjaan di bidang keagamaan. Bisa memiliki karir yang stabil. Kelemahannya adalah meskipun sudah merencanakan berbagai hal secara terperinci, namun hasilnya seringkali tidak bisa sepenuhnya menjalankan rencana, atau mudah dipengaruhi oleh suasana di sekitarnya. Bagi yang satu istana dengan Tianji dan Taiyin, dalam perusahaan bisa naik ke tingkat manajer.
     </div>
-    <div class="footer-meta"><span>Halaman 17 / 23</span><span>Yudy L · Ramalan 命</span></div>
+    <div class="footer-meta"><span>Halaman 15 / 21</span><span>Yudy L · Ramalan 命</span></div>
   </footer>
 </section>
 
@@ -5739,7 +5093,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
   </header>
 
   <div class="subject-bar">
-    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Harimau-Merah.svg" alt="Harimau"></div>
     <div class="subject-meta">
       <div class="subject-name">Yudy L · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
       <div class="subject-detail">Detail 4 istana operasional — sumber daya &amp; pergerakan</div>
@@ -5837,9 +5191,9 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
 
   <footer class="footer">
     <div class="footer-caption">
-      Yudy L sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏印</span> (62–71) — intuisi & jalur tidak konvensional. Periode 62–81 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+      Hubungan suami-istri seperti saling menghormati tamu. Suami-istri keduanya saling memahami kehidupan pribadi masing-masing, sehingga tidak akan bertengkar karena alasan apapun. Bagi yang satu istana dengan Tianfu, suami-istri adalah orang yang berkemauan keras, namun tidak terduga bisa harmonis dan saling mencintai dalam waktu yang lama. Pria walaupun termasuk tipe tenang, namun akan menikahi wanita yang berwatak keras kepala. Tanlang adalah bintang perceraian, jika tidak menikah terlambat, maka pasti melangkah ke jalan perceraian.
     </div>
-    <div class="footer-meta"><span>Halaman 18 / 23</span><span>Yudy L · Ramalan 命</span></div>
+    <div class="footer-meta"><span>Halaman 16 / 21</span><span>Yudy L · Ramalan 命</span></div>
   </footer>
 </section>
 
@@ -5852,7 +5206,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
   </header>
 
   <div class="subject-bar">
-    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Harimau-Merah.svg" alt="Harimau"></div>
     <div class="subject-meta">
       <div class="subject-name">Yudy L · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
       <div class="subject-detail">Detail 4 istana lingkaran-luar — pencapaian &amp; warisan</div>
@@ -5875,7 +5229,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
         </div>
         <div class="pal-insight">"<span class="hz">藝術家、政治家、事業家</span>" — Seniman, politikus, pengusaha.</div>
         <div class="pal-body">
-          <span class="hz">貪狼 + 化權</span> = dorongan karir yang kuat di bidang aliran. Cocok: <strong>tenaga air, distribusi, keuangan</strong>. Format <span class="hz">比肩格</span> butuh "panggung tidak konvensional" — hindari peran murni administratif.
+          <span class="hz">貪狼 + 化權</span> = dorongan karir yang kuat di bidang aliran. Cocok: <strong>tenaga air, distribusi, keuangan</strong>. Format <span class="hz">正官格</span> butuh "panggung tidak konvensional" — hindari peran murni administratif.
         </div>
         <div class="pal-actions">
           <div class="pal-action"><span class="ico">▸</span><span>Di <span class="hz">七殺 大運</span>: peran "tokoh berani bicara" — komentator, advisor, board</span></div>
@@ -5916,7 +5270,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
         </div>
         <div class="pal-insight">"<span class="hz">穩重而使人感到濃厚的人情味</span>" — Tenang, hangat, makin tua makin berkah.</div>
         <div class="pal-body">
-          Pola <strong>"lambat di awal, makin tua makin berkah"</strong> sangat cocok dengan <span class="hz">比肩格</span>. Energi Anda dirancang untuk <strong>maraton</strong>, bukan sprint. Umur 60-an = mulai panen. <span class="hz">天相 化祿</span> = berkah aliran.
+          Pola <strong>"lambat di awal, makin tua makin berkah"</strong> sangat cocok dengan <span class="hz">正官格</span>. Energi Anda dirancang untuk <strong>maraton</strong>, bukan sprint. Umur 60-an = mulai panen. <span class="hz">天相 化祿</span> = berkah aliran.
         </div>
         <div class="pal-actions">
           <div class="pal-action"><span class="ico">▸</span><span>Peran <strong>"#2 strategis"</strong> (CEO bayangan / advisor) sering lebih berdampak daripada #1</span></div>
@@ -5949,9 +5303,9 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
 
   <footer class="footer">
     <div class="footer-caption">
-      Yudy L sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏印</span> (62–71) — intuisi & jalur tidak konvensional. Periode 62–81 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+      Kepribadian yang tidak stabil, keberuntungan dan kebajikan pun ikut memudar. Banyak hal sibuk namun sedikit yang berhasil. Berada di dalam istana Zi, Shen, Xi, Hai maka hasilnya pasti mendapatkan keberuntungan dan kebajikan. Bagi yang satu istana dengan Pojun, seumur hidup sibuk dan tidak bisa tenang. Bagi yang satu istana dengan Zivi, di hari tua bisa mendapat kebahagiaan.
     </div>
-    <div class="footer-meta"><span>Halaman 19 / 23</span><span>Yudy L · Ramalan 命</span></div>
+    <div class="footer-meta"><span>Halaman 17 / 21</span><span>Yudy L · Ramalan 命</span></div>
   </footer>
 </section>
 
@@ -5964,7 +5318,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
   </header>
 
   <div class="subject-bar">
-    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Harimau-Merah.svg" alt="Harimau"></div>
     <div class="subject-meta">
       <div class="subject-name">Yudy L · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
       <div class="subject-detail">Distilasi seluruh laporan dalam 1 halaman</div>
@@ -6106,9 +5460,9 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
 
   <footer class="footer">
     <div class="footer-caption">
-      Yudy L sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏印</span> (62–71) — intuisi & jalur tidak konvensional. Periode 62–81 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+      <ul><li>Pasangan relatif cerewet dan cenderung tidak masuk akal.</li><li>Anak lebih mementingkan perasaan dan relatif irit.</li><li>Perkataan ibu tidak bisa diterima, relatif pendiam.</li><li>Tidak takut ayah, tidak bisa menerima nasihat ayah.</li><li>Relatif tidak memiliki kemampuan kepemimpinan, dan tidak bisa meraih kesempatan besar.</li><li>Dalam bergaul relatif jujur dan tulus.</li><li>Ada awal tanpa akhir, kepala harimau ekor ular, dalam melakukan sesuatu ada kepala tanpa ekor.</li></ul>
     </div>
-    <div class="footer-meta"><span>Halaman 20 / 23</span><span>Yudy L · Ramalan 命</span></div>
+    <div class="footer-meta"><span>Halaman 18 / 21</span><span>Yudy L · Ramalan 命</span></div>
   </footer>
 </section>
 
@@ -6124,7 +5478,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
   </header>
 
   <div class="subject-bar">
-    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/v45/assets/Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-shio"><img src="file:///C:/Users/sukam/OneDrive/Documents/Ramalan/sandbox_v46/assets/Harimau-Merah.svg" alt="Harimau"></div>
     <div class="subject-meta">
       <div class="subject-name">Yudy L · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
       <div class="subject-detail">29 Januari 1963 · 13:30 · Pria · Umur 63 tahun</div>
@@ -6145,7 +5499,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
         <div class="syn-quote">
           Anda <span class="hz">壬水</span> Logam Yin yang sedang mekar di fase <span class="hz">食神</span> — saatnya berkarya &amp; berekspresi.
         </div>
-        <div class="syn-attrib">Penguasa Hari Kuat · 比肩格 · Zheng Guan Ge</div>
+        <div class="syn-attrib">Penguasa Hari Kuat · 正官格 · Zheng Guan Ge</div>
       </div>
       <div class="syn-seal" style="transform:rotate(3deg);">運</div>
     </div>
@@ -6161,7 +5515,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
           <span class="syn-card-id">Pò Lì</span>
         </div>
         <div class="syn-card-body">
-          <strong>Kreativitas + ketekunan.</strong> Kombinasi <span class="hz">壬水</span> + <span class="hz">比肩格</span> = pemikir kreatif yang punya stamina. Bakat sastra, seni, ekspresi — multi-talented.
+          <strong>Kreativitas + ketekunan.</strong> Kombinasi <span class="hz">壬水</span> + <span class="hz">正官格</span> = pemikir kreatif yang punya stamina. Bakat sastra, seni, ekspresi — multi-talented.
         </div>
       </div>
 
@@ -6243,7 +5597,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
           <div class="syn-action-num">5</div>
           <div class="syn-action-content">
             <div class="syn-action-title">Anggap kritik dari saudari &amp; pasangan sebagai <strong>data</strong>, bukan serangan</div>
-            <div class="syn-action-context">Mereka adalah "sensor" karakter Anda — sumber feedback paling jujur untuk 比肩格.</div>
+            <div class="syn-action-context">Mereka adalah "sensor" karakter Anda — sumber feedback paling jujur untuk 正官格.</div>
           </div>
           <div class="syn-action-tag">兄弟 · Keluarga</div>
         </div>
@@ -6291,10 +5645,10 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
 
   <footer class="footer">
     <div class="footer-caption">
-      Yudy L sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">偏印</span> (62–71) — intuisi & jalur tidak konvensional. Periode 62–81 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
+      <ul><li>Pasangan relatif cerewet dan cenderung tidak masuk akal.</li><li>Anak lebih mementingkan perasaan dan relatif irit.</li><li>Perkataan ibu tidak bisa diterima, relatif pendiam.</li><li>Tidak takut ayah, tidak bisa menerima nasihat ayah.</li><li>Relatif tidak memiliki kemampuan kepemimpinan, dan tidak bisa meraih kesempatan besar.</li><li>Dalam bergaul relatif jujur dan tulus.</li><li>Ada awal tanpa akhir, kepala harimau ekor ular, dalam melakukan sesuatu ada kepala tanpa ekor.</li></ul>
     </div>
     <div class="footer-meta">
-      <span>Halaman 21 / 23</span>
+      <span>Halaman 19 / 21</span>
       <span>Yudy L · Ramalan 命</span>
     </div>
   </footer>
@@ -6428,7 +5782,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
     <div class="footer-caption">
       Daftar istilah ini membantu Anda kembali ke laporan kapan saja tanpa harus mengingat seluruh kosakata. <span style="font-family:'Noto Serif TC',serif;color:var(--red)">辭典</span> adalah jembatan antar bab.
     </div>
-    <div class="footer-meta"><span>Halaman 22 / 23</span><span>Ramalan 命</span></div>
+    <div class="footer-meta"><span>Halaman 20 / 21</span><span>Ramalan 命</span></div>
   </footer>
 </section>
 
@@ -6516,7 +5870,7 @@ html, body { background: white !important; margin: 0 !important; padding: 0 !imp
     <div class="footer-caption">
       <em>Mìng Yóu Jǐ Zào — Xiāng Yóu Xīn Shēng</em>. Terima kasih sudah membaca; semoga laporan ini menjadi peta yang berguna untuk perjalanan Anda berikutnya. <span style="font-family:'Noto Serif TC',serif;color:var(--red)">福壽財</span>.
     </div>
-    <div class="footer-meta"><span>Halaman 23 / 23 · SELESAI</span><span>Ramalan 命</span></div>
+    <div class="footer-meta"><span>Halaman 21 / 21 · SELESAI</span><span>Ramalan 命</span></div>
   </footer>
 </section>
 

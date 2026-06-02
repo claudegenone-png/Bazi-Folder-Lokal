@@ -2,13 +2,98 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Lin Ru Yi — Profil &amp; Empat Pilar 四柱</title>
+<title>Lin Ru Yi, Profil &amp; Empat Pilar 四柱</title>
 <link rel="stylesheet" href="style.css">
 <style>
   /* PAGE-SPECIFIC: Profile */
   .content-profile {
-    grid-template-rows: 95mm 50mm 30mm !important;
-    gap: 5mm;
+    grid-template-rows: 70mm 42mm 48mm 28mm !important;
+    gap: 4mm;
+  }
+
+  /* DM SCORE STRIP (V7) — match wuxing-section column layout */
+  .dm-score-strip {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 3mm 5mm;
+    display: grid;
+    grid-template-columns: 50mm 1fr;
+    grid-template-rows: 1fr auto;
+    column-gap: 5mm;
+    row-gap: 1.5mm;
+    align-items: center;
+  }
+  .dms-footer-info {
+    grid-column: 1 / -1;
+    border-top: 0.2mm dashed var(--gold-soft);
+    padding-top: 1.5mm;
+    font-size: 6.3pt;
+    color: var(--text-muted);
+    font-style: italic;
+    line-height: 1.45;
+    text-align: justify;
+  }
+  .dms-footer-info strong { color: var(--text); font-style: normal; }
+  .dms-footer-info .pos-text { color: var(--green); font-weight: 600; }
+  .dms-footer-info .neg-text { color: var(--red-bad); font-weight: 600; }
+  .dms-title-block {
+    border-right: 0.3mm solid var(--gold-soft);
+    padding-right: 4mm;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .dms-eyebrow {
+    font-size: 6.5pt; color: var(--gold);
+    letter-spacing: 2.5px; text-transform: uppercase; font-weight: 600;
+  }
+  .dms-title-hz {
+    font-size: 14pt; color: var(--red); font-weight: 700;
+    margin-top: 0.5mm; letter-spacing: 4px;
+  }
+  .dms-subtitle {
+    font-size: 8pt; font-style: italic;
+    color: var(--text-muted); margin-top: 0.3mm;
+  }
+  .dms-status-pill {
+    margin-top: 1.5mm;
+    display: inline-flex; align-items: center; gap: 1.5mm;
+    background: rgba(139,26,26,0.08);
+    border: 0.2mm solid var(--red);
+    border-radius: 5mm;
+    padding: 0.6mm 3mm;
+    font-size: 6.5pt; color: var(--red);
+    letter-spacing: 1px; font-weight: 600;
+    align-self: flex-start;
+  }
+  .dms-status-pill .hz {
+    font-size: 9pt; font-weight: 700; line-height: 1;
+  }
+  .dms-content {
+    display: flex; flex-direction: column;
+    justify-content: center; gap: 1.5mm;
+  }
+  .dms-row {
+    display: flex; align-items: baseline; gap: 3mm;
+    font-size: 8pt;
+  }
+  .dms-row .arrow { font-size: 12pt; font-weight: 700; line-height: 1; }
+  .dms-row.pos .arrow { color: var(--green); }
+  .dms-row.neg .arrow { color: var(--red-bad); }
+  .dms-row .num {
+    font-family: 'Courier New', monospace;
+    font-size: 14pt; font-weight: 700; letter-spacing: 0.3px;
+  }
+  .dms-row.pos .num { color: var(--green); }
+  .dms-row.neg .num { color: var(--red-bad); }
+  .dms-row .name { font-size: 7pt; color: var(--text-muted); margin-left: 1mm; }
+  .dms-delta-bottom {
+    margin-top: 1mm;
+    font-size: 7pt; color: var(--text-muted);
+    letter-spacing: 0.3px; text-align: left;
+  }
+  .dms-delta-bottom .delta-num {
+    font-family: 'Courier New', monospace;
+    font-weight: 700; color: var(--red-bad);
   }
 
   /* 4-PILLAR GRAND DISPLAY */
@@ -134,10 +219,8 @@
     color: var(--text-muted); margin-top: 0.5mm;
   }
   .wux-insight {
-    font-size: 7.8pt; color: var(--text);
-    margin-top: 2.5mm; line-height: 1.5;
-    display: -webkit-box; -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical; overflow: hidden;
+    font-size: 6.8pt; color: var(--text);
+    margin-top: 2mm; line-height: 1.45;
   }
   .wux-insight strong { color: var(--red); }
 
@@ -165,6 +248,8 @@
     border-right: 0.2mm solid rgba(255,255,255,0.4);
   }
   .wux-stack > .seg:last-child { border-right: none; }
+  /* V4.5 null-safety: subdue Wu Xing bar when MD wuxing data missing. */
+  .wux-stack.empty { opacity: 0.4; }
   .wux-stack > .seg .hz {
     font-family: 'Noto Serif TC', serif;
     font-size: 11pt; font-weight: 700; line-height: 1;
@@ -255,8 +340,7 @@
   .ys-desc {
     font-size: 6.8pt; color: var(--text-muted);
     line-height: 1.35; margin-top: 0.3mm;
-    display: -webkit-box; -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical; overflow: hidden;
+    overflow: hidden;
   }
 </style>
 </head>
@@ -309,7 +393,7 @@
         </div>
       </div>
 
-      <!-- DAY (日) — PENGUASA HARI -->
+      <!-- DAY (日), PENGUASA HARI -->
       <div class="pilar-tablet day-master" data-pos="day">
         <div class="dm-crown">★ 日主 · PENGUASA HARI ★</div>
         <div class="t-eyebrow">
@@ -363,6 +447,35 @@
 
     </div>
 
+    <!-- DM SCORE STRIP (日主旺度) — pos/neg score from foto 批命備註 -->
+    <div class="dm-score-strip">
+      <div class="dms-title-block">
+        <div class="dms-eyebrow">日 主 旺 度</div>
+        <div class="dms-title-hz">旺 度</div>
+        <div class="dms-subtitle">Skor Kekuatan DM</div>
+        <div class="dms-status-pill"><span class="hz">弱</span> LEMAH</div>
+      </div>
+      <div class="dms-content">
+        <div class="dms-row pos">
+          <div class="label">
+            <span class="arrow">▲</span>
+            <span class="num">+0.000</span>
+            <span class="name">Pendukung</span>
+          </div>
+          <div class="dms-bar"><div class="fill" style="width:50%"></div></div>
+        </div>
+        <div class="dms-row neg">
+          <div class="label">
+            <span class="arrow">▼</span>
+            <span class="num">-0.000</span>
+            <span class="name">Penekan</span>
+          </div>
+          <div class="dms-bar"><div class="fill" style="width:50%"></div></div>
+        </div>
+        <div class="dms-delta-bottom">Selisih Δ <span class="delta-num">0.000</span></div>
+      </div>
+    </div>
+
     <!-- BAGIAN WU XING -->
     <div class="wuxing-section">
       <div class="wux-title-block">
@@ -370,7 +483,7 @@
         <div class="wux-title">五 行</div>
         <div class="wux-subtitle">Lima Elemen</div>
         <div class="wux-insight">
-          <strong>Logam &amp; Air dominan</strong> (金 28.6% · 水 28.6%) didukung Tanah (土 21.4%). Penguasa Hari 辛金 cenderung lemah karena ditekan dua 巳 火 — energinya perlu sokongan <strong>金 水</strong> (logam menopang, air meredam api), hindari tambahan <strong>火 木</strong>.
+          <strong>Logam &amp; Air dominan</strong> (金 28.6% · 水 28.6%) didukung Tanah (土 21.4%). Penguasa Hari 辛金 cenderung lemah karena ditekan dua 巳 火, energinya perlu sokongan <strong>金 水</strong> (logam menopang, air meredam api), hindari tambahan <strong>火 木</strong>.
         </div>
       </div>
 
@@ -399,7 +512,7 @@
         <div class="fmt-meta">
           <div class="fmt-eyebrow">格 局 · Format</div>
           <div class="fmt-name">正官格</div>
-          <div class="fmt-pinyin">Zheng Guan Ge — "Penjaga Disiplin"</div>
+          <div class="fmt-pinyin">Zheng Guan Ge, "Penjaga Disiplin"</div>
         </div>
       </div>
 
@@ -427,12 +540,8 @@
 
   <!-- KAKI -->
   <footer class="footer">
-    <div class="footer-caption">
-      Penguasa Hari 辛金 (Logam Yin) dengan format 正官格 menandakan kepribadian disiplin, terstruktur, dan menjunjung tinggi norma — sangat cocok pada peran yang menuntut tanggung jawab, integritas, dan kepatuhan pada sistem.
-    </div>
     <div class="footer-meta">
-      <span>Halaman 4 / 23</span>
-      <span>Lin Ru Yi · Ramalan 命</span>
+      <span>Halaman 4 / 24</span>
     </div>
   </footer>
 

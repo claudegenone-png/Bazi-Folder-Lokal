@@ -1,0 +1,431 @@
+# Li Xiang An [[李享安]]
+
+## DATA
+
+- nama: Li Xiang An
+- hanzi: 李享安
+- gender: Pria
+- gender_hz: 陽男
+- lahir_tanggal: 1990-08-16
+- lahir_jam: 12:00
+- pilar_tahun: 庚/午
+- pilar_bulan: 甲/申
+- pilar_hari: 癸/丑
+- pilar_jam: 戊/午
+- shio_hz: 馬
+- xiantian_jia: 1
+- xiantian_yi: 0
+- xiantian_bing: 0
+- xiantian_ding: 2
+- xiantian_wu: 2
+- xiantian_ji: 3
+- xiantian_geng: 2
+- xiantian_xin: 1
+- xiantian_ren: 1
+- xiantian_gui: 2
+- wuxing_jin: 3
+- wuxing_shui: 3
+- wuxing_mu: 1
+- wuxing_huo: 2
+- wuxing_tu: 5
+- yong_shen: 金
+- ji_shen: 土
+- xi_yong_shen: 木
+- xian_shen: 火
+- chou_shen: 土
+- shi_shen_per_pilar_tahun: 正印
+- shi_shen_per_pilar_bulan: 傷官
+- shi_shen_per_pilar_hari: 主
+- shi_shen_per_pilar_jam: 正官
+- ming_gong_bazi: null
+- ti_xiang_mu: 死
+- ti_xiang_huo: 囚
+- ti_xiang_tu: 休
+- ti_xiang_jin: 旺
+- ti_xiang_shui: 相
+- format: 正官格
+- da_yun: 9:乙酉:食神, 19:丙戌:正財, 29:丁亥:偏財, 39:戊子:正官, 49:己丑:七殺, 59:庚寅:正印, 69:辛卯:偏印, 79:壬辰:劫財, 89:癸巳:比肩, 99:甲午:傷官
+- marriage_cocok: 寅, 未, 戌
+- marriage_hindari: 子, 丑, 卯, 午
+- marriage_cocok_relationships: null
+- marriage_hindari_relationships: null
+- yang_zhai_gua: 坎
+- ziwei_ming_zhu: 巨門
+- ziwei_shen_zhu: 火星
+- ziwei_ming_gong: 丑
+- ziwei_shen_gong: 丑
+- ziwei_wu_xing_ju: 火六局
+- ziwei_shi_jun: 丑
+- wangdu_jia_mu: null
+- wangdu_yi_mu: null
+- wangdu_bing_huo: null
+- wangdu_ding_huo: null
+- wangdu_wu_tu: null
+- wangdu_ji_tu: null
+- wangdu_geng_jin: null
+- wangdu_xin_jin: null
+- wangdu_ren_shui: null
+- wangdu_gui_shui: null
+- wangdu_total_mu: null
+- wangdu_total_huo: null
+- wangdu_total_tu: null
+- wangdu_total_jin: null
+- wangdu_total_shui: null
+- dm_pos_score: 4086
+- dm_neg_score: 4560
+- dm_strength: 弱
+- dm_strength_label_id: Lemah
+- da_yun_arah: 順行
+- da_yun_start_age: 9
+- shen_sha_list: 亡神, 桃花, 孤辰, 元辰, 大耗
+- nayin_tahun: null
+- nayin_bulan: null
+- nayin_hari: null
+- nayin_jam: null
+- canggan_tahun: 丁己
+- canggan_bulan: 戊壬庚
+- canggan_hari: 辛癸己
+- canggan_jam: 丁己
+
+## TAFSIR
+
+### Kepribadian
+
+paragraf:
+Li Xiang An adalah jiwa **Air Yin** ([[癸水]]), embun dan mata air kecil yang lembut namun mengalir tak henti. Lahir di bulan **Monyet** ([[申]]) yang penuh logam tajam, ia mendapat sumber yang jernih dan tegas. Format **Saluran Wibawa** ([[正官格]]) membuatnya menjunjung aturan, prinsip, dan tanggung jawab. Di balik tampilan tenang ada ketegasan, kemampuan analitis, dan rasa ingin tahu yang dalam. Ia tidak gampang menyerah, sering bekerja diam-diam, namun hasilnya konsisten. Pribadi yang ramah pada yang tulus, jaga jarak pada yang dangkal.
+
+radar_traits:
+- 守則 / Shǒu Zé / Disiplin Aturan: 8
+- 才智 / Cái Zhì / Kecerdasan: 8
+- 內歛 / Nèi Liǎn / Tenang Dalam: 7
+- 韌性 / Rèn Xìng / Keuletan: 7
+- 直率 / Zhí Shuài / Lugas: 7
+- 敏感 / Mǐn Gǎn / Peka: 6
+
+motto:
+- hanzi: 泉
+- nama: Mata Air Tenang
+- archetype: 涓涓不息
+- tag: 守正持衡
+
+power:
+- Disiplin tinggi dan setia pada prinsip serta tanggung jawab
+- Pikiran analitis, mampu memilah situasi rumit dengan tenang
+- Keuletan halus, terus mengalir walau hambatan banyak
+- Punya wibawa diam yang membuat orang menaruh hormat
+
+shadow:
+- Cenderung terlalu kaku, sulit kompromi pada hal prinsipil
+- Sering memendam, jarang menunjukkan kelelahan ke sekitar
+- Bisa terlalu kritis pada diri sendiri dan orang dekat
+- Takut salah, kadang menunda keputusan penting terlalu lama
+
+optimum:
+- Kerja di lingkungan yang menghargai struktur, integritas, dan analisis mendalam
+- Sediakan ruang sunyi tiap hari untuk merapikan pikiran dan emosi
+- Bangun lingkaran kecil yang dipercaya, jangan bekerja sendirian terus
+- Jadwalkan istirahat, tubuh **Air** ([[癸]]) mudah kering bila dipaksa
+
+### Keluarga & Pasangan
+
+pasangan:
+- vibe: Hangat · Membimbing
+- headline: Pendamping yang sabar dan menerima sisi diam
+- body: Pasangan ideal Li Xiang An adalah sosok yang ramah, sabar, dan bisa membimbing pelan tanpa menekan. Foto **婚配** menyebut shio **Macan** ([[寅]]), **Kambing** ([[未]]), dan **Anjing** ([[戌]]) sebagai paling cocok. Hubungan paling stabil bila pasangan menghargai ruang refleksi dan tidak menuntut keterbukaan instan.
+
+anak:
+- vibe: Bertanggung jawab · Cerdas
+- headline: Anak yang membawa nama baik dan kemandirian
+- body: Foto **全局總論** menyebut anak Li Xiang An akan punya nama baik, patuh, dan cerdas. Pola asuh paling pas adalah memberi struktur jelas tanpa menjadi otoriter, sambil membiarkan anak mengeksplorasi minatnya. Hubungan akan akrab bila ayah hadir secara emosional, bukan hanya finansial.
+
+saudara:
+- vibe: Jaga jarak · Hormat
+- headline: Relasi saudara terhormat namun tidak terlalu lengket
+- body: Istana **Saudara** ([[兄弟]]) memberi pola hubungan saling menghargai tetapi tidak intens. Li Xiang An cenderung menjadi tempat saudara meminta nasihat saat sulit, namun ia sendiri jarang minta tolong. Disarankan menjaga komunikasi rutin walau singkat, supaya ikatan tidak melemah seiring usia.
+
+kepemimpinan:
+- vibe: Strategis · Tegas
+- headline: Pemimpin diam yang mengandalkan integritas dan struktur
+- body: Format **正官格** memberinya naluri kepemimpinan berbasis aturan dan kewajiban. Ia tidak suka pamer otoritas, tetapi keputusan dan standarnya jelas. Tim akan menghormatinya bila ia mau lebih sering menjelaskan alasan di balik instruksi, bukan hanya hasil akhir.
+
+### Shen Sha (Bintang Pelengkap)
+
+paragraf:
+Pola Shen Sha Li Xiang An didominasi **Tao Hua** ([[桃花]]) dan **Yuan Chen Da Hao** ([[元辰大耗]]) yang berbicara tentang daya tarik personal sekaligus risiko pengeluaran terselubung. **Wang Shen** ([[亡神]]) dan **Gu Chen** ([[孤辰]]) menambah nuansa kesendirian batin, ia tampak ramai di luar tetapi sering merasa sendiri di dalam. Pola ini bukan kutukan, melainkan undangan untuk lebih sadar memilih lingkungan dan pengeluaran agar energi tidak bocor pelan-pelan tanpa disadari.
+
+dominant_star:
+- hanzi: 桃花
+- pinyin: Táo Huā
+- label_id: Bintang Pesona
+- active_label: AKTIF SEKARANG
+
+strip:
+Manfaatkan pesona untuk membangun jaringan profesional, jaga jarak dengan godaan yang menguras finansial dan emosi.
+
+### Rezeki & Caifu
+
+paragraf:
+Foto **財帛** menyebut **偏財** Li Xiang An subur, namun **正財** kurang. Ia lebih beruntung pada peluang proyek, komisi, dan investasi non-rutin daripada gaji statis. Day master **癸水** yang lemah membutuhkan dorongan **logam** ([[金]]) sebagai sumber, jadi rezeki paling lancar lewat bidang yang punya struktur, sistem, atau aturan jelas. Disiplin pencatatan menjadi kunci, karena Shen Sha **大耗** mudah membuat uang lewat tanpa terasa.
+
+zheng_cai:
+- label: "Rezeki Tetap"
+- percent: "40%"
+- body: Gaji rutin hadir tetapi bukan saluran utama, sering kalah dibanding peluang sampingan. Foto **財帛** menegaskan **正財** sulit dipertahankan tanpa investasi pada aset tetap seperti properti. Sebaiknya sebagian gaji segera dialihkan ke instrumen yang tidak gampang cair.
+
+pian_cai:
+- label: "Rezeki Tak Terduga"
+- percent: "60%"
+- body: Bagian terbesar rezeki Li Xiang An datang dari peluang proyek, komisi, atau bisnis yang dirintis sendiri. Foto **財帛** menyebut **偏財** subur dan punya kepekaan terhadap nilai uang. Saluran ini paling kuat saat ia bergerak proaktif, bukan menunggu.
+
+rules:
+- title: "Pisahkan rekening proyek dan rutin"; context: "Cegah pencampuran arus kas pribadi dan komisi proyek."; tone: tip
+- title: "Beli aset tetap untuk mengunci rezeki"; context: "Foto sebut perlu properti supaya 正財 tidak bocor."; tone: tip
+- title: "Hindari spekulasi tanpa data"; context: "Shen Sha 大耗 aktif, kerugian datang dari keputusan emosional."; tone: warn
+- title: "Catat tiap pengeluaran kecil rutin"; context: "Bocor halus paling berbahaya, terlihat saat dijumlahkan."; tone: warn
+
+### Karir & Industri
+
+intro:
+Karir Li Xiang An optimal di bidang yang menuntut struktur, ketelitian, dan analisis. Foto **事業** menyebut dua kelompok besar yang searah dan layar Zi Wei mendukung profesi yang berhubungan dengan informasi, hukum, dan teknik.
+
+tags:
+- fav_1: hz: 金; label: "STRUKTUR"
+- fav_2: hz: 水; label: "ANALISIS"
+- unfav_1: hz: 土; label: "BIROKRASI BERAT"
+- unfav_2: hz: 火; label: "PANGGUNG BISING"
+
+industri:
+- nama: "[[律師]] / Hukum & Pengacara"; unsur: 金; alasan: foto 事業 sebut langsung sebagai bidang searah, cocok dengan format 正官.
+- nama: "[[會計]] / Akuntansi & Audit"; unsur: 金; alasan: foto 事業 sebut langsung, ketelitian dan struktur sesuai DM 癸水 logam.
+- nama: "[[金融界]] / Keuangan & Perbankan"; unsur: 金; alasan: foto 事業 sebut langsung, kekuatan analisis cocok di sektor finansial.
+- nama: "[[機械]] / Teknik & Mesin"; unsur: 金; alasan: foto 事業 sebut langsung, sistematis dan struktural.
+- nama: "[[出版]] / Penerbitan & Media"; unsur: 木; alasan: foto 事業 sebut langsung, mendukung pengembangan ide dan tulisan.
+
+### Day Master & Wu Xing
+
+paragraf:
+Day master **Air Yin** ([[癸]]) Li Xiang An tergolong **Lemah** dengan skor pendukung 4086 lawan penekan 4560. **用神 logam** ([[金]]) menjadi sumber utama, dibantu **喜用神 kayu** ([[木]]) untuk menyalurkan energi. Aktifkan unsur ini lewat warna putih, abu, hijau, jadwal kerja yang terstruktur, dan lingkungan kerja berbasis aturan jelas.
+
+ji_shen_body:
+**忌神 tanah** ([[土]]) dan **仇神 tanah** ([[土]]) yang sama menjadi penekan utama, mengeringkan air. Hindari beban administratif berlebihan, lingkungan terlalu kaku formal, dan situasi tanggung jawab yang menumpuk tanpa dukungan tim.
+
+### Yang Zhai (Feng Shui Hunian)
+
+paragraf:
+Trigram pribadi Li Xiang An adalah **Kan** ([[坎卦]]), gua air yang menyukai arah Utara, Timur, dan Tenggara. Foto **陽宅** menyebut hunian ideal duduk Utara menghadap Selatan atau duduk Selatan menghadap Utara. Altar paling baik di Timur Laut atau Barat Laut. Pintu utama, ruang utama, dan tempat tidur sebaiknya di sisi yang searah dengan trigram Kan agar energi air mengalir lancar.
+
+zones:
+- label: "Pintu Utama"; headline: "✓ Optimal"; pills: 東; note: "Pintu di Timur dan Tenggara mengundang rezeki searah trigram Kan."
+- label: "Kamar Tidur"; headline: "✓ Optimal"; pills: 北; note: "Kamar di Utara, Timur, atau Tenggara membantu istirahat dalam."
+- label: "Dapur / Kompor"; headline: "✓ Tunjang"; pills: 東; note: "Dapur menghadap Timur, kompor jangan satu garis dengan pintu utama."
+- label: "Kamar Mandi"; headline: "⚠ Waspada"; pills: 西; note: "Hindari kamar mandi di tengah rumah, picu energi air berlebih."
+- label: "Ruang Kerja"; headline: "✓ Optimal"; pills: 南; note: "Meja kerja menghadap Selatan atau Tenggara untuk fokus dan otoritas."
+- label: "Altar / Sembah"; headline: "✓ Tunjang"; pills: 西; note: "Altar di Barat Laut atau Timur Laut, foto Yang Zhai menyebutnya searah."
+
+### Da Yun — Spotlight (Fase Sekarang)
+
+headline: Fase 29-38: Api Yin Babi ([[丁亥]]), Modal Tumbuh Lewat Proyek
+
+bullet 1: **偏財** aktif kuat, peluang komisi dan proyek sampingan menjadi sumber rezeki utama dekade ini.
+bullet 2: Cabang **亥** menambah air, day master mendapat dukungan, energi dan ketahanan kerja meningkat.
+bullet 3: Risiko: kombinasi 丁 dengan air mudah memicu pengeluaran emosional, jaga rekening proyek terpisah.
+bullet 4: Bangun aset tetap di paruh akhir fase, sebelum transisi ke 戊子 yang menuntut tanggung jawab lebih besar.
+
+### Da Yun — 5 Seasons
+
+- umur 9-28: Musim Belajar — fase 乙酉 dan 丙戌, banyak menyerap ilmu dan mencari identitas profesional.
+- umur 29-48: Musim Membangun — fase 丁亥 dan 戊子, modal dan otoritas tumbuh, tanggung jawab makin besar.
+- umur 49-68: Musim Memimpin — fase 己丑 dan 庚寅, nama dan posisi mantap, kayu mendukung ekspansi.
+- umur 69-88: Musim Menuai — fase 辛卯 dan 壬辰, panen relasi dan aset, energi air kembali penuh.
+- umur 89-108: Musim Mengajar — fase 癸巳 dan 甲午, berbagi pengalaman, peran mentor menjadi sentral.
+
+### Da Yun — Footer Caption
+
+Li Xiang An di fase [[丁亥]] (29-38), modal tumbuh lewat proyek dan jaringan luas.
+
+### Palace Detail 1
+
+ming_gong:
+- star: 巨門
+- insight: Istana Hidup Li Xiang An dipimpin **Ju Men** ([[巨門]]), bintang gerbang yang menonjolkan kemampuan analisis, debat, dan komunikasi mendalam. Cocok di bidang yang menuntut argumentasi, riset, atau penjelasan rumit. Sisi bayangnya adalah kecenderungan curiga dan banyak bicara di internal pikiran. Latih ekspresi terbuka agar daya kata tidak menjadi senjata yang melukai diri sendiri.
+- action: Pilih jalur yang menghargai kata, riset, dan kejelasan logika.
+
+xiongdi:
+- star: 七殺
+- insight: Istana Saudara dihuni **Qi Sha** ([[七殺]]) yang menandakan saudara berkarakter kuat, kompetitif, sekaligus protektif. Hubungan bisa renggang saat muda karena masing-masing mencari ruang sendiri, namun matang menjadi saling mendukung di usia dewasa. Disarankan tidak mengikat keuangan terlalu dalam dengan saudara untuk menjaga keseimbangan.
+- action: Jaga komunikasi tetap rutin, batasi kerjasama bisnis berlapis utang.
+
+fuqi:
+- star: 天梁
+- insight: Istana Pasangan dijaga **Tian Liang** ([[天梁]]), bintang pengayom yang menunjukkan pasangan dewasa, sabar, dan punya naluri membimbing. Hubungan paling stabil ketika ada perbedaan usia atau kematangan emosional, bukan sekadar romantis. Tantangannya: pasangan kadang terlalu mengayomi sehingga Li Xiang An merasa diperlakukan seperti adik.
+- action: Tegaskan ruang setara, jangan biarkan diri terus diposisikan sebagai yang dibimbing.
+
+zinu:
+- star: 武曲
+- insight: Istana Anak dihuni **Wu Qu** ([[武曲]]) bersama **Tian Fu** ([[天府]]), kombinasi yang menjanjikan anak berdisiplin, mandiri, dan punya naluri finansial sejak muda. Foto **子女** menyebut anak akan dapat dipercaya dan membawa nama baik. Pola asuh ideal adalah memberi kepercayaan bertahap, bukan kontrol ketat.
+- action: Beri anak ruang berlatih kemandirian sejak dini, hadir saat dibutuhkan.
+
+### Palace Detail 2
+
+caibo:
+- star: 天機
+- insight: Istana Rezeki dipimpin **Tian Ji** ([[天機]]) bersama **Tian Liang** ([[天梁]]), pola rezeki yang dinamis dan butuh strategi rapi. Foto **財帛** menyebut **偏財** subur namun **正財** sulit. Penghasilan paling stabil bila Li Xiang An punya beberapa saluran kecil yang dikelola sistematis, bukan satu saluran besar yang rapuh terhadap perubahan.
+- action: Diversifikasi saluran rezeki, kelola dengan sistem dan catatan rinci.
+
+jie_e:
+- star: 貪狼
+- insight: Istana Kesehatan dijaga **Tan Lang** ([[貪狼]]). Foto **疾厄** menyebut sistem pernapasan, paru, dan saluran cerna besar adalah titik rawan. Penyakit kulit dan hati juga perlu diwaspadai. Day master air yang lemah membuatnya sensitif terhadap kelelahan dan kurang tidur. Olahraga rutin dan hidrasi cukup adalah jangkar kesehatan.
+- action: Jaga pola tidur, lakukan medical check-up tahunan untuk paru dan ginjal.
+
+qianyi:
+- star: 太陰
+- insight: Istana Perpindahan dihuni **Tai Yin** ([[太陰]]) bersama **太陽** ([[太陽]]), keduanya bersinar menandakan perjalanan dan perpindahan banyak membawa keberuntungan. Foto **遷移** menyebut perubahan posisi atau pindah rumah sering menjadi kunci membuka rezeki baru. Tantangannya adalah kelelahan logistik bila terlalu sering bergerak tanpa basis tetap.
+- action: Tetap punya satu basis stabil, perpindahan bersifat strategis bukan reaktif.
+
+puyi:
+- star: 紫微
+- insight: Istana Sahabat dijaga **Zi Wei** ([[紫微]]) yang menandakan kemampuan menarik teman dan bawahan berkualitas tinggi. Foto **僕役** menyebut bawahan setia dan punya keberanian, namun butuh dorongan agar tidak menunda. Lingkaran sahabat cenderung membantu di saat genting bila Li Xiang An mau membuka diri lebih awal.
+- action: Investasikan waktu pada lingkaran inti, jangan tunggu butuh baru bertanya.
+
+### Palace Detail 3
+
+guanlu:
+- star: 天同
+- insight: Istana Karir dijaga **Tian Tong** ([[天同]]). Foto **官祿** menyebut karir luwes di banyak bidang, sukses paling cepat datang bila ada **Wen Chang** ([[文昌]]) atau **Wen Qu** ([[文曲]]) di kerja kantoran maupun usaha sendiri. Di posisi 巳/午 ada risiko terlalu banyak menggarap hal kecil sehingga pencapaian terbatas. Fokus pada satu lini utama menjadi penting.
+- action: Tentukan satu lini karir utama, sisanya disebut sebagai pelengkap.
+
+tianzhai:
+- star: 廉貞
+- insight: Istana Properti dihuni **Lian Zhen** ([[廉貞]]) bersama **Tian Fu** ([[天府]]), yang menjanjikan kepemilikan properti substansial. Foto **田宅** menyebut Li Xiang An bisa mewarisi atau mengelola properti besar bila tidak ada bintang pengganggu. Properti di arah Utara dan area dekat lembaga pendidikan sangat membantu rezeki jangka panjang.
+- action: Beli properti pertama di arah Utara atau area kultur dan pendidikan.
+
+fude:
+- star: 太陽
+- insight: Istana Berkah dijaga **Tai Yang** ([[太陽]]). Foto **福德** menyebut Li Xiang An punya semangat hidup tinggi dan ketahanan jangka panjang, tetapi butuh pemurnian dari rasa curiga dan keras kepala. Berkah tumbuh ketika ia menetap di rumah dengan suasana hangat dan rutin meditasi atau aktivitas reflektif lain.
+- action: Sediakan ritual tenang harian, lepas curiga yang tidak berdasar.
+
+fumu:
+- star: 天魁
+- insight: Istana Orang Tua dihuni **Tian Kui** ([[天魁]]) yang menandakan ayah atau ibu pernah menjadi pelindung di masa krisis. Foto **父母** menyebut hubungan sempat keras saat muda karena dua kepribadian yang sama tegas. Di usia matang, hubungan menghangat bila Li Xiang An aktif membuka komunikasi dan tidak menunggu dihubungi.
+- action: Inisiatif sapa orang tua minimal sekali seminggu walau lewat pesan singkat.
+
+### Kesimpulan
+
+quote: "Air yang tenang membawa arus paling jauh, Li Xiang An, langkahmu lambat tetapi setiap aliran menorehkan jalur yang sulit dikeringkan oleh waktu."
+
+stats:
+- format_desc: Format 正官格 membentuk pribadi tegas pada aturan dan menjunjung tanggung jawab.
+- yong_desc: Aktifkan unsur logam lewat warna putih, jam kerja terstruktur, dan lingkungan rapi.
+- dayun_desc: Fase 丁亥 menumbuhkan modal lewat proyek dan komisi, bukan gaji rutin.
+- umur_desc: Dekade pertengahan tiga puluh adalah panggung membangun fondasi karir dan keluarga.
+- kompat_desc: Pasangan ideal dari shio Macan, Kambing, atau Anjing, hindari Tikus, Kerbau, Kelinci, Kuda.
+
+life_map:
+- lalu: Fase 乙酉 dan 丙戌 menjadi musim belajar dan eksplorasi identitas, banyak ujian disiplin dan ketahanan.
+- sekarang: Fase 丁亥 menumbuhkan modal lewat proyek, jaringan luas, dan kepekaan finansial yang makin tajam.
+- berikutnya: Fase 戊子 membawa otoritas dan tanggung jawab, posisi kepemimpinan mulai terasa nyata.
+
+### Sintesis & Saran Aksi
+
+opening:
+Li Xiang An adalah air tenang berisi prinsip kuat, pribadi yang menjunjung aturan namun penuh empati di lingkaran tepercaya, terus mengalir walau jalan berliku.
+
+trio:
+kekuatan:
+- hanzi: 守正
+- pinyin: Shǒu Zhèng
+- arti: "Menjaga Prinsip"
+- body: Kekuatan inti Li Xiang An adalah kemampuan menjaga prinsip dan integritas walau lingkungan berubah. Format 正官格 dan day master 癸 yang lemah membuatnya peka pada keadilan, sekaligus tahan terhadap godaan jangka pendek. Ia menjadi sosok yang dipercaya menyelesaikan urusan rumit secara bersih.
+
+tantangan:
+- hanzi: 過緊
+- pinyin: Guò Jǐn
+- arti: "Terlalu Tegang"
+- body: Tantangan utama adalah kecenderungan terlalu kaku dan menyimpan beban sendiri. Day master air yang lemah cepat lelah bila tanggung jawab menumpuk tanpa saluran ekspresi. Shen Sha 孤辰 menambah rasa sendiri, walau sebenarnya banyak yang siap membantu jika ia mau meminta.
+
+tindakan:
+- hanzi: 立業
+- pinyin: Lì Yè
+- arti: "Membangun Usaha"
+- body: Panggung optimal adalah membangun usaha atau lini karir yang bersandar pada struktur, hukum, dan analisis. Fase 丁亥 mendukung diversifikasi sumber rezeki, sambil membeli aset tetap di akhir dekade. Fokus, sistematis, dan disiplin pencatatan menjadi formula utama.
+
+actions:
+- title: "Pisahkan rekening rutin dan proyek"; context: Cegah arus kas tercampur, audit bulanan untuk akurasi.
+- title: "Beli aset tetap sebelum 38 tahun"; context: Kunci 偏財 fase 丁亥 ke properti yang tidak gampang cair.
+- title: "Bangun rutinitas tidur 7 jam"; context: DM air lemah cepat kering, paru dan ginjal butuh istirahat dalam.
+- title: "Inisiatif sapa keluarga rutin"; context: Hubungan ortu dan saudara mekar bila Li Xiang An yang membuka pintu.
+- title: "Pilih satu lini karir utama"; context: Hindari menggarap terlalu banyak proyek kecil tanpa fokus.
+
+## CATATAN
+
+Foto 批命備註 detail (skor 旺度 per stem) tidak ada, semua wangdu_* null. dm_pos_score dan dm_neg_score diambil dari +4.086 / -4.560 di main BaZi grid (foto 09 (2)). Format 正官格 dibaca dari label 卦格 di main BaZi grid (〇坎卦, 正官用事). Marriage cocok/hindari dari layar 婚配 (cocok: 配相虎/羊/狗 → 寅,未,戌; hindari: 配相鼠/牛/兔/馬 → 子,丑,卯,午). yang_zhai_gua = 坎 dari label 坎卦 di layar 陽宅. Shen sha dari layar 神煞 (亡神, 桃花, 孤辰, 元辰, 大耗) tanpa info pilar eksplisit. Ti xiang per element tidak terbaca jelas, semua null. ming_gong_bazi tidak terbaca, null.
+
+## DATA_EXTRA
+
+- chou_shen: 土
+- xi_shen: 水
+- xian_shen: 火
+- xiantian_organ_jia: 膽
+- xiantian_organ_yi: 肝
+- xiantian_organ_bing: 小腸
+- xiantian_organ_ding: 心
+- xiantian_organ_wu: 胃
+- xiantian_organ_ji: 脾
+- xiantian_organ_geng: 大腸
+- xiantian_organ_xin: 肺
+- xiantian_organ_ren: 膀胱
+- xiantian_organ_gui: 腎
+- xiantian_organ_health_notes: 乙0 hati lemah, 丙0 usus kecil lemah, perlu jaga pola makan dan istirahat untuk mengompensasi.
+- da_yun_start_note_hz: 每逢後戊或癸年驚蟄後11天交大運
+- da_yun_start_note_id: Da Yun mulai 9 tahun setelah lahir, transisi tepat 11 hari setelah Jingzhe pada tahun 戊 atau 癸.
+- gushuyun_paragraf_hz: 三命通會註, 玄武當權, 滴天髓註, 癸水至弱, 達於天津, 得龍而運, 功化斯神
+- gushuyun_terjemahan_id: Kitab klasik menyebut 癸水 paling lemah namun bila bertemu pendukung yang tepat akan menjelma menjadi kekuatan transformatif.
+- quan_ju_paragraf: Pasangan kadang berbicara tidak masuk akal, namun anak laki-laki akan punya nama baik dan patuh. Kata-kata saudari kandung sulit diterima. Tidak takut pada istri tetapi sulit menerima ucapannya.
+- quan_ju_bullets:
+  - Pasangan suka membantah dengan logika sendiri.
+  - Anak laki-laki cerdas dan membawa nama baik keluarga.
+  - Saudari kandung sulit diberi nasihat, jaga jarak komunikasi.
+- fumu_bazi_paragraf: Hubungan dengan orang tua hangat tampak terbuka, tetapi ada momen konflik karena kepribadian sama-sama keras. Ada kecenderungan sebagian energi keluarga terpakai untuk hobi yang tidak produktif. Sejak kecil sering bentrok dengan orang tua, dewasa cenderung menjaga jarak fisik untuk menjaga damai.
+- shiye_paragraf: Bidang searah meliputi alat tulis, penerbitan, toko buku, agribisnis sayur dan buah, kayu, mebel, dekorasi, kertas, kerajinan kayu, taman bibit, obat tradisional, tekstil, pendidikan, pegawai negeri, politik, agamawan. Kelompok kedua: pabrik baja, toko logam, tambang, otomotif, mesin, sains, hukum, hiburan, musik, beladiri, akuntansi, dan keuangan.
+- shiye_industri_kelompok: 教育/出版/木材/家俱 + 律師/金融/機械/科學
+- xing_qing_paragraf: Pribadi gigih dan teguh pada nilai diri. Tegas tetapi tidak kasar. Penuh kemampuan menangani urusan namun kadang kurang fleksibel. Kreatif, ekspresif, suka pengakuan tulus, kurang menerima tekanan dari orang lain. Tidak menyukai pandangan publik yang dangkal, mudah terlihat angkuh, perfeksionis, tegas. Suka membuat orang berharap padanya. Selektif berbicara, jarang berdebat.
+- liu_nian_table:
+  - usia 29: ganzhi 戊戌; ten_god 正官; shen_sha_main 死符; shen_sha_minor 元辰
+  - usia 30: ganzhi 己亥; ten_god 七殺; shen_sha_main 帝旺; shen_sha_minor 羊刃驛馬
+  - usia 31: ganzhi 庚子; ten_god 正印; shen_sha_main 臨官; shen_sha_minor 干祿
+  - usia 32: ganzhi 辛丑; ten_god 偏印; shen_sha_main 冠帶; shen_sha_minor 羊刃華蓋
+  - usia 33: ganzhi 壬寅; ten_god 劫財; shen_sha_main 沐浴; shen_sha_minor 金匱劫煞
+  - usia 34: ganzhi 癸卯; ten_god 比肩; shen_sha_main 長生; shen_sha_minor 文昌天乙
+  - usia 35: ganzhi 甲辰; ten_god 傷官; shen_sha_main 養; shen_sha_minor 寡宿
+  - usia 36: ganzhi 乙巳; ten_god 食神; shen_sha_main 胎; shen_sha_minor 桃花
+  - usia 37: ganzhi 丙午; ten_god 正財; shen_sha_main 絕; shen_sha_minor 福德
+  - usia 38: ganzhi 丁未; ten_god 偏財; shen_sha_main 墓; shen_sha_minor 白虎
+  - usia 39: ganzhi 戊申; ten_god 正官; shen_sha_main 死; shen_sha_minor 死符
+  - usia 40: ganzhi 己酉; ten_god 七殺; shen_sha_main 病; shen_sha_minor 病符
+  - usia 41: ganzhi 庚戌; ten_god 正印; shen_sha_main 衰; shen_sha_minor 太歲
+  - usia 42: ganzhi 辛亥; ten_god 偏印; shen_sha_main 帝旺; shen_sha_minor 太陽
+  - usia 43: ganzhi 壬子; ten_god 劫財; shen_sha_main 臨官; shen_sha_minor 喪門元辰
+  - usia 44: ganzhi 癸丑; ten_god 比肩; shen_sha_main 冠帶; shen_sha_minor 太陰
+  - usia 45: ganzhi 甲寅; ten_god 傷官; shen_sha_main 沐浴; shen_sha_minor 官符元辰
+  - usia 46: ganzhi 乙卯; ten_god 食神; shen_sha_main 長生; shen_sha_minor 干祿
+  - usia 47: ganzhi 丙辰; ten_god 正財; shen_sha_main 養; shen_sha_minor 羊刃刃馬
+  - usia 48: ganzhi 丁巳; ten_god 偏財; shen_sha_main 胎; shen_sha_minor 死符元辰
+- liu_nian_predictions:
+  - tahun 2026 (usia 37, [[丙午]]): Tahun penuh kerja keras tetapi hasil finansial belum sebanding. Lingkungan berubah, hindari mengubah karir. Hati-hati pada konflik domestik dan godaan asmara. Bulan 2, 5, dan 11 paling rawan, sebaiknya jaga ucapan.
+  - tahun 2027 (usia 38, [[丁未]]): Tahun penyembuhan dengan rezeki akhir tahun lebih terang. Risiko penyakit kronis dan tekanan emosional bagi yang menikah. Pertahankan sikap rendah hati, kumpulkan tabungan, hindari penampilan berlebihan dalam pergaulan.
+  - tahun 2028 (usia 39, [[戊申]]): Bantuan senior membuka peluang besar. Hindari kunjungan rumah orang sakit serta urusan duka. Waspadai gosip, fitnah, dan godaan asmara di luar pernikahan agar tidak merusak keluarga dan reputasi.
+  - tahun 2029 (usia 40, [[己酉]]): Kesehatan badan agak lemah, perhatikan paru dan saluran napas. Belum menikah berpotensi mendekat dengan lawan jenis. Bulan 2, 5, 8, dan 11 hindari spekulasi, fokus pada kerja administratif.
+  - tahun 2030 (usia 41, [[庚戌]]): Pengeluaran besar, lawan tantangan dengan tenang. Hindari investasi spekulatif, jaga kesehatan ginjal, dan jangan terlibat polemik orang lain. Akhir tahun rezeki kembali normal jika sabar dan disiplin.
+- ziwei_stars_ming: 巨門, 紫微論命
+- ziwei_stars_xiongdi: 七殺旺, 台輔, 天哭, 天虛, 胎神, 大耗
+- ziwei_stars_fuqi: 天梁陷, 天旬, 官空, 絕空, 劫小耗, 夫役丁亥
+- ziwei_stars_zinu: null
+- ziwei_stars_caibo: 紫微得三合左, 文曲陷, 旬空, 龍池, 官符, 華蓋, 7 19 31 43 55
+- ziwei_stars_jie_e: 貪狼平, 孤辰, 病, 力士, 息神, 青龍
+- ziwei_stars_qianyi: 天機旺繁華煞, 天府旺, 天傷, 天廚
+- ziwei_stars_puyi: 天梁旺, 帝旺, 天魁, 將兵
+- ziwei_stars_guanlu: 武曲旺, 天府旺, 天天天, 姚福偽, 帝伏, 將兵
+- ziwei_stars_tianzhai: 廉貞旺, 天府旺
+- ziwei_stars_fude: 太陽得, 太陰化科, 武曲化權, 天同化忌
+- ziwei_stars_fumu: 天魁
+- ti_xiang_notes: Foto main BaZi tidak menampilkan kolom 體相 dengan jelas, semua field null.

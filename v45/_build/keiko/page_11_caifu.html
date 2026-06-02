@@ -2,10 +2,10 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Keiko — 財富 Rezeki</title>
+<title>Keiko, 財富 Rezeki</title>
 <link rel="stylesheet" href="style.css">
 <style>
-  .content-cf { grid-template-rows: 70mm 1fr 30mm !important; gap: 5mm; }
+  .content-cf { grid-template-rows: auto auto auto !important; gap: 5mm; align-content: start; }
 
   /* DUAL METER */
   .cf-meters { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; overflow: hidden; }
@@ -51,10 +51,10 @@
     font-weight: 700; letter-spacing: 1px;
   }
   .cf-meter.zheng .cfm-gauge-fill {
-    width: 90%; background: linear-gradient(90deg, var(--gold), #B89758);
+    background: linear-gradient(90deg, var(--gold), #B89758);
   }
   .cf-meter.pian .cfm-gauge-fill {
-    width: 85%; background: linear-gradient(90deg, var(--green), #4FA77F);
+    background: linear-gradient(90deg, var(--green), #4FA77F);
   }
   .cfm-gauge-scale {
     display: flex; justify-content: space-between;
@@ -71,10 +71,8 @@
   .cfm-tag .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 700; margin-right: 1.5mm; }
   .cf-meter.pian .cfm-tag .hz { color: var(--green); }
   .cfm-desc {
-    font-size: 7.8pt; line-height: 1.5; color: var(--text);
+    font-size: 7pt; line-height: 1.4; color: var(--text);
     border-top: 0.2mm solid rgba(0,0,0,0.08); padding-top: 1.5mm;
-    display: -webkit-box; -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical; overflow: hidden;
   }
   .cfm-desc strong { color: var(--red); }
   .cf-meter.pian .cfm-desc strong { color: var(--green); }
@@ -96,8 +94,8 @@
 
   .cf-rules-grid {
     display: grid; grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 3mm; overflow: hidden;
+    grid-auto-rows: auto;
+    gap: 3mm;
   }
   .cf-rule {
     background: white;
@@ -133,7 +131,7 @@
     color: white;
     border-radius: 2mm;
     padding: 3.5mm 6mm;
-    display: grid; grid-template-columns: auto 1fr auto;
+    display: grid; grid-template-columns: auto 1fr;
     gap: 5mm; align-items: center;
     overflow: hidden; position: relative;
   }
@@ -143,8 +141,8 @@
     letter-spacing: 4px;
   }
   .cfh-text {
-    font-family: 'Playfair Display', serif; font-size: 11pt;
-    line-height: 1.4; font-style: italic;
+    font-family: 'Playfair Display', serif; font-size: 8.5pt;
+    line-height: 1.45; font-style: italic;
     color: rgba(255,255,255,0.95);
   }
   .cfh-text strong { color: #F5EBD0; font-style: normal; }
@@ -169,9 +167,9 @@
   </header>
 
   <div class="subject-bar">
-    <div class="subject-shio"><img src="Kerbau-Merah.svg" alt="Kerbau"></div>
+    <div class="subject-shio"><img src="Kuda-Merah.svg" alt="Kuda"></div>
     <div class="subject-meta">
-      <div class="subject-name">Keiko · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">丑 Kerbau</span></div>
+      <div class="subject-name">Keiko · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">午 Kuda</span></div>
       <div class="subject-detail">Sumber rezeki tetap (正財) &amp; tak terduga (偏財) sama-sama berlimpah</div>
     </div>
     <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">丙火 · Api Matahari</div></div>
@@ -188,14 +186,13 @@
           <span class="cfm-hz">正財</span>
           <div>
             <div class="cfm-name">Rezeki Tetap</div>
-            <div class="cfm-pinyin">Zhèng Cái — Pendapatan Stabil</div>
+            <div class="cfm-pinyin">Zhèng Cái, Pendapatan Stabil</div>
           </div>
         </div>
-        <div class="cfm-gauge"><div class="cfm-gauge-fill">90%</div></div>
+        <div class="cfm-gauge"><!-- TAFSIR:caifu_zheng_gauge --><div class="cfm-gauge-fill" style="width:40%">40%</div><!-- /TAFSIR --></div>
         <div class="cfm-gauge-scale"><span>0</span><span>50</span><span>100</span></div>
-        <div class="cfm-tag"><span class="hz">關係密切</span>Relasi dekat · Mudah masuk</div>
         <div class="cfm-desc">
-          Sumber: <strong>gaji, hasil tetap, dividen</strong>. Relasi <span class="hz">密切</span> = dekat &amp; konsisten. Pondasi finansial Anda sangat kokoh — pakai untuk tujuan jangka panjang.
+<!-- TAFSIR:caifu_zheng_body -->Rezeki tetap Keiko paling stabil di bidang yang melibatkan ekspresi, komunikasi, dan kepemimpinan. Karir profesional dengan ruang otonomi dan kreativitas akan memberi fondasi finansial yang solid. Fase <strong>Api Yang Tikus</strong> (<span class="hz">丙子</span>) (usia 13-22) yang sedang berjalan saat ini membuka akses ke peluang karir pertama yang signifikan bagi Keiko.<!-- /TAFSIR -->
         </div>
       </div>
 
@@ -205,14 +202,13 @@
           <span class="cfm-hz">偏財</span>
           <div>
             <div class="cfm-name">Rezeki Tak Terduga</div>
-            <div class="cfm-pinyin">Piān Cái — Rejeki Tak Terduga</div>
+            <div class="cfm-pinyin">Piān Cái, Rejeki Spekulatif</div>
           </div>
         </div>
-        <div class="cfm-gauge"><div class="cfm-gauge-fill">85%</div></div>
+        <div class="cfm-gauge"><!-- TAFSIR:caifu_pian_gauge --><div class="cfm-gauge-fill" style="width:60%">60%</div><!-- /TAFSIR --></div>
         <div class="cfm-gauge-scale"><span>0</span><span>50</span><span>100</span></div>
-        <div class="cfm-tag"><span class="hz">關係疏遠</span>Relasi jauh · Tetap masuk</div>
         <div class="cfm-desc">
-          Sumber: <strong>komisi, bonus, hasil investasi, hasil spekulasi</strong>. Relasi <span class="hz">疏遠</span> = jauh &amp; tidak terprediksi, tetap mudah masuk. Kombinasi sangat langka.
+<!-- TAFSIR:caifu_pian_body -->Porsi terbesar rezeki Keiko datang dari jalur tidak terduga, seperti proyek kolaboratif, peluang yang muncul dari jaringan sosial, atau momentum yang datang tiba-tiba. Bintang <strong>Lumbung</strong> (<span class="hz">天府</span>) di Istana Rezeki adalah pertanda akumulasi kekayaan jangka panjang yang solid. Kunci bagi Keiko adalah tetap bergerak dan menjaga kualitas relasi.<!-- /TAFSIR -->
         </div>
       </div>
 
@@ -229,39 +225,36 @@
       </div>
 
       <div class="cf-rules-grid">
-
-        <div class="cf-rule">
+<!-- TAFSIR:_caifu_rules -->
+        <div class="cf-rule tip">
           <div class="cfr-num">1</div>
           <div class="cfr-content">
-            <div class="cfr-title"><span class="hz">正</span>untuk fondasi · <span class="hz">偏</span>untuk eksperimen</div>
-            <div class="cfr-context">Rezeki tetap (gaji/hasil rutin) buat tujuan jangka panjang. Rezeki tak terduga buat eksperimen — jangan dibalik.</div>
+            <div class="cfr-title">Investasi pada kemampuan komunikasi dan kreativitas</div>
+            <div class="cfr-context">Keahlian di bidang <strong>Kayu</strong> (<span class="hz">木</span>) dan Api adalah mesin penghasil rezeki terkuat Keiko</div>
           </div>
         </div>
-
-        <div class="cf-rule tip">
+        <div class="cf-rule warn">
           <div class="cfr-num">2</div>
           <div class="cfr-content">
-            <div class="cfr-title">Sektor <strong>aliran</strong> &gt; <strong>akumulasi statis</strong></div>
-            <div class="cfr-context">Logistik · perdagangan · distribusi cocok dengan <span class="hz">喜用神</span> 水木 Anda. Hindari emas batangan / properti tanah-kering.</div>
+            <div class="cfr-title">Bangun dana darurat sebelum ekspansi finansial apapun</div>
+            <div class="cfr-context">Nihilnya <strong>Logam</strong> (<span class="hz">金</span>) dan Air membuat Keiko rentan terhadap krisis keuangan mendadak tanpa buffer</div>
           </div>
         </div>
-
         <div class="cf-rule warn">
           <div class="cfr-num">3</div>
           <div class="cfr-content">
-            <div class="cfr-title">Di <span class="hz">大運 七殺</span>: <strong>max 20% modal</strong> spekulatif</div>
-            <div class="cfr-context">七殺 mendatangkan peluang besar yang juga berisiko besar. Komitmen aturan dulu — sebelum peluang datang.</div>
+            <div class="cfr-title">Jauhi spekulasi finansial berisiko tinggi</div>
+            <div class="cfr-context">Impulsivitas Api Yang bisa mendorong Keiko ke keputusan investasi yang tidak terukur risikonya</div>
           </div>
         </div>
-
         <div class="cf-rule tip">
           <div class="cfr-num">4</div>
           <div class="cfr-content">
-            <div class="cfr-title">Setiap <span class="hz">偏財</span> sisihkan <strong>≥ 30% defensif</strong></div>
-            <div class="cfr-context">Bonus / hasil komisi langsung ke tabungan / investasi defensif sebelum digunakan. Itu disiplin paling tinggi ROI.</div>
+            <div class="cfr-title">Manfaatkan jaringan sosial untuk peluang finansial</div>
+            <div class="cfr-context">Bintang Daya Pikat aktif dan karisma alami Keiko adalah modal hubungan yang bernilai ekonomis</div>
           </div>
         </div>
-
+<!-- /TAFSIR -->
       </div>
     </div>
 
@@ -269,21 +262,14 @@
     <div class="cf-headline">
       <div class="cfh-hz">流</div>
       <div class="cfh-text">
-        <strong>Liú</strong> — "Mengalir". Rezeki Anda paling lancar saat ada gerak: distribusi, pendidikan, perdagangan. <span class="hz">水</span> &amp; <span class="hz">木</span> menjadi pintu cashflow Anda.
-      </div>
-      <div class="cfh-num">
-        <div class="big">175%</div>
-        <div class="lbl">Jumlah Rezeki</div>
+<!-- TAFSIR:caifu -->Pola finansial Keiko digerakkan oleh <strong>Api Yang</strong> (<span class="hz">丙火</span>) yang aktif dan unsur <strong>Kayu Yang</strong> (<span class="hz">甲</span>) sebagai pengumpan rezeki. Ini menciptakan arus rezeki yang dinamis dan tidak linier, bukan dari rutinitas monoton, melainkan dari kreativitas, koneksi sosial, dan kemampuan membaca peluang dengan cepat. Namun dominasi unsur <strong>Api</strong> (<span class="hz">火</span>) dan <strong>Tanah</strong> (<span class="hz">土</span>) yang tinggi, dengan <strong>Logam</strong> (<span class="hz">金</span>) dan <strong>Air</strong> (<span class="hz">水</span>) yang sangat lemah, memberi peringatan penting. Tanpa disiplin finansial, rezeki besar bisa mengalir keluar secepat masuknya.<!-- /TAFSIR -->
       </div>
     </div>
 
   </main>
 
   <footer class="footer">
-    <div class="footer-caption">
-      Keiko sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">比肩</span> (13–22) — membangun kemandirian. Periode 13–32 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
-    </div>
-    <div class="footer-meta"><span>Halaman 11 / 23</span><span>Keiko · Ramalan 命</span></div>
+    <div class="footer-meta"><span>Halaman 11 / 24</span></div>
   </footer>
 </section>
 </body>

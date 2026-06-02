@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Li Xiang Fa, 事業 Karir &amp; Profesi</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* Page-specific additions */
+  .insight-card {
+    background: linear-gradient(160deg, #FFFEF8 0%, #F5EBD0 100%);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 5mm;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 2.5mm;
+    overflow: hidden;
+  }
+  .insight-eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 7pt;
+    letter-spacing: 3px;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .insight-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 14pt;
+    color: var(--red);
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  .insight-body {
+    font-size: 7.5pt;
+    line-height: 1.45;
+    color: var(--text);
+  }
+  .insight-body strong { color: var(--red); font-weight: 600; }
+  .insight-body .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red);
+    font-weight: 600;
+  }
+  .insight-tags {
+    display: flex; gap: 2mm; flex-wrap: wrap;
+    margin-top: 1mm;
+  }
+  .insight-tag {
+    background: var(--green-bg);
+    color: var(--green);
+    font-size: 7pt;
+    padding: 0.8mm 2.5mm;
+    border-radius: 5mm;
+    border: 0.2mm solid var(--green);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .insight-tag.bad {
+    background: var(--red-bad-bg);
+    color: var(--red-bad);
+    border-color: var(--red-bad);
+  }
+
+  /* Industri row with fit bar */
+  .ind-row { grid-template-columns: 9mm 1fr 28mm !important; }
+  .fit-col {
+    display: flex; flex-direction: column; gap: 0.8mm;
+    align-items: stretch; justify-content: center;
+    min-width: 0;
+  }
+  .fit-bar-track {
+    height: 2.5mm;
+    background: rgba(0,0,0,0.05);
+    border-radius: 1.25mm;
+    overflow: hidden;
+  }
+  .fit-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--green) 0%, #4FA77F 100%);
+    border-radius: 1.25mm;
+  }
+  .ind-row:not(.top) .fit-bar-fill {
+    background: linear-gradient(90deg, var(--gold) 0%, #DCC68A 100%);
+  }
+  .fit-meta {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 6.5pt; color: var(--text-muted);
+    letter-spacing: 0.5px;
+  }
+  .fit-meta .score {
+    font-family: 'Playfair Display', serif;
+    font-size: 9pt;
+    color: var(--text);
+    font-weight: 600;
+  }
+  .ind-row.top .fit-meta .score { color: var(--green); }
+</style>
+</head>
+<body>
+<section class="page">
+
+  <!-- KEPALA -->
+  <header class="page-header">
+    <div class="h-num">12</div>
+    <div class="h-titles">
+      <div class="h-cn">事 業</div>
+      <div class="h-id">Karir &amp; Profesi</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <!-- BAR SUBJEK -->
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Kerbau-Merah.svg" alt="Kerbau"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Li Xiang Fa · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">丑 Kerbau</span></div>
+      <div class="subject-detail">16 Juni 1997 · 11:45 · Pria · Umur 30 tahun · 大運 癸卯 (偏財)</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">己土 · Tanah Sawah</div>
+    </div>
+  </div>
+
+  <!-- KONTEN -->
+  <main class="content content-career">
+
+    <!-- WU XING STRIP -->
+    <div class="wuxing-strip">
+      <div class="label">五 行</div>
+      <div class="wuxing-bar">
+<!-- TAFSIR:_career_wuxing -->
+        <div class="wux-cell self">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:100%"></div></div>
+          <div class="wux-label">土 Tanah<span class="v">5</span></div>
+        </div>
+        <div class="wux-cell">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:80%"></div></div>
+          <div class="wux-label">火 Api<span class="v">4</span></div>
+        </div>
+        <div class="wux-cell">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:60%"></div></div>
+          <div class="wux-label">金 Logam<span class="v">3</span></div>
+        </div>
+        <div class="wux-cell">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:40%"></div></div>
+          <div class="wux-label">水 Air<span class="v">2</span></div>
+        </div>
+        <div class="wux-cell unfav">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:0%"></div></div>
+          <div class="wux-label">木 Kayu<span class="v">0</span></div>
+        </div>
+<!-- /TAFSIR -->
+      </div>
+    </div>
+
+    <!-- MAIN: INSIGHT + INDUSTRI -->
+    <div class="career-main">
+
+      <!-- WAWASAN -->
+      <div class="insight-card">
+        <div class="insight-eyebrow">Wawasan Utama</div>
+        <div class="insight-title"><!-- TAFSIR:_career_title -->Tanah adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini<!-- /TAFSIR --></div>
+        <div class="insight-body">
+<!-- TAFSIR:career --><p>Karir Li Xiang Fa paling bersinar di bidang yang menggabungkan keahlian teknis, ekspresi kreatif, dan kemampuan komunikasi tegas. Ia bukan tipe pekerja kantoran patuh struktur, melainkan profesional mandiri yang butuh ruang otonomi. Foto layar 事業 menyebut bidang favorabel berkaitan dengan api panas, fotografi, elektronik, optik, kacamata, kuliner panas, kuliner cepat saji, perawatan kecantikan, dan lainnya.</p><ul><li><strong>Fotografi &amp; Optik (<span class="hz">照相</span> / <span class="hz">光學</span> / <span class="hz">眼鏡</span>)</strong> (unsur 火), Bidang yang memanfaatkan cahaya, lensa, dan kepekaan visual.</li><li><strong>Kuliner Panas &amp; F&amp;B (<span class="hz">熱飲小吃</span> / <span class="hz">食品工廠</span>)</strong> (unsur 火), Industri makanan dengan proses panas, cocok untuk energi api batin.</li><li><strong>Kecantikan &amp; Salon (<span class="hz">燙髮美容</span> / <span class="hz">化妝品</span>)</strong> (unsur 火), Industri yang menggabungkan estetika dan layanan personal.</li><li><strong>Elektronik &amp; Komputer (<span class="hz">電器</span>)</strong> (unsur 火), Bidang teknologi modern dengan komponen kelistrikan.</li><li><strong>Properti &amp; Konstruksi (<span class="hz">房地產買賣</span> / <span class="hz">水泥建材</span>)</strong> (unsur 土), Bisnis tanah dan bangunan yang sesuai dengan unsur tanah dominan.</li></ul><!-- /TAFSIR -->
+        </div>
+        <div class="insight-tags">
+<!-- TAFSIR:_career_tags -->
+          <span class="insight-tag">火 "PANAS"</span>
+          <span class="insight-tag">土 "STABIL"</span>
+          <span class="insight-tag bad">水 "DINGIN"</span>
+          <span class="insight-tag bad">木 "TUMBUH"</span>
+        <!-- /TAFSIR -->
+        </div>
+      </div>
+
+      <!-- INDUSTRI LIST -->
+      <div class="industri-list">
+        <div class="ind-header">5 Bidang Paling Searah</div>
+<!-- TAFSIR:_career_industri -->
+        <div class="ind-row top">
+          <div class="ind-icon">🔥</div>
+          <div class="ind-info">
+            <div class="ind-name">Fotografi &amp; Optik (<span class="hz">照相</span> / <span class="hz">光學</span> / <span class="hz">眼鏡</span>)</div>
+            <div class="ind-reason">Unsur 火, Bidang yang memanfaatkan cahaya, lensa, dan kepekaan visual.</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:95%"></div></div>
+          </div>
+        </div>
+        <div class="ind-row top">
+          <div class="ind-icon">🔥</div>
+          <div class="ind-info">
+            <div class="ind-name">Kuliner Panas &amp; F&amp;B (<span class="hz">熱飲小吃</span> / <span class="hz">食品工廠</span>)</div>
+            <div class="ind-reason">Unsur 火, Industri makanan dengan proses panas, cocok untuk energi api batin.</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:88%"></div></div>
+          </div>
+        </div>
+        <div class="ind-row">
+          <div class="ind-icon">🔥</div>
+          <div class="ind-info">
+            <div class="ind-name">Kecantikan &amp; Salon (<span class="hz">燙髮美容</span> / <span class="hz">化妝品</span>)</div>
+            <div class="ind-reason">Unsur 火, Industri yang menggabungkan estetika dan layanan personal.</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:82%"></div></div>
+          </div>
+        </div>
+        <div class="ind-row">
+          <div class="ind-icon">🔥</div>
+          <div class="ind-info">
+            <div class="ind-name">Elektronik &amp; Komputer (<span class="hz">電器</span>)</div>
+            <div class="ind-reason">Unsur 火, Bidang teknologi modern dengan komponen kelistrikan.</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:76%"></div></div>
+          </div>
+        </div>
+        <div class="ind-row">
+          <div class="ind-icon">🏛️</div>
+          <div class="ind-info">
+            <div class="ind-name">Properti &amp; Konstruksi (<span class="hz">房地產買賣</span> / <span class="hz">水泥建材</span>)</div>
+            <div class="ind-reason">Unsur 土, Bisnis tanah dan bangunan yang sesuai dengan unsur tanah dominan.</div>
+          </div>
+          <div class="fit-col">
+            <div class="fit-bar-track"><div class="fit-bar-fill" style="width:70%"></div></div>
+          </div>
+        </div>
+<!-- /TAFSIR -->
+      </div>
+    </div>
+
+    <!-- AVOID -->
+    <div class="avoid-strip">
+      <div class="avoid-label">忌 Hindari</div>
+      <div class="avoid-text">
+<!-- TAFSIR:_career_avoid -->Industri ber-unsur <strong>木 (Kayu)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.<!-- /TAFSIR -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- KAKI -->
+  <footer class="footer">
+    <div class="footer-meta">
+      <span>Halaman 12 / 24</span>
+    </div>
+  </footer>
+
+</section>
+</body>
+</html>

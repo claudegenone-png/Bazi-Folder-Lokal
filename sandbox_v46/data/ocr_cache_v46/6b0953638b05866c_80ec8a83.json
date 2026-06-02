@@ -1,0 +1,26 @@
+{
+  "screen_type": "liu_nian",
+  "name_id": "YUDY L",
+  "gender_hz": "陽男",
+  "birth_lunar_text": "農曆民國 52年 1月 5日 13時30分",
+  "liu_nian_per_year": [
+    {
+      "year_gregorian": 2029,
+      "year_hz": "己酉",
+      "age": 67,
+      "paragraph_hz": "今年所付出的代價，表面上與金錢能成對比。要注意，嘮叨的事會特別多，貴人暗，實質上無法達到里想。對心情有所束制，心情也不穩定。破解：歲破命中逢，破財不可當，六親防有民，作福保安康。太陰：流年運命太陰星，主有喜事來相生，求財享通人決意，東得西失事又奇。忌三六九或十二月之令，守靜修福。支票收破，行為不檢真致金錢及身體上的損失。喜新厭舊，不太定性，較易受外界環境、人事的影響與左右，性格偏強，夫妻緣較易生變化，具有小風流、輕佻之性，經常更換工作、職業或住所。",
+      "id_summary": [
+        "Pengeluaran tahun ini terlihat sepadan dengan uang namun kenyataannya sulit mencapai harapan; banyak keluhan/gossip, bintang pelindung melemah, suasana hati tidak stabil dan tertekan.",
+        "Aktif 歲破: waspadai kerugian finansial tak terhindari, jaga hubungan enam jalur keluarga, lakukan ritual amal/keselamatan sebagai penawar.",
+        "Bintang Tai Yin: potensi kabar gembira kecil, namun mencari uang tidak konsisten (dapat di timur hilang di barat); hindari bulan ke-3/6/9/12, jaga perilaku agar terhindar kerugian finansial dan fisik.",
+        "Karakter: mudah bosan, tidak stabil, mudah terpengaruh lingkungan dan pergaulan, hubungan pasangan rentan berubah, sering ganti pekerjaan atau tempat tinggal."
+      ],
+      "sub_warnings": [
+        "歲破: 歲破命中逢，破財不可當，六親防有民，作福保安康",
+        "太陰: 流年運命太陰星，主有喜事來相生，求財享通人決意，東得西失事又奇；忌三六九或十二月之令，守靜修福；支票收破，行為不檢真致金錢及身體上的損失"
+      ]
+    }
+  ],
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.32 (1).jpeg",
+  "_hash": "6b0953638b05866c_80ec8a83"
+}

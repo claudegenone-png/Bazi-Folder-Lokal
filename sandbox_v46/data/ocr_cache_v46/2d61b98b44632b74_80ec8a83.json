@@ -1,0 +1,28 @@
+{
+  "screen_type": "detail",
+  "name_id": "YUDY L",
+  "gender_hz": "男",
+  "birth_lunar_text": "農曆民國 52年 1月 5日 13時 30分",
+  "detail_sections": {
+    "福德": {
+      "hz": "搖擺不定的性格，福德也因之喪失。\n暗示著多忙碌而少獲得，位於子、申、西、亥之宮內的話，結果必可得到福德。如有吉星同位的話，福德深厚自不在話下，但與凶星的貪浪同宮者，晚年相當幸福。與七殺同宮者雖無多大的吉兆，但可致福運。與破軍同宮者，一生忙碌而無法安定。\n如位於申、西之宮者，可得到幸運。若非如此，七殺星的凶意必表現無遺。對自我以及他人的要求過嚴，塑成多不滿的人生，大概無法獲得心理上的安定。在嚴肅的反面，易受到情感的困擾，而層生波瀾吧！與紫微同宮者，晚年可獲得幸福。",
+      "_uncertain": true,
+      "_ambiguous_chars": [
+        "西 (might be 酉)",
+        "貪浪 (might be 貪狼)",
+        "層生 (might be 屢生)",
+        "塑成 (might be 養成)"
+      ],
+      "id_summary": [
+        "Karakter yang mudah goyah membuat keberuntungan spiritual (福德) ikut melemah; banyak kesibukan namun sedikit hasil yang diperoleh.",
+        "Jika berada di istana Zi/Shen/You/Hai, keberuntungan umumnya bisa diraih; bila ada bintang baik di tempat yang sama, Fude menjadi sangat kuat.",
+        "Berdampingan dengan Qi Sha: pertanda baik terbatas namun keberuntungan masih bisa dicapai; bersama Po Jun: seumur hidup sibuk dan sulit menemukan ketenangan.",
+        "Tuntutan yang terlalu tinggi terhadap diri sendiri dan orang lain menciptakan banyak ketidakpuasan batin serta kerentanan terhadap gejolak emosional.",
+        "Bersama bintang Zi Wei: kebahagiaan dan ketenangan di usia senja dapat diraih."
+      ],
+      "_photo": "WhatsApp Image 2026-05-02 at 12.58.30.jpeg"
+    }
+  },
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.30.jpeg",
+  "_hash": "2d61b98b44632b74_80ec8a83"
+}

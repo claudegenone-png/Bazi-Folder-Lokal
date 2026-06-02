@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Wu Huan Yang, Palace Detail 1</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-pal { grid-template-rows: 1fr !important; gap: 0; }
+
+  .pal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4mm; overflow: hidden;
+  }
+  .pal-card {
+    background: var(--bg-card);
+    border: 0.4mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    display: grid;
+    grid-template-rows: auto 1fr 22mm;
+    gap: 2mm;
+    overflow: hidden;
+    position: relative;
+  }
+  .pal-card.life {
+    background: linear-gradient(180deg, #FFF8E1, #F5EBD0);
+    border: 0.5mm solid var(--gold);
+  }
+  .pal-card::before {
+    content: ''; position: absolute;
+    top: 0; right: 0; width: 14mm; height: 14mm;
+    background-color: transparent;
+    background-image: radial-gradient(circle at top right, rgba(201,169,97,0.15) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .pal-head {
+    display: grid; grid-template-columns: auto 1fr auto;
+    gap: 3mm; align-items: baseline;
+    border-bottom: 0.2mm solid var(--gold-soft);
+    padding-bottom: 1.5mm;
+  }
+  .pal-name { display: block; line-height: 1.1; }
+  .pal-name .pn-id { display: block; font-family: 'Playfair Display', serif; font-size: 14pt; color: var(--red); font-weight: 700; letter-spacing: 0.3px; }
+  .pal-name .pn-meta { display: block; font-family: 'Inter', sans-serif; font-size: 7.5pt; color: var(--text-muted); letter-spacing: 0.5px; margin-top: 1mm; font-style: italic; }
+  .pal-name .pn-meta .hz { font-family: 'Noto Serif TC', serif; color: var(--text); font-style: normal; font-weight: 600; margin-left: 1.5mm; }
+  .pal-branch {
+    text-align: center;
+    font-family: 'Noto Serif TC', serif; font-size: 11pt;
+    color: var(--text); font-weight: 600;
+  }
+  .pal-branch .id {
+    display: block; font-size: 5.5pt; color: var(--text-muted);
+    font-style: italic; margin-top: 0.3mm;
+  }
+  .pal-age {
+    font-family: 'Playfair Display', serif; font-size: 8.5pt;
+    color: var(--gold); font-weight: 700;
+    text-align: right; letter-spacing: 0.5px;
+  }
+  .pal-age .lbl {
+    display: block; font-size: 5.5pt; color: var(--text-muted);
+    letter-spacing: 1px; text-transform: uppercase;
+    font-weight: 500; margin-top: 0.3mm;
+  }
+
+  .pal-stars {
+    display: flex; gap: 2mm; flex-wrap: wrap;
+    align-items: center;
+  }
+  .pal-star {
+    background: linear-gradient(135deg, white, #FFF8E1);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 1.5mm;
+    padding: 1.5mm 3mm;
+    display: grid; grid-template-columns: auto auto;
+    gap: 2mm; align-items: baseline;
+  }
+  .pal-star.main { border-color: var(--gold); background: linear-gradient(135deg, #FFF8E1, #F5EBD0); }
+  .pal-star-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 11pt;
+    color: var(--red); font-weight: 700; line-height: 1;
+  }
+  .pal-star-id { font-size: 6.5pt; color: var(--text-muted); font-style: italic; letter-spacing: 0.3px; }
+
+  .pal-insight {
+    background: linear-gradient(90deg, var(--gold-bg), transparent);
+    border-left: 0.8mm solid var(--gold);
+    border-radius: 0 1mm 1mm 0;
+    padding: 1.5mm 3mm;
+    font-family: 'Playfair Display', serif; font-size: 9.5pt;
+    color: var(--red); line-height: 1.3; font-weight: 600; font-style: italic;
+  }
+  .pal-insight .hz { font-family: 'Noto Serif TC', serif; color: var(--text); font-style: normal; font-weight: 700; }
+
+  .pal-body { font-size: 7.5pt; line-height: 1.45; color: var(--text); overflow: hidden; }
+  .pal-body strong { color: var(--red); }
+  .pal-body .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+
+  .pal-actions {
+    display: grid; gap: 1.2mm;
+    border-top: 0.2mm dashed var(--gold-soft); padding-top: 1.5mm;
+  }
+  .pal-actions-header { font-family: 'Playfair Display', serif; font-size: 11pt; color: var(--green); font-weight: 700; letter-spacing: 0.5px; margin-bottom: 1.2mm; }
+  .pal-action { display: grid; grid-template-columns: 4mm 1fr; gap: 2mm; font-size: 7.5pt; line-height: 1.45; color: var(--text); }
+  .pal-action .ico { color: var(--green); font-weight: 700; }
+  .pal-action strong { color: var(--red); }
+  .pal-action .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">17</div>
+    <div class="h-titles"><div class="h-cn">命 兄 夫 子</div><div class="h-id">Diri · Saudara · Pasangan · Anak</div></div>
+    <div class="h-section">Bagian II · Zi Wei 紫微</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Naga-Merah.svg" alt="Naga"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Wu Huan Yang · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">辰 Naga</span></div>
+      <div class="subject-detail">Detail 4 istana lingkaran-dalam, diri &amp; relasi inti</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">壬水 · Air Sungai</div></div>
+  </div>
+
+  <main class="content content-pal">
+    <div class="pal-grid">
+
+      <!-- 命宮 DIRI -->
+      <div class="pal-card life"><!-- TAFSIR:_p1_ming_gong --><div class="pal-head"><div class="pal-name"><span class="pn-id">Diri</span><span class="pn-meta">Mìng Gōng<span class="hz">命宮</span></span></div></div><div class="pal-body">Istana Hidup Wu Huan Yang dihuni <strong>Bintang Kaisar</strong> (<span class="hz">紫微</span>) di palace Ular, memberi karakter berwibawa, mandiri, dan punya prinsip kuat. Foto 命宮 menyebut karakter kuat namun fleksibel, lugas, energik, peka, suka jalur lurus, dan tidak menyimpan rahasia. Tantangan utamanya adalah belajar mendelegasikan dan tidak memikul semua beban sendiri, karena ketegasan kerap dibaca sebagai kaku.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Bangun fleksibilitas komunikasi dan keberanian mendelegasikan tugas teknis kepada tim.</span></div></div><!-- /TAFSIR --></div>
+
+      <!-- 兄弟 SAUDARA -->
+      <div class="pal-card"><!-- TAFSIR:_p1_xiongdi --><div class="pal-head"><div class="pal-name"><span class="pn-id">Saudara</span><span class="pn-meta">Xiōng Dì<span class="hz">兄弟</span></span></div></div><div class="pal-body">Istana Saudara dihuni <strong>Bintang Matahari</strong> (<span class="hz">太陽</span>) yang terang, menandakan saudara berkarakter ekspansif. <strong>Bintang Pintu Besar</strong> (<span class="hz">巨門</span>) di sekitarnya memunculkan potensi salah paham lewat kata. Komunikasi rutin dan jujur menjadi kunci, hindari menyimpan kesalahpahaman terlalu lama.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Jadwalkan pertemuan rutin dengan saudara, hindari komunikasi cepat lewat pesan singkat saja.</span></div></div><!-- /TAFSIR --></div>
+
+      <!-- 夫妻 PASANGAN -->
+      <div class="pal-card"><!-- TAFSIR:_p1_fuqi --><div class="pal-head"><div class="pal-name"><span class="pn-id">Pasangan</span><span class="pn-meta">Fū Qī<span class="hz">夫妻</span></span></div></div><div class="pal-body">Istana Pasangan dihuni <strong>Bintang Kaisar</strong> (<span class="hz">紫微</span>) yang mulia, menandakan pasangan berkarisma dan punya wibawa alami. Foto 夫妻 menyebut percintaan bagai cahaya hangat yang membentang luas; lelaki bersifat lembut bertemu wanita ekspresif. Pernikahan akan diberkahi keharmonisan jangka panjang bila saling memahami pola komunikasi.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Pilih pasangan yang sudah matang secara karir dan emosi, beri ruang bagi ekspresi pasangan.</span></div></div><!-- /TAFSIR --></div>
+
+      <!-- 子女 ANAK -->
+      <div class="pal-card"><!-- TAFSIR:_p1_zinu --><div class="pal-head"><div class="pal-name"><span class="pn-id">Anak</span><span class="pn-meta">Zǐ Nǚ<span class="hz">子女</span></span></div></div><div class="pal-body">Istana Anak dihuni <strong>Bintang Bulan</strong> (<span class="hz">太陰</span>) bersama <strong>Bintang Strategi</strong> (<span class="hz">天機</span>), menandakan anak yang sensitif, kreatif, dan reflektif. Ikatan ayah-anak hangat namun butuh ekspresi terbuka. Anak tumbuh paling baik di rumah yang stabil dan komunikatif.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Jaga konsistensi suasana hati di rumah, latih ekspresi kasih sayang yang lebih terbuka.</span></div></div><!-- /TAFSIR --></div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-meta"><span>Halaman 17 / 24</span></div>
+  </footer>
+</section>
+</body>
+</html>

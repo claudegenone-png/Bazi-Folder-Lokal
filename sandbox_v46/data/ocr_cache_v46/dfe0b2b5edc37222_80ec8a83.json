@@ -1,0 +1,31 @@
+{
+  "screen_type": "liu_nian",
+  "name_id": "YUDY L",
+  "gender_hz": "陽男",
+  "birth_lunar_text": "農曆民國 52年 1月 5日 13時30分",
+  "liu_nian_per_year": [
+    {
+      "year_gregorian": 2031,
+      "year_hz": "辛亥",
+      "age": 69,
+      "paragraph_hz": "今年一切事物，表面上看不怎樣，不能與金錢成對比。要注意兄弟朋友的來往，實質上不能達到里想。大環境會因束制，而有所變動。事業會有所變動或職位上有所變動。白虎：白虎嘯岩崖，口舌兼破財，前門拒虎去，後門進狼來。天喜：流年天喜星相逢，家有喜事迎春風，謀財事事多得意，血刃之災頻知防。女人疾病生產小心，忌一四六或十一月之令。須謹慎，否則易遭家庭厄運，不和睦或外儂，大流血之強烈的徵音。高潔、敦厚、聰明、成默、圓滿、正大光明，獨立心旺盛，喜憑己力創業，出外謀生，不願繼承家產祖業。其性猶如正官，以薪水階級最適宜。且具有半世達之特性，乃中年以前，嚐盡艱辛困苦，中年以後將相當幸福、享福；若中年以前富貴，幸福，則中年以後生活恐得陷於艱難苦戰中。",
+      "_uncertain": true,
+      "_ambiguous_chars": [
+        "外儂 (might be 外擾 — karakter ke-2 blur)",
+        "成默 (might be 沈默 or 成熟 — karakter ke-2 blur)"
+      ],
+      "id_summary": [
+        "Tahun ini keadaan terlihat biasa saja, tidak bisa dibandingkan dengan uang; waspadai hubungan dengan saudara/teman; lingkungan terkendala perubahan, karier atau jabatan pun berpotensi bergeser.",
+        "Bintang Bai Hu: waspadai sengketa mulut dan kerugian finansial — ibarat harimau di depan pintu, serigala di belakang.",
+        "Bintang Tian Xi: ada kabar gembira keluarga, urusan bisnis banyak berhasil; namun waspadai kecelakaan darah; hindari bulan ke-1/4/6/11; harus hati-hati agar tidak terjerat konflik keluarga, ketidakharmonisan, atau pengaruh luar yang merusak.",
+        "Karakter: jujur, mandiri, berintegritas, tidak suka bergantung warisan; cocok jadi karyawan/pegawai; paruh pertama hidup penuh perjuangan keras, paruh kedua relatif bahagia — namun jika muda sudah makmur, di usia tua berpotensi jatuh ke kesulitan hidup."
+      ],
+      "sub_warnings": [
+        "白虎: 白虎嘯岩崖，口舌兼破財，前門拒虎去，後門進狼來",
+        "天喜: 流年天喜星相逢，家有喜事迎春風，謀財事事多得意，血刃之災頻知防；女人疾病生產小心，忌一四六或十一月之令；須謹慎，否則易遭家庭厄運，不和睦或外儂，大流血之強烈的徵音"
+      ]
+    }
+  ],
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.33 (1).jpeg",
+  "_hash": "dfe0b2b5edc37222_80ec8a83"
+}

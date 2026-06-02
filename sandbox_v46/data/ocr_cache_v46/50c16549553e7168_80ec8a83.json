@@ -1,0 +1,25 @@
+{
+  "screen_type": "detail",
+  "name_id": "YUDY L",
+  "gender_hz": "男",
+  "birth_lunar_text": "農曆民國 52 年 1 月 5 日 13 時 30 分",
+  "detail_sections": {
+    "疾厄": {
+      "hz": "易患隱藏的疾病。關節、腦部的疾病。神經痛、風濕病等等。給您一生，疾病或受傷的機會較他人更少些！如與巨門同宮，或與天梁星同宮，且又有其他凶星同宮的話，恐有罹患心臟病之虞。建康良好，如位於已、申、亥之宮內，或與凶星同宮的話，須注意從胃部為始的腹部疾病。",
+      "_uncertain": true,
+      "_ambiguous_chars": [
+        "腦 (might be 脂 — karakter sebelum 部 di baris pertama blur)",
+        "建 (might be 健 — 建康良好 kemungkinan 健康良好, resolusi rendah)"
+      ],
+      "id_summary": [
+        "Rentan terhadap penyakit tersembunyi; masalah sendi dan kepala/otak; neuralgia serta rematik.",
+        "Sepanjang hidup, peluang sakit atau cedera lebih sedikit dibanding kebanyakan orang.",
+        "Bila Jumen (巨門) atau Tianliang (天梁) berada satu istana ditambah bintang jahat lain, waspadai risiko penyakit jantung.",
+        "Kesehatan umumnya baik; bila berada di istana Si/Shen/Hai atau berdampingan bintang jahat, perlu waspada penyakit perut yang menjalar ke area abdominal."
+      ],
+      "_photo": "WhatsApp Image 2026-05-02 at 12.58.28 (1).jpeg"
+    }
+  },
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.28 (1).jpeg",
+  "_hash": "50c16549553e7168_80ec8a83"
+}

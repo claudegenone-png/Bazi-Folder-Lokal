@@ -1,0 +1,195 @@
+{
+  "name_id": "Li Xiang An",
+  "name_hanzi": "李享安",
+  "gender_hz": "陽男",
+  "birth_solar": "1990-08-16 12:00",
+  "pillars": {
+    "year": {
+      "stem_hz": "庚",
+      "branch_hz": "午"
+    },
+    "month": {
+      "stem_hz": "甲",
+      "branch_hz": "申"
+    },
+    "day": {
+      "stem_hz": "癸",
+      "branch_hz": "丑"
+    },
+    "hour": {
+      "stem_hz": "戊",
+      "branch_hz": "午"
+    }
+  },
+  "wuxing": {
+    "jin": 3.0,
+    "shui": 3.0,
+    "mu": 1.0,
+    "huo": 2.0,
+    "tu": 5.0
+  },
+  "yong_shen_hz": "金",
+  "ji_shen_hz": "土",
+  "xi_yong_shen_hz": "木",
+  "xian_shen_hz": "火",
+  "chou_shen_hz": "土",
+  "format_hz": "正官格",
+  "shi_shen_per_pilar": {
+    "year": "正印",
+    "month": "傷官",
+    "day": "主",
+    "hour": "正官"
+  },
+  "ti_xiang": {
+    "mu": "死",
+    "huo": "囚",
+    "tu": "休",
+    "jin": "旺",
+    "shui": "相"
+  },
+  "da_yun": [
+    {
+      "age_start": 9,
+      "age_end": 18,
+      "stem_hz": "乙",
+      "branch_hz": "酉",
+      "ten_god_hz_md": "食神"
+    },
+    {
+      "age_start": 19,
+      "age_end": 28,
+      "stem_hz": "丙",
+      "branch_hz": "戌",
+      "ten_god_hz_md": "正財"
+    },
+    {
+      "age_start": 29,
+      "age_end": 38,
+      "stem_hz": "丁",
+      "branch_hz": "亥",
+      "ten_god_hz_md": "偏財"
+    },
+    {
+      "age_start": 39,
+      "age_end": 48,
+      "stem_hz": "戊",
+      "branch_hz": "子",
+      "ten_god_hz_md": "正官"
+    },
+    {
+      "age_start": 49,
+      "age_end": 58,
+      "stem_hz": "己",
+      "branch_hz": "丑",
+      "ten_god_hz_md": "七殺"
+    },
+    {
+      "age_start": 59,
+      "age_end": 68,
+      "stem_hz": "庚",
+      "branch_hz": "寅",
+      "ten_god_hz_md": "正印"
+    },
+    {
+      "age_start": 69,
+      "age_end": 78,
+      "stem_hz": "辛",
+      "branch_hz": "卯",
+      "ten_god_hz_md": "偏印"
+    },
+    {
+      "age_start": 79,
+      "age_end": 88,
+      "stem_hz": "壬",
+      "branch_hz": "辰",
+      "ten_god_hz_md": "劫財"
+    },
+    {
+      "age_start": 89,
+      "age_end": 98,
+      "stem_hz": "癸",
+      "branch_hz": "巳",
+      "ten_god_hz_md": "比肩"
+    },
+    {
+      "age_start": 99,
+      "age_end": 108,
+      "stem_hz": "甲",
+      "branch_hz": "午",
+      "ten_god_hz_md": "傷官"
+    }
+  ],
+  "marriage": {
+    "cocok_branches": [
+      "寅",
+      "未",
+      "戌"
+    ],
+    "hindari_branches": [
+      "子",
+      "丑",
+      "卯",
+      "午"
+    ]
+  },
+  "shio_hz": "馬",
+  "yang_zhai_gua_hz": "坎",
+  "zi_wei": {
+    "ming_zhu_hz": "巨門",
+    "shen_zhu_hz": "火星",
+    "ming_gong_branch_hz": "丑",
+    "shen_gong_branch_hz": "丑",
+    "wu_xing_ju_hz": "火六局",
+    "shi_jun_hz": "丑"
+  },
+  "dm_strength_hz": "弱",
+  "dm_strength_label_id": "Lemah",
+  "dm_pos_score": 4086.0,
+  "dm_neg_score": 4560.0,
+  "xiantian_per_stem": {
+    "jia": 1,
+    "yi": 0,
+    "bing": 0,
+    "ding": 2,
+    "wu": 2,
+    "ji": 3,
+    "geng": 2,
+    "xin": 1,
+    "ren": 1,
+    "gui": 2
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "da_yun_arah_id": "forward",
+  "da_yun_start_age": 9,
+  "shen_sha_list": [
+    {
+      "hanzi": "亡神",
+      "pillar": null
+    },
+    {
+      "hanzi": "桃花",
+      "pillar": null
+    },
+    {
+      "hanzi": "孤辰",
+      "pillar": null
+    },
+    {
+      "hanzi": "元辰",
+      "pillar": null
+    },
+    {
+      "hanzi": "大耗",
+      "pillar": null
+    }
+  ],
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": {
+    "year": "丁己",
+    "month": "戊壬庚",
+    "day": "辛癸己",
+    "hour": "丁己"
+  },
+  "_source": "MD via Web Claude (parse_md.py)"
+}

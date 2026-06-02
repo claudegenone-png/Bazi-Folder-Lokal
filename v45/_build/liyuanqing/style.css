@@ -98,8 +98,9 @@ body {
 
 .wheel-legend { display: flex; flex-direction: column; justify-content: center; gap: 2mm; font-size: 7.5pt; }
 .legend-title { font-family: 'Playfair Display', serif; font-size: 9pt; color: var(--red); letter-spacing: 2px; margin-bottom: 1mm; border-bottom: 0.2mm solid var(--gold-soft); padding-bottom: 1mm; }
-.legend-item { display: grid; grid-template-columns: 4mm 1fr; gap: 2mm; align-items: center; }
-.legend-dot { width: 3mm; height: 3mm; border-radius: 50%; border: 0.3mm solid; }
+.legend-item { display: grid; grid-template-columns: 7mm 1fr; gap: 2mm; align-items: center; }
+.legend-dot { width: 3mm; height: 3mm; border-radius: 50%; border: 0.3mm solid; justify-self: center; }
+.legend-line { width: 6mm; height: 2.5mm; justify-self: center; }
 .legend-item .lbl { display: flex; flex-direction: column; }
 .legend-item .lbl .cn { font-family: 'Noto Serif TC', serif; font-size: 8.5pt; color: var(--text); }
 .legend-item .lbl .id { font-size: 6.5pt; color: var(--text-muted); letter-spacing: 0.5px; }

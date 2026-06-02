@@ -1,0 +1,27 @@
+{
+  "screen_type": "detail",
+  "name_id": "YUDY L",
+  "gender_hz": "男",
+  "birth_lunar_text": "農曆民國 52年 1月 5日 13時 30分",
+  "detail_sections": {
+    "父母": {
+      "hz": "麻煩做錯事的都是雙親。\n位於子、亥之宮內的話，是圓滿的親子關係。您有智性的雙親，家庭內充滿著開朗的智性氣氛。但稍有任意追隨流行的傾向。凶星在位者，與雙親疏離別，與互門同宮的人，與雙親的關係不協調。天梁同宮者，與雙親超衝突，年輕時即離家外出。\n您的雙親是固性開朗的人，特別是父親身為一家的標榜，領導著整個家庭。即使長大成人後，您可能從內心裡信賴您的雙親。但雙親只在您所能見到的部份付與注意力，而絕不讓您默知內心。而您原本想對雙親吐吐您的心事，但卻常會焦躁不安。再有凶星同宮者，家庭生活不甚和諧。不是遠離雙親而居就是生離死別。",
+      "_uncertain": true,
+      "_ambiguous_chars": [
+        "互 (might be 巨)",
+        "超衝突 (might be 起衝突)",
+        "吐吐 (might be 吐訴)"
+      ],
+      "id_summary": [
+        "Jika bintang istana berada di Zi atau Hai, hubungan orang tua-anak harmonis; orang tua bersifat cerdas dan suasana rumah penuh keceriaan intelektual.",
+        "Kehadiran bintang jahat menyebabkan renggang dari orang tua; bintang Tian Liang memicu konflik besar dan mendorong meninggalkan rumah di usia muda.",
+        "Ayah adalah figur pemimpin dan panutan keluarga; subjek secara batin sangat mempercayai orang tua meski sulit mengungkapkan perasaan secara terbuka.",
+        "Orang tua cenderung hanya memberi perhatian pada hal yang tampak, tidak menembus ke dalam hati; subjek sering gelisah saat ingin mencurahkan isi hati.",
+        "Jika ada bintang jahat di istana yang sama, kehidupan keluarga tidak harmonis — berpotensi berpisah tempat tinggal atau kehilangan orang tua secara tragis."
+      ],
+      "_photo": "WhatsApp Image 2026-05-02 at 12.58.30 (1).jpeg"
+    }
+  },
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.30 (1).jpeg",
+  "_hash": "15753179e7ecb49e_80ec8a83"
+}

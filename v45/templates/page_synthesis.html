@@ -2,12 +2,12 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Lin Ru Yi — Sintesis &amp; Saran Aksi</title>
+<title>Lin Ru Yi, Sintesis &amp; Saran Aksi</title>
 <link rel="stylesheet" href="style.css">
 <style>
   /* PAGE: Synthesis */
   .content-synth {
-    grid-template-rows: 30mm 50mm 70mm 32mm !important;
+    grid-template-rows: 110mm 1fr !important;
     gap: 4mm;
   }
 
@@ -53,8 +53,8 @@
   }
   .syn-quote {
     font-family: 'Playfair Display', serif;
-    font-size: 16pt; color: var(--red);
-    line-height: 1.2; font-style: italic;
+    font-size: 10.5pt; color: var(--red);
+    line-height: 1.35; font-style: italic;
     font-weight: 600;
   }
   .syn-quote .hz {
@@ -136,14 +136,19 @@
     font-size: 10pt; color: var(--text);
     font-style: italic; font-weight: 600;
   }
+  .syn-card-arti {
+    flex-basis: 100%; min-width: 0;
+    font-size: 7.5pt; color: var(--text-muted);
+    font-weight: 600; line-height: 1.2;
+    margin-top: 0.5mm;
+  }
 
   .syn-card-body {
-    font-size: 7.8pt; line-height: 1.5;
+    font-size: 7.5pt; line-height: 1.45;
     color: var(--text);
     border-top: 0.2mm solid rgba(0,0,0,0.1);
     padding-top: 1.5mm;
-    display: -webkit-box; -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical; overflow: hidden;
+    overflow: hidden;
   }
   .syn-card-body strong { color: var(--red); }
   .syn-card-body .hz {
@@ -188,7 +193,7 @@
   }
   .syn-action {
     display: grid;
-    grid-template-columns: 9mm 1fr auto;
+    grid-template-columns: 9mm 1fr;
     gap: 4mm; align-items: center;
     padding: 1.5mm 3mm;
     background: white;
@@ -215,10 +220,9 @@
     color: var(--red); font-weight: 700; margin: 0 1mm;
   }
   .syn-action-context {
-    font-size: 7pt; color: var(--text-muted);
+    font-size: 6.8pt; color: var(--text-muted);
     line-height: 1.35; margin-top: 0.5mm;
-    display: -webkit-box; -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical; overflow: hidden;
+    overflow: hidden;
   }
   .syn-action-tag {
     font-family: 'Noto Serif TC', serif;
@@ -231,57 +235,7 @@
     white-space: nowrap;
   }
 
-  /* MANTRA + TIMELINE */
-  .syn-bottom {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    gap: 4mm;
-    overflow: hidden;
-  }
-  .syn-mantra {
-    background: linear-gradient(135deg, #8B1A1A 0%, #6E1414 100%);
-    color: white;
-    border-radius: 2mm;
-    padding: 4mm 6mm;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 5mm;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-  }
-  .syn-mantra::before {
-    content: '"'; position: absolute;
-    top: -3mm; left: 2mm;
-    font-family: 'Playfair Display', serif;
-    font-size: 50pt; color: rgba(255,255,255,0.1);
-    line-height: 1; font-weight: 700;
-  }
-  .syn-mantra-hz {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 22pt; font-weight: 700;
-    letter-spacing: 4px;
-    line-height: 1;
-    color: #F5EBD0;
-    text-shadow: 0 1mm 2mm rgba(0,0,0,0.2);
-  }
-  .syn-mantra-text { min-width: 0; overflow: hidden; }
-  .syn-mantra-eyebrow {
-    font-size: 6pt; color: rgba(245,235,208,0.7);
-    letter-spacing: 3px; text-transform: uppercase;
-    font-weight: 600; margin-bottom: 1mm;
-  }
-  .syn-mantra-pinyin {
-    font-family: 'Playfair Display', serif;
-    font-size: 9.5pt; font-style: italic;
-    color: #E5D3A1;
-  }
-  .syn-mantra-meaning {
-    font-size: 7.2pt; line-height: 1.35; margin-top: 1mm;
-    color: rgba(255,255,255,0.92);
-    overflow: hidden;
-  }
-
+  /* TIMELINE */
   .syn-timeline-mini {
     background: var(--bg-card);
     border: 0.3mm solid var(--gold-soft);
@@ -339,7 +293,7 @@
 <body>
 <section class="page">
   <header class="page-header">
-    <div class="h-num">21</div>
+    <div class="h-num">22</div>
     <div class="h-titles">
       <div class="h-cn">總 結</div>
       <div class="h-id">Sintesis &amp; Saran Aksi</div>
@@ -361,22 +315,9 @@
 
   <main class="content content-synth">
 
-    <!-- WAWASAN UTAMA -->
-    <div class="syn-headline">
-      <div class="syn-seal">命</div>
-      <div class="syn-headline-text">
-        <div class="syn-eyebrow">Inti Bagan Anda</div>
-        <div class="syn-quote">
-          Anda <span class="hz">辛金</span> Logam Yin yang sedang mekar di fase <span class="hz">食神</span> — saatnya berkarya &amp; berekspresi.
-        </div>
-        <div class="syn-attrib">Penguasa Hari Kuat · 正官格 · Zheng Guan Ge</div>
-      </div>
-      <div class="syn-seal" style="transform:rotate(3deg);">運</div>
-    </div>
-
     <!-- KARTU TRIO -->
     <div class="syn-trio">
-
+<!-- TAFSIR:_syn_trio -->
       <div class="syn-card strength">
         <div class="syn-card-num">力</div>
         <div class="syn-card-eyebrow">Kekuatan</div>
@@ -385,34 +326,10 @@
           <span class="syn-card-id">Pò Lì</span>
         </div>
         <div class="syn-card-body">
-          <strong>Kreativitas + ketekunan.</strong> Kombinasi <span class="hz">辛金</span> + <span class="hz">正官格</span> = pemikir kreatif yang punya stamina. Bakat sastra, seni, ekspresi — multi-talented.
+          <strong>Kreativitas + ketekunan.</strong> Kombinasi <span class="hz">辛金</span> + <span class="hz">正官格</span> = pemikir kreatif yang punya stamina.
         </div>
       </div>
-
-      <div class="syn-card challenge">
-        <div class="syn-card-num">驗</div>
-        <div class="syn-card-eyebrow">Tantangan</div>
-        <div class="syn-card-title">
-          <span class="syn-card-hz">考驗</span>
-          <span class="syn-card-id">Kǎo Yàn</span>
-        </div>
-        <div class="syn-card-body">
-          <strong>Energi mandeg bila tidak disalurkan.</strong> Kayu (35%) + Air (24%) sudah dominan. Tanpa output, idealisme jadi kekecewaan; "harimau jadi ekor ular".
-        </div>
-      </div>
-
-      <div class="syn-card action">
-        <div class="syn-card-num">為</div>
-        <div class="syn-card-eyebrow">Tindakan</div>
-        <div class="syn-card-title">
-          <span class="syn-card-hz">作為</span>
-          <span class="syn-card-id">Zuò Wéi</span>
-        </div>
-        <div class="syn-card-body">
-          <strong>Salurkan ke <span class="hz">火 金</span>.</strong> Peran terbaik: kreator, edukator, performer, fashion/branding. Industri ekspresi (penulisan, performance, fotografi, beauty, lighting, broadcasting).
-        </div>
-      </div>
-
+<!-- /TAFSIR -->
     </div>
 
     <!-- 5 DAFTAR AKSI -->
@@ -422,104 +339,28 @@
           <span class="label">行 動 五 則</span>
           <span class="id">Lima Langkah Praktis</span>
         </div>
-        <div class="meta">SARAN APLIKATIF · 1—5</div>
+        <div class="meta">SARAN APLIKATIF · 1-5</div>
       </div>
 
       <div class="syn-action-list">
-
+<!-- TAFSIR:_syn_actions -->
         <div class="syn-action">
           <div class="syn-action-num">1</div>
           <div class="syn-action-content">
             <div class="syn-action-title">Pakai elemen <span class="hz">水</span> sebagai <strong>pendingin</strong> sebelum eksekusi</div>
-            <div class="syn-action-context">Diam → amati → baru bertindak. Hindari reaksi keras instan di fase 七殺 ini.</div>
+            <div class="syn-action-context">Diam, amati, baru bertindak.</div>
           </div>
-          <div class="syn-action-tag">水 · Air</div>
         </div>
-
-        <div class="syn-action">
-          <div class="syn-action-num">2</div>
-          <div class="syn-action-content">
-            <div class="syn-action-title">Batasi spekulatif <strong>maksimal 20% modal</strong> — sisanya di rezeki stabil</div>
-            <div class="syn-action-context">七殺 mendatangkan peluang besar yang juga berisiko besar — disiplin alokasi.</div>
-          </div>
-          <div class="syn-action-tag">正財 · Stabil</div>
-        </div>
-
-        <div class="syn-action">
-          <div class="syn-action-num">3</div>
-          <div class="syn-action-content">
-            <div class="syn-action-title">Ambil peran <strong>arsitek senior &amp; mentor</strong>, bukan operasional harian</div>
-            <div class="syn-action-context">Energi 辛金 senior paling bernilai saat membentuk orang lain.</div>
-          </div>
-          <div class="syn-action-tag">官祿 · Karir</div>
-        </div>
-
-        <div class="syn-action">
-          <div class="syn-action-num">4</div>
-          <div class="syn-action-content">
-            <div class="syn-action-title">Pilih partner ber-<span class="hz">喜用神</span> <strong>水 / 木</strong> — komunikatif &amp; edukatif</div>
-            <div class="syn-action-context">Pasangan/rekan tipe air-kayu melengkapi; sesama 辛金 mengulang dominasi logam.</div>
-          </div>
-          <div class="syn-action-tag">夫妻 · Pasangan</div>
-        </div>
-
-        <div class="syn-action">
-          <div class="syn-action-num">5</div>
-          <div class="syn-action-content">
-            <div class="syn-action-title">Anggap kritik dari saudari &amp; pasangan sebagai <strong>data</strong>, bukan serangan</div>
-            <div class="syn-action-context">Mereka adalah "sensor" karakter Anda — sumber feedback paling jujur untuk 正官格.</div>
-          </div>
-          <div class="syn-action-tag">兄弟 · Keluarga</div>
-        </div>
-
+<!-- /TAFSIR -->
       </div>
     </div>
 
-    <!-- MANTRA + LINI MASA MINI -->
-    <div class="syn-bottom">
-
-      <!-- MANTRA -->
-      <div class="syn-mantra">
-        <div class="syn-mantra-hz">文武相濟</div>
-        <div class="syn-mantra-text">
-          <div class="syn-mantra-eyebrow">Pegangan · 您 的 箴 言</div>
-          <div class="syn-mantra-pinyin">Wén Wǔ Xiāng Jì</div>
-          <div class="syn-mantra-meaning">"Halus dan tegas <strong>saling menyempurnakan</strong>" — kekuatan 辛金 Anda mencapai puncaknya saat disalurkan oleh 火 (ekspresi) dan dipangkas oleh 金 (disiplin).</div>
-        </div>
-      </div>
-
-      <!-- LINI MASA MINI -->
-      <div class="syn-timeline-mini">
-        <div class="stm-eyebrow">Posisi 大運 · Da Yun Phase</div>
-        <div class="stm-bar">
-          <div class="stm-cell past"></div>
-          <div class="stm-cell past"></div>
-          <div class="stm-cell past"></div>
-          <div class="stm-cell past"></div>
-          <div class="stm-cell past"></div>
-          <div class="stm-cell now"><div class="stm-now-label">★ ANDA · 丙辰</div></div>
-          <div class="stm-cell next"></div>
-          <div class="stm-cell future"></div>
-          <div class="stm-cell future"></div>
-          <div class="stm-cell future"></div>
-        </div>
-        <div class="stm-axis">
-          <span>5</span><span>15</span><span>25</span><span>35</span><span>45</span>
-          <span class="now-mark">55</span><span>65</span><span>75</span><span>85</span><span>95</span><span>104</span>
-        </div>
-      </div>
-
-    </div>
 
   </main>
 
   <footer class="footer">
-    <div class="footer-caption">
-      Laporan ini bukan vonis, melainkan <em>cermin pola</em>. Pakai sebagai peta — keputusan tetap di tangan Anda. Saat <span style="font-family:'Noto Serif TC',serif;color:var(--red)">文武相濟</span> tercapai, Logam menjadi pedang yang menempa karya — bukan beban yang menumpuk.
-    </div>
     <div class="footer-meta">
-      <span>Halaman 21 / 23</span>
-      <span>Lin Ru Yi · Ramalan 命</span>
+      <span>Halaman 22 / 24</span>
     </div>
   </footer>
 </section>

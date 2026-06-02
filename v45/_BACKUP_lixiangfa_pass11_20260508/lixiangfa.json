@@ -1,0 +1,837 @@
+{
+  "subject_id": "lixiangfa",
+  "_built_by": "build_from_ocr.py V4.5 FULL-MD",
+  "identity": {
+    "name_id": "Li Xiang Fa",
+    "name_hanzi": "李享發",
+    "gender_id": "Pria",
+    "birth_date": "1997-06-16",
+    "birth_time": "11:45",
+    "birth_day_name": "Senin",
+    "birth_period_id": "siang",
+    "birth_hour_branch_hz": "午",
+    "birth_hour_period_label": "siang · 午時",
+    "lunar_date_text_new": "tanggal 12 bulan 5 tahun 丁丑 (Ding Chou · 1997)",
+    "lunar_year_pillar_hz": "丁丑",
+    "lunar_republic_text": "民國 86 年 5 月 12 日",
+    "age_at_report": 30
+  },
+  "shio": {
+    "branch_hz": "丑",
+    "branch_pinyin": "Chǒu",
+    "id": "Kerbau",
+    "id_upper": "KERBAU",
+    "svg_red": "Kerbau-Merah.svg",
+    "svg_black": "Kerbau-Hitam.svg"
+  },
+  "ti_xiang": {
+    "mu": "休",
+    "huo": "旺",
+    "tu": "相",
+    "jin": "死",
+    "shui": "囚"
+  },
+  "day_master": {
+    "stem_hz": "己",
+    "stem_element_hz": "土",
+    "stem_element_id": "Tanah",
+    "polarity_id": "Yin",
+    "label_id": "Tanah Sawah",
+    "label_long_id": "Tanah",
+    "pinyin": "Jǐ 土",
+    "strength_id": "Kuat",
+    "strength_hz": "旺"
+  },
+  "pillars": {
+    "year": {
+      "stem_hz": "丁",
+      "branch_hz": "丑"
+    },
+    "month": {
+      "stem_hz": "丙",
+      "branch_hz": "午"
+    },
+    "day": {
+      "stem_hz": "己",
+      "branch_hz": "丑"
+    },
+    "hour": {
+      "stem_hz": "庚",
+      "branch_hz": "午"
+    }
+  },
+  "wuxing": {
+    "jin": {
+      "value": 3.0,
+      "percent": 21.4,
+      "label_id": "Logam"
+    },
+    "shui": {
+      "value": 2.0,
+      "percent": 14.3,
+      "label_id": "Air"
+    },
+    "mu": {
+      "value": 0.0,
+      "percent": 0.0,
+      "label_id": "Kayu"
+    },
+    "huo": {
+      "value": 4.0,
+      "percent": 28.6,
+      "label_id": "Api"
+    },
+    "tu": {
+      "value": 5.0,
+      "percent": 35.7,
+      "label_id": "Tanah"
+    },
+    "total": 14.0,
+    "self_value": 5.0,
+    "self_el_hz": "—",
+    "fav_hz": "—",
+    "unfav_hz": "—",
+    "axis_max": "—",
+    "insight_id": null,
+    "_empty": false
+  },
+  "yong_shen": {
+    "elements_hz": "土",
+    "elements_id": "Tanah",
+    "label_id": "Penopang & Pengarah",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "ji_shen": {
+    "elements_hz": "木",
+    "elements_id": "Kayu",
+    "label_id": "Pelumat & Pemicu",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "format": {
+    "hz": "從旺格",
+    "pinyin": "Ge",
+    "label_id": "Format",
+    "glyph_hz": "—"
+  },
+  "da_yun": {
+    "start_age": 4,
+    "direction_id": "backward",
+    "current_index": 2,
+    "axis_marks": [
+      4,
+      14,
+      24,
+      34,
+      44,
+      54,
+      64,
+      74,
+      84,
+      94,
+      104
+    ],
+    "cycles": [
+      {
+        "n": 1,
+        "age_start": 4,
+        "age_end": 13,
+        "stem_hz": "乙",
+        "branch_hz": "巳",
+        "ten_god_hz": "七殺",
+        "ten_god_id": "Pemurnian",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 2,
+        "age_start": 14,
+        "age_end": 23,
+        "stem_hz": "甲",
+        "branch_hz": "辰",
+        "ten_god_hz": "正官",
+        "ten_god_id": "Otoritas",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 3,
+        "age_start": 24,
+        "age_end": 33,
+        "stem_hz": "癸",
+        "branch_hz": "卯",
+        "ten_god_hz": "偏財",
+        "ten_god_id": "Rezeki Bisnis",
+        "element_class": "el-shui",
+        "is_current": true
+      },
+      {
+        "n": 4,
+        "age_start": 34,
+        "age_end": 43,
+        "stem_hz": "壬",
+        "branch_hz": "寅",
+        "ten_god_hz": "正財",
+        "ten_god_id": "Rezeki Tetap",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 5,
+        "age_start": 44,
+        "age_end": 53,
+        "stem_hz": "辛",
+        "branch_hz": "丑",
+        "ten_god_hz": "食神",
+        "ten_god_id": "Pencipta",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 6,
+        "age_start": 54,
+        "age_end": 63,
+        "stem_hz": "庚",
+        "branch_hz": "子",
+        "ten_god_hz": "傷官",
+        "ten_god_id": "Kritikus Tajam",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 7,
+        "age_start": 64,
+        "age_end": 73,
+        "stem_hz": "己",
+        "branch_hz": "亥",
+        "ten_god_hz": "比肩",
+        "ten_god_id": "Pundak Sama",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 8,
+        "age_start": 74,
+        "age_end": 83,
+        "stem_hz": "戊",
+        "branch_hz": "戌",
+        "ten_god_hz": "劫財",
+        "ten_god_id": "Saudara Sebanding",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 9,
+        "age_start": 84,
+        "age_end": 93,
+        "stem_hz": "丁",
+        "branch_hz": "酉",
+        "ten_god_hz": "偏印",
+        "ten_god_id": "Mentor",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 10,
+        "age_start": 94,
+        "age_end": 103,
+        "stem_hz": "丙",
+        "branch_hz": "申",
+        "ten_god_hz": "正印",
+        "ten_god_id": "Pelajaran",
+        "element_class": "el-huo"
+      }
+    ],
+    "seasons": [
+      {
+        "el_class": "s-mu",
+        "el_hz": "木",
+        "name_id": "Tunas Belajar",
+        "age_start": 4,
+        "age_end": 23,
+        "caption_id": "masa pendidikan dan eksplorasi minat, fondasi karakter terbentuk."
+      },
+      {
+        "el_class": "s-shui",
+        "el_hz": "水",
+        "name_id": "Air",
+        "age_start": 24,
+        "age_end": 43,
+        "is_current": true,
+        "caption_id": "Kayu Berkembang — fase paling produktif, karir dan keluarga dibangun bersamaan."
+      },
+      {
+        "el_class": "s-jin",
+        "el_hz": "金",
+        "name_id": "Logam",
+        "age_start": 44,
+        "age_end": 63,
+        "caption_id": "Air Memurni — fase introspeksi, pemurnian visi, dan pemantapan posisi profesional."
+      },
+      {
+        "el_class": "s-tu",
+        "el_hz": "土",
+        "name_id": "Tanah",
+        "age_start": 64,
+        "age_end": 83,
+        "caption_id": "Logam Memimpin — fase kewenangan dan warisan, mentor bagi generasi berikutnya."
+      },
+      {
+        "el_class": "s-huo",
+        "el_hz": "火",
+        "name_id": "Api",
+        "age_start": 84,
+        "age_end": 103,
+        "caption_id": "Logam Bersemayam — fase kontemplasi, hidup tenang dengan refleksi atas perjalanan."
+      }
+    ],
+    "spotlight_headline_html": "Fase 24–33: Air Yin Kelinci (<span class=\"hz\">癸卯</span>), Mengalir dan Mencerahkan",
+    "spotlight_tag_tone_html": "Air · adaptasi",
+    "spotlight_tag_combo_html": "Wealth Lincah",
+    "spotlight_tag_combo_pair": [
+      "癸",
+      "卯"
+    ],
+    "spotlight_bullets_html": [
+      "Air membawa rezeki tak terduga, peluang berekspansi karir lewat jejaring lintas wilayah.",
+      "Kelinci memberi kesempatan menumbuhkan brand pribadi, kolaborasi kreatif, atau studi lanjutan.",
+      "Hindari konflik dengan saudara dan pasangan, fokus pada konsolidasi diri.",
+      "Disiplin keuangan dan investasi keahlian akan berbuah panen di paruh kedua dekade ini."
+    ],
+    "footer_caption_html": "Li Xiang Fa di fase <span class=\"hz\">癸卯</span> (24-33), masa air mengalir mencerahkan karir dan ekspansi."
+  },
+  "marriage": {
+    "self_branch_index": 1,
+    "cocok": [
+      {
+        "branch_hz": "子",
+        "id": "Tikus",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "巳",
+        "id": "Ular",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "酉",
+        "id": "Ayam",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      }
+    ],
+    "hindari": [
+      {
+        "branch_hz": "辰",
+        "id": "Naga",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "午",
+        "id": "Kuda",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "未",
+        "id": "Kambing",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "戌",
+        "id": "Anjing",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      }
+    ],
+    "_empty": false
+  },
+  "yang_zhai": {
+    "gua_hz": "震",
+    "gua_pinyin": "Zhèn",
+    "gua_label_id": "Petir",
+    "gua_direction_id": "Timur",
+    "gua_direction_abbr": "T",
+    "group_id": "Timur",
+    "sumbu_hoki_hz": "東↔西",
+    "sumbu_hoki_id": "T ↔ B",
+    "trigram_symbol": "☳"
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "貪狼",
+    "shen_zhu_hz": "天相",
+    "ming_gong_hz": "子",
+    "shen_gong_hz": "子",
+    "wu_xing_ju_hz": "木三局",
+    "shi_jun_hz": "寅",
+    "palaces": null,
+    "ming_gong_id": "Istana Hidup · Tikus",
+    "shen_gong_id": "Istana Tubuh · Tikus",
+    "shi_jun_id": "Penguasa Waktu · Harimau",
+    "ming_zhu_id": "Penguasa Hidup",
+    "shen_zhu_id": "Penguasa Tubuh",
+    "wu_xing_ju_id": "Aliran Kayu Tiga"
+  },
+  "shen_sha_list": [
+    {
+      "hanzi": "華蓋",
+      "pillar": null
+    },
+    {
+      "hanzi": "桃花",
+      "pillar": null
+    },
+    {
+      "hanzi": "羊刃",
+      "pillar": null
+    }
+  ],
+  "dm_pos_score": 7200.0,
+  "dm_neg_score": 2000.0,
+  "xiantian_per_stem": {
+    "jia": 0,
+    "yi": 0,
+    "bing": 1,
+    "ding": 3,
+    "wu": 0,
+    "ji": 5,
+    "geng": 1,
+    "xin": 2,
+    "ren": 0,
+    "gui": 2
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": {
+    "year": "辛癸己",
+    "month": "己丁",
+    "day": "辛癸己",
+    "hour": "己丁"
+  },
+  "mantra": {
+    "hz": "—",
+    "pinyin": "—"
+  },
+  "_xq_radar_poly": "          <polygon points=\"200,56 311.2,136 297.3,256 200,312 116.6,248 88.8,136\"\n            fill=\"rgba(139,26,26,0.18)\" stroke=\"#8B1A1A\" stroke-width=\"1.5\"/>\n          <circle cx=\"200\" cy=\"56\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"136\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"297.3\" cy=\"256\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"200\" cy=\"312\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"116.6\" cy=\"248\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"88.8\" cy=\"136\" r=\"3\" fill=\"#8B1A1A\"/>",
+  "_xq_radar_labels": "          <g font-family=\"Noto Serif TC,serif\">\n            <text x=\"200\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">自主</text>\n            <text x=\"200\" y=\"33\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Zì Zhǔ · Mandiri · 9.0</text>\n\n            <text x=\"358\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">直率</text>\n            <text x=\"358\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Zhí Shuài · Lugas · 8.0</text>\n\n            <text x=\"358\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">創意</text>\n            <text x=\"358\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Chuàng Yì · Kreatif · 7.0</text>\n\n            <text x=\"200\" y=\"382\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">細膩</text>\n            <text x=\"200\" y=\"393\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Xì Nì · Kepekaan · 7.0</text>\n\n            <text x=\"42\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">耐性</text>\n            <text x=\"42\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Nài Xìng · Kesabaran · 6.0</text>\n\n            <text x=\"42\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">自信</text>\n            <text x=\"42\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Zì Xìn · Percaya Diri · 8.0</text>\n          </g>",
+  "_xq_motto": [
+    "田",
+    "Ladang Subur",
+    "厚德 載物",
+    "沃野滋萬物"
+  ],
+  "_tafsir": {
+    "kepribadian": "Li Xiang Fa adalah jiwa <strong>Tanah Yin</strong> (<span class=\"hz\">己土</span>), tanah subur ladang yang lembut, menampung tanaman tumbuh dan menyerap hujan. Lahir di bulan <strong>Kuda</strong> (<span class=\"hz\">午</span>) yang penuh nyala api, ia memiliki energi batin yang panas dan ekspresif di dalam, tetapi tampak tenang di luar. Format <strong>Mengikuti Yang Kuat</strong> (<span class=\"hz\">從旺格</span>) dengan dominasi unsur <strong>Tanah</strong> (<span class=\"hz\">己</span>) dan <strong>Api</strong> (<span class=\"hz\">丁</span>) membuat Li Xiang Fa berkarakter teguh, mandiri, dan mengikuti irama batin sendiri ketimbang ikut arus orang lain. Ia ramah namun selektif, tidak pandai berbasa-basi, dan punya prinsip kuat yang jarang ia kompromikan.",
+    "_kepribadian_struct": {
+      "paragraf": "Li Xiang Fa adalah jiwa **Tanah Yin** ([[己土]]), tanah subur ladang yang lembut, menampung tanaman tumbuh dan menyerap hujan. Lahir di bulan **Kuda** ([[午]]) yang penuh nyala api, ia memiliki energi batin yang panas dan ekspresif di dalam, tetapi tampak tenang di luar. Format **Mengikuti Yang Kuat** ([[從旺格]]) dengan dominasi unsur **Tanah** ([[己]]) dan **Api** ([[丁]]) membuat Li Xiang Fa berkarakter teguh, mandiri, dan mengikuti irama batin sendiri ketimbang ikut arus orang lain. Ia ramah namun selektif, tidak pandai berbasa-basi, dan punya prinsip kuat yang jarang ia kompromikan.",
+      "radar_traits": [
+        [
+          "自主",
+          "Zì Zhǔ",
+          "Mandiri",
+          9.0
+        ],
+        [
+          "直率",
+          "Zhí Shuài",
+          "Lugas",
+          8.0
+        ],
+        [
+          "創意",
+          "Chuàng Yì",
+          "Kreatif",
+          7.0
+        ],
+        [
+          "細膩",
+          "Xì Nì",
+          "Kepekaan",
+          7.0
+        ],
+        [
+          "耐性",
+          "Nài Xìng",
+          "Kesabaran",
+          6.0
+        ],
+        [
+          "自信",
+          "Zì Xìn",
+          "Percaya Diri",
+          8.0
+        ]
+      ],
+      "motto": [
+        "田",
+        "Ladang Subur",
+        "厚德 載物",
+        "沃野滋萬物"
+      ],
+      "power": [
+        "Ketegasan diri yang kuat, mampu memegang prinsip walau di tengah tekanan kelompok.",
+        "Kreativitas dan kepekaan estetik tinggi, suka seni, desain, musik, dan sastra.",
+        "Loyalitas dalam pada teman dekat dan keluarga inti, hadir saat dibutuhkan.",
+        "Kemampuan menyerap pengetahuan otodidak, paham banyak hal lewat refleksi pribadi."
+      ],
+      "shadow": [
+        "Kerap terlalu terbuka tanpa filter, ucapan bisa melukai meski niat baik.",
+        "Cenderung keras kepala, sulit menerima nasihat orang tua atau atasan.",
+        "Hasrat seksual / hedonis kuat (桃花 aktif), rentan kebablasan dalam hubungan dan minum.",
+        "Mudah meledak emosional saat tertekan (羊刃), berisiko cedera fisik atau bentrok keras."
+      ],
+      "optimum": [
+        "Pilih lingkungan yang menghargai otonomi dan kreativitas, hindari struktur kaku otoriter.",
+        "Bangun disiplin diri sendiri lewat rutinitas seni, olahraga, atau studi terjadwal.",
+        "Cari mentor yang punya wibawa alami, bukan figur yang sekadar memerintah.",
+        "Salurkan energi 桃花 ke karya seni, bukan ke perilaku berisiko."
+      ]
+    },
+    "family": "pasangan: - vibe: Stabil · Pelengkap - headline: Pasangan ideal adalah figur stabil yang membawa kemakmuran lewat budi pekerti. - body: Foto layar 婚配 menunjukkan kategori kompatibilitas Li Xiang Fa. <strong>大吉 (Top Cocok)</strong>: Tikus, Ular, Ayam — jodoh terbaik yang membawa keberkahan, kemakmuran rumah tangga, dan keturunan gemilang. <strong>次吉 (Secondary Cocok)</strong>: foto menyebut \"其他生相次吉\" — shio lain di luar daftar 大吉 dan 大凶 termasuk kategori cocok kedua, walau tidak setinggi 大吉. <strong>大凶 (Hindari)</strong>: Naga, Kuda, Kambing, Anjing — berpotensi membawa ketidakharmonisan, perpisahan, dan keberatan keluarga. Cinta yang tumbuh dari budi pekerti, bukan ketertarikan fisik instan, akan paling tahan lama.<br><br>anak: - vibe: Pemberontak · Mandiri - headline: Anak tipe pemberontak yang kerap berbenturan dengan orang tua, butuh ruang otonomi. - body: Istana Anak dihuni <strong>Bintang Penghancur</strong> (<span class=\"hz\">破軍</span>) di palace 酉. Foto 子女 menyebut Li Xiang Fa kemungkinan punya satu anak yang tipe pemberontak — kerap berbenturan dengan orang tua dan bahkan bisa kabur dari rumah. <strong>Bintang Penghancur</strong> (<span class=\"hz\">破軍</span>) memang bintang yang tipis ikatannya dengan keturunan; walau punya anak, sifatnya keras. Bila ada bintang baik berbarengan (紫微/武曲/文昌/文曲), anak masih bisa tumbuh stabil. Tantangan: bangun komunikasi dua arah sejak dini, hindari pendekatan otoriter.<br><br>saudara: - vibe: Stabil · Suportif - headline: Saudara stabil dengan dukungan dari sesepuh atau senior, ikatan hangat namun mandiri. - body: Istana Saudara dihuni <strong>Bintang Gudang</strong> (<span class=\"hz\">天府</span>) berdampingan <strong>Bintang Tian Kui</strong> (<span class=\"hz\">天魁</span>) di palace 亥. Saudara berkarakter stabil dan punya kemampuan mengelola sumber daya, dengan dukungan bantuan dari sesepuh atau senior dalam hidup. Hubungan saudara cenderung hangat tetapi tiap pihak membangun jalannya sendiri. Komunikasi rutin menjadi kunci agar ikatan tetap kuat — saudara bisa menjadi mitra usaha yang solid di fase tertentu.<br><br>kepemimpinan: - vibe: Mandiri · Tegas - headline: Pemimpin tipe pekerja keras yang memimpin lewat hasil nyata, bukan retorika. - body: Gaya kepemimpinan Li Xiang Fa adalah memimpin lewat keteladanan kerja keras dan ketegasan, bukan lewat orasi atau politik kantor. <strong>Format 從旺</strong> memberi karakter mandiri, tidak suka diatur, dan paling efektif menjadi entrepreneur atau spesialis senior. Tantangannya adalah ketegasan saat harus delegasi dan kemampuan mendengar masukan staf, bukan hanya memberi arahan.",
+    "_family_struct": {
+      "pasangan": {
+        "vibe": "Stabil · Pelengkap",
+        "headline": "Pasangan ideal adalah figur stabil yang membawa kemakmuran lewat budi pekerti.",
+        "body": "Foto layar 婚配 menunjukkan kategori kompatibilitas Li Xiang Fa. **大吉 (Top Cocok)**: Tikus, Ular, Ayam — jodoh terbaik yang membawa keberkahan, kemakmuran rumah tangga, dan keturunan gemilang. **次吉 (Secondary Cocok)**: foto menyebut \"其他生相次吉\" — shio lain di luar daftar 大吉 dan 大凶 termasuk kategori cocok kedua, walau tidak setinggi 大吉. **大凶 (Hindari)**: Naga, Kuda, Kambing, Anjing — berpotensi membawa ketidakharmonisan, perpisahan, dan keberatan keluarga. Cinta yang tumbuh dari budi pekerti, bukan ketertarikan fisik instan, akan paling tahan lama."
+      },
+      "anak": {
+        "vibe": "Pemberontak · Mandiri",
+        "headline": "Anak tipe pemberontak yang kerap berbenturan dengan orang tua, butuh ruang otonomi.",
+        "body": "Istana Anak dihuni **Bintang Penghancur** ([[破軍]]) di palace 酉. Foto 子女 menyebut Li Xiang Fa kemungkinan punya satu anak yang tipe pemberontak — kerap berbenturan dengan orang tua dan bahkan bisa kabur dari rumah. **Bintang Penghancur** ([[破軍]]) memang bintang yang tipis ikatannya dengan keturunan; walau punya anak, sifatnya keras. Bila ada bintang baik berbarengan (紫微/武曲/文昌/文曲), anak masih bisa tumbuh stabil. Tantangan: bangun komunikasi dua arah sejak dini, hindari pendekatan otoriter."
+      },
+      "saudara": {
+        "vibe": "Stabil · Suportif",
+        "headline": "Saudara stabil dengan dukungan dari sesepuh atau senior, ikatan hangat namun mandiri.",
+        "body": "Istana Saudara dihuni **Bintang Gudang** ([[天府]]) berdampingan **Bintang Tian Kui** ([[天魁]]) di palace 亥. Saudara berkarakter stabil dan punya kemampuan mengelola sumber daya, dengan dukungan bantuan dari sesepuh atau senior dalam hidup. Hubungan saudara cenderung hangat tetapi tiap pihak membangun jalannya sendiri. Komunikasi rutin menjadi kunci agar ikatan tetap kuat — saudara bisa menjadi mitra usaha yang solid di fase tertentu."
+      },
+      "kepemimpinan": {
+        "vibe": "Mandiri · Tegas",
+        "headline": "Pemimpin tipe pekerja keras yang memimpin lewat hasil nyata, bukan retorika.",
+        "body": "Gaya kepemimpinan Li Xiang Fa adalah memimpin lewat keteladanan kerja keras dan ketegasan, bukan lewat orasi atau politik kantor. **Format 從旺** memberi karakter mandiri, tidak suka diatur, dan paling efektif menjadi entrepreneur atau spesialis senior. Tantangannya adalah ketegasan saat harus delegasi dan kemampuan mendengar masukan staf, bukan hanya memberi arahan."
+      }
+    },
+    "shensha": "Peta bintang Li Xiang Fa dihiasi <strong>Bintang Akademisi</strong> (<span class=\"hz\">華蓋</span>) yang menandakan bakat seni, desain, dan minat terhadap ilmu mendalam, dengan pencapaian akademik tinggi. <strong>Bintang Bunga Persik</strong> (<span class=\"hz\">桃花</span>) aktif memberi pesona alami namun juga hasrat hedonis yang kuat — perlu disalurkan dengan bijak. <strong>Bintang Pedang</strong> (<span class=\"hz\">羊刃</span>) memberi karakter tegas dan cepat, namun rentan emosi meledak dan risiko cedera fisik atau bentrok keras. Tiga bintang ini membentuk kombinasi kreatif-sensual-tajam yang khas.",
+    "_shensha_struct": {
+      "dominant_star": {
+        "hanzi": "華蓋",
+        "pinyin": "Huá Gài",
+        "label_id": "Bintang Akademisi",
+        "active_label": "AKTIF SEKARANG"
+      },
+      "strip": "Salurkan bakat seni dan kepekaan estetik ke karya konkret, hindari membiarkan 桃花 dan 羊刃 menguasai keputusan."
+    },
+    "caifu": "Pola rezeki Li Xiang Fa cenderung dari sumber tak terduga dan jejaring profesional, bukan dari gaji rutin saja. Foto layar 財帛 menyebut <strong>Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財</span>) berlimpah namun hubungan dengan rezeki itu jauh — tidak mudah diraih tanpa kerja cerdas. <strong>Rezeki Tetap</strong> (<span class=\"hz\">正財</span>) juga ada tapi sama-sama sulit didapat. Strategi terbaik: bangun keahlian yang dihargai pasar lalu monetisasi lewat banyak channel (komisi, proyek lepas, kolaborasi). Hemat dan disiplin sangat penting karena rezeki datang tidak rata.",
+    "_caifu_struct": {
+      "zheng_cai": {
+        "label": "Rezeki Tetap",
+        "percent": "40%",
+        "body": "Rezeki tetap porsi lebih kecil dibanding rezeki tak terduga. Pendapatan rutin dari gaji atau usaha mandiri yang stabil menjadi tulang punggung dasar. Perlu disiplin menabung secara otomatis karena godaan menghabiskan untuk kesenangan dan hobi sangat besar. Bangun cadangan minimal 6 bulan biaya hidup sebelum bermain di proyek spekulatif."
+      },
+      "pian_cai": {
+        "label": "Rezeki Tak Terduga",
+        "percent": "60%",
+        "body": "Rezeki tak terduga adalah jalur utama, datang dari proyek lepas, komisi penjualan, kolaborasi, dan peluang yang dibawa jejaring. Hindari spekulasi murni atau perjudian tanpa dasar. Fokus pada peluang yang masih beririsan dengan keahlian utama agar hasilnya konsisten."
+      },
+      "rules": [
+        {
+          "title": "Bangun keahlian niche bernilai tinggi",
+          "context": "Investasi waktu pada skill yang dibayar mahal pasar, hindari ikut tren dangkal.",
+          "tone": "tip"
+        },
+        {
+          "title": "Otomatiskan tabungan setiap bulan",
+          "context": "Sisihkan minimal 25% pendapatan ke rekening terpisah sebelum pengeluaran lain.",
+          "tone": "tip"
+        },
+        {
+          "title": "Hindari spekulasi tanpa pemahaman",
+          "context": "Saham individu, kripto leverage, atau judi pasar tidak cocok untuk pola rezeki ini.",
+          "tone": "warn"
+        },
+        {
+          "title": "Jangan campur emosi dengan keuangan",
+          "context": "Hindari pinjam-meminjam besar dengan teman dekat tanpa perjanjian tertulis.",
+          "tone": "warn"
+        }
+      ]
+    },
+    "career": "<p>Karir Li Xiang Fa paling bersinar di bidang yang menggabungkan keahlian teknis, ekspresi kreatif, dan kemampuan komunikasi tegas. Ia bukan tipe pekerja kantoran patuh struktur, melainkan profesional mandiri yang butuh ruang otonomi. Foto layar 事業 menyebut bidang favorabel berkaitan dengan api panas, fotografi, elektronik, optik, kacamata, kuliner panas, kuliner cepat saji, perawatan kecantikan, dan lainnya.</p><ul><li><strong>Fotografi &amp; Optik (<span class=\"hz\">照相</span> / <span class=\"hz\">光學</span> / <span class=\"hz\">眼鏡</span>)</strong> (unsur 火), Bidang yang memanfaatkan cahaya, lensa, dan kepekaan visual.</li><li><strong>Kuliner Panas &amp; F&amp;B (<span class=\"hz\">熱飲小吃</span> / <span class=\"hz\">食品工廠</span>)</strong> (unsur 火), Industri makanan dengan proses panas, cocok untuk energi api batin.</li><li><strong>Kecantikan &amp; Salon (<span class=\"hz\">燙髮美容</span> / <span class=\"hz\">化妝品</span>)</strong> (unsur 火), Industri yang menggabungkan estetika dan layanan personal.</li><li><strong>Elektronik &amp; Komputer (<span class=\"hz\">電器</span>)</strong> (unsur 火), Bidang teknologi modern dengan komponen kelistrikan.</li><li><strong>Properti &amp; Konstruksi (<span class=\"hz\">房地產買賣</span> / <span class=\"hz\">水泥建材</span>)</strong> (unsur 土), Bisnis tanah dan bangunan yang sesuai dengan unsur tanah dominan.</li></ul>",
+    "_career_struct": {
+      "tags": {
+        "fav_1": [
+          "火",
+          "\"PANAS\""
+        ],
+        "fav_2": [
+          "土",
+          "\"STABIL\""
+        ],
+        "unfav_1": [
+          "水",
+          "\"DINGIN\""
+        ],
+        "unfav_2": [
+          "木",
+          "\"TUMBUH\""
+        ]
+      },
+      "industri": [
+        {
+          "nama": "Fotografi & Optik ([[照相]] / [[光學]] / [[眼鏡]])",
+          "unsur": "火",
+          "alasan": "Bidang yang memanfaatkan cahaya, lensa, dan kepekaan visual."
+        },
+        {
+          "nama": "Kuliner Panas & F&B ([[熱飲小吃]] / [[食品工廠]])",
+          "unsur": "火",
+          "alasan": "Industri makanan dengan proses panas, cocok untuk energi api batin."
+        },
+        {
+          "nama": "Kecantikan & Salon ([[燙髮美容]] / [[化妝品]])",
+          "unsur": "火",
+          "alasan": "Industri yang menggabungkan estetika dan layanan personal."
+        },
+        {
+          "nama": "Elektronik & Komputer ([[電器]])",
+          "unsur": "火",
+          "alasan": "Bidang teknologi modern dengan komponen kelistrikan."
+        },
+        {
+          "nama": "Properti & Konstruksi ([[房地產買賣]] / [[水泥建材]])",
+          "unsur": "土",
+          "alasan": "Bisnis tanah dan bangunan yang sesuai dengan unsur tanah dominan."
+        }
+      ]
+    },
+    "daymaster": "Li Xiang Fa adalah <strong>Tanah Yin</strong> (<span class=\"hz\">己土</span>) dengan format <strong>Mengikuti Yang Kuat</strong> (<span class=\"hz\">從旺</span>), terkumpul 5 unit unsur <strong>Tanah</strong> (<span class=\"hz\">土</span>) (己=5) didukung 4 unit <strong>Api</strong> (<span class=\"hz\">火</span>) (丙1+丁3) sebagai 印 yang menyalakan. <strong>Tanah</strong> (<span class=\"hz\">土</span>) berperan sebagai <strong>用神 utama</strong> mengikuti pola dominan, sementara <strong>Api</strong> (<span class=\"hz\">火</span>) sebagai <strong>喜用神 pendukung</strong> karena 火 generates 土 (memperkuat 用神).",
+    "_jishen_body": "Hindari <strong>Kayu</strong> (<span class=\"hz\">木</span>) sebagai <strong>忌神</strong> karena 木 mengontrol 土 — bisa menggoyang fondasi pola dominan. <strong>Air</strong> (<span class=\"hz\">水</span>) sebagai <strong>仇神</strong> juga rentan memicu konflik karena 水 generates 木 (memberi makan 忌神). Lingkungan dengan banyak api dan tanah lebih cocok mendukung 用神; logam (<span class=\"hz\">金</span>) sebagai <strong>閒神</strong> netral.",
+    "yangzhai": "Trigram pribadi Li Xiang Fa adalah <strong>Guntur</strong> (<span class=\"hz\">震</span>), yang melambangkan inisiatif, gerak, dan kebangkitan. Foto layar 陽宅 merekomendasikan rumah duduk Utara menghadap Selatan, atau duduk Selatan menghadap Utara untuk hoki besar. Pintu utama ke arah Selatan, Utara, atau Tenggara membawa keberuntungan. Kompor baik di Barat menghadap Timur, atau Barat Laut menghadap Tenggara. Kamar tidur baik di Selatan, Utara, Timur, atau Tenggara. Tempat tidur cocok di Timur, Tenggara, Selatan, atau Utara. Altar di Selatan, Utara, atau Timur (sesuai arah baik tahun ini). Toilet baik di Timur Laut, Barat Laut, Barat, atau Barat Daya.",
+    "_yangzhai_struct": {
+      "zones": [
+        {
+          "label": "Pintu Utama",
+          "headline": "✓ Arah Optimal",
+          "pills": "南 北 東南",
+          "note": "Pintu utama baik dibuka ke Selatan, Utara, atau Tenggara."
+        },
+        {
+          "label": "Dapur / Kompor",
+          "headline": "✓ Arah Optimal",
+          "pills": "西 西北",
+          "note": "Kompor duduk Barat menghadap Timur, atau duduk Barat Laut menghadap Tenggara."
+        },
+        {
+          "label": "Kamar Tidur",
+          "headline": "✓ Arah Optimal",
+          "pills": "南 北 東 東南",
+          "note": "Kamar baik di Selatan, Utara, Timur, atau Tenggara."
+        },
+        {
+          "label": "Ranjang",
+          "headline": "✓ Arah Optimal",
+          "pills": "東 東南 南 北",
+          "note": "Tempat tidur cocok di Timur, Tenggara, Selatan, atau Utara."
+        },
+        {
+          "label": "Altar / Sembah",
+          "headline": "✓ Arah Optimal",
+          "pills": "南 北 東",
+          "note": "Altar baik di Selatan, Utara, atau Timur (juga arah baik tahun ini 本年大利方)."
+        },
+        {
+          "label": "Kamar Mandi",
+          "headline": "✓ Arah Optimal",
+          "pills": "東北 西北 西 西南",
+          "note": "Toilet baik di Timur Laut, Barat Laut, Barat, atau Barat Daya."
+        }
+      ]
+    },
+    "dayun_spotlight": "<div class=\"sp-headline\">Fase 24–33: Air Yin Kelinci (<span class=\"hz\">癸卯</span>), Mengalir dan Mencerahkan</div><ul class='sp-bullets'><li>Air membawa rezeki tak terduga, peluang berekspansi karir lewat jejaring lintas wilayah.</li><li>Kelinci memberi kesempatan menumbuhkan brand pribadi, kolaborasi kreatif, atau studi lanjutan.</li><li>Hindari konflik dengan saudara dan pasangan, fokus pada konsolidasi diri.</li><li>Disiplin keuangan dan investasi keahlian akan berbuah panen di paruh kedua dekade ini.</li></ul>",
+    "dayun_seasons": "<ol class='dy-seasons'><li>umur 4-23: Tunas Belajar — masa pendidikan dan eksplorasi minat, fondasi karakter terbentuk.</li><li>umur 24-43: Air-Kayu Berkembang — fase paling produktif, karir dan keluarga dibangun bersamaan.</li><li>umur 44-63: Logam-Air Memurni — fase introspeksi, pemurnian visi, dan pemantapan posisi profesional.</li><li>umur 64-83: Tanah-Logam Memimpin — fase kewenangan dan warisan, mentor bagi generasi berikutnya.</li><li>umur 84-103: Api-Logam Bersemayam — fase kontemplasi, hidup tenang dengan refleksi atas perjalanan.</li></ol>",
+    "dayun_footer": "Li Xiang Fa di fase <span class=\"hz\">癸卯</span> (24-33), masa air mengalir mencerahkan karir dan ekspansi.",
+    "palace1": "<p>ming_gong: - star: 天同 - insight: Istana Hidup Li Xiang Fa dihuni <strong>Bintang Harmoni</strong> (<span class=\"hz\">天同</span>) bersama <strong>Bintang Bulan</strong> (<span class=\"hz\">太陰</span>) di palace Tikus. Foto 命宮 menyebut hidupnya seperti aliran air yang tak henti — dingin di permukaan tapi punya nyala panas di dalam. Cerdas, ramah, energik, dengan reaksi cepat di kerja. Tipe pria/wanita 天同 di 命宮 disebut bertipe rupawan dan luwes dalam relasi, namun sulit fokus pada satu hal. Bersama 太陰 ada potensi kelemahan vena godaan asmara yang bisa merusak nama baik. - action: Salurkan energi kreatif lewat tulisan, karya, atau panggung; jaga reputasi profesional dari godaan asmara berisiko.</p><p>xiongdi: - star: 天府 - insight: Istana Saudara dihuni <strong>Bintang Gudang</strong> (<span class=\"hz\">天府</span>) berdampingan <strong>Bintang Tian Kui</strong> (<span class=\"hz\">天魁</span>). Saudara berkarakter stabil dan punya kemampuan mengelola sumber daya, dengan dukungan bantuan dari sesepuh atau senior. Hubungan saudara cenderung hangat tetapi tiap pihak membangun jalannya sendiri. Komunikasi rutin menjadi kunci agar ikatan tetap kuat. - action: Jadwalkan pertemuan rutin dengan saudara, hindari komunikasi cepat lewat pesan singkat saja.</p><p>fuqi: - star: null - insight: Foto 夫妻 menyebut Li Xiang Fa adalah tipe ramah yang bisa menyatukan keluarga, tidak akan mudah bertengkar dengan kekasih lalu berpisah. Setelah menikah bisa membangun rumah tangga yang stabil dan bahagia. Baik pria maupun wanita yang termasuk tipe ini umumnya menyayangi pasangan, dan punya kecenderungan menikah cepat. Pasangan ideal tipe yang cerdas dan berbudi pekerti tinggi. - action: Pilih pasangan yang matang secara emosi dan berbudi pekerti, bukan yang fokus utama pada penampilan fisik.</p><p>zinu: - star: 破軍 - insight: Istana Anak dihuni <strong>Bintang Penghancur</strong> (<span class=\"hz\">破軍</span>) di palace 酉. Foto 子女 menyebut anak Li Xiang Fa tipe pemberontak yang kerap berbenturan dengan orang tua, bahkan bisa kabur dari rumah. Kemungkinan hanya punya satu anak. <strong>Bintang Penghancur</strong> (<span class=\"hz\">破軍</span>) memang bintang yang tipis ikatannya dengan keturunan; walau punya anak, sifatnya keras. Bila ada <strong>Bintang Kaisar</strong> (<span class=\"hz\">紫微</span>) berbarengan ada keberkahan; bila ada <strong>Bintang Bendahara</strong> (<span class=\"hz\">武曲</span>), <strong>Bintang Sastra Yang</strong> (<span class=\"hz\">文昌</span>), atau <strong>Bintang Sastra Yin</strong> (<span class=\"hz\">文曲</span>) berbarengan, walau ada 破軍 masih bisa membesarkan anak. - action: Bangun komunikasi terbuka dengan anak, hargai otonomi mereka, jangan pakai pendekatan keras.</p>",
+    "_palace1_struct": {
+      "ming_gong": {
+        "star": "天同",
+        "insight": "Istana Hidup Li Xiang Fa dihuni **Bintang Harmoni** ([[天同]]) bersama **Bintang Bulan** ([[太陰]]) di palace Tikus. Foto 命宮 menyebut hidupnya seperti aliran air yang tak henti — dingin di permukaan tapi punya nyala panas di dalam. Cerdas, ramah, energik, dengan reaksi cepat di kerja. Tipe pria/wanita 天同 di 命宮 disebut bertipe rupawan dan luwes dalam relasi, namun sulit fokus pada satu hal. Bersama 太陰 ada potensi kelemahan vena godaan asmara yang bisa merusak nama baik.",
+        "action": "Salurkan energi kreatif lewat tulisan, karya, atau panggung; jaga reputasi profesional dari godaan asmara berisiko."
+      },
+      "xiongdi": {
+        "star": "天府",
+        "insight": "Istana Saudara dihuni **Bintang Gudang** ([[天府]]) berdampingan **Bintang Tian Kui** ([[天魁]]). Saudara berkarakter stabil dan punya kemampuan mengelola sumber daya, dengan dukungan bantuan dari sesepuh atau senior. Hubungan saudara cenderung hangat tetapi tiap pihak membangun jalannya sendiri. Komunikasi rutin menjadi kunci agar ikatan tetap kuat.",
+        "action": "Jadwalkan pertemuan rutin dengan saudara, hindari komunikasi cepat lewat pesan singkat saja."
+      },
+      "fuqi": {
+        "insight": "Foto 夫妻 menyebut Li Xiang Fa adalah tipe ramah yang bisa menyatukan keluarga, tidak akan mudah bertengkar dengan kekasih lalu berpisah. Setelah menikah bisa membangun rumah tangga yang stabil dan bahagia. Baik pria maupun wanita yang termasuk tipe ini umumnya menyayangi pasangan, dan punya kecenderungan menikah cepat. Pasangan ideal tipe yang cerdas dan berbudi pekerti tinggi.",
+        "action": "Pilih pasangan yang matang secara emosi dan berbudi pekerti, bukan yang fokus utama pada penampilan fisik."
+      },
+      "zinu": {
+        "star": "破軍",
+        "insight": "Istana Anak dihuni **Bintang Penghancur** ([[破軍]]) di palace 酉. Foto 子女 menyebut anak Li Xiang Fa tipe pemberontak yang kerap berbenturan dengan orang tua, bahkan bisa kabur dari rumah. Kemungkinan hanya punya satu anak. **Bintang Penghancur** ([[破軍]]) memang bintang yang tipis ikatannya dengan keturunan; walau punya anak, sifatnya keras. Bila ada **Bintang Kaisar** ([[紫微]]) berbarengan ada keberkahan; bila ada **Bintang Bendahara** ([[武曲]]), **Bintang Sastra Yang** ([[文昌]]), atau **Bintang Sastra Yin** ([[文曲]]) berbarengan, walau ada 破軍 masih bisa membesarkan anak.",
+        "action": "Bangun komunikasi terbuka dengan anak, hargai otonomi mereka, jangan pakai pendekatan keras."
+      }
+    },
+    "palace2": "<p>caibo: - star: 廉貞 - insight: Istana Rezeki dihuni <strong>Bintang Reformasi</strong> (<span class=\"hz\">廉貞</span>) di palace 申. Foto 財帛 menyebut Li Xiang Fa adalah orang yang merencanakan keuangan dengan teliti dan menggunakan uang secara cermat. Hemat, tidak boros, dan punya naluri menghitung sebelum mengeluarkan uang. Strategi terbaik: bangun rezeki lewat kerja keras pribadi yang strategis, bukan jalur spekulatif cepat. - action: Diversifikasi pendapatan ke aset produktif jangka panjang, hindari instrumen spekulatif tanpa pemahaman.</p><p>jie_e: - star: null - insight: Foto 疾厄 menyebut rentan masalah sistem pencernaan, pankreas, mudah lupa, mudah lelah, serta keseleo pergelangan tangan dan masalah bibir/mulut. Pola hidup teratur, makan tepat waktu, dan tidur cukup menjadi sangat penting di fase 30-an dan setelahnya. - action: Periksa rutin tahunan untuk pencernaan dan pankreas, jangan tunda gejala kecil.</p><p>qianyi: - star: null - insight: Foto 遷移 menyebut Li Xiang Fa adalah orang dengan perubahan hidup yang dramatis, bergerak cepat dan agresif seperti api besar yang membakar. Tipe yang penuh dinamika, perpindahan, dan perjalanan jauh. Rezeki dan pertumbuhan datang dari berani bergerak ke luar zona nyaman. - action: Rancang rotasi proyek atau perjalanan kerja minimal sekali per tahun untuk menjaga energi.</p><p>puyi: - star: 紫微 - insight: Istana Sahabat dihuni <strong>Bintang Kaisar</strong> (<span class=\"hz\">紫微</span>) bersama <strong>Bintang Pedang</strong> (<span class=\"hz\">七殺</span>). Foto 僕役 menyebut bisa mendapatkan bawahan yang sopan dan penuh wibawa, sama-sama bisa membangun satu usaha bersama. Tantangan: bila ada nasib di \"空亡\", bawahan bisa berbalik menyimpan dendam dan meninggalkan. Hati-hati bawahan yang pandai menjilat di depan tapi punya niat lain di belakang. <strong>七殺與武曲同宮</strong> = bawahan resisten otoritas; <strong>七殺與廉貞同宮</strong> = bawahan tidak berguna saat genting. - action: Pilih lingkaran teman dekat berdasar nilai bersama, evaluasi loyalitas lewat tindakan bukan kata.</p>",
+    "_palace2_struct": {
+      "caibo": {
+        "star": "廉貞",
+        "insight": "Istana Rezeki dihuni **Bintang Reformasi** ([[廉貞]]) di palace 申. Foto 財帛 menyebut Li Xiang Fa adalah orang yang merencanakan keuangan dengan teliti dan menggunakan uang secara cermat. Hemat, tidak boros, dan punya naluri menghitung sebelum mengeluarkan uang. Strategi terbaik: bangun rezeki lewat kerja keras pribadi yang strategis, bukan jalur spekulatif cepat.",
+        "action": "Diversifikasi pendapatan ke aset produktif jangka panjang, hindari instrumen spekulatif tanpa pemahaman."
+      },
+      "jie_e": {
+        "insight": "Foto 疾厄 menyebut rentan masalah sistem pencernaan, pankreas, mudah lupa, mudah lelah, serta keseleo pergelangan tangan dan masalah bibir/mulut. Pola hidup teratur, makan tepat waktu, dan tidur cukup menjadi sangat penting di fase 30-an dan setelahnya.",
+        "action": "Periksa rutin tahunan untuk pencernaan dan pankreas, jangan tunda gejala kecil."
+      },
+      "qianyi": {
+        "insight": "Foto 遷移 menyebut Li Xiang Fa adalah orang dengan perubahan hidup yang dramatis, bergerak cepat dan agresif seperti api besar yang membakar. Tipe yang penuh dinamika, perpindahan, dan perjalanan jauh. Rezeki dan pertumbuhan datang dari berani bergerak ke luar zona nyaman.",
+        "action": "Rancang rotasi proyek atau perjalanan kerja minimal sekali per tahun untuk menjaga energi."
+      },
+      "puyi": {
+        "star": "紫微",
+        "insight": "Istana Sahabat dihuni **Bintang Kaisar** ([[紫微]]) bersama **Bintang Pedang** ([[七殺]]). Foto 僕役 menyebut bisa mendapatkan bawahan yang sopan dan penuh wibawa, sama-sama bisa membangun satu usaha bersama. Tantangan: bila ada nasib di \"空亡\", bawahan bisa berbalik menyimpan dendam dan meninggalkan. Hati-hati bawahan yang pandai menjilat di depan tapi punya niat lain di belakang. **七殺與武曲同宮** = bawahan resisten otoritas; **七殺與廉貞同宮** = bawahan tidak berguna saat genting.",
+        "action": "Pilih lingkaran teman dekat berdasar nilai bersama, evaluasi loyalitas lewat tindakan bukan kata."
+      }
+    },
+    "palace3": "<p>guanlu: - star: 天機 - insight: Istana Karir dihuni <strong>Bintang Strategi</strong> (<span class=\"hz\">天機</span>) bersama <strong>Bintang Tian Liang</strong> (<span class=\"hz\">天梁</span>) di palace 辰, dengan <strong>化科</strong> menempel pada 天機. Foto 官祿 menyebut cocok jadi pendidik, pemuka agama, pebisnis, politisi, pengacara, pekerja tambang, dan broker. Mampu memikirkan banyak ide dan mengaplikasikannya dengan fleksibel — cocok juga di iklan, perencanaan, editing, atau pekerjaan kreatif tertulis. Bila berada di palace 子, foto memprediksi pasti menjadi tokoh besar — bisa berkembang sebagai pemimpin atau penulis/jurnalis ternama bila konsisten. - action: Pertahankan transparansi keuangan di setiap kerja sama profesional, dokumentasikan dengan baik.</p><p>tianzhai: - star: 天相 - insight: Istana Properti dihuni <strong>Bintang Tian Xiang</strong> (<span class=\"hz\">天相</span>) di palace 卯 (status 陷). Foto 田宅 menyebut walau memiliki properti, ukurannya tidak besar; rezeki properti lebih kuat bila berada di palace Tikus, Macan, Kelinci, atau Babi. Bisnis terkait dekorasi, kuliner pribadi, kerajinan tangan, atau rumah kustom akan memantik rezeki properti. Hati-hati bila ada <strong>Bintang Reformasi</strong> (<span class=\"hz\">廉貞</span>) berbarengan — tanah dan rumah yang sudah didapat bisa lepas tiba-tiba. Properti dekat pantai sangat hoki. - action: Investasi properti jangka panjang dengan riset matang, prioritas lokasi dekat air atau pemandangan.</p><p>fude: - star: 太陽 - insight: Istana Berkah dihuni <strong>Bintang Matahari</strong> (<span class=\"hz\">太陽</span>) bersama <strong>Bintang Pintu Besar</strong> (<span class=\"hz\">巨門</span>) di palace 寅, dengan <strong>化忌</strong> menempel pada 巨門. Foto 福德 menyebut Li Xiang Fa adalah pribadi yang dermawan dan luwes — walau hidup sibuk, rezeki berkahnya melimpah. Bila berada di palace 巳/午, akan terkenal dan berumur panjang. Bila berada di palace 丑/辰/戌, mendapat kebijaksanaan dan umur panjang. Tantangan: 巨門化忌 memberi rasa kepala batu dan curiga, perlu disiplin meditasi. - action: Bangun rutinitas meditasi atau hobi tenang harian untuk menjaga keseimbangan batin.</p><p>fumu: - star: 武曲 - insight: Istana Orang Tua dihuni <strong>Bintang Bendahara</strong> (<span class=\"hz\">武曲</span>) bersama <strong>Bintang Bunga Persik</strong> (<span class=\"hz\">貪狼</span>). Foto 父母 menyebut bila Istana Orang Tua hanya ada Wu Qu, hubungan orang tua-anak masih bisa damai walau ada kelemahan komunikasi. Orang tua tipe yang keras kepala dan menolak — sulit menerima nasihat balik. Hubungan ibu-anak rentan renggang sejak awal, dewasa baru bisa berdamai. Bila terlalu jauh dari rumah, bisa rentan ke perilaku judi. Hubungan dengan ayah secara material baik tetapi sering ada rasa kesepian batin. - action: Inisiatif komunikasi terbuka dengan orang tua, jangan tunda perdamaian kecil yang tertunda.</p>",
+    "_palace3_struct": {
+      "guanlu": {
+        "star": "天機",
+        "insight": "Istana Karir dihuni **Bintang Strategi** ([[天機]]) bersama **Bintang Tian Liang** ([[天梁]]) di palace 辰, dengan **化科** menempel pada 天機. Foto 官祿 menyebut cocok jadi pendidik, pemuka agama, pebisnis, politisi, pengacara, pekerja tambang, dan broker. Mampu memikirkan banyak ide dan mengaplikasikannya dengan fleksibel — cocok juga di iklan, perencanaan, editing, atau pekerjaan kreatif tertulis. Bila berada di palace 子, foto memprediksi pasti menjadi tokoh besar — bisa berkembang sebagai pemimpin atau penulis/jurnalis ternama bila konsisten.",
+        "action": "Pertahankan transparansi keuangan di setiap kerja sama profesional, dokumentasikan dengan baik."
+      },
+      "tianzhai": {
+        "star": "天相",
+        "insight": "Istana Properti dihuni **Bintang Tian Xiang** ([[天相]]) di palace 卯 (status 陷). Foto 田宅 menyebut walau memiliki properti, ukurannya tidak besar; rezeki properti lebih kuat bila berada di palace Tikus, Macan, Kelinci, atau Babi. Bisnis terkait dekorasi, kuliner pribadi, kerajinan tangan, atau rumah kustom akan memantik rezeki properti. Hati-hati bila ada **Bintang Reformasi** ([[廉貞]]) berbarengan — tanah dan rumah yang sudah didapat bisa lepas tiba-tiba. Properti dekat pantai sangat hoki.",
+        "action": "Investasi properti jangka panjang dengan riset matang, prioritas lokasi dekat air atau pemandangan."
+      },
+      "fude": {
+        "star": "太陽",
+        "insight": "Istana Berkah dihuni **Bintang Matahari** ([[太陽]]) bersama **Bintang Pintu Besar** ([[巨門]]) di palace 寅, dengan **化忌** menempel pada 巨門. Foto 福德 menyebut Li Xiang Fa adalah pribadi yang dermawan dan luwes — walau hidup sibuk, rezeki berkahnya melimpah. Bila berada di palace 巳/午, akan terkenal dan berumur panjang. Bila berada di palace 丑/辰/戌, mendapat kebijaksanaan dan umur panjang. Tantangan: 巨門化忌 memberi rasa kepala batu dan curiga, perlu disiplin meditasi.",
+        "action": "Bangun rutinitas meditasi atau hobi tenang harian untuk menjaga keseimbangan batin."
+      },
+      "fumu": {
+        "star": "武曲",
+        "insight": "Istana Orang Tua dihuni **Bintang Bendahara** ([[武曲]]) bersama **Bintang Bunga Persik** ([[貪狼]]). Foto 父母 menyebut bila Istana Orang Tua hanya ada Wu Qu, hubungan orang tua-anak masih bisa damai walau ada kelemahan komunikasi. Orang tua tipe yang keras kepala dan menolak — sulit menerima nasihat balik. Hubungan ibu-anak rentan renggang sejak awal, dewasa baru bisa berdamai. Bila terlalu jauh dari rumah, bisa rentan ke perilaku judi. Hubungan dengan ayah secara material baik tetapi sering ada rasa kesepian batin.",
+        "action": "Inisiatif komunikasi terbuka dengan orang tua, jangan tunda perdamaian kecil yang tertunda."
+      }
+    },
+    "kesimpulan": "Li Xiang Fa adalah ladang subur yang menyimpan api batin — diam di permukaan, namun mampu memberi panen melimpah bagi siapa pun yang mau menanam dengan sabar di tanahnya.",
+    "_kesimpulan_struct": {
+      "quote": "Li Xiang Fa adalah ladang subur yang menyimpan api batin — diam di permukaan, namun mampu memberi panen melimpah bagi siapa pun yang mau menanam dengan sabar di tanahnya.",
+      "stats": {
+        "format_desc": "Format Mengikuti Yang Kuat memberi karakter mandiri, teguh, dan tidak mudah diatur orang lain.",
+        "yong_desc": "Aktifkan unsur Tanah sebagai 用神 utama (warna kuning/coklat, dekat pegunungan); Api sebagai 喜用神 pendukung (warna merah, kehangatan, energi cahaya).",
+        "dayun_desc": "Fase Air Kelinci menyalakan ekspansi karir dan kerja kreatif jangka panjang.",
+        "umur_desc": "Dekade dua puluhan adalah masa konsolidasi karir, identitas profesional, dan eksplorasi cinta serius.",
+        "kompat_desc": "Cocok dengan shio Tikus, Ular, dan Ayam (大吉); hindari Naga, Kuda, Kambing, dan Anjing."
+      },
+      "life_map": {
+        "lalu": "Fase pendidikan dan pencarian arah, fondasi karakter dibangun lewat keluarga dan pengalaman muda.",
+        "sekarang": "Fase Air Kelinci dua puluhan akhir, energi mengalir mencerahkan ekspansi karir dan jejaring profesional.",
+        "berikutnya": "Fase Air Macan tiga puluhan, masa membangun karya jangka panjang dan stabilitas keluarga."
+      }
+    },
+    "sintesis": "Li Xiang Fa adalah Tanah Yin yang teguh, kreatif batinnya, dan setia pada nilai-nilai inti yang ia pegang sejak muda.",
+    "_sintesis_struct": {
+      "opening": "Li Xiang Fa adalah Tanah Yin yang teguh, kreatif batinnya, dan setia pada nilai-nilai inti yang ia pegang sejak muda.",
+      "trio": {
+        "kekuatan": {
+          "hanzi": "自主",
+          "pinyin": "Zì Zhǔ",
+          "arti": "\"Kemandirian Teguh\"",
+          "body": "Li Xiang Fa memiliki kekuatan internal yang luar biasa — mampu memegang prinsip walau di tengah tekanan kelompok. Format Mengikuti Yang Kuat memberi keunikan suara yang tidak mudah ditiru. Kekuatan ini paling bercahaya ketika ia diberi ruang otonomi, dan rekan kerja yang menghargai proses kreatif individu."
+        },
+        "tantangan": {
+          "hanzi": "桃花",
+          "pinyin": "Táo Huā",
+          "arti": "\"Bunga Persik Aktif\"",
+          "body": "Tantangan utama Li Xiang Fa adalah mengendalikan hasrat hedonis dan asmara. **Bintang Bunga Persik** ([[桃花]]) aktif memberi pesona alami, namun juga rentan godaan minum, hubungan berlebihan, atau keputusan emosional yang merugikan reputasi. Belajar menyalurkan energi ini ke karya seni atau olahraga akan melindungi nama baik dan masa depan."
+        },
+        "tindakan": {
+          "hanzi": "立業",
+          "pinyin": "Lì Yè",
+          "arti": "\"Membangun Karya\"",
+          "body": "Panggung optimal Li Xiang Fa adalah membangun karya yang berakar pada keahlian unik sambil mempertahankan jejaring yang luas dan tulus. Fokus pada kualitas, bukan kuantitas. Manfaatkan fase Air Kelinci untuk memulai proyek pribadi besar yang akan menjadi warisan profesional di paruh kedua kehidupan."
+        }
+      },
+      "actions": [
+        {
+          "title": "\"Bangun proyek kreatif pribadi\"",
+          "context": "\"Mulai satu proyek yang sepenuhnya milik sendiri di dekade ini, jadikan portofolio jangka panjang.\""
+        },
+        {
+          "title": "\"Jaga kesehatan pencernaan dan pankreas\"",
+          "context": "\"Periksa rutin tahunan, hindari pola makan tidak teratur dan minum alkohol berlebih.\""
+        },
+        {
+          "title": "\"Disiplin keuangan otomatis\"",
+          "context": "\"Sisihkan minimal 25% pendapatan ke aset produktif sebelum pengeluaran kreatif.\""
+        },
+        {
+          "title": "\"Komunikasi terbuka dengan orang tua\"",
+          "context": "\"Inisiatif menyembuhkan gesekan kecil masa lalu lewat percakapan jujur dan hangat.\""
+        },
+        {
+          "title": "\"Bangun rutinitas tenang harian\"",
+          "context": "\"Meditasi singkat atau hobi tenang menjaga nyala batin tetap konsisten dan jernih.\""
+        }
+      ]
+    },
+    "_dmcard": "\n        <div class=\"dmc-eyebrow\">本 命 · Penguasa Hari</div>\n        <div class=\"dmc-stem\">己</div>\n        <div class=\"dmc-element\">土 · Tanah Yin</div>\n        <div class=\"dmc-pinyin\">Jǐ 土, \"Tanah Subur\"</div>\n        <div class=\"dmc-traits\">\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span><strong>Pengasuh</strong>, sabar, menyerap</span></div>\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span>Pelan tapi pasti, kekayaan terbangun bertahap</span></div>\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span>Mekar dengan api (matahari) + logam (alat)</span></div>\n        </div>\n        <div class=\"dmc-strength\">Status: <span class=\"val\">KUAT</span> · 旺</div>\n      ",
+    "fam_pasangan_vibe": "Stabil · Pelengkap",
+    "fam_pasangan_headline": "Pasangan ideal adalah figur stabil yang membawa kemakmuran lewat budi pekerti.",
+    "fam_pasangan_body": "Foto layar 婚配 menunjukkan kategori kompatibilitas Li Xiang Fa. <strong>大吉 (Top Cocok)</strong>: Tikus, Ular, Ayam — jodoh terbaik yang membawa keberkahan, kemakmuran rumah tangga, dan keturunan gemilang. <strong>次吉 (Secondary Cocok)</strong>: foto menyebut \"其他生相次吉\" — shio lain di luar daftar 大吉 dan 大凶 termasuk kategori cocok kedua, walau tidak setinggi 大吉. <strong>大凶 (Hindari)</strong>: Naga, Kuda, Kambing, Anjing — berpotensi membawa ketidakharmonisan, perpisahan, dan keberatan keluarga. Cinta yang tumbuh dari budi pekerti, bukan ketertarikan fisik instan, akan paling tahan lama.",
+    "fam_anak_vibe": "Pemberontak · Mandiri",
+    "fam_anak_headline": "Anak tipe pemberontak yang kerap berbenturan dengan orang tua, butuh ruang otonomi.",
+    "fam_anak_body": "Istana Anak dihuni <strong>Bintang Penghancur</strong> (<span class=\"hz\">破軍</span>) di palace 酉. Foto 子女 menyebut Li Xiang Fa kemungkinan punya satu anak yang tipe pemberontak — kerap berbenturan dengan orang tua dan bahkan bisa kabur dari rumah. <strong>Bintang Penghancur</strong> (<span class=\"hz\">破軍</span>) memang bintang yang tipis ikatannya dengan keturunan; walau punya anak, sifatnya keras. Bila ada bintang baik berbarengan (紫微/武曲/文昌/文曲), anak masih bisa tumbuh stabil. Tantangan: bangun komunikasi dua arah sejak dini, hindari pendekatan otoriter.",
+    "fam_saudara_vibe": "Stabil · Suportif",
+    "fam_saudara_headline": "Saudara stabil dengan dukungan dari sesepuh atau senior, ikatan hangat namun mandiri.",
+    "fam_saudara_body": "Istana Saudara dihuni <strong>Bintang Gudang</strong> (<span class=\"hz\">天府</span>) berdampingan <strong>Bintang Tian Kui</strong> (<span class=\"hz\">天魁</span>) di palace 亥. Saudara berkarakter stabil dan punya kemampuan mengelola sumber daya, dengan dukungan bantuan dari sesepuh atau senior dalam hidup. Hubungan saudara cenderung hangat tetapi tiap pihak membangun jalannya sendiri. Komunikasi rutin menjadi kunci agar ikatan tetap kuat — saudara bisa menjadi mitra usaha yang solid di fase tertentu.",
+    "fam_kepemimpinan_vibe": "Mandiri · Tegas",
+    "fam_kepemimpinan_headline": "Pemimpin tipe pekerja keras yang memimpin lewat hasil nyata, bukan retorika.",
+    "fam_kepemimpinan_body": "Gaya kepemimpinan Li Xiang Fa adalah memimpin lewat keteladanan kerja keras dan ketegasan, bukan lewat orasi atau politik kantor. <strong>Format 從旺</strong> memberi karakter mandiri, tidak suka diatur, dan paling efektif menjadi entrepreneur atau spesialis senior. Tantangannya adalah ketegasan saat harus delegasi dan kemampuan mendengar masukan staf, bukan hanya memberi arahan.",
+    "caifu_zheng_gauge": "<div class=\"cfm-gauge-fill\" style=\"width:40%\">40%</div>",
+    "caifu_zheng_body": "Rezeki tetap porsi lebih kecil dibanding rezeki tak terduga. Pendapatan rutin dari gaji atau usaha mandiri yang stabil menjadi tulang punggung dasar. Perlu disiplin menabung secara otomatis karena godaan menghabiskan untuk kesenangan dan hobi sangat besar. Bangun cadangan minimal 6 bulan biaya hidup sebelum bermain di proyek spekulatif.",
+    "caifu_pian_gauge": "<div class=\"cfm-gauge-fill\" style=\"width:60%\">60%</div>",
+    "caifu_pian_body": "Rezeki tak terduga adalah jalur utama, datang dari proyek lepas, komisi penjualan, kolaborasi, dan peluang yang dibawa jejaring. Hindari spekulasi murni atau perjudian tanpa dasar. Fokus pada peluang yang masih beririsan dengan keahlian utama agar hasilnya konsisten.",
+    "_caifu_rules": "\n        <div class=\"cf-rule tip\">\n          <div class=\"cfr-num\">1</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Bangun keahlian niche bernilai tinggi</div>\n            <div class=\"cfr-context\">Investasi waktu pada skill yang dibayar mahal pasar, hindari ikut tren dangkal.</div>\n          </div>\n        </div>\n        <div class=\"cf-rule tip\">\n          <div class=\"cfr-num\">2</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Otomatiskan tabungan setiap bulan</div>\n            <div class=\"cfr-context\">Sisihkan minimal 25% pendapatan ke rekening terpisah sebelum pengeluaran lain.</div>\n          </div>\n        </div>\n        <div class=\"cf-rule warn\">\n          <div class=\"cfr-num\">3</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Hindari spekulasi tanpa pemahaman</div>\n            <div class=\"cfr-context\">Saham individu, kripto leverage, atau judi pasar tidak cocok untuk pola rezeki ini.</div>\n          </div>\n        </div>\n        <div class=\"cf-rule warn\">\n          <div class=\"cfr-num\">4</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Jangan campur emosi dengan keuangan</div>\n            <div class=\"cfr-context\">Hindari pinjam-meminjam besar dengan teman dekat tanpa perjanjian tertulis.</div>\n          </div>\n        </div>\n",
+    "_p1_ming_gong": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Diri</span><span class=\"pn-meta\">Mìng Gōng<span class=\"hz\">命宮</span></span></div></div><div class=\"pal-body\">Istana Hidup Li Xiang Fa dihuni <strong>Bintang Harmoni</strong> (<span class=\"hz\">天同</span>) bersama <strong>Bintang Bulan</strong> (<span class=\"hz\">太陰</span>) di palace Tikus. Foto 命宮 menyebut hidupnya seperti aliran air yang tak henti — dingin di permukaan tapi punya nyala panas di dalam. Cerdas, ramah, energik, dengan reaksi cepat di kerja. Tipe pria/wanita 天同 di 命宮 disebut bertipe rupawan dan luwes dalam relasi, namun sulit fokus pada satu hal. Bersama 太陰 ada potensi kelemahan vena godaan asmara yang bisa merusak nama baik.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Salurkan energi kreatif lewat tulisan, karya, atau panggung; jaga reputasi profesional dari godaan asmara berisiko.</span></div></div>",
+    "_p1_xiongdi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Saudara</span><span class=\"pn-meta\">Xiōng Dì<span class=\"hz\">兄弟</span></span></div></div><div class=\"pal-body\">Istana Saudara dihuni <strong>Bintang Gudang</strong> (<span class=\"hz\">天府</span>) berdampingan <strong>Bintang Tian Kui</strong> (<span class=\"hz\">天魁</span>). Saudara berkarakter stabil dan punya kemampuan mengelola sumber daya, dengan dukungan bantuan dari sesepuh atau senior. Hubungan saudara cenderung hangat tetapi tiap pihak membangun jalannya sendiri. Komunikasi rutin menjadi kunci agar ikatan tetap kuat.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jadwalkan pertemuan rutin dengan saudara, hindari komunikasi cepat lewat pesan singkat saja.</span></div></div>",
+    "_p1_fuqi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pasangan</span><span class=\"pn-meta\">Fū Qī<span class=\"hz\">夫妻</span></span></div></div><div class=\"pal-body\">Foto 夫妻 menyebut Li Xiang Fa adalah tipe ramah yang bisa menyatukan keluarga, tidak akan mudah bertengkar dengan kekasih lalu berpisah. Setelah menikah bisa membangun rumah tangga yang stabil dan bahagia. Baik pria maupun wanita yang termasuk tipe ini umumnya menyayangi pasangan, dan punya kecenderungan menikah cepat. Pasangan ideal tipe yang cerdas dan berbudi pekerti tinggi.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Pilih pasangan yang matang secara emosi dan berbudi pekerti, bukan yang fokus utama pada penampilan fisik.</span></div></div>",
+    "_p1_zinu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Anak</span><span class=\"pn-meta\">Zǐ Nǚ<span class=\"hz\">子女</span></span></div></div><div class=\"pal-body\">Istana Anak dihuni <strong>Bintang Penghancur</strong> (<span class=\"hz\">破軍</span>) di palace 酉. Foto 子女 menyebut anak Li Xiang Fa tipe pemberontak yang kerap berbenturan dengan orang tua, bahkan bisa kabur dari rumah. Kemungkinan hanya punya satu anak. <strong>Bintang Penghancur</strong> (<span class=\"hz\">破軍</span>) memang bintang yang tipis ikatannya dengan keturunan; walau punya anak, sifatnya keras. Bila ada <strong>Bintang Kaisar</strong> (<span class=\"hz\">紫微</span>) berbarengan ada keberkahan; bila ada <strong>Bintang Bendahara</strong> (<span class=\"hz\">武曲</span>), <strong>Bintang Sastra Yang</strong> (<span class=\"hz\">文昌</span>), atau <strong>Bintang Sastra Yin</strong> (<span class=\"hz\">文曲</span>) berbarengan, walau ada 破軍 masih bisa membesarkan anak.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun komunikasi terbuka dengan anak, hargai otonomi mereka, jangan pakai pendekatan keras.</span></div></div>",
+    "_p2_caibo": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Rezeki</span><span class=\"pn-meta\">Cái Bó<span class=\"hz\">財帛</span></span></div></div><div class=\"pal-body\">Istana Rezeki dihuni <strong>Bintang Reformasi</strong> (<span class=\"hz\">廉貞</span>) di palace 申. Foto 財帛 menyebut Li Xiang Fa adalah orang yang merencanakan keuangan dengan teliti dan menggunakan uang secara cermat. Hemat, tidak boros, dan punya naluri menghitung sebelum mengeluarkan uang. Strategi terbaik: bangun rezeki lewat kerja keras pribadi yang strategis, bukan jalur spekulatif cepat.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Diversifikasi pendapatan ke aset produktif jangka panjang, hindari instrumen spekulatif tanpa pemahaman.</span></div></div>",
+    "_p2_jie_e": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Kesehatan</span><span class=\"pn-meta\">Jí È<span class=\"hz\">疾厄</span></span></div></div><div class=\"pal-body\">Foto 疾厄 menyebut rentan masalah sistem pencernaan, pankreas, mudah lupa, mudah lelah, serta keseleo pergelangan tangan dan masalah bibir/mulut. Pola hidup teratur, makan tepat waktu, dan tidur cukup menjadi sangat penting di fase 30-an dan setelahnya.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Periksa rutin tahunan untuk pencernaan dan pankreas, jangan tunda gejala kecil.</span></div></div>",
+    "_p2_qianyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Perpindahan</span><span class=\"pn-meta\">Qiān Yí<span class=\"hz\">遷移</span></span></div></div><div class=\"pal-body\">Foto 遷移 menyebut Li Xiang Fa adalah orang dengan perubahan hidup yang dramatis, bergerak cepat dan agresif seperti api besar yang membakar. Tipe yang penuh dinamika, perpindahan, dan perjalanan jauh. Rezeki dan pertumbuhan datang dari berani bergerak ke luar zona nyaman.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Rancang rotasi proyek atau perjalanan kerja minimal sekali per tahun untuk menjaga energi.</span></div></div>",
+    "_p2_puyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pertemanan</span><span class=\"pn-meta\">Pú Yì<span class=\"hz\">僕役</span></span></div></div><div class=\"pal-body\">Istana Sahabat dihuni <strong>Bintang Kaisar</strong> (<span class=\"hz\">紫微</span>) bersama <strong>Bintang Pedang</strong> (<span class=\"hz\">七殺</span>). Foto 僕役 menyebut bisa mendapatkan bawahan yang sopan dan penuh wibawa, sama-sama bisa membangun satu usaha bersama. Tantangan: bila ada nasib di \"空亡\", bawahan bisa berbalik menyimpan dendam dan meninggalkan. Hati-hati bawahan yang pandai menjilat di depan tapi punya niat lain di belakang. <strong>七殺與武曲同宮</strong> = bawahan resisten otoritas; <strong>七殺與廉貞同宮</strong> = bawahan tidak berguna saat genting.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Pilih lingkaran teman dekat berdasar nilai bersama, evaluasi loyalitas lewat tindakan bukan kata.</span></div></div>",
+    "_p3_guanlu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Karir</span><span class=\"pn-meta\">Guān Lù<span class=\"hz\">官祿</span></span></div></div><div class=\"pal-body\">Istana Karir dihuni <strong>Bintang Strategi</strong> (<span class=\"hz\">天機</span>) bersama <strong>Bintang Tian Liang</strong> (<span class=\"hz\">天梁</span>) di palace 辰, dengan <strong>化科</strong> menempel pada 天機. Foto 官祿 menyebut cocok jadi pendidik, pemuka agama, pebisnis, politisi, pengacara, pekerja tambang, dan broker. Mampu memikirkan banyak ide dan mengaplikasikannya dengan fleksibel — cocok juga di iklan, perencanaan, editing, atau pekerjaan kreatif tertulis. Bila berada di palace 子, foto memprediksi pasti menjadi tokoh besar — bisa berkembang sebagai pemimpin atau penulis/jurnalis ternama bila konsisten.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Pertahankan transparansi keuangan di setiap kerja sama profesional, dokumentasikan dengan baik.</span></div></div>",
+    "_p3_tianzhai": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Properti</span><span class=\"pn-meta\">Tián Zhái<span class=\"hz\">田宅</span></span></div></div><div class=\"pal-body\">Istana Properti dihuni <strong>Bintang Tian Xiang</strong> (<span class=\"hz\">天相</span>) di palace 卯 (status 陷). Foto 田宅 menyebut walau memiliki properti, ukurannya tidak besar; rezeki properti lebih kuat bila berada di palace Tikus, Macan, Kelinci, atau Babi. Bisnis terkait dekorasi, kuliner pribadi, kerajinan tangan, atau rumah kustom akan memantik rezeki properti. Hati-hati bila ada <strong>Bintang Reformasi</strong> (<span class=\"hz\">廉貞</span>) berbarengan — tanah dan rumah yang sudah didapat bisa lepas tiba-tiba. Properti dekat pantai sangat hoki.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Investasi properti jangka panjang dengan riset matang, prioritas lokasi dekat air atau pemandangan.</span></div></div>",
+    "_p3_fude": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Berkah</span><span class=\"pn-meta\">Fú Dé<span class=\"hz\">福德</span></span></div></div><div class=\"pal-body\">Istana Berkah dihuni <strong>Bintang Matahari</strong> (<span class=\"hz\">太陽</span>) bersama <strong>Bintang Pintu Besar</strong> (<span class=\"hz\">巨門</span>) di palace 寅, dengan <strong>化忌</strong> menempel pada 巨門. Foto 福德 menyebut Li Xiang Fa adalah pribadi yang dermawan dan luwes — walau hidup sibuk, rezeki berkahnya melimpah. Bila berada di palace 巳/午, akan terkenal dan berumur panjang. Bila berada di palace 丑/辰/戌, mendapat kebijaksanaan dan umur panjang. Tantangan: 巨門化忌 memberi rasa kepala batu dan curiga, perlu disiplin meditasi.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun rutinitas meditasi atau hobi tenang harian untuk menjaga keseimbangan batin.</span></div></div>",
+    "_p3_fumu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Orang Tua</span><span class=\"pn-meta\">Fù Mǔ<span class=\"hz\">父母</span></span></div></div><div class=\"pal-body\">Istana Orang Tua dihuni <strong>Bintang Bendahara</strong> (<span class=\"hz\">武曲</span>) bersama <strong>Bintang Bunga Persik</strong> (<span class=\"hz\">貪狼</span>). Foto 父母 menyebut bila Istana Orang Tua hanya ada Wu Qu, hubungan orang tua-anak masih bisa damai walau ada kelemahan komunikasi. Orang tua tipe yang keras kepala dan menolak — sulit menerima nasihat balik. Hubungan ibu-anak rentan renggang sejak awal, dewasa baru bisa berdamai. Bila terlalu jauh dari rumah, bisa rentan ke perilaku judi. Hubungan dengan ayah secara material baik tetapi sering ada rasa kesepian batin.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Inisiatif komunikasi terbuka dengan orang tua, jangan tunda perdamaian kecil yang tertunda.</span></div></div>",
+    "_kes_stats": "\n      <div class=\"kes-stat s1\"><div class=\"ks-eb\">Penguasa Hari · 日主</div><div class=\"ks-num\"><span class=\"hz\">己土</span><span class=\"unit\">KUAT · 旺</span></div><div class=\"ks-title\">Tanah Sawah Kuat</div><div class=\"ks-desc\">Total Wu Xing 14, 土 <strong>35.7%</strong> dari distribusi total</div></div>\n      <div class=\"kes-stat s2\"><div class=\"ks-eb\">Format · 格局</div><div class=\"ks-num\"><span class=\"hz\">從旺格</span><span class=\"unit\">FORMAT</span></div><div class=\"ks-title\">Ge, Format</div><div class=\"ks-desc\">Format Mengikuti Yang Kuat memberi karakter mandiri, teguh, dan tidak mudah diatur orang lain.</div></div>\n      <div class=\"kes-stat s3\"><div class=\"ks-eb\">Yong Shen · 喜用神</div><div class=\"ks-num\"><span class=\"hz\">土</span><span class=\"unit\">MENDUKUNG</span></div><div class=\"ks-title\">Tanah, Penopang &amp; Pengarah</div><div class=\"ks-desc\">Aktifkan unsur Tanah sebagai 用神 utama (warna kuning/coklat, dekat pegunungan); Api sebagai 喜用神 pendukung (warna merah, kehangatan, energi cahaya).</div></div>\n      <div class=\"kes-stat s4\"><div class=\"ks-eb\">Da Yun · 大運</div><div class=\"ks-num\">Fase 3<span class=\"unit\">dari 10</span></div><div class=\"ks-title\">Fase Rezeki Bisnis (24-33)</div><div class=\"ks-desc\">Fase Air Kelinci menyalakan ekspansi karir dan kerja kreatif jangka panjang.</div></div>\n      <div class=\"kes-stat s5\"><div class=\"ks-eb\">Umur Subjek</div><div class=\"ks-num\">30<span class=\"unit\">tahun</span></div><div class=\"ks-title\">Era 30–39</div><div class=\"ks-desc\">Dekade dua puluhan adalah masa konsolidasi karir, identitas profesional, dan eksplorasi cinta serius.</div></div>\n      <div class=\"kes-stat s6\"><div class=\"ks-eb\">Jodoh · 婚配 / 陽宅</div><div class=\"ks-num\">3 <span class=\"unit\">cocok · 4 hindari</span></div><div class=\"ks-desc\">Cocok dengan shio Tikus, Ular, dan Ayam (大吉); hindari Naga, Kuda, Kambing, dan Anjing.</div></div>\n    ",
+    "_kes_age": "30",
+    "_kes_lifemap": "\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">過<span class=\"id-label\">Lalu</span></div><div class=\"klm-row-text\"><span class=\"lbl\">MASA LALU</span>Fase pendidikan dan pencarian arah, fondasi karakter dibangun lewat keluarga dan pengalaman muda.</div></div>\n          <div class=\"klm-row now\"><div class=\"klm-row-icon\">今<span class=\"id-label\">Kini</span></div><div class=\"klm-row-text\"><span class=\"lbl\">SEKARANG</span>Fase Air Kelinci dua puluhan akhir, energi mengalir mencerahkan ekspansi karir dan jejaring profesional.</div></div>\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">未<span class=\"id-label\">Nanti</span></div><div class=\"klm-row-text\"><span class=\"lbl\">BERIKUTNYA</span>Fase Air Macan tiga puluhan, masa membangun karya jangka panjang dan stabilitas keluarga.</div></div>\n        ",
+    "_kes_position": "\n          <div class=\"klp-eb\">Posisi Sekarang</div>\n          <div class=\"klp-hz\">夏</div>\n          <div class=\"klp-id\">Xià, \"Musim Panas Hidup\"</div>\n          <div class=\"klp-bar\">\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell now\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n          </div>\n          <div class=\"klp-meta\">Fase <strong>3 dari 10</strong> · Umur <strong>24-33</strong> · <strong>土 Tanah</strong> dominan · Musim Panas Hidup</div>\n        ",
+    "_syn_attrib": "Tanah Sawah · 從旺格 · Ge",
+    "_syn_trio": "\n      <div class=\"syn-card strength\">\n        <div class=\"syn-card-num\">力</div>\n        <div class=\"syn-card-eyebrow\">Kekuatan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">自主</span>\n          <span class=\"syn-card-id\">Zì Zhǔ</span>\n          <span class=\"syn-card-arti\">\"Kemandirian Teguh\"</span>\n        </div>\n        <div class=\"syn-card-body\">Li Xiang Fa memiliki kekuatan internal yang luar biasa — mampu memegang prinsip walau di tengah tekanan kelompok. Format Mengikuti Yang Kuat memberi keunikan suara yang tidak mudah ditiru. Kekuatan ini paling bercahaya ketika ia diberi ruang otonomi, dan rekan kerja yang menghargai proses kreatif individu.</div>\n      </div>\n      <div class=\"syn-card challenge\">\n        <div class=\"syn-card-num\">驗</div>\n        <div class=\"syn-card-eyebrow\">Tantangan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">桃花</span>\n          <span class=\"syn-card-id\">Táo Huā</span>\n          <span class=\"syn-card-arti\">\"Bunga Persik Aktif\"</span>\n        </div>\n        <div class=\"syn-card-body\">Tantangan utama Li Xiang Fa adalah mengendalikan hasrat hedonis dan asmara. <strong>Bintang Bunga Persik</strong> (<span class=\"hz\">桃花</span>) aktif memberi pesona alami, namun juga rentan godaan minum, hubungan berlebihan, atau keputusan emosional yang merugikan reputasi. Belajar menyalurkan energi ini ke karya seni atau olahraga akan melindungi nama baik dan masa depan.</div>\n      </div>\n      <div class=\"syn-card action\">\n        <div class=\"syn-card-num\">為</div>\n        <div class=\"syn-card-eyebrow\">Tindakan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">立業</span>\n          <span class=\"syn-card-id\">Lì Yè</span>\n          <span class=\"syn-card-arti\">\"Membangun Karya\"</span>\n        </div>\n        <div class=\"syn-card-body\">Panggung optimal Li Xiang Fa adalah membangun karya yang berakar pada keahlian unik sambil mempertahankan jejaring yang luas dan tulus. Fokus pada kualitas, bukan kuantitas. Manfaatkan fase Air Kelinci untuk memulai proyek pribadi besar yang akan menjadi warisan profesional di paruh kedua kehidupan.</div>\n      </div>\n    ",
+    "_syn_actions": "\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">1</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">\"Bangun proyek kreatif pribadi\"</div>\n            <div class=\"syn-action-context\">\"Mulai satu proyek yang sepenuhnya milik sendiri di dekade ini, jadikan portofolio jangka panjang.\"</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">2</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">\"Jaga kesehatan pencernaan dan pankreas\"</div>\n            <div class=\"syn-action-context\">\"Periksa rutin tahunan, hindari pola makan tidak teratur dan minum alkohol berlebih.\"</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">3</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">\"Disiplin keuangan otomatis\"</div>\n            <div class=\"syn-action-context\">\"Sisihkan minimal 25% pendapatan ke aset produktif sebelum pengeluaran kreatif.\"</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">4</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">\"Komunikasi terbuka dengan orang tua\"</div>\n            <div class=\"syn-action-context\">\"Inisiatif menyembuhkan gesekan kecil masa lalu lewat percakapan jujur dan hangat.\"</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">5</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">\"Bangun rutinitas tenang harian\"</div>\n            <div class=\"syn-action-context\">\"Meditasi singkat atau hobi tenang menjaga nyala batin tetap konsisten dan jernih.\"</div>\n          </div>\n        </div>\n      ",
+    "_yangzhai_zones": "\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">門</div>\n            <div class=\"yz-zone-id\">Pintu Utama</div>\n            <div class=\"yz-zone-pinyin\">Mén · Pintu</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Arah Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">南</span>S</span>\n              <span class=\"yz-pill\"><span class=\"hz\">北</span>U</span>\n              <span class=\"yz-pill\"><span class=\"hz\">東南</span>TG</span>\n            </div>\n            <div class=\"yz-zone-note\">Pintu utama baik dibuka ke Selatan, Utara, atau Tenggara.</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">灶</div>\n            <div class=\"yz-zone-id\">Dapur / Kompor</div>\n            <div class=\"yz-zone-pinyin\">Zào · Tungku</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Arah Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">西</span>B</span>\n              <span class=\"yz-pill\"><span class=\"hz\">西北</span>BL</span>\n            </div>\n            <div class=\"yz-zone-note\">Kompor duduk Barat menghadap Timur, atau duduk Barat Laut menghadap Tenggara.</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">房</div>\n            <div class=\"yz-zone-id\">Kamar Tidur</div>\n            <div class=\"yz-zone-pinyin\">Fáng · Kamar</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Arah Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">南</span>S</span>\n              <span class=\"yz-pill\"><span class=\"hz\">北</span>U</span>\n              <span class=\"yz-pill\"><span class=\"hz\">東</span>T</span>\n              <span class=\"yz-pill\"><span class=\"hz\">東南</span>TG</span>\n            </div>\n            <div class=\"yz-zone-note\">Kamar baik di Selatan, Utara, Timur, atau Tenggara.</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">床</div>\n            <div class=\"yz-zone-id\">Ranjang</div>\n            <div class=\"yz-zone-pinyin\">Chuáng · Tempat Tidur</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Arah Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">東</span>T</span>\n              <span class=\"yz-pill\"><span class=\"hz\">東南</span>TG</span>\n              <span class=\"yz-pill\"><span class=\"hz\">南</span>S</span>\n              <span class=\"yz-pill\"><span class=\"hz\">北</span>U</span>\n            </div>\n            <div class=\"yz-zone-note\">Tempat tidur cocok di Timur, Tenggara, Selatan, atau Utara.</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">神</div>\n            <div class=\"yz-zone-id\">Altar / Sembah</div>\n            <div class=\"yz-zone-pinyin\">Shén · Sembahyang</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Arah Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">南</span>S</span>\n              <span class=\"yz-pill\"><span class=\"hz\">北</span>U</span>\n              <span class=\"yz-pill\"><span class=\"hz\">東</span>T</span>\n            </div>\n            <div class=\"yz-zone-note\">Altar baik di Selatan, Utara, atau Timur (juga arah baik tahun ini 本年大利方).</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">廁</div>\n            <div class=\"yz-zone-id\">Kamar Mandi</div>\n            <div class=\"yz-zone-pinyin\">Cè · Kamar Mandi</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Arah Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">東北</span>TL</span>\n              <span class=\"yz-pill\"><span class=\"hz\">西北</span>BL</span>\n              <span class=\"yz-pill\"><span class=\"hz\">西</span>B</span>\n              <span class=\"yz-pill\"><span class=\"hz\">西南</span>BD</span>\n            </div>\n            <div class=\"yz-zone-note\">Toilet baik di Timur Laut, Barat Laut, Barat, atau Barat Daya.</div>\n          </div>\n        </div>\n",
+    "_career_wuxing": "\n        <div class=\"wux-cell self\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">土 Tanah<span class=\"v\">5</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:80%\"></div></div>\n          <div class=\"wux-label\">火 Api<span class=\"v\">4</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:60%\"></div></div>\n          <div class=\"wux-label\">金 Logam<span class=\"v\">3</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:40%\"></div></div>\n          <div class=\"wux-label\">水 Air<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell unfav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:0%\"></div></div>\n          <div class=\"wux-label\">木 Kayu<span class=\"v\">0</span></div>\n        </div>\n",
+    "_career_title": "Tanah adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini",
+    "_career_avoid": "Industri ber-unsur <strong>木 (Kayu)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.",
+    "_career_tags": "\n          <span class=\"insight-tag\">火 \"PANAS\"</span>\n          <span class=\"insight-tag\">土 \"STABIL\"</span>\n          <span class=\"insight-tag bad\">水 \"DINGIN\"</span>\n          <span class=\"insight-tag bad\">木 \"TUMBUH\"</span>\n        ",
+    "_career_industri": "\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">🔥</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Fotografi &amp; Optik (<span class=\"hz\">照相</span> / <span class=\"hz\">光學</span> / <span class=\"hz\">眼鏡</span>)</div>\n            <div class=\"ind-reason\">Unsur 火, Bidang yang memanfaatkan cahaya, lensa, dan kepekaan visual.</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:95%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">🔥</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Kuliner Panas &amp; F&amp;B (<span class=\"hz\">熱飲小吃</span> / <span class=\"hz\">食品工廠</span>)</div>\n            <div class=\"ind-reason\">Unsur 火, Industri makanan dengan proses panas, cocok untuk energi api batin.</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:88%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">🔥</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Kecantikan &amp; Salon (<span class=\"hz\">燙髮美容</span> / <span class=\"hz\">化妝品</span>)</div>\n            <div class=\"ind-reason\">Unsur 火, Industri yang menggabungkan estetika dan layanan personal.</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:82%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">🔥</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Elektronik &amp; Komputer (<span class=\"hz\">電器</span>)</div>\n            <div class=\"ind-reason\">Unsur 火, Bidang teknologi modern dengan komponen kelistrikan.</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:76%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">🏛️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Properti &amp; Konstruksi (<span class=\"hz\">房地產買賣</span> / <span class=\"hz\">水泥建材</span>)</div>\n            <div class=\"ind-reason\">Unsur 土, Bisnis tanah dan bangunan yang sesuai dengan unsur tanah dominan.</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:70%\"></div></div>\n          </div>\n        </div>\n",
+    "shensha_star_hz": "華蓋",
+    "shensha_star_pinyin": "Huá Gài",
+    "shensha_star_label": "\"Bintang Akademisi\"",
+    "shensha_star_active": "★ AKTIF SEKARANG ★",
+    "shensha_strip": "Salurkan bakat seni dan kepekaan estetik ke karya konkret, hindari membiarkan 桃花 dan 羊刃 menguasai keputusan.",
+    "_xqcards": "\n      <div class=\"xq-card power\">\n        <div class=\"xqc-eb\">魄 力 · Kekuatan</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">優勢</span><span class=\"xqc-name\">Yōu Shì<br>Keunggulan</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Ketegasan diri yang kuat, mampu memegang prinsip walau di tengah tekanan kelompok.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kreativitas dan kepekaan estetik tinggi, suka seni, desain, musik, dan sastra.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Loyalitas dalam pada teman dekat dan keluarga inti, hadir saat dibutuhkan.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kemampuan menyerap pengetahuan otodidak, paham banyak hal lewat refleksi pribadi.</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card shadow\">\n        <div class=\"xqc-eb\">陰 影 · Shadow</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">隱 患</span><span class=\"xqc-name\">Yǐn Huàn<br>Sisi Gelap</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kerap terlalu terbuka tanpa filter, ucapan bisa melukai meski niat baik.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Cenderung keras kepala, sulit menerima nasihat orang tua atau atasan.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Hasrat seksual / hedonis kuat (桃花 aktif), rentan kebablasan dalam hubungan dan minum.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Mudah meledak emosional saat tertekan (羊刃), berisiko cedera fisik atau bentrok keras.</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card optimum\">\n        <div class=\"xqc-eb\">最 佳 · Optimum</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">應 用</span><span class=\"xqc-name\">Yīng Yòng<br>Cara Optimal</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Pilih lingkungan yang menghargai otonomi dan kreativitas, hindari struktur kaku otoriter.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Bangun disiplin diri sendiri lewat rutinitas seni, olahraga, atau studi terjadwal.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Cari mentor yang punya wibawa alami, bukan figur yang sekadar memerintah.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Salurkan energi 桃花 ke karya seni, bukan ke perilaku berisiko.</span></div>\n        </div>\n      </div>\n    "
+  }
+}

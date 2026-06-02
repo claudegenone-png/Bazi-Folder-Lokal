@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Lin Ru Yi — 大運 Garis Hidup</title>
+<title>Lin Ru Yi, 大運 Garis Hidup</title>
 <link rel="stylesheet" href="style.css">
 <style>
   /* PAGE-SPECIFIC: Da Yun Lini Masa */
@@ -11,7 +11,7 @@
     gap: 5mm;
   }
 
-  /* HIDUPLINE — 10 cycles */
+  /* HIDUPLINE, 10 cycles */
   .lifeline-frame {
     background: var(--bg-card);
     border: 0.3mm solid var(--gold-soft);
@@ -80,6 +80,8 @@
   }
   .ll-cell.current .ss-id { color: var(--red); font-weight: 600; }
   .ll-cell.past    { opacity: 0.55; }
+  /* V4.5 null-safety: empty cycles render dim "—" placeholders. */
+  .ll-cell.empty   { opacity: 0.35; }
   .ll-cell.current {
     box-shadow: 0 0 0 0.6mm var(--gold), 0 1mm 3mm rgba(201,169,97,0.3);
     transform: scale(1.06);
@@ -113,7 +115,7 @@
     padding: 0 0.5mm; letter-spacing: 0.5px;
   }
 
-  /* SPOTLIGHT — Current cycle */
+  /* SPOTLIGHT, Current cycle */
   .spotlight {
     background-color: #F5EBD0 !important;
     background-image: linear-gradient(135deg, #FFF8E1 0%, #F5EBD0 60%, #ECDDC9 100%);
@@ -121,46 +123,44 @@
     border-radius: 2.5mm;
     padding: 5mm 6mm;
     display: grid;
-    grid-template-columns: 64mm 1fr;
-    gap: 6mm;
+    grid-template-columns: 32mm 1fr;
+    gap: 5mm;
     overflow: hidden;
     position: relative;
   }
-  /* .spotlight::before overlay removed — laptop PDF viewers render radial-gradient
+  /* .spotlight::before overlay removed, laptop PDF viewers render radial-gradient
      as opaque white instead of transparent. Decorative effect (8% red glow) was
      barely visible anyway. See memory: bug_pdf_gradient_white_box.md (Lin Mei Yan case) */
   .sp-left {
     background-color: #FFFFFF !important;
     border: 0.4mm solid var(--gold-soft);
     border-radius: 2mm;
-    padding: 3mm 4mm;
+    padding: 2mm 2.5mm;
     display: grid;
-    grid-template-rows: auto 1fr auto auto;
-    gap: 2mm;
+    grid-template-rows: auto auto auto auto;
+    gap: 1mm;
     text-align: center;
     overflow: hidden;
   }
   .sp-eyebrow {
-    font-size: 6.5pt; color: var(--red);
-    letter-spacing: 3px; text-transform: uppercase;
+    font-size: 5pt; color: var(--red);
+    letter-spacing: 2px; text-transform: uppercase;
     font-weight: 700;
   }
   .sp-gz {
     font-family: 'Noto Serif TC', serif;
-    font-size: 56pt; font-weight: 700;
+    font-size: 28pt; font-weight: 700;
     color: var(--red); line-height: 1;
-    display: flex; justify-content: center; gap: 3mm;
-    text-shadow: 0 1mm 2mm rgba(139,26,26,0.12);
+    display: flex; justify-content: center; gap: 2mm;
   }
   .sp-element-disc {
-    width: 14mm; height: 14mm; border-radius: 50%;
+    width: 8mm; height: 8mm; border-radius: 50%;
     margin: 0 auto;
     background-color: #5A8C4A;
     background-image: linear-gradient(180deg, #6FA85A, #4D7A3A);
     display: flex; align-items: center; justify-content: center;
     color: white; font-family: 'Noto Serif TC', serif;
-    font-size: 14pt; font-weight: 700;
-    box-shadow: 0 1mm 3mm rgba(184,80,80,0.4);
+    font-size: 9pt; font-weight: 700;
   }
   .sp-element-disc.s-jin   { background-color: #B5A063; background-image: linear-gradient(180deg, #C9B57A, #A89358); }
   .sp-element-disc.s-shui  { background-color: #4A7BA0; background-image: linear-gradient(180deg, #5990B8, #3A6B8C); }
@@ -169,8 +169,8 @@
   .sp-element-disc.s-tu    { background-color: #A07E5C; background-image: linear-gradient(180deg, #B89070, #8C6E47); }
   .sp-age {
     font-family: 'Playfair Display', serif;
-    font-size: 11pt; color: var(--text);
-    letter-spacing: 2px;
+    font-size: 8pt; color: var(--text);
+    letter-spacing: 1px;
     border-top: 0.2mm solid var(--gold-soft);
     padding-top: 1.5mm;
   }
@@ -222,10 +222,8 @@
     padding-right: 1mm; text-align: right;
   }
   .sp-bullet .txt {
-    font-size: 7.8pt; line-height: 1.4;
+    font-size: 6.5pt; line-height: 1.35;
     color: var(--text);
-    display: -webkit-box; -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical; overflow: hidden;
   }
   .sp-bullet .txt strong { color: var(--red); }
   .sp-bullet .txt .hz {
@@ -280,10 +278,9 @@
     font-family: 'Playfair Display', serif;
     font-size: 8pt; font-weight: 600;
     color: rgba(255,255,255,0.95);
-    line-height: 1.15;
+    line-height: 1.2;
     overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+    font-size: 7pt;
   }
   .season .s-age {
     font-size: 6.5pt; color: rgba(255,255,255,0.85);
@@ -432,36 +429,30 @@
         <div class="sp-eyebrow">FASE 3 · SEKARANG</div>
         <div class="sp-gz"><span>甲</span><span>申</span></div>
         <div class="sp-element-disc">木</div>
-        <div class="sp-age">Umur <span class="now">23 — 32</span></div>
+        <div class="sp-age">Umur <span class="now">23, 32</span></div>
       </div>
 
       <div class="sp-right">
-        <div class="sp-tags">
-          <span class="sp-tag primary"><span class="hz">正財</span>Zhèng Cái · Rezeki Tetap</span>
-          <span class="sp-tag"><span class="hz">木</span>Kayu · pertumbuhan</span>
-          <span class="sp-tag"><span class="hz">甲</span>+<span class="hz">申</span>Wealth Mantap</span>
-        </div>
-
         <div class="sp-headline">
-          Fase <span class="hz">正財</span> — wealth datang lewat kerja keras, struktur, dan komitmen jangka panjang
+          Fase <span class="hz">正財</span>, wealth datang lewat kerja keras, struktur, dan komitmen jangka panjang
         </div>
 
         <div class="sp-bullets">
           <div class="sp-bullet">
             <div class="num">1</div>
-            <div class="txt"><strong>Saatnya membangun aset</strong> — <span class="hz">甲木</span> di pilar 正財 cocok untuk karier mapan, properti, tabungan terstruktur. Hindari spekulasi liar.</div>
+            <div class="txt"><strong>Saatnya membangun aset</strong>, <span class="hz">甲木</span> di pilar 正財 cocok untuk karier mapan, properti, tabungan terstruktur. Hindari spekulasi liar.</div>
           </div>
           <div class="sp-bullet">
             <div class="num">2</div>
-            <div class="txt"><strong>Komitmen relasi</strong> — fase 正財 juga dikenal sebagai pilar pernikahan untuk wanita 辛金. Pilihan pasangan yang tepat akan jadi pondasi panjang.</div>
+            <div class="txt"><strong>Komitmen relasi</strong>, fase 正財 juga dikenal sebagai pilar pernikahan untuk wanita 辛金. Pilihan pasangan yang tepat akan jadi pondasi panjang.</div>
           </div>
           <div class="sp-bullet">
             <div class="num">3</div>
-            <div class="txt"><strong>申 cabang Logam</strong> menopang 辛金 Anda — tubuh & mental kembali kokoh setelah fase 食傷 yang menguras. Manfaatkan untuk skill & sertifikasi.</div>
+            <div class="txt"><strong>申 cabang Logam</strong> menopang 辛金 Anda, tubuh & mental kembali kokoh setelah fase 食傷 yang menguras. Manfaatkan untuk skill & sertifikasi.</div>
           </div>
           <div class="sp-bullet">
             <div class="num">4</div>
-            <div class="txt"><strong>Setelah 32</strong> masuk <span class="hz">乙酉 (偏財)</span> — fase rezeki lebih dinamis &amp; bisnis. Bangun reputasi & jaringan keuangan dari sekarang.</div>
+            <div class="txt"><strong>Setelah 32</strong> masuk <span class="hz">乙酉 (偏財)</span>, fase rezeki lebih dinamis &amp; bisnis. Bangun reputasi & jaringan keuangan dari sekarang.</div>
           </div>
         </div>
       </div>
@@ -514,12 +505,8 @@
 
   <!-- KAKI -->
   <footer class="footer">
-    <div class="footer-caption">
-      Anda sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">正財</span> (23–32) — pilar wealth tetap &amp; komitmen relasi. Periode 23-42 adalah jendela emas untuk membangun aset, karier mapan, dan struktur keluarga yang kokoh.
-    </div>
     <div class="footer-meta">
-      <span>Halaman 14 / 23</span>
-      <span>Lin Ru Yi · Ramalan 命</span>
+      <span>Halaman 14 / 24</span>
     </div>
   </footer>
 

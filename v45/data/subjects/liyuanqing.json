@@ -17,12 +17,12 @@
     "age_at_report": 66
   },
   "shio": {
-    "branch_hz": "亥",
-    "branch_pinyin": "Hài",
-    "id": "Babi",
-    "id_upper": "BABI",
-    "svg_red": "Babi-Merah.svg",
-    "svg_black": "Babi-Hitam.svg"
+    "branch_hz": "酉",
+    "branch_pinyin": "Yǒu",
+    "id": "Ayam",
+    "id_upper": "AYAM",
+    "svg_red": "Ayam-Merah.svg",
+    "svg_black": "Ayam-Hitam.svg"
   },
   "day_master": {
     "stem_hz": "乙",
@@ -32,8 +32,8 @@
     "label_id": "Pohon Kecil",
     "label_long_id": "Kayu",
     "pinyin": "Yǐ 木",
-    "strength_id": "Kuat",
-    "strength_hz": "旺"
+    "strength_id": "Lemah",
+    "strength_hz": "弱"
   },
   "pillars": {
     "year": {
@@ -64,33 +64,33 @@
   },
   "wuxing": {
     "jin": {
-      "value": 2.0,
-      "percent": 14.3,
+      "value": 3.0,
+      "percent": 20.0,
       "label_id": "Logam"
     },
     "shui": {
       "value": 3.0,
-      "percent": 21.4,
+      "percent": 20.0,
       "label_id": "Air"
     },
     "mu": {
-      "value": 4.0,
-      "percent": 28.6,
+      "value": 2.0,
+      "percent": 13.3,
       "label_id": "Kayu"
     },
     "huo": {
-      "value": 3.0,
-      "percent": 21.4,
+      "value": 4.0,
+      "percent": 26.7,
       "label_id": "Api"
     },
     "tu": {
-      "value": 2.0,
-      "percent": 14.3,
+      "value": 3.0,
+      "percent": 20.0,
       "label_id": "Tanah"
     },
-    "total": 14.0,
-    "self_value": 4.0,
-    "self_strength_id": "KUAT"
+    "total": 15.0,
+    "self_value": 2.0,
+    "self_strength_id": "LEMAH"
   },
   "yong_shen": {
     "elements_hz": "火 水",
@@ -98,8 +98,8 @@
     "label_id": "Penopang & Pengarah"
   },
   "ji_shen": {
-    "elements_hz": "金 土",
-    "elements_id": "Logam & Tanah",
+    "elements_hz": "金",
+    "elements_id": "Logam",
     "label_id": "Pelumat & Pemicu"
   },
   "format": {
@@ -265,7 +265,7 @@
         "age_end": 108
       }
     ],
-    "spotlight_headline_html": "Fase <span class=\"hz\">劫財</span> (Perampok Harta) — periode utama untuk uji solidaritas & finansial",
+    "spotlight_headline_html": "Fase 59-68, <strong>Kayu Yin Kerbau</strong> (<span class=\"hz\">乙丑</span>), Logam Mengalah dan Kayu Menemukan Tanahnya Kembali",
     "spotlight_tag_tone_html": "Kayu · pertumbuhan",
     "spotlight_tag_combo_html": "Saudara & Tekanan",
     "spotlight_tag_combo_pair": [
@@ -273,52 +273,52 @@
       "子"
     ],
     "spotlight_bullets_html": [
-      "<strong>Fokus utama</strong> — pilar <span class=\"hz\">劫財</span> mendorong Anda untuk uji solidaritas & finansial. Selaraskan agenda 10 tahun ini ke arah tersebut.",
-      "<strong>Energi 木</strong> — batang <span class=\"hz\">甲</span> (木) berinteraksi dengan Day Master <span class=\"hz\">乙</span> (木); tone fase: Kayu · pertumbuhan.",
-      "<strong>Cabang <span class=\"hz\">子</span></strong> menentukan medan harian — kebiasaan, lingkungan, dan relasi yang dibangun di rentang umur 59–68 akan jadi pondasi fase berikutnya.",
-      "<strong>Setelah 68</strong> masuk <span class=\"hz\">癸亥 (偏印)</span> — intuisi & jalur tidak konvensional. Siapkan transisi sekarang."
+      "Li Yuan Qing berada di fase <strong>Kayu Yin Kerbau</strong> (<span class=\"hz\">乙丑</span>) (59-68), sebuah fase di mana stem <strong>Kayu Yin</strong> (<span class=\"hz\">乙</span>) identik dengan day master-nya sendiri, menciptakan efek bayangan diri. Ini bisa berarti kompetisi dari rekan sejawat atau duplikasi energi yang perlu dikelola dengan bijak agar tidak berbenturan.",
+      "Cabang <strong>Kerbau</strong> (<span class=\"hz\">丑</span>) membawa elemen <strong>Tanah</strong> (<span class=\"hz\">土</span>) dan Logam, tanah yang menyimpan logam. Ini adalah fase konsolidasi: waktu terbaik untuk mengamankan aset, memperkuat properti, dan mengurangi eksposur spekulatif yang terlalu agresif dibanding dekade sebelumnya.",
+      "Tahun 2026, <strong>Tahun Api Yang Kuda</strong> (<span class=\"hz\">丙午</span>), bertemu fase ini dengan energi <strong>Api</strong> (<span class=\"hz\">火</span>) yang kuat. Api adalah elemen pendukung utama Li Yuan Qing, artinya 2026 menjadi tahun peluang nyata: di bidang sosial ada pertemuan penting, dan di bidang karir ada potensi kenaikan peran atau pengakuan.",
+      "Kesehatan perlu mendapat perhatian lebih di fase Kayu Yin Kerbau ini. Software mencatat kecenderungan gangguan pencernaan dan perut. Ritual makan teratur dan menghindari gaya hidup terlalu mobile tanpa istirahat cukup menjadi prioritas kesehatan utama Li Yuan Qing."
     ],
-    "footer_caption_html": "Li Yuan Qing sedang di fase <span style=\"font-family:'Noto Serif TC',serif;color:var(--red)\">劫財</span> (59–68) — uji solidaritas & finansial. Periode 59–78 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir."
+    "footer_caption_html": "Li Yuan Qing kini di fase <strong>Kayu Yin Kerbau</strong> (<span class=\"hz\">乙丑</span>) (59-68), masa konsolidasi yang mendorong pengamanan aset dan pematangan jaringan, 2026 membawa angin <strong>Api Yang Kuda</strong> (<span class=\"hz\">丙午</span>) yang menghangatkan perjalanan ini dengan peluang nyata."
   },
   "marriage": {
-    "self_branch_index": 11,
+    "self_branch_index": 9,
     "cocok": [
       {
-        "branch_hz": "未",
-        "id": "Kambing",
+        "branch_hz": "丑",
+        "id": "Kerbau",
         "relationship_hz": "三合",
         "relationship_id": "TRIPLE",
-        "reason_id": "Triple harmony."
+        "reason_id": "Harmoni Tiga, saling memperkuat."
       },
       {
-        "branch_hz": "卯",
-        "id": "Kelinci",
+        "branch_hz": "辰",
+        "id": "Naga",
+        "relationship_hz": "六合",
+        "relationship_id": "PAIR",
+        "reason_id": "Pasangan Cocok, saling melengkapi."
+      },
+      {
+        "branch_hz": "巳",
+        "id": "Ular",
         "relationship_hz": "三合",
         "relationship_id": "TRIPLE",
-        "reason_id": "Triple harmony."
+        "reason_id": "Harmoni Tiga, saling memperkuat."
       }
     ],
     "hindari": [
       {
-        "branch_hz": "巳",
-        "id": "Ular",
+        "branch_hz": "卯",
+        "id": "Kelinci",
         "relationship_hz": "六沖",
         "relationship_id": "BENTROK",
         "reason_id": "Bentrok langsung."
       },
       {
-        "branch_hz": "申",
-        "id": "Monyet",
+        "branch_hz": "戌",
+        "id": "Anjing",
         "relationship_hz": "六害",
         "relationship_id": "MENGHAMBAT",
         "reason_id": "Halangan halus."
-      },
-      {
-        "branch_hz": "亥",
-        "id": "Babi",
-        "relationship_hz": "六沖",
-        "relationship_id": "BENTROK",
-        "reason_id": "Bentrok langsung."
       }
     ]
   },
@@ -334,17 +334,593 @@
     "trigram_symbol": "☷"
   },
   "zi_wei": {
-    "ming_zhu_hz": "巨門",
-    "shen_zhu_hz": "天機",
     "ming_gong_hz": "亥",
     "shen_gong_hz": "丑",
     "wu_xing_ju_hz": "火六局",
-    "shi_jun_hz": "卯",
+    "ming_zhu_hz": "巨門",
+    "shen_zhu_hz": "天機",
+    "shi_jun_hz": "亥",
+    "palaces": [
+      {
+        "name_hz": "田宅",
+        "branch_hz": "寅",
+        "stem_hz": "丙",
+        "major_stars": [
+          "天機",
+          "太陰"
+        ],
+        "is_body": false
+      },
+      {
+        "name_hz": "官祿",
+        "branch_hz": "卯",
+        "stem_hz": "丁",
+        "major_stars": [
+          "紫微",
+          "貪狼"
+        ],
+        "is_body": false
+      },
+      {
+        "name_hz": "僕役",
+        "branch_hz": "辰",
+        "stem_hz": "戊",
+        "major_stars": [
+          "巨門"
+        ],
+        "is_body": false
+      },
+      {
+        "name_hz": "遷移",
+        "branch_hz": "巳",
+        "stem_hz": "己",
+        "major_stars": [
+          "天相"
+        ],
+        "is_body": false
+      },
+      {
+        "name_hz": "疾厄",
+        "branch_hz": "午",
+        "stem_hz": "庚",
+        "major_stars": [
+          "天梁"
+        ],
+        "is_body": false
+      },
+      {
+        "name_hz": "財帛",
+        "branch_hz": "未",
+        "stem_hz": "辛",
+        "major_stars": [
+          "廉貞",
+          "七殺"
+        ],
+        "is_body": false
+      },
+      {
+        "name_hz": "子女",
+        "branch_hz": "申",
+        "stem_hz": "壬",
+        "major_stars": [],
+        "is_body": false
+      },
+      {
+        "name_hz": "夫妻",
+        "branch_hz": "酉",
+        "stem_hz": "癸",
+        "major_stars": [],
+        "is_body": false
+      },
+      {
+        "name_hz": "兄弟",
+        "branch_hz": "戌",
+        "stem_hz": "甲",
+        "major_stars": [
+          "天同"
+        ],
+        "is_body": false
+      },
+      {
+        "name_hz": "命宮",
+        "branch_hz": "亥",
+        "stem_hz": "乙",
+        "major_stars": [
+          "武曲",
+          "破軍"
+        ],
+        "is_body": false
+      },
+      {
+        "name_hz": "父母",
+        "branch_hz": "子",
+        "stem_hz": "丙",
+        "major_stars": [
+          "太陽"
+        ],
+        "is_body": false
+      },
+      {
+        "name_hz": "福德",
+        "branch_hz": "丑",
+        "stem_hz": "丁",
+        "major_stars": [
+          "天府"
+        ],
+        "is_body": true
+      }
+    ],
     "ming_gong_id": "Istana Hidup · Babi",
     "shen_gong_id": "Istana Tubuh · Kerbau",
-    "shi_jun_id": "Penguasa Waktu · Kelinci",
+    "shi_jun_id": "Penguasa Waktu · Babi",
     "ming_zhu_id": "Penguasa Hidup",
     "shen_zhu_id": "Penguasa Tubuh",
     "wu_xing_ju_id": "Aliran Api Enam"
+  },
+  "shen_sha": [
+    {
+      "hanzi": "驛馬",
+      "label_id": "Bintang Perpindahan",
+      "target_branch": "亥",
+      "source": "day_branch",
+      "positions": [
+        "year"
+      ]
+    },
+    {
+      "hanzi": "桃花",
+      "label_id": "Bintang Daya Pikat",
+      "target_branch": "午",
+      "source": "day_branch",
+      "positions": [
+        "month"
+      ]
+    },
+    {
+      "hanzi": "將星",
+      "label_id": "Bintang Jenderal",
+      "target_branch": "酉",
+      "source": "day_branch",
+      "positions": [
+        "day"
+      ]
+    },
+    {
+      "hanzi": "文昌",
+      "label_id": "Bintang Akademik",
+      "target_branch": "午",
+      "source": "day_stem",
+      "positions": [
+        "month"
+      ]
+    }
+  ],
+  "_xq_radar_poly": "          <polygon points=\"200,72 297.3,144 297.3,256 200,280 116.6,248 88.8,136\"\n            fill=\"rgba(139,26,26,0.18)\" stroke=\"#8B1A1A\" stroke-width=\"1.5\"/>\n          <circle cx=\"200\" cy=\"72\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"297.3\" cy=\"144\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"297.3\" cy=\"256\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"200\" cy=\"280\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"116.6\" cy=\"248\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"88.8\" cy=\"136\" r=\"3\" fill=\"#8B1A1A\"/>",
+  "_xq_radar_labels": "          <g font-family=\"Noto Serif TC,serif\">\n            <text x=\"200\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[智]]</text>\n            <text x=\"200\" y=\"33\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Zhì · Kecerdasan Analitis · 8.0</text>\n\n            <text x=\"358\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[魅]]</text>\n            <text x=\"358\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Mèi · Daya Pikat Sosial · 7.0</text>\n\n            <text x=\"358\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[韌]]</text>\n            <text x=\"358\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Rèn · Ketangguhan · 7.0</text>\n\n            <text x=\"200\" y=\"382\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[斷]]</text>\n            <text x=\"200\" y=\"393\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Duàn · Ketegasan · 5.0</text>\n\n            <text x=\"42\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[情]]</text>\n            <text x=\"42\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Qíng · Kepekaan Emosi · 6.0</text>\n\n            <text x=\"42\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[動]]</text>\n            <text x=\"42\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Dòng · Energi Gerak · 8.0</text>\n          </g>",
+  "_xq_motto": [
+    "藤",
+    "Tanaman Merambat",
+    "柔韌 進取",
+    "乘風破浪"
+  ],
+  "_tafsir": {
+    "kepribadian": "Li Yuan Qing adalah pribadi <strong>Kayu Yin</strong> (<span class=\"hz\">乙木</span>) yang lentur seperti tanaman merambat yang gigih menemukan cahaya di celah sempit. Dengan <strong>Format Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財格</span>) sebagai format utama, ia punya naluri tajam membaca peluang finansial dan sosial. Kayu Yin bertemu Logam kuat di pilar bulan dan hari menciptakan ketegangan produktif: sisi lembut dan adaptif berpadu dengan ketajaman analitis. Li Yuan Qing pandai membangun jaringan, senang bergerak, namun dalam hati tetap membutuhkan stabilitas emosional yang jarang ia akui.",
+    "_kepribadian_struct": {
+      "paragraf": "Li Yuan Qing adalah pribadi **Kayu Yin** ([[乙木]]) yang lentur seperti tanaman merambat yang gigih menemukan cahaya di celah sempit. Dengan **Format Rezeki Tak Terduga** ([[偏財格]]) sebagai format utama, ia punya naluri tajam membaca peluang finansial dan sosial. Kayu Yin bertemu Logam kuat di pilar bulan dan hari menciptakan ketegangan produktif: sisi lembut dan adaptif berpadu dengan ketajaman analitis. Li Yuan Qing pandai membangun jaringan, senang bergerak, namun dalam hati tetap membutuhkan stabilitas emosional yang jarang ia akui.",
+      "radar_traits": [
+        [
+          "[[智]]",
+          "Zhì",
+          "Kecerdasan Analitis",
+          8.0
+        ],
+        [
+          "[[魅]]",
+          "Mèi",
+          "Daya Pikat Sosial",
+          7.0
+        ],
+        [
+          "[[韌]]",
+          "Rèn",
+          "Ketangguhan",
+          7.0
+        ],
+        [
+          "[[斷]]",
+          "Duàn",
+          "Ketegasan",
+          5.0
+        ],
+        [
+          "[[情]]",
+          "Qíng",
+          "Kepekaan Emosi",
+          6.0
+        ],
+        [
+          "[[動]]",
+          "Dòng",
+          "Energi Gerak",
+          8.0
+        ]
+      ],
+      "motto": [
+        "藤",
+        "Tanaman Merambat",
+        "柔韌 進取",
+        "乘風破浪"
+      ],
+      "power": [
+        "Naluri finansial tajam, cepat melihat peluang sebelum orang lain menyadarinya",
+        "Jaringan sosial luas, mudah membangun kepercayaan dan hubungan lintas kalangan",
+        "Adaptabilitas tinggi, mampu menyesuaikan diri di lingkungan baru dengan cepat",
+        "Daya tahan mental kuat, bangkit setelah tekanan tanpa kehilangan arah jangka panjang"
+      ],
+      "shadow": [
+        "Mudah tergoda spekulasi, keputusan finansial bisa terlalu impulsif di momen euforia",
+        "Sulit konsisten, energi berpencar ke terlalu banyak arah secara bersamaan",
+        "Menutup kelemahan emosi, tampil kuat di luar padahal butuh dukungan di dalam",
+        "Konflik otoritas, tidak nyaman diperintah dan bisa bergesekan dengan atasan atau pasangan"
+      ],
+      "optimum": [
+        "Bekerja dengan otonomi penuh, struktur terlalu ketat memadamkan kreativitas dan produktivitasnya",
+        "Investasikan energi di proyek jangka menengah, bukan spekulasi cepat dan bukan birokrasi lambat",
+        "Bangun lingkaran dalam yang jujur, orang yang berani memberi umpan balik apa adanya",
+        "Jadikan pergerakan fisik sebagai rutinitas, Li Yuan Qing optimal saat tidak mandek di satu tempat"
+      ]
+    },
+    "family": "pasangan: - vibe: Cerdas · Hangat - headline: Pasangan yang menstabilkan tanpa membelenggu kebebasan gerak - body: Berdasarkan <strong>Format Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財格</span>) dan posisi <strong>Ayam</strong> (<span class=\"hz\">酉</span>) sebagai cabang hari, Li Yuan Qing paling serasi dengan pasangan yang cerdas namun tidak dominan, seseorang yang mampu memberikan kehangatan emosional dan kestabilan rumah tangga tanpa memangkas ruang geraknya. Dinamika terbaik adalah ketika pasangan menjadi jangkar, sementara Li Yuan Qing menjadi layar yang membawa bahtera maju.<br><br>anak: - vibe: Bangga · Kritis - headline: Hubungan penuh harapan besar namun rentan jarak emosional - body: Software mencatat anak cenderung mandiri bahkan agak keras kepala dan penyendiri. Li Yuan Qing menyayangi anak dengan cara yang tidak selalu terungkap langsung, lebih banyak melalui tindakan nyata daripada kata-kata. Kunci pengasuhan terbaik adalah hadir secara emosional, bukan sekadar finansial. Komunikasi terbuka sejak dini mencegah jarak yang mengeras seiring waktu.<br><br>saudari: - vibe: Renggang · Mandiri - headline: Hubungan saudara yang berjalan masing-masing dengan penghormatan diam - body: Relasi dengan saudara kandung cenderung tidak terlalu dekat, bukan karena konflik, melainkan karena masing-masing pihak sangat mandiri. Li Yuan Qing menghargai saudara dari jauh dan jarang mengandalkan mereka dalam keputusan besar. Ada rasa segan dan hormat yang tersimpan diam, muncul saat momen penting saja.<br><br>kepemimpinan: - vibe: Independen · Visioner - headline: Pemimpin alami yang lebih cocok sebagai penentu arah daripada manajer harian - body: Gaya kepemimpinan Li Yuan Qing bertumpu pada visi besar dan kemampuan membaca situasi makro. Ia tidak nyaman mengurus detail administratif harian, namun sangat efektif saat membuka jalan, meyakinkan pemangku kepentingan, dan mengambil keputusan strategis. Struktur hierarkis ketat bukan habitatnya, ia optimal sebagai konsultan, pendiri, atau pemimpin yang diberi kepercayaan penuh.",
+    "_family_struct": {
+      "pasangan": {
+        "vibe": "Cerdas · Hangat",
+        "headline": "Pasangan yang menstabilkan tanpa membelenggu kebebasan gerak",
+        "body": "Berdasarkan **Format Rezeki Tak Terduga** ([[偏財格]]) dan posisi **Ayam** ([[酉]]) sebagai cabang hari, Li Yuan Qing paling serasi dengan pasangan yang cerdas namun tidak dominan, seseorang yang mampu memberikan kehangatan emosional dan kestabilan rumah tangga tanpa memangkas ruang geraknya. Dinamika terbaik adalah ketika pasangan menjadi jangkar, sementara Li Yuan Qing menjadi layar yang membawa bahtera maju."
+      },
+      "anak": {
+        "vibe": "Bangga · Kritis",
+        "headline": "Hubungan penuh harapan besar namun rentan jarak emosional",
+        "body": "Software mencatat anak cenderung mandiri bahkan agak keras kepala dan penyendiri. Li Yuan Qing menyayangi anak dengan cara yang tidak selalu terungkap langsung, lebih banyak melalui tindakan nyata daripada kata-kata. Kunci pengasuhan terbaik adalah hadir secara emosional, bukan sekadar finansial. Komunikasi terbuka sejak dini mencegah jarak yang mengeras seiring waktu."
+      },
+      "saudari": {
+        "vibe": "Renggang · Mandiri",
+        "headline": "Hubungan saudara yang berjalan masing-masing dengan penghormatan diam",
+        "body": "Relasi dengan saudara kandung cenderung tidak terlalu dekat, bukan karena konflik, melainkan karena masing-masing pihak sangat mandiri. Li Yuan Qing menghargai saudara dari jauh dan jarang mengandalkan mereka dalam keputusan besar. Ada rasa segan dan hormat yang tersimpan diam, muncul saat momen penting saja."
+      },
+      "kepemimpinan": {
+        "vibe": "Independen · Visioner",
+        "headline": "Pemimpin alami yang lebih cocok sebagai penentu arah daripada manajer harian",
+        "body": "Gaya kepemimpinan Li Yuan Qing bertumpu pada visi besar dan kemampuan membaca situasi makro. Ia tidak nyaman mengurus detail administratif harian, namun sangat efektif saat membuka jalan, meyakinkan pemangku kepentingan, dan mengambil keputusan strategis. Struktur hierarkis ketat bukan habitatnya, ia optimal sebagai konsultan, pendiri, atau pemimpin yang diberi kepercayaan penuh."
+      },
+      "saudara": {
+        "vibe": "Renggang · Mandiri",
+        "headline": "Hubungan saudara yang berjalan masing-masing dengan penghormatan diam",
+        "body": "Relasi dengan saudara kandung cenderung tidak terlalu dekat, bukan karena konflik, melainkan karena masing-masing pihak sangat mandiri. Li Yuan Qing menghargai saudara dari jauh dan jarang mengandalkan mereka dalam keputusan besar. Ada rasa segan dan hormat yang tersimpan diam, muncul saat momen penting saja."
+      }
+    },
+    "shensha": "Li Yuan Qing membawa dua shen sha utama yang sangat aktif: <strong>Bintang Perpindahan</strong> (<span class=\"hz\">驛馬</span>) dan <strong>Bintang Daya Pikat</strong> (<span class=\"hz\">桃花</span>). Kombinasi ini menciptakan kepribadian yang dinamis, selalu bergerak, penuh daya tarik, dan sulit untuk berdiam di satu tempat terlalu lama. Bintang Perpindahan mendorong perpindahan, perjalanan, dan perubahan lingkungan yang terus-menerus. Sementara Bintang Daya Pikat menghadirkan pesona alami yang membuat Li Yuan Qing mudah disukai di berbagai kalangan, baik dalam konteks profesional maupun personal.",
+    "_shensha_struct": {
+      "dominant_star": {
+        "hanzi": "驛馬",
+        "pinyin": "Yì Mǎ",
+        "label_id": "Bintang Perpindahan",
+        "active_label": "AKTIF SEKARANG"
+      },
+      "strip": "**Bintang Perpindahan** ([[驛馬]]) aktif mendorong Li Yuan Qing untuk memanfaatkan mobilitas sebagai keunggulan, perjalanan atau ekspansi ke kota lain membuka rezeki nyata di fase ini."
+    },
+    "caifu": "Pola finansial Li Yuan Qing didominasi oleh <strong>Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財</span>), rezeki yang datang dari luar jalur konvensional: proyek lepas, komisi, perdagangan, atau peluang yang muncul tak terduga. <strong>Rezeki Tetap</strong> (<span class=\"hz\">正財</span>) ada namun tidak sekuat Rezeki Tak Terduga, artinya penghasilan tetap cenderung tidak cukup memuaskan jika berdiri sendiri. Software mencatat bahwa rezeki perlu \"dibeli\" dengan properti agar bisa tersimpan, tanpa aset nyata, uang mudah berputar keluar.",
+    "_caifu_struct": {
+      "zheng_cai": {
+        "label": "Rezeki Tetap",
+        "percent": "35%",
+        "body": "Sumber tetap seperti gaji atau retainer bulanan ada, namun terasa kurang memuaskan bagi Li Yuan Qing. Ia cenderung merasa terkekang dengan struktur penghasilan yang terlalu kaku. Rezeki tetap berfungsi sebagai landasan, bukan tujuan, cukup sebagai penyangga di bulan-bulan sepi proyek."
+      },
+      "pian_cai": {
+        "label": "Rezeki Tak Terduga",
+        "percent": "65%",
+        "body": "Inilah kekuatan utama Li Yuan Qing. Peluang bisnis, komisi penjualan, proyek konsultasi, atau investasi properti menjadi saluran finansial terbesar. Energi terbaik keluar saat ia diberi kebebasan mencari dan menutup kesepakatan sendiri tanpa terlalu banyak birokrasi di antara."
+      },
+      "rules": [
+        {
+          "title": "Beli properti sebelum uang habis berputar",
+          "context": "Tanpa aset fisik, rezeki **Tak Terduga** ([[偏財]]) mudah menguap, properti adalah wadah terbaik",
+          "tone": "tip"
+        },
+        {
+          "title": "Hindari spekulasi murni tanpa dasar riset",
+          "context": "Format Rezeki Tak Terduga membuat Li Yuan Qing terlalu percaya diri di momen euforia pasar",
+          "tone": "warn"
+        },
+        {
+          "title": "Bangun aliran pasif sejak sekarang",
+          "context": "Fase 59-68 adalah momentum terbaik sebelum energi gerak mulai menurun",
+          "tone": "tip"
+        },
+        {
+          "title": "Waspadai bulan 4, 7, dan 12 untuk keputusan besar",
+          "context": "Periode rentan konflik finansial berdasarkan siklus tahunan da yun",
+          "tone": "warn"
+        }
+      ]
+    },
+    "career": "<p>Li Yuan Qing dengan <strong>Format Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財格</span>) dan <strong>Bintang Perpindahan</strong> (<span class=\"hz\">驛馬</span>) aktif paling optimal di karir yang menggabungkan mobilitas, jaringan, dan kebebasan mengambil keputusan. Ia bukan tipe meja, ia tipe lapangan. Industri yang melibatkan pergerakan orang, informasi, atau barang menjadi arena terkuatnya.</p><ul><li><strong>Perdagangan &amp; Distribusi</strong> (unsur 火), Cocok dengan mobilitas tinggi dan naluri deal Format Rezeki Tak Terduga</li><li><strong>Media &amp; Komunikasi</strong> (unsur 水), <strong>Bintang Akademik</strong> (<span class=\"hz\">文昌</span>) mendukung ekspresi verbal dan tulisan yang persuasif</li><li><strong>Properti &amp; Investasi</strong> (unsur 土), Wadah terbaik untuk mengamankan rezeki Tak Terduga yang mudah mengalir keluar</li><li><strong>Pariwisata &amp; Hospitality</strong> (unsur 水), Bintang Perpindahan aktif, industri pergerakan manusia sangat searah dengan energinya</li><li><strong>Konsultasi &amp; Pelatihan</strong> (unsur 木), Kapasitas analitis dan jaringan luas mendukung peran advisor senior</li></ul>",
+    "_career_struct": {
+      "tags": {
+        "fav_1": [
+          "火",
+          "ENERGI TINGGI"
+        ],
+        "fav_2": [
+          "水",
+          "ALIRAN"
+        ],
+        "unfav_1": [
+          "金",
+          "TEKANAN"
+        ],
+        "unfav_2": [
+          "土",
+          "STAGNAN"
+        ]
+      },
+      "industri": [
+        {
+          "nama": "Perdagangan & Distribusi",
+          "unsur": "火",
+          "alasan": "Cocok dengan mobilitas tinggi dan naluri deal Format Rezeki Tak Terduga"
+        },
+        {
+          "nama": "Media & Komunikasi",
+          "unsur": "水",
+          "alasan": "**Bintang Akademik** ([[文昌]]) mendukung ekspresi verbal dan tulisan yang persuasif"
+        },
+        {
+          "nama": "Properti & Investasi",
+          "unsur": "土",
+          "alasan": "Wadah terbaik untuk mengamankan rezeki Tak Terduga yang mudah mengalir keluar"
+        },
+        {
+          "nama": "Pariwisata & Hospitality",
+          "unsur": "水",
+          "alasan": "Bintang Perpindahan aktif, industri pergerakan manusia sangat searah dengan energinya"
+        },
+        {
+          "nama": "Konsultasi & Pelatihan",
+          "unsur": "木",
+          "alasan": "Kapasitas analitis dan jaringan luas mendukung peran advisor senior"
+        }
+      ]
+    },
+    "daymaster": "<strong>火</strong> (Huǒ · Api), kehangatan, ekspresi, dan visibilitas; menyalurkan energi ke karya nyata. <strong>水</strong> (Shuǐ · Air), pendingin & adaptasi; mengalirkan kekuatan jadi pergerakan.",
+    "yangzhai": "Li Yuan Qing memiliki trigram pribadi <strong>Bumi</strong> (<span class=\"hz\">坤</span>), trigram yang menyimbolkan penerimaan, stabilitas, dan pemeliharaan. Arah terbaik adalah Barat-Laut dan Barat-Daya sesuai konfigurasi trigram Bumi. Software mengkonfirmasi: pintu utama ideal menghadap Barat atau Barat-Laut. Kompor dan kamar tidur paling baik di sisi Timur atau Barat-Daya. Ruang kerja di Barat-Laut memaksimalkan fokus dan otoritas. Hindari sudut Selatan dan Tenggara sebagai posisi tidur atau altar karena berbenturan dengan energi trigram Bumi.",
+    "_yangzhai_struct": {
+      "zones": [
+        {
+          "label": "Pintu Utama",
+          "headline": "✓ Optimal",
+          "pills": "西 atau 西北",
+          "note": "Hadap Barat atau Barat-Laut sesuai trigram Bumi, membawa aliran rezeki masuk"
+        },
+        {
+          "label": "Kamar Tidur",
+          "headline": "✓ Baik",
+          "pills": "西南 atau 東北",
+          "note": "Posisi tidur kepala ke Barat-Daya atau Timur-Laut, hindari menghadap Selatan"
+        },
+        {
+          "label": "Dapur / Kompor",
+          "headline": "✓ Optimal",
+          "pills": "東",
+          "note": "Kompor menghadap Timur, Api dan Kayu bersinergi mendukung vitalitas keluarga"
+        },
+        {
+          "label": "Kamar Mandi",
+          "headline": "⚠ Perhatikan",
+          "pills": "東南",
+          "note": "Tempatkan di Tenggara atau pojok tidak strategis, hindari pusat rumah"
+        },
+        {
+          "label": "Ruang Kerja",
+          "headline": "✓ Optimal",
+          "pills": "西北",
+          "note": "Barat-Laut mengaktifkan potensi kepemimpinan dan koneksi jaringan luas"
+        },
+        {
+          "label": "Altar / Sembah",
+          "headline": "✓ Baik",
+          "pills": "北 atau 東北",
+          "note": "Altar di Utara atau Timur-Laut, arah hoki trigram Bumi untuk kedamaian spiritual"
+        }
+      ]
+    },
+    "dayun_spotlight": "<div class=\"sp-headline\">Fase 59-68, <strong>Kayu Yin Kerbau</strong> (<span class=\"hz\">乙丑</span>), Logam Mengalah dan Kayu Menemukan Tanahnya Kembali</div><ul class='sp-bullets'><li>Li Yuan Qing berada di fase <strong>Kayu Yin Kerbau</strong> (<span class=\"hz\">乙丑</span>) (59-68), sebuah fase di mana stem <strong>Kayu Yin</strong> (<span class=\"hz\">乙</span>) identik dengan day master-nya sendiri, menciptakan efek bayangan diri. Ini bisa berarti kompetisi dari rekan sejawat atau duplikasi energi yang perlu dikelola dengan bijak agar tidak berbenturan.</li><li>Cabang <strong>Kerbau</strong> (<span class=\"hz\">丑</span>) membawa elemen <strong>Tanah</strong> (<span class=\"hz\">土</span>) dan Logam, tanah yang menyimpan logam. Ini adalah fase konsolidasi: waktu terbaik untuk mengamankan aset, memperkuat properti, dan mengurangi eksposur spekulatif yang terlalu agresif dibanding dekade sebelumnya.</li><li>Tahun 2026, <strong>Tahun Api Yang Kuda</strong> (<span class=\"hz\">丙午</span>), bertemu fase ini dengan energi <strong>Api</strong> (<span class=\"hz\">火</span>) yang kuat. Api adalah elemen pendukung utama Li Yuan Qing, artinya 2026 menjadi tahun peluang nyata: di bidang sosial ada pertemuan penting, dan di bidang karir ada potensi kenaikan peran atau pengakuan.</li><li>Kesehatan perlu mendapat perhatian lebih di fase Kayu Yin Kerbau ini. Software mencatat kecenderungan gangguan pencernaan dan perut. Ritual makan teratur dan menghindari gaya hidup terlalu mobile tanpa istirahat cukup menjadi prioritas kesehatan utama Li Yuan Qing.</li></ul>",
+    "dayun_seasons": "<ol class='dy-seasons'><li>umur 9-28: Musim Logam (Logam Yang Monyet, Logam Yin Ayam), Logam kuat memangkas Kayu Yin, fase belajar keras di bawah tekanan dan otoritas</li><li>umur 29-48: Musim Air (Air Yang Anjing, Air Yin Babi), Air mengairi Kayu Yin, fase pertumbuhan pesat dan ekspansi jaringan paling produktif</li><li>umur 49-68: Musim Kayu (Kayu Yang Tikus, Kayu Yin Kerbau), persaingan sejawat meningkat, fase konsolidasi dan memperkuat fondasi aset</li><li>umur 69-88: Musim Api (Api Yang Macan, Api Yin Kelinci), Api menyala kuat sebagai elemen pendukung, fase puncak pengakuan sosial dan warisan</li><li>umur 89-99: Musim Tanah (Tanah Yang Naga, Tanah Yin Ular), Tanah menyerap energi, fase pewarisan, ketenangan, dan menuai dari yang telah ditanam</li></ol>",
+    "dayun_footer": "Li Yuan Qing kini di fase <strong>Kayu Yin Kerbau</strong> (<span class=\"hz\">乙丑</span>) (59-68), masa konsolidasi yang mendorong pengamanan aset dan pematangan jaringan, 2026 membawa angin <strong>Api Yang Kuda</strong> (<span class=\"hz\">丙午</span>) yang menghangatkan perjalanan ini dengan peluang nyata.",
+    "palace1": "<p>ming_gong: - star: 巨門 - insight: <strong>Pintu Besar</strong> (<span class=\"hz\">巨門</span>) di istana hidup menciptakan pribadi yang tajam secara verbal dan analitis. Li Yuan Qing pandai berbicara, berdebat, dan meyakinkan, namun perlu berhati-hati agar kecerdasan lidahnya tidak menimbulkan salah paham atau konflik. Posisi ini juga menandakan bahwa kehidupannya penuh dinamika dan perubahan yang justru menjadi bahan bakar pertumbuhannya. - action: Latih komunikasi empatik, kecerdasan verbal tanpa empati bisa memperjauh orang terdekat</p><p>xiongdi: - star: 天梁 - insight: <strong>Pelindung</strong> (<span class=\"hz\">天梁</span>) di istana saudara menandakan hubungan dengan saudara yang cenderung bersifat pelindung dan terlindungi. Li Yuan Qing mungkin berperan sebagai kakak pelindung, atau justru mencari figur yang lebih tua dan bijak di antara saudaranya. Relasi ini berjalan baik namun tidak terlalu intim secara emosional, lebih banyak dibangun atas rasa tanggung jawab. - action: Jaga komunikasi rutin dengan saudara, jarak emosional mudah melebar tanpa disadari</p><p>fuqi: - star: 天相 - insight: <strong>Penolong</strong> (<span class=\"hz\">天相</span>) di istana pasangan adalah pertanda baik, pasangan ideal Li Yuan Qing adalah sosok yang berwibawa, stabil, dan memiliki prinsip kuat. Dinamika pernikahan cenderung harmonis selama kedua pihak saling menghormati batas. Ada kecenderungan pasangan yang sangat bergantung pada Li Yuan Qing secara emosional, yang bisa menjadi beban jika tidak dikomunikasikan. - action: Ciptakan ritual percakapan emosional rutin dengan pasangan, jangan biarkan jarak tumbuh diam-diam</p><p>zinu: - star: 天機 - insight: <strong>Strategi</strong> (<span class=\"hz\">天機</span>) di istana anak menandakan anak-anak yang cerdas, bergerak cepat, dan penuh ide. Namun relasi Li Yuan Qing dengan anak cenderung lebih intelektual daripada emosional, banyak diskusi dan kurang pelukan. Software mencatat anak mandiri bahkan cenderung keras kepala. Pengasuhan terbaik adalah memberi ruang eksplorasi sambil tetap hadir sebagai figur yang bisa diandalkan. - action: Hadir di momen sederhana sehari-hari, bukan hanya di pencapaian besar sang anak</p>",
+    "_palace1_struct": {
+      "ming_gong": {
+        "star": "巨門",
+        "insight": "**Pintu Besar** ([[巨門]]) di istana hidup menciptakan pribadi yang tajam secara verbal dan analitis. Li Yuan Qing pandai berbicara, berdebat, dan meyakinkan, namun perlu berhati-hati agar kecerdasan lidahnya tidak menimbulkan salah paham atau konflik. Posisi ini juga menandakan bahwa kehidupannya penuh dinamika dan perubahan yang justru menjadi bahan bakar pertumbuhannya.",
+        "action": "Latih komunikasi empatik, kecerdasan verbal tanpa empati bisa memperjauh orang terdekat"
+      },
+      "xiongdi": {
+        "star": "天梁",
+        "insight": "**Pelindung** ([[天梁]]) di istana saudara menandakan hubungan dengan saudara yang cenderung bersifat pelindung dan terlindungi. Li Yuan Qing mungkin berperan sebagai kakak pelindung, atau justru mencari figur yang lebih tua dan bijak di antara saudaranya. Relasi ini berjalan baik namun tidak terlalu intim secara emosional, lebih banyak dibangun atas rasa tanggung jawab.",
+        "action": "Jaga komunikasi rutin dengan saudara, jarak emosional mudah melebar tanpa disadari"
+      },
+      "fuqi": {
+        "star": "天相",
+        "insight": "**Penolong** ([[天相]]) di istana pasangan adalah pertanda baik, pasangan ideal Li Yuan Qing adalah sosok yang berwibawa, stabil, dan memiliki prinsip kuat. Dinamika pernikahan cenderung harmonis selama kedua pihak saling menghormati batas. Ada kecenderungan pasangan yang sangat bergantung pada Li Yuan Qing secara emosional, yang bisa menjadi beban jika tidak dikomunikasikan.",
+        "action": "Ciptakan ritual percakapan emosional rutin dengan pasangan, jangan biarkan jarak tumbuh diam-diam"
+      },
+      "zinu": {
+        "star": "天機",
+        "insight": "**Strategi** ([[天機]]) di istana anak menandakan anak-anak yang cerdas, bergerak cepat, dan penuh ide. Namun relasi Li Yuan Qing dengan anak cenderung lebih intelektual daripada emosional, banyak diskusi dan kurang pelukan. Software mencatat anak mandiri bahkan cenderung keras kepala. Pengasuhan terbaik adalah memberi ruang eksplorasi sambil tetap hadir sebagai figur yang bisa diandalkan.",
+        "action": "Hadir di momen sederhana sehari-hari, bukan hanya di pencapaian besar sang anak"
+      }
+    },
+    "palace2": "<p>caibo: - star: 七殺 - insight: <strong>Pemurnian</strong> (<span class=\"hz\">七殺</span>) di istana rezeki menciptakan pola finansial yang dramatis, naik turun tajam namun berpotensi besar. Li Yuan Qing bukanlah tipe yang menabung pelan-pelan, ia cenderung mendapatkan uang dalam jumlah besar lalu mengelolanya dengan intens. Kunci sukses finansialnya adalah disiplin menyimpan sebagian dalam aset fisik sebelum peluang berikutnya muncul. - action: Tetapkan persentase tetap untuk masuk ke aset properti setiap kali ada pemasukan besar</p><p>jie_e: - star: 天同 - insight: <strong>Harmoni</strong> (<span class=\"hz\">天同</span>) di istana kesehatan adalah pertanda cukup baik, kondisi fisik Li Yuan Qing umumnya stabil, namun ada kecenderungan mengabaikan sinyal tubuh saat sedang dalam mode kerja penuh. Titik lemah adalah sistem pencernaan dan perut, serta gangguan emosional yang berdampak fisik. Istirahat dan rekreasi bukan kemewahan, ini adalah kebutuhan medis bagi Li Yuan Qing. - action: Jadwalkan minimal satu hari penuh istirahat per minggu, bukan negosiasi dan ini wajib</p><p>qianyi: - star: 紫微 - insight: <strong>Pemimpin Agung</strong> (<span class=\"hz\">紫微</span>) di istana perpindahan adalah kombinasi paling menguntungkan, setiap kali Li Yuan Qing berpindah tempat, kota, atau bahkan negara, ia justru menemukan keberuntungan dan pengakuan. Bintang Perpindahan yang aktif memperkuat sinyal ini. Mobilitas bukan beban bagi Li Yuan Qing, ini adalah cara hidupnya yang paling alami dan menguntungkan. - action: Jangan tahan diri dari peluang di kota atau negara lain, perpindahan membawa rezeki nyata</p><p>puyi: - star: 天府 - insight: <strong>Lumbung</strong> (<span class=\"hz\">天府</span>) di istana sahabat dan bawahan memberikan Li Yuan Qing akses ke orang-orang berkualitas dan dapat diandalkan. Ia cenderung menarik bawahan dan rekan yang loyal dan kompeten. Namun perlu diingat bahwa Lumbung juga menandakan standar tinggi, Li Yuan Qing bisa menjadi pemimpin yang menuntut dan perlu diimbangi dengan apresiasi yang konsisten dan tulus. - action: Ucapkan apresiasi secara eksplisit dan spesifik, bawahan terbaik butuh pengakuan verbal</p>",
+    "_palace2_struct": {
+      "caibo": {
+        "star": "七殺",
+        "insight": "**Pemurnian** ([[七殺]]) di istana rezeki menciptakan pola finansial yang dramatis, naik turun tajam namun berpotensi besar. Li Yuan Qing bukanlah tipe yang menabung pelan-pelan, ia cenderung mendapatkan uang dalam jumlah besar lalu mengelolanya dengan intens. Kunci sukses finansialnya adalah disiplin menyimpan sebagian dalam aset fisik sebelum peluang berikutnya muncul.",
+        "action": "Tetapkan persentase tetap untuk masuk ke aset properti setiap kali ada pemasukan besar"
+      },
+      "jie_e": {
+        "star": "天同",
+        "insight": "**Harmoni** ([[天同]]) di istana kesehatan adalah pertanda cukup baik, kondisi fisik Li Yuan Qing umumnya stabil, namun ada kecenderungan mengabaikan sinyal tubuh saat sedang dalam mode kerja penuh. Titik lemah adalah sistem pencernaan dan perut, serta gangguan emosional yang berdampak fisik. Istirahat dan rekreasi bukan kemewahan, ini adalah kebutuhan medis bagi Li Yuan Qing.",
+        "action": "Jadwalkan minimal satu hari penuh istirahat per minggu, bukan negosiasi dan ini wajib"
+      },
+      "qianyi": {
+        "star": "紫微",
+        "insight": "**Pemimpin Agung** ([[紫微]]) di istana perpindahan adalah kombinasi paling menguntungkan, setiap kali Li Yuan Qing berpindah tempat, kota, atau bahkan negara, ia justru menemukan keberuntungan dan pengakuan. Bintang Perpindahan yang aktif memperkuat sinyal ini. Mobilitas bukan beban bagi Li Yuan Qing, ini adalah cara hidupnya yang paling alami dan menguntungkan.",
+        "action": "Jangan tahan diri dari peluang di kota atau negara lain, perpindahan membawa rezeki nyata"
+      },
+      "puyi": {
+        "star": "天府",
+        "insight": "**Lumbung** ([[天府]]) di istana sahabat dan bawahan memberikan Li Yuan Qing akses ke orang-orang berkualitas dan dapat diandalkan. Ia cenderung menarik bawahan dan rekan yang loyal dan kompeten. Namun perlu diingat bahwa Lumbung juga menandakan standar tinggi, Li Yuan Qing bisa menjadi pemimpin yang menuntut dan perlu diimbangi dengan apresiasi yang konsisten dan tulus.",
+        "action": "Ucapkan apresiasi secara eksplisit dan spesifik, bawahan terbaik butuh pengakuan verbal"
+      }
+    },
+    "palace3": "<p>guanlu: - star: 文昌 - insight: <strong>Bintang Akademik</strong> (<span class=\"hz\">文昌</span>) di istana karir memberikan Li Yuan Qing keunggulan di bidang yang memerlukan kecerdasan verbal, tulisan, dan komunikasi. Ia cocok menjadi konsultan, pembicara, penulis, atau pengajar. Software mengkonfirmasi bahwa karir terbaik memiliki unsur pendidikan, analisis, atau penyebaran informasi. Posisi yang murni administratif atau operasional akan terasa menyiksa baginya. - action: Investasikan waktu untuk membangun reputasi berbasis keahlian dan konten</p><p>tianzhai: - star: 太陰 - insight: <strong>Bulan</strong> (<span class=\"hz\">太陰</span>) di istana properti adalah tanda baik, Li Yuan Qing memiliki potensi mengumpulkan properti terutama di lokasi dekat air atau di sisi Barat-Laut. Ada hubungan khusus dengan tanah dan rumah leluhur. Namun Bulan juga bisa berarti properti yang tersembunyi atau belum optimal dimanfaatkan. Saatnya Li Yuan Qing mengaktifkan aset yang selama ini pasif. - action: Audit semua aset properti yang dimiliki, pastikan tidak ada yang idle tanpa manfaat optimal</p><p>fude: - star: 天梁 - insight: <strong>Pelindung</strong> (<span class=\"hz\">天梁</span>) di istana berkah menandakan jiwa yang secara alami condong ke spiritualitas, kebijaksanaan, dan makna hidup yang lebih dalam. Li Yuan Qing memiliki kecenderungan untuk mencari ketenangan batin di balik aktivitas duniawinya yang sibuk. Ini juga pertanda umur panjang dan keberuntungan yang terus hadir selama ia menjaga keseimbangan moral dan spiritual dalam hidupnya. - action: Sisihkan waktu harian untuk refleksi atau praktik spiritual, ini bukan kemewahan melainkan fondasi</p><p>fumu: - star: 貪狼 - insight: <strong>Hasrat</strong> (<span class=\"hz\">貪狼</span>) di istana orang tua menciptakan dinamika yang kompleks, ada ketertarikan dan ada juga ketegangan. Li Yuan Qing mungkin memiliki kenangan tentang orang tua yang berwarna-warni: penuh kasih namun juga memiliki ambisi tersendiri yang kadang berbenturan dengan keinginannya. Pengaruh ayah dirasakan lebih kuat di masa kecil, dan hubungan membaik seiring kedewasaan. - action: Luangkan waktu berkualitas dengan orang tua atau mengenang warisan nilai mereka secara tulus</p>",
+    "_palace3_struct": {
+      "guanlu": {
+        "star": "文昌",
+        "insight": "**Bintang Akademik** ([[文昌]]) di istana karir memberikan Li Yuan Qing keunggulan di bidang yang memerlukan kecerdasan verbal, tulisan, dan komunikasi. Ia cocok menjadi konsultan, pembicara, penulis, atau pengajar. Software mengkonfirmasi bahwa karir terbaik memiliki unsur pendidikan, analisis, atau penyebaran informasi. Posisi yang murni administratif atau operasional akan terasa menyiksa baginya.",
+        "action": "Investasikan waktu untuk membangun reputasi berbasis keahlian dan konten"
+      },
+      "tianzhai": {
+        "star": "太陰",
+        "insight": "**Bulan** ([[太陰]]) di istana properti adalah tanda baik, Li Yuan Qing memiliki potensi mengumpulkan properti terutama di lokasi dekat air atau di sisi Barat-Laut. Ada hubungan khusus dengan tanah dan rumah leluhur. Namun Bulan juga bisa berarti properti yang tersembunyi atau belum optimal dimanfaatkan. Saatnya Li Yuan Qing mengaktifkan aset yang selama ini pasif.",
+        "action": "Audit semua aset properti yang dimiliki, pastikan tidak ada yang idle tanpa manfaat optimal"
+      },
+      "fude": {
+        "star": "天梁",
+        "insight": "**Pelindung** ([[天梁]]) di istana berkah menandakan jiwa yang secara alami condong ke spiritualitas, kebijaksanaan, dan makna hidup yang lebih dalam. Li Yuan Qing memiliki kecenderungan untuk mencari ketenangan batin di balik aktivitas duniawinya yang sibuk. Ini juga pertanda umur panjang dan keberuntungan yang terus hadir selama ia menjaga keseimbangan moral dan spiritual dalam hidupnya.",
+        "action": "Sisihkan waktu harian untuk refleksi atau praktik spiritual, ini bukan kemewahan melainkan fondasi"
+      },
+      "fumu": {
+        "star": "貪狼",
+        "insight": "**Hasrat** ([[貪狼]]) di istana orang tua menciptakan dinamika yang kompleks, ada ketertarikan dan ada juga ketegangan. Li Yuan Qing mungkin memiliki kenangan tentang orang tua yang berwarna-warni: penuh kasih namun juga memiliki ambisi tersendiri yang kadang berbenturan dengan keinginannya. Pengaruh ayah dirasakan lebih kuat di masa kecil, dan hubungan membaik seiring kedewasaan.",
+        "action": "Luangkan waktu berkualitas dengan orang tua atau mengenang warisan nilai mereka secara tulus"
+      }
+    },
+    "kesimpulan": "Seperti <strong>Kayu Yin</strong> (<span class=\"hz\">乙木</span>) yang merambat menembus celah sempit menuju cahaya, Li Yuan Qing tidak butuh jalan yang lurus, ia hanya butuh arah yang jelas dan tekad yang tidak pernah berhenti.",
+    "_kesimpulan_struct": {
+      "quote": "Seperti **Kayu Yin** ([[乙木]]) yang merambat menembus celah sempit menuju cahaya, Li Yuan Qing tidak butuh jalan yang lurus, ia hanya butuh arah yang jelas dan tekad yang tidak pernah berhenti.",
+      "stats": {
+        "format_desc": "**Format Rezeki Tak Terduga** ([[偏財格]]) membentuk Li Yuan Qing menjadi pemburu peluang, rezeki datang dari jaringan dan gerak, bukan rutinitas.",
+        "yong_desc": "Aktifkan **Api** ([[火]]) lewat aktivitas sosial, pencahayaan hangat, dan industri berbasis komunikasi setiap hari.",
+        "dayun_desc": "Fase **Kayu Yin Kerbau** ([[乙丑]]) menuntut konsolidasi, amankan aset, kurangi spekulasi, perkuat fondasi sebelum ekspansi berikutnya.",
+        "umur_desc": "Dekade 60-an adalah puncak kematangan, jaringan siap dipanen, namun energi fisik Li Yuan Qing perlu dijaga ketat.",
+        "kompat_desc": "Pilih **Ular, Kerbau, Naga** ([[巳, 丑, 辰]]) untuk harmoni jangka panjang, jauh dari **Kelinci** ([[卯]]) yang konfrontatif dan **Anjing** ([[戌]]) yang menggerus kepercayaan."
+      },
+      "life_map": {
+        "lalu": "Ditempa Logam keras di masa muda (9-28), lalu mekar pesat di fase Air (29-48), jaringan dibangun, reputasi terbentuk, dan fondasi finansial mulai terlihat.",
+        "sekarang": "**Kayu Yin Kerbau** ([[乙丑]]) (59-68) adalah musim panen sekaligus pemurnian, Li Yuan Qing belajar memilih lebih sedikit namun lebih dalam, mengamankan yang sudah dibangun.",
+        "berikutnya": "**Api Yang Macan** ([[丙寅]]) (69-78) membawa Api elemen pendukung penuh, fase pengakuan sosial, warisan mulai dibentuk, dan Li Yuan Qing menemukan panggung terakhirnya yang paling bercahaya."
+      }
+    },
+    "sintesis": "Li Yuan Qing adalah seorang <strong>Kayu Yin</strong> (<span class=\"hz\">乙木</span>) dengan <strong>Format Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財格</span>) dan <strong>Bintang Perpindahan</strong> (<span class=\"hz\">驛馬</span>) aktif, pemikir analitis yang bergerak cepat, membangun jaringan luas, dan menemukan rezeki justru di luar jalur yang telah diprediksi orang lain.",
+    "_sintesis_struct": {
+      "opening": "Li Yuan Qing adalah seorang **Kayu Yin** ([[乙木]]) dengan **Format Rezeki Tak Terduga** ([[偏財格]]) dan **Bintang Perpindahan** ([[驛馬]]) aktif, pemikir analitis yang bergerak cepat, membangun jaringan luas, dan menemukan rezeki justru di luar jalur yang telah diprediksi orang lain.",
+      "trio": {
+        "kekuatan": {
+          "hanzi": "靈動才財",
+          "pinyin": "Líng Dòng Cái Cái",
+          "arti": "Bakat & Rezeki yang Lincah",
+          "body": "Kombinasi **Kayu Yin** ([[乙木]]) yang lentur dan Format Rezeki Tak Terduga yang tajam membuat Li Yuan Qing unggul dalam membaca peluang dan membangun relasi yang menghasilkan. Ia tidak keras kepala, ia persisten. Tidak berisik, ia persuasif. Kekuatan terbesarnya adalah kemampuan menyesuaikan diri tanpa kehilangan identitas."
+        },
+        "tantangan": {
+          "hanzi": "散而難聚",
+          "pinyin": "Sàn Ér Nán Jù",
+          "arti": "Tersebar, Sulit Terkumpul",
+          "body": "Energi yang terlalu tersebar adalah musuh terbesar Li Yuan Qing. Banyak pintu dibuka dan sedikit yang ditutup dengan sempurna. Fase **Kayu Yin Kerbau** ([[乙丑]]) ini menuntut kurasi, memilih lebih sedikit tapi lebih dalam, daripada terus memperluas front pertempuran yang sudah terlalu lebar."
+        },
+        "tindakan": {
+          "hanzi": "固本強枝",
+          "pinyin": "Gù Běn Qiáng Zhī",
+          "arti": "Kuatkan Akar, Tegakkan Cabang",
+          "body": "Panggung optimal Li Yuan Qing ada di persimpangan mobilitas dan keahlian: konsultasi strategis, perdagangan lintas batas, atau investasi properti yang dikelola aktif. Kunci berikutnya adalah memperkuat fondasi, properti, relasi inti, dan reputasi, sebelum melanjutkan ekspansi di fase Api Yang Macan (69-78)."
+        }
+      },
+      "actions": [
+        {
+          "title": "Amankan satu aset properti sebagai jangkar finansial",
+          "context": "Rezeki Tak Terduga mudah menguap, properti adalah wadah permanennya",
+          "tag": "土 · Tanah"
+        },
+        {
+          "title": "Bangun platform keahlian yang bisa dimonetisasi jarak jauh",
+          "context": "Bintang Akademik di istana karir mendukung karir berbasis konten dan konsultasi",
+          "tag": "木 · Kayu"
+        },
+        {
+          "title": "Manfaatkan momentum 2026 untuk ekspansi jaringan",
+          "context": "Tahun **Api Yang Kuda** ([[丙午]]) membawa Api elemen pendukung, peluang sosial dan bisnis terbuka lebar",
+          "tag": "火 · Api"
+        },
+        {
+          "title": "Tetapkan batas waktu untuk setiap proyek aktif",
+          "context": "Energi yang tersebar adalah hambatan terbesar Kayu Yin di fase konsolidasi ini",
+          "tag": "水 · Air"
+        },
+        {
+          "title": "Jadwalkan pemeriksaan kesehatan menyeluruh tahun ini",
+          "context": "Bintang Harmoni di istana kesehatan mengingatkan bahwa tubuh butuh perhatian sebelum memberi sinyal keras",
+          "tag": "水 · Air"
+        }
+      ]
+    },
+    "_dmcard": "\n        <div class=\"dmc-eyebrow\">本 命 · Penguasa Hari</div>\n        <div class=\"dmc-stem\">乙</div>\n        <div class=\"dmc-element\">木 · Kayu Yin</div>\n        <div class=\"dmc-pinyin\">Yǐ 木, \"Tanaman Lentur\"</div>\n        <div class=\"dmc-traits\">\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span><strong>Adaptif</strong>, fleksibel, ulet</span></div>\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span>Tumbuh di celah, kuat secara halus</span></div>\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span>Mekar dengan ekspresi + akar tanah</span></div>\n        </div>\n        <div class=\"dmc-strength\">Status: <span class=\"val\">LEMAH</span> · 弱</div>\n      ",
+    "_jishen_body": "<strong>金</strong> (Jīn · Logam), Logam tajam yang dapat melukai bila terlalu dominan; hindari lingkungan terlalu kaku, hierarkis, dan kompetitif berlebih.",
+    "fam_pasangan_vibe": "Cerdas · Hangat",
+    "fam_pasangan_headline": "Pasangan yang menstabilkan tanpa membelenggu kebebasan gerak",
+    "fam_pasangan_body": "Berdasarkan <strong>Format Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財格</span>) dan posisi <strong>Ayam</strong> (<span class=\"hz\">酉</span>) sebagai cabang hari, Li Yuan Qing paling serasi dengan pasangan yang cerdas namun tidak dominan, seseorang yang mampu memberikan kehangatan emosional dan kestabilan rumah tangga tanpa memangkas ruang geraknya. Dinamika terbaik adalah ketika pasangan menjadi jangkar, sementara Li Yuan Qing menjadi layar yang membawa bahtera maju.",
+    "fam_anak_vibe": "Bangga · Kritis",
+    "fam_anak_headline": "Hubungan penuh harapan besar namun rentan jarak emosional",
+    "fam_anak_body": "Software mencatat anak cenderung mandiri bahkan agak keras kepala dan penyendiri. Li Yuan Qing menyayangi anak dengan cara yang tidak selalu terungkap langsung, lebih banyak melalui tindakan nyata daripada kata-kata. Kunci pengasuhan terbaik adalah hadir secara emosional, bukan sekadar finansial. Komunikasi terbuka sejak dini mencegah jarak yang mengeras seiring waktu.",
+    "fam_saudara_vibe": "Renggang · Mandiri",
+    "fam_saudara_headline": "Hubungan saudara yang berjalan masing-masing dengan penghormatan diam",
+    "fam_saudara_body": "Relasi dengan saudara kandung cenderung tidak terlalu dekat, bukan karena konflik, melainkan karena masing-masing pihak sangat mandiri. Li Yuan Qing menghargai saudara dari jauh dan jarang mengandalkan mereka dalam keputusan besar. Ada rasa segan dan hormat yang tersimpan diam, muncul saat momen penting saja.",
+    "fam_kepemimpinan_vibe": "Independen · Visioner",
+    "fam_kepemimpinan_headline": "Pemimpin alami yang lebih cocok sebagai penentu arah daripada manajer harian",
+    "fam_kepemimpinan_body": "Gaya kepemimpinan Li Yuan Qing bertumpu pada visi besar dan kemampuan membaca situasi makro. Ia tidak nyaman mengurus detail administratif harian, namun sangat efektif saat membuka jalan, meyakinkan pemangku kepentingan, dan mengambil keputusan strategis. Struktur hierarkis ketat bukan habitatnya, ia optimal sebagai konsultan, pendiri, atau pemimpin yang diberi kepercayaan penuh.",
+    "caifu_zheng_gauge": "<div class=\"cfm-gauge-fill\" style=\"width:35%\">35%</div>",
+    "caifu_zheng_body": "Sumber tetap seperti gaji atau retainer bulanan ada, namun terasa kurang memuaskan bagi Li Yuan Qing. Ia cenderung merasa terkekang dengan struktur penghasilan yang terlalu kaku. Rezeki tetap berfungsi sebagai landasan, bukan tujuan, cukup sebagai penyangga di bulan-bulan sepi proyek.",
+    "caifu_pian_gauge": "<div class=\"cfm-gauge-fill\" style=\"width:65%\">65%</div>",
+    "caifu_pian_body": "Inilah kekuatan utama Li Yuan Qing. Peluang bisnis, komisi penjualan, proyek konsultasi, atau investasi properti menjadi saluran finansial terbesar. Energi terbaik keluar saat ia diberi kebebasan mencari dan menutup kesepakatan sendiri tanpa terlalu banyak birokrasi di antara.",
+    "_caifu_rules": "\n        <div class=\"cf-rule tip\">\n          <div class=\"cfr-num\">1</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Beli properti sebelum uang habis berputar</div>\n            <div class=\"cfr-context\">Tanpa aset fisik, rezeki <strong>Tak Terduga</strong> (<span class=\"hz\">偏財</span>) mudah menguap, properti adalah wadah terbaik</div>\n          </div>\n        </div>\n        <div class=\"cf-rule warn\">\n          <div class=\"cfr-num\">2</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Hindari spekulasi murni tanpa dasar riset</div>\n            <div class=\"cfr-context\">Format Rezeki Tak Terduga membuat Li Yuan Qing terlalu percaya diri di momen euforia pasar</div>\n          </div>\n        </div>\n        <div class=\"cf-rule tip\">\n          <div class=\"cfr-num\">3</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Bangun aliran pasif sejak sekarang</div>\n            <div class=\"cfr-context\">Fase 59-68 adalah momentum terbaik sebelum energi gerak mulai menurun</div>\n          </div>\n        </div>\n        <div class=\"cf-rule warn\">\n          <div class=\"cfr-num\">4</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Waspadai bulan 4, 7, dan 12 untuk keputusan besar</div>\n            <div class=\"cfr-context\">Periode rentan konflik finansial berdasarkan siklus tahunan da yun</div>\n          </div>\n        </div>\n",
+    "_p1_ming_gong": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Diri</span><span class=\"pn-meta\">Mìng Gōng<span class=\"hz\">命宮</span></span></div></div><div class=\"pal-body\"><strong>Pintu Besar</strong> (<span class=\"hz\">巨門</span>) di istana hidup menciptakan pribadi yang tajam secara verbal dan analitis. Li Yuan Qing pandai berbicara, berdebat, dan meyakinkan, namun perlu berhati-hati agar kecerdasan lidahnya tidak menimbulkan salah paham atau konflik. Posisi ini juga menandakan bahwa kehidupannya penuh dinamika dan perubahan yang justru menjadi bahan bakar pertumbuhannya.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Latih komunikasi empatik, kecerdasan verbal tanpa empati bisa memperjauh orang terdekat</span></div></div>",
+    "_p1_xiongdi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Saudara</span><span class=\"pn-meta\">Xiōng Dì<span class=\"hz\">兄弟</span></span></div></div><div class=\"pal-body\"><strong>Pelindung</strong> (<span class=\"hz\">天梁</span>) di istana saudara menandakan hubungan dengan saudara yang cenderung bersifat pelindung dan terlindungi. Li Yuan Qing mungkin berperan sebagai kakak pelindung, atau justru mencari figur yang lebih tua dan bijak di antara saudaranya. Relasi ini berjalan baik namun tidak terlalu intim secara emosional, lebih banyak dibangun atas rasa tanggung jawab.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga komunikasi rutin dengan saudara, jarak emosional mudah melebar tanpa disadari</span></div></div>",
+    "_p1_fuqi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pasangan</span><span class=\"pn-meta\">Fū Qī<span class=\"hz\">夫妻</span></span></div></div><div class=\"pal-body\"><strong>Penolong</strong> (<span class=\"hz\">天相</span>) di istana pasangan adalah pertanda baik, pasangan ideal Li Yuan Qing adalah sosok yang berwibawa, stabil, dan memiliki prinsip kuat. Dinamika pernikahan cenderung harmonis selama kedua pihak saling menghormati batas. Ada kecenderungan pasangan yang sangat bergantung pada Li Yuan Qing secara emosional, yang bisa menjadi beban jika tidak dikomunikasikan.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Ciptakan ritual percakapan emosional rutin dengan pasangan, jangan biarkan jarak tumbuh diam-diam</span></div></div>",
+    "_p1_zinu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Anak</span><span class=\"pn-meta\">Zǐ Nǚ<span class=\"hz\">子女</span></span></div></div><div class=\"pal-body\"><strong>Strategi</strong> (<span class=\"hz\">天機</span>) di istana anak menandakan anak-anak yang cerdas, bergerak cepat, dan penuh ide. Namun relasi Li Yuan Qing dengan anak cenderung lebih intelektual daripada emosional, banyak diskusi dan kurang pelukan. Software mencatat anak mandiri bahkan cenderung keras kepala. Pengasuhan terbaik adalah memberi ruang eksplorasi sambil tetap hadir sebagai figur yang bisa diandalkan.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Hadir di momen sederhana sehari-hari, bukan hanya di pencapaian besar sang anak</span></div></div>",
+    "_p2_caibo": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Rezeki</span><span class=\"pn-meta\">Cái Bó<span class=\"hz\">財帛</span></span></div></div><div class=\"pal-body\"><strong>Pemurnian</strong> (<span class=\"hz\">七殺</span>) di istana rezeki menciptakan pola finansial yang dramatis, naik turun tajam namun berpotensi besar. Li Yuan Qing bukanlah tipe yang menabung pelan-pelan, ia cenderung mendapatkan uang dalam jumlah besar lalu mengelolanya dengan intens. Kunci sukses finansialnya adalah disiplin menyimpan sebagian dalam aset fisik sebelum peluang berikutnya muncul.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Tetapkan persentase tetap untuk masuk ke aset properti setiap kali ada pemasukan besar</span></div></div>",
+    "_p2_jie_e": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Kesehatan</span><span class=\"pn-meta\">Jí È<span class=\"hz\">疾厄</span></span></div></div><div class=\"pal-body\"><strong>Harmoni</strong> (<span class=\"hz\">天同</span>) di istana kesehatan adalah pertanda cukup baik, kondisi fisik Li Yuan Qing umumnya stabil, namun ada kecenderungan mengabaikan sinyal tubuh saat sedang dalam mode kerja penuh. Titik lemah adalah sistem pencernaan dan perut, serta gangguan emosional yang berdampak fisik. Istirahat dan rekreasi bukan kemewahan, ini adalah kebutuhan medis bagi Li Yuan Qing.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jadwalkan minimal satu hari penuh istirahat per minggu, bukan negosiasi dan ini wajib</span></div></div>",
+    "_p2_qianyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Perpindahan</span><span class=\"pn-meta\">Qiān Yí<span class=\"hz\">遷移</span></span></div></div><div class=\"pal-body\"><strong>Pemimpin Agung</strong> (<span class=\"hz\">紫微</span>) di istana perpindahan adalah kombinasi paling menguntungkan, setiap kali Li Yuan Qing berpindah tempat, kota, atau bahkan negara, ia justru menemukan keberuntungan dan pengakuan. Bintang Perpindahan yang aktif memperkuat sinyal ini. Mobilitas bukan beban bagi Li Yuan Qing, ini adalah cara hidupnya yang paling alami dan menguntungkan.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jangan tahan diri dari peluang di kota atau negara lain, perpindahan membawa rezeki nyata</span></div></div>",
+    "_p2_puyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pertemanan</span><span class=\"pn-meta\">Pú Yì<span class=\"hz\">僕役</span></span></div></div><div class=\"pal-body\"><strong>Lumbung</strong> (<span class=\"hz\">天府</span>) di istana sahabat dan bawahan memberikan Li Yuan Qing akses ke orang-orang berkualitas dan dapat diandalkan. Ia cenderung menarik bawahan dan rekan yang loyal dan kompeten. Namun perlu diingat bahwa Lumbung juga menandakan standar tinggi, Li Yuan Qing bisa menjadi pemimpin yang menuntut dan perlu diimbangi dengan apresiasi yang konsisten dan tulus.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Ucapkan apresiasi secara eksplisit dan spesifik, bawahan terbaik butuh pengakuan verbal</span></div></div>",
+    "_p3_guanlu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Karir</span><span class=\"pn-meta\">Guān Lù<span class=\"hz\">官祿</span></span></div></div><div class=\"pal-body\"><strong>Bintang Akademik</strong> (<span class=\"hz\">文昌</span>) di istana karir memberikan Li Yuan Qing keunggulan di bidang yang memerlukan kecerdasan verbal, tulisan, dan komunikasi. Ia cocok menjadi konsultan, pembicara, penulis, atau pengajar. Software mengkonfirmasi bahwa karir terbaik memiliki unsur pendidikan, analisis, atau penyebaran informasi. Posisi yang murni administratif atau operasional akan terasa menyiksa baginya.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Investasikan waktu untuk membangun reputasi berbasis keahlian dan konten</span></div></div>",
+    "_p3_tianzhai": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Properti</span><span class=\"pn-meta\">Tián Zhái<span class=\"hz\">田宅</span></span></div></div><div class=\"pal-body\"><strong>Bulan</strong> (<span class=\"hz\">太陰</span>) di istana properti adalah tanda baik, Li Yuan Qing memiliki potensi mengumpulkan properti terutama di lokasi dekat air atau di sisi Barat-Laut. Ada hubungan khusus dengan tanah dan rumah leluhur. Namun Bulan juga bisa berarti properti yang tersembunyi atau belum optimal dimanfaatkan. Saatnya Li Yuan Qing mengaktifkan aset yang selama ini pasif.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Audit semua aset properti yang dimiliki, pastikan tidak ada yang idle tanpa manfaat optimal</span></div></div>",
+    "_p3_fude": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Berkah</span><span class=\"pn-meta\">Fú Dé<span class=\"hz\">福德</span></span></div></div><div class=\"pal-body\"><strong>Pelindung</strong> (<span class=\"hz\">天梁</span>) di istana berkah menandakan jiwa yang secara alami condong ke spiritualitas, kebijaksanaan, dan makna hidup yang lebih dalam. Li Yuan Qing memiliki kecenderungan untuk mencari ketenangan batin di balik aktivitas duniawinya yang sibuk. Ini juga pertanda umur panjang dan keberuntungan yang terus hadir selama ia menjaga keseimbangan moral dan spiritual dalam hidupnya.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Sisihkan waktu harian untuk refleksi atau praktik spiritual, ini bukan kemewahan melainkan fondasi</span></div></div>",
+    "_p3_fumu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Orang Tua</span><span class=\"pn-meta\">Fù Mǔ<span class=\"hz\">父母</span></span></div></div><div class=\"pal-body\"><strong>Hasrat</strong> (<span class=\"hz\">貪狼</span>) di istana orang tua menciptakan dinamika yang kompleks, ada ketertarikan dan ada juga ketegangan. Li Yuan Qing mungkin memiliki kenangan tentang orang tua yang berwarna-warni: penuh kasih namun juga memiliki ambisi tersendiri yang kadang berbenturan dengan keinginannya. Pengaruh ayah dirasakan lebih kuat di masa kecil, dan hubungan membaik seiring kedewasaan.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Luangkan waktu berkualitas dengan orang tua atau mengenang warisan nilai mereka secara tulus</span></div></div>",
+    "_kes_stats": "\n      <div class=\"kes-stat s1\"><div class=\"ks-eb\">Penguasa Hari · 日主</div><div class=\"ks-num\"><span class=\"hz\">乙木</span><span class=\"unit\">LEMAH · 弱</span></div><div class=\"ks-title\">Pohon Kecil Lemah</div><div class=\"ks-desc\">Total Wu Xing 15, 木 <strong>13.3%</strong> dari distribusi total</div></div>\n      <div class=\"kes-stat s2\"><div class=\"ks-eb\">Format · 格局</div><div class=\"ks-num\"><span class=\"hz\">偏財格</span><span class=\"unit\">FORMAT</span></div><div class=\"ks-title\">Pian Cai Ge, Pengusaha Lincah</div><div class=\"ks-desc\"><strong>Format Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財格</span>) membentuk Li Yuan Qing menjadi pemburu peluang, rezeki datang dari jaringan dan gerak, bukan rutinitas.</div></div>\n      <div class=\"kes-stat s3\"><div class=\"ks-eb\">Yong Shen · 喜用神</div><div class=\"ks-num\"><span class=\"hz\">火 水</span><span class=\"unit\">MENDUKUNG</span></div><div class=\"ks-title\">Api &amp; Air, Penopang &amp; Pengarah</div><div class=\"ks-desc\">Aktifkan <strong>Api</strong> (<span class=\"hz\">火</span>) lewat aktivitas sosial, pencahayaan hangat, dan industri berbasis komunikasi setiap hari.</div></div>\n      <div class=\"kes-stat s4\"><div class=\"ks-eb\">Da Yun · 大運</div><div class=\"ks-num\">Fase 6<span class=\"unit\">dari 10</span></div><div class=\"ks-title\">Fase Saudara Sebanding (59-68)</div><div class=\"ks-desc\">Fase <strong>Kayu Yin Kerbau</strong> (<span class=\"hz\">乙丑</span>) menuntut konsolidasi, amankan aset, kurangi spekulasi, perkuat fondasi sebelum ekspansi berikutnya.</div></div>\n      <div class=\"kes-stat s5\"><div class=\"ks-eb\">Umur Subjek</div><div class=\"ks-num\">66<span class=\"unit\">tahun</span></div><div class=\"ks-title\">Era 60–69</div><div class=\"ks-desc\">Dekade 60-an adalah puncak kematangan, jaringan siap dipanen, namun energi fisik Li Yuan Qing perlu dijaga ketat.</div></div>\n      <div class=\"kes-stat s6\"><div class=\"ks-eb\">Jodoh · 婚配 / 陽宅</div><div class=\"ks-num\">3 <span class=\"unit\">cocok · 2 hindari</span></div><div class=\"ks-desc\">Pilih <strong>Ular, Kerbau, Naga</strong> (<span class=\"hz\">巳, 丑, 辰</span>) untuk harmoni jangka panjang, jauh dari <strong>Kelinci</strong> (<span class=\"hz\">卯</span>) yang konfrontatif dan <strong>Anjing</strong> (<span class=\"hz\">戌</span>) yang menggerus kepercayaan.</div></div>\n    ",
+    "_kes_age": "66",
+    "_kes_lifemap": "\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">過<span class=\"id-label\">Lalu</span></div><div class=\"klm-row-text\"><span class=\"lbl\">MASA LALU</span>Ditempa Logam keras di masa muda (9-28), lalu mekar pesat di fase Air (29-48), jaringan dibangun, reputasi terbentuk, dan fondasi finansial mulai terlihat.</div></div>\n          <div class=\"klm-row now\"><div class=\"klm-row-icon\">今<span class=\"id-label\">Kini</span></div><div class=\"klm-row-text\"><span class=\"lbl\">SEKARANG</span><strong>Kayu Yin Kerbau</strong> (<span class=\"hz\">乙丑</span>) (59-68) adalah musim panen sekaligus pemurnian, Li Yuan Qing belajar memilih lebih sedikit namun lebih dalam, mengamankan yang sudah dibangun.</div></div>\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">未<span class=\"id-label\">Nanti</span></div><div class=\"klm-row-text\"><span class=\"lbl\">BERIKUTNYA</span><strong>Api Yang Macan</strong> (<span class=\"hz\">丙寅</span>) (69-78) membawa Api elemen pendukung penuh, fase pengakuan sosial, warisan mulai dibentuk, dan Li Yuan Qing menemukan panggung terakhirnya yang paling bercahaya.</div></div>\n        ",
+    "_kes_position": "\n          <div class=\"klp-eb\">Posisi Sekarang</div>\n          <div class=\"klp-hz\">秋</div>\n          <div class=\"klp-id\">Qiū, \"Musim Gugur Hidup\"</div>\n          <div class=\"klp-bar\">\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell now\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n          </div>\n          <div class=\"klp-meta\">Fase <strong>6 dari 10</strong> · Umur <strong>59-68</strong> · <strong>木 Kayu</strong> dominan · Musim Gugur Hidup</div>\n        ",
+    "_syn_attrib": "Pohon Kecil · 偏財格 · Pian Cai Ge",
+    "_syn_trio": "\n      <div class=\"syn-card strength\">\n        <div class=\"syn-card-num\">力</div>\n        <div class=\"syn-card-eyebrow\">Kekuatan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">靈動才財</span>\n          <span class=\"syn-card-id\">Líng Dòng Cái Cái</span>\n          <span class=\"syn-card-arti\">Bakat &amp; Rezeki yang Lincah</span>\n        </div>\n        <div class=\"syn-card-body\">Kombinasi <strong>Kayu Yin</strong> (<span class=\"hz\">乙木</span>) yang lentur dan Format Rezeki Tak Terduga yang tajam membuat Li Yuan Qing unggul dalam membaca peluang dan membangun relasi yang menghasilkan. Ia tidak keras kepala, ia persisten. Tidak berisik, ia persuasif. Kekuatan terbesarnya adalah kemampuan menyesuaikan diri tanpa kehilangan identitas.</div>\n      </div>\n      <div class=\"syn-card challenge\">\n        <div class=\"syn-card-num\">驗</div>\n        <div class=\"syn-card-eyebrow\">Tantangan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">散而難聚</span>\n          <span class=\"syn-card-id\">Sàn Ér Nán Jù</span>\n          <span class=\"syn-card-arti\">Tersebar, Sulit Terkumpul</span>\n        </div>\n        <div class=\"syn-card-body\">Energi yang terlalu tersebar adalah musuh terbesar Li Yuan Qing. Banyak pintu dibuka dan sedikit yang ditutup dengan sempurna. Fase <strong>Kayu Yin Kerbau</strong> (<span class=\"hz\">乙丑</span>) ini menuntut kurasi, memilih lebih sedikit tapi lebih dalam, daripada terus memperluas front pertempuran yang sudah terlalu lebar.</div>\n      </div>\n      <div class=\"syn-card action\">\n        <div class=\"syn-card-num\">為</div>\n        <div class=\"syn-card-eyebrow\">Tindakan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">固本強枝</span>\n          <span class=\"syn-card-id\">Gù Běn Qiáng Zhī</span>\n          <span class=\"syn-card-arti\">Kuatkan Akar, Tegakkan Cabang</span>\n        </div>\n        <div class=\"syn-card-body\">Panggung optimal Li Yuan Qing ada di persimpangan mobilitas dan keahlian: konsultasi strategis, perdagangan lintas batas, atau investasi properti yang dikelola aktif. Kunci berikutnya adalah memperkuat fondasi, properti, relasi inti, dan reputasi, sebelum melanjutkan ekspansi di fase Api Yang Macan (69-78).</div>\n      </div>\n    ",
+    "_syn_actions": "\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">1</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Amankan satu aset properti sebagai jangkar finansial</div>\n            <div class=\"syn-action-context\">Rezeki Tak Terduga mudah menguap, properti adalah wadah permanennya</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">2</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Bangun platform keahlian yang bisa dimonetisasi jarak jauh</div>\n            <div class=\"syn-action-context\">Bintang Akademik di istana karir mendukung karir berbasis konten dan konsultasi</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">3</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Manfaatkan momentum 2026 untuk ekspansi jaringan</div>\n            <div class=\"syn-action-context\">Tahun <strong>Api Yang Kuda</strong> (<span class=\"hz\">丙午</span>) membawa Api elemen pendukung, peluang sosial dan bisnis terbuka lebar</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">4</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Tetapkan batas waktu untuk setiap proyek aktif</div>\n            <div class=\"syn-action-context\">Energi yang tersebar adalah hambatan terbesar Kayu Yin di fase konsolidasi ini</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">5</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Jadwalkan pemeriksaan kesehatan menyeluruh tahun ini</div>\n            <div class=\"syn-action-context\">Bintang Harmoni di istana kesehatan mengingatkan bahwa tubuh butuh perhatian sebelum memberi sinyal keras</div>\n          </div>\n        </div>\n      ",
+    "_yangzhai_zones": "\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">門</div>\n            <div class=\"yz-zone-id\">Pintu Utama</div>\n            <div class=\"yz-zone-pinyin\">Mén · Pintu</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">西</span>B</span>\n              <span class=\"yz-pill\"><span class=\"hz\">atau</span>at</span>\n              <span class=\"yz-pill\"><span class=\"hz\">西北</span>BL</span>\n            </div>\n            <div class=\"yz-zone-note\">Hadap Barat atau Barat-Laut sesuai trigram Bumi, membawa aliran rezeki masuk</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">房</div>\n            <div class=\"yz-zone-id\">Kamar Tidur</div>\n            <div class=\"yz-zone-pinyin\">Fáng · Kamar</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Baik</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">西南</span>BD</span>\n              <span class=\"yz-pill\"><span class=\"hz\">atau</span>at</span>\n              <span class=\"yz-pill\"><span class=\"hz\">東北</span>TL</span>\n            </div>\n            <div class=\"yz-zone-note\">Posisi tidur kepala ke Barat-Daya atau Timur-Laut, hindari menghadap Selatan</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">灶</div>\n            <div class=\"yz-zone-id\">Dapur / Kompor</div>\n            <div class=\"yz-zone-pinyin\">Zào · Tungku</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">東</span>T</span>\n            </div>\n            <div class=\"yz-zone-note\">Kompor menghadap Timur, Api dan Kayu bersinergi mendukung vitalitas keluarga</div>\n          </div>\n        </div>\n        <div class=\"yz-zone warn\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">廁</div>\n            <div class=\"yz-zone-id\">Kamar Mandi</div>\n            <div class=\"yz-zone-pinyin\">Cè · Kamar Mandi</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">⚠ Perhatikan</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill bad\"><span class=\"hz\">東南</span>TG</span>\n            </div>\n            <div class=\"yz-zone-note\">Tempatkan di Tenggara atau pojok tidak strategis, hindari pusat rumah</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">書</div>\n            <div class=\"yz-zone-id\">Ruang Kerja</div>\n            <div class=\"yz-zone-pinyin\">Shū · Ruang Kerja</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">西北</span>BL</span>\n            </div>\n            <div class=\"yz-zone-note\">Barat-Laut mengaktifkan potensi kepemimpinan dan koneksi jaringan luas</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">神</div>\n            <div class=\"yz-zone-id\">Altar / Sembah</div>\n            <div class=\"yz-zone-pinyin\">Shén · Sembahyang</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Baik</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">北</span>U</span>\n              <span class=\"yz-pill\"><span class=\"hz\">atau</span>at</span>\n              <span class=\"yz-pill\"><span class=\"hz\">東北</span>TL</span>\n            </div>\n            <div class=\"yz-zone-note\">Altar di Utara atau Timur-Laut, arah hoki trigram Bumi untuk kedamaian spiritual</div>\n          </div>\n        </div>\n",
+    "_career_wuxing": "\n        <div class=\"wux-cell fav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">火 Api<span class=\"v\">4</span></div>\n        </div>\n        <div class=\"wux-cell unfav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:75%\"></div></div>\n          <div class=\"wux-label\">金 Logam<span class=\"v\">3</span></div>\n        </div>\n        <div class=\"wux-cell fav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:75%\"></div></div>\n          <div class=\"wux-label\">水 Air<span class=\"v\">3</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:75%\"></div></div>\n          <div class=\"wux-label\">土 Tanah<span class=\"v\">3</span></div>\n        </div>\n        <div class=\"wux-cell self\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:50%\"></div></div>\n          <div class=\"wux-label\">木 Kayu<span class=\"v\">2</span></div>\n        </div>\n",
+    "_career_title": "Api &amp; Air adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini",
+    "_career_avoid": "Industri ber-unsur <strong>金 (Logam)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.",
+    "_career_tags": "\n          <span class=\"insight-tag\">火 ENERGI TINGGI</span>\n          <span class=\"insight-tag\">水 ALIRAN</span>\n          <span class=\"insight-tag bad\">金 TEKANAN</span>\n          <span class=\"insight-tag bad\">土 STAGNAN</span>\n        ",
+    "_career_industri": "\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">🔥</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Perdagangan &amp; Distribusi</div>\n            <div class=\"ind-reason\">Unsur 火, Cocok dengan mobilitas tinggi dan naluri deal Format Rezeki Tak Terduga</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:95%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">💧</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Media &amp; Komunikasi</div>\n            <div class=\"ind-reason\">Unsur 水, <strong>Bintang Akademik</strong> (<span class=\"hz\">文昌</span>) mendukung ekspresi verbal dan tulisan yang persuasif</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:88%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">🏛️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Properti &amp; Investasi</div>\n            <div class=\"ind-reason\">Unsur 土, Wadah terbaik untuk mengamankan rezeki Tak Terduga yang mudah mengalir keluar</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:82%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">💧</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Pariwisata &amp; Hospitality</div>\n            <div class=\"ind-reason\">Unsur 水, Bintang Perpindahan aktif, industri pergerakan manusia sangat searah dengan energinya</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:76%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">🌳</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Konsultasi &amp; Pelatihan</div>\n            <div class=\"ind-reason\">Unsur 木, Kapasitas analitis dan jaringan luas mendukung peran advisor senior</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:70%\"></div></div>\n          </div>\n        </div>\n",
+    "shensha_star_hz": "驛馬",
+    "shensha_star_pinyin": "Yì Mǎ",
+    "shensha_star_label": "\"Bintang Perpindahan\"",
+    "shensha_star_active": "★ AKTIF SEKARANG ★",
+    "shensha_strip": "<strong>Bintang Perpindahan</strong> (<span class=\"hz\">驛馬</span>) aktif mendorong Li Yuan Qing untuk memanfaatkan mobilitas sebagai keunggulan, perjalanan atau ekspansi ke kota lain membuka rezeki nyata di fase ini.",
+    "_xqcards": "\n      <div class=\"xq-card power\">\n        <div class=\"xqc-eb\">魄 力 · Kekuatan</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">優勢</span><span class=\"xqc-name\">Yōu Shì<br>Keunggulan</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Naluri finansial tajam, cepat melihat peluang sebelum orang lain menyadarinya</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Jaringan sosial luas, mudah membangun kepercayaan dan hubungan lintas kalangan</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Adaptabilitas tinggi, mampu menyesuaikan diri di lingkungan baru dengan cepat</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Daya tahan mental kuat, bangkit setelah tekanan tanpa kehilangan arah jangka panjang</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card shadow\">\n        <div class=\"xqc-eb\">陰 影 · Shadow</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">隱 患</span><span class=\"xqc-name\">Yǐn Huàn<br>Sisi Gelap</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Mudah tergoda spekulasi, keputusan finansial bisa terlalu impulsif di momen euforia</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Sulit konsisten, energi berpencar ke terlalu banyak arah secara bersamaan</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Menutup kelemahan emosi, tampil kuat di luar padahal butuh dukungan di dalam</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Konflik otoritas, tidak nyaman diperintah dan bisa bergesekan dengan atasan atau pasangan</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card optimum\">\n        <div class=\"xqc-eb\">最 佳 · Optimum</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">應 用</span><span class=\"xqc-name\">Yīng Yòng<br>Cara Optimal</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Bekerja dengan otonomi penuh, struktur terlalu ketat memadamkan kreativitas dan produktivitasnya</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Investasikan energi di proyek jangka menengah, bukan spekulasi cepat dan bukan birokrasi lambat</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Bangun lingkaran dalam yang jujur, orang yang berani memberi umpan balik apa adanya</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Jadikan pergerakan fisik sebagai rutinitas, Li Yuan Qing optimal saat tidak mandek di satu tempat</span></div>\n        </div>\n      </div>\n    "
   }
 }

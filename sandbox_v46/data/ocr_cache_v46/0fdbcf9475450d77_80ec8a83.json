@@ -1,0 +1,26 @@
+{
+  "screen_type": "liu_nian",
+  "name_id": "YUDY L",
+  "gender_hz": "陽男",
+  "birth_lunar_text": "農曆民國 52年 1月 5日 13時30分",
+  "liu_nian_per_year": [
+    {
+      "year_gregorian": 2028,
+      "year_hz": "戊申",
+      "age": 66,
+      "paragraph_hz": "今年所付出的代價，表面上與金錢能成對比。要注意，嘮叨事會特別多，貴人暗，實質上無法達到里想。大環境改變，例如家中重新裝潢、搬家、移動室內的家俱或擺設。已婚者夫妻間會鬧感情，未婚者會走感情。死符：死待入命中，孝服有悲傷，父母兄弟魁，祈神免災殃。暗耀：暗耀星辰入命中，若無口舌刑剋凶，孝服飛禍之災行，家有喜事破千殃。女人疾病生產小心，忌一四七或十二月，祈求神佑。易遭官災、刑訴、訴訟、受傷、精神上的痛苦。忠厚、溫和、斯文、善良，圓滿；人緣極佳，受人賞識，歡迎、提攜，容易平步青雲，扶搖直上；具有技術、才藝的天賦，學習能力很強；但卻不適合當領導階層，乃是相當優秀的輔佐、企畫、幕僚人才，且較易能大有發揮的餘地。",
+      "id_summary": [
+        "Pengeluaran terlihat sepadan uang namun sulit mencapai harapan; perubahan besar lingkungan (renovasi/pindah rumah/pindah perabot); pasangan menikah rawan konflik perasaan, yang single mulai menjalin asmara.",
+        "Bintang 死符: risiko berduka/berkabung, potensi masalah menyangkut orang tua atau saudara, perbanyak doa dan ritual keselamatan.",
+        "Bintang 暗耀: risiko sengketa mulut, tuntutan hukum/pengadilan, kecelakaan fisik dan penderitaan mental; hindari bulan ke-1/4/7/12; wanita waspadai penyakit dan kehamilan.",
+        "Karakter: jujur, ramah, berbakat di bidang teknis/seni, mudah naik pangkat; paling cocok sebagai staf pendukung, perencana, atau konsultan — kurang cocok menjadi pemimpin."
+      ],
+      "sub_warnings": [
+        "死符: 死待入命中，孝服有悲傷，父母兄弟魁，祈神免災殃",
+        "暗耀: 暗耀星辰入命中，若無口舌刑剋凶，孝服飛禍之災行，家有喜事破千殃；女人疾病生產小心，忌一四七或十二月，祈求神佑；易遭官災、刑訴、訴訟、受傷、精神上的痛苦"
+      ]
+    }
+  ],
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.32.jpeg",
+  "_hash": "0fdbcf9475450d77_80ec8a83"
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Li Xiang An, Palace Detail 1</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-pal { grid-template-rows: 1fr !important; gap: 0; }
+
+  .pal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4mm; overflow: hidden;
+  }
+  .pal-card {
+    background: var(--bg-card);
+    border: 0.4mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    display: grid;
+    grid-template-rows: auto 1fr 22mm;
+    gap: 2mm;
+    overflow: hidden;
+    position: relative;
+  }
+  .pal-card.life {
+    background: linear-gradient(180deg, #FFF8E1, #F5EBD0);
+    border: 0.5mm solid var(--gold);
+  }
+  .pal-card::before {
+    content: ''; position: absolute;
+    top: 0; right: 0; width: 14mm; height: 14mm;
+    background-color: transparent;
+    background-image: radial-gradient(circle at top right, rgba(201,169,97,0.15) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .pal-head {
+    display: grid; grid-template-columns: auto 1fr auto;
+    gap: 3mm; align-items: baseline;
+    border-bottom: 0.2mm solid var(--gold-soft);
+    padding-bottom: 1.5mm;
+  }
+  .pal-name { display: block; line-height: 1.1; }
+  .pal-name .pn-id { display: block; font-family: 'Playfair Display', serif; font-size: 14pt; color: var(--red); font-weight: 700; letter-spacing: 0.3px; }
+  .pal-name .pn-meta { display: block; font-family: 'Inter', sans-serif; font-size: 7.5pt; color: var(--text-muted); letter-spacing: 0.5px; margin-top: 1mm; font-style: italic; }
+  .pal-name .pn-meta .hz { font-family: 'Noto Serif TC', serif; color: var(--text); font-style: normal; font-weight: 600; margin-left: 1.5mm; }
+  .pal-branch {
+    text-align: center;
+    font-family: 'Noto Serif TC', serif; font-size: 11pt;
+    color: var(--text); font-weight: 600;
+  }
+  .pal-branch .id {
+    display: block; font-size: 5.5pt; color: var(--text-muted);
+    font-style: italic; margin-top: 0.3mm;
+  }
+  .pal-age {
+    font-family: 'Playfair Display', serif; font-size: 8.5pt;
+    color: var(--gold); font-weight: 700;
+    text-align: right; letter-spacing: 0.5px;
+  }
+  .pal-age .lbl {
+    display: block; font-size: 5.5pt; color: var(--text-muted);
+    letter-spacing: 1px; text-transform: uppercase;
+    font-weight: 500; margin-top: 0.3mm;
+  }
+
+  .pal-stars {
+    display: flex; gap: 2mm; flex-wrap: wrap;
+    align-items: center;
+  }
+  .pal-star {
+    background: linear-gradient(135deg, white, #FFF8E1);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 1.5mm;
+    padding: 1.5mm 3mm;
+    display: grid; grid-template-columns: auto auto;
+    gap: 2mm; align-items: baseline;
+  }
+  .pal-star.main { border-color: var(--gold); background: linear-gradient(135deg, #FFF8E1, #F5EBD0); }
+  .pal-star-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 11pt;
+    color: var(--red); font-weight: 700; line-height: 1;
+  }
+  .pal-star-id { font-size: 6.5pt; color: var(--text-muted); font-style: italic; letter-spacing: 0.3px; }
+
+  .pal-insight {
+    background: linear-gradient(90deg, var(--gold-bg), transparent);
+    border-left: 0.8mm solid var(--gold);
+    border-radius: 0 1mm 1mm 0;
+    padding: 1.5mm 3mm;
+    font-family: 'Playfair Display', serif; font-size: 9.5pt;
+    color: var(--red); line-height: 1.3; font-weight: 600; font-style: italic;
+  }
+  .pal-insight .hz { font-family: 'Noto Serif TC', serif; color: var(--text); font-style: normal; font-weight: 700; }
+
+  .pal-body { font-size: 7.5pt; line-height: 1.45; color: var(--text); overflow: hidden; }
+  .pal-body strong { color: var(--red); }
+  .pal-body .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+
+  .pal-actions {
+    display: grid; gap: 1.2mm;
+    border-top: 0.2mm dashed var(--gold-soft); padding-top: 1.5mm;
+  }
+  .pal-actions-header { font-family: 'Playfair Display', serif; font-size: 11pt; color: var(--green); font-weight: 700; letter-spacing: 0.5px; margin-bottom: 1.2mm; }
+  .pal-action { display: grid; grid-template-columns: 4mm 1fr; gap: 2mm; font-size: 7.5pt; line-height: 1.45; color: var(--text); }
+  .pal-action .ico { color: var(--green); font-weight: 700; }
+  .pal-action strong { color: var(--red); }
+  .pal-action .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">17</div>
+    <div class="h-titles"><div class="h-cn">命 兄 夫 子</div><div class="h-id">Diri · Saudara · Pasangan · Anak</div></div>
+    <div class="h-section">Bagian II · Zi Wei 紫微</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Kuda-Merah.svg" alt="Kuda"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Li Xiang An · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">午 Kuda</span></div>
+      <div class="subject-detail">Detail 4 istana lingkaran-dalam, diri &amp; relasi inti</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">癸水 · Air Hujan</div></div>
+  </div>
+
+  <main class="content content-pal">
+    <div class="pal-grid">
+
+      <!-- 命宮 DIRI -->
+      <div class="pal-card life"><!-- TAFSIR:_p1_ming_gong --><div class="pal-head"><div class="pal-name"><span class="pn-id">Diri</span><span class="pn-meta">Mìng Gōng<span class="hz">命宮</span></span></div></div><div class="pal-body">Istana Hidup Li Xiang An dipimpin <strong>Ju Men</strong> (<span class="hz">巨門</span>), bintang gerbang yang menonjolkan kemampuan analisis, debat, dan komunikasi mendalam. Cocok di bidang yang menuntut argumentasi, riset, atau penjelasan rumit. Sisi bayangnya adalah kecenderungan curiga dan banyak bicara di internal pikiran. Latih ekspresi terbuka agar daya kata tidak menjadi senjata yang melukai diri sendiri.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Pilih jalur yang menghargai kata, riset, dan kejelasan logika.</span></div></div><!-- /TAFSIR --></div>
+
+      <!-- 兄弟 SAUDARA -->
+      <div class="pal-card"><!-- TAFSIR:_p1_xiongdi --><div class="pal-head"><div class="pal-name"><span class="pn-id">Saudara</span><span class="pn-meta">Xiōng Dì<span class="hz">兄弟</span></span></div></div><div class="pal-body">Istana Saudara dihuni <strong>Qi Sha</strong> (<span class="hz">七殺</span>) yang menandakan saudara berkarakter kuat, kompetitif, sekaligus protektif. Hubungan bisa renggang saat muda karena masing-masing mencari ruang sendiri, namun matang menjadi saling mendukung di usia dewasa. Disarankan tidak mengikat keuangan terlalu dalam dengan saudara untuk menjaga keseimbangan.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Jaga komunikasi tetap rutin, batasi kerjasama bisnis berlapis utang.</span></div></div><!-- /TAFSIR --></div>
+
+      <!-- 夫妻 PASANGAN -->
+      <div class="pal-card"><!-- TAFSIR:_p1_fuqi --><div class="pal-head"><div class="pal-name"><span class="pn-id">Pasangan</span><span class="pn-meta">Fū Qī<span class="hz">夫妻</span></span></div></div><div class="pal-body">Istana Pasangan dijaga <strong>Tian Liang</strong> (<span class="hz">天梁</span>), bintang pengayom yang menunjukkan pasangan dewasa, sabar, dan punya naluri membimbing. Hubungan paling stabil ketika ada perbedaan usia atau kematangan emosional, bukan sekadar romantis. Tantangannya: pasangan kadang terlalu mengayomi sehingga Li Xiang An merasa diperlakukan seperti adik.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Tegaskan ruang setara, jangan biarkan diri terus diposisikan sebagai yang dibimbing.</span></div></div><!-- /TAFSIR --></div>
+
+      <!-- 子女 ANAK -->
+      <div class="pal-card"><!-- TAFSIR:_p1_zinu --><div class="pal-head"><div class="pal-name"><span class="pn-id">Anak</span><span class="pn-meta">Zǐ Nǚ<span class="hz">子女</span></span></div></div><div class="pal-body">Istana Anak dihuni <strong>Wu Qu</strong> (<span class="hz">武曲</span>) bersama <strong>Tian Fu</strong> (<span class="hz">天府</span>), kombinasi yang menjanjikan anak berdisiplin, mandiri, dan punya naluri finansial sejak muda. Foto <strong>子女</strong> menyebut anak akan dapat dipercaya dan membawa nama baik. Pola asuh ideal adalah memberi kepercayaan bertahap, bukan kontrol ketat.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Beri anak ruang berlatih kemandirian sejak dini, hadir saat dibutuhkan.</span></div></div><!-- /TAFSIR --></div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-meta"><span>Halaman 17 / 24</span></div>
+  </footer>
+</section>
+</body>
+</html>

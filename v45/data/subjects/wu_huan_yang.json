@@ -1,0 +1,801 @@
+{
+  "subject_id": "wu_huan_yang",
+  "_built_by": "build_from_ocr.py V4.5 FULL-MD",
+  "identity": {
+    "name_id": "Wu Huan Yang",
+    "name_hanzi": "吳換洋",
+    "gender_id": "Pria",
+    "birth_date": "1964-05-13",
+    "birth_time": "00:50",
+    "birth_day_name": "Rabu",
+    "birth_period_id": "malam",
+    "birth_hour_branch_hz": "子",
+    "birth_hour_period_label": "malam · 子時",
+    "lunar_date_text_new": "tanggal 2 bulan 4 tahun 甲辰 (Jia Chen · 1964)",
+    "lunar_year_pillar_hz": "甲辰",
+    "lunar_republic_text": "民國 53 年 4 月 2 日",
+    "age_at_report": 63
+  },
+  "shio": {
+    "branch_hz": "辰",
+    "branch_pinyin": "Chén",
+    "id": "Naga",
+    "id_upper": "NAGA",
+    "svg_red": "Naga-Merah.svg",
+    "svg_black": "Naga-Hitam.svg"
+  },
+  "ti_xiang": null,
+  "day_master": {
+    "stem_hz": "壬",
+    "stem_element_hz": "水",
+    "stem_element_id": "Air",
+    "polarity_id": "Yang",
+    "label_id": "Air Sungai",
+    "label_long_id": "Air",
+    "pinyin": "Rén 水",
+    "strength_id": "Lemah",
+    "strength_hz": "弱"
+  },
+  "pillars": {
+    "year": {
+      "stem_hz": "甲",
+      "branch_hz": "辰"
+    },
+    "month": {
+      "stem_hz": "己",
+      "branch_hz": "巳"
+    },
+    "day": {
+      "stem_hz": "壬",
+      "branch_hz": "戌"
+    },
+    "hour": {
+      "stem_hz": "庚",
+      "branch_hz": "子"
+    }
+  },
+  "wuxing": {
+    "jin": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Logam"
+    },
+    "shui": {
+      "value": 2.0,
+      "percent": 25.0,
+      "label_id": "Air"
+    },
+    "mu": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Kayu"
+    },
+    "huo": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Api"
+    },
+    "tu": {
+      "value": 3.0,
+      "percent": 37.5,
+      "label_id": "Tanah"
+    },
+    "total": 8.0,
+    "self_value": 2.0,
+    "self_el_hz": "—",
+    "fav_hz": "—",
+    "unfav_hz": "—",
+    "axis_max": "—",
+    "insight_id": null,
+    "_empty": false
+  },
+  "yong_shen": {
+    "elements_hz": "金 水",
+    "elements_id": "Logam & Air",
+    "label_id": "Penopang & Pengarah",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "ji_shen": {
+    "elements_hz": "火 土",
+    "elements_id": "Api & Tanah",
+    "label_id": "Pelumat & Pemicu",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "format": {
+    "hz": "正官格",
+    "pinyin": "Zheng Guan Ge",
+    "label_id": "Penjaga Disiplin",
+    "glyph_hz": "—"
+  },
+  "da_yun": {
+    "start_age": 9,
+    "direction_id": null,
+    "current_index": 5,
+    "axis_marks": [
+      9,
+      19,
+      29,
+      39,
+      49,
+      59,
+      69,
+      79,
+      89,
+      99,
+      109
+    ],
+    "cycles": [
+      {
+        "n": 1,
+        "age_start": 9,
+        "age_end": 18,
+        "stem_hz": "庚",
+        "branch_hz": "午",
+        "ten_god_hz": "偏印",
+        "ten_god_id": "Mentor",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 2,
+        "age_start": 19,
+        "age_end": 28,
+        "stem_hz": "辛",
+        "branch_hz": "未",
+        "ten_god_hz": "正印",
+        "ten_god_id": "Pelajaran",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 3,
+        "age_start": 29,
+        "age_end": 38,
+        "stem_hz": "壬",
+        "branch_hz": "申",
+        "ten_god_hz": "比肩",
+        "ten_god_id": "Pundak Sama",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 4,
+        "age_start": 39,
+        "age_end": 48,
+        "stem_hz": "癸",
+        "branch_hz": "酉",
+        "ten_god_hz": "劫財",
+        "ten_god_id": "Saudara Sebanding",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 5,
+        "age_start": 49,
+        "age_end": 58,
+        "stem_hz": "甲",
+        "branch_hz": "戌",
+        "ten_god_hz": "食神",
+        "ten_god_id": "Pencipta",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 6,
+        "age_start": 59,
+        "age_end": 68,
+        "stem_hz": "乙",
+        "branch_hz": "亥",
+        "ten_god_hz": "傷官",
+        "ten_god_id": "Kritikus Tajam",
+        "element_class": "el-mu",
+        "is_current": true
+      },
+      {
+        "n": 7,
+        "age_start": 69,
+        "age_end": 78,
+        "stem_hz": "丙",
+        "branch_hz": "子",
+        "ten_god_hz": "偏財",
+        "ten_god_id": "Rezeki Bisnis",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 8,
+        "age_start": 79,
+        "age_end": 88,
+        "stem_hz": "丁",
+        "branch_hz": "丑",
+        "ten_god_hz": "正財",
+        "ten_god_id": "Rezeki Tetap",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 9,
+        "age_start": 89,
+        "age_end": 98,
+        "stem_hz": "戊",
+        "branch_hz": "寅",
+        "ten_god_hz": "七殺",
+        "ten_god_id": "Pemurnian",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 10,
+        "age_start": 99,
+        "age_end": 108,
+        "stem_hz": "己",
+        "branch_hz": "卯",
+        "ten_god_hz": "正官",
+        "ten_god_id": "Otoritas",
+        "element_class": "el-tu"
+      }
+    ],
+    "seasons": [
+      {
+        "el_class": "s-jin",
+        "el_hz": "金",
+        "name_id": "Pemurnian Awal",
+        "age_start": 9,
+        "age_end": 28
+      },
+      {
+        "el_class": "s-shui",
+        "el_hz": "水",
+        "name_id": "Belajar & Mentor",
+        "age_start": 29,
+        "age_end": 48
+      },
+      {
+        "el_class": "s-mu",
+        "el_hz": "木",
+        "name_id": "Berbagi Panggung",
+        "age_start": 49,
+        "age_end": 68,
+        "is_current": true
+      },
+      {
+        "el_class": "s-huo",
+        "el_hz": "火",
+        "name_id": "Berkarya Tenang",
+        "age_start": 69,
+        "age_end": 88
+      },
+      {
+        "el_class": "s-tu",
+        "el_hz": "土",
+        "name_id": "Memetik Rezeki",
+        "age_start": 89,
+        "age_end": 108
+      }
+    ],
+    "spotlight_headline_html": "Wu Huan Yang kini berada di fase <strong>Kayu Yin Babi</strong> (<span class=\"hz\">乙亥</span>) (umur 59-68), kayu lentur yang berakar di air, masa kebijaksanaan yang matang dan rezeki dari relasi panjang.",
+    "spotlight_tag_tone_html": "Kayu · pertumbuhan",
+    "spotlight_tag_combo_html": "Suara Berani",
+    "spotlight_tag_combo_pair": [
+      "乙",
+      "亥"
+    ],
+    "spotlight_bullets_html": [
+      "Fase <strong>Kayu Yin Babi</strong> (<span class=\"hz\">乙亥</span>) membawa unsur <strong>Kayu</strong> (<span class=\"hz\">木</span>) dan <strong>Air</strong> (<span class=\"hz\">水</span>) yang mengalir melalui Day Master, periode di mana kebijaksanaan, jaringan, dan reputasi yang dibangun puluhan tahun mulai berbuah nyata.",
+      "Unsur Kayu di fase ini menjadi saluran ekspresi bagi <strong>Air Yang</strong> (<span class=\"hz\">壬水</span>) Wu Huan Yang. Ide, tulisan, dan pengaruh yang selama ini terpendam mendapat panggung untuk muncul ke permukaan.",
+      "Di sisi positif, <strong>Bintang Akademik</strong> (<span class=\"hz\">文昌貴</span>) makin aktif di fase ini, peluang kontribusi intelektual dan mentoring generasi muda terbuka lebar. Waktu terbaik untuk mewariskan pengalaman.",
+      "Hubungan keluarga dan kesehatan perlu jadi prioritas. Software mengingatkan agar tidak terlampau sibuk pada urusan luar hingga melupakan jangkar di rumah. Pemeriksaan kesehatan rutin sangat dianjurkan."
+    ],
+    "footer_caption_html": "Wu Huan Yang, 63 tahun, kini dalam fase <strong>Kayu Yin Babi</strong> (<span class=\"hz\">乙亥</span>) (umur 59-68), masa panen kebijaksanaan dan ekspresi pengaruh; gunakan energi ini untuk mewariskan ilmu dan menjaga keseimbangan keluarga."
+  },
+  "marriage": {
+    "self_branch_index": 4,
+    "cocok": [
+      {
+        "branch_hz": "子",
+        "id": "Tikus",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "申",
+        "id": "Monyet",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "酉",
+        "id": "Ayam",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      }
+    ],
+    "hindari": [
+      {
+        "branch_hz": "丑",
+        "id": "Kerbau",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "卯",
+        "id": "Kelinci",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "戌",
+        "id": "Anjing",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "辰",
+        "id": "Naga",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      }
+    ],
+    "_empty": false
+  },
+  "yang_zhai": {
+    "gua_hz": "離",
+    "gua_pinyin": "Lí",
+    "gua_label_id": "Api",
+    "gua_direction_id": "Selatan",
+    "gua_direction_abbr": "S",
+    "group_id": "Timur",
+    "sumbu_hoki_hz": "南↔北",
+    "sumbu_hoki_id": "S ↔ U",
+    "trigram_symbol": "☲"
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "武曲",
+    "shen_zhu_hz": "文昌",
+    "ming_gong_hz": "巳",
+    "shen_gong_hz": "巳",
+    "wu_xing_ju_hz": "木三局",
+    "shi_jun_hz": "酉",
+    "palaces": null,
+    "ming_gong_id": "Istana Hidup · Ular",
+    "shen_gong_id": "Istana Tubuh · Ular",
+    "shi_jun_id": "Penguasa Waktu · Ayam",
+    "ming_zhu_id": "Penguasa Hidup",
+    "shen_zhu_id": "Penguasa Tubuh",
+    "wu_xing_ju_id": "Aliran Kayu Tiga"
+  },
+  "shen_sha_list": [],
+  "dm_pos_score": 4028.0,
+  "dm_neg_score": 4606.0,
+  "xiantian_per_stem": null,
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": null,
+  "mantra": {
+    "hz": "—",
+    "pinyin": "—"
+  },
+  "_xq_radar_poly": "          <polygon points=\"200,72 325.1,128 311.2,264 200,296 102.7,256 102.7,144\"\n            fill=\"rgba(139,26,26,0.18)\" stroke=\"#8B1A1A\" stroke-width=\"1.5\"/>\n          <circle cx=\"200\" cy=\"72\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"325.1\" cy=\"128\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"264\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"200\" cy=\"296\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"102.7\" cy=\"256\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"102.7\" cy=\"144\" r=\"3\" fill=\"#8B1A1A\"/>",
+  "_xq_radar_labels": "          <g font-family=\"Noto Serif TC,serif\">\n            <text x=\"200\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[流]]</text>\n            <text x=\"200\" y=\"33\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Liú · Aliran · 8.0</text>\n\n            <text x=\"358\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[正]]</text>\n            <text x=\"358\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Zhèng · Integritas · 9.0</text>\n\n            <text x=\"358\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[思]]</text>\n            <text x=\"358\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Sī · Daya Pikir · 8.0</text>\n\n            <text x=\"200\" y=\"382\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[情]]</text>\n            <text x=\"200\" y=\"393\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Qíng · Kepekaan Emosi · 6.0</text>\n\n            <text x=\"42\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[動]]</text>\n            <text x=\"42\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Dòng · Inisiatif · 7.0</text>\n\n            <text x=\"42\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[韌]]</text>\n            <text x=\"42\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Rèn · Ketangguhan · 7.0</text>\n          </g>",
+  "_xq_motto": [
+    "川",
+    "Sang Sungai Pelopor",
+    "流通智達",
+    "上善若水"
+  ],
+  "_tafsir": {
+    "kepribadian": "Wu Huan Yang adalah pribadi <strong>Air Yang</strong> (<span class=\"hz\">壬水</span>), seperti sungai besar yang mengalir luas dan tak mudah dibendung. Lahir dengan <strong>Format Pejabat Lurus</strong> (<span class=\"hz\">正官格</span>), ia memiliki rasa tanggung jawab tinggi, disiplin pada aturan, dan integritas yang menjadi tulang punggung relasinya. Software mencatat: pribadinya analitis, suka menelaah sebab-akibat, dan punya naluri untuk menjadi penengah di tengah konflik. <strong>Logam Yang</strong> (<span class=\"hz\">庚金</span>) di pilar jam memberi dorongan eksekusi tegas saat dibutuhkan keputusan cepat.",
+    "_kepribadian_struct": {
+      "paragraf": "Wu Huan Yang adalah pribadi **Air Yang** ([[壬水]]), seperti sungai besar yang mengalir luas dan tak mudah dibendung. Lahir dengan **Format Pejabat Lurus** ([[正官格]]), ia memiliki rasa tanggung jawab tinggi, disiplin pada aturan, dan integritas yang menjadi tulang punggung relasinya. Software mencatat: pribadinya analitis, suka menelaah sebab-akibat, dan punya naluri untuk menjadi penengah di tengah konflik. **Logam Yang** ([[庚金]]) di pilar jam memberi dorongan eksekusi tegas saat dibutuhkan keputusan cepat.",
+      "radar_traits": [
+        [
+          "[[流]]",
+          "Liú",
+          "Aliran",
+          8.0
+        ],
+        [
+          "[[正]]",
+          "Zhèng",
+          "Integritas",
+          9.0
+        ],
+        [
+          "[[思]]",
+          "Sī",
+          "Daya Pikir",
+          8.0
+        ],
+        [
+          "[[情]]",
+          "Qíng",
+          "Kepekaan Emosi",
+          6.0
+        ],
+        [
+          "[[動]]",
+          "Dòng",
+          "Inisiatif",
+          7.0
+        ],
+        [
+          "[[韌]]",
+          "Rèn",
+          "Ketangguhan",
+          7.0
+        ]
+      ],
+      "motto": [
+        "川",
+        "Sang Sungai Pelopor",
+        "流通智達",
+        "上善若水"
+      ],
+      "power": [
+        "Daya analitis tajam; mampu membaca pola besar di balik detail kecil.",
+        "Kepemimpinan yang adil; orang lain merasa dilindungi di bawah arahannya.",
+        "Mobilitas tinggi; cocok bekerja lintas wilayah dan lintas bidang.",
+        "Loyalitas pada prinsip; tidak mudah goyah oleh tekanan politik."
+      ],
+      "shadow": [
+        "Cenderung menyimpan emosi sendiri hingga meluap di saat tidak tepat.",
+        "Sulit menerima kritik personal walaupun terhadap ide ia terbuka.",
+        "Dorongan eksplorasi besar bisa membuat fokus karir terpecah.",
+        "Rentan terlibat asmara di luar pernikahan bila tidak dijaga ketat."
+      ],
+      "optimum": [
+        "Bangun rutinitas refleksi mingguan untuk memetakan arah jangka panjang.",
+        "Pilih lingkungan kerja yang menghargai integritas, bukan sekadar kecepatan.",
+        "Investasikan waktu untuk hubungan keluarga inti agar tetap menjadi jangkar.",
+        "Latih komunikasi terbuka, terutama menyampaikan emosi tanpa menahan."
+      ]
+    },
+    "family": "pasangan: - vibe: Lembut · Setia - headline: Pasangan ideal yang sabar dan mampu meredam gelora. - body: Software mencatat Wu Huan Yang membutuhkan pasangan yang lembut, setia, dan tahan terhadap dinamika emosinya yang sesekali bergelombang. Pernikahan harmonis bila pasangan mampu menjadi pendengar dan penyeimbang. Hindari pasangan yang terlalu dominan atau terlalu logis-keras karena akan memicu konflik berkepanjangan.<br><br>anak: - vibe: Hangat · Tegas - headline: Orang tua yang melindungi sambil mendidik kemandirian. - body: Wu Huan Yang cenderung menjadi figur ayah yang mendisiplinkan dengan kasih. Pola pengasuhan terbaik adalah memberi ruang bereksplorasi sambil menanamkan nilai integritas. Hubungan dengan anak hangat namun perlu hati-hati agar tidak terlalu ekspektasional pada prestasi.<br><br>saudari: - vibe: Solid · Bersinergi - headline: Hubungan saudara cukup harmonis dan saling mendukung. - body: Software mencatat relasi Wu Huan Yang dengan saudara cenderung bersinergi, terutama dalam urusan pekerjaan dan keluarga besar. Ia menjadi penengah saat ada perbedaan pandangan. Komunikasi yang konsisten penting dijaga karena kesibukan bisa membuat relasi terasa renggang.<br><br>kepemimpinan: - vibe: Adil · Berwibawa - headline: Pemimpin berwibawa yang memimpin lewat aturan dan teladan. - body: Wu Huan Yang adalah tipe pemimpin formal yang menegakkan aturan tanpa kompromi. <strong>Format Pejabat Lurus</strong> (<span class=\"hz\">正官格</span>) memberi aura otoritas alami. Gaya terbaik adalah kepemimpinan struktural di organisasi besar atau lembaga publik, bukan startup informal yang penuh fleksibilitas tanpa aturan jelas.",
+    "_family_struct": {
+      "pasangan": {
+        "vibe": "Lembut · Setia",
+        "headline": "Pasangan ideal yang sabar dan mampu meredam gelora.",
+        "body": "Software mencatat Wu Huan Yang membutuhkan pasangan yang lembut, setia, dan tahan terhadap dinamika emosinya yang sesekali bergelombang. Pernikahan harmonis bila pasangan mampu menjadi pendengar dan penyeimbang. Hindari pasangan yang terlalu dominan atau terlalu logis-keras karena akan memicu konflik berkepanjangan."
+      },
+      "anak": {
+        "vibe": "Hangat · Tegas",
+        "headline": "Orang tua yang melindungi sambil mendidik kemandirian.",
+        "body": "Wu Huan Yang cenderung menjadi figur ayah yang mendisiplinkan dengan kasih. Pola pengasuhan terbaik adalah memberi ruang bereksplorasi sambil menanamkan nilai integritas. Hubungan dengan anak hangat namun perlu hati-hati agar tidak terlalu ekspektasional pada prestasi."
+      },
+      "saudari": {
+        "vibe": "Solid · Bersinergi",
+        "headline": "Hubungan saudara cukup harmonis dan saling mendukung.",
+        "body": "Software mencatat relasi Wu Huan Yang dengan saudara cenderung bersinergi, terutama dalam urusan pekerjaan dan keluarga besar. Ia menjadi penengah saat ada perbedaan pandangan. Komunikasi yang konsisten penting dijaga karena kesibukan bisa membuat relasi terasa renggang."
+      },
+      "kepemimpinan": {
+        "vibe": "Adil · Berwibawa",
+        "headline": "Pemimpin berwibawa yang memimpin lewat aturan dan teladan.",
+        "body": "Wu Huan Yang adalah tipe pemimpin formal yang menegakkan aturan tanpa kompromi. **Format Pejabat Lurus** ([[正官格]]) memberi aura otoritas alami. Gaya terbaik adalah kepemimpinan struktural di organisasi besar atau lembaga publik, bukan startup informal yang penuh fleksibilitas tanpa aturan jelas."
+      },
+      "saudara": {
+        "vibe": "Solid · Bersinergi",
+        "headline": "Hubungan saudara cukup harmonis dan saling mendukung.",
+        "body": "Software mencatat relasi Wu Huan Yang dengan saudara cenderung bersinergi, terutama dalam urusan pekerjaan dan keluarga besar. Ia menjadi penengah saat ada perbedaan pandangan. Komunikasi yang konsisten penting dijaga karena kesibukan bisa membuat relasi terasa renggang."
+      }
+    },
+    "shensha": "Wu Huan Yang memiliki konfigurasi bintang yang kuat. <strong>Bintang Akademik</strong> (<span class=\"hz\">文昌貴</span>) menunjang kecerdasan dan kemampuan menyelamatkan diri dari bahaya melalui kebijaksanaan. <strong>Bintang Kesehatan</strong> (<span class=\"hz\">天醫</span>) memberi naluri menolong dan potensi karir di dunia medis atau penyembuhan. <strong>Bintang Kesepian</strong> (<span class=\"hz\">孤辰</span>) menandai sisi soliter yang kuat, kebutuhan akan ruang sendiri untuk berpikir mendalam. Sementara <strong>Bintang Hilang</strong> (<span class=\"hz\">亡神</span>) dan <strong>Pemborosan Besar</strong> (<span class=\"hz\">元辰大耗</span>) mengingatkan untuk menjaga keuangan dan energi agar tidak bocor di hal-hal tidak penting.",
+    "_shensha_struct": {
+      "dominant_star": {
+        "hanzi": "文昌貴",
+        "pinyin": "Wén Chāng Guì",
+        "label_id": "Bintang Akademik & Kebijaksanaan",
+        "active_label": "AKTIF SEKARANG"
+      },
+      "strip": "Manfaatkan kecerdasan ini secara strategis, **Bintang Akademik** ([[文昌貴]]) aktif mendukung Wu Huan Yang melewati situasi kritis dan mengubah ancaman menjadi peluang."
+    },
+    "caifu": "Pola finansial Wu Huan Yang ditandai oleh <strong>Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財</span>) yang hubungannya cukup erat namun tidak mudah ditangkap secara rutin. <strong>Rezeki Tetap</strong> (<span class=\"hz\">正財</span>) tidak terlalu kuat secara alami; uang tunai cenderung tidak betah lama bila tidak dialihkan ke aset produktif. Software mencatat: properti dan aset jangka panjang adalah jangkar terbaik bagi keuangan Wu Huan Yang.",
+    "_caifu_struct": {
+      "zheng_cai": {
+        "label": "Rezeki Tetap",
+        "percent": "45%",
+        "body": "Rezeki tetap Wu Huan Yang tidak mengalir deras secara otomatis. Ada penghasilan rutin dari pekerjaan namun perlu disiplin agar tidak habis untuk pengeluaran konsumtif. **Rezeki Tetap** ([[正財]]) bekerja paling baik bila dipasangkan dengan strategi tabungan otomatis dan investasi properti."
+      },
+      "pian_cai": {
+        "label": "Rezeki Tak Terduga",
+        "percent": "55%",
+        "body": "**Rezeki Tak Terduga** ([[偏財]]) menjadi sumber rezeki signifikan bagi Wu Huan Yang. Bisa datang dari proyek lintas bidang, komisi, kerjasama bisnis, atau peluang yang muncul dari jaringan luas. Kunci: tetap fleksibel dan jangan menutup diri dari ide yang tampak tidak konvensional."
+      },
+      "rules": [
+        {
+          "title": "Investasi properti adalah prioritas utama",
+          "context": "Properti menjadi jangkar paling stabil untuk menyimpan rezeki Wu Huan Yang",
+          "tone": "tip"
+        },
+        {
+          "title": "Hindari spekulasi dan judi finansial",
+          "context": "Pemborosan Besar memperburuk kebocoran keuangan bila terjebak risiko tinggi",
+          "tone": "warn"
+        },
+        {
+          "title": "Bangun penghasilan dari relasi profesional",
+          "context": "Jaringan luas adalah aset utama untuk rezeki tak terduga",
+          "tone": "tip"
+        },
+        {
+          "title": "Disiplin pengeluaran rutin",
+          "context": "Uang tunai cenderung tidak betah lama bila tidak dialihkan ke aset",
+          "tone": "warn"
+        }
+      ]
+    },
+    "career": "<p>Wu Huan Yang paling bersinar di bidang yang menggabungkan otoritas formal, integritas, dan kemampuan mengelola sumber daya lintas wilayah. <strong>Format Pejabat Lurus</strong> (<span class=\"hz\">正官格</span>) menunjuk pada karir di pemerintahan, hukum, pendidikan, atau lembaga formal lain. Software menyebut potensi besar di bidang publishing, pendidikan, kayu/properti, manufaktur logam, hukum, jurnalisme, dan keuangan.</p><ul><li><strong>Penerbitan &amp; Pendidikan</strong> (unsur 木), Bintang Akademik kuat mendukung karir penulisan, pengajaran, dan riset</li><li><strong>Hukum &amp; Advokasi</strong> (unsur 金), Format Pejabat Lurus selaras dengan karir hukum dan penegakan aturan</li><li><strong>Properti &amp; Konstruksi</strong> (unsur 木), Industri kayu dan properti memperkuat aset jangka panjang</li><li><strong>Keuangan &amp; Akuntansi</strong> (unsur 金), Daya analitis dan disiplin angka mendukung karir finansial</li><li><strong>Manufaktur &amp; Mesin</strong> (unsur 金), Industri logam berat sesuai dengan dorongan eksekusi tegas</li></ul>",
+    "_career_struct": {
+      "tags": {
+        "fav_1": [
+          "金",
+          "STRUKTUR & EKSEKUSI"
+        ],
+        "fav_2": [
+          "水",
+          "ALIRAN & ADAPTASI"
+        ],
+        "unfav_1": [
+          "火",
+          "PERSAINGAN BERLEBIH"
+        ],
+        "unfav_2": [
+          "土",
+          "STAGNASI"
+        ]
+      },
+      "industri": [
+        {
+          "nama": "Penerbitan & Pendidikan",
+          "unsur": "木",
+          "alasan": "Bintang Akademik kuat mendukung karir penulisan, pengajaran, dan riset"
+        },
+        {
+          "nama": "Hukum & Advokasi",
+          "unsur": "金",
+          "alasan": "Format Pejabat Lurus selaras dengan karir hukum dan penegakan aturan"
+        },
+        {
+          "nama": "Properti & Konstruksi",
+          "unsur": "木",
+          "alasan": "Industri kayu dan properti memperkuat aset jangka panjang"
+        },
+        {
+          "nama": "Keuangan & Akuntansi",
+          "unsur": "金",
+          "alasan": "Daya analitis dan disiplin angka mendukung karir finansial"
+        },
+        {
+          "nama": "Manufaktur & Mesin",
+          "unsur": "金",
+          "alasan": "Industri logam berat sesuai dengan dorongan eksekusi tegas"
+        }
+      ]
+    },
+    "daymaster": "Wu Huan Yang bertumpu pada <strong>Air Yang</strong> (<span class=\"hz\">壬水</span>) sebagai Day Master, sungai besar yang mengalir luas dan dinamis. Dengan komposisi <strong>Tanah</strong> (<span class=\"hz\">土</span>) mendominasi (3 poin), diikuti <strong>Air</strong> (<span class=\"hz\">水</span>) (2 poin), serta <strong>Kayu</strong> (<span class=\"hz\">木</span>), <strong>Api</strong> (<span class=\"hz\">火</span>), dan <strong>Logam</strong> (<span class=\"hz\">金</span>) masing-masing 1 poin, tubuh energi Wu Huan Yang cenderung lemah karena tertekan oleh tanah dan kekurangan logam. <strong>Logam</strong> dan <strong>Air</strong> dibutuhkan untuk menguatkan dan mengalirkan, menjadi pendukung utama. Sebaliknya tambahan <strong>Api</strong> dan <strong>Tanah</strong> akan memperberat keseimbangan dan perlu dihindari dalam lingkungan, warna, maupun pilihan hidup.",
+    "yangzhai": "Trigram pribadi Wu Huan Yang adalah <strong>Api</strong> (<span class=\"hz\">離</span>), tipe Timur dengan arah hoki utama: Selatan, Utara, Timur, dan Tenggara. Software menegaskan: rumah sebaiknya menghadap Selatan (zuo nan xiang bei) untuk hasil terbaik. Pintu utama di sisi Utara mendukung aliran energi positif. Hindari area Barat Daya dan Timur Laut sebagai titik aktif utama karena berbenturan dengan trigram Api.",
+    "_yangzhai_struct": {
+      "zones": [
+        {
+          "label": "Pintu Utama",
+          "headline": "✓ Optimal",
+          "pills": "北 南",
+          "note": "Hadap Utara atau Selatan untuk energi terbaik"
+        },
+        {
+          "label": "Kamar Tidur",
+          "headline": "✓ Optimal",
+          "pills": "南 東",
+          "note": "Posisi Selatan atau Timur memberi istirahat berkualitas"
+        },
+        {
+          "label": "Dapur / Kompor",
+          "headline": "✓ Optimal",
+          "pills": "東北 東南",
+          "note": "Kompor menghadap Timur Laut atau Tenggara paling menguntungkan"
+        },
+        {
+          "label": "Kamar Mandi",
+          "headline": "⚠ Perhatikan",
+          "pills": "西南 西",
+          "note": "Tempatkan di Barat Daya atau Barat, jauh dari sektor hoki utama"
+        },
+        {
+          "label": "Ruang Kerja",
+          "headline": "✓ Optimal",
+          "pills": "東 東南",
+          "note": "Meja kerja menghadap Timur atau Tenggara untuk fokus maksimal"
+        },
+        {
+          "label": "Altar / Sembah",
+          "headline": "✓ Optimal",
+          "pills": "東北 西南",
+          "note": "Arah Timur Laut atau Barat Daya paling sakral untuk altar trigram Api"
+        }
+      ]
+    },
+    "dayun_spotlight": "<div class=\"sp-headline\">Wu Huan Yang kini berada di fase <strong>Kayu Yin Babi</strong> (<span class=\"hz\">乙亥</span>) (umur 59-68), kayu lentur yang berakar di air, masa kebijaksanaan yang matang dan rezeki dari relasi panjang.</div><ul class='sp-bullets'><li>Fase <strong>Kayu Yin Babi</strong> (<span class=\"hz\">乙亥</span>) membawa unsur <strong>Kayu</strong> (<span class=\"hz\">木</span>) dan <strong>Air</strong> (<span class=\"hz\">水</span>) yang mengalir melalui Day Master, periode di mana kebijaksanaan, jaringan, dan reputasi yang dibangun puluhan tahun mulai berbuah nyata.</li><li>Unsur Kayu di fase ini menjadi saluran ekspresi bagi <strong>Air Yang</strong> (<span class=\"hz\">壬水</span>) Wu Huan Yang. Ide, tulisan, dan pengaruh yang selama ini terpendam mendapat panggung untuk muncul ke permukaan.</li><li>Di sisi positif, <strong>Bintang Akademik</strong> (<span class=\"hz\">文昌貴</span>) makin aktif di fase ini, peluang kontribusi intelektual dan mentoring generasi muda terbuka lebar. Waktu terbaik untuk mewariskan pengalaman.</li><li>Hubungan keluarga dan kesehatan perlu jadi prioritas. Software mengingatkan agar tidak terlampau sibuk pada urusan luar hingga melupakan jangkar di rumah. Pemeriksaan kesehatan rutin sangat dianjurkan.</li></ul>",
+    "dayun_seasons": "<ol class='dy-seasons'><li>umur 9-18: Musim Tanam, fondasi karakter dan kebiasaan dasar terbentuk dalam lingkungan keluarga</li><li>umur 19-38: Musim Tumbuh, identitas dan karir dibangun, fase <strong>Air Yang Monyet</strong> (<span class=\"hz\">壬申</span>) membawa puncak energi muda</li><li>umur 39-58: Musim Berbunga, karir dan relasi matang, fase <strong>Air Yin Ayam</strong> (<span class=\"hz\">癸酉</span>) dan <strong>Kayu Yang Anjing</strong> (<span class=\"hz\">甲戌</span>) membawa ekspansi nyata</li><li>umur 59-68: Musim Panen, kebijaksanaan matang dan rezeki dari relasi panjang berbuah</li><li>umur 69-88: Musim Tenang, konsolidasi warisan, fase <strong>Api Yang Tikus</strong> (<span class=\"hz\">丙子</span>) dan <strong>Api Yin Kerbau</strong> (<span class=\"hz\">丁丑</span>) membawa kedalaman spiritual</li></ol>",
+    "dayun_footer": "Wu Huan Yang, 63 tahun, kini dalam fase <strong>Kayu Yin Babi</strong> (<span class=\"hz\">乙亥</span>) (umur 59-68), masa panen kebijaksanaan dan ekspresi pengaruh; gunakan energi ini untuk mewariskan ilmu dan menjaga keseimbangan keluarga.",
+    "palace1": "<p>ming_gong: - star: 武曲 - insight: <strong>Bintang Logam Eksekutif</strong> (<span class=\"hz\">武曲</span>) di Istana Hidup <strong>Ular</strong> (<span class=\"hz\">巳</span>) memberi Wu Huan Yang karakter yang tegas, pekerja keras, dan punya naluri bisnis tajam. Ada aura otoritas alami yang membuatnya cocok menjadi pengelola sumber daya. <strong>Bintang Logam Eksekutif</strong> juga membawa sifat lugas, terkadang terkesan kaku, namun dasarnya adalah ketulusan dalam bekerja. Intuisi finansial bagus bila dilatih dengan disiplin manajemen. - action: Latih kemampuan komunikasi yang lebih lentur agar otoritas alami tidak diterima sebagai sikap dingin oleh tim.</p><p>xiongdi: - star: null - insight: Hubungan dengan saudara kandung cukup baik bagi Wu Huan Yang. Software mencatat ada potensi sinergi terutama dalam urusan keluarga besar dan pekerjaan. Wu Huan Yang sering menjadi penengah saat ada perbedaan pendapat. Komunikasi yang konsisten penting agar relasi tetap hangat di tengah kesibukan masing-masing. - action: Sediakan waktu khusus untuk reuni saudara secara berkala, jangan biarkan jarak menggerus relasi.</p><p>fuqi: - star: null - insight: Software mencatat Wu Huan Yang membutuhkan pasangan lembut yang bisa meredam gelombang emosi dan menjadi penyeimbang. Pasangan terbaik adalah yang setia, sabar, dan punya pemahaman mendalam akan ritme batinnya. Pernikahan dapat sangat harmonis bila dibangun dengan komunikasi terbuka dan saling memberi ruang. - action: Jaga komunikasi rutin dengan pasangan, jangan menumpuk masalah hingga meledak di waktu yang tidak tepat.</p><p>zinu: - star: null - insight: Wu Huan Yang berpotensi menjadi orang tua yang melindungi sekaligus mendisiplinkan. Hubungan dengan anak hangat meski tampak tegas dari luar. Gaya pengasuhan terbaik adalah memberi panduan nilai sambil tetap memberi ruang anak bereksplorasi. Hindari ekspektasi terlalu tinggi pada prestasi formal. - action: Berikan apresiasi pada usaha bukan hanya hasil, anak akan tumbuh lebih percaya diri.</p>",
+    "_palace1_struct": {
+      "ming_gong": {
+        "star": "武曲",
+        "insight": "**Bintang Logam Eksekutif** ([[武曲]]) di Istana Hidup **Ular** ([[巳]]) memberi Wu Huan Yang karakter yang tegas, pekerja keras, dan punya naluri bisnis tajam. Ada aura otoritas alami yang membuatnya cocok menjadi pengelola sumber daya. **Bintang Logam Eksekutif** juga membawa sifat lugas, terkadang terkesan kaku, namun dasarnya adalah ketulusan dalam bekerja. Intuisi finansial bagus bila dilatih dengan disiplin manajemen.",
+        "action": "Latih kemampuan komunikasi yang lebih lentur agar otoritas alami tidak diterima sebagai sikap dingin oleh tim."
+      },
+      "xiongdi": {
+        "insight": "Hubungan dengan saudara kandung cukup baik bagi Wu Huan Yang. Software mencatat ada potensi sinergi terutama dalam urusan keluarga besar dan pekerjaan. Wu Huan Yang sering menjadi penengah saat ada perbedaan pendapat. Komunikasi yang konsisten penting agar relasi tetap hangat di tengah kesibukan masing-masing.",
+        "action": "Sediakan waktu khusus untuk reuni saudara secara berkala, jangan biarkan jarak menggerus relasi."
+      },
+      "fuqi": {
+        "insight": "Software mencatat Wu Huan Yang membutuhkan pasangan lembut yang bisa meredam gelombang emosi dan menjadi penyeimbang. Pasangan terbaik adalah yang setia, sabar, dan punya pemahaman mendalam akan ritme batinnya. Pernikahan dapat sangat harmonis bila dibangun dengan komunikasi terbuka dan saling memberi ruang.",
+        "action": "Jaga komunikasi rutin dengan pasangan, jangan menumpuk masalah hingga meledak di waktu yang tidak tepat."
+      },
+      "zinu": {
+        "insight": "Wu Huan Yang berpotensi menjadi orang tua yang melindungi sekaligus mendisiplinkan. Hubungan dengan anak hangat meski tampak tegas dari luar. Gaya pengasuhan terbaik adalah memberi panduan nilai sambil tetap memberi ruang anak bereksplorasi. Hindari ekspektasi terlalu tinggi pada prestasi formal.",
+        "action": "Berikan apresiasi pada usaha bukan hanya hasil, anak akan tumbuh lebih percaya diri."
+      }
+    },
+    "palace2": "<p>caibo: - star: 紫微 - insight: <strong>Bintang Kaisar</strong> (<span class=\"hz\">紫微</span>) di Istana Rezeki menunjukkan bahwa sumber keuangan Wu Huan Yang datang dari posisi strategis dan kemampuan mengelola sumber daya besar. Software mencatat: rezeki utama datang dari pekerjaan formal dengan tanggung jawab tinggi, bukan dari spekulasi. Properti adalah jangkar paling stabil. Ada potensi rezeki besar di paruh kedua hidup terutama setelah usia 50-an. - action: Bangun strategi keuangan jangka panjang sejak sekarang, fokus akumulasi aset dan disiplin pengeluaran rutin.</p><p>jie_e: - star: null - insight: Software mencatat Wu Huan Yang rentan terhadap penyakit sistem reproduksi, kandung kemih, infeksi saluran kencing, dan masalah berkaitan dengan air. Area kelemahan fisik ada di sistem urinari dan ginjal. Perlu perhatian khusus pada pola minum, kebersihan, dan pemeriksaan rutin organ dalam. - action: Jaga pola minum air yang cukup dan lakukan pemeriksaan kesehatan tahunan untuk organ urinari dan ginjal.</p><p>qianyi: - star: 太陰 - insight: <strong>Bintang Bulan</strong> (<span class=\"hz\">太陰</span>) di Istana Perpindahan menandai bahwa Wu Huan Yang justru bersinar di lingkungan baru atau di luar daerah asal. Software mencatat: ke luar negeri atau keluar kota memberi keberuntungan lebih besar daripada menetap di tempat asal. <strong>Bintang Bulan</strong> juga menandai kemampuan membangun jaringan di tempat baru dengan relatif mudah dan rezeki tak terduga muncul dari mobilitas. - action: Jangan ragu mengambil peluang lintas wilayah, mobilitas adalah salah satu jalur rezeki terbaik Wu Huan Yang.</p><p>puyi: - star: null - insight: Hubungan Wu Huan Yang dengan bawahan dan sahabat cukup kompleks. Software mencatat: bawahan yang ditemukan biasanya berbakat dan bisa diandalkan untuk eksekusi besar. Namun ada potensi konflik bila bawahan ditempatkan di posisi yang menuntut otoritas berlebihan. Loyalitas bawahan terjaga selama Wu Huan Yang adil dan transparan. - action: Bangun sistem kepercayaan berbasis transparansi, kualitas relasi profesional lebih penting dari kuantitas.</p>",
+    "_palace2_struct": {
+      "caibo": {
+        "star": "紫微",
+        "insight": "**Bintang Kaisar** ([[紫微]]) di Istana Rezeki menunjukkan bahwa sumber keuangan Wu Huan Yang datang dari posisi strategis dan kemampuan mengelola sumber daya besar. Software mencatat: rezeki utama datang dari pekerjaan formal dengan tanggung jawab tinggi, bukan dari spekulasi. Properti adalah jangkar paling stabil. Ada potensi rezeki besar di paruh kedua hidup terutama setelah usia 50-an.",
+        "action": "Bangun strategi keuangan jangka panjang sejak sekarang, fokus akumulasi aset dan disiplin pengeluaran rutin."
+      },
+      "jie_e": {
+        "insight": "Software mencatat Wu Huan Yang rentan terhadap penyakit sistem reproduksi, kandung kemih, infeksi saluran kencing, dan masalah berkaitan dengan air. Area kelemahan fisik ada di sistem urinari dan ginjal. Perlu perhatian khusus pada pola minum, kebersihan, dan pemeriksaan rutin organ dalam.",
+        "action": "Jaga pola minum air yang cukup dan lakukan pemeriksaan kesehatan tahunan untuk organ urinari dan ginjal."
+      },
+      "qianyi": {
+        "star": "太陰",
+        "insight": "**Bintang Bulan** ([[太陰]]) di Istana Perpindahan menandai bahwa Wu Huan Yang justru bersinar di lingkungan baru atau di luar daerah asal. Software mencatat: ke luar negeri atau keluar kota memberi keberuntungan lebih besar daripada menetap di tempat asal. **Bintang Bulan** juga menandai kemampuan membangun jaringan di tempat baru dengan relatif mudah dan rezeki tak terduga muncul dari mobilitas.",
+        "action": "Jangan ragu mengambil peluang lintas wilayah, mobilitas adalah salah satu jalur rezeki terbaik Wu Huan Yang."
+      },
+      "puyi": {
+        "insight": "Hubungan Wu Huan Yang dengan bawahan dan sahabat cukup kompleks. Software mencatat: bawahan yang ditemukan biasanya berbakat dan bisa diandalkan untuk eksekusi besar. Namun ada potensi konflik bila bawahan ditempatkan di posisi yang menuntut otoritas berlebihan. Loyalitas bawahan terjaga selama Wu Huan Yang adil dan transparan.",
+        "action": "Bangun sistem kepercayaan berbasis transparansi, kualitas relasi profesional lebih penting dari kuantitas."
+      }
+    },
+    "palace3": "<p>guanlu: - star: null - insight: Istana Karir Wu Huan Yang kuat di bidang yang menggabungkan otoritas, intelektualitas, dan eksekusi. Software secara eksplisit menyebut pendidik, peneliti, ahli sastra, editor, teknisi, hukum, akuntansi, dan manajer pemerintahan sebagai jalur karir terbaik. Wu Huan Yang mampu meraih posisi tinggi bila tidak mudah berkompromi dengan integritas. - action: Fokus pada satu jalur karir utama dan dalami secara konsisten, kedalaman keahlian adalah kunci reputasi jangka panjang.</p><p>tianzhai: - star: null - insight: Wu Huan Yang berpotensi memiliki properti yang signifikan sepanjang hidupnya. Akuisisi properti datang dari kombinasi usaha aktif dan kesempatan dari relasi. Software menyarankan: properti yang berhubungan dengan air (dekat sungai, danau) atau properti komersial dapat memperkuat aset secara signifikan. Investasi sejak usia muda terbukti menjadi jangkar finansial paling stabil. - action: Investasikan sebagian penghasilan ke aset properti sejak dini, ini jangkar keuangan paling stabil bagi Wu Huan Yang.</p><p>fude: - star: null - insight: Istana Berkah Wu Huan Yang mencerminkan jiwa yang panjang umur dan punya naluri keberkahan alami. Software mencatat: Wu Huan Yang menikmati hidup yang mengalir, tidak terlalu kaku pada target, dan menemukan kepuasan dari pencapaian bermakna. Ada potensi kedalaman spiritual yang bila dikembangkan akan menjadi sumber ketenangan luar biasa di paruh kedua hidup. - action: Luangkan waktu untuk refleksi dan aktivitas spiritual, ketenangan batin adalah fondasi kesuksesan jangka panjang.</p><p>fumu: - star: null - insight: Hubungan Wu Huan Yang dengan orang tua ditandai oleh dinamika yang cukup kuat. Software mencatat: ada pengaruh besar dari orang tua dalam pembentukan karakter, dan Wu Huan Yang sangat menghargai materi serta nilai-nilai yang ditanamkan keluarga. Bila domisili terpisah dari orang tua, hubungan dapat tumbuh lebih harmonis dan penuh penghormatan jarak jauh. - action: Jaga komunikasi rutin dengan orang tua dan keluarga besar, hormat keluarga adalah salah satu fondasi keberkahan.</p>",
+    "_palace3_struct": {
+      "guanlu": {
+        "insight": "Istana Karir Wu Huan Yang kuat di bidang yang menggabungkan otoritas, intelektualitas, dan eksekusi. Software secara eksplisit menyebut pendidik, peneliti, ahli sastra, editor, teknisi, hukum, akuntansi, dan manajer pemerintahan sebagai jalur karir terbaik. Wu Huan Yang mampu meraih posisi tinggi bila tidak mudah berkompromi dengan integritas.",
+        "action": "Fokus pada satu jalur karir utama dan dalami secara konsisten, kedalaman keahlian adalah kunci reputasi jangka panjang."
+      },
+      "tianzhai": {
+        "insight": "Wu Huan Yang berpotensi memiliki properti yang signifikan sepanjang hidupnya. Akuisisi properti datang dari kombinasi usaha aktif dan kesempatan dari relasi. Software menyarankan: properti yang berhubungan dengan air (dekat sungai, danau) atau properti komersial dapat memperkuat aset secara signifikan. Investasi sejak usia muda terbukti menjadi jangkar finansial paling stabil.",
+        "action": "Investasikan sebagian penghasilan ke aset properti sejak dini, ini jangkar keuangan paling stabil bagi Wu Huan Yang."
+      },
+      "fude": {
+        "insight": "Istana Berkah Wu Huan Yang mencerminkan jiwa yang panjang umur dan punya naluri keberkahan alami. Software mencatat: Wu Huan Yang menikmati hidup yang mengalir, tidak terlalu kaku pada target, dan menemukan kepuasan dari pencapaian bermakna. Ada potensi kedalaman spiritual yang bila dikembangkan akan menjadi sumber ketenangan luar biasa di paruh kedua hidup.",
+        "action": "Luangkan waktu untuk refleksi dan aktivitas spiritual, ketenangan batin adalah fondasi kesuksesan jangka panjang."
+      },
+      "fumu": {
+        "insight": "Hubungan Wu Huan Yang dengan orang tua ditandai oleh dinamika yang cukup kuat. Software mencatat: ada pengaruh besar dari orang tua dalam pembentukan karakter, dan Wu Huan Yang sangat menghargai materi serta nilai-nilai yang ditanamkan keluarga. Bila domisili terpisah dari orang tua, hubungan dapat tumbuh lebih harmonis dan penuh penghormatan jarak jauh.",
+        "action": "Jaga komunikasi rutin dengan orang tua dan keluarga besar, hormat keluarga adalah salah satu fondasi keberkahan."
+      }
+    },
+    "kesimpulan": "Aku adalah sungai yang mengalir, bukan untuk berhenti melainkan untuk membawa kehidupan ke setiap tepian yang kulalui, dengan integritas yang tetap jernih sepanjang perjalanan.",
+    "_kesimpulan_struct": {
+      "quote": "Aku adalah sungai yang mengalir, bukan untuk berhenti melainkan untuk membawa kehidupan ke setiap tepian yang kulalui, dengan integritas yang tetap jernih sepanjang perjalanan.",
+      "stats": {
+        "format_desc": "**Format Pejabat Lurus** ([[正官格]]) membuat Wu Huan Yang tumbuh lewat integritas, disiplin, dan otoritas yang adil.",
+        "yong_desc": "Aktifkan **Logam** ([[金]]) dan **Air** ([[水]]) lewat lingkungan struktural, mobilitas, dan kebiasaan refleksi mendalam.",
+        "dayun_desc": "Fase **Kayu Yin Babi** ([[乙亥]]) adalah masa panen kebijaksanaan. Bangun warisan, hindari konflik kecil yang menguras energi.",
+        "umur_desc": "Dekade 59-68 adalah masa konsolidasi warisan. Peluang besar untuk kontribusi intelektual dan mentoring.",
+        "kompat_desc": "Wu Huan Yang paling harmonis dengan **Tikus** ([[子]]), **Monyet** ([[申]]), **Ayam** ([[酉]]). Jauhi **Kerbau** ([[丑]]), **Kelinci** ([[卯]]), **Anjing** ([[戌]]), **Naga** ([[辰]])."
+      },
+      "life_map": {
+        "lalu": "Masa **Air Yang Monyet** ([[壬申]]) (usia 29-38) membentuk fondasi karir dan ekspansi profesional. Wu Huan Yang membangun jaringan dan reputasi yang menjadi modal sosial sepanjang hidup.",
+        "sekarang": "Fase **Kayu Yin Babi** ([[乙亥]]) (usia 59-68), masa panen kebijaksanaan. Wu Huan Yang sedang berada di puncak pengaruh intelektual dan reputasi profesional.",
+        "berikutnya": "Fase **Api Yang Tikus** ([[丙子]]) (usia 69-78) membawa Wu Huan Yang ke fase warisan, kedalaman spiritual mekar dan ada ruang untuk mentoring generasi muda."
+      }
+    },
+    "sintesis": "Wu Huan Yang adalah <strong>Air Yang</strong> (<span class=\"hz\">壬水</span>) dengan <strong>Format Pejabat Lurus</strong> (<span class=\"hz\">正官格</span>), jiwa sungai besar yang mengalir luas, membawa integritas, kebijaksanaan, dan otoritas yang adil ke setiap arena yang dilewatinya.",
+    "_sintesis_struct": {
+      "opening": "Wu Huan Yang adalah **Air Yang** ([[壬水]]) dengan **Format Pejabat Lurus** ([[正官格]]), jiwa sungai besar yang mengalir luas, membawa integritas, kebijaksanaan, dan otoritas yang adil ke setiap arena yang dilewatinya.",
+      "trio": {
+        "kekuatan": {
+          "hanzi": "流通",
+          "pinyin": "Liú Tōng",
+          "arti": "Aliran yang Menghubungkan",
+          "body": "Kekuatan terbesar Wu Huan Yang adalah kemampuan menjadi penghubung yang adil. **Format Pejabat Lurus** ([[正官格]]) memberi otoritas alami dan integritas yang dipercaya banyak orang. Ia mampu mengelola sumber daya besar, lintas wilayah, dan lintas bidang. Daya analitis dan jaringan luas adalah aset paling berharga."
+        },
+        "tantangan": {
+          "hanzi": "漂泊",
+          "pinyin": "Piāo Bó",
+          "arti": "Mengalir Tanpa Jangkar",
+          "body": "Tantangan terbesar Wu Huan Yang adalah kecenderungan menyebar terlalu luas hingga kehilangan fokus jangka panjang. **Air Yang** ([[壬水]]) yang dinamis bisa terjebak dalam mobilitas tanpa akar. Bila tidak dilatih, ini bisa menghambat akumulasi aset jangka panjang dan menggerus kedalaman relasi keluarga inti."
+        },
+        "tindakan": {
+          "hanzi": "安渠",
+          "pinyin": "Ān Qú",
+          "arti": "Membangun Saluran yang Tetap",
+          "body": "Panggung optimal Wu Huan Yang adalah tempat di mana otoritas formal bertemu dengan kebijaksanaan, lembaga publik, organisasi besar, atau platform mentoring lintas generasi. Wu Huan Yang perlu secara aktif membangun saluran tetap untuk mengalirkan pengaruh, bukan sekadar berpindah dari satu arena ke arena lain."
+        }
+      },
+      "actions": [
+        {
+          "title": "Bangun warisan intelektual lewat tulisan atau mentoring",
+          "context": "Usia 63 adalah waktu ideal mewariskan pengalaman lewat karya nyata",
+          "tag": "木 · Kayu"
+        },
+        {
+          "title": "Konsolidasi aset properti dan investasi jangka panjang",
+          "context": "Disiplin akumulasi aset adalah kunci ketenangan finansial",
+          "tag": "金 · Logam"
+        },
+        {
+          "title": "Latih komunikasi terbuka dengan keluarga inti",
+          "context": "Jangkar emosional di rumah adalah pelindung utama di paruh kedua hidup",
+          "tag": "水 · Air"
+        },
+        {
+          "title": "Pemeriksaan kesehatan rutin organ urinari dan ginjal",
+          "context": "Area kelemahan fisik perlu dijaga sejak sekarang",
+          "tag": "水 · Air"
+        },
+        {
+          "title": "Kembangkan kedalaman spiritual lewat refleksi rutin",
+          "context": "Ketenangan batin adalah fondasi kesuksesan jangka panjang",
+          "tag": "木 · Kayu"
+        }
+      ]
+    },
+    "_dmcard": "\n        <div class=\"dmc-eyebrow\">本 命 · Penguasa Hari</div>\n        <div class=\"dmc-stem\">壬</div>\n        <div class=\"dmc-element\">水 · Air Yang</div>\n        <div class=\"dmc-pinyin\">Rén 水, \"Sungai Besar\"</div>\n        <div class=\"dmc-traits\">\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span><strong>Pelopor</strong>, dinamis, ekspansif</span></div>\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span>Air mengalir, kekuatan dari pergerakan</span></div>\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span>Mekar dengan kayu (saluran) + api (tujuan)</span></div>\n        </div>\n        <div class=\"dmc-strength\">Status: <span class=\"val\">LEMAH</span> · 弱</div>\n      ",
+    "_jishen_body": "<strong>火</strong> (Huǒ · Api), Api berlebih membakar habis sumber daya; hindari merah-jingga dominan, panas/kering, dan reaksi cepat tanpa pendinginan. <strong>土</strong> (Tǔ · Tanah), Tanah berlebih membuat stagnasi; hindari berat/lembam, kebiasaan menumpuk, dan resisten terhadap perubahan.",
+    "fam_pasangan_vibe": "Lembut · Setia",
+    "fam_pasangan_headline": "Pasangan ideal yang sabar dan mampu meredam gelora.",
+    "fam_pasangan_body": "Software mencatat Wu Huan Yang membutuhkan pasangan yang lembut, setia, dan tahan terhadap dinamika emosinya yang sesekali bergelombang. Pernikahan harmonis bila pasangan mampu menjadi pendengar dan penyeimbang. Hindari pasangan yang terlalu dominan atau terlalu logis-keras karena akan memicu konflik berkepanjangan.",
+    "fam_anak_vibe": "Hangat · Tegas",
+    "fam_anak_headline": "Orang tua yang melindungi sambil mendidik kemandirian.",
+    "fam_anak_body": "Wu Huan Yang cenderung menjadi figur ayah yang mendisiplinkan dengan kasih. Pola pengasuhan terbaik adalah memberi ruang bereksplorasi sambil menanamkan nilai integritas. Hubungan dengan anak hangat namun perlu hati-hati agar tidak terlalu ekspektasional pada prestasi.",
+    "fam_saudara_vibe": "Solid · Bersinergi",
+    "fam_saudara_headline": "Hubungan saudara cukup harmonis dan saling mendukung.",
+    "fam_saudara_body": "Software mencatat relasi Wu Huan Yang dengan saudara cenderung bersinergi, terutama dalam urusan pekerjaan dan keluarga besar. Ia menjadi penengah saat ada perbedaan pandangan. Komunikasi yang konsisten penting dijaga karena kesibukan bisa membuat relasi terasa renggang.",
+    "fam_kepemimpinan_vibe": "Adil · Berwibawa",
+    "fam_kepemimpinan_headline": "Pemimpin berwibawa yang memimpin lewat aturan dan teladan.",
+    "fam_kepemimpinan_body": "Wu Huan Yang adalah tipe pemimpin formal yang menegakkan aturan tanpa kompromi. <strong>Format Pejabat Lurus</strong> (<span class=\"hz\">正官格</span>) memberi aura otoritas alami. Gaya terbaik adalah kepemimpinan struktural di organisasi besar atau lembaga publik, bukan startup informal yang penuh fleksibilitas tanpa aturan jelas.",
+    "caifu_zheng_gauge": "<div class=\"cfm-gauge-fill\" style=\"width:45%\">45%</div>",
+    "caifu_zheng_body": "Rezeki tetap Wu Huan Yang tidak mengalir deras secara otomatis. Ada penghasilan rutin dari pekerjaan namun perlu disiplin agar tidak habis untuk pengeluaran konsumtif. <strong>Rezeki Tetap</strong> (<span class=\"hz\">正財</span>) bekerja paling baik bila dipasangkan dengan strategi tabungan otomatis dan investasi properti.",
+    "caifu_pian_gauge": "<div class=\"cfm-gauge-fill\" style=\"width:55%\">55%</div>",
+    "caifu_pian_body": "<strong>Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財</span>) menjadi sumber rezeki signifikan bagi Wu Huan Yang. Bisa datang dari proyek lintas bidang, komisi, kerjasama bisnis, atau peluang yang muncul dari jaringan luas. Kunci: tetap fleksibel dan jangan menutup diri dari ide yang tampak tidak konvensional.",
+    "_caifu_rules": "\n        <div class=\"cf-rule tip\">\n          <div class=\"cfr-num\">1</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Investasi properti adalah prioritas utama</div>\n            <div class=\"cfr-context\">Properti menjadi jangkar paling stabil untuk menyimpan rezeki Wu Huan Yang</div>\n          </div>\n        </div>\n        <div class=\"cf-rule warn\">\n          <div class=\"cfr-num\">2</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Hindari spekulasi dan judi finansial</div>\n            <div class=\"cfr-context\">Pemborosan Besar memperburuk kebocoran keuangan bila terjebak risiko tinggi</div>\n          </div>\n        </div>\n        <div class=\"cf-rule tip\">\n          <div class=\"cfr-num\">3</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Bangun penghasilan dari relasi profesional</div>\n            <div class=\"cfr-context\">Jaringan luas adalah aset utama untuk rezeki tak terduga</div>\n          </div>\n        </div>\n        <div class=\"cf-rule warn\">\n          <div class=\"cfr-num\">4</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Disiplin pengeluaran rutin</div>\n            <div class=\"cfr-context\">Uang tunai cenderung tidak betah lama bila tidak dialihkan ke aset</div>\n          </div>\n        </div>\n",
+    "_p1_ming_gong": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Diri</span><span class=\"pn-meta\">Mìng Gōng<span class=\"hz\">命宮</span></span></div></div><div class=\"pal-body\"><strong>Bintang Logam Eksekutif</strong> (<span class=\"hz\">武曲</span>) di Istana Hidup <strong>Ular</strong> (<span class=\"hz\">巳</span>) memberi Wu Huan Yang karakter yang tegas, pekerja keras, dan punya naluri bisnis tajam. Ada aura otoritas alami yang membuatnya cocok menjadi pengelola sumber daya. <strong>Bintang Logam Eksekutif</strong> juga membawa sifat lugas, terkadang terkesan kaku, namun dasarnya adalah ketulusan dalam bekerja. Intuisi finansial bagus bila dilatih dengan disiplin manajemen.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Latih kemampuan komunikasi yang lebih lentur agar otoritas alami tidak diterima sebagai sikap dingin oleh tim.</span></div></div>",
+    "_p1_xiongdi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Saudara</span><span class=\"pn-meta\">Xiōng Dì<span class=\"hz\">兄弟</span></span></div></div><div class=\"pal-body\">Hubungan dengan saudara kandung cukup baik bagi Wu Huan Yang. Software mencatat ada potensi sinergi terutama dalam urusan keluarga besar dan pekerjaan. Wu Huan Yang sering menjadi penengah saat ada perbedaan pendapat. Komunikasi yang konsisten penting agar relasi tetap hangat di tengah kesibukan masing-masing.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Sediakan waktu khusus untuk reuni saudara secara berkala, jangan biarkan jarak menggerus relasi.</span></div></div>",
+    "_p1_fuqi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pasangan</span><span class=\"pn-meta\">Fū Qī<span class=\"hz\">夫妻</span></span></div></div><div class=\"pal-body\">Software mencatat Wu Huan Yang membutuhkan pasangan lembut yang bisa meredam gelombang emosi dan menjadi penyeimbang. Pasangan terbaik adalah yang setia, sabar, dan punya pemahaman mendalam akan ritme batinnya. Pernikahan dapat sangat harmonis bila dibangun dengan komunikasi terbuka dan saling memberi ruang.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga komunikasi rutin dengan pasangan, jangan menumpuk masalah hingga meledak di waktu yang tidak tepat.</span></div></div>",
+    "_p1_zinu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Anak</span><span class=\"pn-meta\">Zǐ Nǚ<span class=\"hz\">子女</span></span></div></div><div class=\"pal-body\">Wu Huan Yang berpotensi menjadi orang tua yang melindungi sekaligus mendisiplinkan. Hubungan dengan anak hangat meski tampak tegas dari luar. Gaya pengasuhan terbaik adalah memberi panduan nilai sambil tetap memberi ruang anak bereksplorasi. Hindari ekspektasi terlalu tinggi pada prestasi formal.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Berikan apresiasi pada usaha bukan hanya hasil, anak akan tumbuh lebih percaya diri.</span></div></div>",
+    "_p2_caibo": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Rezeki</span><span class=\"pn-meta\">Cái Bó<span class=\"hz\">財帛</span></span></div></div><div class=\"pal-body\"><strong>Bintang Kaisar</strong> (<span class=\"hz\">紫微</span>) di Istana Rezeki menunjukkan bahwa sumber keuangan Wu Huan Yang datang dari posisi strategis dan kemampuan mengelola sumber daya besar. Software mencatat: rezeki utama datang dari pekerjaan formal dengan tanggung jawab tinggi, bukan dari spekulasi. Properti adalah jangkar paling stabil. Ada potensi rezeki besar di paruh kedua hidup terutama setelah usia 50-an.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun strategi keuangan jangka panjang sejak sekarang, fokus akumulasi aset dan disiplin pengeluaran rutin.</span></div></div>",
+    "_p2_jie_e": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Kesehatan</span><span class=\"pn-meta\">Jí È<span class=\"hz\">疾厄</span></span></div></div><div class=\"pal-body\">Software mencatat Wu Huan Yang rentan terhadap penyakit sistem reproduksi, kandung kemih, infeksi saluran kencing, dan masalah berkaitan dengan air. Area kelemahan fisik ada di sistem urinari dan ginjal. Perlu perhatian khusus pada pola minum, kebersihan, dan pemeriksaan rutin organ dalam.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga pola minum air yang cukup dan lakukan pemeriksaan kesehatan tahunan untuk organ urinari dan ginjal.</span></div></div>",
+    "_p2_qianyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Perpindahan</span><span class=\"pn-meta\">Qiān Yí<span class=\"hz\">遷移</span></span></div></div><div class=\"pal-body\"><strong>Bintang Bulan</strong> (<span class=\"hz\">太陰</span>) di Istana Perpindahan menandai bahwa Wu Huan Yang justru bersinar di lingkungan baru atau di luar daerah asal. Software mencatat: ke luar negeri atau keluar kota memberi keberuntungan lebih besar daripada menetap di tempat asal. <strong>Bintang Bulan</strong> juga menandai kemampuan membangun jaringan di tempat baru dengan relatif mudah dan rezeki tak terduga muncul dari mobilitas.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jangan ragu mengambil peluang lintas wilayah, mobilitas adalah salah satu jalur rezeki terbaik Wu Huan Yang.</span></div></div>",
+    "_p2_puyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pertemanan</span><span class=\"pn-meta\">Pú Yì<span class=\"hz\">僕役</span></span></div></div><div class=\"pal-body\">Hubungan Wu Huan Yang dengan bawahan dan sahabat cukup kompleks. Software mencatat: bawahan yang ditemukan biasanya berbakat dan bisa diandalkan untuk eksekusi besar. Namun ada potensi konflik bila bawahan ditempatkan di posisi yang menuntut otoritas berlebihan. Loyalitas bawahan terjaga selama Wu Huan Yang adil dan transparan.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun sistem kepercayaan berbasis transparansi, kualitas relasi profesional lebih penting dari kuantitas.</span></div></div>",
+    "_p3_guanlu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Karir</span><span class=\"pn-meta\">Guān Lù<span class=\"hz\">官祿</span></span></div></div><div class=\"pal-body\">Istana Karir Wu Huan Yang kuat di bidang yang menggabungkan otoritas, intelektualitas, dan eksekusi. Software secara eksplisit menyebut pendidik, peneliti, ahli sastra, editor, teknisi, hukum, akuntansi, dan manajer pemerintahan sebagai jalur karir terbaik. Wu Huan Yang mampu meraih posisi tinggi bila tidak mudah berkompromi dengan integritas.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Fokus pada satu jalur karir utama dan dalami secara konsisten, kedalaman keahlian adalah kunci reputasi jangka panjang.</span></div></div>",
+    "_p3_tianzhai": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Properti</span><span class=\"pn-meta\">Tián Zhái<span class=\"hz\">田宅</span></span></div></div><div class=\"pal-body\">Wu Huan Yang berpotensi memiliki properti yang signifikan sepanjang hidupnya. Akuisisi properti datang dari kombinasi usaha aktif dan kesempatan dari relasi. Software menyarankan: properti yang berhubungan dengan air (dekat sungai, danau) atau properti komersial dapat memperkuat aset secara signifikan. Investasi sejak usia muda terbukti menjadi jangkar finansial paling stabil.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Investasikan sebagian penghasilan ke aset properti sejak dini, ini jangkar keuangan paling stabil bagi Wu Huan Yang.</span></div></div>",
+    "_p3_fude": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Berkah</span><span class=\"pn-meta\">Fú Dé<span class=\"hz\">福德</span></span></div></div><div class=\"pal-body\">Istana Berkah Wu Huan Yang mencerminkan jiwa yang panjang umur dan punya naluri keberkahan alami. Software mencatat: Wu Huan Yang menikmati hidup yang mengalir, tidak terlalu kaku pada target, dan menemukan kepuasan dari pencapaian bermakna. Ada potensi kedalaman spiritual yang bila dikembangkan akan menjadi sumber ketenangan luar biasa di paruh kedua hidup.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Luangkan waktu untuk refleksi dan aktivitas spiritual, ketenangan batin adalah fondasi kesuksesan jangka panjang.</span></div></div>",
+    "_p3_fumu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Orang Tua</span><span class=\"pn-meta\">Fù Mǔ<span class=\"hz\">父母</span></span></div></div><div class=\"pal-body\">Hubungan Wu Huan Yang dengan orang tua ditandai oleh dinamika yang cukup kuat. Software mencatat: ada pengaruh besar dari orang tua dalam pembentukan karakter, dan Wu Huan Yang sangat menghargai materi serta nilai-nilai yang ditanamkan keluarga. Bila domisili terpisah dari orang tua, hubungan dapat tumbuh lebih harmonis dan penuh penghormatan jarak jauh.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga komunikasi rutin dengan orang tua dan keluarga besar, hormat keluarga adalah salah satu fondasi keberkahan.</span></div></div>",
+    "_kes_stats": "\n      <div class=\"kes-stat s1\"><div class=\"ks-eb\">Penguasa Hari · 日主</div><div class=\"ks-num\"><span class=\"hz\">壬水</span><span class=\"unit\">LEMAH · 弱</span></div><div class=\"ks-title\">Air Sungai Lemah</div><div class=\"ks-desc\">Total Wu Xing 8, 水 <strong>25.0%</strong> dari distribusi total</div></div>\n      <div class=\"kes-stat s2\"><div class=\"ks-eb\">Format · 格局</div><div class=\"ks-num\"><span class=\"hz\">正官格</span><span class=\"unit\">FORMAT</span></div><div class=\"ks-title\">Zheng Guan Ge, Penjaga Disiplin</div><div class=\"ks-desc\"><strong>Format Pejabat Lurus</strong> (<span class=\"hz\">正官格</span>) membuat Wu Huan Yang tumbuh lewat integritas, disiplin, dan otoritas yang adil.</div></div>\n      <div class=\"kes-stat s3\"><div class=\"ks-eb\">Yong Shen · 喜用神</div><div class=\"ks-num\"><span class=\"hz\">金 水</span><span class=\"unit\">MENDUKUNG</span></div><div class=\"ks-title\">Logam &amp; Air, Penopang &amp; Pengarah</div><div class=\"ks-desc\">Aktifkan <strong>Logam</strong> (<span class=\"hz\">金</span>) dan <strong>Air</strong> (<span class=\"hz\">水</span>) lewat lingkungan struktural, mobilitas, dan kebiasaan refleksi mendalam.</div></div>\n      <div class=\"kes-stat s4\"><div class=\"ks-eb\">Da Yun · 大運</div><div class=\"ks-num\">Fase 6<span class=\"unit\">dari 10</span></div><div class=\"ks-title\">Fase Kritikus Tajam (59-68)</div><div class=\"ks-desc\">Fase <strong>Kayu Yin Babi</strong> (<span class=\"hz\">乙亥</span>) adalah masa panen kebijaksanaan. Bangun warisan, hindari konflik kecil yang menguras energi.</div></div>\n      <div class=\"kes-stat s5\"><div class=\"ks-eb\">Umur Subjek</div><div class=\"ks-num\">63<span class=\"unit\">tahun</span></div><div class=\"ks-title\">Era 60–69</div><div class=\"ks-desc\">Dekade 59-68 adalah masa konsolidasi warisan. Peluang besar untuk kontribusi intelektual dan mentoring.</div></div>\n      <div class=\"kes-stat s6\"><div class=\"ks-eb\">Jodoh · 婚配 / 陽宅</div><div class=\"ks-num\">3 <span class=\"unit\">cocok · 4 hindari</span></div><div class=\"ks-desc\">Wu Huan Yang paling harmonis dengan <strong>Tikus</strong> (<span class=\"hz\">子</span>), <strong>Monyet</strong> (<span class=\"hz\">申</span>), <strong>Ayam</strong> (<span class=\"hz\">酉</span>). Jauhi <strong>Kerbau</strong> (<span class=\"hz\">丑</span>), <strong>Kelinci</strong> (<span class=\"hz\">卯</span>), <strong>Anjing</strong> (<span class=\"hz\">戌</span>), <strong>Naga</strong> (<span class=\"hz\">辰</span>).</div></div>\n    ",
+    "_kes_age": "63",
+    "_kes_lifemap": "\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">過<span class=\"id-label\">Lalu</span></div><div class=\"klm-row-text\"><span class=\"lbl\">MASA LALU</span>Masa <strong>Air Yang Monyet</strong> (<span class=\"hz\">壬申</span>) (usia 29-38) membentuk fondasi karir dan ekspansi profesional. Wu Huan Yang membangun jaringan dan reputasi yang menjadi modal sosial sepanjang hidup.</div></div>\n          <div class=\"klm-row now\"><div class=\"klm-row-icon\">今<span class=\"id-label\">Kini</span></div><div class=\"klm-row-text\"><span class=\"lbl\">SEKARANG</span>Fase <strong>Kayu Yin Babi</strong> (<span class=\"hz\">乙亥</span>) (usia 59-68), masa panen kebijaksanaan. Wu Huan Yang sedang berada di puncak pengaruh intelektual dan reputasi profesional.</div></div>\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">未<span class=\"id-label\">Nanti</span></div><div class=\"klm-row-text\"><span class=\"lbl\">BERIKUTNYA</span>Fase <strong>Api Yang Tikus</strong> (<span class=\"hz\">丙子</span>) (usia 69-78) membawa Wu Huan Yang ke fase warisan, kedalaman spiritual mekar dan ada ruang untuk mentoring generasi muda.</div></div>\n        ",
+    "_kes_position": "\n          <div class=\"klp-eb\">Posisi Sekarang</div>\n          <div class=\"klp-hz\">秋</div>\n          <div class=\"klp-id\">Qiū, \"Musim Gugur Hidup\"</div>\n          <div class=\"klp-bar\">\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell now\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n          </div>\n          <div class=\"klp-meta\">Fase <strong>6 dari 10</strong> · Umur <strong>59-68</strong> · <strong>水 Air</strong> dominan · Musim Gugur Hidup</div>\n        ",
+    "_syn_attrib": "Air Sungai · 正官格 · Zheng Guan Ge",
+    "_syn_trio": "\n      <div class=\"syn-card strength\">\n        <div class=\"syn-card-num\">力</div>\n        <div class=\"syn-card-eyebrow\">Kekuatan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">流通</span>\n          <span class=\"syn-card-id\">Liú Tōng</span>\n          <span class=\"syn-card-arti\">Aliran yang Menghubungkan</span>\n        </div>\n        <div class=\"syn-card-body\">Kekuatan terbesar Wu Huan Yang adalah kemampuan menjadi penghubung yang adil. <strong>Format Pejabat Lurus</strong> (<span class=\"hz\">正官格</span>) memberi otoritas alami dan integritas yang dipercaya banyak orang. Ia mampu mengelola sumber daya besar, lintas wilayah, dan lintas bidang. Daya analitis dan jaringan luas adalah aset paling berharga.</div>\n      </div>\n      <div class=\"syn-card challenge\">\n        <div class=\"syn-card-num\">驗</div>\n        <div class=\"syn-card-eyebrow\">Tantangan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">漂泊</span>\n          <span class=\"syn-card-id\">Piāo Bó</span>\n          <span class=\"syn-card-arti\">Mengalir Tanpa Jangkar</span>\n        </div>\n        <div class=\"syn-card-body\">Tantangan terbesar Wu Huan Yang adalah kecenderungan menyebar terlalu luas hingga kehilangan fokus jangka panjang. <strong>Air Yang</strong> (<span class=\"hz\">壬水</span>) yang dinamis bisa terjebak dalam mobilitas tanpa akar. Bila tidak dilatih, ini bisa menghambat akumulasi aset jangka panjang dan menggerus kedalaman relasi keluarga inti.</div>\n      </div>\n      <div class=\"syn-card action\">\n        <div class=\"syn-card-num\">為</div>\n        <div class=\"syn-card-eyebrow\">Tindakan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">安渠</span>\n          <span class=\"syn-card-id\">Ān Qú</span>\n          <span class=\"syn-card-arti\">Membangun Saluran yang Tetap</span>\n        </div>\n        <div class=\"syn-card-body\">Panggung optimal Wu Huan Yang adalah tempat di mana otoritas formal bertemu dengan kebijaksanaan, lembaga publik, organisasi besar, atau platform mentoring lintas generasi. Wu Huan Yang perlu secara aktif membangun saluran tetap untuk mengalirkan pengaruh, bukan sekadar berpindah dari satu arena ke arena lain.</div>\n      </div>\n    ",
+    "_syn_actions": "\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">1</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Bangun warisan intelektual lewat tulisan atau mentoring</div>\n            <div class=\"syn-action-context\">Usia 63 adalah waktu ideal mewariskan pengalaman lewat karya nyata</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">2</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Konsolidasi aset properti dan investasi jangka panjang</div>\n            <div class=\"syn-action-context\">Disiplin akumulasi aset adalah kunci ketenangan finansial</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">3</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Latih komunikasi terbuka dengan keluarga inti</div>\n            <div class=\"syn-action-context\">Jangkar emosional di rumah adalah pelindung utama di paruh kedua hidup</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">4</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Pemeriksaan kesehatan rutin organ urinari dan ginjal</div>\n            <div class=\"syn-action-context\">Area kelemahan fisik perlu dijaga sejak sekarang</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">5</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Kembangkan kedalaman spiritual lewat refleksi rutin</div>\n            <div class=\"syn-action-context\">Ketenangan batin adalah fondasi kesuksesan jangka panjang</div>\n          </div>\n        </div>\n      ",
+    "_yangzhai_zones": "\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">門</div>\n            <div class=\"yz-zone-id\">Pintu Utama</div>\n            <div class=\"yz-zone-pinyin\">Mén · Pintu</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">北</span>U</span>\n              <span class=\"yz-pill\"><span class=\"hz\">南</span>S</span>\n            </div>\n            <div class=\"yz-zone-note\">Hadap Utara atau Selatan untuk energi terbaik</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">房</div>\n            <div class=\"yz-zone-id\">Kamar Tidur</div>\n            <div class=\"yz-zone-pinyin\">Fáng · Kamar</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">南</span>S</span>\n              <span class=\"yz-pill\"><span class=\"hz\">東</span>T</span>\n            </div>\n            <div class=\"yz-zone-note\">Posisi Selatan atau Timur memberi istirahat berkualitas</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">灶</div>\n            <div class=\"yz-zone-id\">Dapur / Kompor</div>\n            <div class=\"yz-zone-pinyin\">Zào · Tungku</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">東北</span>TL</span>\n              <span class=\"yz-pill\"><span class=\"hz\">東南</span>TG</span>\n            </div>\n            <div class=\"yz-zone-note\">Kompor menghadap Timur Laut atau Tenggara paling menguntungkan</div>\n          </div>\n        </div>\n        <div class=\"yz-zone warn\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">廁</div>\n            <div class=\"yz-zone-id\">Kamar Mandi</div>\n            <div class=\"yz-zone-pinyin\">Cè · Kamar Mandi</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">⚠ Perhatikan</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill bad\"><span class=\"hz\">西南</span>BD</span>\n              <span class=\"yz-pill bad\"><span class=\"hz\">西</span>B</span>\n            </div>\n            <div class=\"yz-zone-note\">Tempatkan di Barat Daya atau Barat, jauh dari sektor hoki utama</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">書</div>\n            <div class=\"yz-zone-id\">Ruang Kerja</div>\n            <div class=\"yz-zone-pinyin\">Shū · Ruang Kerja</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">東</span>T</span>\n              <span class=\"yz-pill\"><span class=\"hz\">東南</span>TG</span>\n            </div>\n            <div class=\"yz-zone-note\">Meja kerja menghadap Timur atau Tenggara untuk fokus maksimal</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">神</div>\n            <div class=\"yz-zone-id\">Altar / Sembah</div>\n            <div class=\"yz-zone-pinyin\">Shén · Sembahyang</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">東北</span>TL</span>\n              <span class=\"yz-pill\"><span class=\"hz\">西南</span>BD</span>\n            </div>\n            <div class=\"yz-zone-note\">Arah Timur Laut atau Barat Daya paling sakral untuk altar trigram Api</div>\n          </div>\n        </div>\n",
+    "_career_wuxing": "\n        <div class=\"wux-cell unfav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">土 Tanah<span class=\"v\">3</span></div>\n        </div>\n        <div class=\"wux-cell self\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:67%\"></div></div>\n          <div class=\"wux-label\">水 Air<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell fav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:33%\"></div></div>\n          <div class=\"wux-label\">金 Logam<span class=\"v\">1</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:33%\"></div></div>\n          <div class=\"wux-label\">木 Kayu<span class=\"v\">1</span></div>\n        </div>\n        <div class=\"wux-cell unfav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:33%\"></div></div>\n          <div class=\"wux-label\">火 Api<span class=\"v\">1</span></div>\n        </div>\n",
+    "_career_title": "Logam &amp; Air adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini",
+    "_career_avoid": "Industri ber-unsur <strong>火 (Api)</strong> &amp; <strong>土 (Tanah)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.",
+    "_career_tags": "\n          <span class=\"insight-tag\">金 STRUKTUR & EKSEKUSI</span>\n          <span class=\"insight-tag\">水 ALIRAN & ADAPTASI</span>\n          <span class=\"insight-tag bad\">火 PERSAINGAN BERLEBIH</span>\n          <span class=\"insight-tag bad\">土 STAGNASI</span>\n        ",
+    "_career_industri": "\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">🌳</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Penerbitan &amp; Pendidikan</div>\n            <div class=\"ind-reason\">Unsur 木, Bintang Akademik kuat mendukung karir penulisan, pengajaran, dan riset</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:95%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">⚙️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Hukum &amp; Advokasi</div>\n            <div class=\"ind-reason\">Unsur 金, Format Pejabat Lurus selaras dengan karir hukum dan penegakan aturan</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:88%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">🌳</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Properti &amp; Konstruksi</div>\n            <div class=\"ind-reason\">Unsur 木, Industri kayu dan properti memperkuat aset jangka panjang</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:82%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">⚙️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Keuangan &amp; Akuntansi</div>\n            <div class=\"ind-reason\">Unsur 金, Daya analitis dan disiplin angka mendukung karir finansial</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:76%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">⚙️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Manufaktur &amp; Mesin</div>\n            <div class=\"ind-reason\">Unsur 金, Industri logam berat sesuai dengan dorongan eksekusi tegas</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:70%\"></div></div>\n          </div>\n        </div>\n",
+    "shensha_star_hz": "文昌貴",
+    "shensha_star_pinyin": "Wén Chāng Guì",
+    "shensha_star_label": "\"Bintang Akademik & Kebijaksanaan\"",
+    "shensha_star_active": "★ AKTIF SEKARANG ★",
+    "shensha_strip": "Manfaatkan kecerdasan ini secara strategis, <strong>Bintang Akademik</strong> (<span class=\"hz\">文昌貴</span>) aktif mendukung Wu Huan Yang melewati situasi kritis dan mengubah ancaman menjadi peluang.",
+    "_xqcards": "\n      <div class=\"xq-card power\">\n        <div class=\"xqc-eb\">魄 力 · Kekuatan</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">優勢</span><span class=\"xqc-name\">Yōu Shì<br>Keunggulan</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Daya analitis tajam; mampu membaca pola besar di balik detail kecil.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kepemimpinan yang adil; orang lain merasa dilindungi di bawah arahannya.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Mobilitas tinggi; cocok bekerja lintas wilayah dan lintas bidang.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Loyalitas pada prinsip; tidak mudah goyah oleh tekanan politik.</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card shadow\">\n        <div class=\"xqc-eb\">陰 影 · Shadow</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">隱 患</span><span class=\"xqc-name\">Yǐn Huàn<br>Sisi Gelap</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Cenderung menyimpan emosi sendiri hingga meluap di saat tidak tepat.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Sulit menerima kritik personal walaupun terhadap ide ia terbuka.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Dorongan eksplorasi besar bisa membuat fokus karir terpecah.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Rentan terlibat asmara di luar pernikahan bila tidak dijaga ketat.</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card optimum\">\n        <div class=\"xqc-eb\">最 佳 · Optimum</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">應 用</span><span class=\"xqc-name\">Yīng Yòng<br>Cara Optimal</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Bangun rutinitas refleksi mingguan untuk memetakan arah jangka panjang.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Pilih lingkungan kerja yang menghargai integritas, bukan sekadar kecepatan.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Investasikan waktu untuk hubungan keluarga inti agar tetap menjadi jangkar.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Latih komunikasi terbuka, terutama menyampaikan emosi tanpa menahan.</span></div>\n        </div>\n      </div>\n    "
+  }
+}

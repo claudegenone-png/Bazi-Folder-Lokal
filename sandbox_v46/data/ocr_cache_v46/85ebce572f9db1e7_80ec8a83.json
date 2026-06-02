@@ -1,0 +1,25 @@
+{
+  "screen_type": "detail",
+  "name_id": "YUDY L",
+  "gender_hz": "陽男",
+  "birth_lunar_text": "民國 52 年 1 月 5 日 13 時 30 分",
+  "detail_sections": {
+    "田宅": {
+      "hz": "這也是典型的資產宮運，可巧妙地運用龐大的不動產。在丑、辰、巳、午、戌等宮內，可獨自承繼祖先的資產，但晚年則是凋零的命運。一般而言，不動產運皆很旺盛，但缺點是無法永久地維持。與巨門星同宮者，您是成功的財產家。南方大吉。",
+      "id_summary": [
+        "Termasuk tipe pemilik aset yang mampu memanfaatkan properti besar secara cerdik.",
+        "Jika istana Tian Zhai berada di cabang Chou, Chen, Si, Wu, atau Xu, dapat mewarisi aset leluhur secara mandiri — namun di masa tua kondisi cenderung menurun.",
+        "Secara umum rezeki properti sangat kuat, namun sulit dipertahankan secara permanen.",
+        "Bagi yang memiliki bintang Ju Men di istana yang sama, tergolong sukses dalam kepemilikan aset.",
+        "Arah Selatan membawa keberuntungan besar."
+      ],
+      "_uncertain": true,
+      "_ambiguous_chars": [
+        "cabang ke-5 setelah 午 (might be 戌 or 亥 — resolusi layar rendah)"
+      ],
+      "_photo": "WhatsApp Image 2026-05-02 at 12.58.29 (2).jpeg"
+    }
+  },
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.29 (2).jpeg",
+  "_hash": "85ebce572f9db1e7_80ec8a83"
+}

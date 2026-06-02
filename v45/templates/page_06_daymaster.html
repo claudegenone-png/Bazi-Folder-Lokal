@@ -2,10 +2,10 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Lin Ru Yi — Penguasa Hari &amp; Wu Xing Radar</title>
+<title>Lin Ru Yi, Penguasa Hari &amp; Wu Xing Radar</title>
 <link rel="stylesheet" href="style.css">
 <style>
-  .content-dm { grid-template-rows: 100mm 60mm 1fr !important; gap: 4mm; }
+  .content-dm { grid-template-rows: 92mm 40mm 1fr !important; gap: 3mm; }
 
   .dm-hero {
     display: grid; grid-template-columns: 1fr 70mm; gap: 5mm;
@@ -70,31 +70,73 @@
     gap: 3mm; overflow: hidden;
   }
   .dme-card {
-    border-radius: 2mm; padding: 3mm;
+    border-radius: 2mm; padding: 2mm 3mm;
     display: grid; grid-template-rows: auto auto auto 1fr auto;
-    gap: 1mm; align-items: start;
-    overflow: hidden;
+    gap: 0.5mm; align-items: start;
+    overflow: visible; /* allow ti_xiang badge to overflow corner */
     color: white;
     text-align: center;
     position: relative;
   }
+  /* 體相 badge — pojok kanan-atas, foto-source seasonal status */
+  .dme-tixiang {
+    position: absolute; top: -2mm; right: -2mm;
+    width: 7mm; height: 7mm;
+    border-radius: 50%;
+    color: white; font-size: 9pt; font-weight: 700;
+    line-height: 7mm; text-align: center;
+    font-family: 'Noto Serif TC', serif;
+    border: 0.4mm solid var(--bg);
+    box-shadow: 0 0.3mm 1mm rgba(0,0,0,0.25);
+    z-index: 2;
+  }
+  .dme-tixiang.wang  { background: #2D6A4F; }  /* 旺 hijau gelap = puncak */
+  .dme-tixiang.xiang { background: #6FA85A; }  /* 相 hijau muda = pendukung */
+  .dme-tixiang.xiu   { background: #C9A961; }  /* 休 gold = istirahat */
+  .dme-tixiang.qiu   { background: #A07E5C; }  /* 囚 coklat = terkurung */
+  .dme-tixiang.si    { background: #888888; }  /* 死 abu = mati */
+
+  /* 體相 LEGEND footer — compact horizontal */
+  .ti-xiang-legend {
+    display: flex; gap: 4mm; flex-wrap: wrap;
+    font-size: 7pt; color: var(--text-muted);
+    align-items: center; padding: 1.5mm 4mm;
+    margin-top: 2mm;
+    border-top: 0.2mm solid var(--gold-soft);
+  }
+  .ti-xiang-legend .lg-title {
+    font-size: 7pt; color: var(--gold);
+    letter-spacing: 2.5px; font-weight: 600; margin-right: 2mm;
+  }
+  .ti-xiang-legend .dot {
+    display: inline-block;
+    width: 4mm; height: 4mm; border-radius: 50%;
+    color: white; font-size: 6.5pt; font-weight: 700;
+    line-height: 4mm; text-align: center; margin-right: 1mm;
+    vertical-align: middle;
+  }
+  .ti-xiang-legend .dot.wang  { background: #2D6A4F; }
+  .ti-xiang-legend .dot.xiang { background: #6FA85A; }
+  .ti-xiang-legend .dot.xiu   { background: #C9A961; }
+  .ti-xiang-legend .dot.qiu   { background: #A07E5C; }
+  .ti-xiang-legend .dot.si    { background: #888888; }
   .dme.el-jin   { background: linear-gradient(180deg, #C9B57A, #A89358); }
   .dme.el-mu    { background: linear-gradient(180deg, #6FA85A, #4D7A3A); }
   .dme.el-shui  { background: linear-gradient(180deg, #5990B8, #3A6B8C); }
   .dme.el-huo   { background: linear-gradient(180deg, #C45F5F, #8C3535); }
   .dme.el-tu    { background: linear-gradient(180deg, #B89070, #8C6E47); }
   .dme-hz {
-    font-family: 'Noto Serif TC', serif; font-size: 24pt;
+    font-family: 'Noto Serif TC', serif; font-size: 16pt;
     font-weight: 700; line-height: 1;
   }
   .dme-name {
-    font-family: 'Playfair Display', serif; font-size: 9pt;
+    font-family: 'Playfair Display', serif; font-size: 7.5pt;
     font-weight: 600; letter-spacing: 1px;
   }
   .dme-val {
-    font-family: 'Playfair Display', serif; font-size: 14pt;
+    font-family: 'Playfair Display', serif; font-size: 10pt;
     font-weight: 700; line-height: 1;
-    margin-top: 1mm;
+    margin-top: 0.5mm;
   }
   .dme-bar {
     height: 2mm; background: rgba(255,255,255,0.25);
@@ -105,12 +147,14 @@
     border-radius: 1mm;
   }
   .dme-role {
-    font-size: 6.2pt; letter-spacing: 1px;
-    background: rgba(0,0,0,0.2); padding: 0.5mm 1.5mm;
+    font-size: 5.5pt; letter-spacing: 0.5px;
+    background: rgba(0,0,0,0.2); padding: 0.3mm 1.5mm;
     border-radius: 5mm; text-transform: uppercase;
     font-weight: 600;
   }
   .dme-tag-self { color: #FFD700; font-weight: 700; }
+  /* V4.5 null-safety: subdue empty radar / cards when MD data missing. */
+  .dme.empty, .dm-radar-frame .empty { opacity: 0.45; }
 
   /* Yong Shen insight */
   .dm-yongshen {
@@ -131,24 +175,24 @@
   .ys-block.fav .ys-eb   { color: var(--green); }
   .ys-block.unfav .ys-eb { color: var(--red-bad); }
   .ys-block .ys-title {
-    display: flex; align-items: baseline; gap: 3mm;
+    display: flex; align-items: baseline; gap: 2mm;
+    white-space: nowrap;
   }
   .ys-block .ys-hz {
     font-family: 'Noto Serif TC', serif;
-    font-size: 22pt; font-weight: 700; line-height: 1;
+    font-size: 14pt; font-weight: 700; line-height: 1;
   }
   .ys-block.fav .ys-hz   { color: var(--green); }
   .ys-block.unfav .ys-hz { color: var(--red-bad); opacity: 0.85; }
   .ys-block .ys-name {
     font-family: 'Playfair Display', serif;
-    font-size: 11pt; font-style: italic; color: var(--text);
+    font-size: 9pt; font-style: italic; color: var(--text);
   }
   .ys-block .ys-body {
     font-size: 8pt; line-height: 1.5; color: var(--text);
     border-top: 0.2mm solid rgba(0,0,0,0.08);
     padding-top: 1.5mm;
-    display: -webkit-box; -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical; overflow: hidden;
+    overflow: hidden;
   }
   .ys-body .hz { font-family: 'Noto Serif TC', serif; font-weight: 600; }
   .ys-block.fav .ys-body .hz   { color: var(--green); }
@@ -197,7 +241,7 @@
           <line x1="200" y1="200" x2="118" y2="313" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
           <line x1="200" y1="200" x2="67"  y2="157" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
 
-          <!-- Michele's polygon (filled) — values: 金 0.7, 水 2.0, 火 0.8, 土 2.0, 木 3.0 -->
+          <!-- Subject's wuxing polygon (regenerated per subject) -->
           <polygon points="200,166 291,170 223,231 144,278 63,156"
             fill="rgba(139,26,26,0.18)" stroke="#8B1A1A" stroke-width="1.5"/>
 
@@ -225,7 +269,7 @@
             <!-- 土 lower-left -->
             <text x="95" y="338" text-anchor="middle" font-size="18" fill="#8C6E47" font-weight="700">土</text>
             <text x="95" y="350" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Tanah · 2.0</text>
-            <!-- 木 left — Penguasa Hari ★ -->
+            <!-- 木 left, Penguasa Hari ★ -->
             <text x="42" y="148" text-anchor="middle" font-size="18" fill="#4D7A3A" font-weight="700">木</text>
             <text x="42" y="160" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">Kayu · 3.0 ★</text>
           </g>
@@ -238,16 +282,18 @@
       </div>
 
       <div class="dm-card">
+<!-- TAFSIR:_dmcard -->
         <div class="dmc-eyebrow">本 命 · Penguasa Hari</div>
         <div class="dmc-stem">甲</div>
-        <div class="dmc-element">木 · Logam Yin</div>
-        <div class="dmc-pinyin">Jiǎ Mù — "Pohon Besar"</div>
+        <div class="dmc-element">木 · Kayu Yang</div>
+        <div class="dmc-pinyin">Jiǎ Mù, "Pohon Besar"</div>
         <div class="dmc-traits">
           <div class="dmc-trait"><span class="ico">◆</span><span><strong>Pendiri</strong>, kreatif, idealis</span></div>
-          <div class="dmc-trait"><span class="ico">◆</span><span>Pohon kuat — butuh <strong>dipangkas</strong> agar berbuah</span></div>
+          <div class="dmc-trait"><span class="ico">◆</span><span>Pohon kuat, butuh <strong>dipangkas</strong> agar berbuah</span></div>
           <div class="dmc-trait"><span class="ico">◆</span><span>Mekar dengan <span style="font-family:'Noto Serif TC',serif;color:var(--red);font-weight:700">火</span> (ekspresi) + <span style="font-family:'Noto Serif TC',serif;color:var(--red);font-weight:700">金</span> (disiplin)</span></div>
         </div>
         <div class="dmc-strength">Status: <span class="val">KUAT</span> · 旺</div>
+<!-- /TAFSIR -->
       </div>
 
     </div>
@@ -298,10 +344,12 @@
         <div class="ys-eb">喜 用 神 · Yong Shen · Mendukung</div>
         <div class="ys-title">
           <span class="ys-hz">火 金</span>
-          <span class="ys-name">Api &amp; Logam — Penyalur &amp; Pemangkas</span>
+          <span class="ys-name">Api &amp; Logam, Penyalur &amp; Pemangkas</span>
         </div>
         <div class="ys-body">
-          <strong>火</strong> (Huǒ · Api) menyalurkan energi <span class="hz">辛金</span> Anda yang berlimpah jadi karya ekspresif (seni, tulis, ide). <strong>金</strong> (Jīn · Logam) menjadi "kapak" yang memangkas pertumbuhan berlebih — disiplin &amp; struktur. Aktif pakai <strong>warna merah, oranye, putih, emas</strong>; bekerja di bidang ekspresi (penulisan, performance, fashion, lighting, broadcasting).
+<!-- TAFSIR:daymaster -->
+          <strong>火</strong> (Huǒ · Api) menyalurkan energi <span class="hz">辛金</span> Anda yang berlimpah jadi karya ekspresif (seni, tulis, ide). <strong>金</strong> (Jīn · Logam) menjadi "kapak" yang memangkas pertumbuhan berlebih, disiplin &amp; struktur. Aktif pakai <strong>warna merah, oranye, putih, emas</strong>; bekerja di bidang ekspresi (penulisan, performance, fashion, lighting, broadcasting).
+<!-- /TAFSIR -->
         </div>
       </div>
 
@@ -309,24 +357,32 @@
         <div class="ys-eb">忌 神 · Ji Shen · Kurang Mendukung</div>
         <div class="ys-title">
           <span class="ys-hz">水 木</span>
-          <span class="ys-name">Air &amp; Kayu — Penambah Dominasi</span>
+          <span class="ys-name">Air &amp; Kayu, Penambah Dominasi</span>
         </div>
         <div class="ys-body">
-          <strong>水</strong> (Shuǐ · Air) — Air berlebih membuat akar pohon membusuk; sudah ada 2.0, jangan ditambah. <strong>木</strong> (Mù · Kayu) — sesama Kayu memperberat dominasi Anda yang sudah 3.0. Hindari hijau berlebih, basah/lembap, dan industri kayu-perkayuan.
+<!-- TAFSIR:_jishen_body -->
+          <strong>水</strong> (Shuǐ · Air), Air berlebih membuat akar pohon membusuk; sudah ada 2.0, jangan ditambah. <strong>木</strong> (Mù · Kayu), sesama Kayu memperberat dominasi Anda yang sudah 3.0. Hindari hijau berlebih, basah/lembap, dan industri kayu-perkayuan.
+<!-- /TAFSIR -->
         </div>
       </div>
 
     </div>
 
+    <!-- 體相 LEGEND — explain seasonal status badges di dme-card -->
+    <div class="ti-xiang-legend">
+      <span class="lg-title">體 相</span>
+      <span><span class="dot wang">旺</span> Puncak</span>
+      <span><span class="dot xiang">相</span> Pendukung</span>
+      <span><span class="dot xiu">休</span> Istirahat</span>
+      <span><span class="dot qiu">囚</span> Terkurung</span>
+      <span><span class="dot si">死</span> Mati</span>
+    </div>
+
   </main>
 
   <footer class="footer">
-    <div class="footer-caption">
-      Bagan elemen Anda condong ke <span style="font-family:'Noto Serif TC',serif;color:var(--red)">木 + 水</span> (58.8%) — Pohon besar yang banyak air. Tugas hidup: <em>salurkan ke 火 金</em> — itu cara mengubah pertumbuhan jadi karya.
-    </div>
     <div class="footer-meta">
-      <span>Halaman 6 / 23</span>
-      <span>Lin Ru Yi · Ramalan 命</span>
+      <span>Halaman 6 / 24</span>
     </div>
   </footer>
 </section>

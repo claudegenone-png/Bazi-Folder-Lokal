@@ -1,17 +1,33 @@
 {
   "_subject_id": "yudyl",
   "_extract_count": 31,
-  "_source": "OCR via Read tool (Claude Code V4.5) — 31 photos from Xing Qiao NCC V2.6 software",
+  "_source": "User-supplied JSON merge (V4.6 schema) 2026-05-03",
   "name_id": "Yudy L",
   "name_hanzi": "尤迪",
   "gender_hz": "陽男",
   "birth_solar": "1963-01-29 13:30",
   "birth_lunar_text": "農曆民國 52 年 1 月 5 日 13 時 30 分",
   "pillars": {
-    "year":  {"stem_hz": "壬", "branch_hz": "寅", "ten_god_hz": "比肩"},
-    "month": {"stem_hz": "癸", "branch_hz": "丑", "ten_god_hz": "劫財"},
-    "day":   {"stem_hz": "壬", "branch_hz": "申", "ten_god_hz": "命主"},
-    "hour":  {"stem_hz": "丁", "branch_hz": "未", "ten_god_hz": "正財"}
+    "year": {
+      "stem_hz": "壬",
+      "branch_hz": "寅",
+      "ten_god_hz": "比肩"
+    },
+    "month": {
+      "stem_hz": "癸",
+      "branch_hz": "丑",
+      "ten_god_hz": "劫財"
+    },
+    "day": {
+      "stem_hz": "壬",
+      "branch_hz": "申",
+      "ten_god_hz": "命主"
+    },
+    "hour": {
+      "stem_hz": "丁",
+      "branch_hz": "未",
+      "ten_god_hz": "正財"
+    }
   },
   "wuxing": {
     "jin": 2,
@@ -24,20 +40,77 @@
   "ji_shen_hz": "金 水",
   "format_hz": "比肩格",
   "da_yun": [
-    {"age_start": 3,  "age_end": 12,  "stem_hz": "甲", "branch_hz": "寅"},
-    {"age_start": 13, "age_end": 22,  "stem_hz": "乙", "branch_hz": "卯"},
-    {"age_start": 23, "age_end": 32,  "stem_hz": "丙", "branch_hz": "辰"},
-    {"age_start": 33, "age_end": 42,  "stem_hz": "丁", "branch_hz": "巳"},
-    {"age_start": 43, "age_end": 52,  "stem_hz": "戊", "branch_hz": "午"},
-    {"age_start": 53, "age_end": 62,  "stem_hz": "己", "branch_hz": "未"},
-    {"age_start": 63, "age_end": 72,  "stem_hz": "庚", "branch_hz": "申"},
-    {"age_start": 73, "age_end": 82,  "stem_hz": "辛", "branch_hz": "酉"},
-    {"age_start": 83, "age_end": 92,  "stem_hz": "壬", "branch_hz": "戌"},
-    {"age_start": 93, "age_end": 102, "stem_hz": "癸", "branch_hz": "亥"}
+    {
+      "age_start": 3,
+      "age_end": 12,
+      "stem_hz": "甲",
+      "branch_hz": "寅"
+    },
+    {
+      "age_start": 13,
+      "age_end": 22,
+      "stem_hz": "乙",
+      "branch_hz": "卯"
+    },
+    {
+      "age_start": 23,
+      "age_end": 32,
+      "stem_hz": "丙",
+      "branch_hz": "辰"
+    },
+    {
+      "age_start": 33,
+      "age_end": 42,
+      "stem_hz": "丁",
+      "branch_hz": "巳"
+    },
+    {
+      "age_start": 43,
+      "age_end": 52,
+      "stem_hz": "戊",
+      "branch_hz": "午"
+    },
+    {
+      "age_start": 53,
+      "age_end": 62,
+      "stem_hz": "己",
+      "branch_hz": "未"
+    },
+    {
+      "age_start": 63,
+      "age_end": 72,
+      "stem_hz": "庚",
+      "branch_hz": "申"
+    },
+    {
+      "age_start": 73,
+      "age_end": 82,
+      "stem_hz": "辛",
+      "branch_hz": "酉"
+    },
+    {
+      "age_start": 83,
+      "age_end": 92,
+      "stem_hz": "壬",
+      "branch_hz": "戌"
+    },
+    {
+      "age_start": 93,
+      "age_end": 102,
+      "stem_hz": "癸",
+      "branch_hz": "亥"
+    }
   ],
   "marriage": {
-    "cocok_branches": ["午", "戌"],
-    "hindari_branches": ["巳", "申"]
+    "cocok_branches": [
+      "午",
+      "戌",
+      "亥"
+    ],
+    "hindari_branches": [
+      "巳",
+      "申"
+    ]
   },
   "yang_zhai_gua_hz": "坎",
   "zi_wei": {
@@ -47,5 +120,266 @@
     "shen_gong_branch_hz": "未",
     "wu_xing_ju_hz": "火六局",
     "shi_jun_hz": "卯"
+  },
+  "day_master_strength": {
+    "raw_hz": "旺",
+    "pos_score": 4.986,
+    "neg_score": 3.654,
+    "is_strong": true
+  },
+  "yong_ji_shen": [
+    {
+      "role": "用神",
+      "elements_hz": [
+        "木"
+      ]
+    },
+    {
+      "role": "喜神",
+      "elements_hz": [
+        "火"
+      ]
+    },
+    {
+      "role": "閒神",
+      "elements_hz": [
+        "土"
+      ]
+    },
+    {
+      "role": "仇神",
+      "elements_hz": [
+        "金"
+      ]
+    },
+    {
+      "role": "忌神",
+      "elements_hz": [
+        "水"
+      ]
+    }
+  ],
+  "formats": [
+    {
+      "hz": "正官格",
+      "glyph": "正官",
+      "is_primary": true
+    }
+  ],
+  "detail_sections": {
+    "宿命": {
+      "hz": "",
+      "id_summary": [
+        "Apapun keberuntungan atau kesialan, semuanya memiliki nasib yang berbeda dari nasib umum. Selama istana Fude (Keberuntungan dan Kebajikan) Anda kuat, istana tubuh juga kuat. Penuh dengan kehangatan pribadi dan kepribadian yang lembut, kebajikan Anda bisa membawa banyak keberuntungan. Namun jika istana Fude lemah, hubungan antar manusia tidak bisa harmonis, keberuntungan dan kebajikan pun ikut memudar."
+      ]
+    },
+    "福德": {
+      "hz": "",
+      "id_summary": [
+        "Kepribadian yang tidak stabil, keberuntungan dan kebajikan pun ikut memudar. Banyak hal sibuk namun sedikit yang berhasil. Berada di dalam istana Zi, Shen, Xi, Hai maka hasilnya pasti mendapatkan keberuntungan dan kebajikan. Bagi yang satu istana dengan Pojun, seumur hidup sibuk dan tidak bisa tenang. Bagi yang satu istana dengan Zivi, di hari tua bisa mendapat kebahagiaan."
+      ]
+    },
+    "田宅": {
+      "hz": "",
+      "id_summary": [
+        "Ini adalah nasib istana properti yang khas, bisa memanfaatkan properti yang besar dengan cerdik. Di dalam istana Chou, Chen, Si, Wu, Xu, Hai, bisa mendapat warisan harta dari leluhur, namun di hari tua adalah nasib yang kembali ke nol. Secara umum, nasib properti semuanya sangat kuat, namun kelemahannya adalah tidak bisa mempertahankannya selamanya. Selatan sangat baik."
+      ]
+    },
+    "僕役": {
+      "hz": "",
+      "id_summary": [
+        "Bawahan Anda adalah tipe yang cerdas secara otak dan lincah. Bisa memiliki bawahan yang cerdas dan berbakat luar biasa. Jika satu istana dengan Jumen, bisa mendapat bantuan dari bawahan yang sangat berbakat dan melampaui orang lain."
+      ]
+    },
+    "父母": {
+      "hz": "",
+      "id_summary": [
+        "Tidak suka melakukan kesalahan yang memalukan orang tua. Berada di dalam istana Zi dan Hai, adalah hubungan orang tua-anak yang sempurna. Anda memiliki orang tua yang bijaksana, keluarga penuh dengan suasana yang menyenangkan dan cerdas. Orang tua Anda adalah orang yang berpribadian terbuka, terutama ayah sebagai pilar keluarga, memimpin seluruh keluarga. Bahkan setelah dewasa, Anda mungkin masih mengandalkan orang tua dalam hati. Namun orang tua hanya memperhatikan Anda saat Anda membutuhkan energi dan perhatian mereka."
+      ]
+    },
+    "官祿": {
+      "hz": "",
+      "id_summary": [
+        "Dokter bedah, teknisi, biarawan, pedagang logam mulia. Daya pengamatan yang tajam dan kemampuan ekspresi yang luar biasa, sehingga cocok untuk penulis laporan, novelis, pelukis, serta pekerjaan yang berkaitan dengan media massa. Juga cocok untuk pekerjaan di bidang keagamaan. Bisa memiliki karir yang stabil. Kelemahannya adalah meskipun sudah merencanakan berbagai hal secara terperinci, namun hasilnya seringkali tidak bisa sepenuhnya menjalankan rencana, atau mudah dipengaruhi oleh suasana di sekitarnya. Bagi yang satu istana dengan Tianji dan Taiyin, dalam perusahaan bisa naik ke tingkat manajer."
+      ]
+    },
+    "事業": {
+      "hz": "",
+      "id_summary": [
+        "Dokter bedah, teknisi, biarawan, pedagang logam mulia. Daya pengamatan yang tajam dan kemampuan ekspresi yang luar biasa, sehingga cocok untuk penulis laporan, novelis, pelukis, serta pekerjaan yang berkaitan dengan media massa. Juga cocok untuk pekerjaan di bidang keagamaan. Bisa memiliki karir yang stabil. Kelemahannya adalah meskipun sudah merencanakan berbagai hal secara terperinci, namun hasilnya seringkali tidak bisa sepenuhnya menjalankan rencana, atau mudah dipengaruhi oleh suasana di sekitarnya. Bagi yang satu istana dengan Tianji dan Taiyin, dalam perusahaan bisa naik ke tingkat manajer."
+      ]
+    },
+    "財帛": {
+      "hz": "",
+      "id_summary": [
+        "Penggunaan uang cenderung berhati-hati, tidak bisa memanfaatkan uang dengan cerdik. Bintang Tianfu di istana keuangan adalah bintang keberuntungan sandang-pangan. Ditambah dengan bintang-bintang baik lain yang satu istana membantu, bisa membuat usaha Anda semakin bersinar. Walaupun Tianfu adalah bintang baik, jika ada bintang jahat lain yang menghalangi, bukan sering berfoya-foya ya justru menjadi kecanduan boros. Setidaknya Anda tidak perlu khawatir dibelenggu oleh uang."
+      ]
+    },
+    "財富": {
+      "hz": "",
+      "id_summary": [
+        "Penggunaan uang cenderung berhati-hati, tidak bisa memanfaatkan uang dengan cerdik. Bintang Tianfu di istana keuangan adalah bintang keberuntungan sandang-pangan. Ditambah dengan bintang-bintang baik lain yang satu istana membantu, bisa membuat usaha Anda semakin bersinar. Walaupun Tianfu adalah bintang baik, jika ada bintang jahat lain yang menghalangi, bukan sering berfoya-foya ya justru menjadi kecanduan boros. Setidaknya Anda tidak perlu khawatir dibelenggu oleh uang."
+      ]
+    },
+    "遷移": {
+      "hz": "",
+      "id_summary": [
+        "Tindakan mudah terhambat dan terhenti. Tidak bisa berpindah dengan mudah. Karena secara aktif mengejar perubahan, sehingga bisa menangkap keberuntungan. Termasuk tipe orang yang aktif bergerak. Sayangnya jika ada bintang jahat yang satu istana, perubahan yang hebat terus-menerus, tidak bisa menjalani hidup yang tenang dan damai. Berada di istana Zi, Chen, Wu, Xu dan Hai, karena perubahan lingkungan sekitar, justru bisa membuat Anda memancarkan bakat yang belum pernah ditemukan sebelumnya."
+      ]
+    },
+    "疾厄": {
+      "hz": "",
+      "id_summary": [
+        "Mudah menderita penyakit tersembunyi. Penyakit persendian dan lutut. Nyeri saraf, rematik, dan lain-lain. Sepanjang hidup, kesempatan sakit atau terluka lebih sedikit dari orang lain. Kesehatan baik, jika berada di istana Si, Shen, Hai, atau satu istana dengan bintang jahat, harus memperhatikan penyakit perut yang dimulai dari bagian perut."
+      ]
+    },
+    "夫妻": {
+      "hz": "",
+      "id_summary": [
+        "Hubungan suami-istri seperti saling menghormati tamu. Suami-istri keduanya saling memahami kehidupan pribadi masing-masing, sehingga tidak akan bertengkar karena alasan apapun. Bagi yang satu istana dengan Tianfu, suami-istri adalah orang yang berkemauan keras, namun tidak terduga bisa harmonis dan saling mencintai dalam waktu yang lama. Pria walaupun termasuk tipe tenang, namun akan menikahi wanita yang berwatak keras kepala. Tanlang adalah bintang perceraian, jika tidak menikah terlambat, maka pasti melangkah ke jalan perceraian."
+      ]
+    },
+    "子女": {
+      "hz": "",
+      "id_summary": [
+        "Walaupun anak, namun termasuk tipe yang bisa dipercaya segalanya. Bisa memiliki sekelompok anak yang serius dan berwibawa. Namun tampaknya agak memiliki kecenderungan terlalu sensitif secara saraf. Bintang Taiyin di istana anak, anak yang dibesarkan adalah anak yang kaya perasaan dan sangat berbakat."
+      ]
+    },
+    "兄弟": {
+      "hz": "",
+      "id_summary": [
+        "Saudara: hubungan persaudaraan dipengaruhi oleh kedudukan bintang-bintang sekitar; rujuk Istana Saudara dalam peta nasib."
+      ]
+    },
+    "命宮": {
+      "hz": "",
+      "id_summary": [
+        "Tidak ada guncangan besar, termasuk nasib yang berjalan dengan tenang dan kokoh. Reaksi otak cepat, adalah orang yang aktif bergerak. Kaya akan kemampuan adaptasi yang lembut. Berbicara dengan elegan, hubungan antar manusia harmonis dan memuaskan, bisa mendapat kasih sayang atasan, dan mendapatkan status sosial. Walaupun Tianxiang adalah bintang baik yang langka, namun jika satu istana dengan Wuqu, perilaku orang tersebut agak melenceng dari dunia biasa, dan hidup di dunia yang enak. Kelemahannya adalah mudah dipengaruhi oleh lingkungan sekitar dan kehilangan jati diri."
+      ]
+    },
+    "性情": {
+      "hz": "",
+      "id_summary": [
+        "Teguh dalam berpikir, pendirian yang kuat, kokoh namun tidak kasar, kaya akan kemampuan menangani masalah, tegas, kemampuan operasional yang kuat. Tidak suka memaksakan diri, bisa menyatu dan lebur, memiliki hati yang peduli, memberi tanpa memperhitungkan kembaliannya, memiliki perhatian yang tanpa syarat. Memiliki keberanian, tidak mau kalah, kemampuan pengambilan keputusan yang kuat, kemampuan kepemimpinan yang kuat. Pandai dalam variasi, tidak mau melanggar orang juga tidak mau dilanggar oleh orang. Tertarik pada sastra, pikiran mengalir lancar, suka berpetualang ke luar, pandai menangkap peluang, pandai strategi peperangan, serba bisa dalam sastra maupun militer."
+      ]
+    },
+    "陽宅": {
+      "hz": "",
+      "id_summary": [
+        "Rumah sebaiknya menghadap utara ke selatan atau selatan ke utara sangat baik. Posisi altar dewa: Timur dan Tenggara sangat baik dan merupakan arah keberuntungan besar tahun ini. Pintu dan jalan: Timur Selatan, Selatan, Timur sangat baik. Posisi kompor sebaiknya dipasang menghadap barat ke timur. Posisi kamar dan tempat tidur: Utara, Timur, Selatan, Tenggara sangat baik. Posisi toilet sebaiknya dipasang di Barat Laut, Timur Laut, Barat Daya."
+      ]
+    },
+    "全局總論": {
+      "hz": "",
+      "id_summary": [
+        "Pasangan relatif cerewet dan cenderung tidak masuk akal.",
+        "Anak lebih mementingkan perasaan dan relatif irit.",
+        "Perkataan ibu tidak bisa diterima, relatif pendiam.",
+        "Tidak takut ayah, tidak bisa menerima nasihat ayah.",
+        "Relatif tidak memiliki kemampuan kepemimpinan, dan tidak bisa meraih kesempatan besar.",
+        "Dalam bergaul relatif jujur dan tulus.",
+        "Ada awal tanpa akhir, kepala harimau ekor ular, dalam melakukan sesuatu ada kepala tanpa ekor."
+      ]
+    },
+    "命格": {
+      "hz": "",
+      "id_summary": [
+        "Teguh dalam berpikir, pendirian yang kuat, kokoh namun tidak kasar, kaya akan kemampuan menangani masalah, tegas, kemampuan operasional yang kuat. Tidak suka memaksakan diri, bisa menyatu dan lebur, memiliki hati yang peduli, memberi tanpa memperhitungkan kembaliannya, memiliki perhatian yang tanpa syarat. Memiliki keberanian, tidak mau kalah, kemampuan pengambilan keputusan yang kuat, kemampuan kepemimpinan yang kuat. Pandai dalam variasi, tidak mau melanggar orang juga tidak mau dilanggar oleh orang. Tertarik pada sastra, pikiran mengalir lancar, suka berpetualang ke luar, pandai menangkap peluang, pandai strategi peperangan, serba bisa dalam sastra maupun militer."
+      ]
+    }
+  },
+  "shen_sha_stars": [
+    {
+      "star_hz": "驛馬",
+      "id": "Kuda Pengembara",
+      "paragraph_hz": "",
+      "id_summary": [
+        "Suka bergerak, berlari ke mana-mana, banyak perjalanan, rumah tinggal dan pekerjaan banyak berubah."
+      ]
+    },
+    {
+      "star_hz": "孤宿",
+      "id": "Bintang Nisan",
+      "paragraph_hz": "",
+      "id_summary": [
+        "Penampilan dingin dan tulang tajam, wajah tanpa ekspresi ramah, enam kerabat ada namun seperti tiada."
+      ]
+    },
+    {
+      "star_hz": "元辰",
+      "id": "Tahun Besar Setan Kecil",
+      "paragraph_hz": "",
+      "id_summary": [
+        "Tangan kaku dan keras, tidak membedakan benar-salah, miskin dan dingin, suka makan-minum sesuai suasana hati, watak kepahlawanan penuh gairah, tidak mengikuti aturan dan hukum, seumur hidup banyak bencana."
+      ]
+    }
+  ],
+  "liu_nian_per_year": [
+    {
+      "year_gregorian": 2026,
+      "year_hz": "Bingwu",
+      "age": 64,
+      "paragraph_hz": "",
+      "id_summary": [
+        "Tenaga dan pikiran yang dikeluarkan tahun ini, dari luar terlihat bisa dibandingkan dengan uang/materi. Bisa mendapatkan semua peluang, secara nyata bisa mencapai cita-cita. Lingkungan besar akan bergerak karena kendala. Pekerjaan akan berubah atau ada perubahan posisi jabatan. Taiyin masuk ke nasib, terlihat ada keberuntungan dan mendapat uang, orang penting saling membantu, semua urusan harmonis dan damai. Wenchang tahun berjalan masuk ke nasib, seharusnya ada acara bahagia yang datang ke pintu, pelajar banyak yang berhasil, rumah tangga menarik keuangan dan wanita hamil. Hindari bulan 2, 5, 8, atau 12. Mudah menarik permusuhan atau keributan dari lawan jenis. Rasa ingin tahu yang kuat, semangat penelitian yang kuat, ada kreativitas, kaya akan selera humor dan kehangatan."
+      ],
+      "sub_warnings": []
+    },
+    {
+      "year_gregorian": 2027,
+      "year_hz": "Dingwei",
+      "age": 65,
+      "paragraph_hz": "",
+      "id_summary": [
+        "Tenaga dan pikiran yang dikeluarkan tahun ini, dari luar terlihat bisa dibandingkan dengan uang/materi. Bisa mendapat bantuan orang penting, secara nyata bisa mencapai cita-cita yang cukup ideal. Suasana hati relatif tidak stabil. Pekerjaan akan berubah. Guanfu masuk ke nasib, urusan pejabat dan kesedihan, ayah-ibu-istri-keuangan terkendala, berjuang keras terbebas dari bencana. Bintang api masuk ke nasib utama, urusan pejabat bukan dari mulut dan hukuman, ada pakaian duka penyakit hantu pencuri waspada. Hindari bulan 1, 4, 7, atau 11. Kurangi ikut campur urusan orang. Mudah menarik roh jahat, penyakit aneh, orang kecil yang berbahaya dalam gelap, dan kerugian harta. Jujur, pandai bergaul dan bersosialisasi."
+      ],
+      "sub_warnings": []
+    },
+    {
+      "year_gregorian": 2028,
+      "year_hz": "Wushen",
+      "age": 66,
+      "paragraph_hz": "",
+      "id_summary": [
+        "Pengorbanan yang dikeluarkan tahun ini terlihat bisa dibandingkan dengan uang/materi. Perlu waspada, hal-hal yang mendesak akan sangat banyak, orang penting suram, secara nyata tidak bisa mencapai cita-cita. Lingkungan besar berubah, misalnya merenovasi rumah, pindah rumah, memindahkan perabotan dalam ruangan atau dekorasi. Bagi yang sudah menikah, hubungan suami-istri akan bermasalah; bagi yang belum menikah, akan menjalani hubungan percintaan. Sisfu masuk ke nasib, ada kesedihan berkabung. Bintang Anyao masuk ke nasib, jika tidak ada pertengkaran mulut dan hukuman, ada bencana berkabung dan kecelakaan. Hindari bulan 2, 5, 8, atau 12. Mudah terkena bencana dari pejabat, hukuman, gugatan, luka, dan penderitaan mental."
+      ],
+      "sub_warnings": []
+    },
+    {
+      "year_gregorian": 2029,
+      "year_hz": "Jixi",
+      "age": 67,
+      "paragraph_hz": "",
+      "id_summary": [
+        "Pengorbanan yang dikeluarkan tahun ini terlihat bisa dibandingkan dengan uang/materi. Perlu waspada, hal-hal yang mendesak akan sangat banyak, orang penting suram, secara nyata tidak bisa mencapai cita-cita. Suipo masuk ke nasib di tengah jalan, kehilangan harta jangan terlalu berlebihan. Bintang Taiyin tahun berjalan masuk ke nasib utama, utamanya ada acara bahagia yang datang dalam kehidupan, mencari keuangan dan pengambilan keputusan orang berjalan lancar. Hindari bulan 3, 6, 9, atau 12. Suka yang baru tidak suka yang lama, tidak terlalu stabil, mudah dipengaruhi oleh lingkungan, hubungan suami-istri mudah berubah."
+      ],
+      "sub_warnings": []
+    },
+    {
+      "year_gregorian": 2030,
+      "year_hz": "Gengxu",
+      "age": 68,
+      "paragraph_hz": "",
+      "id_summary": [
+        "Bisa mendapatkan bantuan dari orang-orang penting (guiren), secara nyata bisa mencapai cita-cita yang cukup ideal. Tahun ini segala sesuatu, dari luar terlihat tidak begitu baik, tidak bisa dibandingkan dengan uang/materi. Lingkungan besar akan bergerak karena kendala. Longde masuk ke nasib, sepanjang empat musim menghasilkan uang. Bintang Tiansao tahun berjalan masuk ke nasib, utamanya ada kesedihan pakaian duka, harus waspada terhadap pencuri dan perampok. Hindari bulan 1, 4, 7, atau 12. Dengan kerja keras bisa mendapatkan keuntungan. Rasa harga diri dan kehormatan yang kuat, suka menang tidak mau kalah, semangat pantang menyerah, suka bermain strategi dan taktik."
+      ],
+      "sub_warnings": []
+    },
+    {
+      "year_gregorian": 2031,
+      "year_hz": "Xinhai",
+      "age": 69,
+      "paragraph_hz": "",
+      "id_summary": [
+        "Tahun ini segala sesuatu dari luar terlihat tidak begitu baik. Perlu memperhatikan interaksi dengan saudara dan teman, secara nyata tidak bisa mencapai cita-cita. Pekerjaan akan mengalami perubahan atau ada perubahan posisi jabatan. Baihu meraung di tebing, mulut dan bicara merusak keuangan. Bintang Tianxi tahun berjalan saling bertemu, keluarga ada acara bahagia, musim semi cinta datang, perkara keuangan banyak yang memuaskan. Hindari bulan 1, 4, 7, atau 11. Suci, jujur, cerdas, matang, semangat mandiri yang kuat, suka berwirausaha sendiri."
+      ],
+      "sub_warnings": []
+    }
+  ],
+  "xingqing_paragraph": {
+    "hz": "",
+    "id_summary": [
+      "Teguh dalam berpikir, pendirian yang kuat, kokoh namun tidak kasar, kaya akan kemampuan menangani masalah, tegas, kemampuan operasional yang kuat. Tidak suka memaksakan diri, bisa menyatu dan lebur, memiliki hati yang peduli, memberi tanpa memperhitungkan kembaliannya, memiliki perhatian yang tanpa syarat. Memiliki keberanian, tidak mau kalah, kemampuan pengambilan keputusan yang kuat, kemampuan kepemimpinan yang kuat. Pandai dalam variasi, tidak mau melanggar orang juga tidak mau dilanggar oleh orang. Tertarik pada sastra, pikiran mengalir lancar, suka berpetualang ke luar, pandai menangkap peluang, pandai strategi peperangan, serba bisa dalam sastra maupun militer."
+    ]
   }
 }

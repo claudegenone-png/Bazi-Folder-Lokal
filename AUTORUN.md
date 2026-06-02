@@ -1,13 +1,53 @@
 # AUTORUN — Daily Generate Laporan Ramalan
 
-User akan kirim 2 input pendek:
-- **Path folder foto** (e.g., `C:\Users\sukam\Downloads\banzi1`)
-- **Versi** yang dipakai (`V3`, `V4.3`, atau `V4.5`)
+## Trigger patterns
 
-Contoh prompt user:
+## Pattern A (V4.5): Foto Prep — siapkan untuk Web Claude
+
+User kirim:
+- **Path folder foto** (e.g., `C:\Users\sukam\OneDrive\Documents\Ramalan\foto\database\11-40`)
+- **Versi** `v4.5`
+
+Contoh:
 ```
-C:\Users\sukam\Downloads\banzi1 pakai V4.5
+C:\Users\sukam\OneDrive\Documents\Ramalan\foto\database\11-40
+v4.5
 ```
+
+**Auto flow Pattern A:**
+1. Bikin folder kerja `{path}_prepped/` (atau di `v45/data/foto/{name}/`)
+2. **Upscale + sharpen foto** (resolusi tinggi supaya Web Claude akurat baca Hanzi/angka)
+3. Optional: dedup duplicate screenshots, denoise
+4. Output: folder berisi foto-foto siap upload + STOP
+5. **Kasih instruksi user**: "Upload semua foto di {path_prepped} ke Claude Web (claude.ai), paste isi `v45/WEB_CLAUDE_PROMPT.md`. Output Web Claude = MD. Save ke folder, lalu kirim trigger Pattern B."
+6. **JANGAN auto-call Web Claude**, JANGAN coba OCR sendiri pakai Read tool. User punya control penuh ke Web Claude.
+
+**Output expected user:** path file MD (untuk Pattern B berikutnya)
+
+## Pattern B (V4.5): MD audit + build PDF
+User kirim:
+- **Path MD file** (e.g., `C:\Users\sukam\Downloads\Test\LinWenhan.md`)
+- Kata kunci `v4.5` (di baris berikut atau di pesan terpisah)
+
+Contoh:
+```
+C:\Users\sukam\Downloads\Test\LinWenhan.md
+v4.5
+```
+
+**Auto flow Pattern B:**
+1. Baca MD file lewat Read tool
+2. **Audit otomatis**: verifikasi data fundamental
+   - 4 pilar valid 60-甲子 cycle (polaritas yin/yang match)
+   - Format (正印 vs 偏印 = polarity DM vs stem印)
+   - Da Yun arah (陽男陰女順 / 陰男陽女逆) + sequence dari pilar bulan + valid combos + branch tidak skip
+   - Marriage cocok/hindari sesuai 三合/六合/六沖/六害 dari day branch
+   - Yang Zhai gua sesuai formula Ba Zhai
+   - Tanggal lunar vs solar konsistensi
+3. **Hasil audit:**
+   - **Clean** → copy MD ke `v45/data/subjects/{id}.md` → run `python v45/build_pdf.py {id}` → kasih path PDF
+   - **Ada error** → kasih prompt revisi untuk Web Claude (per memory `workflow_md_audit_loop.md` rule of thumb: full regen kalau impact >=3 section, patch kalau <3)
+4. **JANGAN auto-fix MD** di VS Code, selalu balikan ke Web Claude untuk regenerate
 
 Kamu (Claude) **langsung jalankan** sesuai versi tanpa nanya. Skip semua step verifikasi rutin.
 
@@ -92,7 +132,14 @@ V4.5 promoted ke production penuh → no suffix. Cuma V4.3 yang masih bersuffix 
 - Re-run subjek sama: ~40 detik (skip OCR sepenuhnya)
 
 ### Design/konten/akurasi
-**100% identik V4.3** — template + render engine verbatim copy v43/, +2 patch CSS (gradient white-box fix di pseudo). PDF visual identik.
+**MD-driven personalization (sejak Mei 2026).** Web Claude generate MD per subjek dari foto → engine inject ke template via TAFSIR anchors. Konten 60-70% berbeda per subjek (vs V4.3 yang token-swap saja). Master prompt: v45/WEB_CLAUDE_PROMPT.md.
+
+### PDF render: Workflow B (image-based)
+Sejak Mei 2026: HTML → Chrome --print-to-pdf (intermediate) → fitz/PyMuPDF rasterize @ 150 DPI → PIL pack image-only PDF. **Pixel-perfect identik di semua viewer** (mobile/laptop/WA/print). Eliminates cross-viewer rendering inconsistency. Trade-off: text tidak selectable, file ~4-5 MB. Deps: pymupdf + pillow (sudah terinstall).
+
+### Input flow
+- **MD-mode** (preferred): user kasih MD file → langsung . Skip OCR.
+- **Photo-mode** (fallback): photo OCR pipeline lama (lihat steps 1-6 di atas).
 
 ---
 

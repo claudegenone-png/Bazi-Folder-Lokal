@@ -1,0 +1,843 @@
+{
+  "subject_id": "lijialing",
+  "_built_by": "build_from_ocr.py V4.5 FULL-MD",
+  "identity": {
+    "name_id": "Li Jia Ling",
+    "name_hanzi": "李佳玲",
+    "gender_id": "Wanita",
+    "birth_date": "1988-06-01",
+    "birth_time": "15:00",
+    "birth_day_name": "Rabu",
+    "birth_period_id": "sore",
+    "birth_hour_branch_hz": "申",
+    "birth_hour_period_label": "sore · 申時",
+    "lunar_date_text_new": "tanggal 17 bulan 4 tahun 戊辰 (Wu Chen · 1988)",
+    "lunar_year_pillar_hz": "戊辰",
+    "lunar_republic_text": "民國 77 年 4 月 17 日",
+    "age_at_report": 39
+  },
+  "shio": {
+    "branch_hz": "辰",
+    "branch_pinyin": "Chén",
+    "id": "Naga",
+    "id_upper": "NAGA",
+    "svg_red": "Naga-Merah.svg",
+    "svg_black": "Naga-Hitam.svg"
+  },
+  "ti_xiang": {
+    "mu": "相",
+    "huo": "旺",
+    "jin": "死",
+    "shui": "囚"
+  },
+  "day_master": {
+    "stem_hz": "丁",
+    "stem_element_hz": "火",
+    "stem_element_id": "Api",
+    "polarity_id": "Yin",
+    "label_id": "Api Lilin",
+    "label_long_id": "Api",
+    "pinyin": "Dīng 火",
+    "strength_id": "Lemah",
+    "strength_hz": "弱"
+  },
+  "pillars": {
+    "year": {
+      "stem_hz": "戊",
+      "branch_hz": "辰"
+    },
+    "month": {
+      "stem_hz": "丁",
+      "branch_hz": "巳"
+    },
+    "day": {
+      "stem_hz": "丁",
+      "branch_hz": "亥"
+    },
+    "hour": {
+      "stem_hz": "戊",
+      "branch_hz": "申"
+    }
+  },
+  "wuxing": {
+    "jin": {
+      "value": 2.0,
+      "percent": 13.3,
+      "label_id": "Logam"
+    },
+    "shui": {
+      "value": 3.0,
+      "percent": 20.0,
+      "label_id": "Air"
+    },
+    "mu": {
+      "value": 2.0,
+      "percent": 13.3,
+      "label_id": "Kayu"
+    },
+    "huo": {
+      "value": 3.0,
+      "percent": 20.0,
+      "label_id": "Api"
+    },
+    "tu": {
+      "value": 5.0,
+      "percent": 33.3,
+      "label_id": "Tanah"
+    },
+    "total": 15.0,
+    "self_value": 3.0,
+    "self_el_hz": "—",
+    "fav_hz": "—",
+    "unfav_hz": "—",
+    "axis_max": "—",
+    "insight_id": null,
+    "_empty": false
+  },
+  "yong_shen": {
+    "elements_hz": "水",
+    "elements_id": "Air",
+    "label_id": "Penopang & Pengarah",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "ji_shen": {
+    "elements_hz": "火",
+    "elements_id": "Api",
+    "label_id": "Pelumat & Pemicu",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "format": {
+    "hz": "傷官格",
+    "pinyin": "Shang Guan Ge",
+    "label_id": "Kritikus Tajam",
+    "glyph_hz": "—"
+  },
+  "da_yun": {
+    "start_age": 10,
+    "direction_id": "backward",
+    "current_index": 2,
+    "axis_marks": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100,
+      110
+    ],
+    "cycles": [
+      {
+        "n": 1,
+        "age_start": 10,
+        "age_end": 19,
+        "stem_hz": "丙",
+        "branch_hz": "辰",
+        "ten_god_hz": "劫財",
+        "ten_god_id": "Saudara Sebanding",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 2,
+        "age_start": 20,
+        "age_end": 29,
+        "stem_hz": "乙",
+        "branch_hz": "卯",
+        "ten_god_hz": "偏印",
+        "ten_god_id": "Mentor",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 3,
+        "age_start": 30,
+        "age_end": 39,
+        "stem_hz": "甲",
+        "branch_hz": "寅",
+        "ten_god_hz": "正印",
+        "ten_god_id": "Pelajaran",
+        "element_class": "el-mu",
+        "is_current": true
+      },
+      {
+        "n": 4,
+        "age_start": 40,
+        "age_end": 49,
+        "stem_hz": "癸",
+        "branch_hz": "丑",
+        "ten_god_hz": "七殺",
+        "ten_god_id": "Pemurnian",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 5,
+        "age_start": 50,
+        "age_end": 59,
+        "stem_hz": "壬",
+        "branch_hz": "子",
+        "ten_god_hz": "正官",
+        "ten_god_id": "Otoritas",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 6,
+        "age_start": 60,
+        "age_end": 69,
+        "stem_hz": "辛",
+        "branch_hz": "亥",
+        "ten_god_hz": "偏財",
+        "ten_god_id": "Rezeki Bisnis",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 7,
+        "age_start": 70,
+        "age_end": 79,
+        "stem_hz": "庚",
+        "branch_hz": "戌",
+        "ten_god_hz": "正財",
+        "ten_god_id": "Rezeki Tetap",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 8,
+        "age_start": 80,
+        "age_end": 89,
+        "stem_hz": "己",
+        "branch_hz": "酉",
+        "ten_god_hz": "食神",
+        "ten_god_id": "Pencipta",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 9,
+        "age_start": 90,
+        "age_end": 99,
+        "stem_hz": "戊",
+        "branch_hz": "申",
+        "ten_god_hz": "傷官",
+        "ten_god_id": "Kritikus Tajam",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 10,
+        "age_start": 100,
+        "age_end": 109,
+        "stem_hz": "丁",
+        "branch_hz": "未",
+        "ten_god_hz": "比肩",
+        "ten_god_id": "Pundak Sama",
+        "element_class": "el-huo"
+      }
+    ],
+    "seasons": [
+      {
+        "el_class": "s-huo",
+        "el_hz": "火",
+        "name_id": "Tunas Belajar",
+        "age_start": 10,
+        "age_end": 29,
+        "caption_id": "masa pendidikan dan eksplorasi minat, fondasi karakter terbentuk."
+      },
+      {
+        "el_class": "s-mu",
+        "el_hz": "木",
+        "name_id": "Tumbuh Berkembang",
+        "age_start": 30,
+        "age_end": 49,
+        "is_current": true,
+        "caption_id": "fase paling produktif, karir dan keluarga dibangun bersamaan."
+      },
+      {
+        "el_class": "s-shui",
+        "el_hz": "水",
+        "name_id": "Air Menjernihkan",
+        "age_start": 50,
+        "age_end": 69,
+        "caption_id": "fase introspeksi, pemurnian visi, dan pemantapan posisi profesional."
+      },
+      {
+        "el_class": "s-jin",
+        "el_hz": "金",
+        "name_id": "Logam Memimpin",
+        "age_start": 70,
+        "age_end": 89,
+        "caption_id": "fase kewenangan dan warisan, mentor bagi generasi berikutnya."
+      },
+      {
+        "el_class": "s-tu",
+        "el_hz": "土",
+        "name_id": "Tanah Bersemayam",
+        "age_start": 90,
+        "age_end": 109,
+        "caption_id": "fase kontemplasi, hidup tenang dengan refleksi atas perjalanan."
+      }
+    ],
+    "spotlight_headline_html": "Fase 30–39: Kayu Yang Macan (<span class=\"hz\">甲寅</span>), Tumbuh dan Membangun",
+    "spotlight_tag_tone_html": "Kayu · pertumbuhan",
+    "spotlight_tag_combo_html": "Belajar Tenang",
+    "spotlight_tag_combo_pair": [
+      "甲",
+      "寅"
+    ],
+    "spotlight_bullets_html": [
+      "Energi kayu kuat menyalakan kembali day master, peluang ekspansi karir muncul lewat keahlian.",
+      "Cocok memulai proyek pribadi, membangun brand, atau memperluas jejaring profesional.",
+      "Hindari perselisihan keluarga atau pasangan, fokus pada pertumbuhan internal yang konsisten.",
+      "Disiplin keuangan dan investasi keahlian akan berbuah manis di paruh kedua dekade ini."
+    ],
+    "footer_caption_html": "Li Jia Ling di fase <span class=\"hz\">甲寅</span> (30-39), masa tumbuh kuat membangun karir dan keluarga."
+  },
+  "marriage": {
+    "self_branch_index": 4,
+    "cocok": [
+      {
+        "branch_hz": "子",
+        "id": "Tikus",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "申",
+        "id": "Monyet",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "酉",
+        "id": "Ayam",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      }
+    ],
+    "hindari": [
+      {
+        "branch_hz": "丑",
+        "id": "Kerbau",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "卯",
+        "id": "Kelinci",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "戌",
+        "id": "Anjing",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "辰",
+        "id": "Naga",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      }
+    ],
+    "_empty": false
+  },
+  "yang_zhai": {
+    "gua_hz": "震",
+    "gua_pinyin": "Zhèn",
+    "gua_label_id": "Petir",
+    "gua_direction_id": "Timur",
+    "gua_direction_abbr": "T",
+    "group_id": "Timur",
+    "sumbu_hoki_hz": "東↔西",
+    "sumbu_hoki_id": "T ↔ B",
+    "trigram_symbol": "☳"
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "文曲",
+    "shen_zhu_hz": "文昌",
+    "ming_gong_hz": "酉",
+    "shen_gong_hz": "丑",
+    "wu_xing_ju_hz": "木三局",
+    "shi_jun_hz": "巳",
+    "palaces": null,
+    "ming_gong_id": "Istana Hidup · Ayam",
+    "shen_gong_id": "Istana Tubuh · Kerbau",
+    "shi_jun_id": "Penguasa Waktu · Ular",
+    "ming_zhu_id": "Penguasa Hidup",
+    "shen_zhu_id": "Penguasa Tubuh",
+    "wu_xing_ju_id": "Aliran Kayu Tiga"
+  },
+  "shen_sha_list": [
+    {
+      "hanzi": "驛馬",
+      "pillar": null
+    },
+    {
+      "hanzi": "劫煞",
+      "pillar": null
+    },
+    {
+      "hanzi": "孤辰",
+      "pillar": null
+    },
+    {
+      "hanzi": "天醫",
+      "pillar": null
+    }
+  ],
+  "dm_pos_score": 3678.0,
+  "dm_neg_score": 5182.0,
+  "xiantian_per_stem": {
+    "jia": 1,
+    "yi": 1,
+    "bing": 1,
+    "ding": 2,
+    "wu": 5,
+    "ji": 0,
+    "geng": 2,
+    "xin": 0,
+    "ren": 2,
+    "gui": 1
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": {
+    "year": "戊乙癸",
+    "month": "庚戊丙",
+    "day": "甲壬",
+    "hour": "戊壬庚"
+  },
+  "mantra": {
+    "hz": "—",
+    "pinyin": "—"
+  },
+  "_xq_radar_poly": "          <polygon points=\"200,56 311.2,136 297.3,256 200,328 130.5,240 116.6,152\"\n            fill=\"rgba(139,26,26,0.18)\" stroke=\"#8B1A1A\" stroke-width=\"1.5\"/>\n          <circle cx=\"200\" cy=\"56\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"136\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"297.3\" cy=\"256\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"200\" cy=\"328\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"130.5\" cy=\"240\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"116.6\" cy=\"152\" r=\"3\" fill=\"#8B1A1A\"/>",
+  "_xq_radar_labels": "          <g font-family=\"Noto Serif TC,serif\">\n            <text x=\"200\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">才華</text>\n            <text x=\"200\" y=\"33\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Cái Huá · Bakat Kreatif · 9.0</text>\n\n            <text x=\"358\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">直率</text>\n            <text x=\"358\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Zhí Shuài · Lugas · 8.0</text>\n\n            <text x=\"358\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">直覺</text>\n            <text x=\"358\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Zhí Jué · Intuisi · 7.0</text>\n\n            <text x=\"200\" y=\"382\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">細膩</text>\n            <text x=\"200\" y=\"393\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Xì Nì · Kepekaan · 8.0</text>\n\n            <text x=\"42\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">耐性</text>\n            <text x=\"42\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Nài Xìng · Kesabaran · 5.0</text>\n\n            <text x=\"42\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">自信</text>\n            <text x=\"42\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Zì Xìn · Percaya Diri · 6.0</text>\n          </g>",
+  "_xq_motto": [
+    "燭",
+    "Lilin Penerang",
+    "柔光 持恒",
+    "燭照人心"
+  ],
+  "_tafsir": {
+    "kepribadian": "Li Jia Ling adalah jiwa <strong>Api Yin</strong> (<span class=\"hz\">丁火</span>), nyala lilin yang lembut namun stabil, hangat tanpa membakar. Lahir di bulan <strong>Ular</strong> (<span class=\"hz\">巳</span>) yang penuh energi api, ia memiliki cahaya batin yang konstan. Format <strong>Saluran Ekspresi</strong> (<span class=\"hz\">傷官格</span>) yang dominan dari banyaknya unsur <strong>Tanah</strong> (<span class=\"hz\">戊</span>) di pilar tahun dan jam membuat Li Jia Ling kreatif, ekspresif, dan punya naluri seni yang halus. Ia bicara apa adanya, tidak pandai berpura-pura, dan kerap terlihat lugas di mata orang. Di balik itu, ada kelembutan dan empati yang dalam, terutama untuk orang yang ia anggap layak dipercaya.",
+    "_kepribadian_struct": {
+      "paragraf": "Li Jia Ling adalah jiwa **Api Yin** ([[丁火]]), nyala lilin yang lembut namun stabil, hangat tanpa membakar. Lahir di bulan **Ular** ([[巳]]) yang penuh energi api, ia memiliki cahaya batin yang konstan. Format **Saluran Ekspresi** ([[傷官格]]) yang dominan dari banyaknya unsur **Tanah** ([[戊]]) di pilar tahun dan jam membuat Li Jia Ling kreatif, ekspresif, dan punya naluri seni yang halus. Ia bicara apa adanya, tidak pandai berpura-pura, dan kerap terlihat lugas di mata orang. Di balik itu, ada kelembutan dan empati yang dalam, terutama untuk orang yang ia anggap layak dipercaya.",
+      "radar_traits": [
+        [
+          "才華",
+          "Cái Huá",
+          "Bakat Kreatif",
+          9.0
+        ],
+        [
+          "直率",
+          "Zhí Shuài",
+          "Lugas",
+          8.0
+        ],
+        [
+          "直覺",
+          "Zhí Jué",
+          "Intuisi",
+          7.0
+        ],
+        [
+          "細膩",
+          "Xì Nì",
+          "Kepekaan",
+          8.0
+        ],
+        [
+          "耐性",
+          "Nài Xìng",
+          "Kesabaran",
+          5.0
+        ],
+        [
+          "自信",
+          "Zì Xìn",
+          "Percaya Diri",
+          6.0
+        ]
+      ],
+      "motto": [
+        "燭",
+        "Lilin Penerang",
+        "柔光 持恒",
+        "燭照人心"
+      ],
+      "power": [
+        "Kreativitas dan ekspresi yang kaya, mampu menerjemahkan ide rumit menjadi bentuk yang dapat dirasakan.",
+        "Empati halus, mudah membaca suasana hati orang sekitar tanpa perlu dijelaskan.",
+        "Loyalitas mendalam pada orang yang sudah ia percaya, hadir saat dibutuhkan.",
+        "Kepekaan estetik tinggi, cocok di bidang yang menuntut rasa, gaya, dan presisi visual."
+      ],
+      "shadow": [
+        "Kerap terlalu terbuka, lupa filter, sehingga ucapan bisa tanpa sengaja melukai.",
+        "Mudah lelah secara emosional saat dikelilingi konflik atau orang yang menguras energi.",
+        "Cenderung keras kepala saat merasa benar, sulit mengakui kesalahan di depan umum.",
+        "Banyak unsur **Tanah** ([[戊]]) menguras api, membuat Li Jia Ling rentan stagnan jika tidak punya proyek yang menyalakan kembali semangatnya."
+      ],
+      "optimum": [
+        "Pilih lingkungan kerja yang menghargai ekspresi dan ide orisinal, bukan birokrasi kaku.",
+        "Bangun rutinitas istirahat dan refleksi yang ketat agar nyala batin tidak meredup.",
+        "Cari rekan yang bisa menjadi cermin jujur, bukan yang sekadar memuji.",
+        "Salurkan energi kreatif lewat seni, tulisan, atau komunikasi yang punya panggung jelas."
+      ]
+    },
+    "family": "pasangan: - vibe: Hangat · Pendamping - headline: Pasangan ideal adalah pelindung sabar yang mampu menstabilkan gejolak. - body: Foto layar 婚配 menunjukkan jodoh terbaik Li Jia Ling adalah pasangan dari shio Tikus, Monyet, dan Ayam (大吉). Pasangan tipe pelindung sabar paling cocok meredam intensitas ekspresinya. Cinta yang tumbuh perlahan, bukan yang membara di awal, justru memberi kebahagiaan jangka panjang. Hindari pasangan dari shio Kerbau, Kelinci, Anjing, dan Naga, terutama yang dominan menekan atau gemar berdebat tajam.<br><br>anak: - vibe: Penyayang · Mengarahkan - headline: Orang tua yang penuh kasih dan ekspresif terhadap perkembangan anak. - body: Sebagai orang tua, Li Jia Ling hangat, ekspresif, dan sangat memperhatikan perkembangan emosional anak. Ia mendorong kreativitas dan kebebasan berekspresi. Tantangannya adalah menjaga konsistensi disiplin, karena perasaan kerap mengalahkan aturan. Anak tumbuh paling baik bila Li Jia Ling memberi struktur sederhana namun kokoh, lalu membiarkan mereka bereksplorasi di dalamnya.<br><br>saudara: - vibe: Mandiri · Suportif - headline: Hubungan saudara kandung tipe mandiri namun saling menjaga jarak hangat. - body: Istana Saudara menunjukkan ikatan saudara kandung Li Jia Ling tidak lebar tetapi cukup setia. Tiap saudara cenderung membangun jalannya sendiri, namun saling hadir di momen penting. Komunikasi rutin meski singkat akan menjaga ikatan tetap hidup. Hindari ekspektasi bahwa saudara harus selalu seirama dengan visi pribadi, beri ruang masing-masing untuk tumbuh.<br><br>kepemimpinan: - vibe: Inspiratif · Halus - headline: Pemimpin lewat keteladanan dan kreativitas, bukan otoritas formal. - body: Gaya kepemimpinan Li Jia Ling adalah memimpin dengan contoh dan kepekaan, bukan dengan perintah. <strong>Api Yin</strong> (<span class=\"hz\">丁火</span>) menyala konsisten, menerangi tim tanpa membakar. Ia paling efektif di peran spesialis kreatif atau koordinator proyek. Tantangannya adalah ketegasan saat harus mengambil keputusan tidak populer, dan menyaring umpan balik agar tidak terlalu reaktif terhadap kritik.",
+    "_family_struct": {
+      "pasangan": {
+        "vibe": "Hangat · Pendamping",
+        "headline": "Pasangan ideal adalah pelindung sabar yang mampu menstabilkan gejolak.",
+        "body": "Foto layar 婚配 menunjukkan jodoh terbaik Li Jia Ling adalah pasangan dari shio Tikus, Monyet, dan Ayam (大吉). Pasangan tipe pelindung sabar paling cocok meredam intensitas ekspresinya. Cinta yang tumbuh perlahan, bukan yang membara di awal, justru memberi kebahagiaan jangka panjang. Hindari pasangan dari shio Kerbau, Kelinci, Anjing, dan Naga, terutama yang dominan menekan atau gemar berdebat tajam."
+      },
+      "anak": {
+        "vibe": "Penyayang · Mengarahkan",
+        "headline": "Orang tua yang penuh kasih dan ekspresif terhadap perkembangan anak.",
+        "body": "Sebagai orang tua, Li Jia Ling hangat, ekspresif, dan sangat memperhatikan perkembangan emosional anak. Ia mendorong kreativitas dan kebebasan berekspresi. Tantangannya adalah menjaga konsistensi disiplin, karena perasaan kerap mengalahkan aturan. Anak tumbuh paling baik bila Li Jia Ling memberi struktur sederhana namun kokoh, lalu membiarkan mereka bereksplorasi di dalamnya."
+      },
+      "saudara": {
+        "vibe": "Mandiri · Suportif",
+        "headline": "Hubungan saudara kandung tipe mandiri namun saling menjaga jarak hangat.",
+        "body": "Istana Saudara menunjukkan ikatan saudara kandung Li Jia Ling tidak lebar tetapi cukup setia. Tiap saudara cenderung membangun jalannya sendiri, namun saling hadir di momen penting. Komunikasi rutin meski singkat akan menjaga ikatan tetap hidup. Hindari ekspektasi bahwa saudara harus selalu seirama dengan visi pribadi, beri ruang masing-masing untuk tumbuh."
+      },
+      "kepemimpinan": {
+        "vibe": "Inspiratif · Halus",
+        "headline": "Pemimpin lewat keteladanan dan kreativitas, bukan otoritas formal.",
+        "body": "Gaya kepemimpinan Li Jia Ling adalah memimpin dengan contoh dan kepekaan, bukan dengan perintah. **Api Yin** ([[丁火]]) menyala konsisten, menerangi tim tanpa membakar. Ia paling efektif di peran spesialis kreatif atau koordinator proyek. Tantangannya adalah ketegasan saat harus mengambil keputusan tidak populer, dan menyaring umpan balik agar tidak terlalu reaktif terhadap kritik."
+      }
+    },
+    "shensha": "Peta bintang Li Jia Ling didominasi <strong>Bintang Perpindahan</strong> (<span class=\"hz\">驛馬</span>) yang aktif, menandakan kehidupan yang penuh dinamika, perjalanan, dan perubahan tempat tinggal atau pekerjaan. <strong>Bintang Cerdas Tangkas</strong> (<span class=\"hz\">劫煞</span>) memberi kepandaian strategi di atas rata-rata, membuat Li Jia Ling lihai membaca situasi. <strong>Bintang Penyembuh</strong> (<span class=\"hz\">天醫</span>) memberi naluri menolong dan kepekaan terhadap kesehatan, cocok untuk profesi yang menyangkut perawatan atau konsultasi. Sisi bayangnya, <strong>Bintang Kesendirian</strong> (<span class=\"hz\">孤辰</span>) kerap muncul, memunculkan rasa terisolasi meski dikelilingi orang.",
+    "_shensha_struct": {
+      "dominant_star": {
+        "hanzi": "驛馬",
+        "pinyin": "Yì Mǎ",
+        "label_id": "Bintang Perpindahan",
+        "active_label": "AKTIF SEKARANG"
+      },
+      "strip": "Manfaatkan dinamika perpindahan sebagai jalan rezeki, hindari menetap pada zona nyaman terlalu lama."
+    },
+    "caifu": "Pola rezeki Li Jia Ling cenderung berkelanjutan namun butuh kerja keras. Foto layar 財帛 menunjukkan ia hemat, tidak suka berjudi, dan kurang lihai menyimpan uang dalam jumlah besar. Penghasilan datang baik dari gaji rutin maupun proyek kreatif yang dikelola sendiri. <strong>Format Saluran Ekspresi</strong> (<span class=\"hz\">傷官格</span>) mendorong rezeki lewat keterampilan teknis, seni, atau komunikasi. Strategi terbaik adalah membangun keahlian niche yang dihargai pasar, lalu mengelola arus kas dengan disiplin dan target jangka menengah.",
+    "_caifu_struct": {
+      "zheng_cai": {
+        "label": "Rezeki Tetap",
+        "percent": "55%",
+        "body": "Rezeki tetap menjadi tulang punggung utama, terutama dari posisi profesional yang menuntut keahlian khusus. Pendapatan rutin memberi rasa aman dan stabilitas yang Li Jia Ling butuhkan. Perlu disiplin menabung secara otomatis, karena pengeluaran kreatif kerap menggerus tabungan tanpa disadari. Bangun cadangan minimal enam bulan biaya hidup."
+      },
+      "pian_cai": {
+        "label": "Rezeki Tak Terduga",
+        "percent": "45%",
+        "body": "Rezeki tak terduga porsi cukup besar, datang dari proyek lepas, kolaborasi, atau peluang yang dibawa oleh teman dan jejaring. Hindari spekulasi murni atau perjudian, karena bukan jalur yang sesuai. Fokus pada peluang yang masih beririsan dengan keahlian utama agar hasilnya konsisten dan tidak menguras energi."
+      },
+      "rules": [
+        {
+          "title": "Investasi pada keahlian, bukan tren",
+          "context": "Bangun skill langka yang dibayar mahal, hindari ikut tren spekulatif tanpa dasar.",
+          "tone": "tip"
+        },
+        {
+          "title": "Otomatiskan tabungan tiap bulan",
+          "context": "Sisihkan minimal 20% pendapatan ke rekening terpisah sebelum ada yang dipakai.",
+          "tone": "tip"
+        },
+        {
+          "title": "Jangan campur emosi dan keuangan",
+          "context": "Hindari meminjamkan uang besar kepada saudara atau pasangan tanpa perjanjian jelas.",
+          "tone": "warn"
+        },
+        {
+          "title": "Audit pengeluaran kreatif",
+          "context": "Pengeluaran untuk hobi atau koleksi mudah membengkak tanpa kontrol yang ketat.",
+          "tone": "warn"
+        }
+      ]
+    },
+    "career": "<p>Karir Li Jia Ling paling bersinar di bidang yang menggabungkan keterampilan teknis, ekspresi kreatif, dan kepekaan estetik. Ia bukan tipe pekerja kantoran yang patuh struktur kaku, melainkan profesional yang butuh ruang berekspresi. Profesi yang menuntut presisi, gaya, dan komunikasi lugas adalah arena terbaiknya.</p><ul><li><strong>Akuntansi &amp; Keuangan (<span class=\"hz\">會計</span> / <span class=\"hz\">金融界</span>)</strong> (unsur 金), Bidang yang menuntut presisi angka dan strategi finansial.</li><li><strong>Hukum &amp; Pengacara (<span class=\"hz\">律師</span>)</strong> (unsur 金), Profesi yang mengandalkan logika tajam dan disiplin argumentasi.</li><li><strong>Kesehatan &amp; Dokter (<span class=\"hz\">醫師</span>)</strong> (unsur 水), Naluri menolong dan kepekaan terhadap kondisi orang lain.</li><li><strong>Musik &amp; Seni Pertunjukan (<span class=\"hz\">音樂家</span> / <span class=\"hz\">歌影星</span>)</strong> (unsur 木), Ekspresi kreatif dan kepekaan estetik adalah saluran energi utama.</li><li><strong>Sains &amp; Teknologi (<span class=\"hz\">科學家</span> / <span class=\"hz\">機械</span>)</strong> (unsur 金), Pemikiran sistematis dan ketekunan teknis cocok untuk bidang ini.</li></ul>",
+    "_career_struct": {
+      "tags": {
+        "fav_1": [
+          "木",
+          "\"TUMBUH\""
+        ],
+        "fav_2": [
+          "水",
+          "\"ALIRAN\""
+        ],
+        "unfav_1": [
+          "土",
+          "\"STAGNAN\""
+        ],
+        "unfav_2": [
+          "金",
+          "\"KERAS\""
+        ]
+      },
+      "industri": [
+        {
+          "nama": "Akuntansi & Keuangan ([[會計]] / [[金融界]])",
+          "unsur": "金",
+          "alasan": "Bidang yang menuntut presisi angka dan strategi finansial."
+        },
+        {
+          "nama": "Hukum & Pengacara ([[律師]])",
+          "unsur": "金",
+          "alasan": "Profesi yang mengandalkan logika tajam dan disiplin argumentasi."
+        },
+        {
+          "nama": "Kesehatan & Dokter ([[醫師]])",
+          "unsur": "水",
+          "alasan": "Naluri menolong dan kepekaan terhadap kondisi orang lain."
+        },
+        {
+          "nama": "Musik & Seni Pertunjukan ([[音樂家]] / [[歌影星]])",
+          "unsur": "木",
+          "alasan": "Ekspresi kreatif dan kepekaan estetik adalah saluran energi utama."
+        },
+        {
+          "nama": "Sains & Teknologi ([[科學家]] / [[機械]])",
+          "unsur": "金",
+          "alasan": "Pemikiran sistematis dan ketekunan teknis cocok untuk bidang ini."
+        }
+      ]
+    },
+    "daymaster": "Li Jia Ling adalah <strong>Api Yin</strong> (<span class=\"hz\">丁火</span>) yang lemah, dengan <strong>Tanah</strong> (<span class=\"hz\">土</span>) dominan (5 unit) menguras nyala. <strong>Air</strong> (<span class=\"hz\">水</span>) berperan sebagai <strong>用神 utama</strong> untuk menetralkan tanah berlebih, sementara <strong>Kayu</strong> (<span class=\"hz\">木</span>) sebagai <strong>喜用神 pendukung</strong> yang memberi makanan bagi api batin.",
+    "_jishen_body": "Hindari penambahan <strong>Api</strong> (<span class=\"hz\">火</span>) sebagai <strong>忌神</strong> dan <strong>Logam</strong> (<span class=\"hz\">金</span>) sebagai <strong>仇神</strong> karena akan memperparah ketidakseimbangan. Lingkungan terlalu panas (tekanan kompetitif tinggi) atau terlalu dingin/keras (struktur kaku, kritik tajam) menguras energi inti.",
+    "yangzhai": "Trigram pribadi Li Jia Ling adalah <strong>Guntur</strong> (<span class=\"hz\">震</span>), yang melambangkan inisiatif, gerak, dan kebangkitan. Foto layar 陽宅 merekomendasikan rumah duduk Utara menghadap Selatan, atau duduk Selatan menghadap Utara untuk hoki besar. Pintu utama ke arah Selatan, Utara, atau Tenggara membawa keberuntungan. Tata letak terbaik menempatkan kompor di sektor Barat agar memantik energi rezeki. Hindari kamar tidur di sektor Barat Daya yang melambangkan stagnasi.",
+    "_yangzhai_struct": {
+      "zones": [
+        {
+          "label": "Pintu Utama",
+          "headline": "✓ Optimal",
+          "pills": "南 S",
+          "note": "Pintu utama menghadap Selatan menarik energi api yang menyalakan semangat harian."
+        },
+        {
+          "label": "Kamar Tidur",
+          "headline": "✓ Tenang",
+          "pills": "東 T",
+          "note": "Kamar di sektor Timur memberi kesegaran kayu, pas untuk pemulihan emosional."
+        },
+        {
+          "label": "Dapur / Kompor",
+          "headline": "✓ Aktif",
+          "pills": "西 B",
+          "note": "Kompor menghadap Timur menyalakan unsur kayu yang mendukung api batin."
+        },
+        {
+          "label": "Kamar Mandi",
+          "headline": "⚠ Hindari",
+          "pills": "北 U",
+          "note": "Hindari kamar mandi di sektor Utara agar energi air tidak menekan day master."
+        },
+        {
+          "label": "Ruang Kerja",
+          "headline": "✓ Produktif",
+          "pills": "東南 TG",
+          "note": "Ruang kerja di Tenggara mendukung kreativitas dan komunikasi profesional."
+        },
+        {
+          "label": "Altar / Sembah",
+          "headline": "✓ Khusyuk",
+          "pills": "東北 TL",
+          "note": "Altar di Timur Laut atau Barat Laut memberi ketenangan spiritual harian."
+        }
+      ]
+    },
+    "dayun_spotlight": "<div class=\"sp-headline\">Fase 30–39: Kayu Yang Macan (<span class=\"hz\">甲寅</span>), Tumbuh dan Membangun</div><ul class='sp-bullets'><li>Energi kayu kuat menyalakan kembali day master, peluang ekspansi karir muncul lewat keahlian.</li><li>Cocok memulai proyek pribadi, membangun brand, atau memperluas jejaring profesional.</li><li>Hindari perselisihan keluarga atau pasangan, fokus pada pertumbuhan internal yang konsisten.</li><li>Disiplin keuangan dan investasi keahlian akan berbuah manis di paruh kedua dekade ini.</li></ul>",
+    "dayun_seasons": "<ol class='dy-seasons'><li>umur 10-29: Tunas Belajar — masa pendidikan dan eksplorasi minat, fondasi karakter terbentuk.</li><li>umur 30-49: Tumbuh Berkembang — fase paling produktif, karir dan keluarga dibangun bersamaan.</li><li>umur 50-69: Air Menjernihkan — fase introspeksi, pemurnian visi, dan pemantapan posisi profesional.</li><li>umur 70-89: Logam Memimpin — fase kewenangan dan warisan, mentor bagi generasi berikutnya.</li><li>umur 90-100: Tanah Bersemayam — fase kontemplasi, hidup tenang dengan refleksi atas perjalanan.</li></ol>",
+    "dayun_footer": "Li Jia Ling di fase <span class=\"hz\">甲寅</span> (30-39), masa tumbuh kuat membangun karir dan keluarga.",
+    "palace1": "<p>ming_gong: - star: 武曲 - insight: Istana Hidup Li Jia Ling dihuni <strong>Bintang Bendahara</strong> (<span class=\"hz\">武曲</span>) di palace Ayam, memberi karakter tegas, mandiri, dan sangat fokus pada tujuan. Kombinasi dengan <strong>Bintang Gudang</strong> (<span class=\"hz\">天府</span>) menambah daya kelola sumber daya yang baik. Ia mampu bekerja keras tanpa banyak mengeluh dan punya prinsip kuat. Tantangan utamanya adalah belajar lebih luwes, karena ketegasan kerap dibaca sebagai kaku oleh orang sekitar. - action: Bangun fleksibilitas komunikasi, jangan korbankan prinsip namun pilih kata yang tepat.</p><p>xiongdi: - star: 太陽 - insight: Istana Saudara dihuni <strong>Bintang Matahari</strong> (<span class=\"hz\">太陽</span>) yang terang, menandakan saudara berkarakter ekspansif dan terbuka. Hubungan dengan saudara cenderung baik tetapi tiap pihak punya jalan sendiri. <strong>Bintang Kemiri</strong> (<span class=\"hz\">巨門</span>) di sekitarnya memunculkan potensi salah paham lewat kata. Komunikasi rutin dan jujur menjadi kunci, hindari menyimpan kesalahpahaman terlalu lama. - action: Jadwalkan pertemuan rutin dengan saudara, hindari komunikasi cepat lewat pesan singkat saja.</p><p>fuqi: - star: 紫微 - insight: Istana Pasangan dihuni <strong>Bintang Kaisar</strong> (<span class=\"hz\">紫微</span>) yang mulia, menandakan pasangan berkarisma, dewasa, dan punya wibawa alami. Pasangan ideal Li Jia Ling adalah figur yang stabil secara emosional dan punya pencapaian sendiri. Foto layar 夫妻 menyebut cinta tumbuh perlahan dan natural, bukan dari ketertarikan yang membara. Pernikahan akan diberkahi orang sekitar yang turut bersuka cita. - action: Pilih pasangan yang sudah matang secara karir dan emosi, bukan yang masih mencari arah hidup.</p><p>zinu: - star: 太陰 - insight: Istana Anak dihuni <strong>Bintang Bulan</strong> (<span class=\"hz\">太陰</span>) yang lembut, menandakan anak yang sensitif, kreatif, dan berorientasi pada hubungan. Ikatan ibu-anak sangat dalam dan emosional. Anak tumbuh paling baik di rumah yang hangat dan ekspresif. Tantangannya adalah menjaga keseimbangan antara memanjakan dan mendisiplinkan, karena anak rentan menyerap suasana hati orang tua secara langsung. - action: Jaga konsistensi suasana hati di rumah, anak menyerap energi orang tua sangat cepat.</p>",
+    "_palace1_struct": {
+      "ming_gong": {
+        "star": "武曲",
+        "insight": "Istana Hidup Li Jia Ling dihuni **Bintang Bendahara** ([[武曲]]) di palace Ayam, memberi karakter tegas, mandiri, dan sangat fokus pada tujuan. Kombinasi dengan **Bintang Gudang** ([[天府]]) menambah daya kelola sumber daya yang baik. Ia mampu bekerja keras tanpa banyak mengeluh dan punya prinsip kuat. Tantangan utamanya adalah belajar lebih luwes, karena ketegasan kerap dibaca sebagai kaku oleh orang sekitar.",
+        "action": "Bangun fleksibilitas komunikasi, jangan korbankan prinsip namun pilih kata yang tepat."
+      },
+      "xiongdi": {
+        "star": "太陽",
+        "insight": "Istana Saudara dihuni **Bintang Matahari** ([[太陽]]) yang terang, menandakan saudara berkarakter ekspansif dan terbuka. Hubungan dengan saudara cenderung baik tetapi tiap pihak punya jalan sendiri. **Bintang Kemiri** ([[巨門]]) di sekitarnya memunculkan potensi salah paham lewat kata. Komunikasi rutin dan jujur menjadi kunci, hindari menyimpan kesalahpahaman terlalu lama.",
+        "action": "Jadwalkan pertemuan rutin dengan saudara, hindari komunikasi cepat lewat pesan singkat saja."
+      },
+      "fuqi": {
+        "star": "紫微",
+        "insight": "Istana Pasangan dihuni **Bintang Kaisar** ([[紫微]]) yang mulia, menandakan pasangan berkarisma, dewasa, dan punya wibawa alami. Pasangan ideal Li Jia Ling adalah figur yang stabil secara emosional dan punya pencapaian sendiri. Foto layar 夫妻 menyebut cinta tumbuh perlahan dan natural, bukan dari ketertarikan yang membara. Pernikahan akan diberkahi orang sekitar yang turut bersuka cita.",
+        "action": "Pilih pasangan yang sudah matang secara karir dan emosi, bukan yang masih mencari arah hidup."
+      },
+      "zinu": {
+        "star": "太陰",
+        "insight": "Istana Anak dihuni **Bintang Bulan** ([[太陰]]) yang lembut, menandakan anak yang sensitif, kreatif, dan berorientasi pada hubungan. Ikatan ibu-anak sangat dalam dan emosional. Anak tumbuh paling baik di rumah yang hangat dan ekspresif. Tantangannya adalah menjaga keseimbangan antara memanjakan dan mendisiplinkan, karena anak rentan menyerap suasana hati orang tua secara langsung.",
+        "action": "Jaga konsistensi suasana hati di rumah, anak menyerap energi orang tua sangat cepat."
+      }
+    },
+    "palace2": "<p>caibo: - star: 天府 - insight: Istana Rezeki dihuni <strong>Bintang Gudang</strong> (<span class=\"hz\">天府</span>) yang kokoh, menandakan rezeki stabil dan kemampuan menyimpan kekayaan. Foto 財帛 menyebut Li Jia Ling hemat, tidak suka berjudi, dan tidak akan kaya dari spekulasi. Kombinasi dengan <strong>Bintang Pintu Besar</strong> (<span class=\"hz\">巨門</span>) menyarankan rezeki dari hasil kerja keras pribadi, bukan jalur cepat. Strategi terbaik adalah membangun aset jangka panjang yang produktif. - action: Diversifikasi pendapatan ke aset produktif, hindari instrumen spekulatif tanpa pemahaman.</p><p>jie_e: - star: 廉貞 - insight: Istana Kesehatan dihuni <strong>Bintang Reformasi</strong> (<span class=\"hz\">廉貞</span>), menandakan kerentanan pada sistem pencernaan, kulit, dan sirkulasi. Foto 疾厄 menyebutkan sejak kecil rentan sakit, dewasa rentan masalah pencernaan dan jantung. Mata juga area yang perlu diperhatikan. Pola hidup teratur, makan tepat waktu, dan tidur cukup menjadi sangat penting di fase usia 30-an dan setelahnya. - action: Periksa rutin tahunan untuk pencernaan, mata, dan jantung, jangan tunda gejala kecil.</p><p>qianyi: - star: 天機 - insight: Istana Perpindahan dihuni <strong>Bintang Strategi</strong> (<span class=\"hz\">天機</span>), sangat selaras dengan <strong>Bintang Perpindahan</strong> (<span class=\"hz\">驛馬</span>) di shen sha. Hidup Li Jia Ling diwarnai banyak perpindahan, perjalanan, dan perubahan lingkungan. Foto 遷移 menyarankan pertumbuhan terbaik datang lewat menjelajah, belajar di luar zona nyaman, dan menjalin relasi lintas wilayah. Hindari menetap terlalu lama di satu tempat tanpa perkembangan. - action: Rancang rotasi proyek atau perjalanan kerja minimal sekali per tahun untuk menjaga energi.</p><p>puyi: - star: 七殺 - insight: Istana Sahabat dihuni <strong>Bintang Pedang</strong> (<span class=\"hz\">七殺</span>), menandakan teman dekat berkarakter kuat, tegas, dan kompetitif. Foto 僕役 menyebut Li Jia Ling memiliki banyak teman muda yang bisa diajak berbisnis. Setelah usia 40-an akan ada bawahan yang loyal dan setia. Hindari mendekatkan diri pada teman dari shio Macan, Kuda, dan Anjing yang kerap menimbulkan gesekan. - action: Pilih lingkaran teman dekat berdasar nilai, bukan sekadar kemudahan akses pertemanan.</p>",
+    "_palace2_struct": {
+      "caibo": {
+        "star": "天府",
+        "insight": "Istana Rezeki dihuni **Bintang Gudang** ([[天府]]) yang kokoh, menandakan rezeki stabil dan kemampuan menyimpan kekayaan. Foto 財帛 menyebut Li Jia Ling hemat, tidak suka berjudi, dan tidak akan kaya dari spekulasi. Kombinasi dengan **Bintang Pintu Besar** ([[巨門]]) menyarankan rezeki dari hasil kerja keras pribadi, bukan jalur cepat. Strategi terbaik adalah membangun aset jangka panjang yang produktif.",
+        "action": "Diversifikasi pendapatan ke aset produktif, hindari instrumen spekulatif tanpa pemahaman."
+      },
+      "jie_e": {
+        "star": "廉貞",
+        "insight": "Istana Kesehatan dihuni **Bintang Reformasi** ([[廉貞]]), menandakan kerentanan pada sistem pencernaan, kulit, dan sirkulasi. Foto 疾厄 menyebutkan sejak kecil rentan sakit, dewasa rentan masalah pencernaan dan jantung. Mata juga area yang perlu diperhatikan. Pola hidup teratur, makan tepat waktu, dan tidur cukup menjadi sangat penting di fase usia 30-an dan setelahnya.",
+        "action": "Periksa rutin tahunan untuk pencernaan, mata, dan jantung, jangan tunda gejala kecil."
+      },
+      "qianyi": {
+        "star": "天機",
+        "insight": "Istana Perpindahan dihuni **Bintang Strategi** ([[天機]]), sangat selaras dengan **Bintang Perpindahan** ([[驛馬]]) di shen sha. Hidup Li Jia Ling diwarnai banyak perpindahan, perjalanan, dan perubahan lingkungan. Foto 遷移 menyarankan pertumbuhan terbaik datang lewat menjelajah, belajar di luar zona nyaman, dan menjalin relasi lintas wilayah. Hindari menetap terlalu lama di satu tempat tanpa perkembangan.",
+        "action": "Rancang rotasi proyek atau perjalanan kerja minimal sekali per tahun untuk menjaga energi."
+      },
+      "puyi": {
+        "star": "七殺",
+        "insight": "Istana Sahabat dihuni **Bintang Pedang** ([[七殺]]), menandakan teman dekat berkarakter kuat, tegas, dan kompetitif. Foto 僕役 menyebut Li Jia Ling memiliki banyak teman muda yang bisa diajak berbisnis. Setelah usia 40-an akan ada bawahan yang loyal dan setia. Hindari mendekatkan diri pada teman dari shio Macan, Kuda, dan Anjing yang kerap menimbulkan gesekan.",
+        "action": "Pilih lingkaran teman dekat berdasar nilai, bukan sekadar kemudahan akses pertemanan."
+      }
+    },
+    "palace3": "<p>guanlu: - star: 武曲 - insight: Istana Karir dihuni <strong>Bintang Bendahara</strong> (<span class=\"hz\">武曲</span>) berdampingan dengan <strong>Bintang Gudang</strong> (<span class=\"hz\">天府</span>). Foto 官祿 menyebut Li Jia Ling cocok di bidang yang berkaitan dengan logam, mesin, atau pekerjaan teknis. Cocok menjadi profesional, pengusaha mandiri, atau di bidang akuntansi dan keuangan. Tantangan: hati-hati dengan masalah yang muncul akibat keterlibatan keuangan dengan rekan kerja. - action: Pertahankan transparansi keuangan di setiap kerja sama profesional, dokumentasikan dengan baik.</p><p>tianzhai: - star: 太陰 - insight: Istana Properti dihuni <strong>Bintang Bulan</strong> (<span class=\"hz\">太陰</span>), menandakan rezeki properti yang lembut tetapi konsisten. Foto 田宅 menyebut Li Jia Ling sangat menyukai properti dan punya rezeki di bidang ini, terutama saat berada di shio yang baik. Properti dekat air (sungai, danau) atau dengan elemen kayu (taman, hutan kecil) memberi keberuntungan ekstra. Hindari membeli secara impulsif tanpa riset. - action: Investasi properti jangka panjang dengan riset matang, prioritas lokasi dekat air atau hijau.</p><p>fude: - star: 太陰 - insight: Istana Berkah dihuni <strong>Bintang Bulan</strong> (<span class=\"hz\">太陰</span>) yang membuat Li Jia Ling cenderung peka, romantis, dan introspektif. Foto 福德 menyebut watak rentan mengalami kelelahan batin tanpa alasan jelas, namun juga punya kapasitas menikmati hidup yang besar bila stabil. Penting untuk membangun rutinitas spiritual atau hobi yang menenangkan. Hindari konsumsi konten emosional berlebih yang menguras energi. - action: Bangun rutinitas meditasi atau hobi tenang harian untuk menjaga keseimbangan batin.</p><p>fumu: - star: 天府 - insight: Istana Orang Tua dihuni <strong>Bintang Gudang</strong> (<span class=\"hz\">天府</span>), menandakan orang tua yang stabil dan ekonomi keluarga relatif berkecukupan. Foto 父母 menyebut hubungan dengan orang tua bisa diwarnai gesekan kepribadian sejak kecil, tetapi pada akhirnya hangat dan saling memahami. Komunikasi yang lebih terbuka di usia dewasa akan menyembuhkan luka kecil masa lalu. Orang tua adalah pilar finansial dan emosional yang penting. - action: Inisiatif komunikasi terbuka dengan orang tua, jangan tunda perdamaian kecil yang tertunda.</p>",
+    "_palace3_struct": {
+      "guanlu": {
+        "star": "武曲",
+        "insight": "Istana Karir dihuni **Bintang Bendahara** ([[武曲]]) berdampingan dengan **Bintang Gudang** ([[天府]]). Foto 官祿 menyebut Li Jia Ling cocok di bidang yang berkaitan dengan logam, mesin, atau pekerjaan teknis. Cocok menjadi profesional, pengusaha mandiri, atau di bidang akuntansi dan keuangan. Tantangan: hati-hati dengan masalah yang muncul akibat keterlibatan keuangan dengan rekan kerja.",
+        "action": "Pertahankan transparansi keuangan di setiap kerja sama profesional, dokumentasikan dengan baik."
+      },
+      "tianzhai": {
+        "star": "太陰",
+        "insight": "Istana Properti dihuni **Bintang Bulan** ([[太陰]]), menandakan rezeki properti yang lembut tetapi konsisten. Foto 田宅 menyebut Li Jia Ling sangat menyukai properti dan punya rezeki di bidang ini, terutama saat berada di shio yang baik. Properti dekat air (sungai, danau) atau dengan elemen kayu (taman, hutan kecil) memberi keberuntungan ekstra. Hindari membeli secara impulsif tanpa riset.",
+        "action": "Investasi properti jangka panjang dengan riset matang, prioritas lokasi dekat air atau hijau."
+      },
+      "fude": {
+        "star": "太陰",
+        "insight": "Istana Berkah dihuni **Bintang Bulan** ([[太陰]]) yang membuat Li Jia Ling cenderung peka, romantis, dan introspektif. Foto 福德 menyebut watak rentan mengalami kelelahan batin tanpa alasan jelas, namun juga punya kapasitas menikmati hidup yang besar bila stabil. Penting untuk membangun rutinitas spiritual atau hobi yang menenangkan. Hindari konsumsi konten emosional berlebih yang menguras energi.",
+        "action": "Bangun rutinitas meditasi atau hobi tenang harian untuk menjaga keseimbangan batin."
+      },
+      "fumu": {
+        "star": "天府",
+        "insight": "Istana Orang Tua dihuni **Bintang Gudang** ([[天府]]), menandakan orang tua yang stabil dan ekonomi keluarga relatif berkecukupan. Foto 父母 menyebut hubungan dengan orang tua bisa diwarnai gesekan kepribadian sejak kecil, tetapi pada akhirnya hangat dan saling memahami. Komunikasi yang lebih terbuka di usia dewasa akan menyembuhkan luka kecil masa lalu. Orang tua adalah pilar finansial dan emosional yang penting.",
+        "action": "Inisiatif komunikasi terbuka dengan orang tua, jangan tunda perdamaian kecil yang tertunda."
+      }
+    },
+    "kesimpulan": "Li Jia Ling adalah lilin yang menyala konsisten, hangat dan jernih, hadir untuk menerangi tanpa pernah membakar siapa pun di sekitarnya.",
+    "_kesimpulan_struct": {
+      "quote": "Li Jia Ling adalah lilin yang menyala konsisten, hangat dan jernih, hadir untuk menerangi tanpa pernah membakar siapa pun di sekitarnya.",
+      "stats": {
+        "format_desc": "Format Saluran Ekspresi memberi kreativitas tinggi dan komunikasi lugas tanpa filter berlebih.",
+        "yong_desc": "Aktifkan unsur Air sebagai 用神 utama (warna biru, kolam, dekat sungai); Kayu sebagai 喜用神 pendukung lewat lingkungan hijau dan tumbuhan hidup.",
+        "dayun_desc": "Fase Kayu Macan menyalakan ekspansi karir dan pembangunan jangka panjang yang kokoh.",
+        "umur_desc": "Dekade tiga puluhan adalah masa konsolidasi karir, keluarga, dan identitas profesional matang.",
+        "kompat_desc": "Cocok dengan shio Tikus, Monyet, dan Ayam (大吉); hindari Kerbau, Kelinci, Anjing, dan Naga."
+      },
+      "life_map": {
+        "lalu": "Fase pendidikan dan pencarian arah, fondasi karakter dibangun lewat keluarga dan pengalaman muda.",
+        "sekarang": "Fase Kayu Macan tiga puluhan, energi tumbuh kuat menggerakkan ekspansi karir dan stabilitas keluarga.",
+        "berikutnya": "Fase Air menjernihkan empat puluhan ke atas, masa pemurnian visi dan pemantapan posisi profesional."
+      }
+    },
+    "sintesis": "Li Jia Ling adalah Api Yin yang lembut namun konsisten, kreatif tanpa pamer, ekspresif namun setia pada nilai-nilai inti yang ia pegang.",
+    "_sintesis_struct": {
+      "opening": "Li Jia Ling adalah Api Yin yang lembut namun konsisten, kreatif tanpa pamer, ekspresif namun setia pada nilai-nilai inti yang ia pegang.",
+      "trio": {
+        "kekuatan": {
+          "hanzi": "才華",
+          "pinyin": "Cái Huá",
+          "arti": "\"Bakat Kreatif Mendalam\"",
+          "body": "Li Jia Ling memiliki bakat ekspresif dan estetik yang halus, mampu menerjemahkan ide rumit menjadi karya yang menggerakkan rasa. Format Saluran Ekspresi memberi keunikan suara yang tidak mudah ditiru. Kekuatan ini paling bercahaya ketika ia diberi ruang berkarya tanpa intervensi struktur kaku, dan rekan kerja yang menghargai proses kreatif."
+        },
+        "tantangan": {
+          "hanzi": "過直",
+          "pinyin": "Guò Zhí",
+          "arti": "\"Terlalu Lugas\"",
+          "body": "Tantangan utama Li Jia Ling adalah kelugasan yang kadang berubah menjadi luka bagi orang lain. Format Saluran Ekspresi membuat kata mengalir cepat tanpa filter. Belajar berhenti sejenak sebelum bicara, dan menyaring umpan balik dengan empati akan melindungi hubungan profesional dan pribadi yang penting."
+        },
+        "tindakan": {
+          "hanzi": "立業",
+          "pinyin": "Lì Yè",
+          "arti": "\"Membangun Karya\"",
+          "body": "Panggung optimal Li Jia Ling adalah membangun karya yang berakar pada keahlian unik sambil mempertahankan jejaring yang luas dan tulus. Fokus pada kualitas, bukan kuantitas. Manfaatkan fase Kayu Macan untuk memulai proyek pribadi besar yang akan menjadi warisan profesional di paruh kedua kehidupan."
+        }
+      },
+      "actions": [
+        {
+          "title": "\"Bangun proyek kreatif pribadi\"",
+          "context": "\"Mulai satu proyek yang sepenuhnya milik sendiri di dekade ini, jadikan portofolio jangka panjang.\""
+        },
+        {
+          "title": "\"Jaga kesehatan pencernaan dan mata\"",
+          "context": "\"Periksa rutin tahunan, hindari pola makan tidak teratur dan paparan layar berlebih.\""
+        },
+        {
+          "title": "\"Disiplin keuangan otomatis\"",
+          "context": "\"Sisihkan minimal 20% pendapatan ke aset produktif sebelum pengeluaran kreatif.\""
+        },
+        {
+          "title": "\"Komunikasi terbuka dengan orang tua\"",
+          "context": "\"Inisiatif menyembuhkan gesekan kecil masa lalu lewat percakapan jujur dan hangat.\""
+        },
+        {
+          "title": "\"Bangun rutinitas tenang harian\"",
+          "context": "\"Meditasi singkat atau hobi tenang menjaga nyala batin tetap konsisten dan jernih.\""
+        }
+      ]
+    },
+    "_dmcard": "\n        <div class=\"dmc-eyebrow\">本 命 · Penguasa Hari</div>\n        <div class=\"dmc-stem\">丁</div>\n        <div class=\"dmc-element\">火 · Api Yin</div>\n        <div class=\"dmc-pinyin\">Dīng 火, \"Api Lilin\"</div>\n        <div class=\"dmc-traits\">\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span><strong>Halus</strong>, intens, terkonsentrasi</span></div>\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span>Pemurnian, memberi terang yang spesifik</span></div>\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span>Mekar dengan kayu (umpan) + logam (cetakan)</span></div>\n        </div>\n        <div class=\"dmc-strength\">Status: <span class=\"val\">LEMAH</span> · 弱</div>\n      ",
+    "fam_pasangan_vibe": "Hangat · Pendamping",
+    "fam_pasangan_headline": "Pasangan ideal adalah pelindung sabar yang mampu menstabilkan gejolak.",
+    "fam_pasangan_body": "Foto layar 婚配 menunjukkan jodoh terbaik Li Jia Ling adalah pasangan dari shio Tikus, Monyet, dan Ayam (大吉). Pasangan tipe pelindung sabar paling cocok meredam intensitas ekspresinya. Cinta yang tumbuh perlahan, bukan yang membara di awal, justru memberi kebahagiaan jangka panjang. Hindari pasangan dari shio Kerbau, Kelinci, Anjing, dan Naga, terutama yang dominan menekan atau gemar berdebat tajam.",
+    "fam_anak_vibe": "Penyayang · Mengarahkan",
+    "fam_anak_headline": "Orang tua yang penuh kasih dan ekspresif terhadap perkembangan anak.",
+    "fam_anak_body": "Sebagai orang tua, Li Jia Ling hangat, ekspresif, dan sangat memperhatikan perkembangan emosional anak. Ia mendorong kreativitas dan kebebasan berekspresi. Tantangannya adalah menjaga konsistensi disiplin, karena perasaan kerap mengalahkan aturan. Anak tumbuh paling baik bila Li Jia Ling memberi struktur sederhana namun kokoh, lalu membiarkan mereka bereksplorasi di dalamnya.",
+    "fam_saudara_vibe": "Mandiri · Suportif",
+    "fam_saudara_headline": "Hubungan saudara kandung tipe mandiri namun saling menjaga jarak hangat.",
+    "fam_saudara_body": "Istana Saudara menunjukkan ikatan saudara kandung Li Jia Ling tidak lebar tetapi cukup setia. Tiap saudara cenderung membangun jalannya sendiri, namun saling hadir di momen penting. Komunikasi rutin meski singkat akan menjaga ikatan tetap hidup. Hindari ekspektasi bahwa saudara harus selalu seirama dengan visi pribadi, beri ruang masing-masing untuk tumbuh.",
+    "fam_kepemimpinan_vibe": "Inspiratif · Halus",
+    "fam_kepemimpinan_headline": "Pemimpin lewat keteladanan dan kreativitas, bukan otoritas formal.",
+    "fam_kepemimpinan_body": "Gaya kepemimpinan Li Jia Ling adalah memimpin dengan contoh dan kepekaan, bukan dengan perintah. <strong>Api Yin</strong> (<span class=\"hz\">丁火</span>) menyala konsisten, menerangi tim tanpa membakar. Ia paling efektif di peran spesialis kreatif atau koordinator proyek. Tantangannya adalah ketegasan saat harus mengambil keputusan tidak populer, dan menyaring umpan balik agar tidak terlalu reaktif terhadap kritik.",
+    "caifu_zheng_gauge": "<div class=\"cfm-gauge-fill\" style=\"width:55%\">55%</div>",
+    "caifu_zheng_body": "Rezeki tetap menjadi tulang punggung utama, terutama dari posisi profesional yang menuntut keahlian khusus. Pendapatan rutin memberi rasa aman dan stabilitas yang Li Jia Ling butuhkan. Perlu disiplin menabung secara otomatis, karena pengeluaran kreatif kerap menggerus tabungan tanpa disadari. Bangun cadangan minimal enam bulan biaya hidup.",
+    "caifu_pian_gauge": "<div class=\"cfm-gauge-fill\" style=\"width:45%\">45%</div>",
+    "caifu_pian_body": "Rezeki tak terduga porsi cukup besar, datang dari proyek lepas, kolaborasi, atau peluang yang dibawa oleh teman dan jejaring. Hindari spekulasi murni atau perjudian, karena bukan jalur yang sesuai. Fokus pada peluang yang masih beririsan dengan keahlian utama agar hasilnya konsisten dan tidak menguras energi.",
+    "_caifu_rules": "\n        <div class=\"cf-rule tip\">\n          <div class=\"cfr-num\">1</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Investasi pada keahlian, bukan tren</div>\n            <div class=\"cfr-context\">Bangun skill langka yang dibayar mahal, hindari ikut tren spekulatif tanpa dasar.</div>\n          </div>\n        </div>\n        <div class=\"cf-rule tip\">\n          <div class=\"cfr-num\">2</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Otomatiskan tabungan tiap bulan</div>\n            <div class=\"cfr-context\">Sisihkan minimal 20% pendapatan ke rekening terpisah sebelum ada yang dipakai.</div>\n          </div>\n        </div>\n        <div class=\"cf-rule warn\">\n          <div class=\"cfr-num\">3</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Jangan campur emosi dan keuangan</div>\n            <div class=\"cfr-context\">Hindari meminjamkan uang besar kepada saudara atau pasangan tanpa perjanjian jelas.</div>\n          </div>\n        </div>\n        <div class=\"cf-rule warn\">\n          <div class=\"cfr-num\">4</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Audit pengeluaran kreatif</div>\n            <div class=\"cfr-context\">Pengeluaran untuk hobi atau koleksi mudah membengkak tanpa kontrol yang ketat.</div>\n          </div>\n        </div>\n",
+    "_p1_ming_gong": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Diri</span><span class=\"pn-meta\">Mìng Gōng<span class=\"hz\">命宮</span></span></div></div><div class=\"pal-body\">Istana Hidup Li Jia Ling dihuni <strong>Bintang Bendahara</strong> (<span class=\"hz\">武曲</span>) di palace Ayam, memberi karakter tegas, mandiri, dan sangat fokus pada tujuan. Kombinasi dengan <strong>Bintang Gudang</strong> (<span class=\"hz\">天府</span>) menambah daya kelola sumber daya yang baik. Ia mampu bekerja keras tanpa banyak mengeluh dan punya prinsip kuat. Tantangan utamanya adalah belajar lebih luwes, karena ketegasan kerap dibaca sebagai kaku oleh orang sekitar.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun fleksibilitas komunikasi, jangan korbankan prinsip namun pilih kata yang tepat.</span></div></div>",
+    "_p1_xiongdi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Saudara</span><span class=\"pn-meta\">Xiōng Dì<span class=\"hz\">兄弟</span></span></div></div><div class=\"pal-body\">Istana Saudara dihuni <strong>Bintang Matahari</strong> (<span class=\"hz\">太陽</span>) yang terang, menandakan saudara berkarakter ekspansif dan terbuka. Hubungan dengan saudara cenderung baik tetapi tiap pihak punya jalan sendiri. <strong>Bintang Kemiri</strong> (<span class=\"hz\">巨門</span>) di sekitarnya memunculkan potensi salah paham lewat kata. Komunikasi rutin dan jujur menjadi kunci, hindari menyimpan kesalahpahaman terlalu lama.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jadwalkan pertemuan rutin dengan saudara, hindari komunikasi cepat lewat pesan singkat saja.</span></div></div>",
+    "_p1_fuqi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pasangan</span><span class=\"pn-meta\">Fū Qī<span class=\"hz\">夫妻</span></span></div></div><div class=\"pal-body\">Istana Pasangan dihuni <strong>Bintang Kaisar</strong> (<span class=\"hz\">紫微</span>) yang mulia, menandakan pasangan berkarisma, dewasa, dan punya wibawa alami. Pasangan ideal Li Jia Ling adalah figur yang stabil secara emosional dan punya pencapaian sendiri. Foto layar 夫妻 menyebut cinta tumbuh perlahan dan natural, bukan dari ketertarikan yang membara. Pernikahan akan diberkahi orang sekitar yang turut bersuka cita.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Pilih pasangan yang sudah matang secara karir dan emosi, bukan yang masih mencari arah hidup.</span></div></div>",
+    "_p1_zinu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Anak</span><span class=\"pn-meta\">Zǐ Nǚ<span class=\"hz\">子女</span></span></div></div><div class=\"pal-body\">Istana Anak dihuni <strong>Bintang Bulan</strong> (<span class=\"hz\">太陰</span>) yang lembut, menandakan anak yang sensitif, kreatif, dan berorientasi pada hubungan. Ikatan ibu-anak sangat dalam dan emosional. Anak tumbuh paling baik di rumah yang hangat dan ekspresif. Tantangannya adalah menjaga keseimbangan antara memanjakan dan mendisiplinkan, karena anak rentan menyerap suasana hati orang tua secara langsung.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga konsistensi suasana hati di rumah, anak menyerap energi orang tua sangat cepat.</span></div></div>",
+    "_p2_caibo": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Rezeki</span><span class=\"pn-meta\">Cái Bó<span class=\"hz\">財帛</span></span></div></div><div class=\"pal-body\">Istana Rezeki dihuni <strong>Bintang Gudang</strong> (<span class=\"hz\">天府</span>) yang kokoh, menandakan rezeki stabil dan kemampuan menyimpan kekayaan. Foto 財帛 menyebut Li Jia Ling hemat, tidak suka berjudi, dan tidak akan kaya dari spekulasi. Kombinasi dengan <strong>Bintang Pintu Besar</strong> (<span class=\"hz\">巨門</span>) menyarankan rezeki dari hasil kerja keras pribadi, bukan jalur cepat. Strategi terbaik adalah membangun aset jangka panjang yang produktif.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Diversifikasi pendapatan ke aset produktif, hindari instrumen spekulatif tanpa pemahaman.</span></div></div>",
+    "_p2_jie_e": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Kesehatan</span><span class=\"pn-meta\">Jí È<span class=\"hz\">疾厄</span></span></div></div><div class=\"pal-body\">Istana Kesehatan dihuni <strong>Bintang Reformasi</strong> (<span class=\"hz\">廉貞</span>), menandakan kerentanan pada sistem pencernaan, kulit, dan sirkulasi. Foto 疾厄 menyebutkan sejak kecil rentan sakit, dewasa rentan masalah pencernaan dan jantung. Mata juga area yang perlu diperhatikan. Pola hidup teratur, makan tepat waktu, dan tidur cukup menjadi sangat penting di fase usia 30-an dan setelahnya.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Periksa rutin tahunan untuk pencernaan, mata, dan jantung, jangan tunda gejala kecil.</span></div></div>",
+    "_p2_qianyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Perpindahan</span><span class=\"pn-meta\">Qiān Yí<span class=\"hz\">遷移</span></span></div></div><div class=\"pal-body\">Istana Perpindahan dihuni <strong>Bintang Strategi</strong> (<span class=\"hz\">天機</span>), sangat selaras dengan <strong>Bintang Perpindahan</strong> (<span class=\"hz\">驛馬</span>) di shen sha. Hidup Li Jia Ling diwarnai banyak perpindahan, perjalanan, dan perubahan lingkungan. Foto 遷移 menyarankan pertumbuhan terbaik datang lewat menjelajah, belajar di luar zona nyaman, dan menjalin relasi lintas wilayah. Hindari menetap terlalu lama di satu tempat tanpa perkembangan.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Rancang rotasi proyek atau perjalanan kerja minimal sekali per tahun untuk menjaga energi.</span></div></div>",
+    "_p2_puyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pertemanan</span><span class=\"pn-meta\">Pú Yì<span class=\"hz\">僕役</span></span></div></div><div class=\"pal-body\">Istana Sahabat dihuni <strong>Bintang Pedang</strong> (<span class=\"hz\">七殺</span>), menandakan teman dekat berkarakter kuat, tegas, dan kompetitif. Foto 僕役 menyebut Li Jia Ling memiliki banyak teman muda yang bisa diajak berbisnis. Setelah usia 40-an akan ada bawahan yang loyal dan setia. Hindari mendekatkan diri pada teman dari shio Macan, Kuda, dan Anjing yang kerap menimbulkan gesekan.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Pilih lingkaran teman dekat berdasar nilai, bukan sekadar kemudahan akses pertemanan.</span></div></div>",
+    "_p3_guanlu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Karir</span><span class=\"pn-meta\">Guān Lù<span class=\"hz\">官祿</span></span></div></div><div class=\"pal-body\">Istana Karir dihuni <strong>Bintang Bendahara</strong> (<span class=\"hz\">武曲</span>) berdampingan dengan <strong>Bintang Gudang</strong> (<span class=\"hz\">天府</span>). Foto 官祿 menyebut Li Jia Ling cocok di bidang yang berkaitan dengan logam, mesin, atau pekerjaan teknis. Cocok menjadi profesional, pengusaha mandiri, atau di bidang akuntansi dan keuangan. Tantangan: hati-hati dengan masalah yang muncul akibat keterlibatan keuangan dengan rekan kerja.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Pertahankan transparansi keuangan di setiap kerja sama profesional, dokumentasikan dengan baik.</span></div></div>",
+    "_p3_tianzhai": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Properti</span><span class=\"pn-meta\">Tián Zhái<span class=\"hz\">田宅</span></span></div></div><div class=\"pal-body\">Istana Properti dihuni <strong>Bintang Bulan</strong> (<span class=\"hz\">太陰</span>), menandakan rezeki properti yang lembut tetapi konsisten. Foto 田宅 menyebut Li Jia Ling sangat menyukai properti dan punya rezeki di bidang ini, terutama saat berada di shio yang baik. Properti dekat air (sungai, danau) atau dengan elemen kayu (taman, hutan kecil) memberi keberuntungan ekstra. Hindari membeli secara impulsif tanpa riset.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Investasi properti jangka panjang dengan riset matang, prioritas lokasi dekat air atau hijau.</span></div></div>",
+    "_p3_fude": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Berkah</span><span class=\"pn-meta\">Fú Dé<span class=\"hz\">福德</span></span></div></div><div class=\"pal-body\">Istana Berkah dihuni <strong>Bintang Bulan</strong> (<span class=\"hz\">太陰</span>) yang membuat Li Jia Ling cenderung peka, romantis, dan introspektif. Foto 福德 menyebut watak rentan mengalami kelelahan batin tanpa alasan jelas, namun juga punya kapasitas menikmati hidup yang besar bila stabil. Penting untuk membangun rutinitas spiritual atau hobi yang menenangkan. Hindari konsumsi konten emosional berlebih yang menguras energi.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun rutinitas meditasi atau hobi tenang harian untuk menjaga keseimbangan batin.</span></div></div>",
+    "_p3_fumu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Orang Tua</span><span class=\"pn-meta\">Fù Mǔ<span class=\"hz\">父母</span></span></div></div><div class=\"pal-body\">Istana Orang Tua dihuni <strong>Bintang Gudang</strong> (<span class=\"hz\">天府</span>), menandakan orang tua yang stabil dan ekonomi keluarga relatif berkecukupan. Foto 父母 menyebut hubungan dengan orang tua bisa diwarnai gesekan kepribadian sejak kecil, tetapi pada akhirnya hangat dan saling memahami. Komunikasi yang lebih terbuka di usia dewasa akan menyembuhkan luka kecil masa lalu. Orang tua adalah pilar finansial dan emosional yang penting.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Inisiatif komunikasi terbuka dengan orang tua, jangan tunda perdamaian kecil yang tertunda.</span></div></div>",
+    "_kes_stats": "\n      <div class=\"kes-stat s1\"><div class=\"ks-eb\">Penguasa Hari · 日主</div><div class=\"ks-num\"><span class=\"hz\">丁火</span><span class=\"unit\">LEMAH · 弱</span></div><div class=\"ks-title\">Api Lilin Lemah</div><div class=\"ks-desc\">Total Wu Xing 15, 火 <strong>20.0%</strong> dari distribusi total</div></div>\n      <div class=\"kes-stat s2\"><div class=\"ks-eb\">Format · 格局</div><div class=\"ks-num\"><span class=\"hz\">傷官格</span><span class=\"unit\">FORMAT</span></div><div class=\"ks-title\">Shang Guan Ge, Kritikus Tajam</div><div class=\"ks-desc\">Format Saluran Ekspresi memberi kreativitas tinggi dan komunikasi lugas tanpa filter berlebih.</div></div>\n      <div class=\"kes-stat s3\"><div class=\"ks-eb\">Yong Shen · 喜用神</div><div class=\"ks-num\"><span class=\"hz\">水</span><span class=\"unit\">MENDUKUNG</span></div><div class=\"ks-title\">Air, Penopang &amp; Pengarah</div><div class=\"ks-desc\">Aktifkan unsur Air sebagai 用神 utama (warna biru, kolam, dekat sungai); Kayu sebagai 喜用神 pendukung lewat lingkungan hijau dan tumbuhan hidup.</div></div>\n      <div class=\"kes-stat s4\"><div class=\"ks-eb\">Da Yun · 大運</div><div class=\"ks-num\">Fase 3<span class=\"unit\">dari 10</span></div><div class=\"ks-title\">Fase Pelajaran (30-39)</div><div class=\"ks-desc\">Fase Kayu Macan menyalakan ekspansi karir dan pembangunan jangka panjang yang kokoh.</div></div>\n      <div class=\"kes-stat s5\"><div class=\"ks-eb\">Umur Subjek</div><div class=\"ks-num\">39<span class=\"unit\">tahun</span></div><div class=\"ks-title\">Era 30–39</div><div class=\"ks-desc\">Dekade tiga puluhan adalah masa konsolidasi karir, keluarga, dan identitas profesional matang.</div></div>\n      <div class=\"kes-stat s6\"><div class=\"ks-eb\">Jodoh · 婚配 / 陽宅</div><div class=\"ks-num\">3 <span class=\"unit\">cocok · 4 hindari</span></div><div class=\"ks-desc\">Cocok dengan shio Tikus, Monyet, dan Ayam (大吉); hindari Kerbau, Kelinci, Anjing, dan Naga.</div></div>\n    ",
+    "_kes_age": "39",
+    "_kes_lifemap": "\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">過<span class=\"id-label\">Lalu</span></div><div class=\"klm-row-text\"><span class=\"lbl\">MASA LALU</span>Fase pendidikan dan pencarian arah, fondasi karakter dibangun lewat keluarga dan pengalaman muda.</div></div>\n          <div class=\"klm-row now\"><div class=\"klm-row-icon\">今<span class=\"id-label\">Kini</span></div><div class=\"klm-row-text\"><span class=\"lbl\">SEKARANG</span>Fase Kayu Macan tiga puluhan, energi tumbuh kuat menggerakkan ekspansi karir dan stabilitas keluarga.</div></div>\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">未<span class=\"id-label\">Nanti</span></div><div class=\"klm-row-text\"><span class=\"lbl\">BERIKUTNYA</span>Fase Air menjernihkan empat puluhan ke atas, masa pemurnian visi dan pemantapan posisi profesional.</div></div>\n        ",
+    "_kes_position": "\n          <div class=\"klp-eb\">Posisi Sekarang</div>\n          <div class=\"klp-hz\">夏</div>\n          <div class=\"klp-id\">Xià, \"Musim Panas Hidup\"</div>\n          <div class=\"klp-bar\">\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell now\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n          </div>\n          <div class=\"klp-meta\">Fase <strong>3 dari 10</strong> · Umur <strong>30-39</strong> · <strong>火 Api</strong> dominan · Musim Panas Hidup</div>\n        ",
+    "_syn_attrib": "Api Lilin · 傷官格 · Shang Guan Ge",
+    "_syn_trio": "\n      <div class=\"syn-card strength\">\n        <div class=\"syn-card-num\">力</div>\n        <div class=\"syn-card-eyebrow\">Kekuatan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">才華</span>\n          <span class=\"syn-card-id\">Cái Huá</span>\n          <span class=\"syn-card-arti\">\"Bakat Kreatif Mendalam\"</span>\n        </div>\n        <div class=\"syn-card-body\">Li Jia Ling memiliki bakat ekspresif dan estetik yang halus, mampu menerjemahkan ide rumit menjadi karya yang menggerakkan rasa. Format Saluran Ekspresi memberi keunikan suara yang tidak mudah ditiru. Kekuatan ini paling bercahaya ketika ia diberi ruang berkarya tanpa intervensi struktur kaku, dan rekan kerja yang menghargai proses kreatif.</div>\n      </div>\n      <div class=\"syn-card challenge\">\n        <div class=\"syn-card-num\">驗</div>\n        <div class=\"syn-card-eyebrow\">Tantangan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">過直</span>\n          <span class=\"syn-card-id\">Guò Zhí</span>\n          <span class=\"syn-card-arti\">\"Terlalu Lugas\"</span>\n        </div>\n        <div class=\"syn-card-body\">Tantangan utama Li Jia Ling adalah kelugasan yang kadang berubah menjadi luka bagi orang lain. Format Saluran Ekspresi membuat kata mengalir cepat tanpa filter. Belajar berhenti sejenak sebelum bicara, dan menyaring umpan balik dengan empati akan melindungi hubungan profesional dan pribadi yang penting.</div>\n      </div>\n      <div class=\"syn-card action\">\n        <div class=\"syn-card-num\">為</div>\n        <div class=\"syn-card-eyebrow\">Tindakan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">立業</span>\n          <span class=\"syn-card-id\">Lì Yè</span>\n          <span class=\"syn-card-arti\">\"Membangun Karya\"</span>\n        </div>\n        <div class=\"syn-card-body\">Panggung optimal Li Jia Ling adalah membangun karya yang berakar pada keahlian unik sambil mempertahankan jejaring yang luas dan tulus. Fokus pada kualitas, bukan kuantitas. Manfaatkan fase Kayu Macan untuk memulai proyek pribadi besar yang akan menjadi warisan profesional di paruh kedua kehidupan.</div>\n      </div>\n    ",
+    "_syn_actions": "\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">1</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">\"Bangun proyek kreatif pribadi\"</div>\n            <div class=\"syn-action-context\">\"Mulai satu proyek yang sepenuhnya milik sendiri di dekade ini, jadikan portofolio jangka panjang.\"</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">2</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">\"Jaga kesehatan pencernaan dan mata\"</div>\n            <div class=\"syn-action-context\">\"Periksa rutin tahunan, hindari pola makan tidak teratur dan paparan layar berlebih.\"</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">3</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">\"Disiplin keuangan otomatis\"</div>\n            <div class=\"syn-action-context\">\"Sisihkan minimal 20% pendapatan ke aset produktif sebelum pengeluaran kreatif.\"</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">4</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">\"Komunikasi terbuka dengan orang tua\"</div>\n            <div class=\"syn-action-context\">\"Inisiatif menyembuhkan gesekan kecil masa lalu lewat percakapan jujur dan hangat.\"</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">5</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">\"Bangun rutinitas tenang harian\"</div>\n            <div class=\"syn-action-context\">\"Meditasi singkat atau hobi tenang menjaga nyala batin tetap konsisten dan jernih.\"</div>\n          </div>\n        </div>\n      ",
+    "_yangzhai_zones": "\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">門</div>\n            <div class=\"yz-zone-id\">Pintu Utama</div>\n            <div class=\"yz-zone-pinyin\">Mén · Pintu</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">南</span>S</span>\n              <span class=\"yz-pill\"><span class=\"hz\">S</span>S</span>\n            </div>\n            <div class=\"yz-zone-note\">Pintu utama menghadap Selatan menarik energi api yang menyalakan semangat harian.</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">房</div>\n            <div class=\"yz-zone-id\">Kamar Tidur</div>\n            <div class=\"yz-zone-pinyin\">Fáng · Kamar</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Tenang</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">東</span>T</span>\n              <span class=\"yz-pill\"><span class=\"hz\">T</span>T</span>\n            </div>\n            <div class=\"yz-zone-note\">Kamar di sektor Timur memberi kesegaran kayu, pas untuk pemulihan emosional.</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">灶</div>\n            <div class=\"yz-zone-id\">Dapur / Kompor</div>\n            <div class=\"yz-zone-pinyin\">Zào · Tungku</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Aktif</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">西</span>B</span>\n              <span class=\"yz-pill\"><span class=\"hz\">B</span>B</span>\n            </div>\n            <div class=\"yz-zone-note\">Kompor menghadap Timur menyalakan unsur kayu yang mendukung api batin.</div>\n          </div>\n        </div>\n        <div class=\"yz-zone warn\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">廁</div>\n            <div class=\"yz-zone-id\">Kamar Mandi</div>\n            <div class=\"yz-zone-pinyin\">Cè · Kamar Mandi</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">⚠ Hindari</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill bad\"><span class=\"hz\">北</span>U</span>\n              <span class=\"yz-pill bad\"><span class=\"hz\">U</span>U</span>\n            </div>\n            <div class=\"yz-zone-note\">Hindari kamar mandi di sektor Utara agar energi air tidak menekan day master.</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">書</div>\n            <div class=\"yz-zone-id\">Ruang Kerja</div>\n            <div class=\"yz-zone-pinyin\">Shū · Ruang Kerja</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Produktif</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">東南</span>TG</span>\n              <span class=\"yz-pill\"><span class=\"hz\">TG</span>TG</span>\n            </div>\n            <div class=\"yz-zone-note\">Ruang kerja di Tenggara mendukung kreativitas dan komunikasi profesional.</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">神</div>\n            <div class=\"yz-zone-id\">Altar / Sembah</div>\n            <div class=\"yz-zone-pinyin\">Shén · Sembahyang</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Khusyuk</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">東北</span>TL</span>\n              <span class=\"yz-pill\"><span class=\"hz\">TL</span>TL</span>\n            </div>\n            <div class=\"yz-zone-note\">Altar di Timur Laut atau Barat Laut memberi ketenangan spiritual harian.</div>\n          </div>\n        </div>\n",
+    "_career_wuxing": "\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">土 Tanah<span class=\"v\">5</span></div>\n        </div>\n        <div class=\"wux-cell fav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:60%\"></div></div>\n          <div class=\"wux-label\">水 Air<span class=\"v\">3</span></div>\n        </div>\n        <div class=\"wux-cell self\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:60%\"></div></div>\n          <div class=\"wux-label\">火 Api<span class=\"v\">3</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:40%\"></div></div>\n          <div class=\"wux-label\">金 Logam<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:40%\"></div></div>\n          <div class=\"wux-label\">木 Kayu<span class=\"v\">2</span></div>\n        </div>\n",
+    "_career_title": "Air adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini",
+    "_career_avoid": "Industri ber-unsur <strong>火 (Api)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.",
+    "_career_tags": "\n          <span class=\"insight-tag\">木 \"TUMBUH\"</span>\n          <span class=\"insight-tag\">水 \"ALIRAN\"</span>\n          <span class=\"insight-tag bad\">土 \"STAGNAN\"</span>\n          <span class=\"insight-tag bad\">金 \"KERAS\"</span>\n        ",
+    "_career_industri": "\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">⚙️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Akuntansi &amp; Keuangan (<span class=\"hz\">會計</span> / <span class=\"hz\">金融界</span>)</div>\n            <div class=\"ind-reason\">Unsur 金, Bidang yang menuntut presisi angka dan strategi finansial.</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:95%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">⚙️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Hukum &amp; Pengacara (<span class=\"hz\">律師</span>)</div>\n            <div class=\"ind-reason\">Unsur 金, Profesi yang mengandalkan logika tajam dan disiplin argumentasi.</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:88%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">💧</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Kesehatan &amp; Dokter (<span class=\"hz\">醫師</span>)</div>\n            <div class=\"ind-reason\">Unsur 水, Naluri menolong dan kepekaan terhadap kondisi orang lain.</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:82%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">🌳</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Musik &amp; Seni Pertunjukan (<span class=\"hz\">音樂家</span> / <span class=\"hz\">歌影星</span>)</div>\n            <div class=\"ind-reason\">Unsur 木, Ekspresi kreatif dan kepekaan estetik adalah saluran energi utama.</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:76%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">⚙️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Sains &amp; Teknologi (<span class=\"hz\">科學家</span> / <span class=\"hz\">機械</span>)</div>\n            <div class=\"ind-reason\">Unsur 金, Pemikiran sistematis dan ketekunan teknis cocok untuk bidang ini.</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:70%\"></div></div>\n          </div>\n        </div>\n",
+    "shensha_star_hz": "驛馬",
+    "shensha_star_pinyin": "Yì Mǎ",
+    "shensha_star_label": "\"Bintang Perpindahan\"",
+    "shensha_star_active": "★ AKTIF SEKARANG ★",
+    "shensha_strip": "Manfaatkan dinamika perpindahan sebagai jalan rezeki, hindari menetap pada zona nyaman terlalu lama.",
+    "_xqcards": "\n      <div class=\"xq-card power\">\n        <div class=\"xqc-eb\">魄 力 · Kekuatan</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">優勢</span><span class=\"xqc-name\">Yōu Shì<br>Keunggulan</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kreativitas dan ekspresi yang kaya, mampu menerjemahkan ide rumit menjadi bentuk yang dapat dirasakan.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Empati halus, mudah membaca suasana hati orang sekitar tanpa perlu dijelaskan.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Loyalitas mendalam pada orang yang sudah ia percaya, hadir saat dibutuhkan.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kepekaan estetik tinggi, cocok di bidang yang menuntut rasa, gaya, dan presisi visual.</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card shadow\">\n        <div class=\"xqc-eb\">陰 影 · Shadow</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">隱 患</span><span class=\"xqc-name\">Yǐn Huàn<br>Sisi Gelap</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kerap terlalu terbuka, lupa filter, sehingga ucapan bisa tanpa sengaja melukai.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Mudah lelah secara emosional saat dikelilingi konflik atau orang yang menguras energi.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Cenderung keras kepala saat merasa benar, sulit mengakui kesalahan di depan umum.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Banyak unsur **Tanah** ([[戊]]) menguras api, membuat Li Jia Ling rentan stagnan jika tidak punya proyek yang menyalakan kembali semangatnya.</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card optimum\">\n        <div class=\"xqc-eb\">最 佳 · Optimum</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">應 用</span><span class=\"xqc-name\">Yīng Yòng<br>Cara Optimal</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Pilih lingkungan kerja yang menghargai ekspresi dan ide orisinal, bukan birokrasi kaku.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Bangun rutinitas istirahat dan refleksi yang ketat agar nyala batin tidak meredup.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Cari rekan yang bisa menjadi cermin jujur, bukan yang sekadar memuji.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Salurkan energi kreatif lewat seni, tulisan, atau komunikasi yang punya panggung jelas.</span></div>\n        </div>\n      </div>\n    "
+  }
+}

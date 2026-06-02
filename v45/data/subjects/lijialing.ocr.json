@@ -1,0 +1,183 @@
+{
+  "name_id": "Li Jia Ling",
+  "name_hanzi": "李佳玲",
+  "gender_hz": "陽女",
+  "birth_solar": "1988-06-01 15:00",
+  "pillars": {
+    "year": {
+      "stem_hz": "戊",
+      "branch_hz": "辰"
+    },
+    "month": {
+      "stem_hz": "丁",
+      "branch_hz": "巳"
+    },
+    "day": {
+      "stem_hz": "丁",
+      "branch_hz": "亥"
+    },
+    "hour": {
+      "stem_hz": "戊",
+      "branch_hz": "申"
+    }
+  },
+  "wuxing": {
+    "jin": 2.0,
+    "shui": 3.0,
+    "mu": 2.0,
+    "huo": 3.0,
+    "tu": 5.0
+  },
+  "yong_shen_hz": "水",
+  "ji_shen_hz": "火",
+  "xi_yong_shen_hz": "木",
+  "xian_shen_hz": "土",
+  "chou_shen_hz": "金",
+  "format_hz": "傷官格",
+  "shi_shen_per_pilar": {
+    "year": "偏官",
+    "month": "比肩",
+    "day": "主",
+    "hour": "傷官"
+  },
+  "ming_gong_bazi": "乙卯",
+  "ti_xiang": {
+    "mu": "相",
+    "huo": "旺",
+    "jin": "死",
+    "shui": "囚"
+  },
+  "da_yun": [
+    {
+      "age_start": 10,
+      "age_end": 19,
+      "stem_hz": "丙",
+      "branch_hz": "辰"
+    },
+    {
+      "age_start": 20,
+      "age_end": 29,
+      "stem_hz": "乙",
+      "branch_hz": "卯"
+    },
+    {
+      "age_start": 30,
+      "age_end": 39,
+      "stem_hz": "甲",
+      "branch_hz": "寅",
+      "ten_god_hz_md": "正印"
+    },
+    {
+      "age_start": 40,
+      "age_end": 49,
+      "stem_hz": "癸",
+      "branch_hz": "丑",
+      "ten_god_hz_md": "七殺"
+    },
+    {
+      "age_start": 50,
+      "age_end": 59,
+      "stem_hz": "壬",
+      "branch_hz": "子"
+    },
+    {
+      "age_start": 60,
+      "age_end": 69,
+      "stem_hz": "辛",
+      "branch_hz": "亥"
+    },
+    {
+      "age_start": 70,
+      "age_end": 79,
+      "stem_hz": "庚",
+      "branch_hz": "戌"
+    },
+    {
+      "age_start": 80,
+      "age_end": 89,
+      "stem_hz": "己",
+      "branch_hz": "酉"
+    },
+    {
+      "age_start": 90,
+      "age_end": 99,
+      "stem_hz": "戊",
+      "branch_hz": "申"
+    },
+    {
+      "age_start": 100,
+      "age_end": 109,
+      "stem_hz": "丁",
+      "branch_hz": "未"
+    }
+  ],
+  "marriage": {
+    "cocok_branches": [
+      "子",
+      "申",
+      "酉"
+    ],
+    "hindari_branches": [
+      "丑",
+      "卯",
+      "戌",
+      "辰"
+    ]
+  },
+  "shio_hz": "龍",
+  "yang_zhai_gua_hz": "震",
+  "zi_wei": {
+    "ming_zhu_hz": "文曲",
+    "shen_zhu_hz": "文昌",
+    "ming_gong_branch_hz": "酉",
+    "shen_gong_branch_hz": "丑",
+    "wu_xing_ju_hz": "木三局",
+    "shi_jun_hz": "巳"
+  },
+  "dm_strength_hz": "弱",
+  "dm_strength_label_id": "Lemah",
+  "dm_pos_score": 3678.0,
+  "dm_neg_score": 5182.0,
+  "xiantian_per_stem": {
+    "jia": 1,
+    "yi": 1,
+    "bing": 1,
+    "ding": 2,
+    "wu": 5,
+    "ji": 0,
+    "geng": 2,
+    "xin": 0,
+    "ren": 2,
+    "gui": 1
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "da_yun_arah_id": "backward",
+  "da_yun_start_age": 10,
+  "shen_sha_list": [
+    {
+      "hanzi": "驛馬",
+      "pillar": null
+    },
+    {
+      "hanzi": "劫煞",
+      "pillar": null
+    },
+    {
+      "hanzi": "孤辰",
+      "pillar": null
+    },
+    {
+      "hanzi": "天醫",
+      "pillar": null
+    }
+  ],
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": {
+    "year": "戊乙癸",
+    "month": "庚戊丙",
+    "day": "甲壬",
+    "hour": "戊壬庚"
+  },
+  "_source": "MD via Web Claude (parse_md.py)"
+}

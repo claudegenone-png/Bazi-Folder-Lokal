@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Lin Ru Yi — Cover</title>
+<title>Lin Ru Yi, Cover</title>
 <link rel="stylesheet" href="style.css">
 <style>
   .page.cover {
@@ -97,7 +97,7 @@
     letter-spacing: 4px;
   }
 
-  /* INFO PANEL — persegi merah berisi data subjek */
+  /* INFO PANEL, persegi merah berisi data subjek */
   .cv-info-panel {
     background: linear-gradient(135deg, #8B1A1A 0%, #6E1414 100%);
     color: white;
@@ -115,7 +115,6 @@
     grid-template-columns: 50mm 3mm 1fr;
     gap: 0;
     align-items: baseline;
-    white-space: nowrap;
   }
   .cv-info-panel .lbl {
     color: #F5EBD0;
@@ -128,8 +127,7 @@
   .cv-info-panel .val {
     color: white;
     font-weight: 500;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    word-wrap: break-word;
   }
   .cv-info-panel .val .hz {
     font-family: 'Noto Serif TC', serif;
@@ -187,7 +185,7 @@
 
     <div>
       <div class="cv-title-cn">命</div>
-      <div class="cv-title-id">Mìng — Takdir &amp; Bagan Hidup</div>
+      <div class="cv-title-id">Mìng, Takdir &amp; Bagan Hidup</div>
     </div>
 
     <div>
@@ -208,7 +206,7 @@
     </div>
 
     <div class="cv-footer">
-      四柱論命附加紫微斗數 · Laporan 23 Halaman · Mei 2026
+      四柱論命附加紫微斗數 · Laporan 24 Halaman · {{REPORT_DATE}}
     </div>
   </div>
 </section>

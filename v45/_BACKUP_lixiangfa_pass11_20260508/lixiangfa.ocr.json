@@ -1,0 +1,178 @@
+{
+  "name_id": "Li Xiang Fa",
+  "name_hanzi": "李享發",
+  "gender_hz": "陰男",
+  "birth_solar": "1997-06-16 11:45",
+  "pillars": {
+    "year": {
+      "stem_hz": "丁",
+      "branch_hz": "丑"
+    },
+    "month": {
+      "stem_hz": "丙",
+      "branch_hz": "午"
+    },
+    "day": {
+      "stem_hz": "己",
+      "branch_hz": "丑"
+    },
+    "hour": {
+      "stem_hz": "庚",
+      "branch_hz": "午"
+    }
+  },
+  "wuxing": {
+    "jin": 3.0,
+    "shui": 2.0,
+    "mu": 0.0,
+    "huo": 4.0,
+    "tu": 5.0
+  },
+  "yong_shen_hz": "土",
+  "ji_shen_hz": "木",
+  "xi_yong_shen_hz": "火",
+  "xian_shen_hz": "金",
+  "chou_shen_hz": "水",
+  "format_hz": "從旺格",
+  "shi_shen_per_pilar": {
+    "year": "偏印",
+    "month": "正印",
+    "day": "主",
+    "hour": "傷官"
+  },
+  "ming_gong_bazi": "乙巳",
+  "ti_xiang": {
+    "mu": "休",
+    "huo": "旺",
+    "tu": "相",
+    "jin": "死",
+    "shui": "囚"
+  },
+  "da_yun": [
+    {
+      "age_start": 4,
+      "age_end": 13,
+      "stem_hz": "乙",
+      "branch_hz": "巳"
+    },
+    {
+      "age_start": 14,
+      "age_end": 23,
+      "stem_hz": "甲",
+      "branch_hz": "辰"
+    },
+    {
+      "age_start": 24,
+      "age_end": 33,
+      "stem_hz": "癸",
+      "branch_hz": "卯"
+    },
+    {
+      "age_start": 34,
+      "age_end": 43,
+      "stem_hz": "壬",
+      "branch_hz": "寅"
+    },
+    {
+      "age_start": 44,
+      "age_end": 53,
+      "stem_hz": "辛",
+      "branch_hz": "丑"
+    },
+    {
+      "age_start": 54,
+      "age_end": 63,
+      "stem_hz": "庚",
+      "branch_hz": "子"
+    },
+    {
+      "age_start": 64,
+      "age_end": 73,
+      "stem_hz": "己",
+      "branch_hz": "亥"
+    },
+    {
+      "age_start": 74,
+      "age_end": 83,
+      "stem_hz": "戊",
+      "branch_hz": "戌"
+    },
+    {
+      "age_start": 84,
+      "age_end": 93,
+      "stem_hz": "丁",
+      "branch_hz": "酉"
+    },
+    {
+      "age_start": 94,
+      "age_end": 103,
+      "stem_hz": "丙",
+      "branch_hz": "申"
+    }
+  ],
+  "marriage": {
+    "cocok_branches": [
+      "子",
+      "巳",
+      "酉"
+    ],
+    "hindari_branches": [
+      "辰",
+      "午",
+      "未",
+      "戌"
+    ]
+  },
+  "shio_hz": "牛",
+  "yang_zhai_gua_hz": "震",
+  "zi_wei": {
+    "ming_zhu_hz": "貪狼",
+    "shen_zhu_hz": "天相",
+    "ming_gong_branch_hz": "子",
+    "shen_gong_branch_hz": "子",
+    "wu_xing_ju_hz": "木三局",
+    "shi_jun_hz": "寅"
+  },
+  "dm_strength_hz": "旺",
+  "dm_strength_label_id": "Kuat",
+  "dm_pos_score": 7200.0,
+  "dm_neg_score": 2000.0,
+  "xiantian_per_stem": {
+    "jia": 0,
+    "yi": 0,
+    "bing": 1,
+    "ding": 3,
+    "wu": 0,
+    "ji": 5,
+    "geng": 1,
+    "xin": 2,
+    "ren": 0,
+    "gui": 2
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "da_yun_arah_id": "backward",
+  "da_yun_start_age": 4,
+  "shen_sha_list": [
+    {
+      "hanzi": "華蓋",
+      "pillar": null
+    },
+    {
+      "hanzi": "桃花",
+      "pillar": null
+    },
+    {
+      "hanzi": "羊刃",
+      "pillar": null
+    }
+  ],
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": {
+    "year": "辛癸己",
+    "month": "己丁",
+    "day": "辛癸己",
+    "hour": "己丁"
+  },
+  "_source": "MD via Web Claude (parse_md.py)"
+}

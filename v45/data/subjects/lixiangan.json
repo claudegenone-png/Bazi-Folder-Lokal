@@ -1,0 +1,835 @@
+{
+  "subject_id": "lixiangan",
+  "_built_by": "build_from_ocr.py V4.5 FULL-MD",
+  "identity": {
+    "name_id": "Li Xiang An",
+    "name_hanzi": "李享安",
+    "gender_id": "Pria",
+    "birth_date": "1990-08-16",
+    "birth_time": "12:00",
+    "birth_day_name": "Kamis",
+    "birth_period_id": "siang",
+    "birth_hour_branch_hz": "午",
+    "birth_hour_period_label": "siang · 午時",
+    "lunar_date_text_new": "tanggal 26 bulan 6 tahun 庚午 (Geng Wu · 1990)",
+    "lunar_year_pillar_hz": "庚午",
+    "lunar_republic_text": "民國 79 年 6 月 26 日",
+    "age_at_report": 37
+  },
+  "shio": {
+    "branch_hz": "午",
+    "branch_pinyin": "Wǔ",
+    "id": "Kuda",
+    "id_upper": "KUDA",
+    "svg_red": "Kuda-Merah.svg",
+    "svg_black": "Kuda-Hitam.svg"
+  },
+  "ti_xiang": {
+    "mu": "死",
+    "huo": "休",
+    "tu": "囚",
+    "jin": "相",
+    "shui": "旺"
+  },
+  "day_master": {
+    "stem_hz": "癸",
+    "stem_element_hz": "水",
+    "stem_element_id": "Air",
+    "polarity_id": "Yin",
+    "label_id": "Air Hujan",
+    "label_long_id": "Air",
+    "pinyin": "Guǐ 水",
+    "strength_id": "Lemah",
+    "strength_hz": "弱"
+  },
+  "pillars": {
+    "year": {
+      "stem_hz": "庚",
+      "branch_hz": "午"
+    },
+    "month": {
+      "stem_hz": "甲",
+      "branch_hz": "申"
+    },
+    "day": {
+      "stem_hz": "癸",
+      "branch_hz": "丑"
+    },
+    "hour": {
+      "stem_hz": "戊",
+      "branch_hz": "午"
+    }
+  },
+  "wuxing": {
+    "jin": {
+      "value": 4.0,
+      "percent": 33.3,
+      "label_id": "Logam"
+    },
+    "shui": {
+      "value": 2.0,
+      "percent": 16.7,
+      "label_id": "Air"
+    },
+    "mu": {
+      "value": 1.0,
+      "percent": 8.3,
+      "label_id": "Kayu"
+    },
+    "huo": {
+      "value": 1.0,
+      "percent": 8.3,
+      "label_id": "Api"
+    },
+    "tu": {
+      "value": 4.0,
+      "percent": 33.3,
+      "label_id": "Tanah"
+    },
+    "total": 12.0,
+    "self_value": 2.0,
+    "self_el_hz": "—",
+    "fav_hz": "—",
+    "unfav_hz": "—",
+    "axis_max": "—",
+    "insight_id": null,
+    "_empty": false
+  },
+  "yong_shen": {
+    "elements_hz": "金水",
+    "elements_id": "金水",
+    "label_id": "Penopang & Pengarah",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "ji_shen": {
+    "elements_hz": "土",
+    "elements_id": "Tanah",
+    "label_id": "Pelumat & Pemicu",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "format": {
+    "hz": "正官格",
+    "pinyin": "Zheng Guan Ge",
+    "label_id": "Penjaga Disiplin",
+    "glyph_hz": "—"
+  },
+  "da_yun": {
+    "start_age": 9,
+    "direction_id": "forward",
+    "current_index": 2,
+    "axis_marks": [
+      9,
+      19,
+      29,
+      39,
+      49,
+      59,
+      69,
+      79,
+      89,
+      99,
+      109
+    ],
+    "cycles": [
+      {
+        "n": 1,
+        "age_start": 9,
+        "age_end": 18,
+        "stem_hz": "乙",
+        "branch_hz": "酉",
+        "ten_god_hz": "食神",
+        "ten_god_id": "Pencipta",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 2,
+        "age_start": 19,
+        "age_end": 28,
+        "stem_hz": "丙",
+        "branch_hz": "戌",
+        "ten_god_hz": "正財",
+        "ten_god_id": "Rezeki Tetap",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 3,
+        "age_start": 29,
+        "age_end": 38,
+        "stem_hz": "丁",
+        "branch_hz": "亥",
+        "ten_god_hz": "偏財",
+        "ten_god_id": "Rezeki Bisnis",
+        "element_class": "el-huo",
+        "is_current": true
+      },
+      {
+        "n": 4,
+        "age_start": 39,
+        "age_end": 48,
+        "stem_hz": "戊",
+        "branch_hz": "子",
+        "ten_god_hz": "正官",
+        "ten_god_id": "Otoritas",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 5,
+        "age_start": 49,
+        "age_end": 58,
+        "stem_hz": "己",
+        "branch_hz": "丑",
+        "ten_god_hz": "七殺",
+        "ten_god_id": "Pemurnian",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 6,
+        "age_start": 59,
+        "age_end": 68,
+        "stem_hz": "庚",
+        "branch_hz": "寅",
+        "ten_god_hz": "正印",
+        "ten_god_id": "Pelajaran",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 7,
+        "age_start": 69,
+        "age_end": 78,
+        "stem_hz": "辛",
+        "branch_hz": "卯",
+        "ten_god_hz": "偏印",
+        "ten_god_id": "Mentor",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 8,
+        "age_start": 79,
+        "age_end": 88,
+        "stem_hz": "壬",
+        "branch_hz": "辰",
+        "ten_god_hz": "劫財",
+        "ten_god_id": "Saudara Sebanding",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 9,
+        "age_start": 89,
+        "age_end": 98,
+        "stem_hz": "癸",
+        "branch_hz": "巳",
+        "ten_god_hz": "比肩",
+        "ten_god_id": "Pundak Sama",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 10,
+        "age_start": 99,
+        "age_end": 108,
+        "stem_hz": "甲",
+        "branch_hz": "午",
+        "ten_god_hz": "傷官",
+        "ten_god_id": "Kritikus Tajam",
+        "element_class": "el-mu"
+      }
+    ],
+    "seasons": [
+      {
+        "el_class": "s-mu",
+        "el_hz": "木",
+        "name_id": "Tunas Belajar",
+        "age_start": 9,
+        "age_end": 28,
+        "caption_id": "fondasi 食神-正財 menumbuhkan rasa ingin tahu dan disiplin awal"
+      },
+      {
+        "el_class": "s-huo",
+        "el_hz": "火",
+        "name_id": "Bangkit Bekerja",
+        "age_start": 29,
+        "age_end": 48,
+        "is_current": true,
+        "caption_id": "偏財-正官 mendorong puncak produktivitas dan tanggung jawab"
+      },
+      {
+        "el_class": "s-tu",
+        "el_hz": "土",
+        "name_id": "Konsolidasi Otoritas",
+        "age_start": 49,
+        "age_end": 68,
+        "caption_id": "七殺-正印 mempertajam wibawa dan kebijaksanaan"
+      },
+      {
+        "el_class": "s-jin",
+        "el_hz": "金",
+        "name_id": "Pewaris Ilmu",
+        "age_start": 69,
+        "age_end": 88,
+        "caption_id": "偏印-劫財 saat berbagi pengalaman dan mentorship"
+      },
+      {
+        "el_class": "s-shui",
+        "el_hz": "水",
+        "name_id": "Senja Tenang",
+        "age_start": 89,
+        "age_end": 108,
+        "caption_id": "比肩-傷官 untuk menutup hidup dengan refleksi dan karya"
+      }
+    ],
+    "spotlight_headline_html": "Fase 29–38: Api Yin Babi (<span class=\"hz\">丁亥</span>), Bangkit Lewat Peluang Kemitraan",
+    "spotlight_tag_tone_html": "Api · ekspresi",
+    "spotlight_tag_combo_html": "Wealth Lincah",
+    "spotlight_tag_combo_pair": [
+      "丁",
+      "亥"
+    ],
+    "spotlight_bullets_html": [
+      "Energi 偏財 mendorong Li Xiang An ke jalur proyek, kemitraan, dan peluang lintas relasi yang luwes.",
+      "亥水 menambah daya tampung emosi, baik untuk membangun jaringan dan menjaga kesehatan mental.",
+      "Hati-hati godaan spekulasi, pilih peluang yang punya basis nilai jelas dan kontrak rapi.",
+      "Investasi pada keterampilan dan properti menjadi pengikat rezeki untuk fase berikutnya."
+    ],
+    "footer_caption_html": "Li Xiang An di fase <span class=\"hz\">丁亥</span> (29-38), bangkit lewat peluang kemitraan dan disiplin finansial."
+  },
+  "marriage": {
+    "self_branch_index": 6,
+    "cocok": [
+      {
+        "branch_hz": "寅",
+        "id": "Harimau",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "未",
+        "id": "Kambing",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "戌",
+        "id": "Anjing",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      }
+    ],
+    "hindari": [
+      {
+        "branch_hz": "子",
+        "id": "Tikus",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "丑",
+        "id": "Kerbau",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "卯",
+        "id": "Kelinci",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "午",
+        "id": "Kuda",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      }
+    ],
+    "_empty": false
+  },
+  "yang_zhai": {
+    "gua_hz": "坎",
+    "gua_pinyin": "Kǎn",
+    "gua_label_id": "Air",
+    "gua_direction_id": "Utara",
+    "gua_direction_abbr": "U",
+    "group_id": "Timur",
+    "sumbu_hoki_hz": "北↔南",
+    "sumbu_hoki_id": "U ↔ S",
+    "trigram_symbol": "☵"
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "巨門",
+    "shen_zhu_hz": "火星",
+    "ming_gong_hz": "丑",
+    "shen_gong_hz": "丑",
+    "wu_xing_ju_hz": "火六局",
+    "shi_jun_hz": "丑",
+    "palaces": null,
+    "ming_gong_id": "Istana Hidup · Kerbau",
+    "shen_gong_id": "Istana Tubuh · Kerbau",
+    "shi_jun_id": "Penguasa Waktu · Kerbau",
+    "ming_zhu_id": "Penguasa Hidup",
+    "shen_zhu_id": "Penguasa Tubuh",
+    "wu_xing_ju_id": "Aliran Api Enam"
+  },
+  "shen_sha_list": [
+    {
+      "hanzi": "桃花",
+      "pillar": null
+    },
+    {
+      "hanzi": "亡神",
+      "pillar": null
+    },
+    {
+      "hanzi": "孤辰",
+      "pillar": null
+    },
+    {
+      "hanzi": "元辰",
+      "pillar": null
+    },
+    {
+      "hanzi": "大耗",
+      "pillar": null
+    }
+  ],
+  "dm_pos_score": 4086.0,
+  "dm_neg_score": 4560.0,
+  "xiantian_per_stem": {
+    "jia": 1,
+    "yi": 0,
+    "bing": 1,
+    "ding": 0,
+    "wu": 2,
+    "ji": 2,
+    "geng": 3,
+    "xin": 1,
+    "ren": 0,
+    "gui": 2
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": null,
+  "mantra": {
+    "hz": "—",
+    "pinyin": "—"
+  },
+  "_xq_radar_poly": "          <polygon points=\"200,72 297.3,144 311.2,264 200,312 116.6,248 116.6,152\"\n            fill=\"rgba(139,26,26,0.18)\" stroke=\"#8B1A1A\" stroke-width=\"1.5\"/>\n          <circle cx=\"200\" cy=\"72\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"297.3\" cy=\"144\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"264\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"200\" cy=\"312\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"116.6\" cy=\"248\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"116.6\" cy=\"152\" r=\"3\" fill=\"#8B1A1A\"/>",
+  "_xq_radar_labels": "          <g font-family=\"Noto Serif TC,serif\">\n            <text x=\"200\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">智</text>\n            <text x=\"200\" y=\"33\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Zhì · Kecerdasan · 8.0</text>\n\n            <text x=\"358\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">韌</text>\n            <text x=\"358\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Rèn · Ketahanan · 7.0</text>\n\n            <text x=\"358\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">義</text>\n            <text x=\"358\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Yì · Tanggung Jawab · 8.0</text>\n\n            <text x=\"200\" y=\"382\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">慎</text>\n            <text x=\"200\" y=\"393\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Shèn · Kehati-hatian · 7.0</text>\n\n            <text x=\"42\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">創</text>\n            <text x=\"42\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Chuàng · Kreativitas · 6.0</text>\n\n            <text x=\"42\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">仁</text>\n            <text x=\"42\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Rén · Empati · 6.0</text>\n          </g>",
+  "_xq_motto": [
+    "水",
+    "Aliran Cermat",
+    "静水深流",
+    "守正持衡"
+  ],
+  "_tafsir": {
+    "kepribadian": "Li Xiang An lahir sebagai <span class=\"hz\">癸水</span> yang halus namun cerdas, day master Air yang mengalir lembut tetapi tajam menembus celah. Format <span class=\"hz\">正官格</span> memberinya rasa tanggung jawab kuat, taat aturan, dan disiplin batin. <span class=\"hz\">庚金</span> di tahun + <span class=\"hz\">申金</span> di bulan menjadi <span class=\"hz\">正印</span> yang melahirkan air, membuatnya rajin belajar dan reflektif. Tegas berprinsip, kadang keras kepala, namun mendalam dalam berpikir.",
+    "_kepribadian_struct": {
+      "paragraf": "Li Xiang An lahir sebagai [[癸水]] yang halus namun cerdas, day master Air yang mengalir lembut tetapi tajam menembus celah. Format [[正官格]] memberinya rasa tanggung jawab kuat, taat aturan, dan disiplin batin. [[庚金]] di tahun + [[申金]] di bulan menjadi [[正印]] yang melahirkan air, membuatnya rajin belajar dan reflektif. Tegas berprinsip, kadang keras kepala, namun mendalam dalam berpikir.",
+      "radar_traits": [
+        [
+          "智",
+          "Zhì",
+          "Kecerdasan",
+          8.0
+        ],
+        [
+          "韌",
+          "Rèn",
+          "Ketahanan",
+          7.0
+        ],
+        [
+          "義",
+          "Yì",
+          "Tanggung Jawab",
+          8.0
+        ],
+        [
+          "慎",
+          "Shèn",
+          "Kehati-hatian",
+          7.0
+        ],
+        [
+          "創",
+          "Chuàng",
+          "Kreativitas",
+          6.0
+        ],
+        [
+          "仁",
+          "Rén",
+          "Empati",
+          6.0
+        ]
+      ],
+      "motto": [
+        "水",
+        "Aliran Cermat",
+        "静水深流",
+        "守正持衡"
+      ],
+      "power": [
+        "Pikiran tajam, cepat menangkap pola di balik permukaan masalah",
+        "Disiplin batin kuat, mampu memikul tanggung jawab jangka panjang",
+        "Etos kerja teguh, tidak mudah menyerah saat ditekan",
+        "Belajar mandiri, menyerap ilmu lewat refleksi mendalam"
+      ],
+      "shadow": [
+        "Keras kepala saat keyakinan diusik, sulit diberi nasihat",
+        "Kritis tajam yang kadang melukai orang dekat",
+        "Cenderung pendam emosi, sulit diakses secara hangat",
+        "Perfeksionis berlebihan, menunda karena takut belum sempurna"
+      ],
+      "optimum": [
+        "Pilih bidang yang butuh analisis dalam dan integritas tinggi",
+        "Sediakan ruang sunyi harian untuk merapikan pikiran",
+        "Tetapkan target jelas, lalu eksekusi bertahap tanpa terburu",
+        "Bangun lingkar kecil orang yang berani jujur kepada Li Xiang An"
+      ]
+    },
+    "family": "pasangan: - vibe: Tegas · Suportif - headline: Pasangan ideal yang teguh dan mengarahkan - body: Li Xiang An cocok dengan pasangan yang tegas namun bersahaja, mampu mendampingi tanpa terbawa emosi. Hubungan paling matang lahir dari komunikasi terbuka. Hindari pasangan yang manja, posesif, atau gemar adu argumen. Kestabilan tumbuh saat keduanya saling memberi ruang sunyi sekaligus tanggung jawab bersama.<br><br>anak: - vibe: Cerdas · Berbakat - headline: Anak yang cerah dan berbakat seni - body: Anak Li Xiang An berpotensi cerdas, lembut, dan kreatif, terutama bila diberi ruang ekspresi seni. Pola asuh terbaik bersifat membimbing tanpa mengekang. Dorong rasa ingin tahu, hindari instruksi keras yang menutup dialog. Hubungan ayah-anak akan harmonis bila Li Xiang An mau menurunkan tensi dan ikut bermain ringan.<br><br>saudara: - vibe: Renggang · Mandiri - headline: Saudara berjarak namun tetap saling menghormati - body: Hubungan dengan saudara kandung cenderung renggang, tiap pihak sibuk pada jalannya sendiri. Konflik kecil berakar pada perbedaan pendekatan hidup. Inisiatif rekonsiliasi sering datang dari Li Xiang An sebagai sosok rasional. Jaga komunikasi rutin sederhana, hindari debat ideologi keluarga, fokus pada momen kebersamaan praktis seperti acara keluarga.<br><br>kepemimpinan: - vibe: Tegas · Berprinsip - headline: Pemimpin yang konsisten dan adil - body: Li Xiang An memimpin lewat ketegasan, prinsip jelas, dan kerja teladan. Bawahan menghormati karena konsistensi dan keadilannya, bukan karisma hangat. Hindari gaya otoriter yang menutup masukan. Jadikan rapat rutin sarana mendengar lapangan, dan biarkan tim eksekusi dengan ruang. Kepemimpinan paling kuat lahir saat ia memodelkan disiplin yang ia tuntut.",
+    "_family_struct": {
+      "pasangan": {
+        "vibe": "Tegas · Suportif",
+        "headline": "Pasangan ideal yang teguh dan mengarahkan",
+        "body": "Li Xiang An cocok dengan pasangan yang tegas namun bersahaja, mampu mendampingi tanpa terbawa emosi. Hubungan paling matang lahir dari komunikasi terbuka. Hindari pasangan yang manja, posesif, atau gemar adu argumen. Kestabilan tumbuh saat keduanya saling memberi ruang sunyi sekaligus tanggung jawab bersama."
+      },
+      "anak": {
+        "vibe": "Cerdas · Berbakat",
+        "headline": "Anak yang cerah dan berbakat seni",
+        "body": "Anak Li Xiang An berpotensi cerdas, lembut, dan kreatif, terutama bila diberi ruang ekspresi seni. Pola asuh terbaik bersifat membimbing tanpa mengekang. Dorong rasa ingin tahu, hindari instruksi keras yang menutup dialog. Hubungan ayah-anak akan harmonis bila Li Xiang An mau menurunkan tensi dan ikut bermain ringan."
+      },
+      "saudara": {
+        "vibe": "Renggang · Mandiri",
+        "headline": "Saudara berjarak namun tetap saling menghormati",
+        "body": "Hubungan dengan saudara kandung cenderung renggang, tiap pihak sibuk pada jalannya sendiri. Konflik kecil berakar pada perbedaan pendekatan hidup. Inisiatif rekonsiliasi sering datang dari Li Xiang An sebagai sosok rasional. Jaga komunikasi rutin sederhana, hindari debat ideologi keluarga, fokus pada momen kebersamaan praktis seperti acara keluarga."
+      },
+      "kepemimpinan": {
+        "vibe": "Tegas · Berprinsip",
+        "headline": "Pemimpin yang konsisten dan adil",
+        "body": "Li Xiang An memimpin lewat ketegasan, prinsip jelas, dan kerja teladan. Bawahan menghormati karena konsistensi dan keadilannya, bukan karisma hangat. Hindari gaya otoriter yang menutup masukan. Jadikan rapat rutin sarana mendengar lapangan, dan biarkan tim eksekusi dengan ruang. Kepemimpinan paling kuat lahir saat ia memodelkan disiplin yang ia tuntut."
+      }
+    },
+    "shensha": "Bintang <span class=\"hz\">桃花</span> menyala kuat, memberi daya tarik personal dan selera estetika tinggi, namun perlu hati-hati pada godaan asmara. <span class=\"hz\">亡神</span> menambah kemampuan strategi dan kalkulasi yang dalam. <span class=\"hz\">孤辰</span> membuat batinnya sering merasa sendiri di tengah keramaian. <span class=\"hz\">元辰大耗</span> menuntut kewaspadaan pada pengeluaran impulsif dan pola hidup yang menguras energi.",
+    "_shensha_struct": {
+      "dominant_star": {
+        "hanzi": "桃花",
+        "pinyin": "Táo Huā",
+        "label_id": "Bintang Pesona",
+        "active_label": "AKTIF SEKARANG"
+      },
+      "strip": "Manfaatkan pesona untuk membangun jejaring profesional, jaga batas etis dalam relasi lintas gender."
+    },
+    "caifu": "Pola rezeki Li Xiang An lebih kuat di jalur 偏財 (proyek, peluang, kemitraan) daripada gaji rutin. <span class=\"hz\">正印</span> kuat membuat keuangan dipakai untuk belajar, properti, dan ketenangan, bukan konsumsi. Penghasilan datang bertahap melalui kerja keras dan jaringan, jarang dari spekulasi cepat. Disiplin menabung dan mengelola arus kas adalah kunci memperbesar saluran rezeki.",
+    "_caifu_struct": {
+      "zheng_cai": {
+        "label": "Rezeki Tetap",
+        "percent": "45%",
+        "body": "Gaji dan honor rutin bukan sumber utama, hanya pondasi keamanan. Cocok dipakai sebagai modal awal investasi properti atau pendidikan tambahan. Karena porsinya kurang dari setengah, jangan dijadikan satu-satunya sandaran, lengkapi dengan saluran proyek atau kemitraan yang lebih lentur."
+      },
+      "pian_cai": {
+        "label": "Rezeki Tak Terduga",
+        "percent": "55%",
+        "body": "Saluran utama datang dari proyek, peluang lintas mitra, atau bisnis sampingan yang berkembang dari relasi. Porsi mayoritas ini menuntut kelincahan membaca peluang. Hati-hati spekulasi, pilih peluang yang punya basis nilai jelas. Disiplin pencatatan dan pemisahan pos pribadi-usaha menjaga rezeki tak terduga tetap mengalir."
+      },
+      "rules": [
+        {
+          "title": "Pisahkan dompet pribadi dan proyek",
+          "context": "Tanpa pemisahan, arus kas tampak besar tetapi sulit diaudit",
+          "tone": "tip"
+        },
+        {
+          "title": "Hindari pinjaman untuk spekulasi",
+          "context": "元辰大耗 mengingatkan beban utang berbunga akan menggerus stamina finansial",
+          "tone": "warn"
+        },
+        {
+          "title": "Investasi rutin pada aset produktif",
+          "context": "Properti, reksadana, atau pelatihan keterampilan menjadi pengikat rezeki jangka panjang",
+          "tone": "tip"
+        },
+        {
+          "title": "Waspadai relasi keuangan informal",
+          "context": "Pinjam-meminjam dengan keluarga atau teman dekat sering memicu konflik panjang",
+          "tone": "warn"
+        }
+      ]
+    },
+    "career": "<p>Karir Li Xiang An paling kuat di bidang yang menuntut analisis, integritas, dan kerja konsisten. <span class=\"hz\">正官格</span> cocok untuk peran terstruktur, sementara <span class=\"hz\">正印</span> kuat menambah daya jelajah intelektual. Kombinasi ini membuka jalur profesional yang stabil sekaligus menantang.</p><ul><li><strong>\"<span class=\"hz\">律師</span> / Pengacara\"</strong> (unsur 金), foto 事業 sebut langsung sebagai bidang searah, cocok untuk format 正官 yang taat aturan</li><li><strong>\"<span class=\"hz\">會計</span> / Akuntansi\"</strong> (unsur 金), foto 事業 sebut langsung, sesuai disiplin dan ketelitian Li Xiang An</li><li><strong>\"<span class=\"hz\">金融界</span> / Keuangan\"</strong> (unsur 金), foto 事業 sebut langsung, cocok dengan logika analitis day master 癸水</li><li><strong>\"<span class=\"hz\">科學家</span> / Saintis\"</strong> (unsur 金), foto 事業 sebut langsung, mendukung ketertarikan pada riset dan pola</li><li><strong>\"<span class=\"hz\">出版</span> / Penerbitan\"</strong> (unsur 木), foto 事業 sebut langsung, sejalan dengan minat literasi dan refleksi</li></ul>",
+    "_career_struct": {
+      "tags": {
+        "fav_1": [
+          "金",
+          "\"LOGAM\""
+        ],
+        "fav_2": [
+          "水",
+          "\"AIR\""
+        ],
+        "unfav_1": [
+          "土",
+          "\"TANAH\""
+        ],
+        "unfav_2": [
+          "火",
+          "\"API\""
+        ]
+      },
+      "industri": [
+        {
+          "nama": "\"[[律師]] / Pengacara\"",
+          "unsur": "金",
+          "alasan": "foto 事業 sebut langsung sebagai bidang searah, cocok untuk format 正官 yang taat aturan"
+        },
+        {
+          "nama": "\"[[會計]] / Akuntansi\"",
+          "unsur": "金",
+          "alasan": "foto 事業 sebut langsung, sesuai disiplin dan ketelitian Li Xiang An"
+        },
+        {
+          "nama": "\"[[金融界]] / Keuangan\"",
+          "unsur": "金",
+          "alasan": "foto 事業 sebut langsung, cocok dengan logika analitis day master 癸水"
+        },
+        {
+          "nama": "\"[[科學家]] / Saintis\"",
+          "unsur": "金",
+          "alasan": "foto 事業 sebut langsung, mendukung ketertarikan pada riset dan pola"
+        },
+        {
+          "nama": "\"[[出版]] / Penerbitan\"",
+          "unsur": "木",
+          "alasan": "foto 事業 sebut langsung, sejalan dengan minat literasi dan refleksi"
+        }
+      ]
+    },
+    "daymaster": "Day master <span class=\"hz\">癸水</span> Li Xiang An tergolong <span class=\"hz\">弱</span> (Lemah). <span class=\"hz\">用神</span> utama adalah <span class=\"hz\">金</span> dan <span class=\"hz\">水</span>: 金 melahirkan air sebagai 印, 水 menguatkan diri lewat 比劫. <span class=\"hz\">喜用神</span> <span class=\"hz\">木</span> juga membantu menyalurkan energi secara kreatif. Aktifkan unsur ini lewat warna biru-putih, lokasi utara-barat, dan kebiasaan reflektif.",
+    "_jishen_body": "<span class=\"hz\">忌神</span> adalah <span class=\"hz\">土</span> yang membendung air dan <span class=\"hz\">火</span> sebagai <span class=\"hz\">仇神</span> yang menguras stamina. Hindari beban berlebih, lingkungan kering panas, atau keputusan terburu. Jaga ritme tidur dan asupan air agar <span class=\"hz\">癸水</span> tetap mengalir bersih.",
+    "yangzhai": "Trigram pribadi Li Xiang An adalah <span class=\"hz\">坎</span> (Air), kelompok East Four. Arah hoki utama meliputi utara, timur, tenggara, dan selatan. Hunian ideal menghadap utara atau selatan, dengan kamar tidur di utara atau timur. Hindari menempatkan dapur dan kamar mandi di pusat rumah karena mengganggu energi inti. Tata ruang kerja di sisi timur untuk produktivitas, altar di barat laut atau timur laut.",
+    "_yangzhai_struct": {
+      "zones": [
+        {
+          "label": "Pintu Utama",
+          "headline": "✓ Optimal",
+          "pills": "北",
+          "note": "Menghadap utara membuka aliran rezeki dan kesehatan"
+        },
+        {
+          "label": "Kamar Tidur",
+          "headline": "✓ Optimal",
+          "pills": "東",
+          "note": "Timur memberi ketenangan tidur dan regenerasi energi pagi"
+        },
+        {
+          "label": "Dapur / Kompor",
+          "headline": "⚠ Hati-hati",
+          "pills": "東南",
+          "note": "Hindari sudut barat daya, jaga ventilasi dan kebersihan"
+        },
+        {
+          "label": "Kamar Mandi",
+          "headline": "⚠ Hati-hati",
+          "pills": "西南",
+          "note": "Hindari di tengah rumah, cukup di sudut tertutup"
+        },
+        {
+          "label": "Ruang Kerja",
+          "headline": "✓ Optimal",
+          "pills": "東",
+          "note": "Sisi timur mendukung fokus dan produktivitas analitis"
+        },
+        {
+          "label": "Altar / Sembah",
+          "headline": "✓ Optimal",
+          "pills": "西北",
+          "note": "Barat laut atau timur laut memperkuat ketenangan batin"
+        }
+      ]
+    },
+    "dayun_spotlight": "<div class=\"sp-headline\">Fase 29–38: Api Yin Babi (<span class=\"hz\">丁亥</span>), Bangkit Lewat Peluang Kemitraan</div><ul class='sp-bullets'><li>Energi 偏財 mendorong Li Xiang An ke jalur proyek, kemitraan, dan peluang lintas relasi yang luwes.</li><li>亥水 menambah daya tampung emosi, baik untuk membangun jaringan dan menjaga kesehatan mental.</li><li>Hati-hati godaan spekulasi, pilih peluang yang punya basis nilai jelas dan kontrak rapi.</li><li>Investasi pada keterampilan dan properti menjadi pengikat rezeki untuk fase berikutnya.</li></ul>",
+    "dayun_seasons": "<ol class='dy-seasons'><li>umur 9-28: Tunas Belajar — fondasi 食神-正財 menumbuhkan rasa ingin tahu dan disiplin awal</li><li>umur 29-48: Bangkit Bekerja — 偏財-正官 mendorong puncak produktivitas dan tanggung jawab</li><li>umur 49-68: Konsolidasi Otoritas — 七殺-正印 mempertajam wibawa dan kebijaksanaan</li><li>umur 69-88: Pewaris Ilmu — 偏印-劫財 saat berbagi pengalaman dan mentorship</li><li>umur 89-99: Senja Tenang — 比肩-傷官 untuk menutup hidup dengan refleksi dan karya</li></ol>",
+    "dayun_footer": "Li Xiang An di fase <span class=\"hz\">丁亥</span> (29-38), bangkit lewat peluang kemitraan dan disiplin finansial.",
+    "palace1": "<p>ming_gong: - star: 巨門 - insight: Istana Hidup di <span class=\"hz\">丑</span> dengan <span class=\"hz\">巨門</span> memberi Li Xiang An kemampuan analisis dan komunikasi mendalam, kadang skeptis. Cenderung berpikir berlapis dan hati-hati menilai orang. Kekuatan ada di lisan, tulisan, dan riset. Tantangannya adalah kecenderungan ragu dan kritis berlebih yang menyulitkan keputusan cepat. - action: Latih kepercayaan diri lewat publik kecil, ambil keputusan bertahap.</p><p>xiongdi: - star: null - insight: Istana Saudara menunjukkan hubungan dengan saudara kandung yang berjarak, masing-masing sibuk pada jalannya sendiri. Konflik kecil mungkin muncul dari perbedaan prinsip. Inisiatif menjaga komunikasi rutin sebaiknya datang dari Li Xiang An sebagai sosok rasional. Hindari debat warisan dan fokus pada acara keluarga ringan. - action: Jadwalkan kontak rutin tanpa agenda berat.</p><p>fuqi: - star: null - insight: Istana Pasangan menunjukkan kehidupan asmara cukup hangat namun ranjang dan komunikasi emosi jadi titik gesek. Pasangan ideal adalah sosok bersahaja yang bisa diajak diskusi tenang. Hindari pasangan yang mudah cemburu atau hobi adu argumen. Stabilitas tumbuh saat keduanya saling memberi ruang dan tanggung jawab bersama. - action: Bangun ritual mingguan untuk dialog terbuka.</p><p>zinu: - star: null - insight: Istana Anak menjanjikan anak yang cerdas, lembut, dan punya bakat seni. Pola asuh terbaik bersifat membimbing, bukan mendikte. Dorong rasa ingin tahu, biarkan ekspresi bebas. Hindari instruksi keras yang menutup dialog. Hubungan ayah-anak akan harmonis bila Li Xiang An mau menurunkan tensi dan ikut bermain ringan. - action: Sisihkan waktu khusus tanpa gawai untuk anak.</p>",
+    "_palace1_struct": {
+      "ming_gong": {
+        "star": "巨門",
+        "insight": "Istana Hidup di [[丑]] dengan [[巨門]] memberi Li Xiang An kemampuan analisis dan komunikasi mendalam, kadang skeptis. Cenderung berpikir berlapis dan hati-hati menilai orang. Kekuatan ada di lisan, tulisan, dan riset. Tantangannya adalah kecenderungan ragu dan kritis berlebih yang menyulitkan keputusan cepat.",
+        "action": "Latih kepercayaan diri lewat publik kecil, ambil keputusan bertahap."
+      },
+      "xiongdi": {
+        "insight": "Istana Saudara menunjukkan hubungan dengan saudara kandung yang berjarak, masing-masing sibuk pada jalannya sendiri. Konflik kecil mungkin muncul dari perbedaan prinsip. Inisiatif menjaga komunikasi rutin sebaiknya datang dari Li Xiang An sebagai sosok rasional. Hindari debat warisan dan fokus pada acara keluarga ringan.",
+        "action": "Jadwalkan kontak rutin tanpa agenda berat."
+      },
+      "fuqi": {
+        "insight": "Istana Pasangan menunjukkan kehidupan asmara cukup hangat namun ranjang dan komunikasi emosi jadi titik gesek. Pasangan ideal adalah sosok bersahaja yang bisa diajak diskusi tenang. Hindari pasangan yang mudah cemburu atau hobi adu argumen. Stabilitas tumbuh saat keduanya saling memberi ruang dan tanggung jawab bersama.",
+        "action": "Bangun ritual mingguan untuk dialog terbuka."
+      },
+      "zinu": {
+        "insight": "Istana Anak menjanjikan anak yang cerdas, lembut, dan punya bakat seni. Pola asuh terbaik bersifat membimbing, bukan mendikte. Dorong rasa ingin tahu, biarkan ekspresi bebas. Hindari instruksi keras yang menutup dialog. Hubungan ayah-anak akan harmonis bila Li Xiang An mau menurunkan tensi dan ikut bermain ringan.",
+        "action": "Sisihkan waktu khusus tanpa gawai untuk anak."
+      }
+    },
+    "palace2": "<p>caibo: - star: 天機 - insight: Istana Rezeki dengan <span class=\"hz\">天機</span> menandai pola finansial yang dinamis, sering berubah strategi. Penghasilan datang dari kombinasi kerja, ide, dan peluang. Cocok untuk peran konsultatif atau bisnis berbasis pengetahuan. Hati-hati pengeluaran impulsif, pisahkan dompet pribadi dan proyek agar arus kas tetap rapi. - action: Catat pemasukan dan pengeluaran harian secara konsisten.</p><p>jie_e: - star: 貪狼 - insight: Istana Kesehatan dengan <span class=\"hz\">貪狼</span> menandai kekuatan tubuh dasar yang baik, namun rentan keluhan saluran nafas, paru, dan saluran pencernaan terutama usus besar. Jaga pola makan teratur, hindari rokok dan alkohol berlebih. Olahraga ringan dan rutinitas tidur menjadi penjaga utama stamina jangka panjang. - action: Cek kesehatan rutin tahunan, fokus paru dan pencernaan.</p><p>qianyi: - star: 天同 - insight: Istana Perpindahan dengan <span class=\"hz\">天同</span> memberi keberuntungan saat Li Xiang An bepergian, pindah kerja, atau pindah rumah. Perubahan lingkungan justru memicu kemajuan. Hindari aktivitas berlebih di malam hari saat perjalanan. Cocok membangun karir di kota besar atau lintas wilayah, dengan jaringan yang luas. - action: Jadikan perjalanan sebagai sarana belajar dan membangun relasi.</p><p>puyi: - star: null - insight: Istana Sahabat menandai relasi pertemanan yang ramai namun butuh seleksi. Banyak teman senang berkumpul, namun yang benar-benar dapat dipercaya tidak banyak. Hindari relasi yang berbasis konsumsi alkohol dan gosip. Bangun lingkar kecil sahabat sejati yang bisa diajak kerja sama jangka panjang. - action: Investasikan waktu pada 3-5 sahabat inti.</p>",
+    "_palace2_struct": {
+      "caibo": {
+        "star": "天機",
+        "insight": "Istana Rezeki dengan [[天機]] menandai pola finansial yang dinamis, sering berubah strategi. Penghasilan datang dari kombinasi kerja, ide, dan peluang. Cocok untuk peran konsultatif atau bisnis berbasis pengetahuan. Hati-hati pengeluaran impulsif, pisahkan dompet pribadi dan proyek agar arus kas tetap rapi.",
+        "action": "Catat pemasukan dan pengeluaran harian secara konsisten."
+      },
+      "jie_e": {
+        "star": "貪狼",
+        "insight": "Istana Kesehatan dengan [[貪狼]] menandai kekuatan tubuh dasar yang baik, namun rentan keluhan saluran nafas, paru, dan saluran pencernaan terutama usus besar. Jaga pola makan teratur, hindari rokok dan alkohol berlebih. Olahraga ringan dan rutinitas tidur menjadi penjaga utama stamina jangka panjang.",
+        "action": "Cek kesehatan rutin tahunan, fokus paru dan pencernaan."
+      },
+      "qianyi": {
+        "star": "天同",
+        "insight": "Istana Perpindahan dengan [[天同]] memberi keberuntungan saat Li Xiang An bepergian, pindah kerja, atau pindah rumah. Perubahan lingkungan justru memicu kemajuan. Hindari aktivitas berlebih di malam hari saat perjalanan. Cocok membangun karir di kota besar atau lintas wilayah, dengan jaringan yang luas.",
+        "action": "Jadikan perjalanan sebagai sarana belajar dan membangun relasi."
+      },
+      "puyi": {
+        "insight": "Istana Sahabat menandai relasi pertemanan yang ramai namun butuh seleksi. Banyak teman senang berkumpul, namun yang benar-benar dapat dipercaya tidak banyak. Hindari relasi yang berbasis konsumsi alkohol dan gosip. Bangun lingkar kecil sahabat sejati yang bisa diajak kerja sama jangka panjang.",
+        "action": "Investasikan waktu pada 3-5 sahabat inti."
+      }
+    },
+    "palace3": "<p>guanlu: - star: null - insight: Istana Karir mendukung peran sebagai pemikir, penulis, evaluator, atau profesi struktural yang menuntut integritas. Sukses datang lewat ketekunan dan reputasi yang konsisten. Hati-hati gangguan dari kompetitor saat fase puncak karir. Posisi sekretaris atau staff ahli adalah pintu yang sering dibukakan keberuntungan. - action: Bangun portofolio publik untuk memperkuat reputasi.</p><p>tianzhai: - star: null - insight: Istana Properti menjanjikan aset properti yang layak besar, sebagian warisan keluarga, sebagian hasil kerja sendiri. Keberuntungan paling kuat di properti arah utara. Pertahankan properti, hindari menjual pada fase awal karir. Tempat bernuansa literasi dan budaya cocok dijadikan hunian utama. - action: Targetkan satu aset properti sebelum usia 45.</p><p>fude: - star: null - insight: Istana Berkah menandai vitalitas mental yang kuat namun butuh penyaluran. Ketekunan dan ulet menjadi modal panjang umur. Hindari kekhawatiran berlebih dan kecurigaan yang menggerus tenang batin. Praktik meditasi atau hobi tenang seperti membaca dan musik akan menjaga kewarasan jangka panjang. - action: Sediakan satu jam sunyi setiap hari.</p><p>fumu: - star: null - insight: Istana Orang Tua menunjukkan hubungan ayah-ibu yang hangat secara permukaan namun rawan benturan karakter. Sejak kecil Li Xiang An sering bersinggungan dengan orang tua, mungkin sempat hidup berjauhan. Sebagai dewasa, jaga komunikasi rutin tanpa konfrontasi prinsip. Bantu finansial sesuai kemampuan, jangan diskusi politik atau warisan. - action: Telepon orang tua mingguan dengan topik ringan.</p>",
+    "_palace3_struct": {
+      "guanlu": {
+        "insight": "Istana Karir mendukung peran sebagai pemikir, penulis, evaluator, atau profesi struktural yang menuntut integritas. Sukses datang lewat ketekunan dan reputasi yang konsisten. Hati-hati gangguan dari kompetitor saat fase puncak karir. Posisi sekretaris atau staff ahli adalah pintu yang sering dibukakan keberuntungan.",
+        "action": "Bangun portofolio publik untuk memperkuat reputasi."
+      },
+      "tianzhai": {
+        "insight": "Istana Properti menjanjikan aset properti yang layak besar, sebagian warisan keluarga, sebagian hasil kerja sendiri. Keberuntungan paling kuat di properti arah utara. Pertahankan properti, hindari menjual pada fase awal karir. Tempat bernuansa literasi dan budaya cocok dijadikan hunian utama.",
+        "action": "Targetkan satu aset properti sebelum usia 45."
+      },
+      "fude": {
+        "insight": "Istana Berkah menandai vitalitas mental yang kuat namun butuh penyaluran. Ketekunan dan ulet menjadi modal panjang umur. Hindari kekhawatiran berlebih dan kecurigaan yang menggerus tenang batin. Praktik meditasi atau hobi tenang seperti membaca dan musik akan menjaga kewarasan jangka panjang.",
+        "action": "Sediakan satu jam sunyi setiap hari."
+      },
+      "fumu": {
+        "insight": "Istana Orang Tua menunjukkan hubungan ayah-ibu yang hangat secara permukaan namun rawan benturan karakter. Sejak kecil Li Xiang An sering bersinggungan dengan orang tua, mungkin sempat hidup berjauhan. Sebagai dewasa, jaga komunikasi rutin tanpa konfrontasi prinsip. Bantu finansial sesuai kemampuan, jangan diskusi politik atau warisan.",
+        "action": "Telepon orang tua mingguan dengan topik ringan."
+      }
+    },
+    "kesimpulan": "Air <span class=\"hz\">癸水</span> yang tenang menembus batu bukan karena kuat, tetapi karena tekun mengalir di jalur yang benar, demikian Li Xiang An menapaki hidup.",
+    "_kesimpulan_struct": {
+      "quote": "Air [[癸水]] yang tenang menembus batu bukan karena kuat, tetapi karena tekun mengalir di jalur yang benar, demikian Li Xiang An menapaki hidup.",
+      "stats": {
+        "format_desc": "Format 正官 menempa Li Xiang An menjadi sosok tertib, bertanggung jawab, taat prinsip.",
+        "yong_desc": "Aktifkan 金水 lewat warna putih-biru, arah utara-barat, dan kebiasaan reflektif harian.",
+        "dayun_desc": "Fase 偏財 29-38 mendorong bangkit lewat kemitraan dan peluang lintas relasi.",
+        "umur_desc": "Dekade 30-an adalah panggung produktif sekaligus penempaan tanggung jawab.",
+        "kompat_desc": "Cocok dengan shio Macan, Kambing, Anjing; hindari Tikus, Kerbau, Kelinci, Kuda."
+      },
+      "life_map": {
+        "lalu": "Fase belajar dan adaptasi, membangun fondasi disiplin dan rasa ingin tahu lewat pendidikan dan pekerjaan awal yang menempa.",
+        "sekarang": "Fase 偏財 29-38, bangkit melalui peluang kemitraan, proyek, dan pengelolaan finansial yang lebih dewasa.",
+        "berikutnya": "Fase 正官 39-48, panggung tanggung jawab penuh, kepemimpinan struktural, dan reputasi profesional yang matang."
+      }
+    },
+    "sintesis": "Li Xiang An adalah aliran <span class=\"hz\">癸水</span> yang halus namun tajam, dipandu format <span class=\"hz\">正官</span> dan ditopang <span class=\"hz\">正印</span> kuat, siap mengalir lewat tanggung jawab dan disiplin.",
+    "_sintesis_struct": {
+      "opening": "Li Xiang An adalah aliran [[癸水]] yang halus namun tajam, dipandu format [[正官]] dan ditopang [[正印]] kuat, siap mengalir lewat tanggung jawab dan disiplin.",
+      "trio": {
+        "kekuatan": {
+          "hanzi": "智慧",
+          "pinyin": "Zhì Huì",
+          "arti": "Kebijaksanaan Mendalam",
+          "body": "Kekuatan inti Li Xiang An ada pada kecerdasan analitis dan kebijaksanaan reflektif. Day master [[癸水]] yang ditopang [[正印]] kuat membuatnya cepat menyerap pengetahuan dan menalar pola. Modal ini menjadi senjata utama dalam karir dan pengambilan keputusan jangka panjang."
+        },
+        "tantangan": {
+          "hanzi": "固執",
+          "pinyin": "Gù Zhí",
+          "arti": "Keras Hati",
+          "body": "Tantangan utama adalah kekerasan hati dan kecenderungan kritis tajam. Saat keyakinan diusik, Li Xiang An sulit menerima masukan, kadang melukai orang dekat tanpa sengaja. Latih kelenturan emosi lewat dialog terbuka dan kesediaan mengakui keraguan secara sehat."
+        },
+        "tindakan": {
+          "hanzi": "守正",
+          "pinyin": "Shǒu Zhèng",
+          "arti": "Menjaga Kebenaran",
+          "body": "Panggung optimal Li Xiang An adalah peran yang menuntut integritas dan analisis dalam. Pegang teguh prinsip, namun sediakan ruang dengar untuk lapangan. Eksekusi bertahap dengan target jelas, dan biarkan kerja konsisten membentuk reputasi yang membuka pintu peluang besar."
+        }
+      },
+      "actions": [
+        {
+          "title": "Tetapkan jadwal sunyi harian satu jam",
+          "context": "Untuk merapikan pikiran dan memulihkan stamina mental"
+        },
+        {
+          "title": "Bangun portofolio publik di bidang utama",
+          "context": "Tulisan, riset, atau proyek terdokumentasi memperkuat reputasi profesional"
+        },
+        {
+          "title": "Pisahkan dompet pribadi dan proyek",
+          "context": "Catat aliran kas harian agar arus rezeki terkendali"
+        },
+        {
+          "title": "Pilih lima sahabat inti, bina dengan sungguh",
+          "context": "Lingkar kecil sejati lebih bernilai daripada banyak kenalan"
+        },
+        {
+          "title": "Periksa kesehatan paru dan pencernaan tahunan",
+          "context": "Cegah keluhan kronis sejak dini, jaga pola makan dan tidur"
+        }
+      ]
+    },
+    "_dmcard": "\n        <div class=\"dmc-eyebrow\">本 命 · Penguasa Hari</div>\n        <div class=\"dmc-stem\">癸</div>\n        <div class=\"dmc-element\">水 · Air Yin</div>\n        <div class=\"dmc-pinyin\">Guǐ 水, \"Embun\"</div>\n        <div class=\"dmc-traits\">\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span><strong>Pemikir</strong>, intuitif, mendalam</span></div>\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span>Halus tapi merembes, perubahan dari dalam</span></div>\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span>Mekar dengan kayu (penopang) + api (visi)</span></div>\n        </div>\n        <div class=\"dmc-strength\">Status: <span class=\"val\">LEMAH</span> · 弱</div>\n      ",
+    "fam_pasangan_vibe": "Tegas · Suportif",
+    "fam_pasangan_headline": "Pasangan ideal yang teguh dan mengarahkan",
+    "fam_pasangan_body": "Li Xiang An cocok dengan pasangan yang tegas namun bersahaja, mampu mendampingi tanpa terbawa emosi. Hubungan paling matang lahir dari komunikasi terbuka. Hindari pasangan yang manja, posesif, atau gemar adu argumen. Kestabilan tumbuh saat keduanya saling memberi ruang sunyi sekaligus tanggung jawab bersama.",
+    "fam_anak_vibe": "Cerdas · Berbakat",
+    "fam_anak_headline": "Anak yang cerah dan berbakat seni",
+    "fam_anak_body": "Anak Li Xiang An berpotensi cerdas, lembut, dan kreatif, terutama bila diberi ruang ekspresi seni. Pola asuh terbaik bersifat membimbing tanpa mengekang. Dorong rasa ingin tahu, hindari instruksi keras yang menutup dialog. Hubungan ayah-anak akan harmonis bila Li Xiang An mau menurunkan tensi dan ikut bermain ringan.",
+    "fam_saudara_vibe": "Renggang · Mandiri",
+    "fam_saudara_headline": "Saudara berjarak namun tetap saling menghormati",
+    "fam_saudara_body": "Hubungan dengan saudara kandung cenderung renggang, tiap pihak sibuk pada jalannya sendiri. Konflik kecil berakar pada perbedaan pendekatan hidup. Inisiatif rekonsiliasi sering datang dari Li Xiang An sebagai sosok rasional. Jaga komunikasi rutin sederhana, hindari debat ideologi keluarga, fokus pada momen kebersamaan praktis seperti acara keluarga.",
+    "fam_kepemimpinan_vibe": "Tegas · Berprinsip",
+    "fam_kepemimpinan_headline": "Pemimpin yang konsisten dan adil",
+    "fam_kepemimpinan_body": "Li Xiang An memimpin lewat ketegasan, prinsip jelas, dan kerja teladan. Bawahan menghormati karena konsistensi dan keadilannya, bukan karisma hangat. Hindari gaya otoriter yang menutup masukan. Jadikan rapat rutin sarana mendengar lapangan, dan biarkan tim eksekusi dengan ruang. Kepemimpinan paling kuat lahir saat ia memodelkan disiplin yang ia tuntut.",
+    "caifu_zheng_gauge": "<div class=\"cfm-gauge-fill\" style=\"width:45%\">45%</div>",
+    "caifu_zheng_body": "Gaji dan honor rutin bukan sumber utama, hanya pondasi keamanan. Cocok dipakai sebagai modal awal investasi properti atau pendidikan tambahan. Karena porsinya kurang dari setengah, jangan dijadikan satu-satunya sandaran, lengkapi dengan saluran proyek atau kemitraan yang lebih lentur.",
+    "caifu_pian_gauge": "<div class=\"cfm-gauge-fill\" style=\"width:55%\">55%</div>",
+    "caifu_pian_body": "Saluran utama datang dari proyek, peluang lintas mitra, atau bisnis sampingan yang berkembang dari relasi. Porsi mayoritas ini menuntut kelincahan membaca peluang. Hati-hati spekulasi, pilih peluang yang punya basis nilai jelas. Disiplin pencatatan dan pemisahan pos pribadi-usaha menjaga rezeki tak terduga tetap mengalir.",
+    "_caifu_rules": "\n        <div class=\"cf-rule tip\">\n          <div class=\"cfr-num\">1</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Pisahkan dompet pribadi dan proyek</div>\n            <div class=\"cfr-context\">Tanpa pemisahan, arus kas tampak besar tetapi sulit diaudit</div>\n          </div>\n        </div>\n        <div class=\"cf-rule warn\">\n          <div class=\"cfr-num\">2</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Hindari pinjaman untuk spekulasi</div>\n            <div class=\"cfr-context\">元辰大耗 mengingatkan beban utang berbunga akan menggerus stamina finansial</div>\n          </div>\n        </div>\n        <div class=\"cf-rule tip\">\n          <div class=\"cfr-num\">3</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Investasi rutin pada aset produktif</div>\n            <div class=\"cfr-context\">Properti, reksadana, atau pelatihan keterampilan menjadi pengikat rezeki jangka panjang</div>\n          </div>\n        </div>\n        <div class=\"cf-rule warn\">\n          <div class=\"cfr-num\">4</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Waspadai relasi keuangan informal</div>\n            <div class=\"cfr-context\">Pinjam-meminjam dengan keluarga atau teman dekat sering memicu konflik panjang</div>\n          </div>\n        </div>\n",
+    "_p1_ming_gong": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Diri</span><span class=\"pn-meta\">Mìng Gōng<span class=\"hz\">命宮</span></span></div></div><div class=\"pal-body\">Istana Hidup di <span class=\"hz\">丑</span> dengan <span class=\"hz\">巨門</span> memberi Li Xiang An kemampuan analisis dan komunikasi mendalam, kadang skeptis. Cenderung berpikir berlapis dan hati-hati menilai orang. Kekuatan ada di lisan, tulisan, dan riset. Tantangannya adalah kecenderungan ragu dan kritis berlebih yang menyulitkan keputusan cepat.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Latih kepercayaan diri lewat publik kecil, ambil keputusan bertahap.</span></div></div>",
+    "_p1_xiongdi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Saudara</span><span class=\"pn-meta\">Xiōng Dì<span class=\"hz\">兄弟</span></span></div></div><div class=\"pal-body\">Istana Saudara menunjukkan hubungan dengan saudara kandung yang berjarak, masing-masing sibuk pada jalannya sendiri. Konflik kecil mungkin muncul dari perbedaan prinsip. Inisiatif menjaga komunikasi rutin sebaiknya datang dari Li Xiang An sebagai sosok rasional. Hindari debat warisan dan fokus pada acara keluarga ringan.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jadwalkan kontak rutin tanpa agenda berat.</span></div></div>",
+    "_p1_fuqi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pasangan</span><span class=\"pn-meta\">Fū Qī<span class=\"hz\">夫妻</span></span></div></div><div class=\"pal-body\">Istana Pasangan menunjukkan kehidupan asmara cukup hangat namun ranjang dan komunikasi emosi jadi titik gesek. Pasangan ideal adalah sosok bersahaja yang bisa diajak diskusi tenang. Hindari pasangan yang mudah cemburu atau hobi adu argumen. Stabilitas tumbuh saat keduanya saling memberi ruang dan tanggung jawab bersama.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun ritual mingguan untuk dialog terbuka.</span></div></div>",
+    "_p1_zinu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Anak</span><span class=\"pn-meta\">Zǐ Nǚ<span class=\"hz\">子女</span></span></div></div><div class=\"pal-body\">Istana Anak menjanjikan anak yang cerdas, lembut, dan punya bakat seni. Pola asuh terbaik bersifat membimbing, bukan mendikte. Dorong rasa ingin tahu, biarkan ekspresi bebas. Hindari instruksi keras yang menutup dialog. Hubungan ayah-anak akan harmonis bila Li Xiang An mau menurunkan tensi dan ikut bermain ringan.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Sisihkan waktu khusus tanpa gawai untuk anak.</span></div></div>",
+    "_p2_caibo": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Rezeki</span><span class=\"pn-meta\">Cái Bó<span class=\"hz\">財帛</span></span></div></div><div class=\"pal-body\">Istana Rezeki dengan <span class=\"hz\">天機</span> menandai pola finansial yang dinamis, sering berubah strategi. Penghasilan datang dari kombinasi kerja, ide, dan peluang. Cocok untuk peran konsultatif atau bisnis berbasis pengetahuan. Hati-hati pengeluaran impulsif, pisahkan dompet pribadi dan proyek agar arus kas tetap rapi.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Catat pemasukan dan pengeluaran harian secara konsisten.</span></div></div>",
+    "_p2_jie_e": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Kesehatan</span><span class=\"pn-meta\">Jí È<span class=\"hz\">疾厄</span></span></div></div><div class=\"pal-body\">Istana Kesehatan dengan <span class=\"hz\">貪狼</span> menandai kekuatan tubuh dasar yang baik, namun rentan keluhan saluran nafas, paru, dan saluran pencernaan terutama usus besar. Jaga pola makan teratur, hindari rokok dan alkohol berlebih. Olahraga ringan dan rutinitas tidur menjadi penjaga utama stamina jangka panjang.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Cek kesehatan rutin tahunan, fokus paru dan pencernaan.</span></div></div>",
+    "_p2_qianyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Perpindahan</span><span class=\"pn-meta\">Qiān Yí<span class=\"hz\">遷移</span></span></div></div><div class=\"pal-body\">Istana Perpindahan dengan <span class=\"hz\">天同</span> memberi keberuntungan saat Li Xiang An bepergian, pindah kerja, atau pindah rumah. Perubahan lingkungan justru memicu kemajuan. Hindari aktivitas berlebih di malam hari saat perjalanan. Cocok membangun karir di kota besar atau lintas wilayah, dengan jaringan yang luas.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jadikan perjalanan sebagai sarana belajar dan membangun relasi.</span></div></div>",
+    "_p2_puyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pertemanan</span><span class=\"pn-meta\">Pú Yì<span class=\"hz\">僕役</span></span></div></div><div class=\"pal-body\">Istana Sahabat menandai relasi pertemanan yang ramai namun butuh seleksi. Banyak teman senang berkumpul, namun yang benar-benar dapat dipercaya tidak banyak. Hindari relasi yang berbasis konsumsi alkohol dan gosip. Bangun lingkar kecil sahabat sejati yang bisa diajak kerja sama jangka panjang.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Investasikan waktu pada 3-5 sahabat inti.</span></div></div>",
+    "_p3_guanlu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Karir</span><span class=\"pn-meta\">Guān Lù<span class=\"hz\">官祿</span></span></div></div><div class=\"pal-body\">Istana Karir mendukung peran sebagai pemikir, penulis, evaluator, atau profesi struktural yang menuntut integritas. Sukses datang lewat ketekunan dan reputasi yang konsisten. Hati-hati gangguan dari kompetitor saat fase puncak karir. Posisi sekretaris atau staff ahli adalah pintu yang sering dibukakan keberuntungan.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun portofolio publik untuk memperkuat reputasi.</span></div></div>",
+    "_p3_tianzhai": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Properti</span><span class=\"pn-meta\">Tián Zhái<span class=\"hz\">田宅</span></span></div></div><div class=\"pal-body\">Istana Properti menjanjikan aset properti yang layak besar, sebagian warisan keluarga, sebagian hasil kerja sendiri. Keberuntungan paling kuat di properti arah utara. Pertahankan properti, hindari menjual pada fase awal karir. Tempat bernuansa literasi dan budaya cocok dijadikan hunian utama.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Targetkan satu aset properti sebelum usia 45.</span></div></div>",
+    "_p3_fude": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Berkah</span><span class=\"pn-meta\">Fú Dé<span class=\"hz\">福德</span></span></div></div><div class=\"pal-body\">Istana Berkah menandai vitalitas mental yang kuat namun butuh penyaluran. Ketekunan dan ulet menjadi modal panjang umur. Hindari kekhawatiran berlebih dan kecurigaan yang menggerus tenang batin. Praktik meditasi atau hobi tenang seperti membaca dan musik akan menjaga kewarasan jangka panjang.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Sediakan satu jam sunyi setiap hari.</span></div></div>",
+    "_p3_fumu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Orang Tua</span><span class=\"pn-meta\">Fù Mǔ<span class=\"hz\">父母</span></span></div></div><div class=\"pal-body\">Istana Orang Tua menunjukkan hubungan ayah-ibu yang hangat secara permukaan namun rawan benturan karakter. Sejak kecil Li Xiang An sering bersinggungan dengan orang tua, mungkin sempat hidup berjauhan. Sebagai dewasa, jaga komunikasi rutin tanpa konfrontasi prinsip. Bantu finansial sesuai kemampuan, jangan diskusi politik atau warisan.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Telepon orang tua mingguan dengan topik ringan.</span></div></div>",
+    "_kes_stats": "\n      <div class=\"kes-stat s1\"><div class=\"ks-eb\">Penguasa Hari · 日主</div><div class=\"ks-num\"><span class=\"hz\">癸水</span><span class=\"unit\">LEMAH · 弱</span></div><div class=\"ks-title\">Air Hujan Lemah</div><div class=\"ks-desc\">Total Wu Xing 12, 水 <strong>16.7%</strong> dari distribusi total</div></div>\n      <div class=\"kes-stat s2\"><div class=\"ks-eb\">Format · 格局</div><div class=\"ks-num\"><span class=\"hz\">正官格</span><span class=\"unit\">FORMAT</span></div><div class=\"ks-title\">Zheng Guan Ge, Penjaga Disiplin</div><div class=\"ks-desc\">Format 正官 menempa Li Xiang An menjadi sosok tertib, bertanggung jawab, taat prinsip.</div></div>\n      <div class=\"kes-stat s3\"><div class=\"ks-eb\">Yong Shen · 喜用神</div><div class=\"ks-num\"><span class=\"hz\">金水</span><span class=\"unit\">MENDUKUNG</span></div><div class=\"ks-title\">金水, Penopang &amp; Pengarah</div><div class=\"ks-desc\">Aktifkan 金水 lewat warna putih-biru, arah utara-barat, dan kebiasaan reflektif harian.</div></div>\n      <div class=\"kes-stat s4\"><div class=\"ks-eb\">Da Yun · 大運</div><div class=\"ks-num\">Fase 3<span class=\"unit\">dari 10</span></div><div class=\"ks-title\">Fase Rezeki Bisnis (29-38)</div><div class=\"ks-desc\">Fase 偏財 29-38 mendorong bangkit lewat kemitraan dan peluang lintas relasi.</div></div>\n      <div class=\"kes-stat s5\"><div class=\"ks-eb\">Umur Subjek</div><div class=\"ks-num\">37<span class=\"unit\">tahun</span></div><div class=\"ks-title\">Era 30–39</div><div class=\"ks-desc\">Dekade 30-an adalah panggung produktif sekaligus penempaan tanggung jawab.</div></div>\n      <div class=\"kes-stat s6\"><div class=\"ks-eb\">Jodoh · 婚配 / 陽宅</div><div class=\"ks-num\">3 <span class=\"unit\">cocok · 4 hindari</span></div><div class=\"ks-desc\">Cocok dengan shio Macan, Kambing, Anjing; hindari Tikus, Kerbau, Kelinci, Kuda.</div></div>\n    ",
+    "_kes_age": "37",
+    "_kes_lifemap": "\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">過<span class=\"id-label\">Lalu</span></div><div class=\"klm-row-text\"><span class=\"lbl\">MASA LALU</span>Fase belajar dan adaptasi, membangun fondasi disiplin dan rasa ingin tahu lewat pendidikan dan pekerjaan awal yang menempa.</div></div>\n          <div class=\"klm-row now\"><div class=\"klm-row-icon\">今<span class=\"id-label\">Kini</span></div><div class=\"klm-row-text\"><span class=\"lbl\">SEKARANG</span>Fase 偏財 29-38, bangkit melalui peluang kemitraan, proyek, dan pengelolaan finansial yang lebih dewasa.</div></div>\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">未<span class=\"id-label\">Nanti</span></div><div class=\"klm-row-text\"><span class=\"lbl\">BERIKUTNYA</span>Fase 正官 39-48, panggung tanggung jawab penuh, kepemimpinan struktural, dan reputasi profesional yang matang.</div></div>\n        ",
+    "_kes_position": "\n          <div class=\"klp-eb\">Posisi Sekarang</div>\n          <div class=\"klp-hz\">夏</div>\n          <div class=\"klp-id\">Xià, \"Musim Panas Hidup\"</div>\n          <div class=\"klp-bar\">\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell now\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n          </div>\n          <div class=\"klp-meta\">Fase <strong>3 dari 10</strong> · Umur <strong>29-38</strong> · <strong>水 Air</strong> dominan · Musim Panas Hidup</div>\n        ",
+    "_syn_attrib": "Air Hujan · 正官格 · Zheng Guan Ge",
+    "_syn_trio": "\n      <div class=\"syn-card strength\">\n        <div class=\"syn-card-num\">力</div>\n        <div class=\"syn-card-eyebrow\">Kekuatan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">智慧</span>\n          <span class=\"syn-card-id\">Zhì Huì</span>\n          <span class=\"syn-card-arti\">Kebijaksanaan Mendalam</span>\n        </div>\n        <div class=\"syn-card-body\">Kekuatan inti Li Xiang An ada pada kecerdasan analitis dan kebijaksanaan reflektif. Day master <span class=\"hz\">癸水</span> yang ditopang <span class=\"hz\">正印</span> kuat membuatnya cepat menyerap pengetahuan dan menalar pola. Modal ini menjadi senjata utama dalam karir dan pengambilan keputusan jangka panjang.</div>\n      </div>\n      <div class=\"syn-card challenge\">\n        <div class=\"syn-card-num\">驗</div>\n        <div class=\"syn-card-eyebrow\">Tantangan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">固執</span>\n          <span class=\"syn-card-id\">Gù Zhí</span>\n          <span class=\"syn-card-arti\">Keras Hati</span>\n        </div>\n        <div class=\"syn-card-body\">Tantangan utama adalah kekerasan hati dan kecenderungan kritis tajam. Saat keyakinan diusik, Li Xiang An sulit menerima masukan, kadang melukai orang dekat tanpa sengaja. Latih kelenturan emosi lewat dialog terbuka dan kesediaan mengakui keraguan secara sehat.</div>\n      </div>\n      <div class=\"syn-card action\">\n        <div class=\"syn-card-num\">為</div>\n        <div class=\"syn-card-eyebrow\">Tindakan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">守正</span>\n          <span class=\"syn-card-id\">Shǒu Zhèng</span>\n          <span class=\"syn-card-arti\">Menjaga Kebenaran</span>\n        </div>\n        <div class=\"syn-card-body\">Panggung optimal Li Xiang An adalah peran yang menuntut integritas dan analisis dalam. Pegang teguh prinsip, namun sediakan ruang dengar untuk lapangan. Eksekusi bertahap dengan target jelas, dan biarkan kerja konsisten membentuk reputasi yang membuka pintu peluang besar.</div>\n      </div>\n    ",
+    "_syn_actions": "\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">1</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Tetapkan jadwal sunyi harian satu jam</div>\n            <div class=\"syn-action-context\">Untuk merapikan pikiran dan memulihkan stamina mental</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">2</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Bangun portofolio publik di bidang utama</div>\n            <div class=\"syn-action-context\">Tulisan, riset, atau proyek terdokumentasi memperkuat reputasi profesional</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">3</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Pisahkan dompet pribadi dan proyek</div>\n            <div class=\"syn-action-context\">Catat aliran kas harian agar arus rezeki terkendali</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">4</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Pilih lima sahabat inti, bina dengan sungguh</div>\n            <div class=\"syn-action-context\">Lingkar kecil sejati lebih bernilai daripada banyak kenalan</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">5</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Periksa kesehatan paru dan pencernaan tahunan</div>\n            <div class=\"syn-action-context\">Cegah keluhan kronis sejak dini, jaga pola makan dan tidur</div>\n          </div>\n        </div>\n      ",
+    "_yangzhai_zones": "\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">門</div>\n            <div class=\"yz-zone-id\">Pintu Utama</div>\n            <div class=\"yz-zone-pinyin\">Mén · Pintu</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">北</span>U</span>\n            </div>\n            <div class=\"yz-zone-note\">Menghadap utara membuka aliran rezeki dan kesehatan</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">房</div>\n            <div class=\"yz-zone-id\">Kamar Tidur</div>\n            <div class=\"yz-zone-pinyin\">Fáng · Kamar</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">東</span>T</span>\n            </div>\n            <div class=\"yz-zone-note\">Timur memberi ketenangan tidur dan regenerasi energi pagi</div>\n          </div>\n        </div>\n        <div class=\"yz-zone warn\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">灶</div>\n            <div class=\"yz-zone-id\">Dapur / Kompor</div>\n            <div class=\"yz-zone-pinyin\">Zào · Tungku</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">⚠ Hati-hati</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill bad\"><span class=\"hz\">東南</span>TG</span>\n            </div>\n            <div class=\"yz-zone-note\">Hindari sudut barat daya, jaga ventilasi dan kebersihan</div>\n          </div>\n        </div>\n        <div class=\"yz-zone warn\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">廁</div>\n            <div class=\"yz-zone-id\">Kamar Mandi</div>\n            <div class=\"yz-zone-pinyin\">Cè · Kamar Mandi</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">⚠ Hati-hati</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill bad\"><span class=\"hz\">西南</span>BD</span>\n            </div>\n            <div class=\"yz-zone-note\">Hindari di tengah rumah, cukup di sudut tertutup</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">書</div>\n            <div class=\"yz-zone-id\">Ruang Kerja</div>\n            <div class=\"yz-zone-pinyin\">Shū · Ruang Kerja</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">東</span>T</span>\n            </div>\n            <div class=\"yz-zone-note\">Sisi timur mendukung fokus dan produktivitas analitis</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">神</div>\n            <div class=\"yz-zone-id\">Altar / Sembah</div>\n            <div class=\"yz-zone-pinyin\">Shén · Sembahyang</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">西北</span>BL</span>\n            </div>\n            <div class=\"yz-zone-note\">Barat laut atau timur laut memperkuat ketenangan batin</div>\n          </div>\n        </div>\n",
+    "_career_wuxing": "\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">金 Logam<span class=\"v\">4</span></div>\n        </div>\n        <div class=\"wux-cell unfav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">土 Tanah<span class=\"v\">4</span></div>\n        </div>\n        <div class=\"wux-cell self\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:50%\"></div></div>\n          <div class=\"wux-label\">水 Air<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:25%\"></div></div>\n          <div class=\"wux-label\">木 Kayu<span class=\"v\">1</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:25%\"></div></div>\n          <div class=\"wux-label\">火 Api<span class=\"v\">1</span></div>\n        </div>\n",
+    "_career_title": "金水 adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini",
+    "_career_avoid": "Industri ber-unsur <strong>土 (Tanah)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.",
+    "_career_tags": "\n          <span class=\"insight-tag\">金 \"LOGAM\"</span>\n          <span class=\"insight-tag\">水 \"AIR\"</span>\n          <span class=\"insight-tag bad\">土 \"TANAH\"</span>\n          <span class=\"insight-tag bad\">火 \"API\"</span>\n        ",
+    "_career_industri": "\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">⚙️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">\"<span class=\"hz\">律師</span> / Pengacara\"</div>\n            <div class=\"ind-reason\">Unsur 金, foto 事業 sebut langsung sebagai bidang searah, cocok untuk format 正官 yang taat aturan</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:95%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">⚙️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">\"<span class=\"hz\">會計</span> / Akuntansi\"</div>\n            <div class=\"ind-reason\">Unsur 金, foto 事業 sebut langsung, sesuai disiplin dan ketelitian Li Xiang An</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:88%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">⚙️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">\"<span class=\"hz\">金融界</span> / Keuangan\"</div>\n            <div class=\"ind-reason\">Unsur 金, foto 事業 sebut langsung, cocok dengan logika analitis day master 癸水</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:82%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">⚙️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">\"<span class=\"hz\">科學家</span> / Saintis\"</div>\n            <div class=\"ind-reason\">Unsur 金, foto 事業 sebut langsung, mendukung ketertarikan pada riset dan pola</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:76%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">🌳</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">\"<span class=\"hz\">出版</span> / Penerbitan\"</div>\n            <div class=\"ind-reason\">Unsur 木, foto 事業 sebut langsung, sejalan dengan minat literasi dan refleksi</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:70%\"></div></div>\n          </div>\n        </div>\n",
+    "shensha_star_hz": "桃花",
+    "shensha_star_pinyin": "Táo Huā",
+    "shensha_star_label": "\"Bintang Pesona\"",
+    "shensha_star_active": "★ AKTIF SEKARANG ★",
+    "shensha_strip": "Manfaatkan pesona untuk membangun jejaring profesional, jaga batas etis dalam relasi lintas gender.",
+    "_xqcards": "\n      <div class=\"xq-card power\">\n        <div class=\"xqc-eb\">魄 力 · Kekuatan</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">優勢</span><span class=\"xqc-name\">Yōu Shì<br>Keunggulan</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Pikiran tajam, cepat menangkap pola di balik permukaan masalah</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Disiplin batin kuat, mampu memikul tanggung jawab jangka panjang</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Etos kerja teguh, tidak mudah menyerah saat ditekan</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Belajar mandiri, menyerap ilmu lewat refleksi mendalam</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card shadow\">\n        <div class=\"xqc-eb\">陰 影 · Shadow</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">隱 患</span><span class=\"xqc-name\">Yǐn Huàn<br>Sisi Gelap</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Keras kepala saat keyakinan diusik, sulit diberi nasihat</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kritis tajam yang kadang melukai orang dekat</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Cenderung pendam emosi, sulit diakses secara hangat</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Perfeksionis berlebihan, menunda karena takut belum sempurna</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card optimum\">\n        <div class=\"xqc-eb\">最 佳 · Optimum</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">應 用</span><span class=\"xqc-name\">Yīng Yòng<br>Cara Optimal</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Pilih bidang yang butuh analisis dalam dan integritas tinggi</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Sediakan ruang sunyi harian untuk merapikan pikiran</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Tetapkan target jelas, lalu eksekusi bertahap tanpa terburu</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Bangun lingkar kecil orang yang berani jujur kepada Li Xiang An</span></div>\n        </div>\n      </div>\n    "
+  }
+}

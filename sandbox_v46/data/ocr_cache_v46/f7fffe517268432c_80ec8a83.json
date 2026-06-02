@@ -1,0 +1,25 @@
+{
+  "screen_type": "detail",
+  "name_id": "YUDY L",
+  "gender_hz": "男",
+  "birth_lunar_text": "農曆民國 52 年 1 月 5 日 13 時 30 分",
+  "detail_sections": {
+    "夫妻": {
+      "hz": "夫妻的情感如敬如富。夫妻兩人都互相了解丈夫有丈夫個人的生活，妻子也有妻子的個人生活世界，所以絕不會因為任何理由而吵架。與夫星同宮者，夫妻都是脾氣強硬的人，但卻意外地和諧、相愛長久，除此之外，夫妻關係上似乎負面的麻煩較多。男性雖屬文靜類型，但會與個性頑強的女人結婚。女性則與精力充沛任性的男人結婚。所以婚後經常意見不合而起衝突，再有凶星同宮的話，最後很可能造成離婚的後果。貪狼星是離婚之星，如果不是晚婚的話，則必定步入離婚之途。男人具有易被自由奔放的女性強烈吸引的傾向。此外，女性的情況時，婚後常會被沈迷一擲千金的豪賭的丈夫所吸引。如能與紫微星同宮則能化消凶意，獲得年長的妻子，年幼的丈夫，渡過幸福的婚姻生活。",
+      "id_summary": [
+        "Hubungan suami-istri saling menghormati dan memahami ruang pribadi masing-masing; jarang bertengkar karena alasan sepele.",
+        "Jika bintang utama satu istana dengan istana 夫妻: pasangan sama-sama berwatak keras namun harmonis dan saling mencintai jangka panjang; namun masalah negatif dalam relasi juga cukup banyak — pria cenderung menikahi wanita berkarakter keras, wanita menikahi pria energik nan keras kepala, sehingga sering konflik dan berisiko bercerai.",
+        "Bintang Tan Lang (貪狼) adalah bintang perceraian — jika tidak menikah terlambat, kemungkinan besar berujung pada perceraian; pria mudah tergoda wanita bebas/liar.",
+        "Bagi wanita, pasca menikah rentan terpesona suami yang gemar berjudi/boros.",
+        "Jika bersatu istana dengan bintang Zi Wei (紫微), energi buruk dapat dinetralkan: memperoleh pasangan lebih tua (istri) atau lebih muda (suami) dan menikmati kehidupan pernikahan yang bahagia."
+      ],
+      "_photo": "WhatsApp Image 2026-05-02 at 12.58.27.jpeg",
+      "_uncertain": true,
+      "_ambiguous_chars": [
+        "如敬如富 (likely 相敬如賓 — common idiom; 富 may be misread as 賓 due to BBS font)"
+      ]
+    }
+  },
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.27.jpeg",
+  "_hash": "f7fffe517268432c_80ec8a83"
+}

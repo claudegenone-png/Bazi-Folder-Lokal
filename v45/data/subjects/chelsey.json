@@ -1,9 +1,9 @@
 {
   "subject_id": "chelsey",
-  "_built_by": "build_from_ocr.py V4.3",
+  "_built_by": "build_from_ocr.py V4.5 FULL-MD",
   "identity": {
     "name_id": "Chelsey",
-    "name_hanzi": "雪西",
+    "name_hanzi": "",
     "gender_id": "Wanita",
     "birth_date": "2008-02-18",
     "birth_time": "08:50",
@@ -32,265 +32,258 @@
     "label_id": "Tanah Gunung",
     "label_long_id": "Tanah",
     "pinyin": "Wù 土",
-    "strength_id": "Kuat",
-    "strength_hz": "旺"
+    "strength_id": "—",
+    "strength_hz": null
   },
   "pillars": {
     "year": {
       "stem_hz": "戊",
-      "branch_hz": "子",
-      "stem_id": "Wu",
-      "branch_id": "Zi"
+      "branch_hz": "子"
     },
     "month": {
       "stem_hz": "甲",
-      "branch_hz": "寅",
-      "stem_id": "Jia",
-      "branch_id": "Yin"
+      "branch_hz": "寅"
     },
     "day": {
       "stem_hz": "戊",
-      "branch_hz": "子",
-      "stem_id": "Wu",
-      "branch_id": "Zi",
-      "is_day_master": true
+      "branch_hz": "子"
     },
     "hour": {
       "stem_hz": "丙",
-      "branch_hz": "辰",
-      "stem_id": "Bing",
-      "branch_id": "Chen"
+      "branch_hz": "辰"
     }
   },
   "wuxing": {
     "jin": {
-      "value": 1.0,
-      "percent": 12.5,
+      "value": 0.0,
+      "percent": 0.0,
       "label_id": "Logam"
     },
     "shui": {
-      "value": 1.0,
-      "percent": 12.5,
+      "value": 2.0,
+      "percent": 20.0,
       "label_id": "Air"
     },
     "mu": {
-      "value": 3.0,
-      "percent": 37.5,
+      "value": 2.0,
+      "percent": 20.0,
       "label_id": "Kayu"
     },
     "huo": {
-      "value": 1.0,
-      "percent": 12.5,
+      "value": 2.0,
+      "percent": 20.0,
       "label_id": "Api"
     },
     "tu": {
-      "value": 2.0,
-      "percent": 25.0,
+      "value": 4.0,
+      "percent": 40.0,
       "label_id": "Tanah"
     },
-    "total": 8.0,
-    "self_value": 2.0,
-    "self_strength_id": "KUAT"
+    "total": 10.0,
+    "self_value": 4.0,
+    "self_el_hz": "—",
+    "fav_hz": "—",
+    "unfav_hz": "—",
+    "axis_max": "—",
+    "insight_id": null,
+    "_empty": false
   },
   "yong_shen": {
-    "elements_hz": "金 水",
-    "elements_id": "Logam & Air",
-    "label_id": "Penopang & Pengarah"
+    "elements_hz": "水 木",
+    "elements_id": "Air & Kayu",
+    "label_id": "Penopang & Pengarah",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
   },
   "ji_shen": {
-    "elements_hz": "木",
-    "elements_id": "Kayu",
-    "label_id": "Pelumat & Pemicu"
+    "elements_hz": "火 土",
+    "elements_id": "Api & Tanah",
+    "label_id": "Pelumat & Pemicu",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
   },
   "format": {
     "hz": "偏印格",
     "pinyin": "Pian Yin Ge",
-    "label_id": "Mentor Bayangan"
+    "label_id": "Mentor Bayangan",
+    "glyph_hz": "—"
   },
   "da_yun": {
-    "start_age": 5,
-    "direction_id": "backward",
-    "current_index": 1,
-    "axis_marks": [
-      5,
-      15,
-      25,
-      35,
-      45,
-      55,
-      65,
-      75,
-      85,
-      95,
-      105
-    ],
+    "_empty": true,
     "cycles": [
       {
         "n": 1,
-        "age_start": 5,
-        "age_end": 14,
-        "stem_hz": "癸",
-        "branch_hz": "丑",
-        "ten_god_hz": "正財",
-        "ten_god_id": "Rezeki Tetap",
-        "element_class": "el-shui"
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
+        "element_class": "el-mu"
       },
       {
         "n": 2,
-        "age_start": 15,
-        "age_end": 24,
-        "stem_hz": "壬",
-        "branch_hz": "子",
-        "ten_god_hz": "偏財",
-        "ten_god_id": "Rezeki Bisnis",
-        "element_class": "el-shui",
-        "is_current": true
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
+        "element_class": "el-mu"
       },
       {
         "n": 3,
-        "age_start": 25,
-        "age_end": 34,
-        "stem_hz": "辛",
-        "branch_hz": "亥",
-        "ten_god_hz": "傷官",
-        "ten_god_id": "Kritikus Tajam",
-        "element_class": "el-jin"
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
+        "element_class": "el-mu"
       },
       {
         "n": 4,
-        "age_start": 35,
-        "age_end": 44,
-        "stem_hz": "庚",
-        "branch_hz": "戌",
-        "ten_god_hz": "食神",
-        "ten_god_id": "Pencipta",
-        "element_class": "el-jin"
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
+        "element_class": "el-mu"
       },
       {
         "n": 5,
-        "age_start": 45,
-        "age_end": 54,
-        "stem_hz": "己",
-        "branch_hz": "酉",
-        "ten_god_hz": "劫財",
-        "ten_god_id": "Saudara Sebanding",
-        "element_class": "el-tu"
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
+        "element_class": "el-mu"
       },
       {
         "n": 6,
-        "age_start": 55,
-        "age_end": 64,
-        "stem_hz": "戊",
-        "branch_hz": "申",
-        "ten_god_hz": "比肩",
-        "ten_god_id": "Pundak Sama",
-        "element_class": "el-tu"
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
+        "element_class": "el-mu"
       },
       {
         "n": 7,
-        "age_start": 65,
-        "age_end": 74,
-        "stem_hz": "丁",
-        "branch_hz": "未",
-        "ten_god_hz": "正印",
-        "ten_god_id": "Pelajaran",
-        "element_class": "el-huo"
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
+        "element_class": "el-mu"
       },
       {
         "n": 8,
-        "age_start": 75,
-        "age_end": 84,
-        "stem_hz": "丙",
-        "branch_hz": "午",
-        "ten_god_hz": "偏印",
-        "ten_god_id": "Mentor",
-        "element_class": "el-huo"
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
+        "element_class": "el-mu"
       },
       {
         "n": 9,
-        "age_start": 85,
-        "age_end": 94,
-        "stem_hz": "乙",
-        "branch_hz": "巳",
-        "ten_god_hz": "正官",
-        "ten_god_id": "Otoritas",
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
         "element_class": "el-mu"
       },
       {
         "n": 10,
-        "age_start": 95,
-        "age_end": 104,
-        "stem_hz": "甲",
-        "branch_hz": "辰",
-        "ten_god_hz": "七殺",
-        "ten_god_id": "Pemurnian",
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
         "element_class": "el-mu"
       }
     ],
-    "seasons": [
+    "current_index": 0,
+    "footer_caption_html": "Chelsey, 18 tahun, kini dalam fase <strong>Api Yang Kuda</strong> (<span class=\"hz\">丙午</span>) (umur 13-22), masa tumbuh paling intens di mana bakat kreatif dan identitas diri mekar; gunakan energi ini dengan penuh kesadaran.",
+    "spotlight_headline_html": "Chelsey kini berada di fase <strong>Api Yang Kuda</strong> (<span class=\"hz\">丙午</span>) (umur 13-22), api yang terang namun perlu dikendalikan agar tidak membakar diri sendiri.",
+    "spotlight_bullets_html": [
+      "Fase <strong>Api Yang Kuda</strong> (<span class=\"hz\">丙午</span>) membawa energi <strong>Api</strong> (<span class=\"hz\">火</span>) yang kuat, Chelsey merasakan dorongan eksplorasi sosial, identitas diri, dan keberanian baru. Ini adalah periode pembentukan karakter paling intens dalam hidupnya.",
+      "Unsur Api yang dominan di fase ini berbenturan dengan kebutuhan Chelsey akan <strong>Air</strong> (<span class=\"hz\">水</span>) dan <strong>Kayu</strong> (<span class=\"hz\">木</span>), ada risiko impulsivitas, konflik emosional, dan keputusan yang tergesa. Perlu latihan sabar dan refleksi mendalam.",
+      "Di sisi positif, <strong>Api Yang</strong> (<span class=\"hz\">丙火</span>) di pilar jam Chelsey mendapat dukungan dari da yun ini, bakat seni, ekspresi diri, dan karisma alami memancar kuat. Waktu terbaik untuk mengembangkan portofolio kreatif dan akademis.",
+      "Hubungan sosial dan romantis mulai berkembang pesat di fase ini. Software mencatat potensi pertemuan cinta yang berkesan, namun Chelsey perlu hati-hati agar tidak tergesa dalam komitmen sebelum kematangan emosional terbentuk."
+    ]
+  },
+  "marriage": {
+    "self_branch_index": 0,
+    "cocok": [
       {
-        "el_class": "s-shui",
-        "el_hz": "水",
-        "name_id": "Pemurnian Awal",
-        "age_start": 5,
-        "age_end": 24,
-        "is_current": true
+        "branch_hz": "申",
+        "id": "Monyet",
+        "relationship_hz": null,
+        "relationship_id": null,
+        "reason_id": null
       },
       {
-        "el_class": "s-jin",
-        "el_hz": "金",
-        "name_id": "Belajar & Mentor",
-        "age_start": 25,
-        "age_end": 44
+        "branch_hz": "辰",
+        "id": "Naga",
+        "relationship_hz": null,
+        "relationship_id": null,
+        "reason_id": null
       },
       {
-        "el_class": "s-tu",
-        "el_hz": "土",
-        "name_id": "Berbagi Panggung",
-        "age_start": 45,
-        "age_end": 64
-      },
-      {
-        "el_class": "s-huo",
-        "el_hz": "火",
-        "name_id": "Berkarya Tenang",
-        "age_start": 65,
-        "age_end": 84
-      },
-      {
-        "el_class": "s-mu",
-        "el_hz": "木",
-        "name_id": "Memetik Rezeki",
-        "age_start": 85,
-        "age_end": 104
+        "branch_hz": "丑",
+        "id": "Kerbau",
+        "relationship_hz": null,
+        "relationship_id": null,
+        "reason_id": null
       }
     ],
-    "spotlight_headline_html": "Fase <span class=\"hz\">偏財</span> (Rezeki Bisnis) — periode utama untuk menjajaki peluang & jaringan",
-    "spotlight_tag_tone_html": "Air · adaptasi",
-    "spotlight_tag_combo_html": "Wealth Lincah",
-    "spotlight_tag_combo_pair": [
-      "壬",
-      "子"
+    "hindari": [
+      {
+        "branch_hz": "卯",
+        "id": "Kelinci",
+        "relationship_hz": null,
+        "relationship_id": null,
+        "reason_id": null
+      },
+      {
+        "branch_hz": "午",
+        "id": "Kuda",
+        "relationship_hz": null,
+        "relationship_id": null,
+        "reason_id": null
+      },
+      {
+        "branch_hz": "未",
+        "id": "Kambing",
+        "relationship_hz": null,
+        "relationship_id": null,
+        "reason_id": null
+      }
     ],
-    "spotlight_bullets_html": [
-      "<strong>Fokus utama</strong> — pilar <span class=\"hz\">偏財</span> mendorong Anda untuk menjajaki peluang & jaringan. Selaraskan agenda 10 tahun ini ke arah tersebut.",
-      "<strong>Energi 水</strong> — batang <span class=\"hz\">壬</span> (水) berinteraksi dengan Day Master <span class=\"hz\">戊</span> (土); tone fase: Air · adaptasi.",
-      "<strong>Cabang <span class=\"hz\">子</span></strong> menentukan medan harian — kebiasaan, lingkungan, dan relasi yang dibangun di rentang umur 15–24 akan jadi pondasi fase berikutnya.",
-      "<strong>Setelah 24</strong> masuk <span class=\"hz\">辛亥 (傷官)</span> — berekspresi tajam & memberontak halus. Siapkan transisi sekarang."
-    ],
-    "footer_caption_html": "Chelsey sedang di fase <span style=\"font-family:'Noto Serif TC',serif;color:var(--red)\">偏財</span> (15–24) — menjajaki peluang & jaringan. Periode 15–34 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir."
+    "_empty": false
   },
-  "marriage": {},
   "yang_zhai": {
-    "gua_hz": "巽",
-    "gua_pinyin": "Xùn",
-    "gua_label_id": "Angin",
-    "gua_direction_id": "Tenggara",
-    "gua_direction_abbr": "TG",
-    "group_id": "Timur",
-    "sumbu_hoki_hz": "東南↔西北",
-    "sumbu_hoki_id": "TG ↔ BL",
-    "trigram_symbol": "☴"
+    "gua_hz": "艮",
+    "gua_pinyin": "Gèn",
+    "gua_label_id": "Gunung",
+    "gua_direction_id": "Timur Laut",
+    "gua_direction_abbr": "TL",
+    "group_id": "Barat",
+    "sumbu_hoki_hz": "東北↔西南",
+    "sumbu_hoki_id": "TL ↔ BD",
+    "trigram_symbol": "☶"
   },
   "zi_wei": {
     "ming_zhu_hz": "祿存",
@@ -299,11 +292,443 @@
     "shen_gong_hz": "午",
     "wu_xing_ju_hz": "水二局",
     "shi_jun_hz": "辰",
+    "palaces": null,
     "ming_gong_id": "Istana Hidup · Anjing",
     "shen_gong_id": "Istana Tubuh · Kuda",
     "shi_jun_id": "Penguasa Waktu · Naga",
     "ming_zhu_id": "Penguasa Hidup",
     "shen_zhu_id": "Penguasa Tubuh",
     "wu_xing_ju_id": "Aliran Air Dua"
+  },
+  "shen_sha_list": [],
+  "dm_pos_score": null,
+  "dm_neg_score": null,
+  "xiantian_per_stem": null,
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": null,
+  "mantra": {
+    "hz": "—",
+    "pinyin": "—"
+  },
+  "_xq_radar_poly": "          <polygon points=\"200,72 297.3,144 325.1,272 200,280 130.5,240 88.8,136\"\n            fill=\"rgba(139,26,26,0.18)\" stroke=\"#8B1A1A\" stroke-width=\"1.5\"/>\n          <circle cx=\"200\" cy=\"72\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"297.3\" cy=\"144\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"325.1\" cy=\"272\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"200\" cy=\"280\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"130.5\" cy=\"240\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"88.8\" cy=\"136\" r=\"3\" fill=\"#8B1A1A\"/>",
+  "_xq_radar_labels": "          <g font-family=\"Noto Serif TC,serif\">\n            <text x=\"200\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[穩]]</text>\n            <text x=\"200\" y=\"33\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Wěn · Kestabilan · 8.0</text>\n\n            <text x=\"358\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[直]]</text>\n            <text x=\"358\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Zhí · Kejujuran · 7.0</text>\n\n            <text x=\"358\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[思]]</text>\n            <text x=\"358\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Sī · Daya Pikir · 9.0</text>\n\n            <text x=\"200\" y=\"382\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[情]]</text>\n            <text x=\"200\" y=\"393\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Qíng · Kepekaan Emosi · 5.0</text>\n\n            <text x=\"42\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[動]]</text>\n            <text x=\"42\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Dòng · Inisiatif · 5.0</text>\n\n            <text x=\"42\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[韌]]</text>\n            <text x=\"42\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Rèn · Ketangguhan · 8.0</text>\n          </g>",
+  "_xq_motto": [
+    "山",
+    "Sang Gunung Tenang",
+    "沉穩內斂",
+    "厚德載物"
+  ],
+  "_tafsir": {
+    "kepribadian": "Chelsey adalah pribadi <strong>Tanah Yang</strong> (<span class=\"hz\">戊土</span>), seperti gunung kokoh yang diam tetapi menyimpan kekuatan besar. Lahir dengan <strong>Format Mentor Bayangan</strong> (<span class=\"hz\">偏印格</span>), ia cenderung introspektif, berpikir mandiri, dan memiliki intuisi tajam. Tidak mudah terbawa arus opini orang lain, namun sering terlalu diam dan enggan mengungkapkan perasaan. Software mencatat: Chelsey sangat menjaga milik sendiri, tidak suka diganggu, dan hidup dengan cara yang agak sepi namun bermakna. Pancaran <strong>Api Yang</strong> (<span class=\"hz\">丙火</span>) di pilar jam memberi kehangatan saat ia merasa aman.",
+    "_kepribadian_struct": {
+      "paragraf": "Chelsey adalah pribadi **Tanah Yang** ([[戊土]]), seperti gunung kokoh yang diam tetapi menyimpan kekuatan besar. Lahir dengan **Format Mentor Bayangan** ([[偏印格]]), ia cenderung introspektif, berpikir mandiri, dan memiliki intuisi tajam. Tidak mudah terbawa arus opini orang lain, namun sering terlalu diam dan enggan mengungkapkan perasaan. Software mencatat: Chelsey sangat menjaga milik sendiri, tidak suka diganggu, dan hidup dengan cara yang agak sepi namun bermakna. Pancaran **Api Yang** ([[丙火]]) di pilar jam memberi kehangatan saat ia merasa aman.",
+      "radar_traits": [
+        [
+          "[[穩]]",
+          "Wěn",
+          "Kestabilan",
+          8.0
+        ],
+        [
+          "[[直]]",
+          "Zhí",
+          "Kejujuran",
+          7.0
+        ],
+        [
+          "[[思]]",
+          "Sī",
+          "Daya Pikir",
+          9.0
+        ],
+        [
+          "[[情]]",
+          "Qíng",
+          "Kepekaan Emosi",
+          5.0
+        ],
+        [
+          "[[動]]",
+          "Dòng",
+          "Inisiatif",
+          5.0
+        ],
+        [
+          "[[韌]]",
+          "Rèn",
+          "Ketangguhan",
+          8.0
+        ]
+      ],
+      "motto": [
+        "山",
+        "Sang Gunung Tenang",
+        "沉穩內斂",
+        "厚德載物"
+      ],
+      "power": [
+        "Daya analitis sangat kuat; mampu membaca situasi tanpa banyak bicara.",
+        "Ketangguhan mental, tidak mudah goyah oleh tekanan eksternal.",
+        "Intuisi kreatif tinggi; unggul di bidang seni, desain, dan sastra.",
+        "Loyalitas mendalam kepada orang-orang yang benar-benar dipercaya."
+      ],
+      "shadow": [
+        "Terlalu tertutup, menyimpan masalah sendiri hingga menumpuk.",
+        "Mudah curiga dan sulit percaya kepada orang baru.",
+        "Keras kepala; sulit menerima nasihat bahkan dari orang terdekat.",
+        "Rentan tenggelam dalam pikiran sendiri hingga mengabaikan realita."
+      ],
+      "optimum": [
+        "Beri diri ruang kreatif yang bebas dari tekanan sosial berlebihan.",
+        "Bangun rutinitas harian yang stabil untuk menjaga keseimbangan mental.",
+        "Pilih lingkaran pertemanan kecil namun berkualitas dan saling mendukung.",
+        "Latih diri untuk berbicara terbuka, komunikasi adalah kunci hubungan."
+      ]
+    },
+    "family": "pasangan: - vibe: Cerdas · Setia - headline: Pasangan ideal yang tulus dan tidak suka basa-basi. - body: Software mencatat Chelsey memiliki pandangan cinta yang serius, tidak toleran terhadap sikap main-main. Ia mencari pasangan yang cerdas, suportif, dan mampu memahami sisi diamnya. Dinamika terbaik terjadi ketika pasangan memberi ruang namun tetap hadir secara emosional. Hindari pasangan yang terlalu dominan atau sering memberikan kritik tanpa empati.<br><br>anak: - vibe: Penuh Perhatian · Protektif - headline: Orang tua yang sabar namun memegang prinsip teguh. - body: Chelsey cenderung menjadi figur orang tua yang hangat di balik ketenangan luarnya. Ia akan mendidik anak dengan nilai kejujuran dan kemandirian. Pola pengasuhan terbaik adalah memberi kebebasan bereksplorasi sambil menjaga batas yang jelas. Perlu hati-hati agar tidak terlalu protektif hingga anak merasa terkungkung.<br><br>saudari: - vibe: Mandiri · Berjarak - headline: Hubungan saudara tumbuh lebih baik saat dewasa. - body: Software mencatat bahwa relasi Chelsey dengan saudara kandung cenderung renggang di masa kecil, namun dapat tumbuh harmonis seiring waktu. Chelsey lebih nyaman berinteraksi secara fungsional daripada emosional. Jarak bukan berarti tidak peduli, ia akan hadir saat saudara benar-benar membutuhkan bantuan nyata.<br><br>kepemimpinan: - vibe: Diam · Berpengaruh - headline: Pemimpin yang memimpin lewat keteladanan bukan perintah. - body: Chelsey bukan tipe pemimpin yang vokal, namun pengaruhnya nyata. Ia memimpin dengan konsistensi dan integritas. Gaya terbaik adalah kepemimpinan di belakang layar, menjadi perencana strategis bukan orator publik. Software mencatat potensi besar di bidang kepemimpinan profesional bila <strong>Bintang Akademik</strong> (<span class=\"hz\">文昌</span>) aktif mendukung karir.",
+    "_family_struct": {
+      "pasangan": {
+        "vibe": "Cerdas · Setia",
+        "headline": "Pasangan ideal yang tulus dan tidak suka basa-basi.",
+        "body": "Software mencatat Chelsey memiliki pandangan cinta yang serius, tidak toleran terhadap sikap main-main. Ia mencari pasangan yang cerdas, suportif, dan mampu memahami sisi diamnya. Dinamika terbaik terjadi ketika pasangan memberi ruang namun tetap hadir secara emosional. Hindari pasangan yang terlalu dominan atau sering memberikan kritik tanpa empati."
+      },
+      "anak": {
+        "vibe": "Penuh Perhatian · Protektif",
+        "headline": "Orang tua yang sabar namun memegang prinsip teguh.",
+        "body": "Chelsey cenderung menjadi figur orang tua yang hangat di balik ketenangan luarnya. Ia akan mendidik anak dengan nilai kejujuran dan kemandirian. Pola pengasuhan terbaik adalah memberi kebebasan bereksplorasi sambil menjaga batas yang jelas. Perlu hati-hati agar tidak terlalu protektif hingga anak merasa terkungkung."
+      },
+      "saudari": {
+        "vibe": "Mandiri · Berjarak",
+        "headline": "Hubungan saudara tumbuh lebih baik saat dewasa.",
+        "body": "Software mencatat bahwa relasi Chelsey dengan saudara kandung cenderung renggang di masa kecil, namun dapat tumbuh harmonis seiring waktu. Chelsey lebih nyaman berinteraksi secara fungsional daripada emosional. Jarak bukan berarti tidak peduli, ia akan hadir saat saudara benar-benar membutuhkan bantuan nyata."
+      },
+      "kepemimpinan": {
+        "vibe": "Diam · Berpengaruh",
+        "headline": "Pemimpin yang memimpin lewat keteladanan bukan perintah.",
+        "body": "Chelsey bukan tipe pemimpin yang vokal, namun pengaruhnya nyata. Ia memimpin dengan konsistensi dan integritas. Gaya terbaik adalah kepemimpinan di belakang layar, menjadi perencana strategis bukan orator publik. Software mencatat potensi besar di bidang kepemimpinan profesional bila **Bintang Akademik** ([[文昌]]) aktif mendukung karir."
+      },
+      "saudara": {
+        "vibe": "Mandiri · Berjarak",
+        "headline": "Hubungan saudara tumbuh lebih baik saat dewasa.",
+        "body": "Software mencatat bahwa relasi Chelsey dengan saudara kandung cenderung renggang di masa kecil, namun dapat tumbuh harmonis seiring waktu. Chelsey lebih nyaman berinteraksi secara fungsional daripada emosional. Jarak bukan berarti tidak peduli, ia akan hadir saat saudara benar-benar membutuhkan bantuan nyata."
+      }
+    },
+    "shensha": "Chelsey memiliki konfigurasi bintang yang unik. <strong>Bintang Perpindahan</strong> (<span class=\"hz\">驛馬</span>) hadir dan menandai kehidupan penuh perpindahan, baik tempat tinggal, karir, maupun lingkungan sosial. <strong>Bintang Akademik</strong> (<span class=\"hz\">文昌</span>) menunjang kecerdasan akademis dan bakat seni-sastra yang luar biasa. <strong>Bintang Naungan Spiritual</strong> (<span class=\"hz\">華蓋</span>) memperkuat sisi spiritualitas dan kesendirian yang menjadi sumber kekuatan batin. Sementara <strong>Pemborosan Besar</strong> (<span class=\"hz\">元辰大耗</span>) menandai potensi konflik dan pemborosan yang perlu dijaga ketat sepanjang hidup.",
+    "_shensha_struct": {
+      "dominant_star": {
+        "hanzi": "文昌",
+        "pinyin": "Wén Chāng",
+        "label_id": "Bintang Kecerdasan & Seni",
+        "active_label": "AKTIF SEKARANG"
+      },
+      "strip": "Manfaatkan masa studi ini semaksimal mungkin, **Bintang Akademik** ([[文昌]]) aktif mendukung prestasi akademis dan kreativitas Chelsey hingga usia pertengahan dua puluhan."
+    },
+    "caifu": "Pola finansial Chelsey ditandai oleh <strong>Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財</span>) yang hubungannya renggang, tidak mudah diraih. <strong>Rezeki Tetap</strong> (<span class=\"hz\">正財</span>) tidak kuat, artinya pendapatan tetap perlu usaha ekstra untuk dipertahankan. Software mencatat: Chelsey perlu memiliki aset properti sebagai jangkar keuangan karena uang tunai sulit tersimpan lama. Relasi dengan uang cenderung fluktuatif, ada masa berlimpah dan ada masa harus berhemat ketat.",
+    "_caifu_struct": {
+      "zheng_cai": {
+        "label": "Rezeki Tetap",
+        "percent": "40%",
+        "body": "Rezeki tetap Chelsey tidak mengalir deras secara alami. Perlu disiplin dan ketekunan untuk membangun penghasilan rutin yang stabil. Software menegaskan: **Rezeki Tetap** ([[正財]]) hubungannya tidak mudah, Chelsey harus benar-benar bekerja keras untuk mempertahankan pendapatan tetap, dan sebaiknya memiliki aset properti sebagai cadangan jangka panjang."
+      },
+      "pian_cai": {
+        "label": "Rezeki Tak Terduga",
+        "percent": "60%",
+        "body": "**Rezeki Tak Terduga** ([[偏財]]) menjadi sumber rezeki yang lebih dominan bagi Chelsey, namun hubungannya renggang dan tidak mudah ditangkap. Rezeki bisa datang dari proyek kreatif, kerja sama lintas bidang, atau peluang yang tidak terduga. Kunci: tetap fleksibel dan jangan menolak peluang yang tampak tidak lazim."
+      },
+      "rules": [
+        {
+          "title": "Investasi properti adalah prioritas utama",
+          "context": "Uang tunai Chelsey sulit tersimpan, properti adalah jangkar terbaik",
+          "tone": "tip"
+        },
+        {
+          "title": "Hindari spekulasi dan judi finansial",
+          "context": "Rezeki Tak Terduga yang renggang membuat spekulasi berisiko tinggi bagi Chelsey",
+          "tone": "warn"
+        },
+        {
+          "title": "Bangun penghasilan dari keahlian kreatif",
+          "context": "Bakat seni dan sastra bisa menjadi sumber pendapatan nyata",
+          "tone": "tip"
+        },
+        {
+          "title": "Waspadai pengeluaran impulsif di usia muda",
+          "context": "Pemborosan Besar memperburuk kebocoran keuangan bila tidak dijaga",
+          "tone": "warn"
+        }
+      ]
+    },
+    "career": "<p>Chelsey paling bersinar di bidang yang menggabungkan kecerdasan analitis dengan ekspresi kreatif. <strong>Bintang Akademik</strong> (<span class=\"hz\">文昌</span>) dan <strong>Format Mentor Bayangan</strong> (<span class=\"hz\">偏印格</span>) menunjuk pada karir di dunia pengetahuan, seni, dan pelayanan yang bermakna. Software menyebut potensi besar sebagai dokter, perawat, pengacara, jurnalis, penulis, atau pendidik, profesi yang mengutamakan kedalaman bukan sekadar penampilan luar.</p><ul><li><strong>Kesehatan &amp; Medis</strong> (unsur 水), Cocok dengan naluri melayani dan ketenangan dalam tekanan tinggi</li><li><strong>Pendidikan &amp; Akademik</strong> (unsur 木), Bintang Akademik kuat mendukung karir pengajaran dan riset ilmiah</li><li><strong>Seni, Desain &amp; Sastra</strong> (unsur 木), Bakat kreatif bawaan yang didukung konfigurasi bintang aktif</li><li><strong>Hukum &amp; Advokasi</strong> (unsur 水), Daya analitis tajam dan kemampuan membaca situasi secara mendalam</li><li><strong>Jurnalisme &amp; Media</strong> (unsur 木), Kemampuan observasi dan ekspresi tertulis yang menonjol</li></ul>",
+    "_career_struct": {
+      "tags": {
+        "fav_1": [
+          "水",
+          "ALIRAN & ADAPTASI"
+        ],
+        "fav_2": [
+          "木",
+          "KREATIVITAS & PERTUMBUHAN"
+        ],
+        "unfav_1": [
+          "土",
+          "STAGNASI"
+        ],
+        "unfav_2": [
+          "火",
+          "PERSAINGAN BERLEBIH"
+        ]
+      },
+      "industri": [
+        {
+          "nama": "Kesehatan & Medis",
+          "unsur": "水",
+          "alasan": "Cocok dengan naluri melayani dan ketenangan dalam tekanan tinggi"
+        },
+        {
+          "nama": "Pendidikan & Akademik",
+          "unsur": "木",
+          "alasan": "Bintang Akademik kuat mendukung karir pengajaran dan riset ilmiah"
+        },
+        {
+          "nama": "Seni, Desain & Sastra",
+          "unsur": "木",
+          "alasan": "Bakat kreatif bawaan yang didukung konfigurasi bintang aktif"
+        },
+        {
+          "nama": "Hukum & Advokasi",
+          "unsur": "水",
+          "alasan": "Daya analitis tajam dan kemampuan membaca situasi secara mendalam"
+        },
+        {
+          "nama": "Jurnalisme & Media",
+          "unsur": "木",
+          "alasan": "Kemampuan observasi dan ekspresi tertulis yang menonjol"
+        }
+      ]
+    },
+    "daymaster": "<strong>水</strong> (Shuǐ · Air), pendingin & adaptasi; mengalirkan kekuatan jadi pergerakan. <strong>木</strong> (Mù · Kayu), pertumbuhan, idealisme, dan kreativitas yang menumbuhkan.",
+    "yangzhai": "Trigram pribadi Chelsey adalah <strong>Gunung</strong> (<span class=\"hz\">艮</span>), tipe Barat dengan arah hoki utama: Barat Daya, Barat, Barat Laut, dan Timur Laut. Software menegaskan: rumah sebaiknya menghadap Timur Laut ke Barat Daya untuk hasil terbaik. Pintu dan jendela di sisi Barat dan Barat Laut mendukung aliran energi positif. Hindari area Selatan dan Tenggara sebagai titik aktif utama karena berbenturan dengan trigram Gunung.",
+    "_yangzhai_struct": {
+      "zones": [
+        {
+          "label": "Pintu Utama",
+          "headline": "✓ Optimal",
+          "pills": "西南 東北",
+          "note": "Hadap Timur Laut atau Barat Daya untuk energi terbaik"
+        },
+        {
+          "label": "Kamar Tidur",
+          "headline": "✓ Optimal",
+          "pills": "西 西北",
+          "note": "Posisi Barat atau Barat Laut memberi istirahat berkualitas"
+        },
+        {
+          "label": "Dapur / Kompor",
+          "headline": "✓ Optimal",
+          "pills": "東 東南",
+          "note": "Kompor menghadap Timur atau Barat Laut paling menguntungkan"
+        },
+        {
+          "label": "Kamar Mandi",
+          "headline": "⚠ Perhatikan",
+          "pills": "東方 東南",
+          "note": "Tempatkan di Timur atau Tenggara, jauh dari sektor hoki utama"
+        },
+        {
+          "label": "Ruang Kerja",
+          "headline": "✓ Optimal",
+          "pills": "西北 東北",
+          "note": "Meja kerja menghadap Barat Laut atau Timur Laut untuk fokus maksimal"
+        },
+        {
+          "label": "Altar / Sembah",
+          "headline": "✓ Optimal",
+          "pills": "西北",
+          "note": "Arah Barat Laut paling sakral dan harmonis untuk altar trigram Gunung"
+        }
+      ]
+    },
+    "dayun_spotlight": "<div class=\"sp-headline\">Chelsey kini berada di fase <strong>Api Yang Kuda</strong> (<span class=\"hz\">丙午</span>) (umur 13-22), api yang terang namun perlu dikendalikan agar tidak membakar diri sendiri.</div><ul class='sp-bullets'><li>Fase <strong>Api Yang Kuda</strong> (<span class=\"hz\">丙午</span>) membawa energi <strong>Api</strong> (<span class=\"hz\">火</span>) yang kuat, Chelsey merasakan dorongan eksplorasi sosial, identitas diri, dan keberanian baru. Ini adalah periode pembentukan karakter paling intens dalam hidupnya.</li><li>Unsur Api yang dominan di fase ini berbenturan dengan kebutuhan Chelsey akan <strong>Air</strong> (<span class=\"hz\">水</span>) dan <strong>Kayu</strong> (<span class=\"hz\">木</span>), ada risiko impulsivitas, konflik emosional, dan keputusan yang tergesa. Perlu latihan sabar dan refleksi mendalam.</li><li>Di sisi positif, <strong>Api Yang</strong> (<span class=\"hz\">丙火</span>) di pilar jam Chelsey mendapat dukungan dari da yun ini, bakat seni, ekspresi diri, dan karisma alami memancar kuat. Waktu terbaik untuk mengembangkan portofolio kreatif dan akademis.</li><li>Hubungan sosial dan romantis mulai berkembang pesat di fase ini. Software mencatat potensi pertemuan cinta yang berkesan, namun Chelsey perlu hati-hati agar tidak tergesa dalam komitmen sebelum kematangan emosional terbentuk.</li></ul>",
+    "dayun_seasons": "<ol class='dy-seasons'><li>umur 3-12: Musim Tanam, fondasi karakter dan kebiasaan dasar terbentuk dalam lingkungan keluarga</li><li>umur 13-22: Musim Tumbuh, identitas diri berkembang pesat, penuh eksplorasi dan pembelajaran hidup</li><li>umur 23-32: Musim Berbunga, karir dan relasi matang, potensi fase <strong>Kayu Yin Ular</strong> (<span class=\"hz\">乙巳</span>) membawa peluang finansial nyata</li><li>umur 33-42: Musim Panen, puncak produktivitas dengan fase <strong>Kayu Yang Naga</strong> (<span class=\"hz\">甲辰</span>) mendukung pembangunan aset dan reputasi</li><li>umur 43-52: Musim Tenang, konsolidasi hasil, fase <strong>Air Yin Kelinci</strong> (<span class=\"hz\">癸卯</span>) membawa kebijaksanaan dan kedalaman spiritual</li></ol>",
+    "dayun_footer": "Chelsey, 18 tahun, kini dalam fase <strong>Api Yang Kuda</strong> (<span class=\"hz\">丙午</span>) (umur 13-22), masa tumbuh paling intens di mana bakat kreatif dan identitas diri mekar; gunakan energi ini dengan penuh kesadaran.",
+    "palace1": "<p>ming_gong: - star: 祿存 - insight: <strong>Bintang Rezeki Tetap</strong> (<span class=\"hz\">祿存</span>) di Istana Hidup <strong>Anjing</strong> (<span class=\"hz\">戌</span>) memberi Chelsey karakter yang mandiri, hemat, dan cenderung menyimpan energi untuk diri sendiri. Ada aura keberkahan alami, ia jarang benar-benar jatuh ke titik nol secara finansial. Namun Bintang Rezeki Tetap juga membawa sifat penyendiri; Chelsey nyaman dalam kesunyian dan kurang suka ketergantungan pada orang lain. Intuisi bisnisnya tajam namun perlu latihan untuk dibagikan kepada tim. - action: Kembangkan kepercayaan diri untuk berbagi ide, kemandirian bukan berarti harus selalu sendirian.</p><p>xiongdi: - star: null - insight: Hubungan dengan saudara kandung cukup kompleks bagi Chelsey. Software mencatat kecenderungan renggang sejak kecil, namun bukan karena tidak peduli, lebih karena Chelsey tumbuh dalam dunianya sendiri. Seiring dewasa, relasi ini bisa membaik bila ada komunikasi yang dibangun dengan sabar. Kehadiran saudara paling terasa saat Chelsey menghadapi tantangan besar. - action: Luangkan waktu berkualitas bersama saudara, investasi relasi ini berharga di masa depan.</p><p>fuqi: - star: null - insight: Software mencatat bahwa Chelsey memiliki pandangan cinta yang sangat serius dan tidak toleran terhadap hubungan yang main-main. Ia cenderung awal menikah karena kepekaan emosional yang tinggi. Pasangan terbaik adalah yang cerdas, tenang, dan mampu memahami kedalaman batin Chelsey tanpa memaksa keterbukaan. Ada potensi pernikahan yang sangat harmonis bila pasangan dipilih dengan hati-hati. - action: Jangan terburu-buru dalam komitmen romantis, kematangan emosional adalah kunci pilihan pasangan terbaik.</p><p>zinu: - star: null - insight: Chelsey berpotensi menjadi orang tua yang penuh perhatian dan protektif. Hubungan dengan anak-anak cenderung hangat meski tampak diam dari luar. Gaya pengasuhan terbaik adalah memberi kebebasan bereksplorasi dengan panduan nilai yang jelas. Perlu diperhatikan agar tidak terlalu mengontrol karena naluri protektif yang terlalu kuat. - action: Percayai proses tumbuh anak, beri ruang eksplorasi sambil tetap menjaga nilai-nilai inti keluarga.</p>",
+    "_palace1_struct": {
+      "ming_gong": {
+        "star": "祿存",
+        "insight": "**Bintang Rezeki Tetap** ([[祿存]]) di Istana Hidup **Anjing** ([[戌]]) memberi Chelsey karakter yang mandiri, hemat, dan cenderung menyimpan energi untuk diri sendiri. Ada aura keberkahan alami, ia jarang benar-benar jatuh ke titik nol secara finansial. Namun Bintang Rezeki Tetap juga membawa sifat penyendiri; Chelsey nyaman dalam kesunyian dan kurang suka ketergantungan pada orang lain. Intuisi bisnisnya tajam namun perlu latihan untuk dibagikan kepada tim.",
+        "action": "Kembangkan kepercayaan diri untuk berbagi ide, kemandirian bukan berarti harus selalu sendirian."
+      },
+      "xiongdi": {
+        "insight": "Hubungan dengan saudara kandung cukup kompleks bagi Chelsey. Software mencatat kecenderungan renggang sejak kecil, namun bukan karena tidak peduli, lebih karena Chelsey tumbuh dalam dunianya sendiri. Seiring dewasa, relasi ini bisa membaik bila ada komunikasi yang dibangun dengan sabar. Kehadiran saudara paling terasa saat Chelsey menghadapi tantangan besar.",
+        "action": "Luangkan waktu berkualitas bersama saudara, investasi relasi ini berharga di masa depan."
+      },
+      "fuqi": {
+        "insight": "Software mencatat bahwa Chelsey memiliki pandangan cinta yang sangat serius dan tidak toleran terhadap hubungan yang main-main. Ia cenderung awal menikah karena kepekaan emosional yang tinggi. Pasangan terbaik adalah yang cerdas, tenang, dan mampu memahami kedalaman batin Chelsey tanpa memaksa keterbukaan. Ada potensi pernikahan yang sangat harmonis bila pasangan dipilih dengan hati-hati.",
+        "action": "Jangan terburu-buru dalam komitmen romantis, kematangan emosional adalah kunci pilihan pasangan terbaik."
+      },
+      "zinu": {
+        "insight": "Chelsey berpotensi menjadi orang tua yang penuh perhatian dan protektif. Hubungan dengan anak-anak cenderung hangat meski tampak diam dari luar. Gaya pengasuhan terbaik adalah memberi kebebasan bereksplorasi dengan panduan nilai yang jelas. Perlu diperhatikan agar tidak terlalu mengontrol karena naluri protektif yang terlalu kuat.",
+        "action": "Percayai proses tumbuh anak, beri ruang eksplorasi sambil tetap menjaga nilai-nilai inti keluarga."
+      }
+    },
+    "palace2": "<p>caibo: - star: 天機 - insight: <strong>Bintang Strategi</strong> (<span class=\"hz\">天機</span>) di Istana Rezeki menunjukkan bahwa sumber keuangan Chelsey datang dari kecerdasan, kreativitas, dan kemampuan adaptasi, bukan dari warisan atau keberuntungan semata. Software mencatat: Bintang Strategi membuat pengeluaran bisa sangat besar namun kemampuan memulihkan keuangan juga ada. Chelsey perlu strategi finansial yang matang, jangan hanya mengandalkan intuisi saja. Properti adalah jangkar terbaik. - action: Buat rencana keuangan jangka panjang sejak dini, jangan biarkan kecerdasan finansial hanya jadi potensi tanpa eksekusi.</p><p>jie_e: - star: null - insight: Software mencatat bahwa Chelsey rentan terhadap penyakit tenggorokan, pilek, dan sakit gigi. Area kelemahan fisik ada di sistem pernapasan bagian atas dan gigi. Secara umum kondisi fisik cukup baik, namun perlu perhatian khusus saat cuaca ekstrem atau tekanan mental tinggi. Keseimbangan emosional sangat memengaruhi kondisi kesehatan fisik Chelsey secara langsung. - action: Jaga pola tidur dan hindari paparan udara dingin berlebih, kesehatan optimal dimulai dari rutinitas harian yang konsisten.</p><p>qianyi: - star: 太陰 - insight: <strong>Bintang Bulan</strong> (<span class=\"hz\">太陰</span>) di Istana Perpindahan menandai bahwa Chelsey adalah pribadi yang justru bersinar di lingkungan baru. Perpindahan tempat, karir, atau domisili bukan ancaman, melainkan jalan keluar dari kebuntuan. Software mencatat: ke luar negeri atau keluar kota memberi keberuntungan lebih besar daripada menetap di tempat asal. Bintang Bulan juga menandai kemampuan membangun jaringan di tempat baru dengan relatif mudah. - action: Jangan takut berpindah ketika lingkungan terasa stagnan, mobilitas adalah salah satu jalur rezeki terbaik Chelsey.</p><p>puyi: - star: null - insight: Hubungan Chelsey dengan bawahan dan sahabat cukup kompleks. Software mencatat: banyak teman di masa muda namun kesetiaan sering diuji. Ada potensi bawahan yang tampak loyal namun sesungguhnya tidak dapat diandalkan di saat kritis. Chelsey perlu membangun sistem kepercayaan yang terukur, jangan mempercayai seseorang hanya karena keakraban jangka pendek. - action: Pilih lingkaran kepercayaan dengan hati-hati, kualitas lebih penting dari kuantitas dalam relasi profesional.</p>",
+    "_palace2_struct": {
+      "caibo": {
+        "star": "天機",
+        "insight": "**Bintang Strategi** ([[天機]]) di Istana Rezeki menunjukkan bahwa sumber keuangan Chelsey datang dari kecerdasan, kreativitas, dan kemampuan adaptasi, bukan dari warisan atau keberuntungan semata. Software mencatat: Bintang Strategi membuat pengeluaran bisa sangat besar namun kemampuan memulihkan keuangan juga ada. Chelsey perlu strategi finansial yang matang, jangan hanya mengandalkan intuisi saja. Properti adalah jangkar terbaik.",
+        "action": "Buat rencana keuangan jangka panjang sejak dini, jangan biarkan kecerdasan finansial hanya jadi potensi tanpa eksekusi."
+      },
+      "jie_e": {
+        "insight": "Software mencatat bahwa Chelsey rentan terhadap penyakit tenggorokan, pilek, dan sakit gigi. Area kelemahan fisik ada di sistem pernapasan bagian atas dan gigi. Secara umum kondisi fisik cukup baik, namun perlu perhatian khusus saat cuaca ekstrem atau tekanan mental tinggi. Keseimbangan emosional sangat memengaruhi kondisi kesehatan fisik Chelsey secara langsung.",
+        "action": "Jaga pola tidur dan hindari paparan udara dingin berlebih, kesehatan optimal dimulai dari rutinitas harian yang konsisten."
+      },
+      "qianyi": {
+        "star": "太陰",
+        "insight": "**Bintang Bulan** ([[太陰]]) di Istana Perpindahan menandai bahwa Chelsey adalah pribadi yang justru bersinar di lingkungan baru. Perpindahan tempat, karir, atau domisili bukan ancaman, melainkan jalan keluar dari kebuntuan. Software mencatat: ke luar negeri atau keluar kota memberi keberuntungan lebih besar daripada menetap di tempat asal. Bintang Bulan juga menandai kemampuan membangun jaringan di tempat baru dengan relatif mudah.",
+        "action": "Jangan takut berpindah ketika lingkungan terasa stagnan, mobilitas adalah salah satu jalur rezeki terbaik Chelsey."
+      },
+      "puyi": {
+        "insight": "Hubungan Chelsey dengan bawahan dan sahabat cukup kompleks. Software mencatat: banyak teman di masa muda namun kesetiaan sering diuji. Ada potensi bawahan yang tampak loyal namun sesungguhnya tidak dapat diandalkan di saat kritis. Chelsey perlu membangun sistem kepercayaan yang terukur, jangan mempercayai seseorang hanya karena keakraban jangka pendek.",
+        "action": "Pilih lingkaran kepercayaan dengan hati-hati, kualitas lebih penting dari kuantitas dalam relasi profesional."
+      }
+    },
+    "palace3": "<p>guanlu: - star: null - insight: Istana Karir Chelsey kuat di bidang yang menggabungkan intelektualitas dengan pelayanan. Software secara eksplisit menyebut dokter, perawat, pengacara, jurnalis, penulis, pendidik, dan politisi sebagai jalur karir terbaik. <strong>Bintang Akademik</strong> (<span class=\"hz\">文昌</span>) mendukung kemampuan menulis dan berbicara di depan publik. Chelsey mampu meraih posisi tinggi bila tidak tergoda masuk terlalu banyak bidang sekaligus. - action: Fokus pada satu jalur karir utama dan dalami secara konsisten, kedalaman keahlian adalah kunci reputasi jangka panjang.</p><p>tianzhai: - star: null - insight: Chelsey berpotensi memiliki properti dalam jumlah besar sepanjang hidupnya. Namun kemampuan mengakuisisi properti secara aktif agak lemah, lebih banyak datang dari kesempatan, hobi yang menghasilkan, atau kombinasi usaha dengan aset fisik. Software menyarankan: usaha yang berhubungan dengan properti, fashion, atau kerajinan tangan dapat memperkuat aset secara signifikan. - action: Investasikan sebagian penghasilan ke aset properti sejak dini, ini jangkar keuangan paling stabil bagi Chelsey.</p><p>fude: - star: null - insight: Istana Berkah Chelsey mencerminkan jiwa yang kaya secara batin meski tampak tenang di luar. Software mencatat: Chelsey menikmati kesenangan intelektual, kesunyian yang produktif, dan kepuasan dari pencapaian yang bermakna. Ada kedalaman spiritual yang bila dikembangkan akan menjadi sumber ketenangan luar biasa. Jiwa Chelsey butuh stimulasi intelektual, kebosanan adalah musuh terbesarnya. - action: Luangkan waktu untuk refleksi dan aktivitas spiritual, ketenangan batin adalah fondasi kesuksesan jangka panjang.</p><p>fumu: - star: null - insight: Hubungan Chelsey dengan orang tua ditandai oleh dinamika yang kompleks. Software mencatat: relasi orang tua cenderung tegang, orang tua bersifat keras dan sering berkonflik satu sama lain. Chelsey tumbuh dengan menyaksikan banyak pertentangan di lingkungan keluarga. Namun bila domisili terpisah dari orang tua, hubungan dapat tumbuh lebih harmonis dan saling menghargai. - action: Bangun batasan sehat dengan orang tua sambil tetap menjaga rasa hormat, jarak fisik kadang menjadi jembatan emosional terbaik.</p>",
+    "_palace3_struct": {
+      "guanlu": {
+        "insight": "Istana Karir Chelsey kuat di bidang yang menggabungkan intelektualitas dengan pelayanan. Software secara eksplisit menyebut dokter, perawat, pengacara, jurnalis, penulis, pendidik, dan politisi sebagai jalur karir terbaik. **Bintang Akademik** ([[文昌]]) mendukung kemampuan menulis dan berbicara di depan publik. Chelsey mampu meraih posisi tinggi bila tidak tergoda masuk terlalu banyak bidang sekaligus.",
+        "action": "Fokus pada satu jalur karir utama dan dalami secara konsisten, kedalaman keahlian adalah kunci reputasi jangka panjang."
+      },
+      "tianzhai": {
+        "insight": "Chelsey berpotensi memiliki properti dalam jumlah besar sepanjang hidupnya. Namun kemampuan mengakuisisi properti secara aktif agak lemah, lebih banyak datang dari kesempatan, hobi yang menghasilkan, atau kombinasi usaha dengan aset fisik. Software menyarankan: usaha yang berhubungan dengan properti, fashion, atau kerajinan tangan dapat memperkuat aset secara signifikan.",
+        "action": "Investasikan sebagian penghasilan ke aset properti sejak dini, ini jangkar keuangan paling stabil bagi Chelsey."
+      },
+      "fude": {
+        "insight": "Istana Berkah Chelsey mencerminkan jiwa yang kaya secara batin meski tampak tenang di luar. Software mencatat: Chelsey menikmati kesenangan intelektual, kesunyian yang produktif, dan kepuasan dari pencapaian yang bermakna. Ada kedalaman spiritual yang bila dikembangkan akan menjadi sumber ketenangan luar biasa. Jiwa Chelsey butuh stimulasi intelektual, kebosanan adalah musuh terbesarnya.",
+        "action": "Luangkan waktu untuk refleksi dan aktivitas spiritual, ketenangan batin adalah fondasi kesuksesan jangka panjang."
+      },
+      "fumu": {
+        "insight": "Hubungan Chelsey dengan orang tua ditandai oleh dinamika yang kompleks. Software mencatat: relasi orang tua cenderung tegang, orang tua bersifat keras dan sering berkonflik satu sama lain. Chelsey tumbuh dengan menyaksikan banyak pertentangan di lingkungan keluarga. Namun bila domisili terpisah dari orang tua, hubungan dapat tumbuh lebih harmonis dan saling menghargai.",
+        "action": "Bangun batasan sehat dengan orang tua sambil tetap menjaga rasa hormat, jarak fisik kadang menjadi jembatan emosional terbaik."
+      }
+    },
+    "kesimpulan": "Aku adalah gunung yang diam, bukan karena tidak punya suara, melainkan karena aku tahu kapan saat yang tepat untuk berbicara dan kapan energiku paling berharga bila disimpan untuk hal yang benar-benar bermakna.",
+    "_kesimpulan_struct": {
+      "quote": "Aku adalah gunung yang diam, bukan karena tidak punya suara, melainkan karena aku tahu kapan saat yang tepat untuk berbicara dan kapan energiku paling berharga bila disimpan untuk hal yang benar-benar bermakna.",
+      "stats": {
+        "format_desc": "**Format Mentor Bayangan** ([[偏印格]]) membuat Chelsey tumbuh lewat intuisi dan kedalaman berpikir, bukan jalur konvensional.",
+        "yong_desc": "Aktifkan **Air** ([[水]]) dan **Kayu** ([[木]]) lewat lingkungan kreatif, mobilitas, dan kebiasaan belajar hal baru setiap hari.",
+        "dayun_desc": "Fase **Air Yang Tikus** ([[壬子]]) adalah masa identitas menyala. Bangun pondasi keahlian, hindari keputusan emosional tergesa.",
+        "umur_desc": "Dekade 15-24 adalah masa pembentukan identitas. Peluang besar, namun rentan salah arah bila tidak fokus pada satu jalur.",
+        "kompat_desc": "Chelsey paling harmonis dengan **Monyet** ([[申]]), **Naga** ([[辰]]), **Kerbau** ([[丑]]). Jauhi **Kelinci** ([[卯]]), **Kuda** ([[午]]), **Kambing** ([[未]])."
+      },
+      "life_map": {
+        "lalu": "Masa **Air Yin Kerbau** ([[癸丑]]) (usia 5-14) membentuk fondasi karakter yang keras dan mandiri. Chelsey belajar dari lingkungan keluarga yang penuh dinamika, menempa ketangguhan batin sejak dini.",
+        "sekarang": "Fase **Air Yang Tikus** ([[壬子]]) (usia 15-24), api identitas menyala. Chelsey sedang menemukan suaranya sendiri di tengah eksplorasi sosial, akademis, dan kreativitas yang meledak namun butuh arah.",
+        "berikutnya": "Fase **Logam Yin Babi** ([[辛亥]]) (usia 25-34) membawa Chelsey ke panen pertama. Karir mulai terbentuk, relasi matang, dan potensi finansial dari keahlian kreatif mulai berbuah nyata."
+      }
+    },
+    "sintesis": "Chelsey adalah <strong>Tanah Yang</strong> (<span class=\"hz\">戊土</span>) dengan <strong>Format Mentor Bayangan</strong> (<span class=\"hz\">偏印格</span>), jiwa gunung yang tenang namun menyimpan kedalaman intelektual, intuisi seni, dan ketangguhan batin yang melampaui usianya.",
+    "_sintesis_struct": {
+      "opening": "Chelsey adalah **Tanah Yang** ([[戊土]]) dengan **Format Mentor Bayangan** ([[偏印格]]), jiwa gunung yang tenang namun menyimpan kedalaman intelektual, intuisi seni, dan ketangguhan batin yang melampaui usianya.",
+      "trio": {
+        "kekuatan": {
+          "hanzi": "深思",
+          "pinyin": "Shēn Sī",
+          "arti": "Pemikiran yang Mendalam",
+          "body": "Kekuatan terbesar Chelsey adalah kemampuan berpikir mendalam yang jauh melampaui rata-rata. **Format Mentor Bayangan** ([[偏印格]]) memberi intuisi tajam dan daya analitis yang kuat. Ia mampu melihat pola yang tidak terlihat orang lain, dan justru tumbuh paling pesat dalam kesendirian yang produktif. Kreativitas dan kecerdasan akademisnya adalah aset paling berharga."
+        },
+        "tantangan": {
+          "hanzi": "封閉",
+          "pinyin": "Fēng Bì",
+          "arti": "Tertutup, Sulit Membuka Diri",
+          "body": "Tantangan terbesar Chelsey adalah kecenderungan menutup diri secara emosional. Ia menyimpan terlalu banyak di dalam, sulit percaya, dan keras kepala ketika mendapat masukan. **Tanah Yang Anjing** ([[戊戌]]) di pilar hari memperkuat sisi keras dan kaku ini. Bila tidak dilatih, ketutupan ini bisa menghambat relasi, karir, dan peluang kolaborasi yang sesungguhnya sangat dibutuhkan."
+        },
+        "tindakan": {
+          "hanzi": "展翅",
+          "pinyin": "Zhǎn Chì",
+          "arti": "Membentangkan Sayap",
+          "body": "Panggung optimal Chelsey adalah tempat di mana kedalaman ilmu bertemu ekspresi kreatif, ruang riset, studio seni, ruang pengadilan, atau ruang redaksi. Chelsey perlu secara aktif mencari lingkungan yang menghargai kedalaman berpikir, bukan sekadar kecepatan reaksi. Di sanalah seluruh potensi gunung diam ini akan benar-benar meledak menjadi karya nyata."
+        }
+      },
+      "actions": [
+        {
+          "title": "Bangun portofolio kreatif sejak sekarang",
+          "context": "Usia 18 adalah waktu ideal memulai karya nyata yang bisa dibanggakan",
+          "tag": "木 · Kayu"
+        },
+        {
+          "title": "Dalami satu keahlian secara serius",
+          "context": "Hindari menyebar terlalu luas, kedalaman adalah daya saing terbesar Chelsey",
+          "tag": "土 · Tanah"
+        },
+        {
+          "title": "Latih komunikasi dan keterbukaan emosional",
+          "context": "Ikuti komunitas diskusi atau kelas berbicara untuk melatih ekspresi diri",
+          "tag": "水 · Air"
+        },
+        {
+          "title": "Mulai literasi keuangan dan investasi properti",
+          "context": "Baca buku keuangan dan konsultasikan rencana aset jangka panjang",
+          "tag": "水 · Air"
+        },
+        {
+          "title": "Jaga kesehatan tenggorokan dan sistem pernapasan",
+          "context": "Rutin olahraga ringan dan hindari udara dingin berlebihan setiap hari",
+          "tag": "木 · Kayu"
+        }
+      ]
+    },
+    "_dmcard": "\n        <div class=\"dmc-eyebrow\">本 命 · Penguasa Hari</div>\n        <div class=\"dmc-stem\">戊</div>\n        <div class=\"dmc-element\">土 · Tanah Yang</div>\n        <div class=\"dmc-pinyin\">Wù 土, \"Gunung\"</div>\n        <div class=\"dmc-traits\">\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span><strong>Stabil</strong>, dapat diandalkan, tegas</span></div>\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span>Pondasi, orang lain bersandar pada Anda</span></div>\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span>Mekar dengan api (kehangatan) + logam (kanal)</span></div>\n        </div>\n        <div class=\"dmc-strength\">Status: <span class=\"val\">LEMAH</span> · None</div>\n      ",
+    "_jishen_body": "<strong>火</strong> (Huǒ · Api), Api berlebih membakar habis sumber daya; hindari merah-jingga dominan, panas/kering, dan reaksi cepat tanpa pendinginan. <strong>土</strong> (Tǔ · Tanah), Tanah berlebih membuat stagnasi; hindari berat/lembam, kebiasaan menumpuk, dan resisten terhadap perubahan.",
+    "fam_pasangan_vibe": "Cerdas · Setia",
+    "fam_pasangan_headline": "Pasangan ideal yang tulus dan tidak suka basa-basi.",
+    "fam_pasangan_body": "Software mencatat Chelsey memiliki pandangan cinta yang serius, tidak toleran terhadap sikap main-main. Ia mencari pasangan yang cerdas, suportif, dan mampu memahami sisi diamnya. Dinamika terbaik terjadi ketika pasangan memberi ruang namun tetap hadir secara emosional. Hindari pasangan yang terlalu dominan atau sering memberikan kritik tanpa empati.",
+    "fam_anak_vibe": "Penuh Perhatian · Protektif",
+    "fam_anak_headline": "Orang tua yang sabar namun memegang prinsip teguh.",
+    "fam_anak_body": "Chelsey cenderung menjadi figur orang tua yang hangat di balik ketenangan luarnya. Ia akan mendidik anak dengan nilai kejujuran dan kemandirian. Pola pengasuhan terbaik adalah memberi kebebasan bereksplorasi sambil menjaga batas yang jelas. Perlu hati-hati agar tidak terlalu protektif hingga anak merasa terkungkung.",
+    "fam_saudara_vibe": "Mandiri · Berjarak",
+    "fam_saudara_headline": "Hubungan saudara tumbuh lebih baik saat dewasa.",
+    "fam_saudara_body": "Software mencatat bahwa relasi Chelsey dengan saudara kandung cenderung renggang di masa kecil, namun dapat tumbuh harmonis seiring waktu. Chelsey lebih nyaman berinteraksi secara fungsional daripada emosional. Jarak bukan berarti tidak peduli, ia akan hadir saat saudara benar-benar membutuhkan bantuan nyata.",
+    "fam_kepemimpinan_vibe": "Diam · Berpengaruh",
+    "fam_kepemimpinan_headline": "Pemimpin yang memimpin lewat keteladanan bukan perintah.",
+    "fam_kepemimpinan_body": "Chelsey bukan tipe pemimpin yang vokal, namun pengaruhnya nyata. Ia memimpin dengan konsistensi dan integritas. Gaya terbaik adalah kepemimpinan di belakang layar, menjadi perencana strategis bukan orator publik. Software mencatat potensi besar di bidang kepemimpinan profesional bila <strong>Bintang Akademik</strong> (<span class=\"hz\">文昌</span>) aktif mendukung karir.",
+    "caifu_zheng_gauge": "<div class=\"cfm-gauge-fill\" style=\"width:40%\">40%</div>",
+    "caifu_zheng_body": "Rezeki tetap Chelsey tidak mengalir deras secara alami. Perlu disiplin dan ketekunan untuk membangun penghasilan rutin yang stabil. Software menegaskan: <strong>Rezeki Tetap</strong> (<span class=\"hz\">正財</span>) hubungannya tidak mudah, Chelsey harus benar-benar bekerja keras untuk mempertahankan pendapatan tetap, dan sebaiknya memiliki aset properti sebagai cadangan jangka panjang.",
+    "caifu_pian_gauge": "<div class=\"cfm-gauge-fill\" style=\"width:60%\">60%</div>",
+    "caifu_pian_body": "<strong>Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財</span>) menjadi sumber rezeki yang lebih dominan bagi Chelsey, namun hubungannya renggang dan tidak mudah ditangkap. Rezeki bisa datang dari proyek kreatif, kerja sama lintas bidang, atau peluang yang tidak terduga. Kunci: tetap fleksibel dan jangan menolak peluang yang tampak tidak lazim.",
+    "_caifu_rules": "\n        <div class=\"cf-rule tip\">\n          <div class=\"cfr-num\">1</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Investasi properti adalah prioritas utama</div>\n            <div class=\"cfr-context\">Uang tunai Chelsey sulit tersimpan, properti adalah jangkar terbaik</div>\n          </div>\n        </div>\n        <div class=\"cf-rule warn\">\n          <div class=\"cfr-num\">2</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Hindari spekulasi dan judi finansial</div>\n            <div class=\"cfr-context\">Rezeki Tak Terduga yang renggang membuat spekulasi berisiko tinggi bagi Chelsey</div>\n          </div>\n        </div>\n        <div class=\"cf-rule tip\">\n          <div class=\"cfr-num\">3</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Bangun penghasilan dari keahlian kreatif</div>\n            <div class=\"cfr-context\">Bakat seni dan sastra bisa menjadi sumber pendapatan nyata</div>\n          </div>\n        </div>\n        <div class=\"cf-rule warn\">\n          <div class=\"cfr-num\">4</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Waspadai pengeluaran impulsif di usia muda</div>\n            <div class=\"cfr-context\">Pemborosan Besar memperburuk kebocoran keuangan bila tidak dijaga</div>\n          </div>\n        </div>\n",
+    "_p1_ming_gong": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Diri</span><span class=\"pn-meta\">Mìng Gōng<span class=\"hz\">命宮</span></span></div></div><div class=\"pal-body\"><strong>Bintang Rezeki Tetap</strong> (<span class=\"hz\">祿存</span>) di Istana Hidup <strong>Anjing</strong> (<span class=\"hz\">戌</span>) memberi Chelsey karakter yang mandiri, hemat, dan cenderung menyimpan energi untuk diri sendiri. Ada aura keberkahan alami, ia jarang benar-benar jatuh ke titik nol secara finansial. Namun Bintang Rezeki Tetap juga membawa sifat penyendiri; Chelsey nyaman dalam kesunyian dan kurang suka ketergantungan pada orang lain. Intuisi bisnisnya tajam namun perlu latihan untuk dibagikan kepada tim.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Kembangkan kepercayaan diri untuk berbagi ide, kemandirian bukan berarti harus selalu sendirian.</span></div></div>",
+    "_p1_xiongdi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Saudara</span><span class=\"pn-meta\">Xiōng Dì<span class=\"hz\">兄弟</span></span></div></div><div class=\"pal-body\">Hubungan dengan saudara kandung cukup kompleks bagi Chelsey. Software mencatat kecenderungan renggang sejak kecil, namun bukan karena tidak peduli, lebih karena Chelsey tumbuh dalam dunianya sendiri. Seiring dewasa, relasi ini bisa membaik bila ada komunikasi yang dibangun dengan sabar. Kehadiran saudara paling terasa saat Chelsey menghadapi tantangan besar.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Luangkan waktu berkualitas bersama saudara, investasi relasi ini berharga di masa depan.</span></div></div>",
+    "_p1_fuqi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pasangan</span><span class=\"pn-meta\">Fū Qī<span class=\"hz\">夫妻</span></span></div></div><div class=\"pal-body\">Software mencatat bahwa Chelsey memiliki pandangan cinta yang sangat serius dan tidak toleran terhadap hubungan yang main-main. Ia cenderung awal menikah karena kepekaan emosional yang tinggi. Pasangan terbaik adalah yang cerdas, tenang, dan mampu memahami kedalaman batin Chelsey tanpa memaksa keterbukaan. Ada potensi pernikahan yang sangat harmonis bila pasangan dipilih dengan hati-hati.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jangan terburu-buru dalam komitmen romantis, kematangan emosional adalah kunci pilihan pasangan terbaik.</span></div></div>",
+    "_p1_zinu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Anak</span><span class=\"pn-meta\">Zǐ Nǚ<span class=\"hz\">子女</span></span></div></div><div class=\"pal-body\">Chelsey berpotensi menjadi orang tua yang penuh perhatian dan protektif. Hubungan dengan anak-anak cenderung hangat meski tampak diam dari luar. Gaya pengasuhan terbaik adalah memberi kebebasan bereksplorasi dengan panduan nilai yang jelas. Perlu diperhatikan agar tidak terlalu mengontrol karena naluri protektif yang terlalu kuat.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Percayai proses tumbuh anak, beri ruang eksplorasi sambil tetap menjaga nilai-nilai inti keluarga.</span></div></div>",
+    "_p2_caibo": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Rezeki</span><span class=\"pn-meta\">Cái Bó<span class=\"hz\">財帛</span></span></div></div><div class=\"pal-body\"><strong>Bintang Strategi</strong> (<span class=\"hz\">天機</span>) di Istana Rezeki menunjukkan bahwa sumber keuangan Chelsey datang dari kecerdasan, kreativitas, dan kemampuan adaptasi, bukan dari warisan atau keberuntungan semata. Software mencatat: Bintang Strategi membuat pengeluaran bisa sangat besar namun kemampuan memulihkan keuangan juga ada. Chelsey perlu strategi finansial yang matang, jangan hanya mengandalkan intuisi saja. Properti adalah jangkar terbaik.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Buat rencana keuangan jangka panjang sejak dini, jangan biarkan kecerdasan finansial hanya jadi potensi tanpa eksekusi.</span></div></div>",
+    "_p2_jie_e": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Kesehatan</span><span class=\"pn-meta\">Jí È<span class=\"hz\">疾厄</span></span></div></div><div class=\"pal-body\">Software mencatat bahwa Chelsey rentan terhadap penyakit tenggorokan, pilek, dan sakit gigi. Area kelemahan fisik ada di sistem pernapasan bagian atas dan gigi. Secara umum kondisi fisik cukup baik, namun perlu perhatian khusus saat cuaca ekstrem atau tekanan mental tinggi. Keseimbangan emosional sangat memengaruhi kondisi kesehatan fisik Chelsey secara langsung.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga pola tidur dan hindari paparan udara dingin berlebih, kesehatan optimal dimulai dari rutinitas harian yang konsisten.</span></div></div>",
+    "_p2_qianyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Perpindahan</span><span class=\"pn-meta\">Qiān Yí<span class=\"hz\">遷移</span></span></div></div><div class=\"pal-body\"><strong>Bintang Bulan</strong> (<span class=\"hz\">太陰</span>) di Istana Perpindahan menandai bahwa Chelsey adalah pribadi yang justru bersinar di lingkungan baru. Perpindahan tempat, karir, atau domisili bukan ancaman, melainkan jalan keluar dari kebuntuan. Software mencatat: ke luar negeri atau keluar kota memberi keberuntungan lebih besar daripada menetap di tempat asal. Bintang Bulan juga menandai kemampuan membangun jaringan di tempat baru dengan relatif mudah.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jangan takut berpindah ketika lingkungan terasa stagnan, mobilitas adalah salah satu jalur rezeki terbaik Chelsey.</span></div></div>",
+    "_p2_puyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pertemanan</span><span class=\"pn-meta\">Pú Yì<span class=\"hz\">僕役</span></span></div></div><div class=\"pal-body\">Hubungan Chelsey dengan bawahan dan sahabat cukup kompleks. Software mencatat: banyak teman di masa muda namun kesetiaan sering diuji. Ada potensi bawahan yang tampak loyal namun sesungguhnya tidak dapat diandalkan di saat kritis. Chelsey perlu membangun sistem kepercayaan yang terukur, jangan mempercayai seseorang hanya karena keakraban jangka pendek.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Pilih lingkaran kepercayaan dengan hati-hati, kualitas lebih penting dari kuantitas dalam relasi profesional.</span></div></div>",
+    "_p3_guanlu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Karir</span><span class=\"pn-meta\">Guān Lù<span class=\"hz\">官祿</span></span></div></div><div class=\"pal-body\">Istana Karir Chelsey kuat di bidang yang menggabungkan intelektualitas dengan pelayanan. Software secara eksplisit menyebut dokter, perawat, pengacara, jurnalis, penulis, pendidik, dan politisi sebagai jalur karir terbaik. <strong>Bintang Akademik</strong> (<span class=\"hz\">文昌</span>) mendukung kemampuan menulis dan berbicara di depan publik. Chelsey mampu meraih posisi tinggi bila tidak tergoda masuk terlalu banyak bidang sekaligus.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Fokus pada satu jalur karir utama dan dalami secara konsisten, kedalaman keahlian adalah kunci reputasi jangka panjang.</span></div></div>",
+    "_p3_tianzhai": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Properti</span><span class=\"pn-meta\">Tián Zhái<span class=\"hz\">田宅</span></span></div></div><div class=\"pal-body\">Chelsey berpotensi memiliki properti dalam jumlah besar sepanjang hidupnya. Namun kemampuan mengakuisisi properti secara aktif agak lemah, lebih banyak datang dari kesempatan, hobi yang menghasilkan, atau kombinasi usaha dengan aset fisik. Software menyarankan: usaha yang berhubungan dengan properti, fashion, atau kerajinan tangan dapat memperkuat aset secara signifikan.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Investasikan sebagian penghasilan ke aset properti sejak dini, ini jangkar keuangan paling stabil bagi Chelsey.</span></div></div>",
+    "_p3_fude": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Berkah</span><span class=\"pn-meta\">Fú Dé<span class=\"hz\">福德</span></span></div></div><div class=\"pal-body\">Istana Berkah Chelsey mencerminkan jiwa yang kaya secara batin meski tampak tenang di luar. Software mencatat: Chelsey menikmati kesenangan intelektual, kesunyian yang produktif, dan kepuasan dari pencapaian yang bermakna. Ada kedalaman spiritual yang bila dikembangkan akan menjadi sumber ketenangan luar biasa. Jiwa Chelsey butuh stimulasi intelektual, kebosanan adalah musuh terbesarnya.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Luangkan waktu untuk refleksi dan aktivitas spiritual, ketenangan batin adalah fondasi kesuksesan jangka panjang.</span></div></div>",
+    "_p3_fumu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Orang Tua</span><span class=\"pn-meta\">Fù Mǔ<span class=\"hz\">父母</span></span></div></div><div class=\"pal-body\">Hubungan Chelsey dengan orang tua ditandai oleh dinamika yang kompleks. Software mencatat: relasi orang tua cenderung tegang, orang tua bersifat keras dan sering berkonflik satu sama lain. Chelsey tumbuh dengan menyaksikan banyak pertentangan di lingkungan keluarga. Namun bila domisili terpisah dari orang tua, hubungan dapat tumbuh lebih harmonis dan saling menghargai.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun batasan sehat dengan orang tua sambil tetap menjaga rasa hormat, jarak fisik kadang menjadi jembatan emosional terbaik.</span></div></div>",
+    "_kes_stats": "\n      <div class=\"kes-stat s1\"><div class=\"ks-eb\">Penguasa Hari · 日主</div><div class=\"ks-num\"><span class=\"hz\">戊土</span><span class=\"unit\">— · None</span></div><div class=\"ks-title\">Tanah Gunung —</div><div class=\"ks-desc\">Total Wu Xing 10, 土 <strong>40.0%</strong> dari distribusi total</div></div>\n      <div class=\"kes-stat s2\"><div class=\"ks-eb\">Format · 格局</div><div class=\"ks-num\"><span class=\"hz\">偏印格</span><span class=\"unit\">FORMAT</span></div><div class=\"ks-title\">Pian Yin Ge, Mentor Bayangan</div><div class=\"ks-desc\"><strong>Format Mentor Bayangan</strong> (<span class=\"hz\">偏印格</span>) membuat Chelsey tumbuh lewat intuisi dan kedalaman berpikir, bukan jalur konvensional.</div></div>\n      <div class=\"kes-stat s3\"><div class=\"ks-eb\">Yong Shen · 喜用神</div><div class=\"ks-num\"><span class=\"hz\">水 木</span><span class=\"unit\">MENDUKUNG</span></div><div class=\"ks-title\">Air &amp; Kayu, Penopang &amp; Pengarah</div><div class=\"ks-desc\">Aktifkan <strong>Air</strong> (<span class=\"hz\">水</span>) dan <strong>Kayu</strong> (<span class=\"hz\">木</span>) lewat lingkungan kreatif, mobilitas, dan kebiasaan belajar hal baru setiap hari.</div></div>\n      <div class=\"kes-stat s4\"><div class=\"ks-eb\">Da Yun · 大運</div><div class=\"ks-num\">Fase 1<span class=\"unit\">dari 10</span></div><div class=\"ks-title\">Fase — (—-—)</div><div class=\"ks-desc\">Fase <strong>Air Yang Tikus</strong> (<span class=\"hz\">壬子</span>) adalah masa identitas menyala. Bangun pondasi keahlian, hindari keputusan emosional tergesa.</div></div>\n      <div class=\"kes-stat s5\"><div class=\"ks-eb\">Umur Subjek</div><div class=\"ks-num\">18<span class=\"unit\">tahun</span></div><div class=\"ks-title\">Era 10–19</div><div class=\"ks-desc\">Dekade 15-24 adalah masa pembentukan identitas. Peluang besar, namun rentan salah arah bila tidak fokus pada satu jalur.</div></div>\n      <div class=\"kes-stat s6\"><div class=\"ks-eb\">Jodoh · 婚配 / 陽宅</div><div class=\"ks-num\">3 <span class=\"unit\">cocok · 3 hindari</span></div><div class=\"ks-desc\">Chelsey paling harmonis dengan <strong>Monyet</strong> (<span class=\"hz\">申</span>), <strong>Naga</strong> (<span class=\"hz\">辰</span>), <strong>Kerbau</strong> (<span class=\"hz\">丑</span>). Jauhi <strong>Kelinci</strong> (<span class=\"hz\">卯</span>), <strong>Kuda</strong> (<span class=\"hz\">午</span>), <strong>Kambing</strong> (<span class=\"hz\">未</span>).</div></div>\n    ",
+    "_kes_age": "18",
+    "_kes_lifemap": "\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">過<span class=\"id-label\">Lalu</span></div><div class=\"klm-row-text\"><span class=\"lbl\">MASA LALU</span>Masa <strong>Air Yin Kerbau</strong> (<span class=\"hz\">癸丑</span>) (usia 5-14) membentuk fondasi karakter yang keras dan mandiri. Chelsey belajar dari lingkungan keluarga yang penuh dinamika, menempa ketangguhan batin sejak dini.</div></div>\n          <div class=\"klm-row now\"><div class=\"klm-row-icon\">今<span class=\"id-label\">Kini</span></div><div class=\"klm-row-text\"><span class=\"lbl\">SEKARANG</span>Fase <strong>Air Yang Tikus</strong> (<span class=\"hz\">壬子</span>) (usia 15-24), api identitas menyala. Chelsey sedang menemukan suaranya sendiri di tengah eksplorasi sosial, akademis, dan kreativitas yang meledak namun butuh arah.</div></div>\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">未<span class=\"id-label\">Nanti</span></div><div class=\"klm-row-text\"><span class=\"lbl\">BERIKUTNYA</span>Fase <strong>Logam Yin Babi</strong> (<span class=\"hz\">辛亥</span>) (usia 25-34) membawa Chelsey ke panen pertama. Karir mulai terbentuk, relasi matang, dan potensi finansial dari keahlian kreatif mulai berbuah nyata.</div></div>\n        ",
+    "_kes_position": "\n          <div class=\"klp-eb\">Posisi Sekarang</div>\n          <div class=\"klp-hz\">春</div>\n          <div class=\"klp-id\">Chūn, \"Musim Semi Hidup\"</div>\n          <div class=\"klp-bar\">\n            <div class=\"klp-bar-cell now\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n          </div>\n          <div class=\"klp-meta\">Fase <strong>1 dari 10</strong> · Umur <strong>—-—</strong> · <strong>土 Tanah</strong> dominan · Musim Semi Hidup</div>\n        ",
+    "_syn_attrib": "Tanah Gunung · 偏印格 · Pian Yin Ge",
+    "_syn_trio": "\n      <div class=\"syn-card strength\">\n        <div class=\"syn-card-num\">力</div>\n        <div class=\"syn-card-eyebrow\">Kekuatan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">深思</span>\n          <span class=\"syn-card-id\">Shēn Sī</span>\n          <span class=\"syn-card-arti\">Pemikiran yang Mendalam</span>\n        </div>\n        <div class=\"syn-card-body\">Kekuatan terbesar Chelsey adalah kemampuan berpikir mendalam yang jauh melampaui rata-rata. <strong>Format Mentor Bayangan</strong> (<span class=\"hz\">偏印格</span>) memberi intuisi tajam dan daya analitis yang kuat. Ia mampu melihat pola yang tidak terlihat orang lain, dan justru tumbuh paling pesat dalam kesendirian yang produktif. Kreativitas dan kecerdasan akademisnya adalah aset paling berharga.</div>\n      </div>\n      <div class=\"syn-card challenge\">\n        <div class=\"syn-card-num\">驗</div>\n        <div class=\"syn-card-eyebrow\">Tantangan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">封閉</span>\n          <span class=\"syn-card-id\">Fēng Bì</span>\n          <span class=\"syn-card-arti\">Tertutup, Sulit Membuka Diri</span>\n        </div>\n        <div class=\"syn-card-body\">Tantangan terbesar Chelsey adalah kecenderungan menutup diri secara emosional. Ia menyimpan terlalu banyak di dalam, sulit percaya, dan keras kepala ketika mendapat masukan. <strong>Tanah Yang Anjing</strong> (<span class=\"hz\">戊戌</span>) di pilar hari memperkuat sisi keras dan kaku ini. Bila tidak dilatih, ketutupan ini bisa menghambat relasi, karir, dan peluang kolaborasi yang sesungguhnya sangat dibutuhkan.</div>\n      </div>\n      <div class=\"syn-card action\">\n        <div class=\"syn-card-num\">為</div>\n        <div class=\"syn-card-eyebrow\">Tindakan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">展翅</span>\n          <span class=\"syn-card-id\">Zhǎn Chì</span>\n          <span class=\"syn-card-arti\">Membentangkan Sayap</span>\n        </div>\n        <div class=\"syn-card-body\">Panggung optimal Chelsey adalah tempat di mana kedalaman ilmu bertemu ekspresi kreatif, ruang riset, studio seni, ruang pengadilan, atau ruang redaksi. Chelsey perlu secara aktif mencari lingkungan yang menghargai kedalaman berpikir, bukan sekadar kecepatan reaksi. Di sanalah seluruh potensi gunung diam ini akan benar-benar meledak menjadi karya nyata.</div>\n      </div>\n    ",
+    "_syn_actions": "\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">1</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Bangun portofolio kreatif sejak sekarang</div>\n            <div class=\"syn-action-context\">Usia 18 adalah waktu ideal memulai karya nyata yang bisa dibanggakan</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">2</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Dalami satu keahlian secara serius</div>\n            <div class=\"syn-action-context\">Hindari menyebar terlalu luas, kedalaman adalah daya saing terbesar Chelsey</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">3</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Latih komunikasi dan keterbukaan emosional</div>\n            <div class=\"syn-action-context\">Ikuti komunitas diskusi atau kelas berbicara untuk melatih ekspresi diri</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">4</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Mulai literasi keuangan dan investasi properti</div>\n            <div class=\"syn-action-context\">Baca buku keuangan dan konsultasikan rencana aset jangka panjang</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">5</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Jaga kesehatan tenggorokan dan sistem pernapasan</div>\n            <div class=\"syn-action-context\">Rutin olahraga ringan dan hindari udara dingin berlebihan setiap hari</div>\n          </div>\n        </div>\n      ",
+    "_yangzhai_zones": "\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">門</div>\n            <div class=\"yz-zone-id\">Pintu Utama</div>\n            <div class=\"yz-zone-pinyin\">Mén · Pintu</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">西南</span>BD</span>\n              <span class=\"yz-pill\"><span class=\"hz\">東北</span>TL</span>\n            </div>\n            <div class=\"yz-zone-note\">Hadap Timur Laut atau Barat Daya untuk energi terbaik</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">房</div>\n            <div class=\"yz-zone-id\">Kamar Tidur</div>\n            <div class=\"yz-zone-pinyin\">Fáng · Kamar</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">西</span>B</span>\n              <span class=\"yz-pill\"><span class=\"hz\">西北</span>BL</span>\n            </div>\n            <div class=\"yz-zone-note\">Posisi Barat atau Barat Laut memberi istirahat berkualitas</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">灶</div>\n            <div class=\"yz-zone-id\">Dapur / Kompor</div>\n            <div class=\"yz-zone-pinyin\">Zào · Tungku</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">東</span>T</span>\n              <span class=\"yz-pill\"><span class=\"hz\">東南</span>TG</span>\n            </div>\n            <div class=\"yz-zone-note\">Kompor menghadap Timur atau Barat Laut paling menguntungkan</div>\n          </div>\n        </div>\n        <div class=\"yz-zone warn\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">廁</div>\n            <div class=\"yz-zone-id\">Kamar Mandi</div>\n            <div class=\"yz-zone-pinyin\">Cè · Kamar Mandi</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">⚠ Perhatikan</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill bad\"><span class=\"hz\">東方</span>東方</span>\n              <span class=\"yz-pill bad\"><span class=\"hz\">東南</span>TG</span>\n            </div>\n            <div class=\"yz-zone-note\">Tempatkan di Timur atau Tenggara, jauh dari sektor hoki utama</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">書</div>\n            <div class=\"yz-zone-id\">Ruang Kerja</div>\n            <div class=\"yz-zone-pinyin\">Shū · Ruang Kerja</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">西北</span>BL</span>\n              <span class=\"yz-pill\"><span class=\"hz\">東北</span>TL</span>\n            </div>\n            <div class=\"yz-zone-note\">Meja kerja menghadap Barat Laut atau Timur Laut untuk fokus maksimal</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">神</div>\n            <div class=\"yz-zone-id\">Altar / Sembah</div>\n            <div class=\"yz-zone-pinyin\">Shén · Sembahyang</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">西北</span>BL</span>\n            </div>\n            <div class=\"yz-zone-note\">Arah Barat Laut paling sakral dan harmonis untuk altar trigram Gunung</div>\n          </div>\n        </div>\n",
+    "_career_wuxing": "\n        <div class=\"wux-cell self\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">土 Tanah<span class=\"v\">4</span></div>\n        </div>\n        <div class=\"wux-cell fav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:50%\"></div></div>\n          <div class=\"wux-label\">水 Air<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell fav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:50%\"></div></div>\n          <div class=\"wux-label\">木 Kayu<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell unfav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:50%\"></div></div>\n          <div class=\"wux-label\">火 Api<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:0%\"></div></div>\n          <div class=\"wux-label\">金 Logam<span class=\"v\">0</span></div>\n        </div>\n",
+    "_career_title": "Air &amp; Kayu adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini",
+    "_career_avoid": "Industri ber-unsur <strong>火 (Api)</strong> &amp; <strong>土 (Tanah)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.",
+    "_career_tags": "\n          <span class=\"insight-tag\">水 ALIRAN & ADAPTASI</span>\n          <span class=\"insight-tag\">木 KREATIVITAS & PERTUMBUHAN</span>\n          <span class=\"insight-tag bad\">土 STAGNASI</span>\n          <span class=\"insight-tag bad\">火 PERSAINGAN BERLEBIH</span>\n        ",
+    "_career_industri": "\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">💧</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Kesehatan &amp; Medis</div>\n            <div class=\"ind-reason\">Unsur 水, Cocok dengan naluri melayani dan ketenangan dalam tekanan tinggi</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:95%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">🌳</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Pendidikan &amp; Akademik</div>\n            <div class=\"ind-reason\">Unsur 木, Bintang Akademik kuat mendukung karir pengajaran dan riset ilmiah</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:88%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">🌳</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Seni, Desain &amp; Sastra</div>\n            <div class=\"ind-reason\">Unsur 木, Bakat kreatif bawaan yang didukung konfigurasi bintang aktif</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:82%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">💧</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Hukum &amp; Advokasi</div>\n            <div class=\"ind-reason\">Unsur 水, Daya analitis tajam dan kemampuan membaca situasi secara mendalam</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:76%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">🌳</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Jurnalisme &amp; Media</div>\n            <div class=\"ind-reason\">Unsur 木, Kemampuan observasi dan ekspresi tertulis yang menonjol</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:70%\"></div></div>\n          </div>\n        </div>\n",
+    "shensha_star_hz": "文昌",
+    "shensha_star_pinyin": "Wén Chāng",
+    "shensha_star_label": "\"Bintang Kecerdasan & Seni\"",
+    "shensha_star_active": "★ AKTIF SEKARANG ★",
+    "shensha_strip": "Manfaatkan masa studi ini semaksimal mungkin, <strong>Bintang Akademik</strong> (<span class=\"hz\">文昌</span>) aktif mendukung prestasi akademis dan kreativitas Chelsey hingga usia pertengahan dua puluhan.",
+    "_xqcards": "\n      <div class=\"xq-card power\">\n        <div class=\"xqc-eb\">魄 力 · Kekuatan</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">優勢</span><span class=\"xqc-name\">Yōu Shì<br>Keunggulan</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Daya analitis sangat kuat; mampu membaca situasi tanpa banyak bicara.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Ketangguhan mental, tidak mudah goyah oleh tekanan eksternal.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Intuisi kreatif tinggi; unggul di bidang seni, desain, dan sastra.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Loyalitas mendalam kepada orang-orang yang benar-benar dipercaya.</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card shadow\">\n        <div class=\"xqc-eb\">陰 影 · Shadow</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">隱 患</span><span class=\"xqc-name\">Yǐn Huàn<br>Sisi Gelap</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Terlalu tertutup, menyimpan masalah sendiri hingga menumpuk.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Mudah curiga dan sulit percaya kepada orang baru.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Keras kepala; sulit menerima nasihat bahkan dari orang terdekat.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Rentan tenggelam dalam pikiran sendiri hingga mengabaikan realita.</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card optimum\">\n        <div class=\"xqc-eb\">最 佳 · Optimum</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">應 用</span><span class=\"xqc-name\">Yīng Yòng<br>Cara Optimal</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Beri diri ruang kreatif yang bebas dari tekanan sosial berlebihan.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Bangun rutinitas harian yang stabil untuk menjaga keseimbangan mental.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Pilih lingkaran pertemanan kecil namun berkualitas dan saling mendukung.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Latih diri untuk berbicara terbuka, komunikasi adalah kunci hubungan.</span></div>\n        </div>\n      </div>\n    "
   }
 }

@@ -1,0 +1,23 @@
+{
+  "screen_type": "detail",
+  "name_id": "YUDY L",
+  "gender_hz": "男",
+  "birth_lunar_text": "農曆民國 52年 1月 5日 13時 30分",
+  "detail_sections": {
+    "宿命": {
+      "hz": "不論吉凶，皆與宿命截然不同的運勢。\n只要您的福德宮旺盛，身宮也勢強。充滿人情味個性溫繫，你的仁德可替你帶來許多幸運。但福德宮勢弱的話，人際關係無法和諧，福德也因之散逝。此時，命宮、金錢宮、愛情宮、移動宮等強弱也須併入考慮之列。",
+      "_uncertain": true,
+      "_ambiguous_chars": [
+        "溫繫 (might be 溫馨)"
+      ],
+      "id_summary": [
+        "Nasib (宿命) membawa energi yang berbeda dari alur keberuntungan umum, terlepas dari baik-buruknya.",
+        "Selama istana Fude (福德宮) kuat, badan astral pun ikut kuat — watak hangat dan penuh belas kasih mendatangkan banyak keberuntungan.",
+        "Jika Fude lemah, hubungan sosial menjadi tidak harmonis dan keberuntungan menghilang; perlu mempertimbangkan kekuatan istana Ming, Keuangan, Cinta, dan Perpindahan secara bersamaan."
+      ],
+      "_photo": "WhatsApp Image 2026-05-02 at 12.58.30 (2).jpeg"
+    }
+  },
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.30 (2).jpeg",
+  "_hash": "e56394b1fcb1793a_80ec8a83"
+}

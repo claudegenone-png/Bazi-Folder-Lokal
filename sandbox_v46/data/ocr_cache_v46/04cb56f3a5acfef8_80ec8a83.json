@@ -1,0 +1,24 @@
+{
+  "screen_type": "detail",
+  "name_id": "YUBY L",
+  "gender_hz": "陰男",
+  "birth_lunar_text": "農曆民國 52年 1月 5日 13時 30分",
+  "detail_sections": {
+    "全局總論": {
+      "hz": "配偶較難相處，且較不講道理。兒子比較重感情，比較節儉。母親的話無法接受，較沒話說。不怕父親，無法接受父親的勸告。較無領導能力，並且無法掌握大權。做人比較厚道。有始無終，虎頭蛇尾，故事有頭無尾。",
+      "id_summary": [
+        "Pasangan hidup cenderung sulit diajak bersama dan kurang mau mengalah/masuk akal",
+        "Anak laki-laki lebih mengutamakan perasaan dan bersifat hemat; sulit menerima nasihat dari ibu maupun ayah",
+        "Kurang berjiwa pemimpin dan tidak mampu memegang atau menguasai kekuasaan besar",
+        "Orangnya jujur dan tulus dalam bersikap, namun sering tidak tuntas dalam menyelesaikan sesuatu — kepala harimau ekor ular"
+      ],
+      "_photo": "WhatsApp Image 2026-05-02 at 12.58.24 (2).jpeg",
+      "_uncertain": true,
+      "_ambiguous_chars": [
+        "相處 (first line — character might render as 相讨 or similar due to screen glare; 相處 chosen as contextually correct reading)"
+      ]
+    }
+  },
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.24 (2).jpeg",
+  "_hash": "04cb56f3a5acfef8_80ec8a83"
+}

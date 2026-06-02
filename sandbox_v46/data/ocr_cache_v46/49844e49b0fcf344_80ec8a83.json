@@ -1,0 +1,25 @@
+{
+  "screen_type": "detail",
+  "name_id": "YUDY L",
+  "gender_hz": "男",
+  "birth_lunar_text": "農曆民國 52 年 1 月 5 日 13 時 30 分",
+  "detail_sections": {
+    "事業": {
+      "hz": "◎文具、出版、書店、農菜蔬果、木材、傢俱、裝璜、紙、木器或工藝、花苗園藝、藥草、布定、教育、公務員、政治、宗教家。◎火熱光性工廠或物品、照相、電器、光學、眼鏡、熱飲小吃、食品工廠、湯髮美容、衣帽百貨、評論家、化妝品、軍界、煙酒。",
+      "id_summary": [
+        "Bidang usaha yang cocok (kelompok 1): alat tulis, penerbitan, toko buku, pertanian/sayuran, kayu/furnitur, dekorasi/interior, kerajinan kayu/kertas, hortikultura/pembibitan, obat herbal, kain, pendidikan, pegawai negeri, politik, dan tokoh agama.",
+        "Bidang usaha yang cocok (kelompok 2): industri berbasis api/panas/cahaya, fotografi, elektronik, optik, kacamata, minuman panas/makanan ringan, industri makanan, salon/kecantikan, pakaian/aksesoris, komentator/kritikus, kosmetik, militer, serta tembakau dan minuman keras."
+      ],
+      "_photo": "WhatsApp Image 2026-05-02 at 12.58.26.jpeg",
+      "_uncertain": true,
+      "_ambiguous_chars": [
+        "農菜 (might be 農業)",
+        "裝璜 (likely 裝潢 — interior decoration)",
+        "布定 (likely 布疋 — fabric/cloth)",
+        "湯髮 (likely 燙髮 — hair perming)"
+      ]
+    }
+  },
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.26.jpeg",
+  "_hash": "49844e49b0fcf344_80ec8a83"
+}

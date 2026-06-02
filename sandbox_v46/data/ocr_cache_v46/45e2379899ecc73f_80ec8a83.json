@@ -1,0 +1,28 @@
+{
+  "screen_type": "detail",
+  "name_id": "YUDY L",
+  "birth_lunar_text": "農曆民國 52年 1月 5日 13時 30分",
+  "detail_sections": {
+    "婚配": {
+      "hz": "忌：配相蛇、猴。夫妻相剋，或不和，愛愁不絕，無成功之望，有破敗之嫌，一生難免空虛寂寞之感，致傷疾短命之苦。宜：配相馬、狗大吉相豬吉凶相半。其他生肖次吉。永結同心，德望日高終成大業，富榮譽，福壽興家之大吉，子孫昌盛矣。",
+      "id_summary": [
+        "Pantangan menikah dengan shio Ular (巳) dan Monyet (申); jika menikah dengan mereka, rumah tangga cenderung tidak harmonis, penuh dukacita, rasa hampa, bahkan risiko penyakit atau umur pendek",
+        "Pasangan yang dianjurkan: shio Kuda (午) dan Anjing (戌) sangat baik; shio Babi (亥) bersifat campuran baik-buruk; shio lainnya cukup baik",
+        "Pasangan yang cocok akan membawa keharmonisan abadi, peningkatan reputasi dan jabatan, kemakmuran dan kesejahteraan keluarga, serta keturunan yang berkembang pesat"
+      ],
+      "_photo": "WhatsApp Image 2026-05-02 at 12.58.26 (1).jpeg"
+    }
+  },
+  "marriage": {
+    "hindari_branches": [
+      "巳",
+      "申"
+    ],
+    "cocok_branches": [
+      "午",
+      "戌"
+    ]
+  },
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.26 (1).jpeg",
+  "_hash": "45e2379899ecc73f_80ec8a83"
+}

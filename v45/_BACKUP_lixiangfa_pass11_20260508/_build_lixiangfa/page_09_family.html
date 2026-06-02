@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Li Xiang Fa, 全局總論 Pandangan Keluarga</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-fam { grid-template-rows: 1fr !important; gap: 5mm; }
+
+  .fam-headline {
+    background: linear-gradient(135deg, #FFFEF8 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 4mm 6mm;
+    display: grid; grid-template-columns: auto 1fr auto;
+    gap: 6mm; align-items: center;
+    overflow: hidden;
+  }
+  .fh-seal {
+    width: 18mm; height: 18mm; background: var(--red); color: white;
+    font-family: 'Noto Serif TC', serif; font-size: 14pt; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 1.5mm; transform: rotate(-3deg);
+    letter-spacing: 1px;
+  }
+  .fh-text { text-align: center; }
+  .fh-eb { font-size: 6.5pt; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; font-weight: 700; }
+  .fh-quote {
+    font-family: 'Playfair Display', serif; font-size: 12pt;
+    color: var(--text); line-height: 1.3; font-style: italic;
+    margin-top: 1mm;
+  }
+  .fh-quote .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-style: normal; font-weight: 700; }
+  .fh-meta { font-family: 'Noto Serif TC', serif; font-size: 14pt; color: var(--red); font-weight: 700; letter-spacing: 2px; line-height: 1; }
+
+  .fam-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4mm; overflow: hidden;
+  }
+  .fam-card {
+    border-radius: 2mm; padding: 4mm 5mm;
+    background: var(--bg-card);
+    border: 0.4mm solid var(--gold-soft);
+    display: grid;
+    grid-template-columns: 28mm 1fr;
+    gap: 4mm; align-items: stretch;
+    overflow: hidden;
+    position: relative;
+  }
+  .fam-icon-block {
+    background: linear-gradient(180deg, #FFF8E1, #F5EBD0);
+    border-radius: 1.5mm;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 3mm 2mm; text-align: center;
+    border: 0.3mm solid var(--gold-soft);
+  }
+  .fic-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 22pt;
+    color: var(--red); font-weight: 700; line-height: 1;
+  }
+  .fic-id {
+    font-family: 'Playfair Display', serif; font-size: 9pt;
+    color: var(--text); font-weight: 600; letter-spacing: 1px;
+    margin-top: 1.5mm;
+  }
+  .fic-pinyin { font-size: 6pt; color: var(--text-muted); font-style: italic; margin-top: 0.3mm; }
+  .fic-vibe {
+    font-size: 6pt; color: var(--gold); letter-spacing: 1px;
+    text-transform: uppercase; font-weight: 600; margin-top: 1.5mm;
+    border-top: 0.2mm solid var(--gold-soft); padding-top: 1mm; width: 100%;
+  }
+
+  .fam-content {
+    display: grid; grid-template-rows: auto auto 1fr; gap: 1.5mm;
+    overflow: hidden; min-width: 0;
+  }
+  .fc-eb { font-size: 6.5pt; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
+  .fc-headline {
+    font-family: 'Playfair Display', serif; font-size: 10pt;
+    color: var(--red); line-height: 1.25; font-weight: 600;
+  }
+  .fc-headline .hz { font-family: 'Noto Serif TC', serif; color: var(--text); font-weight: 700; margin: 0 0.5mm; }
+  .fc-body {
+    font-size: 7.5pt; line-height: 1.4; color: var(--text);
+    border-top: 0.2mm solid var(--gold-soft); padding-top: 1.5mm;
+  }
+  .fc-body strong { color: var(--red); }
+  .fc-body .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+
+  .fam-strip {
+    background: var(--green-bg);
+    border-left: 1mm solid var(--green);
+    border-radius: 0 1.5mm 1.5mm 0;
+    padding: 3mm 5mm;
+    display: grid; grid-template-columns: auto 1fr;
+    gap: 5mm; align-items: center;
+    overflow: hidden;
+  }
+  .fs-label {
+    font-family: 'Noto Serif TC', serif; font-size: 14pt;
+    color: var(--green); font-weight: 700;
+    border-right: 0.3mm solid var(--green); padding-right: 5mm;
+    letter-spacing: 2px;
+  }
+  .fs-text {
+    font-size: 8pt; line-height: 1.45; color: var(--text);
+    overflow: hidden;
+  }
+  .fs-text strong { color: var(--green); }
+  .fs-text .hz { font-family: 'Noto Serif TC', serif; color: var(--green); font-weight: 600; }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">09</div>
+    <div class="h-titles"><div class="h-cn">全 局 總 論</div><div class="h-id">Pandangan Keluarga</div></div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Kerbau-Merah.svg" alt="Kerbau"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Li Xiang Fa · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">丑 Kerbau</span></div>
+      <div class="subject-detail">Pandangan menyeluruh tentang relasi keluarga &amp; kepemimpinan</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">己土 · Tanah Sawah</div></div>
+  </div>
+
+  <main class="content content-fam">
+
+    <div class="fam-grid">
+
+      <!-- Pasangan -->
+      <div class="fam-card">
+        <div class="fam-icon-block">
+          <div class="fic-hz">配偶</div>
+          <div class="fic-id">Pasangan</div>
+          <div class="fic-pinyin">Pèi Ǒu · Pasangan</div>
+          <div class="fic-vibe"><!-- TAFSIR:fam_pasangan_vibe -->Stabil · Pelengkap<!-- /TAFSIR --></div>
+        </div>
+        <div class="fam-content">
+          <div class="fc-eb">配偶 · Pasangan</div>
+          <div class="fc-headline"><!-- TAFSIR:fam_pasangan_headline -->Pasangan ideal adalah figur stabil yang membawa kemakmuran lewat budi pekerti.<!-- /TAFSIR --></div>
+          <div class="fc-body">
+<!-- TAFSIR:fam_pasangan_body -->Foto layar 婚配 menunjukkan kategori kompatibilitas Li Xiang Fa. <strong>大吉 (Top Cocok)</strong>: Tikus, Ular, Ayam — jodoh terbaik yang membawa keberkahan, kemakmuran rumah tangga, dan keturunan gemilang. <strong>次吉 (Secondary Cocok)</strong>: foto menyebut "其他生相次吉" — shio lain di luar daftar 大吉 dan 大凶 termasuk kategori cocok kedua, walau tidak setinggi 大吉. <strong>大凶 (Hindari)</strong>: Naga, Kuda, Kambing, Anjing — berpotensi membawa ketidakharmonisan, perpisahan, dan keberatan keluarga. Cinta yang tumbuh dari budi pekerti, bukan ketertarikan fisik instan, akan paling tahan lama.<!-- /TAFSIR -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Anak -->
+      <div class="fam-card">
+        <div class="fam-icon-block">
+          <div class="fic-hz">兒子</div>
+          <div class="fic-id">Anak</div>
+          <div class="fic-pinyin">Ér Zǐ · Anak</div>
+          <div class="fic-vibe"><!-- TAFSIR:fam_anak_vibe -->Pemberontak · Mandiri<!-- /TAFSIR --></div>
+        </div>
+        <div class="fam-content">
+          <div class="fc-eb">兒女 · Anak</div>
+          <div class="fc-headline"><!-- TAFSIR:fam_anak_headline -->Anak tipe pemberontak yang kerap berbenturan dengan orang tua, butuh ruang otonomi.<!-- /TAFSIR --></div>
+          <div class="fc-body">
+<!-- TAFSIR:fam_anak_body -->Istana Anak dihuni <strong>Bintang Penghancur</strong> (<span class="hz">破軍</span>) di palace 酉. Foto 子女 menyebut Li Xiang Fa kemungkinan punya satu anak yang tipe pemberontak — kerap berbenturan dengan orang tua dan bahkan bisa kabur dari rumah. <strong>Bintang Penghancur</strong> (<span class="hz">破軍</span>) memang bintang yang tipis ikatannya dengan keturunan; walau punya anak, sifatnya keras. Bila ada bintang baik berbarengan (紫微/武曲/文昌/文曲), anak masih bisa tumbuh stabil. Tantangan: bangun komunikasi dua arah sejak dini, hindari pendekatan otoriter.<!-- /TAFSIR -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Saudara -->
+      <div class="fam-card">
+        <div class="fam-icon-block">
+          <div class="fic-hz">兄弟</div>
+          <div class="fic-id">Saudara</div>
+          <div class="fic-pinyin">Xiōng Dì · Saudara Kandung</div>
+          <div class="fic-vibe"><!-- TAFSIR:fam_saudara_vibe -->Stabil · Suportif<!-- /TAFSIR --></div>
+        </div>
+        <div class="fam-content">
+          <div class="fc-eb">兄弟 · Saudara Kandung</div>
+          <div class="fc-headline"><!-- TAFSIR:fam_saudara_headline -->Saudara stabil dengan dukungan dari sesepuh atau senior, ikatan hangat namun mandiri.<!-- /TAFSIR --></div>
+          <div class="fc-body">
+<!-- TAFSIR:fam_saudara_body -->Istana Saudara dihuni <strong>Bintang Gudang</strong> (<span class="hz">天府</span>) berdampingan <strong>Bintang Tian Kui</strong> (<span class="hz">天魁</span>) di palace 亥. Saudara berkarakter stabil dan punya kemampuan mengelola sumber daya, dengan dukungan bantuan dari sesepuh atau senior dalam hidup. Hubungan saudara cenderung hangat tetapi tiap pihak membangun jalannya sendiri. Komunikasi rutin menjadi kunci agar ikatan tetap kuat — saudara bisa menjadi mitra usaha yang solid di fase tertentu.<!-- /TAFSIR -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Kepemimpinan -->
+      <div class="fam-card">
+        <div class="fam-icon-block">
+          <div class="fic-hz">領導</div>
+          <div class="fic-id">Kepemimpinan</div>
+          <div class="fic-pinyin">Lǐng Dǎo · Pemimpin</div>
+          <div class="fic-vibe"><!-- TAFSIR:fam_kepemimpinan_vibe -->Mandiri · Tegas<!-- /TAFSIR --></div>
+        </div>
+        <div class="fam-content">
+          <div class="fc-eb">領導 · Kepemimpinan</div>
+          <div class="fc-headline"><!-- TAFSIR:fam_kepemimpinan_headline -->Pemimpin tipe pekerja keras yang memimpin lewat hasil nyata, bukan retorika.<!-- /TAFSIR --></div>
+          <div class="fc-body">
+<!-- TAFSIR:fam_kepemimpinan_body -->Gaya kepemimpinan Li Xiang Fa adalah memimpin lewat keteladanan kerja keras dan ketegasan, bukan lewat orasi atau politik kantor. <strong>Format 從旺</strong> memberi karakter mandiri, tidak suka diatur, dan paling efektif menjadi entrepreneur atau spesialis senior. Tantangannya adalah ketegasan saat harus delegasi dan kemampuan mendengar masukan staf, bukan hanya memberi arahan.<!-- /TAFSIR -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-meta"><span>Halaman 9 / 24</span></div>
+  </footer>
+</section>
+</body>
+</html>

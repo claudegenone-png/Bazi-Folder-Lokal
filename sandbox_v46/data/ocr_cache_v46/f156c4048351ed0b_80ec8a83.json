@@ -1,0 +1,26 @@
+{
+  "screen_type": "detail",
+  "name_id": "YUDY L",
+  "birth_lunar_text": "農曆民國 52年 1月 5日 13時 30分",
+  "detail_sections": {
+    "性情": {
+      "hz": "◎固執、深沈、堅定立場，強調自我價值，剛健但不魯莽，富於處事能力，但不兇猛，果斷，操作能力強。◎不喜自己強迫做某些事，能通融、有愛心，不喜猶豫、臨陣、付予但不計較自己的付出，有無前進的注意力，對事物會很多，但都做不出來。◎不喜大眾性的觀念，有氣魄，不服輸，專制、臥虛、刻薄、果決力強、領導能力強。◎善於類化中部想多舉事例，不願侵犯別人，也不願被人侵犯，雖不反駁別人的意見，但也不隨意接納別人的意見，富求有修養，但不適人情，不喜言談。◎對文藝有興趣，文思流暢，凡事可分得較細膩，樂觀外向，喜於掌握機會，鑑賞謀略，允文允武，雖聰明但縱慾任性。",
+      "_uncertain": true,
+      "_ambiguous_chars": [
+        "有無前進的注意力 (might be 有無謀略的注意力 or similar phrase)",
+        "臥虛 (second character unclear; context suggests a negative personality trait)",
+        "善於類化中部 (might be 善於類化，中卻 or similar)"
+      ],
+      "id_summary": [
+        "Berpendirian teguh dan percaya diri; tangguh tanpa bersikap keras atau kasar; tegas dan memiliki daya tindak tinggi dalam menghadapi urusan",
+        "Tidak suka dipaksa melakukan sesuatu; hati terbuka dan penuh kasih sayang; sering memikirkan banyak hal namun sulit untuk benar-benar mewujudkannya",
+        "Tidak suka mengikuti arus umum; bernyali besar dan pantang menyerah; berkarakter tegas dan memiliki jiwa kepemimpinan yang kuat",
+        "Menghormati batasan pribadi orang lain maupun dirinya sendiri; tidak mudah dipengaruhi namun juga tidak sembarangan menerima pendapat orang; menjunjung sopan santun namun kurang suka berbasa-basi",
+        "Menyukai seni dan sastra dengan pikiran yang mengalir lancar; optimis dan pandai memanfaatkan peluang; cerdas namun terkadang menuruti hawa nafsu"
+      ],
+      "_photo": "WhatsApp Image 2026-05-02 at 12.58.25.jpeg"
+    }
+  },
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.25.jpeg",
+  "_hash": "f156c4048351ed0b_80ec8a83"
+}

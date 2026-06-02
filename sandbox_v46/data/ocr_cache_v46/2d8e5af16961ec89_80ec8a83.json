@@ -1,0 +1,21 @@
+{
+  "screen_type": "detail",
+  "name_id": "YUDY L",
+  "gender_hz": "男",
+  "birth_lunar_text": "農曆民國 52 年 1 月 5 日 13 時 30 分",
+  "detail_sections": {
+    "財帛": {
+      "hz": "用錢態度拘謹，無法巧妙地利用金錢。財帛宮的天府星是衣食無憂的吉星。再加上其他吉星同宮扶助的話，更可使您的事業大放光明。特別是有紫微同宮，您將來或許是富甲天下的大富豪。與廉貞、武曲兩星同宮的話，晚年必大富大貴吧！雖天府是吉星，如有其他凶星阻礙的話，不是經常奔波庸貧就是良善成癖，最好詳加留心。至少您不愁被金錢所困束。但如位於寅、午之宮內的話，減弱文昌星的效力，財產也無法累積，且在瞬間即花完。",
+      "id_summary": [
+        "Sikap keuangan konservatif dan hati-hati; sulit memanfaatkan uang secara lihai dan fleksibel.",
+        "Tianfu (天府) di palace Caibo adalah bintang rezeki sandang-pangan; dengan dukungan bintang baik lain, karier dan bisnis bisa sangat bersinar.",
+        "Bila Ziwei (紫微) satu istana, berpotensi menjadi hartawan besar; dengan Lianzhen (廉貞) dan Wuqu (武曲), di usia tua dipastikan kaya dan mulia.",
+        "Bila ada bintang jahat, rentan hidup susah berpindah-pindah atau justru terlalu bermurah hati hingga rugi; perlu waspada.",
+        "Di istana Yin/Wu, efek Wenchang (文昌) melemah sehingga harta sulit terkumpul dan bisa habis dalam sekejap."
+      ],
+      "_photo": "WhatsApp Image 2026-05-02 at 12.58.28.jpeg"
+    }
+  },
+  "_photo": "WhatsApp Image 2026-05-02 at 12.58.28.jpeg",
+  "_hash": "2d8e5af16961ec89_80ec8a83"
+}

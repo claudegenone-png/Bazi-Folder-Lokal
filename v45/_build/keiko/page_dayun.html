@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Keiko — 大運 Garis Hidup</title>
+<title>Keiko, 大運 Garis Hidup</title>
 <link rel="stylesheet" href="style.css">
 <style>
   /* PAGE-SPECIFIC: Da Yun Lini Masa */
@@ -11,7 +11,7 @@
     gap: 5mm;
   }
 
-  /* HIDUPLINE — 10 cycles */
+  /* HIDUPLINE, 10 cycles */
   .lifeline-frame {
     background: var(--bg-card);
     border: 0.3mm solid var(--gold-soft);
@@ -113,7 +113,7 @@
     padding: 0 0.5mm; letter-spacing: 0.5px;
   }
 
-  /* SPOTLIGHT — Current cycle */
+  /* SPOTLIGHT, Current cycle */
   .spotlight {
     background-color: #F5EBD0 !important;
     background-image: linear-gradient(135deg, #FFF8E1 0%, #F5EBD0 60%, #ECDDC9 100%);
@@ -121,46 +121,44 @@
     border-radius: 2.5mm;
     padding: 5mm 6mm;
     display: grid;
-    grid-template-columns: 64mm 1fr;
-    gap: 6mm;
+    grid-template-columns: 32mm 1fr;
+    gap: 5mm;
     overflow: hidden;
     position: relative;
   }
-  /* .spotlight::before overlay removed — laptop PDF viewers render radial-gradient
+  /* .spotlight::before overlay removed, laptop PDF viewers render radial-gradient
      as opaque white instead of transparent. Decorative effect (8% red glow) was
      barely visible anyway. See memory: bug_pdf_gradient_white_box.md (Lin Mei Yan case) */
   .sp-left {
     background-color: #FFFFFF !important;
     border: 0.4mm solid var(--gold-soft);
     border-radius: 2mm;
-    padding: 3mm 4mm;
+    padding: 2mm 2.5mm;
     display: grid;
-    grid-template-rows: auto 1fr auto auto;
-    gap: 2mm;
+    grid-template-rows: auto auto auto auto;
+    gap: 1mm;
     text-align: center;
     overflow: hidden;
   }
   .sp-eyebrow {
-    font-size: 6.5pt; color: var(--red);
-    letter-spacing: 3px; text-transform: uppercase;
+    font-size: 5pt; color: var(--red);
+    letter-spacing: 2px; text-transform: uppercase;
     font-weight: 700;
   }
   .sp-gz {
     font-family: 'Noto Serif TC', serif;
-    font-size: 56pt; font-weight: 700;
+    font-size: 28pt; font-weight: 700;
     color: var(--red); line-height: 1;
-    display: flex; justify-content: center; gap: 3mm;
-    text-shadow: 0 1mm 2mm rgba(139,26,26,0.12);
+    display: flex; justify-content: center; gap: 2mm;
   }
   .sp-element-disc {
-    width: 14mm; height: 14mm; border-radius: 50%;
+    width: 8mm; height: 8mm; border-radius: 50%;
     margin: 0 auto;
     background-color: #5A8C4A;
     background-image: linear-gradient(180deg, #6FA85A, #4D7A3A);
     display: flex; align-items: center; justify-content: center;
     color: white; font-family: 'Noto Serif TC', serif;
-    font-size: 14pt; font-weight: 700;
-    box-shadow: 0 1mm 3mm rgba(184,80,80,0.4);
+    font-size: 9pt; font-weight: 700;
   }
   .sp-element-disc.s-jin   { background-color: #B5A063; background-image: linear-gradient(180deg, #C9B57A, #A89358); }
   .sp-element-disc.s-shui  { background-color: #4A7BA0; background-image: linear-gradient(180deg, #5990B8, #3A6B8C); }
@@ -169,8 +167,8 @@
   .sp-element-disc.s-tu    { background-color: #A07E5C; background-image: linear-gradient(180deg, #B89070, #8C6E47); }
   .sp-age {
     font-family: 'Playfair Display', serif;
-    font-size: 11pt; color: var(--text);
-    letter-spacing: 2px;
+    font-size: 8pt; color: var(--text);
+    letter-spacing: 1px;
     border-top: 0.2mm solid var(--gold-soft);
     padding-top: 1.5mm;
   }
@@ -222,10 +220,8 @@
     padding-right: 1mm; text-align: right;
   }
   .sp-bullet .txt {
-    font-size: 7.8pt; line-height: 1.4;
+    font-size: 6.5pt; line-height: 1.35;
     color: var(--text);
-    display: -webkit-box; -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical; overflow: hidden;
   }
   .sp-bullet .txt strong { color: var(--red); }
   .sp-bullet .txt .hz {
@@ -280,10 +276,9 @@
     font-family: 'Playfair Display', serif;
     font-size: 8pt; font-weight: 600;
     color: rgba(255,255,255,0.95);
-    line-height: 1.15;
+    line-height: 1.2;
     overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+    font-size: 7pt;
   }
   .season .s-age {
     font-size: 6.5pt; color: rgba(255,255,255,0.85);
@@ -332,9 +327,9 @@
 
   <!-- BAR SUBJEK -->
   <div class="subject-bar">
-    <div class="subject-shio"><img src="Kerbau-Merah.svg" alt="Kerbau"></div>
+    <div class="subject-shio"><img src="Kuda-Merah.svg" alt="Kuda"></div>
     <div class="subject-meta">
-      <div class="subject-name">Keiko · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">丑 Kerbau</span></div>
+      <div class="subject-name">Keiko · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">午 Kuda</span></div>
       <div class="subject-detail">28 Oktober 2009 · 11:25 · Wanita · Umur 16 tahun</div>
     </div>
     <div class="subject-dm">
@@ -432,36 +427,30 @@
         <div class="sp-eyebrow">FASE 2 · SEKARANG</div>
         <div class="sp-gz"><span>丙</span><span>子</span></div>
         <div class="sp-element-disc s-huo">火</div>
-        <div class="sp-age">Umur <span class="now">13 — 22</span></div>
+        <div class="sp-age">Umur <span class="now">13, 22</span></div>
       </div>
 
       <div class="sp-right">
-        <div class="sp-tags">
-          <span class="sp-tag primary"><span class="hz">比肩</span>Bǐ Jiān · Pundak Sama</span>
-          <span class="sp-tag"><span class="hz">火</span>Api · ekspresi</span>
-          <span class="sp-tag"><span class="hz">丙</span>+<span class="hz">子</span>Sekutu Sebanding</span>
-        </div>
-
         <div class="sp-headline">
-          Fase <span class="hz">比肩</span> (Pundak Sama) — periode utama untuk membangun kemandirian
+          Fase 13–22: <strong>Api Yang Tikus</strong> (<span class="hz">丙子</span>), Identitas Mekar Bertemu Panggung Dunia Nyata
         </div>
 
         <div class="sp-bullets">
           <div class="sp-bullet">
             <div class="num">1</div>
-            <div class="txt"><strong>Fokus utama</strong> — pilar <span class="hz">比肩</span> mendorong Anda untuk membangun kemandirian. Selaraskan agenda 10 tahun ini ke arah tersebut.</div>
+            <div class="txt">Stem <strong>Api Yang</strong> (<span class="hz">丙</span>) menguatkan kepercayaan diri Keiko, cabang <strong>Tikus</strong> (<span class="hz">子</span>) membawa Air sebagai pendingin panas berlebih.</div>
           </div>
           <div class="sp-bullet">
             <div class="num">2</div>
-            <div class="txt"><strong>Energi 火</strong> — batang <span class="hz">丙</span> (火) berinteraksi dengan Day Master <span class="hz">丙</span> (火); tone fase: Api · ekspresi.</div>
+            <div class="txt">Akademis Keiko sedang puncaknya, <strong>Format Mentor Bayangan</strong> (<span class="hz">偏印格</span>) mendukung jalur belajar non-konvensional, beasiswa, dan kompetisi.</div>
           </div>
           <div class="sp-bullet">
             <div class="num">3</div>
-            <div class="txt"><strong>Cabang <span class="hz">子</span></strong> menentukan medan harian — kebiasaan, lingkungan, dan relasi yang dibangun di rentang umur 13–22 akan jadi pondasi fase berikutnya.</div>
+            <div class="txt"><strong>Bintang Daya Pikat</strong> (<span class="hz">桃花</span>) menarik perhatian, namun <strong>Hasrat</strong> (<span class="hz">貪狼</span>) di Istana Pasangan memperingatkan jangan terburu-buru komitmen.</div>
           </div>
           <div class="sp-bullet">
             <div class="num">4</div>
-            <div class="txt"><strong>Setelah 22</strong> masuk <span class="hz">丁丑 (劫財)</span> — uji solidaritas & finansial. Siapkan transisi sekarang.</div>
+            <div class="txt">Tantangan Keiko adalah fokus di tengah banyaknya peluang, satu disiplin konsisten di fase ini menopang seluruh dekade berikutnya.</div>
           </div>
         </div>
       </div>
@@ -514,12 +503,8 @@
 
   <!-- KAKI -->
   <footer class="footer">
-    <div class="footer-caption">
-      Keiko sedang di fase <span style="font-family:'Noto Serif TC',serif;color:var(--red)">比肩</span> (13–22) — membangun kemandirian. Periode 13–32 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir.
-    </div>
     <div class="footer-meta">
-      <span>Halaman 14 / 23</span>
-      <span>Keiko · Ramalan 命</span>
+      <span>Halaman 14 / 24</span>
     </div>
   </footer>
 
