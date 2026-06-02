@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Diri (命宮) Palace</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-pal { grid-template-rows: 1fr !important; gap: 0; }
+
+  .palace-solo {
+    background: linear-gradient(180deg, #FFF8E1, #FBF1D4);
+    border: 0.6mm solid var(--gold);
+    border-radius: 2.5mm;
+    padding: 6mm 8mm;
+    display: grid;
+    grid-template-rows: auto auto minmax(0, 1fr) auto;
+    gap: 3mm;
+    overflow: hidden;
+    position: relative;
+  }
+  .palace-solo::before {
+    content: ''; position: absolute;
+    top: 0; right: 0; width: 28mm; height: 28mm;
+    background-color: transparent;
+    background-image: radial-gradient(circle at top right, rgba(201,169,97,0.22) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .ps-head {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: baseline;
+    gap: 4mm;
+    border-bottom: 0.3mm solid var(--gold);
+    padding-bottom: 2.5mm;
+  }
+  .ps-title-id {
+    font-family: 'Playfair Display', serif;
+    font-size: 24pt;
+    color: var(--red);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1;
+  }
+  .ps-title-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 22pt;
+    color: var(--text);
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 1;
+  }
+  .ps-title-pinyin {
+    font-family: 'Inter', sans-serif;
+    font-size: 9pt;
+    color: var(--text-muted);
+    font-style: italic;
+    letter-spacing: 0.5px;
+    margin-top: 1mm;
+  }
+  .ps-badge {
+    font-family: 'Inter', sans-serif;
+    font-size: 7pt;
+    color: white;
+    background: var(--red);
+    padding: 1mm 3mm;
+    border-radius: 1mm;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .ps-meta-row {
+    display: flex;
+    gap: 4mm;
+    align-items: center;
+    font-size: 8.5pt;
+    color: var(--text-muted);
+    padding-bottom: 1.5mm;
+  }
+  .ps-meta-row .lbl {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 6.5pt;
+    color: #8B7355;
+    font-weight: 600;
+  }
+  .ps-meta-row .val {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  .ps-body {
+    font-size: 12pt;
+    line-height: 1.6;
+    color: var(--text);
+    overflow: hidden;
+    text-align: justify;
+    padding: 0 1mm;
+  }
+  .ps-body p {
+    margin: 0 0 2.6mm 0;
+  }
+  .ps-body p:last-child {
+    margin-bottom: 0;
+  }
+  .ps-body strong {
+    color: var(--red);
+    font-weight: 700;
+  }
+  .ps-body .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red);
+    font-weight: 600;
+  }
+
+  .ps-action {
+    display: grid;
+    grid-template-columns: 6mm 1fr;
+    gap: 3mm;
+    background: rgba(45,106,79,0.08);
+    border-left: 0.7mm solid var(--green);
+    border-radius: 0 1.5mm 1.5mm 0;
+    padding: 3mm 4mm;
+    font-size: 9pt;
+    line-height: 1.5;
+    color: var(--text);
+  }
+  .ps-action .ps-action-ico {
+    color: var(--green);
+    font-weight: 700;
+    font-size: 12pt;
+    line-height: 1;
+  }
+  .ps-action .ps-action-content {
+    display: grid;
+    gap: 1mm;
+  }
+  .ps-action .ps-action-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 7.5pt;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--green);
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">20</div>
+    <div class="h-titles"><div class="h-cn">命宮</div><div class="h-id">Diri · Istana 1 · Pusat Hidup</div></div>
+    <div class="h-section">Bagian II · Zi Wei 紫微</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Kelinci-Merah.svg" alt="Kelinci"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Donny C · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">卯 Kelinci</span></div>
+      <div class="subject-detail">Karakter inti, arah hidup, & ekspresi diri</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">癸水 · Air Hujan</div></div>
+  </div>
+
+  <main class="content content-pal">
+    <div class="palace-solo">
+      <div class="ps-head">
+        <div>
+          <div class="ps-title-id">Diri</div>
+          <div class="ps-title-pinyin">Mìng Gōng</div>
+        </div>
+        <div style="text-align:center;">
+          <div class="ps-title-hz">命宮</div>
+        </div>
+        <div class="ps-badge">Inti Diri</div>
+      </div>
+
+      <div class="ps-meta-row">
+        <span class="lbl">Sumber Foto</span>
+        <span class="val">命宫 layar 詳細解説</span>
+      </div>
+
+      <div class="ps-body"><!-- TAFSIR:_solo_ming_gong_body --><style>.palace-solo .ps-body p { font-size: 8pt; line-height: 1.4; margin: 0 0 1.8mm 0; }</style><p>Bagai pohon yang terus tumbuh menjulang ke langit biru <span class="hz">不斷往青空長茁壯的大樹</span>, mampu menjalani kehidupan yang lancar dan mengalir <span class="hz">順暢流利的一生</span>. Jika mampu hemat dalam mengumpulkan kekayaan, tidak boros <span class="hz">不揮金如土</span>, dan terus berusaha keras, setelah usia pertengahan pasti bisa menumpuk kekayaan keluarga yang cukup besar <span class="hz">累積為數可觀的家產</span>. Bintang <span class="hz">武曲</span> adalah bintang yang memiliki dua sisi berlawanan: tegas/serius <span class="hz">嚴肅</span> dan lembut <span class="hz">溫柔</span> — dua sisi yang saling bertentangan <span class="hz">兩面互相矛盾</span>. Maka meski terkadang keras kepala dan kaku <span class="hz">頑固而不通融</span>, sebaliknya sangat mudah tergerak oleh sisi kemanusiaan <span class="hz">很容易被人性所感動</span>, setara dengan kepribadian ganda <span class="hz">雙重人格的個性</span>. Mudah terobsesi secara linear dan mendalam <span class="hz">易於朝直線猛鑽牛角尖</span>, sehingga bahkan saat ditipu pun sering tidak menyadarinya. Selalu mengejar idealisme dan tidak mau berkompromi <span class="hz">不容妥協</span>, sehingga mudah bergesekan dengan orang di sekitar — gejolak tidak bisa dihindari <span class="hz">波瀾是避免不了的</span>. Jika ada bintang keberuntungan mendampingi <span class="hz">吉星同宮相助</span>, bisa diharapkan menonjol di masyarakat <span class="hz">出人頭地</span>; namun jika ada bintang buruk, meski masih bisa memiliki harta, pada akhirnya tidak bisa lepas dari kehidupan yang kurang bahagia. Tidak peduli kapanpun, selalu serius dalam menabung <span class="hz">無論什麼時候都認真地在存錢</span>. Terkadang muncul tindakan unik yang mengabaikan akal sehat umum. Reaksi pikiran sangat cepat <span class="hz">腦筋的反應迅速</span>, tipe orang yang berorientasi pada tindakan; begitu menyadari cara kerja yang salah, langsung mengubah cara yang baru — kaya kemampuan beradaptasi secara fleksibel <span class="hz">富於柔軟地適應性</span>. Bicara elegan dan tidak pernah kasar <span class="hz">談吐文雅，不會尖酸刻薄</span>, hubungan antar manusia harmonis <span class="hz">人際關係圓滿</span>, bisa mendapatkan kepercayaan atasan dan meraih posisi sosial yang baik. Namun jika terlalu berhati-hati, akhirnya bisa berubah menjadi pelit. Bintang <span class="hz">天相</span> meski mulia dan langka <span class="hz">不可多得之吉星</span>, namun jika bersama <span class="hz">天機</span> di istana yang sama, atau berada di istana <span class="hz">巳</span> atau <span class="hz">午</span>, justru mengisyaratkan ketidakberuntungan. Dengan susah payah menghasilkan uang, tapi dalam semalam habis untuk foya-foya <span class="hz">花天酒地，散得精光</span>, atau terus mengejar kesenangan mengorbankan pekerjaan; orang yang berujung jatuh dan nama hancur tidak sedikit. Ketika bersama <span class="hz">武曲</span> di istana yang sama, perilaku sedikit menyimpang dari dunia biasa, hidup dalam dunia hobi. Bagi wanita, seumur hidup tidak perlu khawatir kekurangan uang. Kelemahannya mudah terpengaruh lingkungan hingga kehilangan jati diri <span class="hz">易受周圍的環境左右情緒而迷失原來的自我</span>; dalam hal pria-wanita juga ada sedikit masalah kecil. Cenderung pada tipe penulis <span class="hz">傾向於作家的類型</span>, daya pengamatan tajam, memiliki kemampuan tinggi mengekspresikan perasaan melalui tulisan. Jika bersama bintang <span class="hz">文昌</span> di istana yang sama, bisa terkenal karena bakat tulis <span class="hz">可因文才而名揚天下</span>. Ketika bertemu bintang buruk, bekerja di bidang keagamaan bisa membuka keberuntungan <span class="hz">從事宗教性的工作，就可以開運</span>. Sama sekali tidak bergosip dan tidak pernah menonjolkan diri; namun begitu merasa diremehkan, langsung mengubah sikap ramah menjadi kata-kata kasar <span class="hz">惡言惡語相向</span>. Adalah tipe "<span class="hz">聞一知十</span>" — mendengar satu hal langsung mengerti sepuluh; paling baik bekerja di bidang komunikasi massa. Jika ada bintang buruk bersama, menjadi mudah gampangan dan berganti-ganti pasangan. Kelemahannya mudah terpengaruh pendapat orang sekitar dalam menentukan pendirian sendiri.</p><!-- /TAFSIR --></div>
+
+      <div class="ps-action">
+        <div class="ps-action-ico">&#9656;</div>
+        <div class="ps-action-content">
+          <div class="ps-action-label">Saran Tindakan</div>
+          <div><!-- TAFSIR:_solo_ming_gong_action -->Tetapkan pendirian diri sebelum terpapar opini luar; salurkan idealisme melalui tulisan atau komunikasi massa, jaga keseimbangan antara gigih dan fleksibel.<!-- /TAFSIR --></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-meta"><span>Halaman 20 / 36</span></div>
+  </footer>
+</section>
+<script>
+  // AUTO-SHRINK: kalau .ps-body overflow .palace-solo, kecilkan font progresif sampai fit.
+  (function() {
+    function fit() {
+      var body = document.querySelector('.palace-solo .ps-body');
+      var card = document.querySelector('.palace-solo');
+      if (!body || !card) return;
+      var sizePt = 12, lh = 1.6, minPt = 6.5, guard = 0;
+      function overflowing() { return card.scrollHeight > card.clientHeight + 1; }
+      while (overflowing() && sizePt > minPt && guard < 60) {
+        sizePt -= 0.25;
+        lh = Math.max(1.25, lh - 0.01);
+        body.style.fontSize = sizePt.toFixed(2) + 'pt';
+        body.style.lineHeight = lh.toFixed(2);
+        var ps = body.querySelectorAll('p');
+        for (var i = 0; i < ps.length; i++) {
+          ps[i].style.fontSize = sizePt.toFixed(2) + 'pt';
+          ps[i].style.lineHeight = lh.toFixed(2);
+        }
+        guard++;
+      }
+    }
+    if (document.readyState === 'complete' || document.readyState === 'interactive') fit();
+    else document.addEventListener('DOMContentLoaded', fit);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+  })();
+</script>
+</body>
+</html>

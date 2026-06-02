@@ -1,0 +1,1043 @@
+{
+  "subject_id": "1",
+  "_built_by": "build_from_ocr.py V4.5 FULL-MD",
+  "identity": {
+    "name_id": "AVH",
+    "name_hanzi": "",
+    "gender_id": "Pria",
+    "birth_date": "1983-03-10",
+    "birth_time": "05:30",
+    "birth_day_name": "Kamis",
+    "birth_period_id": "pagi",
+    "birth_hour_branch_hz": "卯",
+    "birth_hour_period_label": "pagi · 卯時",
+    "lunar_date_text_new": "tanggal 26 bulan 1 tahun 癸亥 (Gui Hai · 1983)",
+    "lunar_year_pillar_hz": "癸亥",
+    "lunar_republic_text": "民國 72 年 1 月 26 日",
+    "age_at_report": 44
+  },
+  "shio": {
+    "branch_hz": "亥",
+    "branch_pinyin": "Hài",
+    "id": "Babi",
+    "id_upper": "BABI",
+    "svg_red": "Babi-Merah.svg",
+    "svg_black": "Babi-Hitam.svg"
+  },
+  "ti_xiang": null,
+  "day_master": {
+    "stem_hz": "丁",
+    "stem_element_hz": "火",
+    "stem_element_id": "Api",
+    "polarity_id": "Yin",
+    "label_id": "Api Lilin",
+    "label_long_id": "Api",
+    "pinyin": "Dīng 火",
+    "strength_id": "Kuat",
+    "strength_hz": "旺"
+  },
+  "pillars": {
+    "year": {
+      "stem_hz": "癸",
+      "branch_hz": "亥"
+    },
+    "month": {
+      "stem_hz": "乙",
+      "branch_hz": "卯"
+    },
+    "day": {
+      "stem_hz": "丁",
+      "branch_hz": "酉"
+    },
+    "hour": {
+      "stem_hz": "癸",
+      "branch_hz": "卯"
+    }
+  },
+  "wuxing": {
+    "jin": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Logam"
+    },
+    "shui": {
+      "value": 3.0,
+      "percent": 37.5,
+      "label_id": "Air"
+    },
+    "mu": {
+      "value": 3.0,
+      "percent": 37.5,
+      "label_id": "Kayu"
+    },
+    "huo": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Api"
+    },
+    "tu": {
+      "value": 0.0,
+      "percent": 0.0,
+      "label_id": "Tanah"
+    },
+    "total": 8.0,
+    "self_value": 1.0,
+    "self_el_hz": "—",
+    "fav_hz": "—",
+    "unfav_hz": "—",
+    "axis_max": "—",
+    "insight_id": null,
+    "_empty": false
+  },
+  "yong_shen": {
+    "elements_hz": "土",
+    "elements_id": "Tanah",
+    "label_id": "Penopang & Pengarah",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "ji_shen": {
+    "elements_hz": "火",
+    "elements_id": "Api",
+    "label_id": "Pelumat & Pemicu",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "format": {
+    "hz": "偏印格",
+    "pinyin": "Pian Yin Ge",
+    "label_id": "Mentor Bayangan",
+    "glyph_hz": "—"
+  },
+  "da_yun": {
+    "start_age": 2,
+    "direction_id": "backward",
+    "current_index": 4,
+    "axis_marks": [
+      2,
+      12,
+      22,
+      32,
+      42,
+      52,
+      62,
+      72,
+      82,
+      92,
+      102
+    ],
+    "cycles": [
+      {
+        "n": 1,
+        "age_start": 2,
+        "age_end": 11,
+        "stem_hz": "甲",
+        "branch_hz": "寅",
+        "ten_god_hz": "正印",
+        "ten_god_id": "Pelajaran",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 2,
+        "age_start": 12,
+        "age_end": 21,
+        "stem_hz": "癸",
+        "branch_hz": "丑",
+        "ten_god_hz": "七殺",
+        "ten_god_id": "Pemurnian",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 3,
+        "age_start": 22,
+        "age_end": 31,
+        "stem_hz": "壬",
+        "branch_hz": "子",
+        "ten_god_hz": "正官",
+        "ten_god_id": "Otoritas",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 4,
+        "age_start": 32,
+        "age_end": 41,
+        "stem_hz": "辛",
+        "branch_hz": "亥",
+        "ten_god_hz": "偏財",
+        "ten_god_id": "Rezeki Bisnis",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 5,
+        "age_start": 42,
+        "age_end": 51,
+        "stem_hz": "庚",
+        "branch_hz": "戌",
+        "ten_god_hz": "正財",
+        "ten_god_id": "Rezeki Tetap",
+        "element_class": "el-jin",
+        "is_current": true
+      },
+      {
+        "n": 6,
+        "age_start": 52,
+        "age_end": 61,
+        "stem_hz": "己",
+        "branch_hz": "酉",
+        "ten_god_hz": "食神",
+        "ten_god_id": "Pencipta",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 7,
+        "age_start": 62,
+        "age_end": 71,
+        "stem_hz": "戊",
+        "branch_hz": "申",
+        "ten_god_hz": "傷官",
+        "ten_god_id": "Kritikus Tajam",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 8,
+        "age_start": 72,
+        "age_end": 81,
+        "stem_hz": "丁",
+        "branch_hz": "未",
+        "ten_god_hz": "比肩",
+        "ten_god_id": "Pundak Sama",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 9,
+        "age_start": 82,
+        "age_end": 91,
+        "stem_hz": "丙",
+        "branch_hz": "午",
+        "ten_god_hz": "劫財",
+        "ten_god_id": "Saudara Sebanding",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 10,
+        "age_start": 92,
+        "age_end": 101,
+        "stem_hz": "乙",
+        "branch_hz": "巳",
+        "ten_god_hz": "偏印",
+        "ten_god_id": "Mentor",
+        "element_class": "el-mu"
+      }
+    ],
+    "seasons": [
+      {
+        "el_class": "s-mu",
+        "el_hz": "木",
+        "name_id": "Musim Tunas",
+        "age_start": 2,
+        "age_end": 21,
+        "caption_id": "fase 正印 dan 七殺, menyerap ilmu dan menempa ketahanan diri di bawah tekanan awal."
+      },
+      {
+        "el_class": "s-shui",
+        "el_hz": "水",
+        "name_id": "Musim Tumbuh",
+        "age_start": 22,
+        "age_end": 41,
+        "caption_id": "fase 正官 dan 偏財, membangun kedudukan, tanggung jawab, dan menjelajah peluang rezeki."
+      },
+      {
+        "el_class": "s-jin",
+        "el_hz": "金",
+        "name_id": "Musim Panen",
+        "age_start": 42,
+        "age_end": 61,
+        "is_current": true,
+        "caption_id": "fase 正財 dan 食神, memetik hasil materi yang stabil lalu menyalurkannya dalam karya dan berkah."
+      },
+      {
+        "el_class": "s-tu",
+        "el_hz": "土",
+        "name_id": "Musim Matang",
+        "age_start": 62,
+        "age_end": 81,
+        "caption_id": "fase 傷官 dan 比肩, ekspresi bakat dan kemitraan setara dengan kalangan sebaya."
+      },
+      {
+        "el_class": "s-huo",
+        "el_hz": "火",
+        "name_id": "Musim Teduh",
+        "age_start": 82,
+        "age_end": 101,
+        "caption_id": "fase 劫財 dan 偏印, kebijaksanaan, intuisi, dan ketenangan masa tua."
+      }
+    ],
+    "spotlight_headline_html": "Fase 42–51: Logam Yang berakar Anjing (<span class=\"hz\">庚戌</span>), Era <span class=\"hz\">正財</span> Memetik Rezeki Tetap",
+    "spotlight_tag_tone_html": "Logam · ketegasan",
+    "spotlight_tag_combo_html": "Wealth Mantap",
+    "spotlight_tag_combo_pair": [
+      "庚",
+      "戌"
+    ],
+    "spotlight_bullets_html": [
+      "AVH kini di fase <span class=\"hz\">正財</span> (42–51), masa memetik hasil materi yang stabil dan membangun fondasi kekayaan yang tertata.",
+      "Energi <span class=\"hz\">庚金</span> menjadi sasaran produktif Api dirinya, sehingga kerja kerasnya berbuah rezeki nyata bila disalurkan dengan disiplin.",
+      "Layar 流年 menandai 2026 (<span class=\"hz\">丙午</span>) sebagai tahun jerih payah yang menuntut kehati-hatian dalam relasi dan pencegahan musibah.",
+      "Fondasi yang dibangun kini menjadi bekal fase <span class=\"hz\">己酉</span>/<span class=\"hz\">食神</span> (52–61) yang lebih ekspresif dan penuh berkah."
+    ],
+    "footer_caption_html": "AVH di fase <span class=\"hz\">庚戌</span> (42–51), era memetik <span class=\"hz\">正財</span> menuju ekspresi dan berkah <span class=\"hz\">食神</span> di dekade berikutnya."
+  },
+  "marriage": {
+    "self_branch_index": 11,
+    "cocok": [
+      {
+        "branch_hz": "未",
+        "id": "Kambing",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "卯",
+        "id": "Kelinci",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      }
+    ],
+    "hindari": [
+      {
+        "branch_hz": "巳",
+        "id": "Ular",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "申",
+        "id": "Monyet",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "亥",
+        "id": "Babi",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "寅",
+        "id": "Harimau",
+        "relationship_hz": "吉凶相半",
+        "relationship_id": "Cukup Cocok",
+        "reason_id": null
+      }
+    ],
+    "_empty": false
+  },
+  "yang_zhai": {
+    "gua_hz": "艮",
+    "gua_pinyin": "Gèn",
+    "gua_label_id": "Gunung",
+    "gua_direction_id": "Timur Laut",
+    "gua_direction_abbr": "TL",
+    "group_id": "Barat",
+    "sumbu_hoki_hz": "東北↔西南",
+    "sumbu_hoki_id": "TL ↔ BD",
+    "trigram_symbol": "☶",
+    "zones": {
+      "rumah": {
+        "dirs_hz": [
+          "東北"
+        ],
+        "dirs_abbr": [
+          "TL"
+        ],
+        "note_id": "Rumah berorientasi duduk di Timur Laut menghadap Barat Daya (坐東北向西南大吉)."
+      },
+      "pintu": {
+        "dirs_hz": [
+          "西南",
+          "西",
+          "西北"
+        ],
+        "dirs_abbr": [
+          "BD",
+          "B",
+          "BL"
+        ],
+        "note_id": "Jalur pintu (門路) baik membuka ke Barat Daya, Barat, atau Barat Laut."
+      },
+      "dapur": {
+        "dirs_hz": [
+          "東",
+          "東南"
+        ],
+        "dirs_abbr": [
+          "T",
+          "TG"
+        ],
+        "note_id": "Kompor (爐灶) baik menghadap dari Timur ke Barat, atau dari Tenggara ke Barat Laut."
+      },
+      "kamar": {
+        "dirs_hz": [
+          "東北",
+          "西",
+          "西北"
+        ],
+        "dirs_abbr": [
+          "TL",
+          "B",
+          "BL"
+        ],
+        "note_id": "Kamar (房間) di Timur Laut, Barat, atau Barat Laut; ranjang (床位) di Barat, Barat Laut, atau Timur Laut."
+      },
+      "altar": {
+        "dirs_hz": [
+          "西",
+          "西北",
+          "東北"
+        ],
+        "dirs_abbr": [
+          "B",
+          "BL",
+          "TL"
+        ],
+        "note_id": "Altar (神位) baik di Barat, Barat Laut, atau Timur Laut."
+      },
+      "kamar_mandi": {
+        "dirs_hz": [
+          "東",
+          "東南",
+          "南"
+        ],
+        "dirs_abbr": [
+          "T",
+          "TG",
+          "S"
+        ],
+        "note_id": "Toilet/WC (坑廁) baik di Timur, Tenggara, atau Selatan."
+      }
+    }
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "巨門",
+    "shen_zhu_hz": "天機",
+    "ming_gong_hz": "亥",
+    "shen_gong_hz": "巳",
+    "wu_xing_ju_hz": "水二局",
+    "shi_jun_hz": "卯",
+    "palaces": null,
+    "ming_gong_id": "Istana Hidup · Babi",
+    "shen_gong_id": "Istana Tubuh · Ular",
+    "shi_jun_id": "Penguasa Waktu · Kelinci",
+    "ming_zhu_id": "Penguasa Hidup",
+    "shen_zhu_id": "Penguasa Tubuh",
+    "wu_xing_ju_id": "Aliran Air Dua"
+  },
+  "shen_sha_list": [
+    {
+      "hanzi": "驛馬",
+      "pillar": null
+    }
+  ],
+  "kesimpulan_narrative": "AVH lahir 10 Maret 1983 pukul 05:30 dengan shio Babi ([[豬]]/[[亥]] Hài). Penguasa hidupnya adalah Api Yin ([[丁火]] Dīng Huǒ, nyala lilin yang lembut namun terang) berstatus **Kuat** ([[旺]] Wàng) dengan skor pendukung +5160 dan penekan -3700. Format hidupnya [[偏印格]] (Piān Yìn Gé, Cetakan Tak Langsung) — sosok berpikiran tajam, intuitif, mandiri, dan kaya daya adaptasi. || Karena Api dirinya sudah kuat (didukung Kayu [[木]] sebanyak 4 sebagai sumber api), unsur sahabatnya justru yang menyalurkan dan menyeimbangkan: Tanah ([[土]] Tǔ) sebagai [[用神]] (Yòng Shén, penyalur tenaga keluar) dan Logam ([[金]] Jīn) sebagai [[喜神]] (Xǐ Shén, harta penyenang), dengan Air ([[水]] Shuǐ) sebagai [[閒神]] (Xián Shén, netral); sementara Api ([[火]] Huǒ) sebagai [[忌神]] (Jì Shén) dan Kayu ([[木]] Mù) sebagai [[仇神]] (Chóu Shén) perlu diwaspadai karena menambah panas yang sudah berlebih. Karakter intinya mengutamakan kesetiaan di atas harta, jujur dan terus terang, terbuka apa adanya hingga tak bisa menyimpan rahasia. || Bintang utama Istana Hidup ([[命宮]] di [[亥]]) adalah [[太陽]] (Tài Yáng, Matahari) — energik, terang, jujur blak-blakan, dan piawai bergaul. [[命主]] (penguasa hidup) [[巨門]] dan [[身主]] (penguasa raga) [[天機]], dengan struktur [[水二局]]. Industri searah meliputi jalur ber-Tanah (konstruksi, properti, material bangunan, antik, konsultan) sebagai 用神, didukung jalur ber-Logam (baja, mesin, hukum, akuntansi, keuangan). Da Yun saat ini (usia 42-51, [[庚戌]] gēng-xū berakar Anjing/[[正財]] Zhèng Cái - rezeki tetap) adalah fase memetik hasil materi yang stabil, beralih ke fase [[己酉]] yǐ-yǒu/[[食神]] (Shí Shén, ekspresi & berkah) di usia 52-61. || Untuk jodoh, pasangan paling cocok ([[大吉]]) adalah shio Kambing ([[未]]) dan Kelinci ([[卯]]); shio Macan ([[寅]]) tergolong setengah baik-buruk ([[吉凶相半]]); shio lain tergolong cocok tingkat dua ([[次吉]]). Hindari shio Ular ([[巳]]), Monyet ([[申]]), dan Babi ([[亥]]). || Untuk kesehatan, titik rawan ada pada jantung ([[心]] xīn), mata ([[眼]] yǎn), serta kaki dan pinggang ([[足腰]]). Untuk hunian, gua [[艮]] (Gèn, gunung) — rumah baik menghadap dari Timur Laut ke Barat Daya ([[宅宜坐東北向西南大吉]]). || Intinya: kecerdasan tajam dan intuisi [[偏印格]] akan berbuah saat AVH menyalurkan tenaga apinya yang kuat lewat karya konkret bermuatan Tanah dan Logam, menahan diri dari kobaran emosi, dan menjaga kesetiaan serta ketenangan batin.",
+  "dm_pos_score": 5160.0,
+  "dm_neg_score": 3700.0,
+  "xiantian_per_stem": {
+    "jia": 1,
+    "yi": 3,
+    "bing": 0,
+    "ding": 1,
+    "wu": 0,
+    "ji": 0,
+    "geng": 0,
+    "xin": 1,
+    "ren": 1,
+    "gui": 2
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": {
+    "year": "甲壬",
+    "month": "乙",
+    "day": "辛",
+    "hour": "乙"
+  },
+  "canggan_shi_shen": {
+    "year": [
+      {
+        "stem": "甲",
+        "ten_god": "正印"
+      },
+      {
+        "stem": "壬",
+        "ten_god": "正官"
+      }
+    ],
+    "month": [
+      {
+        "stem": "乙",
+        "ten_god": "偏印"
+      }
+    ],
+    "day": [
+      {
+        "stem": "辛",
+        "ten_god": "偏財"
+      }
+    ],
+    "hour": [
+      {
+        "stem": "乙",
+        "ten_god": "偏印"
+      }
+    ]
+  },
+  "chang_sheng_per_pilar": null,
+  "kong_wang": null,
+  "ming_gong_bazi": "癸亥",
+  "bone_weight": null,
+  "liu_nian_predictions": [
+    {
+      "tahun": 2026,
+      "umur": 44,
+      "ganzhi": "丙午",
+      "prose": "Jerih payah yang AVH curahkan tahun ini di permukaan tampak belum sebanding dengan hasil materi. Perlu hati-hati dalam pergaulan dengan saudara dan teman pada tahun ini, karena secara nyata sulit mencapai yang ideal. Bintang [[龍德]] (Lóng Dé): keberkahan naga masuk ke peruntungan, sepanjang empat musim memperoleh rezeki, di rumah banyak keberuntungan, keluar pun tanpa bencana duka. Bintang [[天掃]] (Tiān Sǎo): saat bertemu peruntungan, ada urusan berkabung yang berseliweran; namun bila bertemu orang mulia akan datang urusan gembira, asalkan waspada terhadap pencuri dan gangguan. Hindari bulan 1, 4, 7, atau 12, jaga keberkahan baik-baik. Usaha keras akan membuahkan keuntungan atau pertanda datangnya bantuan orang mulia. Sifatnya luhur, jujur-tulus, cerdas, matang, paripurna, lurus dan terang, berjiwa mandiri yang kuat, gemar berusaha dengan tenaga sendiri, suka mencari nafkah di luar, tak ingin mewarisi harta leluhur. Wataknya seperti [[正官]], paling cocok jadi kelas pegawai bergaji. Memiliki sifat \"peruntungan separuh hidup\": sebelum paruh baya menelan banyak kesulitan dan kepahitan, setelah paruh baya menjadi cukup bahagia dan menikmati berkah; namun bila sebelum paruh baya sudah kaya dan bahagia, maka kehidupan setelahnya bisa terjerumus dalam perjuangan sulit."
+    },
+    {
+      "tahun": 2027,
+      "umur": 45,
+      "ganzhi": "丁未",
+      "prose": "AVH mampu memikirkan segala hal lewat pertimbangan matang; ia harus menangkap waktu dan banyak memutar otak, pasti dapat mencapai yang ideal. Jerih payah tahun ini di permukaan belum sebanding dengan hasil materi. Karier akan mengalami perubahan atau pergeseran jabatan. Lingkungan besar pun ikut berubah karena adanya tekanan, dan suasana hatinya ikut tertekan serta kurang stabil. Bintang [[白虎]] (Bái Hǔ): macan putih mengaum di tebing, ada urusan mulut dan kerugian harta; macan ditolak dari pintu depan, serigala masuk dari pintu belakang. Bintang [[天喜]] (Tiān Xǐ): saat bertemu bintang sukacita, rumah dipenuhi urusan gembira menyambut musim semi, rezeki banyak menyenangkan; namun bahaya bencana darah harus diwaspadai. Bagi wanita, hati-hati dalam urusan persalinan, hindari bulan 1, 4, 7, atau 11. Harus berhati-hati, jika tidak mudah tertimpa peruntungan buruk dalam keluarga, ketidakrukunan atau cedera luar, dengan isyarat kuat akan pendarahan besar. Sifatnya menjunjung tinggi nama baik dan kehormatan, gemar menang tak mau kalah, memiliki semangat tabah pantang menyerah, suka bermain siasat dan kuasa, mahir dalam strategi dan taktik, serta cenderung penuh perhitungan."
+    },
+    {
+      "tahun": 2028,
+      "umur": 46,
+      "ganzhi": "戊申",
+      "prose": "Apa yang AVH pikirkan dengan otaknya tahun ini di permukaan dapat berpadu dengan materi. Ia mampu memperoleh segala peluang dan secara nyata dapat mencapai yang ideal. Bintang [[福德]] (Fú Dé): keberkahan berkelana dalam peruntungan, naik pangkat dan bertambah rezeki, banyak membangun lahan dan kebun, segala urusan baik untuk diusahakan. Bintang [[無常]] (Wú Cháng): saat bertemu bintang ketakkekalan, dikhawatirkan ada hal tak terduga yang muncul; saat melayani dengan bakti, lepas dari musibah maka hati menjadi terang. Dikhawatirkan ada penyakit dan kerugian harta melewati tahun, hindari bulan 4, 7, 8, dan waspadai air serta api. Usaha keras akan membuahkan keuntungan atau pertanda datangnya bantuan orang mulia. Sifatnya suka yang baru bosan yang lama, kurang tetap pendirian, mudah terpengaruh dan terombang-ambing oleh lingkungan luar serta urusan manusia; berwatak keras kepala, jodoh suami-istri lebih mudah berubah, memiliki sifat sedikit genit dan ringan, sering berganti pekerjaan, profesi, atau tempat tinggal."
+    },
+    {
+      "tahun": 2029,
+      "umur": 47,
+      "ganzhi": "己酉",
+      "prose": "Apa yang AVH pikirkan dengan otaknya tahun ini di permukaan dapat berpadu dengan materi. Ia mampu memperoleh segala peluang dan secara nyata dapat mencapai yang ideal. Karier akan berubah. Perhatikan kesehatan tubuh. Pasangan suami-istri akan berselisih perasaan, keduanya hendaknya saling mengalah. Suasana hati cenderung kurang stabil. Yang sudah menikah akan berselisih perasaan dengan pasangan, yang belum menikah mulai menjalin perasaan. Bintang [[吊客]] (Diào Kè): tamu duka tersusun dalam peruntungan, urusan berkabung berlapis datang, perkara hukum disertai bencana darah, anggota keluarga kecil pun rawan musibah. Bintang [[陽德]] (Yáng Dé): saat bertemu bintang yang-de, ada urusan gembira yang membawa cahaya, pesta perayaan berlangsung tanpa halangan, menumpuk kebajikan dan berbuat baik membuat segala urusan lancar. Hindari bulan 1, 4, 7, atau 11, berbuat baik barulah bagus, jangan menimbulkan pertengkaran mulut. Harus lebih hati-hati, jika tidak bisa dicelakai orang, ada perubahan buruk pada lingkungan atau pekerjaan, pertikaian mulut antarmanusia, parahnya sampai perkara hukum, penjara, atau cedera. Sifatnya setia-tulus, lembut, santun, baik hati, paripurna; pergaulannya sangat baik, dihargai, disambut, dan diangkat orang, mudah melesat naik ke puncak; berbakat teknik dan seni, daya belajarnya sangat kuat; namun kurang cocok menjadi pemimpin tertinggi, melainkan lebih sebagai pembantu, perencana, dan staf ahli yang sangat unggul, dan justru di situ ia lebih leluasa berkembang."
+    },
+    {
+      "tahun": 2030,
+      "umur": 48,
+      "ganzhi": "庚戌",
+      "prose": "Jerih payah dan tenaga pikiran yang AVH curahkan tahun ini di permukaan tampak dapat berpadu dengan materi. Ia mampu memikirkan segala hal, harus menangkap waktu dan banyak memutar otak, pasti dapat mencapai yang ideal. Suasana hatinya tertekan dan kurang stabil. Karier akan mengalami perubahan atau pergeseran jabatan. Bintang [[病符]] (Bìng Fú): bintang penyakit masuk ke peruntungan, penyakit dan perkara hukum bangkit, bencana berkabung datang, berdoalah memohon perlindungan dewa dan Buddha. Bintang [[錦繡]] (Jǐn Xiù): saat bintang sulam-indah masuk ke peruntungan, ada urusan gembira memenuhi ruang, mendambakan keturunan dan beroleh anak sesuai harapan, segala urusan seakan diberkati datang ke rumah. Waspadai perkara hukum di bulan 3, 6, 9, atau 12. Asalkan seluruh keluarga memperhatikan cuaca dan tidak tertular penyakit menular, semua akan baik-baik saja. Sifatnya jujur-tebal, mahir dalam keterampilan bergaul, kurang berambisi besar, kebanyakan puas dengan keadaan sekarang; jodoh dengan orang tua kandung agak tipis, banyak yang menjadi anak angkat atau menantu yang ikut keluarga istri; namun karena \"diangkat\" justru menjadi pintu masuk keberuntungan panjang, maka asal berusaha maju, ia tetap dapat meraih pencapaian yang cukup tinggi dan besar."
+    },
+    {
+      "tahun": 2031,
+      "umur": 49,
+      "ganzhi": "辛亥",
+      "prose": "Jerih payah dan tenaga pikiran yang AVH curahkan tahun ini di permukaan tampak sebanding dengan materi. Ia mampu memperoleh bantuan orang mulia, dan secara nyata dapat mencapai yang cukup ideal. Karier akan mengalami perubahan atau pergeseran jabatan. Lingkungan besar ada perubahan, tetapi lebih baik tidak diubah. Lingkungan besar berubah, misalnya rumah direnovasi ulang, pindah rumah, atau memindahkan perabot dan tata letak dalam ruangan. Suasana hatinya tertekan dan kurang stabil. Bintang [[太歲]] (Tài Suì): tai sui duduk di kepala, bencana buruk habis tak tersisa, bila dalam tubuh tak ada benturan, sepanjang tahun baik untuk berusaha. Bintang [[天哭]] (Tiān Kū): saat bertemu bintang tangis langit, dikhawatirkan ada penyakit dan urusan berkabung; bila istri di rumah ada urusan gembira kelahiran, maka tinggal urusan mulut yang tak datang. Hindari bulan 2, 3, 5, atau 11. Pada tahun ini, di tanggal 9 bulan 1 sebaiknya memuja Dewa Tai Sui agar terjaga damai dan beruntung. Tahun ini baik-buruknya mudah condong ke arah ekstrem. Sifatnya penuh rasa ingin tahu dan semangat meneliti, berjiwa muda yang segar, penuh kesegaran, kreatif, kaya humor dan rasa kemanusiaan, tergolong tipe \"cerdas tapi tampak lugu\", kerap dihampiri keberuntungan; tubuhnya tidak terlalu sehat, namun makin bertambah usia justru makin kuat. Bagi wanita yang menemui tahun ini, sebagian besar lebih mudah melahirkan anak perempuan."
+    }
+  ],
+  "ziwei_su_ming": "Gerak hidup AVH tidak menampakkan lompatan yang megah, namun peruntungannya melaju persis seperti yang ditakdirkan oleh nasib bawaannya sejak lahir. Orang dengan istana perpindahan ([[遷移宮]]) yang kuat akan memiliki peruntungan istana raga ([[身宮]]) yang ikut menyala; ia dapat menanggapi beragam perubahan dengan cerdik dan membuka jalan nasibnya sendiri secara piawai. Sebaliknya, orang dengan istana perpindahan yang lemah akan menghadapi hambatan setiap kali bertindak atau setiap kali ada perubahan. Pada saat itu, kuat-lemahnya istana hidup ([[命宮]]), istana keberkahan ([[福德宮]]), dan istana asmara ([[愛情宮]]) juga harus ikut diperhitungkan.",
+  "ziwei_stars": null,
+  "shiye_favorable_full": [
+    {
+      "hz": "建築",
+      "id": "Konstruksi"
+    },
+    {
+      "hz": "當鋪",
+      "id": "Pegadaian"
+    },
+    {
+      "hz": "畜牧",
+      "id": "Peternakan"
+    },
+    {
+      "hz": "水泥建材",
+      "id": "Material semen-bangunan"
+    },
+    {
+      "hz": "房地產買賣",
+      "id": "Jual-beli properti"
+    },
+    {
+      "hz": "殯儀館",
+      "id": "Rumah duka"
+    },
+    {
+      "hz": "墓碑石店",
+      "id": "Toko batu nisan"
+    },
+    {
+      "hz": "地師",
+      "id": "Ahli geomansi"
+    },
+    {
+      "hz": "古董",
+      "id": "Antik"
+    },
+    {
+      "hz": "顧問",
+      "id": "Konsultan"
+    }
+  ],
+  "shiye_supportive_full": [
+    {
+      "hz": "鋼鐵工廠",
+      "id": "Pabrik baja"
+    },
+    {
+      "hz": "五金行",
+      "id": "Toko logam"
+    },
+    {
+      "hz": "採礦",
+      "id": "Pertambangan"
+    },
+    {
+      "hz": "汽車",
+      "id": "Otomotif"
+    },
+    {
+      "hz": "機械",
+      "id": "Mesin"
+    },
+    {
+      "hz": "科學家",
+      "id": "Saintis"
+    },
+    {
+      "hz": "律師",
+      "id": "Pengacara"
+    },
+    {
+      "hz": "歌影星",
+      "id": "Selebriti"
+    },
+    {
+      "hz": "音樂家",
+      "id": "Musisi"
+    },
+    {
+      "hz": "武術館",
+      "id": "Sanggar bela diri"
+    },
+    {
+      "hz": "會計",
+      "id": "Akuntansi"
+    },
+    {
+      "hz": "金融界",
+      "id": "Keuangan"
+    }
+  ],
+  "shiye_short": null,
+  "shen_sha_detail": null,
+  "marriage_cocok_tafsir": "**Sangat cocok** ([[大吉]]): shio **Kambing** ([[未]]) dan **Kelinci** ([[卯]]). Lima generasi makmur ([[五代其昌]]), hidup tenteram, kaya, dan terhormat ([[安富尊榮]]); dalam berusaha bintang harta pasti hadir kuat ([[作事財星必重臨]]), beroleh rezeki istimewa yang berlimpah ([[幸慶特多之財]]), serta keturunan berkembang jaya hingga akhir hayat ([[子孫興旺終世]]). Shio lain di luar daftar yang disebut secara umum tergolong cocok tingkat dua ([[次吉]]).",
+  "marriage_hindari_tafsir": "**Hindari** ([[忌]]): shio **Ular** ([[巳]]), **Monyet** ([[申]]), dan **Babi** ([[亥]]). Meski ada kecocokan dan keharmonisan, bisa muncul benturan yang menyendiri ([[單獨之嫌剋]]), ikatan keluarga menjadi tipis ([[家屬緣薄]]), bahkan ada duka tak dapat menua bersama hingga akhir ([[不能完壽之悲]]), sehingga seumur hidup sulit meraih kebahagiaan besar ([[一生難得大幸福]]). **Hati-hati** ([[吉凶相半]]): shio **Macan** ([[寅]]) tergolong setengah baik-setengah buruk, ada untung ada ruginya, perlu kewaspadaan ekstra.",
+  "gushu_quotes": [
+    {
+      "source_hz": "三命通會註",
+      "source_id": "San Ming Tong Hui Zhu",
+      "text_hz": "丙丁日主火為根，金水二星是福源，行運若臨西與北，縱然富貴不週全。",
+      "text_id": "Bagi kelahiran berstem hari [[丙]][[丁]] yang berakar pada Api, dua bintang Logam dan Air ([[金水]]) adalah sumber keberkahannya; namun bila peruntungan melintasi arah Barat dan Utara, sekalipun ada kekayaan dan kemuliaan, semuanya tak akan utuh sempurna."
+    },
+    {
+      "source_hz": "朱雀乘風",
+      "source_id": "Zhu Que Cheng Feng",
+      "text_hz": "朱雀乘風是丙丁，如逢金水便崢嶸，申子辰鄉多書達，逢時金殿玉階行。",
+      "text_id": "Burung Merah menunggang angin adalah pemilik stem [[丙]][[丁]]; bila bertemu Logam dan Air, ia menjulang gemilang; di kawasan [[申]][[子]][[辰]] banyak meraih keberhasilan lewat ilmu dan tulisan, dan saat waktunya tiba ia melangkah di istana emas berjenjang giok."
+    },
+    {
+      "source_hz": "滴天髓",
+      "source_id": "Di Tian Sui",
+      "text_hz": "丁火柔中，內性昭融，抱乙而孝，合壬而忠，旺而不烈，衰而不窮，如有嫡母，可秋可冬。",
+      "text_id": "[[丁火]] lembut namun berisi, watak batinnya terang dan menyatu; memeluk [[乙]] ia berbakti, berpadu dengan [[壬]] ia setia; kuat tanpa membara, lemah tanpa kehabisan; bila ada ibu sejati ([[嫡母]]), ia sanggup melewati musim gugur maupun musim dingin."
+    },
+    {
+      "source_hz": "詩云",
+      "source_id": "Syair",
+      "text_hz": "卯木獨華氣象深，仲春難道不嫌金，庚金疊見愁申酉，亥子重來忌壬癸，禍見六沖應落葉，喜逢三合便成林，若歸時日秋金重，更向西行恐不禁。",
+      "text_id": "Kayu [[卯]] berbunga sendiri dengan suasana yang dalam; di pertengahan musim semi bukankah ia enggan bertemu Logam? Bertemu [[庚]] Logam berulang-ulang menimbulkan resah [[申]][[酉]], datangnya kembali [[亥]][[子]] membuat pantang pada [[壬]][[癸]]; bila bencana benturan-enam ([[六沖]]) tiba, daun pun berguguran, namun bila bertemu gabungan-tiga ([[三合]]) ia menjadi hutan rimbun; jika di pilar waktu-hari Logam musim gugur menumpuk, melangkah ke arah Barat dikhawatirkan tak tertahankan."
+    },
+    {
+      "source_hz": "詩云",
+      "source_id": "Syair",
+      "text_hz": "火其形一燭燈，太陽相見奪光明，得時能鑄千斤金，失令難鎔一寸金，雖少乾柴猶可引，縱多濕木不能生，其間衰旺當分曉，旺比一爐衰一縈。",
+      "text_id": "Api ini wujudnya bagai satu nyala lilin; bila bersua matahari, cahayanya justru terampas. Saat memperoleh waktu yang tepat ia sanggup menempa logam seribu kati, namun saat kehilangan kuasa ia sulit melelehkan logam seinci pun. Walau kayu kering sedikit ia masih bisa dinyalakan, tetapi sebanyak apa pun kayu basah tak mampu menumbuhkannya; di antaranya lemah dan kuat harus dipahami jelas, yang kuat bagai satu tungku berkobar, yang lemah hanya seuntai sisa."
+    }
+  ],
+  "xiongnian_list": null,
+  "xing_qing_poem_hz": null,
+  "xing_qing_poem_id": null,
+  "xing_qing_prose_id": null,
+  "fulu_body_id": null,
+  "mingyun_body_id": null,
+  "qinshu_tou_main_id": null,
+  "qinshu_tou_youyue_id": null,
+  "qinshu_zhong_main_id": null,
+  "qinshu_zhong_youyue_id": null,
+  "qinshu_mo_main_id": null,
+  "qinshu_mo_youyue_id": null,
+  "jie_e_palace_hz": "易患心臟病、視覺、味覺的障礙。及廣泛意義的火難。幼年時期曾受傷或受腫包之苦，及患足腰的疾病吧！如有其他吉星同宮者，健康絕對沒問題。與貪狼同宮，則易患眼部的疾病。如有其他凶星阻礙的話，恐會有神經痛、腰痛的毛病。天相星是疾病、傷勢稀少的吉星。如與紫微星同宮的話，大概一生與醫生無緣吧！但如健康宮位於卯、酉之宮內的話，很難以發揮天相星原本的作用，大概也易患皮膚病或黃道等疾病吧！",
+  "jie_e_palace_id": "AVH cenderung mudah terkena penyakit jantung, gangguan penglihatan, dan gangguan indra pengecap, serta beragam bahaya yang berkaitan dengan api ([[火難]]). Pada masa kanak-kanak ia mungkin pernah mengalami cedera atau menderita memar/bengkak, juga penyakit pada kaki dan pinggang. Bila ada bintang baik lain satu istana, kesehatannya sama sekali tidak bermasalah. Bila satu istana dengan [[貪狼]] (Tān Láng), ia mudah terkena penyakit di bagian mata. Bila ada bintang buruk lain yang menghalangi, dikhawatirkan muncul keluhan nyeri saraf dan nyeri pinggang. [[天相]] (Tiān Xiàng) adalah bintang baik yang membuat penyakit dan cedera tergolong jarang. Bila satu istana dengan [[紫微]] (Zǐ Wēi), kemungkinan seumur hidup ia nyaris tak berurusan dengan dokter. Namun bila istana kesehatan berada di posisi [[卯]] (Mǎo) atau [[酉]] (Yǒu), fungsi asli [[天相]] sulit muncul, sehingga ia mudah terkena penyakit kulit atau penyakit pencernaan.",
+  "jie_e_organ_focus_id": "Yang utama wajib dijaga: jantung, mata dan indra pengecap, serta kaki-pinggang; waspadai pula penyakit kulit dan saluran cerna.",
+  "mantra": {
+    "hz": "—",
+    "pinyin": "—"
+  },
+  "_xq_radar_poly": "          <polygon points=\"200,56 311.2,136 311.2,264 200,312 116.6,248 102.7,144\"\n            fill=\"rgba(139,26,26,0.18)\" stroke=\"#8B1A1A\" stroke-width=\"1.5\"/>\n          <circle cx=\"200\" cy=\"56\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"136\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"264\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"200\" cy=\"312\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"116.6\" cy=\"248\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"102.7\" cy=\"144\" r=\"3\" fill=\"#8B1A1A\"/>",
+  "_xq_radar_labels": "          <g font-family=\"Noto Serif TC,serif\">\n            <text x=\"200\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">細膩</text>\n            <text x=\"200\" y=\"33\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Xìnì · Halus · 9</text>\n\n            <text x=\"358\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">創新</text>\n            <text x=\"358\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Chuàngxīn · Inovatif · 8</text>\n\n            <text x=\"358\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">表現</text>\n            <text x=\"358\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Biǎoxiàn · Ekspresi · 8</text>\n\n            <text x=\"200\" y=\"382\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">內斂</text>\n            <text x=\"200\" y=\"393\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Nèiliǎn · Mendalam · 7</text>\n\n            <text x=\"42\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">沉穩</text>\n            <text x=\"42\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Chénwěn · Tenang · 6</text>\n\n            <text x=\"42\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">同理</text>\n            <text x=\"42\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Tónglǐ · Empati · 7</text>\n          </g>",
+  "_xq_motto": [
+    "燭",
+    "Api Lilin",
+    "本性 溫煦",
+    "溫故知新"
+  ],
+  "_tafsir": {
+    "kepribadian": "AVH adalah <span class=\"hz\">丁火</span> (Api Yin), nyala lilin yang lembut namun terang batinnya, lahir di awal musim semi dengan Kayu yang melimpah sebagai bahan bakarnya. Status dirinya tergolong <span class=\"hz\">旺</span> (kuat), sehingga yang ia butuhkan bukan tambahan api, melainkan penyaluran: <span class=\"hz\">土</span> sebagai <span class=\"hz\">用神</span> mengeluarkan tenaga ke karya, didukung <span class=\"hz\">金</span> sebagai <span class=\"hz\">喜神</span>. Formatnya <span class=\"hz\">偏印格</span> membuatnya berpikir tajam dan intuitif, mandiri, cepat beradaptasi, namun perlu menjaga agar sifat blak-blakannya tidak melukai relasi.",
+    "_kepribadian_struct": {
+      "paragraf": "AVH adalah [[丁火]] (Api Yin), nyala lilin yang lembut namun terang batinnya, lahir di awal musim semi dengan Kayu yang melimpah sebagai bahan bakarnya. Status dirinya tergolong [[旺]] (kuat), sehingga yang ia butuhkan bukan tambahan api, melainkan penyaluran: [[土]] sebagai [[用神]] mengeluarkan tenaga ke karya, didukung [[金]] sebagai [[喜神]]. Formatnya [[偏印格]] membuatnya berpikir tajam dan intuitif, mandiri, cepat beradaptasi, namun perlu menjaga agar sifat blak-blakannya tidak melukai relasi.",
+      "power": [
+        "Energik dan bersemangat, penuh daya gerak untuk mengejar tujuan",
+        "Jujur, terus terang, tanpa kepura-puraan",
+        "Cerdas, intuitif, dan cepat menyesuaikan cara saat keliru",
+        "Mengutamakan kesetiaan dan nilai di atas harta"
+      ],
+      "shadow": [
+        "Sulit menyimpan rahasia, terlalu blak-blakan hingga dianggap menyebalkan",
+        "Sulit menerima nasihat orang tua maupun pasangan",
+        "Tenaga api besar mudah berkobar lalu padam, kurang konsisten sampai akhir",
+        "Cenderung \"berkepala besar berekor kecil\", awal semangat akhir kendur"
+      ],
+      "optimum": [
+        "Salurkan tenaga lewat karya konkret ber-unsur [[土]] (properti, konstruksi, konsultan)",
+        "Dukung dengan bidang ber-unsur [[金]] (keuangan, mesin, hukum)",
+        "Latih ketekunan agar tidak berhenti di tengah jalan",
+        "Jaga kesehatan jantung, mata, dan pinggang sebagai pilar daya tahan"
+      ]
+    },
+    "family": "pasangan: - vibe: \"Cerdas · Mewah\" - headline: \"Pasangan ideal dari shio Kambing atau Kelinci\" - body: AVH cukup keras kepala saat bercinta sehingga rentan gesekan, namun mampu meraih cinta yang indah lewat usahanya sendiri dan menyukai pergaulan mewah. Menurut layar 婚配, pasangan paling cocok (<span class=\"hz\">大吉</span>) adalah shio <span class=\"hz\">未</span> (Kambing) dan <span class=\"hz\">卯</span> (Kelinci); shio <span class=\"hz\">寅</span> (Macan) tergolong setengah baik-buruk. Disarankan menikah agak lambat agar rumah tangga lebih harmonis. Hindari shio <span class=\"hz\">巳</span> (Ular), <span class=\"hz\">申</span> (Monyet), <span class=\"hz\">亥</span> (Babi).<br><br>anak: - vibe: \"Berprinsip · Mandiri\" - headline: \"Anak teguh berprinsip, butuh komunikasi sabar\" - body: Menurut istana 子女, anak AVH berwatak teguh dan selalu menuntut alasan logis, cenderung sangat berkemauan sendiri sehingga kerap berseberangan dengan orang tua. Pengaruh <span class=\"hz\">七殺</span> menandai hubungan yang tajam, namun bila ada <span class=\"hz\">紫微</span> satu istana, makna keras itu lunak dan ia tetap dapat membesarkan anak dengan baik.<br><br>saudara: - vibe: \"Mandiri · Terbatas\" - headline: \"Ikatan saudara terbatas, sulit jadi sandaran\" - body: Menurut istana 兄弟, AVH cenderung kurang memperoleh dukungan operasional dari saudara kandung dan harus banyak mengandalkan diri sendiri. Hubungan tetap dapat dijaga sehat selama tidak menaruh harapan berlebih; kemandirian justru menjadi kekuatannya dalam membina relasi keluarga.<br><br>kepemimpinan: - vibe: \"Mandiri · Strategis\" - headline: \"Lebih unggul sebagai ahli strategi dan staf inti\" - body: Menurut istana 僕役 dan 官祿, AVH lebih bersinar sebagai perencana, penasihat, dan staf ahli ketimbang pemimpin tertinggi. Bawahan sulit benar-benar menopangnya, maka ia paling produktif saat diberi otonomi merancang siasat. Kecerdasan analitisnya membuat orang menghargai dan mengangkatnya naik.",
+    "_family_struct": {
+      "pasangan": {
+        "vibe": "\"Cerdas · Mewah\"",
+        "headline": "\"Pasangan ideal dari shio Kambing atau Kelinci\"",
+        "body": "AVH cukup keras kepala saat bercinta sehingga rentan gesekan, namun mampu meraih cinta yang indah lewat usahanya sendiri dan menyukai pergaulan mewah. Menurut layar 婚配, pasangan paling cocok ([[大吉]]) adalah shio [[未]] (Kambing) dan [[卯]] (Kelinci); shio [[寅]] (Macan) tergolong setengah baik-buruk. Disarankan menikah agak lambat agar rumah tangga lebih harmonis. Hindari shio [[巳]] (Ular), [[申]] (Monyet), [[亥]] (Babi)."
+      },
+      "anak": {
+        "vibe": "\"Berprinsip · Mandiri\"",
+        "headline": "\"Anak teguh berprinsip, butuh komunikasi sabar\"",
+        "body": "Menurut istana 子女, anak AVH berwatak teguh dan selalu menuntut alasan logis, cenderung sangat berkemauan sendiri sehingga kerap berseberangan dengan orang tua. Pengaruh [[七殺]] menandai hubungan yang tajam, namun bila ada [[紫微]] satu istana, makna keras itu lunak dan ia tetap dapat membesarkan anak dengan baik."
+      },
+      "saudara": {
+        "vibe": "\"Mandiri · Terbatas\"",
+        "headline": "\"Ikatan saudara terbatas, sulit jadi sandaran\"",
+        "body": "Menurut istana 兄弟, AVH cenderung kurang memperoleh dukungan operasional dari saudara kandung dan harus banyak mengandalkan diri sendiri. Hubungan tetap dapat dijaga sehat selama tidak menaruh harapan berlebih; kemandirian justru menjadi kekuatannya dalam membina relasi keluarga."
+      },
+      "kepemimpinan": {
+        "vibe": "\"Mandiri · Strategis\"",
+        "headline": "\"Lebih unggul sebagai ahli strategi dan staf inti\"",
+        "body": "Menurut istana 僕役 dan 官祿, AVH lebih bersinar sebagai perencana, penasihat, dan staf ahli ketimbang pemimpin tertinggi. Bawahan sulit benar-benar menopangnya, maka ia paling produktif saat diberi otonomi merancang siasat. Kecerdasan analitisnya membuat orang menghargai dan mengangkatnya naik."
+      }
+    },
+    "shensha": "Layar 神煞 AVH menonjolkan bintang <span class=\"hz\">驛馬</span> (Yì Mǎ, Bintang Kuda Perpindahan) sebagai yang paling aktif: menandai hidup yang sibuk dan gemar bergerak, banyak bepergian jauh, peruntungan perjalanan yang kuat, serta hunian dan karier yang sering berubah. Layar yang sama juga mengisyaratkan rezeki yang mudah masuk namun keluarga rentan berpindah-pindah, serta harta yang gampang tercerai dan warisan leluhur yang sulit dipertahankan. Karena itu AVH disarankan mewujudkan pemasukan menjadi aset berwujud dan menjaga stabilitas tempat tinggal.",
+    "_shensha_struct": {
+      "dominant_star": {
+        "hanzi": "驛馬",
+        "pinyin": "Yì Mǎ",
+        "label_id": "\"Bintang Kuda Perpindahan\"",
+        "active_label": "\"AKTIF SEKARANG\""
+      },
+      "strip": "AVH dinamis dan gemar bergerak; arahkan energi perpindahan ke peluang nyata dan jaga agar harta tidak ikut berpencar."
+    },
+    "caifu": "Menurut layar 財富, rezeki tak terduga (<span class=\"hz\">偏財</span>) AVH bersumber biasa-biasa saja namun hubungannya erat sehingga mudah diperoleh, sedangkan rezeki tetap (<span class=\"hz\">正財</span>) bersumber berlimpah dan tebal namun hubungannya agak renggang, tetapi tetap mudah didapat bila didekati aktif. <span class=\"hz\">正財</span> adalah sumber investasi seperti gaji, sedangkan <span class=\"hz\">偏財</span> sumber spekulatif seperti komisi. Dengan bintang <span class=\"hz\">驛馬</span> yang dinamis, ia perlu disiplin agar pemasukan yang datang tidak cepat berpencar.",
+    "_caifu_struct": {
+      "zheng_cai": {
+        "label": "Rezeki Tetap",
+        "percent": "60%",
+        "body": "Rezeki tetap ([[正財]]) AVH berperan sebagai porsi utama, bersumber berlimpah dan tebal. Layar 財富 menyebut hubungannya agak renggang, sehingga perlu pendekatan rutin dan disiplin agar arus penghasilan stabil dan tidak bocor."
+      },
+      "pian_cai": {
+        "label": "Rezeki Tak Terduga",
+        "percent": "40%",
+        "body": "Rezeki tak terduga ([[偏財]]) porsinya cukup besar, bersumber biasa namun berhubungan erat sehingga mudah datang. Sifatnya gampang berpencar, maka perlu segera diwujudkan menjadi aset berwujud agar nilainya bertahan."
+      },
+      "rules": [
+        {
+          "title": "Wujudkan pemasukan jadi aset berwujud",
+          "context": "驛馬 dinamis, properti dan tanah lebih kokoh dari kas",
+          "tone": "tip"
+        },
+        {
+          "title": "Dekati sumber 正財 secara rutin",
+          "context": "正財 berlimpah tapi renggang, perlu pendekatan disiplin",
+          "tone": "tip"
+        },
+        {
+          "title": "Jaga harta agar tidak berpencar",
+          "context": "祖業難留, harta gampang tercerai bila lengah",
+          "tone": "warn"
+        },
+        {
+          "title": "Hindari spekulasi berlebih",
+          "context": "偏財 mudah datang juga mudah pergi",
+          "tone": "warn"
+        }
+      ]
+    },
+    "career": "<p>Dengan <span class=\"hz\">用神</span> <span class=\"hz\">土</span> dan <span class=\"hz\">喜神</span> <span class=\"hz\">金</span> serta format <span class=\"hz\">偏印格</span>, AVH paling bersinar di bidang yang menuntut ketajaman berpikir dan pengelolaan aset nyata. Layar 事業 menyebut dua kelompok besar: bidang ber-unsur Tanah (favorable, sesuai 用神) dan bidang ber-unsur Logam (supportive). Pilih yang paling sesuai talenta personalnya.</p><ul><li><strong>\"<span class=\"hz\">房地產買賣</span> / Properti &amp; Real Estate\"</strong> (unsur 土), layar 事業 sebut langsung 房地產買賣、建築</li><li><strong>\"<span class=\"hz\">建築</span> / Konstruksi &amp; Material\"</strong> (unsur 土), layar 事業 sebut 建築、水泥建材</li><li><strong>\"<span class=\"hz\">顧問</span> / Konsultan &amp; Geomansi\"</strong> (unsur 土), layar 事業 sebut 顧問、地師、古董</li><li><strong>\"<span class=\"hz\">金融界</span> / Keuangan &amp; Akuntansi\"</strong> (unsur 金), layar 事業 sebut 金融界、會計</li><li><strong>\"<span class=\"hz\">機械</span> / Mesin &amp; Logam Berat\"</strong> (unsur 金), layar 事業 sebut 機械、鋼鐵工廠、五金行</li></ul>",
+    "_career_struct": {
+      "tags": {
+        "fav_1": [
+          "土",
+          "\"TANAH\""
+        ],
+        "fav_2": [
+          "金",
+          "\"LOGAM\""
+        ],
+        "unfav_1": [
+          "火",
+          "\"PANAS\""
+        ],
+        "unfav_2": [
+          "木",
+          "\"BAKAR\""
+        ]
+      },
+      "industri": [
+        {
+          "nama": "\"[[房地產買賣]] / Properti & Real Estate\"",
+          "unsur": "土",
+          "alasan": "layar 事業 sebut langsung 房地產買賣、建築"
+        },
+        {
+          "nama": "\"[[建築]] / Konstruksi & Material\"",
+          "unsur": "土",
+          "alasan": "layar 事業 sebut 建築、水泥建材"
+        },
+        {
+          "nama": "\"[[顧問]] / Konsultan & Geomansi\"",
+          "unsur": "土",
+          "alasan": "layar 事業 sebut 顧問、地師、古董"
+        },
+        {
+          "nama": "\"[[金融界]] / Keuangan & Akuntansi\"",
+          "unsur": "金",
+          "alasan": "layar 事業 sebut 金融界、會計"
+        },
+        {
+          "nama": "\"[[機械]] / Mesin & Logam Berat\"",
+          "unsur": "金",
+          "alasan": "layar 事業 sebut 機械、鋼鐵工廠、五金行"
+        }
+      ]
+    },
+    "daymaster": "AVH adalah <span class=\"hz\">丁火</span>, Api Yin yang berstatus <span class=\"hz\">旺</span> (kuat) menurut skor 日主旺度 (+5160 vs -3700), diperkuat Kayu yang melimpah sebagai sumber api. Karena itu <span class=\"hz\">用神</span> utamanya <span class=\"hz\">土</span> untuk menyalurkan tenaga ke karya, didukung <span class=\"hz\">金</span> sebagai <span class=\"hz\">喜神</span> yang menjadi sasaran produktif. Kombinasi ini mempertegas karakter cerdas, intuitif, dan mandiri khas format <span class=\"hz\">偏印格</span>.",
+    "_jishen_body": "Yang sebaiknya dihindari adalah <span class=\"hz\">火</span> sebagai <span class=\"hz\">忌神</span> dan <span class=\"hz\">木</span> sebagai <span class=\"hz\">仇神</span>. <span class=\"hz\">火</span> tambahan membuat tenaga apinya makin berlebih dan emosinya mudah berkobar, sedangkan <span class=\"hz\">木</span> (印) terus memberi bahan bakar sehingga memperparah panas. Lingkungan, warna, atau bidang yang didominasi kedua unsur ini perlu diimbangi dengan unsur Tanah dan Logam.",
+    "yangzhai": "Berdasarkan layar 陽宅 (gua <span class=\"hz\">艮</span>, gunung), rumah AVH paling baik berorientasi duduk di Timur Laut menghadap Barat Daya (<span class=\"hz\">宅宜坐東北向西南大吉</span>). Altar (<span class=\"hz\">神位</span>) baik diletakkan di Barat, Barat Laut, atau Timur Laut, serta arah besar yang menguntungkan tahun ini. Jalur pintu (<span class=\"hz\">門路</span>) sebaiknya membuka ke Barat Daya, Barat, atau Barat Laut. Kompor (<span class=\"hz\">爐灶</span>) baik menghadap dari Timur ke Barat, atau dari Tenggara ke Barat Laut. Kamar (<span class=\"hz\">房間</span>) baik di Timur Laut, Barat, atau Barat Laut, dengan ranjang (<span class=\"hz\">床位</span>) di Barat, Barat Laut, atau Timur Laut. Toilet/WC (<span class=\"hz\">坑廁</span>) sebaiknya berada di Timur, Tenggara, atau Selatan.",
+    "_yangzhai_struct": {},
+    "dayun_spotlight": "<div class=\"sp-headline\">Fase 42–51: Logam Yang berakar Anjing (<span class=\"hz\">庚戌</span>), Era <span class=\"hz\">正財</span> Memetik Rezeki Tetap</div><ul class='sp-bullets'><li>AVH kini di fase <span class=\"hz\">正財</span> (42–51), masa memetik hasil materi yang stabil dan membangun fondasi kekayaan yang tertata.</li><li>Energi <span class=\"hz\">庚金</span> menjadi sasaran produktif Api dirinya, sehingga kerja kerasnya berbuah rezeki nyata bila disalurkan dengan disiplin.</li><li>Layar 流年 menandai 2026 (<span class=\"hz\">丙午</span>) sebagai tahun jerih payah yang menuntut kehati-hatian dalam relasi dan pencegahan musibah.</li><li>Fondasi yang dibangun kini menjadi bekal fase <span class=\"hz\">己酉</span>/<span class=\"hz\">食神</span> (52–61) yang lebih ekspresif dan penuh berkah.</li></ul>",
+    "dayun_seasons": "<ol class='dy-seasons'><li>umur 2-21: Musim Tunas — fase <span class=\"hz\">正印</span> dan <span class=\"hz\">七殺</span>, menyerap ilmu dan menempa ketahanan diri di bawah tekanan awal.</li><li>umur 22-41: Musim Tumbuh — fase <span class=\"hz\">正官</span> dan <span class=\"hz\">偏財</span>, membangun kedudukan, tanggung jawab, dan menjelajah peluang rezeki.</li><li>umur 42-61: Musim Panen — fase <span class=\"hz\">正財</span> dan <span class=\"hz\">食神</span>, memetik hasil materi yang stabil lalu menyalurkannya dalam karya dan berkah.</li><li>umur 62-81: Musim Matang — fase <span class=\"hz\">傷官</span> dan <span class=\"hz\">比肩</span>, ekspresi bakat dan kemitraan setara dengan kalangan sebaya.</li><li>umur 82-99: Musim Teduh — fase <span class=\"hz\">劫財</span> dan <span class=\"hz\">偏印</span>, kebijaksanaan, intuisi, dan ketenangan masa tua.</li></ol>",
+    "dayun_footer": "AVH di fase <span class=\"hz\">庚戌</span> (42–51), era memetik <span class=\"hz\">正財</span> menuju ekspresi dan berkah <span class=\"hz\">食神</span> di dekade berikutnya.",
+    "palace1": "<p>ming_gong: - star: 太陽 - insight: AVH setara dengan ujung ekstrem unsur Yin, sehingga peruntungannya mengalir tenang dan lancar mengikuti arus. Tenaganya penuh dan ia kerap tampil bercahaya penuh semangat. Demi mencapai tujuan, ia harus bergerak dengan sepenuh hati dan gairah. Wataknya bagai api, membara dengan hebat namun bisa padam dalam sekejap, tetapi tak disangka ia juga punya sisi yang lugas dan terus terang. Selain itu, hatinya sama sekali tak mampu menyembunyikan rahasia apa pun; segala hal ingin ia tumpahkan kepada orang lain hingga tuntas, dan justru sifat blak-blakan inilah yang kadang berubah menjadi sebab orang merasa jengkel padanya. Saat bintang <span class=\"hz\">太陽</span> (Tài Yáng, Matahari) masuk ke dalam istana <span class=\"hz\">申</span> (Shēn) atau <span class=\"hz\">丑</span> (Chǒu), ia mutlak harus ekstra berhati-hati. Bila di istana perpindahan (<span class=\"hz\">遷移宮</span>), istana rezeki (<span class=\"hz\">財帛宮</span>), atau istana karier (<span class=\"hz\">官祿宮</span>) tidak ada bintang baik yang menemani, peruntungan awalnya memang berjalan tenang dan lancar, tetapi pada momen krusial di akhir, justru bisa berbalik kalah total sehingga berujung pada nasib gagal. Namun, bila dua-belas peruntungan (<span class=\"hz\">十二運</span>) istana hidupnya berupa peruntungan kuat seperti <span class=\"hz\">長生</span>, <span class=\"hz\">冠帶</span>, <span class=\"hz\">建祿</span>, atau <span class=\"hz\">帝旺</span>, ia pasti dapat menolak bala dan menghindari malapetaka. Bagi wanita, ini menandakan perempuan berbakat dan cakap; ia menyukai suasana ramai dan merupakan sosok pergaul ulung yang luar biasa. - action: Salurkan semangat besar pada tujuan konkret; jaga ucapan blak-blakan agar tidak melukai relasi.</p><p>xiongdi: - star: null - insight: null</p><p>fuqi: - star: null - insight: Saat bercinta AVH cukup keras kepala dan semaunya, sehingga ia kerap bergesekan dengan kekasih. Namun lewat usahanya sendiri ia mampu meraih kisah cinta yang indah bagai puisi, dan ia paling menyukai pergaulan yang mewah. Ia tampaknya tipe orang yang menikah muda, tetapi bila memungkinkan sebaiknya menunda pernikahan agar dapat memperoleh kehidupan rumah tangga yang bahagia dan harmonis. Pria seperti ini sering dapat menikah dengan wanita berotak cerdas dan unggul. Sedangkan wanita akan menikah dengan pria yang berbakat dan penuh ide cemerlang. Pria yang <span class=\"hz\">太陰</span> (Tài Yīn)-nya satu istana dapat memperoleh istri rupawan. Yang <span class=\"hz\">天梁</span> (Tiān Liáng) satu istana akan menjadi pasangan serasi bagai \"anak emas dan gadis giok\" (<span class=\"hz\">金童玉女</span>). Namun bila ada bintang buruk yang menghalangi bantuan, perasaan suami-istri memburuk dan dikhawatirkan ada bahaya perpisahan. - action: Pilih pasangan sevisi dan setia; tunda pernikahan secukupnya, jaga komunikasi dewasa, hindari adu ego.</p><p>zinu: - star: 七殺 - insight: Anak-anak AVH berwatak sama sekali tak mau berkompromi, segala hal selalu menuntut alasan dan logika. <span class=\"hz\">七殺</span> (Qī Shā, Tujuh Pembunuh) juga merupakan bintang buruk yang dapat memutus keturunan. Sekalipun ia memiliki anak, anak itu sangat berkemauan keras dan berdiri di posisi yang tajam berseberangan dengan dirinya. Namun bila ada bintang <span class=\"hz\">紫微</span> (Zǐ Wēi) satu istana, makna buruk itu dapat dinetralkan, sehingga ia tetap mampu melahirkan dan membesarkan anak dengan baik. - action: Beri ruang anak yang berprinsip; jaga komunikasi tenang dan penuh alasan logis.</p>",
+    "_palace1_struct": {
+      "ming_gong": {
+        "star": "太陽",
+        "insight": "AVH setara dengan ujung ekstrem unsur Yin, sehingga peruntungannya mengalir tenang dan lancar mengikuti arus. Tenaganya penuh dan ia kerap tampil bercahaya penuh semangat. Demi mencapai tujuan, ia harus bergerak dengan sepenuh hati dan gairah. Wataknya bagai api, membara dengan hebat namun bisa padam dalam sekejap, tetapi tak disangka ia juga punya sisi yang lugas dan terus terang. Selain itu, hatinya sama sekali tak mampu menyembunyikan rahasia apa pun; segala hal ingin ia tumpahkan kepada orang lain hingga tuntas, dan justru sifat blak-blakan inilah yang kadang berubah menjadi sebab orang merasa jengkel padanya. Saat bintang [[太陽]] (Tài Yáng, Matahari) masuk ke dalam istana [[申]] (Shēn) atau [[丑]] (Chǒu), ia mutlak harus ekstra berhati-hati. Bila di istana perpindahan ([[遷移宮]]), istana rezeki ([[財帛宮]]), atau istana karier ([[官祿宮]]) tidak ada bintang baik yang menemani, peruntungan awalnya memang berjalan tenang dan lancar, tetapi pada momen krusial di akhir, justru bisa berbalik kalah total sehingga berujung pada nasib gagal. Namun, bila dua-belas peruntungan ([[十二運]]) istana hidupnya berupa peruntungan kuat seperti [[長生]], [[冠帶]], [[建祿]], atau [[帝旺]], ia pasti dapat menolak bala dan menghindari malapetaka. Bagi wanita, ini menandakan perempuan berbakat dan cakap; ia menyukai suasana ramai dan merupakan sosok pergaul ulung yang luar biasa.",
+        "action": "Salurkan semangat besar pada tujuan konkret; jaga ucapan blak-blakan agar tidak melukai relasi."
+      },
+      "fuqi": {
+        "insight": "Saat bercinta AVH cukup keras kepala dan semaunya, sehingga ia kerap bergesekan dengan kekasih. Namun lewat usahanya sendiri ia mampu meraih kisah cinta yang indah bagai puisi, dan ia paling menyukai pergaulan yang mewah. Ia tampaknya tipe orang yang menikah muda, tetapi bila memungkinkan sebaiknya menunda pernikahan agar dapat memperoleh kehidupan rumah tangga yang bahagia dan harmonis. Pria seperti ini sering dapat menikah dengan wanita berotak cerdas dan unggul. Sedangkan wanita akan menikah dengan pria yang berbakat dan penuh ide cemerlang. Pria yang [[太陰]] (Tài Yīn)-nya satu istana dapat memperoleh istri rupawan. Yang [[天梁]] (Tiān Liáng) satu istana akan menjadi pasangan serasi bagai \"anak emas dan gadis giok\" ([[金童玉女]]). Namun bila ada bintang buruk yang menghalangi bantuan, perasaan suami-istri memburuk dan dikhawatirkan ada bahaya perpisahan.",
+        "action": "Pilih pasangan sevisi dan setia; tunda pernikahan secukupnya, jaga komunikasi dewasa, hindari adu ego."
+      },
+      "zinu": {
+        "star": "七殺",
+        "insight": "Anak-anak AVH berwatak sama sekali tak mau berkompromi, segala hal selalu menuntut alasan dan logika. [[七殺]] (Qī Shā, Tujuh Pembunuh) juga merupakan bintang buruk yang dapat memutus keturunan. Sekalipun ia memiliki anak, anak itu sangat berkemauan keras dan berdiri di posisi yang tajam berseberangan dengan dirinya. Namun bila ada bintang [[紫微]] (Zǐ Wēi) satu istana, makna buruk itu dapat dinetralkan, sehingga ia tetap mampu melahirkan dan membesarkan anak dengan baik.",
+        "action": "Beri ruang anak yang berprinsip; jaga komunikasi tenang dan penuh alasan logis."
+      }
+    },
+    "palace2": "<p>caibo: - star: null - insight: Bila AVH hanya membabi-buta menimbun uang tanpa memanfaatkannya secara aktif, hartanya tak akan berdaya guna. Sesungguhnya ia dapat melewati hidup ini dengan berkecukupan. Bila ada <span class=\"hz\">紫微</span> (Zǐ Wēi) satu istana, peruntungan uangnya makin hidup dan dinamis, ditambah pemasukan yang stabil, ia akan kerap menemui peluang menghasilkan uang besar. Yang <span class=\"hz\">武曲</span> (Wǔ Qū) satu istana akan bersemangat merancang berbagai strategi demi meraih kekayaan besar. Yang <span class=\"hz\">廉貞</span> (Lián Zhēn) satu istana dapat menjadi kaya lewat jual-beli. Setidaknya, ia tak perlu khawatir terkekang oleh urusan uang. Tetapi bila istana ini berada di posisi <span class=\"hz\">寅</span> (Yín) atau <span class=\"hz\">午</span> (Wǔ), khasiat bintang <span class=\"hz\">文昌</span> (Wén Chāng) melemah, harta pun sulit menumpuk dan bisa habis dalam sekejap. Ia memiliki bakat besar untuk menyesuaikan diri dengan situasi dan mengelola uang di tangannya dengan cerdik hingga menjadi kaya. Namun tipe orang seperti ini tampaknya kurang pandai menabung. Bila ada bintang buruk menempati posisi, terbentuk kebiasaan boros, sehingga uang yang susah payah dikumpulkan tak lama kemudian terhambur habis tak bersisa satu sen pun. - action: Aktifkan uang secara produktif; bangun pemasukan stabil dan disiplin menabung agar tidak boros.</p><p>jie_e: - star: 天相 - insight: AVH mudah terkena penyakit jantung, gangguan penglihatan, dan gangguan indra pengecap, serta beragam bahaya yang berkaitan dengan api (<span class=\"hz\">火難</span>). Pada masa kanak-kanak ia mungkin pernah mengalami cedera atau menderita memar/bengkak, juga penyakit pada kaki dan pinggang. Bila ada bintang baik lain satu istana, kesehatannya sama sekali tidak bermasalah. Bila satu istana dengan <span class=\"hz\">貪狼</span> (Tān Láng), ia mudah terkena penyakit di bagian mata. Bila ada bintang buruk lain yang menghalangi, dikhawatirkan muncul keluhan nyeri saraf dan nyeri pinggang. <span class=\"hz\">天相</span> (Tiān Xiàng) adalah bintang baik yang membuat penyakit dan cedera tergolong jarang. Bila satu istana dengan <span class=\"hz\">紫微</span> (Zǐ Wēi), kemungkinan seumur hidup ia nyaris tak berurusan dengan dokter. Namun bila istana kesehatan berada di posisi <span class=\"hz\">卯</span> (Mǎo) atau <span class=\"hz\">酉</span> (Yǒu), fungsi asli <span class=\"hz\">天相</span> sulit muncul, sehingga ia mudah terkena penyakit kulit atau penyakit pencernaan. - action: Rutin jaga jantung, mata, kaki-pinggang; kelola emosi agar \"api\" tidak berlebih.</p><p>qianyi: - star: null - insight: AVH sama sekali tak akan bertindak gegabah; ia menjaga ketat wilayah dirinya sendiri dan selalu mengambil langkah dengan hati-hati. Setiap kali menghadapi perubahan, selalu ada urusan sial yang menimpa. Misalnya, setelah pindah rumah ternyata menemukan hunian baru yang fasilitasnya tidak lengkap; atau saat pindah ke perusahaan baru baru tahu bahwa perusahaan itu penuh konflik tak henti; atau bahkan tak lama kemudian perusahaan itu malah tutup. Pendeknya, ke mana pun ia melangkah selalu ada urusan sial yang menanti. Ia benar-benar tak punya waktu untuk menjaga ketenangan hatinya. Bila memungkinkan, sebaiknya ia sebisa mungkin tidak mengejar perubahan, dan sekalipun mengalami peristiwa tak menyenangkan apa pun, lebih baik ia menahan dan memendamnya di dalam hati. - action: Pertimbangkan matang sebelum pindah rumah atau ganti pekerjaan; jaga ketenangan batin saat ada perubahan.</p><p>puyi: - star: null - insight: AVH memiliki bawahan yang mantap dan cukup dapat diandalkan. Namun ia kurang mungkin memperoleh dukungan penuh dari bawahannya. Bila bawahannya seorang wanita, ia pasti bertipe sangat gigih dan suka menang. Selain itu, teman-teman dari kalangan yang lebih muda sangatlah sedikit; pun kalaupun ada, sebenarnya mereka sekadar ingin memanfaatkan dirinya saja. - action: Bangun relasi atas dasar ketulusan; jeli memilih lingkaran dan tidak menaruh harap berlebih pada bawahan.</p>",
+    "_palace2_struct": {
+      "caibo": {
+        "insight": "Bila AVH hanya membabi-buta menimbun uang tanpa memanfaatkannya secara aktif, hartanya tak akan berdaya guna. Sesungguhnya ia dapat melewati hidup ini dengan berkecukupan. Bila ada [[紫微]] (Zǐ Wēi) satu istana, peruntungan uangnya makin hidup dan dinamis, ditambah pemasukan yang stabil, ia akan kerap menemui peluang menghasilkan uang besar. Yang [[武曲]] (Wǔ Qū) satu istana akan bersemangat merancang berbagai strategi demi meraih kekayaan besar. Yang [[廉貞]] (Lián Zhēn) satu istana dapat menjadi kaya lewat jual-beli. Setidaknya, ia tak perlu khawatir terkekang oleh urusan uang. Tetapi bila istana ini berada di posisi [[寅]] (Yín) atau [[午]] (Wǔ), khasiat bintang [[文昌]] (Wén Chāng) melemah, harta pun sulit menumpuk dan bisa habis dalam sekejap. Ia memiliki bakat besar untuk menyesuaikan diri dengan situasi dan mengelola uang di tangannya dengan cerdik hingga menjadi kaya. Namun tipe orang seperti ini tampaknya kurang pandai menabung. Bila ada bintang buruk menempati posisi, terbentuk kebiasaan boros, sehingga uang yang susah payah dikumpulkan tak lama kemudian terhambur habis tak bersisa satu sen pun.",
+        "action": "Aktifkan uang secara produktif; bangun pemasukan stabil dan disiplin menabung agar tidak boros."
+      },
+      "jie_e": {
+        "star": "天相",
+        "insight": "AVH mudah terkena penyakit jantung, gangguan penglihatan, dan gangguan indra pengecap, serta beragam bahaya yang berkaitan dengan api ([[火難]]). Pada masa kanak-kanak ia mungkin pernah mengalami cedera atau menderita memar/bengkak, juga penyakit pada kaki dan pinggang. Bila ada bintang baik lain satu istana, kesehatannya sama sekali tidak bermasalah. Bila satu istana dengan [[貪狼]] (Tān Láng), ia mudah terkena penyakit di bagian mata. Bila ada bintang buruk lain yang menghalangi, dikhawatirkan muncul keluhan nyeri saraf dan nyeri pinggang. [[天相]] (Tiān Xiàng) adalah bintang baik yang membuat penyakit dan cedera tergolong jarang. Bila satu istana dengan [[紫微]] (Zǐ Wēi), kemungkinan seumur hidup ia nyaris tak berurusan dengan dokter. Namun bila istana kesehatan berada di posisi [[卯]] (Mǎo) atau [[酉]] (Yǒu), fungsi asli [[天相]] sulit muncul, sehingga ia mudah terkena penyakit kulit atau penyakit pencernaan.",
+        "action": "Rutin jaga jantung, mata, kaki-pinggang; kelola emosi agar \"api\" tidak berlebih."
+      },
+      "qianyi": {
+        "insight": "AVH sama sekali tak akan bertindak gegabah; ia menjaga ketat wilayah dirinya sendiri dan selalu mengambil langkah dengan hati-hati. Setiap kali menghadapi perubahan, selalu ada urusan sial yang menimpa. Misalnya, setelah pindah rumah ternyata menemukan hunian baru yang fasilitasnya tidak lengkap; atau saat pindah ke perusahaan baru baru tahu bahwa perusahaan itu penuh konflik tak henti; atau bahkan tak lama kemudian perusahaan itu malah tutup. Pendeknya, ke mana pun ia melangkah selalu ada urusan sial yang menanti. Ia benar-benar tak punya waktu untuk menjaga ketenangan hatinya. Bila memungkinkan, sebaiknya ia sebisa mungkin tidak mengejar perubahan, dan sekalipun mengalami peristiwa tak menyenangkan apa pun, lebih baik ia menahan dan memendamnya di dalam hati.",
+        "action": "Pertimbangkan matang sebelum pindah rumah atau ganti pekerjaan; jaga ketenangan batin saat ada perubahan."
+      },
+      "puyi": {
+        "insight": "AVH memiliki bawahan yang mantap dan cukup dapat diandalkan. Namun ia kurang mungkin memperoleh dukungan penuh dari bawahannya. Bila bawahannya seorang wanita, ia pasti bertipe sangat gigih dan suka menang. Selain itu, teman-teman dari kalangan yang lebih muda sangatlah sedikit; pun kalaupun ada, sebenarnya mereka sekadar ingin memanfaatkan dirinya saja.",
+        "action": "Bangun relasi atas dasar ketulusan; jeli memilih lingkaran dan tidak menaruh harap berlebih pada bawahan."
+      }
+    },
+    "palace3": "<p>guanlu: - star: null - insight: Profesi yang searah meliputi: tokoh agama (<span class=\"hz\">宗教家</span>), pendidik (<span class=\"hz\">教育家</span>), sastrawan (<span class=\"hz\">文學家</span>), kritikus seni (<span class=\"hz\">美術評論家</span>), serta pekerja film dan drama (<span class=\"hz\">電影、戲劇工作者</span>). AVH paling cocok pada pekerjaan intelektual yang menuntut penilaian tenang dan jernih. Bila ia menekuni profesi seperti pemrogram komputer (<span class=\"hz\">電腦程式設計師</span>), pengacara (<span class=\"hz\">律師</span>), sekretaris (<span class=\"hz\">秘書</span>), editor (<span class=\"hz\">編者</span>), atau perancang teknik (<span class=\"hz\">設計技師</span>), ia dapat berkiprah aktif di masyarakat. Namun bila istana karier berada di posisi <span class=\"hz\">巳</span> (Sì) atau <span class=\"hz\">午</span> (Wǔ), peruntungan kariernya berubah menjadi cenderung muluk-muluk dan kurang membumi. Dalam pekerjaan pun ia banyak mengalami perubahan, dan bukanlah tipe orang yang bisa tenang menetap pada satu hal saja. Yang <span class=\"hz\">天同</span> (Tiān Tóng) satu istana memiliki bakat menulis yang bagus, sehingga bila berusaha menekuni jalur kepenulisan akan sangat berhasil. Yang <span class=\"hz\">天機</span> (Tiān Jī) satu istana mengisyaratkan bahwa kerja keras yang panjang pada akhirnya akan berakhir manis, berbunga dan berbuah. - action: Bangun karier intelektual yang menuntut analisis tajam; pertimbangkan jalur menulis atau perancangan.</p><p>tianzhai: - star: 天府 - insight: Mengisyaratkan properti tak bergerak AVH bertambah sedikit demi sedikit. Ia berjodoh dengan kawasan pedesaan, memiliki tanah dan rumah. Memulai usaha dari mengelola apartemen/rumah sewa dapat membuatnya kaya. Bila ada bintang buruk satu istana yang menghalangi, properti yang susah payah ia peroleh pada akhirnya terpaksa diserahkan ke tangan orang lain. <span class=\"hz\">紫微</span> (Zǐ Wēi) berjodoh dengan unsur Tanah, maka bila memungkinkan sebaiknya ia tinggal di daerah yang kaya akan tanah. Di satu sisi ia dapat mempertahankan properti warisan orang tua, sekaligus ia sendiri mampu mengumpulkan properti dalam jumlah besar. <span class=\"hz\">天府</span> (Tiān Fǔ) memang bintang yang menguasai kekuatan harta, sehingga peruntungan propertinya tergolong cukup stabil. Ia cocok berkembang dengan bantuan kerabat sedarah, maka bila terlalu menonjolkan diri dan melakukan transaksi properti besar-besaran, ia pasti akan tertekan. Tanah yang kering (<span class=\"hz\">乾燥之地</span>) sangat baik baginya. - action: Kelola properti bertahap mulai dari sewa; pilih lokasi ber-tanah dan manfaatkan bantuan kerabat.</p><p>fude: - star: null - insight: AVH memiliki zona ketenangan secara mental, namun diam-diam ia juga punya sisi yang tersimpan dan tertahan. Pada mulanya tidak ada yang terlalu menonjol, tetapi seiring waktu, keberkahan dan kebajikan (<span class=\"hz\">福德</span>) ikut bertambah. Sikapnya dalam menghadapi orang dan urusan lembut dan luwes, namun agak kurang agresif; sebelum ia berhasil memetik buah keberhasilan lewat kerja keras, ia harus melalui rentang waktu yang cukup panjang. Bila ada bintang buruk yang masuk, ia sulit mempertahankan ketenangan dalam jangka panjang, sehingga menjadi kehidupan yang kurang stabil. - action: Rawat kebajikan diam-diam dan kesabaran; bangun ketekunan agar berkah bertumbuh seiring waktu.</p><p>fumu: - star: null - insight: AVH memiliki orang tua yang lembut dan rasional. Ia terutama banyak menerima limpahan kasih dari sang ibu. Namun benturan dengan orang tua terjadi terus-menerus; anehnya, bila ia keluar dari rumah, hubungan justru bisa menjadi harmonis di luar dugaan. Orang tuanya biasanya tenang dan tenang-tenteram, tetapi sekali marah, ledakannya dahsyat bagai gunung berapi meletus. Selain itu, apa pun yang sedang ia pikirkan akan langsung terbaca oleh mereka, sehingga ia sama sekali tak bisa berbohong di hadapan orang tua. Bertengkar dengan orang tua lalu pergi dari rumah, begitulah kira-kira gambaran masa kecilnya. Yang <span class=\"hz\">武曲</span> (Wǔ Qū) atau <span class=\"hz\">廉貞</span> (Lián Zhēn) satu istana akan berpisah dengan orang tua sejak dini. Namun bila ada <span class=\"hz\">紫微</span> (Zǐ Wēi) satu istana, walaupun antara orang tua dan anak jarang bertengkar, hubungan kekerabatan itu sama sekali tak sampai terputus. - action: Jaga keterbukaan dengan orang tua; redakan benturan dengan kesabaran, beri jarak sehat bila perlu.</p>",
+    "_palace3_struct": {
+      "guanlu": {
+        "insight": "Profesi yang searah meliputi: tokoh agama ([[宗教家]]), pendidik ([[教育家]]), sastrawan ([[文學家]]), kritikus seni ([[美術評論家]]), serta pekerja film dan drama ([[電影、戲劇工作者]]). AVH paling cocok pada pekerjaan intelektual yang menuntut penilaian tenang dan jernih. Bila ia menekuni profesi seperti pemrogram komputer ([[電腦程式設計師]]), pengacara ([[律師]]), sekretaris ([[秘書]]), editor ([[編者]]), atau perancang teknik ([[設計技師]]), ia dapat berkiprah aktif di masyarakat. Namun bila istana karier berada di posisi [[巳]] (Sì) atau [[午]] (Wǔ), peruntungan kariernya berubah menjadi cenderung muluk-muluk dan kurang membumi. Dalam pekerjaan pun ia banyak mengalami perubahan, dan bukanlah tipe orang yang bisa tenang menetap pada satu hal saja. Yang [[天同]] (Tiān Tóng) satu istana memiliki bakat menulis yang bagus, sehingga bila berusaha menekuni jalur kepenulisan akan sangat berhasil. Yang [[天機]] (Tiān Jī) satu istana mengisyaratkan bahwa kerja keras yang panjang pada akhirnya akan berakhir manis, berbunga dan berbuah.",
+        "action": "Bangun karier intelektual yang menuntut analisis tajam; pertimbangkan jalur menulis atau perancangan."
+      },
+      "tianzhai": {
+        "star": "天府",
+        "insight": "Mengisyaratkan properti tak bergerak AVH bertambah sedikit demi sedikit. Ia berjodoh dengan kawasan pedesaan, memiliki tanah dan rumah. Memulai usaha dari mengelola apartemen/rumah sewa dapat membuatnya kaya. Bila ada bintang buruk satu istana yang menghalangi, properti yang susah payah ia peroleh pada akhirnya terpaksa diserahkan ke tangan orang lain. [[紫微]] (Zǐ Wēi) berjodoh dengan unsur Tanah, maka bila memungkinkan sebaiknya ia tinggal di daerah yang kaya akan tanah. Di satu sisi ia dapat mempertahankan properti warisan orang tua, sekaligus ia sendiri mampu mengumpulkan properti dalam jumlah besar. [[天府]] (Tiān Fǔ) memang bintang yang menguasai kekuatan harta, sehingga peruntungan propertinya tergolong cukup stabil. Ia cocok berkembang dengan bantuan kerabat sedarah, maka bila terlalu menonjolkan diri dan melakukan transaksi properti besar-besaran, ia pasti akan tertekan. Tanah yang kering ([[乾燥之地]]) sangat baik baginya.",
+        "action": "Kelola properti bertahap mulai dari sewa; pilih lokasi ber-tanah dan manfaatkan bantuan kerabat."
+      },
+      "fude": {
+        "insight": "AVH memiliki zona ketenangan secara mental, namun diam-diam ia juga punya sisi yang tersimpan dan tertahan. Pada mulanya tidak ada yang terlalu menonjol, tetapi seiring waktu, keberkahan dan kebajikan ([[福德]]) ikut bertambah. Sikapnya dalam menghadapi orang dan urusan lembut dan luwes, namun agak kurang agresif; sebelum ia berhasil memetik buah keberhasilan lewat kerja keras, ia harus melalui rentang waktu yang cukup panjang. Bila ada bintang buruk yang masuk, ia sulit mempertahankan ketenangan dalam jangka panjang, sehingga menjadi kehidupan yang kurang stabil.",
+        "action": "Rawat kebajikan diam-diam dan kesabaran; bangun ketekunan agar berkah bertumbuh seiring waktu."
+      },
+      "fumu": {
+        "insight": "AVH memiliki orang tua yang lembut dan rasional. Ia terutama banyak menerima limpahan kasih dari sang ibu. Namun benturan dengan orang tua terjadi terus-menerus; anehnya, bila ia keluar dari rumah, hubungan justru bisa menjadi harmonis di luar dugaan. Orang tuanya biasanya tenang dan tenang-tenteram, tetapi sekali marah, ledakannya dahsyat bagai gunung berapi meletus. Selain itu, apa pun yang sedang ia pikirkan akan langsung terbaca oleh mereka, sehingga ia sama sekali tak bisa berbohong di hadapan orang tua. Bertengkar dengan orang tua lalu pergi dari rumah, begitulah kira-kira gambaran masa kecilnya. Yang [[武曲]] (Wǔ Qū) atau [[廉貞]] (Lián Zhēn) satu istana akan berpisah dengan orang tua sejak dini. Namun bila ada [[紫微]] (Zǐ Wēi) satu istana, walaupun antara orang tua dan anak jarang bertengkar, hubungan kekerabatan itu sama sekali tak sampai terputus.",
+        "action": "Jaga keterbukaan dengan orang tua; redakan benturan dengan kesabaran, beri jarak sehat bila perlu."
+      }
+    },
+    "kesimpulan": "AVH adalah Api Yin (<span class=\"hz\">丁火</span> Dīng Huǒ) yang lembut namun terang; dengan menyalurkan tenaganya lewat karya konkret bermuatan Tanah dan Logam serta menjaga ketenangan batin, ia akan berbuah rezeki yang stabil dan kemuliaan di paruh kedua hidup.",
+    "_kesimpulan_struct": {
+      "quote": "AVH adalah Api Yin ([[丁火]] Dīng Huǒ) yang lembut namun terang; dengan menyalurkan tenaganya lewat karya konkret bermuatan Tanah dan Logam serta menjaga ketenangan batin, ia akan berbuah rezeki yang stabil dan kemuliaan di paruh kedua hidup.",
+      "stats": {
+        "format_desc": "Format [[偏印格]] (Piān Yìn Gé, Cetakan Tak Langsung) memberi ketajaman intuisi dan kemandirian; day master kuat ([[丁火]] +5160).",
+        "yong_desc": "[[用神]] (Yòng Shén, unsur pengguna) [[土]] (Tǔ, Tanah) paling efektif lewat properti, konstruksi, konsultan, didukung [[金]].",
+        "dayun_desc": "Fase [[正財]] (Zhèng Cái, Rezeki Tetap, 42-51) memetik hasil materi, menuju [[食神]] (Shí Shén, Berkah Ekspresi, 52-61).",
+        "umur_desc": "Dekade 40-an: serangkaian tahun kerja keras + waspada kesehatan + peluang orang mulia menolong.",
+        "kompat_desc": "Cocok shio [[未]] (Kambing), [[卯]] (Kelinci); waspada [[寅]] (Macan, 吉凶相半); hindari [[巳]] (Ular), [[申]] (Monyet), [[亥]] (Babi)."
+      },
+      "life_map": {
+        "lalu": "Usia 2-41 (fase [[正印]] hingga [[偏財]]): menyerap ilmu, menempa ketahanan, membangun kedudukan, dan menjelajah peluang rezeki di dunia luar.",
+        "sekarang": "Usia 42-51 (fase [[庚戌]]/[[正財]]): memetik hasil materi yang stabil; tahun 2026 ([[丙午]] bǐng-wǔ, Api Yang berakar Kuda) menjadi tahun kerja keras dengan tekanan suasana hati.",
+        "berikutnya": "Usia 52-61 (fase [[己酉]]/[[食神]]): ekspresi bakat dan limpahan berkah, buah dari fondasi yang ditanam sekarang."
+      }
+    },
+    "sintesis": "AVH adalah <span class=\"hz\">丁火</span> (Api Yin) berformat <span class=\"hz\">偏印格</span> (Cetakan Tak Langsung) dengan day master kuat (+5160 vs -3700). Profilnya: cerdas, intuitif, jujur blak-blakan, dan penuh kesetiaan, namun perlu menyadari pola sulit menerima nasihat dari orang tua maupun pasangan, serta kecenderungan \"berkepala besar berekor kecil\".",
+    "_sintesis_struct": {
+      "opening": "AVH adalah [[丁火]] (Api Yin) berformat [[偏印格]] (Cetakan Tak Langsung) dengan day master kuat (+5160 vs -3700). Profilnya: cerdas, intuitif, jujur blak-blakan, dan penuh kesetiaan, namun perlu menyadari pola sulit menerima nasihat dari orang tua maupun pasangan, serta kecenderungan \"berkepala besar berekor kecil\".",
+      "trio": {
+        "kekuatan": {
+          "hanzi": "重義",
+          "pinyin": "Zhòng Yì",
+          "arti": "\"Menjunjung Kesetiaan\"",
+          "body": "AVH mengutamakan kesetiaan dan nilai di atas harta, jujur tanpa kepura-puraan, dermawan, dan terbuka. Dipertajam format [[偏印格]] yang membuatnya cerdas, intuitif, dan cepat menyesuaikan diri saat menyadari ada cara yang keliru."
+        },
+        "tantangan": {
+          "hanzi": "直言",
+          "pinyin": "Zhí Yán",
+          "arti": "\"Terlalu Blak-blakan\"",
+          "body": "Tak mampu menyimpan rahasia dan terlalu terus terang hingga kadang menyinggung orang; sulit menerima nasihat orang tua maupun pasangan. Tenaga apinya mudah berkobar lalu padam, kerap berkepala besar berekor kecil. Ini area pertumbuhan yang perlu disadari."
+        },
+        "tindakan": {
+          "hanzi": "立業",
+          "pinyin": "Lì Yè",
+          "arti": "\"Membangun Karier\"",
+          "body": "Profesi searah: properti ([[房地產買賣]]), konstruksi ([[建築]]), konsultan ([[顧問]]), keuangan ([[金融界]]), mesin ([[機械]]) — jalur ber-unsur Tanah ([[用神]]) dan Logam ([[喜神]]). Diperkuat bintang [[驛馬]] yang membuka peluang lewat mobilitas."
+        }
+      },
+      "actions": [
+        {
+          "title": "\"Pilih jalur karier yang searah\"",
+          "context": "\"Bidang searah: properti, konstruksi, konsultan-geomansi (ber-unsur [[土]]) dan keuangan, mesin, hukum (ber-unsur [[金]]). Hindari bidang ber-unsur Api ([[火]]) dan Kayu ([[木]]).\""
+        },
+        {
+          "title": "\"Wujudkan pemasukan jadi aset berwujud\"",
+          "context": "\"正財 berlimpah tapi renggang, 偏財 mudah datang juga mudah pergi"
+        },
+        {
+          "title": "\"Latih ketekunan sampai tuntas\"",
+          "context": "\"Kecenderungan virtuoso awal lalu kendur (虎頭蛇尾). Pecah target jadi tahapan kecil agar tidak berhenti di tengah jalan.\""
+        },
+        {
+          "title": "\"Jaga organ tubuh yang rawan\"",
+          "context": "\"Jantung ([[心]]), mata ([[眼]]), kaki dan pinggang ([[足腰]]) adalah titik rentan utama. Kelola emosi agar 'api' tidak berlebih, jaga pola istirahat.\""
+        },
+        {
+          "title": "\"Hadapi pola kekakuan dengan keluarga secara sadar\"",
+          "context": "\"Tendensi sulit terima nasihat orang tua dan pasangan. Membuka diri mendengar (meski tidak setuju) mencegah konflik berlarut dan menjaga harmoni.\""
+        }
+      ]
+    },
+    "xingqing_full": "<p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">1</span>Mengutamakan kesetiaan dan budi di atas harta (<span class=\"hz\">重義不惜財</span>); terus terang tanpa kepura-puraan (<span class=\"hz\">坦白無虛飾</span>) dan tidak melekat pada sesuatu. Terhadap uang yang dapat dimanfaatkan ia bersikap dermawan (<span class=\"hz\">慷慨</span>) dan bersahaja-tenang (<span class=\"hz\">淡泊</span>); meski tetap mengelola keuangan, ia tidak menjadikan harta sebagai tolok ukur hidup. Ia mengendalikan benda atau urusan yang memang dapat ia kendalikan, tetapi tidak terobsesi pada benda atau urusan itu sendiri.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">2</span>Lurus dan jujur (<span class=\"hz\">正直</span>), konservatif (<span class=\"hz\">保守</span>), serta bertanggung jawab (<span class=\"hz\">負責任</span>). Tahu sopan-santun dan taat aturan (<span class=\"hz\">知禮守法</span>), menjaga harga diri dan nama baik (<span class=\"hz\">愛惜面子</span>), serta menghargai pendapat dan norma masyarakat (<span class=\"hz\">重視社會公論</span>).</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">3</span>Penuh rasionalitas (<span class=\"hz\">富有理性</span>) dan mengabdi pada kepentingan umum sambil taat hukum (<span class=\"hz\">奉公守法</span>); pada banyak hal cenderung mudah menyesuaikan diri dan mengikuti. Lebih tertarik pada urusan publik dan kelompok, rela berkorban (<span class=\"hz\">重犧牲</span>), berpikir halus dan teliti (<span class=\"hz\">思維細膩</span>), serta kaya rasa simpati (<span class=\"hz\">富同情心</span>); meski santun, ia juga cenderung penuh kewaspadaan dan mudah curiga (<span class=\"hz\">多疑</span>).</p>",
+    "xingqing_full_action": "Inti watak: pribadi setia dan berprinsip, rasional namun terbuka apa adanya, menjaga aturan dan nama baik, peduli kepentingan bersama, dan sederhana terhadap harta.",
+    "overview_full": "<div style=\"display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm;\"><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Pasangan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Cenderung kurang mementingkan sisi perasaan dan agak gemar membelanjakan uang (<span class=\"hz\">較會花錢</span>).</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Anak (Putra)</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Anak laki-laki cenderung kurang menurut (<span class=\"hz\">兒子較不聽話</span>).</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Cara Berpikir</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Kurang gemar berpikir mendalam atau berlama-lama menimbang (<span class=\"hz\">較不擅於思考</span>).</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Hubungan dengan Ibu</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Sulit menerima nasihat ibu, sehingga komunikasi dengannya cenderung minim (<span class=\"hz\">較沒話說</span>).</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Hubungan dengan Saudari</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Kurang bisa menerima masukan dari saudari perempuan (<span class=\"hz\">姊妹的話不太能接受</span>).</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Hubungan dengan Istri</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Tidak gentar pada istri (<span class=\"hz\">不怕太太</span>), namun sulit menerima apa yang ia katakan.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Wibawa &amp; Kuasa</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Tergolong cukup berwibawa dan memegang kendali (<span class=\"hz\">比較有權力</span>).</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Restu Orang Tua</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Pasangan yang ia sukai cenderung kurang disukai orang tua, sehingga mudah tidak cocok (<span class=\"hz\">容易合不來</span>).</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Pola Menyelesaikan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Cenderung \"berkepala besar berekor kecil\" (<span class=\"hz\">虎頭蛇尾</span>); memulai dengan semangat namun kerap tidak tuntas (<span class=\"hz\">有始無終</span>).</div></div></div>",
+    "overview_full_action": "Pesan inti: hubungan terdekat (pasangan, anak, ibu, saudari, istri) menuntut kesabaran ekstra; sadari pola sulit menerima nasihat dan kebiasaan kurang tuntas agar relasi tetap harmonis.",
+    "_dmcard": "\n        <div class=\"dmc-eyebrow\">本 命 · Penguasa Hari</div>\n        <div class=\"dmc-stem\">丁</div>\n        <div class=\"dmc-element\">火 · Api Yin</div>\n        <div class=\"dmc-pinyin\">Dīng 火, \"Api Lilin\"</div>\n        <div class=\"dmc-strength\">Status: <span class=\"val\">KUAT</span> · 旺</div>\n      ",
+    "fam_pasangan_vibe": "\"Cerdas · Mewah\"",
+    "fam_pasangan_headline": "\"Pasangan ideal dari shio Kambing atau Kelinci\"",
+    "fam_pasangan_body": "AVH cukup keras kepala saat bercinta sehingga rentan gesekan, namun mampu meraih cinta yang indah lewat usahanya sendiri dan menyukai pergaulan mewah. Menurut layar 婚配, pasangan paling cocok (<span class=\"hz\">大吉</span>) adalah shio <span class=\"hz\">未</span> (Kambing) dan <span class=\"hz\">卯</span> (Kelinci); shio <span class=\"hz\">寅</span> (Macan) tergolong setengah baik-buruk. Disarankan menikah agak lambat agar rumah tangga lebih harmonis. Hindari shio <span class=\"hz\">巳</span> (Ular), <span class=\"hz\">申</span> (Monyet), <span class=\"hz\">亥</span> (Babi).",
+    "fam_anak_vibe": "\"Berprinsip · Mandiri\"",
+    "fam_anak_headline": "\"Anak teguh berprinsip, butuh komunikasi sabar\"",
+    "fam_anak_body": "Menurut istana 子女, anak AVH berwatak teguh dan selalu menuntut alasan logis, cenderung sangat berkemauan sendiri sehingga kerap berseberangan dengan orang tua. Pengaruh <span class=\"hz\">七殺</span> menandai hubungan yang tajam, namun bila ada <span class=\"hz\">紫微</span> satu istana, makna keras itu lunak dan ia tetap dapat membesarkan anak dengan baik.",
+    "fam_saudara_vibe": "\"Mandiri · Terbatas\"",
+    "fam_saudara_headline": "\"Ikatan saudara terbatas, sulit jadi sandaran\"",
+    "fam_saudara_body": "Menurut istana 兄弟, AVH cenderung kurang memperoleh dukungan operasional dari saudara kandung dan harus banyak mengandalkan diri sendiri. Hubungan tetap dapat dijaga sehat selama tidak menaruh harapan berlebih; kemandirian justru menjadi kekuatannya dalam membina relasi keluarga.",
+    "fam_kepemimpinan_vibe": "\"Mandiri · Strategis\"",
+    "fam_kepemimpinan_headline": "\"Lebih unggul sebagai ahli strategi dan staf inti\"",
+    "fam_kepemimpinan_body": "Menurut istana 僕役 dan 官祿, AVH lebih bersinar sebagai perencana, penasihat, dan staf ahli ketimbang pemimpin tertinggi. Bawahan sulit benar-benar menopangnya, maka ia paling produktif saat diberi otonomi merancang siasat. Kecerdasan analitisnya membuat orang menghargai dan mengangkatnya naik.",
+    "caifu_zheng_gauge": "<div class=\"cfm-gauge-fill\" style=\"width:60%\">60%</div>",
+    "caifu_zheng_body": "Rezeki tetap (<span class=\"hz\">正財</span>) AVH berperan sebagai porsi utama, bersumber berlimpah dan tebal. Layar 財富 menyebut hubungannya agak renggang, sehingga perlu pendekatan rutin dan disiplin agar arus penghasilan stabil dan tidak bocor.",
+    "caifu_pian_gauge": "<div class=\"cfm-gauge-fill\" style=\"width:40%\">40%</div>",
+    "caifu_pian_body": "Rezeki tak terduga (<span class=\"hz\">偏財</span>) porsinya cukup besar, bersumber biasa namun berhubungan erat sehingga mudah datang. Sifatnya gampang berpencar, maka perlu segera diwujudkan menjadi aset berwujud agar nilainya bertahan.",
+    "_caifu_rules": "\n        <div class=\"cf-rule tip\">\n          <div class=\"cfr-num\">1</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Wujudkan pemasukan jadi aset berwujud</div>\n            <div class=\"cfr-context\">驛馬 dinamis, properti dan tanah lebih kokoh dari kas</div>\n          </div>\n        </div>\n        <div class=\"cf-rule tip\">\n          <div class=\"cfr-num\">2</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Dekati sumber 正財 secara rutin</div>\n            <div class=\"cfr-context\">正財 berlimpah tapi renggang, perlu pendekatan disiplin</div>\n          </div>\n        </div>\n        <div class=\"cf-rule warn\">\n          <div class=\"cfr-num\">3</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Jaga harta agar tidak berpencar</div>\n            <div class=\"cfr-context\">祖業難留, harta gampang tercerai bila lengah</div>\n          </div>\n        </div>\n        <div class=\"cf-rule warn\">\n          <div class=\"cfr-num\">4</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Hindari spekulasi berlebih</div>\n            <div class=\"cfr-context\">偏財 mudah datang juga mudah pergi</div>\n          </div>\n        </div>\n",
+    "_p1_ming_gong": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Diri</span><span class=\"pn-meta\">Mìng Gōng<span class=\"hz\">命宮</span></span></div></div><div class=\"pal-body\"><p>AVH setara dengan ujung ekstrem unsur Yin, sehingga peruntungannya mengalir tenang dan lancar mengikuti arus. Tenaganya penuh dan ia kerap tampil bercahaya penuh semangat. Demi mencapai tujuan, ia harus bergerak dengan sepenuh hati dan gairah. Wataknya bagai api, membara dengan hebat namun bisa padam dalam sekejap, tetapi tak disangka ia juga punya sisi yang lugas dan terus terang. Selain itu, hatinya sama sekali tak mampu menyembunyikan rahasia apa pun; segala hal ingin ia tumpahkan kepada orang lain hingga tuntas, dan justru sifat blak-blakan inilah yang kadang berubah menjadi sebab orang merasa jengkel padanya. Saat bintang <span class=\"hz\">太陽</span> (Tài Yáng, Matahari) masuk ke dalam istana <span class=\"hz\">申</span> (Shēn) atau <span class=\"hz\">丑</span> (Chǒu), ia mutlak harus ekstra berhati-hati. Bila di istana perpindahan (<span class=\"hz\">遷移宮</span>), istana rezeki (<span class=\"hz\">財帛宮</span>), atau istana karier (<span class=\"hz\">官祿宮</span>) tidak ada bintang baik yang menemani, peruntungan awalnya memang berjalan tenang dan lancar, tetapi pada momen krusial di akhir, justru bisa berbalik kalah total sehingga berujung pada nasib gagal. Namun, bila dua-belas peruntungan (<span class=\"hz\">十二運</span>) istana hidupnya berupa peruntungan kuat seperti <span class=\"hz\">長生</span>, <span class=\"hz\">冠帶</span>, <span class=\"hz\">建祿</span>, atau <span class=\"hz\">帝旺</span>, ia pasti dapat menolak bala dan menghindari malapetaka. Bagi wanita, ini menandakan perempuan berbakat dan cakap; ia menyukai suasana ramai dan merupakan sosok pergaul ulung yang luar biasa.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Salurkan semangat besar pada tujuan konkret; jaga ucapan blak-blakan agar tidak melukai relasi.</span></div></div>",
+    "_solo_ming_gong_body": "<p>AVH setara dengan ujung ekstrem unsur Yin, sehingga peruntungannya mengalir tenang dan lancar mengikuti arus. Tenaganya penuh dan ia kerap tampil bercahaya penuh semangat. Demi mencapai tujuan, ia harus bergerak dengan sepenuh hati dan gairah. Wataknya bagai api, membara dengan hebat namun bisa padam dalam sekejap, tetapi tak disangka ia juga punya sisi yang lugas dan terus terang. Selain itu, hatinya sama sekali tak mampu menyembunyikan rahasia apa pun; segala hal ingin ia tumpahkan kepada orang lain hingga tuntas, dan justru sifat blak-blakan inilah yang kadang berubah menjadi sebab orang merasa jengkel padanya. Saat bintang <span class=\"hz\">太陽</span> (Tài Yáng, Matahari) masuk ke dalam istana <span class=\"hz\">申</span> (Shēn) atau <span class=\"hz\">丑</span> (Chǒu), ia mutlak harus ekstra berhati-hati. Bila di istana perpindahan (<span class=\"hz\">遷移宮</span>), istana rezeki (<span class=\"hz\">財帛宮</span>), atau istana karier (<span class=\"hz\">官祿宮</span>) tidak ada bintang baik yang menemani, peruntungan awalnya memang berjalan tenang dan lancar, tetapi pada momen krusial di akhir, justru bisa berbalik kalah total sehingga berujung pada nasib gagal. Namun, bila dua-belas peruntungan (<span class=\"hz\">十二運</span>) istana hidupnya berupa peruntungan kuat seperti <span class=\"hz\">長生</span>, <span class=\"hz\">冠帶</span>, <span class=\"hz\">建祿</span>, atau <span class=\"hz\">帝旺</span>, ia pasti dapat menolak bala dan menghindari malapetaka. Bagi wanita, ini menandakan perempuan berbakat dan cakap; ia menyukai suasana ramai dan merupakan sosok pergaul ulung yang luar biasa.</p>",
+    "_solo_ming_gong_action": "Salurkan semangat besar pada tujuan konkret; jaga ucapan blak-blakan agar tidak melukai relasi.",
+    "_p1_xiongdi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Saudara</span><span class=\"pn-meta\">Xiōng Dì<span class=\"hz\">兄弟</span></span></div></div>",
+    "_p1_fuqi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pasangan</span><span class=\"pn-meta\">Fū Qī<span class=\"hz\">夫妻</span></span></div></div><div class=\"pal-body\"><p>Saat bercinta AVH cukup keras kepala dan semaunya, sehingga ia kerap bergesekan dengan kekasih. Namun lewat usahanya sendiri ia mampu meraih kisah cinta yang indah bagai puisi, dan ia paling menyukai pergaulan yang mewah. Ia tampaknya tipe orang yang menikah muda, tetapi bila memungkinkan sebaiknya menunda pernikahan agar dapat memperoleh kehidupan rumah tangga yang bahagia dan harmonis. Pria seperti ini sering dapat menikah dengan wanita berotak cerdas dan unggul. Sedangkan wanita akan menikah dengan pria yang berbakat dan penuh ide cemerlang. Pria yang <span class=\"hz\">太陰</span> (Tài Yīn)-nya satu istana dapat memperoleh istri rupawan. Yang <span class=\"hz\">天梁</span> (Tiān Liáng) satu istana akan menjadi pasangan serasi bagai \"anak emas dan gadis giok\" (<span class=\"hz\">金童玉女</span>). Namun bila ada bintang buruk yang menghalangi bantuan, perasaan suami-istri memburuk dan dikhawatirkan ada bahaya perpisahan.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Pilih pasangan sevisi dan setia; tunda pernikahan secukupnya, jaga komunikasi dewasa, hindari adu ego.</span></div></div>",
+    "_solo_fuqi_body": "<p>Saat bercinta AVH cukup keras kepala dan semaunya, sehingga ia kerap bergesekan dengan kekasih. Namun lewat usahanya sendiri ia mampu meraih kisah cinta yang indah bagai puisi, dan ia paling menyukai pergaulan yang mewah. Ia tampaknya tipe orang yang menikah muda, tetapi bila memungkinkan sebaiknya menunda pernikahan agar dapat memperoleh kehidupan rumah tangga yang bahagia dan harmonis. Pria seperti ini sering dapat menikah dengan wanita berotak cerdas dan unggul. Sedangkan wanita akan menikah dengan pria yang berbakat dan penuh ide cemerlang. Pria yang <span class=\"hz\">太陰</span> (Tài Yīn)-nya satu istana dapat memperoleh istri rupawan. Yang <span class=\"hz\">天梁</span> (Tiān Liáng) satu istana akan menjadi pasangan serasi bagai \"anak emas dan gadis giok\" (<span class=\"hz\">金童玉女</span>). Namun bila ada bintang buruk yang menghalangi bantuan, perasaan suami-istri memburuk dan dikhawatirkan ada bahaya perpisahan.</p>",
+    "_solo_fuqi_action": "Pilih pasangan sevisi dan setia; tunda pernikahan secukupnya, jaga komunikasi dewasa, hindari adu ego.",
+    "_p1_zinu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Anak</span><span class=\"pn-meta\">Zǐ Nǚ<span class=\"hz\">子女</span></span></div></div><div class=\"pal-body\"><p>Anak-anak AVH berwatak sama sekali tak mau berkompromi, segala hal selalu menuntut alasan dan logika. <span class=\"hz\">七殺</span> (Qī Shā, Tujuh Pembunuh) juga merupakan bintang buruk yang dapat memutus keturunan. Sekalipun ia memiliki anak, anak itu sangat berkemauan keras dan berdiri di posisi yang tajam berseberangan dengan dirinya. Namun bila ada bintang <span class=\"hz\">紫微</span> (Zǐ Wēi) satu istana, makna buruk itu dapat dinetralkan, sehingga ia tetap mampu melahirkan dan membesarkan anak dengan baik.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Beri ruang anak yang berprinsip; jaga komunikasi tenang dan penuh alasan logis.</span></div></div>",
+    "_solo_zinu_body": "<p>Anak-anak AVH berwatak sama sekali tak mau berkompromi, segala hal selalu menuntut alasan dan logika. <span class=\"hz\">七殺</span> (Qī Shā, Tujuh Pembunuh) juga merupakan bintang buruk yang dapat memutus keturunan. Sekalipun ia memiliki anak, anak itu sangat berkemauan keras dan berdiri di posisi yang tajam berseberangan dengan dirinya. Namun bila ada bintang <span class=\"hz\">紫微</span> (Zǐ Wēi) satu istana, makna buruk itu dapat dinetralkan, sehingga ia tetap mampu melahirkan dan membesarkan anak dengan baik.</p>",
+    "_solo_zinu_action": "Beri ruang anak yang berprinsip; jaga komunikasi tenang dan penuh alasan logis.",
+    "_p2_caibo": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Rezeki</span><span class=\"pn-meta\">Cái Bó<span class=\"hz\">財帛</span></span></div></div><div class=\"pal-body\"><p>Bila AVH hanya membabi-buta menimbun uang tanpa memanfaatkannya secara aktif, hartanya tak akan berdaya guna. Sesungguhnya ia dapat melewati hidup ini dengan berkecukupan. Bila ada <span class=\"hz\">紫微</span> (Zǐ Wēi) satu istana, peruntungan uangnya makin hidup dan dinamis, ditambah pemasukan yang stabil, ia akan kerap menemui peluang menghasilkan uang besar. Yang <span class=\"hz\">武曲</span> (Wǔ Qū) satu istana akan bersemangat merancang berbagai strategi demi meraih kekayaan besar. Yang <span class=\"hz\">廉貞</span> (Lián Zhēn) satu istana dapat menjadi kaya lewat jual-beli. Setidaknya, ia tak perlu khawatir terkekang oleh urusan uang. Tetapi bila istana ini berada di posisi <span class=\"hz\">寅</span> (Yín) atau <span class=\"hz\">午</span> (Wǔ), khasiat bintang <span class=\"hz\">文昌</span> (Wén Chāng) melemah, harta pun sulit menumpuk dan bisa habis dalam sekejap. Ia memiliki bakat besar untuk menyesuaikan diri dengan situasi dan mengelola uang di tangannya dengan cerdik hingga menjadi kaya. Namun tipe orang seperti ini tampaknya kurang pandai menabung. Bila ada bintang buruk menempati posisi, terbentuk kebiasaan boros, sehingga uang yang susah payah dikumpulkan tak lama kemudian terhambur habis tak bersisa satu sen pun.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Aktifkan uang secara produktif; bangun pemasukan stabil dan disiplin menabung agar tidak boros.</span></div></div>",
+    "_solo_caibo_body": "<p>Bila AVH hanya membabi-buta menimbun uang tanpa memanfaatkannya secara aktif, hartanya tak akan berdaya guna. Sesungguhnya ia dapat melewati hidup ini dengan berkecukupan. Bila ada <span class=\"hz\">紫微</span> (Zǐ Wēi) satu istana, peruntungan uangnya makin hidup dan dinamis, ditambah pemasukan yang stabil, ia akan kerap menemui peluang menghasilkan uang besar. Yang <span class=\"hz\">武曲</span> (Wǔ Qū) satu istana akan bersemangat merancang berbagai strategi demi meraih kekayaan besar. Yang <span class=\"hz\">廉貞</span> (Lián Zhēn) satu istana dapat menjadi kaya lewat jual-beli. Setidaknya, ia tak perlu khawatir terkekang oleh urusan uang. Tetapi bila istana ini berada di posisi <span class=\"hz\">寅</span> (Yín) atau <span class=\"hz\">午</span> (Wǔ), khasiat bintang <span class=\"hz\">文昌</span> (Wén Chāng) melemah, harta pun sulit menumpuk dan bisa habis dalam sekejap. Ia memiliki bakat besar untuk menyesuaikan diri dengan situasi dan mengelola uang di tangannya dengan cerdik hingga menjadi kaya. Namun tipe orang seperti ini tampaknya kurang pandai menabung. Bila ada bintang buruk menempati posisi, terbentuk kebiasaan boros, sehingga uang yang susah payah dikumpulkan tak lama kemudian terhambur habis tak bersisa satu sen pun.</p>",
+    "_solo_caibo_action": "Aktifkan uang secara produktif; bangun pemasukan stabil dan disiplin menabung agar tidak boros.",
+    "_p2_jie_e": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Kesehatan</span><span class=\"pn-meta\">Jí È<span class=\"hz\">疾厄</span></span></div></div><div class=\"pal-body\"><p>AVH mudah terkena penyakit jantung, gangguan penglihatan, dan gangguan indra pengecap, serta beragam bahaya yang berkaitan dengan api (<span class=\"hz\">火難</span>). Pada masa kanak-kanak ia mungkin pernah mengalami cedera atau menderita memar/bengkak, juga penyakit pada kaki dan pinggang. Bila ada bintang baik lain satu istana, kesehatannya sama sekali tidak bermasalah. Bila satu istana dengan <span class=\"hz\">貪狼</span> (Tān Láng), ia mudah terkena penyakit di bagian mata. Bila ada bintang buruk lain yang menghalangi, dikhawatirkan muncul keluhan nyeri saraf dan nyeri pinggang. <span class=\"hz\">天相</span> (Tiān Xiàng) adalah bintang baik yang membuat penyakit dan cedera tergolong jarang. Bila satu istana dengan <span class=\"hz\">紫微</span> (Zǐ Wēi), kemungkinan seumur hidup ia nyaris tak berurusan dengan dokter. Namun bila istana kesehatan berada di posisi <span class=\"hz\">卯</span> (Mǎo) atau <span class=\"hz\">酉</span> (Yǒu), fungsi asli <span class=\"hz\">天相</span> sulit muncul, sehingga ia mudah terkena penyakit kulit atau penyakit pencernaan.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Rutin jaga jantung, mata, kaki-pinggang; kelola emosi agar \"api\" tidak berlebih.</span></div></div>",
+    "_solo_jie_e_body": "<p>AVH mudah terkena penyakit jantung, gangguan penglihatan, dan gangguan indra pengecap, serta beragam bahaya yang berkaitan dengan api (<span class=\"hz\">火難</span>). Pada masa kanak-kanak ia mungkin pernah mengalami cedera atau menderita memar/bengkak, juga penyakit pada kaki dan pinggang. Bila ada bintang baik lain satu istana, kesehatannya sama sekali tidak bermasalah. Bila satu istana dengan <span class=\"hz\">貪狼</span> (Tān Láng), ia mudah terkena penyakit di bagian mata. Bila ada bintang buruk lain yang menghalangi, dikhawatirkan muncul keluhan nyeri saraf dan nyeri pinggang. <span class=\"hz\">天相</span> (Tiān Xiàng) adalah bintang baik yang membuat penyakit dan cedera tergolong jarang. Bila satu istana dengan <span class=\"hz\">紫微</span> (Zǐ Wēi), kemungkinan seumur hidup ia nyaris tak berurusan dengan dokter. Namun bila istana kesehatan berada di posisi <span class=\"hz\">卯</span> (Mǎo) atau <span class=\"hz\">酉</span> (Yǒu), fungsi asli <span class=\"hz\">天相</span> sulit muncul, sehingga ia mudah terkena penyakit kulit atau penyakit pencernaan.</p>",
+    "_solo_jie_e_action": "Rutin jaga jantung, mata, kaki-pinggang; kelola emosi agar \"api\" tidak berlebih.",
+    "_p2_qianyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Perpindahan</span><span class=\"pn-meta\">Qiān Yí<span class=\"hz\">遷移</span></span></div></div><div class=\"pal-body\"><p>AVH sama sekali tak akan bertindak gegabah; ia menjaga ketat wilayah dirinya sendiri dan selalu mengambil langkah dengan hati-hati. Setiap kali menghadapi perubahan, selalu ada urusan sial yang menimpa. Misalnya, setelah pindah rumah ternyata menemukan hunian baru yang fasilitasnya tidak lengkap; atau saat pindah ke perusahaan baru baru tahu bahwa perusahaan itu penuh konflik tak henti; atau bahkan tak lama kemudian perusahaan itu malah tutup. Pendeknya, ke mana pun ia melangkah selalu ada urusan sial yang menanti. Ia benar-benar tak punya waktu untuk menjaga ketenangan hatinya. Bila memungkinkan, sebaiknya ia sebisa mungkin tidak mengejar perubahan, dan sekalipun mengalami peristiwa tak menyenangkan apa pun, lebih baik ia menahan dan memendamnya di dalam hati.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Pertimbangkan matang sebelum pindah rumah atau ganti pekerjaan; jaga ketenangan batin saat ada perubahan.</span></div></div>",
+    "_solo_qianyi_body": "<p>AVH sama sekali tak akan bertindak gegabah; ia menjaga ketat wilayah dirinya sendiri dan selalu mengambil langkah dengan hati-hati. Setiap kali menghadapi perubahan, selalu ada urusan sial yang menimpa. Misalnya, setelah pindah rumah ternyata menemukan hunian baru yang fasilitasnya tidak lengkap; atau saat pindah ke perusahaan baru baru tahu bahwa perusahaan itu penuh konflik tak henti; atau bahkan tak lama kemudian perusahaan itu malah tutup. Pendeknya, ke mana pun ia melangkah selalu ada urusan sial yang menanti. Ia benar-benar tak punya waktu untuk menjaga ketenangan hatinya. Bila memungkinkan, sebaiknya ia sebisa mungkin tidak mengejar perubahan, dan sekalipun mengalami peristiwa tak menyenangkan apa pun, lebih baik ia menahan dan memendamnya di dalam hati.</p>",
+    "_solo_qianyi_action": "Pertimbangkan matang sebelum pindah rumah atau ganti pekerjaan; jaga ketenangan batin saat ada perubahan.",
+    "_p2_puyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pertemanan</span><span class=\"pn-meta\">Pú Yì<span class=\"hz\">僕役</span></span></div></div><div class=\"pal-body\"><p>AVH memiliki bawahan yang mantap dan cukup dapat diandalkan. Namun ia kurang mungkin memperoleh dukungan penuh dari bawahannya. Bila bawahannya seorang wanita, ia pasti bertipe sangat gigih dan suka menang. Selain itu, teman-teman dari kalangan yang lebih muda sangatlah sedikit; pun kalaupun ada, sebenarnya mereka sekadar ingin memanfaatkan dirinya saja.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun relasi atas dasar ketulusan; jeli memilih lingkaran dan tidak menaruh harap berlebih pada bawahan.</span></div></div>",
+    "_solo_puyi_body": "<p>AVH memiliki bawahan yang mantap dan cukup dapat diandalkan. Namun ia kurang mungkin memperoleh dukungan penuh dari bawahannya. Bila bawahannya seorang wanita, ia pasti bertipe sangat gigih dan suka menang. Selain itu, teman-teman dari kalangan yang lebih muda sangatlah sedikit; pun kalaupun ada, sebenarnya mereka sekadar ingin memanfaatkan dirinya saja.</p>",
+    "_solo_puyi_action": "Bangun relasi atas dasar ketulusan; jeli memilih lingkaran dan tidak menaruh harap berlebih pada bawahan.",
+    "_p3_guanlu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Karir</span><span class=\"pn-meta\">Guān Lù<span class=\"hz\">官祿</span></span></div></div><div class=\"pal-body\"><p>Profesi yang searah meliputi: tokoh agama (<span class=\"hz\">宗教家</span>), pendidik (<span class=\"hz\">教育家</span>), sastrawan (<span class=\"hz\">文學家</span>), kritikus seni (<span class=\"hz\">美術評論家</span>), serta pekerja film dan drama (<span class=\"hz\">電影、戲劇工作者</span>). AVH paling cocok pada pekerjaan intelektual yang menuntut penilaian tenang dan jernih. Bila ia menekuni profesi seperti pemrogram komputer (<span class=\"hz\">電腦程式設計師</span>), pengacara (<span class=\"hz\">律師</span>), sekretaris (<span class=\"hz\">秘書</span>), editor (<span class=\"hz\">編者</span>), atau perancang teknik (<span class=\"hz\">設計技師</span>), ia dapat berkiprah aktif di masyarakat. Namun bila istana karier berada di posisi <span class=\"hz\">巳</span> (Sì) atau <span class=\"hz\">午</span> (Wǔ), peruntungan kariernya berubah menjadi cenderung muluk-muluk dan kurang membumi. Dalam pekerjaan pun ia banyak mengalami perubahan, dan bukanlah tipe orang yang bisa tenang menetap pada satu hal saja. Yang <span class=\"hz\">天同</span> (Tiān Tóng) satu istana memiliki bakat menulis yang bagus, sehingga bila berusaha menekuni jalur kepenulisan akan sangat berhasil. Yang <span class=\"hz\">天機</span> (Tiān Jī) satu istana mengisyaratkan bahwa kerja keras yang panjang pada akhirnya akan berakhir manis, berbunga dan berbuah.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun karier intelektual yang menuntut analisis tajam; pertimbangkan jalur menulis atau perancangan.</span></div></div>",
+    "_solo_guanlu_body": "<p>Profesi yang searah meliputi: tokoh agama (<span class=\"hz\">宗教家</span>), pendidik (<span class=\"hz\">教育家</span>), sastrawan (<span class=\"hz\">文學家</span>), kritikus seni (<span class=\"hz\">美術評論家</span>), serta pekerja film dan drama (<span class=\"hz\">電影、戲劇工作者</span>). AVH paling cocok pada pekerjaan intelektual yang menuntut penilaian tenang dan jernih. Bila ia menekuni profesi seperti pemrogram komputer (<span class=\"hz\">電腦程式設計師</span>), pengacara (<span class=\"hz\">律師</span>), sekretaris (<span class=\"hz\">秘書</span>), editor (<span class=\"hz\">編者</span>), atau perancang teknik (<span class=\"hz\">設計技師</span>), ia dapat berkiprah aktif di masyarakat. Namun bila istana karier berada di posisi <span class=\"hz\">巳</span> (Sì) atau <span class=\"hz\">午</span> (Wǔ), peruntungan kariernya berubah menjadi cenderung muluk-muluk dan kurang membumi. Dalam pekerjaan pun ia banyak mengalami perubahan, dan bukanlah tipe orang yang bisa tenang menetap pada satu hal saja. Yang <span class=\"hz\">天同</span> (Tiān Tóng) satu istana memiliki bakat menulis yang bagus, sehingga bila berusaha menekuni jalur kepenulisan akan sangat berhasil. Yang <span class=\"hz\">天機</span> (Tiān Jī) satu istana mengisyaratkan bahwa kerja keras yang panjang pada akhirnya akan berakhir manis, berbunga dan berbuah.</p>",
+    "_solo_guanlu_action": "Bangun karier intelektual yang menuntut analisis tajam; pertimbangkan jalur menulis atau perancangan.",
+    "_p3_tianzhai": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Properti</span><span class=\"pn-meta\">Tián Zhái<span class=\"hz\">田宅</span></span></div></div><div class=\"pal-body\"><p>Mengisyaratkan properti tak bergerak AVH bertambah sedikit demi sedikit. Ia berjodoh dengan kawasan pedesaan, memiliki tanah dan rumah. Memulai usaha dari mengelola apartemen/rumah sewa dapat membuatnya kaya. Bila ada bintang buruk satu istana yang menghalangi, properti yang susah payah ia peroleh pada akhirnya terpaksa diserahkan ke tangan orang lain. <span class=\"hz\">紫微</span> (Zǐ Wēi) berjodoh dengan unsur Tanah, maka bila memungkinkan sebaiknya ia tinggal di daerah yang kaya akan tanah. Di satu sisi ia dapat mempertahankan properti warisan orang tua, sekaligus ia sendiri mampu mengumpulkan properti dalam jumlah besar. <span class=\"hz\">天府</span> (Tiān Fǔ) memang bintang yang menguasai kekuatan harta, sehingga peruntungan propertinya tergolong cukup stabil. Ia cocok berkembang dengan bantuan kerabat sedarah, maka bila terlalu menonjolkan diri dan melakukan transaksi properti besar-besaran, ia pasti akan tertekan. Tanah yang kering (<span class=\"hz\">乾燥之地</span>) sangat baik baginya.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Kelola properti bertahap mulai dari sewa; pilih lokasi ber-tanah dan manfaatkan bantuan kerabat.</span></div></div>",
+    "_solo_tianzhai_body": "<p>Mengisyaratkan properti tak bergerak AVH bertambah sedikit demi sedikit. Ia berjodoh dengan kawasan pedesaan, memiliki tanah dan rumah. Memulai usaha dari mengelola apartemen/rumah sewa dapat membuatnya kaya. Bila ada bintang buruk satu istana yang menghalangi, properti yang susah payah ia peroleh pada akhirnya terpaksa diserahkan ke tangan orang lain. <span class=\"hz\">紫微</span> (Zǐ Wēi) berjodoh dengan unsur Tanah, maka bila memungkinkan sebaiknya ia tinggal di daerah yang kaya akan tanah. Di satu sisi ia dapat mempertahankan properti warisan orang tua, sekaligus ia sendiri mampu mengumpulkan properti dalam jumlah besar. <span class=\"hz\">天府</span> (Tiān Fǔ) memang bintang yang menguasai kekuatan harta, sehingga peruntungan propertinya tergolong cukup stabil. Ia cocok berkembang dengan bantuan kerabat sedarah, maka bila terlalu menonjolkan diri dan melakukan transaksi properti besar-besaran, ia pasti akan tertekan. Tanah yang kering (<span class=\"hz\">乾燥之地</span>) sangat baik baginya.</p>",
+    "_solo_tianzhai_action": "Kelola properti bertahap mulai dari sewa; pilih lokasi ber-tanah dan manfaatkan bantuan kerabat.",
+    "_p3_fude": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Berkah</span><span class=\"pn-meta\">Fú Dé<span class=\"hz\">福德</span></span></div></div><div class=\"pal-body\"><p>AVH memiliki zona ketenangan secara mental, namun diam-diam ia juga punya sisi yang tersimpan dan tertahan. Pada mulanya tidak ada yang terlalu menonjol, tetapi seiring waktu, keberkahan dan kebajikan (<span class=\"hz\">福德</span>) ikut bertambah. Sikapnya dalam menghadapi orang dan urusan lembut dan luwes, namun agak kurang agresif; sebelum ia berhasil memetik buah keberhasilan lewat kerja keras, ia harus melalui rentang waktu yang cukup panjang. Bila ada bintang buruk yang masuk, ia sulit mempertahankan ketenangan dalam jangka panjang, sehingga menjadi kehidupan yang kurang stabil.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Rawat kebajikan diam-diam dan kesabaran; bangun ketekunan agar berkah bertumbuh seiring waktu.</span></div></div>",
+    "_solo_fude_body": "<p>AVH memiliki zona ketenangan secara mental, namun diam-diam ia juga punya sisi yang tersimpan dan tertahan. Pada mulanya tidak ada yang terlalu menonjol, tetapi seiring waktu, keberkahan dan kebajikan (<span class=\"hz\">福德</span>) ikut bertambah. Sikapnya dalam menghadapi orang dan urusan lembut dan luwes, namun agak kurang agresif; sebelum ia berhasil memetik buah keberhasilan lewat kerja keras, ia harus melalui rentang waktu yang cukup panjang. Bila ada bintang buruk yang masuk, ia sulit mempertahankan ketenangan dalam jangka panjang, sehingga menjadi kehidupan yang kurang stabil.</p>",
+    "_solo_fude_action": "Rawat kebajikan diam-diam dan kesabaran; bangun ketekunan agar berkah bertumbuh seiring waktu.",
+    "_p3_fumu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Orang Tua</span><span class=\"pn-meta\">Fù Mǔ<span class=\"hz\">父母</span></span></div></div><div class=\"pal-body\"><p>AVH memiliki orang tua yang lembut dan rasional. Ia terutama banyak menerima limpahan kasih dari sang ibu. Namun benturan dengan orang tua terjadi terus-menerus; anehnya, bila ia keluar dari rumah, hubungan justru bisa menjadi harmonis di luar dugaan. Orang tuanya biasanya tenang dan tenang-tenteram, tetapi sekali marah, ledakannya dahsyat bagai gunung berapi meletus. Selain itu, apa pun yang sedang ia pikirkan akan langsung terbaca oleh mereka, sehingga ia sama sekali tak bisa berbohong di hadapan orang tua. Bertengkar dengan orang tua lalu pergi dari rumah, begitulah kira-kira gambaran masa kecilnya. Yang <span class=\"hz\">武曲</span> (Wǔ Qū) atau <span class=\"hz\">廉貞</span> (Lián Zhēn) satu istana akan berpisah dengan orang tua sejak dini. Namun bila ada <span class=\"hz\">紫微</span> (Zǐ Wēi) satu istana, walaupun antara orang tua dan anak jarang bertengkar, hubungan kekerabatan itu sama sekali tak sampai terputus.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga keterbukaan dengan orang tua; redakan benturan dengan kesabaran, beri jarak sehat bila perlu.</span></div></div>",
+    "_solo_fumu_body": "<p>AVH memiliki orang tua yang lembut dan rasional. Ia terutama banyak menerima limpahan kasih dari sang ibu. Namun benturan dengan orang tua terjadi terus-menerus; anehnya, bila ia keluar dari rumah, hubungan justru bisa menjadi harmonis di luar dugaan. Orang tuanya biasanya tenang dan tenang-tenteram, tetapi sekali marah, ledakannya dahsyat bagai gunung berapi meletus. Selain itu, apa pun yang sedang ia pikirkan akan langsung terbaca oleh mereka, sehingga ia sama sekali tak bisa berbohong di hadapan orang tua. Bertengkar dengan orang tua lalu pergi dari rumah, begitulah kira-kira gambaran masa kecilnya. Yang <span class=\"hz\">武曲</span> (Wǔ Qū) atau <span class=\"hz\">廉貞</span> (Lián Zhēn) satu istana akan berpisah dengan orang tua sejak dini. Namun bila ada <span class=\"hz\">紫微</span> (Zǐ Wēi) satu istana, walaupun antara orang tua dan anak jarang bertengkar, hubungan kekerabatan itu sama sekali tak sampai terputus.</p>",
+    "_solo_fumu_action": "Jaga keterbukaan dengan orang tua; redakan benturan dengan kesabaran, beri jarak sehat bila perlu.",
+    "_kes_narrative": "<p>AVH lahir 10 Maret 1983 pukul 05:30 dengan shio Babi (<span class=\"hz\">豬</span>/<span class=\"hz\">亥</span> Hài). Penguasa hidupnya adalah Api Yin (<span class=\"hz\">丁火</span> Dīng Huǒ, nyala lilin yang lembut namun terang) berstatus <strong>Kuat</strong> (<span class=\"hz\">旺</span> Wàng) dengan skor pendukung +5160 dan penekan -3700. Format hidupnya <span class=\"hz\">偏印格</span> (Piān Yìn Gé, Cetakan Tak Langsung) — sosok berpikiran tajam, intuitif, mandiri, dan kaya daya adaptasi.</p><p>Karena Api dirinya sudah kuat (didukung Kayu <span class=\"hz\">木</span> sebanyak 4 sebagai sumber api), unsur sahabatnya justru yang menyalurkan dan menyeimbangkan: Tanah (<span class=\"hz\">土</span> Tǔ) sebagai <span class=\"hz\">用神</span> (Yòng Shén, penyalur tenaga keluar) dan Logam (<span class=\"hz\">金</span> Jīn) sebagai <span class=\"hz\">喜神</span> (Xǐ Shén, harta penyenang), dengan Air (<span class=\"hz\">水</span> Shuǐ) sebagai <span class=\"hz\">閒神</span> (Xián Shén, netral); sementara Api (<span class=\"hz\">火</span> Huǒ) sebagai <span class=\"hz\">忌神</span> (Jì Shén) dan Kayu (<span class=\"hz\">木</span> Mù) sebagai <span class=\"hz\">仇神</span> (Chóu Shén) perlu diwaspadai karena menambah panas yang sudah berlebih. Karakter intinya mengutamakan kesetiaan di atas harta, jujur dan terus terang, terbuka apa adanya hingga tak bisa menyimpan rahasia.</p><p>Bintang utama Istana Hidup (<span class=\"hz\">命宮</span> di <span class=\"hz\">亥</span>) adalah <span class=\"hz\">太陽</span> (Tài Yáng, Matahari) — energik, terang, jujur blak-blakan, dan piawai bergaul. <span class=\"hz\">命主</span> (penguasa hidup) <span class=\"hz\">巨門</span> dan <span class=\"hz\">身主</span> (penguasa raga) <span class=\"hz\">天機</span>, dengan struktur <span class=\"hz\">水二局</span>. Industri searah meliputi jalur ber-Tanah (konstruksi, properti, material bangunan, antik, konsultan) sebagai 用神, didukung jalur ber-Logam (baja, mesin, hukum, akuntansi, keuangan). Da Yun saat ini (usia 42-51, <span class=\"hz\">庚戌</span> gēng-xū berakar Anjing/<span class=\"hz\">正財</span> Zhèng Cái - rezeki tetap) adalah fase memetik hasil materi yang stabil, beralih ke fase <span class=\"hz\">己酉</span> yǐ-yǒu/<span class=\"hz\">食神</span> (Shí Shén, ekspresi &amp; berkah) di usia 52-61.</p><p>Untuk jodoh, pasangan paling cocok (<span class=\"hz\">大吉</span>) adalah shio Kambing (<span class=\"hz\">未</span>) dan Kelinci (<span class=\"hz\">卯</span>); shio Macan (<span class=\"hz\">寅</span>) tergolong setengah baik-buruk (<span class=\"hz\">吉凶相半</span>); shio lain tergolong cocok tingkat dua (<span class=\"hz\">次吉</span>). Hindari shio Ular (<span class=\"hz\">巳</span>), Monyet (<span class=\"hz\">申</span>), dan Babi (<span class=\"hz\">亥</span>).</p><p>Untuk kesehatan, titik rawan ada pada jantung (<span class=\"hz\">心</span> xīn), mata (<span class=\"hz\">眼</span> yǎn), serta kaki dan pinggang (<span class=\"hz\">足腰</span>). Untuk hunian, gua <span class=\"hz\">艮</span> (Gèn, gunung) — rumah baik menghadap dari Timur Laut ke Barat Daya (<span class=\"hz\">宅宜坐東北向西南大吉</span>).</p><p>Intinya: kecerdasan tajam dan intuisi <span class=\"hz\">偏印格</span> akan berbuah saat AVH menyalurkan tenaga apinya yang kuat lewat karya konkret bermuatan Tanah dan Logam, menahan diri dari kobaran emosi, dan menjaga kesetiaan serta ketenangan batin.</p>",
+    "_kes_stats": "\n      <div class=\"kes-stat s1\"><div class=\"ks-eb\">Penguasa Hari · 日主</div><div class=\"ks-num\"><span class=\"hz\">丁火</span><span class=\"unit\">KUAT · 旺</span></div><div class=\"ks-title\">Api Lilin Kuat</div><div class=\"ks-desc\">Total Wu Xing 8, 火 <strong>12.5%</strong> dari distribusi total</div></div>\n      <div class=\"kes-stat s2\"><div class=\"ks-eb\">Format · 格局</div><div class=\"ks-num\"><span class=\"hz\">偏印格</span><span class=\"unit\">FORMAT</span></div><div class=\"ks-title\">Pian Yin Ge, Mentor Bayangan</div><div class=\"ks-desc\">Format <span class=\"hz\">偏印格</span> (Piān Yìn Gé, Cetakan Tak Langsung) memberi ketajaman intuisi dan kemandirian; day master kuat (<span class=\"hz\">丁火</span> +5160).</div></div>\n      <div class=\"kes-stat s3\"><div class=\"ks-eb\">Yong Shen · 喜用神</div><div class=\"ks-num\"><span class=\"hz\">土</span><span class=\"unit\">MENDUKUNG</span></div><div class=\"ks-title\">Tanah, Penopang &amp; Pengarah</div><div class=\"ks-desc\"><span class=\"hz\">用神</span> (Yòng Shén, unsur pengguna) <span class=\"hz\">土</span> (Tǔ, Tanah) paling efektif lewat properti, konstruksi, konsultan, didukung <span class=\"hz\">金</span>.</div></div>\n      <div class=\"kes-stat s4\"><div class=\"ks-eb\">Da Yun · 大運</div><div class=\"ks-num\">Fase 5<span class=\"unit\">dari 10</span></div><div class=\"ks-title\">Fase Rezeki Tetap (42-51)</div><div class=\"ks-desc\">Fase <span class=\"hz\">正財</span> (Zhèng Cái, Rezeki Tetap, 42-51) memetik hasil materi, menuju <span class=\"hz\">食神</span> (Shí Shén, Berkah Ekspresi, 52-61).</div></div>\n      <div class=\"kes-stat s5\"><div class=\"ks-eb\">Umur Subjek</div><div class=\"ks-num\">44<span class=\"unit\">tahun</span></div><div class=\"ks-title\">Era 40–49</div><div class=\"ks-desc\">Dekade 40-an: serangkaian tahun kerja keras + waspada kesehatan + peluang orang mulia menolong.</div></div>\n      <div class=\"kes-stat s6\"><div class=\"ks-eb\">Jodoh · 婚配 / 陽宅</div><div class=\"ks-num\">2 <span class=\"unit\">cocok · 4 hindari</span></div><div class=\"ks-desc\">Cocok shio <span class=\"hz\">未</span> (Kambing), <span class=\"hz\">卯</span> (Kelinci); waspada <span class=\"hz\">寅</span> (Macan, 吉凶相半); hindari <span class=\"hz\">巳</span> (Ular), <span class=\"hz\">申</span> (Monyet), <span class=\"hz\">亥</span> (Babi).</div></div>\n    ",
+    "_kes_age": "44",
+    "_kes_lifemap": "\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">過<span class=\"id-label\">Lalu</span></div><div class=\"klm-row-text\"><span class=\"lbl\">MASA LALU</span>Usia 2-41 (fase <span class=\"hz\">正印</span> hingga <span class=\"hz\">偏財</span>): menyerap ilmu, menempa ketahanan, membangun kedudukan, dan menjelajah peluang rezeki di dunia luar.</div></div>\n          <div class=\"klm-row now\"><div class=\"klm-row-icon\">今<span class=\"id-label\">Kini</span></div><div class=\"klm-row-text\"><span class=\"lbl\">SEKARANG</span>Usia 42-51 (fase <span class=\"hz\">庚戌</span>/<span class=\"hz\">正財</span>): memetik hasil materi yang stabil; tahun 2026 (<span class=\"hz\">丙午</span> bǐng-wǔ, Api Yang berakar Kuda) menjadi tahun kerja keras dengan tekanan suasana hati.</div></div>\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">未<span class=\"id-label\">Nanti</span></div><div class=\"klm-row-text\"><span class=\"lbl\">BERIKUTNYA</span>Usia 52-61 (fase <span class=\"hz\">己酉</span>/<span class=\"hz\">食神</span>): ekspresi bakat dan limpahan berkah, buah dari fondasi yang ditanam sekarang.</div></div>\n        ",
+    "_kes_position": "\n          <div class=\"klp-eb\">Posisi Sekarang</div>\n          <div class=\"klp-hz\">夏</div>\n          <div class=\"klp-id\">Xià, \"Musim Panas Hidup\"</div>\n          <div class=\"klp-bar\">\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell now\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n          </div>\n          <div class=\"klp-meta\">Fase <strong>5 dari 10</strong> · Umur <strong>42-51</strong> · <strong>火 Api</strong> dominan · Musim Panas Hidup</div>\n        ",
+    "_syn_attrib": "Api Lilin · 偏印格 · Pian Yin Ge",
+    "_syn_trio": "\n      <div class=\"syn-card strength\">\n        <div class=\"syn-card-num\">力</div>\n        <div class=\"syn-card-eyebrow\">Kekuatan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">重義</span>\n          <span class=\"syn-card-id\">Zhòng Yì</span>\n          <span class=\"syn-card-arti\">\"Menjunjung Kesetiaan\"</span>\n        </div>\n        <div class=\"syn-card-body\">AVH mengutamakan kesetiaan dan nilai di atas harta, jujur tanpa kepura-puraan, dermawan, dan terbuka. Dipertajam format <span class=\"hz\">偏印格</span> yang membuatnya cerdas, intuitif, dan cepat menyesuaikan diri saat menyadari ada cara yang keliru.</div>\n      </div>\n      <div class=\"syn-card challenge\">\n        <div class=\"syn-card-num\">驗</div>\n        <div class=\"syn-card-eyebrow\">Tantangan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">直言</span>\n          <span class=\"syn-card-id\">Zhí Yán</span>\n          <span class=\"syn-card-arti\">\"Terlalu Blak-blakan\"</span>\n        </div>\n        <div class=\"syn-card-body\">Tak mampu menyimpan rahasia dan terlalu terus terang hingga kadang menyinggung orang; sulit menerima nasihat orang tua maupun pasangan. Tenaga apinya mudah berkobar lalu padam, kerap berkepala besar berekor kecil. Ini area pertumbuhan yang perlu disadari.</div>\n      </div>\n      <div class=\"syn-card action\">\n        <div class=\"syn-card-num\">為</div>\n        <div class=\"syn-card-eyebrow\">Tindakan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">立業</span>\n          <span class=\"syn-card-id\">Lì Yè</span>\n          <span class=\"syn-card-arti\">\"Membangun Karier\"</span>\n        </div>\n        <div class=\"syn-card-body\">Profesi searah: properti (<span class=\"hz\">房地產買賣</span>), konstruksi (<span class=\"hz\">建築</span>), konsultan (<span class=\"hz\">顧問</span>), keuangan (<span class=\"hz\">金融界</span>), mesin (<span class=\"hz\">機械</span>) — jalur ber-unsur Tanah (<span class=\"hz\">用神</span>) dan Logam (<span class=\"hz\">喜神</span>). Diperkuat bintang <span class=\"hz\">驛馬</span> yang membuka peluang lewat mobilitas.</div>\n      </div>\n    ",
+    "_syn_actions": "\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">1</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">\"Pilih jalur karier yang searah\"</div>\n            <div class=\"syn-action-context\">\"Bidang searah: properti, konstruksi, konsultan-geomansi (ber-unsur <span class=\"hz\">土</span>) dan keuangan, mesin, hukum (ber-unsur <span class=\"hz\">金</span>). Hindari bidang ber-unsur Api (<span class=\"hz\">火</span>) dan Kayu (<span class=\"hz\">木</span>).\"</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">2</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">\"Wujudkan pemasukan jadi aset berwujud\"</div>\n            <div class=\"syn-action-context\">\"正財 berlimpah tapi renggang, 偏財 mudah datang juga mudah pergi</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">3</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">\"Latih ketekunan sampai tuntas\"</div>\n            <div class=\"syn-action-context\">\"Kecenderungan virtuoso awal lalu kendur (虎頭蛇尾). Pecah target jadi tahapan kecil agar tidak berhenti di tengah jalan.\"</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">4</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">\"Jaga organ tubuh yang rawan\"</div>\n            <div class=\"syn-action-context\">\"Jantung (<span class=\"hz\">心</span>), mata (<span class=\"hz\">眼</span>), kaki dan pinggang (<span class=\"hz\">足腰</span>) adalah titik rentan utama. Kelola emosi agar 'api' tidak berlebih, jaga pola istirahat.\"</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">5</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">\"Hadapi pola kekakuan dengan keluarga secara sadar\"</div>\n            <div class=\"syn-action-context\">\"Tendensi sulit terima nasihat orang tua dan pasangan. Membuka diri mendengar (meski tidak setuju) mencegah konflik berlarut dan menjaga harmoni.\"</div>\n          </div>\n        </div>\n      ",
+    "_career_wuxing": "\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">水 Air<span class=\"v\">3</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">木 Kayu<span class=\"v\">3</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:33%\"></div></div>\n          <div class=\"wux-label\">金 Logam<span class=\"v\">1</span></div>\n        </div>\n        <div class=\"wux-cell self\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:33%\"></div></div>\n          <div class=\"wux-label\">火 Api<span class=\"v\">1</span></div>\n        </div>\n        <div class=\"wux-cell fav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:0%\"></div></div>\n          <div class=\"wux-label\">土 Tanah<span class=\"v\">0</span></div>\n        </div>\n",
+    "_career_title": "Tanah adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini",
+    "_career_avoid": "Industri ber-unsur <strong>火 (Api)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.",
+    "_career_tags": "\n          <span class=\"insight-tag\">土 \"TANAH\"</span>\n          <span class=\"insight-tag\">金 \"LOGAM\"</span>\n          <span class=\"insight-tag bad\">火 \"PANAS\"</span>\n          <span class=\"insight-tag bad\">木 \"BAKAR\"</span>\n        ",
+    "_career_industri": "\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">🏛️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">\"<span class=\"hz\">房地產買賣</span> / Properti &amp; Real Estate\"</div>\n            <div class=\"ind-reason\">Unsur 土, layar 事業 sebut langsung 房地產買賣、建築</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:95%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">🏛️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">\"<span class=\"hz\">建築</span> / Konstruksi &amp; Material\"</div>\n            <div class=\"ind-reason\">Unsur 土, layar 事業 sebut 建築、水泥建材</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:88%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">🏛️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">\"<span class=\"hz\">顧問</span> / Konsultan &amp; Geomansi\"</div>\n            <div class=\"ind-reason\">Unsur 土, layar 事業 sebut 顧問、地師、古董</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:82%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">⚙️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">\"<span class=\"hz\">金融界</span> / Keuangan &amp; Akuntansi\"</div>\n            <div class=\"ind-reason\">Unsur 金, layar 事業 sebut 金融界、會計</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:76%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">⚙️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">\"<span class=\"hz\">機械</span> / Mesin &amp; Logam Berat\"</div>\n            <div class=\"ind-reason\">Unsur 金, layar 事業 sebut 機械、鋼鐵工廠、五金行</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:70%\"></div></div>\n          </div>\n        </div>\n",
+    "shensha_star_hz": "驛馬",
+    "shensha_star_pinyin": "Yì Mǎ",
+    "shensha_star_label": "\"\"Bintang Kuda Perpindahan\"\"",
+    "shensha_star_active": "★ \"AKTIF SEKARANG\" ★",
+    "shensha_strip": "AVH dinamis dan gemar bergerak; arahkan energi perpindahan ke peluang nyata dan jaga agar harta tidak ikut berpencar.",
+    "shensha_trio_cards": "<div class=\"sst-card\"><div class=\"sst-hz\">驛馬</div><div class=\"sst-meta\"><div class=\"sst-id\">Bintang Perpindahan</div><div class=\"sst-pinyin\">Yì Mǎ</div></div><div class=\"sst-body\"><strong>Foto verbatim:</strong> <span class=\"hz\">勞祿好動, 奔波遠行, 多旅行運, 住家及事業多變動.</span><br><br>Aktif & gemar bergerak, perjalanan jauh, keberuntungan dari travel, rumah & pekerjaan banyak berubah.</div></div>",
+    "_xqcards": "\n      <div class=\"xq-card power\">\n        <div class=\"xqc-eb\">魄 力 · Kekuatan</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">優勢</span><span class=\"xqc-name\">Yōu Shì<br>Keunggulan</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Energik dan bersemangat, penuh daya gerak untuk mengejar tujuan</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Jujur, terus terang, tanpa kepura-puraan</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Cerdas, intuitif, dan cepat menyesuaikan cara saat keliru</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Mengutamakan kesetiaan dan nilai di atas harta</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card shadow\">\n        <div class=\"xqc-eb\">陰 影 · Shadow</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">隱 患</span><span class=\"xqc-name\">Yǐn Huàn<br>Sisi Gelap</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Sulit menyimpan rahasia, terlalu blak-blakan hingga dianggap menyebalkan</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Sulit menerima nasihat orang tua maupun pasangan</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Tenaga api besar mudah berkobar lalu padam, kurang konsisten sampai akhir</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Cenderung \"berkepala besar berekor kecil\", awal semangat akhir kendur</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card optimum\">\n        <div class=\"xqc-eb\">最 佳 · Optimum</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">應 用</span><span class=\"xqc-name\">Yīng Yòng<br>Cara Optimal</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Salurkan tenaga lewat karya konkret ber-unsur [[土]] (properti, konstruksi, konsultan)</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Dukung dengan bidang ber-unsur [[金]] (keuangan, mesin, hukum)</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Latih ketekunan agar tidak berhenti di tengah jalan</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Jaga kesehatan jantung, mata, dan pinggang sebagai pilar daya tahan</span></div>\n        </div>\n      </div>\n    "
+  }
+}

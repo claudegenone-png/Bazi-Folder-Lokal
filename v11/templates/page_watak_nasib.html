@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>{{SUBJECT_NAME_FULL}}, 先天論命 Watak & Nasib Bawaan</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-wn { display: flex; flex-direction: column; gap: 3.5mm; }
+  .wn-block { background: var(--bg-card); border: 0.3mm solid var(--gold-soft); border-radius: 2mm; padding: 3.5mm 4.5mm; display: flex; flex-direction: column; gap: 2mm; }
+  .wn-eyebrow { border-bottom: 0.2mm solid var(--gold-soft); padding-bottom: 1.5mm; display: flex; justify-content: space-between; align-items: baseline; }
+  .wn-eyebrow .id { font-family: 'Playfair Display', serif; font-size: 12pt; color: var(--red); font-weight: 700; letter-spacing: 0.5px; }
+  .wn-eyebrow .id .sub { font-family: 'Inter', sans-serif; font-size: 6.5pt; color: var(--text-muted); font-style: italic; font-weight: 400; letter-spacing: 0.5px; margin-left: 2.5mm; }
+  .wn-eyebrow .hz { font-family: 'Noto Serif TC', serif; font-size: 9pt; color: var(--text-muted); font-weight: 600; letter-spacing: 3px; }
+  .wn-poem { display: grid; grid-template-columns: auto 1fr; column-gap: 4mm; align-items: center; background: rgba(255,248,225,0.5); border-left: 0.6mm solid var(--red); border-radius: 1.5mm; padding: 2.5mm 4mm; }
+  .wn-poem-label { display:flex; flex-direction:column; align-items:center; gap:0.4mm; min-width:13mm; }
+  .wn-poem-label .hz { font-family:'Noto Serif TC',serif; font-size:9pt; color:var(--red); font-weight:700; letter-spacing:2px; }
+  .wn-poem-label .id { font-family:'Inter',sans-serif; font-size:5.5pt; color:var(--text-muted); font-style:italic; }
+  .wn-poem-body { display:flex; flex-direction:column; gap:1mm; }
+  .wn-poem-hz { font-family:'Noto Serif TC',serif; font-size:8.5pt; color:var(--text); line-height:1.5; letter-spacing:0.5px; }
+  .wn-poem-hz span { display:inline-block; margin-right:4mm; }
+  .wn-poem-id { font-family:'Inter',sans-serif; font-size:6.6pt; color:var(--text-muted); font-style:italic; line-height:1.45; border-top:0.15mm dashed var(--gold-soft); padding-top:1mm; }
+  .wn-prose { font-family:'Inter',sans-serif; font-size:8pt; color:var(--text); line-height:1.6; text-align:justify; }
+  .wn-prose + .wn-prose { margin-top:1.5mm; }
+  .wn-prose strong { font-weight:700; color:var(--text); }
+  .hzin, .wn-prose .hz { font-family:'Noto Serif TC',serif; color:var(--red); font-weight:600; font-size:0.95em; }
+</style>
+</head>
+<body>
+<section class="page">
+
+  <header class="page-header">
+    <div class="h-num">{{PAGE_NUM_PADDED}}</div>
+    <div class="h-titles">
+      <div class="h-cn">先 天 論 命</div>
+      <div class="h-id">Watak &amp; Nasib Bawaan</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi · 先天論命</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="{{SHIO_SVG_FILE}}" alt="{{SUBJECT_SHIO_ID_UPPER}}"></div>
+    <div class="subject-meta">
+      <div class="subject-name">{{SUBJECT_NAME_FULL}} · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">{{SUBJECT_SHIO_BRANCH_HZ}} {{SUBJECT_SHIO_ID_TITLE}}</span></div>
+      <div class="subject-detail">{{SUBJECT_BIRTH_FULL}}</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">先天論命</div>
+      <div class="value">Watak &amp; Nasib</div>
+    </div>
+  </div>
+
+  <main class="content content-wn">
+
+    <div class="wn-block">
+      <div class="wn-eyebrow">
+        <span class="id">Watak Umum<span class="sub">Xìng Qíng Zǒng Lùn</span></span>
+        <span class="hz">性 情 總 論</span>
+      </div>
+      <div class="wn-poem">
+        <div class="wn-poem-label"><span class="hz">詩 曰</span><span class="id">Puisi Berkata</span></div>
+        <div class="wn-poem-body">
+          <div class="wn-poem-hz">{{XINGQING_POEM_HZ}}</div>
+          <div class="wn-poem-id">{{XINGQING_POEM_ID}}</div>
+        </div>
+      </div>
+      <div data-slot="xingqing-prose">{{XINGQING_PROSE_HTML}}</div>
+    </div>
+
+    <div class="wn-block">
+      <div class="wn-eyebrow">
+        <span class="id">Rezeki &amp; Berkah<span class="sub">Fú Lù Zǒng Lùn</span></span>
+        <span class="hz">福 祿 總 論</span>
+      </div>
+      <div data-slot="fulu">{{FULU_BODY_HTML}}</div>
+    </div>
+
+    <div class="wn-block">
+      <div class="wn-eyebrow">
+        <span class="id">Ikhtisar Nasib<span class="sub">Mìng Yùn Gài Lùn</span></span>
+        <span class="hz">命 運 概 論</span>
+      </div>
+      <div data-slot="mingyun">{{MINGYUN_BODY_HTML}}</div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-meta">
+      <span>Halaman {{PAGE_NUM}} / {{TOTAL_PAGES}}</span>
+      <span>Ramalan 命</span>
+    </div>
+  </footer>
+
+</section>
+</body>
+</html>

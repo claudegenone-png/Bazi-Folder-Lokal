@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>TAN MEGA, 事業 Karir &amp; Profesi</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* Page-specific additions */
+  .insight-card {
+    background: linear-gradient(160deg, #FFFEF8 0%, #F5EBD0 100%);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 5mm;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 2.5mm;
+    overflow: hidden;
+  }
+  .insight-eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 7pt;
+    letter-spacing: 3px;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .insight-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 14pt;
+    color: var(--red);
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  .insight-body {
+    font-size: 7.5pt;
+    line-height: 1.45;
+    color: var(--text);
+  }
+  .insight-body strong { color: var(--red); font-weight: 600; }
+  .insight-body .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red);
+    font-weight: 600;
+  }
+  .insight-tags {
+    display: flex; gap: 2mm; flex-wrap: wrap;
+    margin-top: 1mm;
+  }
+  .insight-tag {
+    background: var(--green-bg);
+    color: var(--green);
+    font-size: 7pt;
+    padding: 0.8mm 2.5mm;
+    border-radius: 5mm;
+    border: 0.2mm solid var(--green);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .insight-tag.bad {
+    background: var(--red-bad-bg);
+    color: var(--red-bad);
+    border-color: var(--red-bad);
+  }
+
+  /* Industri row with fit bar */
+  .ind-row { grid-template-columns: 9mm 1fr 28mm !important; }
+  .fit-col {
+    display: flex; flex-direction: column; gap: 0.8mm;
+    align-items: stretch; justify-content: center;
+    min-width: 0;
+  }
+  .fit-bar-track {
+    height: 2.5mm;
+    background: rgba(0,0,0,0.05);
+    border-radius: 1.25mm;
+    overflow: hidden;
+  }
+  .fit-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--green) 0%, #4FA77F 100%);
+    border-radius: 1.25mm;
+  }
+  .ind-row:not(.top) .fit-bar-fill {
+    background: linear-gradient(90deg, var(--gold) 0%, #DCC68A 100%);
+  }
+  .fit-meta {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 6.5pt; color: var(--text-muted);
+    letter-spacing: 0.5px;
+  }
+  .fit-meta .score {
+    font-family: 'Playfair Display', serif;
+    font-size: 9pt;
+    color: var(--text);
+    font-weight: 600;
+  }
+  .ind-row.top .fit-meta .score { color: var(--green); }
+
+/* V7 Phase 4B layout overhaul (conditional on foto-source data) */
+.career-main{grid-template-columns:1fr!important;grid-template-rows:auto auto!important;gap:3mm!important;}
+.insight-card{grid-template-rows:auto auto auto!important;}
+.insight-tags{display:none!important;}
+.insight-body{font-size:7.8pt!important;line-height:1.55!important;}
+.industri-list{height:auto!important;overflow:visible!important;}
+
+.industri-grid{display:flex;flex-direction:column;gap:2mm;padding:2mm 0;height:auto!important;overflow:visible;}
+.ig-section{display:flex;flex-direction:column;gap:1mm;}
+.ig-header{font-family:"Noto Serif TC",serif;font-size:8pt;font-weight:700;letter-spacing:1.2px;padding:1mm 2mm;border-radius:1.5mm;}
+.ig-section.fav .ig-header{background:rgba(90,140,74,0.12);color:var(--green);border-left:0.6mm solid var(--green);}
+.ig-section.sup .ig-header{background:rgba(201,169,97,0.12);color:var(--gold);border-left:0.6mm solid var(--gold);}
+.ig-badges{display:flex;flex-wrap:wrap;gap:1.2mm;padding:0.5mm 1mm;}
+.ind-badge{display:inline-flex;align-items:baseline;gap:0.8mm;padding:0.6mm 2mm;border-radius:4mm;background:#FFFEF8;border:0.2mm solid var(--gold-soft);font-size:6.5pt;color:var(--text);line-height:1.2;white-space:nowrap;}
+.ig-section.fav .ind-badge{border-color:var(--green);background:rgba(90,140,74,0.06);}
+.ig-section.sup .ind-badge{border-color:var(--gold-soft);background:rgba(201,169,97,0.06);}
+.ind-badge .hz{font-family:"Noto Serif TC",serif;font-size:7.5pt;color:var(--red);font-weight:700;letter-spacing:0.3px;}
+.ind-badge .id{font-family:"Inter",sans-serif;font-size:5.8pt;color:var(--text-muted);font-weight:500;}
+</style>
+</head>
+<body>
+<section class="page">
+
+  <!-- KEPALA -->
+  <header class="page-header">
+    <div class="h-num">10</div>
+    <div class="h-titles">
+      <div class="h-cn">事 業</div>
+      <div class="h-id">Karir &amp; Profesi</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <!-- BAR SUBJEK -->
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Babi-Merah.svg" alt="Babi"></div>
+    <div class="subject-meta">
+      <div class="subject-name">TAN MEGA · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">亥 Babi</span></div>
+      <div class="subject-detail">13 Juli 1995 · 02:32 · Wanita · Umur 32 tahun · 大運 丙戌 (食神)</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">乙木 · Pohon Kecil</div>
+    </div>
+  </div>
+
+  <!-- KONTEN -->
+  <main class="content content-career">
+
+    <!-- WU XING STRIP -->
+    <div class="wuxing-strip">
+      <div class="label">五 行</div>
+      <div class="wuxing-bar">
+<!-- TAFSIR:_career_wuxing -->
+        <div class="wux-cell">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:100%"></div></div>
+          <div class="wux-label">水 Air<span class="v">2</span></div>
+        </div>
+        <div class="wux-cell self">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:100%"></div></div>
+          <div class="wux-label">木 Kayu<span class="v">2</span></div>
+        </div>
+        <div class="wux-cell fav">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:100%"></div></div>
+          <div class="wux-label">火 Api<span class="v">2</span></div>
+        </div>
+        <div class="wux-cell">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:100%"></div></div>
+          <div class="wux-label">土 Tanah<span class="v">2</span></div>
+        </div>
+        <div class="wux-cell">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:0%"></div></div>
+          <div class="wux-label">金 Logam<span class="v">0</span></div>
+        </div>
+<!-- /TAFSIR -->
+      </div>
+    </div>
+
+    <!-- MAIN: INSIGHT + INDUSTRI -->
+    <div class="career-main">
+
+      <!-- WAWASAN -->
+      <div class="insight-card">
+        <div class="insight-eyebrow">Wawasan Utama</div>
+        <div class="insight-title"><!-- TAFSIR:_career_title -->Api adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini<!-- /TAFSIR --></div>
+        <div class="insight-body">
+<!-- TAFSIR:career --><ul><li><strong>Kosmetik &amp; Kecantikan</strong> (unsur 火), Foto 事業 menyebut 湯髮美容/化妝品, searah Api sebagai 用神</li><li><strong>Elektronik &amp; Optik</strong> (unsur 火), Foto 事業 menyebut 電器/光學/眼鏡, bersifat cahaya dan panas</li><li><strong>Properti &amp; Konstruksi</strong> (unsur 土), Foto 事業 menyebut 建築/水泥建材/房地產買賣, searah Tanah sebagai 喜神</li><li><strong>Desain &amp; Seni</strong> (unsur 火), Bintang 華蓋 dari foto 神煞 menunjukkan bakat seni, desain, dan dekorasi</li><li><strong>Konsultan &amp; Penasihat</strong> (unsur 土), Foto 事業 menyebut 顧問, cocok dengan kemampuan analitik dan adaptif 乙木</li></ul><!-- /TAFSIR -->
+        </div>
+        <div class="insight-tags">
+<!-- TAFSIR:_career_tags -->
+          <span class="insight-tag">火 Api (energi & cahaya)</span>
+          <span class="insight-tag">土 Tanah (properti & bangunan)</span>
+          <span class="insight-tag bad">木 Kayu (berlebih, perlu hati-hati)</span>
+          <span class="insight-tag bad">水 Air (melemahkan)</span>
+        <!-- /TAFSIR -->
+        </div>
+      </div>
+
+      <!-- INDUSTRI LIST -->
+      <div class="industri-list industri-grid">
+        <div class="ig-section fav">
+          <div class="ig-header">✓ Searah · 13 bidang</div>
+          <div class="ig-badges">
+          <span class="ind-badge"><span class="hz">火熱光性工廠</span><span class="id">Pabrik bersifat panas/cahaya</span></span>
+          <span class="ind-badge"><span class="hz">眼相</span><span class="id">Optik/kacamata</span></span>
+          <span class="ind-badge"><span class="hz">電器</span><span class="id">Elektronik</span></span>
+          <span class="ind-badge"><span class="hz">光學</span><span class="id">Optik</span></span>
+          <span class="ind-badge"><span class="hz">眼鏡</span><span class="id">Kacamata</span></span>
+          <span class="ind-badge"><span class="hz">熱食小吃</span><span class="id">Makanan panas & jajanan</span></span>
+          <span class="ind-badge"><span class="hz">食品工廠</span><span class="id">Pabrik makanan</span></span>
+          <span class="ind-badge"><span class="hz">湯髮美容</span><span class="id">Salon rambut & kecantikan</span></span>
+          <span class="ind-badge"><span class="hz">衣帽百貨</span><span class="id">Pakaian & topi</span></span>
+          <span class="ind-badge"><span class="hz">計論家</span><span class="id">Komentator/kritikus</span></span>
+          <span class="ind-badge"><span class="hz">化妝品</span><span class="id">Kosmetik</span></span>
+          <span class="ind-badge"><span class="hz">軍界</span><span class="id">Militer</span></span>
+          <span class="ind-badge"><span class="hz">煙酒</span><span class="id">Tembakau & minuman keras</span></span>
+          </div>
+        </div>
+        <div class="ig-section sup">
+          <div class="ig-header">◎ Pendukung · 10 bidang</div>
+          <div class="ig-badges">
+          <span class="ind-badge"><span class="hz">建築</span><span class="id">Konstruksi/bangunan</span></span>
+          <span class="ind-badge"><span class="hz">當鋪</span><span class="id">Pegadaian</span></span>
+          <span class="ind-badge"><span class="hz">畜牧</span><span class="id">Peternakan</span></span>
+          <span class="ind-badge"><span class="hz">水泥建材</span><span class="id">Semen & bahan bangunan</span></span>
+          <span class="ind-badge"><span class="hz">房地產買賣</span><span class="id">Jual beli properti</span></span>
+          <span class="ind-badge"><span class="hz">殯儀館</span><span class="id">Rumah duka</span></span>
+          <span class="ind-badge"><span class="hz">墓碑石店</span><span class="id">Toko batu nisan</span></span>
+          <span class="ind-badge"><span class="hz">地師</span><span class="id">Konsultan feng shui</span></span>
+          <span class="ind-badge"><span class="hz">古董</span><span class="id">Antik</span></span>
+          <span class="ind-badge"><span class="hz">顧問</span><span class="id">Konsultan</span></span>
+          </div>
+        </div>
+      </div>
+    <!-- AVOID -->
+    <div class="avoid-strip">
+      <div class="avoid-label">忌 Hindari</div>
+      <div class="avoid-text">
+<!-- TAFSIR:_career_avoid -->Industri ber-unsur <strong>木 (Kayu)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.<!-- /TAFSIR -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- KAKI -->
+  <footer class="footer">
+    <div class="footer-meta">
+      <span>Halaman 10 / 37</span>
+    </div>
+  </footer>
+
+</section>
+</body>
+</html>

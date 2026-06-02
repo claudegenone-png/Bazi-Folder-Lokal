@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Tuan Zeng, 事業 Karir &amp; Profesi</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* Page-specific additions */
+  .insight-card {
+    background: linear-gradient(160deg, #FFFEF8 0%, #F5EBD0 100%);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 5mm;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 2.5mm;
+    overflow: hidden;
+  }
+  .insight-eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 7pt;
+    letter-spacing: 3px;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .insight-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 14pt;
+    color: var(--red);
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  .insight-body {
+    font-size: 7.5pt;
+    line-height: 1.45;
+    color: var(--text);
+  }
+  .insight-body strong { color: var(--red); font-weight: 600; }
+  .insight-body .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red);
+    font-weight: 600;
+  }
+  .insight-tags {
+    display: flex; gap: 2mm; flex-wrap: wrap;
+    margin-top: 1mm;
+  }
+  .insight-tag {
+    background: var(--green-bg);
+    color: var(--green);
+    font-size: 7pt;
+    padding: 0.8mm 2.5mm;
+    border-radius: 5mm;
+    border: 0.2mm solid var(--green);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .insight-tag.bad {
+    background: var(--red-bad-bg);
+    color: var(--red-bad);
+    border-color: var(--red-bad);
+  }
+
+  /* Industri row with fit bar */
+  .ind-row { grid-template-columns: 9mm 1fr 28mm !important; }
+  .fit-col {
+    display: flex; flex-direction: column; gap: 0.8mm;
+    align-items: stretch; justify-content: center;
+    min-width: 0;
+  }
+  .fit-bar-track {
+    height: 2.5mm;
+    background: rgba(0,0,0,0.05);
+    border-radius: 1.25mm;
+    overflow: hidden;
+  }
+  .fit-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--green) 0%, #4FA77F 100%);
+    border-radius: 1.25mm;
+  }
+  .ind-row:not(.top) .fit-bar-fill {
+    background: linear-gradient(90deg, var(--gold) 0%, #DCC68A 100%);
+  }
+  .fit-meta {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 6.5pt; color: var(--text-muted);
+    letter-spacing: 0.5px;
+  }
+  .fit-meta .score {
+    font-family: 'Playfair Display', serif;
+    font-size: 9pt;
+    color: var(--text);
+    font-weight: 600;
+  }
+  .ind-row.top .fit-meta .score { color: var(--green); }
+
+/* V7 Phase 4B layout overhaul (conditional on foto-source data) */
+.career-main{grid-template-columns:1fr!important;grid-template-rows:auto auto!important;gap:3mm!important;}
+.insight-card{grid-template-rows:auto auto auto!important;}
+.insight-tags{display:none!important;}
+.insight-body{font-size:7.8pt!important;line-height:1.55!important;}
+.industri-list{height:auto!important;overflow:visible!important;}
+
+.industri-grid{display:flex;flex-direction:column;gap:2mm;padding:2mm 0;height:auto!important;overflow:visible;}
+.ig-section{display:flex;flex-direction:column;gap:1mm;}
+.ig-header{font-family:"Noto Serif TC",serif;font-size:8pt;font-weight:700;letter-spacing:1.2px;padding:1mm 2mm;border-radius:1.5mm;}
+.ig-section.fav .ig-header{background:rgba(90,140,74,0.12);color:var(--green);border-left:0.6mm solid var(--green);}
+.ig-section.sup .ig-header{background:rgba(201,169,97,0.12);color:var(--gold);border-left:0.6mm solid var(--gold);}
+.ig-badges{display:flex;flex-wrap:wrap;gap:1.2mm;padding:0.5mm 1mm;}
+.ind-badge{display:inline-flex;align-items:baseline;gap:0.8mm;padding:0.6mm 2mm;border-radius:4mm;background:#FFFEF8;border:0.2mm solid var(--gold-soft);font-size:6.5pt;color:var(--text);line-height:1.2;white-space:nowrap;}
+.ig-section.fav .ind-badge{border-color:var(--green);background:rgba(90,140,74,0.06);}
+.ig-section.sup .ind-badge{border-color:var(--gold-soft);background:rgba(201,169,97,0.06);}
+.ind-badge .hz{font-family:"Noto Serif TC",serif;font-size:7.5pt;color:var(--red);font-weight:700;letter-spacing:0.3px;}
+.ind-badge .id{font-family:"Inter",sans-serif;font-size:5.8pt;color:var(--text-muted);font-weight:500;}
+</style>
+</head>
+<body>
+<section class="page">
+
+  <!-- KEPALA -->
+  <header class="page-header">
+    <div class="h-num">10</div>
+    <div class="h-titles">
+      <div class="h-cn">事 業</div>
+      <div class="h-id">Karir &amp; Profesi</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <!-- BAR SUBJEK -->
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Naga-Merah.svg" alt="Naga"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Tuan Zeng · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">辰 Naga</span></div>
+      <div class="subject-detail">9 Agustus 1964 · 16:40 · Pria · Umur 63 tahun · 大運 戊寅 (偏印)</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">庚金 · Logam Pedang</div>
+    </div>
+  </div>
+
+  <!-- KONTEN -->
+  <main class="content content-career">
+
+    <!-- WU XING STRIP -->
+    <div class="wuxing-strip">
+      <div class="label">五 行</div>
+      <div class="wuxing-bar">
+<!-- TAFSIR:_career_wuxing -->
+        <div class="wux-cell self">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:100%"></div></div>
+          <div class="wux-label">金 Logam<span class="v">3</span></div>
+        </div>
+        <div class="wux-cell">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:100%"></div></div>
+          <div class="wux-label">木 Kayu<span class="v">3</span></div>
+        </div>
+        <div class="wux-cell">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:33%"></div></div>
+          <div class="wux-label">水 Air<span class="v">1</span></div>
+        </div>
+        <div class="wux-cell">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:33%"></div></div>
+          <div class="wux-label">土 Tanah<span class="v">1</span></div>
+        </div>
+        <div class="wux-cell fav">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:0%"></div></div>
+          <div class="wux-label">火 Api<span class="v">0</span></div>
+        </div>
+<!-- /TAFSIR -->
+      </div>
+    </div>
+
+    <!-- MAIN: INSIGHT + INDUSTRI -->
+    <div class="career-main">
+
+      <!-- WAWASAN -->
+      <div class="insight-card">
+        <div class="insight-eyebrow">Wawasan Utama</div>
+        <div class="insight-title"><!-- TAFSIR:_career_title -->Api adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini<!-- /TAFSIR --></div>
+        <div class="insight-body">
+<!-- TAFSIR:career --><p>Dengan <span class="hz">用神</span> <span class="hz">火</span> dan format <span class="hz">建祿格</span>, Tuan Zeng paling bersinar di bidang yang menuntut ketegasan, keberanian membuka jalan, dan keahlian mandiri. Layar 事業 menyebut dua kelompok besar: bidang ber-Api (favorable, sesuai <span class="hz">用神</span>) dan bidang ber-Kayu (supportive, sesuai <span class="hz">喜神</span>). Istana 官祿 menegaskan ia cocok jadi sosok mandiri yang tak puas hanya menjadi pegawai biasa.</p><ul><li><strong>"<span class="hz">火熱光性工廠</span> / Manufaktur Panas &amp; Cahaya"</strong> (unsur 火), layar 事業 sebut 火熱光性工廠、照相、電器、光學</li><li><strong>"<span class="hz">食品工廠</span> / Makanan &amp; Minuman"</strong> (unsur 火), layar 事業 sebut 熱飲小吃、食品工廠、煙酒</li><li><strong>"<span class="hz">評論家</span> / Kritikus &amp; Media"</strong> (unsur 火), layar 事業 sebut 評論家, didukung istana 命宮 tipe penulis</li><li><strong>"<span class="hz">教育</span> / Pendidikan &amp; Penerbitan"</strong> (unsur 木), layar 事業 sebut 教育、出版、書店、文具</li><li><strong>"<span class="hz">政治</span> / Politik &amp; Keagamaan"</strong> (unsur 木), layar 事業 sebut 政治、宗教家, sejalan istana 官祿</li></ul><!-- /TAFSIR -->
+        </div>
+        <div class="insight-tags">
+<!-- TAFSIR:_career_tags -->
+          <span class="insight-tag">火 "TEMPA"</span>
+          <span class="insight-tag">木 "BAHAN BAKAR"</span>
+          <span class="insight-tag bad">金 "KERAS"</span>
+          <span class="insight-tag bad">土 "TIMBUN"</span>
+        <!-- /TAFSIR -->
+        </div>
+      </div>
+
+      <!-- INDUSTRI LIST -->
+      <div class="industri-list industri-grid">
+        <div class="ig-section fav">
+          <div class="ig-header">✓ Searah · 13 bidang</div>
+          <div class="ig-badges">
+          <span class="ind-badge"><span class="hz">火熱光性工廠</span><span class="id">Pabrik bersifat panas/cahaya</span></span>
+          <span class="ind-badge"><span class="hz">照相</span><span class="id">Fotografi</span></span>
+          <span class="ind-badge"><span class="hz">電器</span><span class="id">Elektronik</span></span>
+          <span class="ind-badge"><span class="hz">光學</span><span class="id">Optik</span></span>
+          <span class="ind-badge"><span class="hz">眼鏡</span><span class="id">Kacamata</span></span>
+          <span class="ind-badge"><span class="hz">熱飲小吃</span><span class="id">Minuman panas & jajanan</span></span>
+          <span class="ind-badge"><span class="hz">食品工廠</span><span class="id">Pabrik makanan</span></span>
+          <span class="ind-badge"><span class="hz">理髮美容</span><span class="id">Salon & kecantikan</span></span>
+          <span class="ind-badge"><span class="hz">衣帽百貨</span><span class="id">Pakaian & topi</span></span>
+          <span class="ind-badge"><span class="hz">評論家</span><span class="id">Kritikus/komentator</span></span>
+          <span class="ind-badge"><span class="hz">化妝品</span><span class="id">Kosmetik</span></span>
+          <span class="ind-badge"><span class="hz">軍界</span><span class="id">Militer</span></span>
+          <span class="ind-badge"><span class="hz">煙酒</span><span class="id">Tembakau & minuman keras</span></span>
+          </div>
+        </div>
+        <div class="ig-section sup">
+          <div class="ig-header">◎ Pendukung · 16 bidang</div>
+          <div class="ig-badges">
+          <span class="ind-badge"><span class="hz">文具</span><span class="id">Alat tulis</span></span>
+          <span class="ind-badge"><span class="hz">出版</span><span class="id">Penerbitan</span></span>
+          <span class="ind-badge"><span class="hz">書店</span><span class="id">Toko buku</span></span>
+          <span class="ind-badge"><span class="hz">農業蔬果</span><span class="id">Pertanian sayur-buah</span></span>
+          <span class="ind-badge"><span class="hz">木材</span><span class="id">Kayu</span></span>
+          <span class="ind-badge"><span class="hz">傢俱</span><span class="id">Furnitur</span></span>
+          <span class="ind-badge"><span class="hz">裝璜</span><span class="id">Dekorasi interior</span></span>
+          <span class="ind-badge"><span class="hz">紙業</span><span class="id">Kertas</span></span>
+          <span class="ind-badge"><span class="hz">木器工藝</span><span class="id">Kerajinan kayu</span></span>
+          <span class="ind-badge"><span class="hz">花苗園藝</span><span class="id">Tanaman hias & hortikultura</span></span>
+          <span class="ind-badge"><span class="hz">蓆草</span><span class="id">Anyaman/rumput</span></span>
+          <span class="ind-badge"><span class="hz">布疋</span><span class="id">Tekstil</span></span>
+          <span class="ind-badge"><span class="hz">教育</span><span class="id">Pendidikan</span></span>
+          <span class="ind-badge"><span class="hz">公務員</span><span class="id">PNS</span></span>
+          <span class="ind-badge"><span class="hz">政治</span><span class="id">Politik</span></span>
+          <span class="ind-badge"><span class="hz">宗教家</span><span class="id">Tokoh agama</span></span>
+          </div>
+        </div>
+      </div>
+    <!-- AVOID -->
+    <div class="avoid-strip">
+      <div class="avoid-label">忌 Hindari</div>
+      <div class="avoid-text">
+<!-- TAFSIR:_career_avoid -->Industri ber-unsur <strong>金 (Logam)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.<!-- /TAFSIR -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- KAKI -->
+  <footer class="footer">
+    <div class="footer-meta">
+      <span>Halaman 10 / 35</span>
+    </div>
+  </footer>
+
+</section>
+</body>
+</html>

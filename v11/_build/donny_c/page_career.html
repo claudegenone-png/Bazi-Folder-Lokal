@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Donny C, 事業 Karir &amp; Profesi</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* Page-specific additions */
+  .insight-card {
+    background: linear-gradient(160deg, #FFFEF8 0%, #F5EBD0 100%);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 5mm;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 2.5mm;
+    overflow: hidden;
+  }
+  .insight-eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 7pt;
+    letter-spacing: 3px;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .insight-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 14pt;
+    color: var(--red);
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  .insight-body {
+    font-size: 7.5pt;
+    line-height: 1.45;
+    color: var(--text);
+  }
+  .insight-body strong { color: var(--red); font-weight: 600; }
+  .insight-body .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red);
+    font-weight: 600;
+  }
+  .insight-tags {
+    display: flex; gap: 2mm; flex-wrap: wrap;
+    margin-top: 1mm;
+  }
+  .insight-tag {
+    background: var(--green-bg);
+    color: var(--green);
+    font-size: 7pt;
+    padding: 0.8mm 2.5mm;
+    border-radius: 5mm;
+    border: 0.2mm solid var(--green);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .insight-tag.bad {
+    background: var(--red-bad-bg);
+    color: var(--red-bad);
+    border-color: var(--red-bad);
+  }
+
+  /* Industri row with fit bar */
+  .ind-row { grid-template-columns: 9mm 1fr 28mm !important; }
+  .fit-col {
+    display: flex; flex-direction: column; gap: 0.8mm;
+    align-items: stretch; justify-content: center;
+    min-width: 0;
+  }
+  .fit-bar-track {
+    height: 2.5mm;
+    background: rgba(0,0,0,0.05);
+    border-radius: 1.25mm;
+    overflow: hidden;
+  }
+  .fit-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--green) 0%, #4FA77F 100%);
+    border-radius: 1.25mm;
+  }
+  .ind-row:not(.top) .fit-bar-fill {
+    background: linear-gradient(90deg, var(--gold) 0%, #DCC68A 100%);
+  }
+  .fit-meta {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 6.5pt; color: var(--text-muted);
+    letter-spacing: 0.5px;
+  }
+  .fit-meta .score {
+    font-family: 'Playfair Display', serif;
+    font-size: 9pt;
+    color: var(--text);
+    font-weight: 600;
+  }
+  .ind-row.top .fit-meta .score { color: var(--green); }
+
+/* V7 Phase 4B layout overhaul (conditional on foto-source data) */
+.career-main{grid-template-columns:1fr!important;grid-template-rows:auto auto!important;gap:3mm!important;}
+.insight-card{grid-template-rows:auto auto auto!important;}
+.insight-tags{display:none!important;}
+.insight-body{font-size:7.8pt!important;line-height:1.55!important;}
+.industri-list{height:auto!important;overflow:visible!important;}
+
+.industri-grid{display:flex;flex-direction:column;gap:2mm;padding:2mm 0;height:auto!important;overflow:visible;}
+.ig-section{display:flex;flex-direction:column;gap:1mm;}
+.ig-header{font-family:"Noto Serif TC",serif;font-size:8pt;font-weight:700;letter-spacing:1.2px;padding:1mm 2mm;border-radius:1.5mm;}
+.ig-section.fav .ig-header{background:rgba(90,140,74,0.12);color:var(--green);border-left:0.6mm solid var(--green);}
+.ig-section.sup .ig-header{background:rgba(201,169,97,0.12);color:var(--gold);border-left:0.6mm solid var(--gold);}
+.ig-badges{display:flex;flex-wrap:wrap;gap:1.2mm;padding:0.5mm 1mm;}
+.ind-badge{display:inline-flex;align-items:baseline;gap:0.8mm;padding:0.6mm 2mm;border-radius:4mm;background:#FFFEF8;border:0.2mm solid var(--gold-soft);font-size:6.5pt;color:var(--text);line-height:1.2;white-space:nowrap;}
+.ig-section.fav .ind-badge{border-color:var(--green);background:rgba(90,140,74,0.06);}
+.ig-section.sup .ind-badge{border-color:var(--gold-soft);background:rgba(201,169,97,0.06);}
+.ind-badge .hz{font-family:"Noto Serif TC",serif;font-size:7.5pt;color:var(--red);font-weight:700;letter-spacing:0.3px;}
+.ind-badge .id{font-family:"Inter",sans-serif;font-size:5.8pt;color:var(--text-muted);font-weight:500;}
+</style>
+</head>
+<body>
+<section class="page">
+
+  <!-- KEPALA -->
+  <header class="page-header">
+    <div class="h-num">10</div>
+    <div class="h-titles">
+      <div class="h-cn">事 業</div>
+      <div class="h-id">Karir &amp; Profesi</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <!-- BAR SUBJEK -->
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Kelinci-Merah.svg" alt="Kelinci"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Donny C · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">卯 Kelinci</span></div>
+      <div class="subject-detail">3 Desember 1975 · 20:35 · Pria · Umur 52 tahun · 大運 壬午 (劫財)</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">癸水 · Air Hujan</div>
+    </div>
+  </div>
+
+  <!-- KONTEN -->
+  <main class="content content-career">
+
+    <!-- WU XING STRIP -->
+    <div class="wuxing-strip">
+      <div class="label">五 行</div>
+      <div class="wuxing-bar">
+<!-- TAFSIR:_career_wuxing -->
+        <div class="wux-cell self">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:100%"></div></div>
+          <div class="wux-label">水 Air<span class="v">3</span></div>
+        </div>
+        <div class="wux-cell fav">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:67%"></div></div>
+          <div class="wux-label">木 Kayu<span class="v">2</span></div>
+        </div>
+        <div class="wux-cell unfav">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:67%"></div></div>
+          <div class="wux-label">土 Tanah<span class="v">2</span></div>
+        </div>
+        <div class="wux-cell">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:33%"></div></div>
+          <div class="wux-label">火 Api<span class="v">1</span></div>
+        </div>
+        <div class="wux-cell">
+          <div class="wux-bar-track"><div class="wux-bar-fill" style="height:0%"></div></div>
+          <div class="wux-label">金 Logam<span class="v">0</span></div>
+        </div>
+<!-- /TAFSIR -->
+      </div>
+    </div>
+
+    <!-- MAIN: INSIGHT + INDUSTRI -->
+    <div class="career-main">
+
+      <!-- WAWASAN -->
+      <div class="insight-card">
+        <div class="insight-eyebrow">Wawasan Utama</div>
+        <div class="insight-title"><!-- TAFSIR:_career_title -->Kayu adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini<!-- /TAFSIR --></div>
+        <div class="insight-body">
+<!-- TAFSIR:career --><ul><li><strong>Penerbitan &amp; Buku</strong> (unsur 木), Foto 事業 — 出版/書店/文具 (industri kayu = 用神 langsung)</li><li><strong>Pendidikan &amp; Politik</strong> (unsur 木), Foto 事業 — 教育/公務員/政治 (kayu mengalir dan memberi = 用神)</li><li><strong>Pertanian &amp; Hortikultura</strong> (unsur 木), Foto 事業 — 農業蔬果/花苗園藝/藥草/布疋 (kayu sejati = 用神)</li><li><strong>Furnitur &amp; Kerajinan Kayu</strong> (unsur 木), Foto 事業 — 木材/傢俱/木器或工藝/裝璜 (kayu langsung = 用神)</li><li><strong>Keuangan &amp; Akuntansi</strong> (unsur 金), Foto 事業 — 會計/金融界 (logam = 喜神, mendukung DM Air)</li></ul><!-- /TAFSIR -->
+        </div>
+        <div class="insight-tags">
+<!-- TAFSIR:_career_tags -->
+          <span class="insight-tag">木 Kayu/Pertumbuhan</span>
+          <span class="insight-tag">金 Logam/Presisi</span>
+          <span class="insight-tag bad">火 Api/Spekulasi</span>
+          <span class="insight-tag bad">土 Tanah/Birokrasi berat</span>
+        <!-- /TAFSIR -->
+        </div>
+      </div>
+
+      <!-- INDUSTRI LIST -->
+      <div class="industri-list industri-grid">
+        <div class="ig-section fav">
+          <div class="ig-header">✓ Searah · 16 bidang</div>
+          <div class="ig-badges">
+          <span class="ind-badge"><span class="hz">文具</span><span class="id">Alat tulis</span></span>
+          <span class="ind-badge"><span class="hz">出版</span><span class="id">Penerbitan</span></span>
+          <span class="ind-badge"><span class="hz">書店</span><span class="id">Toko buku</span></span>
+          <span class="ind-badge"><span class="hz">農業蔬果</span><span class="id">Pertanian & sayuran</span></span>
+          <span class="ind-badge"><span class="hz">木材</span><span class="id">Kayu</span></span>
+          <span class="ind-badge"><span class="hz">傢俱</span><span class="id">Furnitur</span></span>
+          <span class="ind-badge"><span class="hz">裝璜</span><span class="id">Dekorasi/renovasi</span></span>
+          <span class="ind-badge"><span class="hz">紙</span><span class="id">Kertas</span></span>
+          <span class="ind-badge"><span class="hz">木器或工藝</span><span class="id">Kerajinan kayu</span></span>
+          <span class="ind-badge"><span class="hz">花苗園藝</span><span class="id">Tanaman & hortikultura</span></span>
+          <span class="ind-badge"><span class="hz">藥草</span><span class="id">Herbal/obat-obatan</span></span>
+          <span class="ind-badge"><span class="hz">布疋</span><span class="id">Kain/tekstil</span></span>
+          <span class="ind-badge"><span class="hz">教育</span><span class="id">Pendidikan</span></span>
+          <span class="ind-badge"><span class="hz">公務員</span><span class="id">Pegawai negeri</span></span>
+          <span class="ind-badge"><span class="hz">政治</span><span class="id">Politik</span></span>
+          <span class="ind-badge"><span class="hz">宗教家</span><span class="id">Tokoh agama</span></span>
+          </div>
+        </div>
+        <div class="ig-section sup">
+          <div class="ig-header">◎ Pendukung · 12 bidang</div>
+          <div class="ig-badges">
+          <span class="ind-badge"><span class="hz">鋼鐵工廠</span><span class="id">Pabrik baja</span></span>
+          <span class="ind-badge"><span class="hz">五金行</span><span class="id">Toko besi/hardware</span></span>
+          <span class="ind-badge"><span class="hz">採礦</span><span class="id">Pertambangan</span></span>
+          <span class="ind-badge"><span class="hz">汽車</span><span class="id">Otomotif</span></span>
+          <span class="ind-badge"><span class="hz">機械</span><span class="id">Mesin</span></span>
+          <span class="ind-badge"><span class="hz">科學家</span><span class="id">Ilmuwan</span></span>
+          <span class="ind-badge"><span class="hz">律師</span><span class="id">Pengacara</span></span>
+          <span class="ind-badge"><span class="hz">歌影星</span><span class="id">Artis/penyanyi</span></span>
+          <span class="ind-badge"><span class="hz">音樂家</span><span class="id">Musisi</span></span>
+          <span class="ind-badge"><span class="hz">武術館</span><span class="id">Seni bela diri</span></span>
+          <span class="ind-badge"><span class="hz">會計</span><span class="id">Akuntansi</span></span>
+          <span class="ind-badge"><span class="hz">金融界</span><span class="id">Keuangan</span></span>
+          </div>
+        </div>
+      </div>
+    <!-- AVOID -->
+    <div class="avoid-strip">
+      <div class="avoid-label">忌 Hindari</div>
+      <div class="avoid-text">
+<!-- TAFSIR:_career_avoid -->Industri ber-unsur <strong>土 (Tanah)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.<!-- /TAFSIR -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- KAKI -->
+  <footer class="footer">
+    <div class="footer-meta">
+      <span>Halaman 10 / 36</span>
+    </div>
+  </footer>
+
+</section>
+</body>
+</html>

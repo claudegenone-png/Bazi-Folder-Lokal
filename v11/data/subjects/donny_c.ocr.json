@@ -1,0 +1,499 @@
+{
+  "name_id": "Donny C",
+  "gender_hz": "陰男",
+  "birth_solar": "1975-12-03 20:35",
+  "pillars": {
+    "year": {
+      "stem_hz": "乙",
+      "branch_hz": "卯"
+    },
+    "month": {
+      "stem_hz": "丁",
+      "branch_hz": "亥"
+    },
+    "day": {
+      "stem_hz": "癸",
+      "branch_hz": "未"
+    },
+    "hour": {
+      "stem_hz": "壬",
+      "branch_hz": "戌"
+    }
+  },
+  "wuxing": {
+    "jin": 1.0,
+    "shui": 3.0,
+    "mu": 4.0,
+    "huo": 3.0,
+    "tu": 2.0
+  },
+  "yong_shen_hz": "木",
+  "ji_shen_hz": "土",
+  "xi_yong_shen_hz": "金",
+  "xian_shen_hz": "水",
+  "chou_shen_hz": "火",
+  "format_hz": "月刃格",
+  "format_label_id": "Format Mata Pedang Bulan",
+  "shi_shen_per_pilar": {
+    "year": "食神",
+    "month": "偏財",
+    "day": "主",
+    "hour": "劫財"
+  },
+  "canggan_shi_shen": {
+    "year": [
+      {
+        "stem": "乙",
+        "ten_god": "食神"
+      }
+    ],
+    "month": [
+      {
+        "stem": "壬",
+        "ten_god": "劫財"
+      },
+      {
+        "stem": "甲",
+        "ten_god": "傷官"
+      }
+    ],
+    "day": [
+      {
+        "stem": "己",
+        "ten_god": "七殺"
+      },
+      {
+        "stem": "乙",
+        "ten_god": "食神"
+      },
+      {
+        "stem": "丁",
+        "ten_god": "偏財"
+      }
+    ],
+    "hour": [
+      {
+        "stem": "戊",
+        "ten_god": "正官"
+      },
+      {
+        "stem": "辛",
+        "ten_god": "偏印"
+      },
+      {
+        "stem": "丁",
+        "ten_god": "偏財"
+      }
+    ]
+  },
+  "liu_nian_predictions": [
+    {
+      "tahun": 2026,
+      "umur": 52,
+      "ganzhi": "丙午",
+      "prose": "Tenaga dan pikiran yang dicurahkan tahun ini di permukaan tidak sebanding langsung dengan uang. Perlu waspada kesehatan, rezeki datang bersamaan dengan bencana, kekayaan sulit mencapai harapan. Yang sudah menikah ada gejolak perasaan suami-istri tapi tidak parah. Yang belum menikah hubungan asmara makin dekat. Karier ada pergerakan atau perubahan posisi. [[太陰]] masuk: lihat hal baik dan rezeki, orang mulia membantu, segala urusan rukun selaras. [[文昌]] masuk peruntungan, ada urusan gembira, terpelajar banyak berhasil, rakyat biasa mendatangkan rezeki. Hindari bulan 2/5/8 atau 12, mudah mengundang perselisihan dari lawan jenis, jangan berjalan di tempat gelap larut malam. Sifat tahun ini: impulsif, mudah diperdaya, sering terlena lalu bertindak gegabah dan gagal, namun punya peluang bangkit dari situasi tersulit [[絕處逢生]]."
+    },
+    {
+      "tahun": 2027,
+      "umur": 53,
+      "ganzhi": "丁未",
+      "prose": "Tenaga dan pikiran yang dicurahkan tidak sebanding langsung dengan uang. Perlu perhatikan potensi penyakit kronis, pengeluaran besar, kekayaan sulit tercapai. Ada tekanan pada perasaan, suasana hati kurang stabil. Yang sudah menikah ada gejolak perasaan; yang belum menikah mulai jatuh cinta. Lingkungan besar berubah karena tekanan. [[官符]] masuk: ada urusan hukum dan kesedihan, benturan orang tua-istri-harta. [[火殺]] masuk: ada perselisihan hukum, waspada penyakit dan pencuri; setelah masa berlalu akan kembali lancar. Hindari bulan 1/4/7 atau 11; kurangi mengurusi urusan orang, waspadai energi negatif dan fitnah. Sifat: tertutup, tidak suka berdandan, hubungan saudara kandung agak renggang; lebih suka menabung; paruh hidup pertama banyak susah, paruh kedua lebih bahagia."
+    },
+    {
+      "tahun": 2028,
+      "umur": 54,
+      "ganzhi": "戊申",
+      "prose": "Bisa mendapat bantuan orang tua dan guru, kekayaan bisa mencapai harapan cukup. Tekanan cukup berat, pengeluaran besar, perhatikan kesehatan. [[死符]] masuk: ada urusan duka dan kesedihan, benturan orang tua-saudara, berdoa agar terhindar bencana. [[暗耀]] masuk: bila tanpa perselisihan tajam, ada urusan duka tak terduga; keluarga ada urusan gembira bisa mematahkan sial; wanita waspada penyakit dan persalinan; hindari bulan 2/5/8 atau 12. Mudah terkena urusan hukum, hukuman, gugatan, dan penderitaan batin. Sifat: agak impulsif, kurang tegas, sangat cerdas namun suka mendalami hal pelik; jodoh mudah berubah dan cenderung menikah lebih dari sekali."
+    },
+    {
+      "tahun": 2029,
+      "umur": 55,
+      "ganzhi": "己酉",
+      "prose": "Bisa mendapat bantuan orang tua dan guru, kekayaan bisa mencapai harapan cukup. Tekanan cukup berat, pengeluaran besar, perhatikan penyakit kronis. Lingkungan berubah besar, misalnya renovasi rumah, pindah, atau memindahkan perabot. [[歲破]] masuk: kerugian harta, kerabat perlu dijaga, berbuat kebajikan menjaga keselamatan. [[太陰]] masuk peruntungan: ada hal gembira, mencari rezeki bisa sesuai keinginan, namun dapat di sini hilang di sana; hindari bulan 3/6/9 atau 12. Bila perilaku tidak terjaga bisa berakibat kerugian uang dan kesehatan. Sifat: jujur dan berjiwa seni, agak kurang aktif dan kurang tegas; lebih suka tenang; cocok sebagai tipe istri bijak dan ibu yang baik."
+    },
+    {
+      "tahun": 2030,
+      "umur": 56,
+      "ganzhi": "庚戌",
+      "prose": "Tenaga yang dicurahkan tidak sebanding langsung dengan uang. Perlu perhatikan penyakit kronis, pengeluaran besar. Karier ada pergerakan. Lingkungan berubah karena tekanan. [[龍德]] masuk: dapat rezeki di empat musim, di rumah banyak keberuntungan, keluar tanpa bencana. [[天掃]] masuk: ada urusan berantakan; bila beroleh orang mulia dan ada urusan gembira maka tanpa bencana; waspada pencuri; hindari bulan 1/4/7 atau 12. Kerja keras akan membuahkan keuntungan atau mendapat bantuan orang mulia. Sifat: lembut, kurang aktif dan kurang tegas, konservatif, tidak suka menonjol; lebih cocok bagi wanita; tipe istri bijak dan ibu yang baik."
+    },
+    {
+      "tahun": 2031,
+      "umur": 57,
+      "ganzhi": "辛亥",
+      "prose": "Tenaga yang dicurahkan sebanding dengan uang. Bisa mendapat bantuan saudara dan teman, kekayaan bisa mencapai harapan yang cukup baik. Yang sudah menikah ada gejolak perasaan tapi tidak parah. Yang belum menikah hubungan asmara makin dekat. Perasaan kurang stabil. Lingkungan berubah karena tekanan. [[自虎]] masuk: mulut tajam dan harta terkuras, kesulitan datang bergantian. [[天喜]] masuk: ada urusan gembira keluarga, rezeki mudah, waspada perdarahan; wanita waspada persalinan; hindari bulan 1/4/7 atau 11. Sifat: percaya diri tinggi, suka menang dan tidak mau kalah, suka berspekulasi dan mengambil risiko, berenergi kuat."
+    }
+  ],
+  "ziwei_su_ming": "Arah kemajuan hidup [[宿命]] mengikuti garis takdir yang telah ditentukan. Selama istana keuangan kuat, istana diri juga akan ikut makmur, dengan berkah rezeki seumur hidup tidak perlu khawatir soal keuangan yang berlimpah. Di sisi lain, bagi yang istana keuangannya lemah, sepanjang hidup akan sibuk berjuang untuk uang dan menjadi permainan takdir finansial. Dalam hal ini, kekuatan istana [[命宮]] Nasib, [[福德宮]] Keberkahan, dan istana Karir juga harus diperhitungkan secara bersamaan.",
+  "jie_e_palace_hz": "易患吐血、痢血的病症及小腸的疾病。腦出血、及頭、腕部的障礙。易患與心臟有關的陽時疾病。如有太陰星同宮的話，對眼睛更須絕對注意。有凶星同宮時，易患痔瘡、皮膚病、冷感症等等。健康良好。如位於巳、申、亥之宮內，或與凶星同宮的話，須注意從胃部為始的腹部疾病。",
+  "jie_e_palace_id": "Mudah menderita penyakit [[吐血]] batuk darah dan [[痢血]] disentri berdarah, serta penyakit pada [[小腸]] usus kecil. [[腦出血]] Pendarahan otak, serta gangguan pada [[頭]] kepala dan [[腕部]] pergelangan tangan. Mudah menderita penyakit yang berhubungan dengan [[心臟]] jantung pada waktu tertentu. Jika ada bintang [[太陰]] bersama di istana yang sama, harus benar-benar sangat memperhatikan kesehatan [[眼睛]] mata. Ketika ada [[凶星]] bintang buruk bersama, mudah menderita [[痔瘡]] wasir, [[皮膚病]] penyakit kulit, dan berbagai penyakit lainnya. Kesehatan secara umum baik. Jika berada di posisi istana [[巳]], [[申]], atau [[亥]], atau bersama dengan bintang buruk, perlu waspada terhadap penyakit perut yang berawal dari [[胃]] lambung.",
+  "jie_e_organ_focus_id": "Yang utama wajib dijaga: usus kecil ([[小腸]]), jantung ([[心臟]]), dan kepala/otak; bila ada [[太陰]] bersama di istana, tambahkan waspada kesehatan mata.",
+  "gushu_quotes": [
+    {
+      "source_hz": "三命通會",
+      "source_id": "San Ming Tong Hui",
+      "text_hz": "詩曰：壬癸日生水為主，根基惟在火與土，春秋來往發財官，冬夏東行為得所。",
+      "text_id": "Hari kelahiran batang [[壬癸]] sumber utamanya adalah Air; pondasi sejati terletak pada Api dan Tanah; musim semi dan gugur mendatangkan kekayaan dan kedudukan resmi; musim dingin dan panas melangkah ke arah Timur menjadi tempat yang tepat."
+    },
+    {
+      "source_hz": "玄武當槽",
+      "source_id": "Xuan Wu Dang Cao",
+      "text_hz": "玄武當槽要得真，日干壬癸坐財星，官星若也居門戶，無破當為大用人。",
+      "text_id": "Penguasa gelap bertahta di kandang: kuncinya ketulusan; bila batang hari [[壬癸]] duduk di atas bintang kekayaan; bila bintang resmi pun menempati pintu gerbang; tanpa hambatan, sungguh akan menjadi orang besar yang berguna."
+    },
+    {
+      "source_hz": "滴天髓",
+      "source_id": "Di Tian Sui",
+      "text_hz": "癸水至弱，達于天津，得龍而運，功化斯神，不愁火土，不論庚辛，合戊見火，化象斯真。",
+      "text_id": "[[癸水]] yang paling lemah, dapat mencapai penyeberangan surga; bila mendapat [[龍]] Naga barulah peruntungan bergerak; kemampuan berubah menjadi roh ilahi; tidak perlu khawatir Api dan Tanah; tidak peduli [[庚辛]]; bila bertemu [[戊]] dan melihat Api, gambaran transformasi menjadi nyata."
+    }
+  ],
+  "marriage_cocok_tafsir": "Pasangan [[大吉]] (Kambing [[未]], Anjing [[戌]], Babi [[亥]]): Bagai burung phoenix terbang bersama [[鳳凰于飛]], karier dan prestasi meraih puncak, hidup nyaman dan terhormat [[安居尊崇]], mendatangkan banyak manfaat dan membangun keluarga sejahtera [[博利興家之大吉]]. Perlu memupuk sifat lembut dan bertindak penuh pertimbangan [[宜養柔德慎行]], pasti akan maju lancar dan sejahtera [[定然亨通]].",
+  "marriage_hindari_tafsir": "Pasangan [[忌]] (Tikus [[子]], Sapi [[丑]], Naga [[辰]], Ayam [[酉]]): Kebahagiaan keluarga sulit terwujud [[家庭難得幸福]], merupakan lambang kesulitan dan kemunduran [[逆境之象]], karier tidak berhasil dan nasib tidak berpihak [[事業不成、不得時運]], kemiskinan dan hambatan terus datang [[窮迫滯塞]], kurang semangat [[缺乏精神]], bencana dan kesulitan datang silih berganti [[災害至交]], penuh penderitaan pahit [[菅塞痛苦之嫌]].",
+  "shiye_favorable_full": [
+    {
+      "hz": "文具",
+      "id": "Alat tulis"
+    },
+    {
+      "hz": "出版",
+      "id": "Penerbitan"
+    },
+    {
+      "hz": "書店",
+      "id": "Toko buku"
+    },
+    {
+      "hz": "農業蔬果",
+      "id": "Pertanian & sayuran"
+    },
+    {
+      "hz": "木材",
+      "id": "Kayu"
+    },
+    {
+      "hz": "傢俱",
+      "id": "Furnitur"
+    },
+    {
+      "hz": "裝璜",
+      "id": "Dekorasi/renovasi"
+    },
+    {
+      "hz": "紙",
+      "id": "Kertas"
+    },
+    {
+      "hz": "木器或工藝",
+      "id": "Kerajinan kayu"
+    },
+    {
+      "hz": "花苗園藝",
+      "id": "Tanaman & hortikultura"
+    },
+    {
+      "hz": "藥草",
+      "id": "Herbal/obat-obatan"
+    },
+    {
+      "hz": "布疋",
+      "id": "Kain/tekstil"
+    },
+    {
+      "hz": "教育",
+      "id": "Pendidikan"
+    },
+    {
+      "hz": "公務員",
+      "id": "Pegawai negeri"
+    },
+    {
+      "hz": "政治",
+      "id": "Politik"
+    },
+    {
+      "hz": "宗教家",
+      "id": "Tokoh agama"
+    }
+  ],
+  "shiye_supportive_full": [
+    {
+      "hz": "鋼鐵工廠",
+      "id": "Pabrik baja"
+    },
+    {
+      "hz": "五金行",
+      "id": "Toko besi/hardware"
+    },
+    {
+      "hz": "採礦",
+      "id": "Pertambangan"
+    },
+    {
+      "hz": "汽車",
+      "id": "Otomotif"
+    },
+    {
+      "hz": "機械",
+      "id": "Mesin"
+    },
+    {
+      "hz": "科學家",
+      "id": "Ilmuwan"
+    },
+    {
+      "hz": "律師",
+      "id": "Pengacara"
+    },
+    {
+      "hz": "歌影星",
+      "id": "Artis/penyanyi"
+    },
+    {
+      "hz": "音樂家",
+      "id": "Musisi"
+    },
+    {
+      "hz": "武術館",
+      "id": "Seni bela diri"
+    },
+    {
+      "hz": "會計",
+      "id": "Akuntansi"
+    },
+    {
+      "hz": "金融界",
+      "id": "Keuangan"
+    }
+  ],
+  "ti_xiang": {
+    "mu": "相",
+    "huo": "囚",
+    "tu": "休",
+    "jin": "死",
+    "shui": "旺"
+  },
+  "da_yun": [
+    {
+      "age_start": 10,
+      "age_end": 19,
+      "stem_hz": "丙",
+      "branch_hz": "戌",
+      "ten_god_hz_md": "偏財"
+    },
+    {
+      "age_start": 20,
+      "age_end": 29,
+      "stem_hz": "乙",
+      "branch_hz": "酉",
+      "ten_god_hz_md": "食神"
+    },
+    {
+      "age_start": 30,
+      "age_end": 39,
+      "stem_hz": "甲",
+      "branch_hz": "申",
+      "ten_god_hz_md": "傷官"
+    },
+    {
+      "age_start": 40,
+      "age_end": 49,
+      "stem_hz": "癸",
+      "branch_hz": "未",
+      "ten_god_hz_md": "比肩"
+    },
+    {
+      "age_start": 50,
+      "age_end": 59,
+      "stem_hz": "壬",
+      "branch_hz": "午",
+      "ten_god_hz_md": "劫財"
+    },
+    {
+      "age_start": 60,
+      "age_end": 69,
+      "stem_hz": "辛",
+      "branch_hz": "巳",
+      "ten_god_hz_md": "偏印"
+    },
+    {
+      "age_start": 70,
+      "age_end": 79,
+      "stem_hz": "庚",
+      "branch_hz": "辰",
+      "ten_god_hz_md": "正印"
+    },
+    {
+      "age_start": 80,
+      "age_end": 89,
+      "stem_hz": "己",
+      "branch_hz": "卯",
+      "ten_god_hz_md": "七殺"
+    },
+    {
+      "age_start": 90,
+      "age_end": 99,
+      "stem_hz": "戊",
+      "branch_hz": "寅",
+      "ten_god_hz_md": "正官"
+    },
+    {
+      "age_start": 100,
+      "age_end": 109,
+      "stem_hz": "丁",
+      "branch_hz": "丑",
+      "ten_god_hz_md": "偏財"
+    }
+  ],
+  "marriage": {
+    "cocok_branches": [
+      "未",
+      "戌",
+      "亥"
+    ],
+    "hindari_branches": [
+      "子",
+      "丑",
+      "辰",
+      "酉"
+    ],
+    "cocok_relationships": {
+      "未": "大吉",
+      "戌": "大吉",
+      "亥": "大吉"
+    }
+  },
+  "shio_hz": "兔",
+  "kesimpulan_narrative": "Donny C lahir 3 Desember 1975 pukul 20:35 dengan shio [[兔]] Kelinci (乙卯 Yǐ Mǎo). Penguasa hidupnya adalah [[癸]] Guǐ (Air Yin, air embun dan hujan) yang lahir di bulan [[丁亥]] — bulan Air yang membawa energi cukup kuat, namun DM sendiri lemah (skor positif 3.378 vs negatif 5.590). || Karena DM lemah dan chart dipenuhi Api ([[丁]]偏財 di bulan) serta Kayu ([[乙]] 食神 di tahun), unsur [[木]] Kayu menjadi [[用神]] sebagai jembatan mediasi: Air→Kayu→Api; didukung [[金]] Logam sebagai [[喜神]] yang menghasilkan Air dan memperkuat DM; [[水]] Air sebagai [[閑神]] netral; sementara [[火]] Api sebagai [[仇神]] dan [[土]] Tanah sebagai [[忌神]] perlu diwaspadai. || Istana Nasib ZiWei [[命宮]] di [[寅]] dengan bintang [[武曲]] (Wuqu, Bintang Keperkasaan), sosok dua sisi berlawanan: tegas sekaligus mudah tersentuh, gigih mengejar idealisme, bisa menonjol di masyarakat bila ada bintang baik mendampingi. Da Yun saat ini usia 50-59 ([[壬午]], [[劫財]]) — era rekan yang bisa jadi penyokong sekaligus pesaing. Sebelumnya Da Yun 40-49 ([[癸未]], [[比肩]]). || Untuk jodoh, pasangan paling cocok adalah shio Kambing ([[未]]), Anjing ([[戌]]), Babi ([[亥]]); hindari Tikus ([[子]]), Sapi ([[丑]]), Naga ([[辰]]), Ayam ([[酉]]). Karier terbaik di industri [[木]] Kayu (用神): penerbitan, pendidikan, kayu, furnitur, pertanian, taman, herbal. Untuk kesehatan, waspada usus kecil, jantung, dan kepala. Hunian [[兌]] gua arah timur laut-barat daya atau barat laut-tenggara paling menguntungkan. || Puisi klasik [[滴天髓]]: [[癸水至弱，達于天津，得龍而運，功化斯神]] — Air Gui yang lemah, bila mendapat Naga barulah peruntungan bergerak menjadi kekuatan besar.",
+  "yang_zhai_gua_hz": "兌",
+  "yang_zhai_zones_foto": {
+    "rumah": {
+      "dirs_hz": [
+        "東北",
+        "西南"
+      ],
+      "dirs_abbr": [
+        "TL",
+        "BD"
+      ],
+      "note_id": "Rumah duduk timur laut menghadap barat daya, atau barat laut menghadap tenggara — keduanya sangat auspicious"
+    },
+    "pintu": {
+      "dirs_hz": [
+        "西北",
+        "西南",
+        "東北",
+        "西"
+      ],
+      "dirs_abbr": [
+        "BL",
+        "BD",
+        "TL",
+        "B"
+      ],
+      "note_id": "Pintu utama membuka ke barat laut, barat daya, timur laut, atau barat"
+    },
+    "dapur": {
+      "dirs_hz": [
+        "東南"
+      ],
+      "dirs_abbr": [
+        "TG"
+      ],
+      "note_id": "Kompor di posisi tenggara menghadap ke barat laut (東南向西北方吉)"
+    },
+    "kamar": {
+      "dirs_hz": [
+        "南",
+        "西北",
+        "西",
+        "東北"
+      ],
+      "dirs_abbr": [
+        "S",
+        "BL",
+        "B",
+        "TL"
+      ],
+      "note_id": "Kamar tidur di selatan, barat laut, barat, atau timur laut; ranjang di timur laut, barat daya, barat, atau barat laut"
+    },
+    "altar": {
+      "dirs_hz": [
+        "東北",
+        "西南",
+        "西北",
+        "西"
+      ],
+      "dirs_abbr": [
+        "TL",
+        "BD",
+        "BL",
+        "B"
+      ],
+      "note_id": "Altar di timur laut, barat daya, barat laut, dan barat; serta arah hoki tahun berjalan"
+    },
+    "kamar_mandi": {
+      "dirs_hz": [
+        "東",
+        "南",
+        "北"
+      ],
+      "dirs_abbr": [
+        "T",
+        "S",
+        "U"
+      ],
+      "note_id": "Kamar mandi/WC di timur, selatan, atau utara"
+    }
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "祿存",
+    "shen_zhu_hz": "天同",
+    "ming_gong_branch_hz": "寅",
+    "shen_gong_branch_hz": "戌",
+    "wu_xing_ju_hz": "土五局",
+    "shi_jun_hz": "子"
+  },
+  "dm_strength_hz": "弱",
+  "dm_strength_label_id": "Lemah",
+  "dm_pos_score": 3378.0,
+  "dm_neg_score": 5590.0,
+  "xiantian_per_stem": {
+    "jia": 1,
+    "yi": 3,
+    "bing": 0,
+    "ding": 3,
+    "wu": 1,
+    "ji": 1,
+    "geng": 0,
+    "xin": 1,
+    "ren": 2,
+    "gui": 1
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "da_yun_arah_id": "backward",
+  "da_yun_start_age": 10,
+  "shen_sha_list": [
+    {
+      "hanzi": "羊刃",
+      "pillar": null
+    },
+    {
+      "hanzi": "將星",
+      "pillar": null
+    },
+    {
+      "hanzi": "天醫",
+      "pillar": null
+    }
+  ],
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": {
+    "year": "乙",
+    "month": "壬甲",
+    "day": "己乙丁",
+    "hour": "戊辛丁"
+  },
+  "_source": "MD via Web Claude (parse_md.py)"
+}

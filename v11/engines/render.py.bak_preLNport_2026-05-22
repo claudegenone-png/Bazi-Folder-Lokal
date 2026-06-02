@@ -1,0 +1,3380 @@
+"""Sandbox1 Render Engine, JSON → 23 HTML pages → PDF.
+
+Strategy: Templates = verbatim copies of Michele V3 pages.
+Reference values = Michele's actual data baked into engine constants.
+For each subject, build (reference_string → subject_string) substitutions, apply
+across all templates, then concat → master → PDF.
+
+Validation: Michele JSON renders identically to V3 Michele PDF (zero substitution).
+"""
+from __future__ import annotations
+import json, os, re, shutil, subprocess, sys, time
+from pathlib import Path
+
+from lookups import STEMS, BRANCHES, BRANCH_ORDER, WHEEL_POSITIONS, TRIGRAMS, COMPASS_POSITIONS, stem_pillar_text, branch_pillar_text
+try:
+    from parse_md import md_inline as _md_inline
+except Exception:
+    def _md_inline(s): return s
+
+sys.stdout.reconfigure(encoding='utf-8')
+
+ROOT = Path(__file__).resolve().parent.parent
+TEMPLATES_DIR = ROOT / "templates"
+ASSETS_DIR = ROOT / "assets"
+DATA_DIR = ROOT / "data" / "subjects"
+BUILD_DIR = ROOT / "_build"
+ONEDRIVE = Path(r"C:\Users\sukam\OneDrive\Documents\Ramalan")
+
+PAGE_ORDER = [
+    "page_01_cover.html","page_02_toc.html","page_03_intro.html",
+    "page_profile.html","page_05_bazi_opener.html","page_06_daymaster.html",
+    "page_marriage.html",
+    "page_career.html",
+    "page_yangzhai.html","page_dayun.html","page_liunian.html","page_health.html","page_watak_nasib.html","page_waktu_lahir.html","page_16_lampiran.html","page_15_ziwei_opener.html",
+    "page_ziwei.html",
+    "page_palace_ming_gong.html","page_palace_xiongdi.html","page_palace_fuqi.html","page_palace_zinu.html",
+    "page_palace_caibo.html","page_palace_jie_e.html","page_palace_qianyi.html","page_palace_puyi.html",
+    "page_palace_guanlu.html","page_palace_tianzhai.html","page_palace_fude.html","page_palace_fumu.html",
+    "page_19b_penutup_opener.html",
+    "page_20_kesimpulan.html","page_kesimpulan_lanjutan.html","page_synthesis.html",
+    "page_22_glossary.html","page_23_disclaimer.html"
+]
+
+CHROME_PATHS = [
+    r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+    r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+    r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+]
+
+# ============================================================
+# MICHELE REFERENCE, exact values pulled from cache/michele templates
+# ============================================================
+MICHELE = {  # name kept for backward compat; this is now LinRuYi reference
+    "name_id": "Lin Ru Yi",
+    "name_hanzi": "林如意",
+    "gender_id": "Wanita",
+    "birth_date_text": "30 Mei 1995",
+    "birth_day_name": "Selasa",
+    "birth_time": "10:35",
+    "birth_period_id": "pagi",
+    "birth_hour_branch_hz": "巳",
+    "birth_hour_period_label": "pagi · 巳時",
+    "lunar_date_text_new": "tanggal 2 bulan 5 tahun 乙亥 (Yi Hai · 1995)",
+    "lunar_year_pillar_hz": "乙亥",
+    "lunar_republic": "民國 84 年 5 月 2 日",
+    "age_at_report": 30,
+    "shio_branch_hz": "亥",
+    "shio_id": "Babi",
+    "shio_id_upper": "BABI",
+    "shio_svg_red": "Babi-Merah.svg",
+    "dm_stem_hz": "辛",
+    "dm_element_hz": "金",
+    "dm_label_id": "Logam Halus",
+    "pillars": {
+        "year":  ("乙", "亥"),
+        "month": ("辛", "巳"),
+        "day":   ("辛", "酉"),
+        "hour":  ("癸", "巳"),
+    },
+    "wuxing": {
+        "jin":  {"value": 4.0, "percent": 28.6},
+        "shui": {"value": 4.0, "percent": 28.6},
+        "tu":   {"value": 3.0, "percent": 21.4},
+        "mu":   {"value": 2.0, "percent": 14.3},
+        "huo":  {"value": 1.0, "percent": 7.1},
+        "total": 14,
+        "self_value": 4.0,
+        "self_el_hz": "金",
+        "fav_hz": "金 水",
+        "unfav_hz": "火 木",
+        "axis_max": "14 Total",
+        "insight_id": "<strong>Logam &amp; Air dominan</strong> (金 28.6% · 水 28.6%) didukung Tanah (土 21.4%). Penguasa Hari 辛金 cenderung lemah karena ditekan dua 巳 火, energinya perlu sokongan <strong>金 水</strong> (logam menopang, air meredam api), hindari tambahan <strong>火 木</strong>.",
+    },
+    "format": {
+        "hz": "正官格",
+        "glyph_hz": "正官",
+        "pinyin": "Zheng Guan Ge",
+        "label_id": "Penjaga Disiplin",
+    },
+    "yong_shen": {
+        "elements_hz": "金 水",
+        "glyph_hz": "金<span style=\"opacity:0.5\">·</span>水",
+        "name_id": "Logam &amp; Air",
+        "desc_id": "Penopang &amp; peredam",
+    },
+    "ji_shen": {
+        "elements_hz": "火 木",
+        "glyph_hz": "火<span style=\"opacity:0.5\">·</span>木",
+        "name_id": "Api &amp; Kayu",
+        "desc_id": "Pelumat &amp; pemicu",
+    },
+    "mantra": {
+        "hz": "文武相濟",
+        "pinyin": "Wén Wǔ Xiāng Jì",
+    },
+    "zi_wei": {
+        "ming_zhu_hz": "貪狼",   "ming_zhu_id": "Penguasa Hidup · Hasrat",
+        "shen_zhu_hz": "天機",   "shen_zhu_id": "Penguasa Tubuh · Strategi",
+        "ming_gong_hz": "子",    "ming_gong_id": "Istana Hidup · Tikus",
+        "shen_gong_hz": "寅",    "shen_gong_id": "Istana Tubuh · Harimau",
+        "wu_xing_ju_hz": "火六局","wu_xing_ju_id": "Aliran Api Enam",
+        "shi_jun_hz": "寅",      "shi_jun_id": "Penguasa Waktu · Harimau",
+    },
+}
+
+# ============================================================
+# NULL SAFETY (FULL-MD MODE: any field may be None)
+# ============================================================
+
+EM_DASH = "—"
+
+# Element-class fallback used when day_master.stem_element_hz is missing.
+_FALLBACK_ELEMENT_CLASS = "mu"
+
+
+def _safe_str(v, default: str = EM_DASH) -> str:
+    """Return v as string, or default if v is None / blank."""
+    if v is None:
+        return default
+    s = str(v).strip()
+    if s == "" or s.lower() == "none":
+        return default
+    return s
+
+
+def _safe_num(v, default: float = 0.0) -> float:
+    """Return v as float, or default if v is None / non-numeric."""
+    if v is None:
+        return default
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return default
+
+
+def _normalize_subject_for_render(subject: dict) -> dict:
+    """Walk subject dict and replace None fields with safe placeholders so
+    downstream substitution + SVG geometry never crashes on null MD fields.
+
+    Mutates a shallow-copied dict (originals untouched). Adds `_empty: True`
+    flag on dicts where every numeric field was None — used by regen_* to
+    visually subdue empty SVG/grid placeholders.
+    """
+    s = dict(subject)  # shallow copy at top level
+
+    # -------- identity --------
+    iden = dict(s.get("identity") or {})
+    for k in ("name_id", "name_hanzi", "gender_id", "birth_day_name",
+              "birth_period_id", "birth_hour_period_label",
+              "lunar_date_text_new", "lunar_republic_text"):
+        if iden.get(k) is None:
+            iden[k] = EM_DASH
+    if iden.get("birth_date") is None:
+        iden["birth_date"] = "1900-01-01"  # geometry placeholder; rendered as "—" via subst
+    if iden.get("birth_time") is None:
+        iden["birth_time"] = EM_DASH
+    if iden.get("age_at_report") is None:
+        iden["age_at_report"] = EM_DASH
+    s["identity"] = iden
+
+    # -------- shio --------
+    shio = dict(s.get("shio") or {})
+    for k in ("branch_hz", "id", "id_upper", "svg_red"):
+        if shio.get(k) is None:
+            shio[k] = EM_DASH
+    s["shio"] = shio
+
+    # -------- day_master --------
+    dm = dict(s.get("day_master") or {})
+    for k in ("stem_hz", "stem_element_hz", "label_id", "strength_id"):
+        if dm.get(k) is None:
+            dm[k] = EM_DASH
+    s["day_master"] = dm
+
+    # -------- pillars (each slot dict) --------
+    pillars = dict(s.get("pillars") or {})
+    for slot in ("year", "month", "day", "hour"):
+        p = dict(pillars.get(slot) or {})
+        for k in ("stem_hz", "branch_hz"):
+            if p.get(k) is None:
+                p[k] = EM_DASH
+        pillars[slot] = p
+    s["pillars"] = pillars
+
+    # -------- wuxing (numeric) --------
+    wx_in = s.get("wuxing")
+    if wx_in is None:
+        wx_in = {}
+    wx = {}
+    all_empty = True
+    for el in ("jin", "shui", "mu", "huo", "tu"):
+        cell = dict((wx_in.get(el) or {}))
+        v = cell.get("value")
+        p = cell.get("percent")
+        if v is not None or p is not None:
+            all_empty = False
+        cell["value"] = _safe_num(v, 0.0)
+        cell["percent"] = _safe_num(p, 0.0)
+        if cell.get("label_id") is None:
+            cell["label_id"] = EM_DASH
+        wx[el] = cell
+    wx["total"] = wx_in.get("total") if wx_in.get("total") is not None else (EM_DASH if all_empty else 0)
+    wx["self_value"] = wx_in.get("self_value") if wx_in.get("self_value") is not None else (EM_DASH if all_empty else 0)
+    wx["self_el_hz"] = _safe_str(wx_in.get("self_el_hz"))
+    wx["fav_hz"] = _safe_str(wx_in.get("fav_hz"))
+    wx["unfav_hz"] = _safe_str(wx_in.get("unfav_hz"))
+    wx["axis_max"] = _safe_str(wx_in.get("axis_max"))
+    wx["insight_id"] = wx_in.get("insight_id")  # may be None → regen builds default
+    wx["_empty"] = all_empty
+    s["wuxing"] = wx
+
+    # -------- format / yong_shen / ji_shen / mantra (string dicts) --------
+    for key, fields in [
+        ("format",   ("hz", "glyph_hz", "pinyin", "label_id")),
+        ("yong_shen",("elements_hz", "elements_id", "glyph_hz", "name_id",
+                     "desc_id", "label_id")),
+        ("ji_shen",  ("elements_hz", "elements_id", "glyph_hz", "name_id",
+                     "desc_id", "label_id")),
+        ("mantra",   ("hz", "pinyin")),
+    ]:
+        d = dict(s.get(key) or {})
+        for f in fields:
+            if d.get(f) is None:
+                d[f] = EM_DASH
+        s[key] = d
+
+    # -------- zi_wei --------
+    zw = dict(s.get("zi_wei") or {})
+    for f in ("ming_zhu_hz", "ming_zhu_id", "shen_zhu_hz", "shen_zhu_id",
+              "ming_gong_hz", "ming_gong_id", "shen_gong_hz", "shen_gong_id",
+              "wu_xing_ju_hz", "wu_xing_ju_id", "shi_jun_hz", "shi_jun_id"):
+        if zw.get(f) is None:
+            zw[f] = EM_DASH
+    s["zi_wei"] = zw
+
+    # -------- marriage (lists may be None) --------
+    mar_in = s.get("marriage") or {}
+    mar = dict(mar_in)
+    cocok = mar.get("cocok")
+    hind = mar.get("hindari")
+    mar["cocok"] = list(cocok) if cocok else []
+    mar["hindari"] = list(hind) if hind else []
+    mar["_empty"] = (not mar["cocok"]) and (not mar["hindari"])
+    s["marriage"] = mar
+
+    # -------- shen_sha_list --------
+    ssl = s.get("shen_sha_list")
+    s["shen_sha_list"] = list(ssl) if ssl else []
+
+    # -------- yang_zhai (string fields) --------
+    yz_in = s.get("yang_zhai")
+    if yz_in is not None:
+        yz = dict(yz_in)
+        if yz.get("gua_hz") is None:
+            # Mark empty; apply_blocks will skip compass regen but blank the static
+            # LinRuYi text labels (gua name, pinyin, group) so reader sees "—".
+            yz["_empty"] = True
+        s["yang_zhai"] = yz
+
+    # -------- da_yun --------
+    dy_in = s.get("da_yun")
+    dy = dict(dy_in) if isinstance(dy_in, dict) else {}
+    cycles = dy.get("cycles") or []
+    norm_cycles = []
+    for c in cycles:
+        cc = dict(c or {})
+        for f in ("stem_hz", "branch_hz", "ten_god_hz", "ten_god_id"):
+            if cc.get(f) is None:
+                cc[f] = EM_DASH
+        for f in ("age_start", "age_end", "n"):
+            if cc.get(f) is None:
+                cc[f] = EM_DASH
+        if cc.get("element_class") is None:
+                cc["element_class"] = "el-" + _FALLBACK_ELEMENT_CLASS
+        norm_cycles.append(cc)
+    if not norm_cycles:
+        # Render 10 placeholder cells so lifeline grid keeps its 10-cell shape.
+        for i in range(10):
+            norm_cycles.append({
+                "n": i + 1,
+                "stem_hz": EM_DASH, "branch_hz": EM_DASH,
+                "ten_god_hz": EM_DASH, "ten_god_id": EM_DASH,
+                "age_start": EM_DASH, "age_end": EM_DASH,
+                "element_class": "el-" + _FALLBACK_ELEMENT_CLASS,
+            })
+        dy["_empty"] = True
+    dy["cycles"] = norm_cycles
+    if dy.get("current_index") is None:
+        dy["current_index"] = 0
+    s["da_yun"] = dy
+
+    return s
+
+
+# ============================================================
+# SUBSTITUTION HELPERS
+# ============================================================
+
+def html_amp(s) -> str:
+    """Escape ' & ' → ' &amp; ' (only standalone ampersand+space, won't double-encode).
+    FULL-MD MODE: null-safe — None → EM_DASH placeholder."""
+    if s is None:
+        return EM_DASH
+    return s.replace(" & ", " &amp; ")
+
+
+def fmt_ys_glyph(elements_hz: str) -> str:
+    """e.g. '火 金' → '火<span style=\"opacity:0.5\">·</span>金'."""
+    parts = elements_hz.split()
+    return '<span style="opacity:0.5">·</span>'.join(parts)
+
+
+def fmt_birth_date_id(iso: str) -> str:
+    months = ["", "Januari","Februari","Maret","April","Mei","Juni",
+              "Juli","Agustus","September","Oktober","November","Desember"]
+    y, m, d = iso.split("-")
+    return f"{int(d)} {months[int(m)]} {int(y)}"
+
+
+def gregorian_to_lunar_republic_label(iso: str, lunar_md: tuple[int,int,int] | None = None) -> str:
+    """ROC year = Gregorian year - 1911. lunar_md = (lunar_y, lunar_m, lunar_d).
+    If lunar_md not given, fallback to placeholder format using gregorian m/d.
+    """
+    y = int(iso.split("-")[0])
+    roc = y - 1911
+    if lunar_md:
+        ly, lm, ld = lunar_md
+        return f"民國 {roc} 年 {lm} 月 {ld} 日"
+    # fallback: return ROC year only
+    return f"民國 {roc} 年"
+
+
+def build_pillar_pairs(michele_pillar, subject_pillar):
+    """Single multi-line block sub per pillar."""
+    m_stem, m_branch = michele_pillar
+    s_stem = subject_pillar["stem_hz"]
+    s_branch = subject_pillar["branch_hz"]
+    if m_stem == s_stem and m_branch == s_branch:
+        return []
+    # Null-safe: subject MD may return "—" placeholder for unknown pillars.
+    if s_stem not in STEMS or s_branch not in BRANCHES:
+        m_s = STEMS[m_stem]; m_b = BRANCHES[m_branch]
+        NL = chr(10)
+        parts_m = [
+            f'<div class="t-hanzi stem">{m_stem}</div>',
+            f'          <div class="t-pill"><span class="hz">{m_s["el_hz"]}</span>{m_s["el_id"]} {m_s["polarity_id"]}</div>',
+            '        </div>',
+            '        <div class="t-divider"></div>',
+            '        <div class="t-block">',
+            f'          <div class="t-hanzi branch">{m_branch}</div>',
+            f'          <div class="t-pill"><span class="hz">{m_b["shio_radical_hz"]}</span>{m_b["shio_id"]}</div>',
+        ]
+        parts_s = [
+            f'<div class="t-hanzi stem">{EM_DASH}</div>',
+            f'          <div class="t-pill"><span class="hz">{EM_DASH}</span>{EM_DASH}</div>',
+            '        </div>',
+            '        <div class="t-divider"></div>',
+            '        <div class="t-block">',
+            f'          <div class="t-hanzi branch">{EM_DASH}</div>',
+            f'          <div class="t-pill"><span class="hz">{EM_DASH}</span>{EM_DASH}</div>',
+        ]
+        return [(NL.join(parts_m), NL.join(parts_s))]
+    m_s = STEMS[m_stem]; s_s = STEMS[s_stem]
+    m_b = BRANCHES[m_branch]; s_b = BRANCHES[s_branch]
+    NL = chr(10)
+    parts_m = [
+        f'<div class="t-hanzi stem">{m_stem}</div>',
+        f'          <div class="t-pill"><span class="hz">{m_s["el_hz"]}</span>{m_s["el_id"]} {m_s["polarity_id"]}</div>',
+        '        </div>',
+        '        <div class="t-divider"></div>',
+        '        <div class="t-block">',
+        f'          <div class="t-hanzi branch">{m_branch}</div>',
+        f'          <div class="t-pill"><span class="hz">{m_b["shio_radical_hz"]}</span>{m_b["shio_id"]}</div>',
+    ]
+    parts_s = [
+        f'<div class="t-hanzi stem">{s_stem}</div>',
+        f'          <div class="t-pill"><span class="hz">{s_s["el_hz"]}</span>{s_s["el_id"]} {s_s["polarity_id"]}</div>',
+        '        </div>',
+        '        <div class="t-divider"></div>',
+        '        <div class="t-block">',
+        f'          <div class="t-hanzi branch">{s_branch}</div>',
+        f'          <div class="t-pill"><span class="hz">{s_b["shio_radical_hz"]}</span>{s_b["shio_id"]}</div>',
+    ]
+    return [(NL.join(parts_m), NL.join(parts_s))]
+
+
+def build_substitutions(subject: dict) -> list[tuple[str,str]]:
+    """Build comprehensive (search, replace) pairs from Michele→subject.
+
+    Order matters: longer/more-specific patterns first.
+    """
+    iden = subject["identity"]
+    shio = subject["shio"]
+    dm = subject["day_master"]
+    pillars = subject["pillars"]
+
+    pairs: list[tuple[str,str]] = []
+
+    # ============ COVER (LinRuYi dual-date format) ============
+    # Cover row 1: Tanggal Lahir (Indonesia)
+    s_birth_date = fmt_birth_date_id(iden["birth_date"])
+    s_day_name = iden.get("birth_day_name", "")
+    pairs.append((
+        f'<span class="val">{MICHELE["birth_date_text"]} <em>({MICHELE["birth_day_name"]})</em></span>',
+        f'<span class="val">{s_birth_date} <em>({s_day_name})</em></span>'
+    ))
+    # Cover row 2: Tanggal Lahir (Tionghoa), substitute the prefix "tanggal X bulan Y" only;
+    # the year hz <span> + (Yi Hai · YYYY) <em> handled via shared lunar_year_pillar_hz sub
+    # Michele template prefix: "tanggal 2 bulan 5"
+    s_lunar_new = iden.get("lunar_date_text_new", "")
+    if s_lunar_new:
+        # Extract prefix before "tahun " from both
+        m_prefix = MICHELE["lunar_date_text_new"].split(" tahun ")[0]  # "tanggal 2 bulan 5"
+        s_prefix = s_lunar_new.split(" tahun ")[0]
+        if m_prefix != s_prefix:
+            pairs.append((m_prefix, s_prefix))
+        # Year label part "(Yi Hai · 1995)", extract from inside <em>...</em>
+        # Format: "tanggal X bulan Y tahun ZZ (Yi Hai · YYYY)"
+        if "(" in s_lunar_new and "(" in MICHELE["lunar_date_text_new"]:
+            m_paren = "(" + MICHELE["lunar_date_text_new"].split("(", 1)[1]  # "(Yi Hai · 1995)"
+            s_paren = "(" + s_lunar_new.split("(", 1)[1]
+            if m_paren != s_paren:
+                pairs.append((m_paren, s_paren))
+    # Cover row 3: Waktu Lahir
+    s_period_label = iden.get("birth_hour_period_label", iden.get("birth_period_id", "siang"))
+    pairs.append((
+        f'pukul {MICHELE["birth_time"]} <em>({MICHELE["birth_hour_period_label"]})</em>',
+        f'pukul {iden["birth_time"]} <em>({s_period_label})</em>'
+    ))
+    # Subject-detail raw time (page profile)
+    pairs.append((f"· {MICHELE['birth_time']} ·", f"· {iden['birth_time']} ·"))
+    # Lunar year pillar hz
+    pairs.append((MICHELE["lunar_year_pillar_hz"], pillars["year"]["stem_hz"]+pillars["year"]["branch_hz"]))
+
+    # Cover shio badge: '亥 · BABI'
+    pairs.append((f"'{MICHELE['shio_branch_hz']} · {MICHELE['shio_id_upper']}'",
+                  f"'{shio['branch_hz']} · {shio['id_upper']}'"))
+
+    # ============ NAME ============
+    nh = (iden.get("name_hanzi") or "").strip()
+    if nh and nh not in ("null", "_", "-") and nh != MICHELE["name_hanzi"]:
+        pairs.append((MICHELE["name_hanzi"], nh))
+    elif not nh or nh in ("null", "_", "-"):
+        pairs.append((MICHELE["name_hanzi"], ""))
+    pairs.append((MICHELE["name_id"], iden["name_id"]))
+
+    # ============ GENDER ============
+    if iden.get("gender_id") and iden["gender_id"] != MICHELE["gender_id"]:
+        pairs.append((MICHELE["gender_id"], iden["gender_id"]))
+
+    # Raw birth_date_text (subject-detail in subject-bar)
+    if iden["birth_date"] != "1995-05-30":  # differ from LinRuYi
+        pairs.append((MICHELE["birth_date_text"], fmt_birth_date_id(iden["birth_date"])))
+
+    # ============ AGE ============
+    pairs.append((f"Umur {MICHELE['age_at_report']} tahun",
+                  f"Umur {iden['age_at_report']} tahun"))
+
+    # ============ CURRENT DA YUN CYCLE (subject-bar 大運 label) ============
+    # Template static "大運 丙辰 (七殺)" — replace dengan cur_cycle subject ini.
+    da_yun = subject.get("da_yun") or {}
+    cycles = da_yun.get("cycles") or []
+    cur_idx = da_yun.get("current_index", 0)
+    if cycles and 0 <= cur_idx < len(cycles):
+        cc = cycles[cur_idx]
+        cur_gz = f"{cc.get('stem_hz','') or ''}{cc.get('branch_hz','') or ''}"
+        cur_tg = cc.get("ten_god_hz") or ""
+        if cur_gz and cur_tg:
+            pairs.append(("大運 丙辰 (七殺)", f"大運 {cur_gz} ({cur_tg})"))
+
+    # ============ SUBJECT-BAR LUNAR REPUBLIC ============
+    # Michele: "民國 84 年 6 月 25 日"
+    # Best-effort: subject may not provide lunar_md; fallback derives ROC year only
+    s_lunar = iden.get("lunar_republic_text")
+    if not s_lunar:
+        s_lunar = gregorian_to_lunar_republic_label(iden["birth_date"])
+    pairs.append((MICHELE["lunar_republic"], s_lunar))
+
+    # ============ SHIO (subject-bar text) ============
+    # 亥 Babi → 子 Tikus
+    pairs.append((f"{MICHELE['shio_branch_hz']} {MICHELE['shio_id']}",
+                  f"{shio['branch_hz']} {shio['id']}"))
+    # Cover info-panel: <span class="hz">亥</span> Babi
+    pairs.append((f'<span class="hz">{MICHELE["shio_branch_hz"]}</span> {MICHELE["shio_id"]}',
+                  f'<span class="hz">{shio["branch_hz"]}</span> {shio["id"]}'))
+    # SVG image
+    pairs.append((MICHELE["shio_svg_red"], shio["svg_red"]))
+    pairs.append((f'alt="{MICHELE["shio_id"]}"', f'alt="{shio["id"]}"'))
+
+    # ============ DAY MASTER STEM+ELEMENT compound ============
+    # Subject-bar value: "辛金 · Logam Halus" → "甲木 · Pohon Besar"
+    pairs.append((f"{MICHELE['dm_stem_hz']}{MICHELE['dm_element_hz']} · {MICHELE['dm_label_id']}",
+                  f"{dm['stem_hz']}{dm['stem_element_hz']} · {dm['label_id']}"))
+    # Cover row Penguasa Hari: "Logam Halus <span class=\"hz\">辛金</span>" → "Pohon Besar 甲木"
+    pairs.append((f'{MICHELE["dm_label_id"]} <span class="hz">{MICHELE["dm_stem_hz"]}{MICHELE["dm_element_hz"]}</span>',
+                  f'{dm["label_id"]} <span class="hz">{dm["stem_hz"]}{dm["stem_element_hz"]}</span>'))
+    # Standalone label (catches "Logam Halus" elsewhere)
+    if dm['label_id'] != MICHELE['dm_label_id']:
+        pairs.append((MICHELE['dm_label_id'], dm['label_id']))
+    # Standalone "辛金" → "甲木"
+    pairs.append((f"{MICHELE['dm_stem_hz']}{MICHELE['dm_element_hz']}",
+                  f"{dm['stem_hz']}{dm['stem_element_hz']}"))
+
+    # DM long label "(Logam Yin)" → "(Kayu Yang)", used in footer captions
+    m_dm_long = f"({STEMS[MICHELE['dm_stem_hz']]['el_id']} {STEMS[MICHELE['dm_stem_hz']]['polarity_id']})"
+    if dm['stem_hz'] in STEMS:
+        s_dm_long = f"({STEMS[dm['stem_hz']]['el_id']} {STEMS[dm['stem_hz']]['polarity_id']})"
+    else:
+        s_dm_long = f"({EM_DASH})"
+    if m_dm_long != s_dm_long:
+        pairs.append((m_dm_long, s_dm_long))
+
+    # Generic format hz substitution (catches footer captions outside fmt-name div)
+    fmt = subject.get("format")
+    if fmt and fmt.get("hz") and fmt["hz"] != MICHELE["format"]["hz"]:
+        pairs.append((MICHELE["format"]["hz"], fmt["hz"]))
+
+    # ============ 4 PILLARS (page_profile) ============
+    for slot in ["hour", "day", "month", "year"]:
+        pairs.extend(build_pillar_pairs(MICHELE["pillars"][slot], pillars[slot]))
+
+    # ============ WUXING (page_profile) ============
+    # Skip simple field subs, handled via block replacement in apply_blocks().
+    pass
+
+    # ============ FORMAT card (page_profile) ============
+    fmt = subject.get("format")
+    if fmt:
+        m_f = MICHELE["format"]
+        # glyph
+        pairs.append((f'<div class="fmt-glyph">{m_f["glyph_hz"]}</div>',
+                      f'<div class="fmt-glyph">{fmt["hz"][:2]}</div>'))
+        # name (e.g. 傷官格 → 正財格)
+        pairs.append((f'<div class="fmt-name">{m_f["hz"]}</div>',
+                      f'<div class="fmt-name">{fmt["hz"]}</div>'))
+        # pinyin label
+        pairs.append((f'<div class="fmt-pinyin">{m_f["pinyin"]}, "{m_f["label_id"]}"</div>',
+                      f'<div class="fmt-pinyin">{fmt["pinyin"]}, "{fmt["label_id"]}"</div>'))
+
+    # ============ YONG SHEN card ============
+    ys = subject.get("yong_shen")
+    if ys:
+        m_ys = MICHELE["yong_shen"]
+        pairs.append((f'<div class="ys-glyph">{m_ys["glyph_hz"]}</div>',
+                      f'<div class="ys-glyph">{fmt_ys_glyph(ys["elements_hz"])}</div>'))
+        pairs.append((f'<div class="ys-name">{m_ys["name_id"]}</div>',
+                      f'<div class="ys-name">{html_amp(ys["elements_id"])}</div>'))
+        pairs.append((f'<div class="ys-desc">{m_ys["desc_id"]}</div>',
+                      f'<div class="ys-desc">{html_amp(ys["label_id"])}</div>'))
+        # Page 6 ys-block.fav (span variant): <span class="ys-hz">火 金</span> + <span class="ys-name">Api & Logam, Penyalur & Pemangkas</span>
+        pairs.append(('<span class="ys-hz">火 金</span>',
+                      f'<span class="ys-hz">{ys["elements_hz"]}</span>'))
+        pairs.append(('<span class="ys-name">Api &amp; Logam, Penyalur &amp; Pemangkas</span>',
+                      f'<span class="ys-name">{html_amp(ys["elements_id"])}, {html_amp(ys["label_id"])}</span>'))
+
+    # ============ JI SHEN card ============
+    js = subject.get("ji_shen")
+    if js:
+        m_js = MICHELE["ji_shen"]
+        pairs.append((f'<div class="ys-glyph">{m_js["glyph_hz"]}</div>',
+                      f'<div class="ys-glyph">{fmt_ys_glyph(js["elements_hz"])}</div>'))
+        pairs.append((f'<div class="ys-name">{m_js["name_id"]}</div>',
+                      f'<div class="ys-name">{html_amp(js["elements_id"])}</div>'))
+        pairs.append((f'<div class="ys-desc">{m_js["desc_id"]}</div>',
+                      f'<div class="ys-desc">{html_amp(js["label_id"])}</div>'))
+        pairs.append(('<span class="ys-hz">水 木</span>',
+                      f'<span class="ys-hz">{js["elements_hz"]}</span>'))
+        pairs.append(('<span class="ys-name">Air &amp; Kayu, Penambah Dominasi</span>',
+                      f'<span class="ys-name">{html_amp(js["elements_id"])}, {html_amp(js["label_id"])}</span>'))
+
+    # ============ MANTRA ============
+    mt = subject.get("mantra")
+    if mt:
+        m_mt = MICHELE["mantra"]
+        pairs.append((m_mt["hz"], mt["hz"]))
+        pairs.append((m_mt["pinyin"], mt["pinyin"]))
+
+    # ============ COVER row Elemen Utama — elemen Day Master (v7.4 fix) ============
+    # "Elemen Utama" = elemen inti diri = Day Master (mis. 己 -> Tanah 土), BUKAN yong shen.
+    # Alasan: label "Elemen Utama" + nilai yong shen menyesatkan (pembaca kira orang Logam
+    # padahal Tanah). yong shen tetap tampil lengkap di Halaman 4 & 6.
+    if dm and dm.get("stem_hz"):
+        m_ys = MICHELE["yong_shen"]
+        old_eu = f'>{m_ys["name_id"]} <span class="hz">{m_ys["elements_hz"]}</span><'
+        dm_el_id = STEMS.get(dm["stem_hz"], {}).get("el_id") or dm.get("stem_element_hz", "")
+        dm_el_hz = dm.get("stem_element_hz", "")
+        new_eu = f'>{html_amp(dm_el_id)} <span class="hz">{dm_el_hz}</span><'
+        if old_eu != new_eu:
+            pairs.append((old_eu, new_eu))
+
+    # ============ ZI WEI center info ============
+    zw = subject.get("zi_wei")
+    if zw:
+        m_zw = MICHELE["zi_wei"]
+        # Each row: <div class="val">{HZ}<span class="id">{ID}</span></div>
+        # Need to handle each unique pair carefully (some HZ may repeat e.g., 寅 in shen_gong + shi_jun)
+        # Approach: replace the FULL "{HZ}<span..>{ID}</span>" string
+        for key in ["ming_zhu", "shen_zhu", "ming_gong", "shen_gong", "wu_xing_ju", "shi_jun"]:
+            m_hz = m_zw[f"{key}_hz"]
+            m_id = m_zw[f"{key}_id"]
+            s_hz = zw.get(f"{key}_hz", m_hz)
+            s_id = zw.get(f"{key}_id", m_id)
+            old = f'>{m_hz}<span class="id">{m_id}</span>'
+            new = f'>{s_hz}<span class="id">{s_id}</span>'
+            if old != new:
+                # Use replace with count=1 since lookup is unique per ID text
+                pairs.append((old, new))
+
+        # Subject-detail: "五行局: <strong style="color:var(--red)">火六局</strong>"
+        if zw.get("wu_xing_ju_hz") and zw["wu_xing_ju_hz"] != m_zw["wu_xing_ju_hz"]:
+            pairs.append((
+                f'五行局: <strong style="color:var(--red)">{m_zw["wu_xing_ju_hz"]}</strong>',
+                f'五行局: <strong style="color:var(--red)">{zw["wu_xing_ju_hz"]}</strong>'
+            ))
+
+    # ============ V7.1 PAGE_HEALTH placeholders (Kesehatan page) ============
+    # 10-organ block removed 2026-05-14. Only jie_e (疾厄) block remains.
+    jie_hz = subject.get("jie_e_palace_hz") or EM_DASH
+    _jie_id_raw = subject.get("jie_e_palace_id") or EM_DASH
+    jie_id = _md_inline(_jie_id_raw) if _jie_id_raw and _jie_id_raw != EM_DASH else _jie_id_raw
+    _jie_focus_raw = subject.get("jie_e_organ_focus_id") or "Jaga kesehatan secara umum."
+    jie_focus = _md_inline(_jie_focus_raw)
+    pairs.append(("{{JIE_E_PALACE_HZ}}", jie_hz))
+    pairs.append(("{{JIE_E_PALACE_ID}}", jie_id))
+    pairs.append(("{{JIE_E_ORGAN_FOCUS_ID}}", jie_focus))
+
+    # Subject-bar placeholders for page_health (and any future placeholder-based page)
+    s_name_full = iden.get("name_id", "")
+    s_name_hz = iden.get("name_hanzi") or ""
+    s_birth_date_full = fmt_birth_date_id(iden["birth_date"])
+    s_birth_full = f'{s_birth_date_full} · {iden["birth_time"]} · {iden.get("gender_id","")}'
+    pairs.append(("{{SUBJECT_NAME_FULL}}", s_name_full))
+    pairs.append(("{{SUBJECT_NAME_HZ}}", s_name_hz))
+    pairs.append(("{{SUBJECT_SHIO_BRANCH_HZ}}", shio["branch_hz"]))
+    pairs.append(("{{SUBJECT_SHIO_ID_UPPER}}", shio["id_upper"]))
+    pairs.append(("{{SUBJECT_SHIO_ID_TITLE}}", shio["id"]))
+    pairs.append(("{{SUBJECT_BIRTH_FULL}}", s_birth_full))
+    pairs.append(("{{SHIO_SVG_FILE}}", shio["svg_red"]))
+
+    # ============ v7.4: 先天論命 Watak/Nasib + Pengaruh Waktu Lahir ============
+    def _para_html(text, cls):
+        if not text or text == EM_DASH:
+            return f'<p class="{cls}">{EM_DASH}</p>'
+        parts = [p.strip() for p in str(text).split("||") if p.strip()]
+        return "".join(f'<p class="{cls}">{_md_inline(p)}</p>' for p in parts) or f'<p class="{cls}">{EM_DASH}</p>'
+    _poem_raw = subject.get("xing_qing_poem_hz") or ""
+    _poem_hz = "".join(f"<span>{_md_inline(ln.strip())}</span>" for ln in str(_poem_raw).split("|") if ln.strip()) or EM_DASH
+    pairs.append(("{{XINGQING_POEM_HZ}}", _poem_hz))
+    pairs.append(("{{XINGQING_POEM_ID}}", _md_inline(subject.get("xing_qing_poem_id") or EM_DASH)))
+    pairs.append(("{{XINGQING_PROSE_HTML}}", _para_html(subject.get("xing_qing_prose_id"), "wn-prose")))
+    pairs.append(("{{FULU_BODY_HTML}}", _para_html(subject.get("fulu_body_id"), "wn-prose")))
+    pairs.append(("{{MINGYUN_BODY_HTML}}", _para_html(subject.get("mingyun_body_id"), "wn-prose")))
+    _HOUR_START = {"子":23,"丑":1,"寅":3,"卯":5,"辰":7,"巳":9,"午":11,"未":13,"申":15,"酉":17,"戌":19,"亥":21}
+    _hb = (pillars.get("hour") or {}).get("branch_hz") or ""
+    _shio_id = shio.get("id") or ""
+    _start = _HOUR_START.get(_hb)
+    def _fmt_m(total): return f"{(total//60)%24:02d}:{total%60:02d}"
+    _active = None
+    if _start is not None:
+        _s = _start * 60
+        _times = {"tou": f"± {_fmt_m(_s)} – {_fmt_m(_s+40)}",
+                  "zhong": f"± {_fmt_m(_s+40)} – {_fmt_m(_s+80)}",
+                  "mo": f"± {_fmt_m(_s+80)} – {_fmt_m(_s+120)}"}
+        try:
+            _h, _mn = [int(x) for x in str(iden.get("birth_time","")).split(":")[:2]]
+            _delta = ((_h*60 + _mn) - _s) % 1440
+            _active = "tou" if _delta < 40 else ("zhong" if _delta < 80 else "mo")
+        except Exception:
+            _active = None
+    else:
+        _times = {"tou": EM_DASH, "zhong": EM_DASH, "mo": EM_DASH}
+    _seg_id = {"tou": "Lahir Awal", "zhong": "Lahir Tengah", "mo": "Lahir Akhir"}
+    _seg_hz = {"tou": "頭生", "zhong": "中生", "mo": "末生"}
+    for _seg in ("tou", "zhong", "mo"):
+        _u = _seg.upper()
+        pairs.append((f"{{{{QINSHU_{_u}_LABEL_HZ}}}}", f"{_hb}時{_seg_hz[_seg]}" if _hb else EM_DASH))
+        pairs.append((f"{{{{QINSHU_{_u}_LABEL_ID}}}}", f"{_seg_id[_seg]} Jam {_shio_id}" if _shio_id else _seg_id[_seg]))
+        pairs.append((f"{{{{QINSHU_{_u}_TIME}}}}", _times[_seg]))
+        pairs.append((f"{{{{QINSHU_{_u}_MAIN}}}}", _md_inline(subject.get(f"qinshu_{_seg}_main_id") or EM_DASH)))
+        pairs.append((f"{{{{QINSHU_{_u}_YOUYUE}}}}", _md_inline(subject.get(f"qinshu_{_seg}_youyue_id") or EM_DASH)))
+        _is = (_seg == _active)
+        pairs.append((f"{{{{QINSHU_{_u}_ACTIVE}}}}", " active" if _is else ""))
+        pairs.append((f"{{{{QINSHU_{_u}_BADGE}}}}", '<span class="wl-badge">Berlaku untuk Anda</span>' if _is else ""))
+    _intro = ('Dalam sistem <strong>先天論命</strong>, setiap jam shio (2 jam) dibagi tiga: '
+              '<strong>awal</strong> (頭生), <strong>tengah</strong> (中生), dan <strong>akhir</strong> (末生). '
+              + (f'Jam lahir Anda <strong>{_hb}時</strong> ({_shio_id}); ' if _hb else '')
+              + (f'karena lahir pukul <strong>{iden.get("birth_time","")}</strong>, Anda termasuk segmen yang ditandai di bawah. ' if _active else '')
+              + 'Ketiga pembacaan tetap ditampilkan utuh sesuai foto.')
+    pairs.append(("{{QINSHU_INTRO_HTML}}", _intro))
+
+    return pairs
+
+
+# ============================================================
+# BLOCK REPLACEMENT, for structures that need regeneration
+# ============================================================
+
+ELEMENT_HZ = {"mu":"木", "shui":"水", "tu":"土", "huo":"火", "jin":"金"}
+
+
+def regen_wuxing_stack(wx: dict) -> str:
+    """Generate <div class=\"wux-stack\">...</div> with segments sorted by value desc.
+    Format matches Michele's template: padding spaces BETWEEN class attr and style attr.
+
+    Null-safe: if wx._empty, render 5 segments at flex:1 with "—" labels (subdued).
+    """
+    if wx.get("_empty"):
+        lines = ['<div class="wux-stack empty" style="opacity:0.3">']
+        for el in ELEMENT_HZ:
+            cls = f"el-{el}"
+            pad = " " * (9 - len(cls))
+            lines.append(f'          <div class="seg {cls}"{pad}style="flex:1"><span class="hz">{ELEMENT_HZ[el]}</span><span class="pct">{EM_DASH}</span></div>')
+        lines.append('        </div>')
+        return '\n'.join(lines)
+    items = sorted(
+        [(el, wx[el]["value"], wx[el]["percent"]) for el in ELEMENT_HZ],
+        key=lambda x: -x[1]
+    )
+    lines = ['<div class="wux-stack">']
+    for el, val, pct in items:
+        cls = f"el-{el}"
+        pad = " " * (9 - len(cls))
+        # Raw count from MD (integer if whole). User asked NOT to show as percentage.
+        # The flex:val keeps bar width proportional, but label shows the count itself.
+        v_str = f"{int(val)}" if val == int(val) else f"{val:.1f}"
+        lines.append(f'          <div class="seg {cls}"{pad}style="flex:{val:g}"><span class="hz">{ELEMENT_HZ[el]}</span><span class="pct">{v_str}</span></div>')
+    lines.append('        </div>')
+    return '\n'.join(lines)
+
+
+def replace_block(content: str, open_tag_pattern: str, new_inner: str, count: int = 1) -> str:
+    """Replace contents between matching <div ...> and its </div> closer.
+
+    open_tag_pattern: regex matching the opening tag (e.g., r'<div class="wux-stack">').
+    new_inner: replacement HTML (without the opening/closing div).
+    Uses a balanced-counting algorithm rather than greedy regex.
+    """
+    m = re.search(open_tag_pattern, content)
+    if not m:
+        return content
+    start = m.start()
+    after_open = m.end()
+    # Find matching close, balance count of <div and </div
+    depth = 1
+    pos = after_open
+    while depth > 0 and pos < len(content):
+        next_open = content.find("<div", pos)
+        next_close = content.find("</div>", pos)
+        if next_close == -1:
+            return content  # malformed
+        if next_open != -1 and next_open < next_close:
+            depth += 1
+            pos = next_open + 4
+        else:
+            depth -= 1
+            pos = next_close + 6
+    # pos now points just after the matching </div>
+    end = pos
+    return content[:start] + new_inner + content[end:]
+
+
+def regen_lifeline(da_yun: dict) -> str:
+    """Generate <div class=\"lifeline\">...</div> with 10 cells.
+    Null-safe: missing cycle fields fall back to "—" placeholders."""
+    lines = ['<div class="lifeline">']
+    cycles = da_yun.get("cycles") or []
+    for c in cycles:
+        cls_parts = ["ll-cell"]
+        if c.get("is_current"):
+            cls_parts.append("current")
+        el_cls = c.get("element_class") or "el-mu"
+        cls_parts.append(el_cls)
+        # past detection: cycle index < current_index
+        current_idx = da_yun.get("current_index", 0)
+        n = c.get("n")
+        if isinstance(n, int) and isinstance(current_idx, int) and n - 1 < current_idx:
+            cls_parts.insert(1, "past")
+        cls = " ".join(cls_parts)
+        age_start = c.get("age_start")
+        age_end = c.get("age_end")
+        age_str = f"{age_start}–{age_end}" if age_start not in (None, EM_DASH) and age_end not in (None, EM_DASH) else EM_DASH
+        stem_hz = c.get("stem_hz") or EM_DASH
+        branch_hz = c.get("branch_hz") or EM_DASH
+        ten_god_hz = c.get("ten_god_hz") or EM_DASH
+        ten_god_id = c.get("ten_god_id") or EM_DASH
+        is_empty = (stem_hz == EM_DASH and branch_hz == EM_DASH)
+        cell_style = ' style="opacity:0.35"' if is_empty else ''
+        lines.append(f'        <div class="{cls}"{cell_style}>')
+        lines.append(f'          <div class="age">{age_str}</div>')
+        lines.append(f'          <div class="gz"><span class="s">{stem_hz}</span><span class="b">{branch_hz}</span></div>')
+        lines.append(f'          <div class="ss">{ten_god_hz}</div>')
+        lines.append(f'          <div class="ss-id">{ten_god_id}</div>')
+        lines.append(f'        </div>')
+    lines.append('      </div>')
+    return '\n'.join(lines)
+
+
+def regen_lifeline_axis(da_yun: dict) -> str:
+    """Generate <div class=\"ll-axis\">...</div>."""
+    # FULL-MD MODE: da_yun may be empty/missing axis_marks if MD has null da_yun
+    marks = da_yun.get("axis_marks") if isinstance(da_yun, dict) else None
+    if not marks:
+        marks = [EM_DASH] * 11  # fallback: 5+6 placeholder spans
+    # Michele format: 5 spans on one line, 6 spans on another
+    line1 = ''.join(f'<span>{m}</span>' for m in marks[:5])
+    line2 = ''.join(f'<span>{m}</span>' for m in marks[5:])
+    return (
+        '<div class="ll-axis">\n'
+        f'        {line1}\n'
+        f'        {line2}\n'
+        '      </div>'
+    )
+
+
+def regen_spotlight(da_yun: dict, dm: dict) -> str:
+    """Generate <div class=\"spotlight\">...</div>.
+
+    Subject JSON must provide rich HTML strings for spotlight content:
+      spotlight_tag_tone_html (e.g., 'Api · ekspresif' or 'Api · kolaboratif')
+      spotlight_tag_combo_html (e.g., 'Output Mekar' or 'Sekutu &amp; Tekanan')
+      spotlight_headline_html (with <span class="hz">...</span>)
+      spotlight_bullets_html (list of HTML strings with <strong>, <span>, etc)
+    """
+    cur_idx = da_yun.get("current_index", 0)
+    cur = da_yun["cycles"][cur_idx]
+    cur_stem = cur.get("stem_hz")
+    if cur_stem in STEMS:
+        el_hz = STEMS[cur_stem]["el_hz"]
+        el_id = STEMS[cur_stem]["el_id"]
+    else:
+        el_hz = EM_DASH
+        el_id = EM_DASH
+    el_class = cur.get("element_class", "el-mu").replace("el-", "s-")
+    bullets = da_yun.get("spotlight_bullets_html", da_yun.get("spotlight_bullets", []))
+    bullets_html = '\n'.join(
+        '          <div class="sp-bullet">\n'
+        f'            <div class="num">{i+1}</div>\n'
+        f'            <div class="txt">{b}</div>\n'
+        '          </div>'
+        for i, b in enumerate(bullets)
+    )
+    headline = da_yun.get("spotlight_headline_html",
+                          da_yun.get("spotlight_headline_id", ""))
+    ten_god_pinyin = TEN_GOD_PINYIN.get(cur["ten_god_hz"], "")
+    tag_tone = da_yun.get("spotlight_tag_tone_html", f"{el_id} · ekspresif")
+    tag_combo = da_yun.get("spotlight_tag_combo_html", "Kombinasi")
+    # Combo references which 2nd char? Michele's pattern: 丙+甲 (stem+DM_stem). Tommy's: 丁+亥 (stem+branch).
+    # We provide subject control via spotlight_tag_combo_pair (default: stem+branch).
+    combo_pair = da_yun.get("spotlight_tag_combo_pair", [cur["stem_hz"], cur["branch_hz"]])
+
+    return (
+        '<div class="spotlight">\n'
+        '\n'
+        '      <div class="sp-left">\n'
+        f'        <div class="sp-eyebrow">FASE {cur["n"]} · SEKARANG</div>\n'
+        f'        <div class="sp-gz"><span>{cur["stem_hz"]}</span><span>{cur["branch_hz"]}</span></div>\n'
+        f'        <div class="sp-element-disc {el_class}">{el_hz}</div>\n'
+        f'        <div class="sp-age">Umur <span class="now">{cur["age_start"]}-{cur["age_end"]}</span></div>\n'
+        '      </div>\n'
+        '\n'
+        '      <div class="sp-right">\n'
+        '        <div class="sp-headline">\n'
+        f'          {headline}\n'
+        '        </div>\n'
+        '\n'
+        '        <div class="sp-bullets">\n'
+        f'{bullets_html}\n'
+        '        </div>\n'
+        '      </div>\n'
+        '    </div>'
+    )
+
+
+def regen_seasons_bar(da_yun: dict) -> str:
+    """Generate <div class=\"seasons-bar\">...</div>."""
+    seasons = da_yun.get("seasons", [])
+    flex = 100 // max(len(seasons), 1) if seasons else 20
+    flex = 20  # always 20 to match Michele
+    lines = ['<div class="seasons-bar">']
+    for s in seasons:
+        cls = f's-{s["el_class"][2:] if s["el_class"].startswith("s-") else s["el_class"][3:]}'
+        # Above logic: if "s-mu" → "s-mu", if "el-mu" → "s-mu". simplify:
+        if s["el_class"].startswith("s-"):
+            cls = s["el_class"]
+        else:
+            cls = "s-" + s["el_class"].split("-",1)[1]
+        if s.get("is_current"):
+            cls += " current"
+        lines.append(f'        <div class="season {cls}" style="flex:{flex}">')
+        lines.append(f'          <div class="s-hz">{s["el_hz"]}</div>')
+        lines.append(f'          <div class="s-name">{html_amp(s["name_id"])}</div>')
+        lines.append(f'          <div class="s-age">{s["age_start"]}–{s["age_end"]}</div>')
+        lines.append(f'        </div>')
+    lines.append('      </div>')
+    return '\n'.join(lines)
+
+
+def regen_seasons_axis(da_yun: dict) -> str:
+    """Generate <div class=\"seasons-axis\">...</div>.
+
+    Marks: [season1.start, season2.start, ..., seasonN.start, seasonN.end].
+    """
+    seasons = da_yun.get("seasons", [])
+    if not seasons:
+        return '<div class="seasons-axis"></div>'
+    marks = [s["age_start"] for s in seasons] + [seasons[-1]["age_end"]]
+    spans = ''.join(f'<span>{m}</span>' for m in marks)
+    return f'<div class="seasons-axis">\n        {spans}\n      </div>'
+
+
+# ============================================================
+# MARRIAGE WHEEL SVG, 12 cells + relationship lines
+# ============================================================
+
+# Relationship → wheel cell styling
+WHEEL_STYLE = {
+    "self": {
+        "r": 30, "fill": "#FF8C42", "stroke": "#000000", "sw": 2.5,
+        "img_size": 52, "img_color": "Merah", "img_opacity": None,
+        "text_color": "#FF8C42", "text_weight": 700, "text_size": 17,
+    },
+    "triple": {
+        "r": 24, "fill": "#E8F0EA", "stroke": "#2D6A4F", "sw": 2,
+        "img_size": 40, "img_color": "Merah", "img_opacity": None,
+        "text_color": "#2D6A4F", "text_weight": 700, "text_size": 14,
+    },
+    "pair": {
+        "r": 22, "fill": "#D4EDDA", "stroke": "#2D6A4F", "sw": 2.2,
+        "img_size": 38, "img_color": "Merah", "img_opacity": None,
+        "text_color": "#2D6A4F", "text_weight": 700, "text_size": 13,
+    },
+    "tier2": {  # 吉凶相半 — cukup cocok, hijau lebih lembut
+        "r": 21, "fill": "#E8F5E9", "stroke": "#7CA787", "sw": 1.5,
+        "img_size": 36, "img_color": "Merah", "img_opacity": "0.85",
+        "text_color": "#5A7E60", "text_weight": 600, "text_size": 13,
+    },
+    "clash": {
+        "r": 22, "fill": "#F4DCDC", "stroke": "#A03434", "sw": 1.8,
+        "img_size": 38, "img_color": "Merah", "img_opacity": None,
+        "text_color": "#A03434", "text_weight": 600, "text_size": 13,
+    },
+    "harm": {
+        "r": 22, "fill": "#F8EFD4", "stroke": "#B8860B", "sw": 1.8,
+        "img_size": 38, "img_color": "Merah", "img_opacity": None,
+        "text_color": "#B8860B", "text_weight": 600, "text_size": 13,
+    },
+    "punish": {  # 三刑, use clash-style red
+        "r": 22, "fill": "#F4DCDC", "stroke": "#A03434", "sw": 1.5,
+        "img_size": 38, "img_color": "Merah", "img_opacity": None,
+        "text_color": "#A03434", "text_weight": 600, "text_size": 13,
+    },
+    "break": {  # 破, use clash-style red
+        "r": 22, "fill": "#F4DCDC", "stroke": "#A03434", "sw": 1.5,
+        "img_size": 38, "img_color": "Merah", "img_opacity": None,
+        "text_color": "#A03434", "text_weight": 600, "text_size": 13,
+    },
+    "neutral": {
+        "r": 20, "fill": "#F5EBD0", "stroke": "#D8C896", "sw": 0.8,
+        "img_size": 34, "img_color": "Hitam", "img_opacity": "0.6",
+        "text_color": "#6B5B3F", "text_weight": None, "text_size": 13,
+    },
+}
+
+REL_HZ_TO_KEY = {
+    "三合": "triple",
+    "六合": "pair",
+    "六沖": "clash",
+    "六害": "harm",
+    "三刑": "punish",
+    "破": "break",
+    "大吉":     "pair",
+    "吉凶相半": "tier2",
+    "次吉":     "neutral",
+    # Generic placeholders — used when foto NCC tidak categorize cocok/hindari ke
+    # kategori klasik. Map ke pair/clash style untuk visual line. Label di compat-card
+    # akan tampil "Cocok"/"Hindari" generik (no fake 六合/六沖 Hanzi).
+    "cocok": "pair",
+    "hindari": "clash",
+}
+
+
+def _wheel_cell_svg(idx: int, branch_hz: str, rel_key: str, comment_label: str) -> str:
+    """Generate one <g>...</g> SVG group for a wheel cell."""
+    cx, cy, lx, ly = WHEEL_POSITIONS[idx]
+    # For self cell, push hanzi label further from circle (breathing room)
+    if rel_key == "self":
+        dx = lx - cx
+        dy = ly - cy
+        lx = cx + dx * 1.45
+        ly = cy + dy * 1.45
+    style = WHEEL_STYLE[rel_key]
+    shio_id = BRANCHES[branch_hz]["shio_id"]
+    img_file = f"{shio_id}-{style['img_color']}.svg"
+    half = style["img_size"] / 2
+
+    img_attrs = f'href="{img_file}" x="{cx - half:g}" y="{cy - half:g}" width="{style["img_size"]}" height="{style["img_size"]}"'
+    if style["img_opacity"]:
+        img_attrs += f' opacity="{style["img_opacity"]}"'
+
+    # Text element, weight optional
+    text_attrs = f'x="{lx}" y="{ly}" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="{style["text_size"]}" fill="{style["text_color"]}"'
+    if style["text_weight"]:
+        text_attrs += f' font-weight="{style["text_weight"]}"'
+
+    return (
+        f'          <!-- {comment_label} -->\n'
+        f'          <g>\n'
+        f'            <circle cx="{cx:g}" cy="{cy:g}" r="{style["r"]:g}" fill="{style["fill"]}" stroke="{style["stroke"]}" stroke-width="{style["sw"]:g}"/>\n'
+        f'            <image {img_attrs}/>\n'
+        f'            <text {text_attrs}>{branch_hz}</text>\n'
+        f'          </g>'
+    )
+
+
+def regen_wheel_svg(subject: dict) -> str:
+    """Generate the inner SVG for marriage wheel (everything inside <svg>...</svg>).
+
+    Null-safe: if self branch unknown, render 12 neutral cells, no highlights.
+    """
+    marriage = subject.get("marriage") or {}
+    self_hz = subject.get("shio", {}).get("branch_hz")
+    if self_hz not in BRANCH_ORDER:
+        # Render 12 neutral cells, no relationship lines, no self highlight.
+        cell_svg = []
+        for idx in range(12):
+            b_hz = BRANCH_ORDER[idx]
+            comment = f"i={idx} {b_hz} {BRANCHES[b_hz]['shio_id']} (neutral)"
+            cell_svg.append(_wheel_cell_svg(idx, b_hz, "neutral", comment))
+        center_svg = (
+            '          <!-- Pusat -->\n'
+            '          <circle cx="200" cy="200" r="22" fill="#FFFEF8" stroke="#C9A961" stroke-width="1"/>\n'
+            f'          <text x="200" y="194" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="11" fill="#8B1A1A" font-weight="600">{EM_DASH}</text>\n'
+            '          <text x="200" y="208" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#6B5B3F" letter-spacing="1">ANDA</text>'
+        )
+        bg = (
+            '          <circle cx="200" cy="200" r="180" fill="none" stroke="#E5D3A1" stroke-width="0.5"/>\n'
+            '          <circle cx="200" cy="200" r="170" fill="#FFFEF8" stroke="#E5D3A1" stroke-width="0.5"/>\n'
+            '          <circle cx="200" cy="200" r="115" fill="none" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>\n'
+            '          <line x1="200" y1="30" x2="200" y2="370" stroke="#E5D3A1" stroke-width="0.3" stroke-dasharray="1,3"/>\n'
+            '          <line x1="30" y1="200" x2="370" y2="200" stroke="#E5D3A1" stroke-width="0.3" stroke-dasharray="1,3"/>'
+        )
+        return (
+            '<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">\n'
+            + bg + '\n' + center_svg + '\n'
+            + '\n'.join(cell_svg) + '\n'
+            + '        </svg>'
+        )
+    self_idx = BRANCH_ORDER.index(self_hz)
+
+    # Build relationship map: branch_idx → rel_key
+    rel_map = {}
+    rel_map[self_idx] = "self"
+    cocok_branches = []  # for triple polygon
+    pair_branches = []
+    tier2_branches = []  # 吉凶相半 — cukup cocok (lighter green dashed)
+    clash_branches = []
+    harm_branches = []
+    punish_branches = []
+    break_branches = []
+    for item in marriage.get("cocok", []):
+        b_hz = item["branch_hz"]
+        idx = BRANCH_ORDER.index(b_hz)
+        if idx == self_idx:  # never override self position
+            continue
+        key = REL_HZ_TO_KEY.get(item["relationship_hz"], "neutral")
+        rel_map[idx] = key
+        if key == "triple": cocok_branches.append(idx)
+        elif key == "pair": pair_branches.append(idx)
+        elif key == "tier2": tier2_branches.append(idx)
+    for item in marriage.get("hindari", []):
+        b_hz = item["branch_hz"]
+        idx = BRANCH_ORDER.index(b_hz)
+        if idx == self_idx:  # never override self position (e.g., self-刑 in foto)
+            continue
+        key = REL_HZ_TO_KEY.get(item["relationship_hz"], "neutral")
+        rel_map[idx] = key
+        if key == "clash": clash_branches.append(idx)
+        elif key == "harm": harm_branches.append(idx)
+        elif key == "punish": punish_branches.append(idx)
+        elif key == "break": break_branches.append(idx)
+
+    # Build relationship lines (drawn before cells)
+    self_cx, self_cy, _, _ = WHEEL_POSITIONS[self_idx]
+    line_svg = []
+
+    # Triple harmony: polygon if exactly 2 triple branches
+    if len(cocok_branches) >= 2:
+        pts = [(self_cx, self_cy)]
+        for idx in cocok_branches[:2]:
+            cx, cy, _, _ = WHEEL_POSITIONS[idx]
+            pts.append((cx, cy))
+        # Format like "亥-卯-未"
+        triple_label = "-".join([self_hz] + [BRANCH_ORDER[i] for i in cocok_branches[:2]])
+        pts_str = " ".join(f"{x:g},{y:g}" for x, y in pts)
+        line_svg.append(
+            f'          <!-- Triple harmony {triple_label} (green triangle) -->\n'
+            f'          <polygon points="{pts_str}"\n'
+            f'            fill="rgba(45,106,79,0.06)" stroke="#2D6A4F" stroke-width="1.2" stroke-dasharray="4,3"/>'
+        )
+
+    # Pair: green solid line (cocok = hijau)
+    for idx in pair_branches:
+        cx, cy, _, _ = WHEEL_POSITIONS[idx]
+        line_svg.append(
+            f'          <!-- Pair {self_hz}-{BRANCH_ORDER[idx]} (green solid) -->\n'
+            f'          <line x1="{self_cx:g}" y1="{self_cy:g}" x2="{cx:g}" y2="{cy:g}"\n'
+            f'            stroke="#2D6A4F" stroke-width="2.2"/>'
+        )
+
+    # Tier2 (吉凶相半): hijau lembut + dashed = cukup cocok
+    for idx in tier2_branches:
+        cx, cy, _, _ = WHEEL_POSITIONS[idx]
+        line_svg.append(
+            f'          <!-- Tier2 {self_hz}-{BRANCH_ORDER[idx]} (light green dashed) -->\n'
+            f'          <line x1="{self_cx:g}" y1="{self_cy:g}" x2="{cx:g}" y2="{cy:g}"\n'
+            f'            stroke="#7CA787" stroke-width="1.6" stroke-dasharray="3,2"/>'
+        )
+
+    # Clash: red dashed
+    for idx in clash_branches:
+        cx, cy, _, _ = WHEEL_POSITIONS[idx]
+        line_svg.append(
+            f'          <!-- Clash {self_hz}-{BRANCH_ORDER[idx]} (red dashed) -->\n'
+            f'          <line x1="{self_cx:g}" y1="{self_cy:g}" x2="{cx:g}" y2="{cy:g}"\n'
+            f'            stroke="#A03434" stroke-width="1.5" stroke-dasharray="6,3"/>'
+        )
+
+    # Harm: yellow dotted
+    for idx in harm_branches:
+        cx, cy, _, _ = WHEEL_POSITIONS[idx]
+        line_svg.append(
+            f'          <!-- Harm {self_hz}-{BRANCH_ORDER[idx]} (yellow dotted) -->\n'
+            f'          <line x1="{self_cx:g}" y1="{self_cy:g}" x2="{cx:g}" y2="{cy:g}"\n'
+            f'            stroke="#B8860B" stroke-width="1.2" stroke-dasharray="2,3"/>'
+        )
+
+    # Punish: red dashed (extra)
+    for idx in punish_branches:
+        cx, cy, _, _ = WHEEL_POSITIONS[idx]
+        line_svg.append(
+            f'          <!-- Punish {self_hz}-{BRANCH_ORDER[idx]} (red short-dashed) -->\n'
+            f'          <line x1="{self_cx:g}" y1="{self_cy:g}" x2="{cx:g}" y2="{cy:g}"\n'
+            f'            stroke="#A03434" stroke-width="1.2" stroke-dasharray="3,2"/>'
+        )
+
+    # Break: red dotted (extra)
+    for idx in break_branches:
+        cx, cy, _, _ = WHEEL_POSITIONS[idx]
+        line_svg.append(
+            f'          <!-- Break {self_hz}-{BRANCH_ORDER[idx]} (red dotted) -->\n'
+            f'          <line x1="{self_cx:g}" y1="{self_cy:g}" x2="{cx:g}" y2="{cy:g}"\n'
+            f'            stroke="#A03434" stroke-width="1.2" stroke-dasharray="1,3"/>'
+        )
+
+    # 12 cells
+    cell_svg = []
+    # Comment label format matches Michele: "i=N branch_hz shio_id (TYPE, self_hz-branch_hz rel_hz)"
+    rel_label_map = {
+        "self": "DIRI",
+        "triple": "TRIPLE",
+        "pair": "PAIR",
+        "clash": "CLASH",
+        "harm": "HARM",
+        "punish": "PUNISH",
+        "break": "BREAK",
+        "tier2": "TIER2",
+        "neutral": "neutral",
+    }
+    rel_hz_map = {
+        "triple": "三合",
+        "pair": "六合",
+        "tier2": "吉凶相半",
+        "clash": "六沖",
+        "harm": "六害",
+        "punish": "三刑",
+        "break": "破",
+    }
+    # Triple branches share a single label across all triple cells (e.g., "亥-卯-未")
+    triple_full_label = "-".join([self_hz] + [BRANCH_ORDER[i] for i in cocok_branches[:2]]) if len(cocok_branches) >= 2 else ""
+    for idx in range(12):
+        b_hz = BRANCH_ORDER[idx]
+        key = rel_map.get(idx, "neutral")
+        if key == "self":
+            comment = f"i={idx} {b_hz} {BRANCHES[b_hz]['shio_id']} (DIRI)"
+        elif key == "neutral":
+            comment = f"i={idx} {b_hz} {BRANCHES[b_hz]['shio_id']} (neutral)"
+        elif key == "triple":
+            comment = f"i={idx} {b_hz} {BRANCHES[b_hz]['shio_id']} (TRIPLE, {triple_full_label} 三合)"
+        else:
+            rel_hz = rel_hz_map.get(key, "")
+            comment = f"i={idx} {b_hz} {BRANCHES[b_hz]['shio_id']} ({rel_label_map[key]}, {self_hz}-{b_hz} {rel_hz})"
+        cell_svg.append(_wheel_cell_svg(idx, b_hz, key, comment))
+
+    # Note: This regen function returns the inner content of the wheel-svg's
+    # <svg>...</svg> (everything between the svg open and close).
+    # The BG circles + cross axes are NOT part of regen, they're static.
+    # Only relationship lines + center label + 12 cells are regenerated.
+
+    # Center label
+    center_svg = (
+        '          <!-- Pusat -->\n'
+        '          <circle cx="200" cy="200" r="22" fill="#FFFEF8" stroke="#C9A961" stroke-width="1"/>\n'
+        '          <text x="200" y="194" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="11" fill="#8B1A1A" font-weight="600">本命</text>\n'
+        '          <text x="200" y="208" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#6B5B3F" letter-spacing="1">ANDA</text>'
+    )
+
+    # Static BG (must match Michele exactly)
+    bg = (
+        '          <!-- Lingkaran latar -->\n'
+        '          <circle cx="200" cy="200" r="180" fill="none" stroke="#E5D3A1" stroke-width="0.5"/>\n'
+        '          <circle cx="200" cy="200" r="170" fill="#FFFEF8" stroke="#E5D3A1" stroke-width="0.5"/>\n'
+        '          <circle cx="200" cy="200" r="115" fill="none" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>\n'
+        '\n'
+        '          <!-- Salib kompas -->\n'
+        '          <line x1="200" y1="30" x2="200" y2="370" stroke="#E5D3A1" stroke-width="0.3" stroke-dasharray="1,3"/>\n'
+        '          <line x1="30" y1="200" x2="370" y2="200" stroke="#E5D3A1" stroke-width="0.3" stroke-dasharray="1,3"/>\n'
+        '\n'
+        '          <!-- Relationship lines (drawn before badges) -->'
+    )
+
+    # Compose
+    return (
+        '<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">\n'
+        + bg + '\n'
+        + '\n'.join(line_svg) + '\n'
+        + '\n'
+        + center_svg + '\n'
+        + '\n'
+        + '          <!-- 12 badge shio -->\n'
+        + '\n'.join(cell_svg) + '\n'
+        + '        </svg>'
+    )
+
+
+def regen_wheel_legend(subject: dict) -> str:
+    """Generate dynamic <div class="wheel-legend">...</div> based on actual marriage
+    relationship values present. Shows only categories that exist in MD data —
+    no fake hardcoded entries.
+    """
+    marriage = subject.get("marriage") or {}
+    self_hz = (subject.get("shio") or {}).get("branch_hz") or EM_DASH
+
+    # Collect unique rel_hz values used in cocok + hindari
+    rel_used = set()
+    for item in (marriage.get("cocok") or []) + (marriage.get("hindari") or []):
+        rh = item.get("relationship_hz")
+        if rh:
+            rel_used.add(rh)
+
+    # Style/label table per rel_hz (matches wheel line drawing colors)
+    LEGEND_STYLES = {
+        "三合":   ('<svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#2D6A4F" stroke-width="1.6" stroke-dasharray="4,3"/></svg>',
+                   "三合 SāN HÉ", "SEGITIGA HARMONI"),
+        "六合":   ('<svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#2D6A4F" stroke-width="1.8"/></svg>',
+                   "六合 LIù HÉ", "PASANGAN COCOK"),
+        "六沖":   ('<svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#A03434" stroke-width="1.6" stroke-dasharray="6,3"/></svg>',
+                   "六沖 LIù CHōNG", "BENTROK LANGSUNG"),
+        "六害":   ('<svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#B8860B" stroke-width="1.4" stroke-dasharray="2,3"/></svg>',
+                   "六害 LIù HàI", "MENGHAMBAT HALUS"),
+        "三刑":   ('<svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#A03434" stroke-width="1.4" stroke-dasharray="3,2"/></svg>',
+                   "三刑 SāN XíNG", "HUKUMAN GESEKAN"),
+        "破":     ('<svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#A03434" stroke-width="1.4" stroke-dasharray="1,3"/></svg>',
+                   "破 Pò", "MERETAKKAN"),
+        "大吉":   ('<svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#2D6A4F" stroke-width="2.2"/></svg>',
+                   "大吉 Dà Jí", "SANGAT COCOK"),
+        "吉凶相半":('<svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#7CA787" stroke-width="1.6" stroke-dasharray="3,2"/></svg>',
+                   "吉凶相半 JíXiōng XiāngBàn", "CUKUP COCOK"),
+        # Generic placeholders — used when foto NCC didn't categorize
+        "cocok":  ('<svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#2D6A4F" stroke-width="2.2"/></svg>',
+                   "Cocok", "PASANGAN HARMONIS"),
+        "hindari":('<svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#A03434" stroke-width="2.0" stroke-dasharray="6,3"/></svg>',
+                   "Hindari", "RISIKO BENTROK"),
+    }
+
+    # Order: classical first (foto-categorized), then generic (foto flat)
+    ORDER = ["三合", "六合", "六沖", "六害", "三刑", "破", "大吉", "吉凶相半", "cocok", "hindari"]
+
+    items = []
+    # DIRI ANDA — always first
+    items.append(
+        '        <div class="legend-item">\n'
+        '          <div class="legend-dot" style="background:#FF8C42;border-color:#000000;border-width:0.5mm"></div>\n'
+        f'          <div class="lbl"><span class="cn" style="color:#FF8C42;font-weight:700">本命 {self_hz}</span><span class="id">DIRI ANDA</span></div>\n'
+        '        </div>'
+    )
+    # Add only relationships actually present in data
+    for rel_hz in ORDER:
+        if rel_hz in rel_used and rel_hz in LEGEND_STYLES:
+            svg, cn, idn = LEGEND_STYLES[rel_hz]
+            items.append(
+                '        <div class="legend-item">\n'
+                f'          {svg}\n'
+                f'          <div class="lbl"><span class="cn">{cn}</span><span class="id">{idn}</span></div>\n'
+                '        </div>'
+            )
+
+    return (
+        '<div class="wheel-legend">\n'
+        '        <div class="legend-title">Hubungan</div>\n'
+        + '\n'.join(items) + '\n'
+        '      </div>'
+    )
+
+
+# ============================================================
+# COMPAT GRID, cocok + hindari rows
+# ============================================================
+
+REL_BADGE_LABEL = {
+    "三合": "三合 · BESAR JAYA",
+    "六合": "六合 · COCOK",
+    "六沖": "六沖 · BENTROK",
+    "六害": "六害 · MENGHAMBAT",
+    "三刑": "三刑 · GESEKAN",
+    "破":   "破 · MERETAKKAN",
+    "大吉":     "大吉 · SANGAT COCOK",
+    "吉凶相半": "吉凶相半 · CUKUP COCOK",
+    "次吉":     "次吉 · UMUM COCOK",
+    # Generic (foto tidak categorize) — no fake Hanzi
+    "cocok":   "COCOK",
+    "hindari": "HINDARI",
+}
+
+
+def regen_compat_card(card_type: str, items: list[dict], title_color: str, badge_text: str) -> str:
+    """card_type: 'good' | 'bad'."""
+    if not items:
+        return (
+            f'<div class="compat-card {card_type} empty" style="opacity:0.6">\n'
+            f'        <div class="compat-title">\n'
+            f'          <span class="badge">{badge_text}</span>\n'
+            f'          <span style="color:{title_color};">{"Pasangan Selaras" if card_type == "good" else "Berisiko Bentrok"}</span>\n'
+            f'        </div>\n'
+            f'        <div class="shio-list">\n'
+            f'          <div class="shio-row" style="justify-content:center;text-align:center;padding:6mm;color:#6B5B3F;font-style:italic;">Data tidak tersedia</div>\n'
+            f'        </div>\n'
+            f'      </div>'
+        )
+    rows = []
+    for item in items:
+        b_hz = item["branch_hz"]
+        shio_id = BRANCHES[b_hz]["shio_id"]
+        img_file = f"{shio_id}-Merah.svg"
+        # FULL-MD MODE: relationship_hz from MD (foto layar 婚配 grouping). Null → no label tag.
+        rel_hz = item.get("relationship_hz")
+        rel_id = item.get("relationship_id")
+        if rel_hz:
+            rel_label = REL_BADGE_LABEL.get(rel_hz, f"{rel_hz} · {rel_id or ''}".rstrip(" ·"))
+            tag_html = f'<span class="tag">{rel_label}</span>'
+        else:
+            tag_html = ''  # no label badge if MD didn't provide relationship
+        reason = html_amp(item.get("reason_id"))
+        if reason == EM_DASH:
+            reason_html = ''  # hide reason row entirely if null (avoid "—" placeholder visible)
+        else:
+            reason_html = f'              <div class="reason">{reason}</div>\n'
+        rows.append(
+            f'          <div class="shio-row">\n'
+            f'            <div class="icon"><img src="{img_file}" alt="{shio_id}"></div>\n'
+            f'            <div class="info">\n'
+            f'              <div class="name"><span class="hz">{b_hz}</span>{shio_id}{tag_html}</div>\n'
+            f'{reason_html}'
+            f'            </div>\n'
+            f'          </div>'
+        )
+
+    return (
+        f'<div class="compat-card {card_type}">\n'
+        f'        <div class="compat-title">\n'
+        f'          <span class="badge">{badge_text}</span>\n'
+        f'          <span style="color:{title_color};">{"Pasangan Selaras" if card_type == "good" else "Berisiko Bentrok"}</span>\n'
+        f'        </div>\n'
+        f'        <div class="shio-list">\n'
+        + '\n'.join(rows) + '\n'
+        + f'        </div>\n'
+        + f'      </div>'
+    )
+
+
+# ============================================================
+# DAY MASTER, radar polygon + 5 element cards
+# ============================================================
+
+# Radar axis endpoints at scale=3 (max). Order: 金(top), 水(TR), 火(BR), 土(BL), 木(TL).
+# Direction vectors from center (200,200):
+RADAR_AXES = {
+    "jin":  ("金", 200, 60,  "#8B1A1A", 200, 40,  "Logam"),
+    "shui": ("水", 333, 157, "#3A6B8C", 358, 148, "Air"),
+    "huo":  ("火", 282, 313, "#8C3535", 305, 338, "Api"),
+    "tu":   ("土", 118, 313, "#8C6E47", 95,  338, "Tanah"),
+    "mu":   ("木", 67,  157, "#4D7A3A", 42,  148, "Kayu"),
+}
+RADAR_CENTER = (200, 200)
+
+
+_EL_HZ_NAME = {"jin":("金","Logam"),"shui":("水","Air"),"mu":("木","Kayu"),"huo":("火","Api"),"tu":("土","Tanah")}
+_HZ_TO_KEY = {"金":"jin","水":"shui","木":"mu","火":"huo","土":"tu"}
+
+
+def _build_wuxing_insight(subject: dict) -> str:
+    """Auto-generate the Wu Xing insight paragraph from data (no LinRuYi hardcode)."""
+    wx = subject.get("wuxing") or {}
+    if not wx:
+        return ""
+    if wx.get("_empty"):
+        return f'<span style="opacity:0.5;font-style:italic;">Data Wu Xing tidak tersedia. {EM_DASH}</span>'
+    items = [(k, wx[k]["value"]) for k in ["jin","shui","mu","huo","tu"]]
+    items.sort(key=lambda x: x[1], reverse=True)
+    top1, top2, top3 = items[0], items[1], items[2]
+    hz1, name1 = _EL_HZ_NAME[top1[0]]
+    hz2, name2 = _EL_HZ_NAME[top2[0]]
+    hz3, name3 = _EL_HZ_NAME[top3[0]]
+    def _v(val):
+        return f"{int(val)}" if val == int(val) else f"{val:.1f}"
+    dm = subject.get("day_master") or {}
+    dm_stem = dm.get("stem_hz","")
+    dm_el = dm.get("stem_element_hz","")
+    dm_strength = dm.get("strength_id","")
+    yong = (subject.get("yong_shen") or {}).get("elements_hz","")
+    ji = (subject.get("ji_shen") or {}).get("elements_hz","")
+    return (
+        f'<strong>{name1} &amp; {name2} dominan</strong> '
+        f'({hz1} {_v(top1[1])} · {hz2} {_v(top2[1])}) '
+        f'didukung {name3} ({hz3} {_v(top3[1])}). '
+        f'Penguasa Hari {dm_stem}{dm_el} cenderung {dm_strength.lower()}, '
+        f'energinya perlu sokongan <strong>{yong}</strong>, '
+        f'hindari tambahan <strong>{ji}</strong>.'
+    )
+
+
+def _radar_max(wx: dict) -> float:
+    """Dynamic radar scale: ceil of max wuxing value, min 3."""
+    import math
+    mx = max(wx[el]["value"] for el in ["jin","shui","huo","tu","mu"])
+    return max(3.0, float(math.ceil(mx)))
+
+
+def _radar_vertex(el: str, value: float, scale: float) -> tuple[float, float]:
+    """Compute (x, y) of polygon vertex for element at given value."""
+    cx, cy = RADAR_CENTER
+    _, ex, ey, _, _, _, _ = RADAR_AXES[el]
+    t = value / scale
+    return (cx + (ex - cx) * t, cy + (ey - cy) * t)
+
+
+def regen_radar_polygon(wx: dict) -> str:
+    """Generate the SVG snippet replacing Michele's polygon + 5 vertex dots.
+
+    Null-safe: if wx._empty, render a tiny near-center polygon w/ transparent stroke
+    so the radar grid is visible but no misleading shape is drawn.
+    """
+    if wx.get("_empty"):
+        cx, cy = RADAR_CENTER
+        # 5 vertices clustered at center
+        pts = [(cx, cy)] * 5
+        pts_str = " ".join(f"{x:g},{y:g}" for x, y in pts)
+        poly = (
+            f'          <polygon points="{pts_str}"\n'
+            f'            fill="rgba(139,26,26,0.0)" stroke="transparent" stroke-width="0"/>'
+        )
+        dots = []
+        for el in ["jin","shui","huo","tu","mu"]:
+            dots.append(f'          <circle cx="{cx:g}" cy="{cy:g}" r="0" fill="transparent"/>')
+        return poly + '\n' + '\n'.join(dots)
+    scale = _radar_max(wx)
+    # Polygon vertex order: 金 → 水 → 火 → 土 → 木
+    pts = []
+    for el in ["jin", "shui", "huo", "tu", "mu"]:
+        x, y = _radar_vertex(el, wx[el]["value"], scale)
+        pts.append((x, y))
+    pts_str = " ".join(f"{x:g},{y:g}" for x, y in pts)
+    poly = (
+        f'          <polygon points="{pts_str}"\n'
+        f'            fill="rgba(139,26,26,0.18)" stroke="#8B1A1A" stroke-width="1.5"/>'
+    )
+    # Vertex dots (color from RADAR_AXES vertex_color but Michele uses element gradient end)
+    dot_colors = {"jin": "#A89358", "shui": "#3A6B8C", "huo": "#8C3535", "tu": "#8C6E47", "mu": "#4D7A3A"}
+    dots = []
+    for el, (x, y) in zip(["jin","shui","huo","tu","mu"], pts):
+        # Match Michele's spacing: 1 trailing space for shui (291,170), 2 for jin (200,166), etc
+        # Use simple format
+        dots.append(f'          <circle cx="{x:g}" cy="{y:g}" r="3" fill="{dot_colors[el]}"/>')
+    return poly + '\n' + '\n'.join(dots)
+
+
+def regen_radar_labels(wx: dict, dm_element_class: str) -> str:
+    """Generate the 5 element label texts inside the <g font-family="Noto Serif TC,serif"> group."""
+    # Order matches Michele: 金 top, 水 right, 火 LR, 土 LL, 木 left
+    empty = wx.get("_empty", False)
+    parts = []
+    for el in ["jin", "shui", "huo", "tu", "mu"]:
+        hz, ex, ey, color, lx, ly, label_id = RADAR_AXES[el]
+        if empty:
+            v_str = EM_DASH
+            star = ""
+            comment_pos = {"jin":"金 top","shui":"水 right","huo":"火 lower-right","tu":"土 lower-left","mu":"木 left"}
+            comment = f"<!-- {comment_pos[el]} -->"
+            parts.append(
+                f'            {comment}\n'
+                f'            <text x="{lx}" y="{ly}" text-anchor="middle" font-size="18" fill="{color}" font-weight="700">{hz}</text>\n'
+                f'            <text x="{lx}" y="{ly + 12}" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">{label_id} · {EM_DASH}</text>'
+            )
+            continue
+        v = wx[el]["value"]
+        # Format value: 3.0, 2.5, 0.8, 0.0
+        v_str = f"{v:g}" if v != int(v) else f"{int(v)}.0"
+        # DM star: append " ★" if element matches DM
+        star = " ★" if el == dm_element_class else ""
+        comment_pos = {
+            "jin": "金 top", "shui": "水 right", "huo": "火 lower-right",
+            "tu": "土 lower-left", "mu": "木 left"
+        }
+        comment = f"<!-- {comment_pos[el]} -->"
+        if el == dm_element_class:
+            comment = f"<!-- {comment_pos[el]}, Penguasa Hari ★ -->"
+        parts.append(
+            f'            {comment}\n'
+            f'            <text x="{lx}" y="{ly}" text-anchor="middle" font-size="18" fill="{color}" font-weight="700">{hz}</text>\n'
+            f'            <text x="{lx}" y="{ly + 12}" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic">{label_id} · {v_str}{star}</text>'
+        )
+    return '          <g font-family="Noto Serif TC,serif">\n' + '\n'.join(parts) + '\n          </g>'
+
+
+def regen_dm_element_cards(subject: dict) -> str:
+    """Generate <div class="dm-elements">...</div> with 5 cards sorted by value desc."""
+    wx = subject["wuxing"]
+    dm_el = _wuxing_class_from_dm(subject["day_master"])  # e.g., 'mu', 'huo'
+    if wx.get("_empty"):
+        # Subdued empty cards, no role badges, "—" values.
+        pinyin_map = {"mu":"Mù","shui":"Shuǐ","tu":"Tǔ","huo":"Huǒ","jin":"Jīn"}
+        cards = []
+        for el in ELEMENT_HZ:
+            hz = ELEMENT_HZ[el]
+            label = (wx[el].get("label_id") or EM_DASH)
+            cards.append(
+                f'      <div class="dme dme-card el-{el} empty" style="opacity:0.45">\n'
+                f'        <div class="dme-hz">{hz}</div>\n'
+                f'        <div class="dme-name">{label} · {pinyin_map[el]}</div>\n'
+                f'        <div class="dme-val">{EM_DASH}</div>\n'
+                f'        <div class="dme-bar"><div class="dme-bar-fill" style="width:0%"></div></div>\n'
+                f'        <div class="dme-role">{EM_DASH}</div>\n'
+                f'      </div>'
+            )
+        return '<div class="dm-elements">\n' + '\n'.join(cards) + '\n    </div>'
+    yong_shen_el_hz = subject["yong_shen"]["elements_hz"]  # e.g., "火 金"
+    ji_shen_el_hz = subject["ji_shen"]["elements_hz"]      # e.g., "水 木"
+    yong_set = set(yong_shen_el_hz.split())
+    ji_set = set(ji_shen_el_hz.split())
+
+    items = sorted(
+        [(el, wx[el]["value"], wx[el]["percent"], wx[el]["label_id"]) for el in ELEMENT_HZ],
+        key=lambda x: -x[1]
+    )
+    pinyin_map = {"mu": "Mù", "shui": "Shuǐ", "tu": "Tǔ", "huo": "Huǒ", "jin": "Jīn"}
+    cards = []
+    radar_scale = _radar_max(subject["wuxing"])
+    # 體相 badge mapping: foto-source 5-element seasonal status
+    TIXIANG_CLASS = {"旺": "wang", "相": "xiang", "休": "xiu", "囚": "qiu", "死": "si"}
+    ti_xiang = subject.get("ti_xiang") or {}
+    for el, val, pct, label in items:
+        # Show raw count from MD (integer if whole, decimal only if fractional). User
+        # asked NOT to show as percentage — just the raw count from MD wuxing fields.
+        v_str = f"{int(val)}" if val == int(val) else f"{val:.1f}"
+        # Bar width relative to dynamic radar scale
+        width_pct = round(val / radar_scale * 100)
+        # Role badge logic
+        is_dm = (el == dm_el)
+        hz = ELEMENT_HZ[el]
+        role_html = ""
+        if is_dm:
+            tag_html = f'<span class="dme-tag-self">★ DIRI</span>'
+            role_html = '<div class="dme-role">Penguasa Hari</div>'
+            val_html = f'{v_str} {tag_html}'
+        else:
+            val_html = v_str
+            if hz in yong_set:
+                role_html = '<div class="dme-role" style="background:rgba(45,106,79,0.7);">喜 Mendukung</div>'
+            elif hz in ji_set:
+                role_html = '<div class="dme-role" style="background:rgba(160,52,52,0.5);">忌 Kurang Mendukung</div>'
+            else:
+                role_html = '<div class="dme-role">Netral</div>'
+
+        # 體相 seasonal badge (foto-source MD; null = no badge)
+        tx_status = ti_xiang.get(el)
+        if tx_status and tx_status in TIXIANG_CLASS:
+            tx_html = f'<span class="dme-tixiang {TIXIANG_CLASS[tx_status]}">{tx_status}</span>\n        '
+        else:
+            tx_html = ''
+
+        cards.append(
+            f'      <div class="dme dme-card el-{el}">\n'
+            f'        {tx_html}<div class="dme-hz">{hz}</div>\n'
+            f'        <div class="dme-name">{label} · {pinyin_map[el]}</div>\n'
+            f'        <div class="dme-val">{val_html}</div>\n'
+            f'        <div class="dme-bar"><div class="dme-bar-fill" style="width:{width_pct}%"></div></div>\n'
+            f'        {role_html}\n'
+            f'      </div>'
+        )
+    return '<div class="dm-elements">\n' + '\n'.join(cards) + '\n    </div>'
+
+
+def _wuxing_class_from_dm(dm: dict) -> str:
+    """Map DM element_hz to css element class key (mu/shui/tu/huo/jin).
+    Null-safe: returns 'mu' fallback if element unknown/None."""
+    hz_to_key = {"木": "mu", "水": "shui", "土": "tu", "火": "huo", "金": "jin"}
+    return hz_to_key.get(dm.get("stem_element_hz"), _FALLBACK_ELEMENT_CLASS)
+
+
+# ============================================================
+# YANG ZHAI, compass + zone matrix
+# ============================================================
+
+def _compass_axis_endpoints(self_pos: str) -> tuple[tuple[float,float], tuple[float,float]]:
+    """Return ((x1,y1),(x2,y2)) for the gold axis line through self gua and its opposite."""
+    opp = {"N":"S","S":"N","E":"W","W":"E","NE":"SW","SW":"NE","NW":"SE","SE":"NW"}[self_pos]
+    cx1, cy1 = COMPASS_POSITIONS[self_pos]
+    cx2, cy2 = COMPASS_POSITIONS[opp]
+    # Project to outer edge: extend the line through both points to the bounding circle r=178
+    # For simplicity use the badge centers' diametrically-opposite extensions.
+    # Michele's pattern uses (200,22)-(200,378) for N-S so points are projected to outer.
+    # Use the outer ring at r=178 from center (200,200): just hardcode by axis.
+    if self_pos in ("N","S"):
+        return (200, 22), (200, 378)
+    if self_pos in ("E","W"):
+        return (22, 200), (378, 200)
+    if self_pos in ("NE","SW"):
+        # NE-SW diagonal
+        return (302.5, 97.5), (97.5, 302.5)
+    # NW-SE
+    return (97.5, 97.5), (302.5, 302.5)
+
+
+def regen_compass_svg(yang_zhai: dict, dm: dict) -> str:
+    """Generate the inner SVG for Yang Zhai compass, bg + axis line + 8 badges + center + corner labels."""
+    self_gua = yang_zhai["gua_hz"]
+    self_t = TRIGRAMS[self_gua]
+    self_pos = self_t["pos"]
+
+    # Axis
+    (ax1, ay1), (ax2, ay2) = _compass_axis_endpoints(self_pos)
+    # Direction abbreviation pair for comment label
+    axis_pair_label = {
+        "N": "N-S", "S": "N-S", "E": "E-W", "W": "E-W",
+        "NE": "NE-SW", "SW": "NE-SW", "NW": "NW-SE", "SE": "NW-SE",
+    }[self_pos]
+    axis_svg = (
+        f'          <!-- Subject\'s {axis_pair_label} axis ({self_gua}卦 line) -->\n'
+        f'          <line x1="{ax1:g}" y1="{ay1:g}" x2="{ax2:g}" y2="{ay2:g}"\n'
+        f'            stroke="#C9A961" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.7"/>'
+    )
+
+    # 8 badges
+    badge_svg = []
+    for gua_hz, t in TRIGRAMS.items():
+        cx, cy = COMPASS_POSITIONS[t["pos"]]
+        if gua_hz == self_gua:
+            # Self badge, r=36, red border, ★ TRIGRAM ANDA badge
+            badge_svg.append(
+                f'          <!-- {t["pos"]} {gua_hz} (SELF, TRIGRAM ANDA) -->\n'
+                f'          <g>\n'
+                f'            <circle cx="{cx:g}" cy="{cy:g}" r="36" fill="#FFF8E1" stroke="#8B1A1A" stroke-width="2"/>\n'
+                f'            <text x="{cx:g}" y="{cy-10:g}" text-anchor="middle" class="dir-trigram" font-size="15" fill="#8B1A1A">{t["symbol"]}</text>\n'
+                f'            <text x="{cx:g}" y="{cy+6:g}" text-anchor="middle" class="dir-label-cn" font-size="14" fill="#8B1A1A" font-weight="700">{t["dir_cn"]}</text>\n'
+                f'            <text x="{cx:g}" y="{cy+19:g}" text-anchor="middle" class="dir-label-id" font-size="6.5" fill="#8B1A1A" font-style="italic" font-weight="600">{t["dir_abbr"]} · {t["pinyin"]} · {t["label_id"].upper()}</text>\n'
+                f'            <text x="{cx:g}" y="{cy+45:g}" text-anchor="middle" font-size="6" fill="#8B1A1A" font-weight="700" letter-spacing="1">★ TRIGRAM ANDA ★</text>\n'
+                f'          </g>'
+            )
+        elif t["group"] == self_t["group"]:
+            # Same group, green border (East Group → green if self also East)
+            badge_svg.append(
+                f'          <!-- {t["pos"]} {gua_hz} -->\n'
+                f'          <g>\n'
+                f'            <circle cx="{cx:g}" cy="{cy:g}" r="30" fill="#E8F0EA" stroke="#2D6A4F" stroke-width="1.2"/>\n'
+                f'            <text x="{cx:g}" y="{cy-7:g}" text-anchor="middle" class="dir-trigram" font-size="13" fill="#2D6A4F">{t["symbol"]}</text>\n'
+                f'            <text x="{cx:g}" y="{cy+7:g}" text-anchor="middle" class="dir-label-cn" font-size="13" fill="#2D6A4F" font-weight="700">{t["dir_cn"]}</text>\n'
+                f'            <text x="{cx:g}" y="{cy+19:g}" text-anchor="middle" class="dir-label-id" font-size="6" fill="#2D6A4F" font-style="italic">{t["dir_abbr"]} · {t["pinyin"]} · {t["label_id"]}</text>\n'
+                f'          </g>'
+            )
+        else:
+            # Other group, neutral cream
+            badge_svg.append(
+                f'          <!-- {t["pos"]} {gua_hz} -->\n'
+                f'          <g>\n'
+                f'            <circle cx="{cx:g}" cy="{cy:g}" r="30" fill="#FFFEF8" stroke="#D8C896" stroke-width="0.6"/>\n'
+                f'            <text x="{cx:g}" y="{cy-7:g}" text-anchor="middle" class="dir-trigram" font-size="13" fill="#6B5B3F">{t["symbol"]}</text>\n'
+                f'            <text x="{cx:g}" y="{cy+7:g}" text-anchor="middle" class="dir-label-cn" font-size="13" fill="#2C2416">{t["dir_cn"]}</text>\n'
+                f'            <text x="{cx:g}" y="{cy+19:g}" text-anchor="middle" class="dir-label-id" font-size="6" fill="#6B5B3F" font-style="italic">{t["dir_abbr"]} · {t["pinyin"]} · {t["label_id"]}</text>\n'
+                f'          </g>'
+            )
+
+    # Static parts
+    bg = (
+        '          <!-- Ornamen luar -->\n'
+        '          <circle cx="200" cy="200" r="186" fill="none" stroke="#E5D3A1" stroke-width="0.6"/>\n'
+        '          <circle cx="200" cy="200" r="178" fill="#FFFEF8" stroke="#C9A961" stroke-width="0.4"/>\n'
+        '          <circle cx="200" cy="200" r="118" fill="none" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,3"/>\n'
+        '\n'
+        '          <!-- Garis sumbu utama -->\n'
+        '          <line x1="200" y1="22" x2="200" y2="378" stroke="#E5D3A1" stroke-width="0.3" stroke-dasharray="2,3"/>\n'
+        '          <line x1="22" y1="200" x2="378" y2="200" stroke="#E5D3A1" stroke-width="0.3" stroke-dasharray="2,3"/>'
+    )
+
+    center_svg = (
+        '          <!-- Center marker: house + axis -->\n'
+        '          <g>\n'
+        '            <circle cx="200" cy="200" r="32" fill="#FFFEF8" stroke="#C9A961" stroke-width="1.2"/>\n'
+        '            <!-- house icon -->\n'
+        '            <path d="M 184 208 L 200 192 L 216 208 L 216 218 L 184 218 Z"\n'
+        '              fill="none" stroke="#8B1A1A" stroke-width="1.2" stroke-linejoin="round"/>\n'
+        '            <rect x="195" y="211" width="6" height="7" fill="#8B1A1A"/>\n'
+        '            <text x="200" y="232" text-anchor="middle" font-size="7" fill="#6B5B3F" font-style="italic" letter-spacing="1">RUMAH</text>\n'
+        '          </g>\n'
+        '\n'
+        '          <!-- Axis label (top-right) -->\n'
+        '          <text x="376" y="32" text-anchor="end" font-size="6" fill="#C9A961" font-weight="600" letter-spacing="1.5">UTARA · U</text>\n'
+        '          <text x="24" y="32" font-size="5.5" fill="#C9A961" font-style="italic">八卦 BĀ GUÀ</text>\n'
+        '          <text x="24" y="378" font-size="5.5" fill="#C9A961" font-style="italic">8 ARAH MATA ANGIN</text>'
+    )
+
+    return (
+        '<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">\n'
+        + bg + '\n'
+        + '\n'
+        + axis_svg + '\n'
+        + '\n'
+        + '          <!-- 8 badge arah -->\n'
+        + '\n'.join(badge_svg) + '\n'
+        + '\n'
+        + center_svg + '\n'
+        + '        </svg>'
+    )
+
+
+def regen_yz_zone(zone_key: str, hz: str, id_label: str, pinyin_label: str,
+                  zone_data: dict, warn: bool = False) -> str:
+    """Generate one yz-zone div."""
+    pills = []
+    pill_class = "yz-pill bad" if warn else "yz-pill"
+    dirs_hz = zone_data.get("dirs_hz", [])
+    dirs_abbr = zone_data.get("dirs_abbr", [])
+    for hz_, abbr in zip(dirs_hz, dirs_abbr):
+        pills.append(f'<span class="{pill_class}"><span class="hz">{hz_}</span>{abbr}</span>')
+    pills_html = '\n              '.join(pills) if pills else ''
+    headline = '⚠ Arah "Penekan"' if warn else '✓ Arah Optimal'
+    note = zone_data.get("note_id", "")
+    note_html = f'\n            <div class="yz-zone-note">{html_amp(note)}</div>' if note else ''
+    cls = "yz-zone warn" if warn else "yz-zone"
+    return (
+        f'<div class="{cls}">\n'
+        f'          <div class="yz-zone-label">\n'
+        f'            <div class="yz-zone-hz">{hz}</div>\n'
+        f'            <div class="yz-zone-id">{id_label}</div>\n'
+        f'            <div class="yz-zone-pinyin">{pinyin_label}</div>\n'
+        f'          </div>\n'
+        f'          <div class="yz-zone-dirs">\n'
+        f'            <div class="yz-zone-headline">{headline}</div>\n'
+        f'            <div class="yz-dir-pills">\n'
+        f'              {pills_html}\n'
+        f'            </div>{note_html}\n'
+        f'          </div>\n'
+        f'        </div>'
+    )
+
+
+# Ten Gods → Pinyin lookup (for spotlight tag)
+TEN_GOD_PINYIN = {
+    "比肩": "Bǐ Jiān",     "劫財": "Jié Cái",
+    "食神": "Shí Shén",     "傷官": "Shāng Guān",
+    "偏財": "Piān Cái",     "正財": "Zhèng Cái",
+    "七殺": "Qī Shā",       "正官": "Zhèng Guān",
+    "偏印": "Piān Yìn",     "正印": "Zhèng Yìn",
+}
+
+
+def regen_dm_score_strip(subject: dict) -> str:
+    """Generate <div class="dm-score-strip">...</div> with DM pos/neg scores from MD.
+    Format scores: 3678 → "+3.678" (integer with period as thousands separator).
+    Strength label (LEMAH/KUAT/SEIMBANG): prefer MD `dm_strength_label_id`. Kalau null,
+    derive dari pos vs neg (pos > neg = Kuat, pos < neg = Lemah, ≤10% diff = Seimbang).
+    """
+    pos = subject.get("dm_pos_score")
+    neg = subject.get("dm_neg_score")
+    dm = subject.get("day_master") or {}
+    strength_id_md = dm.get("strength_id")
+    strength_hz_md = dm.get("strength_hz")
+
+    def _fmt(n):
+        if n is None or n == EM_DASH:
+            return EM_DASH
+        try:
+            iv = int(n)
+            return f"{iv:,}".replace(",", ".")
+        except (ValueError, TypeError):
+            return EM_DASH
+
+    pos_str = _fmt(pos)
+    neg_str = _fmt(neg)
+
+    # Derive strength label dari pos/neg score sebagai fallback (kalau MD null)
+    delta_str = EM_DASH
+    delta_note = ""
+    derived_strength_id = None
+    derived_strength_hz = None
+    try:
+        p = float(pos) if pos not in (None, EM_DASH) else None
+        n = float(neg) if neg not in (None, EM_DASH) else None
+        if p is not None and n is not None:
+            delta = p - n
+            total = p + n
+            balanced_threshold = total * 0.1  # ≤10% diff = seimbang
+            if abs(delta) <= balanced_threshold:
+                derived_strength_id = "Seimbang"
+                derived_strength_hz = "平"
+            elif delta > 0:
+                derived_strength_id = "Kuat"
+                derived_strength_hz = "旺"
+            else:
+                derived_strength_id = "Lemah"
+                derived_strength_hz = "弱"
+            if delta < 0:
+                delta_str = f"−{abs(int(delta)):,}".replace(",", ".")
+                delta_note = "penekan dominan"
+            elif delta > 0:
+                delta_str = f"+{int(delta):,}".replace(",", ".")
+                delta_note = "pendukung dominan"
+            else:
+                delta_str = "0"
+                delta_note = "seimbang"
+    except (ValueError, TypeError):
+        pass
+
+    # MD label wins over derived
+    strength_id = (strength_id_md or derived_strength_id or EM_DASH).upper()
+    strength_hz = strength_hz_md or derived_strength_hz or EM_DASH
+
+    pos_sign = f"+{pos_str}" if pos_str != EM_DASH else EM_DASH
+    neg_sign = f"-{neg_str}" if neg_str != EM_DASH else EM_DASH
+
+    footer_info = (
+        '<strong>Skor Kekuatan DM (日主旺度)</strong> = bandingan kekuatan total unsur '
+        'yang <span class="pos-text">mendukung Day Master</span> (印 + 比劫) vs yang '
+        '<span class="neg-text">menekan Day Master</span> (財 + 官殺 + 食傷). '
+        'Bila <span class="pos-text">pendukung lebih besar → DM kuat (旺)</span>: '
+        'subjek mandiri, tahan tekanan, butuh tantangan/sasaran agar berkembang. '
+        'Bila <span class="neg-text">penekan lebih besar → DM lemah (弱)</span>: '
+        'subjek butuh sokongan unsur 用神 / 喜用神 untuk balance, hindari penambahan '
+        'beban dari unsur 忌神 / 仇神.'
+    )
+
+    return (
+        '<div class="dm-score-strip">\n'
+        '      <div class="dms-title-block">\n'
+        '        <div class="dms-eyebrow">日 主 旺 度</div>\n'
+        '        <div class="dms-title-hz">旺 度</div>\n'
+        '        <div class="dms-subtitle">Skor Kekuatan DM</div>\n'
+        f'        <div class="dms-status-pill"><span class="hz">{strength_hz}</span> {strength_id}</div>\n'
+        '      </div>\n'
+        '      <div class="dms-content">\n'
+        '        <div class="dms-row pos">\n'
+        '          <span class="arrow">▲</span>\n'
+        f'          <span class="num">{pos_sign}</span>\n'
+        '          <span class="name">Pendukung</span>\n'
+        '        </div>\n'
+        '        <div class="dms-row neg">\n'
+        '          <span class="arrow">▼</span>\n'
+        f'          <span class="num">{neg_sign}</span>\n'
+        '          <span class="name">Penekan</span>\n'
+        '        </div>\n'
+        f'        <div class="dms-delta-bottom">Selisih Δ <span class="delta-num">{delta_str}</span> · {delta_note}</div>\n'
+        '      </div>\n'
+        f'      <div class="dms-footer-info">{footer_info}</div>\n'
+        '    </div>'
+    )
+
+
+# ===== V7 Page 04 enrichment helpers =====
+PHASE_ID_LATIN = {
+    "長生": "CHANG SHENG", "沐浴": "MU YU", "冠帶": "GUAN DAI",
+    "臨官": "LIN GUAN", "帝旺": "DI WANG", "衰": "SHUAI",
+    "病": "BING", "死": "SI", "墓": "MU", "絕": "JUE",
+    "胎": "TAI", "養": "YANG"
+}
+
+
+def apply_v7_page04(content: str, subject: dict) -> str:
+    """V7 Page 04 enrichment: 藏干+ten god, 12 phase, 命宮+空亡 chips, 八字秤骨 strip."""
+    # 1) 藏干 + 十神 per pilar
+    cs_dict = subject.get("canggan_shi_shen") or {}
+    for pos in ("year", "month", "day", "hour"):
+        entries = cs_dict.get(pos) or []
+        if entries:
+            inner = "".join(
+                f'<span class="stem">{e["stem"]}</span><span class="tg">{e["ten_god"]}</span>'
+                for e in entries
+            )
+            new_div = f'<div class="t-canggan" data-pos="{pos}">{inner}</div>'
+        else:
+            new_div = f'<div class="t-canggan empty" data-pos="{pos}"></div>'
+        content = re.sub(
+            rf'<div class="t-canggan[^"]*" data-pos="{pos}">.*?</div>',
+            new_div, content, count=1, flags=re.DOTALL
+        )
+
+    # 2) 12 長生 phase per pilar
+    cs_p = subject.get("chang_sheng_per_pilar") or {}
+    for pos in ("year", "month", "day", "hour"):
+        phase = cs_p.get(pos)
+        if phase:
+            label = PHASE_ID_LATIN.get(phase, "")
+            new_div = f'<div class="t-phase" data-pos="{pos}"><span class="hz">{phase}</span>{label}</div>'
+        else:
+            new_div = f'<div class="t-phase empty" data-pos="{pos}"></div>'
+        content = re.sub(
+            rf'<div class="t-phase[^"]*" data-pos="{pos}">.*?</div>',
+            new_div, content, count=1, flags=re.DOTALL
+        )
+
+    # 3) Subject-extras: 命宮 + 空亡
+    chips = []
+    mg = subject.get("ming_gong_bazi")
+    if mg:
+        chips.append(f'<span class="ext-chip mg"><span class="hz">命宮</span>{mg}</span>')
+    kw = subject.get("kong_wang")
+    if kw:
+        chips.append(f'<span class="ext-chip kw"><span class="hz">空亡</span>{kw}</span>')
+    if chips:
+        extras_html = '<div class="subject-extras">\n        ' + '\n        '.join(chips) + '\n      </div>'
+    else:
+        extras_html = '<div class="subject-extras"></div>'
+    content = re.sub(
+        r'<div class="subject-extras">.*?</div>',
+        extras_html, content, count=1, flags=re.DOTALL
+    )
+
+    # 4) 八字秤骨 (bone weighing) strip
+    bw = subject.get("bone_weight") or {}
+    if bw and bw.get("bone_weight_total"):
+        total = bw.get("bone_weight_total", EM_DASH)
+        y = bw.get("bone_weight_year", EM_DASH)
+        m = bw.get("bone_weight_month", EM_DASH)
+        d = bw.get("bone_weight_day", EM_DASH)
+        h = bw.get("bone_weight_hour", EM_DASH)
+        poem_hz = bw.get("bone_weight_poem_hz", "")
+        poem_id = bw.get("bone_weight_poem_id", "")
+        new_strip = (
+            '<div class="bone-strip">\n'
+            '      <div class="bone-title-block">\n'
+            '        <div class="bone-eyebrow">八 字 秤 骨</div>\n'
+            '        <div class="bone-title-hz">秤 骨</div>\n'
+            f'        <div class="bone-total">{total}</div>\n'
+            '      </div>\n'
+            '      <div class="bone-weights">\n'
+            f'        <div class="bw-item"><span class="bw-pillar">年</span><span class="bw-val">{y}</span></div>\n'
+            f'        <div class="bw-item"><span class="bw-pillar">月</span><span class="bw-val">{m}</span></div>\n'
+            f'        <div class="bw-item"><span class="bw-pillar">日</span><span class="bw-val">{d}</span></div>\n'
+            f'        <div class="bw-item"><span class="bw-pillar">時</span><span class="bw-val">{h}</span></div>\n'
+            '      </div>\n'
+            '      <div class="bone-poem">\n'
+            f'        <div class="bp-hz">{poem_hz}</div>\n'
+            f'        <div class="bp-id">{poem_id}</div>\n'
+            '      </div>\n'
+            '    </div>'
+        )
+    else:
+        new_strip = '<div class="bone-strip empty"></div>'
+    # Anchor regex on the unique inner element bp-id, then count 3 closing divs
+    # (bp-id close → bone-poem close → bone-strip close).
+    content = re.sub(
+        r'<div class="bone-strip[^"]*">.*?<div class="bp-id">[^<]*</div>\s*</div>\s*</div>',
+        new_strip,
+        content, count=1, flags=re.DOTALL
+    )
+    return content
+
+
+def apply_v7_liunian(content: str, subject: dict) -> str:
+    """V7 Phase 2A — render liu_nian prediksi cards.
+    Replaces 5 placeholder cards with foto-based prose. Cards beyond data count stay empty (hidden via .empty)."""
+    items = subject.get("liu_nian_predictions") or []
+    # Replace each slot 0..4 with data or empty
+    for slot in range(5):
+        if slot < len(items):
+            it = items[slot]
+            tahun = it.get("tahun", "—")
+            umur = it.get("umur", "—")
+            ganzhi = it.get("ganzhi", "—")
+            prose_raw = it.get("prose", EM_DASH)
+            prose = _md_inline(prose_raw) if prose_raw and prose_raw != EM_DASH else prose_raw
+            new_card = (
+                f'<div class="ln-card" data-slot="{slot}">\n'
+                '      <div class="ln-left">\n'
+                '        <div class="ln-eyebrow">流 年</div>\n'
+                f'        <div class="ln-tahun">{tahun}</div>\n'
+                '        <div class="ln-meta-row">\n'
+                f'          <span class="ln-umur">{umur} tahun</span>\n'
+                f'          <span class="ln-ganzhi">{ganzhi}</span>\n'
+                '        </div>\n'
+                '      </div>\n'
+                '      <div class="ln-right">\n'
+                f'        <div class="ln-prose">{prose}</div>\n'
+                '      </div>\n'
+                '    </div>'
+            )
+        else:
+            new_card = f'<div class="ln-card empty" data-slot="{slot}"></div>'
+        # Match the slot card (greedy through closing 4 divs of card structure)
+        content = re.sub(
+            rf'<div class="ln-card[^"]*" data-slot="{slot}">.*?<div class="ln-prose">[^<]*</div>\s*</div>\s*</div>',
+            new_card,
+            content, count=1, flags=re.DOTALL
+        )
+        # Fallback for already-empty cards (no inner)
+        content = re.sub(
+            rf'<div class="ln-card empty" data-slot="{slot}"></div>',
+            new_card if slot >= len(items) else new_card,
+            content, count=1
+        )
+    return content
+
+
+def apply_v7_lampiran(content: str, subject: dict) -> str:
+    """V7 Phase 8 — render Lampiran Klasik page (八字秤骨 + 古書云 + 凶年).
+    Per-block hide rule: kalau data block null → block di-hidden via .empty class."""
+    pillars = subject.get("pillars") or {}
+    bw = subject.get("bone_weight") or {}
+
+    # === BLOCK 1: 八字秤骨 ===
+    from lookups import STEMS, BRANCHES
+    has_bone = bool(bw.get("bone_weight_total"))
+    def _pilar_id(stem_hz, branch_hz):
+        s = STEMS.get(stem_hz, {}); b = BRANCHES.get(branch_hz, {})
+        if not s or not b: return ""
+        return f"{s.get('el_id','')} {s.get('polarity_id','')} · {b.get('shio_id','')}"
+    def _parse_liang_qian(total_hz):
+        cn_num = {"零":0,"一":1,"二":2,"三":3,"四":4,"五":5,"六":6,"七":7,"八":8,"九":9,"十":10}
+        liang = qian = 0
+        if "兩" in total_hz:
+            pre, _, rest = total_hz.partition("兩")
+            for ch in pre:
+                if ch in cn_num: liang = liang*10 + cn_num[ch] if liang else cn_num[ch]
+        else:
+            rest = total_hz
+        if "錢" in rest:
+            pre, _, _ = rest.partition("錢")
+            for ch in pre:
+                if ch in cn_num: qian = qian*10 + cn_num[ch] if qian else cn_num[ch]
+        return liang, qian
+    def _total_id(total_hz):
+        # Legacy slot — no longer used in template, kept for compatibility
+        return ""
+    def _total_mixed(total_hz):
+        if not total_hz: return ""
+        liang, qian = _parse_liang_qian(total_hz)
+        parts = []
+        if liang: parts.append(f'<span class="num">{liang}</span>兩')
+        if qian:  parts.append(f'<span class="num">{qian}</span>錢')
+        return " ".join(parts)
+    def _bone_grade_sentence(total_hz):
+        if not total_hz: return ""
+        liang, qian = _parse_liang_qian(total_hz)
+        decimal = liang + qian/10
+        if decimal < 3:
+            return "Total bobot subjek **di bawah 3 兩** — nasib berat, perlu kerja keras berlipat dan dukungan dari mentor atau keluarga."
+        if decimal < 4:
+            return "Total bobot subjek **di rentang 3 — 4 兩** — nasib biasa, naik-turun mengikuti zaman, bergantung pada usaha pribadi."
+        if decimal < 5:
+            return f"Total bobot subjek **{liang} 兩 {qian} 錢** masuk rentang **4 — 5 兩** — nasib stabil, rezeki cukup, hidup relatif tenang dengan usaha wajar."
+        if decimal < 6:
+            return f"Total bobot subjek **{liang} 兩 {qian} 錢** masuk rentang **5 — 6 兩** — nasib makmur, dihormati banyak orang, banyak pendukung di sekitar."
+        if decimal < 7:
+            return f"Total bobot subjek **{liang} 兩 {qian} 錢** masuk rentang **6 — 7 兩** — nasib mulia, pengaruh besar di lingkungannya, posisi terhormat."
+        return f"Total bobot subjek **{liang} 兩 {qian} 錢** mencapai **≥ 7 兩** — nasib luar biasa, sangat langka, posisi puncak dalam bidangnya."
+    py = pillars.get("year",  {}); pm = pillars.get("month", {})
+    pd = pillars.get("day",   {}); ph = pillars.get("hour",  {})
+    bone = {
+        "year_pilar":     (py.get("stem_hz","") + py.get("branch_hz","")) or "—",
+        "month_pilar":    (pm.get("stem_hz","") + pm.get("branch_hz","")) or "—",
+        "day_pilar":      (pd.get("stem_hz","") + pd.get("branch_hz","")) or "—",
+        "hour_pilar":     (ph.get("stem_hz","") + ph.get("branch_hz","")) or "—",
+        "year_pilar_id":  _pilar_id(py.get("stem_hz",""), py.get("branch_hz","")),
+        "month_pilar_id": _pilar_id(pm.get("stem_hz",""), pm.get("branch_hz","")),
+        "day_pilar_id":   _pilar_id(pd.get("stem_hz",""), pd.get("branch_hz","")),
+        "hour_pilar_id":  _pilar_id(ph.get("stem_hz",""), ph.get("branch_hz","")),
+        "year_weight":  bw.get("bone_weight_year")  or "—",
+        "month_weight": bw.get("bone_weight_month") or "—",
+        "day_weight":   bw.get("bone_weight_day")   or "—",
+        "hour_weight":  bw.get("bone_weight_hour")  or "—",
+        "total":        bw.get("bone_weight_total") or "—",
+        "total_id":     _total_id(bw.get("bone_weight_total") or ""),
+        "total_mixed":  _total_mixed(bw.get("bone_weight_total") or ""),
+    }
+    poem_hz_raw = bw.get("bone_weight_poem_hz") or ""
+    poem_id_raw = bw.get("bone_weight_poem_id") or ""
+    def _split_lines(s):
+        return [ln.strip() for ln in s.replace("，","|").replace(";","|").replace("；","|").split("|") if ln.strip()]
+    poem_hz_lines = _split_lines(poem_hz_raw)
+    poem_id_lines = _split_lines(poem_id_raw)
+    poem_html    = "".join(f"<span>{_md_inline(ln)}</span>" for ln in poem_hz_lines) if poem_hz_lines else ""
+    poem_id_html = "".join(f"<span>{_md_inline(ln)}</span>" for ln in poem_id_lines) if poem_id_lines else ""
+
+    content = content.replace("{{BONE_YEAR_PILAR}}",  bone["year_pilar"])
+    content = content.replace("{{BONE_MONTH_PILAR}}", bone["month_pilar"])
+    content = content.replace("{{BONE_DAY_PILAR}}",   bone["day_pilar"])
+    content = content.replace("{{BONE_HOUR_PILAR}}",  bone["hour_pilar"])
+    content = content.replace("{{BONE_YEAR_PILAR_ID}}",  bone["year_pilar_id"])
+    content = content.replace("{{BONE_MONTH_PILAR_ID}}", bone["month_pilar_id"])
+    content = content.replace("{{BONE_DAY_PILAR_ID}}",   bone["day_pilar_id"])
+    content = content.replace("{{BONE_HOUR_PILAR_ID}}",  bone["hour_pilar_id"])
+    content = content.replace("{{BONE_YEAR_WEIGHT}}",  bone["year_weight"])
+    content = content.replace("{{BONE_MONTH_WEIGHT}}", bone["month_weight"])
+    content = content.replace("{{BONE_DAY_WEIGHT}}",   bone["day_weight"])
+    content = content.replace("{{BONE_HOUR_WEIGHT}}",  bone["hour_weight"])
+    content = content.replace("{{BONE_TOTAL}}",        bone["total"])
+    content = content.replace("{{BONE_TOTAL_ID}}",     bone["total_id"])
+    content = content.replace("{{BONE_TOTAL_MIXED}}",  bone["total_mixed"])
+    # Grade sentence (markdown bold → HTML strong)
+    grade_sent = _bone_grade_sentence(bw.get("bone_weight_total") or "")
+    grade_html = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", grade_sent)
+    content = content.replace("{{BONE_GRADE_SENTENCE}}", grade_html)
+    content = content.replace("{{BONE_POEM_HTML}}",    poem_html)
+    content = content.replace("{{BONE_POEM_ID_HTML}}", poem_id_html)
+    if not has_bone:
+        content = content.replace('<div class="lp-bone" data-slot="bone">',
+                                  '<div class="lp-bone empty" data-slot="bone">', 1)
+
+    # === BLOCK 2: 古書云 ===
+    quotes = subject.get("gushu_quotes") or []
+    if quotes:
+        parts = []
+        for q in quotes:
+            src_hz = q.get("source_hz") or q.get("source") or "—"
+            src_id = q.get("source_id") or ""
+            _txt_hz_raw = q.get("text_hz")   or q.get("text")   or EM_DASH
+            _txt_id_raw = q.get("text_id")   or ""
+            txt_hz = _md_inline(_txt_hz_raw) if _txt_hz_raw and _txt_hz_raw != EM_DASH else _txt_hz_raw
+            txt_id = _md_inline(_txt_id_raw) if _txt_id_raw else _txt_id_raw
+            src_block = f'<div class="lp-quote-source">{src_hz}'
+            if src_id:
+                src_block += f'<div class="lp-quote-source-id">{src_id}</div>'
+            src_block += "</div>"
+            body = f'<div class="lp-quote-body"><div class="lp-quote-text">{txt_hz}</div>'
+            if txt_id:
+                body += f'<div class="lp-quote-text-id">{txt_id}</div>'
+            body += "</div>"
+            parts.append(f'        <div class="lp-quote">{src_block}{body}</div>')
+        quotes_html = "\n".join(parts)
+    else:
+        quotes_html = ""
+    content = content.replace("{{QUOTES_HTML}}", quotes_html)
+    if not quotes:
+        content = content.replace('<div class="lp-quotes" data-slot="quotes">',
+                                  '<div class="lp-quotes empty" data-slot="quotes">', 1)
+
+    # === BLOCK 3: 凶年 ===
+    xn = subject.get("xiongnian_list") or []
+    xn_html = "\n".join(f'        <span class="lp-xn-badge">Umur {a}</span>' for a in xn) if xn else ""
+    content = content.replace("{{XIONGNIAN_HTML}}", xn_html)
+    if not xn:
+        content = content.replace('<div class="lp-xiongnian" data-slot="xiongnian">',
+                                  '<div class="lp-xiongnian empty" data-slot="xiongnian">', 1)
+
+    return content
+
+
+def apply_blocks(content: str, subject: dict, fname: str = "") -> str:
+    """Block-level regeneration of complex structures.
+    fname: source template filename, used to scope page-specific replacements.
+    """
+    # DM Score Strip (page_profile only) — pos/neg scores from MD foto 批命備註
+    if fname == "page_profile.html":
+        new_dms = regen_dm_score_strip(subject)
+        content = replace_block(content, r'<div class="dm-score-strip">', new_dms)
+        # V7 Page 04 enrichment: canggan+ten god, 12 phase, extras chips, bone strip
+        content = apply_v7_page04(content, subject)
+
+    # V7 Phase 2A — Liu Nian prediksi page
+    if fname == "page_liunian.html":
+        content = apply_v7_liunian(content, subject)
+
+    # V7 Phase 8 — Lampiran Klasik (八字秤骨 + 古書云 + 凶年)
+    if fname == "page_16_lampiran.html":
+        content = apply_v7_lampiran(content, subject)
+
+    # V7 Phase 4 — Full industri list di Page 12 Karir (foto-source: 事業 layar)
+    if fname == "page_career.html":
+        fav = subject.get("shiye_favorable_full") or []
+        sup = subject.get("shiye_supportive_full") or []
+        shiye_short = subject.get("shiye_short")
+
+        # V7 Phase 4B — Layout overhaul ONLY if V7 foto-source fields present.
+        # Kalau subjek tidak ada V7 data → fall back ke V4.5 layout (2-col + tags + default avoid).
+        v7_career_active = bool(fav and sup)
+
+        if v7_career_active:
+            layout_css = (
+                '\n/* V7 Phase 4B layout overhaul (conditional on foto-source data) */\n'
+                '.career-main{grid-template-columns:1fr!important;'
+                'grid-template-rows:auto auto!important;gap:3mm!important;}\n'
+                '.insight-card{grid-template-rows:auto auto auto!important;}\n'
+                '.insight-tags{display:none!important;}\n'
+                '.insight-body{font-size:7.8pt!important;line-height:1.55!important;}\n'
+                '.industri-list{height:auto!important;overflow:visible!important;}\n'
+            )
+            content = content.replace('</style>', layout_css + '</style>', 1)
+
+            # Replace avoid-strip with foto-direct from shiye_short (if available)
+            if shiye_short:
+                avoid_match = re.search(r'忌\s*([^,。]+)', shiye_short)
+                avoid_hz = avoid_match.group(1).strip() if avoid_match else None
+                if avoid_hz:
+                    new_avoid_text = (
+                        f'Hindari industri ber-unsur <span class="hz">{avoid_hz}</span> '
+                        f'(sumber: foto 適業 dari modul 先天論命). Bidang dengan unsur ini '
+                        f'akan menambah dominasi yang sudah kuat dan menyebabkan energi macet.'
+                    )
+                    content = re.sub(
+                        r'<div class="avoid-text">[\s\S]*?</div>',
+                        f'<div class="avoid-text">{new_avoid_text}</div>',
+                        content, count=1
+                    )
+
+        if fav and sup:
+            def _badges(items):
+                return "\n".join(
+                    f'          <span class="ind-badge"><span class="hz">{i["hz"]}</span>'
+                    f'<span class="id">{i["id"]}</span></span>'
+                    for i in items
+                )
+            new_grid = (
+                '<div class="industri-list industri-grid">\n'
+                f'        <div class="ig-section fav">\n'
+                f'          <div class="ig-header">✓ Searah · {len(fav)} bidang</div>\n'
+                f'          <div class="ig-badges">\n{_badges(fav)}\n          </div>\n'
+                f'        </div>\n'
+                f'        <div class="ig-section sup">\n'
+                f'          <div class="ig-header">◎ Pendukung · {len(sup)} bidang</div>\n'
+                f'          <div class="ig-badges">\n{_badges(sup)}\n          </div>\n'
+                f'        </div>\n'
+                '      </div>'
+            )
+            content = re.sub(
+                r'<div class="industri-list">[\s\S]*?</div>\s*</div>\s*(?=<!-- AVOID -->)',
+                new_grid + '\n    ',
+                content, count=1
+            )
+            # Inject CSS for badge grid
+            grid_css = (
+                '\n.industri-grid{display:flex;flex-direction:column;gap:2mm;'
+                'padding:2mm 0;height:auto!important;overflow:visible;}\n'
+                '.ig-section{display:flex;flex-direction:column;gap:1mm;}\n'
+                '.ig-header{font-family:"Noto Serif TC",serif;font-size:8pt;'
+                'font-weight:700;letter-spacing:1.2px;padding:1mm 2mm;'
+                'border-radius:1.5mm;}\n'
+                '.ig-section.fav .ig-header{background:rgba(90,140,74,0.12);'
+                'color:var(--green);border-left:0.6mm solid var(--green);}\n'
+                '.ig-section.sup .ig-header{background:rgba(201,169,97,0.12);'
+                'color:var(--gold);border-left:0.6mm solid var(--gold);}\n'
+                '.ig-badges{display:flex;flex-wrap:wrap;gap:1.2mm;'
+                'padding:0.5mm 1mm;}\n'
+                '.ind-badge{display:inline-flex;align-items:baseline;gap:0.8mm;'
+                'padding:0.6mm 2mm;border-radius:4mm;background:#FFFEF8;'
+                'border:0.2mm solid var(--gold-soft);font-size:6.5pt;'
+                'color:var(--text);line-height:1.2;white-space:nowrap;}\n'
+                '.ig-section.fav .ind-badge{border-color:var(--green);'
+                'background:rgba(90,140,74,0.06);}\n'
+                '.ig-section.sup .ind-badge{border-color:var(--gold-soft);'
+                'background:rgba(201,169,97,0.06);}\n'
+                '.ind-badge .hz{font-family:"Noto Serif TC",serif;'
+                'font-size:7.5pt;color:var(--red);font-weight:700;'
+                'letter-spacing:0.3px;}\n'
+                '.ind-badge .id{font-family:"Inter",sans-serif;font-size:5.8pt;'
+                'color:var(--text-muted);font-weight:500;}\n'
+            )
+            content = content.replace('</style>', grid_css + '</style>', 1)
+
+    # V7 Phase 5 — Shen Sha tafsir per bintang di Page 10 (foto: 神煞 layar)
+    if fname == "page_10_shensha.html":
+        ss_list = subject.get("shen_sha_detail") or []
+        if ss_list:
+            # Build cards HTML
+            def _card_html(item):
+                return (
+                    '<div class="ss-card-v7 active">\n'
+                    f'          <div class="ssc-card-hz">{item["hz"]}</div>\n'
+                    f'          <div class="ssc-card-pinyin">{item["pinyin"]}</div>\n'
+                    f'          <div class="ssc-card-label">{item["label_id"]}</div>\n'
+                    f'          <div class="ssc-card-tafsir">{item["tafsir_id"]}</div>\n'
+                    f'          <div class="ssc-card-quote">"{item["tafsir_hz"]}"</div>\n'
+                    '        </div>'
+                )
+            cards_html = "\n        ".join(_card_html(x) for x in ss_list)
+            grid_block = (
+                '\n    <!-- V7 Phase 5: 5-bintang grid foto-source (insert before ss-insight) -->\n'
+                '    <div class="ss-grid-v7">\n'
+                f'        {cards_html}\n'
+                '    </div>\n'
+            )
+            # Insert grid block before ss-insight
+            content = re.sub(
+                r'(<!-- WAWASAN -->\s*<div class="ss-insight">)',
+                grid_block + r'\1',
+                content, count=1
+            )
+            # Inject CSS for V7 grid
+            grid_css = (
+                '\n/* V7 Phase 5 — Shen Sha 5-card grid (foto-direct) */\n'
+                '.content-ss{grid-template-rows:auto 1fr auto!important;}\n'
+                '.ss-grid-v7{display:grid;grid-template-columns:repeat(5,1fr);'
+                'gap:2mm;overflow:hidden;}\n'
+                '.ss-card-v7{background:linear-gradient(180deg,#FFF8E1,#F5EBD0);'
+                'border:0.4mm solid var(--gold);border-radius:1.5mm;padding:2mm 2.5mm;'
+                'display:flex;flex-direction:column;gap:0.6mm;overflow:hidden;'
+                'box-shadow:0 0 0 0.2mm rgba(201,169,97,0.2);}\n'
+                '.ss-card-v7 .ssc-card-hz{font-family:"Noto Serif TC",serif;'
+                'font-size:13pt;color:var(--red);font-weight:700;line-height:1.05;'
+                'letter-spacing:1px;}\n'
+                '.ss-card-v7 .ssc-card-pinyin{font-family:"Playfair Display",serif;'
+                'font-size:7pt;color:var(--text);font-style:italic;font-weight:600;}\n'
+                '.ss-card-v7 .ssc-card-label{font-family:"Inter",sans-serif;'
+                'font-size:5.8pt;color:var(--gold);letter-spacing:1px;'
+                'text-transform:uppercase;font-weight:600;'
+                'border-bottom:0.15mm dashed var(--gold-soft);padding-bottom:1mm;'
+                'margin-bottom:0.5mm;}\n'
+                '.ss-card-v7 .ssc-card-tafsir{font-size:6.2pt;color:var(--text);'
+                'line-height:1.4;text-align:justify;flex:1;}\n'
+                '.ss-card-v7 .ssc-card-quote{font-family:"Noto Serif TC",serif;'
+                'font-size:5.8pt;color:var(--text-muted);font-style:italic;'
+                'line-height:1.3;border-top:0.15mm dashed var(--gold-soft);'
+                'padding-top:1mm;margin-top:auto;}\n'
+            )
+            content = content.replace('</style>', grid_css + '</style>', 1)
+
+    # V7 Phase 3 — 宿命 quote-box di Page 16 Zi Wei overview
+    if fname == "page_ziwei.html":
+        _su_ming_raw = subject.get("ziwei_su_ming")
+        su_ming = _md_inline(_su_ming_raw) if _su_ming_raw else _su_ming_raw
+        if su_ming:
+            new_box = (
+                '<div class="zw-suming">\n'
+                '      <div class="zw-suming-eyebrow">宿 命<span class="id">Sù Mìng · Pandangan Nasib</span></div>\n'
+                f'      <div class="zw-suming-prose">{su_ming}</div>\n'
+                '    </div>'
+            )
+        else:
+            new_box = '<div class="zw-suming empty"></div>'
+        content = re.sub(
+            r'<div class="zw-suming[^"]*">.*?<div class="zw-suming-prose">[^<]*</div>\s*</div>',
+            new_box,
+            content, count=1, flags=re.DOTALL
+        )
+        # Fallback for already-empty marker
+        content = re.sub(
+            r'<div class="zw-suming empty"></div>',
+            new_box,
+            content, count=1
+        )
+
+        # V7 Phase 3B — Inject full minor stars per palace (foto-source full chart)
+        zw_stars_dict = subject.get("ziwei_stars") or {}
+        PALACE_HZ_MAP = [
+            ("子女", "zinu"), ("夫妻", "fuqi"), ("兄弟", "xiongdi"), ("命宮", "ming"),
+            ("財帛", "caibo"), ("父母", "fumu"), ("疾厄", "jie_e"), ("福德", "fude"),
+            ("遷移", "qianyi"), ("僕役", "puyi"), ("官祿", "guanlu"), ("田宅", "tianzhai"),
+        ]
+        for palace_hz, key in PALACE_HZ_MAP:
+            stars = zw_stars_dict.get(key)
+            if not stars:
+                continue
+            new_other = f'<div class="zw-stars-other" data-palace="{key}">{stars}</div>\n        '
+            # Anchor: from zw-palace">{hz}< down to next <div class="zw-foot">
+            pattern = rf'(zw-palace">{palace_hz}<[\s\S]*?)(<div class="zw-foot">)'
+            content = re.sub(pattern, rf'\1{new_other}\2', content, count=1)
+
+    wx = subject.get("wuxing")
+    if wx:
+        # Wu Xing stack, replace whole <div class="wux-stack">...</div>
+        new_stack = regen_wuxing_stack(wx)
+        content = replace_block(content, r'<div class="wux-stack">', new_stack)
+
+        # Wu Xing tags
+        dm = subject["day_master"]
+        ys = subject["yong_shen"]
+        js = subject["ji_shen"]
+        new_tags = (
+            '<div class="wux-tags">\n'
+            f'          <span class="wux-tag self"><span class="hz">{dm["stem_element_hz"]}</span>DIRI · {wx["self_value"]}</span>\n'
+            f'          <span class="wux-tag fav"><span class="hz">{ys["elements_hz"]}</span>MENDUKUNG</span>\n'
+            f'          <span class="wux-tag unfav"><span class="hz">{js["elements_hz"]}</span>KURANG MENDUKUNG</span>\n'
+            '        </div>'
+        )
+        content = replace_block(content, r'<div class="wux-tags">', new_tags)
+
+        # Wu Xing axis max — show integer total (raw count from MD)
+        _total_val = wx.get("total", 0)
+        _total_str = f"{int(_total_val)}" if _total_val == int(_total_val) else f"{_total_val:g}"
+        content = re.sub(
+            r'(<div class="wux-axis-top"><span>0</span><span>2</span><span>4</span><span>6</span><span>)[\d.]+\s*Total(</span></div>)',
+            rf'\g<1>{_total_str} Total\g<2>',
+            content
+        )
+
+        # Wu Xing insight, auto-generate from data (no LinRuYi fallback)
+        insight_html = subject.get("wuxing_insight_id") or _build_wuxing_insight(subject)
+        if insight_html:
+            new_insight = (
+                '<div class="wux-insight">\n          '
+                + insight_html
+                + '\n        </div>'
+            )
+            content = replace_block(content, r'<div class="wux-insight">', new_insight)
+
+    # Da Yun blocks
+    da_yun = subject.get("da_yun")
+    if da_yun:
+        # ll-eyebrow "Fase N dari 10"
+        cur_idx = da_yun.get("current_index", 0)
+        content = re.sub(
+            r'<div class="label-meta">Fase \d+ dari 10 · Fase Sekarang</div>',
+            f'<div class="label-meta">Fase {cur_idx + 1} dari 10 · Fase Sekarang</div>',
+            content
+        )
+        # Lifeline 10 cells
+        content = replace_block(content, r'<div class="lifeline">', regen_lifeline(da_yun))
+        # ll-axis
+        content = replace_block(content, r'<div class="ll-axis">', regen_lifeline_axis(da_yun))
+        # Spotlight
+        content = replace_block(content, r'<div class="spotlight">',
+                                regen_spotlight(da_yun, subject["day_master"]))
+        # Seasons bar
+        content = replace_block(content, r'<div class="seasons-bar">', regen_seasons_bar(da_yun))
+        # Seasons axis
+        content = replace_block(content, r'<div class="seasons-axis">', regen_seasons_axis(da_yun))
+        # Seasons-eyebrow label-meta, only update if subject provides override
+        if da_yun.get("seasons_label_text"):
+            content = re.sub(
+                r'(class="label-meta"[^>]*>)100 TAHUN · [^<]+(</div>)',
+                rf'\g<1>{da_yun["seasons_label_text"]}\g<2>',
+                content
+            )
+        # Footer caption (page_dayun), narrative for current cycle
+        if da_yun.get("footer_caption_html"):
+            content = replace_block(content, r'<div class="footer-caption">',
+                                    f'<div class="footer-caption">\n      {da_yun["footer_caption_html"]}\n    </div>')
+
+    # Day Master radar + element cards (page_06_daymaster only)
+    if wx and fname == "page_06_daymaster.html":
+        dm_el = _wuxing_class_from_dm(subject["day_master"])
+        # Replace radar polygon + dots: from "<!-- Michele's polygon (filled)" line through 5 vertex circles
+        new_radar = regen_radar_polygon(wx)
+        # Find "<polygon points=..." with fill="rgba(139,26,26,0.18)" (Michele's main polygon)
+        # then replace through the 5 circles after it.
+        pat = re.compile(
+            r'<polygon points="[^"]+"\s*\n\s*fill="rgba\(139,26,26,0\.18\)"[^/]*/>'
+            r'(\s*\n\s*<!--[^>]*-->)?'
+            r'(\s*\n\s*<circle[^/]*/>){5}',
+            re.DOTALL
+        )
+        content = pat.sub(new_radar.lstrip(), content)
+        # Replace grid scale labels (1, 2, 3 → dynamic max/3, 2max/3, max)
+        scale = _radar_max(wx)
+        def _fmt(v):
+            return f"{v:.1f}".rstrip('0').rstrip('.') if v != int(v) else str(int(v))
+        content = re.sub(
+            r'(<text x="206" y="153"[^>]*>)\s*1\s*(</text>)',
+            rf'\g<1>{_fmt(scale/3)}\g<2>', content)
+        content = re.sub(
+            r'(<text x="206" y="107"[^>]*>)\s*2\s*(</text>)',
+            rf'\g<1>{_fmt(2*scale/3)}\g<2>', content)
+        content = re.sub(
+            r'(<text x="206" y="60"[^>]*>)\s*3\s*(</text>)',
+            rf'\g<1>{_fmt(scale)}\g<2>', content)
+        # Replace the labels group (5 element labels)
+        new_labels = regen_radar_labels(wx, dm_el)
+        content = re.sub(
+            r'<g font-family="Noto Serif TC,serif">.*?</g>',
+            new_labels.lstrip(),
+            content, count=1, flags=re.DOTALL
+        )
+        # Replace the 5 element cards block
+        new_cards = regen_dm_element_cards(subject)
+        content = replace_block(content, r'<div class="dm-elements">', new_cards)
+
+    # Zi Wei 12 Palace overview (page_ziwei), rotate palace names based on ming_gong,
+    # strip stars + age (C-minimal: palace name + branch + shio only).
+    if fname == "page_ziwei.html":
+        zw = subject.get("zi_wei") or {}
+        ming = zw.get("ming_gong_hz")
+        if ming:
+            # 12 branches CCW (perimeter of 4x3 grid going CCW)
+            CCW = ["巳","辰","卯","寅","丑","子","亥","戌","酉","申","未","午"]
+            # Standard palace order, CCW from ming_gong
+            PALACES = [
+                ("命宮", "DIRI"),       ("兄弟", "SAUDARA"),
+                ("夫妻", "PASANGAN"),   ("子女", "ANAK"),
+                ("財帛", "REZEKI"),     ("疾厄", "KESEHATAN"),
+                ("遷移", "PERPINDAHAN"), ("僕役", "SAHABAT"),
+                ("官祿", "KARIR"),       ("田宅", "PROPERTI"),
+                ("福德", "BERKAH"),     ("父母", "ORANG TUA"),
+            ]
+            try:
+                i0 = CCW.index(ming)
+            except ValueError:
+                i0 = None
+            if i0 is not None:
+                # Build branch → (palace_hz, palace_id) map
+                branch_palace = {}
+                for j, (phz, pid) in enumerate(PALACES):
+                    branch_palace[CCW[(i0 + j) % 12]] = (phz, pid)
+                # Replace palace name per cell. Pattern:
+                # group1 = whitespace between palace and branch divs
+                # group2 = "<div class=\"zw-branch\">"
+                # group3 = branch hanzi
+                # group4 = "<span class=\"id\">...</span></div>"
+                def _swap_palace(m):
+                    branch = m.group(3)
+                    pp = branch_palace.get(branch)
+                    if not pp:
+                        return m.group(0)
+                    phz, pid = pp
+                    new_palace = f'<div class="zw-palace">{phz}<span class="id">{pid}</span></div>'
+                    return new_palace + m.group(1) + m.group(2) + branch + m.group(4)
+                content = re.sub(
+                    r'<div class="zw-palace">[^<]+(?:<span[^>]*>[^<]+</span>)?</div>'
+                    r'(\s*\n\s*)(<div class="zw-branch">)([子丑寅卯辰巳午未申酉戌亥])(<span class="id">[^<]+</span></div>)',
+                    _swap_palace, content
+                )
+        # Strip hardcoded `body` and `now` classes (template was for Lin Ru Yi only,
+        # body palace + decade highlight aren't computed for other subjects).
+        content = re.sub(r'class="zw-cell body"', 'class="zw-cell"', content)
+        content = re.sub(r'class="zw-cell now"', 'class="zw-cell"', content)
+        # Strip BADAN/KINI badges (from removed body/now classes).
+        # Hide stars (engine ZW main-star compute incomplete).
+        # Reposition 大限 age range to top-right of cell as "Umur X-Y".
+        # Inject red shio SVG with circle border per cell, uniform size.
+        hide_css = (
+            '\n.zw-stars{display:none!important;}\n'
+            '.zw-foot{display:none!important;}\n'
+            '.zw-branch{display:none!important;}\n'
+            '.zw-cell.life::before{display:none!important;}\n'
+            '.zw-cell{position:relative;display:grid!important;'
+            'grid-template-rows:auto 1fr;align-content:stretch;'
+            'padding:2.5mm!important;gap:1mm;}\n'
+            '.zw-head{padding-right:14mm;}\n'
+            '.zw-shio-wrap{display:flex;flex-direction:column;'
+            'align-items:center;justify-content:center;gap:0.8mm;'
+            'min-width:0;min-height:0;}\n'
+            # V7 Phase 3B: shio circle size conditional — kecil (9mm) hanya kalau
+            # 12 palace minor stars lengkap (chart full). Default V4.5 baseline = 18mm.
+            + (
+                '.zw-shio-circle{width:9mm;height:9mm;border-radius:50%;'
+                'border:0.3mm solid var(--gold-soft);background:#FFFEF8;'
+                'display:flex;align-items:center;justify-content:center;'
+                'overflow:hidden;flex-shrink:0;}\n'
+                '.zw-shio-circle img{width:7.5mm;height:7.5mm;object-fit:contain;}\n'
+                if (subject.get("ziwei_stars") and
+                    {k for k,v in (subject.get("ziwei_stars") or {}).items() if v} ==
+                    {"ming","xiongdi","fuqi","zinu","caibo","jie_e","qianyi","puyi","guanlu","tianzhai","fude","fumu"})
+                else
+                # Baseline V4.5 = 18mm, sekarang 80% = 14.4mm (img 15mm → 12mm)
+                '.zw-shio-circle{width:14.4mm;height:14.4mm;border-radius:50%;'
+                'border:0.4mm solid var(--gold-soft);background:#FFFEF8;'
+                'display:flex;align-items:center;justify-content:center;'
+                'overflow:hidden;flex-shrink:0;}\n'
+                '.zw-shio-circle img{width:12mm;height:12mm;object-fit:contain;}\n'
+            ) +
+            '.zw-cell.life .zw-shio-circle{border-color:var(--gold);'
+            'background:linear-gradient(180deg,#FFF8E1 0%,#F5EBD0 100%);'
+            'box-shadow:0 0 0 0.3mm rgba(201,169,97,0.35);}\n'
+            '.zw-shio-name{font-family:"Inter",sans-serif;font-size:6pt;'
+            'color:var(--text-muted);letter-spacing:0.5px;'
+            'text-transform:uppercase;font-weight:600;line-height:1;}\n'
+            '.zw-age-tag{position:absolute;top:1.5mm;right:1.5mm;'
+            'font-family:"Playfair Display",serif;font-size:5.5pt;'
+            'color:var(--text-muted);font-weight:600;letter-spacing:0.2px;'
+            'background:rgba(255,255,255,0.85);padding:0.3mm 1.2mm;'
+            'border-radius:0.8mm;white-space:nowrap;'
+            'border:0.2mm solid var(--gold-soft);}\n'
+            '.zw-cell.now-phase{box-shadow:0 0 0 0.5mm var(--red);}\n'
+            '.zw-cell.now-phase .zw-age-tag{background:var(--red);color:#fff;'
+            'font-weight:700;border-color:var(--red);}\n'
+        )
+        content = content.replace('</style>', hide_css + '</style>', 1)
+
+        # Replace center box content with mini ID card (engine data, layperson-friendly).
+        iden = subject.get("identity") or {}
+        dm = subject.get("day_master") or {}
+        name_id = iden.get("name_id", "")
+        name_hz = (iden.get("name_hanzi") or "").strip()
+        if name_hz in ("null", "_", "-"): name_hz = ""
+        bdate = iden.get("birth_date", "")
+        btime = iden.get("birth_time", "")
+        gender = iden.get("gender_id", "")
+        # Format birth date Indonesian
+        ID_MONTHS = ["", "Januari","Februari","Maret","April","Mei","Juni",
+                     "Juli","Agustus","September","Oktober","November","Desember"]
+        bdate_id = ""
+        m_d = re.match(r'(\d{4})-(\d{2})-(\d{2})', bdate or "")
+        if m_d:
+            y, mo, d = int(m_d.group(1)), int(m_d.group(2)), int(m_d.group(3))
+            bdate_id = f"{d} {ID_MONTHS[mo]} {y}"
+        dm_hz = dm.get("stem_hz", "") + dm.get("stem_element_hz", "")
+        dm_id = dm.get("label_id", "")
+        hz_row = (f'        <div class="zwc-name-hz">{name_hz}</div>' + chr(10) if name_hz else '')
+        NL = chr(10)
+        new_center_inner = (
+            NL + '        <div class="zwc-eyebrow">Identitas Bagan</div>' + NL
+            + '        <div class="zwc-name-block">' + NL
+            + hz_row
+            + f'          <div class="zwc-name-id">{name_id}</div>' + NL
+            + '        </div>' + NL
+            + '        <div class="zwc-info">' + NL
+            + f'          <div class="zwc-info-row"><span class="lbl">Lahir</span><span class="val">{bdate_id}</span></div>' + NL
+            + f'          <div class="zwc-info-row"><span class="lbl">Jam</span><span class="val">{btime} · {gender}</span></div>' + NL
+            + f'          <div class="zwc-info-row"><span class="lbl">Penguasa Hari</span><span class="val"><span class="hz">{dm_hz}</span> · {dm_id}</span></div>' + NL
+            + '        </div>' + NL + '      '
+        )
+        content = re.sub(
+            r'(<div class="zw-center">)[\s\S]*?(</div>\s*(?:<!--[^>]*-->\s*)?<div class="zw-cell)',
+            lambda mm: mm.group(1) + new_center_inner + mm.group(2),
+            content, count=1
+        )
+        # Inject CSS for the new ID card layout
+        center_css = (
+            '\n.zwc-name-hz{font-family:"Noto Serif TC",serif;font-size:24pt;'
+            'color:var(--red);font-weight:700;text-align:center;line-height:1;'
+            'letter-spacing:4px;margin-top:1mm;}\n'
+            '.zwc-name-id{font-family:"Playfair Display",serif;font-size:11pt;'
+            'color:var(--text);text-align:center;font-style:italic;font-weight:600;'
+            'border-bottom:0.2mm solid var(--gold-soft);padding-bottom:2mm;}\n'
+            '.zwc-info{display:grid;gap:1.5mm;align-content:center;'
+            'padding:1mm 1mm 0;}\n'
+            '.zwc-info-row{display:grid;grid-template-columns:auto 1fr;'
+            'gap:2mm;align-items:baseline;}\n'
+            '.zwc-info-row .lbl{font-family:"Inter",sans-serif;font-size:5.5pt;'
+            'color:var(--gold);letter-spacing:1.5px;text-transform:uppercase;'
+            'font-weight:700;white-space:nowrap;}\n'
+            '.zwc-info-row .val{font-family:"Inter",sans-serif;font-size:7.5pt;'
+            'color:var(--text);font-weight:500;text-align:right;}\n'
+            '.zwc-info-row .val .hz{font-family:"Noto Serif TC",serif;'
+            'color:var(--red);font-weight:700;}\n'
+        )
+        content = content.replace('</style>', center_css + '</style>', 1)
+
+        # Per-cell rebuild: replace stars+foot with shio-wrap containing
+        # red shio SVG circle + Umur tag below it.
+        # V7 Phase 3B — append zw-stars-other (foto-source minor stars per palace)
+        # All-or-nothing rule: kalau ada 1 palace yang null → tidak render satupun
+        # (avoid chart "setengah lengkap" yang bisa dianggap sloppy oleh praktisi)
+        _PALACE_KEY_MAP = {
+            "命宮": "ming", "兄弟": "xiongdi", "夫妻": "fuqi", "子女": "zinu",
+            "財帛": "caibo", "疾厄": "jie_e", "遷移": "qianyi", "僕役": "puyi",
+            "官祿": "guanlu", "田宅": "tianzhai", "福德": "fude", "父母": "fumu",
+        }
+        _zw_stars_data = subject.get("ziwei_stars") or {}
+        _all_12_palaces = {"ming","xiongdi","fuqi","zinu","caibo","jie_e",
+                            "qianyi","puyi","guanlu","tianzhai","fude","fumu"}
+        _filled = {k for k,v in _zw_stars_data.items() if v}
+        if _filled != _all_12_palaces:
+            _zw_stars_data = {}  # all-or-nothing: skip render kalau tidak komplit
+
+        def _rebuild_cell(m):
+            cell_open = m.group(1)
+            head = m.group(2)
+            indo = m.group(4)
+            age_a, age_b = m.group(5), m.group(6)
+            # Extract palace HZ from head, look up minor stars
+            palace_hz_match = re.search(r'<div class="zw-palace">([^<]+)<', head)
+            palace_hz = palace_hz_match.group(1) if palace_hz_match else None
+            key = _PALACE_KEY_MAP.get(palace_hz)
+            stars_str = _zw_stars_data.get(key) if key else None
+            stars_html = ""
+            if stars_str:
+                stars_html = (
+                    f'\n        <div class="zw-stars-other" '
+                    f'data-palace="{key}">{stars_str}</div>'
+                )
+            new_inner = (
+                f'<div class="zw-age-tag">Umur {age_a}-{age_b}</div>\n        '
+                f'{head}\n'
+                f'        <div class="zw-shio-wrap">'
+                f'<div class="zw-shio-circle">'
+                f'<img src="{indo}-Merah.svg" alt="{indo}"></div>'
+                f'<div class="zw-shio-name">{indo}</div>'
+                f'</div>'
+                f'{stars_html}\n      '
+            )
+            return cell_open + new_inner + '</div>'
+
+        content = re.sub(
+            r'(<div class="zw-cell[^"]*"[^>]*>\s*)'
+            r'(<div class="zw-head">[\s\S]*?'
+            r'<div class="zw-branch">([子丑寅卯辰巳午未申酉戌亥])<span class="id">([^<]+)</span></div>\s*</div>)'
+            r'[\s\S]*?<span class="age">(\d+)[–-](\d+)</span>'
+            r'[\s\S]*?</div>\s*</div>',
+            _rebuild_cell, content
+        )
+
+        # Highlight cell containing subject's current age.
+        age = (subject.get("identity") or {}).get("age_at_report", 0)
+        if age:
+            def _highlight(m):
+                a, b = int(m.group(2)), int(m.group(3))
+                if a <= age <= b:
+                    head = m.group(1)
+                    if "now-phase" in head:
+                        return m.group(0)
+                    head = head.replace('class="zw-cell', 'class="zw-cell now-phase', 1)
+                    return head + m.group(0)[len(m.group(1)):]
+                return m.group(0)
+            content = re.sub(
+                r'(<div class="zw-cell[^"]*"[^>]*>\s*'
+                r'<div class="zw-age-tag">Umur )(\d+)\-(\d+)(</div>)',
+                _highlight, content
+            )
+        # Mark ming_gong cell as "life" (already in template for 申; rotate it)
+        if ming:
+            # Strip "life" class first, then add to ming_gong's cell
+            content = re.sub(r'<div class="zw-cell life"', '<div class="zw-cell"', content)
+            # Add "life" to the cell containing ming_gong branch
+            content = re.sub(
+                r'(<div class="zw-cell)("\s+style="[^"]+">\s*\n\s*<div class="zw-head">\s*\n\s*<div class="zw-palace">命宮)',
+                r'\1 life\2', content, count=1
+            )
+
+    # Personality 6-axis radar + motto (page_08_xingqing only)
+    if fname == "page_08_xingqing.html":
+        poly = subject.get("_xq_radar_poly")
+        labels = subject.get("_xq_radar_labels")
+        motto = subject.get("_xq_motto") or []
+        if poly:
+            # Replace LinRuYi polygon + 6 vertex circles
+            pat = re.compile(
+                r'<polygon points="[^"]+"\s*\n\s*fill="rgba\(139,26,26,0\.18\)"[^/]*/>'
+                r'(\s*\n\s*<!--[^>]*-->)?'
+                r'(\s*\n\s*<circle[^/]*/>){6}',
+                re.DOTALL
+            )
+            content = pat.sub(poly.lstrip(), content)
+        if labels:
+            content = re.sub(
+                r'<g font-family="Noto Serif TC,serif">.*?</g>',
+                labels.lstrip(),
+                content, count=1, flags=re.DOTALL
+            )
+        if len(motto) >= 4:
+            xqm_hz, xqm_id, xqm_arch, xqm_tag = motto
+            content = re.sub(r'(<div class="xqm-hz">)[^<]+(</div>)',
+                             rf'\g<1>{xqm_hz}\g<2>', content)
+            content = re.sub(r'(<div class="xqm-id">)[^<]+(</div>)',
+                             rf'\g<1>{xqm_id}\g<2>', content)
+            content = re.sub(r'(<div class="xqm-archetype">)[^<]+(</div>)',
+                             rf'\g<1>{xqm_arch}\g<2>', content)
+            content = re.sub(r'(<div class="xqm-tag">)[^<]+(</div>)',
+                             rf'\g<1>{xqm_tag}\g<2>', content)
+
+    # Marriage blocks (page_marriage only)
+    marriage = subject.get("marriage")
+    if marriage and fname == "page_marriage.html":
+        # Wheel SVG inside <div class="wheel-svg"><svg>...</svg></div>
+        new_svg = regen_wheel_svg(subject)
+        content = re.sub(
+            r'<svg viewBox="0 0 400 400"[^>]*>.*?</svg>',
+            new_svg,
+            content, count=1, flags=re.DOTALL
+        )
+        # Wheel legend — replace static template legend with dynamic one
+        # (only show categories actually present in MD data, no fake hardcoded entries)
+        new_legend = regen_wheel_legend(subject)
+        content = replace_block(content, r'<div class="wheel-legend">', new_legend)
+        # Cocok grid (good)
+        cocok_html = regen_compat_card("good", marriage.get("cocok", []),
+                                       "var(--green)", "宜 COCOK")
+        content = replace_block(content, r'<div class="compat-card good">', cocok_html)
+        # Hindari grid (bad)
+        hindari_html = regen_compat_card("bad", marriage.get("hindari", []),
+                                         "var(--red-bad)", "忌 HINDARI")
+        content = replace_block(content, r'<div class="compat-card bad">', hindari_html)
+        # Footer caption (if subject provides override)
+        if marriage.get("footer_caption_html"):
+            content = replace_block(content, r'<div class="footer-caption">',
+                                     f'<div class="footer-caption">\n      {marriage["footer_caption_html"]}\n    </div>')
+
+        # V7 Phase 7 — Marriage tafsir 宜/忌 prose box (inject di BAWAH shio-list)
+        # Layout: shio list (foto + nama) di atas, prose kecil di bawah.
+        cocok_tafsir_raw = subject.get("marriage_cocok_tafsir")
+        hindari_tafsir_raw = subject.get("marriage_hindari_tafsir")
+        cocok_tafsir = _md_inline(cocok_tafsir_raw) if cocok_tafsir_raw else None
+        hindari_tafsir = _md_inline(hindari_tafsir_raw) if hindari_tafsir_raw else None
+        if cocok_tafsir or hindari_tafsir:
+            if cocok_tafsir:
+                # Inject sebelum </div> compat-card good — anchor by lookahead ke compat-card bad
+                # (allow HTML comment between, mis. <!-- HINDARI -->)
+                cocok_box = f'        <div class="compat-prose-v7 good">{cocok_tafsir}</div>\n      '
+                content = re.sub(
+                    r'(<div class="compat-card good">[\s\S]*?)</div>(\s*(?:<!--[\s\S]*?-->\s*)?<div class="compat-card bad">)',
+                    rf'\1\n{cocok_box}</div>\2',
+                    content, count=1
+                )
+            if hindari_tafsir:
+                # Anchor compat-card bad close by lookahead ke </main> (unique end)
+                hindari_box = f'        <div class="compat-prose-v7 bad">{hindari_tafsir}</div>\n      '
+                content = re.sub(
+                    r'(<div class="compat-card bad">[\s\S]*?)</div>(\s*</div>\s*</main>)',
+                    rf'\1\n{hindari_box}</div>\2',
+                    content, count=1, flags=re.DOTALL
+                )
+            prose_css = (
+                '\n/* V7 Phase 7 — Marriage prose box (kecil, di bawah shio list) */\n'
+                '.compat-card{display:flex!important;flex-direction:column;'
+                'min-height:0!important;overflow:hidden!important;}\n'
+                '.compat-card .compat-title{flex-shrink:0;}\n'
+                '.compat-card .shio-list{flex-shrink:0;}\n'
+                # Prose: tidak grow, fixed height max, font sangat kecil
+                '.compat-prose-v7{font-size:4.8pt;line-height:1.3;'
+                'padding:1.2mm 2mm;border-radius:1mm;margin-top:1.2mm;'
+                'text-align:justify;flex:0 0 auto;max-height:24mm;'
+                'overflow:hidden;'
+                'display:-webkit-box;-webkit-line-clamp:9;-webkit-box-orient:vertical;'
+                '-webkit-box-pack:start;}\n'
+                '.compat-prose-v7.good{background:rgba(90,140,74,0.08);'
+                'border-left:0.3mm solid var(--green);color:var(--text);}\n'
+                '.compat-prose-v7.bad{background:rgba(160,52,52,0.08);'
+                'border-left:0.3mm solid var(--red-bad);color:var(--text);}\n'
+                # Hanzi dalam prose: ukuran sama (jangan dibikin lebih besar)
+                '.compat-prose-v7 *{font-size:inherit!important;}\n'
+            )
+            # Page 7 template pakai external CSS (no inline <style>) — inject <style> block setelah <link>
+            if '</style>' in content:
+                content = content.replace('</style>', prose_css + '</style>', 1)
+            else:
+                # Inject standalone <style> block after <link rel="stylesheet">
+                style_block = f'<style>{prose_css}</style>'
+                content = re.sub(
+                    r'(<link rel="stylesheet"[^>]*>)',
+                    rf'\1\n{style_block}',
+                    content, count=1
+                )
+
+    # Yang Zhai blocks (page_yangzhai only)
+    yang_zhai = subject.get("yang_zhai")
+    if yang_zhai and yang_zhai.get("_empty") and fname == "page_yangzhai.html":
+        # Null-safe fallback: blank the static LinRuYi gua labels with "—".
+        for old, new in [
+            ('<div class="yz-trigram">☵</div>', f'<div class="yz-trigram" style="opacity:0.4">{EM_DASH}</div>'),
+            ('<div class="yz-gua-name">坎</div>', f'<div class="yz-gua-name" style="opacity:0.4">{EM_DASH}</div>'),
+            ('Kǎn, "Air"', EM_DASH),
+            ('坎卦 KǍN GUA · KELOMPOK TIMUR', f'{EM_DASH} · KELOMPOK {EM_DASH}'),
+        ]:
+            content = content.replace(old, new)
+        return content
+    if yang_zhai and fname == "page_yangzhai.html":
+        # Compass SVG
+        new_svg = regen_compass_svg(yang_zhai, subject["day_master"])
+        content = re.sub(
+            r'<svg viewBox="0 0 400 400"[^>]*>.*?</svg>',
+            new_svg, content, count=1, flags=re.DOTALL
+        )
+
+        # Side panel: trigram symbol
+        m_t = TRIGRAMS["坎"]  # Michele's reference
+        s_t = TRIGRAMS[yang_zhai["gua_hz"]]
+        if yang_zhai["gua_hz"] != "坎":
+            content = content.replace(
+                f'<div class="yz-trigram">{m_t["symbol"]}</div>',
+                f'<div class="yz-trigram">{s_t["symbol"]}</div>'
+            )
+            content = content.replace(
+                f'<div class="yz-gua-name">坎</div>',
+                f'<div class="yz-gua-name">{yang_zhai["gua_hz"]}</div>'
+            )
+            content = content.replace(
+                f'Kǎn, "Air"',
+                f'{s_t["pinyin"]}, "{s_t["label_id"]}"'
+            )
+
+        # Side panel meaning (subject override)
+        if yang_zhai.get("meaning_html"):
+            content = replace_block(content, r'<div class="yz-gua-meaning">',
+                                    f'<div class="yz-gua-meaning">\n          {yang_zhai["meaning_html"]}\n        </div>')
+
+        # Sumbu hoki text
+        m_axis_hz = "北↔南"
+        s_axis_hz = yang_zhai.get("sumbu_hoki_hz", m_axis_hz)
+        if s_axis_hz != m_axis_hz:
+            # Original Michele: <span class="hz">北</span>↔<span class="hz">南</span>
+            m_parts = m_axis_hz.split("↔")
+            s_parts = s_axis_hz.split("↔")
+            old = f'<span class="hz">{m_parts[0]}</span>↔<span class="hz">{m_parts[1]}</span>'
+            new = f'<span class="hz">{s_parts[0]}</span>↔<span class="hz">{s_parts[1]}</span>'
+            content = content.replace(old, new)
+            # Also "U ↔ S · garis emas" → "{abbr1} ↔ {abbr2} · garis emas"
+            m_abbr = "U ↔ S"
+            s_abbr = yang_zhai.get("sumbu_hoki_id", m_abbr)
+            content = content.replace(m_abbr, s_abbr)
+
+        # Eyebrow text "坎卦 KǍN GUA · KELOMPOK TIMUR"
+        m_eb = f'坎卦 KǍN GUA · KELOMPOK TIMUR'
+        s_eb = f'{yang_zhai["gua_hz"]}卦 {s_t["pinyin"].upper()} GUA · KELOMPOK {yang_zhai.get("group_id","Timur").upper()}'
+        content = content.replace(m_eb, s_eb)
+
+        # Zones grid (regenerate all 6 zones)
+        zones = yang_zhai.get("zones", {})
+        if zones:
+            zone_specs = [
+                ("pintu",       "門", "Pintu Utama",  "Mén · Pintu",            "PINTU",       False),
+                ("dapur",       "灶", "Dapur",        "Zào · Tungku",           "DAPUR",       False),
+                ("kamar",       "房", "Kamar Tidur",  "Fáng · Kamar",           "KAMAR",       False),
+                ("ranjang",     "床", "Ranjang",      "Chuáng · Tempat Tidur",  "RANJANG",     False),
+                ("altar",       "神", "Altar",        "Shén · Tempat Sembahyang","ALTAR",      False),
+                ("kamar_mandi", "廁", "Kamar Mandi",  "Cè · Kamar Mandi",       "KAMAR MANDI", True),
+            ]
+            zone_blocks = []
+            for key, hz_label, id_label, pinyin_label, comment_id, is_warn in zone_specs:
+                if key in zones:
+                    comment = f"<!-- {hz_label} {comment_id}{' (warn)' if is_warn else ''} -->"
+                    zone_blocks.append(comment + "\n        " +
+                                       regen_yz_zone(key, hz_label, id_label, pinyin_label,
+                                                     zones[key], warn=is_warn))
+            new_grid = (
+                '<div class="yz-zones-grid">\n\n'
+                '        '
+                + '\n\n        '.join(zone_blocks)
+                + '\n\n      </div>'
+            )
+            content = replace_block(content, r'<div class="yz-zones-grid">', new_grid)
+
+        # Footer caption override
+        if yang_zhai.get("footer_caption_html"):
+            content = replace_block(content, r'<div class="footer-caption">',
+                                    f'<div class="footer-caption">\n      {yang_zhai["footer_caption_html"]}\n    </div>')
+    return content
+
+
+# ============================================================
+# RENDER
+# ============================================================
+
+# Pages that are 100%% shared (no per-subject content). Skip substitution.
+SHARED_PAGES = {
+    "page_02_toc.html",
+    "page_03_intro.html",
+    "page_05_bazi_opener.html",
+    "page_15_ziwei_opener.html",
+    "page_22_glossary.html",
+    "page_23_disclaimer.html",
+}
+
+
+_TAFSIR_ANCHOR_RE = re.compile(
+    r"<!--\s*TAFSIR:(\w+)\s*-->(.*?)<!--\s*/TAFSIR\s*-->",
+    re.DOTALL
+)
+
+
+def inject_tafsir_blocks(html: str, tafsir_blocks: dict) -> str:
+    """Find <!-- TAFSIR:slug -->...<!-- /TAFSIR --> markers in template and
+    replace inner content with MD-derived block. If slug missing in MD, keep
+    LinRuYi default (the content between markers).
+    """
+    if not tafsir_blocks:
+        return html
+    def repl(m):
+        slug = m.group(1).strip()
+        replacement = tafsir_blocks.get(slug)
+        if replacement:
+            return f"<!-- TAFSIR:{slug} -->{replacement}<!-- /TAFSIR -->"
+        return m.group(0)  # keep original
+    return _TAFSIR_ANCHOR_RE.sub(repl, html)
+
+
+def render_pages(subject, out_dir):
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    # === V7 GRACEFUL FALLBACK: detect skip BEFORE normalize ===
+    # _normalize_subject_for_render fills da_yun.cycles with 10 placeholder cells
+    # when empty, jadi skip detection HARUS pakai raw subject (sebelum normalize).
+    skip_pages = set()
+    raw_liu_nian = subject.get("liu_nian_predictions") or []
+    raw_dy = subject.get("da_yun") if isinstance(subject.get("da_yun"), dict) else None
+    raw_dy_cycles = (raw_dy or {}).get("cycles") or []
+    if not raw_liu_nian and not raw_dy_cycles:
+        skip_pages.add("page_liunian.html")
+    raw_bw = subject.get("bone_weight") or {}
+    raw_has_bone = bool(raw_bw.get("bone_weight_total"))
+    raw_has_quotes = bool(subject.get("gushu_quotes"))
+    raw_has_xn = bool(subject.get("xiongnian_list"))
+    if not (raw_has_bone or raw_has_quotes or raw_has_xn):
+        skip_pages.add("page_16_lampiran.html")
+    raw_xt = subject.get("xiantian_per_stem") or {}
+    raw_has_xt = any(v for v in raw_xt.values()) if raw_xt else False
+    raw_has_jie = bool(subject.get("jie_e_palace_hz") or subject.get("jie_e_palace_id"))
+    if not (raw_has_xt or raw_has_jie):
+        skip_pages.add("page_health.html")
+    # v7.4 — 先天論命 supplementary pages (auto-skip kalau foto tidak dikirim)
+    if not (subject.get("xing_qing_poem_id") or subject.get("xing_qing_prose_id")
+            or subject.get("fulu_body_id") or subject.get("mingyun_body_id")):
+        skip_pages.add("page_watak_nasib.html")
+    if not (subject.get("qinshu_tou_main_id") or subject.get("qinshu_zhong_main_id")
+            or subject.get("qinshu_mo_main_id")):
+        skip_pages.add("page_waktu_lahir.html")
+
+    # ===== V7.1+ extended skip detection (foto-strict) =====
+    raw_marriage = subject.get("marriage") or {}
+    if not (raw_marriage.get("cocok") or raw_marriage.get("hindari")):
+        skip_pages.add("page_marriage.html")
+    raw_yz = subject.get("yang_zhai") or {}
+    if not raw_yz or not raw_yz.get("gua_hz"):
+        skip_pages.add("page_yangzhai.html")
+    raw_ssl = subject.get("shen_sha_list") or []
+    if not raw_ssl:
+        skip_pages.add("page_10_shensha.html")
+    raw_zw = subject.get("zi_wei") or {}
+    if not raw_zw or not raw_zw.get("ming_gong_hz"):
+        skip_pages.add("page_15_ziwei_opener.html")
+        skip_pages.add("page_ziwei.html")
+        for pal_slug in ["ming_gong","xiongdi","fuqi","zinu","caibo","jie_e","qianyi","puyi","guanlu","tianzhai","fude","fumu"]:
+            skip_pages.add(f"page_palace_{pal_slug}.html")
+    # CaiFu page: skip if no 正財/偏財 prose data
+    raw_caifu_tafsir = subject.get("_tafsir", {}).get("_caifu_struct", {}) if subject.get("_tafsir") else {}
+    if not raw_caifu_tafsir:
+        # try fallback path
+        raw_caifu_tafsir = (subject.get("caifu") or {})
+    # Don't skip caifu by default (may still have format/yong info)
+    # Career page: skip if no industri/foto data
+    raw_career_md = subject.get("_career_industri") if isinstance(subject.get("_career_industri"), str) else None
+    if not raw_career_md and not (subject.get("career_industries") or []):
+        # career page has wuxing strip too, keep if wuxing present
+        pass
+    # Da Yun: skip if no cycles
+    if not raw_dy_cycles:
+        skip_pages.add("page_dayun.html")
+
+    # Null-safety pass: convert None fields to safe placeholders ("—" for text,
+    # 0 for SVG geometry, [] for relationship lists). Layout/template unchanged.
+    subject = _normalize_subject_for_render(subject)
+    pairs = build_substitutions(subject)
+    raw_tafsir = subject.get("_tafsir") or {}
+    # Null TAFSIR slugs → "—" placeholder (LOW RISK fallback per V4.5 plan)
+    tafsir_blocks = {
+        slug: (val if val is not None else f'<p style="color:#6B5B3F;font-style:italic;opacity:0.6;">{EM_DASH}</p>')
+        for slug, val in raw_tafsir.items()
+    }
+    # Cover footer auto-date placeholder
+    months_id = ["", "Januari","Februari","Maret","April","Mei","Juni",
+                 "Juli","Agustus","September","Oktober","November","Desember"]
+    today_str = f"{months_id[time.localtime().tm_mon]} {time.localtime().tm_year}"
+    pairs.append(("{{REPORT_DATE}}", today_str))
+
+    # === Kesimpulan auto-split: kalau narasi terlalu panjang untuk 1 kotak,
+    #     pecah jadi 2 halaman (font tetap nyaman dibaca, tidak dikecilkan ekstrem).
+    #     Halaman ke-2 (lanjutan) otomatis di-skip kalau narasi pendek → byte-identik
+    #     untuk subjek lama. TOC + nomor halaman menyesuaikan otomatis. ===
+    _kes_html = tafsir_blocks.get("_kes_narrative", "") or ""
+    _kes_text = re.sub(r"<[^>]+>", "", _kes_html)
+    _kes_paras = re.findall(r"<p[^>]*>.*?</p>", _kes_html, re.DOTALL)
+    KES_SPLIT_THRESHOLD = 1500  # panjang teks tampak (tanpa tag); di atas ini → 2 halaman
+    if len(_kes_text) > KES_SPLIT_THRESHOLD and len(_kes_paras) >= 2:
+        _total = max(1, len(_kes_text))
+        _acc, _cut = 0, 1
+        for _i, _pp in enumerate(_kes_paras):
+            _acc += len(re.sub(r"<[^>]+>", "", _pp))
+            if _acc >= _total / 2:
+                _cut = _i + 1
+                break
+        _cut = max(1, min(_cut, len(_kes_paras) - 1))
+        tafsir_blocks["_kes_narrative"]   = "".join(_kes_paras[:_cut])
+        tafsir_blocks["_kes_narrative_2"] = "".join(_kes_paras[_cut:])
+        print(f"[KES-SPLIT] narasi {len(_kes_text)} char -> 2 halaman ({_cut}/{len(_kes_paras)} paragraf di hal.1)")
+    else:
+        skip_pages.add("page_kesimpulan_lanjutan.html")
+
+    # === Page numbering map (dinamis berdasarkan skip) ===
+    active_pages = [f for f in PAGE_ORDER if f not in skip_pages]
+    page_num_map = {f: i + 1 for i, f in enumerate(active_pages)}
+    total_pages = len(active_pages)
+    # Map for section ranges di TOC (Bagian I / II / III) — kalau page 15/16 skip,
+    # range "Pages 5-16" auto narrow.
+    section_first = {}
+    section_last = {}
+    section_first["pendahuluan"] = page_num_map.get("page_01_cover.html", 1)
+    section_last["pendahuluan"]  = page_num_map.get("page_profile.html", 4)
+    section_first["bazi"]        = page_num_map.get("page_05_bazi_opener.html", 5)
+    # Last bazi page: cari yang terakhir aktif di rentang BaZi
+    bazi_last_candidates = ["page_16_lampiran.html", "page_health.html", "page_liunian.html", "page_dayun.html",
+                             "page_yangzhai.html", "page_career.html"]
+    for c in bazi_last_candidates:
+        if c in page_num_map:
+            section_last["bazi"] = page_num_map[c]
+            break
+    section_first["ziwei"] = page_num_map.get("page_15_ziwei_opener.html",
+                                              section_last.get("bazi", 16) + 1)
+    section_last["ziwei"]  = page_num_map.get("page_palace_fumu.html",
+                                              section_first["ziwei"] + 4)
+    section_first["penutup"] = page_num_map.get("page_19b_penutup_opener.html",
+                                                section_last["ziwei"] + 1)
+    section_last["penutup"]  = page_num_map.get("page_23_disclaimer.html", total_pages)
+
+    rendered = []
+    for fname in PAGE_ORDER:
+        if fname in skip_pages:
+            print(f"[V7-SKIP] {fname} (no foto-source data)")
+            continue
+        src = TEMPLATES_DIR / fname
+        if not src.exists():
+            print(f"[WARN] missing template: {fname}")
+            continue
+        dst = out_dir / fname
+        content = src.read_text(encoding="utf-8")
+        # Personal substitutions only for non-shared pages.
+        # Shared pages (TOC/intro/opener/glossary/disclaimer) tetap dapat page-numbering
+        # substitution di bawah supaya {{PAGE_NUM}}/{{TOTAL_PAGES}}/{{SECTION_*}} bekerja.
+        if fname not in SHARED_PAGES:
+            for search, replace in pairs:
+                if search and search != replace:
+                    content = content.replace(search, replace)
+            content = apply_blocks(content, subject, fname)
+            content = inject_tafsir_blocks(content, tafsir_blocks)
+        # === Dynamic page numbering substitution (ALL pages, including shared) ===
+        my_num = page_num_map.get(fname, 0)
+        content = content.replace("{{PAGE_NUM}}", str(my_num))
+        content = content.replace("{{TOTAL_PAGES}}", str(total_pages))
+        content = content.replace("{{PAGE_NUM_PADDED}}", f"{my_num:02d}")
+        content = content.replace("{{SECTION_PENDAHULUAN_RANGE}}",
+                                  f"{section_first['pendahuluan']}–{section_last['pendahuluan']}")
+        content = content.replace("{{SECTION_BAZI_RANGE}}",
+                                  f"{section_first['bazi']}–{section_last['bazi']}")
+        content = content.replace("{{SECTION_ZIWEI_RANGE}}",
+                                  f"{section_first['ziwei']}–{section_last['ziwei']}")
+        content = content.replace("{{SECTION_PENUTUP_RANGE}}",
+                                  f"{section_first['penutup']}–{section_last['penutup']}")
+        content = content.replace("{{PAGE_GLOSSARY_NUM}}",
+                                  str(page_num_map.get("page_22_glossary.html", total_pages - 1)))
+        content = content.replace("{{PAGE_DISCLAIMER_NUM}}",
+                                  str(page_num_map.get("page_23_disclaimer.html", total_pages)))
+        # TOC dynamic numbering — apply only on TOC template (re-numbers rows + hides skipped)
+        if fname == "page_02_toc.html":
+            content = _apply_toc_dynamic(content, page_num_map, skip_pages)
+        dst.write_text(content, encoding="utf-8")
+        rendered.append(dst)
+    return rendered
+
+
+def _apply_toc_dynamic(content: str, page_num_map: dict, skip_pages: set) -> str:
+    """TOC dynamic page numbering. Each <div class="toc-row" data-target="X.html">
+    has a <div class="pg">N</div> child. Replace N with active page number,
+    or hide whole row if X is skipped."""
+    def replace_row(m):
+        full = m.group(0)
+        target = m.group(1)
+        if target in skip_pages:
+            # Hide the row entirely (still keep DOM placeholder with display:none class
+            # so CSS rules :nth-child don't shift)
+            return full.replace('class="toc-row"', 'class="toc-row toc-row-hidden"', 1)
+        new_num = page_num_map.get(target)
+        if new_num is None:
+            # Target not in active pages (removed from PAGE_ORDER) → hide row
+            return full.replace('class="toc-row"', 'class="toc-row toc-row-hidden"', 1)
+        # Replace the <div class="pg">XX</div> inside this row
+        return re.sub(
+            r'(<div class="pg">)\d+(</div>)',
+            lambda mm: f'{mm.group(1)}{new_num:02d}{mm.group(2)}',
+            full, count=1
+        )
+    # Each TOC row ends with the unique pattern `</div><div></div></div>`
+    # (close .name, empty 4th col open+close, close .toc-row).
+    content = re.sub(
+        r'<div class="toc-row" data-target="([^"]+)">.*?</div><div></div></div>',
+        replace_row, content
+    )
+    # Inject CSS to hide rows + collapse their dotted border (avoid double-line)
+    hide_css = (
+        '\n.toc-row.toc-row-hidden { display: none !important; }\n'
+    )
+    content = content.replace('</style>', hide_css + '</style>', 1)
+    return content
+
+
+def find_chrome():
+    for p in CHROME_PATHS:
+        if os.path.exists(p):
+            return p
+    raise FileNotFoundError("Chrome / Edge not found")
+
+
+def build_master(out_dir: Path, subject: dict) -> Path:
+    name = subject["identity"]["name_id"]
+    asset_url = "file:///" + str(ASSETS_DIR).replace("\\", "/") + "/"
+    css_url = "file:///" + str(out_dir / "style.css").replace("\\", "/")
+    shutil.copy(TEMPLATES_DIR / "style.css", out_dir / "style.css")
+
+    styles, bodies = "", ""
+    for fname in PAGE_ORDER:
+        path = out_dir / fname
+        if not path.exists():
+            continue
+        content = path.read_text(encoding="utf-8")
+        m_style = re.search(r"<style>(.*?)</style>", content, re.DOTALL)
+        if m_style:
+            styles += f"\n/* === {fname} === */\n" + m_style.group(1) + "\n"
+        m_body = re.search(r"<body[^>]*>(.*?)</body>", content, re.DOTALL)
+        if m_body:
+            body = m_body.group(1)
+            body = re.sub(r'src="([^/"][^":]*\.(svg|png|jpg|jpeg))"',
+                          lambda m: f'src="{asset_url}{m.group(1)}"', body)
+            body = re.sub(r'href="([^/"][^":]*\.(svg|png|jpg|jpeg))"',
+                          lambda m: f'href="{asset_url}{m.group(1)}"', body)
+            bodies += body + "\n"
+
+    master = f"""<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>{name} Ramalan PDF</title>
+<link rel="stylesheet" href="{css_url}">
+<style>
+{styles}
+
+@page {{ size: A4 portrait; margin: 0; }}
+html, body {{ background: white !important; margin: 0 !important; padding: 0 !important; }}
+.page {{
+  page-break-after: always !important;
+  page-break-inside: avoid !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}}
+.page:last-child {{ page-break-after: auto !important; }}
+.ind-icon, .toc-row .ico, .pal-action .ico, .dc-item .ico, .xqc-item .ico {{
+  font-family: 'Segoe UI Emoji','Segoe UI Symbol','Inter',system-ui,sans-serif !important;
+}}
+</style>
+</head>
+<body>
+{bodies}
+<script>
+(function(){{
+  function fit(el){{
+    if (!el.clientHeight) return;
+    var fs = parseFloat(getComputedStyle(el).fontSize);
+    var safety = 0;
+    while (el.scrollHeight > el.clientHeight + 1 && fs > 5 && safety < 80){{
+      fs -= 0.25;
+      el.style.fontSize = fs + 'px';
+      safety++;
+    }}
+  }}
+  function run(){{
+    document.querySelectorAll('.ys-body, .fc-body, .pal-card, .cfm-desc, .kek-body, .tan-body, .tin-body, .ind-card, .shen-paragraf, .kc-paragraph, .xq-body, .auto-fit').forEach(fit);
+  }}
+  if (document.readyState === 'complete') run();
+  else window.addEventListener('load', run);
+}})();
+</script>
+</body>
+</html>
+"""
+    master_path = out_dir / "_master.html"
+    master_path.write_text(master, encoding="utf-8")
+    return master_path
+
+
+def _chrome_to_text_pdf(master_html: Path, tmp_pdf: Path) -> None:
+    chrome = find_chrome()
+    src_url = "file:///" + str(master_html).replace("\\", "/")
+    args = [
+        chrome,
+        "--headless", "--disable-gpu", "--no-sandbox", "--no-first-run",
+        "--disable-extensions", "--disable-background-networking",
+        "--allow-file-access-from-files",
+        "--virtual-time-budget=2500",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-features=PaintHolding",
+        f"--print-to-pdf={tmp_pdf}",
+        "--no-pdf-header-footer",
+        src_url,
+    ]
+    subprocess.run(args, capture_output=True, timeout=90)
+    if not tmp_pdf.exists():
+        raise RuntimeError("Chrome did not produce PDF")
+
+
+def _flatten_to_image_pdf(text_pdf: Path, out_pdf: Path, dpi: int = 300) -> None:
+    """Rasterize each page of text_pdf to PNG and pack into a new image-only PDF.
+    Eliminates cross-viewer rendering inconsistency (mobile vs laptop)."""
+    import fitz
+    from PIL import Image
+    doc = fitz.open(text_pdf)
+    images = []
+    for page in doc:
+        pix = page.get_pixmap(dpi=dpi)
+        img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+        images.append(img)
+    doc.close()
+    if not images:
+        raise RuntimeError("PDF has no pages to flatten")
+    images[0].save(
+        out_pdf, save_all=True, append_images=images[1:],
+        format="PDF", resolution=dpi
+    )
+
+
+def run_chrome(master_html: Path, out_pdf: Path) -> Path:
+    out_pdf.parent.mkdir(parents=True, exist_ok=True)
+    tmp_pdf = Path(os.environ.get("TEMP", ".")) / f"_pdf_sb1_{os.getpid()}.pdf"
+    _chrome_to_text_pdf(master_html, tmp_pdf)
+    flat_pdf = tmp_pdf.with_name(tmp_pdf.stem + "_flat.pdf")
+    _flatten_to_image_pdf(tmp_pdf, flat_pdf)
+    try:
+        tmp_pdf.unlink(missing_ok=True)
+    except Exception:
+        pass
+    if not flat_pdf.exists():
+        raise RuntimeError("Image PDF not produced")
+    try:
+        shutil.move(str(flat_pdf), str(out_pdf))
+        return out_pdf
+    except (PermissionError, OSError):
+        alt = out_pdf.with_name(out_pdf.stem + f"_{time.strftime('%H%M%S')}.pdf")
+        shutil.move(str(flat_pdf), str(alt))
+        return alt
+
+
+def render_subject(subject_id: str) -> Path:
+    t0 = time.time()
+    json_path = DATA_DIR / f"{subject_id}.json"
+    if not json_path.exists():
+        raise FileNotFoundError(f"Missing subject data: {json_path}")
+    subject = json.loads(json_path.read_text(encoding="utf-8"))
+
+    out_dir = BUILD_DIR / subject_id
+    if out_dir.exists():
+        shutil.rmtree(out_dir)
+
+    print(f"[1/4] Rendering pages from {json_path.name}...")
+    rendered = render_pages(subject, out_dir)
+    print(f"      {len(rendered)} pages rendered")
+
+    print(f"[2/4] Building master HTML...")
+    master = build_master(out_dir, subject)
+    print(f"      Master: {master.stat().st_size//1024} KB")
+
+    today = time.strftime("%Y-%m-%d")
+    name = subject["identity"]["name_id"]
+    hanzi = (subject["identity"].get("name_hanzi") or "").strip()
+    if hanzi in ("_", "-", "null"): hanzi = ""
+    birth = subject["identity"]["birth_date"]
+    pdf_name = f"{name}-{hanzi}-{birth}.pdf" if hanzi else f"{name}-{birth}.pdf"
+    out_pdf = ROOT.parent / "#result" / today / pdf_name
+
+    print(f"[3/4] Chrome → PDF...")
+    final = run_chrome(master, out_pdf)
+    print(f"      PDF: {final.stat().st_size//1024} KB")
+
+    print(f"[4/4] Saved: {final}")
+    print(f"\nTotal: {time.time()-t0:.1f}s")
+    return final
+
+
+if __name__ == "__main__":
+    sid = sys.argv[1] if len(sys.argv) > 1 else "michele"
+    render_subject(sid)

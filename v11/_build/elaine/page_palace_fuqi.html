@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Pasangan (夫妻) Palace</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-pal { grid-template-rows: 1fr !important; gap: 0; }
+
+  .palace-solo {
+    background: linear-gradient(180deg, #FFF8E1, #FBF1D4);
+    border: 0.6mm solid var(--gold);
+    border-radius: 2.5mm;
+    padding: 6mm 8mm;
+    display: grid;
+    grid-template-rows: auto auto minmax(0, 1fr) auto;
+    gap: 3mm;
+    overflow: hidden;
+    position: relative;
+  }
+  .palace-solo::before {
+    content: ''; position: absolute;
+    top: 0; right: 0; width: 28mm; height: 28mm;
+    background-color: transparent;
+    background-image: radial-gradient(circle at top right, rgba(201,169,97,0.22) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .ps-head {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: baseline;
+    gap: 4mm;
+    border-bottom: 0.3mm solid var(--gold);
+    padding-bottom: 2.5mm;
+  }
+  .ps-title-id {
+    font-family: 'Playfair Display', serif;
+    font-size: 24pt;
+    color: var(--red);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1;
+  }
+  .ps-title-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 22pt;
+    color: var(--text);
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 1;
+  }
+  .ps-title-pinyin {
+    font-family: 'Inter', sans-serif;
+    font-size: 9pt;
+    color: var(--text-muted);
+    font-style: italic;
+    letter-spacing: 0.5px;
+    margin-top: 1mm;
+  }
+  .ps-badge {
+    font-family: 'Inter', sans-serif;
+    font-size: 7pt;
+    color: white;
+    background: var(--red);
+    padding: 1mm 3mm;
+    border-radius: 1mm;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .ps-meta-row {
+    display: flex;
+    gap: 4mm;
+    align-items: center;
+    font-size: 8.5pt;
+    color: var(--text-muted);
+    padding-bottom: 1.5mm;
+  }
+  .ps-meta-row .lbl {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 6.5pt;
+    color: #8B7355;
+    font-weight: 600;
+  }
+  .ps-meta-row .val {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  .ps-body {
+    font-size: 12pt;
+    line-height: 1.6;
+    color: var(--text);
+    overflow: hidden;
+    text-align: justify;
+    padding: 0 1mm;
+  }
+  .ps-body p {
+    margin: 0 0 2.6mm 0;
+  }
+  .ps-body p:last-child {
+    margin-bottom: 0;
+  }
+  .ps-body strong {
+    color: var(--red);
+    font-weight: 700;
+  }
+  .ps-body .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red);
+    font-weight: 600;
+  }
+
+  .ps-action {
+    display: grid;
+    grid-template-columns: 6mm 1fr;
+    gap: 3mm;
+    background: rgba(45,106,79,0.08);
+    border-left: 0.7mm solid var(--green);
+    border-radius: 0 1.5mm 1.5mm 0;
+    padding: 3mm 4mm;
+    font-size: 9pt;
+    line-height: 1.5;
+    color: var(--text);
+  }
+  .ps-action .ps-action-ico {
+    color: var(--green);
+    font-weight: 700;
+    font-size: 12pt;
+    line-height: 1;
+  }
+  .ps-action .ps-action-content {
+    display: grid;
+    gap: 1mm;
+  }
+  .ps-action .ps-action-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 7.5pt;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--green);
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">19</div>
+    <div class="h-titles"><div class="h-cn">夫妻</div><div class="h-id">Pasangan · Istana 3 · Lingkar Pasangan</div></div>
+    <div class="h-section">Bagian II · Zi Wei 紫微</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Monyet-Merah.svg" alt="Monyet"></div>
+    <div class="subject-meta">
+      <div class="subject-name">ELAINE · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">申 Monyet</span></div>
+      <div class="subject-detail">Pola pernikahan, jodoh, & dinamika asmara</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">甲木 · Pohon Besar</div></div>
+  </div>
+
+  <main class="content content-pal">
+    <div class="palace-solo">
+      <div class="ps-head">
+        <div>
+          <div class="ps-title-id">Pasangan</div>
+          <div class="ps-title-pinyin">Fū Qī</div>
+        </div>
+        <div style="text-align:center;">
+          <div class="ps-title-hz">夫妻</div>
+        </div>
+        <div class="ps-badge">Lingkar Pasangan</div>
+      </div>
+
+      <div class="ps-meta-row">
+        <span class="lbl">Sumber Foto</span>
+        <span class="val">夫妻 layar 詳細解説</span>
+      </div>
+
+      <div class="ps-body"><!-- TAFSIR:_solo_fuqi_body --><p><strong>Memiliki konsep cinta yang tertib dan menghargai</strong> (<span class="hz">擁有踏實的愛情觀念</span>), tidak menyimpan pikiran yang tidak realistis (<span class="hz">並無存幻想的念頭</span>) — karena itu <strong>sama sekali tidak akan menoleransi sikap ringan-permainan dari pasangan</strong> (<span class="hz">絕不容許對方的輕浮玩弄</span>). Karena menuntut diri sendiri dan pasangan dengan standar yang sama berat (<span class="hz">由於對自己與對方的要求同樣嚴厲</span>), mungkin akan <strong>mengalami gelombang asmara yang sangat dahsyat</strong> (<span class="hz">或許會遭遇波濤萬丈的愛情運</span>). Karena bintang <strong><span class="hz">太陽</span></strong> terlalu kuat, <strong>yang menikah terlalu cepat sangat tidak menguntungkan</strong> (<span class="hz">早婚者相當不吉利</span>). Bila memungkinkan, <strong>jangan tergesa-gesa menikah</strong> (<span class="hz">不要急於於結婚</span>) — sebaiknya lewat masa pertimbangan &amp; penjajakan dengan perlahan. Pria bisa mendapat <strong>wanita cerdas-sehat-cerah</strong> (<span class="hz">開朗的健康的女性</span>) sebagai istri; wanita bisa mendapat <strong>pria bermurah-hati lapang dada</strong> (<span class="hz">寬宏大量的男人</span>) sebagai suami. Bila ada bintang jahat menghalangi: <strong>hampir bisa dikatakan langsung menghadapi krisis pernikahan</strong> (<span class="hz">直接面對著離婚的危機</span>). Antara suami-istri mudah terjadi cekcok (<span class="hz">夫婦間易起爭執</span>); tetapi bila Istana Fuqi bersama <strong><span class="hz">太陽</span></strong> sendirian tanpa bintang jahat lain — atau dengan <strong><span class="hz">天同</span>/<span class="hz">天機</span></strong> sekamar — bisa mendapat <strong>pasangan cerdas, membangun rumah tangga yang lengkap-sempurna</strong> (<span class="hz">聰明的配偶, 建立圓滿的家庭</span>). Berbawaan <strong>cemburuan kuat</strong> (<span class="hz">天生嫉妒心強</span>) tetapi tidak akan terlontar dalam kata-kata. Pria bila ada <strong><span class="hz">文昌</span></strong> dan <strong><span class="hz">天機</span></strong> di kedudukan: di luar istri pasti <strong>memelihara istana-tersembunyi</strong> (<span class="hz">必在外蓄小公館金屋藏嬌</span>); pria menyukai <strong>kecantikan dingin-eksklusif</strong> (<span class="hz">冷豔的美人</span>). Wanita berjodoh dengan <strong>pria cerdas-tajam yang juga "punya rezeki-aura" / berdaya finansial</strong> (<span class="hz">頭腦聰明而又「財氣」縱橫的男性相當有緣</span>).</p><!-- /TAFSIR --></div>
+
+      <div class="ps-action">
+        <div class="ps-action-ico">&#9656;</div>
+        <div class="ps-action-content">
+          <div class="ps-action-label">Saran Tindakan</div>
+          <div><!-- TAFSIR:_solo_fuqi_action -->Tunda pernikahan hingga matang secara mental &amp; finansial; pilih pasangan yang sebanding dari sisi standar etika dan integritas; latih komunikasi terbuka untuk meredam cemburu.<!-- /TAFSIR --></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-meta"><span>Halaman 19 / 34</span></div>
+  </footer>
+</section>
+</body>
+</html>

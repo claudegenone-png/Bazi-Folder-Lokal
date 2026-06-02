@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Zhuang Xiao Min, 紫微斗數 12 Palace</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* PAGE: Zi Wei 12 Palace Grid */
+  .content-ziwei {
+    grid-template-rows: 1fr 34mm !important;
+    gap: 3mm;
+  }
+
+  /* Footer explainer (cara baca bagan) */
+  .zw-explain {
+    background: linear-gradient(180deg, #FFFEF8 0%, #F5EBD0 100%);
+    border: 0.4mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 3mm 5mm;
+    display: grid;
+    grid-template-columns: 22mm 1fr;
+    gap: 5mm;
+    align-items: center;
+    overflow: hidden;
+  }
+  .zw-explain-title {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 14pt; color: var(--red);
+    font-weight: 700; line-height: 1.1;
+    text-align: center;
+    border-right: 0.3mm solid var(--gold-soft);
+    padding-right: 3mm;
+  }
+  .zw-explain-title .id-sub {
+    display: block; font-family: 'Inter', sans-serif;
+    font-size: 5.5pt; color: var(--text-muted);
+    letter-spacing: 1.5px; margin-top: 1mm;
+    text-transform: uppercase; font-weight: 600;
+  }
+  .zw-explain-body {
+    font-size: 6.8pt; line-height: 1.45;
+    color: var(--text); min-width: 0;
+    display: grid; gap: 1.2mm;
+    align-content: center;
+  }
+  .zw-explain-body strong { color: var(--red); }
+  .zw-explain-body .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red); font-weight: 600;
+  }
+  .zw-explain-row {
+    display: grid;
+    grid-template-columns: 22mm 1fr;
+    column-gap: 3mm;
+    align-items: start;
+  }
+  .zw-explain-label {
+    font-size: 6pt; letter-spacing: 1px;
+    color: var(--gold); font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.55;
+    padding-top: 0.2mm;
+  }
+  .zw-explain-text { display: block; }
+
+  /* V7 Phase 3 — 宿命 quote-box */
+  .zw-suming {
+    background: linear-gradient(135deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.3mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 2.5mm 5mm;
+    display: flex; flex-direction: column; gap: 1mm;
+    margin-top: 2mm;
+  }
+  .zw-suming.empty { display: none; }
+  .zw-suming-eyebrow {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 8pt; color: var(--red);
+    font-weight: 700; letter-spacing: 2px;
+    border-bottom: 0.15mm dashed var(--gold-soft);
+    padding-bottom: 1mm;
+  }
+  .zw-suming-eyebrow .id {
+    font-family: 'Playfair Display', serif;
+    font-size: 7pt; color: var(--text-muted);
+    font-style: italic; margin-left: 2mm;
+    font-weight: 400; letter-spacing: 0.5px;
+  }
+  .zw-suming-prose {
+    font-size: 7pt; color: var(--text);
+    line-height: 1.5; text-align: justify;
+  }
+
+  .zw-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1.8mm;
+    overflow: hidden;
+  }
+  .zw-cell {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 1.5mm;
+    padding: 2mm 2.2mm;
+    display: grid;
+    grid-template-rows: 1fr;
+    align-content: center;
+    gap: 1mm;
+    overflow: hidden;
+    position: relative;
+    min-width: 0; min-height: 0;
+  }
+
+  .zw-cell.life {
+    background: linear-gradient(180deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    box-shadow: 0 0 0 0.3mm rgba(201,169,97,0.3);
+  }
+  .zw-cell.life::before {
+    content: '★ 命 HIDUP'; position: absolute;
+    top: -0.8mm; right: 1.5mm;
+    background: var(--red); color: white;
+    font-size: 5pt; padding: 0.3mm 1.5mm;
+    border-radius: 0 0 1.5mm 1.5mm; letter-spacing: 1px; font-weight: 700;
+  }
+  .zw-cell.body::before {
+    content: '☉ 身 BADAN'; position: absolute;
+    top: -0.8mm; right: 1.5mm;
+    background: #4A7BA0; color: white;
+    font-size: 5pt; padding: 0.3mm 1.5mm;
+    border-radius: 0 0 1.5mm 1.5mm; letter-spacing: 1px; font-weight: 700;
+  }
+  .zw-cell.now {
+    border-color: var(--red);
+    box-shadow: 0 0 0 0.4mm rgba(160,52,52,0.25);
+  }
+  .zw-cell.now::after {
+    content: 'KINI'; position: absolute;
+    bottom: 0.5mm; left: 1.5mm;
+    background: var(--red); color: white;
+    font-size: 4.5pt; padding: 0.2mm 1.2mm;
+    border-radius: 1mm; letter-spacing: 1px; font-weight: 700;
+  }
+
+  .zw-head {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1mm; align-items: baseline;
+    border-bottom: 0.2mm solid var(--gold-soft);
+    padding-bottom: 0.8mm;
+  }
+  .zw-palace {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 8.5pt; color: var(--red);
+    font-weight: 700; letter-spacing: 1px;
+    line-height: 1.1;
+  }
+  .zw-palace .id {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 5.2pt; color: var(--text-muted);
+    letter-spacing: 0.6px; font-weight: 500;
+    text-transform: uppercase; margin-top: 0.2mm;
+  }
+  .zw-branch {
+    text-align: right;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 9.5pt; color: var(--text);
+    font-weight: 600; line-height: 1;
+  }
+  .zw-branch .id {
+    display: block;
+    font-size: 5pt; color: var(--text-muted);
+    letter-spacing: 0.4px;
+  }
+
+  .zw-stars {
+    display: flex; flex-direction: column;
+    gap: 1mm; align-content: start;
+    overflow: hidden;
+  }
+  /* V7 Phase 3B — minor stars list per palace (foto-source full chart) */
+  .zw-stars-other {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 5.2pt;
+    color: var(--text-muted);
+    line-height: 1.35;
+    text-align: left;
+    padding-top: 0.7mm;
+    margin-top: 0.5mm;
+    border-top: 0.1mm dashed var(--gold-soft);
+    word-break: keep-all;
+    overflow: hidden;
+    letter-spacing: 0.2px;
+  }
+  .zw-stars-other.empty { display: none; }
+  .zw-cell.life .zw-stars-other,
+  .zw-cell.now .zw-stars-other { color: var(--text); }
+  .zw-star {
+    display: flex; flex-direction: column; align-items: flex-start; gap: 0.2mm;
+    font-family: 'Noto Serif TC', serif;
+    overflow: hidden;
+  }
+  .zw-star.main {
+    font-size: 9pt; color: var(--text); font-weight: 600;
+  }
+  .zw-star.minor {
+    font-size: 7.2pt; color: var(--text-muted); font-weight: 500;
+  }
+  .zw-star .id {
+    font-family: 'Inter', sans-serif;
+    font-size: 5.2pt; color: var(--text-muted);
+    letter-spacing: 0.2px; font-style: italic;
+    line-height: 1.15;
+    overflow: hidden;
+  }
+  .zw-star .hua {
+    display: inline-block;
+    font-family: 'Inter', sans-serif; font-size: 5.5pt;
+    color: white; padding: 0.2mm 1mm;
+    border-radius: 0.8mm; letter-spacing: 0.5px;
+    margin-left: 0.5mm; font-weight: 700;
+  }
+  .hua.lu  { background: var(--green); }
+  .hua.qua { background: var(--red-bad); }
+  .hua.ke  { background: var(--gold); }
+  .hua.ji  { background: #6B5B3F; }
+
+  .zw-foot {
+    display: flex; justify-content: space-between;
+    font-size: 5.5pt; color: var(--text-muted);
+    letter-spacing: 0.3px;
+    border-top: 0.2mm dashed var(--gold-soft);
+    padding-top: 0.6mm;
+  }
+  .zw-foot .age { font-weight: 600; color: var(--text); }
+  .zw-cell.now .zw-foot .age { color: var(--red); }
+
+  /* CENTER INFO BOX */
+  .zw-center {
+    grid-column: 2 / 4; grid-row: 2 / 4;
+    background: linear-gradient(135deg, #FFFEF8 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 2mm;
+    overflow: hidden;
+    position: relative;
+  }
+  .zwc-name-block {
+    display: flex; flex-direction: column;
+    justify-content: flex-start; align-items: center;
+    gap: 1.5mm; min-height: 0;
+  }
+  .zw-center::before {
+    content: '紫'; position: absolute;
+    top: -8mm; right: -6mm;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 80pt; color: rgba(139,26,26,0.04);
+    font-weight: 700; line-height: 1;
+    pointer-events: none;
+  }
+  .zwc-eyebrow {
+    font-family: 'Inter', sans-serif; font-size: 6pt;
+    color: var(--gold); letter-spacing: 3px;
+    text-transform: uppercase; font-weight: 700;
+    text-align: center;
+  }
+  .zwc-title {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 18pt; color: var(--red);
+    text-align: center; letter-spacing: 6px;
+    font-weight: 700; line-height: 1;
+  }
+  .zwc-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 9pt; font-style: italic;
+    color: var(--text-muted); text-align: center;
+    border-bottom: 0.2mm solid var(--gold-soft);
+    padding-bottom: 2mm;
+  }
+  .zwc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2mm 4mm;
+    align-content: center;
+  }
+  .zwc-row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2mm; align-items: baseline;
+    overflow: hidden;
+  }
+  .zwc-row .lbl {
+    font-family: 'Inter', sans-serif;
+    font-size: 5.5pt; color: var(--gold);
+    letter-spacing: 1.5px; text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 0.5mm;
+    border-bottom: 0.2mm solid var(--gold-soft);
+  }
+  .zwc-row .val {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 11pt; color: var(--red);
+    font-weight: 700; line-height: 1;
+  }
+  .zwc-row .val .id {
+    display: block;
+    font-family: 'Inter', sans-serif; font-size: 5.5pt;
+    color: var(--text-muted); font-weight: 500;
+    margin-top: 0.5mm; letter-spacing: 0.3px;
+    font-style: italic;
+  }
+  .zwc-legend {
+    display: flex; gap: 2mm; flex-wrap: wrap;
+    justify-content: center;
+    border-top: 0.2mm solid var(--gold-soft);
+    padding-top: 2mm;
+  }
+  .zwc-help {
+    display: grid;
+    gap: 1.8mm;
+    align-content: center;
+    font-size: 7.2pt; line-height: 1.45;
+    color: var(--text);
+    padding-top: 2mm;
+  }
+  .zwc-help-row { display: block; }
+  .zwc-help strong { color: var(--red); }
+  .zwc-help .lifehint {
+    background: linear-gradient(180deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.3mm solid var(--gold);
+    padding: 0.3mm 1.5mm; border-radius: 1mm;
+    font-weight: 600;
+  }
+  .zwc-leg {
+    font-size: 5.5pt; color: var(--text);
+    display: flex; align-items: center; gap: 1mm;
+    font-weight: 500;
+  }
+  .zwc-leg .dot {
+    width: 2.5mm; height: 2mm; border-radius: 0.5mm;
+    color: white; font-size: 4.5pt;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .zwc-leg .hz {
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 700; color: var(--red);
+  }
+
+.zw-stars{display:none!important;}
+.zw-foot{display:none!important;}
+.zw-branch{display:none!important;}
+.zw-cell.life::before{display:none!important;}
+.zw-cell{position:relative;display:grid!important;grid-template-rows:auto 1fr;align-content:stretch;padding:2.5mm!important;gap:1mm;}
+.zw-head{padding-right:14mm;}
+.zw-shio-wrap{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.8mm;min-width:0;min-height:0;}
+.zw-shio-circle{width:14.4mm;height:14.4mm;border-radius:50%;border:0.4mm solid var(--gold-soft);background:#FFFEF8;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;}
+.zw-shio-circle img{width:12mm;height:12mm;object-fit:contain;}
+.zw-cell.life .zw-shio-circle{border-color:var(--gold);background:linear-gradient(180deg,#FFF8E1 0%,#F5EBD0 100%);box-shadow:0 0 0 0.3mm rgba(201,169,97,0.35);}
+.zw-shio-name{font-family:"Inter",sans-serif;font-size:6pt;color:var(--text-muted);letter-spacing:0.5px;text-transform:uppercase;font-weight:600;line-height:1;}
+.zw-age-tag{position:absolute;top:1.5mm;right:1.5mm;font-family:"Playfair Display",serif;font-size:5.5pt;color:var(--text-muted);font-weight:600;letter-spacing:0.2px;background:rgba(255,255,255,0.85);padding:0.3mm 1.2mm;border-radius:0.8mm;white-space:nowrap;border:0.2mm solid var(--gold-soft);}
+.zw-cell.now-phase{box-shadow:0 0 0 0.5mm var(--red);}
+.zw-cell.now-phase .zw-age-tag{background:var(--red);color:#fff;font-weight:700;border-color:var(--red);}
+
+.zwc-name-hz{font-family:"Noto Serif TC",serif;font-size:24pt;color:var(--red);font-weight:700;text-align:center;line-height:1;letter-spacing:4px;margin-top:1mm;}
+.zwc-name-id{font-family:"Playfair Display",serif;font-size:11pt;color:var(--text);text-align:center;font-style:italic;font-weight:600;border-bottom:0.2mm solid var(--gold-soft);padding-bottom:2mm;}
+.zwc-info{display:grid;gap:1.5mm;align-content:center;padding:1mm 1mm 0;}
+.zwc-info-row{display:grid;grid-template-columns:auto 1fr;gap:2mm;align-items:baseline;}
+.zwc-info-row .lbl{font-family:"Inter",sans-serif;font-size:5.5pt;color:var(--gold);letter-spacing:1.5px;text-transform:uppercase;font-weight:700;white-space:nowrap;}
+.zwc-info-row .val{font-family:"Inter",sans-serif;font-size:7.5pt;color:var(--text);font-weight:500;text-align:right;}
+.zwc-info-row .val .hz{font-family:"Noto Serif TC",serif;color:var(--red);font-weight:700;}
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">17</div>
+    <div class="h-titles">
+      <div class="h-cn">紫 微 斗 數</div>
+      <div class="h-id">12 Istana Bintang Ungu</div>
+    </div>
+    <div class="h-section">Bagian II · Zi Wei 紫微</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Kerbau-Merah.svg" alt="Kerbau"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Zhuang Xiao Min · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">丑 Kerbau</span></div>
+      <div class="subject-detail">8 April 1961 · 13:58 · Pria · Umur 66 tahun · 五行局: <strong style="color:var(--red)">火六局</strong></div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">辛金 · Logam Halus</div>
+    </div>
+  </div>
+
+  <main class="content content-ziwei">
+    <div class="zw-grid">
+
+      <!-- BARIS 1 -->
+      <!-- 巳 子女 Anak -->
+      <div class="zw-cell" style="grid-column:1;grid-row:1">
+        <div class="zw-age-tag">Umur 96-105</div>
+        <div class="zw-head">
+          <div class="zw-palace">子女<span class="id">ANAK</span></div>
+          <div class="zw-branch">巳<span class="id">Ular</span></div>
+        </div>
+        <div class="zw-shio-wrap"><div class="zw-shio-circle"><img src="Ular-Merah.svg" alt="Ular"></div><div class="zw-shio-name">Ular</div></div>
+      </div>
+
+      <!-- 午 夫妻 Pasangan -->
+      <div class="zw-cell" style="grid-column:2;grid-row:1">
+        <div class="zw-age-tag">Umur 106-115</div>
+        <div class="zw-head">
+          <div class="zw-palace">夫妻<span class="id">PASANGAN</span></div>
+          <div class="zw-branch">午<span class="id">Kuda</span></div>
+        </div>
+        <div class="zw-shio-wrap"><div class="zw-shio-circle"><img src="Kuda-Merah.svg" alt="Kuda"></div><div class="zw-shio-name">Kuda</div></div>
+      </div>
+
+      <!-- 未 兄弟 Saudara -->
+      <div class="zw-cell" style="grid-column:3;grid-row:1">
+        <div class="zw-age-tag">Umur 116-125</div>
+        <div class="zw-head">
+          <div class="zw-palace">兄弟<span class="id">SAUDARA</span></div>
+          <div class="zw-branch">未<span class="id">Kambing</span></div>
+        </div>
+        <div class="zw-shio-wrap"><div class="zw-shio-circle"><img src="Kambing-Merah.svg" alt="Kambing"></div><div class="zw-shio-name">Kambing</div></div>
+      </div>
+
+      <!-- 申 命宮 Diri -->
+      <div class="zw-cell" style="grid-column:4;grid-row:1">
+        <div class="zw-age-tag">Umur 6-15</div>
+        <div class="zw-head">
+          <div class="zw-palace">命宮<span class="id">DIRI</span></div>
+          <div class="zw-branch">申<span class="id">Monyet</span></div>
+        </div>
+        <div class="zw-shio-wrap"><div class="zw-shio-circle"><img src="Monyet-Merah.svg" alt="Monyet"></div><div class="zw-shio-name">Monyet</div></div>
+      </div>
+
+      <!-- BARIS 2 -->
+      <!-- 辰 財帛 Rezeki -->
+      <div class="zw-cell" style="grid-column:1;grid-row:2">
+        <div class="zw-age-tag">Umur 86-95</div>
+        <div class="zw-head">
+          <div class="zw-palace">財帛<span class="id">REZEKI</span></div>
+          <div class="zw-branch">辰<span class="id">Naga</span></div>
+        </div>
+        <div class="zw-shio-wrap"><div class="zw-shio-circle"><img src="Naga-Merah.svg" alt="Naga"></div><div class="zw-shio-name">Naga</div></div>
+      </div>
+
+      <!-- TENGAH -->
+      <div class="zw-center">
+        <div class="zwc-eyebrow">Identitas Bagan</div>
+        <div class="zwc-name-block">
+        <div class="zwc-name-hz">莊小敏</div>
+          <div class="zwc-name-id">Zhuang Xiao Min</div>
+        </div>
+        <div class="zwc-info">
+          <div class="zwc-info-row"><span class="lbl">Lahir</span><span class="val">8 April 1961</span></div>
+          <div class="zwc-info-row"><span class="lbl">Jam</span><span class="val">13:58 · Pria</span></div>
+          <div class="zwc-info-row"><span class="lbl">Penguasa Hari</span><span class="val"><span class="hz">辛金</span> · Logam Halus</span></div>
+        </div>
+      </div>
+
+      <!-- 酉 父母 Orangtua -->
+      <div class="zw-cell" style="grid-column:4;grid-row:2">
+        <div class="zw-age-tag">Umur 16-25</div>
+        <div class="zw-head">
+          <div class="zw-palace">父母<span class="id">ORANG TUA</span></div>
+          <div class="zw-branch">酉<span class="id">Ayam</span></div>
+        </div>
+        <div class="zw-shio-wrap"><div class="zw-shio-circle"><img src="Ayam-Merah.svg" alt="Ayam"></div><div class="zw-shio-name">Ayam</div></div>
+      </div>
+
+      <!-- BARIS 3 -->
+      <!-- 卯 疾厄 Kesehatan -->
+      <div class="zw-cell" style="grid-column:1;grid-row:3">
+        <div class="zw-age-tag">Umur 76-85</div>
+        <div class="zw-head">
+          <div class="zw-palace">疾厄<span class="id">KESEHATAN</span></div>
+          <div class="zw-branch">卯<span class="id">Kelinci</span></div>
+        </div>
+        <div class="zw-shio-wrap"><div class="zw-shio-circle"><img src="Kelinci-Merah.svg" alt="Kelinci"></div><div class="zw-shio-name">Kelinci</div></div>
+      </div>
+
+      <!-- 戌 福德 Berkah -->
+      <div class="zw-cell" style="grid-column:4;grid-row:3">
+        <div class="zw-age-tag">Umur 26-35</div>
+        <div class="zw-head">
+          <div class="zw-palace">福德<span class="id">BERKAH</span></div>
+          <div class="zw-branch">戌<span class="id">Anjing</span></div>
+        </div>
+        <div class="zw-shio-wrap"><div class="zw-shio-circle"><img src="Anjing-Merah.svg" alt="Anjing"></div><div class="zw-shio-name">Anjing</div></div>
+      </div>
+
+      <!-- BARIS 4 -->
+      <!-- 寅 遷移 Perpindahan -->
+      <div class="zw-cell now-phase" style="grid-column:1;grid-row:4">
+        <div class="zw-age-tag">Umur 66-75</div>
+        <div class="zw-head">
+          <div class="zw-palace">遷移<span class="id">PERPINDAHAN</span></div>
+          <div class="zw-branch">寅<span class="id">Harimau</span></div>
+        </div>
+        <div class="zw-shio-wrap"><div class="zw-shio-circle"><img src="Harimau-Merah.svg" alt="Harimau"></div><div class="zw-shio-name">Harimau</div></div>
+      </div>
+
+      <!-- 丑 僕役 Pertemanan, KINI -->
+      <div class="zw-cell" style="grid-column:2;grid-row:4">
+        <div class="zw-age-tag">Umur 56-65</div>
+        <div class="zw-head">
+          <div class="zw-palace">僕役<span class="id">SAHABAT</span></div>
+          <div class="zw-branch">丑<span class="id">Kerbau</span></div>
+        </div>
+        <div class="zw-shio-wrap"><div class="zw-shio-circle"><img src="Kerbau-Merah.svg" alt="Kerbau"></div><div class="zw-shio-name">Kerbau</div></div>
+      </div>
+
+      <!-- 子 官祿 Karir -->
+      <div class="zw-cell" style="grid-column:3;grid-row:4">
+        <div class="zw-age-tag">Umur 46-55</div>
+        <div class="zw-head">
+          <div class="zw-palace">官祿<span class="id">KARIR</span></div>
+          <div class="zw-branch">子<span class="id">Tikus</span></div>
+        </div>
+        <div class="zw-shio-wrap"><div class="zw-shio-circle"><img src="Tikus-Merah.svg" alt="Tikus"></div><div class="zw-shio-name">Tikus</div></div>
+      </div>
+
+      <!-- 亥 田宅 Properti -->
+      <div class="zw-cell" style="grid-column:4;grid-row:4">
+        <div class="zw-age-tag">Umur 36-45</div>
+        <div class="zw-head">
+          <div class="zw-palace">田宅<span class="id">PROPERTI</span></div>
+          <div class="zw-branch">亥<span class="id">Babi</span></div>
+        </div>
+        <div class="zw-shio-wrap"><div class="zw-shio-circle"><img src="Babi-Merah.svg" alt="Babi"></div><div class="zw-shio-name">Babi</div></div>
+      </div>
+
+    </div>
+
+    <!-- V7 Phase 3: 宿命 Quote-Box (foto-based, hidden gracefully kalau null) -->
+    <div class="zw-suming">
+      <div class="zw-suming-eyebrow">宿 命<span class="id">Sù Mìng · Pandangan Nasib</span></div>
+      <div class="zw-suming-prose">Arah hidup Zhuang Xiao Min mengalir sesuai garis takdir. Ketika <strong>Istana Berkah</strong> (<span class="hz">福德</span>) kuat, Istana Tubuh (<span class="hz">身宮</span>) ikut menguat — kehangatan dan kebajikan menarik banyak keberuntungan. Bila Berkah lemah, relasi terasa seret dan keberkahan tercerai. Saat itu, kekuatan <strong>Istana Hidup</strong> (<span class="hz">命宮</span>), <strong>Rezeki</strong> (<span class="hz">財帛</span>), <strong>Cinta</strong> (<span class="hz">夫妻</span>), dan <strong>Pergerakan</strong> (<span class="hz">遷移</span>) ikut menentukan keseimbangan.</div>
+    </div>
+
+    <!-- PENJELASAN BAGAN -->
+    <div class="zw-explain">
+      <div class="zw-explain-title">
+        紫微<br>斗數
+        <span class="id-sub">Cara Baca</span>
+      </div>
+      <div class="zw-explain-body">
+        <div class="zw-explain-row">
+          <span class="zw-explain-label">Bagan ini</span>
+          <span class="zw-explain-text">Peta nasib <strong>Zi Wei Dou Shu</strong> berisi <strong>12 istana kehidupan</strong>, masing-masing menempati 1 cabang shio dan diisi bintang-bintang yang membentuk nasib bidang itu.</span>
+        </div>
+        <div class="zw-explain-row">
+          <span class="zw-explain-label">Cara baca</span>
+          <span class="zw-explain-text">Mulai dari istana <strong>Diri</strong> (kotak emas, sorotan utama). Tiap istana = 1 bidang hidup, bintang di dalamnya = energi yang bekerja di bidang itu.</span>
+        </div>
+        <div class="zw-explain-row">
+          <span class="zw-explain-label">Lebih lanjut</span>
+          <span class="zw-explain-text">Halaman berikutnya akan menjelaskan tiap area satu per satu, lengkap dengan apa yang perlu Anda perhatikan dan tindakan praktisnya.</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-meta">
+      <span>Halaman 17 / 34</span>
+    </div>
+  </footer>
+</section>
+</body>
+</html>
