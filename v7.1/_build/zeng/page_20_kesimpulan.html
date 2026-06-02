@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Kesimpulan</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-pal { grid-template-rows: 1fr !important; gap: 0; }
+
+  .kes-narr {
+    background: linear-gradient(180deg, #FFF8E1, #FBF1D4);
+    border: 0.6mm solid var(--gold);
+    border-radius: 2.5mm;
+    padding: 6mm 8mm;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 3mm;
+    overflow: hidden;
+    position: relative;
+  }
+  .kes-narr::before {
+    content: ''; position: absolute;
+    top: 0; right: 0; width: 28mm; height: 28mm;
+    background-color: transparent;
+    background-image: radial-gradient(circle at top right, rgba(201,169,97,0.22) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .kn-head {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: baseline;
+    gap: 4mm;
+    border-bottom: 0.3mm solid var(--gold);
+    padding-bottom: 2.5mm;
+  }
+  .kn-title-id {
+    font-family: 'Playfair Display', serif;
+    font-size: 22pt;
+    color: var(--red);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1;
+  }
+  .kn-title-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 20pt;
+    color: var(--text);
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 1;
+  }
+  .kn-title-pinyin {
+    font-family: 'Inter', sans-serif;
+    font-size: 8pt;
+    color: var(--text-muted);
+    font-style: italic;
+    letter-spacing: 0.5px;
+    margin-top: 1mm;
+  }
+  .kn-badge {
+    font-family: 'Inter', sans-serif;
+    font-size: 7pt;
+    color: white;
+    background: var(--red);
+    padding: 1mm 3mm;
+    border-radius: 1mm;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .kn-body {
+    font-size: 9.5pt;
+    line-height: 1.4;
+    color: var(--text);
+    overflow: hidden;
+    text-align: justify;
+    padding: 0 1mm;
+  }
+  .kn-body p {
+    margin: 0 0 2.4mm 0;
+  }
+  .kn-body p:last-child {
+    margin-bottom: 0;
+  }
+  .kn-body strong {
+    color: var(--red);
+    font-weight: 700;
+  }
+  .kn-body .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red);
+    font-weight: 600;
+  }
+
+  /* SMART SHRINK: auto-fit kalau narasi muat 1 halaman dengan font kecil */
+  .kn-body.shrunk-1 { font-size: 10pt !important; line-height: 1.45 !important; }
+  .kn-body.shrunk-2 { font-size: 9pt !important; line-height: 1.35 !important; }
+  .kn-body.shrunk-3 { font-size: 8.2pt !important; line-height: 1.28 !important; }
+  .kes-narr { max-height: 235mm; overflow: hidden; }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">32</div>
+    <div class="h-titles"><div class="h-cn">總 結</div><div class="h-id">Kesimpulan &amp; Gambaran Besar</div></div>
+    <div class="h-section">Bagian III · Penutup</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Naga-Merah.svg" alt="Naga"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Tuan Zeng · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">辰 Naga</span></div>
+      <div class="subject-detail">Rangkuman narasi lengkap profil &amp; nasib</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">庚金 · Logam Pedang</div></div>
+  </div>
+
+  <main class="content content-pal">
+    <div class="kes-narr">
+      <div class="kn-head">
+        <div>
+          <div class="kn-title-id">Kesimpulan</div>
+          <div class="kn-title-pinyin">Zǒng Jié</div>
+        </div>
+        <div style="text-align:center;">
+          <div class="kn-title-hz">總 結</div>
+        </div>
+        <div class="kn-badge">Gambaran Besar</div>
+      </div>
+
+      <div class="kn-body"><!-- TAFSIR:_kes_narrative --><p>Tuan Zeng (<span class="hz">曾先生</span>) lahir 9 Agustus 1964 pukul 16:40 dengan shio Naga (<span class="hz">龍</span>/<span class="hz">辰</span> Chén). Penguasa hidupnya adalah Logam Yang (<span class="hz">庚</span> Gēng, logam keras seperti pedang/baja) yang lahir di bulan <span class="hz">申</span> (建祿格 Jiàn Lù Gé, struktur "Logam beroleh tahta") sehingga berakar kuat — sosok yang tegas, jujur, gagah, dan berkemauan keras.</p><p>Karena Logamnya keras dan perlu ditempa, unsur sahabatnya adalah Api (<span class="hz">火</span> Huǒ) sebagai <span class="hz">用神</span> (Yòng Shén, unsur pengguna — Api menempa Logam agar tajam), didukung Kayu (<span class="hz">木</span> Mù) sebagai <span class="hz">喜神</span> (Xǐ Shén, bahan bakar Api sekaligus sumber harta); sementara Logam berlebih (<span class="hz">金</span> Jīn) sebagai <span class="hz">忌神</span> (Jì Shén) dan Tanah (<span class="hz">土</span> Tǔ, yang mengubur logam) sebagai <span class="hz">仇神</span> (Chóu Shén) perlu diwaspadai, dengan Air (<span class="hz">水</span> Shuǐ) sebagai <span class="hz">閒神</span> (Xián Shén, unsur netral). Watak intinya teguh dan berpendirian, jujur tanpa basa-basi, mengutamakan kesetiaan di atas harta, dermawan namun penuh perhitungan.</p><p>Bintang utama Istana Hidup (<span class="hz">命宮</span> di <span class="hz">子</span>) adalah <span class="hz">破軍</span> (Pò Jūn, bintang Pendobrak — "Bintang Pahlawan masuk istana", 英星入廟) — pembawa nasib yang dinamis dan berani membuka jalan sendiri, berpotensi menjadi sosok pahlawan yang termasyhur (<span class="hz">名揚四方</span>); bila ditemani <span class="hz">文昌</span> (Wén Chāng, bintang Ilmu) ia bisa termasyhur berkat bakat tulis. Industri yang searah meliputi dua jalur: bidang ber-Api (<span class="hz">用神</span> — manufaktur panas/cahaya, optik, elektronik, makanan-minuman, militer, kosmetik) dan bidang ber-Kayu (<span class="hz">喜神</span> — penerbitan, pendidikan, kayu-furnitur, hortikultura, politik, agama).</p><p>Da Yun saat ini (usia 61–70, <span class="hz">戊寅</span> wù-yín, era <span class="hz">偏印</span> Piān Yìn — Cap Tak Langsung, fase pengetahuan &amp; ketenangan) lalu beralih ke <span class="hz">己卯</span> (usia 71–80, <span class="hz">正印</span> Zhèng Yìn — Cap Lurus). Untuk jodoh, pasangan paling cocok (<span class="hz">大吉</span>) adalah shio Tikus (<span class="hz">子</span>), Monyet (<span class="hz">申</span>), dan Ayam (<span class="hz">酉</span>); hindari shio Kerbau (<span class="hz">丑</span>), Kelinci (<span class="hz">卯</span>), Anjing (<span class="hz">戌</span>), dan Naga (<span class="hz">辰</span>).</p><p>Untuk kesehatan, titik rawan ada pada sistem pencernaan — lambung (<span class="hz">胃</span>), pankreas (<span class="hz">胰臟</span>), dan organ perut. Untuk hunian, gua <span class="hz">離</span> (Lí, api) — rumah baiknya duduk di Selatan menghadap Utara (<span class="hz">坐南向北大吉</span>); pintu baik membuka ke Utara, Timur, atau Tenggara.</p><p>Intinya: ketegasan Logam keras ini akan berbuah kemuliaan bila ditempa dengan arah yang jelas (Api sebagai sahabat) lewat karya yang menuntut keberanian membuka jalan dan keahlian mandiri.</p><!-- /TAFSIR --></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-meta"><span>Halaman 32 / 35</span></div>
+  </footer>
+</section>
+<script>
+  // AUTO-FIT: kalau .kn-body melebihi kotak .kes-narr, kecilkan font progresif sampai muat.
+  // Mulai dari ukuran default CSS (11pt), turun 0.25pt per langkah, lalu rapatkan line-height
+  // sebagai pass kedua bila masih melebihi. Hanya mengecil saat overflow (konten pendek tetap 11pt).
+  (function() {
+    function fit() {
+      var card = document.querySelector('.kes-narr');
+      var body = card && card.querySelector('.kn-body');
+      if (!body || !card) return;
+      function overflowing() { return body.scrollHeight > body.clientHeight + 1; }
+      function applySize(pt, lh) {
+        body.style.fontSize = pt.toFixed(2) + 'pt';
+        body.style.lineHeight = lh.toFixed(3);
+        var ps = body.querySelectorAll('p');
+        for (var i = 0; i < ps.length; i++) {
+          ps[i].style.fontSize = pt.toFixed(2) + 'pt';
+          ps[i].style.lineHeight = lh.toFixed(3);
+        }
+      }
+      var sizePt = 11.0, lh = 1.55, minPt = 8.5, guard = 0;
+      applySize(sizePt, lh);
+      // Pass 1: kecilkan font (sambil sedikit merapatkan line-height) sampai muat / mentok minPt.
+      while (overflowing() && sizePt > minPt && guard < 200) {
+        sizePt -= 0.25;
+        lh = Math.max(1.2, lh - 0.006);
+        applySize(sizePt, lh);
+        guard++;
+      }
+      // Pass 2 (jaring pengaman): bila pada minPt masih melebihi, rapatkan line-height lebih jauh.
+      guard = 0;
+      while (overflowing() && lh > 1.02 && guard < 60) {
+        lh -= 0.02;
+        applySize(sizePt, lh);
+        guard++;
+      }
+    }
+    if (document.readyState === 'complete' || document.readyState === 'interactive') fit();
+    else document.addEventListener('DOMContentLoaded', fit);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+  })();
+</script>
+<script>
+(function(){
+  var body = document.querySelector('.kn-body');
+  if(!body) return;
+  var levels = ['', 'shrunk-1', 'shrunk-2', 'shrunk-3'];
+  for(var i=0; i<levels.length; i++){
+    body.className = 'kn-body' + (levels[i] ? ' ' + levels[i] : '');
+    if(body.scrollHeight <= body.clientHeight) break;
+  }
+})();
+</script>
+</body>
+</html>

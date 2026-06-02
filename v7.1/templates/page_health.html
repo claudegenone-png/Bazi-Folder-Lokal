@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>{{SUBJECT_NAME_FULL}}, 健康 Kesehatan</title>
+<style>
+  :root {
+    --red: #B8001F;
+    --red-soft: #D44A5C;
+    --gold: #C9A961;
+    --gold-soft: #E0C896;
+    --teal: #1F7A8C;
+    --teal-soft: #4FA1B0;
+    --green: #5B8C3E;
+    --blue: #2E5C8A;
+    --brown: #8B6F47;
+    --silver: #909396;
+    --bg: #FAF7F2;
+    --text: #2C2A26;
+    --text-muted: #75716A;
+    --line: #E0DCD2;
+  }
+
+  @page { size: A4 portrait; margin: 0; }
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0; padding: 0; background: #ddd;
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: var(--text);
+  }
+
+  .page {
+    width: 210mm; height: 297mm;
+    background: var(--bg);
+    margin: 8mm auto; padding: 12mm 14mm;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 4mm;
+    overflow: hidden;
+    box-shadow: 0 2mm 8mm rgba(0,0,0,0.15);
+  }
+
+  /* === HEADER === */
+  .page-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: end;
+    gap: 5mm;
+    padding-bottom: 3mm;
+    border-bottom: 0.4mm solid var(--gold);
+  }
+  .h-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 28pt; font-weight: 700;
+    color: var(--gold); line-height: 1;
+  }
+  .h-titles { text-align: left; }
+  .h-cn {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 16pt; color: var(--red);
+    letter-spacing: 6px; font-weight: 700; line-height: 1.2;
+  }
+  .h-id {
+    font-family: 'Playfair Display', serif;
+    font-size: 13pt; color: var(--text);
+    font-weight: 600; letter-spacing: 1px;
+  }
+  .h-section {
+    font-size: 7.5pt; color: var(--text-muted);
+    font-style: italic; letter-spacing: 0.5px;
+    text-align: right;
+  }
+
+  /* === SUBJECT BAR === */
+  .subject-bar {
+    display: grid;
+    grid-template-columns: 18mm 1fr auto;
+    align-items: center;
+    gap: 5mm;
+    background: white;
+    border-radius: 2mm;
+    padding: 3mm 5mm;
+    border: 0.3mm solid var(--line);
+  }
+  .subject-shio {
+    width: 15mm; height: 15mm;
+    background: var(--bg);
+    border: 0.4mm solid var(--gold);
+    border-radius: 50%; padding: 1mm;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .subject-shio img { width: 100%; height: 100%; object-fit: contain; }
+  .subject-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 12pt; font-weight: 700;
+    color: var(--text);
+  }
+  .subject-detail {
+    font-size: 7.5pt; color: var(--text-muted);
+    margin-top: 1mm;
+  }
+  .subject-dm .label {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 8pt; color: var(--text-muted);
+    letter-spacing: 2px; text-align: right;
+  }
+  .subject-dm .value {
+    font-family: 'Playfair Display', serif;
+    font-size: 11pt; font-weight: 700;
+    color: var(--red); text-align: right;
+  }
+
+  /* === CONTENT GRID === */
+  .content-health {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 4mm;
+    overflow: hidden;
+  }
+
+  /* === BLOCK: 疾厄 ZiWei Penyakit === */
+  .health-jie {
+    background: white;
+    border: 0.5mm solid var(--teal-soft);
+    border-radius: 2mm;
+    padding: 5mm 6mm;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 3mm;
+    overflow: hidden;
+  }
+  .jie-eyebrow {
+    border-bottom: 0.2mm solid var(--teal-soft);
+    padding-bottom: 2mm;
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .jie-eyebrow .id {
+    font-family: 'Playfair Display', serif;
+    font-size: 13pt; color: var(--teal);
+    font-weight: 700; letter-spacing: 1px;
+  }
+  .jie-eyebrow .id .sub {
+    font-family: 'Inter', sans-serif;
+    font-size: 7pt; color: var(--text-muted);
+    font-style: italic; font-weight: 400;
+    letter-spacing: 0.5px; margin-left: 2.5mm;
+  }
+  .jie-eyebrow .hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 10pt; color: var(--text-muted);
+    font-weight: 600; letter-spacing: 3px;
+  }
+
+  .jie-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5mm;
+    overflow: hidden;
+    align-items: start;
+  }
+  .jie-hanzi-box {
+    background: #F5F1E8;
+    border-left: 0.6mm solid var(--gold);
+    padding: 4mm 4.5mm;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 9pt;
+    color: var(--text);
+    line-height: 1.8;
+    text-align: justify;
+  }
+  .jie-indo-box {
+    padding: 2mm 0;
+    font-size: 9pt;
+    color: var(--text);
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  .jie-footer {
+    background: linear-gradient(90deg, var(--red) 0%, var(--red-soft) 100%);
+    color: white;
+    padding: 2mm 5mm;
+    border-radius: 1.5mm;
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-align: center;
+    line-height: 1.3;
+  }
+  .jie-footer .label {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 9.5pt; margin-right: 2mm;
+    font-weight: 700;
+  }
+
+  /* === FOOTER === */
+  .page-footer {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 3mm;
+    border-top: 0.3mm solid var(--line);
+    font-size: 7pt; color: var(--text-muted);
+  }
+  .footer-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600; color: var(--text);
+  }
+  .footer-pages {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold); font-weight: 700;
+  }
+
+  [data-empty="true"] { display: none !important; }
+</style>
+</head>
+<body>
+
+<section class="page">
+
+  <!-- HEADER -->
+  <header class="page-header">
+    <div class="h-num">{{PAGE_NUM}}</div>
+    <div class="h-titles">
+      <div class="h-cn">健 康</div>
+      <div class="h-id">Kesehatan &amp; Organ Tubuh</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi · Kesehatan</div>
+  </header>
+
+  <!-- SUBJECT BAR -->
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="{{SHIO_SVG_FILE}}" alt="{{SUBJECT_SHIO_ID_UPPER}}"></div>
+    <div class="subject-meta">
+      <div class="subject-name">{{SUBJECT_NAME_FULL}} · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">{{SUBJECT_SHIO_BRANCH_HZ}} {{SUBJECT_SHIO_ID_TITLE}}</span></div>
+      <div class="subject-detail">{{SUBJECT_BIRTH_FULL}}</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">健 康</div>
+      <div class="value">Kesehatan</div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <main class="content-health">
+
+    <!-- 疾厄 Penyakit Rentan -->
+    <div class="health-jie" data-slot="jie_e" data-empty="false">
+      <div class="jie-eyebrow">
+        <span class="id">Penyakit Rentan<span class="sub">Jí È · 疾厄 Palace · ZiWei Doushu</span></span>
+        <span class="hz">疾 厄</span>
+      </div>
+
+      <div class="jie-grid">
+        <!-- Hanzi block (verbatim foto) -->
+        <div class="jie-hanzi-box">{{JIE_E_PALACE_HZ}}</div>
+
+        <!-- Indo translation paragraph -->
+        <div class="jie-indo-box">{{JIE_E_PALACE_ID}}</div>
+      </div>
+
+      <div class="jie-footer">
+        <span class="label">主 · Yang Utama:</span>
+        {{JIE_E_ORGAN_FOCUS_ID}}
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="page-footer">
+    <div class="footer-name">{{SUBJECT_NAME_FULL}} · {{SUBJECT_NAME_HZ}}</div>
+    <div class="footer-pages">{{PAGE_NUM}} / {{TOTAL_PAGES}}</div>
+  </footer>
+
+</section>
+
+</body>
+</html>

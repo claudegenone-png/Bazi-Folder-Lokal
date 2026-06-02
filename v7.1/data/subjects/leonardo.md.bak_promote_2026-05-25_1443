@@ -1,0 +1,461 @@
+# Leonardo
+
+## DATA
+
+- nama: Leonardo
+- hanzi: null
+- gender: Pria
+- gender_hz: 陽男
+- lahir_tanggal: 1994-07-21
+- lahir_jam: 11:15
+- pilar_tahun: 甲/戌
+- pilar_bulan: 辛/未
+- pilar_hari: 戊/申
+- pilar_jam: 戊/午
+
+# Shio
+- shio_hz: 狗
+
+# === 先天體檢 per-stem count (triple-vote 3/3 high) ===
+- xiantian_jia: 1
+- xiantian_yi: 1
+- xiantian_bing: 0
+- xiantian_ding: 3
+- xiantian_wu: 4
+- xiantian_ji: 2
+- xiantian_geng: 1
+- xiantian_xin: 2
+- xiantian_ren: 1
+- xiantian_gui: 0
+
+# === wuxing total ===
+- wuxing_jin: 3
+- wuxing_shui: 1
+- wuxing_mu: 2
+- wuxing_huo: 3
+- wuxing_tu: 6
+- yong_shen: 金
+- ji_shen: 土
+- xi_yong_shen: 水
+- xian_shen: 木
+- chou_shen: 火
+- shi_shen_per_pilar_tahun: 七殺
+- shi_shen_per_pilar_bulan: 傷官
+- shi_shen_per_pilar_hari: 主
+- shi_shen_per_pilar_jam: 比肩
+- ming_gong_bazi: 戊辰
+
+# === 體相 — tidak ada label eksplisit ===
+- ti_xiang_mu: 囚
+- ti_xiang_huo: 休
+- ti_xiang_tu: 旺
+- ti_xiang_jin: 相
+- ti_xiang_shui: 死
+- format: 羊刃格
+- format_label_id: null
+- dm_label_id: null
+- da_yun: 7:壬申:偏財, 17:癸酉:正財, 27:甲戌:七殺, 37:乙亥:正官, 47:丙子:偏印, 57:丁丑:正印, 67:戊寅:比肩, 77:己卯:劫財, 87:庚辰:食神, 97:辛巳:傷官
+- marriage_cocok: 寅, 卯, 午
+- marriage_hindari: 丑, 辰, 未, 酉
+- marriage_cocok_relationships: 寅:大吉, 卯:大吉, 午:大吉
+- marriage_hindari_relationships: null
+- yang_zhai_gua: 乾
+- ziwei_ming_zhu: 巨門
+- ziwei_shen_zhu: 文昌
+- ziwei_ming_gong: 丑
+- ziwei_shen_gong: 丑
+- ziwei_wu_xing_ju: 水二局
+- ziwei_shi_jun: 丑
+
+# === FULL-MD wangdu null (layar 批命備註 detail tidak ada) ===
+- wangdu_jia_mu: null
+- wangdu_yi_mu: null
+- wangdu_bing_huo: null
+- wangdu_ding_huo: null
+- wangdu_wu_tu: null
+- wangdu_ji_tu: null
+- wangdu_geng_jin: null
+- wangdu_xin_jin: null
+- wangdu_ren_shui: null
+- wangdu_gui_shui: null
+- wangdu_total_mu: null
+- wangdu_total_huo: null
+- wangdu_total_tu: null
+- wangdu_total_jin: null
+- wangdu_total_shui: null
+- dm_pos_score: 5130
+- dm_neg_score: 3748
+- dm_strength: 旺
+- dm_strength_label_id: Kuat
+
+- da_yun_arah: 順行
+- da_yun_start_age: 7
+
+- shen_sha_list: 文昌貴, 寡宿, 天醫, 從魁
+
+- nayin_tahun: null
+- nayin_bulan: null
+- nayin_hari: null
+- nayin_jam: null
+
+- canggan_tahun: 丁辛戊
+- canggan_bulan: 乙丁己
+- canggan_hari: 戊壬庚
+- canggan_jam: 己丁
+
+- canggan_shi_shen_tahun: 丁:正印, 辛:傷官, 戊:比肩
+- canggan_shi_shen_bulan: 乙:正官, 丁:正印, 己:劫財
+- canggan_shi_shen_hari: 戊:比肩, 壬:偏財, 庚:食神
+- canggan_shi_shen_jam: 己:劫財, 丁:正印
+
+- chang_sheng_tahun: null
+- chang_sheng_bulan: null
+- chang_sheng_hari: null
+- chang_sheng_jam: null
+
+- kong_wang: null
+
+# === Kesehatan (page 16) ===
+- jie_e_palace_hz: 易患呼吸器官，特別是肺部的疾病。以及消化器官，特別是大腸的疾病。終您一生，疾病或受傷的機會較他人更少吧！如與巨門同宮，或與天梁星同宮，且又有其他凶星同宮的話，恐有罹患心臟病之虞。健康良好，如位於巳、申、亥之宮內，或與凶星同宮的話，須注意從胃部為始的腹部疾病。
+- jie_e_palace_id: Leonardo cenderung mudah terkena gangguan organ pernapasan, khususnya penyakit pada paru-paru; serta gangguan organ pencernaan, terutama penyakit pada usus besar. Sepanjang hidup, peluang sakit atau cedera tergolong lebih sedikit dibanding orang lain. Namun bila istana kesehatan ditemani [[巨門]] atau [[天梁]], ditambah bintang buruk lain, ada risiko penyakit jantung. Bila istana kesehatan berada di posisi [[巳]], [[申]], atau [[亥]], atau ditemani bintang buruk, ia perlu waspada penyakit perut yang berawal dari lambung.
+- jie_e_organ_focus_id: Yang utama wajib dijaga: kesehatan paru-paru dan usus besar, serta lambung dan organ-organ pencernaan lain.
+
+# === Render fields ===
+- liu_nian_2026: 33|丙午|Segala urusan tahun ini di permukaan tampak biasa-biasa saja dan belum sebanding dengan hasil materi. Perlu hati-hati, urusan menjengkelkan banyak datang, dukungan tersembunyi minim, ideal sulit dicapai. Suasana hati ditekan dan kurang stabil. Karier bergeser, lebih baik tidak melakukan perubahan besar. Lingkungan turut berubah karena faktor luar. Bintang 白虎 datang: pintu depan menolak macan, pintu belakang dimasuki serigala. Bintang 天喜: pertemuan bintang sukacita, ada urusan menggembirakan di rumah saat musim semi, banyak rencana berhasil; namun waspadai bahaya bencana darah. Bagi wanita waspada urusan kandungan, hindari bulan 1/4/7 atau 11. Suasana hati sering condong angkuh dan terlalu percaya diri, bertindak sepihak, menghadapi kesulitan tidak mau menunduk; bercita-cita besar, suka menonjol, ingin menang sendiri.
+- liu_nian_2027: 34|丁未|Segala urusan di permukaan tampak biasa, belum sebanding hasil materi. Hati-hati pertemuan saudara dan kawan; ideal sulit dicapai. Suasana hati kurang stabil. Karier berubah atau jabatan bergeser. Bintang 福德: berkah menambah, naik pangkat, perbaikan, banyak peluang tanah/properti, segala urusan baik dicari. Bintang 喪門: bertemu bintang takdir tidak menentu, mungkin ada hal tak terduga; layani tanpa kenal lelah, lepas dari musibah dengan tenang. Waspada penyakit, tahun musibah; hati-hati 4/7/8, jaga air dan api. Sifat kurang tegas, kurang berani mengambil sikap; cenderung pendiam dan lembut, mengabdi pada mertua dengan penuh hormat.
+- liu_nian_2028: 35|戊申|Mampu memikirkan segala hal, harus pandai menangkap waktu, banyak menggunakan otak, pasti dapat mencapai ideal. Usaha tahun ini di permukaan belum sebanding hasil. Yang sudah menikah ada gesekan kecil rumah tangga; yang belum menikah mulai membangun perasaan. Bintang 吊客: berduka, melayani senior, urusan administrasi muncul, bintang darah hadir, mulut waspada bencana. Bintang 陽德: bintang Yang menambah cahaya, urusan sukacita berlimpah, segala kebajikan dilakukan dengan lancar. Hindari bulan 4/7 atau 11. Tubuh dan jiwa tipis lemah, penampilan luar tampak kurang sehat namun sebenarnya tidak sakit. Kurang cocok pekerjaan fisik berat, hubungan dengan orang tua agak hambar; namun simpati cukup besar dan dermawan pada sesama.
+- liu_nian_2029: 36|己酉|Mampu memikirkan segala hal, perlu menangkap waktu dan banyak gunakan otak, pasti dapat mencapai ideal. Usaha tahun ini belum sebanding hasil. Bintang 病符: bintang penyakit masuk, gangguan kesehatan/karier muncul, musibah datang; berdoa kepada Buddha mohon perlindungan. Bintang 錦繡: hidup bertabur bintang sukacita, mendapat keturunan, segala urusan seperti diberkati. Waspada bulan 3/6/9 atau 12. Sifat cenderung tergesa, kurang ketegasan; segala urusan ragu-ragu sulit putuskan; sangat cerdas namun suka berdebat hingga melelahkan diri. Pasangan dingin, hubungan mudah berubah, sulit menua bersama, sebagian besar menikah kembali.
+- liu_nian_2031: 38|辛亥|Apa yang dipikirkan tahun ini di permukaan dapat berpadu dengan materi. Dapat memperoleh semua kesempatan, secara nyata mencapai ideal. Suasana hati ditekan, kurang stabil. Bintang 太陽: bintang matahari masuk, segala hal harmonis, yin-yang tanpa cacat, berkah dan rezeki melimpah. Bintang 福德: bintang berkah masuk, jadi orang berhati baik banyak amal, dipercayakan rezeki orang banyak, rezeki di senja hari mengungguli masa muda. Hindari bulan 2/4/8 atau 11. Sifat cepat dan panas, sering tergesa, ada kepala tak ada ekor, suka baru bosan lama; impulsif, kurang dalam berpikir, mudah dibohongi, mudah lupa diri; kerap salah langkah hingga gagal, namun selalu ada keberuntungan lahir dari ujung kebuntuan.
+- gushu_quote_1: 三命通會註|San Ming Tong Hui Zhu|戊己日干平等水末，柱中原有遇為福，運蔭北野及東方，德潤身今富潤屋。|Bagi kelahiran hari berstem 戊己 dengan keseimbangan air di akhir, pertemuan unsur di pilar membawa keberkahan; nasib bertambah baik di arah utara dan timur, kebajikan menyirami diri sehingga rumah pun ikut berlimpah.
+- gushu_quote_2: 勾陳得位|Gou Chen De Wei|戊己勾陳得旺鄉，寅卯之宮號最強，若是更臨卯未，亥子相逢大吉昌。|Bila stem 戊己 mendapat istana 勾陳 yang berenergi kuat, posisi 寅卯 paling perkasa; bila ditambah pertemuan 卯未 dan 亥子, keberuntungan sangat besar bagi sang pemilik.
+- gushu_quote_3: 滴天髓|Di Tian Sui|戊土固重，既中且正，靜翕動闢，萬物司命，水潤物生，火爆物病，若在艮坤，怕沖宜靜。|戊土 kokoh dan berat, tegak dan lurus, tenang menutup dan bergerak membuka, pengatur kehidupan segala benda; air membasahi maka tumbuh, api membakar maka sakit; jika berada di 艮坤, takut benturan, lebih baik diam tenang.
+- gushu_quote_4: 詩云|Syair|末月險深火暫炎，藏官藏印又藏財，近無卯亥多難變，還帶刑沖庫亦開，無火怕作金水泉，多寒偏愛同丁來，用神喜忌當分曉，其把主理作右猜。|Bulan akhir berbahaya dalam dan api sementara berkobar, menyimpan pejabat menyimpan tanda dan juga menyimpan harta; tanpa 卯亥 di dekat banyak sulit berubah, dengan beban benturan kotak pun terbuka; tanpa api takut menjadi mata air logam-air, dalam dingin justru mengundang 丁; 用神 dan 忌神 wajib dipahami jelas, jangan menerka dari sisi yang salah.
+- gushu_quote_5: 水土膀堤|Shui Tu Bang Di|水土膀堤年同，挽江河海要根重，柱中帶合形虛壯，日下素虛動必崩，力薄不勝金漏煅，功成要用水疏通，平生最喜東南健，身旺東南健失中。|Air dan tanah bagai tanggul di tahun yang sama, menahan sungai dan laut perlu akar berat; pilar membawa kombinasi yang tampak gagah namun kosong, di bawah hari yang lemah gerakan justru runtuh; tenaga tipis tak kuasa menahan tempaan logam, keberhasilan perlu menggunakan air untuk mengurai; sepanjang hidup paling senang arah Timur dan Tenggara yang sehat, namun bila diri kuat justru kehilangan di Tenggara.
+- xiongnian_list: null
+- ziwei_su_ming: Gerak Leonardo agak lamban, sebab cocok dan tidaknya nasib bawaan sejak lahir mungkin pengaruhnya berkurang. Bila istana hidupnya kuat, ia mampu memanfaatkan bakat dan takdirnya untuk perkembangan yang gemilang; namun bila istana hidup lemah, sulit mengharapkan keberhasilan besar. Pada saat itu, kekuatan-lemahnya istana perpindahan ([[遷移宮]]), istana rezeki ([[財帛宮]]), dan istana karier ([[官祿宮]]) ikut menentukan arah hidup.
+- shiye_favorable_full: 鋼鐵工廠|Pabrik baja, 五金行|Toko logam, 採礦|Pertambangan, 汽車|Otomotif, 機械|Mesin, 科學家|Saintis, 律師|Pengacara, 歌影星|Selebriti, 音樂家|Musisi, 武術館|Sanggar bela diri, 會計|Akuntansi, 金融界|Keuangan
+- shiye_supportive_full: 流動攤販|Pedagang keliling, 運動家|Atlet, 介紹中人|Broker, 醫師|Dokter, 清潔隊|Cleaning service, 記者|Wartawan, 護士|Perawat, 導遊|Pemandu wisata, 馬戲團|Sirkus, 航海漁業|Pelayaran-nelayan, 冷凍業|Industri pendinginan, 水產業|Hasil laut, 碼頭工|Buruh pelabuhan, 消防隊|Pemadam kebakaran, 貿易公司|Perusahaan dagang
+
+- marriage_cocok_tafsir: **Sangat cocok** ([[大吉]]): shio **Macan** ([[寅]]), **Kelinci** ([[卯]]), dan **Kuda** ([[午]]). Perjodohan yang ditakdirkan langit ([[天作之合]]), segala urusan sukses, beroleh kemuliaan ([[尊榮之福]]), rezeki tenang berlimpah panjang ([[清閒之福祿悠久]]), keberuntungan rumah tangga gemilang ([[家運隆昌]]), serta dianugerahi umur panjang dan kebahagiaan ([[福壽綿長之貴]]). Shio di luar daftar 大吉 dan 忌 secara umum tergolong cocok tingkat dua ([[次吉]]).
+- marriage_hindari_tafsir: **Hindari** ([[忌]]): shio **Kerbau** ([[丑]]), **Naga** ([[辰]]), **Kambing** ([[未]]), dan **Ayam** ([[酉]]). Kemauan bisa saja menyatu, tetapi bencana datang bertubi-tubi ([[災害疊來]]), rentan kerugian harta ([[嫌遭財產敗]]), sulit meraih keberuntungan besar ([[難得福運大亨通]]), seumur hidup penuh kesulitan ([[一生困難辛苦]]), serta segala hal berlawanan dengan keinginan hati ([[事與心違]]).
+
+- kesimpulan_narrative: Leonardo lahir 21 Juli 1994 pukul 11:15 dengan shio Anjing ([[狗]]/[[戌]]). Penguasa hidupnya adalah Tanah Yang ([[戊土]]), pribadi kokoh seperti gunung, tegak dan lurus, tenang saat menutup dan bergerak saat membuka, pengatur kehidupan segala benda ([[戊土固重, 既中且正, 萬物司命]]). Format hidup utamanya Cetakan Pedang Domba ([[羊刃格]]), sosok bertekad besar, berani, penuh inisiatif, dan kerap mengambil keputusan tajam berdampak luas. Kekuatan Penguasa Hari tergolong **Kuat** ([[旺]]) dengan skor pendukung +5130 dan penekan -3748, energi alaminya berlimpah sehingga fokus terbaik adalah menyalurkan tenaga lewat karya nyata dan keahlian. || Unsur sahabatnya adalah Logam ([[金]], 用神) untuk menyalurkan tenaga, didukung Air ([[水]], 喜神) sebagai pelumas; sementara Tanah ([[土]], 忌神) dan Api ([[火]], 仇神) perlu diwaspadai karena menumpuk dan memanaskan dirinya berlebihan. Karakter intinya teguh dan stabil, jujur, berkemauan kuat, mampu mengendalikan diri pada hal yang ia kuasai, tidak mempersoalkan hal kecil ([[固執、寡慾、堅定立場]]). || Bintang utama Istana Hidupnya [[天同]] (Tiān Tóng), membawa pembawaan cerah, ramah, dan disukai berkat sikap hati-hati; bila ditemani [[文昌]] atau [[文曲]], berpeluang jadi pemimpin atau penulis terkenal. Industri yang searah meliputi dua jalur ber-Logam: industri berat dan teknik seperti baja, otomotif, mesin, pertambangan; serta bidang profesional seperti hukum, akuntansi, keuangan, kedokteran, musik. Da Yun saat ini (usia 27-36, [[甲戌]] 七殺) adalah fase penempaan tekad dan kepemimpinan, yang beralih ke fase Pejabat Lurus ([[乙亥]] 正官, usia 37-46) yang lebih mapan struktural. || Untuk jodoh, pasangan paling cocok ([[大吉]]) adalah shio Macan ([[寅]]), Kelinci ([[卯]]), dan Kuda ([[午]]); shio di luar daftar hindari tergolong cocok tingkat dua ([[次吉]]). Hindari shio Kerbau ([[丑]]), Naga ([[辰]]), Kambing ([[未]]), dan Ayam ([[酉]]). || Untuk kesehatan, titik rawan ada pada paru-paru dan usus besar ([[肺部與大腸]]), serta lambung dan organ pencernaan. Untuk hunian, pilih rumah dengan gua [[乾]], idealnya **duduk Timur Laut menghadap Barat Daya** ([[宅宜坐東北向西南大吉]]); arah pintu, kamar, dan altar yang baik adalah Barat, Barat Laut, dan Timur Laut. || Inti dari semua ini terangkum di [[滴天髓]]: "[[戊土固重, 既中且正, 靜翕動闢, 萬物司命]]". Inilah esensi Leonardo: ketegasan yang kokoh, akan berbuah kemuliaan dan ketenangan saat tenaganya disalurkan dengan disiplin dan diasah oleh logam-air pendingin.
+
+## TAFSIR
+
+### Kepribadian
+
+paragraf:
+Leonardo adalah [[戊土]] (Tanah Yang) yang lahir di puncak musim panas, sosok yang teguh, jujur, dan berkemauan kuat. Status dirinya tergolong [[旺]] (kuat), sehingga [[金]] sebagai [[用神]] menyalurkan tenaganya keluar, sementara [[水]] menjadi pelumas yang menjaga kesegaran. Formatnya [[羊刃格]] membuatnya bertekad besar, berani memimpin, dan kerap mengambil keputusan tajam, perlu mengarahkan tenaga itu pada karya konkret agar tidak meledak sembarangan.
+
+radar_traits: null
+
+motto: null
+
+power:
+- Teguh dan stabil, sulit goyah oleh tekanan kecil
+- Berani ambil keputusan tajam dan berdaya pimpin
+- Berbakat strategi dan tangkas membaca peluang
+- Dermawan dan tulus pada orang yang ia percaya
+
+shadow:
+- Sulit menerima nasihat dari orang tua atau pasangan
+- Cenderung keras kepala dan sulit menerima pendapat berseberangan
+- Tenaga besar bisa berubah konfrontatif bila tak tersalur
+- Mudah terbawa emosi saat ekspektasi tidak terpenuhi
+
+optimum:
+- Salurkan energi [[金]] lewat karya teknik, bisnis, atau kepemimpinan
+- Bangun keahlian profesional bertahap, tidak mengandalkan dominasi
+- Manfaatkan jejaring 貴人 dari bintang [[文昌貴]] dan [[天醫]]
+- Jaga kesehatan paru, usus, dan lambung sebagai pilar daya tahan
+
+### Keluarga & Pasangan
+
+pasangan:
+- vibe: "Setara · Suportif"
+- headline: "Pasangan ideal dari shio Macan, Kelinci, atau Kuda"
+- body: Leonardo memandang cinta dengan serius, menuntut kesetaraan dan ketulusan. Menurut layar 婚配, pasangan paling cocok ([[大吉]]) adalah shio [[寅]] (Macan), [[卯]] (Kelinci), atau [[午]] (Kuda), membawa keberuntungan rumah tangga gemilang dan kemuliaan. Hindari shio [[丑]] (Kerbau), [[辰]] (Naga), [[未]] (Kambing), dan [[酉]] (Ayam).
+
+anak:
+- vibe: "Cerdas · Mandiri"
+- headline: "Anak berbakat dengan daya kerja kuat"
+- body: Menurut istana 子女, anak Leonardo berpotensi cerdas dan berdaya kerja kuat, namun cenderung keras kepala. Hubungan menuntut komunikasi terbuka agar tidak saling menabrak. Dengan pengasuhan yang sabar, bakat seni dan teknis anak dapat berkembang baik.
+
+saudara:
+- vibe: "Rasional · Tidak Dingin"
+- headline: "Ikatan saudara rasional, sulit jadi sandaran"
+- body: Menurut istana 兄弟, Leonardo dan saudara berhubungan dingin secara rasional namun bukan tanpa perasaan. Bantuan praktis dari saudara terbatas, tetapi bila istana ditemani [[文昌]] atau [[文曲]], walau saudara sedikit, ia tetap memperoleh kawan akrab yang bisa diandalkan.
+
+kepemimpinan:
+- vibe: "Tegas · Strategis"
+- headline: "Pemimpin tegas dengan strategi terstruktur"
+- body: Format [[羊刃格]] dan Tanah Yang yang berakar kuat menjadikan Leonardo sosok pemimpin yang tegas, terstruktur, dan dipercaya memegang keputusan sulit. Ia cocok memimpin lewat strategi dan keahlian, bukan dominasi semata, sehingga loyalitas tim tumbuh alami.
+
+### Shen Sha (Bintang Pelengkap)
+
+paragraf:
+Layar 神煞 Leonardo menampilkan empat bintang aktif: [[文昌貴]], [[寡宿]], [[天醫]], dan [[從魁]]. [[文昌貴]] menandai kecerdasan, banyak siasat, dan kemampuan mengubah musibah jadi keberuntungan ([[逢凶化吉]]). [[天醫]] memberi nama baik di bidang medis dan kemampuan menolong sesama; [[從魁]] mengarah pada keberlimpahan harta dan kemakmuran keluarga; sedangkan [[寡宿]] mengingatkan agar hati-hati pada kesendirian rasional yang dapat menjauhkan dari kerabat.
+
+dominant_star:
+- hanzi: 文昌貴
+- pinyin: Wén Chāng Guì
+- label_id: "Bintang Cendekia Mulia"
+- active_label: "AKTIF SEKARANG"
+
+strip: Leonardo cerdas, kaya siasat, dan mampu mengubah kesulitan jadi keberuntungan; rawat reputasi keilmuan dan jejaring 貴人.
+
+### Rezeki & Caifu
+
+paragraf:
+Menurut layar 財富, baik [[偏財]] (rezeki tak terduga) maupun [[正財]] (rezeki tetap) Leonardo tergolong mengalir biasa-biasa dengan jarak ke sumber yang agak renggang, namun keduanya mudah diperoleh bila ia bergerak aktif. Sebaiknya pemasukan dirinya disalurkan ke aset berwujud agar tidak cepat menguap, mengingat formatnya [[羊刃格]] yang bertenaga besar dan mudah belanja besar.
+
+zheng_cai:
+- label: "Rezeki Tetap"
+- percent: "55%"
+- body: Rezeki tetap Leonardo berperan sebagai porsi utama, datang dari gaji atau usaha mapan. Layar 財富 menyebut sumbernya kaya namun hubungannya agak renggang, perlu pendekatan rutin dan disiplin agar arus tetap stabil dan tidak bocor.
+
+pian_cai:
+- label: "Rezeki Tak Terduga"
+- percent: "45%"
+- body: Rezeki tak terduga ([[偏財]]) cukup besar porsinya, terutama dari proyek, perdagangan, atau investasi cerdik. Sifatnya datang cepat, sehingga perlu dikelola dengan disiplin dan diwujudkan menjadi properti agar nilainya bertahan.
+
+rules:
+- title: "Wujudkan pemasukan jadi aset berwujud"; context: "羊刃 bertenaga, properti lebih kokoh dari tabungan tunai"; tone: tip
+- title: "Hindari belanja impulsif besar"; context: "用神 金 perlu disiplin agar tenaga tidak meledak"; tone: warn
+- title: "Manfaatkan jejaring 貴人 untuk peluang 偏財"; context: "文昌貴 + 天醫 mengundang kolaborasi rezeki"; tone: tip
+- title: "Jaga 正財 dengan rutinitas dan kontrak jelas"; context: "正財 sumber renggang, perlu pendekatan rutin"; tone: warn
+
+### Karir & Industri
+
+intro:
+Dengan [[用神]] [[金]] dan format [[羊刃格]], Leonardo paling bersinar di bidang yang menuntut ketegasan, strategi, dan ketahanan kerja. Layar 事業 menyebut dua kelompok besar: bidang industri-teknik ber-Logam (favorable) dan bidang jasa profesional (supportive). Pilih yang paling sesuai talenta personalnya.
+
+tags:
+- fav_1: hz: 金; label: "TEMPAAN"
+- fav_2: hz: 水; label: "ALIRAN"
+- unfav_1: hz: 土; label: "TUMPUK"
+- unfav_2: hz: 火; label: "PANAS"
+
+industri:
+- nama: "[[金融界]] / Keuangan & Akuntansi"; unsur: 金; alasan: layar 事業 sebut langsung 金融界、會計
+- nama: "[[機械]] / Mesin & Otomotif"; unsur: 金; alasan: layar 事業 sebut 機械、汽車、鋼鐵工廠、採礦
+- nama: "[[律師]] / Hukum"; unsur: 金; alasan: layar 事業 sebut langsung 律師
+- nama: "[[醫師]] / Medis & Perawat"; unsur: 金; alasan: layar 事業 sebut 醫師、護士, didukung 天醫 神煞
+- nama: "[[音樂家]] / Musik & Seni Panggung"; unsur: 金; alasan: layar 事業 sebut 音樂家、歌影星、武術館
+
+### Day Master & Wu Xing
+
+paragraf:
+Leonardo adalah [[戊土]], Tanah Yang yang berstatus [[旺]] (kuat) menurut skor 日主旺度. Karena itu [[用神]] utamanya [[金]] untuk menyalurkan tenaga ke karya, didukung [[水]] sebagai [[喜神]] yang menjaga kesegaran dan kelembapan. Kombinasi ini mempertegas karakter tegas, terstruktur, dan tangkas khas format [[羊刃格]].
+
+ji_shen_body:
+Yang sebaiknya dihindari adalah [[土]] sebagai [[忌神]] dan [[火]] sebagai [[仇神]]. [[土]] yang menumpuk membuatnya terlalu kaku dan lambat, sedangkan [[火]] yang berlebihan memanaskan tenaga dan memicu konfrontasi. Lingkungan, warna, atau bidang yang didominasi kedua unsur ini perlu diimbangi dengan unsur Logam dan Air.
+
+### Yang Zhai (Feng Shui Hunian)
+
+paragraf:
+Berdasarkan layar 陽宅 (gua [[乾]]), hunian Leonardo paling baik dengan posisi duduk di Timur Laut menghadap Barat Daya ([[宅宜坐東北向西南大吉]]). Pintu utama sebaiknya membuka ke Barat, Timur Laut, atau Barat Daya. Altar baik di Barat dan Barat Laut, dengan keberuntungan area Selatan ([[南方大吉]]) di tahun ini. Kompor sebaiknya menghadap Timur ke Barat, kamar tidur di Barat Laut, Barat, atau Barat Daya, dan ranjang di Timur Laut, Barat Daya, atau Barat Laut.
+
+zones:
+- label: "Pintu Utama"; headline: "✓ Optimal"; pills: 西 B; note: pintu sebaiknya membuka ke Barat, Timur Laut, atau Barat Daya
+- label: "Kamar Tidur"; headline: "✓ Optimal"; pills: 西北 BL; note: kamar di Barat Laut, Barat, atau Barat Daya; ranjang Timur Laut atau Barat Laut
+- label: "Dapur / Kompor"; headline: "✓ Baik"; pills: 東 T; note: kompor menghadap Timur ke Barat dan area Tenggara aman
+- label: "Kamar Mandi"; headline: "⚠ Perhatikan"; pills: 北 U; note: posisikan di Utara, Tenggara, atau Selatan menurut layar 陽宅
+- label: "Ruang Kerja"; headline: "✓ Baik"; pills: 西北 BL; note: arah hoki tahun di Barat dan Barat Laut, cocok untuk fokus kerja
+- label: "Altar / Sembah"; headline: "✓ Optimal"; pills: 西 B; note: altar baik di Barat, Barat Laut, dan Tenggara
+
+### Da Yun — Spotlight (Fase Sekarang)
+
+headline: Fase 27–36: Kayu Yang berakar Anjing ([[甲戌]]), Era [[七殺]] Penempaan Kepemimpinan
+
+bullet 1: Leonardo kini di fase [[七殺]] (27–36), masa menempa tekad, disiplin, dan kepemimpinan tegas dalam karier.
+bullet 2: Energi [[甲木]] mengontrol Tanah dirinya, sehingga karya besar lahir dari tekanan yang dimanfaatkan, bukan dihindari.
+bullet 3: Layar 流年 menandai 2026 ([[丙午]]) sebagai tahun kerja keras yang menuntut kehati-hatian dan kesehatan.
+bullet 4: Fondasi yang dibangun kini menjadi bekal fase [[正官]] (37–46) yang lebih mapan struktural dan terhormat.
+
+### Da Yun — 5 Seasons
+
+- umur 7-26: Musim Tunas — fase [[偏財]] dan [[正財]], menjelajah dunia luar dan mengasah keahlian dasar.
+- umur 27-46: Musim Tumbuh — fase [[七殺]] dan [[正官]], membangun karier, kepemimpinan, dan otoritas struktural.
+- umur 47-66: Musim Panen — fase [[偏印]] dan [[正印]], pengetahuan dan jejaring senior menghasilkan rezeki dan pengaruh.
+- umur 67-86: Musim Matang — fase [[比肩]] dan [[劫財]], kemitraan setara, mentoring, dan ekspansi ke ranah komunal.
+- umur 87-99: Musim Teduh — fase [[食神]] dan [[傷官]], ekspresi seni, mentoring, dan kebijaksanaan masa tua.
+
+### Da Yun — Footer Caption
+
+Leonardo di fase [[甲戌]] (27–36), era penempaan [[七殺]] menuju kemapanan [[正官]] di dekade berikutnya.
+
+### Palace Detail 1
+
+ming_gong:
+- star: 天同
+- insight: Leonardo memberi kesan tubuhnya secara keseluruhan berat dan tumpul ([[與人全身鈍重的印象]]); menandakan kepribadian yang kokoh-berat namun bersuasana batin agak gelap dan suram ([[暗示厚重而陰暗]]). Meski begitu, reaksi pikirannya sangat sigap dan ia tipe pribadi yang berorientasi tindakan; begitu menyadari metode kerja atau cara belajarnya keliru, ia pasti langsung mengganti dengan cara baru, kaya akan daya adaptasi yang luwes ([[富於柔軟地適應性]]). Tutur katanya halus dan beradab ([[談吐文雅]]), tidak sinis atau pedas; relasi antarmanusianya harmonis, mampu memperoleh kasih sayang atasan ([[可得上司的垂愛]]) sehingga ia meraih kedudukan sosial yang baik. Namun bila terlalu hati-hati dan berjaga-jaga, ia bisa berubah menjadi sosok yang kikir dan picik ([[吝嗇小氣的傢伙]]). [[天相]] memang tergolong bintang baik yang langka dan berharga, tetapi bila satu istana dengan [[天機]], atau bila istana hidup jatuh di posisi [[巳]] atau [[午]], justru menandakan kemalangan baginya. Sudah susah payah mengumpulkan sejumlah uang, tetapi dalam satu malam saja bisa dihabiskan di tempat hiburan mewah hingga ludes tak bersisa ([[花天酒地, 散得精光]]); atau ia hanya mengejar kesenangan dengan mengorbankan pekerjaan, terus-menerus memburu kehidupan yang penuh sensasi, dan pada akhirnya berakhir dengan nama hancur serta martabat jatuh ([[身敗名裂]]) — orang seperti ini jumlahnya tidak sedikit. Bila satu istana dengan [[武曲]], ucapan dan tindakannya sedikit menjauh dari dunia umum dan ia hidup dalam dunia hobinya sendiri ([[生活在嗜好的天地中]]). Untuk wanita, sepanjang hidup tidak pernah ada kekhawatiran soal kekurangan harta; ia mampu bersama pria yang realistis dan membumi ([[踏實的男人]]) membangun sarang cinta yang bahagia. Kelemahannya: mudah terpengaruh situasi sekeliling sehingga emosinya dikendalikan lingkungan dan ia kehilangan jati dirinya yang sejati. Di sisi hubungan pria-wanita pun akan ada sedikit kerepotan kecil.
+- action: Latih fokus pada satu prioritas; salurkan kecerdasan lewat tulisan atau strategi.
+
+xiongdi:
+- star: null
+- insight: Hubungan Leonardo dengan saudara dan kawan dingin secara rasional, namun bukan tanpa perasaan ([[感情冷靜而理性, 但並不是冷淡無情]]). Ia sulit memperoleh bantuan praktis dari saudara dan teman. Bila istana ditemani [[太陽]], walau ada saudara terasa seperti orang lain di jalan; namun bila ada pengaruh [[文昌]] atau [[文曲]], walau saudara sedikit, ia tetap memperoleh kawan akrab yang sehati untuk diandalkan.
+- action: Jaga komunikasi sehat tanpa terlalu mengharapkan dukungan operasional.
+
+fuqi:
+- star: null
+- insight: Nasib percintaan Leonardo dramatis bagai cerita penuh percikan darah hewan; meski cinta berlimpah, kehidupan rumah tangga setelah menikah justru terjalin dari cinta dan benci yang berpadu, dengan banyak masalah dalam kehidupan seksual. Bila bersama [[天府]], pasangannya berkepribadian agak keras dan tangkas, namun di luar dugaan harmonis dan saling mencintai panjang; selain itu hubungan suami-istri tampak agak banyak gesekan di permukaan. Pria cenderung intelektual lembut dan pendiam, namun bila menikahi wanita berkepribadian keras kepala, gampang berbeda pendapat hingga berbenturan; bila ada bintang buruk hadir, bisa berakhir perceraian. Wanita pula bersemangat tinggi dan tergila pada pria yang seenaknya. Pada akhirnya wanita mungkin mengalami suami yang menghamburkan harta dalam perjudian sesaat. Bila bersama [[紫微]] sekamar, ia dapat menetralkan niat buruk, memperoleh istri yang lebih tua atau suami yang lebih muda, dan menjalani kehidupan pernikahan yang bahagia.
+- action: Pilih pasangan setia dan sevisi; pertahankan komunikasi dewasa, hindari adu ego.
+
+zinu:
+- star: null
+- insight: Sekali melihat membuat orang merasa Leonardo punya anak-anak yang berbakat dan dapat diandalkan ([[聰穎依靠的種重兒女]]). Ia punya sekelompok anak yang berbakat, tetapi tampaknya agak punya kecenderungan saraf sensitif. Bila ada bintang buruk hadir, hubungan dengan anak-anak hampir seperti orang lain. [[太陰]] di istana 子女 menandai anak-anak yang berkecenderungan kaya, berbakat, dan menonjol. Bila memungkinkan, dorong mereka mengembangkan bakat seni. Anak-anaknya secara alami berbakat seni; hubungan orang tua-anak penuh kegembiraan, tidak akan ada perselisihan. Namun bila ada bintang buruk hadir, sulit melahirkan anak; bahkan jika ada anak, kerap bertengkar tidak henti.
+- action: Beri ruang anak mengembangkan bakat; jaga komunikasi tenang.
+
+### Palace Detail 2
+
+caibo:
+- star: 天府
+- insight: Karena nilai-nilai dirinya terus berubah, cara penggunaan uangnya pun berfluktuasi tak menentu. Istana rezeki bercirikan [[天府]] yang merupakan bintang baik yang penuh sandang-pangan; ditambah bintang baik lain di istana ini, dapat membuat usahanya berkembang besar bagai matahari menyala terang. Khususnya bila bersama [[紫微]], di masa depan kemungkinan menjadi orang kaya tingkat tertinggi tahun mendatang. Bila bersama [[廉貞]] atau [[武曲]], di hari tua pasti kaya raya. Walau [[天府]] adalah bintang baik, bila ada bintang buruk yang merintangi, ia tidak sering berlarian pinjam uang; jika tidak, hidup boros menjadi candu, sebaiknya teliti dan hati-hati.
+- action: Bangun strategi finansial bertahap; libatkan ahli sebelum keputusan besar.
+
+jie_e:
+- star: 天相
+- insight: Leonardo cenderung mudah terkena gangguan organ pernapasan, khususnya penyakit pada paru-paru; serta gangguan organ pencernaan, terutama penyakit pada usus besar. Sepanjang hidupnya, peluang sakit atau cedera tergolong lebih sedikit dibanding orang lain. Namun bila istana kesehatan ditemani [[巨門]] atau [[天梁]], ditambah bintang buruk lain, ada risiko penyakit jantung. Kesehatannya umumnya baik; namun bila istana berada di posisi [[巳]], [[申]], atau [[亥]], atau ditemani bintang buruk, ia perlu waspada penyakit perut yang berawal dari lambung.
+- action: Rutin jaga paru-paru, usus besar, dan lambung sebagai pilar daya tahan.
+
+qianyi:
+- star: 天機
+- insight: Pergerakan nasib Leonardo dalam berbagai aspek tampak lamban dan tertahan. Namun karena ia aktif mengejar perubahan, ia dapat menggenggam keberuntungan. Ia tergolong tipe orang yang menyukai aktivitas; bila istana ditemani [[天府]], ia lebih mampu berkembang. Bila bersama [[天相]], ia dapat meraih sukses di luar negeri. Sayangnya bila ada bintang buruk hadir, perubahan dramatis berlangsung tanpa henti, sulit melewati hidup yang tenang. Saat ia merasa akhirnya tenang, tiba-tiba muncul perubahan besar di sekitar, mengubah suasana jadi getir. Namun bila istana berada di posisi [[子]], [[辰]], [[午]], [[戌]], atau [[亥]], perubahan lingkungan justru membuatnya menemukan bakat yang belum tampak dan bersinar gemilang; mungkin juga ia akan berhenti dari pekerjaan kantor dan berubah profesi jadi penulis atau ilustrator. Bila istana ditemani [[文昌]] atau [[文曲]], perubahan lebih sedikit, ia dapat menjalani hidup yang tenang dan damai.
+- action: Pertimbangkan matang sebelum pindah rumah atau ganti karier; manfaatkan momen perubahan untuk menyalurkan bakat baru.
+
+puyi:
+- star: null
+- insight: Bawahan Leonardo tampaknya semua berperangai agak hangat-dingin, mendadak panas mendadak dingin, dan suka menerjang langsung. Mampu memperoleh bawahan yang cerdas dan kerjanya luar biasa cekatan. Namun jika istana bawahannya berada di posisi [[丑]] atau [[未]], atau saat ia sedang berada di posisi 空亡, bawahan dan ia akan saling bertengkar dan dipenuhi rasa benci. Bila istana ditemani [[太陰]], ia tak mampu memperoleh bantuan dari bawahan. Bersama [[巨門]], ia mendapatkan bawahan yang berbakat luar biasa untuk mendukungnya bekerja.
+- action: Bangun relasi atas dasar ketulusan; jeli memilih lingkaran kerja.
+
+### Palace Detail 3
+
+guanlu:
+- star: null
+- insight: Profesi yang searah dengan Leonardo adalah pemikir, penulis, komentator, polisi/perwira, dan militer ([[思想家、著作家、評論家、警官、軍人]]). Format [[羊刃格]] dan kecerdasan [[文昌貴]] mendorongnya menjadi sosok yang dipercaya memegang otoritas, baik dalam analisis tajam, kritik, maupun struktur komando. Ia paling produktif saat diberi otonomi untuk merancang strategi dan memimpin tim kecil yang loyal.
+- action: Bangun karier sebagai analis tajam atau pemimpin yang strategi-driven.
+
+tianzhai:
+- star: 巨門
+- insight: Properti Leonardo bertipe standar, ia mampu mengelola properti besar dengan cerdik. Di istana [[丑]], [[辰]], [[巳]], [[午]], [[戌]], ia bisa secara mandiri mewarisi properti leluhur, namun di hari tua kondisinya bisa menyepi. Secara umum peruntungan propertinya baik, namun kekurangannya sulit mempertahankan dalam jangka panjang. Bersama [[巨門]], ia berpotensi sukses di area properti. Selama tak ada bintang buruk yang merusuh, pasti memiliki properti berlimpah. Bintang [[文昌]] yang mengatur sastra dan seni, bila ia bisa mencari area yang tenang dan budaya pendidikan sebagai tempat tinggal, pasti membawa keberuntungan baginya. Putih dijadikan warna rumah, dengan keberuntungan area Barat ([[白色住家。西方大吉]]).
+- action: Kelola properti secara bertahap; pilih hunian dengan suasana tenang dan budaya.
+
+fude:
+- star: null
+- insight: Istana berkah Leonardo bersifat terjalin dan kusut tapi tidak jelas, namun tetap memiliki daya hidup yang kuat dan tegar bagai jenis tanaman tegap dalam keadaan apa pun ([[類似雜草單般強韌的生命力]]). Pertanda bagi yang sibuk meraih sedikit hasil; bila istana berada di posisi [[子]], [[申]], [[酉]], atau [[亥]], hasilnya pasti memperoleh berkah. Bila ada bintang baik hadir, berkah pun makin tebal; bila ada bintang buruk hadir, walau berkah ada, hari tua tetap relatif bahagia. Bersama [[七殺]], walau tak ada keberuntungan besar, namun memiliki rezeki; bersama [[破軍]], seumur hidup sibuk dan tak dapat menetap dengan tenang. Bila istana di posisi [[午]], [[酉]] dapat memperoleh keberuntungan; jika tidak, niat buruk [[七殺]] akan terwujud. Untuk diri dan tuntutan kepada orang lain bila terlalu tinggi, akan menjadi hidup yang penuh ketidakpuasan; secara umum sulit memperoleh kedamaian batin. Pada sisi paling buruk, mudah dipengaruhi emosi dan mengalami gelombang hidup; bersama [[紫微]], hari tua dapat memperoleh kebahagiaan.
+- action: Seimbangkan kesibukan dengan ketenangan batin; rawat kebajikan diam-diam.
+
+fumu:
+- star: null
+- insight: Hubungan orang tua-anak Leonardo cerah dan terang ([[開朗明亮]]), tergolong relasi yang penuh dan harmonis. Bila istana di posisi [[子]] atau [[亥]], suasana rumah penuh kecerdasan ([[智性的氣氛]]). Namun sedikit ada kecenderungan ikut arus tren. Bila ada bintang buruk hadir, ia bisa berpisah dini dengan kedua orang tua; bila bersama [[巨門]], orang tua-anak bisa berselisih, sejak muda ia kerap di luar rumah. Bersama [[天梁]], ia berselisih dengan kedua orang tua; meski tumbuh dewasa, ia tetap dapat mengandalkan dukungan kedua orang tua, dengan peran ayah sebagai patokan keluarga, mengarahkan seluruh rumah tangga. Walaupun sebagai orang dewasa, ia tetap dapat menuangkan curahan hati pada orang tua dengan kepercayaan, namun mereka kadang membuatnya agak resah. Bila ada bintang buruk hadir, kehidupan keluarga kurang harmonis, kalau tidak berpisah jauh maka mengalami perpisahan hidup-mati.
+- action: Jaga keterbukaan dengan orang tua; redakan benturan dengan kesabaran.
+
+### Kesimpulan
+
+quote: "Leonardo adalah Tanah Yang yang kokoh dan tegas; dengan menyalurkan tenaga lewat strategi, kepemimpinan, dan jejaring 貴人, ia akan berbuah kemuliaan dan ketenangan di paruh kedua hidup."
+
+stats:
+- format_desc: Format [[羊刃格]] membuat Leonardo tegas, berani, dan strategis, namun perlu disiplin.
+- yong_desc: Aktifkan [[用神]] [[金]] lewat keahlian teknik, hukum, keuangan, atau bidang tajam.
+- dayun_desc: Fase [[七殺]] (27–36) menempa kepemimpinan sebelum kemapanan [[正官]] dekade depan.
+- umur_desc: Dekade 30-an: masa kerja keras membangun otoritas, keahlian, dan reputasi.
+- kompat_desc: Cocok shio [[寅]], [[卯]], [[午]]; hindari [[丑]], [[辰]], [[未]], [[酉]].
+
+life_map:
+- lalu: Masa muda (7-26) fase [[偏財]]-[[正財]] menjelajah dunia luar dan mengasah keahlian dasar, dengan rezeki mengalir biasa.
+- sekarang: Fase [[七殺]] (27-36) menempa tekad dan kepemimpinan; 2026 ([[丙午]]) tahun kerja keras yang menuntut hati-hati dan kesehatan.
+- berikutnya: Fase [[正官]] (37-46) membawa kemapanan struktural dan kehormatan karier, buah dari fondasi yang ditanam sekarang.
+
+### Sintesis & Saran Aksi
+
+opening: Leonardo adalah [[戊土]] kuat berformat [[羊刃格]] yang tegas, strategis, dan berdaya pimpin, dengan nasib menanjak di paruh baya menuju kemapanan struktural dan kemuliaan.
+
+trio:
+
+kekuatan:
+- hanzi: 剛毅
+- pinyin: Gāng Yì
+- arti: "Tegas & Kokoh"
+- body: Leonardo teguh dan berani, mampu mengambil keputusan tajam dan memimpin dengan strategi. Dukungan bintang [[文昌貴]] memperbesar peluangnya mengubah kesulitan menjadi keberuntungan dan mengukuhkan reputasi keahlian.
+
+tantangan:
+- hanzi: 固執
+- pinyin: Gù Zhí
+- arti: "Keras Kepala"
+- body: Kelemahan utama Leonardo adalah sulit menerima nasihat orang tua atau pasangan dan kecenderungan keras pada pendapat sendiri. Tenaga besar tanpa salur bisa berubah konfrontatif dan mengikis relasi terdekat.
+
+tindakan:
+- hanzi: 立業
+- pinyin: Lì Yè
+- arti: "Membangun Karier"
+- body: Panggung optimal Leonardo adalah membangun karier teknis atau profesional yang menuntut analisis tajam, menyalurkan [[用神]] [[金]] lewat karya konkret, dan mewujudkan rezeki menjadi aset agar kokoh.
+
+actions:
+- title: "Bangun otoritas lewat keahlian teknis"; context: "羊刃格 + 用神 金: cocok hukum, keuangan, mesin, medis"
+- title: "Salurkan tenaga lewat karya, bukan konfrontasi"; context: "戊土 旺 perlu disalurkan, bukan ditumpuk"
+- title: "Wujudkan pemasukan jadi aset berwujud"; context: "正財 + 偏財 perlu disiplin agar tidak menguap"
+- title: "Rawat jejaring 貴人 cendekia"; context: "神煞 文昌貴 + 天醫 aktif, penolong utama"
+- title: "Jaga paru-paru, usus, dan lambung"; context: "疾厄宮: organ utama yang wajib diperhatikan"
+
+## CATATAN
+
+- Nama subjek di foto hanya "LEONARDO" (latin), tidak ada Hanzi resmi → hanzi: null.
+- yong_shen=金, xi_shen=水, xian_shen=木, chou_shen=火, ji_shen=土 dari panel 喜用神. Triple-vote UNANIMOUS high (audit_decide.py 19/19 PASS).
+- 先天體檢 10 stem (1/1/0/3/4/2/1/2/1/0) + canggan: triple-vote UNANIMOUS.
+- Marriage: triple-vote UNANIMOUS (audit_marriage exit 0). cocok=寅,卯,午 (大吉), hindari=丑,辰,未,酉 (忌). Per polish 2026-05-15, marriage_cocok hanya 大吉.
+- da_yun_arah=順行 (stem maju, sesuai 陽男 + year stem 甲 yang).
+- dm_pos/neg dari baris 日主旺度 (+5.130/-3.748) ×1000. Layar 批命備註 detail tidak ada → wangdu_* null.
+- format=羊刃格 dari marker ○羊刃 di baris 卦格.
+- yang_zhai_gua=乾 dari label 乾卦.
+- shen_sha_list flat tanpa info pilar → no @tag.
+- Palace main star eksplisit (命宮=天同, 財帛=天府, 疾厄=天相, 遷移=天機, 田宅=巨門).
+- ti_xiang dari kolom 體相 grid utama (因/休/旺/相/死 paired ke 木/火/土/金/水): 囚/休/旺/相/死 (re-checked 2026-05-25 dari foto clearer; tadinya null).
+- nayin, kong_wang, chang_sheng, bone_weight: tidak ada label eksplisit → null.
+
+## DATA_EXTRA
+
+### 仇神 / 喜神 / 閒神
+- chou_shen: 火
+- xi_shen: 水
+- xian_shen: 木
+
+### 先天體檢 per organ
+- xiantian_organ_jia: 膽
+- xiantian_organ_yi: 肝
+- xiantian_organ_bing: 小腸
+- xiantian_organ_ding: 心
+- xiantian_organ_wu: 胃
+- xiantian_organ_ji: 脾
+- xiantian_organ_geng: 大腸
+- xiantian_organ_xin: 肺
+- xiantian_organ_ren: 膀胱
+- xiantian_organ_gui: 腎
+- xiantian_organ_health_notes: 丙0小腸 dan 癸0腎 paling lemah; 甲1膽, 乙1肝, 庚1大腸, 壬1膀胱 rendah; 戊4胃 paling kuat.
+
+### 全局總論
+- quan_ju_paragraf: Pasangan Leonardo cerdas, agak introvert, dan penyayang. Putranya berdaya kerja kuat dan cenderung keras kepala. Ia tak terlalu mengejar harta tapi tidak meremehkan uang. Tidak gentar pada ayah, namun sulit menerima nasihat ayah. Tidak gentar pada istri, namun sulit menerima apa yang istri katakan.
+
+### 事業
+- shiye_paragraf: Bidang searah: pabrik baja, toko logam, pertambangan, otomotif, mesin, saintis, pengacara, selebriti, musisi, sanggar bela diri, akuntansi, dunia keuangan. Pendukung: pedagang keliling, atlet, broker, dokter, cleaning service, wartawan, perawat, pemandu wisata, sirkus, pelayaran-nelayan, industri pendinginan, hasil laut, buruh pelabuhan, pemadam kebakaran, perusahaan dagang.
+
+### 性情
+- xing_qing_paragraf: Leonardo teguh, sedikit nafsu, berpendirian kokoh, menekankan nilai pribadi, sehat dan tidak kasar, kaya kemampuan menangani urusan namun tidak ganas; tegas, daya kontrol pekerjaan kuat. Tak suka memaksakan diri pada hal tertentu; mampu mengayomi, penuh kasih, tak suka menguasai sendiri, tegas, mau menanggung tetapi tak terlalu memperhitungkan apa yang ia berikan. Mementingkan persahabatan tanpa peduli harta, jujur tanpa hiasan, tak terlalu mengikat namun bisa menggunakan harta yang bisa dikontrol, dermawan, ringan tangan, terkadang memikirkan urusan tertentu tapi sulit melekat. Suka tampil di antara orang banyak namun tidak mau mengganggu orang lain; bersifat soliter pendiam, agak hambar pada materi dan tak suka turut campur urusan orang. Hidupnya bersahaja dan agak kaku, dipercaya tanpa khianat.
+
+### 古書云
+- gushuyun_paragraf_hz: 戊己日干平等水末，柱中原有遇為福，運蔭北野及東方，德潤身今富潤屋。戊土固重，既中且正，靜翕動闢，萬物司命，水潤物生，火爆物病，若在艮坤，怕沖宜靜。
+- gushuyun_terjemahan_id: Bagi kelahiran hari 戊己, pertemuan unsur di pilar membawa keberkahan; nasib bertambah baik di arah utara dan timur, kebajikan menyirami diri sehingga rumah ikut berlimpah. 戊土 kokoh dan tegak, tenang menutup dan bergerak membuka, pengatur kehidupan segala benda; air membasahi maka tumbuh, api membakar maka sakit; bila di 艮坤, takut benturan, lebih baik diam tenang.
+
+### Bintang Zi Wei per palace
+- ziwei_stars_ming: 天同
+- ziwei_stars_jie_e: 天相
+- ziwei_stars_caibo: 天府
+- ziwei_stars_qianyi: 天機
+- ziwei_stars_tianzhai: 巨門
+
+### Score BaZi raw
+- dm_score_raw: +5.130 / -3.748
+
+### 命宮 dari Main BaZi Grid
+- ming_gong_bazi: 戊辰

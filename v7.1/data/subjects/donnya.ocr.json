@@ -1,0 +1,352 @@
+{
+  "name_id": "Donny A",
+  "gender_hz": "陽男",
+  "birth_solar": "1974-03-28 12:00",
+  "pillars": {
+    "year": {
+      "stem_hz": "甲",
+      "branch_hz": "寅"
+    },
+    "month": {
+      "stem_hz": "丁",
+      "branch_hz": "卯"
+    },
+    "day": {
+      "stem_hz": "戊",
+      "branch_hz": "辰"
+    },
+    "hour": {
+      "stem_hz": "戊",
+      "branch_hz": "午"
+    }
+  },
+  "wuxing": {
+    "jin": 0.0,
+    "shui": 1.0,
+    "mu": 4.0,
+    "huo": 3.0,
+    "tu": 5.0
+  },
+  "yong_shen_hz": "金",
+  "ji_shen_hz": "土",
+  "xi_yong_shen_hz": "水",
+  "xian_shen_hz": "木",
+  "chou_shen_hz": "火",
+  "format_hz": "正官格",
+  "shi_shen_per_pilar": {
+    "year": "七殺",
+    "month": "正印",
+    "day": "主",
+    "hour": "比肩"
+  },
+  "bone_weight": {
+    "bone_weight_year": "一兩二錢",
+    "bone_weight_month": "一兩八錢",
+    "bone_weight_day": "一兩六錢",
+    "bone_weight_hour": "一兩",
+    "bone_weight_total": "五兩六錢",
+    "bone_weight_poem_hz": "此格推來禮義通\\n一生福祿用無窮\\n甜酸苦辣皆嘗過\\n財源滾滾種且豐",
+    "bone_weight_poem_id": "Format ini menunjukkan etika dan tata krama yang lurus. Sepanjang hidup berkah dan rezeki tak pernah habis. Pernah mengecap manis-asam-pahit-pedas kehidupan. Sumber rezeki mengalir berlimpah."
+  },
+  "liu_nian_predictions": [
+    {
+      "tahun": 2026,
+      "umur": 53,
+      "ganzhi": "丙午",
+      "prose": "Tahun **民國 115** ([[丙午]]). Tampak tenang tetapi tidak setara rezeki uang. Banyak hal mengganggu, ada orang dalam menyerang. Karir ada perubahan, sebaiknya jangan diubah. **[[官符]]** masuk: urusan pejabat dan duka, hubungan keluarga clash. **[[火殺]]** masuk: konflik hukum dan sakit, berhati-hati. Hindari bulan 4, 7, 11."
+    },
+    {
+      "tahun": 2027,
+      "umur": 54,
+      "ganzhi": "丁未",
+      "prose": "Tahun **民國 116** ([[丁未]]). Tampak tenang tetapi tidak setara rezeki. Hati-hati duka dari saudara dan teman. Perasaan tertekan dan tidak stabil. Karir atau jabatan ada perubahan. **[[死符]]** masuk: tampak duka, keluarga clash. **[[暗曜]]** masuk: bencana datang, peringatan keluarga. Hindari bulan 2, 5, 8, 12."
+    },
+    {
+      "tahun": 2028,
+      "umur": 55,
+      "ganzhi": "戊申",
+      "prose": "Tahun **民國 117** ([[戊申]]). Bisa keluarkan ide, harus pakai momentum, bisa mencapai harapan. Lingkungan berubah, misal renovasi atau pindah. Yang menikah ada gosip; yang belum, dekat dengan lawan jenis. **[[歲破]]**: rugi finansial besar. **[[太陽]]**: rezeki dari komunikasi. Hindari bulan 3, 6, 12."
+    },
+    {
+      "tahun": 2029,
+      "umur": 56,
+      "ganzhi": "己酉",
+      "prose": "Tahun **民國 118** ([[己酉]]). Bisa keluarkan ide, harus pakai momentum. Perasaan tidak stabil. Yang menikah ada gosip; yang belum, dekat dengan lawan jenis. **[[龍德]]**: rezeki masuk, 4 musim aman. **[[天狗]]**: rezeki banyak, jangan tertahan. Hindari bulan 4, 7, 12."
+    },
+    {
+      "tahun": 2030,
+      "umur": 57,
+      "ganzhi": "庚戌",
+      "prose": "Tahun **民國 119** ([[庚戌]]). Hasil pikiran setara rezeki. Hati-hati saudara dan teman. Karir atau jabatan ada perubahan. Yang menikah ada gosip; yang belum, feeling baru. **[[白虎]]**: tampak duka, hindari ziarah dan upacara duka. **[[天喜]]**: kabar gembira dari rumah. Hindari bulan 4, 7, 12."
+    },
+    {
+      "tahun": 2031,
+      "umur": 58,
+      "ganzhi": "辛亥",
+      "prose": "Tahun **民國 120** ([[辛亥]]). Hasil pikiran setara rezeki. Bantuan teman datang. Lingkungan berubah, renovasi atau pindah. **[[福德]]** masuk: rezeki masuk, 4 musim aman, keluarga harmonis. **[[無喜]]**: peruntungan luar biasa, berhati-hati. Hindari bulan 4, 7, 8."
+    }
+  ],
+  "ziwei_su_ming": "Arah maju kehidupan Donny mengikuti apa yang ditunjukkan takdir ([[宿命]]). Bila Istana Hidup ([[命宮]]) kuat, ia mampu mengaktifkan bakat selaras takdir dan mencapai perkembangan gemilang. Bila Istana Hidup lemah, kesuksesan akhir sulit diraih. Saat itu, kekuatan Istana Perpindahan ([[遷移宮]]), Istana Harta ([[財帛宮]]), dan Istana Karir ([[官祿宮]]) juga harus dipertimbangkan bersama.",
+  "shiye_short": "適業 (先天論命): **政治, 明星, 技藝, 料理店, 油業**. **忌金類** (hindari industri logam).",
+  "jie_e_palace_hz": "易患喉部疾病、感冒、牙痛等. 幼年時期會受傷或受腫包之苦, 及患足腰的疾病吧! 如有其他吉星同宮者, 健康絕對沒問題. 與貪狼同宮, 則易患眼部的疾病. 如有其他凶星阻礙的話, 恐會有神經痛, 腰痛的毛病. 貪狼星是有癖好之星, 如單獨位於疾厄宮內的話, 比常人更健康, 安穩地渡過一生. 但如位於巳、亥之宮時, 則須謹慎. 您須絕對留心肝病、皮膚病、頭部的受傷等等. 如有凶星同宮的話, 似乎易患眼部的疾病.",
+  "jie_e_palace_id": "Rentan **penyakit tenggorokan, flu, sakit gigi**. Masa kecil rawan cedera atau pembengkakan, serta penyakit kaki dan pinggang. Jika ada bintang baik lain di palace sama, kesehatan sangat aman. Bila bersanding **Tan Lang** ([[貪狼]]), rawan penyakit mata. Bila bintang malang merintangi, bisa muncul nyeri saraf atau sakit pinggang. **Tan Lang** ([[貪狼]]) bila sendirian di Istana Kesehatan, justru lebih sehat dari orang biasa. Namun bila di **Si** ([[巳]]) atau **Hai** ([[亥]]), harus hati-hati. **Yang utama wajib dijaga: hati** ([[肝]]), **kulit** ([[皮膚]]), **dan kepala** ([[頭部]]). Bila bintang malang hadir di palace sama, juga rawan penyakit mata.",
+  "jie_e_organ_focus_id": "Yang utama: jaga hati, kulit, kepala, dan tenggorokan.",
+  "gushu_quotes": [
+    {
+      "source_hz": "三命通會註",
+      "source_id": "Catatan Sanming Tonghui",
+      "text_hz": "戊己日干尋水木, 柱中原有還為福, 運臨北野及東方, 德潤身令富潤屋.",
+      "text_id": "Hari [[戊]]/[[己]] mencari Air ([[水]]) dan Kayu ([[木]]). Jika sudah ada di pilar, itu berkah. Saat peruntungan menuju Utara dan Timur, kebajikan membasahi tubuh, kekayaan melimpahi rumah."
+    },
+    {
+      "source_hz": "勻陳得位",
+      "source_id": "Yún Chén Dé Wèi",
+      "text_hz": "戊己勻陳在旺鄉, 寅卯之宮號最強, 若是更臨辰卯未, 亥子相逢大吉昌.",
+      "text_id": "Tanah ([[戊]]/[[己]]) stabil berada di tempat berjaya. Di istana [[寅]] dan [[卯]] dianggap paling kuat. Ditambah bertemu [[辰]]/[[卯]]/[[未]], atau berjumpa [[亥]]/[[子]], itu sangat berkah dan cerah."
+    },
+    {
+      "source_hz": "又云",
+      "source_id": "Yòu Yún",
+      "text_hz": "日干戊己坐財官, 號曰勻陳得位官, 知有大才分瑞氣, 命中值此列朝班.",
+      "text_id": "Hari [[戊]]/[[己]] duduk di atas bintang harta dan jabatan ([[財官]]), disebut Tanah Stabil Mendapat Posisi Pejabat. Berbakat besar, nasib seperti ini masuk barisan istana."
+    },
+    {
+      "source_hz": "滴天髓",
+      "source_id": "Dī Tiān Suǐ",
+      "text_hz": "戊土固重, 既中且正, 靜翕重鄘氣, 萬物司命, 水潤物生, 火燥物病, 若在艮坤, 怕沖宜靜.",
+      "text_id": "Tanah [[戊]] padat dan berat, ada di tengah dan lurus. Tenang menyerap energi besar, jadi pengatur jalannya seribu wujud. Air membasahi membuat tumbuh, api kering membuat sakit. Jika di [[艮]] atau [[坤]], takut benturan, lebih baik tetap tenang."
+    },
+    {
+      "source_hz": "詩曰",
+      "source_id": "Shī Yuē",
+      "text_hz": "卯木獨韃氣稟深, 仲春難道不嫌金, 庚金疊見愁申酉, 亥子重來忌壬癸, 禍見六沖隨落葉, 喜逢三合便成林.",
+      "text_id": "Kayu [[卯]] yang menyendiri membawa energi dalam. Pertengahan musim semi sulit tidak khawatir dengan Logam ([[金]]). Bencana datang saat enam benturan ([[六沖]]) seperti daun gugur. Kegembiraan datang saat tiga harmoni ([[三合]]), seperti hutan terbentuk."
+    }
+  ],
+  "xiongnian_list": [
+    13,
+    24,
+    32,
+    36,
+    49,
+    78
+  ],
+  "marriage_cocok_tafsir": "**Sangat cocok** ([[大吉]]): shio Kuda ([[午]]) dan Anjing ([[戌]]). **Campuran** ([[吉凶相半]]): shio Babi ([[亥]]). **Cocok umum** ([[次吉]]): shio lainnya. Foto verbatim sebut sehati selamanya, reputasi semakin tinggi, akhirnya membangun karya besar, kaya akan kehormatan, berkah dan umur panjang, keluarga makmur, keturunan berkembang berlimpah.",
+  "marriage_hindari_tafsir": "**Hindari** ([[忌]]): shio Ular ([[巳]]) dan Monyet ([[申]]). Foto verbatim sebut suami istri berbenturan, sering tidak harmonis, kekhawatiran tak berkesudahan, tidak ada harapan keberhasilan, potensi kerugian, seumur hidup rasa hampa dan kesepian.",
+  "ti_xiang": {
+    "mu": "旺",
+    "huo": "相",
+    "tu": "死",
+    "jin": "囚",
+    "shui": "休"
+  },
+  "da_yun": [
+    {
+      "age_start": 3,
+      "age_end": 12,
+      "stem_hz": "戊",
+      "branch_hz": "辰"
+    },
+    {
+      "age_start": 13,
+      "age_end": 22,
+      "stem_hz": "己",
+      "branch_hz": "巳"
+    },
+    {
+      "age_start": 23,
+      "age_end": 32,
+      "stem_hz": "庚",
+      "branch_hz": "午"
+    },
+    {
+      "age_start": 33,
+      "age_end": 42,
+      "stem_hz": "辛",
+      "branch_hz": "未"
+    },
+    {
+      "age_start": 43,
+      "age_end": 52,
+      "stem_hz": "壬",
+      "branch_hz": "申"
+    },
+    {
+      "age_start": 53,
+      "age_end": 62,
+      "stem_hz": "癸",
+      "branch_hz": "酉"
+    },
+    {
+      "age_start": 63,
+      "age_end": 72,
+      "stem_hz": "甲",
+      "branch_hz": "戌"
+    },
+    {
+      "age_start": 73,
+      "age_end": 82,
+      "stem_hz": "乙",
+      "branch_hz": "亥"
+    },
+    {
+      "age_start": 83,
+      "age_end": 92,
+      "stem_hz": "丙",
+      "branch_hz": "子"
+    },
+    {
+      "age_start": 93,
+      "age_end": 102,
+      "stem_hz": "丁",
+      "branch_hz": "丑"
+    }
+  ],
+  "marriage": {
+    "cocok_branches": [
+      "午",
+      "戌",
+      "亥"
+    ],
+    "hindari_branches": [
+      "巳",
+      "申"
+    ],
+    "cocok_relationships": {
+      "午": "大吉",
+      "戌": "大吉",
+      "亥": "吉凶相半"
+    }
+  },
+  "shio_hz": "虎",
+  "kesimpulan_narrative": "Donny A lahir 28 Maret 1974 pukul 12:00 siang, dengan shio Macan ([[寅]]). Penguasa hidupnya adalah **Tanah Yang** ([[戊土]]), pribadi yang ibarat **gunung kokoh**: padat, stabil, jadi tempat berlindung. Lahir dengan **Format Pejabat** ([[正官格]]), orang yang menjunjung etika, tata krama, dan integritas formal. || Karakter dasar Donny **tegas dan jujur**. Pikirannya cerdas, perhitungannya rapi, dan punya bakat seni yang khas. Tanah Yang yang dikelilingi Kayu kuat ([[木]] = 4 hitungan) di musim semi membuat Donny berada di posisi yang ditekan. Day Master ([[戊]]) menjadi pribadi yang harus belajar bertahan di tengah tekanan sambil tetap memegang prinsip. Sisi yang perlu dilatih: kadang terlalu kaku memegang aturan, mudah merasa tertekan oleh ekspektasi otoritas. || Bakat utama Donny ada di perpaduan **etika kuat, kemampuan eksekusi formal, dan keterampilan sosial yang luwes**. Bidang karir paling cocok: **hukum dan advokasi, kedokteran dan keperawatan**, akuntansi dan keuangan, teknologi mesin, atau jalur seni-musik formal. Hindari industri logam berat tanpa struktur. Fase hidup sekarang (usia 52, fase 43-52 ([[壬申]]) berakhir, masuk fase 53-62 ([[癸酉]])) adalah **masa transisi dari rezeki bantu ke rezeki tetap matang**. || Untuk jodoh, pasangan paling cocok ([[大吉]]) berasal dari shio Kuda ([[午]]) atau Anjing ([[戌]]). Shio Babi ([[亥]]) tergolong campuran ([[吉凶相半]]). **Hindari** pasangan dari shio Ular ([[巳]]) atau Monyet ([[申]]). || Untuk kesehatan, titik rawan ada di **hati ([[肝]]), kulit ([[皮膚]]), dan kepala** ([[頭部]]), **jaga rutin**. Donny berpotensi memiliki banyak properti; pilih hunian yang **duduk Timur Laut menghadap Barat Daya** ([[宅宜坐東北向西南大吉]], sesuai gua [[艮]]), di daerah kering banyak tanah. Tahun bahaya yang perlu diwaspadai: usia 13, 24, 32, 36, 49, dan 78. Tiga bintang nasib aktif, [[驛馬]] mobilitas, [[文昌]] kecerdasan akademik, dan [[天醫]] bakat medis, membuat Donny mampu mengubah tekanan jadi peluang naik. || Inti ada di puisi klasik [[滴天髓]]: Tanah [[戊]] padat dan berat, ada di tengah dan lurus, tenang menyerap energi besar, jadi pengatur jalannya seribu wujud. Inilah esensi Donny, **gunung kokoh yang menyimpan ketegasan di balik permukaan tenang**.",
+  "yang_zhai_gua_hz": "艮",
+  "yang_zhai_zones_foto": {
+    "pintu": {
+      "dirs_hz": [
+        "西南",
+        "西",
+        "西北"
+      ],
+      "dirs_abbr": [
+        "BD",
+        "B",
+        "BL"
+      ],
+      "note_id": "門路 (Pintu utama): \"門路宜開西南方、西方、西北方\""
+    },
+    "dapur": {
+      "dirs_hz": [
+        "東",
+        "西"
+      ],
+      "dirs_abbr": [
+        "T",
+        "B"
+      ],
+      "note_id": "爐灶 (Dapur): \"爐灶宜安東向西或東南向西北吉\" hadap Timur ke Barat atau Tenggara ke Barat Laut"
+    },
+    "kamar": {
+      "dirs_hz": [
+        "東北",
+        "西",
+        "西北"
+      ],
+      "dirs_abbr": [
+        "TL",
+        "B",
+        "BL"
+      ],
+      "note_id": "房間 (Ruang): \"房間宜東北方、西方、西北方吉\""
+    },
+    "ranjang": {
+      "dirs_hz": [
+        "西",
+        "西北",
+        "東北"
+      ],
+      "dirs_abbr": [
+        "B",
+        "BL",
+        "TL"
+      ],
+      "note_id": "床位 (Ranjang): \"床位安西方、西北方、東北方吉\""
+    },
+    "altar": {
+      "dirs_hz": [
+        "西",
+        "西北",
+        "東北"
+      ],
+      "dirs_abbr": [
+        "B",
+        "BL",
+        "TL"
+      ],
+      "note_id": "神位 (Altar): \"神位宜安西方、西北方、東北方及本年大利方合吉\""
+    },
+    "kamar_mandi": {
+      "dirs_hz": [
+        "東",
+        "東南",
+        "南"
+      ],
+      "dirs_abbr": [
+        "T",
+        "TG",
+        "S"
+      ],
+      "note_id": "坑廁 (Toilet): \"坑廁安東方、東南方、南方\""
+    }
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "祿存",
+    "shen_zhu_hz": "天梁",
+    "ming_gong_branch_hz": "戌",
+    "shen_gong_branch_hz": "戌",
+    "wu_xing_ju_hz": "火六局",
+    "shi_jun_hz": "辰"
+  },
+  "dm_strength_hz": "旺",
+  "dm_strength_label_id": "Kuat",
+  "dm_pos_score": 5260.0,
+  "dm_neg_score": 3000.0,
+  "xiantian_per_stem": {
+    "jia": 2,
+    "yi": 2,
+    "bing": 1,
+    "ding": 2,
+    "wu": 4,
+    "ji": 1,
+    "geng": 0,
+    "xin": 0,
+    "ren": 0,
+    "gui": 1
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "da_yun_arah_id": "forward",
+  "da_yun_start_age": 3,
+  "shen_sha_list": [
+    {
+      "hanzi": "驛馬",
+      "pillar": null
+    },
+    {
+      "hanzi": "文昌",
+      "pillar": null
+    },
+    {
+      "hanzi": "天醫",
+      "pillar": null
+    }
+  ],
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": {
+    "year": "戊, 丙, 甲",
+    "month": "乙",
+    "day": "癸, 乙, 戊",
+    "hour": "己, 丁"
+  },
+  "_source": "MD via Web Claude (parse_md.py)"
+}

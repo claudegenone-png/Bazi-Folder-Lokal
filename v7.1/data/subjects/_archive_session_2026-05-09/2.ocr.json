@@ -1,0 +1,195 @@
+{
+  "name_id": "Zhuang Xiao Min",
+  "name_hanzi": "莊小敏",
+  "gender_hz": "陰男",
+  "birth_solar": "1961-04-08 13:58",
+  "pillars": {
+    "year": {
+      "stem_hz": "辛",
+      "branch_hz": "丑"
+    },
+    "month": {
+      "stem_hz": "壬",
+      "branch_hz": "辰"
+    },
+    "day": {
+      "stem_hz": "辛",
+      "branch_hz": "未"
+    },
+    "hour": {
+      "stem_hz": "乙",
+      "branch_hz": "未"
+    }
+  },
+  "wuxing": {
+    "jin": 3.0,
+    "shui": 3.0,
+    "mu": 4.0,
+    "huo": 2.0,
+    "tu": 4.0
+  },
+  "yong_shen_hz": "土",
+  "ji_shen_hz": "水",
+  "xi_yong_shen_hz": "金",
+  "xian_shen_hz": "火",
+  "chou_shen_hz": "水",
+  "format_hz": "偏財格",
+  "shi_shen_per_pilar": {
+    "year": "比肩",
+    "month": "傷官",
+    "day": "主",
+    "hour": "偏財"
+  },
+  "liu_nian_predictions": [
+    {
+      "tahun": 2026,
+      "umur": 66,
+      "ganzhi": "丙午",
+      "prose": "Tahun pengorbanan besar; usaha tampak tidak sebanding dengan hasil materi. **Bintang Kematian** (死符) hadir, hindari menjenguk orang sakit berat; jaga kesehatan diri dan keluarga. Hubungan suami-istri rentan renggang sesaat; pasangan belum menikah justru makin mesra. Pekerjaan ada perubahan posisi atau jabatan. Bulan 2, 5, 8 dan 12 paling rawan, banyak doa keselamatan."
+    },
+    {
+      "tahun": 2027,
+      "umur": 67,
+      "ganzhi": "丁未",
+      "prose": "**Bintang Bulan** (太陰) masuk peruntungan, banyak hal baik dan dukungan dari atasan/guru, cita-cita terjangkau. Lingkungan rumah berubah — renovasi, pindah, atau ganti perabot. Sudah menikah hubungan kembali hangat; belum menikah peluang asmara terbuka. Hindari spekulasi, kelola harta dengan hati-hati. Perlu disiplin untuk tidak terjebak rencana terlalu konservatif."
+    }
+  ],
+  "ziwei_su_ming": "Arah hidup Zhuang Xiao Min seperti yang sudah ditakdirkan. Bila istana hidup (命宮) berjaya dan istana raga (身宮) kuat, kehangatan dan kebajikannya membawa banyak keberuntungan; pribadinya hangat, penuh empati. Bila istana berkah lemah, hubungan antar manusia sulit harmonis dan kebajikan mudah surut. Saat itu, kekuatan istana **Hidup** (命宮), **Rezeki** (財帛), dan **Pergerakan** (遷移) ikut menentukan keseluruhan nasib.",
+  "shiye_short": "適業: 建築, 當鋪, 畜牧, 水泥建材, 房地產買賣, 殯儀館, 墓碑石店, 地師, 古董, 顧問, 鋼鐵工廠, 五金行, 採礦, 汽車, 機械, 科學家, 律師, 歌影星, 音樂家, 武術館, 會計, 金融界.",
+  "gushu_quotes": [
+    {
+      "source_hz": "三命通會註",
+      "source_id": "Catatan Sanming Tonghui",
+      "text_hz": "庚辛日主號金干，木火相生福自專，年月時中如會合，東西運步定居官。",
+      "text_id": "Pemilik hari 庚/辛 disebut batang logam. Saat **Kayu** dan **Api** saling membangkitkan, keberuntungan datang sendiri. Bila tahun-bulan-jam saling bertemu, perjalanan ke arah Timur dan Barat akan mengukuhkan jabatan."
+    },
+    {
+      "source_hz": "白虎持勢",
+      "source_id": "Bai Hu Chi Shi (Macan Putih Memegang Kuasa)",
+      "text_hz": "白虎持勢寅卯強，如臨己午未戌郷，四野遇之多富貴，必向皇都作棟樑。",
+      "text_id": "Saat **Macan Putih** memegang kuasa di 寅/卯 kuat, dan datang ke kampung 己/午/未/戌, di empat penjuru ia bertemu kekayaan dan kehormatan, pasti menuju ibu kota menjadi tiang utama."
+    },
+    {
+      "source_hz": "滴天髓",
+      "source_id": "Ditian Sui",
+      "text_hz": "辛金軟弱，溫潤而清，畏土之疊，樂水之盈，能扶社稷，能救生靈，熱則喜母，寒則喜丁。",
+      "text_id": "Logam 辛 lembut dan halus, hangat-jernih sifatnya. Takut **Tanah** yang menumpuk, suka **Air** yang melimpah. Mampu menopang negeri dan menyelamatkan banyak jiwa. Saat panas suka pada Ibu (Tanah baik), saat dingin suka 丁 (Api Yin)."
+    }
+  ],
+  "marriage_cocok_tafsir": "Mendapat jodoh baik, pasti membangun rumah tangga yang berdiri kokoh, kaya raya membuat keluarga makmur, hati lapang membangun usaha bersama, hari tua berlimpah keberkahan, tinggalkan warisan kebajikan untuk anak cucu.",
+  "marriage_hindari_tafsir": "Ada untung ada rugi, manis dan pahit setara, bahagia dan susah bergantian. Paruh pertama hidup tampak bahagia tapi tanpa daya juang, batin penuh kerisauan dan derita; akhirnya rumah tangga bisa berantakan dan gagal.",
+  "da_yun": [
+    {
+      "age_start": 2,
+      "age_end": 11,
+      "stem_hz": "辛",
+      "branch_hz": "卯"
+    },
+    {
+      "age_start": 12,
+      "age_end": 21,
+      "stem_hz": "庚",
+      "branch_hz": "寅"
+    },
+    {
+      "age_start": 22,
+      "age_end": 31,
+      "stem_hz": "己",
+      "branch_hz": "丑"
+    },
+    {
+      "age_start": 32,
+      "age_end": 41,
+      "stem_hz": "戊",
+      "branch_hz": "子"
+    },
+    {
+      "age_start": 42,
+      "age_end": 51,
+      "stem_hz": "丁",
+      "branch_hz": "亥"
+    },
+    {
+      "age_start": 52,
+      "age_end": 61,
+      "stem_hz": "丙",
+      "branch_hz": "戌"
+    },
+    {
+      "age_start": 62,
+      "age_end": 71,
+      "stem_hz": "乙",
+      "branch_hz": "酉"
+    },
+    {
+      "age_start": 72,
+      "age_end": 81,
+      "stem_hz": "甲",
+      "branch_hz": "申"
+    },
+    {
+      "age_start": 82,
+      "age_end": 91,
+      "stem_hz": "癸",
+      "branch_hz": "未"
+    },
+    {
+      "age_start": 92,
+      "age_end": 101,
+      "stem_hz": "壬",
+      "branch_hz": "午"
+    }
+  ],
+  "marriage": {
+    "cocok_branches": [
+      "子",
+      "巳",
+      "酉"
+    ],
+    "hindari_branches": [
+      "辰",
+      "午",
+      "未",
+      "戌"
+    ]
+  },
+  "shio_hz": "牛",
+  "yang_zhai_gua_hz": "震",
+  "zi_wei": {
+    "ming_zhu_hz": "廉貞",
+    "shen_zhu_hz": "天相",
+    "ming_gong_branch_hz": "申",
+    "shen_gong_branch_hz": "戌",
+    "wu_xing_ju_hz": "火六局",
+    "shi_jun_hz": "午"
+  },
+  "dm_strength_hz": "弱",
+  "dm_strength_label_id": "Lemah",
+  "dm_pos_score": 4240.0,
+  "dm_neg_score": 4386.0,
+  "xiantian_per_stem": {
+    "jia": 0,
+    "yi": 4,
+    "bing": 0,
+    "ding": 2,
+    "wu": 1,
+    "ji": 3,
+    "geng": 0,
+    "xin": 3,
+    "ren": 1,
+    "gui": 2
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "da_yun_arah_id": "backward",
+  "da_yun_start_age": 2,
+  "shen_sha_list": [
+    {
+      "hanzi": "早慧",
+      "pillar": null
+    }
+  ],
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": null,
+  "_source": "MD via Web Claude (parse_md.py)"
+}

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Donny A, 先天論命 Lampiran Klasik</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* PAGE-SPECIFIC: Lampiran Klasik (V7 Phase 8) */
+  .content-lampiran {
+    display: grid;
+    grid-template-rows: 92mm 1fr 22mm;
+    gap: 3mm;
+    overflow: hidden;
+  }
+
+  /* === BLOCK 1: 八字秤骨 === */
+  .lp-bone {
+    background: linear-gradient(135deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 2mm;
+    overflow: hidden;
+    position: relative;
+  }
+  .lp-bone-eyebrow {
+    border-bottom: 0.2mm solid var(--gold-soft);
+    padding-bottom: 1.5mm;
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .lp-bone-eyebrow .id {
+    font-family: 'Playfair Display', serif;
+    font-size: 11.5pt; color: var(--red);
+    font-weight: 700; letter-spacing: 1px;
+  }
+  .lp-bone-eyebrow .id .sub {
+    font-family: 'Inter', sans-serif;
+    font-size: 6.5pt; color: var(--text-muted);
+    font-style: italic; font-weight: 400;
+    letter-spacing: 0.5px; margin-left: 2.5mm;
+  }
+  .lp-bone-eyebrow .hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 8.5pt; color: var(--text-muted);
+    font-weight: 600; letter-spacing: 3px;
+  }
+  .lp-bone-intro {
+    font-size: 6.4pt; color: var(--text-muted);
+    line-height: 1.45; font-style: italic;
+    text-align: justify;
+    margin-top: -0.5mm; margin-bottom: 0.5mm;
+  }
+  .lp-bone-intro strong { color: var(--text); font-style: normal; font-weight: 600; }
+  .lp-bone-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) auto;
+    gap: 3mm;
+    align-items: center;
+  }
+  .lp-bone-cell {
+    background: rgba(255,255,255,0.6);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 1.5mm;
+    padding: 2.5mm 2mm;
+    text-align: center;
+    display: flex; flex-direction: column; gap: 0.5mm;
+  }
+  .lp-bone-pilar-label {
+    font-size: 6pt; color: var(--gold);
+    letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600;
+  }
+  .lp-bone-pilar-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 11pt; color: var(--text);
+    font-weight: 600; letter-spacing: 1px;
+    margin-top: 0.5mm;
+  }
+  .lp-bone-pilar-id {
+    font-family: 'Inter', sans-serif;
+    font-size: 5.6pt; color: var(--text-muted);
+    font-style: italic; letter-spacing: 0.2px;
+    line-height: 1.25; margin-top: 0.3mm;
+  }
+  .lp-bone-weight {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 9pt; color: var(--red);
+    font-weight: 700; margin-top: 1mm;
+    border-top: 0.15mm dashed var(--gold-soft);
+    padding-top: 1mm;
+  }
+  .lp-bone-total {
+    background: var(--red);
+    color: white;
+    border-radius: 1.5mm;
+    padding: 3mm 4mm;
+    text-align: center;
+    display: flex; flex-direction: column; gap: 0.5mm;
+    min-width: 28mm;
+  }
+  .lp-bone-total .label {
+    font-family: 'Inter', sans-serif;
+    font-size: 5.5pt; letter-spacing: 1.5px;
+    text-transform: uppercase; opacity: 0.85;
+    font-weight: 600;
+  }
+  .lp-bone-total .label-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 6.8pt; letter-spacing: 1.5px;
+    opacity: 0.7; margin-top: 0.2mm;
+    font-weight: 500;
+  }
+  .lp-bone-total .val-mixed {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 15pt; font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 1.2mm;
+    border-top: 0.2mm dashed rgba(255,255,255,0.35);
+    padding-top: 1.2mm;
+    line-height: 1.1;
+  }
+  .lp-bone-total .val-mixed .num {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700; margin: 0 0.5mm;
+  }
+  .lp-bone-total .val-hz-small {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 7.5pt; opacity: 0.7;
+    margin-top: 0.5mm; letter-spacing: 1px;
+    font-weight: 500;
+  }
+  .lp-bone-poem {
+    background: rgba(255,255,255,0.5);
+    border-left: 0.6mm solid var(--red);
+    padding: 2.5mm 4mm;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 4mm;
+    align-items: center;
+  }
+  .lp-bone-poem-label {
+    display: flex; flex-direction: column; align-items: center;
+    justify-content: center; gap: 0.5mm;
+    min-width: 14mm;
+  }
+  .lp-bone-poem-label .hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 9pt; color: var(--red);
+    font-weight: 700; letter-spacing: 2px;
+  }
+  .lp-bone-poem-label .id {
+    font-family: 'Inter', sans-serif;
+    font-size: 5.5pt; color: var(--text-muted);
+    font-style: italic; letter-spacing: 0.5px;
+  }
+  .lp-bone-poem-body {
+    display: flex; flex-direction: column; gap: 1mm;
+    overflow: hidden;
+  }
+  .lp-bone-poem-lines {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 8pt; color: var(--text);
+    line-height: 1.5; letter-spacing: 0.5px;
+  }
+  .lp-bone-poem-lines span {
+    display: inline-block; margin-right: 4mm;
+  }
+  .lp-bone-poem-id {
+    font-family: 'Inter', sans-serif;
+    font-size: 6.5pt; color: var(--text-muted);
+    line-height: 1.45; font-style: italic;
+    border-top: 0.15mm dashed var(--gold-soft);
+    padding-top: 1mm;
+  }
+  .lp-bone-poem-id span { display: block; }
+  .lp-bone.empty, .lp-quotes.empty, .lp-xiongnian.empty { display: none !important; }
+
+  /* === BLOCK 2: 古書云 Quote Collection — diperbesar (1fr in row) === */
+  .lp-quotes {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 3.5mm 4.5mm;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 2mm;
+    overflow: hidden;
+    min-height: 0;
+  }
+  .lp-quotes-eyebrow {
+    border-bottom: 0.2mm solid var(--gold-soft);
+    padding-bottom: 1.5mm;
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .lp-quotes-eyebrow .id {
+    font-family: 'Playfair Display', serif;
+    font-size: 11.5pt; color: var(--red);
+    font-weight: 700; letter-spacing: 1px;
+  }
+  .lp-quotes-eyebrow .id .sub {
+    font-family: 'Inter', sans-serif;
+    font-size: 6.5pt; color: var(--text-muted);
+    font-style: italic; font-weight: 400;
+    letter-spacing: 0.5px; margin-left: 2.5mm;
+  }
+  .lp-quotes-eyebrow .hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 8.5pt; color: var(--text-muted);
+    font-weight: 600; letter-spacing: 3px;
+  }
+  .lp-quotes-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5mm 4mm;
+    align-content: start;
+    overflow: hidden;
+    min-height: 0;
+  }
+  .lp-quote {
+    display: grid;
+    grid-template-columns: 18mm 1fr;
+    gap: 2.5mm;
+    align-items: start;
+  }
+  .lp-quote-source {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 7.5pt; color: var(--gold);
+    font-weight: 700; letter-spacing: 0.5px;
+    border-right: 0.3mm solid var(--gold-soft);
+    padding-right: 2mm; text-align: right;
+    line-height: 1.3;
+  }
+  .lp-quote-body {
+    display: flex; flex-direction: column; gap: 0.8mm;
+    min-width: 0;
+  }
+  .lp-quote-source-id {
+    font-family: 'Inter', sans-serif;
+    font-size: 5.8pt; color: var(--text-muted);
+    font-style: italic; letter-spacing: 0.2px;
+    margin-top: 0.2mm;
+  }
+  .lp-quote-text {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 7pt; color: var(--text);
+    line-height: 1.4; letter-spacing: 0.3px;
+  }
+  .lp-quote-text-id {
+    font-family: 'Inter', sans-serif;
+    font-size: 6.3pt; color: var(--text-muted);
+    line-height: 1.4; font-style: italic;
+  }
+
+  /* === BLOCK 3: 凶年 strip — compact ride dibawah quotes === */
+  .lp-xiongnian {
+    background: rgba(139,26,26,0.05);
+    border: 0.3mm solid rgba(139,26,26,0.3);
+    border-radius: 2mm;
+    padding: 2.2mm 4mm;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 4mm;
+    align-items: center;
+    overflow: hidden;
+  }
+  .lp-xn-label {
+    display: flex; flex-direction: column; gap: 0.3mm;
+    border-right: 0.3mm solid rgba(139,26,26,0.25);
+    padding-right: 3mm;
+  }
+  .lp-xn-label .hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 9.5pt; color: var(--red);
+    font-weight: 700; letter-spacing: 1.5px; line-height: 1;
+  }
+  .lp-xn-label .id {
+    font-size: 5.8pt; color: var(--text-muted);
+    font-style: italic; letter-spacing: 0.3px; line-height: 1.1;
+  }
+  .lp-xn-badges {
+    display: flex; flex-wrap: wrap; gap: 1.5mm;
+    align-items: center;
+  }
+  .lp-xn-badge {
+    background: white;
+    border: 0.3mm solid var(--red);
+    border-radius: 3mm;
+    padding: 0.6mm 2.8mm;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 7.8pt; color: var(--red);
+    font-weight: 700; letter-spacing: 0.3px;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  .lp-xn-note { display: none; }
+</style>
+</head>
+<body>
+<section class="page">
+
+  <!-- KEPALA -->
+  <header class="page-header">
+    <div class="h-num">15</div>
+    <div class="h-titles">
+      <div class="h-cn"></div>
+      <div class="h-id">Informasi Tambahan</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi · Informasi Tambahan</div>
+  </header>
+
+  <!-- BAR SUBJEK -->
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Harimau-Merah.svg" alt="Harimau"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Donny A · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">寅 Harimau</span></div>
+      <div class="subject-detail">28 Maret 1974 · 12:00 · Pria · 民國 63 年 3 月 5 日</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label"></div>
+      <div class="value">Informasi Tambahan</div>
+    </div>
+  </div>
+
+  <!-- KONTEN -->
+  <main class="content content-lampiran">
+
+    <!-- BLOCK 1: 八字秤骨 -->
+    <div class="lp-bone" data-slot="bone">
+      <div class="lp-bone-eyebrow">
+        <span class="id">Berat Tulang Nasib<span class="sub">Bā Zì Chèng Gǔ</span></span>
+        <span class="hz">八 字 秤 骨</span>
+      </div>
+      <div class="lp-bone-intro">
+        Metode klasik dari Dinasti Tang yang dikaitkan dengan <strong>Yuan Tian-Gang</strong>: menimbang nasib hidup dengan memberi berat ke tiap pilar (年/月/日/時). Total berat menjadi indikator kualitas nasib — tiap angka punya puisi 詩曰 unik yang menggambarkan jalan hidup. Range umum 2 — 7 兩. <strong>Makin berat tidak otomatis lebih baik</strong>, tapi tiap kombinasi punya warna nasib khas. Total bobot subjek <strong>5 兩 6 錢</strong> masuk rentang <strong>5 — 6 兩</strong> — nasib makmur, dihormati banyak orang, banyak pendukung di sekitar.
+      </div>
+      <div class="lp-bone-grid">
+        <div class="lp-bone-cell" data-pilar="year">
+          <div class="lp-bone-pilar-label">年 Tahun</div>
+          <div class="lp-bone-pilar-hz">甲寅</div>
+          <div class="lp-bone-pilar-id">Kayu Yang · Harimau</div>
+          <div class="lp-bone-weight">一兩二錢</div>
+        </div>
+        <div class="lp-bone-cell" data-pilar="month">
+          <div class="lp-bone-pilar-label">月 Bulan</div>
+          <div class="lp-bone-pilar-hz">丁卯</div>
+          <div class="lp-bone-pilar-id">Api Yin · Kelinci</div>
+          <div class="lp-bone-weight">一兩八錢</div>
+        </div>
+        <div class="lp-bone-cell" data-pilar="day">
+          <div class="lp-bone-pilar-label">日 Hari</div>
+          <div class="lp-bone-pilar-hz">戊辰</div>
+          <div class="lp-bone-pilar-id">Tanah Yang · Naga</div>
+          <div class="lp-bone-weight">一兩六錢</div>
+        </div>
+        <div class="lp-bone-cell" data-pilar="hour">
+          <div class="lp-bone-pilar-label">時 Jam</div>
+          <div class="lp-bone-pilar-hz">戊午</div>
+          <div class="lp-bone-pilar-id">Tanah Yang · Kuda</div>
+          <div class="lp-bone-weight">一兩</div>
+        </div>
+        <div class="lp-bone-total">
+          <div class="label">Bobot Timbangan</div>
+          <div class="label-hz">秤骨輕重</div>
+          <div class="val-mixed"><span class="num">5</span>兩 <span class="num">6</span>錢</div>
+          <div class="val-hz-small">五兩六錢</div>
+        </div>
+      </div>
+      <div class="lp-bone-poem">
+        <div class="lp-bone-poem-label">
+          <span class="hz">詩 曰</span>
+          <span class="id">Puisi Berkata</span>
+        </div>
+        <div class="lp-bone-poem-body">
+          <div class="lp-bone-poem-lines" data-slot="bone-poem"><span>此格推來禮義通\n一生福祿用無窮\n甜酸苦辣皆嘗過\n財源滾滾種且豐</span></div>
+          <div class="lp-bone-poem-id" data-slot="bone-poem-id"><span>Format ini menunjukkan etika dan tata krama yang lurus. Sepanjang hidup berkah dan rezeki tak pernah habis. Pernah mengecap manis-asam-pahit-pedas kehidupan. Sumber rezeki mengalir berlimpah.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCK 2: 古書云 -->
+    <div class="lp-quotes" data-slot="quotes">
+      <div class="lp-quotes-eyebrow">
+        <span class="id">Kutipan Klasik<span class="sub">Gǔ Shū Yún</span></span>
+        <span class="hz">古 書 云</span>
+      </div>
+      <div class="lp-quotes-list" data-slot="quotes-list">
+                <div class="lp-quote"><div class="lp-quote-source">三命通會註<div class="lp-quote-source-id">Catatan Sanming Tonghui</div></div><div class="lp-quote-body"><div class="lp-quote-text">戊己日干尋水木, 柱中原有還為福, 運臨北野及東方, 德潤身令富潤屋.</div><div class="lp-quote-text-id">Hari <span class="hz">戊</span>/<span class="hz">己</span> mencari Air (<span class="hz">水</span>) dan Kayu (<span class="hz">木</span>). Jika sudah ada di pilar, itu berkah. Saat peruntungan menuju Utara dan Timur, kebajikan membasahi tubuh, kekayaan melimpahi rumah.</div></div></div>
+        <div class="lp-quote"><div class="lp-quote-source">勻陳得位<div class="lp-quote-source-id">Yún Chén Dé Wèi</div></div><div class="lp-quote-body"><div class="lp-quote-text">戊己勻陳在旺鄉, 寅卯之宮號最強, 若是更臨辰卯未, 亥子相逢大吉昌.</div><div class="lp-quote-text-id">Tanah (<span class="hz">戊</span>/<span class="hz">己</span>) stabil berada di tempat berjaya. Di istana <span class="hz">寅</span> dan <span class="hz">卯</span> dianggap paling kuat. Ditambah bertemu <span class="hz">辰</span>/<span class="hz">卯</span>/<span class="hz">未</span>, atau berjumpa <span class="hz">亥</span>/<span class="hz">子</span>, itu sangat berkah dan cerah.</div></div></div>
+        <div class="lp-quote"><div class="lp-quote-source">又云<div class="lp-quote-source-id">Yòu Yún</div></div><div class="lp-quote-body"><div class="lp-quote-text">日干戊己坐財官, 號曰勻陳得位官, 知有大才分瑞氣, 命中值此列朝班.</div><div class="lp-quote-text-id">Hari <span class="hz">戊</span>/<span class="hz">己</span> duduk di atas bintang harta dan jabatan (<span class="hz">財官</span>), disebut Tanah Stabil Mendapat Posisi Pejabat. Berbakat besar, nasib seperti ini masuk barisan istana.</div></div></div>
+        <div class="lp-quote"><div class="lp-quote-source">滴天髓<div class="lp-quote-source-id">Dī Tiān Suǐ</div></div><div class="lp-quote-body"><div class="lp-quote-text">戊土固重, 既中且正, 靜翕重鄘氣, 萬物司命, 水潤物生, 火燥物病, 若在艮坤, 怕沖宜靜.</div><div class="lp-quote-text-id">Tanah <span class="hz">戊</span> padat dan berat, ada di tengah dan lurus. Tenang menyerap energi besar, jadi pengatur jalannya seribu wujud. Air membasahi membuat tumbuh, api kering membuat sakit. Jika di <span class="hz">艮</span> atau <span class="hz">坤</span>, takut benturan, lebih baik tetap tenang.</div></div></div>
+        <div class="lp-quote"><div class="lp-quote-source">詩曰<div class="lp-quote-source-id">Shī Yuē</div></div><div class="lp-quote-body"><div class="lp-quote-text">卯木獨韃氣稟深, 仲春難道不嫌金, 庚金疊見愁申酉, 亥子重來忌壬癸, 禍見六沖隨落葉, 喜逢三合便成林.</div><div class="lp-quote-text-id">Kayu <span class="hz">卯</span> yang menyendiri membawa energi dalam. Pertengahan musim semi sulit tidak khawatir dengan Logam (<span class="hz">金</span>). Bencana datang saat enam benturan (<span class="hz">六沖</span>) seperti daun gugur. Kegembiraan datang saat tiga harmoni (<span class="hz">三合</span>), seperti hutan terbentuk.</div></div></div>
+      </div>
+    </div>
+
+    <!-- BLOCK 3: 凶年 -->
+    <div class="lp-xiongnian" data-slot="xiongnian">
+      <div class="lp-xn-label">
+        <span class="hz">凶 年</span>
+        <span class="id">Tahun Hati-Hati</span>
+      </div>
+      <div class="lp-xn-badges" data-slot="xn-badges">
+                <span class="lp-xn-badge">Umur 13</span>
+        <span class="lp-xn-badge">Umur 24</span>
+        <span class="lp-xn-badge">Umur 32</span>
+        <span class="lp-xn-badge">Umur 36</span>
+        <span class="lp-xn-badge">Umur 49</span>
+        <span class="lp-xn-badge">Umur 78</span>
+      </div>
+      <div class="lp-xn-note">
+        Daftar umur dari kitab klasik 先天論命 — masa di mana energi rentan, perlu kewaspadaan ekstra terhadap kesehatan, finansial, dan hubungan. Bukan vonis, melainkan pengingat untuk menjaga keseimbangan.
+      </div>
+    </div>
+
+  </main>
+
+  <!-- KAKI -->
+  <footer class="footer">
+    <div class="footer-meta">
+      <span>Halaman 15 / 35</span>
+      <span>Ramalan 命</span>
+    </div>
+  </footer>
+
+</section>
+
+<script>
+/* Auto-shrink-to-fit untuk page_16 lampiran:
+   .lp-quotes (古書云) bisa overflow karena teks klasik panjang variabel.
+   .lp-xiongnian (凶年) jaga-jaga kalau badge banyak.
+   Strategi: ukur scrollHeight vs clientHeight; kalau overflow, shrink font-size
+   semua text descendants secara proporsional sampai muat (atau hit min cap). */
+(function () {
+  function shrinkToFit(container, descendantSelectors, opts) {
+    if (!container) return;
+    var minFactor = (opts && opts.minFactor) || 0.55;
+    var step = (opts && opts.step) || 0.04;
+    var els = [];
+    descendantSelectors.forEach(function (sel) {
+      container.querySelectorAll(sel).forEach(function (e) { els.push(e); });
+    });
+    if (!els.length) return;
+    /* Snapshot original computed font-size */
+    els.forEach(function (e) {
+      if (!e.dataset.origFs) {
+        e.dataset.origFs = parseFloat(window.getComputedStyle(e).fontSize);
+      }
+    });
+    var factor = 1.0;
+    var safety = 0;
+    function overflows() {
+      return container.scrollHeight > container.clientHeight + 1
+          || container.scrollWidth  > container.clientWidth  + 1;
+    }
+    while (overflows() && factor > minFactor && safety < 40) {
+      factor -= step;
+      els.forEach(function (e) {
+        var orig = parseFloat(e.dataset.origFs);
+        e.style.fontSize = (orig * factor).toFixed(2) + 'px';
+      });
+      safety++;
+    }
+  }
+
+  function run() {
+    /* Block 古書云: shrink semua teks dalam .lp-quotes-list */
+    shrinkToFit(
+      document.querySelector('.lp-quotes-list'),
+      ['.lp-quote-source', '.lp-quote-source-id',
+       '.lp-quote-text', '.lp-quote-text-id'],
+      { minFactor: 0.62, step: 0.04 }
+    );
+    /* Block 凶年: shrink badge fonts kalau melebar / overflow vertical */
+    shrinkToFit(
+      document.querySelector('.lp-xiongnian'),
+      ['.lp-xn-badge', '.lp-xn-label .hz', '.lp-xn-label .id'],
+      { minFactor: 0.7, step: 0.05 }
+    );
+  }
+
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    run();
+  } else {
+    window.addEventListener('DOMContentLoaded', run);
+  }
+  /* Run lagi setelah load untuk handle font/asset late-load */
+  window.addEventListener('load', run);
+})();
+</script>
+</body>
+</html>

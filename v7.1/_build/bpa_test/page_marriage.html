@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>BPA, 婚配 Kompatibilitas Jodoh</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* V7 Phase 7 — Marriage prose box (kecil, di bawah shio list) */
+.compat-card{display:flex!important;flex-direction:column;min-height:0!important;overflow:hidden!important;}
+.compat-card .compat-title{flex-shrink:0;}
+.compat-card .shio-list{flex-shrink:0;}
+.compat-prose-v7{font-size:4.8pt;line-height:1.3;padding:1.2mm 2mm;border-radius:1mm;margin-top:1.2mm;text-align:justify;flex:0 0 auto;max-height:24mm;overflow:hidden;display:-webkit-box;-webkit-line-clamp:9;-webkit-box-orient:vertical;-webkit-box-pack:start;}
+.compat-prose-v7.good{background:rgba(90,140,74,0.08);border-left:0.3mm solid var(--green);color:var(--text);}
+.compat-prose-v7.bad{background:rgba(160,52,52,0.08);border-left:0.3mm solid var(--red-bad);color:var(--text);}
+.compat-prose-v7 *{font-size:inherit!important;}
+</style>
+</head>
+<body>
+<section class="page">
+
+  <!-- KEPALA -->
+  <header class="page-header">
+    <div class="h-num">07</div>
+    <div class="h-titles">
+      <div class="h-cn">婚 配</div>
+      <div class="h-id">Kompatibilitas Jodoh</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <!-- BAR SUBJEK -->
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Ular-Merah.svg" alt="Ular"></div>
+    <div class="subject-meta">
+      <div class="subject-name">BPA · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">巳 Ular</span></div>
+      <div class="subject-detail">28 Februari 2001 · 09:46 · Pria · Umur 26 tahun</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">壬水 · Air Sungai</div>
+    </div>
+  </div>
+
+  <!-- KONTEN -->
+  <main class="content content-marriage">
+
+    <!-- BINGKAI RODA -->
+    <div class="wheel-frame">
+      <div class="wheel-svg">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <!-- Lingkaran latar -->
+          <circle cx="200" cy="200" r="180" fill="none" stroke="#E5D3A1" stroke-width="0.5"/>
+          <circle cx="200" cy="200" r="170" fill="#FFFEF8" stroke="#E5D3A1" stroke-width="0.5"/>
+          <circle cx="200" cy="200" r="115" fill="none" stroke="#E5D3A1" stroke-width="0.4" stroke-dasharray="2,2"/>
+
+          <!-- Salib kompas -->
+          <line x1="200" y1="30" x2="200" y2="370" stroke="#E5D3A1" stroke-width="0.3" stroke-dasharray="1,3"/>
+          <line x1="30" y1="200" x2="370" y2="200" stroke="#E5D3A1" stroke-width="0.3" stroke-dasharray="1,3"/>
+
+          <!-- Relationship lines (drawn before badges) -->
+          <!-- Pair 巳-丑 (green solid) -->
+          <line x1="272.5" y1="325.6" x2="272.5" y2="74.4"
+            stroke="#2D6A4F" stroke-width="2.2"/>
+          <!-- Clash 巳-寅 (red dashed) -->
+          <line x1="272.5" y1="325.6" x2="325.6" y2="127.5"
+            stroke="#A03434" stroke-width="1.5" stroke-dasharray="6,3"/>
+          <!-- Clash 巳-申 (red dashed) -->
+          <line x1="272.5" y1="325.6" x2="74.4" y2="272.5"
+            stroke="#A03434" stroke-width="1.5" stroke-dasharray="6,3"/>
+          <!-- Clash 巳-亥 (red dashed) -->
+          <line x1="272.5" y1="325.6" x2="127.5" y2="74.4"
+            stroke="#A03434" stroke-width="1.5" stroke-dasharray="6,3"/>
+
+          <!-- Pusat -->
+          <circle cx="200" cy="200" r="22" fill="#FFFEF8" stroke="#C9A961" stroke-width="1"/>
+          <text x="200" y="194" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="11" fill="#8B1A1A" font-weight="600">本命</text>
+          <text x="200" y="208" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#6B5B3F" letter-spacing="1">ANDA</text>
+
+          <!-- 12 badge shio -->
+          <!-- i=0 子 Tikus (neutral) -->
+          <g>
+            <circle cx="200" cy="55" r="20" fill="#F5EBD0" stroke="#D8C896" stroke-width="0.8"/>
+            <image href="Tikus-Hitam.svg" x="183" y="38" width="34" height="34" opacity="0.6"/>
+            <text x="200" y="22" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#6B5B3F">子</text>
+          </g>
+          <!-- i=1 丑 Kerbau (PAIR, 巳-丑 六合) -->
+          <g>
+            <circle cx="272.5" cy="74.4" r="22" fill="#D4EDDA" stroke="#2D6A4F" stroke-width="2.2"/>
+            <image href="Kerbau-Merah.svg" x="253.5" y="55.4" width="38" height="38"/>
+            <text x="295" y="46" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#2D6A4F" font-weight="700">丑</text>
+          </g>
+          <!-- i=2 寅 Harimau (CLASH, 巳-寅 六沖) -->
+          <g>
+            <circle cx="325.6" cy="127.5" r="22" fill="#F4DCDC" stroke="#A03434" stroke-width="1.8"/>
+            <image href="Harimau-Merah.svg" x="306.6" y="108.5" width="38" height="38"/>
+            <text x="368" y="100" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#A03434" font-weight="600">寅</text>
+          </g>
+          <!-- i=3 卯 Kelinci (neutral) -->
+          <g>
+            <circle cx="345" cy="200" r="20" fill="#F5EBD0" stroke="#D8C896" stroke-width="0.8"/>
+            <image href="Kelinci-Hitam.svg" x="328" y="183" width="34" height="34" opacity="0.6"/>
+            <text x="382" y="204" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#6B5B3F">卯</text>
+          </g>
+          <!-- i=4 辰 Naga (neutral) -->
+          <g>
+            <circle cx="325.6" cy="272.5" r="20" fill="#F5EBD0" stroke="#D8C896" stroke-width="0.8"/>
+            <image href="Naga-Hitam.svg" x="308.6" y="255.5" width="34" height="34" opacity="0.6"/>
+            <text x="368" y="306" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#6B5B3F">辰</text>
+          </g>
+          <!-- i=5 巳 Ular (DIRI) -->
+          <g>
+            <circle cx="272.5" cy="325.6" r="30" fill="#FF8C42" stroke="#000000" stroke-width="2.5"/>
+            <image href="Ular-Merah.svg" x="246.5" y="299.6" width="52" height="52"/>
+            <text x="305.125" y="372.58" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="17" fill="#FF8C42" font-weight="700">巳</text>
+          </g>
+          <!-- i=6 午 Kuda (neutral) -->
+          <g>
+            <circle cx="200" cy="345" r="20" fill="#F5EBD0" stroke="#D8C896" stroke-width="0.8"/>
+            <image href="Kuda-Hitam.svg" x="183" y="328" width="34" height="34" opacity="0.6"/>
+            <text x="200" y="382" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#6B5B3F">午</text>
+          </g>
+          <!-- i=7 未 Kambing (neutral) -->
+          <g>
+            <circle cx="127.5" cy="325.6" r="20" fill="#F5EBD0" stroke="#D8C896" stroke-width="0.8"/>
+            <image href="Kambing-Hitam.svg" x="110.5" y="308.6" width="34" height="34" opacity="0.6"/>
+            <text x="105" y="362" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#6B5B3F">未</text>
+          </g>
+          <!-- i=8 申 Monyet (CLASH, 巳-申 六沖) -->
+          <g>
+            <circle cx="74.4" cy="272.5" r="22" fill="#F4DCDC" stroke="#A03434" stroke-width="1.8"/>
+            <image href="Monyet-Merah.svg" x="55.4" y="253.5" width="38" height="38"/>
+            <text x="32" y="306" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#A03434" font-weight="600">申</text>
+          </g>
+          <!-- i=9 酉 Ayam (neutral) -->
+          <g>
+            <circle cx="55" cy="200" r="20" fill="#F5EBD0" stroke="#D8C896" stroke-width="0.8"/>
+            <image href="Ayam-Hitam.svg" x="38" y="183" width="34" height="34" opacity="0.6"/>
+            <text x="22" y="204" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#6B5B3F">酉</text>
+          </g>
+          <!-- i=10 戌 Anjing (neutral) -->
+          <g>
+            <circle cx="74.4" cy="127.5" r="20" fill="#F5EBD0" stroke="#D8C896" stroke-width="0.8"/>
+            <image href="Anjing-Hitam.svg" x="57.4" y="110.5" width="34" height="34" opacity="0.6"/>
+            <text x="32" y="100" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#6B5B3F">戌</text>
+          </g>
+          <!-- i=11 亥 Babi (CLASH, 巳-亥 六沖) -->
+          <g>
+            <circle cx="127.5" cy="74.4" r="22" fill="#F4DCDC" stroke="#A03434" stroke-width="1.8"/>
+            <image href="Babi-Merah.svg" x="108.5" y="55.4" width="38" height="38"/>
+            <text x="85" y="42" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="13" fill="#A03434" font-weight="600">亥</text>
+          </g>
+        </svg>
+      </div>
+
+      <!-- LEGENDA -->
+      <div class="wheel-legend">
+        <div class="legend-title">Hubungan</div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#FF8C42;border-color:#000000;border-width:0.5mm"></div>
+          <div class="lbl"><span class="cn" style="color:#FF8C42;font-weight:700">本命 巳</span><span class="id">DIRI ANDA</span></div>
+        </div>
+        <div class="legend-item">
+          <svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#2D6A4F" stroke-width="2.2"/></svg>
+          <div class="lbl"><span class="cn">大吉 Dà Jí</span><span class="id">SANGAT COCOK</span></div>
+        </div>
+        <div class="legend-item">
+          <svg class="legend-line" width="22" height="10" viewBox="0 0 22 10"><line x1="1" y1="5" x2="21" y2="5" stroke="#A03434" stroke-width="2.0" stroke-dasharray="6,3"/></svg>
+          <div class="lbl"><span class="cn">Hindari</span><span class="id">RISIKO BENTROK</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRID KOMPATIBILITAS -->
+    <div class="compat-grid">
+      <!-- COCOK -->
+      <div class="compat-card good">
+        <div class="compat-title">
+          <span class="badge">宜 COCOK</span>
+          <span style="color:var(--green);">Pasangan Selaras</span>
+        </div>
+        <div class="shio-list">
+          <div class="shio-row">
+            <div class="icon"><img src="Kerbau-Merah.svg" alt="Kerbau"></div>
+            <div class="info">
+              <div class="name"><span class="hz">丑</span>Kerbau<span class="tag">大吉 · SANGAT COCOK</span></div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="compat-prose-v7 good"><strong>Sangat cocok</strong> (<span class="hz">大吉</span>): shio <strong>Kerbau</strong> (<span class="hz">丑</span>). Perpaduan yang membawa keharmonisan, kecerdasan dan keberanian (<span class="hz">智勇雙全</span>), tekad yang kokoh, keberhasilan usaha, serta nama dan materi yang lengkap, sehingga hidup bahagia dan berkecukupan (<span class="hz">名利俱全, 一生幸福富貴</span>). Shio lain di luar daftar hindari secara umum tergolong cocok tingkat dua (<span class="hz">次吉</span>).</div>
+      </div>
+
+      <!-- HINDARI -->
+      <div class="compat-card bad">
+        <div class="compat-title">
+          <span class="badge">忌 HINDARI</span>
+          <span style="color:var(--red-bad);">Berisiko Bentrok</span>
+        </div>
+        <div class="shio-list">
+          <div class="shio-row">
+            <div class="icon"><img src="Harimau-Merah.svg" alt="Harimau"></div>
+            <div class="info">
+              <div class="name"><span class="hz">寅</span>Harimau<span class="tag">HINDARI</span></div>
+            </div>
+          </div>
+          <div class="shio-row">
+            <div class="icon"><img src="Monyet-Merah.svg" alt="Monyet"></div>
+            <div class="info">
+              <div class="name"><span class="hz">申</span>Monyet<span class="tag">HINDARI</span></div>
+            </div>
+          </div>
+          <div class="shio-row">
+            <div class="icon"><img src="Babi-Merah.svg" alt="Babi"></div>
+            <div class="info">
+              <div class="name"><span class="hz">亥</span>Babi<span class="tag">HINDARI</span></div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="compat-prose-v7 bad"><strong>Hindari</strong> (<span class="hz">忌</span>): shio <strong>Macan</strong> (<span class="hz">寅</span>), <strong>Monyet</strong> (<span class="hz">申</span>), dan <strong>Babi</strong> (<span class="hz">亥</span>). Rumah tangga kurang mesra dan minim tutur sayang, keturunan sedikit, musibah datang bertubi-tubi (<span class="hz">災厄禍百端</span>), dan masa tua kurang baik (<span class="hz">晚景不祥</span>).</div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- KAKI -->
+  <footer class="footer">
+    <div class="footer-meta">
+      <span>Halaman 7 / 37</span>
+    </div>
+  </footer>
+
+</section>
+</body>
+</html>

@@ -1,0 +1,433 @@
+{
+  "name_id": "Leonardo",
+  "gender_hz": "陽男",
+  "birth_solar": "1994-07-21 11:15",
+  "pillars": {
+    "year": {
+      "stem_hz": "甲",
+      "branch_hz": "戌"
+    },
+    "month": {
+      "stem_hz": "辛",
+      "branch_hz": "未"
+    },
+    "day": {
+      "stem_hz": "戊",
+      "branch_hz": "申"
+    },
+    "hour": {
+      "stem_hz": "戊",
+      "branch_hz": "午"
+    }
+  },
+  "wuxing": {
+    "jin": 3.0,
+    "shui": 1.0,
+    "mu": 2.0,
+    "huo": 3.0,
+    "tu": 6.0
+  },
+  "yong_shen_hz": "金",
+  "ji_shen_hz": "土",
+  "xi_yong_shen_hz": "水",
+  "xian_shen_hz": "木",
+  "chou_shen_hz": "火",
+  "format_hz": "羊刃格",
+  "shi_shen_per_pilar": {
+    "year": "七殺",
+    "month": "傷官",
+    "day": "主",
+    "hour": "比肩"
+  },
+  "ming_gong_bazi": "戊辰",
+  "canggan_shi_shen": {
+    "year": [
+      {
+        "stem": "丁",
+        "ten_god": "正印"
+      },
+      {
+        "stem": "辛",
+        "ten_god": "傷官"
+      },
+      {
+        "stem": "戊",
+        "ten_god": "比肩"
+      }
+    ],
+    "month": [
+      {
+        "stem": "乙",
+        "ten_god": "正官"
+      },
+      {
+        "stem": "丁",
+        "ten_god": "正印"
+      },
+      {
+        "stem": "己",
+        "ten_god": "劫財"
+      }
+    ],
+    "day": [
+      {
+        "stem": "戊",
+        "ten_god": "比肩"
+      },
+      {
+        "stem": "壬",
+        "ten_god": "偏財"
+      },
+      {
+        "stem": "庚",
+        "ten_god": "食神"
+      }
+    ],
+    "hour": [
+      {
+        "stem": "己",
+        "ten_god": "劫財"
+      },
+      {
+        "stem": "丁",
+        "ten_god": "正印"
+      }
+    ]
+  },
+  "liu_nian_predictions": [
+    {
+      "tahun": 2026,
+      "umur": 33,
+      "ganzhi": "丙午",
+      "prose": "Segala urusan tahun ini di permukaan tampak biasa-biasa saja dan belum sebanding dengan hasil materi. Perlu hati-hati, urusan menjengkelkan banyak datang, dukungan tersembunyi minim, ideal sulit dicapai. Suasana hati ditekan dan kurang stabil. Karier bergeser, lebih baik tidak melakukan perubahan besar. Lingkungan turut berubah karena faktor luar. Bintang 白虎 datang: pintu depan menolak macan, pintu belakang dimasuki serigala. Bintang 天喜: pertemuan bintang sukacita, ada urusan menggembirakan di rumah saat musim semi, banyak rencana berhasil; namun waspadai bahaya bencana darah. Bagi wanita waspada urusan kandungan, hindari bulan 1/4/7 atau 11. Suasana hati sering condong angkuh dan terlalu percaya diri, bertindak sepihak, menghadapi kesulitan tidak mau menunduk; bercita-cita besar, suka menonjol, ingin menang sendiri."
+    },
+    {
+      "tahun": 2027,
+      "umur": 34,
+      "ganzhi": "丁未",
+      "prose": "Segala urusan di permukaan tampak biasa, belum sebanding hasil materi. Hati-hati pertemuan saudara dan kawan; ideal sulit dicapai. Suasana hati kurang stabil. Karier berubah atau jabatan bergeser. Bintang 福德: berkah menambah, naik pangkat, perbaikan, banyak peluang tanah/properti, segala urusan baik dicari. Bintang 喪門: bertemu bintang takdir tidak menentu, mungkin ada hal tak terduga; layani tanpa kenal lelah, lepas dari musibah dengan tenang. Waspada penyakit, tahun musibah; hati-hati 4/7/8, jaga air dan api. Sifat kurang tegas, kurang berani mengambil sikap; cenderung pendiam dan lembut, mengabdi pada mertua dengan penuh hormat."
+    },
+    {
+      "tahun": 2028,
+      "umur": 35,
+      "ganzhi": "戊申",
+      "prose": "Mampu memikirkan segala hal, harus pandai menangkap waktu, banyak menggunakan otak, pasti dapat mencapai ideal. Usaha tahun ini di permukaan belum sebanding hasil. Yang sudah menikah ada gesekan kecil rumah tangga; yang belum menikah mulai membangun perasaan. Bintang 吊客: berduka, melayani senior, urusan administrasi muncul, bintang darah hadir, mulut waspada bencana. Bintang 陽德: bintang Yang menambah cahaya, urusan sukacita berlimpah, segala kebajikan dilakukan dengan lancar. Hindari bulan 4/7 atau 11. Tubuh dan jiwa tipis lemah, penampilan luar tampak kurang sehat namun sebenarnya tidak sakit. Kurang cocok pekerjaan fisik berat, hubungan dengan orang tua agak hambar; namun simpati cukup besar dan dermawan pada sesama."
+    },
+    {
+      "tahun": 2029,
+      "umur": 36,
+      "ganzhi": "己酉",
+      "prose": "Mampu memikirkan segala hal, perlu menangkap waktu dan banyak gunakan otak, pasti dapat mencapai ideal. Usaha tahun ini belum sebanding hasil. Bintang 病符: bintang penyakit masuk, gangguan kesehatan/karier muncul, musibah datang; berdoa kepada Buddha mohon perlindungan. Bintang 錦繡: hidup bertabur bintang sukacita, mendapat keturunan, segala urusan seperti diberkati. Waspada bulan 3/6/9 atau 12. Sifat cenderung tergesa, kurang ketegasan; segala urusan ragu-ragu sulit putuskan; sangat cerdas namun suka berdebat hingga melelahkan diri. Pasangan dingin, hubungan mudah berubah, sulit menua bersama, sebagian besar menikah kembali."
+    },
+    {
+      "tahun": 2031,
+      "umur": 38,
+      "ganzhi": "辛亥",
+      "prose": "Apa yang dipikirkan tahun ini di permukaan dapat berpadu dengan materi. Dapat memperoleh semua kesempatan, secara nyata mencapai ideal. Suasana hati ditekan, kurang stabil. Bintang 太陽: bintang matahari masuk, segala hal harmonis, yin-yang tanpa cacat, berkah dan rezeki melimpah. Bintang 福德: bintang berkah masuk, jadi orang berhati baik banyak amal, dipercayakan rezeki orang banyak, rezeki di senja hari mengungguli masa muda. Hindari bulan 2/4/8 atau 11. Sifat cepat dan panas, sering tergesa, ada kepala tak ada ekor, suka baru bosan lama; impulsif, kurang dalam berpikir, mudah dibohongi, mudah lupa diri; kerap salah langkah hingga gagal, namun selalu ada keberuntungan lahir dari ujung kebuntuan."
+    }
+  ],
+  "ziwei_su_ming": "Gerak Leonardo agak lamban, sebab cocok dan tidaknya nasib bawaan sejak lahir mungkin pengaruhnya berkurang. Bila istana hidupnya kuat, ia mampu memanfaatkan bakat dan takdirnya untuk perkembangan yang gemilang; namun bila istana hidup lemah, sulit mengharapkan keberhasilan besar. Pada saat itu, kekuatan-lemahnya istana perpindahan ([[遷移宮]]), istana rezeki ([[財帛宮]]), dan istana karier ([[官祿宮]]) ikut menentukan arah hidup.",
+  "jie_e_palace_hz": "易患呼吸器官，特別是肺部的疾病。以及消化器官，特別是大腸的疾病。終您一生，疾病或受傷的機會較他人更少吧！如與巨門同宮，或與天梁星同宮，且又有其他凶星同宮的話，恐有罹患心臟病之虞。健康良好，如位於巳、申、亥之宮內，或與凶星同宮的話，須注意從胃部為始的腹部疾病。",
+  "jie_e_palace_id": "Leonardo cenderung mudah terkena gangguan organ pernapasan, khususnya penyakit pada paru-paru; serta gangguan organ pencernaan, terutama penyakit pada usus besar. Sepanjang hidup, peluang sakit atau cedera tergolong lebih sedikit dibanding orang lain. Namun bila istana kesehatan ditemani [[巨門]] atau [[天梁]], ditambah bintang buruk lain, ada risiko penyakit jantung. Bila istana kesehatan berada di posisi [[巳]], [[申]], atau [[亥]], atau ditemani bintang buruk, ia perlu waspada penyakit perut yang berawal dari lambung.",
+  "jie_e_organ_focus_id": "Yang utama wajib dijaga: kesehatan paru-paru dan usus besar, serta lambung dan organ-organ pencernaan lain.",
+  "gushu_quotes": [
+    {
+      "source_hz": "三命通會註",
+      "source_id": "San Ming Tong Hui Zhu",
+      "text_hz": "戊己日干平等水末，柱中原有遇為福，運蔭北野及東方，德潤身今富潤屋。",
+      "text_id": "Bagi kelahiran hari berstem 戊己 dengan keseimbangan air di akhir, pertemuan unsur di pilar membawa keberkahan; nasib bertambah baik di arah utara dan timur, kebajikan menyirami diri sehingga rumah pun ikut berlimpah."
+    },
+    {
+      "source_hz": "勾陳得位",
+      "source_id": "Gou Chen De Wei",
+      "text_hz": "戊己勾陳得旺鄉，寅卯之宮號最強，若是更臨卯未，亥子相逢大吉昌。",
+      "text_id": "Bila stem 戊己 mendapat istana 勾陳 yang berenergi kuat, posisi 寅卯 paling perkasa; bila ditambah pertemuan 卯未 dan 亥子, keberuntungan sangat besar bagi sang pemilik."
+    },
+    {
+      "source_hz": "滴天髓",
+      "source_id": "Di Tian Sui",
+      "text_hz": "戊土固重，既中且正，靜翕動闢，萬物司命，水潤物生，火爆物病，若在艮坤，怕沖宜靜。",
+      "text_id": "戊土 kokoh dan berat, tegak dan lurus, tenang menutup dan bergerak membuka, pengatur kehidupan segala benda; air membasahi maka tumbuh, api membakar maka sakit; jika berada di 艮坤, takut benturan, lebih baik diam tenang."
+    },
+    {
+      "source_hz": "詩云",
+      "source_id": "Syair",
+      "text_hz": "末月險深火暫炎，藏官藏印又藏財，近無卯亥多難變，還帶刑沖庫亦開，無火怕作金水泉，多寒偏愛同丁來，用神喜忌當分曉，其把主理作右猜。",
+      "text_id": "Bulan akhir berbahaya dalam dan api sementara berkobar, menyimpan pejabat menyimpan tanda dan juga menyimpan harta; tanpa 卯亥 di dekat banyak sulit berubah, dengan beban benturan kotak pun terbuka; tanpa api takut menjadi mata air logam-air, dalam dingin justru mengundang 丁; 用神 dan 忌神 wajib dipahami jelas, jangan menerka dari sisi yang salah."
+    },
+    {
+      "source_hz": "水土膀堤",
+      "source_id": "Shui Tu Bang Di",
+      "text_hz": "水土膀堤年同，挽江河海要根重，柱中帶合形虛壯，日下素虛動必崩，力薄不勝金漏煅，功成要用水疏通，平生最喜東南健，身旺東南健失中。",
+      "text_id": "Air dan tanah bagai tanggul di tahun yang sama, menahan sungai dan laut perlu akar berat; pilar membawa kombinasi yang tampak gagah namun kosong, di bawah hari yang lemah gerakan justru runtuh; tenaga tipis tak kuasa menahan tempaan logam, keberhasilan perlu menggunakan air untuk mengurai; sepanjang hidup paling senang arah Timur dan Tenggara yang sehat, namun bila diri kuat justru kehilangan di Tenggara."
+    }
+  ],
+  "marriage_cocok_tafsir": "**Sangat cocok** ([[大吉]]): shio **Macan** ([[寅]]), **Kelinci** ([[卯]]), dan **Kuda** ([[午]]). Perjodohan yang ditakdirkan langit ([[天作之合]]), segala urusan sukses, beroleh kemuliaan ([[尊榮之福]]), rezeki tenang berlimpah panjang ([[清閒之福祿悠久]]), keberuntungan rumah tangga gemilang ([[家運隆昌]]), serta dianugerahi umur panjang dan kebahagiaan ([[福壽綿長之貴]]). Shio di luar daftar 大吉 dan 忌 secara umum tergolong cocok tingkat dua ([[次吉]]).",
+  "marriage_hindari_tafsir": "**Hindari** ([[忌]]): shio **Kerbau** ([[丑]]), **Naga** ([[辰]]), **Kambing** ([[未]]), dan **Ayam** ([[酉]]). Kemauan bisa saja menyatu, tetapi bencana datang bertubi-tubi ([[災害疊來]]), rentan kerugian harta ([[嫌遭財產敗]]), sulit meraih keberuntungan besar ([[難得福運大亨通]]), seumur hidup penuh kesulitan ([[一生困難辛苦]]), serta segala hal berlawanan dengan keinginan hati ([[事與心違]]).",
+  "shiye_favorable_full": [
+    {
+      "hz": "鋼鐵工廠",
+      "id": "Pabrik baja"
+    },
+    {
+      "hz": "五金行",
+      "id": "Toko logam"
+    },
+    {
+      "hz": "採礦",
+      "id": "Pertambangan"
+    },
+    {
+      "hz": "汽車",
+      "id": "Otomotif"
+    },
+    {
+      "hz": "機械",
+      "id": "Mesin"
+    },
+    {
+      "hz": "科學家",
+      "id": "Saintis"
+    },
+    {
+      "hz": "律師",
+      "id": "Pengacara"
+    },
+    {
+      "hz": "歌影星",
+      "id": "Selebriti"
+    },
+    {
+      "hz": "音樂家",
+      "id": "Musisi"
+    },
+    {
+      "hz": "武術館",
+      "id": "Sanggar bela diri"
+    },
+    {
+      "hz": "會計",
+      "id": "Akuntansi"
+    },
+    {
+      "hz": "金融界",
+      "id": "Keuangan"
+    }
+  ],
+  "shiye_supportive_full": [
+    {
+      "hz": "流動攤販",
+      "id": "Pedagang keliling"
+    },
+    {
+      "hz": "運動家",
+      "id": "Atlet"
+    },
+    {
+      "hz": "介紹中人",
+      "id": "Broker"
+    },
+    {
+      "hz": "醫師",
+      "id": "Dokter"
+    },
+    {
+      "hz": "清潔隊",
+      "id": "Cleaning service"
+    },
+    {
+      "hz": "記者",
+      "id": "Wartawan"
+    },
+    {
+      "hz": "護士",
+      "id": "Perawat"
+    },
+    {
+      "hz": "導遊",
+      "id": "Pemandu wisata"
+    },
+    {
+      "hz": "馬戲團",
+      "id": "Sirkus"
+    },
+    {
+      "hz": "航海漁業",
+      "id": "Pelayaran-nelayan"
+    },
+    {
+      "hz": "冷凍業",
+      "id": "Industri pendinginan"
+    },
+    {
+      "hz": "水產業",
+      "id": "Hasil laut"
+    },
+    {
+      "hz": "碼頭工",
+      "id": "Buruh pelabuhan"
+    },
+    {
+      "hz": "消防隊",
+      "id": "Pemadam kebakaran"
+    },
+    {
+      "hz": "貿易公司",
+      "id": "Perusahaan dagang"
+    }
+  ],
+  "ti_xiang": {
+    "mu": "囚",
+    "huo": "休",
+    "tu": "旺",
+    "jin": "相",
+    "shui": "死"
+  },
+  "da_yun": [
+    {
+      "age_start": 7,
+      "age_end": 16,
+      "stem_hz": "壬",
+      "branch_hz": "申",
+      "ten_god_hz_md": "偏財"
+    },
+    {
+      "age_start": 17,
+      "age_end": 26,
+      "stem_hz": "癸",
+      "branch_hz": "酉",
+      "ten_god_hz_md": "正財"
+    },
+    {
+      "age_start": 27,
+      "age_end": 36,
+      "stem_hz": "甲",
+      "branch_hz": "戌",
+      "ten_god_hz_md": "七殺"
+    },
+    {
+      "age_start": 37,
+      "age_end": 46,
+      "stem_hz": "乙",
+      "branch_hz": "亥",
+      "ten_god_hz_md": "正官"
+    },
+    {
+      "age_start": 47,
+      "age_end": 56,
+      "stem_hz": "丙",
+      "branch_hz": "子",
+      "ten_god_hz_md": "偏印"
+    },
+    {
+      "age_start": 57,
+      "age_end": 66,
+      "stem_hz": "丁",
+      "branch_hz": "丑",
+      "ten_god_hz_md": "正印"
+    },
+    {
+      "age_start": 67,
+      "age_end": 76,
+      "stem_hz": "戊",
+      "branch_hz": "寅",
+      "ten_god_hz_md": "比肩"
+    },
+    {
+      "age_start": 77,
+      "age_end": 86,
+      "stem_hz": "己",
+      "branch_hz": "卯",
+      "ten_god_hz_md": "劫財"
+    },
+    {
+      "age_start": 87,
+      "age_end": 96,
+      "stem_hz": "庚",
+      "branch_hz": "辰",
+      "ten_god_hz_md": "食神"
+    },
+    {
+      "age_start": 97,
+      "age_end": 106,
+      "stem_hz": "辛",
+      "branch_hz": "巳",
+      "ten_god_hz_md": "傷官"
+    }
+  ],
+  "marriage": {
+    "cocok_branches": [
+      "寅",
+      "卯",
+      "午"
+    ],
+    "hindari_branches": [
+      "丑",
+      "辰",
+      "未",
+      "酉"
+    ],
+    "cocok_relationships": {
+      "寅": "大吉",
+      "卯": "大吉",
+      "午": "大吉"
+    }
+  },
+  "shio_hz": "狗",
+  "kesimpulan_narrative": "Leonardo lahir 21 Juli 1994 pukul 11:15 dengan shio Anjing ([[狗]]/[[戌]] Xū). Penguasa hidupnya adalah Tanah Yang ([[戊土]] Wù Tǔ, gunung kokoh) berstatus **Kuat** ([[旺]] Wàng) dengan skor pendukung +5130 dan penekan -3748. Format hidupnya adalah [[羊刃格]] (Yáng Rèn Gé, Cetakan Pedang Domba) — sosok bertekad besar, berani, dan kerap mengambil keputusan tajam. || Unsur sahabatnya adalah Logam ([[金]] Jīn) sebagai [[用神]] (Yòng Shén, unsur pengguna), didukung Air ([[水]] Shuǐ) sebagai [[喜神]] (Xǐ Shén, unsur penyenang); sementara Tanah ([[土]] Tǔ) sebagai [[忌神]] (Jì Shén, unsur penekan) dan Api ([[火]] Huǒ) sebagai [[仇神]] (Chóu Shén, unsur musuh netral) perlu diwaspadai. Karakter intinya teguh dan stabil, jujur dan terus terang, mengutamakan loyalitas di atas harta, dermawan tapi tidak rakus. || Bintang utama Istana Hidup adalah [[天同]] (Tiān Tóng, bintang Pembawa Ketenangan) — pembawaan cerah, ramah, dan disukai berkat sikap hati-hati; bila ditemani [[文昌]] (Wén Chāng, bintang Cendekia) atau [[文曲]] (Wén Qū, bintang Sastra Halus), berpeluang jadi pemimpin atau penulis terkenal. Industri searah meliputi dua jalur ber-Logam: industri berat-teknik (baja, otomotif, mesin, pertambangan) dan profesional (hukum, akuntansi, keuangan, kedokteran, musik). Da Yun saat ini (usia 27-36, [[甲戌]] jiǎ-xū berakar Anjing/[[七殺]] Qī Shā - Tujuh Pembunuh energi tekanan) adalah fase penempaan tekad dan kepemimpinan, beralih ke fase [[乙亥]] yǐ-hài berakar Babi/[[正官]] (Zhèng Guān, Pejabat Lurus - kewenangan struktural) di usia 37-46. || Untuk jodoh, pasangan paling cocok ([[大吉]] Dà Jí, sangat baik) adalah shio Macan ([[寅]]), Kelinci ([[卯]]), dan Kuda ([[午]]); shio di luar daftar hindari tergolong cocok tingkat dua ([[次吉]] Cì Jí). Hindari shio Kerbau ([[丑]]), Naga ([[辰]]), Kambing ([[未]]), dan Ayam ([[酉]]). || Untuk kesehatan, titik rawan ada pada paru-paru ([[肺]] fèi), usus besar ([[大腸]] dà cháng), serta lambung dan organ pencernaan ([[胃]] wèi). Untuk hunian, gua [[乾]] (Qián, langit/ayah) — duduk Timur Laut menghadap Barat Daya; arah pintu, kamar, altar baik di Barat, Barat Laut, dan Timur Laut. || Intinya: ketegasan yang kokoh akan berbuah kemuliaan dan ketenangan saat tenaganya disalurkan dengan disiplin lewat karya teknis-profesional, diasah oleh logam-air pendingin sebagai sahabatnya.",
+  "yang_zhai_gua_hz": "乾",
+  "zi_wei": {
+    "ming_zhu_hz": "巨門",
+    "shen_zhu_hz": "文昌",
+    "ming_gong_branch_hz": "丑",
+    "shen_gong_branch_hz": "丑",
+    "wu_xing_ju_hz": "水二局",
+    "shi_jun_hz": "丑"
+  },
+  "dm_strength_hz": "旺",
+  "dm_strength_label_id": "Kuat",
+  "dm_pos_score": 5130.0,
+  "dm_neg_score": 3748.0,
+  "xiantian_per_stem": {
+    "jia": 1,
+    "yi": 1,
+    "bing": 0,
+    "ding": 3,
+    "wu": 4,
+    "ji": 2,
+    "geng": 1,
+    "xin": 2,
+    "ren": 1,
+    "gui": 0
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "da_yun_arah_id": "forward",
+  "da_yun_start_age": 7,
+  "shen_sha_list": [
+    {
+      "hanzi": "文昌貴",
+      "pillar": null
+    },
+    {
+      "hanzi": "寡宿",
+      "pillar": null
+    },
+    {
+      "hanzi": "天醫",
+      "pillar": null
+    },
+    {
+      "hanzi": "從魁",
+      "pillar": null
+    }
+  ],
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": {
+    "year": "丁辛戊",
+    "month": "乙丁己",
+    "day": "戊壬庚",
+    "hour": "己丁"
+  },
+  "_source": "MD via Web Claude (parse_md.py)"
+}

@@ -1,0 +1,747 @@
+{
+  "subject_id": "elaine",
+  "_built_by": "build_from_ocr.py V4.5 FULL-MD",
+  "identity": {
+    "name_id": "ELAINE",
+    "name_hanzi": "",
+    "gender_id": "Wanita",
+    "birth_date": "1992-03-09",
+    "birth_time": "09:25",
+    "birth_day_name": "Senin",
+    "birth_period_id": "pagi",
+    "birth_hour_branch_hz": "巳",
+    "birth_hour_period_label": "pagi · 巳時",
+    "lunar_date_text_new": "tanggal 6 bulan 2 tahun 壬申 (Ren Shen · 1992)",
+    "lunar_year_pillar_hz": "壬申",
+    "lunar_republic_text": "民國 81 年 2 月 6 日",
+    "age_at_report": 35
+  },
+  "shio": {
+    "branch_hz": "申",
+    "branch_pinyin": "Shēn",
+    "id": "Monyet",
+    "id_upper": "MONYET",
+    "svg_red": "Monyet-Merah.svg",
+    "svg_black": "Monyet-Hitam.svg"
+  },
+  "ti_xiang": {
+    "mu": "旺",
+    "huo": "相",
+    "tu": "死",
+    "jin": "囚",
+    "shui": "休"
+  },
+  "day_master": {
+    "stem_hz": "甲",
+    "stem_element_hz": "木",
+    "stem_element_id": "Kayu",
+    "polarity_id": "Yang",
+    "label_id": "Pohon Besar",
+    "label_long_id": "Kayu",
+    "pinyin": "Jiǎ 木",
+    "strength_id": "Kuat",
+    "strength_hz": "旺"
+  },
+  "pillars": {
+    "year": {
+      "stem_hz": "壬",
+      "branch_hz": "申"
+    },
+    "month": {
+      "stem_hz": "癸",
+      "branch_hz": "卯"
+    },
+    "day": {
+      "stem_hz": "甲",
+      "branch_hz": "申"
+    },
+    "hour": {
+      "stem_hz": "己",
+      "branch_hz": "巳"
+    }
+  },
+  "wuxing": {
+    "jin": {
+      "value": 2.0,
+      "percent": 25.0,
+      "label_id": "Logam"
+    },
+    "shui": {
+      "value": 2.0,
+      "percent": 25.0,
+      "label_id": "Air"
+    },
+    "mu": {
+      "value": 2.0,
+      "percent": 25.0,
+      "label_id": "Kayu"
+    },
+    "huo": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Api"
+    },
+    "tu": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Tanah"
+    },
+    "total": 8.0,
+    "self_value": 2.0,
+    "self_el_hz": "—",
+    "fav_hz": "—",
+    "unfav_hz": "—",
+    "axis_max": "—",
+    "insight_id": null,
+    "_empty": false
+  },
+  "yong_shen": {
+    "elements_hz": "火",
+    "elements_id": "Api",
+    "label_id": "Penopang & Pengarah",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "ji_shen": {
+    "elements_hz": "木",
+    "elements_id": "Kayu",
+    "label_id": "Pelumat & Pemicu",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "format": {
+    "hz": "羊刃格",
+    "pinyin": "Ge",
+    "label_id": "Format",
+    "glyph_hz": "—"
+  },
+  "da_yun": {
+    "start_age": 2,
+    "direction_id": "backward",
+    "current_index": 3,
+    "axis_marks": [
+      2,
+      12,
+      22,
+      32,
+      42,
+      52,
+      62,
+      72,
+      82,
+      92,
+      102
+    ],
+    "cycles": [
+      {
+        "n": 1,
+        "age_start": 2,
+        "age_end": 11,
+        "stem_hz": "壬",
+        "branch_hz": "寅",
+        "ten_god_hz": "偏印",
+        "ten_god_id": "Mentor",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 2,
+        "age_start": 12,
+        "age_end": 21,
+        "stem_hz": "辛",
+        "branch_hz": "丑",
+        "ten_god_hz": "正官",
+        "ten_god_id": "Otoritas",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 3,
+        "age_start": 22,
+        "age_end": 31,
+        "stem_hz": "庚",
+        "branch_hz": "子",
+        "ten_god_hz": "七殺",
+        "ten_god_id": "Pemurnian",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 4,
+        "age_start": 32,
+        "age_end": 41,
+        "stem_hz": "己",
+        "branch_hz": "亥",
+        "ten_god_hz": "正財",
+        "ten_god_id": "Rezeki Tetap",
+        "element_class": "el-tu",
+        "is_current": true
+      },
+      {
+        "n": 5,
+        "age_start": 42,
+        "age_end": 51,
+        "stem_hz": "戊",
+        "branch_hz": "戌",
+        "ten_god_hz": "偏財",
+        "ten_god_id": "Rezeki Bisnis",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 6,
+        "age_start": 52,
+        "age_end": 61,
+        "stem_hz": "丁",
+        "branch_hz": "酉",
+        "ten_god_hz": "傷官",
+        "ten_god_id": "Kritikus Tajam",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 7,
+        "age_start": 62,
+        "age_end": 71,
+        "stem_hz": "丙",
+        "branch_hz": "申",
+        "ten_god_hz": "食神",
+        "ten_god_id": "Pencipta",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 8,
+        "age_start": 72,
+        "age_end": 81,
+        "stem_hz": "乙",
+        "branch_hz": "未",
+        "ten_god_hz": "劫財",
+        "ten_god_id": "Saudara Sebanding",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 9,
+        "age_start": 82,
+        "age_end": 91,
+        "stem_hz": "甲",
+        "branch_hz": "午",
+        "ten_god_hz": "比肩",
+        "ten_god_id": "Pundak Sama",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 10,
+        "age_start": 92,
+        "age_end": 101,
+        "stem_hz": "癸",
+        "branch_hz": "巳",
+        "ten_god_hz": "正印",
+        "ten_god_id": "Pelajaran",
+        "element_class": "el-shui"
+      }
+    ],
+    "seasons": [
+      {
+        "el_class": "s-shui",
+        "el_hz": "水",
+        "name_id": "Pemurnian Awal",
+        "age_start": 2,
+        "age_end": 21
+      },
+      {
+        "el_class": "s-jin",
+        "el_hz": "金",
+        "name_id": "Belajar & Mentor",
+        "age_start": 22,
+        "age_end": 41,
+        "is_current": true
+      },
+      {
+        "el_class": "s-tu",
+        "el_hz": "土",
+        "name_id": "Berbagi Panggung",
+        "age_start": 42,
+        "age_end": 61
+      },
+      {
+        "el_class": "s-huo",
+        "el_hz": "火",
+        "name_id": "Berkarya Tenang",
+        "age_start": 62,
+        "age_end": 81
+      },
+      {
+        "el_class": "s-mu",
+        "el_hz": "木",
+        "name_id": "Memetik Rezeki",
+        "age_start": 82,
+        "age_end": 101
+      }
+    ],
+    "spotlight_headline_html": "Fase <span class=\"hz\">正財</span> (Rezeki Tetap), periode utama untuk membangun aset & komitmen panjang",
+    "spotlight_tag_tone_html": "Tanah · stabil",
+    "spotlight_tag_combo_html": "Wealth Mantap",
+    "spotlight_tag_combo_pair": [
+      "己",
+      "亥"
+    ],
+    "spotlight_bullets_html": [
+      "<strong>Fokus utama</strong>, pilar <span class=\"hz\">正財</span> mendorong Anda untuk membangun aset & komitmen panjang. Selaraskan agenda 10 tahun ini ke arah tersebut.",
+      "<strong>Energi 土</strong>, batang <span class=\"hz\">己</span> (土) berinteraksi dengan Day Master <span class=\"hz\">甲</span> (木); tone fase: Tanah · stabil.",
+      "<strong>Cabang <span class=\"hz\">亥</span></strong> menentukan medan harian, kebiasaan, lingkungan, dan relasi yang dibangun di rentang umur 32–41 akan jadi pondasi fase berikutnya.",
+      "<strong>Setelah 41</strong> masuk <span class=\"hz\">戊戌 (偏財)</span>, menjajaki peluang & jaringan. Siapkan transisi sekarang."
+    ],
+    "footer_caption_html": "ELAINE sedang di fase <span style=\"font-family:'Noto Serif TC',serif;color:var(--red)\">正財</span> (32–41), membangun aset & komitmen panjang. Periode 32–51 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir."
+  },
+  "marriage": {
+    "self_branch_index": 8,
+    "cocok": [
+      {
+        "branch_hz": "子",
+        "id": "Tikus",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "辰",
+        "id": "Naga",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      }
+    ],
+    "hindari": [
+      {
+        "branch_hz": "寅",
+        "id": "Harimau",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "巳",
+        "id": "Ular",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "亥",
+        "id": "Babi",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      }
+    ],
+    "_empty": false
+  },
+  "yang_zhai": {
+    "gua_hz": "兌",
+    "gua_pinyin": "Duì",
+    "gua_label_id": "Danau",
+    "gua_direction_id": "Barat",
+    "gua_direction_abbr": "B",
+    "group_id": "Barat",
+    "sumbu_hoki_hz": "西↔東",
+    "sumbu_hoki_id": "B ↔ T",
+    "trigram_symbol": "☱",
+    "zones": {
+      "pintu": {
+        "dirs_hz": [
+          "西",
+          "西南",
+          "東北"
+        ],
+        "dirs_abbr": [
+          "B",
+          "BD",
+          "TL"
+        ],
+        "note_id": "門路 (Pintu utama): \"門路宜開西方、西南方、東北方吉\""
+      },
+      "dapur": {
+        "dirs_hz": [
+          "東北向西南"
+        ],
+        "dirs_abbr": [
+          "東北西南"
+        ],
+        "note_id": "爐灶 (Dapur): \"爐灶宜安東北方向西南方吉\" — hadap Timur Laut menuju Barat Daya"
+      },
+      "kamar": {
+        "dirs_hz": [
+          "南",
+          "西北",
+          "西",
+          "東北"
+        ],
+        "dirs_abbr": [
+          "S",
+          "BL",
+          "B",
+          "TL"
+        ],
+        "note_id": "房間 (Ruang/Kamar): \"房間宜南、西北方、西方、東北方吉\""
+      },
+      "ranjang": {
+        "dirs_hz": [
+          "東北",
+          "西南",
+          "西",
+          "西北"
+        ],
+        "dirs_abbr": [
+          "TL",
+          "BD",
+          "B",
+          "BL"
+        ],
+        "note_id": "床位 (Ranjang): \"床位安東北、西南、西方、西北方吉\""
+      },
+      "altar": {
+        "dirs_hz": [
+          "東北",
+          "西南",
+          "西北",
+          "西"
+        ],
+        "dirs_abbr": [
+          "TL",
+          "BD",
+          "BL",
+          "B"
+        ],
+        "note_id": "神位 (Altar): \"神位安東北方、西南方、西北方、西方及本年大利方\""
+      }
+    }
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "祿存",
+    "shen_zhu_hz": "天梁",
+    "ming_gong_hz": "戌",
+    "shen_gong_hz": "申",
+    "wu_xing_ju_hz": "金四局",
+    "shi_jun_hz": "辰",
+    "palaces": null,
+    "ming_gong_id": "Istana Hidup · Anjing",
+    "shen_gong_id": "Istana Tubuh · Monyet",
+    "shi_jun_id": "Penguasa Waktu · Naga",
+    "ming_zhu_id": "Penguasa Hidup",
+    "shen_zhu_id": "Penguasa Tubuh",
+    "wu_xing_ju_id": "Aliran Logam Empat"
+  },
+  "shen_sha_list": [
+    {
+      "hanzi": "劫煞",
+      "pillar": "?"
+    }
+  ],
+  "kesimpulan_narrative": "ELAINE lahir 9 Maret 1992 pukul 09:25 dengan shio Monyet ([[申]]). Penguasa hidupnya adalah Kayu Yang ([[甲木]]) — pribadi yang tegak, tumbuh menjulang, idealis, dan punya integritas batang-pohon yang kokoh. Format hidup utamanya adalah Cetakan Mata-Pisau-Domba ([[羊刃格]]) — pribadi tajam, berani, berkemauan keras, mampu meledak saat momen tiba. Kekuatan Penguasa Hari tergolong **Kuat** ([[旺]]) dengan skor pendukung +5000 dan penekan -3540 — energi alami sudah surplus, fokus hidup terbaik adalah **menyalurkan dan memotong yang berlebih, bukan menumpuk lagi**. || Karakter inti ELAINE mengatur barang & ruang dengan baik ([[對財物能適當的安置、編排]]), bisa mewujudkan gambar 3D di kepala ke ranah fisik — tetapi terhadap kenyamanan tubuh-jasmani cenderung kurang ditata. Punya **kontrol diri kuat** ([[自我壓抑]]), pendiam, suka curiga, **cerdas-tangkas dan berdaya keputusan kuat** ([[機敏、有勁力、果決力強]]), sayang muka. Hati menyimpan rahasia ([[胸藏不測之機]]), **tidak ingin peduli orang lain juga tidak ingin dipedulikan orang lain** ([[不願關心別人也不願被別人關心]]), kurang suka basa-basi panjang, pendiam tetapi sering muncul fantasi besar-kecil. Menghargai dunia material-konkret ([[重視具體物質世界]]), tetapi tidak terlalu terikat pada benda, **piawai dalam operasi/eksekusi** ([[善於操作]]), perasaan umum cukup kuat, ada semangat maju, **berhati teguh-keras dengan tulang punggung jelas** ([[個性堅強有骨氣]]), hati lembut adil-lurus — namun **kurang punya kelincahan adaptasi** ([[缺乏敏捷的應變能力]]). || Bakat utama ada di perpaduan **kepemimpinan + disiplin + ketelitian eksekusi**. Industri searah: medis (dokter, perawat, pengasuh, pengacara), industri panas-bercahaya (peralatan listrik, optik, kacamata, minuman panas-snack, pabrik makanan, salon-tata rambut-rias), industri ekspresi (fotografi, busana & aksesori, kritikus, kosmetik, militer, tembakau-arak), serta konstruksi-tanah (bangunan, toko obat, peternakan, semen-beton, properti, rumah duka, batu-nisan, geomansi, antik, konsultan). Da Yun saat ini (usia 32-41, [[己亥]]) adalah fase **正印** (cetakan-resmi) — fase belajar, dukungan dari orang tua/atasan/relasi yang lebih senior. || Untuk jodoh, pasangan paling cocok ([[大吉]]) adalah shio Tikus ([[子]]) atau Naga ([[辰]]) — kombinasi \"[[珠聯璧合, 一帆風順, 不能為害, 成功富貴, 子孫興旺, 五世其昌]]\" yang membawa kelancaran luar biasa dan keturunan berkembang lima generasi. Hindari shio Macan ([[寅]]), Ular ([[巳]]), Babi ([[亥]]) — kombinasi yang membawa bencana di masa awal, sakit-penyakit & penderitaan. Foto 夫妻 menunjukkan peruntungan asmara cukup stabil, mampu mendapat pasangan cerdas-tampan/cantik bila bersama bintang baik. || Untuk kesehatan, titik rawan di tenggorokan, paru-jantung, dan telinga ([[心肺部及耳朵]]) — hindari kelelahan berlebih & suhu ekstrem. Mudah flu, sakit gigi, wasir, dan setelah dewasa rentan penyakit jantung — perlu pemeriksaan rutin. Untuk hunian, pilih rumah dengan **gua [[兌]]** — duduk Timur Laut menghadap Barat Daya atau Barat Laut menghadap Tenggara membawa keberuntungan besar. Pintu utama bisa dibuka di Barat/Barat Daya/Timur Laut; dapur hadap Timur Laut → Barat Daya. Bintang nasib aktif: **[[劫煞]]** yang menurut foto memberi **kecerdasan-ketangkasan, kepandaian luar biasa, dan kemampuan berstrategi** ([[聰明敏捷、才智過人, 巧於謀事]]). || Inti puisi klasik 古書云: \"[[甲木參天, 脫胎要火, 春不容金, 秋不容土, 火熾乘龍, 水蕩騎虎]]\" — Kayu Yang menjulang ke langit, untuk lahir-baru butuh Api; di musim semi tidak menampung Logam yang memotong. Inilah esensi ELAINE — kayu tegak yang membutuhkan api inspirasi & arah untuk membakar diri menjadi pencapaian, bukan dibekukan oleh logam atau dibanjiri air berlebih.",
+  "dm_pos_score": 5000.0,
+  "dm_neg_score": 3540.0,
+  "xiantian_per_stem": {
+    "jia": 1,
+    "yi": 1,
+    "bing": 1,
+    "ding": 0,
+    "wu": 3,
+    "ji": 1,
+    "geng": 3,
+    "xin": 0,
+    "ren": 3,
+    "gui": 1
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": null,
+  "canggan_shi_shen": null,
+  "chang_sheng_per_pilar": null,
+  "kong_wang": null,
+  "ming_gong_bazi": "戊/午",
+  "bone_weight": null,
+  "liu_nian_predictions": [
+    {
+      "tahun": 2026,
+      "umur": 35,
+      "ganzhi": "丙午",
+      "prose": "Tahun **民國 115** ([[丙午]]) usia 35. Tahun ini apa yang dipikirkan otak — secara permukaan bisa setara dengan uang. Mampu memikirkan segala hal, harus tangkap peluang banyak menggunakan otak — pasti bisa mencapai ideal. **[[弔客]]** masuk peruntungan hidup: berkali-kali pakaian berkabung, urusan pejabat & non-darah, mulut-tajam ada bahaya kelelahan. **[[陽德]]** masuk: bintang Yang-De saling jumpa, ada urusan baik bercahaya, di tengah perayaan tanpa kejadian, tumpuk amal & lakukan baik segala urusan lancar. Hindari bulan 1/4/7 atau 11. Berbuat baik bertindak tinggi cermat, hindari mulut-tajam. Lebih perlu hati-hati, kalau tidak bisa difitnah orang, ada lingkungan atau perubahan jelek di karir, tujuan-orang menggunakan mulut-mata-cekcok, parahnya ada urusan pengadilan-penjara penderitaan. Sifat agak cepat marah, kurang kekuatan keputusan, segala hal ragu-ragu, sangat cerdas tapi suka berdebat hal kecil seperti tanduk-banteng-kerbau, lalu mencari sendiri penderitaan & kesulitan tanpa makna. Jodoh dengan pasangan suami-istri tipis, sangat mudah terjadi perubahan & sulit putih-rambut hingga tua bersama, banyak yang menikah lagi."
+    },
+    {
+      "tahun": 2027,
+      "umur": 36,
+      "ganzhi": "丁未",
+      "prose": "Tahun **民國 116** ([[丁未]]) usia 36. Tahun ini apa yang dipikirkan otak — secara permukaan bisa setara uang. Mampu menangkap semua peluang, secara substansial bisa mencapai ideal. Hati ada yang menahan, suasana hati juga tidak stabil. **[[病符]]** masuk: penyakit-tag masuk hidup, sakit-bencana dan urusan pejabat-non, duka sakit datang menjelang, berdoa untuk perlindungan Dewa-Buddha. **[[錦繡]]** masuk: peruntungan brokat masuk hidup, banyak hal gembira penuh telinga, mencari anak datang sesuai harapan, semua hal lancar berkah merapat. Hindari bulan 3/6/9 atau 12. Hanya bila seluruh keluarga jaga jiwa-iklim, tidak terkena penularan penyakit, akan baik-baik saja. Sifat batin agak aneh, tidak suka memoles penampilan luar, hubungan saudara-tangan-saudara-kaki agak tipis-tawar. Mudah suka kumpul barang-barang kecil, sepenuhnya berniat tabung uang & menetap, sebaiknya buka dada-pakaian, berusaha untuk maju, peruntungan & uang masih bisa dibilang bagus. Sedangkan separuh awal hidup agak penat banyak kesulitan, maka separuh akhir akan lebih beruntung & menikmati berkah."
+    },
+    {
+      "tahun": 2028,
+      "umur": 37,
+      "ganzhi": "戊申",
+      "prose": "Tahun **民國 117** ([[戊申]]) usia 37. Tahun ini upaya & otak yang dikeluarkan — secara permukaan tampak setara uang. Mendapat bantuan dari penolong, secara substansial bisa mencapai ideal yang sebanding. Karir ada perubahan atau jabatan ada penggeseran. **Lingkungan besar berubah**, misal di rumah renovasi ulang, pindah rumah, pindah perabotan/dekorasi. Yang sudah menikah: berdebat sedikit dengan suami-istri tanpa kejadian, yang belum menikah ada asmara. **[[太歲]]** masuk: Tai-Sui duduk di kepala, kebencian-cekcok pasti masih ada, tubuh tanpa hukuman pukulan, satu tahun banyak rencana. **[[天哭]]** masuk: peruntungan Tian-Ku saling jumpa, takut ada penyakit-pakaian berkabung, keluarga & istri kalau ada acara gembira hanya akan ada mulut-tajam & bencana. Hindari bulan 2/3/5 atau 11. Tahun ini bulan 1/9 perdamaian Tai-Sui Raja, bisa pertahankan damai sejahtera. Tahun ini baik-buruk mudah cenderung ekstrem. Sifat tergesa-gesa, segala hal panas 3 menit, ada kepala tanpa ekor, suka yang baru tinggalkan yang lama. Sifat impulsif, kurang berpikir mendalam jauh, sifat juga ringan, mudah ditipu orang, sering ada banyak ide tapi cepat lupa, sering berubah-ubah pekerjaan banyak kegagalan, hidup tidak stabil-tenteram — namun memiliki peruntungan **\"絕處逢生\"** (hidup kembali dari titik mati)."
+    },
+    {
+      "tahun": 2029,
+      "umur": 38,
+      "ganzhi": "己酉",
+      "prose": "Tahun **民國 118** ([[己酉]]) usia 38. Tahun ini upaya & otak yang dikeluarkan — secara permukaan tampak setara uang. Mendapat bantuan penolong, secara substansial bisa mencapai ideal yang sebanding. Suasana hati cukup tidak stabil. **[[太陽]]** masuk: Tai-Yang masuk hidup, seratus hal beres-harmonis, yin-yang tanpa salah, dianugerahi berkah & dapat rezeki. **[[福德]]** masuk: peruntungan Fu-De masuk hidup, seumur hidup orang suka berbuat baik, mencari rezeki banyak yang dipercayakan, peruntungan unggul senja melampaui awal. Hindari bulan 2/4/8 atau 11. Aslinya ada penyakit atau jatuh kelainan, isyarat untuk berubah ke arah baik. Hati-hati baik, riset hati juga subur, punya esensi roh baru, ada kesegaran baru, ada kreativitas, kaya humor & kemanusiaan, sebagai orang bijak/bodoh, beruntung & berbahagia datang bertemu — tubuh bukan benar sehat, namun makin usia lanjut justru makin kuat. Wanita sebagian besar mudah lahirkan anak perempuan — probabilitas relatif tinggi."
+    },
+    {
+      "tahun": 2030,
+      "umur": 39,
+      "ganzhi": "庚戌",
+      "prose": "Tahun **民國 119** ([[庚戌]]) usia 39. Tahun ini upah yang dikeluarkan, secara permukaan dengan uang bisa setara. Mendapat semua peluang, secara substansial bisa mencapai ideal. Hati ada yang menahan, suasana hati juga tidak stabil. **[[喪門]]** masuk: pintu duka masuk hidup, pakaian berkabung & duka-bencana, hukuman-clash-melukai, kerusakan-pengusaan & kehilangan uang. **[[黑煞]]** masuk: peruntungan Hei-Sha bintang masuk hidup, peruntungan kepala-belakang membuat orang takut, kalau tanpa hukuman pukulan duka-pakaian datang menjelang, jaga dari hantu-pencuri orang kecil. Keluarga ada acara gembira, bisa pertahankan damai, hindari bulan 6/8 atau 12, banyak berbuat baik mencari berkah. Pada tahun itu jangan kunjungi orang sakit berat, jangan kunjungi acara gembira pelayat — terhindar dari peruntungan jahat dan takut ada keluarga-teman ada penyakit berat atau urusan kematian. Cerdas-tegas, ahli di sosial-keterampilan tangan, lebih bersedikit ambisi besar, puas dengan keadaan sekarang yang banyak. Sering pakai bawakan anak atau anak masuk yang banyak — istri-suami berkabung adalah pintu masuk panjang umur, maka selama mau berusaha & maju, masih bisa dapatkan pencapaian yang cukup tinggi & besar."
+    },
+    {
+      "tahun": 2031,
+      "umur": 40,
+      "ganzhi": "辛亥",
+      "prose": "Tahun **民國 120** ([[辛亥]]) usia 40. Tahun ini upah yang dikeluarkan, secara permukaan dengan uang bisa setara. Harus hati-hati, hal cerewet sangat banyak, penolong tersembunyi, secara substansial tidak bisa mencapai ideal. Karir berubah. Hati ada yang menahan, suasana hati juga tidak stabil. **[[太陰]]** masuk: Tai-Yin masuk hidup, lihat gembira lalu dapat rezeki, penolong saling membantu, ratus-hal beres-harmonis. **[[文昌]]** masuk: peruntungan Wen-Chang bintang masuk hidup, harus ada hal gembira datang menjelang, ilmuwan-pelajar tahapan-pintu banyak baik, dunia mengundang rezeki wanita ada hamil. Hindari bulan 2/5/8 atau 12. Mudah undang lawan-jenis kebencian-fitnah & gelombang, jangan dalam-malam jalan-gelap. Setia-hangat & sopan-baik, lingkaran rezeki sangat baik, dikenal-disuka, disambut, dipromosikan, mudah naik kelas-langkah biru, dukungan-goyangan langsung naik. Punya teknik, kreatif-bakat, kemampuan belajar sangat kuat. Tapi kurang cocok jabat tingkat-kepemimpinan, lalu menjadi pendukung-bantu yang baik, perusahaan-rencana, staf-bakat — relatif mudah unggul-berkembang dengan ruang penuh."
+    }
+  ],
+  "ziwei_su_ming": "Foto 20.18.46 (1) **宿命**: \"凡事皆認為命運使然而放棄奮鬥, 活動因之無法展開. 您的愛情宮勢強, 身宮運勢也旺盛, 在您婚姻對象的愛情鼓勵下, 必渡過滿足的人生. 愛情宮弱的話, 家庭頗不和諧, 結果變成負面的不幸人生. 此時, 命宮、職業宮、移動宮、福德宮的強弱也須併入考慮之列.\" — Segala hal dianggap sebagai takdir lalu menyerah berjuang, sehingga aktivitas tidak bisa terbuka. Bila Istana Cinta ([[愛情宮]]) kuat dan Istana Tubuh ([[身宮]]) juga berlimpah, dengan dorongan cinta dari pasangan-pernikahan, pasti melewati hidup yang memuaskan. Sebaliknya bila Istana Cinta lemah, keluarga sangat tidak harmonis, akhirnya menjadi hidup negatif yang malang. Saat itu, Istana Hidup ([[命宮]]), Istana Karir ([[職業宮]]), Istana Pindah ([[移動宮]]) dan Istana Berkah ([[福德宮]]) harus diperhitungkan.",
+  "ziwei_stars": null,
+  "shiye_favorable_full": null,
+  "shiye_supportive_full": null,
+  "shiye_short": null,
+  "shen_sha_detail": null,
+  "marriage_cocok_tafsir": "**Sangat cocok** ([[大吉]]): shio **Tikus** ([[子]]) dan **Naga** ([[辰]]). Foto sebut \"其他生相次吉\" — shio lain di luar daftar hindari tergolong cocok umum. Foto sebut: \"**珠聯璧合, 一帆風順, 不能為害, 成功富貴, 子孫興旺, 五世其昌矣**\" — bagaikan mutiara berpadu permata, semuanya lancar bagai layar didorong angin, tidak ada yang bisa mencelakai, sukses dan makmur, anak-cucu berkembang, lima generasi gemilang.",
+  "marriage_hindari_tafsir": "**Hindari** ([[忌]]): shio **Macan** ([[寅]]), **Ular** ([[巳]]), **Babi** ([[亥]]). Foto sebut: \"**起初災害並至, 至晚景福偕來, 中年運或災殃怙來, 或少小怙恃, 或壽不永, 災難並至, 病疾困苦**\" — pada mulanya bencana datang bersamaan, hingga senja barulah berkah datang menyertai; di pertengahan usia peruntungan kadang membawa malapetaka, atau kehilangan orang tua sejak kecil, atau usia tidak panjang, bencana datang bersama, sakit-penyakit menyiksa.",
+  "gushu_quotes": [
+    {
+      "source_hz": "三命通會註",
+      "source_id": "Sānmìng Tōnghuì Zhù (Catatan)",
+      "text_hz": "甲乙書平木得宜, 要知金水旺為奇, 春從南往秋歸北, 冬夏西行發福基.",
+      "text_id": "Buku-buku [[甲]][[乙]] (Kayu) cocok-pas; ketahui [[金]] dan [[水]] berlimpah pertanda istimewa; musim semi pergi ke Selatan, musim gugur pulang ke Utara; musim dingin & musim panas berjalan ke Barat — di sanalah pondasi berkah dibangun."
+    },
+    {
+      "source_hz": "青龍伏形·詩曰",
+      "source_id": "Qīng Lóng Fú Xíng",
+      "text_hz": "甲乙如居申酉鄉, 木逢春旺最為良, 四柱若逢庫相助, 財官雙美不尋常.",
+      "text_id": "Bila [[甲]][[乙]] tinggal di kampung [[申]][[酉]], Kayu berjumpa musim semi yang berlimpah — paling baik; bila Empat Pilar bertemu bantuan gudang, [[財]][[官]] (Harta & Pangkat) sepasang indah luar biasa."
+    },
+    {
+      "source_hz": "滴天髓云",
+      "source_id": "Dī Tiān Suǐ Yún",
+      "text_hz": "甲木參天, 脫胎要火, 春不容金, 秋不容土, 火熾乘龍, 水蕩騎虎; 地潤天和, 值立千古.",
+      "text_id": "Kayu [[甲]] menjulang ke langit, lepas-kandung butuh Api; musim semi tidak menampung Logam, musim gugur tidak menampung Tanah; api menyala-nyala menunggangi naga, air bergelombang menunggangi macan; tanah lembap langit harmoni — berdiri abadi seribu tahun."
+    },
+    {
+      "source_hz": "詩云",
+      "source_id": "Shī Yún",
+      "text_hz": "卯木獨華氣禀深, 仲春難首不嫌金, 庚冬疊見愁申酉, 亥子重來忌壬癸, 禍見六沖應落葉, 喜逢三合便成林, 若得時日秋金重, 更向西行患不禁.",
+      "text_id": "Kayu [[卯]] menjulang sendiri, aura-bawaan dalam; tengah-musim semi tidak takut [[金]]; bila [[庚]] musim dingin bertumpuk: cemas dengan [[申]][[酉]]; bila [[亥]][[子]] datang berulang: pantang [[壬]][[癸]]; bahaya bertemu enam-clash bagaikan daun berguguran, gembira bertemu tiga-harmoni menjadi hutan; bila bertemu jam-hari Logam musim gugur berat, lalu berjalan ke Barat — bencana tak terhindarkan."
+    },
+    {
+      "source_hz": "木天干作首排",
+      "source_id": "Mù Tiān Gān Zuò Shǒu Pái",
+      "text_hz": "原無枝葉與根芽, 欲存天地千年久, 直向沙泥萬丈埋, 斷就棟梁金得用, 化成灰炭火為災, 蓋然塊物無機事, 一任春秋自往來.",
+      "text_id": "Asalnya tanpa cabang-daun & akar-tunas, ingin bertahan di langit-bumi seribu tahun lama, lurus menuju pasir-lumpur terkubur ribuan kaki dalam; dipotong jadi tiang-balok Logam dipakai, berubah jadi abu-arang Api jadi bencana; tampak gumpalan benda tanpa kesempatan, sepenuhnya pasrah musim semi-gugur datang-pergi."
+    }
+  ],
+  "xiongnian_list": null,
+  "xing_qing_poem_hz": null,
+  "xing_qing_poem_id": null,
+  "xing_qing_prose_id": null,
+  "fulu_body_id": null,
+  "mingyun_body_id": null,
+  "qinshu_tou_main_id": null,
+  "qinshu_tou_youyue_id": null,
+  "qinshu_zhong_main_id": null,
+  "qinshu_zhong_youyue_id": null,
+  "qinshu_mo_main_id": null,
+  "qinshu_mo_youyue_id": null,
+  "jie_e_palace_hz": "易患喉部疾病、感冒、牙痛等。您的健康無任何危機。即使患病也宛如健康的人, 恢復得也比常人更迅速。但苦於過熱與過冷, 過度疲勞是致病的主因。從小就是個病貓, 成年後, 又易患痔瘡、心臟等疾病吧! 與廉貞星同宮的話, 小心眼睛的疾病。如疾厄宮內僅有文昌一星在位的話, 絕少患疾病, 再有其他吉星在位時, 可以放心, 必不會遭過什麼樣的意外吧! 凶星在位的話, 易為疾病所苦。主的是須留心心肺部及耳朵的疾病。",
+  "jie_e_palace_id": "Mudah terkena **penyakit tenggorokan** ([[喉部疾病]]), **flu/demam** ([[感冒]]), **sakit gigi** ([[牙痛]]) dan sejenisnya. Kesehatan Anda **tanpa krisis berarti** ([[無任何危機]]). Bahkan ketika sakit pun **layaknya orang sehat**, pemulihannya jauh lebih cepat dari orang biasa. Tetapi rentan terhadap **kepanasan & kedinginan berlebih**; **kelelahan berlebih adalah penyebab utama penyakit**. Sejak kecil cenderung sakit-sakitan, **setelah dewasa juga rentan terkena wasir ([[痔瘡]]) dan penyakit jantung ([[心臟]])**! Bila bersama bintang **[[廉貞]]** (Lián Zhēn): **hati-hati penyakit mata** ([[眼睛的疾病]]). Bila di Istana Jie hanya ada **[[文昌]]** (Wén Chāng) tunggal: nyaris **tidak akan terkena penyakit**; bila ditambah bintang baik lain: bisa tenang, tidak akan terkena kecelakaan apapun! Bila ada bintang jahat: mudah disiksa penyakit. **Yang utama wajib dijaga: penyakit jantung-paru dan telinga** ([[心肺部及耳朵的疾病]]).",
+  "jie_e_organ_focus_id": "Yang utama wajib dijaga: tenggorokan, jantung-paru, telinga, dan kesehatan emosional. Hindari kelelahan berlebih dan suhu ekstrem.",
+  "mantra": {
+    "hz": "—",
+    "pinyin": "—"
+  },
+  "_xq_radar_poly": "          <polygon points=\"200,56 311.2,136 311.2,264 200,312 102.7,256 130.5,160\"\n            fill=\"rgba(139,26,26,0.18)\" stroke=\"#8B1A1A\" stroke-width=\"1.5\"/>\n          <circle cx=\"200\" cy=\"56\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"136\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"264\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"200\" cy=\"312\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"102.7\" cy=\"256\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"130.5\" cy=\"160\" r=\"3\" fill=\"#8B1A1A\"/>",
+  "_xq_radar_labels": "          <g font-family=\"Noto Serif TC,serif\">\n            <text x=\"200\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">進取</text>\n            <text x=\"200\" y=\"33\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Jìnqǔ · Pelopor · 9</text>\n\n            <text x=\"358\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">創新</text>\n            <text x=\"358\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Chuàngxīn · Inovatif · 8</text>\n\n            <text x=\"358\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">領導</text>\n            <text x=\"358\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Lǐngdǎo · Memimpin · 8</text>\n\n            <text x=\"200\" y=\"382\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">急性</text>\n            <text x=\"200\" y=\"393\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Jíxìng · Cepat panas · 7</text>\n\n            <text x=\"42\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">直率</text>\n            <text x=\"42\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Zhíshuài · Terus-terang · 7</text>\n\n            <text x=\"42\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">包容</text>\n            <text x=\"42\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Bāoróng · Toleran · 5</text>\n          </g>",
+  "_xq_motto": [
+    "樹",
+    "Pohon Besar",
+    "本性 浩然",
+    "君子之風"
+  ],
+  "_tafsir": {
+    "palace1": "<p>ming_gong: - star: null - insight: <strong>Meskipun ada cacat sedikit \"lengket air-lumpur\" / kurang tegas</strong> (<span class=\"hz\">雖有拖泥帶水的毛病</span>) — tetapi tetap <strong>peruntungan yang terang dan kokoh</strong> (<span class=\"hz\">但仍不失為明朗堅實的運勢</span>). Artinya ELAINE memang punya kecenderungan agak ambigu atau kurang tegas di beberapa titik keputusan, tetapi struktur peruntungan hidup tetap jelas, terang, dan kokoh — pondasi nasib stabil dan tidak rapuh. Ini adalah modal dasar untuk mengarungi hidup: tidak perlu cemas berlebih, hanya perlu menetapkan keputusan kunci dengan lebih tegas. - action: Latih ketegasan keputusan dalam hal kecil sehari-hari; manfaatkan pondasi peruntungan yang sudah kokoh untuk mengambil langkah besar dengan percaya diri.</p><p>xiongdi: - star: null - insight: null - action: null</p><p>fuqi: - star: null - insight: <strong>Memiliki konsep cinta yang tertib dan menghargai</strong> (<span class=\"hz\">擁有踏實的愛情觀念</span>), tidak menyimpan pikiran yang tidak realistis (<span class=\"hz\">並無存幻想的念頭</span>) — karena itu <strong>sama sekali tidak akan menoleransi sikap ringan-permainan dari pasangan</strong> (<span class=\"hz\">絕不容許對方的輕浮玩弄</span>). Karena menuntut diri sendiri dan pasangan dengan standar yang sama berat (<span class=\"hz\">由於對自己與對方的要求同樣嚴厲</span>), mungkin akan <strong>mengalami gelombang asmara yang sangat dahsyat</strong> (<span class=\"hz\">或許會遭遇波濤萬丈的愛情運</span>). Karena bintang <strong><span class=\"hz\">太陽</span></strong> terlalu kuat, <strong>yang menikah terlalu cepat sangat tidak menguntungkan</strong> (<span class=\"hz\">早婚者相當不吉利</span>). Bila memungkinkan, <strong>jangan tergesa-gesa menikah</strong> (<span class=\"hz\">不要急於於結婚</span>) — sebaiknya lewat masa pertimbangan &amp; penjajakan dengan perlahan. Pria bisa mendapat <strong>wanita cerdas-sehat-cerah</strong> (<span class=\"hz\">開朗的健康的女性</span>) sebagai istri; wanita bisa mendapat <strong>pria bermurah-hati lapang dada</strong> (<span class=\"hz\">寬宏大量的男人</span>) sebagai suami. Bila ada bintang jahat menghalangi: <strong>hampir bisa dikatakan langsung menghadapi krisis pernikahan</strong> (<span class=\"hz\">直接面對著離婚的危機</span>). Antara suami-istri mudah terjadi cekcok (<span class=\"hz\">夫婦間易起爭執</span>); tetapi bila Istana Fuqi bersama <strong><span class=\"hz\">太陽</span></strong> sendirian tanpa bintang jahat lain — atau dengan <strong><span class=\"hz\">天同</span>/<span class=\"hz\">天機</span></strong> sekamar — bisa mendapat <strong>pasangan cerdas, membangun rumah tangga yang lengkap-sempurna</strong> (<span class=\"hz\">聰明的配偶, 建立圓滿的家庭</span>). Berbawaan <strong>cemburuan kuat</strong> (<span class=\"hz\">天生嫉妒心強</span>) tetapi tidak akan terlontar dalam kata-kata. Pria bila ada <strong><span class=\"hz\">文昌</span></strong> dan <strong><span class=\"hz\">天機</span></strong> di kedudukan: di luar istri pasti <strong>memelihara istana-tersembunyi</strong> (<span class=\"hz\">必在外蓄小公館金屋藏嬌</span>); pria menyukai <strong>kecantikan dingin-eksklusif</strong> (<span class=\"hz\">冷豔的美人</span>). Wanita berjodoh dengan <strong>pria cerdas-tajam yang juga \"punya rezeki-aura\" / berdaya finansial</strong> (<span class=\"hz\">頭腦聰明而又「財氣」縱橫的男性相當有緣</span>). - action: Tunda pernikahan hingga matang secara mental &amp; finansial; pilih pasangan yang sebanding dari sisi standar etika dan integritas; latih komunikasi terbuka untuk meredam cemburu.</p><p>zinu: - star: null - insight: <strong>Lembut dan jinak</strong> (<span class=\"hz\">溫馴</span>), tetapi <strong>kelemahannya adalah gerakannya agak lambat-tumpul</strong> (<span class=\"hz\">但缺點是動作稍帶運鈍的兒女</span>) — anak-anak ELAINE cenderung berkarakter halus dan patuh, namun perlu lebih banyak waktu untuk merespons atau bereaksi terhadap situasi baru. Bukan tipe anak yang lincah-agresif, melainkan anak yang membutuhkan dukungan &amp; kesabaran ekstra untuk berkembang. Mereka biasanya <strong>sabar, tenang, dan dapat dipercaya</strong> — kualitas yang akan menjadi modal besar ketika dewasa. - action: Berikan ruang dan kesabaran untuk anak; jangan paksa kecepatan; bangun kepercayaan diri mereka melalui keberhasilan-keberhasilan kecil yang konsisten.</p>",
+    "_palace1_struct": {
+      "ming_gong": {
+        "insight": "**Meskipun ada cacat sedikit \"lengket air-lumpur\" / kurang tegas** ([[雖有拖泥帶水的毛病]]) — tetapi tetap **peruntungan yang terang dan kokoh** ([[但仍不失為明朗堅實的運勢]]). Artinya ELAINE memang punya kecenderungan agak ambigu atau kurang tegas di beberapa titik keputusan, tetapi struktur peruntungan hidup tetap jelas, terang, dan kokoh — pondasi nasib stabil dan tidak rapuh. Ini adalah modal dasar untuk mengarungi hidup: tidak perlu cemas berlebih, hanya perlu menetapkan keputusan kunci dengan lebih tegas.",
+        "action": "Latih ketegasan keputusan dalam hal kecil sehari-hari; manfaatkan pondasi peruntungan yang sudah kokoh untuk mengambil langkah besar dengan percaya diri."
+      },
+      "fuqi": {
+        "insight": "**Memiliki konsep cinta yang tertib dan menghargai** ([[擁有踏實的愛情觀念]]), tidak menyimpan pikiran yang tidak realistis ([[並無存幻想的念頭]]) — karena itu **sama sekali tidak akan menoleransi sikap ringan-permainan dari pasangan** ([[絕不容許對方的輕浮玩弄]]). Karena menuntut diri sendiri dan pasangan dengan standar yang sama berat ([[由於對自己與對方的要求同樣嚴厲]]), mungkin akan **mengalami gelombang asmara yang sangat dahsyat** ([[或許會遭遇波濤萬丈的愛情運]]). Karena bintang **[[太陽]]** terlalu kuat, **yang menikah terlalu cepat sangat tidak menguntungkan** ([[早婚者相當不吉利]]). Bila memungkinkan, **jangan tergesa-gesa menikah** ([[不要急於於結婚]]) — sebaiknya lewat masa pertimbangan & penjajakan dengan perlahan. Pria bisa mendapat **wanita cerdas-sehat-cerah** ([[開朗的健康的女性]]) sebagai istri; wanita bisa mendapat **pria bermurah-hati lapang dada** ([[寬宏大量的男人]]) sebagai suami. Bila ada bintang jahat menghalangi: **hampir bisa dikatakan langsung menghadapi krisis pernikahan** ([[直接面對著離婚的危機]]). Antara suami-istri mudah terjadi cekcok ([[夫婦間易起爭執]]); tetapi bila Istana Fuqi bersama **[[太陽]]** sendirian tanpa bintang jahat lain — atau dengan **[[天同]]/[[天機]]** sekamar — bisa mendapat **pasangan cerdas, membangun rumah tangga yang lengkap-sempurna** ([[聰明的配偶, 建立圓滿的家庭]]). Berbawaan **cemburuan kuat** ([[天生嫉妒心強]]) tetapi tidak akan terlontar dalam kata-kata. Pria bila ada **[[文昌]]** dan **[[天機]]** di kedudukan: di luar istri pasti **memelihara istana-tersembunyi** ([[必在外蓄小公館金屋藏嬌]]); pria menyukai **kecantikan dingin-eksklusif** ([[冷豔的美人]]). Wanita berjodoh dengan **pria cerdas-tajam yang juga \"punya rezeki-aura\" / berdaya finansial** ([[頭腦聰明而又「財氣」縱橫的男性相當有緣]]).",
+        "action": "Tunda pernikahan hingga matang secara mental & finansial; pilih pasangan yang sebanding dari sisi standar etika dan integritas; latih komunikasi terbuka untuk meredam cemburu."
+      },
+      "zinu": {
+        "insight": "**Lembut dan jinak** ([[溫馴]]), tetapi **kelemahannya adalah gerakannya agak lambat-tumpul** ([[但缺點是動作稍帶運鈍的兒女]]) — anak-anak ELAINE cenderung berkarakter halus dan patuh, namun perlu lebih banyak waktu untuk merespons atau bereaksi terhadap situasi baru. Bukan tipe anak yang lincah-agresif, melainkan anak yang membutuhkan dukungan & kesabaran ekstra untuk berkembang. Mereka biasanya **sabar, tenang, dan dapat dipercaya** — kualitas yang akan menjadi modal besar ketika dewasa.",
+        "action": "Berikan ruang dan kesabaran untuk anak; jangan paksa kecepatan; bangun kepercayaan diri mereka melalui keberhasilan-keberhasilan kecil yang konsisten."
+      }
+    },
+    "palace2": "<p>caibo: - star: null - insight: <strong>Belanja sangat royal/dermawan, tetapi pada saat yang sama mampu mendaur-ulang setara harga itu</strong> (<span class=\"hz\">花錢非常大方, 但同時能回收相當的代價</span>). <strong>Mulai dari nol membangun kekayaan dengan kekuatan sendiri</strong> (<span class=\"hz\">以自己個人的力量白手起家</span>), <strong>mandiri memanfaatkan peluang membangun uang</strong> (<span class=\"hz\">獨自掌握賺錢的機運</span>), <strong>tetapi mulai dapat menghasilkan uang besar dimulai setelah usia paruh-baya</strong> (<span class=\"hz\">但開始賺大錢則從中年以後開始</span>). Bila bersama <strong><span class=\"hz\">天梁</span></strong>: bisa menjadi <strong>rajawali bisnis yang sangat berdaya</strong> (<span class=\"hz\">相當有力的資產家</span>); bahkan bila bersama <strong><span class=\"hz\">凶星</span></strong>: bisa <strong>memilih jadi dokter, ilmuwan, seniman, revolusioner</strong> (<span class=\"hz\">醫生、學者、藝術家、革命家的職業</span>) — tetap memiliki peruntungan uang yang lumayan. <strong><span class=\"hz\">太陰</span></strong> adalah bintang yang berjodoh dengan dewa-rezeki (<span class=\"hz\">與財運有緣之星</span>). Lagi bersama <strong><span class=\"hz\">天機</span></strong>: dari kosong tanpa sepeser pun bisa menghasilkan kekayaan setara (<span class=\"hz\">從身無分文而賺取相當的財產</span>). Bersama <strong><span class=\"hz\">天同</span></strong>: <strong>sering bertemu peluang besar mendapat uang</strong> (<span class=\"hz\">經常會碰到賺大錢的機會</span>). Atau bersama <strong>bintang baik lain</strong>: bisa <strong>menumpuk uang yang sudah masuk tangan, menjadi konglomerat sungguhan</strong> (<span class=\"hz\">能儲蓄入手的金錢, 成為相當的財產家</span>). - action: Bangun habit menabung sejak sekarang; salurkan kelebihan ke investasi produktif jangka menengah; pertimbangkan karir yang berimpak sosial (medis, ilmu, seni) untuk pertumbuhan finansial yang stabil setelah paruh-baya.</p><p>jie_e: - star: null - insight: <strong>Mudah terkena penyakit tenggorokan, flu, sakit gigi</strong> (<span class=\"hz\">喉部疾病、感冒、牙痛</span>). <strong>Kesehatan tanpa krisis</strong> (<span class=\"hz\">無任何危機</span>). Bahkan saat sakit pun <strong>seperti orang sehat, pulih lebih cepat dari orang biasa</strong> (<span class=\"hz\">即使患病也宛如健康的人, 恢復得也比常人更迅速</span>). Tetapi rentan <strong>kepanasan-kedinginan berlebih, kelelahan berlebih adalah penyebab utama penyakit</strong> (<span class=\"hz\">過度疲勞是致病的主因</span>). Sejak kecil cenderung <strong>anak kucing-sakit-sakitan</strong> (<span class=\"hz\">從小就是個病貓</span>), setelah dewasa <strong>mudah terkena wasir &amp; penyakit jantung</strong> (<span class=\"hz\">痔瘡、心臟等疾病</span>)! Bila bersama <strong><span class=\"hz\">廉貞</span></strong>: hati-hati <strong>penyakit mata</strong> (<span class=\"hz\">眼睛的疾病</span>). Bila di Istana Jie hanya ada bintang <strong><span class=\"hz\">文昌</span></strong> tunggal: <strong>nyaris tidak akan terkena penyakit</strong>, bila ditambah bintang baik lain bisa tenang — tidak akan terjadi kecelakaan apapun! Bila ada bintang jahat: mudah disiksa penyakit. <strong>Wajib jaga jantung-paru dan telinga</strong> (<span class=\"hz\">心肺部及耳朵的疾病</span>). - action: Rutin jaga jantung-paru dan tenggorokan; hindari overload kerja dan suhu ekstrem; lakukan pemeriksaan kesehatan tahunan menyeluruh.</p><p>qianyi: - star: null - insight: <strong>Aspek mobilitas/pergerakan memiliki rasa stabil</strong> (<span class=\"hz\">動向方面有安定感</span>), <strong>tidak akan melintang menabrak</strong>, tidak akan salah masuk ke jalan menyimpang (<span class=\"hz\">不可能橫衝直撞, 或誤入岐途之處</span>). Setelah ke luar negeri mencari perkembangan, atau dalam proses mengejar perubahan melalui sekolah/perjalanan luar negeri, <strong>untuk pertama kali bertemu kemurahan-dewa-keberuntungan</strong> (<span class=\"hz\">首次遭遇機運的垂青</span>). Bila lama tinggal di rumah, atau lama-lama menetap di satu tempat — justru <strong>mengundang banyak masalah</strong> (<span class=\"hz\">引致不少的麻煩</span>). Bila ada <strong><span class=\"hz\">巨門</span>、<span class=\"hz\">天梁</span></strong> sekamar: bisa <strong>belajar ke luar negeri sebagai tujuan</strong> (<span class=\"hz\">可以國外為目的</span>). ELAINE bisa <strong>mengikuti kehendak hati pergi ke luar negeri untuk belajar</strong> (<span class=\"hz\">隨心所欲地到海外去留學吧</span>)! Bila bersama <strong><span class=\"hz\">太陰</span></strong>: meski kadang <strong>bertemu kemalangan</strong>, juga <strong>bisa berjumpa peruntungan melompat tinggi</strong> (<span class=\"hz\">飛躍性的機運</span>). <strong>Gambaran besar terbuka, masa depan tak terbatas</strong> (<span class=\"hz\">鴻圖大展, 前途無量</span>). Bagi ELAINE, perubahan nasib adalah peluang <strong>meningkatkan posisi sosial</strong> (<span class=\"hz\">提高您社會地位的機緣</span>). Dalam proses <strong>pindah-pekerjaan, transisi profesi</strong> (<span class=\"hz\">轉業</span>), ELAINE bisa berkenalan dengan <strong>orang-orang berkemampuan &amp; mendapat bantuan mereka</strong> (<span class=\"hz\">能結交有能力者, 並得其協助成就一番偉業</span>). Bila bersama <strong><span class=\"hz\">天同</span></strong>: pasti peruntungan melompat tinggi terbaik (<span class=\"hz\">最理想的鴻運</span>). Selain itu, bila bersama <strong><span class=\"hz\">天機</span></strong>: bisa <strong>berjalan di jalur sastra atau seni</strong> (<span class=\"hz\">文學或藝術方面較理想吧</span>)! - action: Manfaatkan peluang ke luar negeri (studi, kerja, perjalanan); bangun relasi internasional; jangan kunci diri di zona nyaman lokal.</p><p>puyi: - star: null - insight: <strong>Hati-bergantung kuat</strong> (<span class=\"hz\">依賴心強</span>), bawahan yang berbakat sulit ditemukan (<span class=\"hz\">非尋常入微不可的部下</span>). <strong>Setelah paruh-baya bisa mendapat bawahan yang sangat berkemampuan</strong> (<span class=\"hz\">中年以後可得能力優秀的部下</span>). Bila ELAINE ingin bekerjasama dengan rekan yang <strong>lebih muda usianya</strong> (<span class=\"hz\">與比您更年少者</span>) — <strong>mengorganisir perusahaan, mendirikan usaha di bidang tertentu</strong>: dari usia <strong>40 mulai cukup sesuai</strong> (<span class=\"hz\">從四十歲開始較妥當</span>). Bila bersama <strong><span class=\"hz\">紫微</span></strong>: <strong>dihormati oleh banyak orang yang lebih muda</strong> (<span class=\"hz\">受到許多年少者崇拜</span>). Bila bersama <strong><span class=\"hz\">武曲</span></strong>: bisa <strong>mendapat rasa hormat dari bawahan atau kolega</strong> (<span class=\"hz\">受部下或同仁的敬愛</span>). - action: Tunda peran kepemimpinan besar hingga usia 40+; sementara itu bangun kompetensi &amp; jejaring; nantinya tim akan datang dengan natural.</p>",
+    "_palace2_struct": {
+      "caibo": {
+        "insight": "**Belanja sangat royal/dermawan, tetapi pada saat yang sama mampu mendaur-ulang setara harga itu** ([[花錢非常大方, 但同時能回收相當的代價]]). **Mulai dari nol membangun kekayaan dengan kekuatan sendiri** ([[以自己個人的力量白手起家]]), **mandiri memanfaatkan peluang membangun uang** ([[獨自掌握賺錢的機運]]), **tetapi mulai dapat menghasilkan uang besar dimulai setelah usia paruh-baya** ([[但開始賺大錢則從中年以後開始]]). Bila bersama **[[天梁]]**: bisa menjadi **rajawali bisnis yang sangat berdaya** ([[相當有力的資產家]]); bahkan bila bersama **[[凶星]]**: bisa **memilih jadi dokter, ilmuwan, seniman, revolusioner** ([[醫生、學者、藝術家、革命家的職業]]) — tetap memiliki peruntungan uang yang lumayan. **[[太陰]]** adalah bintang yang berjodoh dengan dewa-rezeki ([[與財運有緣之星]]). Lagi bersama **[[天機]]**: dari kosong tanpa sepeser pun bisa menghasilkan kekayaan setara ([[從身無分文而賺取相當的財產]]). Bersama **[[天同]]**: **sering bertemu peluang besar mendapat uang** ([[經常會碰到賺大錢的機會]]). Atau bersama **bintang baik lain**: bisa **menumpuk uang yang sudah masuk tangan, menjadi konglomerat sungguhan** ([[能儲蓄入手的金錢, 成為相當的財產家]]).",
+        "action": "Bangun habit menabung sejak sekarang; salurkan kelebihan ke investasi produktif jangka menengah; pertimbangkan karir yang berimpak sosial (medis, ilmu, seni) untuk pertumbuhan finansial yang stabil setelah paruh-baya."
+      },
+      "jie_e": {
+        "insight": "**Mudah terkena penyakit tenggorokan, flu, sakit gigi** ([[喉部疾病、感冒、牙痛]]). **Kesehatan tanpa krisis** ([[無任何危機]]). Bahkan saat sakit pun **seperti orang sehat, pulih lebih cepat dari orang biasa** ([[即使患病也宛如健康的人, 恢復得也比常人更迅速]]). Tetapi rentan **kepanasan-kedinginan berlebih, kelelahan berlebih adalah penyebab utama penyakit** ([[過度疲勞是致病的主因]]). Sejak kecil cenderung **anak kucing-sakit-sakitan** ([[從小就是個病貓]]), setelah dewasa **mudah terkena wasir & penyakit jantung** ([[痔瘡、心臟等疾病]])! Bila bersama **[[廉貞]]**: hati-hati **penyakit mata** ([[眼睛的疾病]]). Bila di Istana Jie hanya ada bintang **[[文昌]]** tunggal: **nyaris tidak akan terkena penyakit**, bila ditambah bintang baik lain bisa tenang — tidak akan terjadi kecelakaan apapun! Bila ada bintang jahat: mudah disiksa penyakit. **Wajib jaga jantung-paru dan telinga** ([[心肺部及耳朵的疾病]]).",
+        "action": "Rutin jaga jantung-paru dan tenggorokan; hindari overload kerja dan suhu ekstrem; lakukan pemeriksaan kesehatan tahunan menyeluruh."
+      },
+      "qianyi": {
+        "insight": "**Aspek mobilitas/pergerakan memiliki rasa stabil** ([[動向方面有安定感]]), **tidak akan melintang menabrak**, tidak akan salah masuk ke jalan menyimpang ([[不可能橫衝直撞, 或誤入岐途之處]]). Setelah ke luar negeri mencari perkembangan, atau dalam proses mengejar perubahan melalui sekolah/perjalanan luar negeri, **untuk pertama kali bertemu kemurahan-dewa-keberuntungan** ([[首次遭遇機運的垂青]]). Bila lama tinggal di rumah, atau lama-lama menetap di satu tempat — justru **mengundang banyak masalah** ([[引致不少的麻煩]]). Bila ada **[[巨門]]、[[天梁]]** sekamar: bisa **belajar ke luar negeri sebagai tujuan** ([[可以國外為目的]]). ELAINE bisa **mengikuti kehendak hati pergi ke luar negeri untuk belajar** ([[隨心所欲地到海外去留學吧]])! Bila bersama **[[太陰]]**: meski kadang **bertemu kemalangan**, juga **bisa berjumpa peruntungan melompat tinggi** ([[飛躍性的機運]]). **Gambaran besar terbuka, masa depan tak terbatas** ([[鴻圖大展, 前途無量]]). Bagi ELAINE, perubahan nasib adalah peluang **meningkatkan posisi sosial** ([[提高您社會地位的機緣]]). Dalam proses **pindah-pekerjaan, transisi profesi** ([[轉業]]), ELAINE bisa berkenalan dengan **orang-orang berkemampuan & mendapat bantuan mereka** ([[能結交有能力者, 並得其協助成就一番偉業]]). Bila bersama **[[天同]]**: pasti peruntungan melompat tinggi terbaik ([[最理想的鴻運]]). Selain itu, bila bersama **[[天機]]**: bisa **berjalan di jalur sastra atau seni** ([[文學或藝術方面較理想吧]])!",
+        "action": "Manfaatkan peluang ke luar negeri (studi, kerja, perjalanan); bangun relasi internasional; jangan kunci diri di zona nyaman lokal."
+      },
+      "puyi": {
+        "insight": "**Hati-bergantung kuat** ([[依賴心強]]), bawahan yang berbakat sulit ditemukan ([[非尋常入微不可的部下]]). **Setelah paruh-baya bisa mendapat bawahan yang sangat berkemampuan** ([[中年以後可得能力優秀的部下]]). Bila ELAINE ingin bekerjasama dengan rekan yang **lebih muda usianya** ([[與比您更年少者]]) — **mengorganisir perusahaan, mendirikan usaha di bidang tertentu**: dari usia **40 mulai cukup sesuai** ([[從四十歲開始較妥當]]). Bila bersama **[[紫微]]**: **dihormati oleh banyak orang yang lebih muda** ([[受到許多年少者崇拜]]). Bila bersama **[[武曲]]**: bisa **mendapat rasa hormat dari bawahan atau kolega** ([[受部下或同仁的敬愛]]).",
+        "action": "Tunda peran kepemimpinan besar hingga usia 40+; sementara itu bangun kompetensi & jejaring; nantinya tim akan datang dengan natural."
+      }
+    },
+    "palace3": "<p>guanlu: - star: null - insight: Cocok dengan pekerjaan <strong>dokter, perawat, pengasuh, pengacara</strong> (<span class=\"hz\">醫生、護士、保姆、律師等工作</span>). <strong>Daya tindak melimpah</strong> (<span class=\"hz\">行動力充沛</span>), sering <strong>lebih cepat satu langkah dari orang lain</strong> (<span class=\"hz\">經常比別人搶先一步</span>), <strong>berdiri di posisi pemimpin mengarahkan orang lain</strong> (<span class=\"hz\">佔在領導的地位上指揮別人前進</span>). Setelah memegang jabatan, <strong>dengan sikap tulus dan tidak kenal lelah berjuang</strong> (<span class=\"hz\">因奮鬥不懈的誠摯態度</span>), <strong>tak lama kemudian akan menuju ke jalan sukses</strong> (<span class=\"hz\">不久之後即向成功之道邁進</span>). Sekaligus ELAINE memiliki <strong>bakat sebagai penulis</strong> (<span class=\"hz\">作家的天賦</span>). Tetapi karena <strong>kadang menilai diri terlalu tinggi</strong> (<span class=\"hz\">由於自視過高</span>), sering <strong>mengabaikan keberadaan rekan-rekan kerja</strong> (<span class=\"hz\">常會無視同事的存在</span>). Di posisi pekerjaan, bila bisa <strong>meninggalkan jejak prestasi bercahaya</strong> (<span class=\"hz\">可留下光輝的功績</span>), harus <strong>menetapkan ambisi besar</strong> (<span class=\"hz\">要立鴻志</span>). Bila ada <strong>bintang baik lain hadir</strong>, akan menjadi <strong>lengan-bantu</strong> untuk ELAINE. Bila berada di palung <strong><span class=\"hz\">寅</span>、<span class=\"hz\">卯</span></strong>, kekuatan bintang <strong><span class=\"hz\">太陽</span></strong> akan tertekan (<span class=\"hz\">太陽星的力被肯定</span>), <strong>harus cepat bertindak aktif</strong> — supaya bisa <strong>memberi manfaat ke masyarakat di sekitar</strong>! Cocok untuk <strong>hal-hal yang membutuhkan pemikulan tanggung jawab dan ahli dalam hal konkret</strong> (<span class=\"hz\">具備擔當性的事物, 而擅長於具體性的事物</span>). Kepribadian ini terefleksi di bidang karir — sebaiknya pilih pekerjaan yang <strong>secara substansial menampilkan keahlian profesi</strong> (<span class=\"hz\">實質其專職性的工作</span>), misal <strong>dokter, koki, juru-masak, ahli kecantikan, seniman-kerajinan, akuntan</strong> (<span class=\"hz\">醫生、廚師、料理業、美容師、工藝家、會計師</span>). ELAINE adalah <strong>orang yang lahir dengan integritas lurus</strong> (<span class=\"hz\">天生正直的人</span>), <strong>sekali mulai bertindak akan fokus &amp; dedikatif pada pekerjaan</strong> (<span class=\"hz\">一旦開始行動專心致志於工作上</span>), juga <strong>bersemangat mengumpulkan uang</strong> (<span class=\"hz\">熱衷於賺錢</span>). Tetapi karena <strong>terlalu menghargai uang</strong> (<span class=\"hz\">由於您過度地重視金錢</span>), <strong>takut di belakang ada yang menyebut sebagai pelit-kikir</strong> (<span class=\"hz\">恐會於背後被他叫為小氣鬼</span>), bahkan <strong>berpotensi konflik karena urusan uang</strong> (<span class=\"hz\">因金錢的糾紛而與人衝突</span>). Selain itu, ELAINE <strong>tipe yang dalam-tertutup, tidak menunjukkan jejak hati ke orang lain</strong> (<span class=\"hz\">屬於深沉不露, 毫不對他人表明心跡的人</span>), karena itu <strong>rekan-rekan kerja mungkin akan menjauh sedikit demi sedikit</strong> (<span class=\"hz\">同事們可能會因此而敏而遠之</span>). Untuk karir ELAINE — <strong>hubungan antar-manusia yang tenang &amp; stabil adalah hal yang harus selalu diperhatikan</strong> (<span class=\"hz\">平穩的人際關係, 是您所必須經常留意的</span>). - action: Pilih karir profesi yang membutuhkan keahlian spesifik (medis, kuliner, kecantikan, akuntan, seniman-kerajinan); latih komunikasi terbuka dengan rekan kerja untuk hindari kesan pelit/tertutup; jaga keseimbangan ambisi vs relasi.</p><p>tianzhai: - star: null - insight: <strong>Bisa memiliki sejumlah besar properti</strong> (<span class=\"hz\">可擁有大量的不動產</span>). Tetapi <strong>kurang kemampuan untuk menjaga &amp; memanfaatkan properti tersebut secara aktif</strong> (<span class=\"hz\">卻欠缺活用這些不動產的能力</span>). Bila Istana Tianzhai hanya ada <strong><span class=\"hz\">武曲</span></strong> tunggal: meskipun ada <strong>berbagai bentuk perubahan</strong> (<span class=\"hz\">各種不同形態的轉變</span>), <strong>properti warisan leluhur tetap bisa dipertahankan</strong> (<span class=\"hz\">從祖先而來的不動產, 但仍可繼續地保持著</span>). Bila di palung <strong><span class=\"hz\">寅</span></strong> atau <strong><span class=\"hz\">卯</span></strong> ada bintang lain hadir, <strong>akan ada properti hilang</strong> (<span class=\"hz\">則會喪失</span>). Bila ada bintang baik: bisa memiliki tanah &amp; rumah (<span class=\"hz\">有他星同宮者, 端視該星的運勢如何, 資產也隨之起變化</span>). Bila ada <strong>bintang jahat</strong>: properti yang sudah di tangan akhirnya <strong>tak bisa dipertahankan dan harus dilepas</strong> (<span class=\"hz\">到手的資產也終不得不放手讓人</span>). <strong>Arah Barat sangat baik</strong> (<span class=\"hz\">西方大吉</span>). Bila di palung <strong><span class=\"hz\">寅</span>、<span class=\"hz\">卯</span>、<span class=\"hz\">巳</span>、<span class=\"hz\">午</span></strong>: masih bisa <strong>dari orangtua mendapat tanah &amp; rumah</strong> (<span class=\"hz\">尚可從雙親處獲得土地、房屋</span>); jika tidak, harus <strong>bangun rumah sendiri</strong> (<span class=\"hz\">只得自行建築家屋</span>). Bila bersama <strong><span class=\"hz\">武曲</span></strong>: hingga senja-tua bisa <strong>mendapat properti</strong> (<span class=\"hz\">至晚年後可獲得不動產</span>). Bila bersama Kayu, <strong>berkaitan dengan tanah atau hunian dekat ada hutan-pohon</strong> (<span class=\"hz\">與木有關的土地或家居較佳</span>) — <strong>arah Timur sangat baik</strong> (<span class=\"hz\">東方大吉</span>). - action: Bangun strategi mempertahankan &amp; mengaktifkan properti (sewa, renovasi); pilih hunian arah Barat atau Timur dengan ruang hijau; pertimbangkan warisan tanah dari orangtua sebagai pondasi.</p><p>fude: - star: null - insight: <strong>Pribadi yang lembut-mengkilap dan masih punya kepolosan-kelembutan</strong> (<span class=\"hz\">潤澤光鑑而又嬌嫩的人品</span>) — <strong>baik pria maupun wanita memiliki jodoh-orang yang sangat baik</strong> (<span class=\"hz\">男女皆屬人緣良好者</span>). Isyarat bisa <strong>menumpang berkah Fude</strong> (<span class=\"hz\">暗示可得福德之惠的運勢</span>). <strong>Hidup luas-tinggi</strong>, sangat <strong>menghargai cara bersikap kepada orang dan menerima tamu</strong> (<span class=\"hz\">也很著重待人接物的方式</span>). Tetapi bila terkena ganggu-iri-mata orang sekitar (<span class=\"hz\">但如受到周圍意, 見搔亂時</span>), <strong>berkah yang sudah di tangan mungkin bisa hilang</strong> (<span class=\"hz\">到手的福德可能因 之消失</span>). <strong>Peruntungan-Fu sepanjang hidup ada di tubuh</strong> (<span class=\"hz\">一生福運永在身邊</span>), <strong>peruntungan-hidup bisa panjang-umur</strong> (<span class=\"hz\">壽運可保長壽</span>). Lebih lagi ada <strong>kecenderungan mengejar mimpi-romantis bagai pemain anggur</strong> (<span class=\"hz\">追求羅曼蒂克夢想的傾向</span>). Bila hanya <strong><span class=\"hz\">太陰</span></strong> tunggal di Fude: cukup untuk <strong>melewati hidup beruntung selama puluhan tahun</strong> (<span class=\"hz\">也足以渡過十分幸運的一生</span>). Bila ditambah <strong><span class=\"hz\">太陽</span></strong> sekamar: tak diragukan lagi, pasti memiliki <strong>hidup-bahagia yang memuaskan jiwa-raga</strong> (<span class=\"hz\">必擁有身心皆令人滿意的幸福人生</span>)! Tetapi bila bersama <strong><span class=\"hz\">天機</span></strong>: <strong>secara mental dari tidak ada waktu beristirahat</strong> (<span class=\"hz\">心理上從無休暇之時</span>). - action: Jaga kesan &amp; cara interaksi dengan orang lain — berkah datang dari hubungan; istirahatkan pikiran rutin; salurkan kecenderungan romantis ke dalam hobi seni atau perjalanan.</p><p>fumu: - star: null - insight: <strong>Orang tua agak murung &amp; tanpa semangat hidup</strong> (<span class=\"hz\">陰沈而了無生氣的雙親</span>). <strong>Selama tidak ada bintang jahat menghalangi</strong> (<span class=\"hz\">只要無凶星阻擾</span>), termasuk <strong>bintang Bahagia</strong> (<span class=\"hz\">是屬幸福之星</span>). Orang tua ELAINE adalah orang yang <strong>tenang-stabil dan adil</strong> (<span class=\"hz\">您的雙親是穩重而公平的人</span>), mungkin <strong>butuh waktu</strong>, tetapi pada akhirnya pasti <strong>bisa memahami tindakan ELAINE</strong> (<span class=\"hz\">但最後必定能了解您的行動</span>). ELAINE bisa <strong>dengan tenang dan tulus berinteraksi terbuka dengan kedua orangtua</strong> (<span class=\"hz\">您大可安心而開誠布公地與雙親交往</span>). Terutama bila bersama <strong><span class=\"hz\">紫微</span>、<span class=\"hz\">武曲</span></strong>: tak diragukan <strong>hubungan orangtua-anak yang hangat-lembut</strong> (<span class=\"hz\">溫馨的親子關係</span>). Selain itu, <strong><span class=\"hz\">天府</span></strong> adalah bintang yang memerintah pondasi-kekayaan (<span class=\"hz\">天府星是主宰財勢之星</span>), ELAINE kemungkinan <strong>tumbuh dalam keluarga yang berkecukupan</strong> (<span class=\"hz\">您大概是成長於富裕的家庭內的人吧</span>)! - action: Jaga relasi dengan orangtua secara terbuka &amp; sabar; hargai pondasi finansial yang sudah dibangun keluarga; jangan ragu untuk berbagi rencana hidup dengan mereka.</p>",
+    "_palace3_struct": {
+      "guanlu": {
+        "insight": "Cocok dengan pekerjaan **dokter, perawat, pengasuh, pengacara** ([[醫生、護士、保姆、律師等工作]]). **Daya tindak melimpah** ([[行動力充沛]]), sering **lebih cepat satu langkah dari orang lain** ([[經常比別人搶先一步]]), **berdiri di posisi pemimpin mengarahkan orang lain** ([[佔在領導的地位上指揮別人前進]]). Setelah memegang jabatan, **dengan sikap tulus dan tidak kenal lelah berjuang** ([[因奮鬥不懈的誠摯態度]]), **tak lama kemudian akan menuju ke jalan sukses** ([[不久之後即向成功之道邁進]]). Sekaligus ELAINE memiliki **bakat sebagai penulis** ([[作家的天賦]]). Tetapi karena **kadang menilai diri terlalu tinggi** ([[由於自視過高]]), sering **mengabaikan keberadaan rekan-rekan kerja** ([[常會無視同事的存在]]). Di posisi pekerjaan, bila bisa **meninggalkan jejak prestasi bercahaya** ([[可留下光輝的功績]]), harus **menetapkan ambisi besar** ([[要立鴻志]]). Bila ada **bintang baik lain hadir**, akan menjadi **lengan-bantu** untuk ELAINE. Bila berada di palung **[[寅]]、[[卯]]**, kekuatan bintang **[[太陽]]** akan tertekan ([[太陽星的力被肯定]]), **harus cepat bertindak aktif** — supaya bisa **memberi manfaat ke masyarakat di sekitar**! Cocok untuk **hal-hal yang membutuhkan pemikulan tanggung jawab dan ahli dalam hal konkret** ([[具備擔當性的事物, 而擅長於具體性的事物]]). Kepribadian ini terefleksi di bidang karir — sebaiknya pilih pekerjaan yang **secara substansial menampilkan keahlian profesi** ([[實質其專職性的工作]]), misal **dokter, koki, juru-masak, ahli kecantikan, seniman-kerajinan, akuntan** ([[醫生、廚師、料理業、美容師、工藝家、會計師]]). ELAINE adalah **orang yang lahir dengan integritas lurus** ([[天生正直的人]]), **sekali mulai bertindak akan fokus & dedikatif pada pekerjaan** ([[一旦開始行動專心致志於工作上]]), juga **bersemangat mengumpulkan uang** ([[熱衷於賺錢]]). Tetapi karena **terlalu menghargai uang** ([[由於您過度地重視金錢]]), **takut di belakang ada yang menyebut sebagai pelit-kikir** ([[恐會於背後被他叫為小氣鬼]]), bahkan **berpotensi konflik karena urusan uang** ([[因金錢的糾紛而與人衝突]]). Selain itu, ELAINE **tipe yang dalam-tertutup, tidak menunjukkan jejak hati ke orang lain** ([[屬於深沉不露, 毫不對他人表明心跡的人]]), karena itu **rekan-rekan kerja mungkin akan menjauh sedikit demi sedikit** ([[同事們可能會因此而敏而遠之]]). Untuk karir ELAINE — **hubungan antar-manusia yang tenang & stabil adalah hal yang harus selalu diperhatikan** ([[平穩的人際關係, 是您所必須經常留意的]]).",
+        "action": "Pilih karir profesi yang membutuhkan keahlian spesifik (medis, kuliner, kecantikan, akuntan, seniman-kerajinan); latih komunikasi terbuka dengan rekan kerja untuk hindari kesan pelit/tertutup; jaga keseimbangan ambisi vs relasi."
+      },
+      "tianzhai": {
+        "insight": "**Bisa memiliki sejumlah besar properti** ([[可擁有大量的不動產]]). Tetapi **kurang kemampuan untuk menjaga & memanfaatkan properti tersebut secara aktif** ([[卻欠缺活用這些不動產的能力]]). Bila Istana Tianzhai hanya ada **[[武曲]]** tunggal: meskipun ada **berbagai bentuk perubahan** ([[各種不同形態的轉變]]), **properti warisan leluhur tetap bisa dipertahankan** ([[從祖先而來的不動產, 但仍可繼續地保持著]]). Bila di palung **[[寅]]** atau **[[卯]]** ada bintang lain hadir, **akan ada properti hilang** ([[則會喪失]]). Bila ada bintang baik: bisa memiliki tanah & rumah ([[有他星同宮者, 端視該星的運勢如何, 資產也隨之起變化]]). Bila ada **bintang jahat**: properti yang sudah di tangan akhirnya **tak bisa dipertahankan dan harus dilepas** ([[到手的資產也終不得不放手讓人]]). **Arah Barat sangat baik** ([[西方大吉]]). Bila di palung **[[寅]]、[[卯]]、[[巳]]、[[午]]**: masih bisa **dari orangtua mendapat tanah & rumah** ([[尚可從雙親處獲得土地、房屋]]); jika tidak, harus **bangun rumah sendiri** ([[只得自行建築家屋]]). Bila bersama **[[武曲]]**: hingga senja-tua bisa **mendapat properti** ([[至晚年後可獲得不動產]]). Bila bersama Kayu, **berkaitan dengan tanah atau hunian dekat ada hutan-pohon** ([[與木有關的土地或家居較佳]]) — **arah Timur sangat baik** ([[東方大吉]]).",
+        "action": "Bangun strategi mempertahankan & mengaktifkan properti (sewa, renovasi); pilih hunian arah Barat atau Timur dengan ruang hijau; pertimbangkan warisan tanah dari orangtua sebagai pondasi."
+      },
+      "fude": {
+        "insight": "**Pribadi yang lembut-mengkilap dan masih punya kepolosan-kelembutan** ([[潤澤光鑑而又嬌嫩的人品]]) — **baik pria maupun wanita memiliki jodoh-orang yang sangat baik** ([[男女皆屬人緣良好者]]). Isyarat bisa **menumpang berkah Fude** ([[暗示可得福德之惠的運勢]]). **Hidup luas-tinggi**, sangat **menghargai cara bersikap kepada orang dan menerima tamu** ([[也很著重待人接物的方式]]). Tetapi bila terkena ganggu-iri-mata orang sekitar ([[但如受到周圍意, 見搔亂時]]), **berkah yang sudah di tangan mungkin bisa hilang** ([[到手的福德可能因 之消失]]). **Peruntungan-Fu sepanjang hidup ada di tubuh** ([[一生福運永在身邊]]), **peruntungan-hidup bisa panjang-umur** ([[壽運可保長壽]]). Lebih lagi ada **kecenderungan mengejar mimpi-romantis bagai pemain anggur** ([[追求羅曼蒂克夢想的傾向]]). Bila hanya **[[太陰]]** tunggal di Fude: cukup untuk **melewati hidup beruntung selama puluhan tahun** ([[也足以渡過十分幸運的一生]]). Bila ditambah **[[太陽]]** sekamar: tak diragukan lagi, pasti memiliki **hidup-bahagia yang memuaskan jiwa-raga** ([[必擁有身心皆令人滿意的幸福人生]])! Tetapi bila bersama **[[天機]]**: **secara mental dari tidak ada waktu beristirahat** ([[心理上從無休暇之時]]).",
+        "action": "Jaga kesan & cara interaksi dengan orang lain — berkah datang dari hubungan; istirahatkan pikiran rutin; salurkan kecenderungan romantis ke dalam hobi seni atau perjalanan."
+      },
+      "fumu": {
+        "insight": "**Orang tua agak murung & tanpa semangat hidup** ([[陰沈而了無生氣的雙親]]). **Selama tidak ada bintang jahat menghalangi** ([[只要無凶星阻擾]]), termasuk **bintang Bahagia** ([[是屬幸福之星]]). Orang tua ELAINE adalah orang yang **tenang-stabil dan adil** ([[您的雙親是穩重而公平的人]]), mungkin **butuh waktu**, tetapi pada akhirnya pasti **bisa memahami tindakan ELAINE** ([[但最後必定能了解您的行動]]). ELAINE bisa **dengan tenang dan tulus berinteraksi terbuka dengan kedua orangtua** ([[您大可安心而開誠布公地與雙親交往]]). Terutama bila bersama **[[紫微]]、[[武曲]]**: tak diragukan **hubungan orangtua-anak yang hangat-lembut** ([[溫馨的親子關係]]). Selain itu, **[[天府]]** adalah bintang yang memerintah pondasi-kekayaan ([[天府星是主宰財勢之星]]), ELAINE kemungkinan **tumbuh dalam keluarga yang berkecukupan** ([[您大概是成長於富裕的家庭內的人吧]])!",
+        "action": "Jaga relasi dengan orangtua secara terbuka & sabar; hargai pondasi finansial yang sudah dibangun keluarga; jangan ragu untuk berbagi rencana hidup dengan mereka."
+      }
+    },
+    "career": "<ul><li><strong>Medis &amp; Pelayanan Profesi</strong> (unsur 火), foto 官祿 sebut dokter, perawat, pengasuh, pengacara — karir profesi yang membutuhkan integritas &amp; keahlian spesifik.</li><li><strong>Industri Bercahaya &amp; Panas</strong> (unsur 火), foto 事業 sebut peralatan listrik, optik, kacamata, minuman panas, pabrik makanan, salon-tata rambut-rias — searah unsur Api yang menyalurkan Kayu kuat.</li><li><strong>Ekspresi &amp; Kreatif</strong> (unsur 火), foto sebut fotografi, busana &amp; aksesori, kritikus, kosmetik, militer, tembakau-arak — bidang ekspresi diri.</li><li><strong>Konstruksi &amp; Properti</strong> (unsur 土), foto sebut bangunan, toko obat, peternakan, semen-beton, properti, rumah duka, batu-nisan, geomansi, antik, konsultan.</li><li><strong>Kuliner &amp; Kecantikan</strong> (unsur 火), foto 官祿 sebut koki, juru-masak, ahli kecantikan, seniman-kerajinan, akuntan — profesi keahlian spesifik.</li></ul>",
+    "_career_struct": {
+      "tags": {
+        "fav_1": [
+          "火",
+          "Api Penyalur"
+        ],
+        "fav_2": [
+          "土",
+          "Tanah Pengikat"
+        ],
+        "unfav_1": [
+          "木",
+          "Kayu Berlebih"
+        ],
+        "unfav_2": [
+          "水",
+          "Air Pendukung-berlebih"
+        ]
+      },
+      "industri": [
+        {
+          "nama": "Medis & Pelayanan Profesi",
+          "unsur": "火",
+          "alasan": "foto 官祿 sebut dokter, perawat, pengasuh, pengacara — karir profesi yang membutuhkan integritas & keahlian spesifik."
+        },
+        {
+          "nama": "Industri Bercahaya & Panas",
+          "unsur": "火",
+          "alasan": "foto 事業 sebut peralatan listrik, optik, kacamata, minuman panas, pabrik makanan, salon-tata rambut-rias — searah unsur Api yang menyalurkan Kayu kuat."
+        },
+        {
+          "nama": "Ekspresi & Kreatif",
+          "unsur": "火",
+          "alasan": "foto sebut fotografi, busana & aksesori, kritikus, kosmetik, militer, tembakau-arak — bidang ekspresi diri."
+        },
+        {
+          "nama": "Konstruksi & Properti",
+          "unsur": "土",
+          "alasan": "foto sebut bangunan, toko obat, peternakan, semen-beton, properti, rumah duka, batu-nisan, geomansi, antik, konsultan."
+        },
+        {
+          "nama": "Kuliner & Kecantikan",
+          "unsur": "火",
+          "alasan": "foto 官祿 sebut koki, juru-masak, ahli kecantikan, seniman-kerajinan, akuntan — profesi keahlian spesifik."
+        }
+      ]
+    },
+    "sintesis": "Bagian ini menyajikan <strong>5 langkah praktis</strong> yang diturunkan dari prose foto ELAINE — fokus pada penyaluran energi Kayu Yang yang kuat (<span class=\"hz\">甲木</span>), kekuatan ledakan format Mata-Pisau-Domba (<span class=\"hz\">羊刃格</span>), dan bintang baik <span class=\"hz\">劫煞</span> yang memberikan kecerdasan strategis.",
+    "_sintesis_struct": {
+      "opening": "Bagian ini menyajikan **5 langkah praktis** yang diturunkan dari prose foto ELAINE — fokus pada penyaluran energi Kayu Yang yang kuat ([[甲木]]), kekuatan ledakan format Mata-Pisau-Domba ([[羊刃格]]), dan bintang baik [[劫煞]] yang memberikan kecerdasan strategis.",
+      "actions": [
+        {
+          "title": "Pilih karir profesi yang membutuhkan keahlian spesifik (medis, kuliner, kecantikan, akuntan, seniman-kerajinan)",
+          "context": "Foto 官祿 sebut langsung — 醫生、護士、保姆、律師、廚師、料理業、美容師、工藝家、會計師. DM Kayu Yang ([[甲]]) sudah kuat ([[旺]]) dengan 羊刃格 — butuh disalurkan ke unsur Api/Tanah melalui keahlian dan eksekusi konkret."
+        },
+        {
+          "title": "Jaga rutin jantung-paru, tenggorokan, telinga",
+          "context": "Foto 疾厄 verbatim — 易患喉部疾病、感冒、牙痛、痔瘡、心臟. **Yang utama wajib dijaga**: 心肺部及耳朵的疾病. Pemulihan cepat tapi pemicu utama adalah kelelahan berlebih."
+        },
+        {
+          "title": "Pilih hunian gua [[兌]] — duduk Timur Laut menghadap Barat Daya, di kawasan tenang",
+          "context": "Foto 陽宅 — 兌卦, 宅宜坐東北向西南或西北向東南大吉. Dapur hadap Timur Laut menuju Barat Daya. Foto 田宅 — sebut \"西方大吉\" untuk hunian Logam, \"東方大吉\" bila pondasi Kayu."
+        },
+        {
+          "title": "Pilih pasangan shio Tikus atau Naga ([[大吉]])",
+          "context": "Foto 婚配 — 宜配相鼠、龍大吉 dengan tafsir \"[[珠聯璧合, 一帆風順, 不能為害, 成功富貴, 子孫興旺, 五世其昌]]\". Foto 夫妻 — 太陽 terlalu kuat menghasilkan 早婚不吉, sebaiknya lewat masa pertimbangan & penjajakan."
+        },
+        {
+          "title": "Manfaatkan peluang luar negeri (studi, kerja, perjalanan)",
+          "context": "Foto 遷移 — 經由前往海外求發展... 首次遭遇機運的垂青. ELAINE bisa **隨心所欲地到海外去留學**, **鴻圖大展, 前途無量**. Pindah-profesi adalah peluang naik kelas sosial."
+        }
+      ]
+    },
+    "_dmcard": "\n        <div class=\"dmc-eyebrow\">本 命 · Penguasa Hari</div>\n        <div class=\"dmc-stem\">甲</div>\n        <div class=\"dmc-element\">木 · Kayu Yang</div>\n        <div class=\"dmc-pinyin\">Jiǎ 木, \"Pohon Besar\"</div>\n        <div class=\"dmc-strength\">Status: <span class=\"val\">KUAT</span> · 旺</div>\n      ",
+    "_jishen_body": "<strong>木</strong> (Mù · Kayu), Kayu berlebih menyedot energi inti; hindari hijau dominan, terlalu banyak proyek baru, dan kepalanya keras.",
+    "caifu_zheng_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "caifu_pian_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "_p1_ming_gong": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Diri</span><span class=\"pn-meta\">Mìng Gōng<span class=\"hz\">命宮</span></span></div></div><div class=\"pal-body\"><p><strong>Meskipun ada cacat sedikit \"lengket air-lumpur\" / kurang tegas</strong> (<span class=\"hz\">雖有拖泥帶水的毛病</span>) — tetapi tetap <strong>peruntungan yang terang dan kokoh</strong> (<span class=\"hz\">但仍不失為明朗堅實的運勢</span>). Artinya ELAINE memang punya kecenderungan agak ambigu atau kurang tegas di beberapa titik keputusan, tetapi struktur peruntungan hidup tetap jelas, terang, dan kokoh — pondasi nasib stabil dan tidak rapuh. Ini adalah modal dasar untuk mengarungi hidup: tidak perlu cemas berlebih, hanya perlu menetapkan keputusan kunci dengan lebih tegas.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Latih ketegasan keputusan dalam hal kecil sehari-hari; manfaatkan pondasi peruntungan yang sudah kokoh untuk mengambil langkah besar dengan percaya diri.</span></div></div>",
+    "_solo_ming_gong_body": "<p><strong>Meskipun ada cacat sedikit \"lengket air-lumpur\" / kurang tegas</strong> (<span class=\"hz\">雖有拖泥帶水的毛病</span>) — tetapi tetap <strong>peruntungan yang terang dan kokoh</strong> (<span class=\"hz\">但仍不失為明朗堅實的運勢</span>). Artinya ELAINE memang punya kecenderungan agak ambigu atau kurang tegas di beberapa titik keputusan, tetapi struktur peruntungan hidup tetap jelas, terang, dan kokoh — pondasi nasib stabil dan tidak rapuh. Ini adalah modal dasar untuk mengarungi hidup: tidak perlu cemas berlebih, hanya perlu menetapkan keputusan kunci dengan lebih tegas.</p>",
+    "_solo_ming_gong_action": "Latih ketegasan keputusan dalam hal kecil sehari-hari; manfaatkan pondasi peruntungan yang sudah kokoh untuk mengambil langkah besar dengan percaya diri.",
+    "_p1_xiongdi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Saudara</span><span class=\"pn-meta\">Xiōng Dì<span class=\"hz\">兄弟</span></span></div></div>",
+    "_p1_fuqi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pasangan</span><span class=\"pn-meta\">Fū Qī<span class=\"hz\">夫妻</span></span></div></div><div class=\"pal-body\"><p><strong>Memiliki konsep cinta yang tertib dan menghargai</strong> (<span class=\"hz\">擁有踏實的愛情觀念</span>), tidak menyimpan pikiran yang tidak realistis (<span class=\"hz\">並無存幻想的念頭</span>) — karena itu <strong>sama sekali tidak akan menoleransi sikap ringan-permainan dari pasangan</strong> (<span class=\"hz\">絕不容許對方的輕浮玩弄</span>). Karena menuntut diri sendiri dan pasangan dengan standar yang sama berat (<span class=\"hz\">由於對自己與對方的要求同樣嚴厲</span>), mungkin akan <strong>mengalami gelombang asmara yang sangat dahsyat</strong> (<span class=\"hz\">或許會遭遇波濤萬丈的愛情運</span>). Karena bintang <strong><span class=\"hz\">太陽</span></strong> terlalu kuat, <strong>yang menikah terlalu cepat sangat tidak menguntungkan</strong> (<span class=\"hz\">早婚者相當不吉利</span>). Bila memungkinkan, <strong>jangan tergesa-gesa menikah</strong> (<span class=\"hz\">不要急於於結婚</span>) — sebaiknya lewat masa pertimbangan &amp; penjajakan dengan perlahan. Pria bisa mendapat <strong>wanita cerdas-sehat-cerah</strong> (<span class=\"hz\">開朗的健康的女性</span>) sebagai istri; wanita bisa mendapat <strong>pria bermurah-hati lapang dada</strong> (<span class=\"hz\">寬宏大量的男人</span>) sebagai suami. Bila ada bintang jahat menghalangi: <strong>hampir bisa dikatakan langsung menghadapi krisis pernikahan</strong> (<span class=\"hz\">直接面對著離婚的危機</span>). Antara suami-istri mudah terjadi cekcok (<span class=\"hz\">夫婦間易起爭執</span>); tetapi bila Istana Fuqi bersama <strong><span class=\"hz\">太陽</span></strong> sendirian tanpa bintang jahat lain — atau dengan <strong><span class=\"hz\">天同</span>/<span class=\"hz\">天機</span></strong> sekamar — bisa mendapat <strong>pasangan cerdas, membangun rumah tangga yang lengkap-sempurna</strong> (<span class=\"hz\">聰明的配偶, 建立圓滿的家庭</span>). Berbawaan <strong>cemburuan kuat</strong> (<span class=\"hz\">天生嫉妒心強</span>) tetapi tidak akan terlontar dalam kata-kata. Pria bila ada <strong><span class=\"hz\">文昌</span></strong> dan <strong><span class=\"hz\">天機</span></strong> di kedudukan: di luar istri pasti <strong>memelihara istana-tersembunyi</strong> (<span class=\"hz\">必在外蓄小公館金屋藏嬌</span>); pria menyukai <strong>kecantikan dingin-eksklusif</strong> (<span class=\"hz\">冷豔的美人</span>). Wanita berjodoh dengan <strong>pria cerdas-tajam yang juga \"punya rezeki-aura\" / berdaya finansial</strong> (<span class=\"hz\">頭腦聰明而又「財氣」縱橫的男性相當有緣</span>).</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Tunda pernikahan hingga matang secara mental &amp; finansial; pilih pasangan yang sebanding dari sisi standar etika dan integritas; latih komunikasi terbuka untuk meredam cemburu.</span></div></div>",
+    "_solo_fuqi_body": "<p><strong>Memiliki konsep cinta yang tertib dan menghargai</strong> (<span class=\"hz\">擁有踏實的愛情觀念</span>), tidak menyimpan pikiran yang tidak realistis (<span class=\"hz\">並無存幻想的念頭</span>) — karena itu <strong>sama sekali tidak akan menoleransi sikap ringan-permainan dari pasangan</strong> (<span class=\"hz\">絕不容許對方的輕浮玩弄</span>). Karena menuntut diri sendiri dan pasangan dengan standar yang sama berat (<span class=\"hz\">由於對自己與對方的要求同樣嚴厲</span>), mungkin akan <strong>mengalami gelombang asmara yang sangat dahsyat</strong> (<span class=\"hz\">或許會遭遇波濤萬丈的愛情運</span>). Karena bintang <strong><span class=\"hz\">太陽</span></strong> terlalu kuat, <strong>yang menikah terlalu cepat sangat tidak menguntungkan</strong> (<span class=\"hz\">早婚者相當不吉利</span>). Bila memungkinkan, <strong>jangan tergesa-gesa menikah</strong> (<span class=\"hz\">不要急於於結婚</span>) — sebaiknya lewat masa pertimbangan &amp; penjajakan dengan perlahan. Pria bisa mendapat <strong>wanita cerdas-sehat-cerah</strong> (<span class=\"hz\">開朗的健康的女性</span>) sebagai istri; wanita bisa mendapat <strong>pria bermurah-hati lapang dada</strong> (<span class=\"hz\">寬宏大量的男人</span>) sebagai suami. Bila ada bintang jahat menghalangi: <strong>hampir bisa dikatakan langsung menghadapi krisis pernikahan</strong> (<span class=\"hz\">直接面對著離婚的危機</span>). Antara suami-istri mudah terjadi cekcok (<span class=\"hz\">夫婦間易起爭執</span>); tetapi bila Istana Fuqi bersama <strong><span class=\"hz\">太陽</span></strong> sendirian tanpa bintang jahat lain — atau dengan <strong><span class=\"hz\">天同</span>/<span class=\"hz\">天機</span></strong> sekamar — bisa mendapat <strong>pasangan cerdas, membangun rumah tangga yang lengkap-sempurna</strong> (<span class=\"hz\">聰明的配偶, 建立圓滿的家庭</span>). Berbawaan <strong>cemburuan kuat</strong> (<span class=\"hz\">天生嫉妒心強</span>) tetapi tidak akan terlontar dalam kata-kata. Pria bila ada <strong><span class=\"hz\">文昌</span></strong> dan <strong><span class=\"hz\">天機</span></strong> di kedudukan: di luar istri pasti <strong>memelihara istana-tersembunyi</strong> (<span class=\"hz\">必在外蓄小公館金屋藏嬌</span>); pria menyukai <strong>kecantikan dingin-eksklusif</strong> (<span class=\"hz\">冷豔的美人</span>). Wanita berjodoh dengan <strong>pria cerdas-tajam yang juga \"punya rezeki-aura\" / berdaya finansial</strong> (<span class=\"hz\">頭腦聰明而又「財氣」縱橫的男性相當有緣</span>).</p>",
+    "_solo_fuqi_action": "Tunda pernikahan hingga matang secara mental &amp; finansial; pilih pasangan yang sebanding dari sisi standar etika dan integritas; latih komunikasi terbuka untuk meredam cemburu.",
+    "_p1_zinu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Anak</span><span class=\"pn-meta\">Zǐ Nǚ<span class=\"hz\">子女</span></span></div></div><div class=\"pal-body\"><p><strong>Lembut dan jinak</strong> (<span class=\"hz\">溫馴</span>), tetapi <strong>kelemahannya adalah gerakannya agak lambat-tumpul</strong> (<span class=\"hz\">但缺點是動作稍帶運鈍的兒女</span>) — anak-anak ELAINE cenderung berkarakter halus dan patuh, namun perlu lebih banyak waktu untuk merespons atau bereaksi terhadap situasi baru. Bukan tipe anak yang lincah-agresif, melainkan anak yang membutuhkan dukungan &amp; kesabaran ekstra untuk berkembang. Mereka biasanya <strong>sabar, tenang, dan dapat dipercaya</strong> — kualitas yang akan menjadi modal besar ketika dewasa.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Berikan ruang dan kesabaran untuk anak; jangan paksa kecepatan; bangun kepercayaan diri mereka melalui keberhasilan-keberhasilan kecil yang konsisten.</span></div></div>",
+    "_solo_zinu_body": "<p><strong>Lembut dan jinak</strong> (<span class=\"hz\">溫馴</span>), tetapi <strong>kelemahannya adalah gerakannya agak lambat-tumpul</strong> (<span class=\"hz\">但缺點是動作稍帶運鈍的兒女</span>) — anak-anak ELAINE cenderung berkarakter halus dan patuh, namun perlu lebih banyak waktu untuk merespons atau bereaksi terhadap situasi baru. Bukan tipe anak yang lincah-agresif, melainkan anak yang membutuhkan dukungan &amp; kesabaran ekstra untuk berkembang. Mereka biasanya <strong>sabar, tenang, dan dapat dipercaya</strong> — kualitas yang akan menjadi modal besar ketika dewasa.</p>",
+    "_solo_zinu_action": "Berikan ruang dan kesabaran untuk anak; jangan paksa kecepatan; bangun kepercayaan diri mereka melalui keberhasilan-keberhasilan kecil yang konsisten.",
+    "_p2_caibo": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Rezeki</span><span class=\"pn-meta\">Cái Bó<span class=\"hz\">財帛</span></span></div></div><div class=\"pal-body\"><p><strong>Belanja sangat royal/dermawan, tetapi pada saat yang sama mampu mendaur-ulang setara harga itu</strong> (<span class=\"hz\">花錢非常大方, 但同時能回收相當的代價</span>). <strong>Mulai dari nol membangun kekayaan dengan kekuatan sendiri</strong> (<span class=\"hz\">以自己個人的力量白手起家</span>), <strong>mandiri memanfaatkan peluang membangun uang</strong> (<span class=\"hz\">獨自掌握賺錢的機運</span>), <strong>tetapi mulai dapat menghasilkan uang besar dimulai setelah usia paruh-baya</strong> (<span class=\"hz\">但開始賺大錢則從中年以後開始</span>). Bila bersama <strong><span class=\"hz\">天梁</span></strong>: bisa menjadi <strong>rajawali bisnis yang sangat berdaya</strong> (<span class=\"hz\">相當有力的資產家</span>); bahkan bila bersama <strong><span class=\"hz\">凶星</span></strong>: bisa <strong>memilih jadi dokter, ilmuwan, seniman, revolusioner</strong> (<span class=\"hz\">醫生、學者、藝術家、革命家的職業</span>) — tetap memiliki peruntungan uang yang lumayan. <strong><span class=\"hz\">太陰</span></strong> adalah bintang yang berjodoh dengan dewa-rezeki (<span class=\"hz\">與財運有緣之星</span>). Lagi bersama <strong><span class=\"hz\">天機</span></strong>: dari kosong tanpa sepeser pun bisa menghasilkan kekayaan setara (<span class=\"hz\">從身無分文而賺取相當的財產</span>). Bersama <strong><span class=\"hz\">天同</span></strong>: <strong>sering bertemu peluang besar mendapat uang</strong> (<span class=\"hz\">經常會碰到賺大錢的機會</span>). Atau bersama <strong>bintang baik lain</strong>: bisa <strong>menumpuk uang yang sudah masuk tangan, menjadi konglomerat sungguhan</strong> (<span class=\"hz\">能儲蓄入手的金錢, 成為相當的財產家</span>).</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun habit menabung sejak sekarang; salurkan kelebihan ke investasi produktif jangka menengah; pertimbangkan karir yang berimpak sosial (medis, ilmu, seni) untuk pertumbuhan finansial yang stabil setelah paruh-baya.</span></div></div>",
+    "_solo_caibo_body": "<p><strong>Belanja sangat royal/dermawan, tetapi pada saat yang sama mampu mendaur-ulang setara harga itu</strong> (<span class=\"hz\">花錢非常大方, 但同時能回收相當的代價</span>). <strong>Mulai dari nol membangun kekayaan dengan kekuatan sendiri</strong> (<span class=\"hz\">以自己個人的力量白手起家</span>), <strong>mandiri memanfaatkan peluang membangun uang</strong> (<span class=\"hz\">獨自掌握賺錢的機運</span>), <strong>tetapi mulai dapat menghasilkan uang besar dimulai setelah usia paruh-baya</strong> (<span class=\"hz\">但開始賺大錢則從中年以後開始</span>). Bila bersama <strong><span class=\"hz\">天梁</span></strong>: bisa menjadi <strong>rajawali bisnis yang sangat berdaya</strong> (<span class=\"hz\">相當有力的資產家</span>); bahkan bila bersama <strong><span class=\"hz\">凶星</span></strong>: bisa <strong>memilih jadi dokter, ilmuwan, seniman, revolusioner</strong> (<span class=\"hz\">醫生、學者、藝術家、革命家的職業</span>) — tetap memiliki peruntungan uang yang lumayan. <strong><span class=\"hz\">太陰</span></strong> adalah bintang yang berjodoh dengan dewa-rezeki (<span class=\"hz\">與財運有緣之星</span>). Lagi bersama <strong><span class=\"hz\">天機</span></strong>: dari kosong tanpa sepeser pun bisa menghasilkan kekayaan setara (<span class=\"hz\">從身無分文而賺取相當的財產</span>). Bersama <strong><span class=\"hz\">天同</span></strong>: <strong>sering bertemu peluang besar mendapat uang</strong> (<span class=\"hz\">經常會碰到賺大錢的機會</span>). Atau bersama <strong>bintang baik lain</strong>: bisa <strong>menumpuk uang yang sudah masuk tangan, menjadi konglomerat sungguhan</strong> (<span class=\"hz\">能儲蓄入手的金錢, 成為相當的財產家</span>).</p>",
+    "_solo_caibo_action": "Bangun habit menabung sejak sekarang; salurkan kelebihan ke investasi produktif jangka menengah; pertimbangkan karir yang berimpak sosial (medis, ilmu, seni) untuk pertumbuhan finansial yang stabil setelah paruh-baya.",
+    "_p2_jie_e": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Kesehatan</span><span class=\"pn-meta\">Jí È<span class=\"hz\">疾厄</span></span></div></div><div class=\"pal-body\"><p><strong>Mudah terkena penyakit tenggorokan, flu, sakit gigi</strong> (<span class=\"hz\">喉部疾病、感冒、牙痛</span>). <strong>Kesehatan tanpa krisis</strong> (<span class=\"hz\">無任何危機</span>). Bahkan saat sakit pun <strong>seperti orang sehat, pulih lebih cepat dari orang biasa</strong> (<span class=\"hz\">即使患病也宛如健康的人, 恢復得也比常人更迅速</span>). Tetapi rentan <strong>kepanasan-kedinginan berlebih, kelelahan berlebih adalah penyebab utama penyakit</strong> (<span class=\"hz\">過度疲勞是致病的主因</span>). Sejak kecil cenderung <strong>anak kucing-sakit-sakitan</strong> (<span class=\"hz\">從小就是個病貓</span>), setelah dewasa <strong>mudah terkena wasir &amp; penyakit jantung</strong> (<span class=\"hz\">痔瘡、心臟等疾病</span>)! Bila bersama <strong><span class=\"hz\">廉貞</span></strong>: hati-hati <strong>penyakit mata</strong> (<span class=\"hz\">眼睛的疾病</span>). Bila di Istana Jie hanya ada bintang <strong><span class=\"hz\">文昌</span></strong> tunggal: <strong>nyaris tidak akan terkena penyakit</strong>, bila ditambah bintang baik lain bisa tenang — tidak akan terjadi kecelakaan apapun! Bila ada bintang jahat: mudah disiksa penyakit. <strong>Wajib jaga jantung-paru dan telinga</strong> (<span class=\"hz\">心肺部及耳朵的疾病</span>).</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Rutin jaga jantung-paru dan tenggorokan; hindari overload kerja dan suhu ekstrem; lakukan pemeriksaan kesehatan tahunan menyeluruh.</span></div></div>",
+    "_solo_jie_e_body": "<p><strong>Mudah terkena penyakit tenggorokan, flu, sakit gigi</strong> (<span class=\"hz\">喉部疾病、感冒、牙痛</span>). <strong>Kesehatan tanpa krisis</strong> (<span class=\"hz\">無任何危機</span>). Bahkan saat sakit pun <strong>seperti orang sehat, pulih lebih cepat dari orang biasa</strong> (<span class=\"hz\">即使患病也宛如健康的人, 恢復得也比常人更迅速</span>). Tetapi rentan <strong>kepanasan-kedinginan berlebih, kelelahan berlebih adalah penyebab utama penyakit</strong> (<span class=\"hz\">過度疲勞是致病的主因</span>). Sejak kecil cenderung <strong>anak kucing-sakit-sakitan</strong> (<span class=\"hz\">從小就是個病貓</span>), setelah dewasa <strong>mudah terkena wasir &amp; penyakit jantung</strong> (<span class=\"hz\">痔瘡、心臟等疾病</span>)! Bila bersama <strong><span class=\"hz\">廉貞</span></strong>: hati-hati <strong>penyakit mata</strong> (<span class=\"hz\">眼睛的疾病</span>). Bila di Istana Jie hanya ada bintang <strong><span class=\"hz\">文昌</span></strong> tunggal: <strong>nyaris tidak akan terkena penyakit</strong>, bila ditambah bintang baik lain bisa tenang — tidak akan terjadi kecelakaan apapun! Bila ada bintang jahat: mudah disiksa penyakit. <strong>Wajib jaga jantung-paru dan telinga</strong> (<span class=\"hz\">心肺部及耳朵的疾病</span>).</p>",
+    "_solo_jie_e_action": "Rutin jaga jantung-paru dan tenggorokan; hindari overload kerja dan suhu ekstrem; lakukan pemeriksaan kesehatan tahunan menyeluruh.",
+    "_p2_qianyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Perpindahan</span><span class=\"pn-meta\">Qiān Yí<span class=\"hz\">遷移</span></span></div></div><div class=\"pal-body\"><p><strong>Aspek mobilitas/pergerakan memiliki rasa stabil</strong> (<span class=\"hz\">動向方面有安定感</span>), <strong>tidak akan melintang menabrak</strong>, tidak akan salah masuk ke jalan menyimpang (<span class=\"hz\">不可能橫衝直撞, 或誤入岐途之處</span>). Setelah ke luar negeri mencari perkembangan, atau dalam proses mengejar perubahan melalui sekolah/perjalanan luar negeri, <strong>untuk pertama kali bertemu kemurahan-dewa-keberuntungan</strong> (<span class=\"hz\">首次遭遇機運的垂青</span>). Bila lama tinggal di rumah, atau lama-lama menetap di satu tempat — justru <strong>mengundang banyak masalah</strong> (<span class=\"hz\">引致不少的麻煩</span>). Bila ada <strong><span class=\"hz\">巨門</span>、<span class=\"hz\">天梁</span></strong> sekamar: bisa <strong>belajar ke luar negeri sebagai tujuan</strong> (<span class=\"hz\">可以國外為目的</span>). ELAINE bisa <strong>mengikuti kehendak hati pergi ke luar negeri untuk belajar</strong> (<span class=\"hz\">隨心所欲地到海外去留學吧</span>)! Bila bersama <strong><span class=\"hz\">太陰</span></strong>: meski kadang <strong>bertemu kemalangan</strong>, juga <strong>bisa berjumpa peruntungan melompat tinggi</strong> (<span class=\"hz\">飛躍性的機運</span>). <strong>Gambaran besar terbuka, masa depan tak terbatas</strong> (<span class=\"hz\">鴻圖大展, 前途無量</span>). Bagi ELAINE, perubahan nasib adalah peluang <strong>meningkatkan posisi sosial</strong> (<span class=\"hz\">提高您社會地位的機緣</span>). Dalam proses <strong>pindah-pekerjaan, transisi profesi</strong> (<span class=\"hz\">轉業</span>), ELAINE bisa berkenalan dengan <strong>orang-orang berkemampuan &amp; mendapat bantuan mereka</strong> (<span class=\"hz\">能結交有能力者, 並得其協助成就一番偉業</span>). Bila bersama <strong><span class=\"hz\">天同</span></strong>: pasti peruntungan melompat tinggi terbaik (<span class=\"hz\">最理想的鴻運</span>). Selain itu, bila bersama <strong><span class=\"hz\">天機</span></strong>: bisa <strong>berjalan di jalur sastra atau seni</strong> (<span class=\"hz\">文學或藝術方面較理想吧</span>)!</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Manfaatkan peluang ke luar negeri (studi, kerja, perjalanan); bangun relasi internasional; jangan kunci diri di zona nyaman lokal.</span></div></div>",
+    "_solo_qianyi_body": "<p><strong>Aspek mobilitas/pergerakan memiliki rasa stabil</strong> (<span class=\"hz\">動向方面有安定感</span>), <strong>tidak akan melintang menabrak</strong>, tidak akan salah masuk ke jalan menyimpang (<span class=\"hz\">不可能橫衝直撞, 或誤入岐途之處</span>). Setelah ke luar negeri mencari perkembangan, atau dalam proses mengejar perubahan melalui sekolah/perjalanan luar negeri, <strong>untuk pertama kali bertemu kemurahan-dewa-keberuntungan</strong> (<span class=\"hz\">首次遭遇機運的垂青</span>). Bila lama tinggal di rumah, atau lama-lama menetap di satu tempat — justru <strong>mengundang banyak masalah</strong> (<span class=\"hz\">引致不少的麻煩</span>). Bila ada <strong><span class=\"hz\">巨門</span>、<span class=\"hz\">天梁</span></strong> sekamar: bisa <strong>belajar ke luar negeri sebagai tujuan</strong> (<span class=\"hz\">可以國外為目的</span>). ELAINE bisa <strong>mengikuti kehendak hati pergi ke luar negeri untuk belajar</strong> (<span class=\"hz\">隨心所欲地到海外去留學吧</span>)! Bila bersama <strong><span class=\"hz\">太陰</span></strong>: meski kadang <strong>bertemu kemalangan</strong>, juga <strong>bisa berjumpa peruntungan melompat tinggi</strong> (<span class=\"hz\">飛躍性的機運</span>). <strong>Gambaran besar terbuka, masa depan tak terbatas</strong> (<span class=\"hz\">鴻圖大展, 前途無量</span>). Bagi ELAINE, perubahan nasib adalah peluang <strong>meningkatkan posisi sosial</strong> (<span class=\"hz\">提高您社會地位的機緣</span>). Dalam proses <strong>pindah-pekerjaan, transisi profesi</strong> (<span class=\"hz\">轉業</span>), ELAINE bisa berkenalan dengan <strong>orang-orang berkemampuan &amp; mendapat bantuan mereka</strong> (<span class=\"hz\">能結交有能力者, 並得其協助成就一番偉業</span>). Bila bersama <strong><span class=\"hz\">天同</span></strong>: pasti peruntungan melompat tinggi terbaik (<span class=\"hz\">最理想的鴻運</span>). Selain itu, bila bersama <strong><span class=\"hz\">天機</span></strong>: bisa <strong>berjalan di jalur sastra atau seni</strong> (<span class=\"hz\">文學或藝術方面較理想吧</span>)!</p>",
+    "_solo_qianyi_action": "Manfaatkan peluang ke luar negeri (studi, kerja, perjalanan); bangun relasi internasional; jangan kunci diri di zona nyaman lokal.",
+    "_p2_puyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pertemanan</span><span class=\"pn-meta\">Pú Yì<span class=\"hz\">僕役</span></span></div></div><div class=\"pal-body\"><p><strong>Hati-bergantung kuat</strong> (<span class=\"hz\">依賴心強</span>), bawahan yang berbakat sulit ditemukan (<span class=\"hz\">非尋常入微不可的部下</span>). <strong>Setelah paruh-baya bisa mendapat bawahan yang sangat berkemampuan</strong> (<span class=\"hz\">中年以後可得能力優秀的部下</span>). Bila ELAINE ingin bekerjasama dengan rekan yang <strong>lebih muda usianya</strong> (<span class=\"hz\">與比您更年少者</span>) — <strong>mengorganisir perusahaan, mendirikan usaha di bidang tertentu</strong>: dari usia <strong>40 mulai cukup sesuai</strong> (<span class=\"hz\">從四十歲開始較妥當</span>). Bila bersama <strong><span class=\"hz\">紫微</span></strong>: <strong>dihormati oleh banyak orang yang lebih muda</strong> (<span class=\"hz\">受到許多年少者崇拜</span>). Bila bersama <strong><span class=\"hz\">武曲</span></strong>: bisa <strong>mendapat rasa hormat dari bawahan atau kolega</strong> (<span class=\"hz\">受部下或同仁的敬愛</span>).</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Tunda peran kepemimpinan besar hingga usia 40+; sementara itu bangun kompetensi &amp; jejaring; nantinya tim akan datang dengan natural.</span></div></div>",
+    "_solo_puyi_body": "<p><strong>Hati-bergantung kuat</strong> (<span class=\"hz\">依賴心強</span>), bawahan yang berbakat sulit ditemukan (<span class=\"hz\">非尋常入微不可的部下</span>). <strong>Setelah paruh-baya bisa mendapat bawahan yang sangat berkemampuan</strong> (<span class=\"hz\">中年以後可得能力優秀的部下</span>). Bila ELAINE ingin bekerjasama dengan rekan yang <strong>lebih muda usianya</strong> (<span class=\"hz\">與比您更年少者</span>) — <strong>mengorganisir perusahaan, mendirikan usaha di bidang tertentu</strong>: dari usia <strong>40 mulai cukup sesuai</strong> (<span class=\"hz\">從四十歲開始較妥當</span>). Bila bersama <strong><span class=\"hz\">紫微</span></strong>: <strong>dihormati oleh banyak orang yang lebih muda</strong> (<span class=\"hz\">受到許多年少者崇拜</span>). Bila bersama <strong><span class=\"hz\">武曲</span></strong>: bisa <strong>mendapat rasa hormat dari bawahan atau kolega</strong> (<span class=\"hz\">受部下或同仁的敬愛</span>).</p>",
+    "_solo_puyi_action": "Tunda peran kepemimpinan besar hingga usia 40+; sementara itu bangun kompetensi &amp; jejaring; nantinya tim akan datang dengan natural.",
+    "_p3_guanlu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Karir</span><span class=\"pn-meta\">Guān Lù<span class=\"hz\">官祿</span></span></div></div><div class=\"pal-body\"><p>Cocok dengan pekerjaan <strong>dokter, perawat, pengasuh, pengacara</strong> (<span class=\"hz\">醫生、護士、保姆、律師等工作</span>). <strong>Daya tindak melimpah</strong> (<span class=\"hz\">行動力充沛</span>), sering <strong>lebih cepat satu langkah dari orang lain</strong> (<span class=\"hz\">經常比別人搶先一步</span>), <strong>berdiri di posisi pemimpin mengarahkan orang lain</strong> (<span class=\"hz\">佔在領導的地位上指揮別人前進</span>). Setelah memegang jabatan, <strong>dengan sikap tulus dan tidak kenal lelah berjuang</strong> (<span class=\"hz\">因奮鬥不懈的誠摯態度</span>), <strong>tak lama kemudian akan menuju ke jalan sukses</strong> (<span class=\"hz\">不久之後即向成功之道邁進</span>). Sekaligus ELAINE memiliki <strong>bakat sebagai penulis</strong> (<span class=\"hz\">作家的天賦</span>). Tetapi karena <strong>kadang menilai diri terlalu tinggi</strong> (<span class=\"hz\">由於自視過高</span>), sering <strong>mengabaikan keberadaan rekan-rekan kerja</strong> (<span class=\"hz\">常會無視同事的存在</span>). Di posisi pekerjaan, bila bisa <strong>meninggalkan jejak prestasi bercahaya</strong> (<span class=\"hz\">可留下光輝的功績</span>), harus <strong>menetapkan ambisi besar</strong> (<span class=\"hz\">要立鴻志</span>). Bila ada <strong>bintang baik lain hadir</strong>, akan menjadi <strong>lengan-bantu</strong> untuk ELAINE. Bila berada di palung <strong><span class=\"hz\">寅</span>、<span class=\"hz\">卯</span></strong>, kekuatan bintang <strong><span class=\"hz\">太陽</span></strong> akan tertekan (<span class=\"hz\">太陽星的力被肯定</span>), <strong>harus cepat bertindak aktif</strong> — supaya bisa <strong>memberi manfaat ke masyarakat di sekitar</strong>! Cocok untuk <strong>hal-hal yang membutuhkan pemikulan tanggung jawab dan ahli dalam hal konkret</strong> (<span class=\"hz\">具備擔當性的事物, 而擅長於具體性的事物</span>). Kepribadian ini terefleksi di bidang karir — sebaiknya pilih pekerjaan yang <strong>secara substansial menampilkan keahlian profesi</strong> (<span class=\"hz\">實質其專職性的工作</span>), misal <strong>dokter, koki, juru-masak, ahli kecantikan, seniman-kerajinan, akuntan</strong> (<span class=\"hz\">醫生、廚師、料理業、美容師、工藝家、會計師</span>). ELAINE adalah <strong>orang yang lahir dengan integritas lurus</strong> (<span class=\"hz\">天生正直的人</span>), <strong>sekali mulai bertindak akan fokus &amp; dedikatif pada pekerjaan</strong> (<span class=\"hz\">一旦開始行動專心致志於工作上</span>), juga <strong>bersemangat mengumpulkan uang</strong> (<span class=\"hz\">熱衷於賺錢</span>). Tetapi karena <strong>terlalu menghargai uang</strong> (<span class=\"hz\">由於您過度地重視金錢</span>), <strong>takut di belakang ada yang menyebut sebagai pelit-kikir</strong> (<span class=\"hz\">恐會於背後被他叫為小氣鬼</span>), bahkan <strong>berpotensi konflik karena urusan uang</strong> (<span class=\"hz\">因金錢的糾紛而與人衝突</span>). Selain itu, ELAINE <strong>tipe yang dalam-tertutup, tidak menunjukkan jejak hati ke orang lain</strong> (<span class=\"hz\">屬於深沉不露, 毫不對他人表明心跡的人</span>), karena itu <strong>rekan-rekan kerja mungkin akan menjauh sedikit demi sedikit</strong> (<span class=\"hz\">同事們可能會因此而敏而遠之</span>). Untuk karir ELAINE — <strong>hubungan antar-manusia yang tenang &amp; stabil adalah hal yang harus selalu diperhatikan</strong> (<span class=\"hz\">平穩的人際關係, 是您所必須經常留意的</span>).</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Pilih karir profesi yang membutuhkan keahlian spesifik (medis, kuliner, kecantikan, akuntan, seniman-kerajinan); latih komunikasi terbuka dengan rekan kerja untuk hindari kesan pelit/tertutup; jaga keseimbangan ambisi vs relasi.</span></div></div>",
+    "_solo_guanlu_body": "<style>.palace-solo .ps-body p { font-size: 9pt; line-height: 1.48; margin: 0 0 2.2mm 0; }</style><p>Cocok dengan pekerjaan <strong>dokter, perawat, pengasuh, pengacara</strong> (<span class=\"hz\">醫生、護士、保姆、律師等工作</span>). <strong>Daya tindak melimpah</strong> (<span class=\"hz\">行動力充沛</span>), sering <strong>lebih cepat satu langkah dari orang lain</strong> (<span class=\"hz\">經常比別人搶先一步</span>), <strong>berdiri di posisi pemimpin mengarahkan orang lain</strong> (<span class=\"hz\">佔在領導的地位上指揮別人前進</span>). Setelah memegang jabatan, <strong>dengan sikap tulus dan tidak kenal lelah berjuang</strong> (<span class=\"hz\">因奮鬥不懈的誠摯態度</span>), <strong>tak lama kemudian akan menuju ke jalan sukses</strong> (<span class=\"hz\">不久之後即向成功之道邁進</span>). Sekaligus ELAINE memiliki <strong>bakat sebagai penulis</strong> (<span class=\"hz\">作家的天賦</span>). Tetapi karena <strong>kadang menilai diri terlalu tinggi</strong> (<span class=\"hz\">由於自視過高</span>), sering <strong>mengabaikan keberadaan rekan-rekan kerja</strong> (<span class=\"hz\">常會無視同事的存在</span>). Di posisi pekerjaan, bila bisa <strong>meninggalkan jejak prestasi bercahaya</strong> (<span class=\"hz\">可留下光輝的功績</span>), harus <strong>menetapkan ambisi besar</strong> (<span class=\"hz\">要立鴻志</span>). Bila ada <strong>bintang baik lain hadir</strong>, akan menjadi <strong>lengan-bantu</strong> untuk ELAINE. Bila berada di palung <strong><span class=\"hz\">寅</span>、<span class=\"hz\">卯</span></strong>, kekuatan bintang <strong><span class=\"hz\">太陽</span></strong> akan tertekan (<span class=\"hz\">太陽星的力被肯定</span>), <strong>harus cepat bertindak aktif</strong> — supaya bisa <strong>memberi manfaat ke masyarakat di sekitar</strong>! Cocok untuk <strong>hal-hal yang membutuhkan pemikulan tanggung jawab dan ahli dalam hal konkret</strong> (<span class=\"hz\">具備擔當性的事物, 而擅長於具體性的事物</span>). Kepribadian ini terefleksi di bidang karir — sebaiknya pilih pekerjaan yang <strong>secara substansial menampilkan keahlian profesi</strong> (<span class=\"hz\">實質其專職性的工作</span>), misal <strong>dokter, koki, juru-masak, ahli kecantikan, seniman-kerajinan, akuntan</strong> (<span class=\"hz\">醫生、廚師、料理業、美容師、工藝家、會計師</span>). ELAINE adalah <strong>orang yang lahir dengan integritas lurus</strong> (<span class=\"hz\">天生正直的人</span>), <strong>sekali mulai bertindak akan fokus &amp; dedikatif pada pekerjaan</strong> (<span class=\"hz\">一旦開始行動專心致志於工作上</span>), juga <strong>bersemangat mengumpulkan uang</strong> (<span class=\"hz\">熱衷於賺錢</span>). Tetapi karena <strong>terlalu menghargai uang</strong> (<span class=\"hz\">由於您過度地重視金錢</span>), <strong>takut di belakang ada yang menyebut sebagai pelit-kikir</strong> (<span class=\"hz\">恐會於背後被他叫為小氣鬼</span>), bahkan <strong>berpotensi konflik karena urusan uang</strong> (<span class=\"hz\">因金錢的糾紛而與人衝突</span>). Selain itu, ELAINE <strong>tipe yang dalam-tertutup, tidak menunjukkan jejak hati ke orang lain</strong> (<span class=\"hz\">屬於深沉不露, 毫不對他人表明心跡的人</span>), karena itu <strong>rekan-rekan kerja mungkin akan menjauh sedikit demi sedikit</strong> (<span class=\"hz\">同事們可能會因此而敏而遠之</span>). Untuk karir ELAINE — <strong>hubungan antar-manusia yang tenang &amp; stabil adalah hal yang harus selalu diperhatikan</strong> (<span class=\"hz\">平穩的人際關係, 是您所必須經常留意的</span>).</p>",
+    "_solo_guanlu_action": "Pilih karir profesi yang membutuhkan keahlian spesifik (medis, kuliner, kecantikan, akuntan, seniman-kerajinan); latih komunikasi terbuka dengan rekan kerja untuk hindari kesan pelit/tertutup; jaga keseimbangan ambisi vs relasi.",
+    "_p3_tianzhai": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Properti</span><span class=\"pn-meta\">Tián Zhái<span class=\"hz\">田宅</span></span></div></div><div class=\"pal-body\"><p><strong>Bisa memiliki sejumlah besar properti</strong> (<span class=\"hz\">可擁有大量的不動產</span>). Tetapi <strong>kurang kemampuan untuk menjaga &amp; memanfaatkan properti tersebut secara aktif</strong> (<span class=\"hz\">卻欠缺活用這些不動產的能力</span>). Bila Istana Tianzhai hanya ada <strong><span class=\"hz\">武曲</span></strong> tunggal: meskipun ada <strong>berbagai bentuk perubahan</strong> (<span class=\"hz\">各種不同形態的轉變</span>), <strong>properti warisan leluhur tetap bisa dipertahankan</strong> (<span class=\"hz\">從祖先而來的不動產, 但仍可繼續地保持著</span>). Bila di palung <strong><span class=\"hz\">寅</span></strong> atau <strong><span class=\"hz\">卯</span></strong> ada bintang lain hadir, <strong>akan ada properti hilang</strong> (<span class=\"hz\">則會喪失</span>). Bila ada bintang baik: bisa memiliki tanah &amp; rumah (<span class=\"hz\">有他星同宮者, 端視該星的運勢如何, 資產也隨之起變化</span>). Bila ada <strong>bintang jahat</strong>: properti yang sudah di tangan akhirnya <strong>tak bisa dipertahankan dan harus dilepas</strong> (<span class=\"hz\">到手的資產也終不得不放手讓人</span>). <strong>Arah Barat sangat baik</strong> (<span class=\"hz\">西方大吉</span>). Bila di palung <strong><span class=\"hz\">寅</span>、<span class=\"hz\">卯</span>、<span class=\"hz\">巳</span>、<span class=\"hz\">午</span></strong>: masih bisa <strong>dari orangtua mendapat tanah &amp; rumah</strong> (<span class=\"hz\">尚可從雙親處獲得土地、房屋</span>); jika tidak, harus <strong>bangun rumah sendiri</strong> (<span class=\"hz\">只得自行建築家屋</span>). Bila bersama <strong><span class=\"hz\">武曲</span></strong>: hingga senja-tua bisa <strong>mendapat properti</strong> (<span class=\"hz\">至晚年後可獲得不動產</span>). Bila bersama Kayu, <strong>berkaitan dengan tanah atau hunian dekat ada hutan-pohon</strong> (<span class=\"hz\">與木有關的土地或家居較佳</span>) — <strong>arah Timur sangat baik</strong> (<span class=\"hz\">東方大吉</span>).</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun strategi mempertahankan &amp; mengaktifkan properti (sewa, renovasi); pilih hunian arah Barat atau Timur dengan ruang hijau; pertimbangkan warisan tanah dari orangtua sebagai pondasi.</span></div></div>",
+    "_solo_tianzhai_body": "<p><strong>Bisa memiliki sejumlah besar properti</strong> (<span class=\"hz\">可擁有大量的不動產</span>). Tetapi <strong>kurang kemampuan untuk menjaga &amp; memanfaatkan properti tersebut secara aktif</strong> (<span class=\"hz\">卻欠缺活用這些不動產的能力</span>). Bila Istana Tianzhai hanya ada <strong><span class=\"hz\">武曲</span></strong> tunggal: meskipun ada <strong>berbagai bentuk perubahan</strong> (<span class=\"hz\">各種不同形態的轉變</span>), <strong>properti warisan leluhur tetap bisa dipertahankan</strong> (<span class=\"hz\">從祖先而來的不動產, 但仍可繼續地保持著</span>). Bila di palung <strong><span class=\"hz\">寅</span></strong> atau <strong><span class=\"hz\">卯</span></strong> ada bintang lain hadir, <strong>akan ada properti hilang</strong> (<span class=\"hz\">則會喪失</span>). Bila ada bintang baik: bisa memiliki tanah &amp; rumah (<span class=\"hz\">有他星同宮者, 端視該星的運勢如何, 資產也隨之起變化</span>). Bila ada <strong>bintang jahat</strong>: properti yang sudah di tangan akhirnya <strong>tak bisa dipertahankan dan harus dilepas</strong> (<span class=\"hz\">到手的資產也終不得不放手讓人</span>). <strong>Arah Barat sangat baik</strong> (<span class=\"hz\">西方大吉</span>). Bila di palung <strong><span class=\"hz\">寅</span>、<span class=\"hz\">卯</span>、<span class=\"hz\">巳</span>、<span class=\"hz\">午</span></strong>: masih bisa <strong>dari orangtua mendapat tanah &amp; rumah</strong> (<span class=\"hz\">尚可從雙親處獲得土地、房屋</span>); jika tidak, harus <strong>bangun rumah sendiri</strong> (<span class=\"hz\">只得自行建築家屋</span>). Bila bersama <strong><span class=\"hz\">武曲</span></strong>: hingga senja-tua bisa <strong>mendapat properti</strong> (<span class=\"hz\">至晚年後可獲得不動產</span>). Bila bersama Kayu, <strong>berkaitan dengan tanah atau hunian dekat ada hutan-pohon</strong> (<span class=\"hz\">與木有關的土地或家居較佳</span>) — <strong>arah Timur sangat baik</strong> (<span class=\"hz\">東方大吉</span>).</p>",
+    "_solo_tianzhai_action": "Bangun strategi mempertahankan &amp; mengaktifkan properti (sewa, renovasi); pilih hunian arah Barat atau Timur dengan ruang hijau; pertimbangkan warisan tanah dari orangtua sebagai pondasi.",
+    "_p3_fude": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Berkah</span><span class=\"pn-meta\">Fú Dé<span class=\"hz\">福德</span></span></div></div><div class=\"pal-body\"><p><strong>Pribadi yang lembut-mengkilap dan masih punya kepolosan-kelembutan</strong> (<span class=\"hz\">潤澤光鑑而又嬌嫩的人品</span>) — <strong>baik pria maupun wanita memiliki jodoh-orang yang sangat baik</strong> (<span class=\"hz\">男女皆屬人緣良好者</span>). Isyarat bisa <strong>menumpang berkah Fude</strong> (<span class=\"hz\">暗示可得福德之惠的運勢</span>). <strong>Hidup luas-tinggi</strong>, sangat <strong>menghargai cara bersikap kepada orang dan menerima tamu</strong> (<span class=\"hz\">也很著重待人接物的方式</span>). Tetapi bila terkena ganggu-iri-mata orang sekitar (<span class=\"hz\">但如受到周圍意, 見搔亂時</span>), <strong>berkah yang sudah di tangan mungkin bisa hilang</strong> (<span class=\"hz\">到手的福德可能因 之消失</span>). <strong>Peruntungan-Fu sepanjang hidup ada di tubuh</strong> (<span class=\"hz\">一生福運永在身邊</span>), <strong>peruntungan-hidup bisa panjang-umur</strong> (<span class=\"hz\">壽運可保長壽</span>). Lebih lagi ada <strong>kecenderungan mengejar mimpi-romantis bagai pemain anggur</strong> (<span class=\"hz\">追求羅曼蒂克夢想的傾向</span>). Bila hanya <strong><span class=\"hz\">太陰</span></strong> tunggal di Fude: cukup untuk <strong>melewati hidup beruntung selama puluhan tahun</strong> (<span class=\"hz\">也足以渡過十分幸運的一生</span>). Bila ditambah <strong><span class=\"hz\">太陽</span></strong> sekamar: tak diragukan lagi, pasti memiliki <strong>hidup-bahagia yang memuaskan jiwa-raga</strong> (<span class=\"hz\">必擁有身心皆令人滿意的幸福人生</span>)! Tetapi bila bersama <strong><span class=\"hz\">天機</span></strong>: <strong>secara mental dari tidak ada waktu beristirahat</strong> (<span class=\"hz\">心理上從無休暇之時</span>).</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga kesan &amp; cara interaksi dengan orang lain — berkah datang dari hubungan; istirahatkan pikiran rutin; salurkan kecenderungan romantis ke dalam hobi seni atau perjalanan.</span></div></div>",
+    "_solo_fude_body": "<p><strong>Pribadi yang lembut-mengkilap dan masih punya kepolosan-kelembutan</strong> (<span class=\"hz\">潤澤光鑑而又嬌嫩的人品</span>) — <strong>baik pria maupun wanita memiliki jodoh-orang yang sangat baik</strong> (<span class=\"hz\">男女皆屬人緣良好者</span>). Isyarat bisa <strong>menumpang berkah Fude</strong> (<span class=\"hz\">暗示可得福德之惠的運勢</span>). <strong>Hidup luas-tinggi</strong>, sangat <strong>menghargai cara bersikap kepada orang dan menerima tamu</strong> (<span class=\"hz\">也很著重待人接物的方式</span>). Tetapi bila terkena ganggu-iri-mata orang sekitar (<span class=\"hz\">但如受到周圍意, 見搔亂時</span>), <strong>berkah yang sudah di tangan mungkin bisa hilang</strong> (<span class=\"hz\">到手的福德可能因 之消失</span>). <strong>Peruntungan-Fu sepanjang hidup ada di tubuh</strong> (<span class=\"hz\">一生福運永在身邊</span>), <strong>peruntungan-hidup bisa panjang-umur</strong> (<span class=\"hz\">壽運可保長壽</span>). Lebih lagi ada <strong>kecenderungan mengejar mimpi-romantis bagai pemain anggur</strong> (<span class=\"hz\">追求羅曼蒂克夢想的傾向</span>). Bila hanya <strong><span class=\"hz\">太陰</span></strong> tunggal di Fude: cukup untuk <strong>melewati hidup beruntung selama puluhan tahun</strong> (<span class=\"hz\">也足以渡過十分幸運的一生</span>). Bila ditambah <strong><span class=\"hz\">太陽</span></strong> sekamar: tak diragukan lagi, pasti memiliki <strong>hidup-bahagia yang memuaskan jiwa-raga</strong> (<span class=\"hz\">必擁有身心皆令人滿意的幸福人生</span>)! Tetapi bila bersama <strong><span class=\"hz\">天機</span></strong>: <strong>secara mental dari tidak ada waktu beristirahat</strong> (<span class=\"hz\">心理上從無休暇之時</span>).</p>",
+    "_solo_fude_action": "Jaga kesan &amp; cara interaksi dengan orang lain — berkah datang dari hubungan; istirahatkan pikiran rutin; salurkan kecenderungan romantis ke dalam hobi seni atau perjalanan.",
+    "_p3_fumu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Orang Tua</span><span class=\"pn-meta\">Fù Mǔ<span class=\"hz\">父母</span></span></div></div><div class=\"pal-body\"><p><strong>Orang tua agak murung &amp; tanpa semangat hidup</strong> (<span class=\"hz\">陰沈而了無生氣的雙親</span>). <strong>Selama tidak ada bintang jahat menghalangi</strong> (<span class=\"hz\">只要無凶星阻擾</span>), termasuk <strong>bintang Bahagia</strong> (<span class=\"hz\">是屬幸福之星</span>). Orang tua ELAINE adalah orang yang <strong>tenang-stabil dan adil</strong> (<span class=\"hz\">您的雙親是穩重而公平的人</span>), mungkin <strong>butuh waktu</strong>, tetapi pada akhirnya pasti <strong>bisa memahami tindakan ELAINE</strong> (<span class=\"hz\">但最後必定能了解您的行動</span>). ELAINE bisa <strong>dengan tenang dan tulus berinteraksi terbuka dengan kedua orangtua</strong> (<span class=\"hz\">您大可安心而開誠布公地與雙親交往</span>). Terutama bila bersama <strong><span class=\"hz\">紫微</span>、<span class=\"hz\">武曲</span></strong>: tak diragukan <strong>hubungan orangtua-anak yang hangat-lembut</strong> (<span class=\"hz\">溫馨的親子關係</span>). Selain itu, <strong><span class=\"hz\">天府</span></strong> adalah bintang yang memerintah pondasi-kekayaan (<span class=\"hz\">天府星是主宰財勢之星</span>), ELAINE kemungkinan <strong>tumbuh dalam keluarga yang berkecukupan</strong> (<span class=\"hz\">您大概是成長於富裕的家庭內的人吧</span>)!</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga relasi dengan orangtua secara terbuka &amp; sabar; hargai pondasi finansial yang sudah dibangun keluarga; jangan ragu untuk berbagi rencana hidup dengan mereka.</span></div></div>",
+    "_solo_fumu_body": "<p><strong>Orang tua agak murung &amp; tanpa semangat hidup</strong> (<span class=\"hz\">陰沈而了無生氣的雙親</span>). <strong>Selama tidak ada bintang jahat menghalangi</strong> (<span class=\"hz\">只要無凶星阻擾</span>), termasuk <strong>bintang Bahagia</strong> (<span class=\"hz\">是屬幸福之星</span>). Orang tua ELAINE adalah orang yang <strong>tenang-stabil dan adil</strong> (<span class=\"hz\">您的雙親是穩重而公平的人</span>), mungkin <strong>butuh waktu</strong>, tetapi pada akhirnya pasti <strong>bisa memahami tindakan ELAINE</strong> (<span class=\"hz\">但最後必定能了解您的行動</span>). ELAINE bisa <strong>dengan tenang dan tulus berinteraksi terbuka dengan kedua orangtua</strong> (<span class=\"hz\">您大可安心而開誠布公地與雙親交往</span>). Terutama bila bersama <strong><span class=\"hz\">紫微</span>、<span class=\"hz\">武曲</span></strong>: tak diragukan <strong>hubungan orangtua-anak yang hangat-lembut</strong> (<span class=\"hz\">溫馨的親子關係</span>). Selain itu, <strong><span class=\"hz\">天府</span></strong> adalah bintang yang memerintah pondasi-kekayaan (<span class=\"hz\">天府星是主宰財勢之星</span>), ELAINE kemungkinan <strong>tumbuh dalam keluarga yang berkecukupan</strong> (<span class=\"hz\">您大概是成長於富裕的家庭內的人吧</span>)!</p>",
+    "_solo_fumu_action": "Jaga relasi dengan orangtua secara terbuka &amp; sabar; hargai pondasi finansial yang sudah dibangun keluarga; jangan ragu untuk berbagi rencana hidup dengan mereka.",
+    "_kes_narrative": "<p>ELAINE lahir 9 Maret 1992 pukul 09:25 dengan shio Monyet (<span class=\"hz\">申</span>). Penguasa hidupnya adalah Kayu Yang (<span class=\"hz\">甲木</span>) — pribadi yang tegak, tumbuh menjulang, idealis, dan punya integritas batang-pohon yang kokoh. Format hidup utamanya adalah Cetakan Mata-Pisau-Domba (<span class=\"hz\">羊刃格</span>) — pribadi tajam, berani, berkemauan keras, mampu meledak saat momen tiba. Kekuatan Penguasa Hari tergolong <strong>Kuat</strong> (<span class=\"hz\">旺</span>) dengan skor pendukung +5000 dan penekan -3540 — energi alami sudah surplus, fokus hidup terbaik adalah <strong>menyalurkan dan memotong yang berlebih, bukan menumpuk lagi</strong>.</p><p>Karakter inti ELAINE mengatur barang &amp; ruang dengan baik (<span class=\"hz\">對財物能適當的安置、編排</span>), bisa mewujudkan gambar 3D di kepala ke ranah fisik — tetapi terhadap kenyamanan tubuh-jasmani cenderung kurang ditata. Punya <strong>kontrol diri kuat</strong> (<span class=\"hz\">自我壓抑</span>), pendiam, suka curiga, <strong>cerdas-tangkas dan berdaya keputusan kuat</strong> (<span class=\"hz\">機敏、有勁力、果決力強</span>), sayang muka. Hati menyimpan rahasia (<span class=\"hz\">胸藏不測之機</span>), <strong>tidak ingin peduli orang lain juga tidak ingin dipedulikan orang lain</strong> (<span class=\"hz\">不願關心別人也不願被別人關心</span>), kurang suka basa-basi panjang, pendiam tetapi sering muncul fantasi besar-kecil. Menghargai dunia material-konkret (<span class=\"hz\">重視具體物質世界</span>), tetapi tidak terlalu terikat pada benda, <strong>piawai dalam operasi/eksekusi</strong> (<span class=\"hz\">善於操作</span>), perasaan umum cukup kuat, ada semangat maju, <strong>berhati teguh-keras dengan tulang punggung jelas</strong> (<span class=\"hz\">個性堅強有骨氣</span>), hati lembut adil-lurus — namun <strong>kurang punya kelincahan adaptasi</strong> (<span class=\"hz\">缺乏敏捷的應變能力</span>).</p><p>Bakat utama ada di perpaduan <strong>kepemimpinan + disiplin + ketelitian eksekusi</strong>. Industri searah: medis (dokter, perawat, pengasuh, pengacara), industri panas-bercahaya (peralatan listrik, optik, kacamata, minuman panas-snack, pabrik makanan, salon-tata rambut-rias), industri ekspresi (fotografi, busana &amp; aksesori, kritikus, kosmetik, militer, tembakau-arak), serta konstruksi-tanah (bangunan, toko obat, peternakan, semen-beton, properti, rumah duka, batu-nisan, geomansi, antik, konsultan). Da Yun saat ini (usia 32-41, <span class=\"hz\">己亥</span>) adalah fase <strong>正印</strong> (cetakan-resmi) — fase belajar, dukungan dari orang tua/atasan/relasi yang lebih senior.</p><p>Untuk jodoh, pasangan paling cocok (<span class=\"hz\">大吉</span>) adalah shio Tikus (<span class=\"hz\">子</span>) atau Naga (<span class=\"hz\">辰</span>) — kombinasi \"<span class=\"hz\">珠聯璧合, 一帆風順, 不能為害, 成功富貴, 子孫興旺, 五世其昌</span>\" yang membawa kelancaran luar biasa dan keturunan berkembang lima generasi. Hindari shio Macan (<span class=\"hz\">寅</span>), Ular (<span class=\"hz\">巳</span>), Babi (<span class=\"hz\">亥</span>) — kombinasi yang membawa bencana di masa awal, sakit-penyakit &amp; penderitaan. Foto 夫妻 menunjukkan peruntungan asmara cukup stabil, mampu mendapat pasangan cerdas-tampan/cantik bila bersama bintang baik.</p><p>Untuk kesehatan, titik rawan di tenggorokan, paru-jantung, dan telinga (<span class=\"hz\">心肺部及耳朵</span>) — hindari kelelahan berlebih &amp; suhu ekstrem. Mudah flu, sakit gigi, wasir, dan setelah dewasa rentan penyakit jantung — perlu pemeriksaan rutin. Untuk hunian, pilih rumah dengan <strong>gua <span class=\"hz\">兌</span></strong> — duduk Timur Laut menghadap Barat Daya atau Barat Laut menghadap Tenggara membawa keberuntungan besar. Pintu utama bisa dibuka di Barat/Barat Daya/Timur Laut; dapur hadap Timur Laut → Barat Daya. Bintang nasib aktif: <strong><span class=\"hz\">劫煞</span></strong> yang menurut foto memberi <strong>kecerdasan-ketangkasan, kepandaian luar biasa, dan kemampuan berstrategi</strong> (<span class=\"hz\">聰明敏捷、才智過人, 巧於謀事</span>).</p><p>Inti puisi klasik 古書云: \"<span class=\"hz\">甲木參天, 脫胎要火, 春不容金, 秋不容土, 火熾乘龍, 水蕩騎虎</span>\" — Kayu Yang menjulang ke langit, untuk lahir-baru butuh Api; di musim semi tidak menampung Logam yang memotong. Inilah esensi ELAINE — kayu tegak yang membutuhkan api inspirasi &amp; arah untuk membakar diri menjadi pencapaian, bukan dibekukan oleh logam atau dibanjiri air berlebih.</p>",
+    "_kes_stats": "\n      <div class=\"kes-stat s1\"><div class=\"ks-eb\">Penguasa Hari · 日主</div><div class=\"ks-num\"><span class=\"hz\">甲木</span><span class=\"unit\">KUAT · 旺</span></div><div class=\"ks-title\">Pohon Besar Kuat</div><div class=\"ks-desc\">Total Wu Xing 8, 木 <strong>25.0%</strong> dari distribusi total</div></div>\n      <div class=\"kes-stat s2\"><div class=\"ks-eb\">Format · 格局</div><div class=\"ks-num\"><span class=\"hz\">羊刃格</span><span class=\"unit\">FORMAT</span></div><div class=\"ks-title\">Ge, Format</div><div class=\"ks-desc\">Konfigurasi BaZi yang membentuk pola karakter dan jalur takdir utama subjek.</div></div>\n      <div class=\"kes-stat s3\"><div class=\"ks-eb\">Yong Shen · 喜用神</div><div class=\"ks-num\"><span class=\"hz\">火</span><span class=\"unit\">MENDUKUNG</span></div><div class=\"ks-title\">Api, Penopang &amp; Pengarah</div><div class=\"ks-desc\">Unsur penopang yang sebaiknya diaktifkan lewat lingkungan, profesi, warna, dan keputusan hidup.</div></div>\n      <div class=\"kes-stat s4\"><div class=\"ks-eb\">Da Yun · 大運</div><div class=\"ks-num\">Fase 4<span class=\"unit\">dari 10</span></div><div class=\"ks-title\">Fase Rezeki Tetap (32-41)</div><div class=\"ks-desc\">Cycle 10 tahun yang sedang dijalani, periode pembentukan tema utama dekade ini.</div></div>\n      <div class=\"kes-stat s5\"><div class=\"ks-eb\">Umur Subjek</div><div class=\"ks-num\">35<span class=\"unit\">tahun</span></div><div class=\"ks-title\">Era 30–39</div><div class=\"ks-desc\">Tahap kehidupan saat laporan ini dibuat, rentang dekade aktif subjek.</div></div>\n      <div class=\"kes-stat s6\"><div class=\"ks-eb\">Jodoh · 婚配 / 陽宅</div><div class=\"ks-num\">2 <span class=\"unit\">cocok · 3 hindari</span></div><div class=\"ks-desc\">Hindari: Macan (寅) · Ular (巳) · Babi (亥) · Trigram <strong>Danau</strong> (兌) · Kelompok Barat</div></div>\n    ",
+    "_kes_age": "35",
+    "_kes_lifemap": "\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">過<span class=\"id-label\">Lalu</span></div><div class=\"klm-row-text\"><span class=\"lbl\">MASA LALU</span>3 fase telah dilalui, fondasi terbentuk lewat tempaan zaman muda hingga awal dewasa.</div></div>\n          <div class=\"klm-row now\"><div class=\"klm-row-icon\">今<span class=\"id-label\">Kini</span></div><div class=\"klm-row-text\"><span class=\"lbl\">SEKARANG</span>Fase Rezeki Tetap 己亥 (32-41), tema utama rezeki tetap membentuk dekade ini.</div></div>\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">未<span class=\"id-label\">Nanti</span></div><div class=\"klm-row-text\"><span class=\"lbl\">BERIKUTNYA</span>Fase 戊戌 Rezeki Bisnis (42-51), transisi menuju tema baru.</div></div>\n        ",
+    "_kes_position": "\n          <div class=\"klp-eb\">Posisi Sekarang</div>\n          <div class=\"klp-hz\">夏</div>\n          <div class=\"klp-id\">Xià, \"Musim Panas Hidup\"</div>\n          <div class=\"klp-bar\">\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell now\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n          </div>\n          <div class=\"klp-meta\">Fase <strong>4 dari 10</strong> · Umur <strong>32-41</strong> · <strong>木 Kayu</strong> dominan · Musim Panas Hidup</div>\n        ",
+    "_syn_attrib": "Pohon Besar · 羊刃格 · Ge",
+    "_syn_actions": "\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">1</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Pilih karir profesi yang membutuhkan keahlian spesifik (medis, kuliner, kecantikan, akuntan, seniman-kerajinan)</div>\n            <div class=\"syn-action-context\">Foto 官祿 sebut langsung — 醫生、護士、保姆、律師、廚師、料理業、美容師、工藝家、會計師. DM Kayu Yang (<span class=\"hz\">甲</span>) sudah kuat (<span class=\"hz\">旺</span>) dengan 羊刃格 — butuh disalurkan ke unsur Api/Tanah melalui keahlian dan eksekusi konkret.</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">2</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Jaga rutin jantung-paru, tenggorokan, telinga</div>\n            <div class=\"syn-action-context\">Foto 疾厄 verbatim — 易患喉部疾病、感冒、牙痛、痔瘡、心臟. <strong>Yang utama wajib dijaga</strong>: 心肺部及耳朵的疾病. Pemulihan cepat tapi pemicu utama adalah kelelahan berlebih.</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">3</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Pilih hunian gua <span class=\"hz\">兌</span> — duduk Timur Laut menghadap Barat Daya, di kawasan tenang</div>\n            <div class=\"syn-action-context\">Foto 陽宅 — 兌卦, 宅宜坐東北向西南或西北向東南大吉. Dapur hadap Timur Laut menuju Barat Daya. Foto 田宅 — sebut \"西方大吉\" untuk hunian Logam, \"東方大吉\" bila pondasi Kayu.</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">4</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Pilih pasangan shio Tikus atau Naga (<span class=\"hz\">大吉</span>)</div>\n            <div class=\"syn-action-context\">Foto 婚配 — 宜配相鼠、龍大吉 dengan tafsir \"<span class=\"hz\">珠聯璧合, 一帆風順, 不能為害, 成功富貴, 子孫興旺, 五世其昌</span>\". Foto 夫妻 — 太陽 terlalu kuat menghasilkan 早婚不吉, sebaiknya lewat masa pertimbangan &amp; penjajakan.</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">5</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Manfaatkan peluang luar negeri (studi, kerja, perjalanan)</div>\n            <div class=\"syn-action-context\">Foto 遷移 — 經由前往海外求發展... 首次遭遇機運的垂青. ELAINE bisa <strong>隨心所欲地到海外去留學</strong>, <strong>鴻圖大展, 前途無量</strong>. Pindah-profesi adalah peluang naik kelas sosial.</div>\n          </div>\n        </div>\n      ",
+    "_career_wuxing": "\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">金 Logam<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">水 Air<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell self\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">木 Kayu<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell fav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:50%\"></div></div>\n          <div class=\"wux-label\">火 Api<span class=\"v\">1</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:50%\"></div></div>\n          <div class=\"wux-label\">土 Tanah<span class=\"v\">1</span></div>\n        </div>\n",
+    "_career_title": "Api adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini",
+    "_career_avoid": "Industri ber-unsur <strong>木 (Kayu)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.",
+    "_career_tags": "\n          <span class=\"insight-tag\">火 Api Penyalur</span>\n          <span class=\"insight-tag\">土 Tanah Pengikat</span>\n          <span class=\"insight-tag bad\">木 Kayu Berlebih</span>\n          <span class=\"insight-tag bad\">水 Air Pendukung-berlebih</span>\n        ",
+    "_career_industri": "\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">🔥</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Medis &amp; Pelayanan Profesi</div>\n            <div class=\"ind-reason\">Unsur 火, foto 官祿 sebut dokter, perawat, pengasuh, pengacara — karir profesi yang membutuhkan integritas &amp; keahlian spesifik.</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:95%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">🔥</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Industri Bercahaya &amp; Panas</div>\n            <div class=\"ind-reason\">Unsur 火, foto 事業 sebut peralatan listrik, optik, kacamata, minuman panas, pabrik makanan, salon-tata rambut-rias — searah unsur Api yang menyalurkan Kayu kuat.</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:88%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">🔥</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Ekspresi &amp; Kreatif</div>\n            <div class=\"ind-reason\">Unsur 火, foto sebut fotografi, busana &amp; aksesori, kritikus, kosmetik, militer, tembakau-arak — bidang ekspresi diri.</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:82%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">🏛️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Konstruksi &amp; Properti</div>\n            <div class=\"ind-reason\">Unsur 土, foto sebut bangunan, toko obat, peternakan, semen-beton, properti, rumah duka, batu-nisan, geomansi, antik, konsultan.</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:76%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">🔥</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Kuliner &amp; Kecantikan</div>\n            <div class=\"ind-reason\">Unsur 火, foto 官祿 sebut koki, juru-masak, ahli kecantikan, seniman-kerajinan, akuntan — profesi keahlian spesifik.</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:70%\"></div></div>\n          </div>\n        </div>\n",
+    "shensha_trio_cards": "<div class=\"sst-card\"><div class=\"sst-hz\">劫煞</div><div class=\"sst-meta\"><div class=\"sst-id\">—</div><div class=\"sst-pinyin\"></div></div><div class=\"sst-body\"><strong>Foto verbatim:</strong> <span class=\"hz\">—</span><br><br>—</div></div>",
+    "_xqcards": "\n      <div class=\"xq-card power\">\n        <div class=\"xqc-eb\">魄 力 · Kekuatan</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">優勢</span><span class=\"xqc-name\">Yōu Shì<br>Keunggulan</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><strong>Pemimpin alami</strong>, visi jauh ke depan, berani memulai</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><span class='hz'>創新精神</span> energi pelopor (Chuàng Xīn Jīng Shén)</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><strong>Idealis</strong>, pegang prinsip, sulit dibengkokkan</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Tegar berdiri sendiri, kekuatan internal kokoh</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card shadow\">\n        <div class=\"xqc-eb\">陰 影 · Shadow</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">隱 患</span><span class=\"xqc-name\">Yǐn Huàn<br>Sisi Gelap</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><span class='hz'>頑固</span> keras kepala (Wán Gù), sulit kompromi</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><strong>Egosentris</strong>, pandangan sendiri sering dianggap mutlak</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Cepat mulai, lama menyelesaikan, perlu disiplin tahap eksekusi</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><span class='hz'>急躁</span> sering tergesa, abai detail kecil</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card optimum\">\n        <div class=\"xqc-eb\">最 佳 · Optimum</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">應 用</span><span class=\"xqc-name\">Yīng Yòng<br>Cara Optimal</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Peran <strong>founder / visioner</strong>, bukan eksekutor harian</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Cari partner ber-<span class='hz'>金</span> (disiplin) sebagai pemangkas</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Pakai <span class='hz'>火</span> (ekspresi) untuk menyalurkan energi</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Tunda keputusan besar 24 jam, hindari impulsif</span></div>\n        </div>\n      </div>\n    "
+  }
+}

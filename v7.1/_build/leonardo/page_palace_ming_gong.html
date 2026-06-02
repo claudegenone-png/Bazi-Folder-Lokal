@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Diri (命宮) Palace</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-pal { grid-template-rows: 1fr !important; gap: 0; }
+
+  .palace-solo {
+    background: linear-gradient(180deg, #FFF8E1, #FBF1D4);
+    border: 0.6mm solid var(--gold);
+    border-radius: 2.5mm;
+    padding: 6mm 8mm;
+    display: grid;
+    grid-template-rows: auto auto minmax(0, 1fr) auto;
+    gap: 3mm;
+    overflow: hidden;
+    position: relative;
+  }
+  .palace-solo::before {
+    content: ''; position: absolute;
+    top: 0; right: 0; width: 28mm; height: 28mm;
+    background-color: transparent;
+    background-image: radial-gradient(circle at top right, rgba(201,169,97,0.22) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .ps-head {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: baseline;
+    gap: 4mm;
+    border-bottom: 0.3mm solid var(--gold);
+    padding-bottom: 2.5mm;
+  }
+  .ps-title-id {
+    font-family: 'Playfair Display', serif;
+    font-size: 24pt;
+    color: var(--red);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1;
+  }
+  .ps-title-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 22pt;
+    color: var(--text);
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 1;
+  }
+  .ps-title-pinyin {
+    font-family: 'Inter', sans-serif;
+    font-size: 9pt;
+    color: var(--text-muted);
+    font-style: italic;
+    letter-spacing: 0.5px;
+    margin-top: 1mm;
+  }
+  .ps-badge {
+    font-family: 'Inter', sans-serif;
+    font-size: 7pt;
+    color: white;
+    background: var(--red);
+    padding: 1mm 3mm;
+    border-radius: 1mm;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .ps-meta-row {
+    display: flex;
+    gap: 4mm;
+    align-items: center;
+    font-size: 8.5pt;
+    color: var(--text-muted);
+    padding-bottom: 1.5mm;
+  }
+  .ps-meta-row .lbl {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 6.5pt;
+    color: #8B7355;
+    font-weight: 600;
+  }
+  .ps-meta-row .val {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  .ps-body {
+    font-size: 12pt;
+    line-height: 1.6;
+    color: var(--text);
+    overflow: hidden;
+    text-align: justify;
+    padding: 0 1mm;
+  }
+  .ps-body p {
+    margin: 0 0 2.6mm 0;
+  }
+  .ps-body p:last-child {
+    margin-bottom: 0;
+  }
+  .ps-body strong {
+    color: var(--red);
+    font-weight: 700;
+  }
+  .ps-body .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red);
+    font-weight: 600;
+  }
+
+  .ps-action {
+    display: grid;
+    grid-template-columns: 6mm 1fr;
+    gap: 3mm;
+    background: rgba(45,106,79,0.08);
+    border-left: 0.7mm solid var(--green);
+    border-radius: 0 1.5mm 1.5mm 0;
+    padding: 3mm 4mm;
+    font-size: 9pt;
+    line-height: 1.5;
+    color: var(--text);
+  }
+  .ps-action .ps-action-ico {
+    color: var(--green);
+    font-weight: 700;
+    font-size: 12pt;
+    line-height: 1;
+  }
+  .ps-action .ps-action-content {
+    display: grid;
+    gap: 1mm;
+  }
+  .ps-action .ps-action-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 7.5pt;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--green);
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">18</div>
+    <div class="h-titles"><div class="h-cn">命宮</div><div class="h-id">Diri · Istana 1 · Pusat Hidup</div></div>
+    <div class="h-section">Bagian II · Zi Wei 紫微</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Anjing-Merah.svg" alt="Anjing"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Leonardo · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">戌 Anjing</span></div>
+      <div class="subject-detail">Karakter inti, arah hidup, & ekspresi diri</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">戊土 · Tanah Gunung</div></div>
+  </div>
+
+  <main class="content content-pal">
+    <div class="palace-solo">
+      <div class="ps-head">
+        <div>
+          <div class="ps-title-id">Diri</div>
+          <div class="ps-title-pinyin">Mìng Gōng</div>
+        </div>
+        <div style="text-align:center;">
+          <div class="ps-title-hz">命宮</div>
+        </div>
+        <div class="ps-badge">Inti Diri</div>
+      </div>
+
+      <div class="ps-meta-row">
+        <span class="lbl">Sumber Foto</span>
+        <span class="val">命宫 layar 詳細解説</span>
+      </div>
+
+      <div class="ps-body"><!-- TAFSIR:_solo_ming_gong_body --><style>.palace-solo .ps-body p { font-size: 9pt; line-height: 1.48; margin: 0 0 2.2mm 0; }</style><p>Memberi kesan tubuh yang berat dan tumpul secara keseluruhan (<span class="hz">全身鈍重的印象</span>); menandakan kepribadian yang kokoh-berat namun bersuasana batin agak gelap dan suram (<span class="hz">厚重而陰暗</span>). Meski begitu, reaksi pikirannya sangat sigap dan ia tipe pribadi yang berorientasi tindakan; begitu menyadari metode kerja atau cara belajarnya keliru, ia pasti langsung mengganti dengan cara baru, kaya akan daya adaptasi yang luwes (<span class="hz">富於柔軟地適應性</span>). Tutur katanya halus dan beradab (<span class="hz">談吐文雅</span>), tidak sinis atau pedas; relasi antarmanusianya harmonis, mampu memperoleh kasih sayang atasan (<span class="hz">可得上司的垂愛</span>) sehingga ia meraih kedudukan sosial yang baik. Namun bila terlalu hati-hati dan berjaga-jaga, ia bisa berubah menjadi sosok yang kikir dan picik (<span class="hz">吝嗇小氣的傢伙</span>). <span class="hz">天相</span> (Tiān Xiàng, bintang Penasihat) memang tergolong bintang baik yang langka dan berharga, tetapi bila satu istana dengan <span class="hz">天機</span> (Tiān Jī, bintang Kecerdasan), atau bila istana hidup jatuh di posisi <span class="hz">巳</span> (Sì, shio Ular) atau <span class="hz">午</span> (Wǔ, shio Kuda), justru menandakan kemalangan baginya. Sudah susah payah mengumpulkan sejumlah uang, tetapi dalam satu malam saja bisa dihabiskan di tempat hiburan mewah hingga ludes tak bersisa (<span class="hz">花天酒地</span>, 散得精光); atau hanya mengejar kesenangan dengan mengorbankan pekerjaan, terus-menerus memburu kehidupan yang penuh sensasi, dan akhirnya berakhir dengan nama hancur serta martabat jatuh (<span class="hz">身敗名裂</span>) — orang seperti ini jumlahnya tidak sedikit. Bila satu istana dengan <span class="hz">武曲</span> (Wǔ Qū, bintang Strategi Kekayaan), ucapan dan tindakannya sedikit menjauh dari dunia umum, dan ia hidup dalam dunia hobinya sendiri (<span class="hz">生活在嗜好的天地中</span>). Untuk wanita, sepanjang hidup tidak pernah ada kekhawatiran soal kekurangan harta; ia mampu bersama pria yang realistis dan membumi (<span class="hz">踏實的男人</span>) membangun sarang cinta yang bahagia. Kelemahannya: mudah terpengaruh situasi sekeliling sehingga emosinya dikendalikan lingkungan dan kehilangan jati dirinya yang sejati. Di sisi hubungan pria-wanita pun akan ada sedikit kerepotan kecil.</p><!-- /TAFSIR --></div>
+
+      <div class="ps-action">
+        <div class="ps-action-ico">&#9656;</div>
+        <div class="ps-action-content">
+          <div class="ps-action-label">Saran Tindakan</div>
+          <div><!-- TAFSIR:_solo_ming_gong_action -->Latih fokus pada satu prioritas; salurkan kecerdasan lewat tulisan atau strategi.<!-- /TAFSIR --></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-meta"><span>Halaman 18 / 34</span></div>
+  </footer>
+</section>
+<script>
+  // AUTO-SHRINK: kalau .ps-body overflow .palace-solo, kecilkan font progresif sampai fit.
+  (function() {
+    function fit() {
+      var body = document.querySelector('.palace-solo .ps-body');
+      var card = document.querySelector('.palace-solo');
+      if (!body || !card) return;
+      var sizePt = 12, lh = 1.6, minPt = 6.5, guard = 0;
+      function overflowing() { return card.scrollHeight > card.clientHeight + 1; }
+      while (overflowing() && sizePt > minPt && guard < 60) {
+        sizePt -= 0.25;
+        lh = Math.max(1.25, lh - 0.01);
+        body.style.fontSize = sizePt.toFixed(2) + 'pt';
+        body.style.lineHeight = lh.toFixed(2);
+        var ps = body.querySelectorAll('p');
+        for (var i = 0; i < ps.length; i++) {
+          ps[i].style.fontSize = sizePt.toFixed(2) + 'pt';
+          ps[i].style.lineHeight = lh.toFixed(2);
+        }
+        guard++;
+      }
+    }
+    if (document.readyState === 'complete' || document.readyState === 'interactive') fit();
+    else document.addEventListener('DOMContentLoaded', fit);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+  })();
+</script>
+</body>
+</html>

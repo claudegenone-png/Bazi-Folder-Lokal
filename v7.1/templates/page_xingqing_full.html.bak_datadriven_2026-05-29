@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Kepribadian Detail - Watak Inti</title>
+<link rel="stylesheet" href="style.css">
+<style>
+ .content-pal { grid-template-rows: 1fr !important; gap: 0; }
+
+ .palace-solo {
+ background: linear-gradient(180deg, #FFF8E1, #FBF1D4);
+ border: 0.6mm solid var(--gold);
+ border-radius: 2.5mm;
+ padding: 6mm 8mm;
+ display: grid;
+ grid-template-rows: auto auto minmax(0, 1fr) auto;
+ gap: 3mm;
+ overflow: hidden;
+ position: relative;
+ }
+ .palace-solo::before {
+ content: ''; position: absolute;
+ top: 0; right: 0; width: 28mm; height: 28mm;
+ background-color: transparent;
+ background-image: radial-gradient(circle at top right, rgba(201,169,97,0.22) 0%, transparent 60%);
+ pointer-events: none;
+ }
+
+ .ps-head {
+ display: grid;
+ grid-template-columns: auto 1fr auto;
+ align-items: baseline;
+ gap: 4mm;
+ border-bottom: 0.3mm solid var(--gold);
+ padding-bottom: 2.5mm;
+ }
+ .ps-title-id {
+ font-family: 'Playfair Display', serif;
+ font-size: 24pt;
+ color: var(--red);
+ font-weight: 700;
+ letter-spacing: 0.5px;
+ line-height: 1;
+ }
+ .ps-title-hz {
+ font-family: 'Noto Serif TC', serif;
+ font-size: 22pt;
+ color: var(--text);
+ font-weight: 700;
+ letter-spacing: 4px;
+ line-height: 1;
+ }
+ .ps-title-pinyin {
+ font-family: 'Inter', sans-serif;
+ font-size: 9pt;
+ color: var(--text-muted);
+ font-style: italic;
+ letter-spacing: 0.5px;
+ margin-top: 1mm;
+ }
+ .ps-badge {
+ font-family: 'Inter', sans-serif;
+ font-size: 7pt;
+ color: white;
+ background: var(--red);
+ padding: 1mm 3mm;
+ border-radius: 1mm;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ font-weight: 600;
+ }
+
+ .ps-meta-row {
+ display: flex;
+ gap: 4mm;
+ align-items: center;
+ font-size: 8.5pt;
+ color: var(--text-muted);
+ padding-bottom: 1.5mm;
+ }
+ .ps-meta-row .lbl {
+ font-family: 'Inter', sans-serif;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ font-size: 6.5pt;
+ color: #8B7355;
+ font-weight: 600;
+ }
+ .ps-meta-row .val {
+ font-family: 'Noto Serif TC', serif;
+ color: var(--text);
+ font-weight: 600;
+ }
+
+ .ps-body {
+ font-size: 12pt;
+ line-height: 1.6;
+ color: var(--text);
+ overflow: hidden;
+ text-align: justify;
+ padding: 0 1mm;
+ }
+ .ps-body p {
+ margin: 0 0 2.6mm 0;
+ }
+ .ps-body p:last-child {
+ margin-bottom: 0;
+ }
+ .ps-body strong {
+ color: var(--red);
+ font-weight: 700;
+ }
+ .ps-body .hz {
+ font-family: 'Noto Serif TC', serif;
+ color: var(--red);
+ font-weight: 600;
+ }
+
+ .ps-action {
+ display: grid;
+ grid-template-columns: 6mm 1fr;
+ gap: 3mm;
+ background: rgba(45,106,79,0.08);
+ border-left: 0.7mm solid var(--green);
+ border-radius: 0 1.5mm 1.5mm 0;
+ padding: 3mm 4mm;
+ font-size: 9pt;
+ line-height: 1.5;
+ color: var(--text);
+ }
+ .ps-action .ps-action-ico {
+ color: var(--green);
+ font-weight: 700;
+ font-size: 12pt;
+ line-height: 1;
+ }
+ .ps-action .ps-action-content {
+ display: grid;
+ gap: 1mm;
+ }
+ .ps-action .ps-action-label {
+ font-family: 'Inter', sans-serif;
+ font-size: 7.5pt;
+ text-transform: uppercase;
+ letter-spacing: 1.5px;
+ color: var(--green);
+ font-weight: 700;
+ }
+
+  /* AUTO-SHRINK FONT: cap ps-body container height; if content overflows, shrink via CSS classes */
+  
+  .ps-body { overflow: visible; }
+  .ps-body.shrunk-1 { font-size: 10pt !important; line-height: 1.45 !important; }
+  .ps-body.shrunk-2 { font-size: 9pt !important; line-height: 1.35 !important; }
+  .ps-body.shrunk-3 { font-size: 8pt !important; line-height: 1.25 !important; }
+  /* Bullet nomor responsive */
+  .ps-body p span[style*="background: var(--red)"] { transform: scale(1); }
+</style>
+</head>
+<body>
+<section class="page">
+ <header class="page-header">
+ <div class="h-num">{{PAGE_NUM_PADDED}}</div>
+ <div class="h-titles"><div class="h-cn">性情</div><div class="h-id">Kepribadian Detail &middot; Watak Inti &amp; Kebiasaan</div></div>
+ <div class="h-section">Bagian I &middot; BaZi 八字</div>
+ </header>
+
+ <div class="subject-bar">
+ <div class="subject-shio"><img src="Anjing-Merah.svg" alt="Anjing"></div>
+ <div class="subject-meta">
+ <div class="subject-name">Leonardo · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">戌 Anjing</span></div>
+ <div class="subject-detail">Lima paparan tentang sifat dasar &amp; cara Anda menjalani hidup</div>
+ </div>
+ <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">戊土 · Tanah Gunung</div></div>
+ </div>
+
+ <main class="content content-pal">
+ <div class="palace-solo">
+ <div class="ps-head">
+ <div>
+ <div class="ps-title-id">Kepribadian</div>
+ <div class="ps-title-pinyin">Xing Qing &middot; Watak Diri</div>
+ </div>
+ <div style="text-align:center;">
+ <div class="ps-title-hz">性情</div>
+ </div>
+ <div class="ps-badge">Watak Diri</div>
+ </div>
+
+ <div class="ps-meta-row">
+ <span class="lbl">Cakupan</span><span class="val">5 paparan watak inti</span>
+ </div>
+
+ <div class="ps-body"><p style="margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;"><span style="position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;">1</span>Pribadi yang <strong>keras kepala dan berpendirian kokoh</strong> (<span class="hz">固執</span>, <span class="hz">堅定立場</span>), dengan keinginan dan nafsu yang relatif sedikit (<span class="hz">寡慾</span>). Menekankan nilai-nilai diri; tampil gagah dan tegar namun tidak gegabah (<span class="hz">剛健而不魯莽</span>); kaya akan kemampuan menangani urusan, tetapi tidak garang atau buas. Karakternya tegas dalam mengambil keputusan (<span class="hz">果斷</span>) dengan daya eksekusi yang kuat.</p>
+
+<p style="margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;"><span style="position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;">2</span>Tidak suka memaksakan diri pada hal-hal tertentu. Sebaliknya mampu berkompromi luwes (<span class="hz">能通融</span>) dan penuh kasih sayang (<span class="hz">有愛心</span>); tidak suka bersikap diktator (<span class="hz">不喜獨裁</span>) maupun perlakuan keras-kejam (<span class="hz">嚴苛</span>). Memberi tanpa menghitung-hitung apa yang telah diberikan, memiliki daya curah perhatian yang konsisten namun tanpa keterikatan obsesif. Banyak memikirkan banyak hal, tetapi sering kali sulit mewujudkannya menjadi tindakan nyata.</p>
+
+<p style="margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;"><span style="position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;">3</span>Mengutamakan loyalitas dan budi (<span class="hz">義</span>, kebajikan) tanpa pelit pada harta &mdash; terus-terang tanpa hiasan atau sandiwara, tidak melekat pada apa pun. Terhadap uang yang dapat dipakai bersikap dermawan (<span class="hz">慷慨</span>) dan tenang-hambar (<span class="hz">淡泊</span>); meski tetap mengelola keuangan, tidak memprioritaskan harta sebagai tolok ukur hidup. Mengendalikan segala benda atau peristiwa yang dapat dikendalikan, tetapi tidak terobsesi pada benda atau peristiwa itu sendiri.</p>
+
+<p style="margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;"><span style="position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;">4</span>Pandai melakukan generalisasi dan abstraksi, namun cenderung memberi banyak contoh kasus konkret untuk menjelaskan (<span class="hz">善於類化中卻想多舉事例</span>). Tidak mau menyerang atau melanggar orang lain, juga tidak ingin diserang. Tidak membantah pendapat orang, tetapi juga tidak sembarangan menerima pendapat orang lain. Tampilannya terkesan memiliki keluhuran budi (<span class="hz">修養</span>, tata krama), tetapi kurang luwes secara basa-basi sosial (<span class="hz">人情</span>, tata pergaulan) dan tidak gemar banyak bicara (<span class="hz">不喜言談</span>).</p>
+
+<p style="margin: 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;"><span style="position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;">5</span>Memiliki kebiasaan suka menyendiri (<span class="hz">孤獨癖</span>). Terhadap kebendaan bersikap hambar dan tidak terlalu hirau; tidak suka mengurusi urusan orang lain, dan juga tidak mau diatur. Meskipun terkesan agak kaku-tertahan (<span class="hz">呆滯</span>), tetap berharap dapat berbuat sesuatu yang berarti. Sebagai pribadi tergolong polos-lugu dan kaku (<span class="hz">憨直呆板</span>), jujur-tulus tanpa tipu daya (<span class="hz">信實無欺</span>), sangat menjaga nama baik. Gaya hidupnya cenderung kering-monoton dan kurang berwarna (<span class="hz">枯燥乏味</span>).</p></div>
+
+ <div class="ps-action">
+ <div class="ps-action-ico">&#9656;</div>
+ <div class="ps-action-content">
+ <div class="ps-action-label">Inti Watak</div>
+ <div><!-- TAFSIR:_solo_caibo_action -->Inti: pribadi tegar yang menjaga prinsip, kaya kemampuan tapi sederhana keinginannya. Bertindak adil tanpa pamer, lebih nyaman menyendiri daripada ikut tren sosial.<!-- /TAFSIR --></div>
+ </div>
+ </div>
+ </div>
+ </main>
+
+ <footer class="footer">
+ <div class="footer-meta"><span>Halaman {{PAGE_NUM}} / {{TOTAL_PAGES}}</span></div>
+ </footer>
+</section>
+<script>
+(function(){
+  var body = document.querySelector('.ps-body');
+  if(!body) return;
+  var levels = ['', 'shrunk-1', 'shrunk-2', 'shrunk-3'];
+  for(var i=0; i<levels.length; i++){
+    body.className = 'ps-body' + (levels[i] ? ' ' + levels[i] : '');
+    if(body.scrollHeight <= body.clientHeight) break;
+  }
+})();
+</script>
+</body>
+</html>

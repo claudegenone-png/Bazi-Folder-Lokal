@@ -1,0 +1,860 @@
+{
+  "subject_id": "2",
+  "_built_by": "build_from_ocr.py V4.5 FULL-MD",
+  "identity": {
+    "name_id": "Zhuang Xiao Min",
+    "name_hanzi": "莊小敏",
+    "gender_id": "Pria",
+    "birth_date": "1961-04-08",
+    "birth_time": "13:58",
+    "birth_day_name": "Sabtu",
+    "birth_period_id": "siang",
+    "birth_hour_branch_hz": "未",
+    "birth_hour_period_label": "siang · 未時",
+    "lunar_date_text_new": "tanggal 23 bulan 2 tahun 辛丑 (Xin Chou · 1961)",
+    "lunar_year_pillar_hz": "辛丑",
+    "lunar_republic_text": "民國 50 年 2 月 23 日",
+    "age_at_report": 66
+  },
+  "shio": {
+    "branch_hz": "丑",
+    "branch_pinyin": "Chǒu",
+    "id": "Kerbau",
+    "id_upper": "KERBAU",
+    "svg_red": "Kerbau-Merah.svg",
+    "svg_black": "Kerbau-Hitam.svg"
+  },
+  "ti_xiang": null,
+  "day_master": {
+    "stem_hz": "辛",
+    "stem_element_hz": "金",
+    "stem_element_id": "Logam",
+    "polarity_id": "Yin",
+    "label_id": "Logam Halus",
+    "label_long_id": "Logam",
+    "pinyin": "Xīn 金",
+    "strength_id": "Lemah",
+    "strength_hz": "弱"
+  },
+  "pillars": {
+    "year": {
+      "stem_hz": "辛",
+      "branch_hz": "丑"
+    },
+    "month": {
+      "stem_hz": "壬",
+      "branch_hz": "辰"
+    },
+    "day": {
+      "stem_hz": "辛",
+      "branch_hz": "未"
+    },
+    "hour": {
+      "stem_hz": "乙",
+      "branch_hz": "未"
+    }
+  },
+  "wuxing": {
+    "jin": {
+      "value": 3.0,
+      "percent": 18.8,
+      "label_id": "Logam"
+    },
+    "shui": {
+      "value": 3.0,
+      "percent": 18.8,
+      "label_id": "Air"
+    },
+    "mu": {
+      "value": 4.0,
+      "percent": 25.0,
+      "label_id": "Kayu"
+    },
+    "huo": {
+      "value": 2.0,
+      "percent": 12.5,
+      "label_id": "Api"
+    },
+    "tu": {
+      "value": 4.0,
+      "percent": 25.0,
+      "label_id": "Tanah"
+    },
+    "total": 16.0,
+    "self_value": 3.0,
+    "self_el_hz": "—",
+    "fav_hz": "—",
+    "unfav_hz": "—",
+    "axis_max": "—",
+    "insight_id": null,
+    "_empty": false
+  },
+  "yong_shen": {
+    "elements_hz": "土",
+    "elements_id": "Tanah",
+    "label_id": "Penopang & Pengarah",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "ji_shen": {
+    "elements_hz": "水",
+    "elements_id": "Air",
+    "label_id": "Pelumat & Pemicu",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "format": {
+    "hz": "偏財格",
+    "pinyin": "Pian Cai Ge",
+    "label_id": "Pengusaha Lincah",
+    "glyph_hz": "—"
+  },
+  "da_yun": {
+    "start_age": 2,
+    "direction_id": "backward",
+    "current_index": 6,
+    "axis_marks": [
+      2,
+      12,
+      22,
+      32,
+      42,
+      52,
+      62,
+      72,
+      82,
+      92,
+      102
+    ],
+    "cycles": [
+      {
+        "n": 1,
+        "age_start": 2,
+        "age_end": 11,
+        "stem_hz": "辛",
+        "branch_hz": "卯",
+        "ten_god_hz": "比肩",
+        "ten_god_id": "Pundak Sama",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 2,
+        "age_start": 12,
+        "age_end": 21,
+        "stem_hz": "庚",
+        "branch_hz": "寅",
+        "ten_god_hz": "劫財",
+        "ten_god_id": "Saudara Sebanding",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 3,
+        "age_start": 22,
+        "age_end": 31,
+        "stem_hz": "己",
+        "branch_hz": "丑",
+        "ten_god_hz": "偏印",
+        "ten_god_id": "Mentor",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 4,
+        "age_start": 32,
+        "age_end": 41,
+        "stem_hz": "戊",
+        "branch_hz": "子",
+        "ten_god_hz": "正印",
+        "ten_god_id": "Pelajaran",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 5,
+        "age_start": 42,
+        "age_end": 51,
+        "stem_hz": "丁",
+        "branch_hz": "亥",
+        "ten_god_hz": "七殺",
+        "ten_god_id": "Pemurnian",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 6,
+        "age_start": 52,
+        "age_end": 61,
+        "stem_hz": "丙",
+        "branch_hz": "戌",
+        "ten_god_hz": "正官",
+        "ten_god_id": "Otoritas",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 7,
+        "age_start": 62,
+        "age_end": 71,
+        "stem_hz": "乙",
+        "branch_hz": "酉",
+        "ten_god_hz": "偏財",
+        "ten_god_id": "Rezeki Bisnis",
+        "element_class": "el-mu",
+        "is_current": true
+      },
+      {
+        "n": 8,
+        "age_start": 72,
+        "age_end": 81,
+        "stem_hz": "甲",
+        "branch_hz": "申",
+        "ten_god_hz": "正財",
+        "ten_god_id": "Rezeki Tetap",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 9,
+        "age_start": 82,
+        "age_end": 91,
+        "stem_hz": "癸",
+        "branch_hz": "未",
+        "ten_god_hz": "食神",
+        "ten_god_id": "Pencipta",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 10,
+        "age_start": 92,
+        "age_end": 101,
+        "stem_hz": "壬",
+        "branch_hz": "午",
+        "ten_god_hz": "傷官",
+        "ten_god_id": "Kritikus Tajam",
+        "element_class": "el-shui"
+      }
+    ],
+    "seasons": [
+      {
+        "el_class": "s-jin",
+        "el_hz": "金",
+        "name_id": "Musim Tanam",
+        "age_start": 2,
+        "age_end": 21,
+        "caption_id": "fase Logam Yin Kelinci (辛卯) dan Logam Yang Macan (庚寅), karakter dan kebiasaan dasar terbentuk dalam lingkungan keluarga"
+      },
+      {
+        "el_class": "s-tu",
+        "el_hz": "土",
+        "name_id": "Musim Tumbuh",
+        "age_start": 22,
+        "age_end": 41,
+        "caption_id": "fase Tanah Yin Kerbau (己丑) dan Tanah Yang Tikus (戊子), identitas dan karir dibangun dengan dukungan tanah penopang logam"
+      },
+      {
+        "el_class": "s-huo",
+        "el_hz": "火",
+        "name_id": "Musim Berbunga",
+        "age_start": 42,
+        "age_end": 61,
+        "caption_id": "fase Api Yin Babi (丁亥) dan Api Yang Anjing (丙戌), karir matang dengan tantangan seimbang"
+      },
+      {
+        "el_class": "s-mu",
+        "el_hz": "木",
+        "name_id": "Musim Panen",
+        "age_start": 62,
+        "age_end": 81,
+        "is_current": true,
+        "caption_id": "fase Kayu Yin Ayam (乙酉), masa panen rezeki tak terduga dari relasi panjang"
+      },
+      {
+        "el_class": "s-shui",
+        "el_hz": "水",
+        "name_id": "Musim Tenang",
+        "age_start": 82,
+        "age_end": 101,
+        "caption_id": "fase Kayu Yang Monyet (甲申) dan Air Yin Kambing (癸未), konsolidasi warisan"
+      }
+    ],
+    "spotlight_headline_html": "Fase 62-71: <strong>Kayu Yin Ayam</strong> (<span class=\"hz\">乙酉</span>), masa panen rezeki tak terduga dan ekspresi pengaruh.",
+    "spotlight_tag_tone_html": "Kayu · pertumbuhan",
+    "spotlight_tag_combo_html": "Wealth Lincah",
+    "spotlight_tag_combo_pair": [
+      "乙",
+      "酉"
+    ],
+    "spotlight_bullets_html": [
+      "Fase <strong>Kayu Yin Ayam</strong> (<span class=\"hz\">乙酉</span>) membawa unsur <strong>Kayu</strong> (<span class=\"hz\">木</span>) (rezeki) bertemu <strong>Logam</strong> (<span class=\"hz\">金</span>) (peer support), kombinasi yang membuka pintu rezeki tak terduga.",
+      "Branch 酉 (logam) menguatkan Day Master 辛金 yang lemah, memberi panggung bagi ketegasan eksekusi dan keberanian mengambil keputusan strategis.",
+      "<strong>Bintang Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財</span>) makin aktif di fase ini, peluang bisnis lintas bidang dan akumulasi aset properti terbuka lebar.",
+      "Kesehatan dan hubungan keluarga inti perlu jadi prioritas — jangan terlalu sibuk pada urusan luar hingga melupakan jangkar di rumah."
+    ],
+    "footer_caption_html": "Zhuang Xiao Min, 66 tahun, kini dalam fase <strong>Kayu Yin Ayam</strong> (<span class=\"hz\">乙酉</span>) (umur 62-71), masa panen rezeki tak terduga dan ekspresi pengaruh, gunakan energi ini untuk konsolidasi aset dan menjaga keseimbangan keluarga."
+  },
+  "marriage": {
+    "self_branch_index": 1,
+    "cocok": [
+      {
+        "branch_hz": "子",
+        "id": "Tikus",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "巳",
+        "id": "Ular",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "酉",
+        "id": "Ayam",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      }
+    ],
+    "hindari": [
+      {
+        "branch_hz": "辰",
+        "id": "Naga",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "午",
+        "id": "Kuda",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "未",
+        "id": "Kambing",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "戌",
+        "id": "Anjing",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      }
+    ],
+    "_empty": false
+  },
+  "yang_zhai": {
+    "gua_hz": "震",
+    "gua_pinyin": "Zhèn",
+    "gua_label_id": "Petir",
+    "gua_direction_id": "Timur",
+    "gua_direction_abbr": "T",
+    "group_id": "Timur",
+    "sumbu_hoki_hz": "東↔西",
+    "sumbu_hoki_id": "T ↔ B",
+    "trigram_symbol": "☳"
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "廉貞",
+    "shen_zhu_hz": "天相",
+    "ming_gong_hz": "申",
+    "shen_gong_hz": "戌",
+    "wu_xing_ju_hz": "火六局",
+    "shi_jun_hz": "午",
+    "palaces": null,
+    "ming_gong_id": "Istana Hidup · Monyet",
+    "shen_gong_id": "Istana Tubuh · Anjing",
+    "shi_jun_id": "Penguasa Waktu · Kuda",
+    "ming_zhu_id": "Penguasa Hidup",
+    "shen_zhu_id": "Penguasa Tubuh",
+    "wu_xing_ju_id": "Aliran Api Enam"
+  },
+  "shen_sha_list": [
+    {
+      "hanzi": "早慧",
+      "pillar": null
+    }
+  ],
+  "dm_pos_score": 4240.0,
+  "dm_neg_score": 4386.0,
+  "xiantian_per_stem": {
+    "jia": 0,
+    "yi": 4,
+    "bing": 0,
+    "ding": 2,
+    "wu": 1,
+    "ji": 3,
+    "geng": 0,
+    "xin": 3,
+    "ren": 1,
+    "gui": 2
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": null,
+  "canggan_shi_shen": null,
+  "chang_sheng_per_pilar": null,
+  "kong_wang": null,
+  "ming_gong_bazi": null,
+  "bone_weight": null,
+  "liu_nian_predictions": [
+    {
+      "tahun": 2026,
+      "umur": 66,
+      "ganzhi": "丙午",
+      "prose": "Tahun pengorbanan besar; usaha tampak tidak sebanding dengan hasil materi. **Bintang Kematian** (死符) hadir, hindari menjenguk orang sakit berat; jaga kesehatan diri dan keluarga. Hubungan suami-istri rentan renggang sesaat; pasangan belum menikah justru makin mesra. Pekerjaan ada perubahan posisi atau jabatan. Bulan 2, 5, 8 dan 12 paling rawan, banyak doa keselamatan."
+    },
+    {
+      "tahun": 2027,
+      "umur": 67,
+      "ganzhi": "丁未",
+      "prose": "**Bintang Bulan** (太陰) masuk peruntungan, banyak hal baik dan dukungan dari atasan/guru, cita-cita terjangkau. Lingkungan rumah berubah — renovasi, pindah, atau ganti perabot. Sudah menikah hubungan kembali hangat; belum menikah peluang asmara terbuka. Hindari spekulasi, kelola harta dengan hati-hati. Perlu disiplin untuk tidak terjebak rencana terlalu konservatif."
+    }
+  ],
+  "ziwei_su_ming": "Arah hidup Zhuang Xiao Min seperti yang sudah ditakdirkan. Bila istana hidup (命宮) berjaya dan istana raga (身宮) kuat, kehangatan dan kebajikannya membawa banyak keberuntungan; pribadinya hangat, penuh empati. Bila istana berkah lemah, hubungan antar manusia sulit harmonis dan kebajikan mudah surut. Saat itu, kekuatan istana **Hidup** (命宮), **Rezeki** (財帛), dan **Pergerakan** (遷移) ikut menentukan keseluruhan nasib.",
+  "ziwei_stars": null,
+  "shiye_favorable_full": null,
+  "shiye_supportive_full": null,
+  "shiye_short": "適業: 建築, 當鋪, 畜牧, 水泥建材, 房地產買賣, 殯儀館, 墓碑石店, 地師, 古董, 顧問, 鋼鐵工廠, 五金行, 採礦, 汽車, 機械, 科學家, 律師, 歌影星, 音樂家, 武術館, 會計, 金融界.",
+  "shen_sha_detail": null,
+  "marriage_cocok_tafsir": "Mendapat jodoh baik, pasti membangun rumah tangga yang berdiri kokoh, kaya raya membuat keluarga makmur, hati lapang membangun usaha bersama, hari tua berlimpah keberkahan, tinggalkan warisan kebajikan untuk anak cucu.",
+  "marriage_hindari_tafsir": "Ada untung ada rugi, manis dan pahit setara, bahagia dan susah bergantian. Paruh pertama hidup tampak bahagia tapi tanpa daya juang, batin penuh kerisauan dan derita; akhirnya rumah tangga bisa berantakan dan gagal.",
+  "gushu_quotes": [
+    {
+      "source_hz": "三命通會註",
+      "source_id": "Catatan Sanming Tonghui",
+      "text_hz": "庚辛日主號金干，木火相生福自專，年月時中如會合，東西運步定居官。",
+      "text_id": "Pemilik hari 庚/辛 disebut batang logam. Saat **Kayu** dan **Api** saling membangkitkan, keberuntungan datang sendiri. Bila tahun-bulan-jam saling bertemu, perjalanan ke arah Timur dan Barat akan mengukuhkan jabatan."
+    },
+    {
+      "source_hz": "白虎持勢",
+      "source_id": "Bai Hu Chi Shi (Macan Putih Memegang Kuasa)",
+      "text_hz": "白虎持勢寅卯強，如臨己午未戌郷，四野遇之多富貴，必向皇都作棟樑。",
+      "text_id": "Saat **Macan Putih** memegang kuasa di 寅/卯 kuat, dan datang ke kampung 己/午/未/戌, di empat penjuru ia bertemu kekayaan dan kehormatan, pasti menuju ibu kota menjadi tiang utama."
+    },
+    {
+      "source_hz": "滴天髓",
+      "source_id": "Ditian Sui",
+      "text_hz": "辛金軟弱，溫潤而清，畏土之疊，樂水之盈，能扶社稷，能救生靈，熱則喜母，寒則喜丁。",
+      "text_id": "Logam 辛 lembut dan halus, hangat-jernih sifatnya. Takut **Tanah** yang menumpuk, suka **Air** yang melimpah. Mampu menopang negeri dan menyelamatkan banyak jiwa. Saat panas suka pada Ibu (Tanah baik), saat dingin suka 丁 (Api Yin)."
+    }
+  ],
+  "xiongnian_list": null,
+  "mantra": {
+    "hz": "—",
+    "pinyin": "—"
+  },
+  "_xq_radar_poly": "          <polygon points=\"200,72 311.2,136 311.2,264 200,328 102.7,256 102.7,144\"\n            fill=\"rgba(139,26,26,0.18)\" stroke=\"#8B1A1A\" stroke-width=\"1.5\"/>\n          <circle cx=\"200\" cy=\"72\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"136\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"264\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"200\" cy=\"328\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"102.7\" cy=\"256\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"102.7\" cy=\"144\" r=\"3\" fill=\"#8B1A1A\"/>",
+  "_xq_radar_labels": "          <g font-family=\"Noto Serif TC,serif\">\n            <text x=\"200\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[勇]]</text>\n            <text x=\"200\" y=\"33\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Yǒng · Keberanian · 8.0</text>\n\n            <text x=\"358\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[義]]</text>\n            <text x=\"358\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Yì · Kesetiaan-Sosial · 8.0</text>\n\n            <text x=\"358\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[斷]]</text>\n            <text x=\"358\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Duàn · Daya Putus · 8.0</text>\n\n            <text x=\"200\" y=\"382\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[獨]]</text>\n            <text x=\"200\" y=\"393\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Dú · Kemandirian · 8.0</text>\n\n            <text x=\"42\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[動]]</text>\n            <text x=\"42\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Dòng · Inisiatif · 7.0</text>\n\n            <text x=\"42\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">[[韌]]</text>\n            <text x=\"42\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Rèn · Ketangguhan · 7.0</text>\n          </g>",
+  "_xq_motto": [
+    "辛",
+    "Sang Logam Halus Pemberani",
+    "剛毅獨行",
+    "辛金軟弱溫潤而清"
+  ],
+  "_tafsir": {
+    "kepribadian": "Zhuang Xiao Min adalah pribadi <strong>Logam Yin</strong> (<span class=\"hz\">辛金</span>), seperti perhiasan halus yang lembut tapi punya ketajaman tersembunyi. Lahir dengan <strong>Format Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財用事</span>), ia memiliki kepekaan tinggi terhadap peluang materi, naluri bisnis tajam, dan kemampuan membaca pasar yang baik. Foto 性情 mencatat: berani, energik, mau bertindak nyata, tidak terlalu mengejar materi pribadi tapi pandai mengelola harta kolektif, mandiri, suka aksi, dan punya wibawa. Sifatnya ringan tangan dalam menolong, namun keras dan tegas dalam pendirian — lugas, tidak basa-basi, dan punya keberanian mengambil keputusan sulit.",
+    "_kepribadian_struct": {
+      "paragraf": "Zhuang Xiao Min adalah pribadi **Logam Yin** ([[辛金]]), seperti perhiasan halus yang lembut tapi punya ketajaman tersembunyi. Lahir dengan **Format Rezeki Tak Terduga** ([[偏財用事]]), ia memiliki kepekaan tinggi terhadap peluang materi, naluri bisnis tajam, dan kemampuan membaca pasar yang baik. Foto 性情 mencatat: berani, energik, mau bertindak nyata, tidak terlalu mengejar materi pribadi tapi pandai mengelola harta kolektif, mandiri, suka aksi, dan punya wibawa. Sifatnya ringan tangan dalam menolong, namun keras dan tegas dalam pendirian — lugas, tidak basa-basi, dan punya keberanian mengambil keputusan sulit.",
+      "radar_traits": [
+        [
+          "[[勇]]",
+          "Yǒng",
+          "Keberanian",
+          8.0
+        ],
+        [
+          "[[義]]",
+          "Yì",
+          "Kesetiaan-Sosial",
+          8.0
+        ],
+        [
+          "[[斷]]",
+          "Duàn",
+          "Daya Putus",
+          8.0
+        ],
+        [
+          "[[獨]]",
+          "Dú",
+          "Kemandirian",
+          8.0
+        ],
+        [
+          "[[動]]",
+          "Dòng",
+          "Inisiatif",
+          7.0
+        ],
+        [
+          "[[韌]]",
+          "Rèn",
+          "Ketangguhan",
+          7.0
+        ]
+      ],
+      "motto": [
+        "辛",
+        "Sang Logam Halus Pemberani",
+        "剛毅獨行",
+        "辛金軟弱溫潤而清"
+      ],
+      "power": [
+        "Keberanian dan daya tindak yang tinggi, tidak ragu mengambil keputusan sulit.",
+        "Kemampuan mengelola harta kolektif dan membaca peluang bisnis dengan tajam.",
+        "Mandiri, tidak bergantung pada orang lain, sanggup berdiri sendiri sejak muda.",
+        "Kepekaan terhadap dinamika sosial — mengerti kapan harus diam, kapan harus bicara tegas."
+      ],
+      "shadow": [
+        "Cenderung terlalu lugas hingga terkesan dingin atau tidak peka emosi orang lain.",
+        "Sulit menerima nasihat keluarga, terutama dari pasangan dan saudara perempuan.",
+        "Punya kecenderungan keras kepala — sekali memutuskan sulit dibengkokkan.",
+        "Rentan terbawa godaan asmara di luar pernikahan bila tidak dijaga ketat."
+      ],
+      "optimum": [
+        "Latih kelembutan komunikasi tanpa kehilangan ketegasan inti.",
+        "Bangun jangkar finansial lewat properti dan tanah, bukan spekulasi cepat.",
+        "Investasikan waktu untuk hubungan keluarga inti agar tidak terlalu soliter.",
+        "Pilih pasangan yang setia, sabar, dan mampu menjadi penyeimbang emosional."
+      ]
+    },
+    "family": "pasangan: - vibe: Sabar · Penyeimbang - headline: Pasangan setia yang mampu meredam ketegasan dan memberi ruang batin. - body: Zhuang Xiao Min membutuhkan pasangan setia, sabar, dan mampu menjadi penyeimbang ketegasan emosionalnya. Foto 夫妻 mencatat hubungan luarnya tampak hangat seperti pasangan yang penuh gairah, tetapi pasangan biasanya berkepribadian kuat dan keras kepala — gesekan komunikasi rawan terjadi. Pernikahan terbaik adalah yang dibangun lewat komunikasi terbuka dan saling memberi ruang. Pernikahan terlambat justru lebih harmonis daripada terlalu cepat menikah.<br><br>anak: - vibe: Hangat · Tegas - headline: Orang tua yang melindungi sambil mendisiplinkan kemandirian. - body: Zhuang Xiao Min cenderung menjadi figur ayah yang mendisiplinkan dengan kasih, namun anak — terutama anak laki-laki — cenderung sulit didengar dan tidak terlalu menurut. Foto 全局總論 mencatat hubungan dengan anak laki-laki agak renggang, sementara anak pertama cenderung perempuan dan aktif. Pola pengasuhan terbaik adalah memberi panduan nilai sambil tetap memberi ruang anak bereksplorasi.<br><br>saudara: - vibe: Mandiri · Cermat - headline: Hubungan saudara perlu jarak sehat agar tetap harmonis. - body: Hubungan Zhuang Xiao Min dengan saudara cenderung mandiri — masing-masing berdiri sendiri. Foto 全局總論 menyebut sulit menerima pendapat saudara perempuan dan ibu. Sinergi terbaik dibangun dengan menjaga jarak emosional yang sehat dan komunikasi yang lugas namun tetap hormat.<br><br>kepemimpinan: - vibe: Tegas · Lugas - headline: Pemimpin lugas yang memimpin dengan keberanian dan eksekusi. - body: Zhuang Xiao Min adalah pemimpin tipe eksekutor — keras, tegas, hasil-oriented. <strong>Format Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財用事</span>) membuatnya cocok memimpin proyek lintas bidang yang melibatkan modal dan jaringan. Gaya terbaik adalah peran eksekusi di organisasi yang menghargai keputusan cepat dan keberanian mengambil risiko terukur.",
+    "_family_struct": {
+      "pasangan": {
+        "vibe": "Sabar · Penyeimbang",
+        "headline": "Pasangan setia yang mampu meredam ketegasan dan memberi ruang batin.",
+        "body": "Zhuang Xiao Min membutuhkan pasangan setia, sabar, dan mampu menjadi penyeimbang ketegasan emosionalnya. Foto 夫妻 mencatat hubungan luarnya tampak hangat seperti pasangan yang penuh gairah, tetapi pasangan biasanya berkepribadian kuat dan keras kepala — gesekan komunikasi rawan terjadi. Pernikahan terbaik adalah yang dibangun lewat komunikasi terbuka dan saling memberi ruang. Pernikahan terlambat justru lebih harmonis daripada terlalu cepat menikah."
+      },
+      "anak": {
+        "vibe": "Hangat · Tegas",
+        "headline": "Orang tua yang melindungi sambil mendisiplinkan kemandirian.",
+        "body": "Zhuang Xiao Min cenderung menjadi figur ayah yang mendisiplinkan dengan kasih, namun anak — terutama anak laki-laki — cenderung sulit didengar dan tidak terlalu menurut. Foto 全局總論 mencatat hubungan dengan anak laki-laki agak renggang, sementara anak pertama cenderung perempuan dan aktif. Pola pengasuhan terbaik adalah memberi panduan nilai sambil tetap memberi ruang anak bereksplorasi."
+      },
+      "saudara": {
+        "vibe": "Mandiri · Cermat",
+        "headline": "Hubungan saudara perlu jarak sehat agar tetap harmonis.",
+        "body": "Hubungan Zhuang Xiao Min dengan saudara cenderung mandiri — masing-masing berdiri sendiri. Foto 全局總論 menyebut sulit menerima pendapat saudara perempuan dan ibu. Sinergi terbaik dibangun dengan menjaga jarak emosional yang sehat dan komunikasi yang lugas namun tetap hormat."
+      },
+      "kepemimpinan": {
+        "vibe": "Tegas · Lugas",
+        "headline": "Pemimpin lugas yang memimpin dengan keberanian dan eksekusi.",
+        "body": "Zhuang Xiao Min adalah pemimpin tipe eksekutor — keras, tegas, hasil-oriented. **Format Rezeki Tak Terduga** ([[偏財用事]]) membuatnya cocok memimpin proyek lintas bidang yang melibatkan modal dan jaringan. Gaya terbaik adalah peran eksekusi di organisasi yang menghargai keputusan cepat dan keberanian mengambil risiko terukur."
+      }
+    },
+    "shensha": "Foto 神煞 mencatat <strong>Bintang Akademik &amp; Bakat Seni</strong> menonjol — kemampuan belajar mandiri dan bakat alami pada bidang seni, desain, dekorasi, musik, dan sastra. Software juga mencatat ketegasan, kemandirian, dan keberanian sebagai sifat dominan. Bintang-bintang inilah yang menjadi panggung kekuatan Zhuang Xiao Min: bakat seni dan estetika yang dipadukan dengan ketegasan eksekusi.",
+    "_shensha_struct": {
+      "dominant_star": {
+        "hanzi": "偏財",
+        "pinyin": "Piān Cái",
+        "label_id": "Bintang Rezeki Tak Terduga",
+        "active_label": "AKTIF SEKARANG"
+      },
+      "strip": "Manfaatkan kepekaan terhadap peluang materi secara strategis, **Bintang Rezeki Tak Terduga** ([[偏財]]) aktif mendukung Zhuang Xiao Min menangkap peluang bisnis lintas bidang."
+    },
+    "caifu": "Pola finansial Zhuang Xiao Min ditandai oleh <strong>Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財</span>) yang sumbernya kuat dan mengalir lewat banyak pintu. <strong>Rezeki Tetap</strong> (<span class=\"hz\">正財</span>) juga ada namun hubungannya agak jauh — penghasilan rutin tidak otomatis besar. Foto 財富 mencatat sumber rezeki tetap dan tidak terduga sama-sama melimpah, tapi tidak mudah diraih tanpa kerja keras. Properti, tanah, dan investasi material adalah jangkar paling stabil.",
+    "_caifu_struct": {
+      "zheng_cai": {
+        "label": "Rezeki Tetap",
+        "percent": "40%",
+        "body": "Rezeki tetap Zhuang Xiao Min tidak mengalir deras secara otomatis. Foto 財富 mencatat hubungan dengan rezeki tetap agak renggang — perlu disiplin pengelolaan agar penghasilan rutin tidak habis. **Rezeki Tetap** ([[正財]]) bekerja paling baik bila dipasangkan dengan strategi tabungan otomatis dan investasi properti."
+      },
+      "pian_cai": {
+        "label": "Rezeki Tak Terduga",
+        "percent": "60%",
+        "body": "**Rezeki Tak Terduga** ([[偏財]]) menjadi sumber rezeki utama bagi Zhuang Xiao Min. Bisa datang dari proyek lintas bidang, komisi, kerjasama bisnis, atau peluang yang muncul dari jaringan luas dan naluri pasar yang tajam. Kunci: tetap fleksibel dan jangan menutup diri dari ide yang tampak tidak konvensional."
+      },
+      "rules": [
+        {
+          "title": "Investasi properti dan tanah adalah prioritas utama",
+          "context": "Properti menjadi jangkar paling stabil untuk menyimpan rezeki Zhuang Xiao Min",
+          "tone": "tip"
+        },
+        {
+          "title": "Hindari spekulasi liar dan judi finansial",
+          "context": "Rezeki gampang datang juga gampang pergi bila dipakai untuk taruhan",
+          "tone": "warn"
+        },
+        {
+          "title": "Bangun penghasilan dari relasi profesional",
+          "context": "Jaringan luas adalah aset utama untuk rezeki tak terduga",
+          "tone": "tip"
+        },
+        {
+          "title": "Disiplin pengeluaran rutin",
+          "context": "Uang tunai cenderung tidak betah lama bila tidak dialihkan ke aset",
+          "tone": "warn"
+        }
+      ]
+    },
+    "career": "<p>Zhuang Xiao Min paling bersinar di bidang yang menggabungkan ketegasan eksekusi, naluri bisnis, dan kemampuan mengelola modal lintas wilayah. <strong>Format Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財用事</span>) menunjuk pada karir di properti, konstruksi, perdagangan, manufaktur, dan keuangan. Foto 事業 secara eksplisit menyebut potensi besar di bidang konstruksi, pegadaian, peternakan, semen-bahan bangunan, jual-beli properti, antik, konsultan tanah, baja, logam, pertambangan, otomotif, mesin, hukum, seni, akuntansi, dan keuangan.</p><ul><li><strong><span class=\"hz\">房地產</span> / Properti &amp; Tanah</strong> (unsur 土), Foto 事業 sebut langsung 房地產買賣, jangkar paling stabil untuk <strong>Format Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財</span>)</li><li><strong><span class=\"hz\">建築</span> / Konstruksi &amp; Bahan Bangunan</strong> (unsur 土), Foto 事業 sebut langsung 建築/水泥建材, dukung kekuatan materi dan struktur</li><li><strong><span class=\"hz\">五金</span> / Logam &amp; Pertambangan</strong> (unsur 金), Foto 事業 sebut langsung 五金行/採礦/鋼鐵工廠, selaras dengan Day Master 辛金</li><li><strong><span class=\"hz\">金融</span> / Keuangan &amp; Akuntansi</strong> (unsur 金), Foto 事業 sebut langsung 會計/金融界, daya analitis dan disiplin angka</li><li><strong><span class=\"hz\">古董</span> / Antik &amp; Konsultan Tanah</strong> (unsur 土), Foto 事業 sebut 古董/地師, kepekaan terhadap nilai dan estetika</li></ul>",
+    "_career_struct": {
+      "tags": {
+        "fav_1": [
+          "金",
+          "KETEGASAN-EKSEKUSI"
+        ],
+        "fav_2": [
+          "土",
+          "STABILITAS-ASET"
+        ],
+        "unfav_1": [
+          "木",
+          "BENTURAN-MATERI"
+        ],
+        "unfav_2": [
+          "水",
+          "KEBOCORAN"
+        ]
+      },
+      "industri": [
+        {
+          "nama": "[[房地產]] / Properti & Tanah",
+          "unsur": "土",
+          "alasan": "Foto 事業 sebut langsung 房地產買賣, jangkar paling stabil untuk **Format Rezeki Tak Terduga** ([[偏財]])"
+        },
+        {
+          "nama": "[[建築]] / Konstruksi & Bahan Bangunan",
+          "unsur": "土",
+          "alasan": "Foto 事業 sebut langsung 建築/水泥建材, dukung kekuatan materi dan struktur"
+        },
+        {
+          "nama": "[[五金]] / Logam & Pertambangan",
+          "unsur": "金",
+          "alasan": "Foto 事業 sebut langsung 五金行/採礦/鋼鐵工廠, selaras dengan Day Master 辛金"
+        },
+        {
+          "nama": "[[金融]] / Keuangan & Akuntansi",
+          "unsur": "金",
+          "alasan": "Foto 事業 sebut langsung 會計/金融界, daya analitis dan disiplin angka"
+        },
+        {
+          "nama": "[[古董]] / Antik & Konsultan Tanah",
+          "unsur": "土",
+          "alasan": "Foto 事業 sebut 古董/地師, kepekaan terhadap nilai dan estetika"
+        }
+      ]
+    },
+    "daymaster": "Zhuang Xiao Min bertumpu pada <strong>Logam Yin</strong> (<span class=\"hz\">辛金</span>) sebagai Day Master yang lemah (<span class=\"hz\">弱</span>, +4240 vs −4386). Foto 喜用神 mencatat <strong>Logam</strong> (<span class=\"hz\">金</span>) sebagai 用神 utama untuk menguatkan Day Master, dengan <strong>Tanah</strong> (<span class=\"hz\">土</span>) sebagai 喜神 yang membangkitkan logam. <strong>Api</strong> (<span class=\"hz\">火</span>) sebagai 閒神 (netral), <strong>Air</strong> (<span class=\"hz\">水</span>) sebagai 仇神 (penguras kedua), dan <strong>Kayu</strong> (<span class=\"hz\">木</span>) sebagai 忌神 (penghambat utama yang dikendalikan logam dengan susah payah).",
+    "_jishen_body": "<strong>Kayu</strong> (<span class=\"hz\">木</span>) dan <strong>Air</strong> (<span class=\"hz\">水</span>) adalah unsur yang melemahkan Zhuang Xiao Min. <strong>Kayu</strong> (<span class=\"hz\">木</span>) hadir kuat di pilar bulan dan jam (4 poin), menjadi sumber penguras utama. Hindari lingkungan, warna, dan pilihan hidup yang menambah dua unsur ini.",
+    "yangzhai": "Trigram pribadi Zhuang Xiao Min adalah <strong>Guntur</strong> (<span class=\"hz\">震</span>), tipe Timur dengan arah hoki utama Utara, Selatan, Timur, dan Tenggara. Foto 陽宅 menegaskan rumah sebaiknya menghadap Utara (<span class=\"hz\">坐南向北</span>) atau Selatan (<span class=\"hz\">坐北向南</span>) untuk hasil terbaik. Pintu utama di sisi Selatan, Utara, atau Tenggara mendukung aliran energi positif. Hindari area Barat Laut sebagai titik aktif utama karena berbenturan dengan trigram Guntur.",
+    "_yangzhai_struct": {
+      "zones": [
+        {
+          "label": "Pintu Utama",
+          "headline": "✓ Optimal",
+          "pills": "南 北 東南",
+          "note": "Foto 陽宅 sebut \"門路宜開南方、北方、東南方吉"
+        },
+        {
+          "label": "Kamar Tidur",
+          "headline": "✓ Optimal",
+          "pills": "東 東南",
+          "note": "Foto 陽宅 sebut \"床位宜安東方、東南方吉\" untuk istirahat berkualitas"
+        },
+        {
+          "label": "Dapur / Kompor",
+          "headline": "✓ Optimal",
+          "pills": "西 東南",
+          "note": "Foto 陽宅 sebut \"爐灶宜安西方向東方或西北方向東南方吉"
+        },
+        {
+          "label": "Kamar Mandi",
+          "headline": "⚠ Perhatikan",
+          "pills": "東北 西",
+          "note": "Foto 陽宅 sebut \"坑廁宜安於東北方、西北方、西方、西南方\", jauh dari sektor utama"
+        },
+        {
+          "label": "Ruang Kerja",
+          "headline": "✓ Optimal",
+          "pills": "南 東",
+          "note": "Foto 陽宅 sebut \"房間宜安南方、北方、東方、東南方\" untuk fokus"
+        },
+        {
+          "label": "Altar / Sembah",
+          "headline": "✓ Optimal",
+          "pills": "南 東",
+          "note": "Foto 陽宅 sebut \"神位宜安南方或北方、東方"
+        }
+      ]
+    },
+    "dayun_spotlight": "<div class=\"sp-headline\">Fase 62-71: <strong>Kayu Yin Ayam</strong> (<span class=\"hz\">乙酉</span>), masa panen rezeki tak terduga dan ekspresi pengaruh.</div><ul class='sp-bullets'><li>Fase <strong>Kayu Yin Ayam</strong> (<span class=\"hz\">乙酉</span>) membawa unsur <strong>Kayu</strong> (<span class=\"hz\">木</span>) (rezeki) bertemu <strong>Logam</strong> (<span class=\"hz\">金</span>) (peer support), kombinasi yang membuka pintu rezeki tak terduga.</li><li>Branch 酉 (logam) menguatkan Day Master 辛金 yang lemah, memberi panggung bagi ketegasan eksekusi dan keberanian mengambil keputusan strategis.</li><li><strong>Bintang Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財</span>) makin aktif di fase ini, peluang bisnis lintas bidang dan akumulasi aset properti terbuka lebar.</li><li>Kesehatan dan hubungan keluarga inti perlu jadi prioritas — jangan terlalu sibuk pada urusan luar hingga melupakan jangkar di rumah.</li></ul>",
+    "dayun_seasons": "<ol class='dy-seasons'><li>umur 2-21: Musim Tanam — fase <strong>Logam Yin Kelinci</strong> (<span class=\"hz\">辛卯</span>) dan <strong>Logam Yang Macan</strong> (<span class=\"hz\">庚寅</span>), karakter dan kebiasaan dasar terbentuk dalam lingkungan keluarga</li><li>umur 22-41: Musim Tumbuh — fase <strong>Tanah Yin Kerbau</strong> (<span class=\"hz\">己丑</span>) dan <strong>Tanah Yang Tikus</strong> (<span class=\"hz\">戊子</span>), identitas dan karir dibangun dengan dukungan tanah penopang logam</li><li>umur 42-61: Musim Berbunga — fase <strong>Api Yin Babi</strong> (<span class=\"hz\">丁亥</span>) dan <strong>Api Yang Anjing</strong> (<span class=\"hz\">丙戌</span>), karir matang dengan tantangan seimbang</li><li>umur 62-71: Musim Panen — fase <strong>Kayu Yin Ayam</strong> (<span class=\"hz\">乙酉</span>), masa panen rezeki tak terduga dari relasi panjang</li><li>umur 72-91: Musim Tenang — fase <strong>Kayu Yang Monyet</strong> (<span class=\"hz\">甲申</span>) dan <strong>Air Yin Kambing</strong> (<span class=\"hz\">癸未</span>), konsolidasi warisan</li></ol>",
+    "dayun_footer": "Zhuang Xiao Min, 66 tahun, kini dalam fase <strong>Kayu Yin Ayam</strong> (<span class=\"hz\">乙酉</span>) (umur 62-71), masa panen rezeki tak terduga dan ekspresi pengaruh, gunakan energi ini untuk konsolidasi aset dan menjaga keseimbangan keluarga.",
+    "palace1": "<p>ming_gong: - star: 廉貞 - insight: <strong>Bintang Logam Eksekutif Halus</strong> (<span class=\"hz\">廉貞</span>) di Istana Hidup <strong>Monyet</strong> (<span class=\"hz\">申</span>) memberi Zhuang Xiao Min karakter tegas, cerdas, dan punya intuisi politik tajam. Ada aura otoritas alami yang membuatnya cocok mengelola sumber daya dan jaringan. <strong>Bintang Lian Zhen</strong> juga membawa ketertarikan pada estetika, seni, dan keindahan — sisi halus di balik ketegasan eksekusi. Intuisi finansial bagus bila dilatih dengan disiplin manajemen. - action: Latih komunikasi yang lebih lentur agar otoritas alami tidak diterima sebagai sikap dingin oleh tim.</p><p>xiongdi: - star: null - insight: Hubungan Zhuang Xiao Min dengan saudara kandung cenderung mandiri. Foto 全局總論 mencatat sulit menerima pendapat saudara perempuan, namun secara umum tidak ada konflik berlebihan. Sinergi terbaik dibangun dengan menjaga jarak emosional yang sehat dan komunikasi yang lugas namun tetap hormat. Ia sering menjadi figur eksekutor di antara saudara. - action: Sediakan waktu khusus untuk reuni saudara secara berkala, jangan biarkan jarak menggerus relasi.</p><p>fuqi: - star: null - insight: Foto 夫妻 mencatat Zhuang Xiao Min membutuhkan pasangan setia dan sabar. Hubungan luar tampak hangat penuh gairah, namun pasangan cenderung berkepribadian kuat dan keras kepala — komunikasi terbuka jadi kunci. Pernikahan terlambat justru lebih harmonis. Rumah tangga kuat bila dibangun di atas saling memberi ruang dan komunikasi yang lugas tanpa basa-basi. - action: Jaga komunikasi rutin dengan pasangan, jangan menumpuk masalah hingga meledak di waktu yang tidak tepat.</p><p>zinu: - star: null - insight: Foto 子女 mencatat anak Zhuang Xiao Min adalah anak yang berbakti pada kedua orang tua. Anak pertama cenderung perempuan dan aktif. Dengan dukungan <strong>Bintang Akademik</strong> (<span class=\"hz\">文昌</span>/<span class=\"hz\">文曲</span>) di istana anak, anak-anak punya potensi cerdas dan banyak. Hubungan dengan anak laki-laki perlu perhatian ekstra — cenderung sulit didengar dan tidak menurut. - action: Berikan apresiasi pada usaha bukan hanya hasil, anak akan tumbuh lebih percaya diri.</p>",
+    "_palace1_struct": {
+      "ming_gong": {
+        "star": "廉貞",
+        "insight": "**Bintang Logam Eksekutif Halus** ([[廉貞]]) di Istana Hidup **Monyet** ([[申]]) memberi Zhuang Xiao Min karakter tegas, cerdas, dan punya intuisi politik tajam. Ada aura otoritas alami yang membuatnya cocok mengelola sumber daya dan jaringan. **Bintang Lian Zhen** juga membawa ketertarikan pada estetika, seni, dan keindahan — sisi halus di balik ketegasan eksekusi. Intuisi finansial bagus bila dilatih dengan disiplin manajemen.",
+        "action": "Latih komunikasi yang lebih lentur agar otoritas alami tidak diterima sebagai sikap dingin oleh tim."
+      },
+      "xiongdi": {
+        "insight": "Hubungan Zhuang Xiao Min dengan saudara kandung cenderung mandiri. Foto 全局總論 mencatat sulit menerima pendapat saudara perempuan, namun secara umum tidak ada konflik berlebihan. Sinergi terbaik dibangun dengan menjaga jarak emosional yang sehat dan komunikasi yang lugas namun tetap hormat. Ia sering menjadi figur eksekutor di antara saudara.",
+        "action": "Sediakan waktu khusus untuk reuni saudara secara berkala, jangan biarkan jarak menggerus relasi."
+      },
+      "fuqi": {
+        "insight": "Foto 夫妻 mencatat Zhuang Xiao Min membutuhkan pasangan setia dan sabar. Hubungan luar tampak hangat penuh gairah, namun pasangan cenderung berkepribadian kuat dan keras kepala — komunikasi terbuka jadi kunci. Pernikahan terlambat justru lebih harmonis. Rumah tangga kuat bila dibangun di atas saling memberi ruang dan komunikasi yang lugas tanpa basa-basi.",
+        "action": "Jaga komunikasi rutin dengan pasangan, jangan menumpuk masalah hingga meledak di waktu yang tidak tepat."
+      },
+      "zinu": {
+        "insight": "Foto 子女 mencatat anak Zhuang Xiao Min adalah anak yang berbakti pada kedua orang tua. Anak pertama cenderung perempuan dan aktif. Dengan dukungan **Bintang Akademik** ([[文昌]]/[[文曲]]) di istana anak, anak-anak punya potensi cerdas dan banyak. Hubungan dengan anak laki-laki perlu perhatian ekstra — cenderung sulit didengar dan tidak menurut.",
+        "action": "Berikan apresiasi pada usaha bukan hanya hasil, anak akan tumbuh lebih percaya diri."
+      }
+    },
+    "palace2": "<p>caibo: - star: 紫微 - insight: <strong>Bintang Kaisar</strong> (<span class=\"hz\">紫微</span>) di Istana Rezeki menunjukkan sumber keuangan Zhuang Xiao Min datang dari posisi strategis dan kemampuan mengelola sumber daya besar. Foto 財帛 mencatat lahir di keluarga berkecukupan, dapat berkah rezeki, namun perlu hati-hati pada bintang konflik yang bisa mengganggu. Properti dan akumulasi aset adalah jangkar paling stabil. Ada potensi rezeki besar di paruh kedua hidup terutama setelah usia 50-an. - action: Bangun strategi keuangan jangka panjang sejak sekarang, fokus akumulasi aset dan disiplin pengeluaran rutin.</p><p>jie_e: - star: null - insight: Foto 疾厄 mencatat Zhuang Xiao Min rentan penyakit hati, saraf wajah, gangguan tidur, masalah kulit/mata, lambung-pankreas, dan organ dalam. Area kelemahan fisik di sistem hati, paru-paru, dan telinga. Perlu perhatian khusus pada pola istirahat, menghindari minum berlebihan, dan pemeriksaan rutin organ dalam. - action: Jaga pola istirahat dan minum yang sehat, lakukan pemeriksaan kesehatan tahunan untuk hati, paru, dan sistem pencernaan.</p><p>qianyi: - star: 太陰 - insight: <strong>Bintang Bulan</strong> (<span class=\"hz\">太陰</span>) di Istana Perpindahan menandai Zhuang Xiao Min justru bersinar di lingkungan baru atau di luar daerah asal. Foto 遷移 mencatat setiap perpindahan berjalan lancar, kemungkinan akan banyak berpindah-pindah, dan akan memperoleh rezeki di luar dugaan dari relasi jauh. Bila ada bintang militer di istana ini, ada kemungkinan menerima warisan besar. - action: Jangan ragu mengambil peluang lintas wilayah, mobilitas adalah salah satu jalur rezeki terbaik Zhuang Xiao Min.</p><p>puyi: - star: null - insight: Foto 僕役 mencatat hubungan Zhuang Xiao Min dengan bawahan seperti kerbau yang lambat dan keras kepala. Bawahan yang ditemukan biasanya energik dan bisa diandalkan, namun bila bawahan ditempatkan di posisi 丑/戌/亥 cenderung berkepribadian keras dan menentang. Loyalitas bawahan terjaga selama Zhuang Xiao Min adil dan transparan. Hindari menitipkan tanggung jawab besar pada bawahan muda yang labil. - action: Bangun sistem kepercayaan berbasis transparansi, kualitas relasi profesional lebih penting dari kuantitas.</p>",
+    "_palace2_struct": {
+      "caibo": {
+        "star": "紫微",
+        "insight": "**Bintang Kaisar** ([[紫微]]) di Istana Rezeki menunjukkan sumber keuangan Zhuang Xiao Min datang dari posisi strategis dan kemampuan mengelola sumber daya besar. Foto 財帛 mencatat lahir di keluarga berkecukupan, dapat berkah rezeki, namun perlu hati-hati pada bintang konflik yang bisa mengganggu. Properti dan akumulasi aset adalah jangkar paling stabil. Ada potensi rezeki besar di paruh kedua hidup terutama setelah usia 50-an.",
+        "action": "Bangun strategi keuangan jangka panjang sejak sekarang, fokus akumulasi aset dan disiplin pengeluaran rutin."
+      },
+      "jie_e": {
+        "insight": "Foto 疾厄 mencatat Zhuang Xiao Min rentan penyakit hati, saraf wajah, gangguan tidur, masalah kulit/mata, lambung-pankreas, dan organ dalam. Area kelemahan fisik di sistem hati, paru-paru, dan telinga. Perlu perhatian khusus pada pola istirahat, menghindari minum berlebihan, dan pemeriksaan rutin organ dalam.",
+        "action": "Jaga pola istirahat dan minum yang sehat, lakukan pemeriksaan kesehatan tahunan untuk hati, paru, dan sistem pencernaan."
+      },
+      "qianyi": {
+        "star": "太陰",
+        "insight": "**Bintang Bulan** ([[太陰]]) di Istana Perpindahan menandai Zhuang Xiao Min justru bersinar di lingkungan baru atau di luar daerah asal. Foto 遷移 mencatat setiap perpindahan berjalan lancar, kemungkinan akan banyak berpindah-pindah, dan akan memperoleh rezeki di luar dugaan dari relasi jauh. Bila ada bintang militer di istana ini, ada kemungkinan menerima warisan besar.",
+        "action": "Jangan ragu mengambil peluang lintas wilayah, mobilitas adalah salah satu jalur rezeki terbaik Zhuang Xiao Min."
+      },
+      "puyi": {
+        "insight": "Foto 僕役 mencatat hubungan Zhuang Xiao Min dengan bawahan seperti kerbau yang lambat dan keras kepala. Bawahan yang ditemukan biasanya energik dan bisa diandalkan, namun bila bawahan ditempatkan di posisi 丑/戌/亥 cenderung berkepribadian keras dan menentang. Loyalitas bawahan terjaga selama Zhuang Xiao Min adil dan transparan. Hindari menitipkan tanggung jawab besar pada bawahan muda yang labil.",
+        "action": "Bangun sistem kepercayaan berbasis transparansi, kualitas relasi profesional lebih penting dari kuantitas."
+      }
+    },
+    "palace3": "<p>guanlu: - star: null - insight: Istana Karir Zhuang Xiao Min kuat di bidang yang menggabungkan otoritas, ketegasan, dan eksekusi. Foto 官祿 secara eksplisit menyebut seniman, politisi, pengusaha — terutama bidang air, perdagangan, keuangan — sebagai jalur karir terbaik. Bila bintang akademik mendukung, posisi penting di pemerintahan, akuntansi, atau pendidikan terbuka. Zhuang Xiao Min mampu meraih posisi tinggi bila tidak mudah berkompromi dengan integritas. - action: Fokus pada satu jalur karir utama dan dalami secara konsisten, kedalaman keahlian adalah kunci reputasi jangka panjang.</p><p>tianzhai: - star: null - insight: Foto 田宅 mencatat Zhuang Xiao Min berpotensi memiliki properti yang signifikan sepanjang hidupnya, namun ada juga potensi properti datang-pergi sebagai dinamika hidup. Akuisisi properti datang dari kombinasi usaha aktif dan kesempatan dari relasi. Properti dekat air (sungai, danau, kolam) atau properti komersial dapat memperkuat aset. Arah Utara paling baik untuk hunian. - action: Investasikan sebagian penghasilan ke aset properti sejak dini, ini jangkar keuangan paling stabil bagi Zhuang Xiao Min.</p><p>fude: - star: null - insight: Foto 福德 mencatat Zhuang Xiao Min punya kepribadian yang stabil dan bersahaja, panjang umur, namun cenderung sibuk tanpa hasil yang sebanding. Kadang merasa cemas dan terbebani urusan. Di istana ini bila bersama <strong>Bintang Kaisar</strong> (<span class=\"hz\">紫微</span>), bisa memulihkan ketenangan batin yang stabil. Ada potensi kedalaman spiritual yang bila dikembangkan akan menjadi sumber ketenangan. - action: Luangkan waktu untuk refleksi dan aktivitas spiritual, ketenangan batin adalah fondasi kesuksesan jangka panjang.</p><p>fumu: - star: null - insight: Hubungan Zhuang Xiao Min dengan orang tua ditandai dinamika yang cukup kuat — foto 全局總論 mencatat ada pengaruh besar dari orang tua, dan Zhuang Xiao Min sangat menghargai materi serta nilai-nilai keluarga. Bila domisili terpisah dari orang tua, hubungan dapat tumbuh lebih harmonis dan penuh penghormatan jarak jauh. - action: Jaga komunikasi rutin dengan orang tua dan keluarga besar, hormat keluarga adalah salah satu fondasi keberkahan.</p>",
+    "_palace3_struct": {
+      "guanlu": {
+        "insight": "Istana Karir Zhuang Xiao Min kuat di bidang yang menggabungkan otoritas, ketegasan, dan eksekusi. Foto 官祿 secara eksplisit menyebut seniman, politisi, pengusaha — terutama bidang air, perdagangan, keuangan — sebagai jalur karir terbaik. Bila bintang akademik mendukung, posisi penting di pemerintahan, akuntansi, atau pendidikan terbuka. Zhuang Xiao Min mampu meraih posisi tinggi bila tidak mudah berkompromi dengan integritas.",
+        "action": "Fokus pada satu jalur karir utama dan dalami secara konsisten, kedalaman keahlian adalah kunci reputasi jangka panjang."
+      },
+      "tianzhai": {
+        "insight": "Foto 田宅 mencatat Zhuang Xiao Min berpotensi memiliki properti yang signifikan sepanjang hidupnya, namun ada juga potensi properti datang-pergi sebagai dinamika hidup. Akuisisi properti datang dari kombinasi usaha aktif dan kesempatan dari relasi. Properti dekat air (sungai, danau, kolam) atau properti komersial dapat memperkuat aset. Arah Utara paling baik untuk hunian.",
+        "action": "Investasikan sebagian penghasilan ke aset properti sejak dini, ini jangkar keuangan paling stabil bagi Zhuang Xiao Min."
+      },
+      "fude": {
+        "insight": "Foto 福德 mencatat Zhuang Xiao Min punya kepribadian yang stabil dan bersahaja, panjang umur, namun cenderung sibuk tanpa hasil yang sebanding. Kadang merasa cemas dan terbebani urusan. Di istana ini bila bersama **Bintang Kaisar** ([[紫微]]), bisa memulihkan ketenangan batin yang stabil. Ada potensi kedalaman spiritual yang bila dikembangkan akan menjadi sumber ketenangan.",
+        "action": "Luangkan waktu untuk refleksi dan aktivitas spiritual, ketenangan batin adalah fondasi kesuksesan jangka panjang."
+      },
+      "fumu": {
+        "insight": "Hubungan Zhuang Xiao Min dengan orang tua ditandai dinamika yang cukup kuat — foto 全局總論 mencatat ada pengaruh besar dari orang tua, dan Zhuang Xiao Min sangat menghargai materi serta nilai-nilai keluarga. Bila domisili terpisah dari orang tua, hubungan dapat tumbuh lebih harmonis dan penuh penghormatan jarak jauh.",
+        "action": "Jaga komunikasi rutin dengan orang tua dan keluarga besar, hormat keluarga adalah salah satu fondasi keberkahan."
+      }
+    },
+    "kesimpulan": "Aku adalah logam halus yang lembut tapi tajam, tidak takut tanah yang menumpuk, suka air yang melimpah — mampu menopang banyak orang dan menyelamatkan banyak jiwa lewat ketegasan dan kebajikan.",
+    "_kesimpulan_struct": {
+      "quote": "Aku adalah logam halus yang lembut tapi tajam, tidak takut tanah yang menumpuk, suka air yang melimpah — mampu menopang banyak orang dan menyelamatkan banyak jiwa lewat ketegasan dan kebajikan.",
+      "stats": {
+        "format_desc": "**Format Rezeki Tak Terduga** ([[偏財用事]]) membuat Zhuang Xiao Min tumbuh lewat naluri bisnis tajam dan kepekaan terhadap peluang materi.",
+        "yong_desc": "Aktifkan **Logam** ([[金]]) lewat ketegasan eksekusi, struktur disiplin, dan ruang kerja yang memberi panggung bagi naluri komersial.",
+        "dayun_desc": "Fase **Kayu Yin Ayam** ([[乙酉]]) adalah masa panen rezeki tak terduga, bangun aset, hindari konflik kecil yang menguras energi.",
+        "umur_desc": "Dekade 62-71 adalah masa konsolidasi warisan dan akumulasi aset, peluang besar untuk kontribusi bisnis lintas bidang.",
+        "kompat_desc": "Zhuang Xiao Min paling harmonis dengan **Tikus** ([[子]]), **Ular** ([[巳]]), **Ayam** ([[酉]]). Jauhi **Naga** ([[辰]]), **Kuda** ([[午]]), **Kambing** ([[未]]), **Anjing** ([[戌]])."
+      },
+      "life_map": {
+        "lalu": "Masa **Tanah Yang Tikus** ([[戊子]]) (usia 32-41) membentuk fondasi karir dan ekspansi profesional, Zhuang Xiao Min membangun jaringan dan reputasi yang menjadi modal sosial sepanjang hidup.",
+        "sekarang": "Fase **Kayu Yin Ayam** ([[乙酉]]) (usia 62-71), masa panen rezeki tak terduga, Zhuang Xiao Min berada di puncak peluang akumulasi aset dan reputasi profesional.",
+        "berikutnya": "Fase **Kayu Yang Monyet** ([[甲申]]) (usia 72-81) membawa Zhuang Xiao Min ke fase warisan, kedalaman spiritual mekar dan ada ruang untuk mentoring generasi muda."
+      }
+    },
+    "sintesis": "Zhuang Xiao Min adalah <strong>Logam Yin</strong> (<span class=\"hz\">辛金</span>) dengan <strong>Format Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財用事</span>), perhiasan halus yang lembut tapi punya ketajaman tersembunyi, membawa ketegasan eksekusi dan naluri bisnis ke setiap arena yang dilewatinya.",
+    "_sintesis_struct": {
+      "opening": "Zhuang Xiao Min adalah **Logam Yin** ([[辛金]]) dengan **Format Rezeki Tak Terduga** ([[偏財用事]]), perhiasan halus yang lembut tapi punya ketajaman tersembunyi, membawa ketegasan eksekusi dan naluri bisnis ke setiap arena yang dilewatinya.",
+      "trio": {
+        "kekuatan": {
+          "hanzi": "剛斷",
+          "pinyin": "Gāng Duàn",
+          "arti": "Ketegasan yang Memutus",
+          "body": "Kekuatan terbesar Zhuang Xiao Min adalah keberanian eksekusi yang dipadu naluri bisnis tajam. **Format Rezeki Tak Terduga** ([[偏財用事]]) memberi kepekaan terhadap peluang materi dan kemampuan mengelola modal lintas bidang. Kemampuan memutus dengan tegas adalah aset paling berharga, terutama saat dipakai untuk memandu keputusan strategis di organisasi besar."
+        },
+        "tantangan": {
+          "hanzi": "孤剛",
+          "pinyin": "Gū Gāng",
+          "arti": "Ketegasan yang Soliter",
+          "body": "Tantangan terbesar Zhuang Xiao Min adalah kecenderungan terlalu lugas hingga terkesan dingin atau sulit menerima nasihat orang lain. **Logam Yin** ([[辛金]]) yang lembut bisa terjebak dalam keras kepala bila tidak dilatih. Bila tidak diolah, ini menghambat keharmonisan keluarga dan bisa membuat keputusan strategis kehilangan input penting dari tim."
+        },
+        "tindakan": {
+          "hanzi": "安渠",
+          "pinyin": "Ān Qú",
+          "arti": "Membangun Saluran Aset Tetap",
+          "body": "Panggung optimal Zhuang Xiao Min adalah tempat ketegasan bertemu peluang bisnis — properti, konstruksi, perdagangan logam, atau lembaga keuangan. Zhuang Xiao Min perlu secara aktif membangun saluran aset tetap untuk mengalirkan rezeki, bukan sekadar menangkap peluang demi peluang tanpa konsolidasi."
+        }
+      },
+      "actions": [
+        {
+          "title": "Konsolidasi aset properti dan tanah jangka panjang",
+          "context": "Properti adalah jangkar paling stabil untuk rezeki tak terduga"
+        },
+        {
+          "title": "Latih komunikasi terbuka dengan keluarga inti",
+          "context": "Jangkar emosional di rumah adalah pelindung utama di paruh kedua hidup"
+        },
+        {
+          "title": "Pemeriksaan kesehatan rutin organ hati, paru, dan pencernaan",
+          "context": "Area kelemahan fisik perlu dijaga sejak sekarang"
+        },
+        {
+          "title": "Bangun warisan bisnis lewat mentoring atau platform formal",
+          "context": "Usia 66 adalah waktu ideal mewariskan pengalaman lewat karya nyata"
+        },
+        {
+          "title": "Kembangkan kedalaman spiritual lewat refleksi rutin",
+          "context": "Ketenangan batin adalah fondasi kesuksesan jangka panjang"
+        }
+      ]
+    },
+    "_dmcard": "\n        <div class=\"dmc-eyebrow\">本 命 · Penguasa Hari</div>\n        <div class=\"dmc-stem\">辛</div>\n        <div class=\"dmc-element\">金 · Logam Yin</div>\n        <div class=\"dmc-pinyin\">Xīn 金, \"Logam Halus\"</div>\n        <div class=\"dmc-traits\">\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span><strong>Pengrajin</strong>, presisi, perfeksionis</span></div>\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span>Detail tajam, keindahan dari ketelitian</span></div>\n          <div class=\"dmc-trait\"><span class=\"ico\">◆</span><span>Mekar dengan air (poles) + kayu (struktur)</span></div>\n        </div>\n        <div class=\"dmc-strength\">Status: <span class=\"val\">LEMAH</span> · 弱</div>\n      ",
+    "fam_pasangan_vibe": "Sabar · Penyeimbang",
+    "fam_pasangan_headline": "Pasangan setia yang mampu meredam ketegasan dan memberi ruang batin.",
+    "fam_pasangan_body": "Zhuang Xiao Min membutuhkan pasangan setia, sabar, dan mampu menjadi penyeimbang ketegasan emosionalnya. Foto 夫妻 mencatat hubungan luarnya tampak hangat seperti pasangan yang penuh gairah, tetapi pasangan biasanya berkepribadian kuat dan keras kepala — gesekan komunikasi rawan terjadi. Pernikahan terbaik adalah yang dibangun lewat komunikasi terbuka dan saling memberi ruang. Pernikahan terlambat justru lebih harmonis daripada terlalu cepat menikah.",
+    "fam_anak_vibe": "Hangat · Tegas",
+    "fam_anak_headline": "Orang tua yang melindungi sambil mendisiplinkan kemandirian.",
+    "fam_anak_body": "Zhuang Xiao Min cenderung menjadi figur ayah yang mendisiplinkan dengan kasih, namun anak — terutama anak laki-laki — cenderung sulit didengar dan tidak terlalu menurut. Foto 全局總論 mencatat hubungan dengan anak laki-laki agak renggang, sementara anak pertama cenderung perempuan dan aktif. Pola pengasuhan terbaik adalah memberi panduan nilai sambil tetap memberi ruang anak bereksplorasi.",
+    "fam_saudara_vibe": "Mandiri · Cermat",
+    "fam_saudara_headline": "Hubungan saudara perlu jarak sehat agar tetap harmonis.",
+    "fam_saudara_body": "Hubungan Zhuang Xiao Min dengan saudara cenderung mandiri — masing-masing berdiri sendiri. Foto 全局總論 menyebut sulit menerima pendapat saudara perempuan dan ibu. Sinergi terbaik dibangun dengan menjaga jarak emosional yang sehat dan komunikasi yang lugas namun tetap hormat.",
+    "fam_kepemimpinan_vibe": "Tegas · Lugas",
+    "fam_kepemimpinan_headline": "Pemimpin lugas yang memimpin dengan keberanian dan eksekusi.",
+    "fam_kepemimpinan_body": "Zhuang Xiao Min adalah pemimpin tipe eksekutor — keras, tegas, hasil-oriented. <strong>Format Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財用事</span>) membuatnya cocok memimpin proyek lintas bidang yang melibatkan modal dan jaringan. Gaya terbaik adalah peran eksekusi di organisasi yang menghargai keputusan cepat dan keberanian mengambil risiko terukur.",
+    "caifu_zheng_gauge": "<div class=\"cfm-gauge-fill\" style=\"width:40%\">40%</div>",
+    "caifu_zheng_body": "Rezeki tetap Zhuang Xiao Min tidak mengalir deras secara otomatis. Foto 財富 mencatat hubungan dengan rezeki tetap agak renggang — perlu disiplin pengelolaan agar penghasilan rutin tidak habis. <strong>Rezeki Tetap</strong> (<span class=\"hz\">正財</span>) bekerja paling baik bila dipasangkan dengan strategi tabungan otomatis dan investasi properti.",
+    "caifu_pian_gauge": "<div class=\"cfm-gauge-fill\" style=\"width:60%\">60%</div>",
+    "caifu_pian_body": "<strong>Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財</span>) menjadi sumber rezeki utama bagi Zhuang Xiao Min. Bisa datang dari proyek lintas bidang, komisi, kerjasama bisnis, atau peluang yang muncul dari jaringan luas dan naluri pasar yang tajam. Kunci: tetap fleksibel dan jangan menutup diri dari ide yang tampak tidak konvensional.",
+    "_caifu_rules": "\n        <div class=\"cf-rule tip\">\n          <div class=\"cfr-num\">1</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Investasi properti dan tanah adalah prioritas utama</div>\n            <div class=\"cfr-context\">Properti menjadi jangkar paling stabil untuk menyimpan rezeki Zhuang Xiao Min</div>\n          </div>\n        </div>\n        <div class=\"cf-rule warn\">\n          <div class=\"cfr-num\">2</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Hindari spekulasi liar dan judi finansial</div>\n            <div class=\"cfr-context\">Rezeki gampang datang juga gampang pergi bila dipakai untuk taruhan</div>\n          </div>\n        </div>\n        <div class=\"cf-rule tip\">\n          <div class=\"cfr-num\">3</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Bangun penghasilan dari relasi profesional</div>\n            <div class=\"cfr-context\">Jaringan luas adalah aset utama untuk rezeki tak terduga</div>\n          </div>\n        </div>\n        <div class=\"cf-rule warn\">\n          <div class=\"cfr-num\">4</div>\n          <div class=\"cfr-content\">\n            <div class=\"cfr-title\">Disiplin pengeluaran rutin</div>\n            <div class=\"cfr-context\">Uang tunai cenderung tidak betah lama bila tidak dialihkan ke aset</div>\n          </div>\n        </div>\n",
+    "_p1_ming_gong": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Diri</span><span class=\"pn-meta\">Mìng Gōng<span class=\"hz\">命宮</span></span></div></div><div class=\"pal-body\"><strong>Bintang Logam Eksekutif Halus</strong> (<span class=\"hz\">廉貞</span>) di Istana Hidup <strong>Monyet</strong> (<span class=\"hz\">申</span>) memberi Zhuang Xiao Min karakter tegas, cerdas, dan punya intuisi politik tajam. Ada aura otoritas alami yang membuatnya cocok mengelola sumber daya dan jaringan. <strong>Bintang Lian Zhen</strong> juga membawa ketertarikan pada estetika, seni, dan keindahan — sisi halus di balik ketegasan eksekusi. Intuisi finansial bagus bila dilatih dengan disiplin manajemen.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Latih komunikasi yang lebih lentur agar otoritas alami tidak diterima sebagai sikap dingin oleh tim.</span></div></div>",
+    "_p1_xiongdi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Saudara</span><span class=\"pn-meta\">Xiōng Dì<span class=\"hz\">兄弟</span></span></div></div><div class=\"pal-body\">Hubungan Zhuang Xiao Min dengan saudara kandung cenderung mandiri. Foto 全局總論 mencatat sulit menerima pendapat saudara perempuan, namun secara umum tidak ada konflik berlebihan. Sinergi terbaik dibangun dengan menjaga jarak emosional yang sehat dan komunikasi yang lugas namun tetap hormat. Ia sering menjadi figur eksekutor di antara saudara.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Sediakan waktu khusus untuk reuni saudara secara berkala, jangan biarkan jarak menggerus relasi.</span></div></div>",
+    "_p1_fuqi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pasangan</span><span class=\"pn-meta\">Fū Qī<span class=\"hz\">夫妻</span></span></div></div><div class=\"pal-body\">Foto 夫妻 mencatat Zhuang Xiao Min membutuhkan pasangan setia dan sabar. Hubungan luar tampak hangat penuh gairah, namun pasangan cenderung berkepribadian kuat dan keras kepala — komunikasi terbuka jadi kunci. Pernikahan terlambat justru lebih harmonis. Rumah tangga kuat bila dibangun di atas saling memberi ruang dan komunikasi yang lugas tanpa basa-basi.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga komunikasi rutin dengan pasangan, jangan menumpuk masalah hingga meledak di waktu yang tidak tepat.</span></div></div>",
+    "_p1_zinu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Anak</span><span class=\"pn-meta\">Zǐ Nǚ<span class=\"hz\">子女</span></span></div></div><div class=\"pal-body\">Foto 子女 mencatat anak Zhuang Xiao Min adalah anak yang berbakti pada kedua orang tua. Anak pertama cenderung perempuan dan aktif. Dengan dukungan <strong>Bintang Akademik</strong> (<span class=\"hz\">文昌</span>/<span class=\"hz\">文曲</span>) di istana anak, anak-anak punya potensi cerdas dan banyak. Hubungan dengan anak laki-laki perlu perhatian ekstra — cenderung sulit didengar dan tidak menurut.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Berikan apresiasi pada usaha bukan hanya hasil, anak akan tumbuh lebih percaya diri.</span></div></div>",
+    "_p2_caibo": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Rezeki</span><span class=\"pn-meta\">Cái Bó<span class=\"hz\">財帛</span></span></div></div><div class=\"pal-body\"><strong>Bintang Kaisar</strong> (<span class=\"hz\">紫微</span>) di Istana Rezeki menunjukkan sumber keuangan Zhuang Xiao Min datang dari posisi strategis dan kemampuan mengelola sumber daya besar. Foto 財帛 mencatat lahir di keluarga berkecukupan, dapat berkah rezeki, namun perlu hati-hati pada bintang konflik yang bisa mengganggu. Properti dan akumulasi aset adalah jangkar paling stabil. Ada potensi rezeki besar di paruh kedua hidup terutama setelah usia 50-an.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun strategi keuangan jangka panjang sejak sekarang, fokus akumulasi aset dan disiplin pengeluaran rutin.</span></div></div>",
+    "_p2_jie_e": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Kesehatan</span><span class=\"pn-meta\">Jí È<span class=\"hz\">疾厄</span></span></div></div><div class=\"pal-body\">Foto 疾厄 mencatat Zhuang Xiao Min rentan penyakit hati, saraf wajah, gangguan tidur, masalah kulit/mata, lambung-pankreas, dan organ dalam. Area kelemahan fisik di sistem hati, paru-paru, dan telinga. Perlu perhatian khusus pada pola istirahat, menghindari minum berlebihan, dan pemeriksaan rutin organ dalam.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga pola istirahat dan minum yang sehat, lakukan pemeriksaan kesehatan tahunan untuk hati, paru, dan sistem pencernaan.</span></div></div>",
+    "_p2_qianyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Perpindahan</span><span class=\"pn-meta\">Qiān Yí<span class=\"hz\">遷移</span></span></div></div><div class=\"pal-body\"><strong>Bintang Bulan</strong> (<span class=\"hz\">太陰</span>) di Istana Perpindahan menandai Zhuang Xiao Min justru bersinar di lingkungan baru atau di luar daerah asal. Foto 遷移 mencatat setiap perpindahan berjalan lancar, kemungkinan akan banyak berpindah-pindah, dan akan memperoleh rezeki di luar dugaan dari relasi jauh. Bila ada bintang militer di istana ini, ada kemungkinan menerima warisan besar.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jangan ragu mengambil peluang lintas wilayah, mobilitas adalah salah satu jalur rezeki terbaik Zhuang Xiao Min.</span></div></div>",
+    "_p2_puyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pertemanan</span><span class=\"pn-meta\">Pú Yì<span class=\"hz\">僕役</span></span></div></div><div class=\"pal-body\">Foto 僕役 mencatat hubungan Zhuang Xiao Min dengan bawahan seperti kerbau yang lambat dan keras kepala. Bawahan yang ditemukan biasanya energik dan bisa diandalkan, namun bila bawahan ditempatkan di posisi 丑/戌/亥 cenderung berkepribadian keras dan menentang. Loyalitas bawahan terjaga selama Zhuang Xiao Min adil dan transparan. Hindari menitipkan tanggung jawab besar pada bawahan muda yang labil.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun sistem kepercayaan berbasis transparansi, kualitas relasi profesional lebih penting dari kuantitas.</span></div></div>",
+    "_p3_guanlu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Karir</span><span class=\"pn-meta\">Guān Lù<span class=\"hz\">官祿</span></span></div></div><div class=\"pal-body\">Istana Karir Zhuang Xiao Min kuat di bidang yang menggabungkan otoritas, ketegasan, dan eksekusi. Foto 官祿 secara eksplisit menyebut seniman, politisi, pengusaha — terutama bidang air, perdagangan, keuangan — sebagai jalur karir terbaik. Bila bintang akademik mendukung, posisi penting di pemerintahan, akuntansi, atau pendidikan terbuka. Zhuang Xiao Min mampu meraih posisi tinggi bila tidak mudah berkompromi dengan integritas.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Fokus pada satu jalur karir utama dan dalami secara konsisten, kedalaman keahlian adalah kunci reputasi jangka panjang.</span></div></div>",
+    "_p3_tianzhai": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Properti</span><span class=\"pn-meta\">Tián Zhái<span class=\"hz\">田宅</span></span></div></div><div class=\"pal-body\">Foto 田宅 mencatat Zhuang Xiao Min berpotensi memiliki properti yang signifikan sepanjang hidupnya, namun ada juga potensi properti datang-pergi sebagai dinamika hidup. Akuisisi properti datang dari kombinasi usaha aktif dan kesempatan dari relasi. Properti dekat air (sungai, danau, kolam) atau properti komersial dapat memperkuat aset. Arah Utara paling baik untuk hunian.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Investasikan sebagian penghasilan ke aset properti sejak dini, ini jangkar keuangan paling stabil bagi Zhuang Xiao Min.</span></div></div>",
+    "_p3_fude": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Berkah</span><span class=\"pn-meta\">Fú Dé<span class=\"hz\">福德</span></span></div></div><div class=\"pal-body\">Foto 福德 mencatat Zhuang Xiao Min punya kepribadian yang stabil dan bersahaja, panjang umur, namun cenderung sibuk tanpa hasil yang sebanding. Kadang merasa cemas dan terbebani urusan. Di istana ini bila bersama <strong>Bintang Kaisar</strong> (<span class=\"hz\">紫微</span>), bisa memulihkan ketenangan batin yang stabil. Ada potensi kedalaman spiritual yang bila dikembangkan akan menjadi sumber ketenangan.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Luangkan waktu untuk refleksi dan aktivitas spiritual, ketenangan batin adalah fondasi kesuksesan jangka panjang.</span></div></div>",
+    "_p3_fumu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Orang Tua</span><span class=\"pn-meta\">Fù Mǔ<span class=\"hz\">父母</span></span></div></div><div class=\"pal-body\">Hubungan Zhuang Xiao Min dengan orang tua ditandai dinamika yang cukup kuat — foto 全局總論 mencatat ada pengaruh besar dari orang tua, dan Zhuang Xiao Min sangat menghargai materi serta nilai-nilai keluarga. Bila domisili terpisah dari orang tua, hubungan dapat tumbuh lebih harmonis dan penuh penghormatan jarak jauh.</div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga komunikasi rutin dengan orang tua dan keluarga besar, hormat keluarga adalah salah satu fondasi keberkahan.</span></div></div>",
+    "_kes_stats": "\n      <div class=\"kes-stat s1\"><div class=\"ks-eb\">Penguasa Hari · 日主</div><div class=\"ks-num\"><span class=\"hz\">辛金</span><span class=\"unit\">LEMAH · 弱</span></div><div class=\"ks-title\">Logam Halus Lemah</div><div class=\"ks-desc\">Total Wu Xing 16, 金 <strong>18.8%</strong> dari distribusi total</div></div>\n      <div class=\"kes-stat s2\"><div class=\"ks-eb\">Format · 格局</div><div class=\"ks-num\"><span class=\"hz\">偏財格</span><span class=\"unit\">FORMAT</span></div><div class=\"ks-title\">Pian Cai Ge, Pengusaha Lincah</div><div class=\"ks-desc\"><strong>Format Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財用事</span>) membuat Zhuang Xiao Min tumbuh lewat naluri bisnis tajam dan kepekaan terhadap peluang materi.</div></div>\n      <div class=\"kes-stat s3\"><div class=\"ks-eb\">Yong Shen · 喜用神</div><div class=\"ks-num\"><span class=\"hz\">土</span><span class=\"unit\">MENDUKUNG</span></div><div class=\"ks-title\">Tanah, Penopang &amp; Pengarah</div><div class=\"ks-desc\">Aktifkan <strong>Logam</strong> (<span class=\"hz\">金</span>) lewat ketegasan eksekusi, struktur disiplin, dan ruang kerja yang memberi panggung bagi naluri komersial.</div></div>\n      <div class=\"kes-stat s4\"><div class=\"ks-eb\">Da Yun · 大運</div><div class=\"ks-num\">Fase 7<span class=\"unit\">dari 10</span></div><div class=\"ks-title\">Fase Rezeki Bisnis (62-71)</div><div class=\"ks-desc\">Fase <strong>Kayu Yin Ayam</strong> (<span class=\"hz\">乙酉</span>) adalah masa panen rezeki tak terduga, bangun aset, hindari konflik kecil yang menguras energi.</div></div>\n      <div class=\"kes-stat s5\"><div class=\"ks-eb\">Umur Subjek</div><div class=\"ks-num\">66<span class=\"unit\">tahun</span></div><div class=\"ks-title\">Era 60–69</div><div class=\"ks-desc\">Dekade 62-71 adalah masa konsolidasi warisan dan akumulasi aset, peluang besar untuk kontribusi bisnis lintas bidang.</div></div>\n      <div class=\"kes-stat s6\"><div class=\"ks-eb\">Jodoh · 婚配 / 陽宅</div><div class=\"ks-num\">3 <span class=\"unit\">cocok · 4 hindari</span></div><div class=\"ks-desc\">Zhuang Xiao Min paling harmonis dengan <strong>Tikus</strong> (<span class=\"hz\">子</span>), <strong>Ular</strong> (<span class=\"hz\">巳</span>), <strong>Ayam</strong> (<span class=\"hz\">酉</span>). Jauhi <strong>Naga</strong> (<span class=\"hz\">辰</span>), <strong>Kuda</strong> (<span class=\"hz\">午</span>), <strong>Kambing</strong> (<span class=\"hz\">未</span>), <strong>Anjing</strong> (<span class=\"hz\">戌</span>).</div></div>\n    ",
+    "_kes_age": "66",
+    "_kes_lifemap": "\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">過<span class=\"id-label\">Lalu</span></div><div class=\"klm-row-text\"><span class=\"lbl\">MASA LALU</span>Masa <strong>Tanah Yang Tikus</strong> (<span class=\"hz\">戊子</span>) (usia 32-41) membentuk fondasi karir dan ekspansi profesional, Zhuang Xiao Min membangun jaringan dan reputasi yang menjadi modal sosial sepanjang hidup.</div></div>\n          <div class=\"klm-row now\"><div class=\"klm-row-icon\">今<span class=\"id-label\">Kini</span></div><div class=\"klm-row-text\"><span class=\"lbl\">SEKARANG</span>Fase <strong>Kayu Yin Ayam</strong> (<span class=\"hz\">乙酉</span>) (usia 62-71), masa panen rezeki tak terduga, Zhuang Xiao Min berada di puncak peluang akumulasi aset dan reputasi profesional.</div></div>\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">未<span class=\"id-label\">Nanti</span></div><div class=\"klm-row-text\"><span class=\"lbl\">BERIKUTNYA</span>Fase <strong>Kayu Yang Monyet</strong> (<span class=\"hz\">甲申</span>) (usia 72-81) membawa Zhuang Xiao Min ke fase warisan, kedalaman spiritual mekar dan ada ruang untuk mentoring generasi muda.</div></div>\n        ",
+    "_kes_position": "\n          <div class=\"klp-eb\">Posisi Sekarang</div>\n          <div class=\"klp-hz\">秋</div>\n          <div class=\"klp-id\">Qiū, \"Musim Gugur Hidup\"</div>\n          <div class=\"klp-bar\">\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell now\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n          </div>\n          <div class=\"klp-meta\">Fase <strong>7 dari 10</strong> · Umur <strong>62-71</strong> · <strong>金 Logam</strong> dominan · Musim Gugur Hidup</div>\n        ",
+    "_syn_attrib": "Logam Halus · 偏財格 · Pian Cai Ge",
+    "_syn_trio": "\n      <div class=\"syn-card strength\">\n        <div class=\"syn-card-num\">力</div>\n        <div class=\"syn-card-eyebrow\">Kekuatan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">剛斷</span>\n          <span class=\"syn-card-id\">Gāng Duàn</span>\n          <span class=\"syn-card-arti\">Ketegasan yang Memutus</span>\n        </div>\n        <div class=\"syn-card-body\">Kekuatan terbesar Zhuang Xiao Min adalah keberanian eksekusi yang dipadu naluri bisnis tajam. <strong>Format Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財用事</span>) memberi kepekaan terhadap peluang materi dan kemampuan mengelola modal lintas bidang. Kemampuan memutus dengan tegas adalah aset paling berharga, terutama saat dipakai untuk memandu keputusan strategis di organisasi besar.</div>\n      </div>\n      <div class=\"syn-card challenge\">\n        <div class=\"syn-card-num\">驗</div>\n        <div class=\"syn-card-eyebrow\">Tantangan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">孤剛</span>\n          <span class=\"syn-card-id\">Gū Gāng</span>\n          <span class=\"syn-card-arti\">Ketegasan yang Soliter</span>\n        </div>\n        <div class=\"syn-card-body\">Tantangan terbesar Zhuang Xiao Min adalah kecenderungan terlalu lugas hingga terkesan dingin atau sulit menerima nasihat orang lain. <strong>Logam Yin</strong> (<span class=\"hz\">辛金</span>) yang lembut bisa terjebak dalam keras kepala bila tidak dilatih. Bila tidak diolah, ini menghambat keharmonisan keluarga dan bisa membuat keputusan strategis kehilangan input penting dari tim.</div>\n      </div>\n      <div class=\"syn-card action\">\n        <div class=\"syn-card-num\">為</div>\n        <div class=\"syn-card-eyebrow\">Tindakan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">安渠</span>\n          <span class=\"syn-card-id\">Ān Qú</span>\n          <span class=\"syn-card-arti\">Membangun Saluran Aset Tetap</span>\n        </div>\n        <div class=\"syn-card-body\">Panggung optimal Zhuang Xiao Min adalah tempat ketegasan bertemu peluang bisnis — properti, konstruksi, perdagangan logam, atau lembaga keuangan. Zhuang Xiao Min perlu secara aktif membangun saluran aset tetap untuk mengalirkan rezeki, bukan sekadar menangkap peluang demi peluang tanpa konsolidasi.</div>\n      </div>\n    ",
+    "_syn_actions": "\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">1</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Konsolidasi aset properti dan tanah jangka panjang</div>\n            <div class=\"syn-action-context\">Properti adalah jangkar paling stabil untuk rezeki tak terduga</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">2</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Latih komunikasi terbuka dengan keluarga inti</div>\n            <div class=\"syn-action-context\">Jangkar emosional di rumah adalah pelindung utama di paruh kedua hidup</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">3</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Pemeriksaan kesehatan rutin organ hati, paru, dan pencernaan</div>\n            <div class=\"syn-action-context\">Area kelemahan fisik perlu dijaga sejak sekarang</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">4</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Bangun warisan bisnis lewat mentoring atau platform formal</div>\n            <div class=\"syn-action-context\">Usia 66 adalah waktu ideal mewariskan pengalaman lewat karya nyata</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">5</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Kembangkan kedalaman spiritual lewat refleksi rutin</div>\n            <div class=\"syn-action-context\">Ketenangan batin adalah fondasi kesuksesan jangka panjang</div>\n          </div>\n        </div>\n      ",
+    "_yangzhai_zones": "\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">門</div>\n            <div class=\"yz-zone-id\">Pintu Utama</div>\n            <div class=\"yz-zone-pinyin\">Mén · Pintu</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">南</span>S</span>\n              <span class=\"yz-pill\"><span class=\"hz\">北</span>U</span>\n              <span class=\"yz-pill\"><span class=\"hz\">東南</span>TG</span>\n            </div>\n            <div class=\"yz-zone-note\">Foto 陽宅 sebut \"門路宜開南方、北方、東南方吉</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">房</div>\n            <div class=\"yz-zone-id\">Kamar Tidur</div>\n            <div class=\"yz-zone-pinyin\">Fáng · Kamar</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">東</span>T</span>\n              <span class=\"yz-pill\"><span class=\"hz\">東南</span>TG</span>\n            </div>\n            <div class=\"yz-zone-note\">Foto 陽宅 sebut \"床位宜安東方、東南方吉\" untuk istirahat berkualitas</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">灶</div>\n            <div class=\"yz-zone-id\">Dapur / Kompor</div>\n            <div class=\"yz-zone-pinyin\">Zào · Tungku</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">西</span>B</span>\n              <span class=\"yz-pill\"><span class=\"hz\">東南</span>TG</span>\n            </div>\n            <div class=\"yz-zone-note\">Foto 陽宅 sebut \"爐灶宜安西方向東方或西北方向東南方吉</div>\n          </div>\n        </div>\n        <div class=\"yz-zone warn\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">廁</div>\n            <div class=\"yz-zone-id\">Kamar Mandi</div>\n            <div class=\"yz-zone-pinyin\">Cè · Kamar Mandi</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">⚠ Perhatikan</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill bad\"><span class=\"hz\">東北</span>TL</span>\n              <span class=\"yz-pill bad\"><span class=\"hz\">西</span>B</span>\n            </div>\n            <div class=\"yz-zone-note\">Foto 陽宅 sebut \"坑廁宜安於東北方、西北方、西方、西南方\", jauh dari sektor utama</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">書</div>\n            <div class=\"yz-zone-id\">Ruang Kerja</div>\n            <div class=\"yz-zone-pinyin\">Shū · Ruang Kerja</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">南</span>S</span>\n              <span class=\"yz-pill\"><span class=\"hz\">東</span>T</span>\n            </div>\n            <div class=\"yz-zone-note\">Foto 陽宅 sebut \"房間宜安南方、北方、東方、東南方\" untuk fokus</div>\n          </div>\n        </div>\n        <div class=\"yz-zone\">\n          <div class=\"yz-zone-label\">\n            <div class=\"yz-zone-hz\">神</div>\n            <div class=\"yz-zone-id\">Altar / Sembah</div>\n            <div class=\"yz-zone-pinyin\">Shén · Sembahyang</div>\n          </div>\n          <div class=\"yz-zone-dirs\">\n            <div class=\"yz-zone-headline\">✓ Optimal</div>\n            <div class=\"yz-dir-pills\">\n              <span class=\"yz-pill\"><span class=\"hz\">南</span>S</span>\n              <span class=\"yz-pill\"><span class=\"hz\">東</span>T</span>\n            </div>\n            <div class=\"yz-zone-note\">Foto 陽宅 sebut \"神位宜安南方或北方、東方</div>\n          </div>\n        </div>\n",
+    "_career_wuxing": "\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">木 Kayu<span class=\"v\">4</span></div>\n        </div>\n        <div class=\"wux-cell fav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">土 Tanah<span class=\"v\">4</span></div>\n        </div>\n        <div class=\"wux-cell self\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:75%\"></div></div>\n          <div class=\"wux-label\">金 Logam<span class=\"v\">3</span></div>\n        </div>\n        <div class=\"wux-cell unfav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:75%\"></div></div>\n          <div class=\"wux-label\">水 Air<span class=\"v\">3</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:50%\"></div></div>\n          <div class=\"wux-label\">火 Api<span class=\"v\">2</span></div>\n        </div>\n",
+    "_career_title": "Tanah adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini",
+    "_career_avoid": "Industri ber-unsur <strong>水 (Air)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.",
+    "_career_tags": "\n          <span class=\"insight-tag\">金 KETEGASAN-EKSEKUSI</span>\n          <span class=\"insight-tag\">土 STABILITAS-ASET</span>\n          <span class=\"insight-tag bad\">木 BENTURAN-MATERI</span>\n          <span class=\"insight-tag bad\">水 KEBOCORAN</span>\n        ",
+    "_career_industri": "\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">🏛️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\"><span class=\"hz\">房地產</span> / Properti &amp; Tanah</div>\n            <div class=\"ind-reason\">Unsur 土, Foto 事業 sebut langsung 房地產買賣, jangkar paling stabil untuk <strong>Format Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財</span>)</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:95%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">🏛️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\"><span class=\"hz\">建築</span> / Konstruksi &amp; Bahan Bangunan</div>\n            <div class=\"ind-reason\">Unsur 土, Foto 事業 sebut langsung 建築/水泥建材, dukung kekuatan materi dan struktur</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:88%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">⚙️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\"><span class=\"hz\">五金</span> / Logam &amp; Pertambangan</div>\n            <div class=\"ind-reason\">Unsur 金, Foto 事業 sebut langsung 五金行/採礦/鋼鐵工廠, selaras dengan Day Master 辛金</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:82%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">⚙️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\"><span class=\"hz\">金融</span> / Keuangan &amp; Akuntansi</div>\n            <div class=\"ind-reason\">Unsur 金, Foto 事業 sebut langsung 會計/金融界, daya analitis dan disiplin angka</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:76%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">🏛️</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\"><span class=\"hz\">古董</span> / Antik &amp; Konsultan Tanah</div>\n            <div class=\"ind-reason\">Unsur 土, Foto 事業 sebut 古董/地師, kepekaan terhadap nilai dan estetika</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:70%\"></div></div>\n          </div>\n        </div>\n",
+    "shensha_star_hz": "偏財",
+    "shensha_star_pinyin": "Piān Cái",
+    "shensha_star_label": "\"Bintang Rezeki Tak Terduga\"",
+    "shensha_star_active": "★ AKTIF SEKARANG ★",
+    "shensha_strip": "Manfaatkan kepekaan terhadap peluang materi secara strategis, <strong>Bintang Rezeki Tak Terduga</strong> (<span class=\"hz\">偏財</span>) aktif mendukung Zhuang Xiao Min menangkap peluang bisnis lintas bidang.",
+    "_xqcards": "\n      <div class=\"xq-card power\">\n        <div class=\"xqc-eb\">魄 力 · Kekuatan</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">優勢</span><span class=\"xqc-name\">Yōu Shì<br>Keunggulan</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Keberanian dan daya tindak yang tinggi, tidak ragu mengambil keputusan sulit.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kemampuan mengelola harta kolektif dan membaca peluang bisnis dengan tajam.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Mandiri, tidak bergantung pada orang lain, sanggup berdiri sendiri sejak muda.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kepekaan terhadap dinamika sosial — mengerti kapan harus diam, kapan harus bicara tegas.</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card shadow\">\n        <div class=\"xqc-eb\">陰 影 · Shadow</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">隱 患</span><span class=\"xqc-name\">Yǐn Huàn<br>Sisi Gelap</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Cenderung terlalu lugas hingga terkesan dingin atau tidak peka emosi orang lain.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Sulit menerima nasihat keluarga, terutama dari pasangan dan saudara perempuan.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Punya kecenderungan keras kepala — sekali memutuskan sulit dibengkokkan.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Rentan terbawa godaan asmara di luar pernikahan bila tidak dijaga ketat.</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card optimum\">\n        <div class=\"xqc-eb\">最 佳 · Optimum</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">應 用</span><span class=\"xqc-name\">Yīng Yòng<br>Cara Optimal</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Latih kelembutan komunikasi tanpa kehilangan ketegasan inti.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Bangun jangkar finansial lewat properti dan tanah, bukan spekulasi cepat.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Investasikan waktu untuk hubungan keluarga inti agar tidak terlalu soliter.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Pilih pasangan yang setia, sabar, dan mampu menjadi penyeimbang emosional.</span></div>\n        </div>\n      </div>\n    "
+  }
+}

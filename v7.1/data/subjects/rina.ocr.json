@@ -1,0 +1,342 @@
+{
+  "name_id": "RINA",
+  "gender_hz": "陰女",
+  "birth_solar": "1985-08-10 19:00",
+  "pillars": {
+    "year": {
+      "stem_hz": "乙",
+      "branch_hz": "丑"
+    },
+    "month": {
+      "stem_hz": "甲",
+      "branch_hz": "申"
+    },
+    "day": {
+      "stem_hz": "辛",
+      "branch_hz": "巳"
+    },
+    "hour": {
+      "stem_hz": "戊",
+      "branch_hz": "戌"
+    }
+  },
+  "wuxing": {
+    "jin": 2.0,
+    "shui": 0.0,
+    "mu": 2.0,
+    "huo": 1.0,
+    "tu": 3.0
+  },
+  "yong_shen_hz": "水",
+  "ji_shen_hz": "土",
+  "xi_yong_shen_hz": "水",
+  "xian_shen_hz": "木",
+  "chou_shen_hz": "火",
+  "format_hz": "偏印格",
+  "shi_shen_per_pilar": {
+    "year": "偏財",
+    "month": "正財",
+    "day": "主",
+    "hour": "正印"
+  },
+  "ming_gong_bazi": "丁/亥",
+  "liu_nian_predictions": [
+    {
+      "tahun": 2026,
+      "umur": 42,
+      "ganzhi": "丙午",
+      "prose": "Tahun **民國 115** ([[丙午]]) usia 42. Tenaga & pikiran belum sebanding uang, tapi dapat bantuan dari penolong — secara substansial bisa mencapai ideal. Karir/posisi ada perubahan. **[[死符]]** masuk: duka & saudara clash, berdoa untuk hindari musibah. **[[暗曜]]** masuk: tanpa mulut-tajam tetap ada duka & musibah, rumah punya acara gembira bisa mematahkan seribu malapetaka. Wanita hati-hati melahirkan; rumah bahagia hindari kesedihan. Hindari bulan 2/5/8/12. Waspada urusan pejabat, hukuman, cedera, penderitaan mental. Tubuh tidak terlalu sehat tapi bukan sakit sungguhan — tampilan luar tampak halus & beradab, kurang cocok kerja kontak fisik intens; lebih cocok urusan umum. Hubungan dengan orang tua agak tipis, tetapi penuh empati & welas asih, suka membantu orang."
+    },
+    {
+      "tahun": 2027,
+      "umur": 43,
+      "ganzhi": "丁未",
+      "prose": "Tahun **民國 116** ([[丁未]]) usia 43. Tenaga belum sebanding uang. Perhatikan urusan keluarga banyak, ada penolong tersembunyi, secara substansial belum mencapai ideal. **Lingkungan besar berubah** — rumah perlu renovasi, pindah, atau pindahkan perabot. **[[歲破]]** masuk: bertemu penghancur tahun, harta sulit dipertahankan, enam akar tidak tenang — perbuatan baik untuk jaga damai. **[[太陰]]** masuk: rumah punya acara gembira, mencari rezeki banyak yang sukses, \"dapat dari Timur tapi hilang di Barat\". Hindari bulan 3/6/9/12. Jaga tenang. Hasil dari urusan tulis datang, terlalu mengejar uang menderita kerugian fisik & psikis. Sifat tulus tegas, kurang ambisi/agresif, lebih konservatif, tidak suka menonjol, suka damai-tenang; cocok untuk wanita — hati tenang & lembut, melayani mertua dengan bakti, mengurus suami dengan ramah, model wanita istri-ibu yang baik."
+    },
+    {
+      "tahun": 2028,
+      "umur": 44,
+      "ganzhi": "戊申",
+      "prose": "Tahun **民國 117** ([[戊申]]) usia 44. Tenaga belum sebanding uang. Perlu jaga pergaulan dengan saudara/teman; secara substansial belum mencapai ideal. Suasana hati cukup tidak stabil. Yang sudah menikah: berdebat hal kecil. Yang belum menikah: peruntungan asmara terbuka. **[[龍德]]** masuk: empat musim dapat rezeki, di rumah banyak hal baik, keluar pun tanpa bencana. **[[天掃]]** masuk: ada urusan duka, bila ada penolong datang akan ada kabar gembira, waspada penjahat. Hindari bulan 1/4/7/12. Sifat percaya diri tinggi, terus terang, segala hal mau berjalan sendiri, lebih suka jadi kepala ayam daripada ekor kerbau, suka petualangan & spekulasi, energi melimpah, ada kecenderungan mewah & posesif kuat."
+    },
+    {
+      "tahun": 2029,
+      "umur": 45,
+      "ganzhi": "己酉",
+      "prose": "Tahun **民國 118** ([[己酉]]) usia 45. Tenaga belum sebanding uang. Lingkungan besar mengalami kendala & perubahan. Karir/posisi berubah. Yang sudah menikah berdebat hal kecil. **[[白虎]]** masuk: macan putih mengaum di rumah — mulut-tajam disertai kerugian harta. **[[天喜]]** masuk: rumah punya acara gembira, mencari rezeki sukses, waspada bahaya darah/cedera. Wanita hati-hati melahirkan. Hindari bulan 1/4/7/11. Hati-hati keluarga clash, perselisihan, ada pertanda pendarahan besar. Sifat mulia bersih, jujur padat, cerdas, matang, terang & lurus, kemandirian kuat, suka membangun usaha sendiri. Memiliki ciri peruntungan separuh hidup: sebelum paruh-baya banyak kesulitan, setelah paruh-baya cukup bahagia."
+    },
+    {
+      "tahun": 2030,
+      "umur": 46,
+      "ganzhi": "庚戌",
+      "prose": "Tahun **民國 119** ([[庚戌]]) usia 46. Tenaga belum sebanding uang. Perhatikan banyak urusan tetap baik, ada penolong tersembunyi, secara substansial belum mencapai ideal. Karir berubah. **[[福德]]** masuk peruntungan: nasib sedang turun, ditambah cari berkah dengan perbuatan baik, rumah banyak kesulitan, banyak hal harus minta tolong. **[[無常]]** masuk: peruntungan tidak menentu, bertemu hal aneh tak terduga, ada urusan duka berkecamuk, perlu hati-hati membebaskan diri dari musibah. Waspada sakit, kerugian uang. Hindari bulan 4/7/8. Waspada api & air. Sifat ambisi tinggi pada nama & kehormatan, tidak mau kalah, punya semangat teguh tak tergoyahkan, suka bermain kekuasaan & trik, lihai strategi & taktik."
+    },
+    {
+      "tahun": 2031,
+      "umur": 47,
+      "ganzhi": "辛亥",
+      "prose": "Foto 19.39.47 tabel 流年 — 大運 41-50 ([[戊子]]), tahun ini usia 47 ([[辛亥]]) 十神 比肩+食神. Detail tafsir per tahun di foto tidak ada (hanya tabel ringkas). Tunggu foto detail."
+    }
+  ],
+  "ziwei_su_ming": "Foto 19.39.44(2) **宿命**: \"雖無壯麗的飛躍, 但運勢一如天賦的宿命所註定般的前進. 只要金錢宮勢強, 身宮也旺盛, 受財運之惠, 一生不愁寬裕的金錢. 另一方面, 金錢宮勢弱者, 終生為金錢而勞碌奔波, 受金錢的玩弄. 此時, 命宮、福德宮、職業宮的強弱也須併入考慮之列.\" — Tidak ada lompatan megah, tetapi peruntungan berjalan sesuai nasib yang ditakdirkan. Bila Istana Uang ([[金錢宮]]) kuat dan Istana Tubuh ([[身宮]]) juga berlimpah, dapat berkah rezeki, seumur hidup tidak khawatir uang. Sebaliknya bila Istana Uang lemah, seumur hidup bekerja keras untuk uang, dipermainkan uang. Saat itu, Istana Hidup ([[命宮]]), Istana Berkah ([[福德宮]]) dan Istana Karir ([[職業宮]]) harus diperhitungkan.",
+  "jie_e_palace_hz": "易患消化器官的疾病。及脊髓的疾病、皮膚病等等。如位於寅、辰、巳、午之宮內，必易患疾病。除此之外大可放心，不會有什麼妨礙。能與太陽星同宮更好，永遠健康。如與凶星同宮的話，很容易患眼睛疾病。必須留意因水而引起的疾病以及水難。",
+  "jie_e_palace_id": "Mudah terkena **penyakit organ pencernaan** ([[消化器官]]), serta penyakit **sumsum tulang belakang** ([[脊髓]]) dan **penyakit kulit** ([[皮膚病]]). Bila Istana Jie ([[疾厄]]) terletak di palung [[寅]]、[[辰]]、[[巳]]、[[午]]: pasti mudah jatuh sakit. Selain itu sebagian besar bisa tenang — tidak ada gangguan berarti. Bila bersama bintang **[[太陽]]** (Tài Yáng) lebih baik lagi — selamanya sehat. Bila bersama bintang jahat ([[凶星]]): sangat mudah terkena **penyakit mata** ([[眼睛疾病]]). **Harus waspada terhadap penyakit yang dipicu air, serta bahaya/kecelakaan air** ([[因水而引起的疾病以及水難]]).",
+  "jie_e_organ_focus_id": "Yang utama wajib dijaga: organ pencernaan, sumsum tulang belakang, kulit, dan mata. Waspada bahaya air.",
+  "gushu_quotes": [
+    {
+      "source_hz": "三命通會註·詩曰",
+      "source_id": "Sānmìng Tōnghuì Zhù (Catatan)",
+      "text_hz": "庚辛日主號金干, 木火相生福自專, 年月時中如會合, 東西運步定居官.",
+      "text_id": "Hari [[庚]] atau [[辛]] sebagai Logam (DM), Kayu & Api saling menguatkan — keberkahan datang sendiri; bila tahun/bulan/jam saling bertemu, langkah peruntungan Timur-Barat memastikan jabatan."
+    },
+    {
+      "source_hz": "白虎持勢·詩曰",
+      "source_id": "Bái Hǔ Chí Shì",
+      "text_hz": "白虎持勢寅卯後, 如臨己午未戊鄉, 四野遇之多富貴, 必向皇都作棟梁.",
+      "text_id": "Macan Putih memegang kekuatan setelah [[寅]][[卯]], bila tiba di kampung [[己]][[午]][[未]][[戌]], di mana pun banyak bertemu kemakmuran, pasti menuju ibukota menjadi tiang utama."
+    },
+    {
+      "source_hz": "滴天髓",
+      "source_id": "Dī Tiān Suǐ",
+      "text_hz": "辛金軟弱, 溫潤而清, 畏土之疊, 樂水之盈, 能扶社稷, 能救生靈, 熱則喜母, 寒則喜丁.",
+      "text_id": "Logam [[辛]] lembut & halus, hangat-tenang dan bersih; takut Tanah berlapis, suka Air berlimpah; mampu menopang negara, mampu menyelamatkan jiwa; saat panas suka induk (Tanah lembap), saat dingin suka [[丁]] (Api Yin)."
+    },
+    {
+      "source_hz": "詩云",
+      "source_id": "Shī Yún",
+      "text_hz": "申金剛健月支逢, 水土長生在此宮, 巳午爐中成劍戟, 子辰局裡得風光, 木多無火終能勝, 土重埋金卻有凶, 欲議斯神何所似, 溫柔珠玉不相似.",
+      "text_id": "Logam [[申]] tangguh bertemu dukungan bulanan, [[水]] & [[土]] panjang umur di istana ini; di tungku [[巳][[午]] menjadi pedang-tombak, dalam pola [[子]][[辰]] dapat pesona; Kayu banyak tanpa Api akhirnya menang, Tanah berat mengubur Logam justru malapetaka; siapakah yang menyerupai elemen ini? — kelembutan mutiara-batu tidak setara dengannya."
+    },
+    {
+      "source_hz": "金珠玉性通靈",
+      "source_id": "Jīn Zhū Yù Xìng Tōng Líng",
+      "text_hz": "金珠玉性通靈, 最愛陽和沙水清, 成就不勞炎火煉, 實扶偏愛濕泥生, 水多火旺宜西北, 水冷金寒要丙丁, 坐祿通根身旺地, 何愁厚土沒其形.",
+      "text_id": "Logam-permata-mutiara berjiwa rohani; paling sayang Yang yang hangat & pasir-air bersih; pencapaian tanpa peleburan api yang panas, kebenaran-bantuan suka lumpur lembab; air banyak api kuat cocok ke Barat-Laut; air dingin logam dingin perlu [[丙]][[丁]]; duduk di rezeki dan berakar di tanah peruntungan kuat — tidak perlu khawatir Tanah tebal menelan bentuknya."
+    }
+  ],
+  "marriage_cocok_tafsir": "**Sangat cocok** ([[大吉]]): shio **Tikus** ([[子]]), **Ular** ([[巳]]), **Ayam** ([[酉]]). Foto sebut \"其他生相次吉\" — shio lain di luar daftar hindari tergolong cocok umum (acceptable). Foto sebut: \"**天作良緣, 必定家聲克振, 富豪門牆, 秉心淑焉, 家勢盛大, 安穩吉慶美德終世**\" — jodoh dari langit, nama baik keluarga gemilang, rumah tangga setara hartawan, hati lembut & lurus, keluarga makmur & besar, damai sejahtera penuh berkah sepanjang umur.",
+  "marriage_hindari_tafsir": "**Hindari** ([[忌]]): shio **Naga** ([[辰]]), **Kuda** ([[午]]), **Kambing** ([[未]]), **Anjing** ([[戌]]). Foto sebut: \"**有吉亦有凶, 甘苦相並, 快樂窮迫各半, 是以前半世幸福, 無進取之氣象, 內心多憂苦慘, 終必破敗**\" — ada baik ada buruk, manis-pahit campur, suka-duka separuh-separuh; setengah awal hidup bahagia, tapi tanpa semangat maju, batin penuh kekhawatiran, akhirnya pasti runtuh.",
+  "ti_xiang": {
+    "mu": "死",
+    "huo": "休",
+    "tu": "囚",
+    "jin": "旺",
+    "shui": "相"
+  },
+  "da_yun": [
+    {
+      "age_start": 11,
+      "age_end": 20,
+      "stem_hz": "乙",
+      "branch_hz": "酉"
+    },
+    {
+      "age_start": 21,
+      "age_end": 30,
+      "stem_hz": "丙",
+      "branch_hz": "戌"
+    },
+    {
+      "age_start": 31,
+      "age_end": 40,
+      "stem_hz": "丁",
+      "branch_hz": "亥"
+    },
+    {
+      "age_start": 41,
+      "age_end": 50,
+      "stem_hz": "戊",
+      "branch_hz": "子"
+    },
+    {
+      "age_start": 51,
+      "age_end": 60,
+      "stem_hz": "己",
+      "branch_hz": "丑"
+    },
+    {
+      "age_start": 61,
+      "age_end": 70,
+      "stem_hz": "庚",
+      "branch_hz": "寅"
+    },
+    {
+      "age_start": 71,
+      "age_end": 80,
+      "stem_hz": "辛",
+      "branch_hz": "卯"
+    },
+    {
+      "age_start": 81,
+      "age_end": 90,
+      "stem_hz": "壬",
+      "branch_hz": "辰"
+    },
+    {
+      "age_start": 91,
+      "age_end": 100,
+      "stem_hz": "癸",
+      "branch_hz": "巳"
+    },
+    {
+      "age_start": 101,
+      "age_end": 110,
+      "stem_hz": "甲",
+      "branch_hz": "午"
+    }
+  ],
+  "marriage": {
+    "cocok_branches": [
+      "子",
+      "巳",
+      "酉"
+    ],
+    "hindari_branches": [
+      "辰",
+      "午",
+      "未",
+      "戌"
+    ],
+    "cocok_relationships": {
+      "子": "大吉",
+      "巳": "大吉",
+      "酉": "大吉"
+    }
+  },
+  "shio_hz": "牛",
+  "kesimpulan_narrative": "RINA lahir 10 Agustus 1985 pukul 19:00 dengan shio Kerbau ([[丑]]). Penguasa hidupnya adalah Logam Yin ([[辛金]]) — pribadi yang lembut secara permukaan tetapi padat, tajam, dan teguh saat diperlukan. Format hidup utamanya adalah Cetakan Lambang ([[偏印格]]) — pribadi reflektif, intuitif, sering menempuh jalur ide dan strategi non-konvensional. Kekuatan Penguasa Hari tergolong **Kuat** ([[旺]]) dengan skor pendukung +4850 dan penekan -3740 — energi alami sudah surplus, fokus hidup terbaik adalah **mengalirkan, bukan menumpuk**. || Karakter inti RINA religius, welas asih, dan tenang ([[有宗教心、仁慈、文靜]]). Pikirannya cermat dan toleran, tetapi cenderung tertutup. Tertarik pada hal-hal spiritual dan tradisi ([[對天道有信仰]]). Ada kecenderungan inferior ([[自卑感]]) dan hati-hati berlebihan, tetapi juga berani, daya saing, dan tegas di saat genting. || Bakat utama ada di perpaduan **kecerdasan halus + ketelitian + kemandirian**. Industri searah: alat tulis, penerbitan, buku, pertanian, kayu, dekorasi, pendidikan, pegawai negeri, politik, agama; bidang pendukung: dokter, perawat, perikanan, pelayaran, perdagangan. Da Yun saat ini (usia 41-50, [[戊子]] 食神) adalah fase ekspresi dan produktivitas. || Untuk jodoh, pasangan paling cocok ([[大吉]]) adalah shio Tikus ([[子]]), Ular ([[巳]]), atau Ayam ([[酉]]) — kombinasi \"[[天作良緣]], [[必定家聲克振]], [[富豪門牆]]\" yang membawa rumah tangga makmur dan berkah seumur hidup. Hindari shio Naga ([[辰]]), Kuda ([[午]]), Kambing ([[未]]), Anjing ([[戌]]) — kombinasi yang membawa pahit-manis campur, batin penuh kekhawatiran, akhirnya runtuh. || Untuk kesehatan, titik rawan di organ pencernaan, sumsum tulang belakang, dan kulit ([[消化器官、脊髓、皮膚]]) — perlu rutin dijaga. Mata perlu perhatian; wajib waspada bahaya air. Untuk hunian, pilih rumah yang **duduk Selatan menghadap Utara** ([[宅宜坐南向北大吉]]) — sesuai gua [[離]] — di daerah hijau dan terang. Arah Timur juga sangat baik. Dua bintang nasib aktif: **[[華蓋]]** membawa bakat seni, desain, musik, sastra; **[[文昌貴]]** menghadirkan kecerdasan strategis dan kemampuan mengubah kemalangan jadi keberuntungan ([[逢凶化吉]]). || Inti dari semua ini ada di puisi klasik 古書云: \"[[壬癸日生水為主, 根基惟在火與土, 春秋來往發財官, 冬夏東行為得所]]\" — untuk Logam halus, pondasi kuat datang dari Tanah & Api yang seimbang, perjalanan ke Timur di musim dingin/panas membawa keberuntungan. Inilah esensi RINA — kelembutan yang menyembunyikan ketegasan, dan ketenangan yang menyimpan strategi.",
+  "yang_zhai_gua_hz": "離",
+  "yang_zhai_zones_foto": {
+    "pintu": {
+      "dirs_hz": [
+        "北",
+        "東",
+        "東南"
+      ],
+      "dirs_abbr": [
+        "U",
+        "T",
+        "TG"
+      ],
+      "note_id": "門路 (Pintu utama): \"門路宜開北方、東方、東南方\""
+    },
+    "dapur": {
+      "dirs_hz": [
+        "西北向東南"
+      ],
+      "dirs_abbr": [
+        "西北東南"
+      ],
+      "note_id": "爐灶 (Dapur): \"爐灶宜安西北向東南吉\" — hadap Barat Laut → Tenggara"
+    },
+    "kamar": {
+      "dirs_hz": [
+        "南",
+        "東",
+        "東南"
+      ],
+      "dirs_abbr": [
+        "S",
+        "T",
+        "TG"
+      ],
+      "note_id": "房間 (Ruang/Kamar): \"房間宜南方、東方、東南方吉\""
+    },
+    "ranjang": {
+      "dirs_hz": [
+        "南",
+        "東南",
+        "東"
+      ],
+      "dirs_abbr": [
+        "S",
+        "TG",
+        "T"
+      ],
+      "note_id": "床位 (Ranjang): \"床位南方、東南、東方吉\""
+    },
+    "altar": {
+      "dirs_hz": [
+        "東",
+        "東南",
+        "南"
+      ],
+      "dirs_abbr": [
+        "T",
+        "TG",
+        "S"
+      ],
+      "note_id": "神位 (Altar): \"神位安東方、東南方、南方及本年大利方合吉\""
+    },
+    "kamar_mandi": {
+      "dirs_hz": [
+        "東北",
+        "西南",
+        "西"
+      ],
+      "dirs_abbr": [
+        "TL",
+        "BD",
+        "B"
+      ],
+      "note_id": "坎廁 (Kamar mandi): \"坎廁安東北方、西南方、西方\""
+    }
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "文曲",
+    "shen_zhu_hz": "天相",
+    "ming_gong_branch_hz": "酉",
+    "shen_gong_branch_hz": "巳",
+    "wu_xing_ju_hz": "水二局",
+    "shi_jun_hz": "巳"
+  },
+  "dm_strength_hz": "旺",
+  "dm_strength_label_id": "Kuat",
+  "dm_pos_score": 4850.0,
+  "dm_neg_score": 3740.0,
+  "xiantian_per_stem": {
+    "jia": 1,
+    "yi": 1,
+    "bing": 1,
+    "ding": 1,
+    "wu": 4,
+    "ji": 1,
+    "geng": 3,
+    "xin": 3,
+    "ren": 1,
+    "gui": 1
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "da_yun_arah_id": "forward",
+  "da_yun_start_age": 11,
+  "shen_sha_list": [
+    {
+      "hanzi": "華蓋",
+      "pillar": "?"
+    },
+    {
+      "hanzi": "亡神",
+      "pillar": "?"
+    },
+    {
+      "hanzi": "文昌貴",
+      "pillar": "?"
+    },
+    {
+      "hanzi": "寡宿",
+      "pillar": "?"
+    },
+    {
+      "hanzi": "元辰大耗",
+      "pillar": "?"
+    },
+    {
+      "hanzi": "從掃",
+      "pillar": "?"
+    }
+  ],
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": null,
+  "_source": "MD via Web Claude (parse_md.py)"
+}

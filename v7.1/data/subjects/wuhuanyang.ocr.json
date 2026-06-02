@@ -1,0 +1,252 @@
+{
+  "name_id": "Wu Huan Yang",
+  "name_hanzi": "吳換洋",
+  "gender_hz": "陽男",
+  "birth_solar": "1964-05-13 00:50",
+  "pillars": {
+    "year": {
+      "stem_hz": "甲",
+      "branch_hz": "辰"
+    },
+    "month": {
+      "stem_hz": "己",
+      "branch_hz": "巳"
+    },
+    "day": {
+      "stem_hz": "壬",
+      "branch_hz": "戌"
+    },
+    "hour": {
+      "stem_hz": "庚",
+      "branch_hz": "子"
+    }
+  },
+  "wuxing": {
+    "jin": 3.0,
+    "shui": 3.0,
+    "mu": 2.0,
+    "huo": 2.0,
+    "tu": 4.0
+  },
+  "yong_shen_hz": "木",
+  "ji_shen_hz": "火土",
+  "xi_yong_shen_hz": "木",
+  "xian_shen_hz": "金水",
+  "chou_shen_hz": "火土",
+  "format_hz": "偏印格",
+  "shi_shen_per_pilar": {
+    "year": "食神",
+    "month": "正官",
+    "day": "主",
+    "hour": "偏印"
+  },
+  "bone_weight": {
+    "bone_weight_year": "八錢",
+    "bone_weight_month": "九錢",
+    "bone_weight_day": "一兩",
+    "bone_weight_hour": "一兩六錢",
+    "bone_weight_total": "四兩三錢",
+    "bone_weight_poem_hz": "為人心性最聰明\\n作事軒昂近貴人\\n衣祿一生天數定\\n不須勞碌是豐享",
+    "bone_weight_poem_id": "Pribadi cerdas dan hati paling terang. Tindakannya gagah, dekat dengan orang mulia. Rezeki dan pakaian sudah ditakdirkan langit. Tidak perlu lelah berlebihan, hidup tetap berlimpah."
+  },
+  "liu_nian_predictions": [
+    {
+      "tahun": 2026,
+      "umur": 63,
+      "ganzhi": "丙午",
+      "prose": "Tahun usaha besar dengan hasil belum sebanding dengan jerih payah. Waspada penyakit kronis, jangan ziarah orang sakit berat. Hubungan pasangan bisa renggang sesaat, namun tidak fatal."
+    },
+    {
+      "tahun": 2027,
+      "umur": 64,
+      "ganzhi": "丁未",
+      "prose": "**Bintang Bulan** (太陰) masuk peruntungan, banyak kabar gembira dan rezeki. **Bintang Akademik** (文昌貴) mendukung studi dan ujian. Hindari bulan dua, lima, dan dua belas — mudah memicu konflik percintaan."
+    },
+    {
+      "tahun": 2028,
+      "umur": 65,
+      "ganzhi": "戊申",
+      "prose": "Tekanan kerja membesar, banyak perubahan jabatan atau tanggung jawab. Waspada Bintang Penyakit, jaga kesehatan tubuh. Bulan satu, empat, tujuh, sebelas hindari bepergian jauh — risiko cedera ringan."
+    },
+    {
+      "tahun": 2029,
+      "umur": 66,
+      "ganzhi": "己酉",
+      "prose": "**Bintang Kematian** (死符) masuk peruntungan, hindari berkunjung ke orang sakit berat dan upacara duka. Hubungan ortu-saudara perlu ekstra perhatian. Banyak doa keselamatan; bulan dua, lima, delapan, dua belas paling rawan."
+    },
+    {
+      "tahun": 2030,
+      "umur": 67,
+      "ganzhi": "庚戌",
+      "prose": "**Bintang Pelanggar Tahun** (歲破) masuk peruntungan, harta gampang bocor dan ada gejolak rumah tangga. **Bintang Bulan** (太陰) tetap memberi nama baik. Hindari spekulasi tinggi; bulan tiga, enam, sembilan, dua belas paling rawan kerugian."
+    },
+    {
+      "tahun": 2031,
+      "umur": 68,
+      "ganzhi": "辛亥",
+      "prose": "**Bintang Kebajikan Naga** (龍德) masuk peruntungan, empat musim mendatangkan rezeki dan banyak hari baik di rumah. **Bintang Pembawa Sapu** (天掃) pasangan bisa sakit, jaga relasi. Bulan satu, empat, tujuh, dua belas waspada kelancaran."
+    }
+  ],
+  "ziwei_su_ming": "Tanpa lompatan dramatis, peruntungan Wu Huan Yang berjalan seperti takdir yang sudah ditulis. Bila istana hidup (命宮) kuat, ia mampu memanfaatkan takdir itu untuk perkembangan gemilang. Bila lemah, kesuksesan akhir sulit dijangkau; saat itu kekuatan istana **Pergerakan** (遷移), **Rezeki** (財帛), dan **Karir** (官祿) ikut menentukan.",
+  "shiye_short": "適業: 藝術, 政治, 建築, 電氣. 屬金水事業可, 忌土類.",
+  "gushu_quotes": [
+    {
+      "source_hz": "三命通會註",
+      "source_id": "Catatan Sanming Tonghui",
+      "text_hz": "壬癸日生水為主，根基惟在火與土，春秋來往發財官，冬夏東行為得所。",
+      "text_id": "Yang lahir di hari 壬/癸 berdasar air sebagai pangkal. Akar kekuatannya bertumpu pada api dan tanah. Musim semi-gugur memberi rezeki dan jabatan; musim dingin-panas paling menguntungkan saat menempuh arah timur."
+    },
+    {
+      "source_hz": "玄武當權",
+      "source_id": "Xuanwu Berkuasa",
+      "text_hz": "玄武當權要得真，日干壬癸坐財星，官星若也居門戶，無破當為大用人。",
+      "text_id": "Saat **Xuanwu** (玄武) memegang kekuasaan secara murni, batang hari 壬/癸 duduk di atas bintang harta, dan bintang jabatan menjaga pintu rumah. Tanpa benturan, ia menjadi orang yang berguna besar bagi banyak pihak."
+    },
+    {
+      "source_hz": "滴天髓",
+      "source_id": "Ditian Sui",
+      "text_hz": "壬水通河，能洩金氣，剛中之德，週流不滯，通根透癸，沖天奔地，化則有情，從則相濟。",
+      "text_id": "Air 壬 menembus sungai, mampu meluapkan energi logam. Tegas namun penuh kebajikan, mengalir tanpa berhenti. Bila berakar dan tembus ke 癸, ia mampu membelah langit dan menggebrak bumi; bila mengikuti arus, ia memberi bantuan timbal balik."
+    }
+  ],
+  "xiongnian_list": [
+    12,
+    18,
+    36,
+    46,
+    58,
+    89
+  ],
+  "marriage_cocok_tafsir": "Mendapat jodoh baik dan berlimpah keberuntungan. Hidup pasangan sukses dan kaya raya, hemat membangun usaha bersama. Hari tua makin makmur, anak-cucu turun-temurun dilimpahi keberkahan.",
+  "marriage_hindari_tafsir": "Pasangan tidak akan sejalan hingga akhir hayat, mudah berpisah dan rumah tangga berantakan. Keluarga tidak harmonis, peruntungan tertahan, hidup penuh musibah dan kerugian.",
+  "da_yun": [
+    {
+      "age_start": 9,
+      "age_end": 18,
+      "stem_hz": "庚",
+      "branch_hz": "午"
+    },
+    {
+      "age_start": 19,
+      "age_end": 28,
+      "stem_hz": "辛",
+      "branch_hz": "未"
+    },
+    {
+      "age_start": 29,
+      "age_end": 38,
+      "stem_hz": "壬",
+      "branch_hz": "申"
+    },
+    {
+      "age_start": 39,
+      "age_end": 48,
+      "stem_hz": "癸",
+      "branch_hz": "酉"
+    },
+    {
+      "age_start": 49,
+      "age_end": 58,
+      "stem_hz": "甲",
+      "branch_hz": "戌"
+    },
+    {
+      "age_start": 59,
+      "age_end": 68,
+      "stem_hz": "乙",
+      "branch_hz": "亥"
+    },
+    {
+      "age_start": 69,
+      "age_end": 78,
+      "stem_hz": "丙",
+      "branch_hz": "子"
+    },
+    {
+      "age_start": 79,
+      "age_end": 88,
+      "stem_hz": "丁",
+      "branch_hz": "丑"
+    },
+    {
+      "age_start": 89,
+      "age_end": 98,
+      "stem_hz": "戊",
+      "branch_hz": "寅"
+    },
+    {
+      "age_start": 99,
+      "age_end": 108,
+      "stem_hz": "己",
+      "branch_hz": "卯"
+    }
+  ],
+  "marriage": {
+    "cocok_branches": [
+      "子",
+      "申",
+      "酉"
+    ],
+    "hindari_branches": [
+      "丑",
+      "卯",
+      "戌",
+      "辰"
+    ]
+  },
+  "shio_hz": "龍",
+  "yang_zhai_gua_hz": "離",
+  "zi_wei": {
+    "ming_zhu_hz": "武曲",
+    "shen_zhu_hz": "文昌",
+    "ming_gong_branch_hz": "巳",
+    "shen_gong_branch_hz": "巳",
+    "wu_xing_ju_hz": "木三局",
+    "shi_jun_hz": "酉"
+  },
+  "dm_strength_hz": "弱",
+  "dm_strength_label_id": "Lemah",
+  "dm_pos_score": 4028.0,
+  "dm_neg_score": 4686.0,
+  "xiantian_per_stem": {
+    "jia": 1,
+    "yi": 1,
+    "bing": 1,
+    "ding": 1,
+    "wu": 3,
+    "ji": 1,
+    "geng": 1,
+    "xin": 2,
+    "ren": 1,
+    "gui": 2
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "da_yun_arah_id": "forward",
+  "da_yun_start_age": 9,
+  "shen_sha_list": [
+    {
+      "hanzi": "亡神",
+      "pillar": null
+    },
+    {
+      "hanzi": "文昌貴",
+      "pillar": null
+    },
+    {
+      "hanzi": "孤辰",
+      "pillar": null
+    },
+    {
+      "hanzi": "元辰大耗",
+      "pillar": null
+    },
+    {
+      "hanzi": "天醫",
+      "pillar": null
+    }
+  ],
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": null,
+  "_source": "MD via Web Claude (parse_md.py)"
+}

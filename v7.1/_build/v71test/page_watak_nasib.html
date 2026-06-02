@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>BPA, 先天論命 Watak & Nasib Bawaan</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-wn { display: flex; flex-direction: column; gap: 3.5mm; }
+  .wn-block { background: var(--bg-card); border: 0.3mm solid var(--gold-soft); border-radius: 2mm; padding: 3.5mm 4.5mm; display: flex; flex-direction: column; gap: 2mm; }
+  .wn-eyebrow { border-bottom: 0.2mm solid var(--gold-soft); padding-bottom: 1.5mm; display: flex; justify-content: space-between; align-items: baseline; }
+  .wn-eyebrow .id { font-family: 'Playfair Display', serif; font-size: 12pt; color: var(--red); font-weight: 700; letter-spacing: 0.5px; }
+  .wn-eyebrow .id .sub { font-family: 'Inter', sans-serif; font-size: 6.5pt; color: var(--text-muted); font-style: italic; font-weight: 400; letter-spacing: 0.5px; margin-left: 2.5mm; }
+  .wn-eyebrow .hz { font-family: 'Noto Serif TC', serif; font-size: 9pt; color: var(--text-muted); font-weight: 600; letter-spacing: 3px; }
+  .wn-poem { display: grid; grid-template-columns: auto 1fr; column-gap: 4mm; align-items: center; background: rgba(255,248,225,0.5); border-left: 0.6mm solid var(--red); border-radius: 1.5mm; padding: 2.5mm 4mm; }
+  .wn-poem-label { display:flex; flex-direction:column; align-items:center; gap:0.4mm; min-width:13mm; }
+  .wn-poem-label .hz { font-family:'Noto Serif TC',serif; font-size:9pt; color:var(--red); font-weight:700; letter-spacing:2px; }
+  .wn-poem-label .id { font-family:'Inter',sans-serif; font-size:5.5pt; color:var(--text-muted); font-style:italic; }
+  .wn-poem-body { display:flex; flex-direction:column; gap:1mm; }
+  .wn-poem-hz { font-family:'Noto Serif TC',serif; font-size:8.5pt; color:var(--text); line-height:1.5; letter-spacing:0.5px; }
+  .wn-poem-hz span { display:inline-block; margin-right:4mm; }
+  .wn-poem-id { font-family:'Inter',sans-serif; font-size:6.6pt; color:var(--text-muted); font-style:italic; line-height:1.45; border-top:0.15mm dashed var(--gold-soft); padding-top:1mm; }
+  .wn-prose { font-family:'Inter',sans-serif; font-size:8pt; color:var(--text); line-height:1.6; text-align:justify; }
+  .wn-prose + .wn-prose { margin-top:1.5mm; }
+  .wn-prose strong { font-weight:700; color:var(--text); }
+  .hzin, .wn-prose .hz { font-family:'Noto Serif TC',serif; color:var(--red); font-weight:600; font-size:0.95em; }
+</style>
+</head>
+<body>
+<section class="page">
+
+  <header class="page-header">
+    <div class="h-num">15</div>
+    <div class="h-titles">
+      <div class="h-cn">先 天 論 命</div>
+      <div class="h-id">Watak &amp; Nasib Bawaan</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi · 先天論命</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Ular-Merah.svg" alt="ULAR"></div>
+    <div class="subject-meta">
+      <div class="subject-name">BPA · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">巳 Ular</span></div>
+      <div class="subject-detail">28 Februari 2001 · 09:46 · Pria</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">先天論命</div>
+      <div class="value">Watak &amp; Nasib</div>
+    </div>
+  </div>
+
+  <main class="content content-wn">
+
+    <div class="wn-block">
+      <div class="wn-eyebrow">
+        <span class="id">Watak Umum<span class="sub">Xìng Qíng Zǒng Lùn</span></span>
+        <span class="hz">性 情 總 論</span>
+      </div>
+      <div class="wn-poem">
+        <div class="wn-poem-label"><span class="hz">詩 曰</span><span class="id">Puisi Berkata</span></div>
+        <div class="wn-poem-body">
+          <div class="wn-poem-hz"><span>平生良善自有持\n衣祿增榮盛有餘\n錢財家樂中年好\n貴人提拔上雲梯</span></div>
+          <div class="wn-poem-id">Sepanjang hidup baik hati dan tahu menjaga diri; sandang-pangan kian bertambah dan berlimpah; harta dan kebahagiaan keluarga membaik di usia paruh baya; orang baik (貴人) mengangkat bagai menaiki tangga ke awan.</div>
+        </div>
+      </div>
+      <div data-slot="xingqing-prose"><p class="wn-prose">BPA berperangai lembut dan jujur, tutur katanya tidak menyakiti, gemar berbuat kebajikan diam-diam (陰德), dan rendah hati dalam banyak hal. Kurang bisa bersandar pada kerabat; keberhasilan datang bertahap bagai menaiki tangga, sedangkan ketergesaan justru membawa kegagalan. Bertindak mengikuti keadaan, hidup umumnya tenteram; awal hidup penuh kerja keras, paruh baya berkembang, dan sekitar usia 40 mulai gemilang, dengan jalan rezeki yang lancar di kemudian hari.</p></div>
+    </div>
+
+    <div class="wn-block">
+      <div class="wn-eyebrow">
+        <span class="id">Rezeki &amp; Berkah<span class="sub">Fú Lù Zǒng Lùn</span></span>
+        <span class="hz">福 祿 總 論</span>
+      </div>
+      <div data-slot="fulu"><p class="wn-prose">Hari-hari berpindah ke timur dan barat, kerap sulit untuk pulang ke rumah; sekujur diri dinaungi bintang 紅鸞 (sukacita/jodoh) dan cahaya 月德 yang tinggi, sehingga walau banyak penyakit dan musibah tetap ada pertolongan. Ada sedikit kebocoran harta (小耗財), namun secara keseluruhan diri tetap selamat dan tenteram. Suasana hati naik-turun, pikiran kerap mudah terpicu; bila tahun 太歲 menekan istana hidup, sesekali terasa pening.</p></div>
+    </div>
+
+    <div class="wn-block">
+      <div class="wn-eyebrow">
+        <span class="id">Ikhtisar Nasib<span class="sub">Mìng Yùn Gài Lùn</span></span>
+        <span class="hz">命 運 概 論</span>
+      </div>
+      <div data-slot="mingyun"><p class="wn-prose">BPA berwatak penuh siasat dan pandai menyesuaikan diri dengan keadaan, bersemangat tinggi, sandang-pangan tercukupi, dan kerap dibantu orang baik (貴人). Karier menanjak mulai paruh baya, masa tua justru berlimpah rezeki dan berkah, dengan umur panjang. Banyak belajar walau hasil tak selalu instan; ringan dan santai menjalani hidup, awal hidup berkecukupan, paruh baya datar, lalu menguat di penghujung. Akrab dan rukun dengan orang lain, diangkat oleh 貴人, sehingga berkembang dan sukses; namun kurang bisa bersandar pada orang tua, maka membangun keluarga dari nol (白手成家). Cerdas luar biasa, sandang-pangan berlebih, membangun usaha sendiri, kurang berjodoh dengan kerabat, mandiri lepas dari leluhur, dan ramah pada sesama. Bagi sosok wanita ada kecenderungan gemar kemewahan dan sulit memperoleh jodoh yang baik; selain itu perlu menjaga diri dari kebiasaan minum.</p></div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-meta">
+      <span>Halaman 15 / 37</span>
+      <span>Ramalan 命</span>
+    </div>
+  </footer>
+
+</section>
+</body>
+</html>

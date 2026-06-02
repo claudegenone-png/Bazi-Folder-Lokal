@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>ELAINE, Sintesis &amp; Saran Aksi</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* PAGE: Synthesis */
+  .content-synth {
+    grid-template-rows: 110mm 1fr !important;
+    gap: 4mm;
+  }
+
+  /* HEADLINE INSIGHT */
+  .syn-headline {
+    background: linear-gradient(135deg, #FFFEF8 0%, #F5EBD0 50%, #FFFEF8 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 4mm 8mm;
+    display: grid;
+    grid-template-columns: 16mm 1fr 16mm;
+    gap: 4mm;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .syn-headline::before {
+    content: '命'; position: absolute;
+    bottom: -8mm; right: -4mm;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 60pt; color: rgba(139,26,26,0.04);
+    font-weight: 700; line-height: 1;
+    pointer-events: none;
+  }
+  .syn-seal {
+    width: 16mm; height: 16mm;
+    background: var(--red);
+    color: white;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 14pt; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 1mm;
+    box-shadow: 0 1mm 3mm rgba(139,26,26,0.3);
+    transform: rotate(-3deg);
+  }
+  .syn-headline-text {
+    text-align: center; min-width: 0; overflow: hidden;
+  }
+  .syn-eyebrow {
+    font-size: 6.5pt; color: var(--gold);
+    letter-spacing: 4px; text-transform: uppercase;
+    font-weight: 700; margin-bottom: 1mm;
+  }
+  .syn-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 10.5pt; color: var(--red);
+    line-height: 1.35; font-style: italic;
+    font-weight: 600;
+  }
+  .syn-quote .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--text); font-style: normal;
+    font-weight: 700; margin: 0 1mm;
+  }
+  .syn-attrib {
+    font-size: 6.5pt; color: var(--text-muted);
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-top: 1.5mm;
+  }
+
+  /* TRIO CARDS */
+  .syn-trio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4mm;
+    overflow: hidden;
+  }
+  .syn-card {
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 1.5mm;
+    overflow: hidden;
+    position: relative;
+  }
+  .syn-card.strength {
+    background: linear-gradient(180deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+  }
+  .syn-card.challenge {
+    background: linear-gradient(180deg, #F8EFD4 0%, #ECDDC9 100%);
+    border: 0.5mm solid var(--yellow);
+  }
+  .syn-card.action {
+    background: linear-gradient(180deg, #E8F0EA 0%, #D9E8DD 100%);
+    border: 0.5mm solid var(--green);
+  }
+  .syn-card-num {
+    position: absolute;
+    top: -1mm; right: -1mm;
+    width: 12mm; height: 12mm;
+    background: white;
+    border: 0.4mm solid;
+    border-radius: 0 2mm 0 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 14pt; font-weight: 700;
+    line-height: 1;
+  }
+  .strength .syn-card-num { color: var(--gold); border-color: var(--gold); }
+  .challenge .syn-card-num { color: var(--yellow); border-color: var(--yellow); }
+  .action .syn-card-num { color: var(--green); border-color: var(--green); }
+
+  .syn-card-eyebrow {
+    font-size: 6.5pt; letter-spacing: 2.5px;
+    text-transform: uppercase; font-weight: 700;
+  }
+  .strength .syn-card-eyebrow { color: var(--gold); }
+  .challenge .syn-card-eyebrow { color: var(--yellow); }
+  .action .syn-card-eyebrow { color: var(--green); }
+
+  .syn-card-title {
+    display: flex; align-items: baseline; gap: 2mm;
+    flex-wrap: wrap; min-width: 0;
+  }
+  .syn-card-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 18pt; color: var(--red);
+    font-weight: 700; line-height: 1;
+  }
+  .challenge .syn-card-hz { color: #8C6E47; }
+  .action .syn-card-hz { color: var(--green); }
+  .syn-card-id {
+    font-family: 'Playfair Display', serif;
+    font-size: 10pt; color: var(--text);
+    font-style: italic; font-weight: 600;
+  }
+  .syn-card-arti {
+    flex-basis: 100%; min-width: 0;
+    font-size: 7.5pt; color: var(--text-muted);
+    font-weight: 600; line-height: 1.2;
+    margin-top: 0.5mm;
+  }
+
+  .syn-card-body {
+    font-size: 7.5pt; line-height: 1.45;
+    color: var(--text);
+    border-top: 0.2mm solid rgba(0,0,0,0.1);
+    padding-top: 1.5mm;
+    overflow: hidden;
+  }
+  .syn-card-body strong { color: var(--red); }
+  .syn-card-body .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red); font-weight: 600;
+  }
+
+  /* ACTION ITEMS */
+  .syn-actions-frame {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 3.5mm 5mm;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 2mm;
+    overflow: hidden;
+  }
+  .syn-actions-eyebrow {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 0.3mm solid var(--gold-soft);
+    padding-bottom: 1.5mm;
+  }
+  .syn-actions-eyebrow .label {
+    font-family: 'Noto Serif TC', serif; font-size: 12pt;
+    color: var(--red); letter-spacing: 4px; font-weight: 600;
+  }
+  .syn-actions-eyebrow .id {
+    font-family: 'Playfair Display', serif; font-size: 9pt;
+    font-style: italic; color: var(--text-muted); margin-left: 4mm;
+  }
+  .syn-actions-eyebrow .meta {
+    font-size: 6.5pt; color: var(--text-muted);
+    letter-spacing: 1.5px; text-transform: uppercase;
+  }
+
+  .syn-action-list {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1.5mm;
+    overflow: hidden;
+  }
+  .syn-action {
+    display: grid;
+    grid-template-columns: 9mm 1fr;
+    gap: 4mm; align-items: center;
+    padding: 1.5mm 3mm;
+    background: white;
+    border-left: 1mm solid var(--gold);
+    border-radius: 0 1mm 1mm 0;
+    overflow: hidden;
+  }
+  .syn-action-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 16pt; color: var(--red);
+    font-weight: 700; line-height: 1;
+    text-align: center;
+    border-right: 0.3mm solid var(--gold-soft);
+    padding-right: 2mm;
+  }
+  .syn-action-content { min-width: 0; overflow: hidden; }
+  .syn-action-title {
+    font-size: 9.5pt; font-weight: 600;
+    color: var(--text); line-height: 1.2;
+  }
+  .syn-action-title strong { color: var(--red); }
+  .syn-action-title .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red); font-weight: 700; margin: 0 1mm;
+  }
+  .syn-action-context {
+    font-size: 6.8pt; color: var(--text-muted);
+    line-height: 1.35; margin-top: 0.5mm;
+    overflow: hidden;
+  }
+  .syn-action-tag {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 7pt; color: var(--gold);
+    background: var(--gold-bg);
+    padding: 0.5mm 2mm;
+    border-radius: 5mm;
+    border: 0.2mm solid var(--gold-soft);
+    letter-spacing: 0.5px; font-weight: 600;
+    white-space: nowrap;
+  }
+
+  /* TIMELINE */
+  .syn-timeline-mini {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 3mm 4mm;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 1.5mm;
+    overflow: hidden;
+  }
+  .stm-eyebrow {
+    font-size: 6pt; color: var(--gold);
+    letter-spacing: 2px; text-transform: uppercase;
+    font-weight: 700;
+  }
+  .stm-bar {
+    display: flex; gap: 0.4mm;
+    height: 100%; align-items: stretch;
+  }
+  .stm-cell {
+    flex: 1;
+    border-radius: 0.6mm;
+    background: rgba(0,0,0,0.04);
+    position: relative;
+    min-width: 0;
+  }
+  .stm-cell.past   { background: #ECDDC9; opacity: 0.55; }
+  .stm-cell.now    {
+    background: linear-gradient(180deg, #C45F5F, #8C3535);
+    box-shadow: 0 0 0 0.3mm var(--gold);
+  }
+  .stm-cell.next   {
+    background: rgba(196,95,95,0.4);
+    border: 0.2mm dashed var(--red-bad);
+  }
+  .stm-cell.future { background: rgba(0,0,0,0.05); }
+  .stm-now-label {
+    position: absolute; top: -2.5mm; left: 50%;
+    transform: translateX(-50%);
+    background: var(--red); color: white;
+    font-size: 5pt; padding: 0.3mm 1.5mm;
+    border-radius: 1mm; letter-spacing: 1px; font-weight: 700;
+    white-space: nowrap;
+  }
+  .stm-axis {
+    display: flex; justify-content: space-between;
+    font-size: 5.8pt; color: var(--text-muted);
+    letter-spacing: 0.3px;
+  }
+  .stm-axis .now-mark {
+    color: var(--red); font-weight: 700;
+  }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">32</div>
+    <div class="h-titles">
+      <div class="h-cn">總 結</div>
+      <div class="h-id">Sintesis &amp; Saran Aksi</div>
+    </div>
+    <div class="h-section">Bagian III · Penutup</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Monyet-Merah.svg" alt="Monyet"></div>
+    <div class="subject-meta">
+      <div class="subject-name">ELAINE · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">申 Monyet</span></div>
+      <div class="subject-detail">9 Maret 1992 · 09:25 · Wanita · Umur 35 tahun</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">甲木 · Pohon Besar</div>
+    </div>
+  </div>
+
+  <main class="content content-synth">
+
+<!-- 5 DAFTAR AKSI -->
+    <div class="syn-actions-frame">
+      <div class="syn-actions-eyebrow">
+        <div>
+          <span class="label">行 動 五 則</span>
+          <span class="id">Lima Langkah Praktis</span>
+        </div>
+        <div class="meta">SARAN APLIKATIF · 1-5</div>
+      </div>
+
+      <div class="syn-action-list">
+<!-- TAFSIR:_syn_actions -->
+        <div class="syn-action">
+          <div class="syn-action-num">1</div>
+          <div class="syn-action-content">
+            <div class="syn-action-title">Pilih karir profesi yang membutuhkan keahlian spesifik (medis, kuliner, kecantikan, akuntan, seniman-kerajinan)</div>
+            <div class="syn-action-context">Foto 官祿 sebut langsung — 醫生、護士、保姆、律師、廚師、料理業、美容師、工藝家、會計師. DM Kayu Yang (<span class="hz">甲</span>) sudah kuat (<span class="hz">旺</span>) dengan 羊刃格 — butuh disalurkan ke unsur Api/Tanah melalui keahlian dan eksekusi konkret.</div>
+          </div>
+        </div>
+        <div class="syn-action">
+          <div class="syn-action-num">2</div>
+          <div class="syn-action-content">
+            <div class="syn-action-title">Jaga rutin jantung-paru, tenggorokan, telinga</div>
+            <div class="syn-action-context">Foto 疾厄 verbatim — 易患喉部疾病、感冒、牙痛、痔瘡、心臟. <strong>Yang utama wajib dijaga</strong>: 心肺部及耳朵的疾病. Pemulihan cepat tapi pemicu utama adalah kelelahan berlebih.</div>
+          </div>
+        </div>
+        <div class="syn-action">
+          <div class="syn-action-num">3</div>
+          <div class="syn-action-content">
+            <div class="syn-action-title">Pilih hunian gua <span class="hz">兌</span> — duduk Timur Laut menghadap Barat Daya, di kawasan tenang</div>
+            <div class="syn-action-context">Foto 陽宅 — 兌卦, 宅宜坐東北向西南或西北向東南大吉. Dapur hadap Timur Laut menuju Barat Daya. Foto 田宅 — sebut "西方大吉" untuk hunian Logam, "東方大吉" bila pondasi Kayu.</div>
+          </div>
+        </div>
+        <div class="syn-action">
+          <div class="syn-action-num">4</div>
+          <div class="syn-action-content">
+            <div class="syn-action-title">Pilih pasangan shio Tikus atau Naga (<span class="hz">大吉</span>)</div>
+            <div class="syn-action-context">Foto 婚配 — 宜配相鼠、龍大吉 dengan tafsir "<span class="hz">珠聯璧合, 一帆風順, 不能為害, 成功富貴, 子孫興旺, 五世其昌</span>". Foto 夫妻 — 太陽 terlalu kuat menghasilkan 早婚不吉, sebaiknya lewat masa pertimbangan &amp; penjajakan.</div>
+          </div>
+        </div>
+        <div class="syn-action">
+          <div class="syn-action-num">5</div>
+          <div class="syn-action-content">
+            <div class="syn-action-title">Manfaatkan peluang luar negeri (studi, kerja, perjalanan)</div>
+            <div class="syn-action-context">Foto 遷移 — 經由前往海外求發展... 首次遭遇機運的垂青. ELAINE bisa <strong>隨心所欲地到海外去留學</strong>, <strong>鴻圖大展, 前途無量</strong>. Pindah-profesi adalah peluang naik kelas sosial.</div>
+          </div>
+        </div>
+      <!-- /TAFSIR -->
+      </div>
+    </div>
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-meta">
+      <span>Halaman 32 / 34</span>
+    </div>
+  </footer>
+</section>
+</body>
+</html>

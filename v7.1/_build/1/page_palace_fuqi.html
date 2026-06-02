@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Pasangan (夫妻) Palace</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-pal { grid-template-rows: 1fr !important; gap: 0; }
+
+  .palace-solo {
+    background: linear-gradient(180deg, #FFF8E1, #FBF1D4);
+    border: 0.6mm solid var(--gold);
+    border-radius: 2.5mm;
+    padding: 6mm 8mm;
+    display: grid;
+    grid-template-rows: auto auto minmax(0, 1fr) auto;
+    gap: 3mm;
+    overflow: hidden;
+    position: relative;
+  }
+  .palace-solo::before {
+    content: ''; position: absolute;
+    top: 0; right: 0; width: 28mm; height: 28mm;
+    background-color: transparent;
+    background-image: radial-gradient(circle at top right, rgba(201,169,97,0.22) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .ps-head {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: baseline;
+    gap: 4mm;
+    border-bottom: 0.3mm solid var(--gold);
+    padding-bottom: 2.5mm;
+  }
+  .ps-title-id {
+    font-family: 'Playfair Display', serif;
+    font-size: 24pt;
+    color: var(--red);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1;
+  }
+  .ps-title-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 22pt;
+    color: var(--text);
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 1;
+  }
+  .ps-title-pinyin {
+    font-family: 'Inter', sans-serif;
+    font-size: 9pt;
+    color: var(--text-muted);
+    font-style: italic;
+    letter-spacing: 0.5px;
+    margin-top: 1mm;
+  }
+  .ps-badge {
+    font-family: 'Inter', sans-serif;
+    font-size: 7pt;
+    color: white;
+    background: var(--red);
+    padding: 1mm 3mm;
+    border-radius: 1mm;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .ps-meta-row {
+    display: flex;
+    gap: 4mm;
+    align-items: center;
+    font-size: 8.5pt;
+    color: var(--text-muted);
+    padding-bottom: 1.5mm;
+  }
+  .ps-meta-row .lbl {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 6.5pt;
+    color: #8B7355;
+    font-weight: 600;
+  }
+  .ps-meta-row .val {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  .ps-body {
+    font-size: 12pt;
+    line-height: 1.6;
+    color: var(--text);
+    overflow: hidden;
+    text-align: justify;
+    padding: 0 1mm;
+  }
+  .ps-body p {
+    margin: 0 0 2.6mm 0;
+  }
+  .ps-body p:last-child {
+    margin-bottom: 0;
+  }
+  .ps-body strong {
+    color: var(--red);
+    font-weight: 700;
+  }
+  .ps-body .hz {
+    font-family: 'Noto Serif TC', serif;
+    color: var(--red);
+    font-weight: 600;
+  }
+
+  .ps-action {
+    display: grid;
+    grid-template-columns: 6mm 1fr;
+    gap: 3mm;
+    background: rgba(45,106,79,0.08);
+    border-left: 0.7mm solid var(--green);
+    border-radius: 0 1.5mm 1.5mm 0;
+    padding: 3mm 4mm;
+    font-size: 9pt;
+    line-height: 1.5;
+    color: var(--text);
+  }
+  .ps-action .ps-action-ico {
+    color: var(--green);
+    font-weight: 700;
+    font-size: 12pt;
+    line-height: 1;
+  }
+  .ps-action .ps-action-content {
+    display: grid;
+    gap: 1mm;
+  }
+  .ps-action .ps-action-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 7.5pt;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--green);
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">21</div>
+    <div class="h-titles"><div class="h-cn">夫妻</div><div class="h-id">Pasangan · Istana 3 · Lingkar Pasangan</div></div>
+    <div class="h-section">Bagian II · Zi Wei 紫微</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Babi-Merah.svg" alt="Babi"></div>
+    <div class="subject-meta">
+      <div class="subject-name">AVH · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">亥 Babi</span></div>
+      <div class="subject-detail">Pola pernikahan, jodoh, & dinamika asmara</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">丁火 · Api Lilin</div></div>
+  </div>
+
+  <main class="content content-pal">
+    <div class="palace-solo">
+      <div class="ps-head">
+        <div>
+          <div class="ps-title-id">Pasangan</div>
+          <div class="ps-title-pinyin">Fū Qī</div>
+        </div>
+        <div style="text-align:center;">
+          <div class="ps-title-hz">夫妻</div>
+        </div>
+        <div class="ps-badge">Lingkar Pasangan</div>
+      </div>
+
+      <div class="ps-meta-row">
+        <span class="lbl">Sumber Foto</span>
+        <span class="val">夫妻 layar 詳細解説</span>
+      </div>
+
+      <div class="ps-body"><!-- TAFSIR:_solo_fuqi_body --><p>Saat bercinta AVH cukup keras kepala dan semaunya, sehingga ia kerap bergesekan dengan kekasih. Namun lewat usahanya sendiri ia mampu meraih kisah cinta yang indah bagai puisi, dan ia paling menyukai pergaulan yang mewah. Ia tampaknya tipe orang yang menikah muda, tetapi bila memungkinkan sebaiknya menunda pernikahan agar dapat memperoleh kehidupan rumah tangga yang bahagia dan harmonis. Pria seperti ini sering dapat menikah dengan wanita berotak cerdas dan unggul. Sedangkan wanita akan menikah dengan pria yang berbakat dan penuh ide cemerlang. Pria yang <span class="hz">太陰</span> (Tài Yīn)-nya satu istana dapat memperoleh istri rupawan. Yang <span class="hz">天梁</span> (Tiān Liáng) satu istana akan menjadi pasangan serasi bagai "anak emas dan gadis giok" (<span class="hz">金童玉女</span>). Namun bila ada bintang buruk yang menghalangi bantuan, perasaan suami-istri memburuk dan dikhawatirkan ada bahaya perpisahan.</p><!-- /TAFSIR --></div>
+
+      <div class="ps-action">
+        <div class="ps-action-ico">&#9656;</div>
+        <div class="ps-action-content">
+          <div class="ps-action-label">Saran Tindakan</div>
+          <div><!-- TAFSIR:_solo_fuqi_action -->Pilih pasangan sevisi dan setia; tunda pernikahan secukupnya, jaga komunikasi dewasa, hindari adu ego.<!-- /TAFSIR --></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-meta"><span>Halaman 21 / 35</span></div>
+  </footer>
+</section>
+</body>
+</html>

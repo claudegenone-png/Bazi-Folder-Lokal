@@ -1,0 +1,410 @@
+{
+  "name_id": "BPA",
+  "gender_hz": "陰男",
+  "birth_solar": "2001-02-28 09:46",
+  "pillars": {
+    "year": {
+      "stem_hz": "辛",
+      "branch_hz": "巳"
+    },
+    "month": {
+      "stem_hz": "庚",
+      "branch_hz": "寅"
+    },
+    "day": {
+      "stem_hz": "壬",
+      "branch_hz": "戌"
+    },
+    "hour": {
+      "stem_hz": "乙",
+      "branch_hz": "巳"
+    }
+  },
+  "wuxing": {
+    "jin": 2.0,
+    "shui": 1.0,
+    "mu": 2.0,
+    "huo": 2.0,
+    "tu": 1.0
+  },
+  "yong_shen_hz": "木",
+  "ji_shen_hz": "土",
+  "xi_yong_shen_hz": "木",
+  "xian_shen_hz": "水",
+  "chou_shen_hz": "火",
+  "format_hz": "食神格",
+  "shi_shen_per_pilar": {
+    "year": "正印",
+    "month": "偏印",
+    "day": "主",
+    "hour": "傷官"
+  },
+  "ming_gong_bazi": "庚戌",
+  "canggan_shi_shen": {
+    "year": [
+      {
+        "stem": "庚",
+        "ten_god": "偏印"
+      },
+      {
+        "stem": "戊",
+        "ten_god": "七殺"
+      },
+      {
+        "stem": "丙",
+        "ten_god": "偏財"
+      }
+    ],
+    "month": [
+      {
+        "stem": "戊",
+        "ten_god": "七殺"
+      },
+      {
+        "stem": "丙",
+        "ten_god": "偏財"
+      },
+      {
+        "stem": "甲",
+        "ten_god": "食神"
+      }
+    ],
+    "day": [
+      {
+        "stem": "丁",
+        "ten_god": "正財"
+      },
+      {
+        "stem": "辛",
+        "ten_god": "正印"
+      },
+      {
+        "stem": "戊",
+        "ten_god": "七殺"
+      }
+    ],
+    "hour": [
+      {
+        "stem": "庚",
+        "ten_god": "偏印"
+      },
+      {
+        "stem": "戊",
+        "ten_god": "七殺"
+      },
+      {
+        "stem": "丙",
+        "ten_god": "偏財"
+      }
+    ]
+  },
+  "bone_weight": {
+    "bone_weight_year": "六錢",
+    "bone_weight_month": "七錢",
+    "bone_weight_day": "一兩五錢",
+    "bone_weight_hour": "一兩六錢",
+    "bone_weight_total": "四兩四錢",
+    "bone_weight_poem_hz": "求事由天真昔求；須知福祿勝前途；當年財帛難如意；晚景欣然便不變。",
+    "bone_weight_poem_id": "Setiap urusan dicari dengan ketulusan yang dititipkan kepada langit; ketahuilah bahwa kelimpahan rezeki dan kedudukan ([[福祿]]) akan mengungguli jalan di masa depan. Di tahun-tahun tertentu rezeki memang terasa kurang sesuai keinginan, namun di masa senja hati menjadi lapang dan keadaan tidak lagi berubah-ubah."
+  },
+  "liu_nian_predictions": [
+    {
+      "tahun": 2026,
+      "umur": 26,
+      "ganzhi": "丙午",
+      "prose": "Tahun ini diharapkan banyak peluang dan cita-cita dapat dicapai, namun ada banyak penyakit ringan ([[慢性病]]) yang patut diwaspadai; pengeluaran terasa sangat besar dan secara nyata sulit sesuai keinginan. Pintu sebagai kepala keluarga, suasana hati sangat baik, fisik dan jasmani sehat. Catat: tahun mengalir membawa bintang dukacita ([[黑煞]] masuk ke peruntungan), nilai kepalsuan akan banyak, ada hukuman dan dakwaan ringan, kerugian dan kehilangan. Banyak peristiwa gembira, dapat menjaga ketenangan keluarga; hindari bulan 1, 4, atau 7-11 dan bulan 12, hati-hati pada pencurian dan pencurian kecil ([[小人行]]). Bila rumah ada peristiwa suka, dapat menghindari celaka; takut nasib buruk dan banyak ujian, tidak boleh menjenguk orang sakit. Ada juga peluang baik untuk acara perkawinan, terhindar dari nasib buruk, dan jangan tergoda mengikuti urusan rumit ([[十一月之令]]), tetaplah konsisten. Dari sisi watak, ia ramah dan suka berkawan, dengan komunikasi terbuka cepat akrab; sukses pada bidang sosial, namun jangan terjebak persaingan tidak sehat."
+    },
+    {
+      "tahun": 2027,
+      "umur": 27,
+      "ganzhi": "丁未",
+      "prose": "Apa yang Anda hasilkan dari tenaga dan pikiran tahun ini secara permukaan tidak sebanding dengan hasil materi. Catat: bisa muncul penyakit kronis ([[慢性病]]), pengeluaran sangat besar, secara nyata sulit sesuai dengan cita-cita. Pintu sebagai kepala keluarga, hukuman dan perselisihan terasa kentara. Catat keras: tahun mengalir membawa bintang sangat berat menempati lebih banyak, banyak peristiwa hukum dan sengketa duka, juga kerugian harta. Ada banyak peristiwa suka, dapat menjaga ketenangan; hindari bulan 1, 4, 7, atau 11; ada bahaya khianat dari orang kecil ([[小人行]]). Bila rumah ada peristiwa gembira dapat lolos dari celaka, takut nasib buruk dan banyak ujian; tidak boleh menjenguk orang sakit, juga tidak boleh menghadiri pemakaman; akar bencana dan jodoh dengan kepergian. Berjiwa murah hati, mampu menanggung tangan dan kaki cermat, dengan bantuan kerabat sahabat dapat lancar; jodoh dengan orang tua agak tipis, sehingga butuh kerja keras dan kemandirian; meski demikian hasilnya tetap dapat diraih."
+    },
+    {
+      "tahun": 2028,
+      "umur": 28,
+      "ganzhi": "戊申",
+      "prose": "Anda menerima bantuan orang yang lebih tua dan guru, cita-cita dapat tercapai secara nyata. Tahun ini tekanan terasa lebih berat, pengeluaran lebih besar, perlu diperhatikan kesehatan jasmani. Karier dapat bergeser atau jabatan ada perubahan. Suasana hati kurang stabil. Lingkungan besar ikut berubah. [[太陰]] (Bintang Bulan): [[太陰]] masuk ke peruntungan tahun, ada peristiwa suka membawa rezeki, orang baik datang membantu, segala hal berjalan harmonis. [[文昌]]: tahun mengalir [[文昌]] masuk peruntungan, ada peristiwa gembira datang ke rumah, anak laki-laki keluar ujian banyak yang berhasil ([[士子功門多得意]]), orang biasa menarik rezeki, perempuan hamil. Hindari bulan 2, 5, 8, atau 12; mudah terkena rasa permusuhan atau dirundung, jangan terlalu dalam terlibat urusan gelap. Berwatak setia, hangat, dan halus santun, penuh kasih, lengkap; relasi sangat baik, diakui dan disambut orang serta diangkat, mudah menapaki karier dengan tenang ([[平步青雲]]); pandai membantu di belakang, sangat cocok jadi pendamping perusahaan ([[幕僚人才]]), serta lebih mudah menyalurkan kemampuan secara maksimal."
+    },
+    {
+      "tahun": 2029,
+      "umur": 29,
+      "ganzhi": "己酉",
+      "prose": "Anda menerima bantuan orang yang lebih tua dan guru, cita-cita dapat tercapai secara nyata. Tahun ini tekanan terasa lebih berat, pengeluaran lebih besar, perlu diperhatikan kesehatan jasmani. Lingkungan besar berubah karena tekanan. Karier dapat bergeser atau jabatan ada perubahan. [[官符]] (Bintang Perkara): [[官符]] masuk ke peruntungan, urusan hukum dan pertikaian datang, tekanan dari ayah, ibu, pasangan, dan harta, hati hati-hati tulus dengan ringan bencana. [[火煞]] (Bintang Api): [[火煞]] mengalir masuk peruntungan, perkara hukum dan perselisihan lidah, urusan duka, penyakit, ghoib mencuri ([[鬼賊欺]]), namun setelah masa sulit lewat peruntungan kembali tenang/[[亨通]]. Hindari bulan 1, 4, atau 11; segala hal hati-hati, hindari urusan yang tidak perlu agar selamat, mudah ditimpa energi negatif/penyakit aneh, dilukai orang kecil, ada kerugian harta. Suasana hati gelisah, kurang stabil, mudah dipengaruhi lingkungan dan urusan orang lain; watak tegas, jodoh suami-istri mudah berubah, ada sedikit watak romantis ([[小風流]]), kerap berganti pekerjaan, karier atau tempat tinggal."
+    },
+    {
+      "tahun": 2030,
+      "umur": 30,
+      "ganzhi": "庚戌",
+      "prose": "Harga yang Anda bayar tahun ini secara permukaan setara dengan hasil materi. Catat: bisa muncul penyakit kronis, pengeluaran sangat besar, secara nyata sulit sesuai cita-cita. Yang sudah menikah ada gesekan perasaan suami-istri, yang belum menikah cenderung memasuki hubungan asmara. Cinta mengalami pasang surut, suasana hati kurang stabil. [[死符]] (Bintang Duka): [[死符]] masuk ke peruntungan, ada duka dan luka, tekanan pada ayah, ibu, kakak adik, mohon perlindungan agar terhindar dari malapetaka. [[暗耀]] (Bintang Redup): [[暗耀]] bintang masuk ke peruntungan, jika tidak ada perselisihan lidah, ada urusan duka dan bencana terbang ([[孝服飛來之災行]]), keluarga ada peristiwa gembira meredam celaka. Perempuan: penyakit dan urusan persalinan sangat hati-hati, beruntung dapat menghindari celaka; hindari bulan 2, 5, 8, atau 12, mohon perlindungan. Mudah terkena perkara hukum, hukuman, gugatan, cedera, dan penderitaan batin. Nama yang menyenangkan, [[榮譽]] berlimpah, suka unggul tak menyerah, memiliki tekad kuat tak goyah, gemar manipulasi siasat ([[玩弄權術]]), pandai strategi, dan memiliki kecenderungan suka memutar otak."
+    },
+    {
+      "tahun": 2031,
+      "umur": 31,
+      "ganzhi": "辛亥",
+      "prose": "Tahun ini Anda dapat memperoleh bantuan dari orang tua, guru, dan kerabat, sehingga cita-cita dapat tercapai secara nyata. Tahun ini tekanan akan lebih berat, pengeluaran lebih besar, perlu memperhatikan kesehatan jasmani. Karier dapat bergeser atau jabatan ada perubahan. Suasana hati kurang stabil. Lingkungan besar berubah. [[太陽]] (Bintang Matahari): [[太陽]] masuk ke peruntungan, jumpa peristiwa gembira mendatangkan rezeki, orang baik saling membantu, segala hal harmonis. [[文昌]]: tahun mengalir [[文昌]] masuk peruntungan, ada peristiwa gembira datang ke rumah, anak laki-laki keluar ujian banyak yang berhasil, orang biasa menarik rezeki, perempuan hamil. Hindari bulan 2, 5, 8, atau 12; mudah terkena dendam dari unsur asing, atau diselingi pertarungan kecil, jangan masuk ke jalan gelap atau berbahaya. Watak setia, hangat, halus santun, penuh kasih, lengkap; relasi sangat baik, diakui dan disambut orang serta diangkat, mudah menapaki karier dengan tenang ([[平步青雲]]); pandai mendampingi, sangat cocok jadi penasihat perusahaan, serta dengan bakatnya dapat mengembangkan diri ke tingkat tinggi."
+    }
+  ],
+  "ziwei_su_ming": "Segala hal dianggap takdir lalu meninggalkan perjuangan, sehingga sebab pergerakan tidak dapat dikembangkan. Bila istana cinta ([[愛情宮]]) Anda kuat dan peruntungan jasmani juga makmur, di bawah dorongan asmara dari pasangan pernikahan, Anda pasti dapat melalui kehidupan yang penuh kepuasan. Bila istana cinta lemah, keluarga terasa kurang harmonis, hasilnya bahkan dapat berbalik menjadi nasib malang. Pada saat seperti itu, kuat-lemahnya [[命宮]], [[職業宮]] ([[官祿]]), [[移動宮]] ([[遷移]]), dan [[福德宮]] juga harus turut dimasukkan ke dalam pertimbangan.",
+  "xing_qing_poem_hz": "平生良善自有持，衣祿增榮盛有餘，錢財家樂中年好，貴人提拔上雲梯。",
+  "xing_qing_poem_id": "Sepanjang hidup ia baik hati dan menjaga diri, sandang-pangan kian berlimpah dan berlebih, harta dan keluarga sejahtera di paruh tengah hidup, serta orang baik ([[貴人]]) mengangkatnya menaiki tangga awan.",
+  "xing_qing_prose_id": "Berwatak hangat dan lembut, jujur dan tulus, berkata tanpa racun, gemar berbuat kebajikan, segala hal dijalani dengan rendah hati; jodoh dengan enam kerabat sedikit, sukses datang seperti meniti tangga ([[如登梯]]). Karena sifat tergesa-gesa dapat membawa kegagalan, sebaiknya bertindak mengikuti peluang ([[隨機行事]]) agar segala hal aman dan tenang. Paruh awal terasa pahit, paruh tengah membawa keberhasilan, di usia empat puluhan semakin berkembang. Sepanjang hidup jalur rezekinya lancar — sebuah nasib yang setengah ilusi setengah nyata ([[假虛半真之命]]).",
+  "fulu_body_id": "Hari-harinya berpindah dari Timur ke Barat, ada kalanya sulit pulang ke rumah, sepanjang tubuhnya senantiasa diliputi keberuntungan ([[紅鸞喜]]), [[月德]] menyinari tinggi-tinggi; meski sering sakit, malapetaka sulit diselamatkan, ada kebocoran harta kecil, namun jiwa raganya selamat. Suasana hatinya naik-turun, pikirannya kerap menerima rangsangan; bila bertemu masa Tai Sui mendekati istana hidup ([[太歲臨命]]), sesekali ia merasakan pusing kepala.",
+  "mingyun_body_id": "BPA berwatak banyak akal dan luwes mengikuti situasi (隨機應變), bercita-cita tinggi, sandang-pangan cukup, dan didampingi banyak orang baik ([[貴人]]); paruh tengah hidupnya biasa-biasa saja, namun di masa tua justru memperoleh kemakmuran dan keberkahan ([[老運發財發福]]) serta umur panjang. Ia tergolong tipe banyak belajar namun sedikit yang tuntas (多學少成), suka ketenangan dan kegembiraan, kaya di awal hidupnya, paruh tengah datar, paruh akhir sangat berkembang besar; ia mudah akrab dengan orang lain, sering ditarik oleh 貴人, akhirnya sukses, namun kurang dukungan orang tua sehingga membangun keluarga dengan tangan sendiri ([[白手成家之命]]). Kecerdasannya luar biasa, kaya di awal hidup, sandang lebih dari cukup, mendirikan keluarga sendiri, jodoh dengan enam kerabat (六親) kurang erat, meninggalkan tanah leluhur untuk membangun keluarga, ramah, tetapi perempuan di sekitarnya bercitra suka berhias ([[女人虛華]]), sulit memperoleh jodoh yang baik, dan ada kesukaan terhadap minuman keras ([[好飲酒癖]]).",
+  "qinshu_tou_main_id": "Lahir di awal jam (時頭生): di paruh awal hidup bertentangan dengan orang tua, sulit bersandar pada saudara, dan enam kerabat terasa renggang; menikah terlalu dini tidak baik untuk anak istri, sandang dan rezeki perempuan justru menguntungkan suami.",
+  "qinshu_tou_youyue_id": "Lagi pula: rumah dan lingkungan bercahaya baik, walaupun memiliki bakat tulis dan sastra; pria mendekati lingkungan resmi/karier ([[官廷]]), perempuan punya kewenangan.",
+  "qinshu_zhong_main_id": "Lahir di tengah jam (時中生): di paruh tengah hidup, ayah dan ibu masih ada, sepanjang hidup dekat dengan rezeki yang berbicara dan kedudukan yang utuh, jodoh dengan saudara dan anak banyak dan harmonis, cocok bekerja dengan tangan terampil dan kerajinan yang memberi penghasilan.",
+  "qinshu_zhong_youyue_id": "Lagi pula: berwatak banyak murah hati, sepanjang hidup memiliki harta, karena urusan publik memperoleh barang berharga, perjalanan keluar mendatangkan penataan yang baik.",
+  "qinshu_mo_main_id": "Lahir di akhir jam (時末生): di paruh akhir hidup bertentangan dengan ayah, melakukan satu hal sebagian berhasil sebagian gagal, saudara, istri, dan enam kerabat terasa dingin; di paruh awal hidup harus berjuang keras dan menderita lelah.",
+  "qinshu_mo_youyue_id": "Lagi pula: harus menempuh jalan seribu li, hati sangat ingin bergerak cepat namun kuda berjalan lambat, mahir bermain weiqi dan catur, namun belum tentu paham cara meletakkan diri.",
+  "jie_e_palace_hz": "易患喉部疾病、感冒、牙痛等。如與紫微星同宮的話，大概一生與醫生無緣吧！但天相星是疾病、傷勢稀少的吉星。如與廉貞宮位於卯、酉之宮內的話，很難以發揮天相星原本的作用，大概也易患皮膚病或青疽等疾病吧！如疾厄宮內僅有文昌一星在位的話，絕少患疾病，再有其他吉星在位時，可以放心，必不會遭遇什麼樣的意外吧！凶星在位的話，易為疾病所苦。主的是須留心肺部及耳朵的疾病。",
+  "jie_e_palace_id": "BPA cenderung mudah terkena gangguan tenggorokan, masuk angin, dan sakit gigi. Bila istana kesehatan ditemani [[紫微]], besar kemungkinan seumur hidup nyaris tidak berurusan dengan dokter. [[天相]] adalah bintang baik yang menjadikan penyakit dan luka jarang menghampiri; namun bila bersama [[廉貞]] berada di [[卯]] atau [[酉]], pengaruh [[天相]] sulit bekerja, sehingga rentan terkena penyakit kulit atau bisul/eksem. Bila istana kesehatan hanya ditemani [[文昌]] tunggal, ia hampir tak pernah terkena penyakit; bila ditambah bintang baik lain, ia dapat tenang dan jarang terkena hal tak terduga. Sebaliknya, bila bintang buruk ([[凶星]]) yang menempati, ia rentan menderita karena penyakit. Yang paling utama wajib dijaga adalah paru-paru ([[肺]]) dan telinga ([[耳朵]]).",
+  "jie_e_organ_focus_id": "Yang paling utama wajib dijaga: paru-paru dan telinga, serta tenggorokan dan pernapasan secara umum.",
+  "gushu_quotes": [
+    {
+      "source_hz": "三命通會註",
+      "source_id": "Kitab San Ming Tong Hui Zhu",
+      "text_hz": "壬癸日生水為主，根基惟在火與土，春秋來往發財官，冬夏東行為得所。",
+      "text_id": "Bagi pemilik Air ([[壬癸]]), Air adalah pokoknya; fondasinya justru bertumpu pada Api dan Tanah. Bila bergerak antara musim semi dan musim gugur ia mendapat harta dan kedudukan ([[財官]]); di musim dingin dan panas, bergerak ke timur menjadi tempat yang sesuai."
+    },
+    {
+      "source_hz": "玄武當權",
+      "source_id": "Xuan Wu Dang Quan",
+      "text_hz": "玄武當權要得真，日干壬癸坐財星，官星若也居門戶，無破當為大用人。",
+      "text_id": "Saat [[玄武]] memegang kuasa, yang dicari adalah keaslian; batang hari [[壬癸]] duduk di atas bintang harta ([[財星]]), dan bila bintang kedudukan ([[官星]]) menempati pintu utama ([[門戶]]) tanpa terganggu, ia menjadi orang dengan kegunaan besar."
+    },
+    {
+      "source_hz": "滴天髓",
+      "source_id": "Di Tian Sui",
+      "text_hz": "壬水通河，能洩金氣，剛中之德，週流不滯，通根透癸，沖天奔地，化則有情，從則相濟。",
+      "text_id": "[[壬水]] menembus sungai, mampu menyalurkan energi Logam; berbudi keras di tengah kelembutannya, mengalir tak tersumbat. Bila berakar dan tembus ke [[癸]], ia membumbung ke langit dan menerjang bumi; bila berubah ia tetap penuh perasaan, bila menurut ia saling melengkapi."
+    },
+    {
+      "source_hz": "詩云",
+      "source_id": "Syair",
+      "text_hz": "艮宮之木建於春，氣象三陽火在寅，志合蛇申三貴客，類同卯未一家人，超凡入聖惟逢午，破祿傷提獨忌申，四柱火多嫌火地，從來爆木不南奔。",
+      "text_id": "Kayu di istana [[艮]] tegak di musim semi, energinya bagai tiga matahari dengan Api di [[寅]]; cita-citanya selaras dengan tiga tamu mulia di Ular dan [[申]] ([[蛇申三貴客]]), berjenis sama dengan kelompok [[卯未]] bagai satu keluarga. Melampaui batas hingga mencapai kesucian hanya saat bertemu [[午]]; merobohkan rezeki dan melukai pasangan paling dipantang di [[申]]; bila keempat pilar banyak Api, lokasi Api justru dipantang, sebab Kayu yang membara sejak dulu tak berlari ke selatan."
+    },
+    {
+      "source_hz": "詩云",
+      "source_id": "Syair",
+      "text_hz": "水汪洋伴百川，漫流天下繞無邊，干支多聚成漂蕩，火土重逢涸本源，養性結胎須未午，長生歸祿屬乾坤，身強原自無財祿，西北行程厄少年。",
+      "text_id": "Air bagai samudra menyertai seratus sungai, menggenang dan mengalir di bawah langit tanpa batas. Bila batang dan cabang banyak berkumpul, ia justru menjadi air yang mengembara; bila Api dan Tanah bertemu kembali, sumber pokoknya mengering. Menyuburkan watak dan membentuk kandungan menuntut [[未]] dan [[午]]; pertumbuhan panjang yang berpulang ke rezeki tergolong [[乾坤]]. Bila diri kuat, sejak awal sudah tanpa harta dan kedudukan; menempuh perjalanan ke barat-laut, masa muda penuh bencana."
+    }
+  ],
+  "marriage_cocok_tafsir": "**Sangat cocok** ([[大吉]]): shio **Kerbau** ([[丑]]) dan **Ayam** ([[酉]]). Bersama mereka BPA dapat memperoleh kebersamaan yang mendatangkan berkah rezeki dan keberkahan ([[福祿鴛鴦]]), cerdas dan berani ([[智勇雙全]]), berkemauan teguh dan tajam, meraih keberhasilan, berdiri di atas kenyataan, nama dan rezeki lengkap, serta sepanjang hidup penuh kebahagiaan dan kemuliaan ([[一生幸福富貴]]). **Cocok tingkat dua** ([[次吉]]): shio lain di luar daftar hindari secara umum tergolong cocok tingkat dua sebagaimana dicatat layar 婚配 (其他生肖次吉) — termasuk shio Tikus ([[子]]), Kelinci ([[卯]]), Naga ([[辰]]), Ular ([[巳]]), Kuda ([[午]]), Kambing ([[未]]), dan Anjing ([[戌]]).",
+  "marriage_hindari_tafsir": "**Hindari** ([[忌]]): shio **Macan** ([[寅]]), **Monyet** ([[申]]), dan **Babi** ([[亥]]). Bersama mereka keadaan rumah tangga rawan kesulitan dan kegagalan ([[家境然無困苦及失敗]]), suami-istri kekurangan kata mesra ([[夫妻說無蜜話]]), keturunan minim, malapetaka silih berganti ([[災厄禍百端]]), serta peruntungan masa senja kurang baik ([[晚景不祥之運格]]).",
+  "shiye_favorable_full": [
+    {
+      "hz": "評論家",
+      "id": "Kritikus/penulis"
+    },
+    {
+      "hz": "刺繡",
+      "id": "Sulam"
+    },
+    {
+      "hz": "請貪業",
+      "id": "Industri jasa konsumsi"
+    },
+    {
+      "hz": "礦業",
+      "id": "Pertambangan"
+    },
+    {
+      "hz": "加工業",
+      "id": "Industri pengolahan"
+    }
+  ],
+  "shiye_supportive_full": [
+    {
+      "hz": "醫生",
+      "id": "Dokter"
+    },
+    {
+      "hz": "護士",
+      "id": "Perawat"
+    },
+    {
+      "hz": "媬姆",
+      "id": "Pengasuh"
+    },
+    {
+      "hz": "律師",
+      "id": "Pengacara"
+    },
+    {
+      "hz": "電腦程式設計師",
+      "id": "Programmer"
+    },
+    {
+      "hz": "秘書",
+      "id": "Sekretaris"
+    },
+    {
+      "hz": "編者",
+      "id": "Editor"
+    },
+    {
+      "hz": "設計技師",
+      "id": "Desainer teknik"
+    }
+  ],
+  "ti_xiang": {
+    "mu": "旺",
+    "huo": "相",
+    "tu": "死",
+    "jin": "囚",
+    "shui": "休"
+  },
+  "da_yun": [
+    {
+      "age_start": 9,
+      "age_end": 18,
+      "stem_hz": "己",
+      "branch_hz": "丑",
+      "ten_god_hz_md": "正官"
+    },
+    {
+      "age_start": 19,
+      "age_end": 28,
+      "stem_hz": "戊",
+      "branch_hz": "子",
+      "ten_god_hz_md": "七殺"
+    },
+    {
+      "age_start": 29,
+      "age_end": 38,
+      "stem_hz": "丁",
+      "branch_hz": "亥",
+      "ten_god_hz_md": "正財"
+    },
+    {
+      "age_start": 39,
+      "age_end": 48,
+      "stem_hz": "丙",
+      "branch_hz": "戌",
+      "ten_god_hz_md": "偏財"
+    },
+    {
+      "age_start": 49,
+      "age_end": 58,
+      "stem_hz": "乙",
+      "branch_hz": "酉",
+      "ten_god_hz_md": "傷官"
+    },
+    {
+      "age_start": 59,
+      "age_end": 68,
+      "stem_hz": "甲",
+      "branch_hz": "申",
+      "ten_god_hz_md": "食神"
+    },
+    {
+      "age_start": 69,
+      "age_end": 78,
+      "stem_hz": "癸",
+      "branch_hz": "未",
+      "ten_god_hz_md": "劫財"
+    },
+    {
+      "age_start": 79,
+      "age_end": 88,
+      "stem_hz": "壬",
+      "branch_hz": "午",
+      "ten_god_hz_md": "比肩"
+    },
+    {
+      "age_start": 89,
+      "age_end": 98,
+      "stem_hz": "辛",
+      "branch_hz": "巳",
+      "ten_god_hz_md": "正印"
+    },
+    {
+      "age_start": 99,
+      "age_end": 108,
+      "stem_hz": "庚",
+      "branch_hz": "辰",
+      "ten_god_hz_md": "偏印"
+    }
+  ],
+  "marriage": {
+    "cocok_branches": [
+      "丑",
+      "酉",
+      "子",
+      "卯",
+      "辰",
+      "巳",
+      "午",
+      "未",
+      "戌"
+    ],
+    "hindari_branches": [
+      "寅",
+      "申",
+      "亥"
+    ],
+    "cocok_relationships": {
+      "丑": "大吉",
+      "酉": "大吉",
+      "子": "次吉",
+      "卯": "次吉",
+      "辰": "次吉",
+      "巳": "次吉",
+      "午": "次吉",
+      "未": "次吉",
+      "戌": "次吉"
+    }
+  },
+  "shio_hz": "蛇",
+  "kesimpulan_narrative": "BPA lahir 28 Februari 2001 pukul 09:46 dengan shio Ular ([[蛇]]/[[巳]]). Penguasa hidupnya adalah Air Yang ([[壬水]]) bagai sungai besar yang mengalir luas, lahir di musim semi awal (bulan [[寅]]) sehingga Air masih perlu disalurkan agar tidak mengembang sia-sia. Pilarnya [[辛巳]]/[[庚寅]]/[[壬戌]]/[[乙巳]] — Logam di atas Api di pilar tahun & bulan, Air Yang berakar Tanah di pilar hari, dan Kayu Yin tumbuh di Api pilar jam. Kekuatan Penguasa Hari tergolong **Lemah** ([[弱]]) menurut skor 日主旺度 (+3.900 vs -4.748), sehingga ia perlu memilih saluran energi yang tepat agar nasibnya berkembang. || Karena Air-nya perlu menyalurkan kelebihan Logam dan Air yang mengalir tak tersumbat ([[壬水通河, 能洩金氣]]), sahabatnya adalah Kayu ([[木]], [[用神]]) untuk menyalurkan dan mengangkat bakatnya, didukung Logam ([[金]], [[喜神]]) sebagai sumber yang menopang; Air ([[水]], [[閒神]]) sebagai pendamping, sementara Api ([[火]], [[仇神]]) dan Tanah ([[土]], [[忌神]]) perlu diwaspadai. Format hidupnya adalah Cetakan Bakat Tersalur ([[食神格]]) — pandai mewujudkan ide menjadi karya, ditopang [[正印]] dan [[偏印]] di pilar tahun-bulan yang memberi dasar belajar dan kepekaan. Karakter intinya banyak akal dan luwes mengikuti situasi, bercita-cita tinggi, lengkap sandang-pangan, sering ditarik oleh orang baik ([[貴人]]), berjiwa mandiri membangun keluarga dengan tangan sendiri ([[白手成家]]). || Bintang utama Istana Hidupnya ([[命宮]] di [[戌]]) didampingi semangat 武破 ([[武曲破軍]]) yang bercahaya tegas — pribadi pelopor yang berani, fisik tangguh, cerdas, dan berkharisma; banyak akal, dapat menggenggam peluang dengan baik, namun perlu waspada terhadap dorongan emosional dan dorongan kelimpahan yang berlebih. Industri yang searah dengannya terbagi dua jalur: bidang kepekaan dan keterampilan halus (kritikus/penulis, sulam, industri pengolahan, pertambangan) sebagai 適業 dari layar 先天命運; dan bidang profesional yang menuntut ketelitian (dokter, perawat, pengasuh, pengacara, programmer, sekretaris, editor, desainer teknik) menurut istana 官祿. Da Yun saat ini (usia 19-28, [[戊子]] 七殺) adalah fase mengasah daya tahan dan kepemimpinan, menuju fase [[丁亥]] 正財 (29-38) yang menumbuhkan rezeki tetap. || Untuk jodoh, pasangan paling cocok ([[大吉]]) adalah shio Kerbau ([[丑]]) dan Ayam ([[酉]]) — membawa berkah rezeki, kemauan teguh, dan kebahagiaan seumur hidup. Shio lain di luar daftar hindari tergolong cocok tingkat dua ([[次吉]]). Hindari shio Macan ([[寅]]), Monyet ([[申]]), dan Babi ([[亥]]). || Untuk kesehatan, titik rawan ada pada paru-paru, telinga, dan tenggorokan ([[肺、耳朵、喉部]]); perlu rutin menjaga pernapasan dan menghindari masuk angin. Untuk hunian, gua-nya [[艮]], idealnya **duduk Timur Laut menghadap Barat Daya** ([[宅宜坐東北向西南大吉]]); arah altar baik di Barat, Barat Laut, dan Timur Laut, sedangkan pintu sebaiknya menghadap Barat Daya, Barat, atau Barat Laut. || Inti dari semua ini terangkum dalam kitab klasik 滴天髓: \"[[壬水通河, 能洩金氣, 剛中之德, 週流不滯]]\" — Air Yang menembus sungai, mampu menyalurkan energi Logam, berbudi keras di tengah kelembutan, mengalir tak tersumbat. Inilah esensi BPA: air besar yang mengalir bebas, yang akan berbuah nama harum dan rezeki ketika energinya disalurkan keluar lewat karya yang halus dan tekun, dengan dukungan jejaring 貴人 yang terus menjemputnya.",
+  "yang_zhai_gua_hz": "艮",
+  "zi_wei": {
+    "ming_zhu_hz": "祿存",
+    "shen_zhu_hz": "天機",
+    "ming_gong_branch_hz": "戌",
+    "shen_gong_branch_hz": "申",
+    "wu_xing_ju_hz": "木三局",
+    "shi_jun_hz": "辰"
+  },
+  "dm_strength_hz": "弱",
+  "dm_strength_label_id": "Lemah",
+  "dm_pos_score": 3900.0,
+  "dm_neg_score": 4748.0,
+  "xiantian_per_stem": {
+    "jia": 1,
+    "yi": 1,
+    "bing": 3,
+    "ding": 1,
+    "wu": 4,
+    "ji": 0,
+    "geng": 3,
+    "xin": 2,
+    "ren": 1,
+    "gui": 0
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "da_yun_arah_id": "backward",
+  "da_yun_start_age": 9,
+  "shen_sha_list": [
+    {
+      "hanzi": "亡神",
+      "pillar": null
+    },
+    {
+      "hanzi": "天乙貴人",
+      "pillar": null
+    }
+  ],
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": {
+    "year": "庚戊丙",
+    "month": "戊丙甲",
+    "day": "丁辛戊",
+    "hour": "庚戊丙"
+  },
+  "_source": "MD via Web Claude (parse_md.py)"
+}

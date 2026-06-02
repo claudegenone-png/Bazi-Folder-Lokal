@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Zhuang Xiao Min, Palace Detail 3</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-pal { grid-template-rows: 1fr !important; gap: 0; }
+  .pal-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 4mm; overflow: hidden; }
+  .pal-card { background: var(--bg-card); border: 0.4mm solid var(--gold-soft); border-radius: 2mm; padding: 4mm 5mm; display: grid; grid-template-rows: auto 1fr 22mm; gap: 2mm; overflow: hidden; position: relative; }
+
+  .pal-head { display: grid; grid-template-columns: auto 1fr auto; gap: 3mm; align-items: baseline; border-bottom: 0.2mm solid var(--gold-soft); padding-bottom: 1.5mm; }
+  .pal-name { display: block; line-height: 1.1; }
+  .pal-name .pn-id { display: block; font-family: 'Playfair Display', serif; font-size: 14pt; color: var(--red); font-weight: 700; letter-spacing: 0.3px; }
+  .pal-name .pn-meta { display: block; font-family: 'Inter', sans-serif; font-size: 7.5pt; color: var(--text-muted); letter-spacing: 0.5px; margin-top: 1mm; font-style: italic; }
+  .pal-name .pn-meta .hz { font-family: 'Noto Serif TC', serif; color: var(--text); font-style: normal; font-weight: 600; margin-left: 1.5mm; }
+  .pal-branch { text-align: center; font-family: 'Noto Serif TC', serif; font-size: 11pt; color: var(--text); font-weight: 600; }
+  .pal-branch .id { display: block; font-size: 5.5pt; color: var(--text-muted); font-style: italic; margin-top: 0.3mm; }
+  .pal-age { font-family: 'Playfair Display', serif; font-size: 8.5pt; color: var(--gold); font-weight: 700; text-align: right; letter-spacing: 0.5px; }
+  .pal-age .lbl { display: block; font-size: 5.5pt; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; font-weight: 500; margin-top: 0.3mm; }
+
+  .pal-stars { display: flex; gap: 2mm; flex-wrap: wrap; align-items: center; }
+  .pal-star { background: linear-gradient(135deg, white, #FFF8E1); border: 0.3mm solid var(--gold-soft); border-radius: 1.5mm; padding: 1.5mm 3mm; display: grid; grid-template-columns: auto auto; gap: 2mm; align-items: baseline; }
+  .pal-star.main { border-color: var(--gold); background: linear-gradient(135deg, #FFF8E1, #F5EBD0); }
+  .pal-star-hz { font-family: 'Noto Serif TC', serif; font-size: 11pt; color: var(--red); font-weight: 700; line-height: 1; }
+  .pal-star-id { font-size: 6.5pt; color: var(--text-muted); font-style: italic; letter-spacing: 0.3px; }
+  .hua { display: inline-block; font-family: 'Inter', sans-serif; font-size: 5.5pt; color: white; padding: 0.3mm 1.2mm; border-radius: 0.8mm; letter-spacing: 0.5px; margin-left: 1mm; font-weight: 700; }
+  .hua.lu { background: var(--green); }
+  .hua.qua { background: var(--red-bad); }
+
+  .pal-insight { background: linear-gradient(90deg, var(--gold-bg), transparent); border-left: 0.8mm solid var(--gold); border-radius: 0 1mm 1mm 0; padding: 1.5mm 3mm; font-family: 'Playfair Display', serif; font-size: 9.5pt; color: var(--red); line-height: 1.3; font-weight: 600; font-style: italic; }
+  .pal-insight .hz { font-family: 'Noto Serif TC', serif; color: var(--text); font-style: normal; font-weight: 700; }
+
+  .pal-body { font-size: 7.5pt; line-height: 1.45; color: var(--text); overflow: hidden; }
+  .pal-body strong { color: var(--red); }
+  .pal-body .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+
+  .pal-actions { display: grid; gap: 1.2mm; border-top: 0.2mm dashed var(--gold-soft); padding-top: 1.5mm; }
+  .pal-actions-header { font-family: 'Playfair Display', serif; font-size: 11pt; color: var(--green); font-weight: 700; letter-spacing: 0.5px; margin-bottom: 1.2mm; }
+  .pal-action { display: grid; grid-template-columns: 4mm 1fr; gap: 2mm; font-size: 7.5pt; line-height: 1.45; color: var(--text); }
+  .pal-action .ico { color: var(--green); font-weight: 700; }
+  .pal-action strong { color: var(--red); }
+  .pal-action .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">21</div>
+    <div class="h-titles"><div class="h-cn">官 田 福 父</div><div class="h-id">Karir · Properti · Berkah · Orangtua</div></div>
+    <div class="h-section">Bagian II · Zi Wei 紫微</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Kerbau-Merah.svg" alt="Kerbau"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Zhuang Xiao Min · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">丑 Kerbau</span></div>
+      <div class="subject-detail">Detail 4 istana lingkaran-luar, pencapaian &amp; warisan</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">辛金 · Logam Halus</div></div>
+  </div>
+
+  <main class="content content-pal">
+    <div class="pal-grid">
+
+      <!-- 官祿 KARIR -->
+      <div class="pal-card"><!-- TAFSIR:_p3_guanlu --><div class="pal-head"><div class="pal-name"><span class="pn-id">Karir</span><span class="pn-meta">Guān Lù<span class="hz">官祿</span></span></div></div><div class="pal-body"><strong>Bintang Logam Eksekutif</strong> (<span class="hz">武曲</span>) di Istana Karir membuat Zhuang Xiao Min cocok di bidang keuangan, perdagangan, atau struktur logam. Foto 官祿 mencatat: cocok juga sebagai seniman, politisi, atau pebisnis terkait air, distribusi, keuangan. Jaga integritas profesional, hindari konflik kerja yang merusak reputasi.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Fokus pada satu jalur karir utama, bangun reputasi keahlian yang dalam.</span></div></div><!-- /TAFSIR --></div>
+
+      <!-- 田宅 PROPERTI -->
+      <div class="pal-card"><!-- TAFSIR:_p3_tianzhai --><div class="pal-head"><div class="pal-name"><span class="pn-id">Properti</span><span class="pn-meta">Tián Zhái<span class="hz">田宅</span></span></div></div><div class="pal-body">Foto 田宅 mencatat Zhuang Xiao Min berbakat di bisnis properti — apartemen, jual beli tanah dapat menjadi sumber rezeki utama. Lokasi rumah dekat air (sungai, danau, kolam) memberi kestabilan. <strong>Arah Utara</strong> disebut sangat hoki untuk hunian. Warna rumah gelap/hitam disarankan.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Investasikan ke properti dekat air, gunakan arah Utara sebagai orientasi utama.</span></div></div><!-- /TAFSIR --></div>
+
+      <!-- 福德 BERKAH -->
+      <div class="pal-card"><!-- TAFSIR:_p3_fude --><div class="pal-head"><div class="pal-name"><span class="pn-id">Berkah</span><span class="pn-meta">Fú Dé<span class="hz">福德</span></span></div></div><div class="pal-body">Foto 福德 mencatat Zhuang Xiao Min berkesan stabil dan penuh rasa kemanusiaan. Bila istana berada di <strong>Tikus</strong> (<span class="hz">子</span>) atau <strong>Babi</strong> (<span class="hz">亥</span>), umur panjang. Walaupun rajin bekerja, kadang panen tidak sebanding dengan jerih payah, hingga muncul rasa gelisah. Bila bersanding <strong>Ungu Kaisar</strong> (<span class="hz">紫微</span>), batin kembali tenang dan damai.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Bangun rutinitas spiritual atau hobi tenang sebagai pelega batin di tengah kerja keras.</span></div></div><!-- /TAFSIR --></div>
+
+      <!-- 父母 ORANG TUA -->
+      <div class="pal-card"><!-- TAFSIR:_p3_fumu --><div class="pal-head"><div class="pal-name"><span class="pn-id">Orang Tua</span><span class="pn-meta">Fù Mǔ<span class="hz">父母</span></span></div></div><div class="pal-body">Foto tidak menampilkan layar 父母 secara terpisah. Berdasarkan pola Zhuang Xiao Min sebagai pribadi mandiri sejak muda, hubungan dengan orang tua cukup hangat namun ia cenderung berdiri di kaki sendiri. Penghormatan pada orang tua tetap kuat — terlihat dari catatan anaknya juga akan berbakti.</div><div class="pal-actions"><div class="pal-actions-header">Saran Tindakan</div><div class="pal-action"><span class="ico">▸</span><span>Jaga komunikasi rutin dengan orang tua, hormat keluarga adalah salah satu fondasi keberkahan.</span></div></div><!-- /TAFSIR --></div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-meta"><span>Halaman 22 / 27</span></div>
+  </footer>
+</section>
+</body>
+</html>

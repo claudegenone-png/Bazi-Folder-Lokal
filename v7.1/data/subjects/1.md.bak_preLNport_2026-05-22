@@ -1,0 +1,524 @@
+# CS
+
+## DATA
+
+- nama: CS
+- hanzi: null
+- gender: Pria
+- gender_hz: 陽男
+- lahir_tanggal: 1974-10-10
+- lahir_jam: 00:20
+- pilar_tahun: 甲/寅
+- pilar_bulan: 甲/戌
+- pilar_hari: 甲/申
+- pilar_jam: 甲/子
+
+# Shio
+- shio_hz: 虎
+
+# === 先天體檢 per-stem count (triple-vote 3/3 high confidence) ===
+- xiantian_jia: 5
+- xiantian_yi: 0
+- xiantian_bing: 1
+- xiantian_ding: 1
+- xiantian_wu: 3
+- xiantian_ji: 0
+- xiantian_geng: 1
+- xiantian_xin: 1
+- xiantian_ren: 1
+- xiantian_gui: 1
+
+# === wuxing total (sum 2 stem per elemen) ===
+- wuxing_jin: 2
+- wuxing_shui: 2
+- wuxing_mu: 5
+- wuxing_huo: 2
+- wuxing_tu: 3
+- yong_shen: 火
+- ji_shen: 木
+- xi_yong_shen: 火
+- xian_shen: 金
+- chou_shen: 水
+- shi_shen_per_pilar_tahun: 比肩
+- shi_shen_per_pilar_bulan: 比肩
+- shi_shen_per_pilar_hari: 主
+- shi_shen_per_pilar_jam: 比肩
+- ming_gong_bazi: 辛未
+
+# === 體相 (5-Element Seasonal Status) dari kolom 死囚休旺相 / 木火土金水 ===
+- ti_xiang_mu: 死
+- ti_xiang_huo: 囚
+- ti_xiang_tu: 休
+- ti_xiang_jin: 旺
+- ti_xiang_shui: 相
+- format: 偏財格
+- format_label_id: null
+- dm_label_id: null
+- da_yun: 11:乙亥:劫財, 21:丙子:食神, 31:丁丑:傷官, 41:戊寅:偏財, 51:己卯:正財, 61:庚辰:七殺, 71:辛巳:正官, 81:壬午:偏印, 91:癸未:正印, 101:甲申:比肩
+- marriage_cocok: 午, 戌, 亥
+- marriage_hindari: 巳, 申
+- marriage_cocok_relationships: 午:大吉, 戌:大吉, 亥:吉凶相半
+- marriage_hindari_relationships: 巳:忌, 申:忌
+- yang_zhai_gua: 艮
+- ziwei_ming_zhu: 文曲
+- ziwei_shen_zhu: 天梁
+- ziwei_ming_gong: 酉
+- ziwei_shen_gong: 酉
+- ziwei_wu_xing_ju: 金四局
+- ziwei_shi_jun: 巳
+
+# === FULL-MD MODE FIELDS — skor 旺度 (批命備註 tidak ada di set foto → null) ===
+- wangdu_jia_mu: null
+- wangdu_yi_mu: null
+- wangdu_bing_huo: null
+- wangdu_ding_huo: null
+- wangdu_wu_tu: null
+- wangdu_ji_tu: null
+- wangdu_geng_jin: null
+- wangdu_xin_jin: null
+- wangdu_ren_shui: null
+- wangdu_gui_shui: null
+- wangdu_total_mu: null
+- wangdu_total_huo: null
+- wangdu_total_tu: null
+- wangdu_total_jin: null
+- wangdu_total_shui: null
+- dm_pos_score: 6130
+- dm_neg_score: 2242
+- dm_strength: 旺
+- dm_strength_label_id: Kuat
+
+# Da Yun arah & start age (grid utama: umur 11 21 ... 101, stem 乙丙丁戊己庚辛壬癸甲 maju = 順行)
+- da_yun_arah: 順行
+- da_yun_start_age: 11
+
+# Shen Sha (layar 神煞 — 將星, 驛馬)
+- shen_sha_list: 將星, 驛馬
+
+# Na Yin per pilar (tidak terbaca di set foto)
+- nayin_tahun: null
+- nayin_bulan: null
+- nayin_hari: null
+- nayin_jam: null
+
+# Hidden stems / 藏干 per pilar (visual order grid, triple-vote 3/3)
+- canggan_tahun: 戊丙甲
+- canggan_bulan: 丁辛戊
+- canggan_hari: 戊壬庚
+- canggan_jam: 癸
+
+# 藏干 + 十神 per pilar (dari row 人元 grid utama)
+- canggan_shi_shen_tahun: 戊:偏財, 丙:食神, 甲:比肩
+- canggan_shi_shen_bulan: 丁:傷官, 辛:正官, 戊:偏財
+- canggan_shi_shen_hari: 戊:偏財, 壬:偏印, 庚:七殺
+- canggan_shi_shen_jam: 癸:正印
+
+# 12 長生 phase per pilar (tidak ada label fase eksplisit di foto → null)
+- chang_sheng_tahun: null
+- chang_sheng_bulan: null
+- chang_sheng_hari: null
+- chang_sheng_jam: null
+
+# 空亡 (tidak terlabel eksplisit di foto → null)
+- kong_wang: null
+
+# === 八字秤骨 (先天論命 V2.5 module TIDAK ada di set foto → null) ===
+- bone_weight_year: null
+- bone_weight_month: null
+- bone_weight_day: null
+- bone_weight_hour: null
+- bone_weight_total: null
+- bone_weight_poem_hz: null
+- bone_weight_poem_id: null
+
+# === 先天論命 V2.5 supplementary pages (module TIDAK ada di set foto → null, halaman auto-skip) ===
+- mingyun_body_id: null
+- xing_qing_poem_hz: null
+- xing_qing_poem_id: null
+- xing_qing_prose_id: null
+- fulu_body_id: null
+- qinshu_tou_main_id: null
+- qinshu_tou_youyue_id: null
+- qinshu_zhong_main_id: null
+- qinshu_zhong_youyue_id: null
+- qinshu_mo_main_id: null
+- qinshu_mo_youyue_id: null
+
+# === V7.1 Kesehatan (page) — 疾厄宮 ZiWei ===
+- jie_e_palace_hz: 易患消化器官的疾病。及脊髓的疾病、皮膚病等等。易患與肝臟有關的疾病。遇有凶星同宮者,易患皮膚或眼睛方面的疾病。如與太陰星同宮的話,大概經常為腫脹脈而困擾不已吧!女性的話,可能也深為生理不順而苦吧!健康良好,如位於巳、申、亥之宮內,或與凶星同宮的話,須注意從胃部為始的腹部疾病。文曲星在疾厄宮內的人與疾病緣薄。如再有其他吉星同宮的話,健康狀況良好,一生與醫生無緣吧!如凶星在位,請留意腎臟及耳病。
+- jie_e_palace_id: CS cenderung mudah terkena gangguan organ pencernaan, serta penyakit pada sumsum/tulang belakang dan kulit. Ada pula kerentanan pada penyakit yang berkaitan dengan organ hati ([[肝臟]]). Bila istana kesehatan ditemani bintang buruk ([[凶星]]), rentan masalah kulit atau mata. Bila bersama [[太陰]], kerap terganggu oleh keluhan bengkak. Secara umum kesehatannya baik; namun bila istana berada di posisi [[巳]], [[申]], atau [[亥]], atau ditemani bintang buruk, perlu mewaspadai gangguan perut yang berawal dari lambung. Orang dengan [[文曲]] di istana kesehatan justru jarang berurusan dengan penyakit, dan bila ditambah bintang baik lain, kesehatan amat terjaga sehingga seumur hidup nyaris tak butuh dokter. Sebaliknya bila bintang buruk yang menempati, perlu menjaga ginjal dan telinga.
+- jie_e_organ_focus_id: Yang paling utama wajib dijaga: organ pencernaan (lambung dan perut), hati, serta ginjal dan telinga.
+
+# === Render fields: 流年 / 古書云 / 宿命 / 事業 penuh (WAJIB di DATA) ===
+- liu_nian_2026: 53|丙午|Apa yang dipikirkan tahun ini secara permukaan bisa setara dengan hasil materi; manfaatkan momentum untuk lebih banyak memutar otak agar cita-cita tercapai. Suasana hati kurang stabil dan ada hal yang membebani pikiran; karier berpotensi bergeser. Pengaruh 官符 dan 火煞 menuntut kehati-hatian pada urusan hukum, lidah, dan kesehatan; hindari ikut campur urusan yang tak perlu, terutama di bulan 1, 4, 7, dan 11, agar tetap aman.
+- liu_nian_2027: 54|丁未|Apa yang dipikirkan tahun ini bisa setara dengan hasil materi, dan segala peluang dapat membawa pada pencapaian ideal. Pengaruh 死符 dan 暗耀 menuntut kewaspadaan pada urusan duka, perselisihan lidah, dan kesehatan; waspadai bulan 2, 5, 8, dan 12. Watak cenderung tertutup dan gemar menabung; bila mau membuka diri dan giat berusaha, peruntungan rezeki cukup baik. Paruh awal hidup lebih berat, paruh akhir makin beruntung.
+- liu_nian_2028: 55|戊申|Tenaga dan pikiran yang dikeluarkan tahun ini tampak setara dengan hasil materi, dan ada bantuan orang baik ([[貴人]]) yang membawa pada pencapaian ideal. Karier atau jabatan berpotensi bergeser; yang sudah menikah ada sedikit gesekan, yang belum menikah berpeluang menjalin asmara. Pengaruh 歲破 dan 太陰 menuntut kehati-hatian soal harta dan keluarga; waspadai bulan 3, 6, 9, dan 12. Jaga ketekunan agar tidak mudah bosan dan gegabah.
+- liu_nian_2029: 56|己酉|Tenaga dan pikiran tahun ini tampak setara dengan hasil materi, dengan bantuan 貴人 yang membawa pada pencapaian ideal. Pengaruh 龍德 membawa rezeki dan keberuntungan di rumah, sedangkan 天掃 menuntut kewaspadaan pada urusan duka; waspadai bulan 1, 4, 7, dan 12. Rasa ingin tahu dan daya cipta sedang tinggi, penuh humor dan disukai orang; jaga kesehatan tubuh, yang justru menguat seiring bertambahnya usia.
+- liu_nian_2030: 57|庚戌|Harga yang dibayar tahun ini secara permukaan setara dengan hasil materi, dan segala peluang dapat membawa pada cita-cita. Suasana hati kurang stabil. Pengaruh 白虎 menuntut waspada pada perselisihan lidah dan kebocoran harta, sedangkan 天喜 membawa kabar gembira dan rezeki; tetap jaga diri dari risiko luka/darah. Waspadai bulan 1, 4, 7, dan 11. Pribadi yang ramah dan pandai bergaul; dengan kerja keras tetap bisa meraih pencapaian besar.
+- liu_nian_2031: 58|辛亥|Harga yang dibayar tahun ini secara permukaan setara dengan hasil materi; perhatikan bahwa urusan yang merepotkan akan lebih banyak. Pengaruh 福德 membawa kenaikan kedudukan dan rezeki serta cocok untuk menambah aset/tanah, sedangkan 無常 menuntut kewaspadaan pada hal tak terduga, penyakit, dan kebocoran harta; waspadai bulan 4, 7, dan 8 serta jaga diri dari air dan api. Pribadi jujur, lembut, dan berbakat, sangat disukai dan mudah naik pesat; lebih cocok sebagai penasihat/perencana andal ketimbang pemimpin puncak.
+- gushu_quote_1: 三命通會註|Kitab San Ming Tong Hui Zhu|甲乙晝乎木得宜,要知金水旺為奇,春從南往秋歸北,冬夏西行發福基。|Bagi pemilik Kayu 甲乙, keserasian Kayu menjadi pokoknya; ketahuilah bahwa Logam dan Air yang menguat justru menjadi keistimewaan. Bergerak ke selatan di musim semi dan ke utara di musim gugur, sedangkan menuju barat di musim dingin dan panas menjadi fondasi datangnya keberkahan.
+- gushu_quote_2: 詩曰|Syair|甲乙如居申酉鄉,木逢春旺最為良,四柱若逢庫相助,財官雙美不尋常。|Bila Kayu 甲乙 berada di wilayah 申酉, dan Kayu bertemu musim semi yang menguatkan, itulah yang paling baik; bila keempat pilar bertemu gudang ([[庫]]) yang menopang, maka harta dan kedudukan ([[財官]]) sama-sama gemilang secara luar biasa.
+- gushu_quote_3: 滴天髓|Di Tian Sui|甲木參天,脫胎要火,春不容金,秋不容土,火熾乘龍,水蕩騎虎,地潤天和,植立千古。|[[甲木]] menjulang ke langit; untuk menyempurnakan dirinya butuh Api. Di musim semi ia tak menerima Logam, di musim gugur tak menerima Tanah; ketika Api berkobar ia menunggang Naga, ketika Air meluap ia menunggang Macan; bila bumi lembap dan langit selaras, ia berdiri tegak menembus zaman.
+- gushu_quote_4: 詩云|Syair|九月河魁性最剛,漫云比物易收藏,洪爐巨火能成就,鈍鐵頑金賴主張,海窟沖龍生此露,山頭合虎動文章,天羅雖是迷魂陣,火命逢之獨有傷。|Kayu bulan sembilan ([[河魁]]) berwatak paling keras; jangan kira hal seperti ini mudah disimpan. Tungku besar dengan Api yang dahsyat justru mampu menempanya jadi karya; besi tumpul dan logam keras pun bergantung pada penataan. Bertemu Naga di gua samudra memunculkan embun ini, berpadu Macan di puncak gunung menggerakkan karya tulis; meski 天羅 bagai jerat yang membingungkan, hanya nasib berunsur Api yang justru terluka olehnya.
+- gushu_quote_5: 詩云|Syair|木天干作首排,原無枝葉與根荄,欲存天地千年久,直向沙泥萬丈埋,斷就棟梁金得用,化成灰炭火為災,巍然塊物無機事,一任春秋自往來。|Kayu yang berdiri sebagai kepala deret batang langit, semula tanpa cabang-daun maupun akar; agar lestari ribuan tahun di antara langit dan bumi, ia justru terbenam dalam lumpur pasir sedalam puluhan ribu kaki. Bila ditetapkan menjadi tiang penyangga, Logam-lah yang memberinya guna; bila berubah jadi abu arang, Api justru menjadi bencana. Berdiri kokoh bagai bongkah tanpa banyak tingkah, membiarkan musim semi dan gugur datang dan pergi dengan sendirinya.
+- ziwei_su_ming: Terlepas dari baik atau buruk, ini adalah peruntungan yang sama sekali berbeda dari takdir bawaan. Bila istana hidup ([[命宮]]) CS kuat, ia mampu memanfaatkan bakat dan nasibnya untuk meraih perkembangan yang gemilang; namun bila istana hidup lemah, sulit mengharapkan keberhasilan di masa depan. Dalam hal ini, kuat-lemahnya istana perpindahan ([[遷移]]), istana rezeki ([[財帛]]), dan istana karier ([[官祿]]) turut menjadi bahan pertimbangan.
+- shiye_favorable_full: 照相|Fotografi, 電器|Elektronik, 光學|Optik, 眼鏡|Kacamata, 熱飲小吃|Minuman panas & jajanan, 食品工廠|Pabrik makanan, 美容美髮|Salon kecantikan, 衣帽百貨|Sandang & department store, 評論家|Kritikus/penulis, 化妝品|Kosmetik, 軍火|Persenjataan, 煙酒|Tembakau & minuman
+- shiye_supportive_full: 建築|Konstruksi, 當鋪|Pegadaian, 畜牧|Peternakan, 水泥建材|Semen & bahan bangunan, 房地產買賣|Jual-beli properti, 殯儀館|Rumah duka, 墓碑石店|Toko batu nisan, 地師|Ahli fengshui tanah, 古董|Barang antik, 顧問|Konsultan
+
+# Marriage tafsir (WAJIB di DATA — surface tier 大吉 / 吉凶相半 / 次吉 / 忌)
+- marriage_cocok_tafsir: **Sangat cocok** ([[大吉]]): shio **Kuda** ([[午]]) dan **Anjing** ([[戌]]). Bersama mereka CS dapat bersatu hati selamanya, kewibawaan dan reputasi kian menanjak hingga akhirnya menggapai keberhasilan besar ([[德望日高終成大業]]), kaya dan terhormat, keluarga makmur, serta keturunan berkembang jaya ([[子孫昌盛]]). **Setengah cocok** ([[吉凶相半]]): shio **Babi** ([[亥]]) — baik dan buruk berimbang. Shio lain di luar daftar hindari secara umum tergolong cocok tingkat dua ([[次吉]]).
+- marriage_hindari_tafsir: **Hindari** ([[忌]]): shio **Ular** ([[巳]]) dan **Monyet** ([[申]]). Suami-istri saling bertentangan atau kurang harmonis, kekhawatiran tak henti, minim harapan keberhasilan, rawan kegagalan, dan sepanjang hidup sulit lepas dari rasa hampa serta kesepian ([[空虛寂寞]]), bahkan berisiko membawa luka dan umur yang pendek.
+
+# Kesimpulan menyeluruh (kesimpulan_narrative — sintesis semua DATA, pemisah ||)
+- kesimpulan_narrative: CS lahir 10 Oktober 1974 pukul 00:20 dengan shio Macan ([[虎]]/[[寅]]). Penguasa hidupnya adalah Kayu Yang ([[甲木]]) yang menjulang bagai pohon besar menembus langit. Bagannya tergolong sangat istimewa dan langka, yaitu Satu Energi Murni Langit ([[天元一氣]]): keempat batang pilar sama-sama [[甲木]] ([[甲寅]]/[[甲戌]]/[[甲申]]/[[甲子]]), sehingga kepribadiannya teguh, lurus, mandiri, dan berprinsip kuat. Kekuatan Penguasa Hari tergolong **Kuat** ([[旺]]) dengan skor pendukung +6130 jauh melampaui penekan -2242, sehingga energi terbaiknya adalah disalurkan keluar lewat karya dan ekspresi, bukan ditahan. || Karena Kayunya rimbun dan kuat, unsur sahabatnya adalah Api ([[火]], 用神) untuk menyalurkan dan mematangkan bakatnya ([[脫胎要火]]), didukung Tanah ([[土]], 喜神) sebagai wujud nyata rezeki, sementara Logam ([[金]], 閒神) menata, dan Air ([[水]], 仇神) serta Kayu berlebih ([[木]], 忌神) perlu diwaspadai. Format hidupnya adalah Cetakan Harta Tak Terduga ([[偏財格]]) — pandai mewujudkan peluang menjadi materi, dengan [[正官]] yang turut berperan menata diri. Karakter intinya mementingkan kebenaran di atas harta, terus terang tanpa kepura-puraan, berwibawa, pantang menyerah, tegas, berjiwa pemimpin, hati lurus dan baik, namun kurang luwes dalam adaptasi cepat dan tidak gemar banyak bicara. || Bintang utama Istana Hidupnya ([[命宮]] di [[酉]]) adalah [[破軍]] (Pò Jūn) yang bercahaya 化權 — pribadi pelopor yang berani, berfisik tangguh, cerdas, dan berkharisma, mampu menjadi sosok pahlawan yang namanya harum ke berbagai penjuru ([[英雄人物名揚四方]]); kelemahannya sulit menetap dan kerap berpindah-pindah. Industri yang searah dengannya terbagi dua jalur: bidang ber-Api seperti fotografi, elektronik dan optik, kuliner, kosmetik, serta sandang (sejalan dengan 用神 [[火]]); dan bidang ber-Tanah seperti properti, konstruksi, bahan bangunan, dan konsultan. Da Yun saat ini (usia 51-60, [[己卯]] 正財) adalah fase pengakaran rezeki yang stabil, setelah fase [[偏財]] ([[戊寅]], 41-50) yang aktif. || Untuk jodoh, pasangan paling cocok ([[大吉]]) adalah shio Kuda ([[午]]) dan Anjing ([[戌]]) — membawa kesatuan hati, reputasi, dan keluarga yang makmur; shio Babi ([[亥]]) setengah cocok ([[吉凶相半]]), dan shio lain umumnya cocok tingkat dua ([[次吉]]). Hindari shio Ular ([[巳]]) dan Monyet ([[申]]). || Untuk kesehatan, titik rawan ada pada organ pencernaan (lambung dan perut), hati, serta ginjal dan telinga ([[消化器官、肝臟、腎臟及耳]]) — perlu rutin dijaga. Untuk hunian, gua-nya [[艮]], idealnya **duduk Timur Laut menghadap Barat Daya** ([[宅宜坐東北向西南大吉]]); arah utara membawa keberuntungan ([[北方大吉]]), dan altar baik di Barat, Barat Laut, serta Timur Laut. || Inti dari semua ini terangkum dalam kitab klasik 滴天髓: "[[甲木參天, 脫胎要火, 地潤天和, 植立千古]]" — Kayu Yang menjulang ke langit, untuk menyempurnakan diri butuh Api, dan bila bumi lembap serta langit selaras ia berdiri tegak menembus zaman. Inilah esensi CS: pohon besar yang kokoh dan lurus, yang akan berbuah nama harum dan rezeki ketika bakatnya disalurkan keluar lewat karya dengan tekun dan ditopang jejaring 貴人.
+
+## TAFSIR
+
+### Kepribadian
+
+paragraf:
+CS adalah [[甲木]] (Kayu Yang) yang lahir di musim gugur, dengan bagan langka [[天元一氣]] berisi empat batang [[甲]] yang sama. Status dirinya tergolong [[旺]] (kuat), sehingga [[火]] sebagai [[用神]] menyalurkan dan mematangkan bakatnya, didukung [[土]] sebagai [[喜神]]. Formatnya [[偏財格]] membuatnya cakap mewujudkan peluang jadi materi, sementara wataknya teguh, lurus, dan berjiwa pemimpin, namun perlu melatih keluwesan dan kesabaran.
+
+radar_traits: null
+
+motto: null
+
+power:
+- Teguh, berprinsip, dan berwibawa; tidak mudah menyerah
+- Mementingkan kebenaran dan kesetiaan di atas harta
+- Berjiwa pemimpin, tegas, dan berani memutuskan
+- Berfisik tangguh, cerdas, dan berkharisma seperti sosok pelopor
+
+shadow:
+- Kadang terlalu keras kepala dan sulit menerima pendapat orang
+- Kurang luwes beradaptasi secara cepat terhadap perubahan
+- Cenderung berpindah-pindah, sulit menetap lama di satu tempat
+- Tidak gemar basa-basi sehingga terkesan berjarak
+
+optimum:
+- Salurkan energi [[火]] lewat karya, ekspresi, dan keahlian terampil
+- Wujudkan peluang menjadi aset berwujud (properti, usaha nyata)
+- Manfaatkan jiwa kepemimpinan untuk memimpin lewat keteladanan
+- Latih kesabaran dan keterbukaan terhadap masukan orang lain
+
+### Keluarga & Pasangan
+
+pasangan:
+- vibe: "Serius · Berprinsip"
+- headline: "Pasangan ideal dari shio Kuda atau Anjing, sehati dan suportif"
+- body: Menurut layar 婚配, jodoh paling cocok ([[大吉]]) bagi CS adalah shio [[午]] (Kuda) dan [[戌]] (Anjing) yang membawa kesatuan hati, reputasi yang menanjak, dan keluarga yang makmur. Shio [[亥]] (Babi) tergolong setengah cocok ([[吉凶相半]]). Hindari pasangan shio [[巳]] (Ular) dan [[申]] (Monyet). Menurut 全局總論, CS kerap menjumpai jodoh lewat relasi pekerjaan atau usaha.
+
+anak:
+- vibe: "Tangkas · Keras"
+- headline: "Anak berdaya kerja tinggi, butuh pendekatan sabar"
+- body: Menurut istana 子女 dan 全局總論, anak CS berpotensi periang dan berdaya kerja (操作能力) tinggi, namun cenderung keras kepala dan kurang gemar berpikir bertele-tele. Hubungan menuntut kesabaran dan komunikasi terbuka; bila dibina dengan baik, anak dapat tumbuh berprestasi.
+
+saudara:
+- vibe: "Selektif · Mandiri"
+- headline: "Pertemanan dan ikatan saudara bersifat selektif"
+- body: Berdasarkan istana 兄弟, CS berteman secara selektif dan tidak serta-merta memaklumi saudara atau teman. Ia punya cukup banyak teman, namun manfaat nyata dari relasi ini terbatas. Dengan pengaruh [[文昌]]/[[文曲]], walau saudara tak banyak, ia tetap bisa memperoleh sahabat sehati.
+
+kepemimpinan:
+- vibe: "Tegas · Berprinsip"
+- headline: "Sosok pemimpin alami yang berwibawa"
+- body: Watak teguh, tegas, dan berprinsip membuat CS bertipe pemimpin alami yang berani memutuskan. Ia cocok memimpin lewat keteladanan dan keahlian. Catatannya, ketegasan ini perlu diimbangi keluwesan agar tidak terkesan otoriter.
+
+### Shen Sha (Bintang Pelengkap)
+
+paragraf:
+Layar 神煞 CS menampilkan dua bintang aktif: [[將星]] dan [[驛馬]]. [[將星]] (Bintang Panglima) menandakan kemampuan menonjol di lingkungan resmi/karier dan menggenggam kewenangan ([[在官界顯達, 可以掌握權柄]]). [[驛馬]] (Bintang Kuda Pos) menandakan pribadi yang giat dan dinamis, kerap bepergian jauh, banyak peruntungan dalam perjalanan, serta sering berpindah dalam urusan tempat tinggal dan usaha.
+
+dominant_star:
+- hanzi: 將星
+- pinyin: Jiàng Xīng
+- label_id: "Bintang Panglima"
+- active_label: "AKTIF SEKARANG"
+
+strip: CS berbakat memegang kewenangan dan menonjol di lingkungan karier; manfaatkan kewibawaan ini, namun kelola sifat suka berpindah agar fondasi tetap kokoh.
+
+### Rezeki & Caifu
+
+paragraf:
+Menurut layar 財 (財富), CS memiliki hubungan yang erat dengan rezeki tak terduga ([[偏財]]) sehingga relatif mudah memperolehnya, meski sumbernya sendiri tidak begitu berlimpah dan uang cenderung sulit bertahan bila hanya disimpan ([[有錢存不住]]). Rezeki tetap ([[正財]]) tergolong biasa saja dan hubungannya agak renggang ([[正財關係疏遠]]). Catatan layar: [[正財]] adalah sumber rezeki bersifat investasi/penghasilan rutin seperti gaji ([[薪資]]), sedangkan [[偏財]] adalah sumber rezeki bersifat spekulatif seperti komisi ([[佣金]]). Kuncinya, pemasukan perlu segera diwujudkan menjadi aset berwujud, terutama properti ([[變賣不動產才保得住]]), agar nilainya benar-benar kokoh dan tidak lolos begitu saja.
+
+zheng_cai:
+- label: "Rezeki Tetap"
+- percent: "45%"
+- body: Rezeki tetap CS tergolong biasa dan hubungannya agak renggang menurut layar 財富. Pemasukan rutin perlu dikelola dengan disiplin dan tidak diandalkan sebagai satu-satunya sumber.
+
+pian_cai:
+- label: "Rezeki Tak Terduga"
+- percent: "55%"
+- body: Rezeki tak terduga ([[偏財]]) menjadi saluran yang erat dan mudah didapat, namun uangnya cepat datang-pergi. Layar 財富 menegaskan agar segera diwujudkan menjadi properti atau aset agar tidak lolos begitu saja.
+
+rules:
+- title: "Ubah pemasukan jadi aset berwujud"; context: "財富 sebut 變賣不動產才保得住, properti lebih kokoh"; tone: tip
+- title: "Jangan biarkan uang menganggur"; context: "有錢存不住, uang diam mudah lolos"; tone: warn
+- title: "Manfaatkan peluang 偏財 dengan disiplin"; context: "與偏財關係密切, 容易得到 tapi cepat pergi"; tone: tip
+- title: "Hindari spekulasi berlebih saat emosi labil"; context: "porsi 偏財 besar butuh kontrol pengeluaran"; tone: warn
+
+### Karir & Industri
+
+intro:
+Dengan [[用神]] [[火]] dan format [[偏財格]], CS paling bersinar di bidang yang menuntut ekspresi, pancaran energi, dan kemampuan mewujudkan peluang jadi materi. Layar 事業 menyebut sederet bidang konkret yang searah dengannya, dari unsur Api hingga unsur Tanah.
+
+tags:
+- fav_1: hz: 火; label: "PANCARAN"
+- fav_2: hz: 土; label: "ASET"
+- unfav_1: hz: 木; label: "BERLEBIH"
+- unfav_2: hz: 水; label: "PELURUH"
+
+industri:
+- nama: "[[照相]] / Fotografi, Elektronik & Optik"; unsur: 火; alasan: layar 事業 sebut 照相、電器、光學、眼鏡
+- nama: "[[熱飲小吃]] / Kuliner & Pabrik Makanan"; unsur: 火; alasan: layar 事業 sebut 熱飲小吃、食品工廠
+- nama: "[[化妝品]] / Kosmetik, Salon & Sandang"; unsur: 火; alasan: layar 事業 sebut 美容美髮、衣帽百貨、化妝品
+- nama: "[[房地產]] / Properti & Konstruksi"; unsur: 土; alasan: layar 事業 sebut 建築、水泥建材、房地產買賣
+- nama: "[[顧問]] / Konsultan & Barang Antik"; unsur: 土; alasan: layar 事業 sebut 古董、顧問、地師
+
+### Day Master & Wu Xing
+
+paragraf:
+CS adalah [[甲木]], Kayu Yang yang berstatus [[旺]] (kuat) menurut skor 日主旺度 (+6130 vs -2242), diperkuat bagan langka [[天元一氣]] empat [[甲]]. Karena Kayunya sangat rimbun, [[用神]] utamanya adalah [[火]] untuk menyalurkan dan mematangkan bakat ([[脫胎要火]]), didukung [[土]] sebagai [[喜神]] tempat menyalurkan hasil, dan [[金]] sebagai [[閒神]] yang menata.
+
+ji_shen_body:
+Yang sebaiknya diwaspadai adalah tambahan [[木]] sebagai [[忌神]] dan [[水]] sebagai [[仇神]]. [[木]] berlebih justru membuat hutan terlalu rimbun tanpa hasil, sedangkan [[水]] yang membanjir membuat Kayu mengapung tanpa pijakan. Lingkungan, warna, atau bidang yang terlalu didominasi kedua unsur ini sebaiknya diimbangi dengan Api dan Tanah.
+
+### Yang Zhai (Feng Shui Hunian)
+
+paragraf:
+Berdasarkan layar 陽宅 (gua [[艮]]), hunian CS paling baik dengan posisi duduk di Timur Laut menghadap Barat Daya ([[宅宜坐東北向西南大吉]]), dan arah Utara membawa keberuntungan ([[北方大吉]]). Altar baik diletakkan di Barat, Barat Laut, dan Timur Laut. Jalur pintu sebaiknya membuka ke Barat Daya, Barat, atau Barat Laut. Kompor menghadap Timur ke Barat atau Tenggara ke Barat Laut; kamar tidur di Timur Laut, Barat, atau Barat Laut; dan ranjang di Barat, Barat Laut, atau Timur Laut.
+
+zones:
+- label: "Pintu Utama"; headline: "✓ Optimal"; pills: 西南 BD; note: jalur pintu baik membuka ke Barat Daya, Barat, atau Barat Laut
+- label: "Kamar Tidur"; headline: "✓ Optimal"; pills: 東北 TL; note: kamar di Timur Laut, Barat, atau Barat Laut; ranjang Barat/Barat Laut/Timur Laut
+- label: "Dapur / Kompor"; headline: "✓ Baik"; pills: 東 T; note: kompor menghadap Timur ke Barat atau Tenggara ke Barat Laut
+- label: "Kamar Mandi"; headline: "⚠ Perhatikan"; pills: 東 T; note: tempatkan toilet di Timur, Tenggara, atau Selatan menurut layar 陽宅
+- label: "Altar / Sembah"; headline: "✓ Optimal"; pills: 西 B; note: altar baik di Barat, Barat Laut, dan Timur Laut
+- label: "Arah Hoki"; headline: "✓ Optimal"; pills: 北 U; note: arah Utara membara keberuntungan tahun ini (北方大吉)
+
+### Da Yun — Spotlight (Fase Sekarang)
+
+headline: Fase 51–60: Tanah Yin berakar Kelinci ([[己卯]]), Era [[正財]] Pengakaran Rezeki
+
+bullet 1: CS kini di fase [[正財]] (51–60), masa pengakaran rezeki yang stabil dan penekanan pada pengelolaan harta secara konsisten.
+bullet 2: Energi [[己土]] sebagai [[正財]] menuntut disiplin mengubah peluang menjadi aset berwujud yang bertahan.
+bullet 3: Layar 流年 menandai 2026 ([[丙午]]) sebagai tahun memutar otak yang hasilnya bisa setara materi, namun perlu jaga kesehatan dan urusan lidah.
+bullet 4: Fase ini melanjutkan fondasi dari dekade [[偏財]] ([[戊寅]], 41–50) menuju kemapanan yang lebih kokoh.
+
+### Da Yun — 5 Seasons
+
+- umur 11-30: Musim Tunas — fase [[劫財]] dan [[食神]], membentuk kemandirian dan menyalurkan bakat.
+- umur 31-50: Musim Tumbuh — fase [[傷官]] dan [[偏財]], ekspresi berbuah dan peluang rezeki mulai mengakar.
+- umur 51-70: Musim Panen — fase [[正財]] dan [[七殺]], rezeki mapan dan tanggung jawab serta kewenangan menguat.
+- umur 71-90: Musim Matang — fase [[正官]] dan [[偏印]], kedudukan, ketenangan, dan kebijaksanaan.
+- umur 91-110: Musim Teduh — fase [[正印]] dan [[比肩]], ketenangan batin dan kemandirian masa tua.
+
+### Da Yun — Footer Caption
+
+CS di fase [[己卯]] (51–60), era pengakaran rezeki [[正財]] yang melanjutkan kemapanan dari dekade [[偏財]] sebelumnya.
+
+### Palace Detail 1
+
+ming_gong:
+- star: 破軍
+- insight: Istana hidup CS bercirikan [[破軍]] (di [[酉]], bercahaya [[化權]]). Ia memiliki sisi yang keras dan teguh, namun juga punya keluwesan; ia melangkah maju menyusuri jalannya sendiri secara konsisten dengan sikap yang lentur, dan terhadap hal-hal yang merepotkan ia cenderung melepaskannya begitu saja. Ia tergolong pribadi yang sengaja berjalan sendiri ([[特意獨行]]): begitu hatinya tergerak, tak seorang pun mampu menahannya, ia langsung bertindak saat itu juga, dan karena itu benturan dengan orang lain kerap terjadi. Fisiknya sangat tangguh, seakan himpunan sumber energi yang memadat. Perhatiannya terhadap lawan jenis pun sama berkobarnya: begitu menyukai seseorang, tanpa peduli perasaan pihak lain maupun keadaan sekeliling, ia langsung melancarkan pengejaran yang gencar. Namun ada kalanya ia justru memendam dan menekan gejolak hatinya jauh di dasar batin; walau api semangat di dalam hatinya membara, lahiriahnya tetap tampak tenang dan dingin, sehingga peluang yang sudah matang kadang justru terlewat. Ia tergolong tipe yang cerdas. Catatan penting: bila istana hidup ditemani [[廉貞]] (seperti bila berada di [[申]]) atau bersama bintang buruk ([[凶星]]), bencana sulit dihindari; pria dapat menjadi tidak disukai karena sikap yang terlalu kasar/sewenang-wenang, dan tak jarang pula terjerumus dalam perjudian atau urusan asmara yang berbelit. Sebaliknya, bila berada di posisi [[子]] atau [[亥]], ia dapat menjadi sosok pahlawan yang namanya harum ke berbagai penjuru ([[英雄人物名揚四方]]). Wajar bila ia sulit diharapkan bersikap lembut secara umum, sulit menetap seumur hidup di satu tempat, dan mungkin tak terhindar dari nasib hidup yang berpindah-pindah ([[輾轉流浪]]). Wataknya jujur, lugas, dan blak-blakan ([[正直豪爽]]), dengan sedikit sisi pendiam. Penampilannya memang tidak mencolok, tetapi kecerdasannya luar biasa sehingga ia berpeluang besar menjadi seorang cendekiawan yang berhasil dalam penelitian ([[研究有成的學者]]). Perlu diingat, wataknya bisa berubah total ketika sedang marah; dan bila ditemani [[文昌]], ia mampu menampilkan prestasi yang menonjol.
+- action: Salurkan jiwa pelopor dan kecerdasan riset lewat karya nyata; latih konsistensi agar fondasi tak mudah berpindah, dan kendalikan emosi serta dorongan sesaat.
+
+xiongdi:
+- star: 廉貞
+- insight: Menurut istana 兄弟 (di [[申]], [[廉貞]]), CS berteman dengan cara membeda-bedakan (差別待遇): ia tidak serta-merta memaklumi seseorang hanya karena ia saudara atau teman, dan di luar batas tertentu ia bahkan bisa menunjukkan ketidaksukaannya secara terang-terangan. Ia memiliki cukup banyak saudara dan teman, yang umumnya bertipe berenergi tinggi dan terbuka. Namun ia hampir tidak memperoleh bantuan atau keuntungan nyata dari mereka. Bila istana ditemani bintang buruk ([[凶星]]), ada kekhawatiran ia justru kehilangan saudara; dan bila bersama [[太陽]], walau punya saudara, hubungannya bisa terasa seperti orang asing. Sebaliknya, bila ada pengaruh [[文昌]] atau [[文曲]], meski saudara tidak banyak, ia tetap dapat memperoleh sahabat dan saudara yang sehati. Relasi terbaik dibangun atas dasar saling menghormati, tanpa menaruh harapan untuk bersandar.
+- action: Bina pertemanan yang tulus dan sehati; jangan menaruh harapan berlebih untuk memperoleh bantuan dari saudara.
+
+fuqi:
+- star: null
+- insight: Menurut istana 夫妻 (istana pasangan), peruntungan cinta CS tergolong stabil, tenang, dan mulus. Ia seakan tidak berjodoh dengan kisah asmara yang menggebu-gebu dan membara ([[火熱]]), tetapi benih cintanya justru tumbuh dalam keadaan yang sangat wajar dan alami. Walau jalinannya terkesan biasa-biasa saja, inilah justru jenis pernikahan yang memperoleh restu dan ucapan selamat yang tulus serta sepakat dari orang-orang di sekelilingnya. Menurut 全局總論, CS kerap menjumpai sosok pasangannya justru melalui relasi pekerjaan dan usaha; ia tidak gentar pada pasangan, meski kadang sulit menerima begitu saja apa yang dikatakan pasangannya.
+- action: Hargai cinta yang tumbuh wajar dan stabil; bangun rumah tangga atas dasar saling pengertian dan keterbukaan komunikasi.
+
+zinu:
+- star: null
+- insight: Menurut istana 子女, anak CS berperangai periang, lincah, dan penuh keceriaan khas anak-anak ([[孩子氣]]). Ia berpeluang membesarkan anak yang berprestasi gemilang. Namun bila ada bintang buruk ([[凶星]]) yang menghalangi, jodoh dengan anak menjadi tipis. Selain itu, dengan adanya [[天同]] di istana anak yang berada di posisi [[巳]] atau [[午]], anak-anaknya cenderung pandai menjawab dan banyak bicara, tetapi tidak pernah benar-benar mempraktikkannya. Ia bisa memiliki sekelompok anak yang berwatak tenang dan mantap, walau tampaknya ada sedikit kecenderungan sensitif/mudah gugup. Bila ada [[太陰]] di istana anak, anak yang dibesarkannya akan kaya rasa (感受性豐富) dan menonjol dalam bakat sastra (文才卓越); bila memungkinkan, CS sebaiknya sebisa mungkin membantu mengarahkan dan mengembangkan bakat mereka ke arah tersebut.
+- action: Dampingi anak dengan sabar; arahkan bakat sastra/seni mereka dan dorong agar mempraktikkan ucapannya.
+
+### Palace Detail 2
+
+caibo:
+- star: 七殺
+- insight: Istana rezeki CS (di [[巳]], [[紫微]][[七殺]]) menunjukkan bahwa ia sangat berhati-hati dan penuh perhitungan dalam membelanjakan uang, sehingga orang seperti ini sama sekali tak ingin menghamburkan uang untuk perjudian. Bersama [[紫微]], ia bagai terlahir di keluarga yang berkecukupan dan menikmati berkah peruntungan harta; namun bila ada bintang buruk ([[凶星]]) yang mengganggu peruntungan harta, [[紫微]] tak dapat menjalankan fungsinya sebagai bintang keberkahan. Bersama [[天相]] ia pandai menabung dan menyimpan; bersama [[天府]] ia seumur hidup tak pernah risau akan aliran uang yang terus berdatangan. Dengan [[七殺]] di istana ini, ada kemungkinan ia memperoleh rezeki besar yang datang tiba-tiba, seperti memenangi undian atau memperoleh warisan dalam jumlah besar, sehingga kekayaannya bertambah mendadak. Meski [[七殺]] umumnya dipandang sebagai bintang buruk, dilihat dari peruntungan istana rezeki, [[七殺]] di sini justru berfungsi kecil-menguntungkan ([[小吉]]). Peruntungan uangnya tergolong baik. Ciri khas orang seperti ini: punya cara tersendiri yang khas dalam mencari uang, atau mengikuti aturan tertentu, dan sama sekali tidak menyimpang dari jalur yang benar.
+- action: Pertahankan kehati-hatian belanja; bangun aturan dan jalur mencari uang sendiri yang konsisten dan tercatat.
+
+jie_e:
+- star: 天梁
+- insight: Istana kesehatan CS (di [[辰]], [[天機]][[天梁]]) menunjukkan kerentanan pada organ pencernaan, sumsum/tulang belakang, kulit, dan hati ([[肝臟]]). Bila ditemani bintang buruk, rentan masalah kulit atau mata. Secara umum kesehatannya baik, namun perlu mewaspadai gangguan perut yang berawal dari lambung. Pengaruh [[文曲]] di istana ini justru membuatnya jarang berurusan dengan penyakit; ditambah bintang baik lain, kesehatannya amat terjaga. Sebaliknya bila bintang buruk menempati, perlu menjaga ginjal dan telinga.
+- action: Rutin jaga lambung dan pencernaan; perhatikan hati, ginjal, dan telinga.
+
+qianyi:
+- star: 天相
+- insight: Di istana perpindahan ([[遷移]] di [[卯]], [[天相]]), CS kerap menghadapi situasi yang tak terduga, sehingga perpindahan atau pergerakannya tidak selalu berjalan mulus dan logis. Meski demikian, bila ia berganti pekerjaan atau pindah rumah, pada akhirnya ia pasti dapat menyelesaikannya dengan tuntas. Berkat wataknya yang teguh, rendah hati, dan ramah ([[穩重謙和]]), walau memasuki lingkungan baru yang asing, ia tetap memperoleh perhatian dan dukungan serta diangkat oleh atasan. Bila ditemani [[紫微]], ini menjadi peruntungan perubahan yang sangat beruntung; dan bersama [[武曲]], pengembangan keluar dapat menghasilkan usaha yang sukses dengan sumber rezeki yang mengalir deras ([[財源滾滾]]).
+- action: Pertimbangkan matang setiap perpindahan; manfaatkan dukungan atasan saat memasuki lingkungan baru.
+
+puyi:
+- star: null
+- insight: Di istana sahabat dan bawahan ([[僕役]]), CS dapat memiliki bawahan yang bersahaja, ceria, dan aktif. Namun bila istana ini berada di posisi [[丑]], [[戌]], atau [[亥]], bawahannya berwatak keras dan justru bersikap memusuhinya. Bila ditemani [[太陰]], ia punya banyak kawan yang lebih muda usianya; bila ditemani [[巨門]], hubungannya dengan bawahan harmonis dan akrab. Selama masih ada [[太陽]] yang menyertai, ia pasti memperoleh bantuan dari bawahan yang cakap dan berbakat; di luar itu, jodohnya dengan bawahan tergolong tipis. Bahkan akibat kelalaian atau kesalahan bawahan, ia kerap harus berlari ke sana-sini untuk membereskannya. Bawahannya cenderung suka memendam dan memikirkan persoalan sendiri tanpa mau berunding dengannya. Karena itu, CS sebaiknya proaktif mengajukan persoalan lebih dulu dan menanyakan pendapat mereka.
+- action: Proaktif mengajak bawahan berdiskusi dan menanyakan pendapat; bina relasi atas dasar ketulusan.
+
+### Palace Detail 3
+
+guanlu:
+- star: 武曲貪狼
+- insight: Istana karier CS (di [[丑]], [[武曲]][[貪狼]]) cocok untuk pekerjaan yang berkaitan dengan logam dan permesinan, atau profesi sebagai teknisi, guru, pegawai negeri, dan cendekiawan. Ke mana pun ia pergi, ia pasti dapat memperoleh pekerjaan dengan penghasilan tinggi yang stabil. Bila ditambah [[文昌]] atau [[文曲]] di istana yang sama, sebagai pegawai negeri ia dapat menonjol dan menanjak. Sikapnya terhadap pekerjaan sangat sungguh-sungguh dan tulus, bahkan hampir mencapai tingkat keras dan kaku yang tak mau berkompromi, sehingga ia cocok untuk pekerjaan keuangan atau akuntansi. Namun bila ditemani [[武曲]] (bintang yang menandakan perubahan), dikhawatirkan ia akan terseret pusaran persoalan tak terduga di tempat kerja, atau bahkan gagal dalam sengketa buruh-majikan hingga terkena pemberhentian. Terutama bila bersama [[貪狼]], [[破軍]], atau [[七殺]], ia perlu lebih waspada agar tidak terus-menerus menjalani hari dalam keresahan dan ketidaktenangan. Bintang di istana ini memperlihatkan hasrat dan ambisi yang besar; sekali ia menetapkan arah, semangat juangnya yang gigih tak kenal lelah tak kalah dari siapa pun. Di sisi lain, karena ia berpendirian dan berkehendak kuat (自我主張強烈), tampaknya ia kurang cocok berkongsi usaha dengan orang lain atau menjalani profesi yang harus tunduk pada perintah orang. Pekerjaan yang paling cocok baginya adalah yang membuatnya seperti pendekar penyendiri ([[獨行俠]]), selamanya menghadapi tantangan dunia yang belum diketahui. Kelemahannya adalah terlalu serakah serta terlalu bersemangat dan keras kepala; akibatnya, bahkan ketika sudah melangkah ke arah yang keliru, ia bisa terus terbenam tanpa menyadarinya. Karena itu, walau ia mampu mempertahankan arah yang benar, ia tetap membutuhkan seseorang yang secara berkala memberinya nasihat yang tepat. Selama tak ada bintang buruk yang menghalangi, ia sama sekali takkan hanya menjadi pegawai perusahaan biasa.
+- action: Bangun reputasi sebagai ahli yang tepercaya dan pegang peran berinisiatif/mandiri; sediakan penasihat tepercaya untuk mengoreksi arah, dan kelola sifat keras kepala.
+
+tianzhai:
+- star: 太陰
+- insight: Istana properti CS ([[田宅]] di [[子]], [[天同]][[太陰]]) mengisyaratkan aliran rezeki properti yang terus berdatangan kepadanya. Dengan mengandalkan bakatnya yang menonjol dalam memanfaatkan properti, misalnya mengelola/menyewakan apartemen atau jual-beli tanah, ia dapat mengerahkan kemampuannya secara maksimal. Kelemahannya, ia mudah terombang-ambing oleh pendapat orang di sekitarnya; karena itu, saat melakukan transaksi properti, sebisa mungkin jangan biarkan pendapat teman atau kerabat memengaruhinya. Bila istana berada di posisi [[子]], [[寅]], [[卯]], atau [[亥]], ia memperoleh berkah properti; di luar itu tidak ada perkembangan yang terlalu besar, namun bila ia berusaha keras, pada akhirnya ia pasti tetap dapat memiliki properti. Bersama [[天機]], ia bahkan sudah bisa memiliki rumah sendiri sejak muda. Bila ada bintang baik yang menyertai, propertinya melimpah; sebaliknya bila ada bintang buruk, ada kalanya seumur hidup sama sekali tak berjodoh dengan tanah dan tempat tinggal. Hunian yang lebih cocok baginya adalah rumah berwarna gelap atau rumah yang dekat dengan air, dan arah Utara membawa keberuntungan besar ([[北方大吉]]).
+- action: Kelola properti dengan keputusan mandiri, jangan mudah terpengaruh orang lain; pertimbangkan hunian dekat air atau berarah Utara.
+
+fude:
+- star: 天府
+- insight: Istana berkah CS ([[福德]] di [[亥]], [[天府]]) pada dasarnya merupakan pertanda berkah yang dalam dan penuh keberuntungan, sehingga ia pun berpeluang berumur panjang. Catatannya, bila sisi batinnya tampak terlalu murung dan rapuh, hal itu justru dapat menggerus keberkahannya. Ia bertipe periang bawaan ([[樂天派]]): bahkan ketika berbenturan dengan hal apa pun yang tak sesuai harapan, ia tidak akan patah semangat, sehingga ia pasti dapat melewati hari demi hari dengan jiwa yang stabil dan tenang. Perlu diingat, jangan terlalu terpaku pada penampilan luar, melainkan mulailah dari sisi yang lebih dalam untuk memperkaya diri. Bila ditemani bintang baik ([[吉星]]), sepanjang hidupnya akan dipenuhi hal-hal yang menyenangkan.
+- action: Pelihara jiwa optimis bawaan; perkaya batin dan jangan terpaku pada penampilan luar.
+
+fumu:
+- star: null
+- insight: Di istana orang tua ([[父母]]), kedua orang tua CS berwatak kukuh dan mantap, dengan kehidupan ekonomi yang juga berkecukupan. Bila istana berada di posisi [[申]] atau [[酉]], keluarga tergolong makmur dan kedua orang tua sama-sama berumur panjang. Bintang ini menandakan kedua orang tuanya memiliki kepekaan dan cita rasa seni; sejak kanak-kanak CS terpengaruh oleh mereka sehingga menaruh minat yang mendalam pada sastra dan seni, dan kecenderungan idealismenya pun bersumber dari orang tuanya. Namun bila ada bintang buruk ([[凶星]]) yang menempati, dengan diangkat sebagai anak oleh orang lain (過繼), ia justru dapat terhindar dari malapetaka.
+- action: Rawat keterbukaan dengan orang tua; kembangkan minat sastra dan seni yang diwariskan mereka.
+
+### Kesimpulan
+
+quote: "CS adalah Kayu Yang yang kokoh dan lurus dengan bagan langka empat 甲; dengan menyalurkan bakat lewat karya dan mewujudkan peluang jadi aset, namanya akan harum dan rezekinya mengakar di paruh kedua hidup."
+
+stats:
+- format_desc: Format [[偏財格]] membuat CS cakap mewujudkan peluang jadi materi, ditopang watak teguh.
+- yong_desc: Aktifkan [[用神]] [[火]] lewat karya, ekspresi, kuliner-kreatif, dan keahlian terampil.
+- dayun_desc: Fase [[正財]] (51–60) mengakarkan rezeki setelah dekade [[偏財]] yang aktif.
+- umur_desc: Usia 50-an: masa pengelolaan harta dan konsolidasi aset yang stabil.
+- kompat_desc: Cocok dengan shio [[午]] dan [[戌]]; hindari [[巳]] dan [[申]] dalam relasi dekat.
+
+life_map:
+- lalu: Dekade [[偏財]] ([[戊寅]], 41-50) penuh peluang aktif dan pergerakan, membangun fondasi materi.
+- sekarang: Fase [[正財]] ([[己卯]], 51-60) mengakarkan rezeki; 2026 ([[丙午]]) tahun memutar otak yang menuntut kesehatan dan kehati-hatian.
+- berikutnya: Fase [[七殺]] ([[庚辰]], 61-70) membawa tanggung jawab dan kewenangan yang menguat, buah dari kemapanan sekarang.
+
+### Sintesis & Saran Aksi
+
+opening: CS adalah [[甲木]] kuat berbagan langka [[天元一氣]] dengan format [[偏財格]] yang teguh, berprinsip, dan berjiwa pelopor, dengan nasib yang mengakar dan harum saat bakatnya disalurkan keluar.
+
+trio:
+
+kekuatan:
+- hanzi: 棟梁
+- pinyin: Dòng Liáng
+- arti: "Tiang Penyangga"
+- body: CS bagai pohon besar yang kokoh dan lurus, berprinsip dan berwibawa, mampu menjadi sandaran dan pemimpin. Bintang [[將星]] memperkuat kemampuannya memegang kewenangan dan menonjol di lingkungan karier.
+
+tantangan:
+- hanzi: 剛強
+- pinyin: Gāng Qiáng
+- arti: "Terlalu Keras"
+- body: Kelemahan utama CS adalah watak yang terlalu keras dan kurang luwes beradaptasi, serta kecenderungan berpindah-pindah. Ia perlu melatih kesabaran, keterbukaan pada masukan, dan konsistensi agar fondasinya kokoh.
+
+tindakan:
+- hanzi: 脫秀
+- pinyin: Tuō Xiù
+- arti: "Menyalurkan Bakat"
+- body: Panggung optimal CS adalah menyalurkan energi [[用神]] [[火]] lewat karya dan ekspresi, lalu mewujudkan peluang ([[偏財]]) menjadi aset berwujud seperti properti agar rezekinya mengakar dan bertahan.
+
+actions:
+- title: "Salurkan bakat lewat karya dan ekspresi"; context: "用神 火 + 偏財格, 甲木 脫胎要火 butuh penyaluran keluar"
+- title: "Wujudkan pemasukan jadi aset/properti"; context: "財富: 變賣不動產才保得住, uang sulit bertahan bila disimpan"
+- title: "Latih keluwesan dan keterbukaan"; context: "性情: 個性堅強 tapi 缺乏敏捷的應變能力"
+- title: "Manfaatkan kewenangan & jejaring 貴人"; context: "神煞 將星 aktif: menonjol di karier, menggenggam kewenangan"
+- title: "Jaga lambung, hati, ginjal, dan telinga"; context: "疾厄宮: organ pencernaan & hati yang wajib diperhatikan"
+
+## CATATAN
+
+- Nama subjek di foto hanya inisial "CS" (tanpa Hanzi resmi) → hanzi: null (tidak ditransliterasi, sesuai aturan strict).
+- Bagan ini SANGAT langka: [[天元一氣]] (Satu Energi Murni) — keempat batang pilar sama-sama [[甲]] (甲寅/甲戌/甲申/甲子). Day Master [[甲木]] sangat kuat (旺度 +6.130 vs -2.242 → dm_pos_score 6130, dm_neg_score 2242 setelah ×1000). dm_strength=旺.
+- 先天體檢 10 stem + 喜用神 5 shen + canggan: triple-vote 3 agen UNANIMOUS high confidence (audit_decide.py: 19/19 PASS). yong=火, xi=土, xian=金, chou=水, ji=木 (5 unik). Konsisten dengan 甲木 旺 yang butuh 火 洩秀 lalu 火生土(財) → 偏財格.
+- 先天體檢 sum = 14 (甲5 乙0 丙1 丁1 戊3 己0 庚1 辛1 壬1 癸1); wuxing total 木5 火2 土3 金2 水2.
+- ti_xiang dibaca dari kolom 死囚休旺相: 木死, 火囚, 土休, 金旺, 水相 — konsisten dengan kelahiran musim gugur (bulan 戌).
+- canggan per pilar ditulis sesuai urutan visual grid (寅→戊丙甲, 戌→丁辛戊, 申→戊壬庚, 子→癸); ten-god mapping cocok (戊偏財/丙食神/甲比肩 dst).
+- format=偏財格 dibaca dari panel 卦格 (○艮 + 偏財 merah di kotak 卦格). Cell terpisah "正官用事" = 正官 sebagai shen yang 用事/governing; yang_zhai_gua=艮 (○艮 di kotak 卦格, dikuatkan layar 陽宅 ◎艮卦).
+- da_yun_arah=順行 (陽男 + tahun 甲 yang; stem 乙丙丁戊己庚辛壬癸甲 maju), start age 11. Dikuatkan 流年易鑑: 41-50戊寅(偏財), 51-60己卯(正財). Da yun changeover: 每逢甲或己年夏至後3天交大運.
+- dm_pos/neg dari baris 日主旺度 grid utama (+6.130/-2.242). Layar 批命備註 (skor 旺度 detail) TIDAK ada di set foto → semua wangdu_* null.
+- Marriage: triple-vote 3/3 substansi UNANIMOUS — 大吉=午,戌; 吉凶相半=亥; 忌=巳,申; 次吉=其他生肖 (generik). audit_marriage_decide.py keluar exit-3 (STOP) HANYA karena slot A vs B/C beda penamaan tier label (bare vs composite), bukan konflik baca shio. Substansi diterima.
+- 命宮=破軍 (di 酉, 化權) dipastikan dari plate ZiWei: 紫微在巳, 天府在亥 → 命宮酉=破軍陷. Konsisten dgn corner foto layout (田宅子=同陰, 官祿丑=武貪, 福德亥=天府) + narasi 命宮 (英雄人物名揚四方, 體魄健壯, 一生輾轉流浪).
+- Palace main star diisi sesuai derivasi plate + narasi eksplisit: 命宮=破軍, 兄弟=廉貞, 財帛=七殺(+紫微), 疾厄=天梁(+天機), 田宅=太陰(+天同), 福德=天府. Palace lain (夫妻/子女/遷移/僕役/官祿/父母) star=null karena narasi hanya menyebut bintang secara kondisional.
+- shen_sha_list = 將星, 驛馬 (layar 神煞, flat tanpa info pilar → tidak diberi @tag).
+- Set foto = module 四柱論命附加紫微斗數 V2.6 + grid BaZi + plate ZiWei + 流年. Module 先天論命 V2.5 (八字秤骨/凶年/適業/性情總論/福祿總論/命運概論/親屬生剋) TIDAK ada → bone_weight, xiongnian_list, xing_qing_poem/prose, fulu, mingyun, qinshu = null → 2 halaman supplementary auto-skip.
+- nayin, kong_wang, chang_sheng, 12 長生 phase: tidak ada label eksplisit di set foto → null.
+
+## DATA_EXTRA
+
+### 仇神 / 喜神 / 閒神 (dari panel 喜用神 grid utama)
+- chou_shen: 水
+- xi_shen: 土
+- xian_shen: 金
+
+### 先天體檢 per organ (mapping stem → organ TCM)
+- xiantian_organ_jia: 膽
+- xiantian_organ_yi: 肝
+- xiantian_organ_bing: 小腸
+- xiantian_organ_ding: 心
+- xiantian_organ_wu: 胃
+- xiantian_organ_ji: 脾
+- xiantian_organ_geng: 大腸
+- xiantian_organ_xin: 肺
+- xiantian_organ_ren: 膀胱
+- xiantian_organ_gui: 腎
+- xiantian_organ_health_notes: 乙0肝 dan 己0脾 kosong (paling lemah); 甲5膽 paling kuat, 戊3胃 kuat. Perhatikan hati, limpa, dan sistem pencernaan.
+
+### 全局總論 (layar 全局總論)
+- quan_ju_paragraf: Pasangan CS terkadang bersikap kurang masuk akal. Putranya berdaya kerja (操作能力) kuat dan cenderung keras kepala, serta kurang gemar berpikir bertele-tele. Ucapan dari pihak saudara perempuan kurang bisa ia terima. Ia tidak gentar pada istri, namun sulit menerima apa yang istri katakan. Ia kerap memperoleh sosok pasangan justru lewat relasi pekerjaan dan usaha.
+- quan_ju_bullets:
+  - Pasangan kadang bersikap kurang masuk akal
+  - Putra berdaya kerja kuat dan keras kepala
+  - Pasangan dijumpai lewat relasi pekerjaan/usaha
+
+### 事業 (layar 事業 — kutipan langsung)
+- shiye_paragraf: Bidang searah berunsur Api meliputi fotografi, elektronik, optik, kacamata, minuman panas dan jajanan, pabrik makanan, salon kecantikan, sandang dan department store, kritikus/penulis, kosmetik, persenjataan, serta tembakau dan minuman. Bidang pendukung berunsur Tanah: konstruksi, pegadaian, peternakan, semen dan bahan bangunan, jual-beli properti, rumah duka, toko batu nisan, ahli fengshui tanah, barang antik, dan konsultan.
+- shiye_industri_kelompok: 火類 (Api: media, kuliner, kosmetik) + 土類 (Tanah: properti, konstruksi, konsultan)
+
+### 性情 (layar 性情 — kepribadian detail)
+- xing_qing_paragraf: CS mementingkan kebenaran/kesetiaan di atas harta ([[重義不惜財]]), terus terang tanpa kepura-puraan, dan tidak melekat pada benda meski cakap memanfaatkan hal-hal konkret yang bisa ia kendalikan. Ia tidak mengikuti pandangan umum, berwibawa, pantang menyerah, agak otoriter namun jujur dan tulus, berdaya putus yang kuat, dan berjiwa pemimpin. Ia tidak suka menyinggung orang dan tak ingin disinggung; walau tidak membantah pendapat orang, ia juga tidak gampang menerimanya. Tampak penuh tata krama namun kurang luwes dalam basa-basi dan tidak gemar banyak bicara. Ia menghargai dunia materi yang konkret namun tidak melekat, gemar bekerja praktis, berdaya tangkap tinggi, punya semangat maju, berkepribadian kokoh dan berkarakter, hati lurus dan baik, tetapi kurang gesit dalam beradaptasi cepat.
+
+### 古書云 (layar 古書云 — kutipan klasik 三命通會註 / 滴天髓 / 詩云)
+- gushuyun_paragraf_hz: 甲乙晝乎木得宜,要知金水旺為奇,春從南往秋歸北,冬夏西行發福基。甲乙如居申酉鄉,木逢春旺最為良,四柱若逢庫相助,財官雙美不尋常。甲木參天,脫胎要火,春不容金,秋不容土,火熾乘龍,水蕩騎虎,地潤天和,植立千古。
+- gushuyun_terjemahan_id: Bagi pemilik Kayu 甲乙, keserasian Kayu menjadi pokok, dan menguatnya Logam-Air justru menjadi keistimewaan. Bila Kayu berada di wilayah 申酉 dan bertemu musim semi yang menguatkan, itulah yang terbaik; bila keempat pilar bertemu gudang penopang, harta dan kedudukan sama-sama gemilang. 甲木 menjulang ke langit, untuk menyempurnakan diri butuh Api; di musim semi tak menerima Logam, di musim gugur tak menerima Tanah; bila bumi lembap dan langit selaras, ia berdiri tegak menembus zaman.
+
+### 流年判斷 (prediksi tafsir per tahun, dari layar 流年)
+- liu_nian_predictions:
+  - tahun 2026 (usia 53, [[丙午]]): Apa yang dipikirkan bisa setara hasil materi; manfaatkan momentum memutar otak. Suasana hati kurang stabil, karier bisa bergeser; pengaruh 官符 & 火煞 menuntut hati-hati pada urusan hukum, lidah, dan kesehatan, terutama bulan 1/4/7/11.
+  - tahun 2027 (usia 54, [[丁未]]): Peluang membawa pencapaian ideal; pengaruh 死符 & 暗耀 menuntut waspada urusan duka & lidah, bulan 2/5/8/12. Watak hemat dan tertutup; bila membuka diri, rezeki membaik. Paruh akhir hidup lebih beruntung.
+  - tahun 2028 (usia 55, [[戊申]]): Ada bantuan 貴人 menuju pencapaian ideal; karier/jabatan bergeser. Pengaruh 歲破 & 太陰 menuntut hati-hati soal harta & keluarga, bulan 3/6/9/12. Jaga ketekunan agar tak gegabah.
+  - tahun 2029 (usia 56, [[己酉]]): Bantuan 貴人 menuju ideal; 龍德 membawa rezeki di rumah, 天掃 menuntut waspada urusan duka, bulan 1/4/7/12. Daya cipta tinggi, disukai orang; kesehatan menguat seiring usia.
+  - tahun 2030 (usia 57, [[庚戌]]): Peluang membawa cita-cita; 白虎 menuntut waspada lidah & kebocoran harta, 天喜 membawa kabar gembira & rezeki, hati-hati luka/darah, bulan 1/4/7/11. Ramah dan pandai bergaul.
+  - tahun 2031 (usia 58, [[辛亥]]): Urusan merepotkan bertambah; 福德 menaikkan kedudukan & cocok menambah aset, 無常 menuntut waspada hal tak terduga & penyakit, bulan 4/7/8, jaga dari air & api. Berbakat, disukai, cocok jadi penasihat andal.
+
+### Bintang Zi Wei per palace (dari plate 紫微 — derivasi 紫微在巳/天府在亥)
+- ziwei_stars_ming: 破軍
+- ziwei_stars_xiongdi: 廉貞
+- ziwei_stars_caibo: 紫微七殺
+- ziwei_stars_jie_e: 天機天梁
+- ziwei_stars_qianyi: 天相
+- ziwei_stars_puyi: 太陽巨門
+- ziwei_stars_guanlu: 武曲貪狼
+- ziwei_stars_tianzhai: 天同太陰
+- ziwei_stars_fude: 天府
+
+### Score BaZi raw
+- dm_score_raw: +6.130 / -2.242
+
+### 十神 per Pilar
+- shi_shen_per_pilar:
+  - tahun: 比肩
+  - bulan: 比肩
+  - hari: 主
+  - jam: 比肩
+
+### 命宮 dari Main BaZi Grid
+- ming_gong_bazi: 辛未
+
+### 婚配 Tafsir Raw (layar 婚配)
+- marriage_cocok_tafsir: 宜配相馬(午)、狗(戌)大吉,豬(亥)吉凶相半,其他生肖次吉。永結同心,德望日高終成大業,富榮譽,福壽興家之大吉,子孫昌盛矣。
+- marriage_hindari_tafsir: 忌配相蛇(巳)、猴(申)。夫妻相剋或不和,憂愁不絕,無成功之望,有破敗之嫌,一生難免空虛寂寞之感,致傷疾短命之苦。

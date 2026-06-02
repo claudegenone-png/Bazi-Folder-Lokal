@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Zhuang Xiao Min, 健康 Kesehatan</title>
+<style>
+  /* ============================================================
+     STANDALONE PREVIEW — v7.1 page_health.html mockup
+     Untuk preview di browser. CSS inline, tidak butuh style.css.
+     Saat compile ke v7.1 production, ganti :root vars dengan
+     <link rel="stylesheet" href="style.css"> dari v7.1/templates.
+     ============================================================ */
+
+  :root {
+    --red: #B8001F;
+    --red-soft: #D44A5C;
+    --gold: #C9A961;
+    --gold-soft: #E0C896;
+    --teal: #1F7A8C;
+    --teal-soft: #4FA1B0;
+    --green: #5B8C3E;
+    --blue: #2E5C8A;
+    --brown: #8B6F47;
+    --silver: #909396;
+    --bg: #FAF7F2;
+    --text: #2C2A26;
+    --text-muted: #75716A;
+    --line: #E0DCD2;
+  }
+
+  @page { size: A4 portrait; margin: 0; }
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0; padding: 0; background: #ddd;
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: var(--text);
+  }
+
+  .page {
+    width: 210mm; height: 297mm;
+    background: var(--bg);
+    margin: 8mm auto; padding: 12mm 14mm;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 4mm;
+    overflow: hidden;
+    box-shadow: 0 2mm 8mm rgba(0,0,0,0.15);
+  }
+
+  /* === HEADER === */
+  .page-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: end;
+    gap: 5mm;
+    padding-bottom: 3mm;
+    border-bottom: 0.4mm solid var(--gold);
+  }
+  .h-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 28pt; font-weight: 700;
+    color: var(--gold); line-height: 1;
+  }
+  .h-titles { text-align: left; }
+  .h-cn {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 16pt; color: var(--red);
+    letter-spacing: 6px; font-weight: 700; line-height: 1.2;
+  }
+  .h-id {
+    font-family: 'Playfair Display', serif;
+    font-size: 13pt; color: var(--text);
+    font-weight: 600; letter-spacing: 1px;
+  }
+  .h-section {
+    font-size: 7.5pt; color: var(--text-muted);
+    font-style: italic; letter-spacing: 0.5px;
+    text-align: right;
+  }
+
+  /* === SUBJECT BAR === */
+  .subject-bar {
+    display: grid;
+    grid-template-columns: 18mm 1fr auto;
+    align-items: center;
+    gap: 5mm;
+    background: white;
+    border-radius: 2mm;
+    padding: 3mm 5mm;
+    border: 0.3mm solid var(--line);
+  }
+  .subject-shio {
+    width: 15mm; height: 15mm;
+    background: var(--bg);
+    border: 0.4mm solid var(--gold);
+    border-radius: 50%; padding: 1mm;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .subject-shio img { width: 100%; height: 100%; object-fit: contain; }
+  .subject-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 12pt; font-weight: 700;
+    color: var(--text);
+  }
+  .subject-detail {
+    font-size: 7.5pt; color: var(--text-muted);
+    margin-top: 1mm;
+  }
+  .subject-dm .label {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 8pt; color: var(--text-muted);
+    letter-spacing: 2px; text-align: right;
+  }
+  .subject-dm .value {
+    font-family: 'Playfair Display', serif;
+    font-size: 11pt; font-weight: 700;
+    color: var(--red); text-align: right;
+  }
+
+  /* === CONTENT GRID === */
+  .content-health {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 4mm;
+    overflow: hidden;
+  }
+
+  /* === BLOCK A: 10-Organ Energy Map === */
+  .health-organ {
+    background: linear-gradient(135deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 4mm 5mm 3mm;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 2.5mm;
+  }
+  .health-eyebrow {
+    border-bottom: 0.2mm solid var(--gold-soft);
+    padding-bottom: 1.5mm;
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .health-eyebrow .id {
+    font-family: 'Playfair Display', serif;
+    font-size: 11pt; color: var(--red);
+    font-weight: 700; letter-spacing: 1px;
+  }
+  .health-eyebrow .id .sub {
+    font-family: 'Inter', sans-serif;
+    font-size: 6.5pt; color: var(--text-muted);
+    font-style: italic; font-weight: 400;
+    letter-spacing: 0.5px; margin-left: 2.5mm;
+  }
+  .health-eyebrow .hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 9pt; color: var(--text-muted);
+    font-weight: 600; letter-spacing: 3px;
+  }
+
+  .organ-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 2.5mm;
+  }
+
+  .organ-card {
+    background: white;
+    border: 0.4mm solid var(--line);
+    border-radius: 1.5mm;
+    padding: 2mm 1.5mm;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 1mm;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  /* Color rules per count */
+  .organ-card.lemah {
+    background: #FBE9E7;
+    border-color: var(--red-soft);
+  }
+  .organ-card.lemah .organ-count { color: var(--red); }
+  .organ-card.normal {
+    background: #F0F4F0;
+    border-color: var(--green);
+  }
+  .organ-card.normal .organ-count { color: var(--green); }
+  .organ-card.tinggi {
+    background: #FFF4DC;
+    border-color: var(--gold);
+    box-shadow: inset 0 0 2mm rgba(201,169,97,0.25);
+  }
+  .organ-card.tinggi .organ-count { color: var(--gold); font-weight: 700; }
+
+  .organ-stem {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 14pt; font-weight: 700;
+    color: var(--text); line-height: 1;
+  }
+  .organ-name {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 8.5pt; color: var(--text);
+    line-height: 1.1;
+  }
+  .organ-name .id {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 6.2pt; color: var(--text-muted);
+    margin-top: 0.5mm; letter-spacing: 0.3px;
+  }
+  .organ-count {
+    font-family: 'Playfair Display', serif;
+    font-size: 18pt; font-weight: 700;
+    line-height: 1;
+  }
+  .organ-element {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 7pt; font-weight: 700;
+    padding: 0.4mm 0;
+    border-radius: 1mm;
+    color: white;
+    letter-spacing: 1px;
+  }
+  .el-mu  { background: var(--green); }
+  .el-huo { background: var(--red); }
+  .el-tu  { background: var(--brown); }
+  .el-jin { background: var(--silver); }
+  .el-shui { background: var(--blue); }
+
+  /* Insight strip in Block A */
+  .organ-insight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3mm;
+    padding-top: 1.5mm;
+    border-top: 0.2mm dashed var(--gold-soft);
+    font-size: 7.5pt;
+    color: var(--text);
+    line-height: 1.4;
+  }
+  .organ-insight .insight-label {
+    font-weight: 700;
+    color: var(--red);
+    letter-spacing: 0.3px;
+  }
+
+  /* === BLOCK B: 疾厄 ZiWei Penyakit === */
+  .health-jie {
+    background: white;
+    border: 0.5mm solid var(--teal-soft);
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 2.5mm;
+    overflow: hidden;
+  }
+  .jie-eyebrow {
+    border-bottom: 0.2mm solid var(--teal-soft);
+    padding-bottom: 1.5mm;
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .jie-eyebrow .id {
+    font-family: 'Playfair Display', serif;
+    font-size: 11pt; color: var(--teal);
+    font-weight: 700; letter-spacing: 1px;
+  }
+  .jie-eyebrow .id .sub {
+    font-family: 'Inter', sans-serif;
+    font-size: 6.5pt; color: var(--text-muted);
+    font-style: italic; font-weight: 400;
+    letter-spacing: 0.5px; margin-left: 2.5mm;
+  }
+  .jie-eyebrow .hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 9pt; color: var(--text-muted);
+    font-weight: 600; letter-spacing: 3px;
+  }
+
+  .jie-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4mm;
+    overflow: hidden;
+  }
+  .jie-hanzi-box {
+    background: #F5F1E8;
+    border-left: 0.6mm solid var(--gold);
+    padding: 3mm 3.5mm;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 7.5pt;
+    color: var(--text);
+    line-height: 1.7;
+    text-align: justify;
+  }
+  .jie-indo-list {
+    font-size: 7.5pt;
+    color: var(--text);
+    line-height: 1.45;
+  }
+  .jie-indo-list ul {
+    margin: 0; padding-left: 4mm;
+  }
+  .jie-indo-list li {
+    margin-bottom: 1.5mm;
+  }
+  .jie-indo-list li strong {
+    color: var(--red);
+  }
+
+  .jie-footer {
+    background: linear-gradient(90deg, var(--red) 0%, var(--red-soft) 100%);
+    color: white;
+    padding: 0.8mm 4mm;
+    border-radius: 1.5mm;
+    font-size: 8pt;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-align: center;
+    line-height: 1.3;
+  }
+  .jie-footer .label {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 8.5pt; margin-right: 2mm;
+    font-weight: 700;
+  }
+
+  /* === FOOTER === */
+  .page-footer {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 3mm;
+    border-top: 0.3mm solid var(--line);
+    font-size: 7pt; color: var(--text-muted);
+  }
+  .footer-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600; color: var(--text);
+  }
+  .footer-pages {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold); font-weight: 700;
+  }
+
+  /* === AUTO-HIDE LOGIC ===
+     - Kalau xiantian semua null → .health-organ[data-empty="true"] { display:none }
+     - Kalau jie_e_palace null → .health-jie[data-empty="true"] { display:none }
+     - Kalau both empty → page_health di-skip via parse_md.py logic
+       (sama dengan project_v7_skip_pages_dynamic_numbering.md mechanism)
+  */
+  [data-empty="true"] { display: none !important; }
+
+  /* When only ONE block present, expand to fill available space */
+  .content-health.only-organ .health-organ { grid-row: 1 / -1; }
+  .content-health.only-jie .health-jie { grid-row: 1 / -1; }
+</style>
+</head>
+<body>
+
+<section class="page">
+
+  <!-- HEADER -->
+  <header class="page-header">
+    <div class="h-num">16</div>
+    <div class="h-titles">
+      <div class="h-cn">健 康</div>
+      <div class="h-id">Kesehatan &amp; Organ Tubuh</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi · Kesehatan</div>
+  </header>
+
+  <!-- SUBJECT BAR -->
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Kerbau-Merah.svg" alt="Kerbau"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Zhuang Xiao Min · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">丑 Kerbau</span></div>
+      <div class="subject-detail">8 April 1961 · 13:58 · Pria · 民國 50 年 4 月 8 日</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">健 康</div>
+      <div class="value">Kesehatan</div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <main class="content-health">
+
+    <!-- BLOCK A: 10-Organ Energy Map -->
+    <div class="health-organ" data-slot="organ" data-empty="false">
+      <div class="health-eyebrow">
+        <span class="id">Peta Energi 10 Organ<span class="sub">Xiān Tiān Tǐ Jiǎn · 先天體檢</span></span>
+        <span class="hz">先 天 體 檢</span>
+      </div>
+
+      <div class="organ-grid">
+        <!-- Row 1: Yang stems (甲丙戊庚壬) -->
+        <div class="organ-card lemah">
+          <div class="organ-stem">甲</div>
+          <div class="organ-name">膽<span class="id">Empedu</span></div>
+          <div class="organ-count">0</div>
+          <div class="organ-element el-mu">木</div>
+        </div>
+        <div class="organ-card lemah">
+          <div class="organ-stem">丙</div>
+          <div class="organ-name">小腸<span class="id">Usus halus</span></div>
+          <div class="organ-count">0</div>
+          <div class="organ-element el-huo">火</div>
+        </div>
+        <div class="organ-card normal">
+          <div class="organ-stem">戊</div>
+          <div class="organ-name">胃<span class="id">Lambung</span></div>
+          <div class="organ-count">1</div>
+          <div class="organ-element el-tu">土</div>
+        </div>
+        <div class="organ-card lemah">
+          <div class="organ-stem">庚</div>
+          <div class="organ-name">大腸<span class="id">Usus besar</span></div>
+          <div class="organ-count">0</div>
+          <div class="organ-element el-jin">金</div>
+        </div>
+        <div class="organ-card normal">
+          <div class="organ-stem">壬</div>
+          <div class="organ-name">膀胱<span class="id">Kandung kemih</span></div>
+          <div class="organ-count">1</div>
+          <div class="organ-element el-shui">水</div>
+        </div>
+
+        <!-- Row 2: Yin stems (乙丁己辛癸) -->
+        <div class="organ-card tinggi">
+          <div class="organ-stem">乙</div>
+          <div class="organ-name">肝<span class="id">Hati</span></div>
+          <div class="organ-count">4</div>
+          <div class="organ-element el-mu">木</div>
+        </div>
+        <div class="organ-card normal">
+          <div class="organ-stem">丁</div>
+          <div class="organ-name">心<span class="id">Jantung</span></div>
+          <div class="organ-count">2</div>
+          <div class="organ-element el-huo">火</div>
+        </div>
+        <div class="organ-card tinggi">
+          <div class="organ-stem">己</div>
+          <div class="organ-name">脾<span class="id">Limpa</span></div>
+          <div class="organ-count">3</div>
+          <div class="organ-element el-tu">土</div>
+        </div>
+        <div class="organ-card tinggi">
+          <div class="organ-stem">辛</div>
+          <div class="organ-name">肺<span class="id">Paru-paru</span></div>
+          <div class="organ-count">3</div>
+          <div class="organ-element el-jin">金</div>
+        </div>
+        <div class="organ-card normal">
+          <div class="organ-stem">癸</div>
+          <div class="organ-name">腎<span class="id">Ginjal</span></div>
+          <div class="organ-count">2</div>
+          <div class="organ-element el-shui">水</div>
+        </div>
+      </div>
+
+      <div class="organ-insight">
+        <div>
+          <span class="insight-label">⬆ Paling Aktif:</span>
+          <span>肝 Hati (4) — risiko overload, perlu monitor</span>
+        </div>
+        <div>
+          <span class="insight-label">⬇ Lemah / Jaga:</span>
+          <span>膽 Empedu, 小腸 Usus halus, 大腸 Usus besar (semua 0)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCK B: 疾厄 Penyakit Rentan -->
+    <div class="health-jie" data-slot="jie_e" data-empty="false">
+      <div class="jie-eyebrow">
+        <span class="id">Penyakit Rentan<span class="sub">Jí È · 疾厄 Palace · ZiWei Doushu</span></span>
+        <span class="hz">疾 厄</span>
+      </div>
+
+      <div class="jie-grid">
+        <!-- Hanzi block (verbatim foto) -->
+        <div class="jie-hanzi-box">
+          易患肝病。顏面神經痛。及失眠引起的神經衰弱。易患與肝臟有關的疾病。遇有凶星同宮者，易患皮膚或眼睛方面的疾病。如與太陰星同宮的話，大概經常為腫脹所困擾不已吧！似乎易患胃腸、胰臟等內臟的疾病以及皮膚病等。如與太陽星同宮的話，易患頭部的疾病，再與其他凶星同宮時，小心會因飲酒過度而患病。如疾厄宮內僅有文昌一星在位的話，絕少患疾病。凶星在位的話，易為疾病所苦。主的是須留心肺部及耳朵的疾病。
+        </div>
+
+        <!-- Indo translation bullets -->
+        <div class="jie-indo-list">
+          <ul>
+            <li>Rentan <strong>penyakit hati</strong>, sakit saraf wajah, dan kelelahan saraf akibat insomnia.</li>
+            <li>Rentan penyakit yang berhubungan dengan <strong>hati</strong> (organ).</li>
+            <li>Bila ada bintang sial di palace yang sama, rentan penyakit <strong>kulit atau mata</strong>.</li>
+            <li>Bila bersama bintang <strong>太陰</strong> (Bulan), sering terganggu pembengkakan.</li>
+            <li>Tampaknya rentan penyakit <strong>lambung-usus, pankreas, organ dalam</strong>, dan penyakit kulit.</li>
+            <li>Bila bersama bintang <strong>太陽</strong> (Matahari), rentan penyakit kepala. Hati-hati sakit karena alkohol berlebihan.</li>
+            <li>Bila di palace 疾厄 hanya ada <strong>文昌</strong> (Akademik), sangat jarang sakit.</li>
+            <li>Bila bintang sial yang ada, rentan tersiksa penyakit.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="jie-footer">
+        <span class="label">主 · Yang Utama:</span>
+        Jaga <strong>paru-paru (肺)</strong> dan <strong>telinga (耳)</strong>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="page-footer">
+    <div class="footer-name">Zhuang Xiao Min · 莊小敏</div>
+    <div class="footer-pages">16 / 27</div>
+  </footer>
+
+</section>
+
+</body>
+</html>

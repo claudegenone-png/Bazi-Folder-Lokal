@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Daftar Isi · Template Shared</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-toc { grid-template-rows: 1fr !important; }
+  .toc-frame {
+    background: var(--bg-card); border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm; padding: 3mm 5mm;
+    display: flex; flex-direction: column;
+    gap: 1.5mm; overflow: hidden;
+  }
+  .toc-eyebrow {
+    text-align: center;
+    border-bottom: 0.3mm solid var(--gold-soft);
+    padding-bottom: 1.5mm;
+    flex-shrink: 0;
+  }
+  .toc-eyebrow .cn {
+    font-family: 'Noto Serif TC', serif; font-size: 14pt;
+    color: var(--red); letter-spacing: 5px; font-weight: 700;
+    line-height: 1;
+  }
+  .toc-eyebrow .id {
+    font-family: 'Playfair Display', serif; font-size: 8pt;
+    font-style: italic; color: var(--text-muted);
+    margin-top: 0.3mm; letter-spacing: 1.2px;
+  }
+
+  .toc-list { display: flex; flex-direction: column; gap: 0.5mm; flex: 1; min-height: 0; }
+
+  .toc-section {
+    display: grid; grid-template-columns: 10mm 1fr;
+    gap: 2.5mm; align-items: center;
+    padding: 0.6mm 2mm;
+    background-color: #F5EBD0;
+    background: linear-gradient(90deg, var(--gold-bg), transparent);
+    border-left: 0.7mm solid var(--gold);
+    border-radius: 0 1mm 1mm 0;
+    flex-shrink: 0;
+  }
+  .toc-section .num {
+    font-family: 'Noto Serif TC', serif; font-size: 10pt;
+    color: var(--red); letter-spacing: 1px; font-weight: 700;
+  }
+  .toc-section .title {
+    font-family: 'Noto Serif TC', serif; font-size: 8.5pt;
+    color: var(--red); font-weight: 700; letter-spacing: 1.5px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .toc-section .title .id {
+    font-family: 'Playfair Display', serif; font-size: 6.8pt;
+    font-style: italic; color: var(--text); margin-left: 2mm;
+    letter-spacing: 0.3px; font-weight: 400;
+  }
+
+  .toc-rows { display: flex; flex-direction: column; gap: 0; flex-shrink: 0; }
+  .toc-row {
+    display: grid; grid-template-columns: 9mm 5mm 1fr;
+    gap: 2mm; align-items: baseline;
+    padding: 0.5mm 2mm 0.5mm 5mm;
+    border-bottom: 0.15mm dotted var(--gold-soft);
+    font-size: 7pt;
+  }
+  .toc-row:last-child { border-bottom: none; }
+  .toc-row .pg {
+    font-family: 'Playfair Display', serif;
+    font-size: 7.5pt; color: var(--gold);
+    font-weight: 700; text-align: right;
+  }
+  .toc-row .ico {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 8.5pt; color: var(--red); font-weight: 600;
+    text-align: center; line-height: 1;
+  }
+  .toc-row .name {
+    color: var(--text); font-weight: 500; line-height: 1.2;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .toc-row .name strong { color: var(--red); font-family: 'Noto Serif TC', serif; margin-right: 1.2mm; }
+  .toc-row .gloss { font-size: 6pt; color: var(--text-muted); font-style: italic; margin-left: 1mm; }
+
+  /* === AUTO-SHRINK FONT (kalau TOC overflow) === */
+  /* JS-driven: kalau scrollHeight > clientHeight, kurangi font sampai fit */
+  .toc-frame.shrunk-1 .toc-row { font-size: 6.5pt; padding: 0.35mm 2mm 0.35mm 5mm; }
+  .toc-frame.shrunk-1 .toc-row .pg { font-size: 7pt; }
+  .toc-frame.shrunk-1 .toc-row .ico { font-size: 8pt; }
+  .toc-frame.shrunk-1 .toc-row .gloss { font-size: 5.5pt; }
+
+  .toc-frame.shrunk-2 .toc-row { font-size: 6pt; padding: 0.2mm 2mm 0.2mm 5mm; }
+  .toc-frame.shrunk-2 .toc-row .pg { font-size: 6.5pt; }
+  .toc-frame.shrunk-2 .toc-row .ico { font-size: 7.5pt; }
+  .toc-frame.shrunk-2 .toc-row .gloss { font-size: 5pt; }
+  .toc-frame.shrunk-2 .toc-section { padding: 0.4mm 2mm; }
+  .toc-frame.shrunk-2 .toc-section .num { font-size: 9pt; }
+  .toc-frame.shrunk-2 .toc-section .title { font-size: 8pt; }
+  .toc-frame.shrunk-2 .toc-section .title .id { font-size: 6.2pt; }
+
+</style>
+</head>
+<body>
+<section class="page no-bar">
+  <header class="page-header">
+    <div class="h-num">{{PAGE_NUM_PADDED}}</div>
+    <div class="h-titles">
+      <div class="h-cn">目 錄</div>
+      <div class="h-id">Daftar Isi</div>
+    </div>
+    <div class="h-section">Pendahuluan</div>
+  </header>
+
+  <main class="content content-toc">
+    <div class="toc-frame">
+      <div class="toc-eyebrow">
+        <div class="cn">目 錄</div>
+        <div class="id">Mù Lù, Peta Perjalanan Bagan Anda</div>
+      </div>
+
+      <div class="toc-list">
+
+        <!-- BAGIAN 0: PENDAHULUAN -->
+        <div class="toc-section">
+          <div class="num">序</div>
+          <div class="title">序 言<span class="id">Pendahuluan · Pages {{SECTION_PENDAHULUAN_RANGE}}</span></div>
+        </div>
+        <div class="toc-rows">
+          <div class="toc-row" data-target="page_01_cover.html"><div class="pg">01</div><div class="ico">封</div><div class="name">Cover<span class="gloss">, Sampul</span></div><div></div></div>
+          <div class="toc-row" data-target="page_02_toc.html"><div class="pg">02</div><div class="ico">目</div><div class="name">Daftar Isi<span class="gloss">, Mù Lù 目錄 (halaman ini)</span></div><div></div></div>
+          <div class="toc-row" data-target="page_03_intro.html"><div class="pg">03</div><div class="ico">引</div><div class="name">Pengantar &amp; Cara Membaca<span class="gloss">, Yǐn Yán 引言</span></div><div></div></div>
+          <div class="toc-row" data-target="page_profile.html"><div class="pg">04</div><div class="ico">柱</div><div class="name"><strong>四柱</strong>Profil &amp; Empat Pilar<span class="gloss">, Sì Zhù · Empat Pilar</span></div><div></div></div>
+        </div>
+
+        <!-- BAGIAN I: BAZI -->
+        <div class="toc-section">
+          <div class="num">壹</div>
+          <div class="title">八 字 四 柱<span class="id">Bagian I · BaZi · Pages {{SECTION_BAZI_RANGE}}</span></div>
+        </div>
+        <div class="toc-rows">
+          <div class="toc-row" data-target="page_05_bazi_opener.html"><div class="pg">05</div><div class="ico">·</div><div class="name">Pembuka Bab, 八字 BaZi</div><div></div></div>
+          <div class="toc-row" data-target="page_06_daymaster.html"><div class="pg">06</div><div class="ico">主</div><div class="name"><strong>日主</strong>Penguasa Hari &amp; 五行 Wu Xing Radar<span class="gloss">, Rì Zhǔ + Wǔ Xíng</span></div><div></div></div>
+          <div class="toc-row" data-target="page_marriage.html"><div class="pg">07</div><div class="ico">配</div><div class="name"><strong>婚配</strong>Kompatibilitas Jodoh<span class="gloss">, Hūn Pèi · Kompatibilitas</span></div><div></div></div>
+          <div class="toc-row" data-target="page_10_shensha.html"><div class="pg">10</div><div class="ico">煞</div><div class="name"><strong>神煞</strong>Bintang Nasib<span class="gloss">, Shén Shà · Bintang Berkah</span></div><div></div></div>
+          <div class="toc-row" data-target="page_11_caifu.html"><div class="pg">11</div><div class="ico">財</div><div class="name"><strong>財富</strong>Kekayaan &amp; Rezeki<span class="gloss">, Cái Fù · Rezeki</span></div><div></div></div>
+          <div class="toc-row" data-target="page_career.html"><div class="pg">12</div><div class="ico">業</div><div class="name"><strong>事業</strong>Karir &amp; Profesi<span class="gloss">, Shì Yè · Karir</span></div><div></div></div>
+          <div class="toc-row" data-target="page_yangzhai.html"><div class="pg">13</div><div class="ico">宅</div><div class="name"><strong>陽宅</strong>Feng Shui Hunian<span class="gloss">, Yáng Zhái · Home Feng Shui</span></div><div></div></div>
+          <div class="toc-row" data-target="page_dayun.html"><div class="pg">14</div><div class="ico">運</div><div class="name"><strong>大運</strong>Garis Hidup<span class="gloss">, Dà Yùn · Siklus 10 Tahunan</span></div><div></div></div>
+          <div class="toc-row" data-target="page_liunian_2026.html"><div class="pg">15</div><div class="ico">流</div><div class="name"><strong>流年 2026</strong>Prediksi Tahun 2026<span class="gloss">, 民國 115 · 丙午 · Usia 26</span></div><div></div></div>
+          <div class="toc-row" data-target="page_liunian_2027.html"><div class="pg">16</div><div class="ico">流</div><div class="name"><strong>流年 2027</strong>Prediksi Tahun 2027<span class="gloss">, 民國 116 · 丁未 · Usia 27</span></div><div></div></div>
+          <div class="toc-row" data-target="page_liunian_2028.html"><div class="pg">17</div><div class="ico">流</div><div class="name"><strong>流年 2028</strong>Prediksi Tahun 2028<span class="gloss">, 民國 117 · 戊申 · Usia 28</span></div><div></div></div>
+          <div class="toc-row" data-target="page_liunian_2029.html"><div class="pg">18</div><div class="ico">流</div><div class="name"><strong>流年 2029</strong>Prediksi Tahun 2029<span class="gloss">, 民國 118 · 己酉 · Usia 29</span></div><div></div></div>
+          <div class="toc-row" data-target="page_liunian_2030.html"><div class="pg">19</div><div class="ico">流</div><div class="name"><strong>流年 2030</strong>Prediksi Tahun 2030<span class="gloss">, 民國 119 · 庚戌 · Usia 30</span></div><div></div></div>
+          <div class="toc-row" data-target="page_liunian_2031.html"><div class="pg">20</div><div class="ico">流</div><div class="name"><strong>流年 2031</strong>Prediksi Tahun 2031<span class="gloss">, 民國 120 · 辛亥 · Usia 31</span></div><div></div></div>
+          <div class="toc-row" data-target="page_health.html"><div class="pg">21</div><div class="ico">健</div><div class="name"><strong>健康</strong>Kesehatan &amp; Organ Tubuh<span class="gloss">, 10 Organ Map + 疾厄 Penyakit Rentan</span></div><div></div></div>
+          <div class="toc-row" data-target="page_watak_nasib.html"><div class="pg">22</div><div class="ico">先</div><div class="name"><strong>先天論命</strong>Watak &amp; Nasib Bawaan<span class="gloss">, 性情 · 福祿 · 命運概論</span></div><div></div></div>
+          <div class="toc-row" data-target="page_waktu_lahir.html"><div class="pg">23</div><div class="ico">親</div><div class="name"><strong>親屬生剋</strong>Pengaruh Waktu Lahir<span class="gloss">, 時頭 · 時中 · 時末生</span></div><div></div></div>
+          <div class="toc-row" data-target="page_16_lampiran.html"><div class="pg">22</div><div class="ico">補</div><div class="name"><strong>Informasi Tambahan</strong><span class="gloss">Berat Tulang + 古書云 + 凶年 (kalau tersedia)</span></div><div></div></div>
+        </div>
+
+        <!-- BAGIAN II: ZI WEI -->
+        <div class="toc-section">
+          <div class="num">貳</div>
+          <div class="title">紫 微 斗 數<span class="id">Bagian II · Zi Wei · Pages {{SECTION_ZIWEI_RANGE}}</span></div>
+        </div>
+        <div class="toc-rows">
+          <div class="toc-row" data-target="page_15_ziwei_opener.html"><div class="pg">18</div><div class="ico">·</div><div class="name">Pembuka Bab, 紫微 Zi Wei</div><div></div></div>
+          <div class="toc-row" data-target="page_ziwei.html"><div class="pg">19</div><div class="ico">宫</div><div class="name"><strong>十二宮</strong>Overview 12 Istana<span class="gloss">, Shí Èr Gōng · 12 Palaces</span></div><div></div></div>
+          <div class="toc-row" data-target="page_palace_ming_gong.html"><div class="pg">00</div><div class="ico">命</div><div class="name"><strong>命宮</strong>Diri (Pusat Hidup)<span class="gloss">, Mìng Gōng · Pusat Hidup</span></div><div></div></div>
+          <div class="toc-row" data-target="page_palace_xiongdi.html"><div class="pg">00</div><div class="ico">兄</div><div class="name"><strong>兄弟</strong>Saudara<span class="gloss">, Xiōng Dì · Saudara</span></div><div></div></div>
+          <div class="toc-row" data-target="page_palace_fuqi.html"><div class="pg">00</div><div class="ico">夫</div><div class="name"><strong>夫妻</strong>Pasangan<span class="gloss">, Fū Qī · Pasangan</span></div><div></div></div>
+          <div class="toc-row" data-target="page_palace_zinu.html"><div class="pg">00</div><div class="ico">子</div><div class="name"><strong>子女</strong>Anak<span class="gloss">, Zǐ Nǚ · Anak</span></div><div></div></div>
+          <div class="toc-row" data-target="page_palace_caibo.html"><div class="pg">00</div><div class="ico">財</div><div class="name"><strong>財帛</strong>Rezeki<span class="gloss">, Cái Bó · Rezeki</span></div><div></div></div>
+          <div class="toc-row" data-target="page_palace_jie_e.html"><div class="pg">00</div><div class="ico">疾</div><div class="name"><strong>疾厄</strong>Kesehatan<span class="gloss">, Jí È · Kesehatan</span></div><div></div></div>
+          <div class="toc-row" data-target="page_palace_qianyi.html"><div class="pg">00</div><div class="ico">遷</div><div class="name"><strong>遷移</strong>Perpindahan<span class="gloss">, Qiān Yí · Perpindahan</span></div><div></div></div>
+          <div class="toc-row" data-target="page_palace_puyi.html"><div class="pg">00</div><div class="ico">僕</div><div class="name"><strong>僕役</strong>Pertemanan<span class="gloss">, Pú Yì · Pertemanan</span></div><div></div></div>
+          <div class="toc-row" data-target="page_palace_guanlu.html"><div class="pg">00</div><div class="ico">官</div><div class="name"><strong>官祿</strong>Karir<span class="gloss">, Guān Lù · Karir</span></div><div></div></div>
+          <div class="toc-row" data-target="page_palace_tianzhai.html"><div class="pg">00</div><div class="ico">田</div><div class="name"><strong>田宅</strong>Properti<span class="gloss">, Tián Zhái · Properti</span></div><div></div></div>
+          <div class="toc-row" data-target="page_palace_fude.html"><div class="pg">00</div><div class="ico">福</div><div class="name"><strong>福德</strong>Berkah<span class="gloss">, Fú Dé · Berkah</span></div><div></div></div>
+          <div class="toc-row" data-target="page_palace_fumu.html"><div class="pg">00</div><div class="ico">父</div><div class="name"><strong>父母</strong>Orang Tua<span class="gloss">, Fù Mǔ · Orang Tua</span></div><div></div></div>
+        </div>
+
+        <!-- BAGIAN III: PENUTUP -->
+        <div class="toc-section">
+          <div class="num">叁</div>
+          <div class="title">總 結<span class="id">Bagian III · Penutup · Pages {{SECTION_PENUTUP_RANGE}}</span></div>
+        </div>
+        <div class="toc-rows">
+          <div class="toc-row" data-target="page_19b_penutup_opener.html"><div class="pg">23</div><div class="ico">·</div><div class="name">Pembuka Bab, 總結 Penutup</div><div></div></div>
+          <div class="toc-row" data-target="page_20_kesimpulan.html"><div class="pg">24</div><div class="ico">結</div><div class="name"><strong>總結</strong>Kesimpulan Bagan<span class="gloss">, Zǒng Jié · Gambaran Besar Synthesis</span></div><div></div></div>
+          <div class="toc-row" data-target="page_kesimpulan_lanjutan.html"><div class="pg">25</div><div class="ico">結</div><div class="name"><strong>總結</strong>Kesimpulan (Lanjutan)<span class="gloss">, Zǒng Jié · Lanjutan</span></div><div></div></div>
+          <div class="toc-row" data-target="page_synthesis.html"><div class="pg">25</div><div class="ico">為</div><div class="name"><strong>行動</strong>Sintesis &amp; Saran Aksi<span class="gloss">, Xíng Dòng · Practical Steps</span></div><div></div></div>
+          <div class="toc-row" data-target="page_22_glossary.html"><div class="pg">26</div><div class="ico">辭</div><div class="name"><strong>辭典</strong>Glossary Istilah<span class="gloss">, Cí Diǎn · Daftar Istilah</span></div><div></div></div>
+          <div class="toc-row" data-target="page_23_disclaimer.html"><div class="pg">27</div><div class="ico">告</div><div class="name"><strong>告白</strong>Disclaimer &amp; Etika<span class="gloss">, Gào Bái · Ethics</span></div><div></div></div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-meta">
+      <span>Halaman {{PAGE_NUM}} / {{TOTAL_PAGES}}</span>
+      <span>Ramalan 命</span>
+    </div>
+  </footer>
+</section>
+<script>
+  // AUTO-SHRINK TOC: kalau konten overflow, kecilkan font progresif
+  (function() {
+    function autoShrink() {
+      var frame = document.querySelector('.toc-frame');
+      if (!frame) return;
+      // Reset
+      frame.classList.remove('shrunk-1', 'shrunk-2');
+      // Check overflow
+      if (frame.scrollHeight > frame.clientHeight + 1) {
+        frame.classList.add('shrunk-1');
+        if (frame.scrollHeight > frame.clientHeight + 1) {
+          frame.classList.remove('shrunk-1');
+          frame.classList.add('shrunk-2');
+        }
+      }
+    }
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      autoShrink();
+    } else {
+      document.addEventListener('DOMContentLoaded', autoShrink);
+    }
+    // Also run after fonts load (font metrics may change layout)
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(autoShrink);
+    }
+  })();
+</script>
+</body>
+</html>
