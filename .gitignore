@@ -1,0 +1,24 @@
+# Output PDF hasil generate
+#result/
+
+# Audit logs (crop foto OCR, debug output)
+v7.1/_AUDIT_LOGS/
+v7.2/_AUDIT_LOGS/
+v7.3/_AUDIT_LOGS/
+v7.4/_AUDIT_LOGS/
+v11/_AUDIT_LOGS/
+v71_fast/_AUDIT_LOGS/
+v71_lntest/_AUDIT_LOGS/
+
+# Archive files
+*.rar
+*.zip
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
