@@ -1,0 +1,460 @@
+{
+  "name_id": "INDRA RD",
+  "gender_hz": "陰男",
+  "birth_solar": "1979-11-27 02:00",
+  "pillars": {
+    "year": {
+      "stem_hz": "己",
+      "branch_hz": "未"
+    },
+    "month": {
+      "stem_hz": "乙",
+      "branch_hz": "亥"
+    },
+    "day": {
+      "stem_hz": "戊",
+      "branch_hz": "戌"
+    },
+    "hour": {
+      "stem_hz": "癸",
+      "branch_hz": "丑"
+    }
+  },
+  "wuxing": {
+    "jin": 2.0,
+    "shui": 3.0,
+    "mu": 3.0,
+    "huo": 2.0,
+    "tu": 5.0
+  },
+  "yong_shen_hz": "土",
+  "ji_shen_hz": "水",
+  "xi_yong_shen_hz": "火",
+  "xian_shen_hz": "木",
+  "chou_shen_hz": "金",
+  "format_hz": "偏財格",
+  "shi_shen_per_pilar": {
+    "year": "劫財",
+    "month": "正官",
+    "day": "命主",
+    "hour": "正財"
+  },
+  "liu_nian_predictions": [
+    {
+      "tahun": 2026,
+      "umur": 48,
+      "ganzhi": "丙午",
+      "prose": "Pengeluaran dan pendapatan tampak sebanding. Dapat bantuan dari orang yang lebih tua atau guru, secara nyata bisa mencapai cita-cita. Lingkungan besar berubah karena tekanan, ada gejolak. Yang sudah menikah: hubungan pasangan sedikit merenggang namun masih baik-baik saja. Yang belum menikah: semakin dekat dengan pasangan. [[病符]] masuk: penyakit datang namun tidak berat, ikuti pemulihan dan berdoa. [[縫繡]] masuk: ada kabar baik dan harapan terpenuhi, segala hal berjalan lancar. Hindari bulan 3, 6, 9, atau 12. Jaga kebersihan dan hindari penularan penyakit. Karakter tahun ini: sangat percaya diri, tidak mau kalah, berani mengambil risiko, semangat tinggi dengan ambisi dan hasrat memiliki yang kuat."
+    },
+    {
+      "tahun": 2027,
+      "umur": 49,
+      "ganzhi": "丁未",
+      "prose": "Pengeluaran dan pendapatan tampak sebanding. Dapat bantuan dari saudara dan teman, secara nyata bisa mencapai cita-cita. Suasana hati tidak stabil, ada gejolak. Lingkungan besar berubah, misalnya renovasi, pindah rumah, atau memindahkan perabot. Pekerjaan akan berubah. [[大歲]] bertahta: bencana hilang, tidak ada hukuman fisik, semua berjalan lebih baik. [[天哭]] datang: ada risiko penyakit keluarga, hanya sengketa mulut yang datang bukan musibah besar. Hindari bulan 2, 3, 5, atau 11. Tahun ini lakukan sembahyang aman di awal bulan pertama. Sifat tahun ini: konservatif, kurang ambisius, lebih suka ketenangan daripada persaingan, cocok menjadi istri atau ibu yang baik."
+    },
+    {
+      "tahun": 2028,
+      "umur": 50,
+      "ganzhi": "戊申",
+      "prose": "Usaha yang dikerahkan tampak sebanding dengan hasil. Harus lebih banyak berpikir dan memanfaatkan kesempatan untuk mencapai yang diinginkan. [[太陽]] masuk nasib: segala urusan harmonis, rezeki dan keberuntungan berdatangan. [[太陽]] menandakan perjalanan sore yang gemilang. [[福德]] masuk nasib: berbuat baik sepanjang hidup, rezeki dan pertolongan datang dari orang lain, nasib semakin cerah menjelang senja. Hindari bulan 2, 4, 8, atau 11. Fisik dan mental agak lemah, tampak kurang sehat namun tidak benar-benar sakit. Kaya empati, suka membantu orang. Hubungan dengan orang tua agak renggang."
+    },
+    {
+      "tahun": 2029,
+      "umur": 51,
+      "ganzhi": "己酉",
+      "prose": "Usaha yang dikerahkan tampak sebanding dengan hasil. Harus lebih hati-hati, hindari terlalu fokus pada satu hal. Pekerjaan ada perubahan atau pergeseran jabatan. [[鬼門]] masuk nasib: ada penyakit atau kedukaan, harta bisa berkurang atau hilang, waspadai bencana. [[黑縫]] masuk nasib: nasib terasa terbalik-balik, tanpa hukuman fisik bisa selamat. Jangan kunjungi orang sakit parah atau hadiri acara duka tahun ini. Hindari bulan 6 atau 8, atau 12. Waspadai orang yang meninggal di sekitar yang mungkin mempengaruhi. Sifat tahun ini: ragu-ragu dan mudah panik, kurang kemampuan pengambilan keputusan, sangat cerdas namun suka mempersulit diri, ikatan pernikahan tipis dan rentan perubahan."
+    },
+    {
+      "tahun": 2030,
+      "umur": 52,
+      "ganzhi": "庚戌",
+      "prose": "Ide dari pikiran bisa menghasilkan peluang nyata. Dapat bantuan dari saudara dan teman, secara nyata bisa mencapai cita-cita. Ada gejolak pada perasaan hati. Yang sudah menikah: hubungan pasangan sedikit merenggang. Yang belum menikah: mulai jatuh cinta dan semakin dekat. [[太陰]] masuk nasib: ada kegembiraan dan rezeki datang, pertolongan orang berharga, bagi wanita bisa hamil. [[文昌]] masuk nasib: ada kabar gembira, prestasi akademik atau jabatan membaik. Hindari bulan 2, 5, 8, atau 12. Waspadai konflik dengan sesama atau pertengkaran. Sifat tahun ini: introvert, punya kebiasaan unik, suka mengumpulkan dan menabung, perlu lebih terbuka dan berani maju agar rezeki membaik."
+    },
+    {
+      "tahun": 2031,
+      "umur": 53,
+      "ganzhi": "辛亥",
+      "prose": "Ide dari pikiran sulit menghasilkan. Wajib menjaga kesehatan, rezeki datang namun bencana juga bisa datang, sulit mencapai cita-cita secara nyata. Emosi tidak stabil, lingkungan berubah. [[官符]] masuk nasib: ada urusan hukum atau kedukaan, hati-hati dalam segala hal. [[火殺]] masuk nasib: waspadai penyakit, kejahatan, dan bencana mendadak. Hindari bulan 1, 4, 7, atau 11. Jangan ikut campur urusan orang lain. Mudah mengundang gangguan spiritual, kerugian finansial, atau musuh tersembunyi. Sifat tahun ini: mudah terpancing, tiga menit semangat lalu padam, suka hal baru benci yang lama. Tindakan impulsif dan sering berujung kegagalan, namun memiliki keberuntungan bangkit dari ujung tanduk."
+    }
+  ],
+  "ziwei_su_ming": "Mampu memanfaatkan roda nasib dengan cerdik. Selama istana [[福德]] kuat, [[身宮]] juga akan kuat. Penuh dengan kehangatan manusiawi dan kepribadian yang hangat, kebaikan hati bisa mendatangkan banyak keberuntungan. Namun jika istana [[福德]] lemah, hubungan interpersonal tidak harmonis dan [[福德]] pun memudar. Pada saat seperti ini, kekuatan istana [[命宮]], istana keuangan, istana cinta, dan istana pergerakan juga perlu diperhitungkan.",
+  "jie_e_palace_hz": "易患喉部疾病、感冒、牙痛等。文曲星在疾厄宮內的人與疾病緣薄。如再有其忌吉星同宮的話，健康狀況良好，一生與醫生無緣吧！如忌生在位，請留意腎臟及耳病。",
+  "jie_e_palace_id": "Rentan terhadap [[喉部疾病]] penyakit tenggorokan, pilek, dan sakit gigi. [[文曲星]] di [[疾厄宮]] berarti hubungan dengan penyakit sangat tipis. Jika ada [[吉星]] lain hadir di istana yang sama, kondisi kesehatan akan sangat baik dan seumur hidup jarang berurusan dengan dokter. Namun jika [[忌星]] hadir, waspadalah terhadap penyakit ginjal dan telinga.",
+  "jie_e_organ_focus_id": "Yang utama wajib dijaga: tenggorokan, ginjal, dan telinga; terutama saat bintang [[忌]] aktif.",
+  "gushu_quotes": [
+    {
+      "source_hz": "三命通會",
+      "source_id": "San Ming Tong Hui",
+      "text_hz": "戊己日干尋水木，柱中原有還為福，運臨北駕及東方，德潤身分富潤屋。",
+      "text_id": "DM Tanah [[戊己]] mencari Air dan Kayu; bila sudah ada di pilar menjadi berkah; ketika nasib menuju utara dan timur, budi luhur memperkaya diri dan melimpahkan kemakmuran bagi rumah tangga."
+    },
+    {
+      "source_hz": "滴天髓",
+      "source_id": "Di Tian Sui",
+      "text_hz": "戊土固重，既中且正，靜翕靜翕靜，萬物司命，水潤物生，火燥物病，若在艮坤，怕沖宜靜。",
+      "text_id": "Tanah [[戊]] kokoh berat, bersifat tengah dan tegak, ketenangan adalah inti; memegang komando segala hal; Air menghidupkan segala kehidupan, Api justru membawa penyakit; bila berada di posisi Artap dan Kun, takut akan benturan dan perlu tetap tenang."
+    }
+  ],
+  "marriage_cocok_tafsir": "Cocok membangun rumah tangga yang harmonis, sifat saling melengkapi, mendapat rahmat langit, membangun usaha besar, berintegritas dan berwibawa, dapat meraih keberhasilan besar.",
+  "marriage_hindari_tafsir": "Sulit meraih kebahagiaan pernikahan seumur hidup, musibah berulang datang, menghadapi berbagai kesulitan di luar, kehilangan nafkah, bisa kehilangan pasangan atau mempengaruhi keturunan, bencana berulang dan sengsara.",
+  "shen_sha_detail": [
+    {
+      "hz": "劫煞",
+      "pinyin": "Jié Shā",
+      "label_id": "Bintang Ketajaman Akal",
+      "tafsir_hz": "聰明敏捷、才智過人，巧於謀事。",
+      "tafsir_id": "Cerdas dan gesit, kecerdasan melampaui banyak orang, mahir dalam strategi dan perencanaan."
+    },
+    {
+      "hz": "天乙貴人",
+      "pinyin": "Tiān Yǐ Guì Rén",
+      "label_id": "Bintang Pelindung Mulia",
+      "tafsir_hz": "主聰明智慧、易得人助、逢凶化吉。",
+      "tafsir_id": "Kecerdasan dan kebijaksanaan tinggi, mudah mendapat pertolongan orang lain, setiap kali menghadapi bahaya bisa berubah menjadi keberuntungan."
+    },
+    {
+      "hz": "魁罡",
+      "pinyin": "Kuí Gāng",
+      "label_id": "Bintang Ketegasan dan Wibawa",
+      "tafsir_hz": "喝鬼厲閻王，謀事好膽量，為人做事公平，做事精通，剛烈而掌樣威，心思靈巧，性格聰明，文章振發，踣事果斷，有潔癖",
+      "tafsir_id": "Penuh wibawa menakutkan, berani dan jitu dalam merencanakan, adil dalam bertindak, mahir dalam bekerja, tegas dan berwibawa, pikiran cerdik, karakter cerdas, tulisan bersemangat, tegas dalam mengambil keputusan, dan perfeksionis."
+    },
+    {
+      "hz": "天醫",
+      "pinyin": "Tiān Yī",
+      "label_id": "Bintang Dokter Langit",
+      "tafsir_hz": "在醫界一定成名，為人敬仰，可作良醫。",
+      "tafsir_id": "Pasti berhasil dan terkenal di dunia medis, sangat dihormati orang banyak, cocok menjadi dokter yang baik."
+    }
+  ],
+  "shiye_favorable_full": [
+    {
+      "hz": "火熱光性工廠或物品",
+      "id": "Pabrik atau produk berbasis panas-cahaya-api"
+    },
+    {
+      "hz": "眼相",
+      "id": "optometri dan kacamata"
+    },
+    {
+      "hz": "電器",
+      "id": "elektronik"
+    },
+    {
+      "hz": "光學",
+      "id": "optik"
+    },
+    {
+      "hz": "眼鏡",
+      "id": "kacamata"
+    },
+    {
+      "hz": "熱飲小吃",
+      "id": "minuman panas dan camilan"
+    },
+    {
+      "hz": "食品工廠",
+      "id": "pabrik makanan"
+    },
+    {
+      "hz": "湯髮美容",
+      "id": "salon rambut dan kecantikan"
+    },
+    {
+      "hz": "衣帽百貨",
+      "id": "pakaian topi dan aksesori"
+    },
+    {
+      "hz": "訂論家",
+      "id": "konsultan"
+    },
+    {
+      "hz": "化妝品",
+      "id": "kosmetik"
+    },
+    {
+      "hz": "軍界",
+      "id": "militer"
+    },
+    {
+      "hz": "煙酒",
+      "id": "rokok dan alkohol"
+    }
+  ],
+  "shiye_supportive_full": [
+    {
+      "hz": "建築",
+      "id": "konstruksi"
+    },
+    {
+      "hz": "當鋪",
+      "id": "pegadaian"
+    },
+    {
+      "hz": "畜牧",
+      "id": "peternakan"
+    },
+    {
+      "hz": "水泥建材",
+      "id": "bahan bangunan semen"
+    },
+    {
+      "hz": "房地產買賣",
+      "id": "jual beli properti"
+    },
+    {
+      "hz": "殯儀館",
+      "id": "rumah duka"
+    },
+    {
+      "hz": "墓碑石店",
+      "id": "toko batu nisan"
+    },
+    {
+      "hz": "地師",
+      "id": "konsultan geomancy"
+    },
+    {
+      "hz": "古董",
+      "id": "barang antik"
+    },
+    {
+      "hz": "顧問",
+      "id": "konsultasi"
+    }
+  ],
+  "da_yun": [
+    {
+      "age_start": 8,
+      "age_end": 17,
+      "stem_hz": "甲",
+      "branch_hz": "戌",
+      "ten_god_hz_md": "七殺"
+    },
+    {
+      "age_start": 18,
+      "age_end": 27,
+      "stem_hz": "癸",
+      "branch_hz": "酉",
+      "ten_god_hz_md": "正財"
+    },
+    {
+      "age_start": 28,
+      "age_end": 37,
+      "stem_hz": "壬",
+      "branch_hz": "申",
+      "ten_god_hz_md": "偏財"
+    },
+    {
+      "age_start": 38,
+      "age_end": 47,
+      "stem_hz": "辛",
+      "branch_hz": "未",
+      "ten_god_hz_md": "傷官"
+    },
+    {
+      "age_start": 48,
+      "age_end": 57,
+      "stem_hz": "庚",
+      "branch_hz": "午",
+      "ten_god_hz_md": "食神"
+    },
+    {
+      "age_start": 58,
+      "age_end": 67,
+      "stem_hz": "己",
+      "branch_hz": "巳",
+      "ten_god_hz_md": "劫財"
+    },
+    {
+      "age_start": 68,
+      "age_end": 77,
+      "stem_hz": "戊",
+      "branch_hz": "辰",
+      "ten_god_hz_md": "比肩"
+    },
+    {
+      "age_start": 78,
+      "age_end": 87,
+      "stem_hz": "丁",
+      "branch_hz": "卯",
+      "ten_god_hz_md": "正印"
+    },
+    {
+      "age_start": 88,
+      "age_end": 97,
+      "stem_hz": "丙",
+      "branch_hz": "寅",
+      "ten_god_hz_md": "偏印"
+    },
+    {
+      "age_start": 98,
+      "age_end": 107,
+      "stem_hz": "乙",
+      "branch_hz": "丑",
+      "ten_god_hz_md": "正官"
+    }
+  ],
+  "marriage": {
+    "cocok_branches": [
+      "卯",
+      "午",
+      "亥"
+    ],
+    "hindari_branches": [
+      "子",
+      "丑",
+      "戌"
+    ]
+  },
+  "shio_hz": "羊",
+  "kesimpulan_narrative": "INDRA RD, [[陰男]], [[戊土]] [[偏財格]], lahir 1979-11-27 pukul 02:00, Shio [[羊]]. Kekuatan [[日主]] agak lemah (旺度 +4030/-4580). || [[用神]] [[土]], [[喜神]] [[火]], Shen Netral [[閒神]] Kayu [[木]], Shen Lawan [[仇神]] Logam [[金]], Shen Bahaya [[忌神]] Air [[水]]. Memasuki [[大運]] [[庚午]] usia 48-57, fase [[食神]] membawa kreativitas dan ekspresi diri yang matang. || Dalam ZiWei: [[命宮]] di [[戌]], [[命主]] [[祿存]], [[身主]] [[天相]], Lima Elemen [[五行]] Api Enam [[火六局]]. Wuqu Hua Lu [[武曲化祿]], Tanlang Hua Quan [[貪狼化權]], Tianliang Hua Ke [[天梁化科]], Wenqu Hua Ji [[文曲化忌]]. Shen sha aktif: [[天乙貴人]], [[魁罡]], [[天醫]], [[劫煞]]. || Finansial: sumber [[偏財]] dan [[正財]] berlimpah namun sulit didapat tanpa usaha keras. Manfaatkan properti dan investasi tanah sebagai penyimpan kekayaan. || Kesehatan: waspada tenggorokan, ginjal, dan telinga. [[文曲星]] di [[疾厄]] umumnya menipis hubungan dengan penyakit. || Pernikahan: [[大吉]] dengan [[兔]][[馬]][[豬]]; jauhi [[鼠]][[牛]][[狗]]. Gua hunian [[震]], posisi rumah duduk utara-selatan, pintu hoki di [[南]] dan [[東南]]. || Karir: bidang medis, hukum, properti, elektronik dan optik paling searah. Puisi klasik: 戊己日干尋水木，運臨北駕及東方，德潤身分富潤屋。",
+  "yang_zhai_gua_hz": "震",
+  "yang_zhai_zones_foto": {
+    "rumah": {
+      "dirs_hz": [
+        "北",
+        "南"
+      ],
+      "dirs_abbr": [
+        "U",
+        "S"
+      ],
+      "note_id": "宜坐Utara menghadap Selatan或坐Selatan menghadap Utara, sangat menguntungkan"
+    },
+    "pintu": {
+      "dirs_hz": [
+        "南",
+        "北",
+        "東南"
+      ],
+      "dirs_abbr": [
+        "S",
+        "U",
+        "TG"
+      ],
+      "note_id": "Pintu baik ke Selatan, Utara, Tenggara"
+    },
+    "dapur": {
+      "dirs_hz": [
+        "西向東",
+        "西北向東南"
+      ],
+      "dirs_abbr": [
+        "西東",
+        "西北東南"
+      ],
+      "note_id": "燈灶宜安Barat menghadap Timur或Barat Laut menghadap Tenggara"
+    },
+    "kamar": {
+      "dirs_hz": [
+        "南",
+        "北",
+        "東",
+        "東南"
+      ],
+      "dirs_abbr": [
+        "S",
+        "U",
+        "T",
+        "TG"
+      ],
+      "note_id": "Kamar tidur baik di 安Selatan, Utara, Timur, Tenggara"
+    },
+    "ranjang": {
+      "dirs_hz": [
+        "東",
+        "東南",
+        "北"
+      ],
+      "dirs_abbr": [
+        "T",
+        "TG",
+        "U"
+      ],
+      "note_id": "Posisi ranjang sebaiknya di Timur, Tenggara, Utara"
+    },
+    "altar": {
+      "dirs_hz": [
+        "南",
+        "北",
+        "東"
+      ],
+      "dirs_abbr": [
+        "S",
+        "U",
+        "T"
+      ],
+      "note_id": "神位宜安Selatan或Utara, Timur, dan arah keberuntungan tahun ini"
+    },
+    "kamar_mandi": {
+      "dirs_hz": [
+        "東北",
+        "西北",
+        "西",
+        "西南"
+      ],
+      "dirs_abbr": [
+        "TL",
+        "BL",
+        "B",
+        "BD"
+      ],
+      "note_id": "Kamar mandi/WC sebaiknya di Timur Laut, Barat Laut, Barat, Barat Daya"
+    }
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "祿存",
+    "shen_zhu_hz": "天相",
+    "ming_gong_hz": "戌",
+    "shen_gong_hz": "子",
+    "wu_xing_ju_hz": "火六局",
+    "shi_jun_hz": "辰"
+  },
+  "dm_strength_hz": "弱",
+  "dm_strength_label_id": "Lemah",
+  "dm_pos_score": 4030.0,
+  "dm_neg_score": 4580.0,
+  "xiantian_per_stem": {
+    "jia": 1,
+    "yi": 2,
+    "bing": 0,
+    "ding": 2,
+    "wu": 2,
+    "ji": 3,
+    "geng": 0,
+    "xin": 2,
+    "ren": 1,
+    "gui": 2
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "da_yun_arah_id": "backward",
+  "da_yun_start_age": 8,
+  "shen_sha_list": [
+    {
+      "hanzi": "劫煞",
+      "pillar": null
+    },
+    {
+      "hanzi": "天乙貴人",
+      "pillar": null
+    },
+    {
+      "hanzi": "魁罡",
+      "pillar": null
+    },
+    {
+      "hanzi": "天醫",
+      "pillar": null
+    }
+  ],
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": {
+    "year": "乙丁己",
+    "month": "甲壬",
+    "day": "辛丁戊",
+    "hour": "己癸辛"
+  },
+  "_source": "MD via Web Claude (parse_md.py)"
+}

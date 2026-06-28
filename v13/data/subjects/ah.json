@@ -1,0 +1,878 @@
+{
+  "subject_id": "ah",
+  "_built_by": "build_from_ocr.py V4.5 FULL-MD",
+  "identity": {
+    "name_id": "AH",
+    "name_hanzi": "",
+    "gender_id": "Pria",
+    "birth_date": "2007-10-13",
+    "birth_time": "06:30",
+    "birth_day_name": "Sabtu",
+    "birth_period_id": "pagi",
+    "birth_hour_branch_hz": "卯",
+    "birth_hour_period_label": "pagi · 卯時",
+    "lunar_date_text_new": "tanggal 3 bulan 9 tahun 丁亥 (Ding Hai · 2007)",
+    "lunar_year_pillar_hz": "丁亥",
+    "lunar_republic_text": "民國 96 年 9 月 3 日",
+    "age_at_report": 20
+  },
+  "shio": {
+    "branch_hz": "亥",
+    "branch_pinyin": "Hài",
+    "id": "Babi",
+    "id_upper": "BABI",
+    "svg_red": "Babi-Merah.svg",
+    "svg_black": "Babi-Hitam.svg"
+  },
+  "ti_xiang": null,
+  "day_master": {
+    "stem_hz": "庚",
+    "stem_element_hz": "金",
+    "stem_element_id": "Logam",
+    "polarity_id": "Yang",
+    "label_id": "Logam Pedang",
+    "label_long_id": "Logam",
+    "pinyin": "Gēng 金",
+    "strength_id": "—",
+    "strength_hz": null
+  },
+  "pillars": {
+    "year": {
+      "stem_hz": "丁",
+      "branch_hz": "亥"
+    },
+    "month": {
+      "stem_hz": "庚",
+      "branch_hz": "戌"
+    },
+    "day": {
+      "stem_hz": "庚",
+      "branch_hz": "辰"
+    },
+    "hour": {
+      "stem_hz": "己",
+      "branch_hz": "卯"
+    }
+  },
+  "wuxing": {
+    "jin": {
+      "value": 2.0,
+      "percent": 25.0,
+      "label_id": "Logam"
+    },
+    "shui": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Air"
+    },
+    "mu": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Kayu"
+    },
+    "huo": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Api"
+    },
+    "tu": {
+      "value": 3.0,
+      "percent": 37.5,
+      "label_id": "Tanah"
+    },
+    "total": 8.0,
+    "self_value": 2.0,
+    "self_el_hz": "—",
+    "fav_hz": "—",
+    "unfav_hz": "—",
+    "axis_max": "—",
+    "insight_id": null,
+    "_empty": false
+  },
+  "yong_shen": {
+    "elements_hz": "水",
+    "elements_id": "Air",
+    "label_id": "Penopang & Pengarah",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "ji_shen": {
+    "elements_hz": "金",
+    "elements_id": "Logam",
+    "label_id": "Pelumat & Pemicu",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "format": {
+    "hz": "劫財格",
+    "pinyin": "Jie Cai Ge",
+    "label_id": "Saudara Sebanding",
+    "glyph_hz": "—"
+  },
+  "da_yun": {
+    "start_age": 3,
+    "direction_id": "backward",
+    "current_index": 1,
+    "axis_marks": [
+      3,
+      13,
+      23,
+      33,
+      43,
+      53,
+      63,
+      73,
+      83,
+      93,
+      103
+    ],
+    "cycles": [
+      {
+        "n": 1,
+        "age_start": 3,
+        "age_end": 12,
+        "stem_hz": "己",
+        "branch_hz": "酉",
+        "ten_god_hz": "正印",
+        "ten_god_id": "Pelajaran",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 2,
+        "age_start": 13,
+        "age_end": 22,
+        "stem_hz": "戊",
+        "branch_hz": "申",
+        "ten_god_hz": "偏印",
+        "ten_god_id": "Mentor",
+        "element_class": "el-tu",
+        "is_current": true
+      },
+      {
+        "n": 3,
+        "age_start": 23,
+        "age_end": 32,
+        "stem_hz": "丁",
+        "branch_hz": "未",
+        "ten_god_hz": "正官",
+        "ten_god_id": "Otoritas",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 4,
+        "age_start": 33,
+        "age_end": 42,
+        "stem_hz": "丙",
+        "branch_hz": "午",
+        "ten_god_hz": "七殺",
+        "ten_god_id": "Pemurnian",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 5,
+        "age_start": 43,
+        "age_end": 52,
+        "stem_hz": "乙",
+        "branch_hz": "巳",
+        "ten_god_hz": "正財",
+        "ten_god_id": "Rezeki Tetap",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 6,
+        "age_start": 53,
+        "age_end": 62,
+        "stem_hz": "甲",
+        "branch_hz": "辰",
+        "ten_god_hz": "偏財",
+        "ten_god_id": "Rezeki Bisnis",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 7,
+        "age_start": 63,
+        "age_end": 72,
+        "stem_hz": "癸",
+        "branch_hz": "卯",
+        "ten_god_hz": "傷官",
+        "ten_god_id": "Kritikus Tajam",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 8,
+        "age_start": 73,
+        "age_end": 82,
+        "stem_hz": "壬",
+        "branch_hz": "寅",
+        "ten_god_hz": "食神",
+        "ten_god_id": "Pencipta",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 9,
+        "age_start": 83,
+        "age_end": 92,
+        "stem_hz": "辛",
+        "branch_hz": "丑",
+        "ten_god_hz": "劫財",
+        "ten_god_id": "Saudara Sebanding",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 10,
+        "age_start": 93,
+        "age_end": 102,
+        "stem_hz": "庚",
+        "branch_hz": "子",
+        "ten_god_hz": "比肩",
+        "ten_god_id": "Pundak Sama",
+        "element_class": "el-jin"
+      }
+    ],
+    "seasons": [
+      {
+        "el_class": "s-tu",
+        "el_hz": "土",
+        "name_id": "Pemurnian Awal",
+        "age_start": 3,
+        "age_end": 22,
+        "is_current": true
+      },
+      {
+        "el_class": "s-huo",
+        "el_hz": "火",
+        "name_id": "Belajar & Mentor",
+        "age_start": 23,
+        "age_end": 42
+      },
+      {
+        "el_class": "s-mu",
+        "el_hz": "木",
+        "name_id": "Berbagi Panggung",
+        "age_start": 43,
+        "age_end": 62
+      },
+      {
+        "el_class": "s-shui",
+        "el_hz": "水",
+        "name_id": "Berkarya Tenang",
+        "age_start": 63,
+        "age_end": 82
+      },
+      {
+        "el_class": "s-jin",
+        "el_hz": "金",
+        "name_id": "Memetik Rezeki",
+        "age_start": 83,
+        "age_end": 102
+      }
+    ],
+    "spotlight_headline_html": "Fase <span class=\"hz\">偏印</span> (Mentor Bayangan), periode utama untuk intuisi & jalur tidak konvensional",
+    "spotlight_tag_tone_html": "Tanah · stabil",
+    "spotlight_tag_combo_html": "Hikmat Diam",
+    "spotlight_tag_combo_pair": [
+      "戊",
+      "申"
+    ],
+    "spotlight_bullets_html": [
+      "<strong>Fokus utama</strong>, pilar <span class=\"hz\">偏印</span> mendorong Anda untuk intuisi & jalur tidak konvensional. Selaraskan agenda 10 tahun ini ke arah tersebut.",
+      "<strong>Energi 土</strong>, batang <span class=\"hz\">戊</span> (土) berinteraksi dengan Day Master <span class=\"hz\">庚</span> (金); tone fase: Tanah · stabil.",
+      "<strong>Cabang <span class=\"hz\">申</span></strong> menentukan medan harian, kebiasaan, lingkungan, dan relasi yang dibangun di rentang umur 13–22 akan jadi pondasi fase berikutnya.",
+      "<strong>Setelah 22</strong> masuk <span class=\"hz\">丁未 (正官)</span>, memikul tanggung jawab & jabatan. Siapkan transisi sekarang."
+    ],
+    "footer_caption_html": "AH sedang di fase <span style=\"font-family:'Noto Serif TC',serif;color:var(--red)\">偏印</span> (13–22), intuisi & jalur tidak konvensional. Periode 13–32 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir."
+  },
+  "marriage": {
+    "self_branch_index": 11,
+    "cocok": [
+      {
+        "branch_hz": "未",
+        "id": "Kambing",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "卯",
+        "id": "Kelinci",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "寅",
+        "id": "Harimau",
+        "relationship_hz": "吉凶相半",
+        "relationship_id": "Cukup Cocok",
+        "reason_id": null
+      }
+    ],
+    "hindari": [
+      {
+        "branch_hz": "巳",
+        "id": "Ular",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "申",
+        "id": "Monyet",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "亥",
+        "id": "Babi",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      }
+    ],
+    "_empty": false
+  },
+  "yang_zhai": {
+    "gua_hz": "坤",
+    "gua_pinyin": "Kūn",
+    "gua_label_id": "Bumi",
+    "gua_direction_id": "Barat Daya",
+    "gua_direction_abbr": "BD",
+    "group_id": "Barat",
+    "desc_id": "Elemen Bumi — mengayomi, setia, penuh perhatian. Kelompok Barat (西四命): sabar, dapat diandalkan, dan kuat dalam memelihara hubungan.",
+    "sumbu_hoki_hz": "西南↔東北",
+    "sumbu_hoki_id": "BD ↔ TL",
+    "sumbu_rumah_hz": "東北↔西南",
+    "sumbu_rumah_id": "TL ↔ BD",
+    "rumah_axis_pos": "NE",
+    "trigram_symbol": "☷",
+    "zones": {
+      "rumah": {
+        "dirs_hz": [
+          "東北",
+          "西南"
+        ],
+        "dirs_abbr": [
+          "TL",
+          "BD"
+        ],
+        "note_id": "Rumah menghadap Timur Laut ke Barat Daya (atau sebaliknya) sangat auspicious — posisi terbaik untuk kemakmuran"
+      },
+      "pintu": {
+        "dirs_hz": [
+          "西",
+          "西北"
+        ],
+        "dirs_abbr": [
+          "B",
+          "BL"
+        ],
+        "note_id": "Pintu utama ke arah Barat atau Barat Laut membawa keberuntungan"
+      },
+      "dapur": {
+        "dirs_hz": [
+          "東"
+        ],
+        "dirs_abbr": [
+          "T"
+        ],
+        "note_id": "Kompor/dapur menghadap ke arah Timur (posisi Barat menghadap Timur) sangat auspicious"
+      },
+      "kamar": {
+        "dirs_hz": [
+          "西",
+          "西北",
+          "西南",
+          "東北"
+        ],
+        "dirs_abbr": [
+          "B",
+          "BL",
+          "BD",
+          "TL"
+        ],
+        "note_id": "Kamar tidur terbaik di sisi Barat, Barat Laut, Barat Daya, atau Timur Laut"
+      },
+      "ranjang": {
+        "dirs_hz": [
+          "西",
+          "西南",
+          "東北",
+          "西北"
+        ],
+        "dirs_abbr": [
+          "B",
+          "BD",
+          "TL",
+          "BL"
+        ],
+        "note_id": "Posisi ranjang menghadap Barat, Barat Daya, Timur Laut, atau Barat Laut memberikan istirahat berkualitas"
+      },
+      "altar": {
+        "dirs_hz": [
+          "西",
+          "西北",
+          "西南",
+          "東北"
+        ],
+        "dirs_abbr": [
+          "B",
+          "BL",
+          "BD",
+          "TL"
+        ],
+        "note_id": "Altar menghadap Barat, Barat Laut, Barat Daya, atau Timur Laut — posisi terbaik termasuk arah besar tahun ini"
+      },
+      "kamar_mandi": {
+        "dirs_hz": [
+          "北",
+          "東",
+          "東南",
+          "南"
+        ],
+        "dirs_abbr": [
+          "U",
+          "T",
+          "TG",
+          "S"
+        ],
+        "note_id": "Toilet/kamar mandi paling baik ditempatkan di sisi Utara, Timur, Tenggara, atau Selatan"
+      }
+    }
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "武曲",
+    "shen_zhu_hz": "天機",
+    "ming_gong_hz": "未",
+    "shen_gong_hz": "丑",
+    "wu_xing_ju_hz": "水二局",
+    "shi_jun_hz": "未",
+    "palaces": null,
+    "ming_gong_id": "Istana Hidup · Kambing",
+    "shen_gong_id": "Istana Tubuh · Kerbau",
+    "shi_jun_id": "Penguasa Waktu · Kambing",
+    "ming_zhu_id": "Penguasa Hidup",
+    "shen_zhu_id": "Penguasa Tubuh",
+    "wu_xing_ju_id": "Aliran Air Dua"
+  },
+  "shen_sha_list": [],
+  "kesimpulan_narrative": "AH lahir dengan Day Master Geng Metal [[庚金]] yang kuat dan kokoh dalam format 劫財格 — sebuah kombinasi yang melahirkan pribadi tegas, kompetitif, dan berjiwa ksatria [[俠義心]] dengan standar keadilan tinggi. Bintang Wenchang [[文昌星]] di Istana Nasib menganugerahinya kemampuan akademis dan intelektual yang luar biasa, menjadikan dunia pendidikan, penerbitan, dan segala bidang yang mengandalkan kecerdasan sebagai ladang terbaik untuk berkembang. Kehadiran bintang Kui Gang [[魁罡]] menambah wibawa alami dan kemampuan eksekusi yang tajam — dalam merencanakan sesuatu, AH selalu berpikir jauh ke depan dan bertindak adil. Namun dua bintang tantangan — 喪宿 (Sang Su) dan 亡神 (Wang Shen) — mengingatkan bahwa ikatan sosial dan keluarga perlu dirawat secara aktif; jangan biarkan sifat mandiri berubah menjadi isolasi. Unsur Air [[水]] dan Kayu [[木]] sebagai yong shen dan xi shen paling mendukung pertumbuhan AH, sementara Metal [[金]] sebagai ji shen harus dihindari dalam pilihan lingkungan dan karir. Memasuki usia 23 (Da Yun 丁未 正官), babak baru kehidupan AH akan diwarnai pengakuan publik dan ekspansi karir — inilah saat terbaik untuk membangun reputasi jangka panjang. Dalam hal asmara, pasangan dari shio 羊 atau 兔 membawa keharmonisan terbaik. Di rumah, orientasi Gua 坤 mengarahkan AH untuk tinggal di hunian yang menghadap Timur Laut–Barat Daya demi kemakmuran optimal. Perjalanan hidup AH memiliki pola setengah siklus: masa muda penuh perjuangan dan pembentukan karakter, sedangkan paruh baya ke atas adalah masa panen keberhasilan yang sesungguhnya — kunci utamanya adalah konsistensi, pengendalian ego, dan keberanian untuk bertumbuh di lingkungan yang tepat.",
+  "dm_pos_score": 4880.0,
+  "dm_neg_score": 3838.0,
+  "xiantian_per_stem": {
+    "jia": 1,
+    "yi": 0,
+    "bing": 0,
+    "ding": 2,
+    "wu": 2,
+    "ji": 1,
+    "geng": 0,
+    "xin": 1,
+    "ren": 0,
+    "gui": 1
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": null,
+  "canggan_shi_shen": null,
+  "chang_sheng_per_pilar": null,
+  "kong_wang": null,
+  "ming_gong_bazi": null,
+  "bone_weight": null,
+  "liu_nian_predictions": [
+    {
+      "tahun": 2026,
+      "umur": 20,
+      "ganzhi": "丙午",
+      "prose": "Tahun ini AH berpeluang mendapat bantuan dari orang-orang berpengaruh (貴人 [[貴人]]) — secara nyata dapat mencapai cita-cita yang cukup baik [[實質上可以達到相當的好理想]]. Namun emosi cenderung terkekang dan tidak stabil. Bintang Longde [[龍德]] membawa berkah finansial di semua musim, keberuntungan di rumah, dan perlindungan dari bencana di luar. Bintang Tianso [[天掃]] menghadirkan kewajiban yang kacau — bila orang berpengaruh datang membawa kabar baik, tidak ada bencana, namun tetap waspada terhadap penipuan atau kejahatan; hindari bulan 1, 4, 7, atau 12 Lunar [[忌一四七或十二月之令]]. Upaya yang sungguh-sungguh akan menghasilkan keuntungan atau menarik bantuan yang tepat waktu. Secara karakter, AH di tahun ini mudah bosan dengan rutinitas [[喜新厭舊]], mudah terpengaruh lingkungan dan pergaulan, serta berpotensi sering berpindah pekerjaan atau tempat tinggal — kendalikan impuls tersebut agar tidak menghambat stabilitas jangka panjang."
+    },
+    {
+      "tahun": 2027,
+      "umur": 21,
+      "ganzhi": "丁未",
+      "prose": "Nilai yang AH keluarkan tahun ini tampak sebanding dengan materi di permukaan, namun secara nyata sulit mencapai cita-cita yang diinginkan [[實質上無法達到好理想]]. Kehadiran orang berpengaruh (貴人 [[貴人]]) tersembunyi — banyak gangguan dan perdebatan yang muncul [[喝叫的事情特別多]]. Lingkungan sekitar berubah karena tekanan dari berbagai penjuru [[大環境會因束制而有所變動]], dan ada pergeseran di karir atau posisi jabatan [[事業會有所變動]]。Bintang Baihu [[白虎]] membawa risiko perselisihan dan kerugian finansial — masalah baru bisa datang begitu masalah lama terselesaikan. Bintang Tianxi [[天喜]] membawa berita gembira di rumah tangga dan keberhasilan finansial, namun perlu waspadai konflik keluarga, ketidakharmonisan, atau cedera fisik serius [[外傷、大流血之強烈的暗示]] — hindari bulan 1, 4, 7, atau 11 Lunar [[忌一四七或十一月之令]]. Di sisi positif, semangat kompetisi dan kehormatan AH sangat kuat — tidak kenal menyerah, berjiwa tangguh dan penuh strategi [[堅忍不拔之精神，擅於策略計謀]]."
+    },
+    {
+      "tahun": 2028,
+      "umur": 22,
+      "ganzhi": "戊申",
+      "prose": "Relasi dengan saudara dan teman perlu diperhatikan tahun ini — secara nyata sulit mencapai ideal yang diharapkan [[實質上不能達到好理想]]. Bagi yang sudah menikah, ada gesekan emosional dalam hubungan suami-istri namun tidak terlalu serius. Bagi yang masih lajang, hubungan romantis dan kedekatan dengan kekasih akan semakin meningkat [[男女朋友會愈親密]]. Bintang Wuchang [[無常]] di tahun ini membawa peristiwa tak terduga — waspadai potensi sakit dan kerugian finansial [[恐有疾病、破財過運]], serta hindari bulan 4, 7, dan 8 Lunar untuk urusan air dan api. Namun upaya yang sungguh-sungguh di tahun ini akan membawa hasil atau menarik bantuan orang berpengaruh [[貴人]]. AH memiliki karakter setengah-siklus [[半世運之特性]]: sebelum paruh baya penuh tekanan dan kesulitan; setelah paruh baya akan menikmati kebahagiaan dan kenyamanan yang sesungguhnya. Bila sebaliknya — kemakmuran datang lebih awal — maka paruh baya ke atas berisiko penuh perjuangan berat."
+    },
+    {
+      "tahun": 2029,
+      "umur": 23,
+      "ganzhi": "己酉",
+      "prose": "Perubahan karir cukup signifikan terjadi di tahun ini [[事業會變動]]. Bintang Diaoke [[吊客]] membawa beban kewajiban berat, risiko sengketa hukum, bencana darah, dan potensi kemalangan pada anggota keluarga kecil. Bintang Yangde [[陽德]] mengimbanginya dengan momen perayaan dan kemajuan melalui tindakan kebajikan — hindari bulan 1, 4, 7, atau 11 Lunar. Namun waspadai secara serius: risiko dijebak atau dikhianati oleh orang lain [[被人陷害]], perubahan lingkungan atau karir yang tidak menguntungkan, serta potensi sengketa hukum atau masalah hukum serius [[官訟牢獄受傷]]. Energi AH tahun ini sangat kuat dan kompetitif — berjiwa lebih suka menjadi kepala ayam daripada ekor sapi [[零為雞旦不為牛後]], tidak suka dikendalikan, dan penuh semangat berpetualang. Kendalikan dorongan spekulatif dan ego agar tidak memperburuk situasi hukum."
+    },
+    {
+      "tahun": 2030,
+      "umur": 24,
+      "ganzhi": "庚戌",
+      "prose": "Perubahan karir atau posisi jabatan terjadi di tahun ini, dan emosi cenderung tidak stabil. Bintang Bingfu [[病符]] membawa ancaman sakit dan sengketa hukum — disarankan berdoa dan menjaga kesehatan. Di sisi lain, Bintang Jinbeng [[錦繃]] membawa tamu-tamu baik dan segala permohonan terkabul — waspadai urusan hukum di bulan 3, 6, 9, atau 12 Lunar, dan selama seluruh keluarga menjaga kesehatan dari infeksi, semuanya akan baik-baik saja. Tahun ini juga banyak pertengkaran dan perdebatan muncul, orang-orang berpengaruh (貴人 [[貴人]]) sulit dijangkau, sehingga cita-cita nyata sulit tercapai secara penuh [[實質上無法達到好里想]]. Energi AH di tahun ini cenderung pasif dan konservatif [[生性較為保守]] — ini saatnya membangun stabilitas daripada mengejar ambisi besar."
+    },
+    {
+      "tahun": 2031,
+      "umur": 25,
+      "ganzhi": "辛亥",
+      "prose": "Kemampuan berpikir dan analitis AH berada di puncaknya tahun ini — manfaatkan otak dan seize peluang, cita-cita baik pasti tercapai [[一定可達到好里想]]. Ada perubahan di lingkungan besar, namun sebaiknya tidak terburu-buru melakukan perubahan [[不變動為宜]]. Bila terjadi perubahan lingkungan seperti renovasi rumah, pindah, atau penataan ulang furnitur, itu wajar [[大環境改變]]. Ada juga pergeseran karir atau posisi jabatan. Bintang Taisui [[太歲]] berada di posisi menonjol tahun ini — semua bencana dan kemalangan sirna, tidak ada konflik, secara umum nasib baik. Bintang Tianku [[天哭]] membawa potensi sakit dan tekanan — hindari bulan 2, 3, 5, atau 11 Lunar [[忌二三五或十一月之令]]; lakukan persembahan kepada Taisui pada tanggal 9 bulan pertama Lunar untuk perlindungan. Perlu dicatat: keberuntungan tahun ini cenderung ekstrem — sangat baik atau sangat buruk. Kesehatan fisik dan mental tampak lemah di luar namun sejatinya baik — lebih cocok untuk pekerjaan administratif daripada yang menguras fisik dan mental. Hubungan dengan orang tua cenderung renggang, namun AH sangat berjiwa sosial dan suka membantu sesama [[喜以助人為樂]]."
+    }
+  ],
+  "ziwei_su_ming": "Tindakan yang lambat dan tertunda dapat mengakibatkan hilangnya keberuntungan bawaan sejak lahir [[行動緩慢，因而與生俱來的幸運或許因之而喪失]]. Bagi mereka yang memiliki Istana Migrasi yang kuat [[移動宮勢強]], Istana Badan [[身宮]] pun turut bersinar kuat. Dengan merespons berbagai perubahan secara aktif, AH dapat mengembangkan nasibnya secara cerdas dan terampil [[可巧妙地展開自己的命運]]. Namun bila Istana Migrasi lemah [[移動宮弱者]], setiap kali AH bertindak atau menghadapi perubahan, rintangan dan kemunduran selalu menghampiri. Dalam situasi ini, kekuatan Istana Nasib [[命宮]], Istana Keberuntungan [[福德宮]], dan Istana Cinta [[愛情宮]] harus ikut diperhitungkan sebagai penyeimbang.",
+  "ziwei_stars": null,
+  "shiye_favorable_full": [
+    {
+      "hz": "文具",
+      "id": "Alat Tulis"
+    },
+    {
+      "hz": "出版",
+      "id": "Penerbitan"
+    },
+    {
+      "hz": "書店",
+      "id": "Toko Buku"
+    },
+    {
+      "hz": "農業蔬果",
+      "id": "Pertanian & Sayur-Buah"
+    },
+    {
+      "hz": "木材",
+      "id": "Perkayuan"
+    },
+    {
+      "hz": "傢俱",
+      "id": "Furniture"
+    },
+    {
+      "hz": "裝璜",
+      "id": "Dekorasi Interior"
+    },
+    {
+      "hz": "紙",
+      "id": "Industri Kertas"
+    },
+    {
+      "hz": "木器或工藝",
+      "id": "Kerajinan Kayu"
+    },
+    {
+      "hz": "花苗園藝",
+      "id": "Hortikultura & Taman"
+    },
+    {
+      "hz": "藥草",
+      "id": "Tanaman Obat"
+    },
+    {
+      "hz": "布疋",
+      "id": "Tekstil & Kain"
+    },
+    {
+      "hz": "教育",
+      "id": "Pendidikan"
+    },
+    {
+      "hz": "公務員",
+      "id": "PNS & Pemerintahan"
+    },
+    {
+      "hz": "政治",
+      "id": "Politik"
+    },
+    {
+      "hz": "宗教家",
+      "id": "Rohaniawan"
+    }
+  ],
+  "shiye_supportive_full": [
+    {
+      "hz": "運動家",
+      "id": "Atlet & Olahraga"
+    },
+    {
+      "hz": "介紹中人",
+      "id": "Makelar & Perantara"
+    },
+    {
+      "hz": "醫師",
+      "id": "Dokter & Medis"
+    },
+    {
+      "hz": "清潔隊",
+      "id": "Layanan Kebersihan"
+    },
+    {
+      "hz": "謀士",
+      "id": "Konsultan & Penasihat Strategis"
+    },
+    {
+      "hz": "導遊",
+      "id": "Pemandu Wisata"
+    },
+    {
+      "hz": "航海漁業",
+      "id": "Maritim & Perikanan"
+    },
+    {
+      "hz": "冷凍業",
+      "id": "Industri Beku & Pendingin"
+    },
+    {
+      "hz": "水產業",
+      "id": "Akuakultur & Seafood"
+    },
+    {
+      "hz": "碼頭工",
+      "id": "Buruh Pelabuhan"
+    },
+    {
+      "hz": "消防隊",
+      "id": "Pemadam Kebakaran"
+    },
+    {
+      "hz": "貿易公司",
+      "id": "Perusahaan Dagang"
+    }
+  ],
+  "shiye_short": null,
+  "shen_sha_detail": [
+    {
+      "hz": "亡神",
+      "pinyin": "Wang Shen",
+      "label_id": "Dewa Kehancuran",
+      "tafsir_hz": "詳略深算",
+      "tafsir_id": "Pengaruh yang kompleks dan memerlukan perhitungan mendalam — perlu kewaspadaan ekstra dalam setiap keputusan besar."
+    },
+    {
+      "hz": "喪宿",
+      "pinyin": "Sang Su",
+      "label_id": "Bintang Kesepian",
+      "tafsir_hz": "形孤骨露、面無和氣、六親終有也如無。",
+      "tafsir_id": "Penampilan fisik yang kurus dan tanpa keceriaan alami. Hubungan dengan enam kerabat dekat bisa memudar hingga terasa seperti tidak ada — perlu usaha ekstra untuk mempererat ikatan keluarga."
+    },
+    {
+      "hz": "魁罡",
+      "pinyin": "Kui Gang",
+      "label_id": "Bintang Penguasa Tegas",
+      "tafsir_hz": "喝鬼震閻王，謀事好瞻量，為人做事公平，做事精通，剛烈而掌權威，心思靈巧，性格聰明，文章振發，臨事果斷，有潔癖",
+      "tafsir_id": "Berwibawa seperti penguasa yang menggetarkan — dalam merencanakan sesuatu selalu berpikir jauh ke depan. Adil dan fair dalam bertindak, sangat terampil dan ahli dalam pekerjaannya. Tegas dan berkuasa [[剛烈而掌權威]], pikiran tajam dan cerdas [[心思靈巧]], kemampuan menulis dan bertutur kata yang kuat [[文章振發]], bertindak tegas dan cepat saat menghadapi situasi sulit [[臨事果斷]], serta memiliki sifat perfeksionis yang tinggi [[有潔癖]]."
+    }
+  ],
+  "marriage_cocok_tafsir": "Lima generasi akan berjaya dan makmur, hidup dalam kemakmuran dan kemuliaan [[安富尊榮]]. Dalam setiap pekerjaan, bintang finansial [[財星]] pasti hadir berkali-kali, membawa keberuntungan luar biasa dalam hal kekayaan. Keturunan akan terus berkembang dan berjaya hingga akhir masa [[子孫興旺終世]].",
+  "marriage_hindari_tafsir": "Meskipun ada kecocokan lahiriah, hubungan cenderung memiliki ikatan yang tipis dan dangkal [[薄緣之嫌]]. Hubungan keluarga kurang kuat, bahkan bisa tidak merasakan kesenangan hidup yang utuh [[不能完壽之悲]]. Sepanjang hidup sulit mendapatkan kebahagiaan sejati yang besar [[一生難得大幸福]].",
+  "gushu_quotes": null,
+  "xiongnian_list": null,
+  "xing_qing_poem_hz": null,
+  "xing_qing_poem_id": null,
+  "xing_qing_prose_id": null,
+  "fulu_body_id": null,
+  "mingyun_body_id": null,
+  "qinshu_tou_main_id": null,
+  "qinshu_tou_youyue_id": null,
+  "qinshu_zhong_main_id": null,
+  "qinshu_zhong_youyue_id": null,
+  "qinshu_mo_main_id": null,
+  "qinshu_mo_youyue_id": null,
+  "jie_e_palace_hz": null,
+  "jie_e_palace_id": "AH rentan terhadap penyakit otak dan sistem saraf [[腦靈的疾病]], serta penyakit sendi dan kelenjar [[關節、腺部的疾病]], termasuk neuralgia dan rematik [[神經痛、風濕病]]. Namun secara umum, kesehatan AH tidak menghadapi krisis besar — bahkan ketika sakit, AH tampak seperti orang sehat dan pulih lebih cepat dari kebanyakan orang [[恢復得也比常人更迅速]]. Kelemahan utama AH adalah ketidaktahanan terhadap suhu ekstrem (terlalu panas maupun terlalu dingin) [[苦於過熱與過冷]], dan kelelahan berlebihan adalah penyebab utama timbulnya penyakit [[過度疲勞是致病的主因]]. AH jarang terganggu oleh penyakit atau cedera, dan bila sakit pun proses penyembuhannya sangat cepat. Bila bintang buruk [[凶星]] berada di istana ini, AH rentan terhadap penyakit lambung dan beri-beri [[易患胃病、腳氣病]]. Bila Bintang Ziwei [[紫微星]] berbagi istana, kondisi kesehatan sangat prima dan tidak perlu khawatir akan penyakit apapun.",
+  "jie_e_organ_focus_id": "Otak & Sistem Saraf, Sendi, Kelenjar",
+  "bagua_sectors": null,
+  "bagua_life_type_hz": null,
+  "bagua_life_type_id": null,
+  "bagua_nayin_hz": null,
+  "bagua_nayin_id": null,
+  "bagua_taisui_hz": null,
+  "bagua_taisui_id": null,
+  "bagua_warning_hz": null,
+  "bagua_warning_id": null,
+  "bagua_virtue_hz": null,
+  "bagua_virtue_id": null,
+  "bagua_zuo_xiang_hz": null,
+  "bagua_zuo_xiang_id": null,
+  "hongshui_pages": null,
+  "mantra": {
+    "hz": "—",
+    "pinyin": "—"
+  },
+  "_xq_radar_poly": "          <polygon points=\"200,56 311.2,136 311.2,264 200,328 102.7,256 144.4,168\"\n            fill=\"rgba(139,26,26,0.18)\" stroke=\"#8B1A1A\" stroke-width=\"1.5\"/>\n          <circle cx=\"200\" cy=\"56\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"136\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"264\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"200\" cy=\"328\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"102.7\" cy=\"256\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"144.4\" cy=\"168\" r=\"3\" fill=\"#8B1A1A\"/>",
+  "_xq_radar_labels": "          <g font-family=\"Noto Serif TC,serif\">\n            <text x=\"200\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">剛硬</text>\n            <text x=\"200\" y=\"33\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Gāngyìng · Tegas · 9</text>\n\n            <text x=\"358\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">領導</text>\n            <text x=\"358\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Lǐngdǎo · Memimpin · 8</text>\n\n            <text x=\"358\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">直率</text>\n            <text x=\"358\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Zhíshuài · Terus-terang · 8</text>\n\n            <text x=\"200\" y=\"382\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">進取</text>\n            <text x=\"200\" y=\"393\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Jìnqǔ · Pelopor · 8</text>\n\n            <text x=\"42\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">急性</text>\n            <text x=\"42\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Jíxìng · Cepat panas · 7</text>\n\n            <text x=\"42\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">細膩</text>\n            <text x=\"42\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Xìnì · Halus · 4</text>\n          </g>",
+  "_xq_motto": [
+    "劍",
+    "Pedang",
+    "本性 剛健",
+    "剛健中正"
+  ],
+  "_tafsir": {
+    "kepribadian": "AH adalah seorang pria dengan Day Master Geng Metal <span class=\"hz\">庚金</span> yang kuat dan kokoh, terbentuk dalam format劫財格 <span class=\"hz\">劫財格</span> — menunjukkan kepribadian yang tegas, kompetitif, dan memiliki energi aksi yang tinggi. Dengan unsur sahabat Air <span class=\"hz\">水</span> dan Kayu <span class=\"hz\">木</span> sebagai yong shen dan xi shen, AH paling berkembang dalam lingkungan yang dinamis dan membutuhkan daya intelektual tinggi.",
+    "_kepribadian_struct": {
+      "paragraf": "AH adalah seorang pria dengan Day Master Geng Metal [[庚金]] yang kuat dan kokoh, terbentuk dalam format劫財格 [[劫財格]] — menunjukkan kepribadian yang tegas, kompetitif, dan memiliki energi aksi yang tinggi. Dengan unsur sahabat Air [[水]] dan Kayu [[木]] sebagai yong shen dan xi shen, AH paling berkembang dalam lingkungan yang dinamis dan membutuhkan daya intelektual tinggi.",
+      "power": [
+        "Kepemimpinan alami yang membuat AH selalu menjadi figur sentral dalam setiap kelompok",
+        "Daya ingat dan kemampuan akademis yang sangat menonjol berkat Bintang Wenchang [[文昌星]] di Istana Nasib",
+        "Keteguhan hati dan keberanian bertindak tegas di saat orang lain ragu-ragu"
+      ],
+      "shadow": [
+        "Kepribadian terlalu keras dan dominan sehingga bisa membuat orang lain merasa terintimidasi",
+        "Kesan pertama yang tidak selalu menarik karena sifat yang terlalu terus terang dan bebas",
+        "Kecenderungan ringan dan lincah dalam pergaulan yang perlu dikontrol agar tidak terkesan tidak serius"
+      ],
+      "optimum": [
+        "Aktif dalam posisi kepemimpinan atau peran organisasi yang membutuhkan keberanian mengambil keputusan",
+        "Kembangkan sisi kelembutan dalam komunikasi untuk memperluas jaringan kepercayaan",
+        "Manfaatkan bakat intelektual dan sastra — bidang akademik atau kreatif sangat mendukung"
+      ]
+    },
+    "xingqing_full": "<p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">1</span>Teguh pendirian dan tegas dalam mempertahankan nilai diri <span class=\"hz\">固執、堅定立場</span> — kuat namun tidak gegabah <span class=\"hz\">剛健但不魯莽</span>, kaya kemampuan dalam menangani masalah, tidak buas namun tegas, dengan kemampuan eksekusi yang sangat kuat.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">2</span>Berbakat dan kreatif dalam mengekspresikan diri <span class=\"hz\">才華洋溢</span>, teguh dalam pendapat sendiri, sangat menghargai pengakuan orang lain. Suka memberi namun berharap mendapat rasa terima kasih — bersifat subjektif <span class=\"hz\">主觀</span>, impulsif, dan langsung bertindak begitu sesuatu terlintas di pikiran.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">3</span>Jujur dan lurus hati <span class=\"hz\">正直</span>, sangat menghargai kenyamanan fisik dan kesenangan indera. Bersifat realistis dan terpaku pada hal-hal yang konkret dan dapat dikendalikan — tidak percaya pada hal-hal yang bersifat spiritual atau mistis.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">4</span>Pandai membuat analogi namun suka memberikan banyak contoh. Tidak ingin menyinggung orang lain dan tidak mau diganggu. Meskipun tidak menentang pendapat orang lain secara langsung, juga tidak mudah menerimanya — tampak terdidik dan berbudaya <span class=\"hz\">看來有修養</span>, namun kurang pandai dalam hubungan sosial dan tidak suka banyak berbicara <span class=\"hz\">不喜言談</span>.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">5</span>Berjiwa ksatria dan penuh semangat keadilan <span class=\"hz\">具俠義心</span>, kuat namun tidak gegabah, mandiri namun tidak invasif <span class=\"hz\">自主但不侵犯</span>, berani tanpa rasa takut <span class=\"hz\">獨立而無懼</span>, tegas tanpa kekerasan, berjiwa bebas dan bersemangat <span class=\"hz\">粗曠豪爽</span>, serta menyukai perhatian dan panggung <span class=\"hz\">愛出風頭</span>.</p>",
+    "xingqing_full_action": "Inti watak diri sebagaimana terbaca dari layar 性情.",
+    "overview_full": "<div style=\"display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm;\"><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Pasangan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Pasangan AH cenderung banyak menuntut dan kurang bisa diajak berdiskusi secara rasional <span class=\"hz\">配偶較嘮叨，且較不講道理</span> — perlu kesabaran ekstra dalam kehidupan rumah tangga.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Anak</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Putra AH cenderung berhati lembut dan penuh kasih sayang <span class=\"hz\">兒子比較仁慈</span> — hubungan dengan anak laki-laki membawa kehangatan.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Kemandirian</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">AH tidak mudah menerima nasihat dari figur otoritas seperti ayah <span class=\"hz\">不怕父親，無法接受父親的勸告</span> — terbiasa berjalan dengan keputusannya sendiri.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Kepemimpinan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Kemampuan memimpin secara formal relatif terbatas <span class=\"hz\">較無領導能力，無法掌握大權</span> — lebih kuat dalam peran pendukung daripada posisi puncak kekuasaan.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Pasangan &amp; Restu</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Pilihan pasangan hati AH cenderung tidak mendapat restu orang tua <span class=\"hz\">父母親會不喜歡，容易合不來</span> — perlu jembatan komunikasi antar generasi yang kuat.</div></div></div>",
+    "overview_full_action": "Pesan inti hubungan terdekat dari layar 全局總論.",
+    "family": "pasangan: - vibe: Teguh &amp; Membutuhkan Keharmonisan - headline: Pasangan ideal dari shio Kambing atau Kelinci membawa kemakmuran lima generasi - cocok_list: - shio: 羊 label: 大吉 teks: Lima generasi akan berjaya dan makmur. Dalam setiap pekerjaan, bintang finansial hadir berlipat ganda — membawa keberuntungan luar biasa dan keturunan yang terus berkembang hingga akhir masa. - shio: 兔 label: 大吉 teks: Pasangan yang membawa kemakmuran sejati. Hubungan penuh dengan rezeki finansial berlipat dan kehidupan keluarga yang berjaya sepanjang generasi. - shio: 虎 label: 吉凶相半 teks: Ada kecocokan namun juga potensi ketegangan. Kehidupan bersama membawa campuran keberuntungan dan tantangan — perlu komunikasi aktif dan saling pengertian agar hubungan berjalan harmonis. - hindari_list: - shio: 蛇 teks: Meskipun ada kecocokan lahiriah, ikatan yang terbentuk cenderung tipis dan dangkal. Hubungan keluarga kurang kuat, bahkan bisa tidak merasakan kesenangan hidup yang utuh. Sepanjang hidup sulit mendapatkan kebahagiaan sejati. - shio: 猴 teks: Ikatan relasi mudah menipis dan sulit menghasilkan kebahagiaan yang mendalam. Keharmonisan keluarga sulit dipertahankan dalam jangka panjang. - shio: 豬 teks: Hubungan berpotensi membawa ketidakbahagiaan yang berkepanjangan. Sebaiknya dihindari untuk menjaga ketenangan dan keharmonisan hidup.",
+    "_family_struct": {
+      "pasangan": {
+        "vibe": "Teguh & Membutuhkan Keharmonisan",
+        "headline": "Pasangan ideal dari shio Kambing atau Kelinci membawa kemakmuran lima generasi"
+      }
+    },
+    "career": "<p>AH dengan Day Master Geng Metal yang kuat dalam format劫財格 memiliki kecenderungan alami di bidang yang membutuhkan keberanian, keputusan cepat, dan daya intelektual tinggi — khususnya bidang yang didukung unsur Air <span class=\"hz\">水</span> dan Kayu <span class=\"hz\">木</span> sebagai yong shen. Bidang yang melibatkan unsur Logam <span class=\"hz\">金</span> berlebihan sebaiknya dihindari karena merupakan ji shen.</p>",
+    "_career_struct": {},
+    "palace1": "<p>ming_gong: - star: 文昌 - insight: AH adalah sosok yang perjalanan hidupnya berjalan tanpa gejolak besar, berkarakter kokoh dan rendah hati namun teguh dalam fondasi <span class=\"hz\">屬質僕而堅實的命運</span>. Berkepribadian jujur dan terus terang <span class=\"hz\">爽正直</span>, AH mampu berdiri di atas orang lain dan selalu menduduki posisi kepemimpinan <span class=\"hz\">居領導地位</span>. Kepribadian yang ceria dan terbuka <span class=\"hz\">爽朗</span> dalam bertindak disertai pengendalian diri yang baik, sehingga mampu mendapat kepercayaan luas dari semua kalangan. Dalam kelompok atau komunitas apapun, AH pasti akan berdiri di posisi terdepan sebagai pemimpin, menjadi figur sentral dan inti dari kelompok tersebut <span class=\"hz\">成為圍體的核心人物</span>. Apabila berada bersama Bintang Sastra <span class=\"hz\">文星</span>, AH dapat meraih ketenaran dan kemasyhuran lewat bakat sastra dan keilmuan, sekaligus mendapatkan rezeki finansial dari kemampuan tersebut <span class=\"hz\">可以文才而成名，同時也能因之而獲得財運</span>. Bagi perempuan dengan konfigurasi ini, kepribadian cenderung maskulin <span class=\"hz\">性格過於男性化</span> — karena sifat yang terlalu lepas dan bebas <span class=\"hz\">個性太過於豪爽</span>, kesan pertama yang ditinggalkan kepada orang yang baru dikenal cenderung tidak terlalu mendalam. Sejak kecil sering bergaul dan bermain bersama anak laki-laki sehingga kepribadian juga sedikit terkesan lincah dan ringan <span class=\"hz\">性格也稍見輕佻</span>. Meskipun demikian, orang-orang yang mengenal kejujuran AH yang tidak pernah berpura-pura <span class=\"hz\">直腸子而不虛偽</span> pasti menaruh kepercayaan besar kepadanya. Satu hal yang perlu diperhatikan adalah menjadi sedikit lebih lembut dalam bersikap <span class=\"hz\">再溫柔一點就行了</span>. Apabila AH menekuni profesi yang selaras dengan kepribadiannya, keberhasilan pasti akan diraih. Namun bila posisi Istana Nasib tidak sesuai — yakni berada dalam batas Istana Zi atau Hai <span class=\"hz\">在子、亥之命宮內</span> — maka karakter yang kuat dan keras kepala ini akan tampak sangat menonjol. Bintang Wenchang <span class=\"hz\">文昌星</span> adalah bintang yang menguasai bidang sastra dan keilmuan <span class=\"hz\">文藝、學術之星</span>. Bintang ini tidak terpengaruh oleh bintang buruk <span class=\"hz\">凶星</span> apapun dan dapat dikatakan sebagai bintang keberuntungan yang sangat tangguh dan teguh <span class=\"hz\">特別堅靭的吉星</span>. Bila berada bersama bintang keberuntungan lainnya, kehidupan seumur hidup dapat berjalan tenang dan damai <span class=\"hz\">高枕無憂</span>. Bahkan jika bertemu dengan bintang buruk dan memicu berbagai kesulitan, secara keseluruhan kehidupan tetap dapat dijalani dengan stabil dan tenteram <span class=\"hz\">安渡平穩的人生</span>. Selain itu, kondisi ini juga mendukung umur panjang. Baik pria maupun wanita, siapapun yang memiliki Bintang Sastra <span class=\"hz\">文昌星</span> di Istana Nasib memiliki daya ingat yang sangat luar biasa <span class=\"hz\">記憶力都相當卓越</span>. Prestasi akademik seringkali selalu masuk jajaran terbaik, dan banyak yang belajar dengan mudah dan santai <span class=\"hz\">輕鬆自在型</span>. Di balik sifatnya yang lembut dan penuh perhatian <span class=\"hz\">溫柔親切</span>, terdapat pula sisi yang jenaka dan suka bercanda <span class=\"hz\">也有戲謔的一面</span>. Bagaikan pasir emas <span class=\"hz\">砂金</span>, penampilan luar terlihat halus dan lembut, namun di dalamnya tersimpan kristal keras <span class=\"hz\">堅硬的結晶</span> — tindakan yang tegas dan penuh keputusan <span class=\"hz\">堅定果斷</span> kadang muncul mengejutkan orang-orang di sekitarnya. Bagi wanita, ini membawa keberuntungan yang datang secara tidak terduga <span class=\"hz\">意想不到的幸運</span>. - action: Manfaatkan bakat kepemimpinan dan intelektual — jalani profesi yang selaras dengan kepribadian untuk meraih keberhasilan maksimal</p><p>xiongdi: - star: null - insight: Saudara dan teman-teman AH cenderung modis dan trendi, menyukai pergaulan yang ramai dan penuh semangat. Bila Bintang Tianfu <span class=\"hz\">天府星</span> atau bintang keberuntungan lainnya berbagi istana, meskipun jumlah saudara sedikit, hubungan yang terjalin adalah hubungan saling mengerti yang baik <span class=\"hz\">互相諒解的好兄弟</span>. Lingkaran sosial AH mungkin sempit namun pertemanan yang ada terjalin sangat mendalam <span class=\"hz\">是範圍狹窄但能深交</span>. Bila bintang buruk <span class=\"hz\">凶星</span> berada di istana yang sama, komunikasi antar saudara bisa terputus sepenuhnya. Saudara-saudara AH cenderung bersifat impulsif dan tidak suka mengikuti perintah orang lain <span class=\"hz\">屬於不聽從誰的衝動性人物</span> — perdebatan yang meledak-ledak pun bisa sesekali terjadi. Jumlah saudara dan teman memang tidak banyak, namun mereka saling mendukung satu sama lain. Bila bintang buruk berada di istana ini, ada risiko kehilangan saudara atau teman karena masalah sepele yang tidak terduga <span class=\"hz\">因意想不到的小事而喪失兄弟、朋友</span>. - action: Jaga hubungan dengan saudara dan sahabat dekat — meskipun lingkaran kecil, mereka adalah sumber dukungan tulus yang langka</p><p>fuqi: - star: null - insight: Hubungan emosional AH dengan pasangan bersifat saling menghormati dan menjaga jarak yang sehat — seperti tamu kehormatan satu sama lain <span class=\"hz\">相敬如賓</span>. Suami dan istri saling memahami kebutuhan ruang pribadi masing-masing, sehingga tidak akan pernah bertengkar hanya karena alasan sepele. Namun demikian, pasangan AH cenderung mudah terlibat dalam perselisihan <span class=\"hz\">夫婦間易起爭執</span>. Bila Bintang Matahari <span class=\"hz\">太陽星</span> berada di istana yang sama tanpa bintang buruk lain, atau bila Bintang Tianji <span class=\"hz\">天機星</span> atau Tiantong <span class=\"hz\">天同星</span> berbagi istana — AH akan menemukan pasangan yang cerdas dan membangun keluarga yang harmonis dan sempurna. AH memiliki rasa cemburu yang kuat secara alami, namun tidak pernah menunjukkannya ke permukaan <span class=\"hz\">天生嫉妒心強，但絕不溢於言表</span>. Bagi pria dengan Bintang Wenchang <span class=\"hz\">文昌星</span> dan Tianji <span class=\"hz\">天機星</span> berada di posisinya, selain pasangan resmi, cenderung memelihara hubungan rahasia di luar pernikahan <span class=\"hz\">必在外養小公館金屋藏嬌</span>. Pria dengan konfigurasi ini tertarik pada wanita yang dingin dan anggun <span class=\"hz\">冷艷的美人</span>. Wanita dengan konfigurasi ini sangat berjodoh dengan pria yang cerdas dan memiliki rezeki finansial yang melimpah <span class=\"hz\">腦筋聰明而又財氣縱橫的男人</span>. - action: Bangun komunikasi yang terbuka dan jujur dengan pasangan — sifat menyimpan perasaan cemburu dalam diam perlu diungkapkan secara sehat agar relasi tetap harmonis</p><p>zinu: - star: null - insight: Meskipun masih muda, anak-anak AH termasuk tipe yang dapat dipercaya untuk mengemban tanggung jawab besar <span class=\"hz\">可託付一切的類型</span>. Meski AH memiliki keturunan, mereka sering kali menghindari dan melawan AH, serta tidak selalu mampu memberikan bantuan saat dibutuhkan <span class=\"hz\">無法助您一臂之力</span>. Bila Bintang Wuqu <span class=\"hz\">武曲星</span> juga berada di istana yang sama, anak-anak membutuhkan perhatian dan perawatan ekstra saat kecil — namun saat dewasa, mereka akan menjadi tangan kanan AH yang setia dalam mendukung perkembangan AH <span class=\"hz\">可當您的左右手，協助您的發展</span>. Bila hanya Bintang Tanlang <span class=\"hz\">貪狼星</span> yang berada di posisinya, maka anak-anak AH akan pantang menyerah hingga mendapatkan apa yang mereka inginkan! - action: Investasikan perhatian dan bimbingan pada anak sejak dini — meskipun sering berlawanan pandangan, mereka berpotensi menjadi pendukung terkuat di masa depan</p>",
+    "_palace1_struct": {
+      "ming_gong": {
+        "star": "文昌",
+        "insight": "AH adalah sosok yang perjalanan hidupnya berjalan tanpa gejolak besar, berkarakter kokoh dan rendah hati namun teguh dalam fondasi [[屬質僕而堅實的命運]]. Berkepribadian jujur dan terus terang [[爽正直]], AH mampu berdiri di atas orang lain dan selalu menduduki posisi kepemimpinan [[居領導地位]]. Kepribadian yang ceria dan terbuka [[爽朗]] dalam bertindak disertai pengendalian diri yang baik, sehingga mampu mendapat kepercayaan luas dari semua kalangan. Dalam kelompok atau komunitas apapun, AH pasti akan berdiri di posisi terdepan sebagai pemimpin, menjadi figur sentral dan inti dari kelompok tersebut [[成為圍體的核心人物]]. Apabila berada bersama Bintang Sastra [[文星]], AH dapat meraih ketenaran dan kemasyhuran lewat bakat sastra dan keilmuan, sekaligus mendapatkan rezeki finansial dari kemampuan tersebut [[可以文才而成名，同時也能因之而獲得財運]]. Bagi perempuan dengan konfigurasi ini, kepribadian cenderung maskulin [[性格過於男性化]] — karena sifat yang terlalu lepas dan bebas [[個性太過於豪爽]], kesan pertama yang ditinggalkan kepada orang yang baru dikenal cenderung tidak terlalu mendalam. Sejak kecil sering bergaul dan bermain bersama anak laki-laki sehingga kepribadian juga sedikit terkesan lincah dan ringan [[性格也稍見輕佻]]. Meskipun demikian, orang-orang yang mengenal kejujuran AH yang tidak pernah berpura-pura [[直腸子而不虛偽]] pasti menaruh kepercayaan besar kepadanya. Satu hal yang perlu diperhatikan adalah menjadi sedikit lebih lembut dalam bersikap [[再溫柔一點就行了]]. Apabila AH menekuni profesi yang selaras dengan kepribadiannya, keberhasilan pasti akan diraih. Namun bila posisi Istana Nasib tidak sesuai — yakni berada dalam batas Istana Zi atau Hai [[在子、亥之命宮內]] — maka karakter yang kuat dan keras kepala ini akan tampak sangat menonjol. Bintang Wenchang [[文昌星]] adalah bintang yang menguasai bidang sastra dan keilmuan [[文藝、學術之星]]. Bintang ini tidak terpengaruh oleh bintang buruk [[凶星]] apapun dan dapat dikatakan sebagai bintang keberuntungan yang sangat tangguh dan teguh [[特別堅靭的吉星]]. Bila berada bersama bintang keberuntungan lainnya, kehidupan seumur hidup dapat berjalan tenang dan damai [[高枕無憂]]. Bahkan jika bertemu dengan bintang buruk dan memicu berbagai kesulitan, secara keseluruhan kehidupan tetap dapat dijalani dengan stabil dan tenteram [[安渡平穩的人生]]. Selain itu, kondisi ini juga mendukung umur panjang. Baik pria maupun wanita, siapapun yang memiliki Bintang Sastra [[文昌星]] di Istana Nasib memiliki daya ingat yang sangat luar biasa [[記憶力都相當卓越]]. Prestasi akademik seringkali selalu masuk jajaran terbaik, dan banyak yang belajar dengan mudah dan santai [[輕鬆自在型]]. Di balik sifatnya yang lembut dan penuh perhatian [[溫柔親切]], terdapat pula sisi yang jenaka dan suka bercanda [[也有戲謔的一面]]. Bagaikan pasir emas [[砂金]], penampilan luar terlihat halus dan lembut, namun di dalamnya tersimpan kristal keras [[堅硬的結晶]] — tindakan yang tegas dan penuh keputusan [[堅定果斷]] kadang muncul mengejutkan orang-orang di sekitarnya. Bagi wanita, ini membawa keberuntungan yang datang secara tidak terduga [[意想不到的幸運]].",
+        "action": "Manfaatkan bakat kepemimpinan dan intelektual — jalani profesi yang selaras dengan kepribadian untuk meraih keberhasilan maksimal"
+      },
+      "xiongdi": {
+        "insight": "Saudara dan teman-teman AH cenderung modis dan trendi, menyukai pergaulan yang ramai dan penuh semangat. Bila Bintang Tianfu [[天府星]] atau bintang keberuntungan lainnya berbagi istana, meskipun jumlah saudara sedikit, hubungan yang terjalin adalah hubungan saling mengerti yang baik [[互相諒解的好兄弟]]. Lingkaran sosial AH mungkin sempit namun pertemanan yang ada terjalin sangat mendalam [[是範圍狹窄但能深交]]. Bila bintang buruk [[凶星]] berada di istana yang sama, komunikasi antar saudara bisa terputus sepenuhnya. Saudara-saudara AH cenderung bersifat impulsif dan tidak suka mengikuti perintah orang lain [[屬於不聽從誰的衝動性人物]] — perdebatan yang meledak-ledak pun bisa sesekali terjadi. Jumlah saudara dan teman memang tidak banyak, namun mereka saling mendukung satu sama lain. Bila bintang buruk berada di istana ini, ada risiko kehilangan saudara atau teman karena masalah sepele yang tidak terduga [[因意想不到的小事而喪失兄弟、朋友]].",
+        "action": "Jaga hubungan dengan saudara dan sahabat dekat — meskipun lingkaran kecil, mereka adalah sumber dukungan tulus yang langka"
+      },
+      "fuqi": {
+        "insight": "Hubungan emosional AH dengan pasangan bersifat saling menghormati dan menjaga jarak yang sehat — seperti tamu kehormatan satu sama lain [[相敬如賓]]. Suami dan istri saling memahami kebutuhan ruang pribadi masing-masing, sehingga tidak akan pernah bertengkar hanya karena alasan sepele. Namun demikian, pasangan AH cenderung mudah terlibat dalam perselisihan [[夫婦間易起爭執]]. Bila Bintang Matahari [[太陽星]] berada di istana yang sama tanpa bintang buruk lain, atau bila Bintang Tianji [[天機星]] atau Tiantong [[天同星]] berbagi istana — AH akan menemukan pasangan yang cerdas dan membangun keluarga yang harmonis dan sempurna. AH memiliki rasa cemburu yang kuat secara alami, namun tidak pernah menunjukkannya ke permukaan [[天生嫉妒心強，但絕不溢於言表]]. Bagi pria dengan Bintang Wenchang [[文昌星]] dan Tianji [[天機星]] berada di posisinya, selain pasangan resmi, cenderung memelihara hubungan rahasia di luar pernikahan [[必在外養小公館金屋藏嬌]]. Pria dengan konfigurasi ini tertarik pada wanita yang dingin dan anggun [[冷艷的美人]]. Wanita dengan konfigurasi ini sangat berjodoh dengan pria yang cerdas dan memiliki rezeki finansial yang melimpah [[腦筋聰明而又財氣縱橫的男人]].",
+        "action": "Bangun komunikasi yang terbuka dan jujur dengan pasangan — sifat menyimpan perasaan cemburu dalam diam perlu diungkapkan secara sehat agar relasi tetap harmonis"
+      },
+      "zinu": {
+        "insight": "Meskipun masih muda, anak-anak AH termasuk tipe yang dapat dipercaya untuk mengemban tanggung jawab besar [[可託付一切的類型]]. Meski AH memiliki keturunan, mereka sering kali menghindari dan melawan AH, serta tidak selalu mampu memberikan bantuan saat dibutuhkan [[無法助您一臂之力]]. Bila Bintang Wuqu [[武曲星]] juga berada di istana yang sama, anak-anak membutuhkan perhatian dan perawatan ekstra saat kecil — namun saat dewasa, mereka akan menjadi tangan kanan AH yang setia dalam mendukung perkembangan AH [[可當您的左右手，協助您的發展]]. Bila hanya Bintang Tanlang [[貪狼星]] yang berada di posisinya, maka anak-anak AH akan pantang menyerah hingga mendapatkan apa yang mereka inginkan!",
+        "action": "Investasikan perhatian dan bimbingan pada anak sejak dini — meskipun sering berlawanan pandangan, mereka berpotensi menjadi pendukung terkuat di masa depan"
+      }
+    },
+    "palace2": "<p>caibo: - star: 太陰 - insight: Sikap AH terhadap uang cenderung kasar dan impulsif — sulit mengelola serta memanfaatkan uang secara cerdas <span class=\"hz\">用錢態度粗礪，無法巧妙地利用金錢</span>. Namun Bintang Taiyin <span class=\"hz\">太陰星</span> — bintang yang berjodoh baik dengan properti dan kekayaan — membuka peluang besar. Bila Bintang Tianji <span class=\"hz\">天機星</span> juga berada di istana yang sama, AH dapat membangun kekayaan yang cukup besar dimulai dari nol <span class=\"hz\">從身無分文而賺取相當的財產</span>. Bila Bintang Tiantong <span class=\"hz\">天同星</span> berbagi istana, AH sering mendapatkan peluang untuk menghasilkan uang besar <span class=\"hz\">經常會碰到賺大錢的機會</span>. Bila bersama bintang keberuntungan <span class=\"hz\">吉星</span> lainnya, AH mampu menyimpan dan mengakumulasi uang yang didapat — berpotensi menjadi pemilik kekayaan yang cukup signifikan <span class=\"hz\">成為相當的財產家</span>. Dari sisi BaZi: sumber 正財 tidak berlimpah namun mudah didapat, uang sulit disimpan dalam bentuk tunai — perlu properti untuk mengamankan kekayaan <span class=\"hz\">要買不動產才保得住</span>. - action: Disiplinkan pengelolaan keuangan dan investasikan ke properti atau aset nyata — jangan biarkan uang mengalir begitu saja tanpa arah</p><p>jie_e: - star: null - insight: AH rentan terhadap penyakit otak dan sistem saraf <span class=\"hz\">腦靈的疾病</span>, serta penyakit sendi dan kelenjar <span class=\"hz\">關節、腺部的疾病</span>, termasuk neuralgia dan rematik <span class=\"hz\">神經痛、風濕病</span>. Secara umum kesehatan tidak menghadapi krisis besar — bahkan ketika sakit, AH tampak seperti orang sehat dan pulih lebih cepat dari kebanyakan orang <span class=\"hz\">恢復得也比常人更迅速</span>. Kelemahan utama adalah ketidaktahanan terhadap suhu ekstrem <span class=\"hz\">苦於過熱與過冷</span>, dan kelelahan berlebihan adalah penyebab utama timbulnya penyakit <span class=\"hz\">過度疲勞是致病的主因</span>. Bila bintang buruk <span class=\"hz\">凶星</span> di istana ini, rentan terhadap penyakit lambung dan beri-beri <span class=\"hz\">易患胃病、腳氣病</span>. Bila Bintang Ziwei <span class=\"hz\">紫微星</span> berbagi istana, kondisi kesehatan sangat prima. - action: Jaga keseimbangan suhu tubuh dan hindari kelelahan ekstrem — itu adalah kunci utama menjaga kesehatan optimal AH</p><p>qianyi: - star: null - insight: Tindakan dan pergerakan AH mudah terhambat dan stagnan <span class=\"hz\">行動容易受阻而停滯</span> — perpindahan tempat tidak mudah terjadi secara spontan. Keberuntungan pertama kali berpihak pada AH melalui perjalanan ke luar negeri untuk berkembang, serta melalui perubahan karir yang mengejar sesuatu yang baru <span class=\"hz\">首次遭遇機運的垂青</span>. Bila AH terlalu lama tinggal di rumah atau menetap di satu tempat dalam waktu panjang, hal tersebut justru bisa mendatangkan banyak masalah. Bila Bintang Jumen <span class=\"hz\">巨門</span> dan Tianliang <span class=\"hz\">天梁</span> berada di istana yang sama, pergi ke luar negeri menjadi tujuan yang sangat tepat — AH sangat dianjurkan untuk mengejar pendidikan atau karir di luar negeri <span class=\"hz\">隨心所欲地到海外去留學</span>! Bila Bintang Taiyin <span class=\"hz\">太陰星</span> berbagi istana, meskipun AH mungkin menghadapi kemalangan, di dalam kemalangan tersebut selalu tersembunyi peluang lompatan besar yang tidak terduga <span class=\"hz\">飛躍性的機運</span>. - action: Jangan terlalu lama menetap di satu tempat — pergerakan, perjalanan, dan kesempatan di luar negeri adalah kunci membuka keberuntungan terbesar AH</p><p>puyi: - star: null - insight: Bawahan dan asisten AH cenderung bertipe cerdas, gesit, dan berpenampilan baik <span class=\"hz\">腦筋聰明、敏捷的英飾型</span>. Bila posisi berada di cabang 子, 辰, 午, 戌, atau 亥, bawahan AH adalah orang-orang yang sungguh-sungguh berkemampuan <span class=\"hz\">實力者</span>. Meskipun masih muda usia, sudah banyak teman yang sangat berbakat <span class=\"hz\">相當有才幹的友人也不少</span>. Bila Bintang Ziwei <span class=\"hz\">紫微星</span> berbagi istana, bawahan dan teman yang lebih muda seringkali membantu AH dari balik layar <span class=\"hz\">常在背中協助您</span>. Di luar posisi tersebut, bawahan yang makmur/kaya bisa menyimpan dendam terhadap AH dan pada akhirnya mengkhianatinya <span class=\"hz\">受到部下之怨恨而被部下所出賣</span>. Sementara itu, teman-teman yang lebih muda justru bisa berbalik menjadi musuh <span class=\"hz\">年少的朋友反而屈將仇視</span>. - action: Bangun kepercayaan yang tulus dengan bawahan dan tim muda — jangan sampai perbedaan kepentingan menumbuhkan dendam yang tidak terlihat</p>",
+    "_palace2_struct": {
+      "caibo": {
+        "star": "太陰",
+        "insight": "Sikap AH terhadap uang cenderung kasar dan impulsif — sulit mengelola serta memanfaatkan uang secara cerdas [[用錢態度粗礪，無法巧妙地利用金錢]]. Namun Bintang Taiyin [[太陰星]] — bintang yang berjodoh baik dengan properti dan kekayaan — membuka peluang besar. Bila Bintang Tianji [[天機星]] juga berada di istana yang sama, AH dapat membangun kekayaan yang cukup besar dimulai dari nol [[從身無分文而賺取相當的財產]]. Bila Bintang Tiantong [[天同星]] berbagi istana, AH sering mendapatkan peluang untuk menghasilkan uang besar [[經常會碰到賺大錢的機會]]. Bila bersama bintang keberuntungan [[吉星]] lainnya, AH mampu menyimpan dan mengakumulasi uang yang didapat — berpotensi menjadi pemilik kekayaan yang cukup signifikan [[成為相當的財產家]]. Dari sisi BaZi: sumber 正財 tidak berlimpah namun mudah didapat, uang sulit disimpan dalam bentuk tunai — perlu properti untuk mengamankan kekayaan [[要買不動產才保得住]].",
+        "action": "Disiplinkan pengelolaan keuangan dan investasikan ke properti atau aset nyata — jangan biarkan uang mengalir begitu saja tanpa arah"
+      },
+      "jie_e": {
+        "insight": "AH rentan terhadap penyakit otak dan sistem saraf [[腦靈的疾病]], serta penyakit sendi dan kelenjar [[關節、腺部的疾病]], termasuk neuralgia dan rematik [[神經痛、風濕病]]. Secara umum kesehatan tidak menghadapi krisis besar — bahkan ketika sakit, AH tampak seperti orang sehat dan pulih lebih cepat dari kebanyakan orang [[恢復得也比常人更迅速]]. Kelemahan utama adalah ketidaktahanan terhadap suhu ekstrem [[苦於過熱與過冷]], dan kelelahan berlebihan adalah penyebab utama timbulnya penyakit [[過度疲勞是致病的主因]]. Bila bintang buruk [[凶星]] di istana ini, rentan terhadap penyakit lambung dan beri-beri [[易患胃病、腳氣病]]. Bila Bintang Ziwei [[紫微星]] berbagi istana, kondisi kesehatan sangat prima.",
+        "action": "Jaga keseimbangan suhu tubuh dan hindari kelelahan ekstrem — itu adalah kunci utama menjaga kesehatan optimal AH"
+      },
+      "qianyi": {
+        "insight": "Tindakan dan pergerakan AH mudah terhambat dan stagnan [[行動容易受阻而停滯]] — perpindahan tempat tidak mudah terjadi secara spontan. Keberuntungan pertama kali berpihak pada AH melalui perjalanan ke luar negeri untuk berkembang, serta melalui perubahan karir yang mengejar sesuatu yang baru [[首次遭遇機運的垂青]]. Bila AH terlalu lama tinggal di rumah atau menetap di satu tempat dalam waktu panjang, hal tersebut justru bisa mendatangkan banyak masalah. Bila Bintang Jumen [[巨門]] dan Tianliang [[天梁]] berada di istana yang sama, pergi ke luar negeri menjadi tujuan yang sangat tepat — AH sangat dianjurkan untuk mengejar pendidikan atau karir di luar negeri [[隨心所欲地到海外去留學]]! Bila Bintang Taiyin [[太陰星]] berbagi istana, meskipun AH mungkin menghadapi kemalangan, di dalam kemalangan tersebut selalu tersembunyi peluang lompatan besar yang tidak terduga [[飛躍性的機運]].",
+        "action": "Jangan terlalu lama menetap di satu tempat — pergerakan, perjalanan, dan kesempatan di luar negeri adalah kunci membuka keberuntungan terbesar AH"
+      },
+      "puyi": {
+        "insight": "Bawahan dan asisten AH cenderung bertipe cerdas, gesit, dan berpenampilan baik [[腦筋聰明、敏捷的英飾型]]. Bila posisi berada di cabang 子, 辰, 午, 戌, atau 亥, bawahan AH adalah orang-orang yang sungguh-sungguh berkemampuan [[實力者]]. Meskipun masih muda usia, sudah banyak teman yang sangat berbakat [[相當有才幹的友人也不少]]. Bila Bintang Ziwei [[紫微星]] berbagi istana, bawahan dan teman yang lebih muda seringkali membantu AH dari balik layar [[常在背中協助您]]. Di luar posisi tersebut, bawahan yang makmur/kaya bisa menyimpan dendam terhadap AH dan pada akhirnya mengkhianatinya [[受到部下之怨恨而被部下所出賣]]. Sementara itu, teman-teman yang lebih muda justru bisa berbalik menjadi musuh [[年少的朋友反而屈將仇視]].",
+        "action": "Bangun kepercayaan yang tulus dengan bawahan dan tim muda — jangan sampai perbedaan kepentingan menumbuhkan dendam yang tidak terlihat"
+      }
+    },
+    "palace3": "<p>guanlu: - star: 太陽 - insight: Bidang yang cocok untuk AH meliputi dokter bedah <span class=\"hz\">外科醫生</span>, tenaga ahli teknik <span class=\"hz\">技術者</span>, rohaniawan <span class=\"hz\">僧侶</span>, dan pedagang logam mulia <span class=\"hz\">貴金屬商</span>. AH yang penuh energi dan daya gerak ini seringkali mengambil langkah lebih cepat dari orang lain — selalu berada di posisi terdepan memimpin dan mengarahkan orang lain <span class=\"hz\">佔在領導的地位上指揮別人前進</span>. Setelah mulai berkarir, dedikasi dan antusiasme AH yang tak kenal lelah segera membawanya menuju jalur kesuksesan <span class=\"hz\">不久之後即向成功之道邁進</span>. AH juga memiliki bakat alami sebagai penulis <span class=\"hz\">具有身為作家的天賦</span>. Namun AH perlu berhati-hati dengan kecenderungan meremehkan keberadaan rekan-rekan <span class=\"hz\">自視過高</span> dan kebiasaan melaju sendirian tanpa mempertimbangkan orang lain <span class=\"hz\">獨自一個人莽莽撞撞的向前衝</span> — hal ini perlu dikendalikan. Bila bintang keberuntungan lain turut hadir, AH dapat meninggalkan prestasi gemilang di tempat kerja <span class=\"hz\">在工作崗位上可留下光輝的功績</span>. Namun bila posisi berada di istana 申 atau 酉, kekuatan Bintang Matahari <span class=\"hz\">太陽星</span> melemah dan peluang gemerlap berkurang — hanya bisa menjadi anggota masyarakat biasa. - action: Manfaatkan energi kepemimpinan dan bakat menulis — namun kendalikan ego dan libatkan tim agar prestasi yang diraih bisa bertahan lebih lama</p><p>tianzhai: - star: 武曲 - insight: Istana Properti AH adalah konfigurasi klasik untuk keberuntungan aset — AH mampu mengelola dan memanfaatkan properti besar secara cerdas <span class=\"hz\">巧妙地運用龐大的不動產</span>. Bila hanya Bintang Wuqu <span class=\"hz\">武曲星</span> yang berada di istana ini, warisan properti dari leluhur dapat dipertahankan meskipun dalam berbagai bentuk perubahan <span class=\"hz\">從祖先而來的不動產，雖有各種不同形態的傳承</span> — namun bila berada di posisi 寅 atau 卯, warisan tersebut berisiko hilang. Kehadiran bintang lain akan mengubah nasib properti sesuai dengan pengaruh masing-masing bintang. Dengan bintang keberuntungan <span class=\"hz\">吉星</span>, AH dapat memiliki tanah dan rumah <span class=\"hz\">可有土地、房屋</span>. Dengan bintang buruk <span class=\"hz\">凶星</span>, aset yang sudah di tangan akhirnya harus dilepaskan juga. Arah Barat sangat auspicious untuk properti AH <span class=\"hz\">西方大吉</span>. - action: Pertahankan dan kembangkan aset properti yang sudah ada — prioritaskan properti di sisi Barat sebagai pilihan terbaik untuk investasi</p><p>fude: - star: null - insight: Kepribadian AH yang mudah goyah dan tidak konsisten dapat mengikis keberuntungan dan kebajikan hidup <span class=\"hz\">搖擺不定的性格，福德也因之喪失</span>. Namun terdapat petunjuk bahwa AH dapat menerima anugerah keberuntungan dan kebajikan yang sesungguhnya. AH dikenal sebagai sosok yang pandai bergaul dan cerdas dalam menavigasi kehidupan sosial <span class=\"hz\">處世高明</span>, serta sangat mementingkan cara bersikap dan berinteraksi dengan orang lain <span class=\"hz\">待人接物的方式</span>. Namun bila terlalu terpengaruh oleh pendapat dan tekanan dari lingkungan sekitar <span class=\"hz\">受到周圍意見擾亂時</span>, keberuntungan yang sudah di tangan bisa menghilang begitu saja. - action: Perkuat keteguhan pendirian dan jangan mudah goyah oleh pendapat orang lain — konsistensi adalah kunci menjaga keberuntungan yang telah diraih</p><p>fumu: - star: null - insight: AH memiliki orang tua yang bertangan besi dan sangat tidak toleran terhadap kesalahan <span class=\"hz\">厭惡做錯事的鐵腕雙親</span>. AH cenderung berpisah dari orang tua atau anggota keluarga sejak cukup awal <span class=\"hz\">與雙親或家裡的人都很早就分離</span>. Orang tua AH adalah pribadi yang kaku dan sama sekali tidak fleksibel <span class=\"hz\">毫不通融的僵硬人物</span> — bila AH tidak bertindak sesuai keinginan mereka, pengampunan tidak akan diberikan. Namun orang tua ini justru tidak bisa menolak permintaan dari orang lain. Di bawah sikap kontradiktif orang tua seperti ini, konflik mendalam antara orang tua dan anak sering kali muncul <span class=\"hz\">常有深刻的對立情況出現</span>. Bila Bintang Ziwei <span class=\"hz\">紫微星</span> berbagi istana atau beberapa bintang keberuntungan turut hadir, tidak akan ada perpisahan atau pemutusan permanen dalam hubungan orang tua-anak — namun tetap perlu diingat bahwa Bintang Tujuh Pembunuhan <span class=\"hz\">七殺星</span> adalah bintang yang tidak menguntungkan. - action: Jaga komunikasi dengan orang tua walau ada perbedaan pendapat — konflik mendalam tidak harus berujung pada pemutusan hubungan keluarga</p>",
+    "_palace3_struct": {
+      "guanlu": {
+        "star": "太陽",
+        "insight": "Bidang yang cocok untuk AH meliputi dokter bedah [[外科醫生]], tenaga ahli teknik [[技術者]], rohaniawan [[僧侶]], dan pedagang logam mulia [[貴金屬商]]. AH yang penuh energi dan daya gerak ini seringkali mengambil langkah lebih cepat dari orang lain — selalu berada di posisi terdepan memimpin dan mengarahkan orang lain [[佔在領導的地位上指揮別人前進]]. Setelah mulai berkarir, dedikasi dan antusiasme AH yang tak kenal lelah segera membawanya menuju jalur kesuksesan [[不久之後即向成功之道邁進]]. AH juga memiliki bakat alami sebagai penulis [[具有身為作家的天賦]]. Namun AH perlu berhati-hati dengan kecenderungan meremehkan keberadaan rekan-rekan [[自視過高]] dan kebiasaan melaju sendirian tanpa mempertimbangkan orang lain [[獨自一個人莽莽撞撞的向前衝]] — hal ini perlu dikendalikan. Bila bintang keberuntungan lain turut hadir, AH dapat meninggalkan prestasi gemilang di tempat kerja [[在工作崗位上可留下光輝的功績]]. Namun bila posisi berada di istana 申 atau 酉, kekuatan Bintang Matahari [[太陽星]] melemah dan peluang gemerlap berkurang — hanya bisa menjadi anggota masyarakat biasa.",
+        "action": "Manfaatkan energi kepemimpinan dan bakat menulis — namun kendalikan ego dan libatkan tim agar prestasi yang diraih bisa bertahan lebih lama"
+      },
+      "tianzhai": {
+        "star": "武曲",
+        "insight": "Istana Properti AH adalah konfigurasi klasik untuk keberuntungan aset — AH mampu mengelola dan memanfaatkan properti besar secara cerdas [[巧妙地運用龐大的不動產]]. Bila hanya Bintang Wuqu [[武曲星]] yang berada di istana ini, warisan properti dari leluhur dapat dipertahankan meskipun dalam berbagai bentuk perubahan [[從祖先而來的不動產，雖有各種不同形態的傳承]] — namun bila berada di posisi 寅 atau 卯, warisan tersebut berisiko hilang. Kehadiran bintang lain akan mengubah nasib properti sesuai dengan pengaruh masing-masing bintang. Dengan bintang keberuntungan [[吉星]], AH dapat memiliki tanah dan rumah [[可有土地、房屋]]. Dengan bintang buruk [[凶星]], aset yang sudah di tangan akhirnya harus dilepaskan juga. Arah Barat sangat auspicious untuk properti AH [[西方大吉]].",
+        "action": "Pertahankan dan kembangkan aset properti yang sudah ada — prioritaskan properti di sisi Barat sebagai pilihan terbaik untuk investasi"
+      },
+      "fude": {
+        "insight": "Kepribadian AH yang mudah goyah dan tidak konsisten dapat mengikis keberuntungan dan kebajikan hidup [[搖擺不定的性格，福德也因之喪失]]. Namun terdapat petunjuk bahwa AH dapat menerima anugerah keberuntungan dan kebajikan yang sesungguhnya. AH dikenal sebagai sosok yang pandai bergaul dan cerdas dalam menavigasi kehidupan sosial [[處世高明]], serta sangat mementingkan cara bersikap dan berinteraksi dengan orang lain [[待人接物的方式]]. Namun bila terlalu terpengaruh oleh pendapat dan tekanan dari lingkungan sekitar [[受到周圍意見擾亂時]], keberuntungan yang sudah di tangan bisa menghilang begitu saja.",
+        "action": "Perkuat keteguhan pendirian dan jangan mudah goyah oleh pendapat orang lain — konsistensi adalah kunci menjaga keberuntungan yang telah diraih"
+      },
+      "fumu": {
+        "insight": "AH memiliki orang tua yang bertangan besi dan sangat tidak toleran terhadap kesalahan [[厭惡做錯事的鐵腕雙親]]. AH cenderung berpisah dari orang tua atau anggota keluarga sejak cukup awal [[與雙親或家裡的人都很早就分離]]. Orang tua AH adalah pribadi yang kaku dan sama sekali tidak fleksibel [[毫不通融的僵硬人物]] — bila AH tidak bertindak sesuai keinginan mereka, pengampunan tidak akan diberikan. Namun orang tua ini justru tidak bisa menolak permintaan dari orang lain. Di bawah sikap kontradiktif orang tua seperti ini, konflik mendalam antara orang tua dan anak sering kali muncul [[常有深刻的對立情況出現]]. Bila Bintang Ziwei [[紫微星]] berbagi istana atau beberapa bintang keberuntungan turut hadir, tidak akan ada perpisahan atau pemutusan permanen dalam hubungan orang tua-anak — namun tetap perlu diingat bahwa Bintang Tujuh Pembunuhan [[七殺星]] adalah bintang yang tidak menguntungkan.",
+        "action": "Jaga komunikasi dengan orang tua walau ada perbedaan pendapat — konflik mendalam tidak harus berujung pada pemutusan hubungan keluarga"
+      }
+    },
+    "sintesis": "AH adalah sosok pemimpin alami dengan fondasi mental yang kokoh dan daya intelektual luar biasa — perjalanan hidupnya bersifat stabil namun menyimpan ketegasan yang kuat di balik penampilan yang tenang.",
+    "_sintesis_struct": {
+      "opening": "AH adalah sosok pemimpin alami dengan fondasi mental yang kokoh dan daya intelektual luar biasa — perjalanan hidupnya bersifat stabil namun menyimpan ketegasan yang kuat di balik penampilan yang tenang.",
+      "actions": [
+        {
+          "title": "Kembangkan Peran Kepemimpinan"
+        },
+        {
+          "title": "Asah Bakat Intelektual"
+        },
+        {
+          "title": "Kelola Komunikasi dengan Lembut"
+        },
+        {
+          "title": "Pilih Pasangan Harmonis"
+        },
+        {
+          "title": "Jaga Keseimbangan Energi Metal"
+        }
+      ]
+    },
+    "_dmcard": "\n        <div class=\"dmc-eyebrow\">本 命 · Penguasa Hari</div>\n        <div class=\"dmc-stem\">庚</div>\n        <div class=\"dmc-element\">金 · Logam Yang</div>\n        <div class=\"dmc-pinyin\">Gēng 金, \"Pedang\"</div>\n        <div class=\"dmc-strength\">Status: <span class=\"val\">KUAT</span> · 旺</div>\n      ",
+    "_jishen_body": "<strong>金</strong> (Jīn · Logam), Logam tajam yang dapat melukai bila terlalu dominan; hindari lingkungan terlalu kaku, hierarkis, dan kompetitif berlebih.",
+    "fam_pasangan_vibe": "Teguh &amp; Membutuhkan Keharmonisan",
+    "fam_pasangan_headline": "Pasangan ideal dari shio Kambing atau Kelinci membawa kemakmuran lima generasi",
+    "caifu_zheng_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "caifu_pian_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "_p1_ming_gong": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Diri</span><span class=\"pn-meta\">Mìng Gōng<span class=\"hz\">命宮</span></span></div></div><div class=\"pal-body\"><p>AH adalah sosok yang perjalanan hidupnya berjalan tanpa gejolak besar, berkarakter kokoh dan rendah hati namun teguh dalam fondasi <span class=\"hz\">屬質僕而堅實的命運</span>. Berkepribadian jujur dan terus terang <span class=\"hz\">爽正直</span>, AH mampu berdiri di atas orang lain dan selalu menduduki posisi kepemimpinan <span class=\"hz\">居領導地位</span>. Kepribadian yang ceria dan terbuka <span class=\"hz\">爽朗</span> dalam bertindak disertai pengendalian diri yang baik, sehingga mampu mendapat kepercayaan luas dari semua kalangan. Dalam kelompok atau komunitas apapun, AH pasti akan berdiri di posisi terdepan sebagai pemimpin, menjadi figur sentral dan inti dari kelompok tersebut <span class=\"hz\">成為圍體的核心人物</span>. Apabila berada bersama Bintang Sastra <span class=\"hz\">文星</span>, AH dapat meraih ketenaran dan kemasyhuran lewat bakat sastra dan keilmuan, sekaligus mendapatkan rezeki finansial dari kemampuan tersebut <span class=\"hz\">可以文才而成名，同時也能因之而獲得財運</span>. Bagi perempuan dengan konfigurasi ini, kepribadian cenderung maskulin <span class=\"hz\">性格過於男性化</span> — karena sifat yang terlalu lepas dan bebas <span class=\"hz\">個性太過於豪爽</span>, kesan pertama yang ditinggalkan kepada orang yang baru dikenal cenderung tidak terlalu mendalam. Sejak kecil sering bergaul dan bermain bersama anak laki-laki sehingga kepribadian juga sedikit terkesan lincah dan ringan <span class=\"hz\">性格也稍見輕佻</span>. Meskipun demikian, orang-orang yang mengenal kejujuran AH yang tidak pernah berpura-pura <span class=\"hz\">直腸子而不虛偽</span> pasti menaruh kepercayaan besar kepadanya. Satu hal yang perlu diperhatikan adalah menjadi sedikit lebih lembut dalam bersikap <span class=\"hz\">再溫柔一點就行了</span>. Apabila AH menekuni profesi yang selaras dengan kepribadiannya, keberhasilan pasti akan diraih. Namun bila posisi Istana Nasib tidak sesuai — yakni berada dalam batas Istana Zi atau Hai <span class=\"hz\">在子、亥之命宮內</span> — maka karakter yang kuat dan keras kepala ini akan tampak sangat menonjol. Bintang Wenchang <span class=\"hz\">文昌星</span> adalah bintang yang menguasai bidang sastra dan keilmuan <span class=\"hz\">文藝、學術之星</span>. Bintang ini tidak terpengaruh oleh bintang buruk <span class=\"hz\">凶星</span> apapun dan dapat dikatakan sebagai bintang keberuntungan yang sangat tangguh dan teguh <span class=\"hz\">特別堅靭的吉星</span>. Bila berada bersama bintang keberuntungan lainnya, kehidupan seumur hidup dapat berjalan tenang dan damai <span class=\"hz\">高枕無憂</span>. Bahkan jika bertemu dengan bintang buruk dan memicu berbagai kesulitan, secara keseluruhan kehidupan tetap dapat dijalani dengan stabil dan tenteram <span class=\"hz\">安渡平穩的人生</span>. Selain itu, kondisi ini juga mendukung umur panjang. Baik pria maupun wanita, siapapun yang memiliki Bintang Sastra <span class=\"hz\">文昌星</span> di Istana Nasib memiliki daya ingat yang sangat luar biasa <span class=\"hz\">記憶力都相當卓越</span>. Prestasi akademik seringkali selalu masuk jajaran terbaik, dan banyak yang belajar dengan mudah dan santai <span class=\"hz\">輕鬆自在型</span>. Di balik sifatnya yang lembut dan penuh perhatian <span class=\"hz\">溫柔親切</span>, terdapat pula sisi yang jenaka dan suka bercanda <span class=\"hz\">也有戲謔的一面</span>. Bagaikan pasir emas <span class=\"hz\">砂金</span>, penampilan luar terlihat halus dan lembut, namun di dalamnya tersimpan kristal keras <span class=\"hz\">堅硬的結晶</span> — tindakan yang tegas dan penuh keputusan <span class=\"hz\">堅定果斷</span> kadang muncul mengejutkan orang-orang di sekitarnya. Bagi wanita, ini membawa keberuntungan yang datang secara tidak terduga <span class=\"hz\">意想不到的幸運</span>.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Manfaatkan bakat kepemimpinan dan intelektual — jalani profesi yang selaras dengan kepribadian untuk meraih keberhasilan maksimal</span></div></div>",
+    "_solo_ming_gong_body": "<style>.palace-solo .ps-body p { font-size: 8pt; line-height: 1.4; margin: 0 0 1.8mm 0; }</style><p>AH adalah sosok yang perjalanan hidupnya berjalan tanpa gejolak besar, berkarakter kokoh dan rendah hati namun teguh dalam fondasi <span class=\"hz\">屬質僕而堅實的命運</span>. Berkepribadian jujur dan terus terang <span class=\"hz\">爽正直</span>, AH mampu berdiri di atas orang lain dan selalu menduduki posisi kepemimpinan <span class=\"hz\">居領導地位</span>. Kepribadian yang ceria dan terbuka <span class=\"hz\">爽朗</span> dalam bertindak disertai pengendalian diri yang baik, sehingga mampu mendapat kepercayaan luas dari semua kalangan. Dalam kelompok atau komunitas apapun, AH pasti akan berdiri di posisi terdepan sebagai pemimpin, menjadi figur sentral dan inti dari kelompok tersebut <span class=\"hz\">成為圍體的核心人物</span>. Apabila berada bersama Bintang Sastra <span class=\"hz\">文星</span>, AH dapat meraih ketenaran dan kemasyhuran lewat bakat sastra dan keilmuan, sekaligus mendapatkan rezeki finansial dari kemampuan tersebut <span class=\"hz\">可以文才而成名，同時也能因之而獲得財運</span>. Bagi perempuan dengan konfigurasi ini, kepribadian cenderung maskulin <span class=\"hz\">性格過於男性化</span> — karena sifat yang terlalu lepas dan bebas <span class=\"hz\">個性太過於豪爽</span>, kesan pertama yang ditinggalkan kepada orang yang baru dikenal cenderung tidak terlalu mendalam. Sejak kecil sering bergaul dan bermain bersama anak laki-laki sehingga kepribadian juga sedikit terkesan lincah dan ringan <span class=\"hz\">性格也稍見輕佻</span>. Meskipun demikian, orang-orang yang mengenal kejujuran AH yang tidak pernah berpura-pura <span class=\"hz\">直腸子而不虛偽</span> pasti menaruh kepercayaan besar kepadanya. Satu hal yang perlu diperhatikan adalah menjadi sedikit lebih lembut dalam bersikap <span class=\"hz\">再溫柔一點就行了</span>. Apabila AH menekuni profesi yang selaras dengan kepribadiannya, keberhasilan pasti akan diraih. Namun bila posisi Istana Nasib tidak sesuai — yakni berada dalam batas Istana Zi atau Hai <span class=\"hz\">在子、亥之命宮內</span> — maka karakter yang kuat dan keras kepala ini akan tampak sangat menonjol. Bintang Wenchang <span class=\"hz\">文昌星</span> adalah bintang yang menguasai bidang sastra dan keilmuan <span class=\"hz\">文藝、學術之星</span>. Bintang ini tidak terpengaruh oleh bintang buruk <span class=\"hz\">凶星</span> apapun dan dapat dikatakan sebagai bintang keberuntungan yang sangat tangguh dan teguh <span class=\"hz\">特別堅靭的吉星</span>. Bila berada bersama bintang keberuntungan lainnya, kehidupan seumur hidup dapat berjalan tenang dan damai <span class=\"hz\">高枕無憂</span>. Bahkan jika bertemu dengan bintang buruk dan memicu berbagai kesulitan, secara keseluruhan kehidupan tetap dapat dijalani dengan stabil dan tenteram <span class=\"hz\">安渡平穩的人生</span>. Selain itu, kondisi ini juga mendukung umur panjang. Baik pria maupun wanita, siapapun yang memiliki Bintang Sastra <span class=\"hz\">文昌星</span> di Istana Nasib memiliki daya ingat yang sangat luar biasa <span class=\"hz\">記憶力都相當卓越</span>. Prestasi akademik seringkali selalu masuk jajaran terbaik, dan banyak yang belajar dengan mudah dan santai <span class=\"hz\">輕鬆自在型</span>. Di balik sifatnya yang lembut dan penuh perhatian <span class=\"hz\">溫柔親切</span>, terdapat pula sisi yang jenaka dan suka bercanda <span class=\"hz\">也有戲謔的一面</span>. Bagaikan pasir emas <span class=\"hz\">砂金</span>, penampilan luar terlihat halus dan lembut, namun di dalamnya tersimpan kristal keras <span class=\"hz\">堅硬的結晶</span> — tindakan yang tegas dan penuh keputusan <span class=\"hz\">堅定果斷</span> kadang muncul mengejutkan orang-orang di sekitarnya. Bagi wanita, ini membawa keberuntungan yang datang secara tidak terduga <span class=\"hz\">意想不到的幸運</span>.</p>",
+    "_solo_ming_gong_action": "Manfaatkan bakat kepemimpinan dan intelektual — jalani profesi yang selaras dengan kepribadian untuk meraih keberhasilan maksimal",
+    "_p1_xiongdi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Saudara</span><span class=\"pn-meta\">Xiōng Dì<span class=\"hz\">兄弟</span></span></div></div><div class=\"pal-body\"><p>Saudara dan teman-teman AH cenderung modis dan trendi, menyukai pergaulan yang ramai dan penuh semangat. Bila Bintang Tianfu <span class=\"hz\">天府星</span> atau bintang keberuntungan lainnya berbagi istana, meskipun jumlah saudara sedikit, hubungan yang terjalin adalah hubungan saling mengerti yang baik <span class=\"hz\">互相諒解的好兄弟</span>. Lingkaran sosial AH mungkin sempit namun pertemanan yang ada terjalin sangat mendalam <span class=\"hz\">是範圍狹窄但能深交</span>. Bila bintang buruk <span class=\"hz\">凶星</span> berada di istana yang sama, komunikasi antar saudara bisa terputus sepenuhnya. Saudara-saudara AH cenderung bersifat impulsif dan tidak suka mengikuti perintah orang lain <span class=\"hz\">屬於不聽從誰的衝動性人物</span> — perdebatan yang meledak-ledak pun bisa sesekali terjadi. Jumlah saudara dan teman memang tidak banyak, namun mereka saling mendukung satu sama lain. Bila bintang buruk berada di istana ini, ada risiko kehilangan saudara atau teman karena masalah sepele yang tidak terduga <span class=\"hz\">因意想不到的小事而喪失兄弟、朋友</span>.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga hubungan dengan saudara dan sahabat dekat — meskipun lingkaran kecil, mereka adalah sumber dukungan tulus yang langka</span></div></div>",
+    "_solo_xiongdi_body": "<p>Saudara dan teman-teman AH cenderung modis dan trendi, menyukai pergaulan yang ramai dan penuh semangat. Bila Bintang Tianfu <span class=\"hz\">天府星</span> atau bintang keberuntungan lainnya berbagi istana, meskipun jumlah saudara sedikit, hubungan yang terjalin adalah hubungan saling mengerti yang baik <span class=\"hz\">互相諒解的好兄弟</span>. Lingkaran sosial AH mungkin sempit namun pertemanan yang ada terjalin sangat mendalam <span class=\"hz\">是範圍狹窄但能深交</span>. Bila bintang buruk <span class=\"hz\">凶星</span> berada di istana yang sama, komunikasi antar saudara bisa terputus sepenuhnya. Saudara-saudara AH cenderung bersifat impulsif dan tidak suka mengikuti perintah orang lain <span class=\"hz\">屬於不聽從誰的衝動性人物</span> — perdebatan yang meledak-ledak pun bisa sesekali terjadi. Jumlah saudara dan teman memang tidak banyak, namun mereka saling mendukung satu sama lain. Bila bintang buruk berada di istana ini, ada risiko kehilangan saudara atau teman karena masalah sepele yang tidak terduga <span class=\"hz\">因意想不到的小事而喪失兄弟、朋友</span>.</p>",
+    "_solo_xiongdi_action": "Jaga hubungan dengan saudara dan sahabat dekat — meskipun lingkaran kecil, mereka adalah sumber dukungan tulus yang langka",
+    "_p1_fuqi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pasangan</span><span class=\"pn-meta\">Fū Qī<span class=\"hz\">夫妻</span></span></div></div><div class=\"pal-body\"><p>Hubungan emosional AH dengan pasangan bersifat saling menghormati dan menjaga jarak yang sehat — seperti tamu kehormatan satu sama lain <span class=\"hz\">相敬如賓</span>. Suami dan istri saling memahami kebutuhan ruang pribadi masing-masing, sehingga tidak akan pernah bertengkar hanya karena alasan sepele. Namun demikian, pasangan AH cenderung mudah terlibat dalam perselisihan <span class=\"hz\">夫婦間易起爭執</span>. Bila Bintang Matahari <span class=\"hz\">太陽星</span> berada di istana yang sama tanpa bintang buruk lain, atau bila Bintang Tianji <span class=\"hz\">天機星</span> atau Tiantong <span class=\"hz\">天同星</span> berbagi istana — AH akan menemukan pasangan yang cerdas dan membangun keluarga yang harmonis dan sempurna. AH memiliki rasa cemburu yang kuat secara alami, namun tidak pernah menunjukkannya ke permukaan <span class=\"hz\">天生嫉妒心強，但絕不溢於言表</span>. Bagi pria dengan Bintang Wenchang <span class=\"hz\">文昌星</span> dan Tianji <span class=\"hz\">天機星</span> berada di posisinya, selain pasangan resmi, cenderung memelihara hubungan rahasia di luar pernikahan <span class=\"hz\">必在外養小公館金屋藏嬌</span>. Pria dengan konfigurasi ini tertarik pada wanita yang dingin dan anggun <span class=\"hz\">冷艷的美人</span>. Wanita dengan konfigurasi ini sangat berjodoh dengan pria yang cerdas dan memiliki rezeki finansial yang melimpah <span class=\"hz\">腦筋聰明而又財氣縱橫的男人</span>.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun komunikasi yang terbuka dan jujur dengan pasangan — sifat menyimpan perasaan cemburu dalam diam perlu diungkapkan secara sehat agar relasi tetap harmonis</span></div></div>",
+    "_solo_fuqi_body": "<p>Hubungan emosional AH dengan pasangan bersifat saling menghormati dan menjaga jarak yang sehat — seperti tamu kehormatan satu sama lain <span class=\"hz\">相敬如賓</span>. Suami dan istri saling memahami kebutuhan ruang pribadi masing-masing, sehingga tidak akan pernah bertengkar hanya karena alasan sepele. Namun demikian, pasangan AH cenderung mudah terlibat dalam perselisihan <span class=\"hz\">夫婦間易起爭執</span>. Bila Bintang Matahari <span class=\"hz\">太陽星</span> berada di istana yang sama tanpa bintang buruk lain, atau bila Bintang Tianji <span class=\"hz\">天機星</span> atau Tiantong <span class=\"hz\">天同星</span> berbagi istana — AH akan menemukan pasangan yang cerdas dan membangun keluarga yang harmonis dan sempurna. AH memiliki rasa cemburu yang kuat secara alami, namun tidak pernah menunjukkannya ke permukaan <span class=\"hz\">天生嫉妒心強，但絕不溢於言表</span>. Bagi pria dengan Bintang Wenchang <span class=\"hz\">文昌星</span> dan Tianji <span class=\"hz\">天機星</span> berada di posisinya, selain pasangan resmi, cenderung memelihara hubungan rahasia di luar pernikahan <span class=\"hz\">必在外養小公館金屋藏嬌</span>. Pria dengan konfigurasi ini tertarik pada wanita yang dingin dan anggun <span class=\"hz\">冷艷的美人</span>. Wanita dengan konfigurasi ini sangat berjodoh dengan pria yang cerdas dan memiliki rezeki finansial yang melimpah <span class=\"hz\">腦筋聰明而又財氣縱橫的男人</span>.</p>",
+    "_solo_fuqi_action": "Bangun komunikasi yang terbuka dan jujur dengan pasangan — sifat menyimpan perasaan cemburu dalam diam perlu diungkapkan secara sehat agar relasi tetap harmonis",
+    "_p1_zinu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Anak</span><span class=\"pn-meta\">Zǐ Nǚ<span class=\"hz\">子女</span></span></div></div><div class=\"pal-body\"><p>Meskipun masih muda, anak-anak AH termasuk tipe yang dapat dipercaya untuk mengemban tanggung jawab besar <span class=\"hz\">可託付一切的類型</span>. Meski AH memiliki keturunan, mereka sering kali menghindari dan melawan AH, serta tidak selalu mampu memberikan bantuan saat dibutuhkan <span class=\"hz\">無法助您一臂之力</span>. Bila Bintang Wuqu <span class=\"hz\">武曲星</span> juga berada di istana yang sama, anak-anak membutuhkan perhatian dan perawatan ekstra saat kecil — namun saat dewasa, mereka akan menjadi tangan kanan AH yang setia dalam mendukung perkembangan AH <span class=\"hz\">可當您的左右手，協助您的發展</span>. Bila hanya Bintang Tanlang <span class=\"hz\">貪狼星</span> yang berada di posisinya, maka anak-anak AH akan pantang menyerah hingga mendapatkan apa yang mereka inginkan!</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Investasikan perhatian dan bimbingan pada anak sejak dini — meskipun sering berlawanan pandangan, mereka berpotensi menjadi pendukung terkuat di masa depan</span></div></div>",
+    "_solo_zinu_body": "<p>Meskipun masih muda, anak-anak AH termasuk tipe yang dapat dipercaya untuk mengemban tanggung jawab besar <span class=\"hz\">可託付一切的類型</span>. Meski AH memiliki keturunan, mereka sering kali menghindari dan melawan AH, serta tidak selalu mampu memberikan bantuan saat dibutuhkan <span class=\"hz\">無法助您一臂之力</span>. Bila Bintang Wuqu <span class=\"hz\">武曲星</span> juga berada di istana yang sama, anak-anak membutuhkan perhatian dan perawatan ekstra saat kecil — namun saat dewasa, mereka akan menjadi tangan kanan AH yang setia dalam mendukung perkembangan AH <span class=\"hz\">可當您的左右手，協助您的發展</span>. Bila hanya Bintang Tanlang <span class=\"hz\">貪狼星</span> yang berada di posisinya, maka anak-anak AH akan pantang menyerah hingga mendapatkan apa yang mereka inginkan!</p>",
+    "_solo_zinu_action": "Investasikan perhatian dan bimbingan pada anak sejak dini — meskipun sering berlawanan pandangan, mereka berpotensi menjadi pendukung terkuat di masa depan",
+    "_p2_caibo": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Rezeki</span><span class=\"pn-meta\">Cái Bó<span class=\"hz\">財帛</span></span></div></div><div class=\"pal-body\"><p>Sikap AH terhadap uang cenderung kasar dan impulsif — sulit mengelola serta memanfaatkan uang secara cerdas <span class=\"hz\">用錢態度粗礪，無法巧妙地利用金錢</span>. Namun Bintang Taiyin <span class=\"hz\">太陰星</span> — bintang yang berjodoh baik dengan properti dan kekayaan — membuka peluang besar. Bila Bintang Tianji <span class=\"hz\">天機星</span> juga berada di istana yang sama, AH dapat membangun kekayaan yang cukup besar dimulai dari nol <span class=\"hz\">從身無分文而賺取相當的財產</span>. Bila Bintang Tiantong <span class=\"hz\">天同星</span> berbagi istana, AH sering mendapatkan peluang untuk menghasilkan uang besar <span class=\"hz\">經常會碰到賺大錢的機會</span>. Bila bersama bintang keberuntungan <span class=\"hz\">吉星</span> lainnya, AH mampu menyimpan dan mengakumulasi uang yang didapat — berpotensi menjadi pemilik kekayaan yang cukup signifikan <span class=\"hz\">成為相當的財產家</span>. Dari sisi BaZi: sumber 正財 tidak berlimpah namun mudah didapat, uang sulit disimpan dalam bentuk tunai — perlu properti untuk mengamankan kekayaan <span class=\"hz\">要買不動產才保得住</span>.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Disiplinkan pengelolaan keuangan dan investasikan ke properti atau aset nyata — jangan biarkan uang mengalir begitu saja tanpa arah</span></div></div>",
+    "_solo_caibo_body": "<p>Sikap AH terhadap uang cenderung kasar dan impulsif — sulit mengelola serta memanfaatkan uang secara cerdas <span class=\"hz\">用錢態度粗礪，無法巧妙地利用金錢</span>. Namun Bintang Taiyin <span class=\"hz\">太陰星</span> — bintang yang berjodoh baik dengan properti dan kekayaan — membuka peluang besar. Bila Bintang Tianji <span class=\"hz\">天機星</span> juga berada di istana yang sama, AH dapat membangun kekayaan yang cukup besar dimulai dari nol <span class=\"hz\">從身無分文而賺取相當的財產</span>. Bila Bintang Tiantong <span class=\"hz\">天同星</span> berbagi istana, AH sering mendapatkan peluang untuk menghasilkan uang besar <span class=\"hz\">經常會碰到賺大錢的機會</span>. Bila bersama bintang keberuntungan <span class=\"hz\">吉星</span> lainnya, AH mampu menyimpan dan mengakumulasi uang yang didapat — berpotensi menjadi pemilik kekayaan yang cukup signifikan <span class=\"hz\">成為相當的財產家</span>. Dari sisi BaZi: sumber 正財 tidak berlimpah namun mudah didapat, uang sulit disimpan dalam bentuk tunai — perlu properti untuk mengamankan kekayaan <span class=\"hz\">要買不動產才保得住</span>.</p>",
+    "_solo_caibo_action": "Disiplinkan pengelolaan keuangan dan investasikan ke properti atau aset nyata — jangan biarkan uang mengalir begitu saja tanpa arah",
+    "_p2_jie_e": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Kesehatan</span><span class=\"pn-meta\">Jí È<span class=\"hz\">疾厄</span></span></div></div><div class=\"pal-body\"><p>AH rentan terhadap penyakit otak dan sistem saraf <span class=\"hz\">腦靈的疾病</span>, serta penyakit sendi dan kelenjar <span class=\"hz\">關節、腺部的疾病</span>, termasuk neuralgia dan rematik <span class=\"hz\">神經痛、風濕病</span>. Secara umum kesehatan tidak menghadapi krisis besar — bahkan ketika sakit, AH tampak seperti orang sehat dan pulih lebih cepat dari kebanyakan orang <span class=\"hz\">恢復得也比常人更迅速</span>. Kelemahan utama adalah ketidaktahanan terhadap suhu ekstrem <span class=\"hz\">苦於過熱與過冷</span>, dan kelelahan berlebihan adalah penyebab utama timbulnya penyakit <span class=\"hz\">過度疲勞是致病的主因</span>. Bila bintang buruk <span class=\"hz\">凶星</span> di istana ini, rentan terhadap penyakit lambung dan beri-beri <span class=\"hz\">易患胃病、腳氣病</span>. Bila Bintang Ziwei <span class=\"hz\">紫微星</span> berbagi istana, kondisi kesehatan sangat prima.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga keseimbangan suhu tubuh dan hindari kelelahan ekstrem — itu adalah kunci utama menjaga kesehatan optimal AH</span></div></div>",
+    "_solo_jie_e_body": "<p>AH rentan terhadap penyakit otak dan sistem saraf <span class=\"hz\">腦靈的疾病</span>, serta penyakit sendi dan kelenjar <span class=\"hz\">關節、腺部的疾病</span>, termasuk neuralgia dan rematik <span class=\"hz\">神經痛、風濕病</span>. Secara umum kesehatan tidak menghadapi krisis besar — bahkan ketika sakit, AH tampak seperti orang sehat dan pulih lebih cepat dari kebanyakan orang <span class=\"hz\">恢復得也比常人更迅速</span>. Kelemahan utama adalah ketidaktahanan terhadap suhu ekstrem <span class=\"hz\">苦於過熱與過冷</span>, dan kelelahan berlebihan adalah penyebab utama timbulnya penyakit <span class=\"hz\">過度疲勞是致病的主因</span>. Bila bintang buruk <span class=\"hz\">凶星</span> di istana ini, rentan terhadap penyakit lambung dan beri-beri <span class=\"hz\">易患胃病、腳氣病</span>. Bila Bintang Ziwei <span class=\"hz\">紫微星</span> berbagi istana, kondisi kesehatan sangat prima.</p>",
+    "_solo_jie_e_action": "Jaga keseimbangan suhu tubuh dan hindari kelelahan ekstrem — itu adalah kunci utama menjaga kesehatan optimal AH",
+    "_p2_qianyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Perpindahan</span><span class=\"pn-meta\">Qiān Yí<span class=\"hz\">遷移</span></span></div></div><div class=\"pal-body\"><p>Tindakan dan pergerakan AH mudah terhambat dan stagnan <span class=\"hz\">行動容易受阻而停滯</span> — perpindahan tempat tidak mudah terjadi secara spontan. Keberuntungan pertama kali berpihak pada AH melalui perjalanan ke luar negeri untuk berkembang, serta melalui perubahan karir yang mengejar sesuatu yang baru <span class=\"hz\">首次遭遇機運的垂青</span>. Bila AH terlalu lama tinggal di rumah atau menetap di satu tempat dalam waktu panjang, hal tersebut justru bisa mendatangkan banyak masalah. Bila Bintang Jumen <span class=\"hz\">巨門</span> dan Tianliang <span class=\"hz\">天梁</span> berada di istana yang sama, pergi ke luar negeri menjadi tujuan yang sangat tepat — AH sangat dianjurkan untuk mengejar pendidikan atau karir di luar negeri <span class=\"hz\">隨心所欲地到海外去留學</span>! Bila Bintang Taiyin <span class=\"hz\">太陰星</span> berbagi istana, meskipun AH mungkin menghadapi kemalangan, di dalam kemalangan tersebut selalu tersembunyi peluang lompatan besar yang tidak terduga <span class=\"hz\">飛躍性的機運</span>.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jangan terlalu lama menetap di satu tempat — pergerakan, perjalanan, dan kesempatan di luar negeri adalah kunci membuka keberuntungan terbesar AH</span></div></div>",
+    "_solo_qianyi_body": "<p>Tindakan dan pergerakan AH mudah terhambat dan stagnan <span class=\"hz\">行動容易受阻而停滯</span> — perpindahan tempat tidak mudah terjadi secara spontan. Keberuntungan pertama kali berpihak pada AH melalui perjalanan ke luar negeri untuk berkembang, serta melalui perubahan karir yang mengejar sesuatu yang baru <span class=\"hz\">首次遭遇機運的垂青</span>. Bila AH terlalu lama tinggal di rumah atau menetap di satu tempat dalam waktu panjang, hal tersebut justru bisa mendatangkan banyak masalah. Bila Bintang Jumen <span class=\"hz\">巨門</span> dan Tianliang <span class=\"hz\">天梁</span> berada di istana yang sama, pergi ke luar negeri menjadi tujuan yang sangat tepat — AH sangat dianjurkan untuk mengejar pendidikan atau karir di luar negeri <span class=\"hz\">隨心所欲地到海外去留學</span>! Bila Bintang Taiyin <span class=\"hz\">太陰星</span> berbagi istana, meskipun AH mungkin menghadapi kemalangan, di dalam kemalangan tersebut selalu tersembunyi peluang lompatan besar yang tidak terduga <span class=\"hz\">飛躍性的機運</span>.</p>",
+    "_solo_qianyi_action": "Jangan terlalu lama menetap di satu tempat — pergerakan, perjalanan, dan kesempatan di luar negeri adalah kunci membuka keberuntungan terbesar AH",
+    "_p2_puyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pertemanan</span><span class=\"pn-meta\">Pú Yì<span class=\"hz\">僕役</span></span></div></div><div class=\"pal-body\"><p>Bawahan dan asisten AH cenderung bertipe cerdas, gesit, dan berpenampilan baik <span class=\"hz\">腦筋聰明、敏捷的英飾型</span>. Bila posisi berada di cabang 子, 辰, 午, 戌, atau 亥, bawahan AH adalah orang-orang yang sungguh-sungguh berkemampuan <span class=\"hz\">實力者</span>. Meskipun masih muda usia, sudah banyak teman yang sangat berbakat <span class=\"hz\">相當有才幹的友人也不少</span>. Bila Bintang Ziwei <span class=\"hz\">紫微星</span> berbagi istana, bawahan dan teman yang lebih muda seringkali membantu AH dari balik layar <span class=\"hz\">常在背中協助您</span>. Di luar posisi tersebut, bawahan yang makmur/kaya bisa menyimpan dendam terhadap AH dan pada akhirnya mengkhianatinya <span class=\"hz\">受到部下之怨恨而被部下所出賣</span>. Sementara itu, teman-teman yang lebih muda justru bisa berbalik menjadi musuh <span class=\"hz\">年少的朋友反而屈將仇視</span>.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun kepercayaan yang tulus dengan bawahan dan tim muda — jangan sampai perbedaan kepentingan menumbuhkan dendam yang tidak terlihat</span></div></div>",
+    "_solo_puyi_body": "<p>Bawahan dan asisten AH cenderung bertipe cerdas, gesit, dan berpenampilan baik <span class=\"hz\">腦筋聰明、敏捷的英飾型</span>. Bila posisi berada di cabang 子, 辰, 午, 戌, atau 亥, bawahan AH adalah orang-orang yang sungguh-sungguh berkemampuan <span class=\"hz\">實力者</span>. Meskipun masih muda usia, sudah banyak teman yang sangat berbakat <span class=\"hz\">相當有才幹的友人也不少</span>. Bila Bintang Ziwei <span class=\"hz\">紫微星</span> berbagi istana, bawahan dan teman yang lebih muda seringkali membantu AH dari balik layar <span class=\"hz\">常在背中協助您</span>. Di luar posisi tersebut, bawahan yang makmur/kaya bisa menyimpan dendam terhadap AH dan pada akhirnya mengkhianatinya <span class=\"hz\">受到部下之怨恨而被部下所出賣</span>. Sementara itu, teman-teman yang lebih muda justru bisa berbalik menjadi musuh <span class=\"hz\">年少的朋友反而屈將仇視</span>.</p>",
+    "_solo_puyi_action": "Bangun kepercayaan yang tulus dengan bawahan dan tim muda — jangan sampai perbedaan kepentingan menumbuhkan dendam yang tidak terlihat",
+    "_p3_guanlu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Karir</span><span class=\"pn-meta\">Guān Lù<span class=\"hz\">官祿</span></span></div></div><div class=\"pal-body\"><p>Bidang yang cocok untuk AH meliputi dokter bedah <span class=\"hz\">外科醫生</span>, tenaga ahli teknik <span class=\"hz\">技術者</span>, rohaniawan <span class=\"hz\">僧侶</span>, dan pedagang logam mulia <span class=\"hz\">貴金屬商</span>. AH yang penuh energi dan daya gerak ini seringkali mengambil langkah lebih cepat dari orang lain — selalu berada di posisi terdepan memimpin dan mengarahkan orang lain <span class=\"hz\">佔在領導的地位上指揮別人前進</span>. Setelah mulai berkarir, dedikasi dan antusiasme AH yang tak kenal lelah segera membawanya menuju jalur kesuksesan <span class=\"hz\">不久之後即向成功之道邁進</span>. AH juga memiliki bakat alami sebagai penulis <span class=\"hz\">具有身為作家的天賦</span>. Namun AH perlu berhati-hati dengan kecenderungan meremehkan keberadaan rekan-rekan <span class=\"hz\">自視過高</span> dan kebiasaan melaju sendirian tanpa mempertimbangkan orang lain <span class=\"hz\">獨自一個人莽莽撞撞的向前衝</span> — hal ini perlu dikendalikan. Bila bintang keberuntungan lain turut hadir, AH dapat meninggalkan prestasi gemilang di tempat kerja <span class=\"hz\">在工作崗位上可留下光輝的功績</span>. Namun bila posisi berada di istana 申 atau 酉, kekuatan Bintang Matahari <span class=\"hz\">太陽星</span> melemah dan peluang gemerlap berkurang — hanya bisa menjadi anggota masyarakat biasa.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Manfaatkan energi kepemimpinan dan bakat menulis — namun kendalikan ego dan libatkan tim agar prestasi yang diraih bisa bertahan lebih lama</span></div></div>",
+    "_solo_guanlu_body": "<p>Bidang yang cocok untuk AH meliputi dokter bedah <span class=\"hz\">外科醫生</span>, tenaga ahli teknik <span class=\"hz\">技術者</span>, rohaniawan <span class=\"hz\">僧侶</span>, dan pedagang logam mulia <span class=\"hz\">貴金屬商</span>. AH yang penuh energi dan daya gerak ini seringkali mengambil langkah lebih cepat dari orang lain — selalu berada di posisi terdepan memimpin dan mengarahkan orang lain <span class=\"hz\">佔在領導的地位上指揮別人前進</span>. Setelah mulai berkarir, dedikasi dan antusiasme AH yang tak kenal lelah segera membawanya menuju jalur kesuksesan <span class=\"hz\">不久之後即向成功之道邁進</span>. AH juga memiliki bakat alami sebagai penulis <span class=\"hz\">具有身為作家的天賦</span>. Namun AH perlu berhati-hati dengan kecenderungan meremehkan keberadaan rekan-rekan <span class=\"hz\">自視過高</span> dan kebiasaan melaju sendirian tanpa mempertimbangkan orang lain <span class=\"hz\">獨自一個人莽莽撞撞的向前衝</span> — hal ini perlu dikendalikan. Bila bintang keberuntungan lain turut hadir, AH dapat meninggalkan prestasi gemilang di tempat kerja <span class=\"hz\">在工作崗位上可留下光輝的功績</span>. Namun bila posisi berada di istana 申 atau 酉, kekuatan Bintang Matahari <span class=\"hz\">太陽星</span> melemah dan peluang gemerlap berkurang — hanya bisa menjadi anggota masyarakat biasa.</p>",
+    "_solo_guanlu_action": "Manfaatkan energi kepemimpinan dan bakat menulis — namun kendalikan ego dan libatkan tim agar prestasi yang diraih bisa bertahan lebih lama",
+    "_p3_tianzhai": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Properti</span><span class=\"pn-meta\">Tián Zhái<span class=\"hz\">田宅</span></span></div></div><div class=\"pal-body\"><p>Istana Properti AH adalah konfigurasi klasik untuk keberuntungan aset — AH mampu mengelola dan memanfaatkan properti besar secara cerdas <span class=\"hz\">巧妙地運用龐大的不動產</span>. Bila hanya Bintang Wuqu <span class=\"hz\">武曲星</span> yang berada di istana ini, warisan properti dari leluhur dapat dipertahankan meskipun dalam berbagai bentuk perubahan <span class=\"hz\">從祖先而來的不動產，雖有各種不同形態的傳承</span> — namun bila berada di posisi 寅 atau 卯, warisan tersebut berisiko hilang. Kehadiran bintang lain akan mengubah nasib properti sesuai dengan pengaruh masing-masing bintang. Dengan bintang keberuntungan <span class=\"hz\">吉星</span>, AH dapat memiliki tanah dan rumah <span class=\"hz\">可有土地、房屋</span>. Dengan bintang buruk <span class=\"hz\">凶星</span>, aset yang sudah di tangan akhirnya harus dilepaskan juga. Arah Barat sangat auspicious untuk properti AH <span class=\"hz\">西方大吉</span>.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Pertahankan dan kembangkan aset properti yang sudah ada — prioritaskan properti di sisi Barat sebagai pilihan terbaik untuk investasi</span></div></div>",
+    "_solo_tianzhai_body": "<p>Istana Properti AH adalah konfigurasi klasik untuk keberuntungan aset — AH mampu mengelola dan memanfaatkan properti besar secara cerdas <span class=\"hz\">巧妙地運用龐大的不動產</span>. Bila hanya Bintang Wuqu <span class=\"hz\">武曲星</span> yang berada di istana ini, warisan properti dari leluhur dapat dipertahankan meskipun dalam berbagai bentuk perubahan <span class=\"hz\">從祖先而來的不動產，雖有各種不同形態的傳承</span> — namun bila berada di posisi 寅 atau 卯, warisan tersebut berisiko hilang. Kehadiran bintang lain akan mengubah nasib properti sesuai dengan pengaruh masing-masing bintang. Dengan bintang keberuntungan <span class=\"hz\">吉星</span>, AH dapat memiliki tanah dan rumah <span class=\"hz\">可有土地、房屋</span>. Dengan bintang buruk <span class=\"hz\">凶星</span>, aset yang sudah di tangan akhirnya harus dilepaskan juga. Arah Barat sangat auspicious untuk properti AH <span class=\"hz\">西方大吉</span>.</p>",
+    "_solo_tianzhai_action": "Pertahankan dan kembangkan aset properti yang sudah ada — prioritaskan properti di sisi Barat sebagai pilihan terbaik untuk investasi",
+    "_p3_fude": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Berkah</span><span class=\"pn-meta\">Fú Dé<span class=\"hz\">福德</span></span></div></div><div class=\"pal-body\"><p>Kepribadian AH yang mudah goyah dan tidak konsisten dapat mengikis keberuntungan dan kebajikan hidup <span class=\"hz\">搖擺不定的性格，福德也因之喪失</span>. Namun terdapat petunjuk bahwa AH dapat menerima anugerah keberuntungan dan kebajikan yang sesungguhnya. AH dikenal sebagai sosok yang pandai bergaul dan cerdas dalam menavigasi kehidupan sosial <span class=\"hz\">處世高明</span>, serta sangat mementingkan cara bersikap dan berinteraksi dengan orang lain <span class=\"hz\">待人接物的方式</span>. Namun bila terlalu terpengaruh oleh pendapat dan tekanan dari lingkungan sekitar <span class=\"hz\">受到周圍意見擾亂時</span>, keberuntungan yang sudah di tangan bisa menghilang begitu saja.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Perkuat keteguhan pendirian dan jangan mudah goyah oleh pendapat orang lain — konsistensi adalah kunci menjaga keberuntungan yang telah diraih</span></div></div>",
+    "_solo_fude_body": "<p>Kepribadian AH yang mudah goyah dan tidak konsisten dapat mengikis keberuntungan dan kebajikan hidup <span class=\"hz\">搖擺不定的性格，福德也因之喪失</span>. Namun terdapat petunjuk bahwa AH dapat menerima anugerah keberuntungan dan kebajikan yang sesungguhnya. AH dikenal sebagai sosok yang pandai bergaul dan cerdas dalam menavigasi kehidupan sosial <span class=\"hz\">處世高明</span>, serta sangat mementingkan cara bersikap dan berinteraksi dengan orang lain <span class=\"hz\">待人接物的方式</span>. Namun bila terlalu terpengaruh oleh pendapat dan tekanan dari lingkungan sekitar <span class=\"hz\">受到周圍意見擾亂時</span>, keberuntungan yang sudah di tangan bisa menghilang begitu saja.</p>",
+    "_solo_fude_action": "Perkuat keteguhan pendirian dan jangan mudah goyah oleh pendapat orang lain — konsistensi adalah kunci menjaga keberuntungan yang telah diraih",
+    "_p3_fumu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Orang Tua</span><span class=\"pn-meta\">Fù Mǔ<span class=\"hz\">父母</span></span></div></div><div class=\"pal-body\"><p>AH memiliki orang tua yang bertangan besi dan sangat tidak toleran terhadap kesalahan <span class=\"hz\">厭惡做錯事的鐵腕雙親</span>. AH cenderung berpisah dari orang tua atau anggota keluarga sejak cukup awal <span class=\"hz\">與雙親或家裡的人都很早就分離</span>. Orang tua AH adalah pribadi yang kaku dan sama sekali tidak fleksibel <span class=\"hz\">毫不通融的僵硬人物</span> — bila AH tidak bertindak sesuai keinginan mereka, pengampunan tidak akan diberikan. Namun orang tua ini justru tidak bisa menolak permintaan dari orang lain. Di bawah sikap kontradiktif orang tua seperti ini, konflik mendalam antara orang tua dan anak sering kali muncul <span class=\"hz\">常有深刻的對立情況出現</span>. Bila Bintang Ziwei <span class=\"hz\">紫微星</span> berbagi istana atau beberapa bintang keberuntungan turut hadir, tidak akan ada perpisahan atau pemutusan permanen dalam hubungan orang tua-anak — namun tetap perlu diingat bahwa Bintang Tujuh Pembunuhan <span class=\"hz\">七殺星</span> adalah bintang yang tidak menguntungkan.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga komunikasi dengan orang tua walau ada perbedaan pendapat — konflik mendalam tidak harus berujung pada pemutusan hubungan keluarga</span></div></div>",
+    "_solo_fumu_body": "<p>AH memiliki orang tua yang bertangan besi dan sangat tidak toleran terhadap kesalahan <span class=\"hz\">厭惡做錯事的鐵腕雙親</span>. AH cenderung berpisah dari orang tua atau anggota keluarga sejak cukup awal <span class=\"hz\">與雙親或家裡的人都很早就分離</span>. Orang tua AH adalah pribadi yang kaku dan sama sekali tidak fleksibel <span class=\"hz\">毫不通融的僵硬人物</span> — bila AH tidak bertindak sesuai keinginan mereka, pengampunan tidak akan diberikan. Namun orang tua ini justru tidak bisa menolak permintaan dari orang lain. Di bawah sikap kontradiktif orang tua seperti ini, konflik mendalam antara orang tua dan anak sering kali muncul <span class=\"hz\">常有深刻的對立情況出現</span>. Bila Bintang Ziwei <span class=\"hz\">紫微星</span> berbagi istana atau beberapa bintang keberuntungan turut hadir, tidak akan ada perpisahan atau pemutusan permanen dalam hubungan orang tua-anak — namun tetap perlu diingat bahwa Bintang Tujuh Pembunuhan <span class=\"hz\">七殺星</span> adalah bintang yang tidak menguntungkan.</p>",
+    "_solo_fumu_action": "Jaga komunikasi dengan orang tua walau ada perbedaan pendapat — konflik mendalam tidak harus berujung pada pemutusan hubungan keluarga",
+    "_kes_narrative": "<p>AH lahir dengan Day Master Geng Metal <span class=\"hz\">庚金</span> yang kuat dan kokoh dalam format 劫財格 — sebuah kombinasi yang melahirkan pribadi tegas, kompetitif, dan berjiwa ksatria <span class=\"hz\">俠義心</span> dengan standar keadilan tinggi. Bintang Wenchang <span class=\"hz\">文昌星</span> di Istana Nasib menganugerahinya kemampuan akademis dan intelektual yang luar biasa, menjadikan dunia pendidikan, penerbitan, dan segala bidang yang mengandalkan kecerdasan sebagai ladang terbaik untuk berkembang. Kehadiran bintang Kui Gang <span class=\"hz\">魁罡</span> menambah wibawa alami dan kemampuan eksekusi yang tajam — dalam merencanakan sesuatu, AH selalu berpikir jauh ke depan dan bertindak adil. Namun dua bintang tantangan — 喪宿 (Sang Su) dan 亡神 (Wang Shen) — mengingatkan bahwa ikatan sosial dan keluarga perlu dirawat secara aktif; jangan biarkan sifat mandiri berubah menjadi isolasi. Unsur Air <span class=\"hz\">水</span> dan Kayu <span class=\"hz\">木</span> sebagai yong shen dan xi shen paling mendukung pertumbuhan AH, sementara Metal <span class=\"hz\">金</span> sebagai ji shen harus dihindari dalam pilihan lingkungan dan karir. Memasuki usia 23 (Da Yun 丁未 正官), babak baru kehidupan AH akan diwarnai pengakuan publik dan ekspansi karir — inilah saat terbaik untuk membangun reputasi jangka panjang. Dalam hal asmara, pasangan dari shio 羊 atau 兔 membawa keharmonisan terbaik. Di rumah, orientasi Gua 坤 mengarahkan AH untuk tinggal di hunian yang menghadap Timur Laut–Barat Daya demi kemakmuran optimal. Perjalanan hidup AH memiliki pola setengah siklus: masa muda penuh perjuangan dan pembentukan karakter, sedangkan paruh baya ke atas adalah masa panen keberhasilan yang sesungguhnya — kunci utamanya adalah konsistensi, pengendalian ego, dan keberanian untuk bertumbuh di lingkungan yang tepat.</p>",
+    "_kes_stats": "\n      <div class=\"kes-stat s1\"><div class=\"ks-eb\">Penguasa Hari · 日主</div><div class=\"ks-num\"><span class=\"hz\">庚金</span><span class=\"unit\">— · None</span></div><div class=\"ks-title\">Logam Pedang —</div><div class=\"ks-desc\">Total Wu Xing 8, 金 <strong>25.0%</strong> dari distribusi total</div></div>\n      <div class=\"kes-stat s2\"><div class=\"ks-eb\">Format · 格局</div><div class=\"ks-num\"><span class=\"hz\">劫財格</span><span class=\"unit\">FORMAT</span></div><div class=\"ks-title\">Jie Cai Ge, Saudara Sebanding</div><div class=\"ks-desc\">Konfigurasi BaZi yang membentuk pola karakter dan jalur takdir utama subjek.</div></div>\n      <div class=\"kes-stat s3\"><div class=\"ks-eb\">Yong Shen · 喜用神</div><div class=\"ks-num\"><span class=\"hz\">水</span><span class=\"unit\">MENDUKUNG</span></div><div class=\"ks-title\">Air, Penopang &amp; Pengarah</div><div class=\"ks-desc\">Unsur penopang yang sebaiknya diaktifkan lewat lingkungan, profesi, warna, dan keputusan hidup.</div></div>\n      <div class=\"kes-stat s4\"><div class=\"ks-eb\">Da Yun · 大運</div><div class=\"ks-num\">Fase 2<span class=\"unit\">dari 10</span></div><div class=\"ks-title\">Fase Mentor (13-22)</div><div class=\"ks-desc\">Cycle 10 tahun yang sedang dijalani, periode pembentukan tema utama dekade ini.</div></div>\n      <div class=\"kes-stat s5\"><div class=\"ks-eb\">Umur Subjek</div><div class=\"ks-num\">20<span class=\"unit\">tahun</span></div><div class=\"ks-title\">Era 20–29</div><div class=\"ks-desc\">Tahap kehidupan saat laporan ini dibuat, rentang dekade aktif subjek.</div></div>\n      <div class=\"kes-stat s6\"><div class=\"ks-eb\">Jodoh · 婚配 / 陽宅</div><div class=\"ks-num\">3 <span class=\"unit\">cocok · 3 hindari</span></div><div class=\"ks-desc\">Hindari: Ular (巳) · Monyet (申) · Babi (亥) · Trigram <strong>Bumi</strong> (坤) · Kelompok Barat</div></div>\n    ",
+    "_kes_age": "20",
+    "_kes_lifemap": "\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">過<span class=\"id-label\">Lalu</span></div><div class=\"klm-row-text\"><span class=\"lbl\">MASA LALU</span>1 fase telah dilalui, fondasi terbentuk lewat tempaan zaman muda hingga awal dewasa.</div></div>\n          <div class=\"klm-row now\"><div class=\"klm-row-icon\">今<span class=\"id-label\">Kini</span></div><div class=\"klm-row-text\"><span class=\"lbl\">SEKARANG</span>Fase Mentor 戊申 (13-22), tema utama mentor membentuk dekade ini.</div></div>\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">未<span class=\"id-label\">Nanti</span></div><div class=\"klm-row-text\"><span class=\"lbl\">BERIKUTNYA</span>Fase 丁未 Otoritas (23-32), transisi menuju tema baru.</div></div>\n        ",
+    "_kes_position": "\n          <div class=\"klp-eb\">Posisi Sekarang</div>\n          <div class=\"klp-hz\">春</div>\n          <div class=\"klp-id\">Chūn, \"Musim Semi Hidup\"</div>\n          <div class=\"klp-bar\">\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell now\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n          </div>\n          <div class=\"klp-meta\">Fase <strong>2 dari 10</strong> · Umur <strong>13-22</strong> · <strong>金 Logam</strong> dominan · Musim Semi Hidup</div>\n        ",
+    "_syn_attrib": "Logam Pedang · 劫財格 · Jie Cai Ge",
+    "_syn_actions": "\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">1</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Kembangkan Peran Kepemimpinan</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">2</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Asah Bakat Intelektual</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">3</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Kelola Komunikasi dengan Lembut</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">4</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Pilih Pasangan Harmonis</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">5</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Jaga Keseimbangan Energi Metal</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n      ",
+    "_career_wuxing": "\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">土 Tanah<span class=\"v\">3</span></div>\n        </div>\n        <div class=\"wux-cell self\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:67%\"></div></div>\n          <div class=\"wux-label\">金 Logam<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell fav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:33%\"></div></div>\n          <div class=\"wux-label\">水 Air<span class=\"v\">1</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:33%\"></div></div>\n          <div class=\"wux-label\">木 Kayu<span class=\"v\">1</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:33%\"></div></div>\n          <div class=\"wux-label\">火 Api<span class=\"v\">1</span></div>\n        </div>\n",
+    "_career_title": "Air adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini",
+    "_career_avoid": "Industri ber-unsur <strong>金 (Logam)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.",
+    "_xqcards": "\n      <div class=\"xq-card power\">\n        <div class=\"xqc-eb\">魄 力 · Kekuatan</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">優勢</span><span class=\"xqc-name\">Yōu Shì<br>Keunggulan</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kepemimpinan alami yang membuat AH selalu menjadi figur sentral dalam setiap kelompok</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Daya ingat dan kemampuan akademis yang sangat menonjol berkat Bintang Wenchang [[文昌星]] di Istana Nasib</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Keteguhan hati dan keberanian bertindak tegas di saat orang lain ragu-ragu</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card shadow\">\n        <div class=\"xqc-eb\">陰 影 · Shadow</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">隱 患</span><span class=\"xqc-name\">Yǐn Huàn<br>Sisi Gelap</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kepribadian terlalu keras dan dominan sehingga bisa membuat orang lain merasa terintimidasi</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kesan pertama yang tidak selalu menarik karena sifat yang terlalu terus terang dan bebas</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kecenderungan ringan dan lincah dalam pergaulan yang perlu dikontrol agar tidak terkesan tidak serius</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card optimum\">\n        <div class=\"xqc-eb\">最 佳 · Optimum</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">應 用</span><span class=\"xqc-name\">Yīng Yòng<br>Cara Optimal</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Aktif dalam posisi kepemimpinan atau peran organisasi yang membutuhkan keberanian mengambil keputusan</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kembangkan sisi kelembutan dalam komunikasi untuk memperluas jaringan kepercayaan</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Manfaatkan bakat intelektual dan sastra — bidang akademik atau kreatif sangat mendukung</span></div>\n        </div>\n      </div>\n    "
+  }
+}

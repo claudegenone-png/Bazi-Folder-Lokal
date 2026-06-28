@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Lin Ru Yi, 事業 Karir &amp; Profesi</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ── Career intro header ── */
+  .career-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4mm 6mm 5mm;
+    margin-bottom: 4mm;
+    position: relative;
+  }
+  .career-intro::before,
+  .career-intro::after {
+    content: '';
+    position: absolute;
+    left: 8%; right: 8%;
+    height: 0.3mm;
+    background: linear-gradient(90deg, transparent, var(--gold-soft), var(--gold), var(--gold-soft), transparent);
+  }
+  .career-intro::before { top: 0; }
+  .career-intro::after  { bottom: 0; }
+
+  .ci-kicker {
+    font-size: 6.5pt;
+    color: var(--text-muted);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 2.5mm;
+  }
+  .ci-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 15pt;
+    color: var(--red);
+    line-height: 1.25;
+    margin-bottom: 1.5mm;
+  }
+  .ci-sub {
+    font-size: 7.5pt;
+    color: var(--text-muted);
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  /* ── Career wrap ── */
+  .career-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5mm;
+    min-height: 0;
+  }
+
+  /* ── Section cards ── */
+  .cs-card {
+    flex: 1;
+    border-radius: 2.5mm;
+    border: 0.25mm solid var(--gold-soft);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 0;
+  }
+  .cs-card.fav { border-color: rgba(90,140,74,0.28); }
+  .cs-card.sup { border-color: rgba(201,169,97,0.45); }
+
+  .cs-header {
+    display: flex; align-items: center; gap: 2.5mm;
+    padding: 2.5mm 4mm;
+    flex-shrink: 0;
+  }
+  .cs-card.fav .cs-header { background: rgba(90,140,74,0.07); }
+  .cs-card.sup .cs-header { background: rgba(201,169,97,0.08); }
+
+  .cs-dot {
+    width: 2mm; height: 2mm; border-radius: 50%; flex-shrink: 0;
+  }
+  .cs-card.fav .cs-dot { background: var(--green); }
+  .cs-card.sup .cs-dot { background: var(--gold); }
+
+  .cs-label {
+    font-size: 7.5pt; font-weight: 700;
+    letter-spacing: 1.5px; text-transform: uppercase;
+  }
+  .cs-card.fav .cs-label { color: var(--green); }
+  .cs-card.sup .cs-label { color: #7B6B3A; }
+
+  .cs-sublabel {
+    font-size: 6.5pt; color: var(--text-muted);
+    margin-left: auto; font-style: italic;
+  }
+
+  /* ── Pills ── */
+  .cs-pills {
+    flex: 1;
+    display: flex; flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 2mm;
+    padding: 3.5mm 4mm;
+    background: #FFFDF5;
+  }
+
+  .pill {
+    display: inline-flex; align-items: baseline; gap: 1.2mm;
+    padding: 1.8mm 3.2mm;
+    border-radius: 4mm;
+    font-size: 7.8pt;
+    line-height: 1.25;
+    border: 0.2mm solid transparent;
+    white-space: nowrap;
+  }
+  .cs-card.fav .pill {
+    background: rgba(90,140,74,0.06);
+    border-color: rgba(90,140,74,0.22);
+    color: var(--text);
+  }
+  .cs-card.sup .pill {
+    background: rgba(201,169,97,0.08);
+    border-color: rgba(201,169,97,0.32);
+    color: var(--text);
+  }
+  .pill .hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 7pt; font-weight: 700;
+    color: var(--red); opacity: 0.6;
+  }
+  .pill .name { font-weight: 500; }
+</style>
+</head>
+<body>
+<section class="page">
+
+  <!-- KEPALA -->
+  <header class="page-header">
+    <div class="h-num">{{PAGE_NUM_PADDED}}</div>
+    <div class="h-titles">
+      <div class="h-cn">事 業</div>
+      <div class="h-id">Karir &amp; Profesi</div>
+    </div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <!-- BAR SUBJEK -->
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Babi-Merah.svg" alt="Babi"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Lin Ru Yi · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">亥 Babi</span></div>
+      <div class="subject-detail">30 Mei 1995 · 10:35 · Wanita · Umur 30 tahun · 大運 丙辰 (七殺)</div>
+    </div>
+    <div class="subject-dm">
+      <div class="label">Penguasa Hari</div>
+      <div class="value">辛金 · Logam Halus</div>
+    </div>
+  </div>
+
+  <!-- KONTEN -->
+  <main class="content" style="display:flex;flex-direction:column;flex:1;min-height:0;">
+
+    <!-- INTRO HEADER -->
+    <div class="career-intro">
+      <div class="ci-kicker">Peta Karir &amp; Profesi</div>
+      <div class="ci-headline">Lin Ru Yi paling cocok berkarya di bidang-bidang ini</div>
+      <div class="ci-sub">Dipilih berdasarkan keselarasan energi, bakat bawaan, dan perjalanan takdir</div>
+    </div>
+
+    <!-- CAREER CARDS -->
+    <div class="career-wrap">
+
+      <div class="cs-card fav">
+        <div class="cs-header">
+          <div class="cs-dot"></div>
+          <div class="cs-label">Searah · Bidang Utama</div>
+          <div class="cs-sublabel">Energi paling selaras — potensi terbaik mengalir di sini</div>
+        </div>
+        <div class="cs-pills">
+<!-- CAREER_FAV_PILLS -->
+          <span class="pill"><span class="hz">辛</span><span class="name">Logam &amp; Besi</span></span>
+<!-- /CAREER_FAV_PILLS -->
+        </div>
+      </div>
+
+      <div class="cs-card sup">
+        <div class="cs-header">
+          <div class="cs-dot"></div>
+          <div class="cs-label">Pendukung · Bidang Alternatif</div>
+          <div class="cs-sublabel">Cocok sebagai usaha sampingan atau karir kedua</div>
+        </div>
+        <div class="cs-pills">
+<!-- CAREER_SUP_PILLS -->
+          <span class="pill"><span class="hz">水</span><span class="name">Perdagangan Air</span></span>
+<!-- /CAREER_SUP_PILLS -->
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- KAKI -->
+  <footer class="footer">
+    <div class="footer-meta">
+      <span>Halaman {{PAGE_NUM}} / {{TOTAL_PAGES}}</span>
+    </div>
+  </footer>
+
+</section>
+</body>
+</html>

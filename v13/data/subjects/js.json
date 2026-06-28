@@ -1,0 +1,870 @@
+{
+  "subject_id": "js",
+  "_built_by": "build_from_ocr.py V4.5 FULL-MD",
+  "identity": {
+    "name_id": "JS",
+    "name_hanzi": "",
+    "gender_id": "Pria",
+    "birth_date": "1978-11-24",
+    "birth_time": "18:10",
+    "birth_day_name": "Jumat",
+    "birth_period_id": "malam",
+    "birth_hour_branch_hz": "酉",
+    "birth_hour_period_label": "malam · 酉時",
+    "lunar_date_text_new": "tanggal 24 bulan 10 tahun 戊午 (Wu Wu · 1978)",
+    "lunar_year_pillar_hz": "戊午",
+    "lunar_republic_text": "民國 67 年 10 月 24 日",
+    "age_at_report": 49
+  },
+  "shio": {
+    "branch_hz": "午",
+    "branch_pinyin": "Wǔ",
+    "id": "Kuda",
+    "id_upper": "KUDA",
+    "svg_red": "Kuda-Merah.svg",
+    "svg_black": "Kuda-Hitam.svg"
+  },
+  "ti_xiang": null,
+  "day_master": {
+    "stem_hz": "庚",
+    "stem_element_hz": "金",
+    "stem_element_id": "Logam",
+    "polarity_id": "Yang",
+    "label_id": "Logam Pedang",
+    "label_long_id": "Logam",
+    "pinyin": "Gēng 金",
+    "strength_id": "—",
+    "strength_hz": null
+  },
+  "pillars": {
+    "year": {
+      "stem_hz": "戊",
+      "branch_hz": "午"
+    },
+    "month": {
+      "stem_hz": "癸",
+      "branch_hz": "亥"
+    },
+    "day": {
+      "stem_hz": "庚",
+      "branch_hz": "寅"
+    },
+    "hour": {
+      "stem_hz": "乙",
+      "branch_hz": "酉"
+    }
+  },
+  "wuxing": {
+    "jin": {
+      "value": 2.0,
+      "percent": 25.0,
+      "label_id": "Logam"
+    },
+    "shui": {
+      "value": 2.0,
+      "percent": 25.0,
+      "label_id": "Air"
+    },
+    "mu": {
+      "value": 2.0,
+      "percent": 25.0,
+      "label_id": "Kayu"
+    },
+    "huo": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Api"
+    },
+    "tu": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Tanah"
+    },
+    "total": 8.0,
+    "self_value": 2.0,
+    "self_el_hz": "—",
+    "fav_hz": "—",
+    "unfav_hz": "—",
+    "axis_max": "—",
+    "insight_id": null,
+    "_empty": false
+  },
+  "yong_shen": {
+    "elements_hz": "土",
+    "elements_id": "Tanah",
+    "label_id": "Penopang & Pengarah",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "ji_shen": {
+    "elements_hz": "水",
+    "elements_id": "Air",
+    "label_id": "Pelumat & Pemicu",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "format": {
+    "hz": "食神格",
+    "pinyin": "Shi Shen Ge",
+    "label_id": "Pencipta Lembut",
+    "glyph_hz": "—"
+  },
+  "da_yun": {
+    "start_age": 6,
+    "direction_id": "forward",
+    "current_index": 4,
+    "axis_marks": [
+      6,
+      16,
+      26,
+      36,
+      46,
+      56,
+      66,
+      76,
+      86,
+      96,
+      106
+    ],
+    "cycles": [
+      {
+        "n": 1,
+        "age_start": 6,
+        "age_end": 15,
+        "stem_hz": "甲",
+        "branch_hz": "子",
+        "ten_god_hz": "偏財",
+        "ten_god_id": "Rezeki Bisnis",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 2,
+        "age_start": 16,
+        "age_end": 25,
+        "stem_hz": "乙",
+        "branch_hz": "丑",
+        "ten_god_hz": "正財",
+        "ten_god_id": "Rezeki Tetap",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 3,
+        "age_start": 26,
+        "age_end": 35,
+        "stem_hz": "丙",
+        "branch_hz": "寅",
+        "ten_god_hz": "七殺",
+        "ten_god_id": "Pemurnian",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 4,
+        "age_start": 36,
+        "age_end": 45,
+        "stem_hz": "丁",
+        "branch_hz": "卯",
+        "ten_god_hz": "正官",
+        "ten_god_id": "Otoritas",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 5,
+        "age_start": 46,
+        "age_end": 55,
+        "stem_hz": "戊",
+        "branch_hz": "辰",
+        "ten_god_hz": "偏印",
+        "ten_god_id": "Mentor",
+        "element_class": "el-tu",
+        "is_current": true
+      },
+      {
+        "n": 6,
+        "age_start": 56,
+        "age_end": 65,
+        "stem_hz": "己",
+        "branch_hz": "巳",
+        "ten_god_hz": "正印",
+        "ten_god_id": "Pelajaran",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 7,
+        "age_start": 66,
+        "age_end": 75,
+        "stem_hz": "庚",
+        "branch_hz": "午",
+        "ten_god_hz": "比肩",
+        "ten_god_id": "Pundak Sama",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 8,
+        "age_start": 76,
+        "age_end": 85,
+        "stem_hz": "辛",
+        "branch_hz": "未",
+        "ten_god_hz": "劫財",
+        "ten_god_id": "Saudara Sebanding",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 9,
+        "age_start": 86,
+        "age_end": 95,
+        "stem_hz": "壬",
+        "branch_hz": "申",
+        "ten_god_hz": "食神",
+        "ten_god_id": "Pencipta",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 10,
+        "age_start": 96,
+        "age_end": 105,
+        "stem_hz": "癸",
+        "branch_hz": "酉",
+        "ten_god_hz": "傷官",
+        "ten_god_id": "Kritikus Tajam",
+        "element_class": "el-shui"
+      }
+    ],
+    "seasons": [
+      {
+        "el_class": "s-mu",
+        "el_hz": "木",
+        "name_id": "Pemurnian Awal",
+        "age_start": 6,
+        "age_end": 25
+      },
+      {
+        "el_class": "s-huo",
+        "el_hz": "火",
+        "name_id": "Belajar & Mentor",
+        "age_start": 26,
+        "age_end": 45
+      },
+      {
+        "el_class": "s-tu",
+        "el_hz": "土",
+        "name_id": "Berbagi Panggung",
+        "age_start": 46,
+        "age_end": 65,
+        "is_current": true
+      },
+      {
+        "el_class": "s-jin",
+        "el_hz": "金",
+        "name_id": "Berkarya Tenang",
+        "age_start": 66,
+        "age_end": 85
+      },
+      {
+        "el_class": "s-shui",
+        "el_hz": "水",
+        "name_id": "Memetik Rezeki",
+        "age_start": 86,
+        "age_end": 105
+      }
+    ],
+    "spotlight_headline_html": "Fase <span class=\"hz\">偏印</span> (Mentor Bayangan), periode utama untuk intuisi & jalur tidak konvensional",
+    "spotlight_tag_tone_html": "Tanah · stabil",
+    "spotlight_tag_combo_html": "Hikmat Diam",
+    "spotlight_tag_combo_pair": [
+      "戊",
+      "辰"
+    ],
+    "spotlight_bullets_html": [
+      "<strong>Fokus utama</strong>, pilar <span class=\"hz\">偏印</span> mendorong Anda untuk intuisi & jalur tidak konvensional. Selaraskan agenda 10 tahun ini ke arah tersebut.",
+      "<strong>Energi 土</strong>, batang <span class=\"hz\">戊</span> (土) berinteraksi dengan Day Master <span class=\"hz\">庚</span> (金); tone fase: Tanah · stabil.",
+      "<strong>Cabang <span class=\"hz\">辰</span></strong> menentukan medan harian, kebiasaan, lingkungan, dan relasi yang dibangun di rentang umur 46–55 akan jadi pondasi fase berikutnya.",
+      "<strong>Setelah 55</strong> masuk <span class=\"hz\">己巳 (正印)</span>, menyerap ilmu & dukungan tetua. Siapkan transisi sekarang."
+    ],
+    "footer_caption_html": "JS sedang di fase <span style=\"font-family:'Noto Serif TC',serif;color:var(--red)\">偏印</span> (46–55), intuisi & jalur tidak konvensional. Periode 46–65 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir."
+  },
+  "marriage": {
+    "self_branch_index": 6,
+    "cocok": [
+      {
+        "branch_hz": "寅",
+        "id": "Harimau",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "未",
+        "id": "Kambing",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "戌",
+        "id": "Anjing",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      }
+    ],
+    "hindari": [
+      {
+        "branch_hz": "子",
+        "id": "Tikus",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "丑",
+        "id": "Kerbau",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "卯",
+        "id": "Kelinci",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "午",
+        "id": "Kuda",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      }
+    ],
+    "_empty": false
+  },
+  "yang_zhai": {
+    "gua_hz": "艮",
+    "gua_pinyin": "Gèn",
+    "gua_label_id": "Gunung",
+    "gua_direction_id": "Timur Laut",
+    "gua_direction_abbr": "TL",
+    "group_id": "Barat",
+    "desc_id": "Elemen Tanah-Gunung — kokoh, diam, teguh. Kelompok Barat (西四命): stabil, sabar, dan memiliki daya tahan jangka panjang.",
+    "sumbu_hoki_hz": "東北↔西南",
+    "sumbu_hoki_id": "TL ↔ BD",
+    "sumbu_rumah_hz": "南↔北",
+    "sumbu_rumah_id": "S ↔ U",
+    "rumah_axis_pos": "S",
+    "trigram_symbol": "☶",
+    "zones": {
+      "rumah": {
+        "dirs_hz": [
+          "南北"
+        ],
+        "dirs_abbr": [
+          "南北"
+        ],
+        "note_id": "Rumah ideal menghadap Utara atau Selatan (坐Selatan menghadap Utara/坐Utara menghadap Selatan) — sangat baik"
+      },
+      "pintu": {
+        "dirs_hz": [
+          "南",
+          "北",
+          "東"
+        ],
+        "dirs_abbr": [
+          "S",
+          "U",
+          "T"
+        ],
+        "note_id": "Pintu/jalan masuk di arah Selatan, Utara, atau Timur membawa keberuntungan"
+      },
+      "dapur": {
+        "dirs_hz": [
+          "西→東"
+        ],
+        "dirs_abbr": [
+          "西→東"
+        ],
+        "note_id": "Tungku/dapur ditempatkan di bagian Barat menghadap ke Timur — baik"
+      },
+      "kamar": {
+        "dirs_hz": [
+          "東南",
+          "東",
+          "北",
+          "南"
+        ],
+        "dirs_abbr": [
+          "TG",
+          "T",
+          "U",
+          "S"
+        ],
+        "note_id": "Kamar tidur cocok di Tenggara, Timur, Utara, atau Selatan"
+      },
+      "ranjang": {
+        "dirs_hz": [
+          "南",
+          "北",
+          "東",
+          "東南"
+        ],
+        "dirs_abbr": [
+          "S",
+          "U",
+          "T",
+          "TG"
+        ],
+        "note_id": "Posisi ranjang ideal menghadap Selatan, Utara, Timur, atau Tenggara"
+      },
+      "altar": {
+        "dirs_hz": [
+          "南",
+          "東",
+          "東南",
+          "北"
+        ],
+        "dirs_abbr": [
+          "S",
+          "T",
+          "TG",
+          "U"
+        ],
+        "note_id": "Altar/tempat sembahyang di Selatan, Timur, Tenggara, atau Utara — arah terbaik tahun ini"
+      },
+      "kamar_mandi": {
+        "dirs_hz": [
+          "東北",
+          "西北",
+          "西",
+          "西南"
+        ],
+        "dirs_abbr": [
+          "TL",
+          "BL",
+          "B",
+          "BD"
+        ],
+        "note_id": "Toilet/kamar mandi ditempatkan di arah-arah buruk: Timur Laut, Barat Laut, Barat, Barat Daya"
+      }
+    }
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "祿存",
+    "shen_zhu_hz": "火星",
+    "ming_gong_hz": "寅",
+    "shen_gong_hz": "申",
+    "wu_xing_ju_hz": "木三局",
+    "shi_jun_hz": "子",
+    "palaces": null,
+    "ming_gong_id": "Istana Hidup · Harimau",
+    "shen_gong_id": "Istana Tubuh · Monyet",
+    "shi_jun_id": "Penguasa Waktu · Tikus",
+    "ming_zhu_id": "Penguasa Hidup",
+    "shen_zhu_id": "Penguasa Tubuh",
+    "wu_xing_ju_id": "Aliran Kayu Tiga"
+  },
+  "shen_sha_list": [],
+  "kesimpulan_narrative": "JS, lahir tahun 1978 dengan Batang Hari Geng Metal [[庚金]] dalam format 食神格 [[食神格]], adalah sosok yang teguh, jujur, dan penuh dengan potensi kepemimpinan yang alami. Seperti logam murni yang menunggu ditempa, karakter JS membutuhkan lingkungan yang tepat untuk bersinar sepenuhnya. Dengan 土 (Yong Shen [[用神]]) dan 火 (Xi Shen [[喜神]]) sebagai elemen sahabat, JS berkembang paling baik di lingkungan yang memberi ruang ekspresi, kreativitas, dan kepercayaan. Dalam perjalanan hidup, JS ditandai oleh sifat yang keras kepala namun tegas, dermawan namun tidak materialistis, dan berjiwa ksatria yang pantang menyerah. Kecerdasan dan keberanian JS mampu melampaui rintangan hidup dengan tenang — namun tantangan terbesarnya adalah menjaga fokus dan fleksibilitas dalam berorganisasi. Di bidang karir, JS paling bersinar dalam pekerjaan konkret dan terukur — bidang medis, manufaktur, teknisi, atau wirausaha mandiri. Keberuntungan finansial cukup berlimpah, terutama melalui sumber pemasukan tidak terduga (偏財). Dalam urusan cinta dan pernikahan, pasangan ideal berasal dari shio Harimau, Kambing, atau Anjing — pasangan yang saling menghormati dan memberi kebebasan satu sama lain. Kesehatan perlu diwaspadai terutama pada sistem pernapasan, usus, dan jantung. Dalam spiritualitas, JS cenderung pasif terhadap nasib — namun justru di situlah kekuatan tersembunyi: setiap perubahan adalah kesempatan untuk naik kelas. Bagi JS, paruh kedua kehidupan (terutama setelah usia 50) menjanjikan ketenangan dan kebahagiaan yang lebih dalam dibanding masa mudanya.",
+  "dm_pos_score": 3000.0,
+  "dm_neg_score": 5716.0,
+  "xiantian_per_stem": {
+    "jia": 2,
+    "yi": 1,
+    "bing": 1,
+    "ding": 1,
+    "wu": 2,
+    "ji": 1,
+    "geng": 1,
+    "xin": 1,
+    "ren": 1,
+    "gui": 1
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": null,
+  "canggan_shi_shen": null,
+  "chang_sheng_per_pilar": null,
+  "kong_wang": null,
+  "ming_gong_bazi": null,
+  "bone_weight": null,
+  "liu_nian_predictions": [
+    {
+      "tahun": 2026,
+      "umur": 49,
+      "ganzhi": "丙午",
+      "prose": "Tahun ini, semakin besar yang dikorbankan, semakin besar pula potensi keuntungan finansial yang tersedia. Namun dengan bantuan orang-orang berpengaruh (貴人), tujuan yang cukup ideal dapat tercapai. Ada gejolak besar di lingkungan sekitar — namun lebih baik tidak bergerak. Perubahan di rumah seperti renovasi, pindah rumah, atau memindahkan perabot membuat hubungan pacar (bagi yang belum menikah) semakin erat. Bagi yang sudah menikah, pasangan bisa ada gesekan emosi namun tidak mengganggu secara serius. Tai Sui [[太歲]] bertahta di istana yang sama — segala bencana lenyap, tidak ada hukuman, setahun penuh menguntungkan dan mudah berencana. Pertemuan bintang Tian Ku [[天哭]] membawa risiko sakit dan kedukaan — bila ada berita gembira di keluarga, bencana pertengkaran terhindarkan. Hindari bulan 2, 3, 5, dan 11 lunar. Pasang altar Tai Sui pada tanggal 9 bulan pertama lunar untuk keselamatan. Keberuntungan dan bencana tahun ini cenderung mengarah ke ekstrem. JS perlu waspada terhadap sifat mudah bosan dan tidak stabil — mudah terpengaruh lingkungan dan orang di sekitar, hubungan pasangan rentan berubah, hindari keputusan impulsif seperti ganti pekerjaan atau tempat tinggal secara terburu-buru."
+    },
+    {
+      "tahun": 2027,
+      "umur": 50,
+      "ganzhi": "丁未",
+      "prose": "Besarnya dedikasi dan usaha tahun ini akan tercermin secara proporsional dalam hasil materi yang diraih. Dapat memperoleh bantuan dari orang yang lebih tua dan senior — secara substansial tujuan dapat tercapai. Lingkungan besar akan mengalami gejolak akibat tekanan. Suasana hati tidak stabil dan terasa terkekang. Bintang Tai Yang [[太陽]] memasuki istana nasib — segala urusan berjalan harmonis, yin-yang seimbang, berkah dan rejeki datang. Bintang Fu De [[福德星]] memasuki istana — seumur hidup berperilaku baik, dalam mencari rezeki orang lain mempercayakan urusannya, nasib akhir kehidupan melebihi awalnya. Hindari bulan 2, 4, 8, dan 11 lunar. Bagi yang sudah sakit atau terpuruk, ini pertanda akan membaik. Rasa harga diri dan kehormatan JS sangat tinggi di tahun ini — pantang kalah, berjiwa tahan banting, namun cenderung suka bermain taktik dan strategi, serta ada kecenderungan bertindak di balik layar."
+    },
+    {
+      "tahun": 2028,
+      "umur": 51,
+      "ganzhi": "戊申",
+      "prose": "Apa yang JS investasikan dalam waktu dan tenaga tahun ini akan berbanding lurus dengan imbalan finansial yang datang. Perlu berhati-hati dalam hubungan dengan saudara dan teman — kemakmuran sulit tercapai sepenuhnya. Dinamika perasaan dan hubungan bergerak bagi yang sudah maupun belum menikah. Bintang Sang Men [[喪門]] memasuki istana nasib — ada duka, bencana, dan kerugian finansial. Bintang Hei She [[黑蛇星]] memasuki istana — nasib terasa terbalik-balik. Bila ada peristiwa gembira di keluarga, dapat menjaga keselamatan. Hindari bulan 6, 8, dan 12 lunar — mohon berkah dengan hati yang baik. Jangan menjenguk orang sakit parah atau menghadiri pemakaman tahun ini — rentan membawa sial, ada risiko kerabat atau teman mengalami penyakit parah atau meninggal. JS pada tahun ini berkarakter luhur, teguh, cerdas, matang, jujur, dan berjiwa mandiri — suka membangun sendiri dan merantau. Memiliki pola \"setengah perjalanan baru berhasil\" [[半世達之特性]] — sebelum paruh baya penuh kesulitan, namun setelah paruh baya akan merasakan kebahagiaan yang sesungguhnya. Sebaliknya, bila sebelum paruh baya sudah kaya dan bahagia, kehidupan setelahnya bisa jatuh ke perjuangan berat."
+    },
+    {
+      "tahun": 2029,
+      "umur": 52,
+      "ganzhi": "己酉",
+      "prose": "Upaya dan pengorbanan yang JS curahkan akan terbayar setara — seberapa besar yang dikeluarkan, sebesar itu pula yang kembali. Perlu berhati-hati dalam hubungan dengan saudara dan teman — secara substansial tujuan sulit tercapai sepenuhnya. Ada perubahan di bidang karir — sebaiknya tidak bergerak. Bintang Tai Yin [[太陰]] memasuki istana nasib — kegembiraan dan rejeki datang, orang berpengaruh memberikan dukungan, segala urusan harmonis. Bintang Wen Chang [[文昌]] masuk ke dalam nasib — peristiwa gembira di depan pintu, usaha dan studi banyak yang berhasil, orang biasa mendapatkan rejeki. Hindari bulan 2, 5, 8, dan 12 lunar. Waspadai permusuhan dari lawan jenis — jangan berjalan di jalan gelap larut malam. JS cenderung angkuh dan percaya diri berlebihan tahun ini — bertindak sepihak, lebih memilih menjadi kepala kecil daripada ekor besar [[寧為雞頭不為牛後]], berjiwa gagah berani, suka bersaing, tidak pernah menyerah, suka ambil risiko dan berspekulasi, penuh semangat, serta ada kecenderungan obsesif terhadap kepemilikan."
+    },
+    {
+      "tahun": 2030,
+      "umur": 53,
+      "ganzhi": "庚戌",
+      "prose": "Dapat memperoleh bantuan dari orang yang lebih tua dan senior — secara substansial tujuan dapat tercapai. Namun kerja keras tahun ini tidak sebanding dengan imbalan finansial. Lingkungan besar mengalami gejolak akibat tekanan. Bagi yang sudah menikah, ada sedikit gesekan emosi dengan pasangan namun tidak merusak. Bagi yang belum menikah, hubungan dengan kekasih semakin erat. Bintang Guan Fu [[官符]] memasuki istana nasib — ada potensi urusan hukum dan kesedihan, orang tua rentan mengalami kerugian finansial, batin perlu bersikap tulus menghadapi bencana. Bintang Huo Sha [[火煞]] memasuki istana — ada potensi urusan hukum atau pertengkaran mulut, waspadai duka dan penyakit. Setelah melewati masa ini akan lebih lancar. Hindari bulan 1, 4, 7, dan 11 lunar. Berhati-hati dalam segala hal, hindari campur tangan urusan orang lain untuk menjaga keselamatan. Rentan terhadap pengaruh jahat, penyakit tak lazim, pengkhianatan, dan kerugian finansial. Karakter JS pada tahun ini cenderung lebih lembut dan kurang tegas — tidak terlalu ambisius, lebih memilih ketenangan daripada persaingan."
+    },
+    {
+      "tahun": 2031,
+      "umur": 54,
+      "ganzhi": "辛亥",
+      "prose": "Kerja keras tahun ini tidak sebanding dengan imbalan finansial. Perlu berhati-hati dalam segala hal dan tidak terburu-buru — secara substansial tujuan sulit tercapai sepenuhnya. Emosi tidak stabil dan suasana hati cenderung mudah berubah. Bagi yang sudah menikah, ada sedikit gesekan emosi dengan pasangan namun tidak merusak. Bagi yang belum menikah, hubungan dengan kekasih semakin erat. Bintang Si Fu [[死符]] memasuki istana — ada duka dan berkabung, orang tua atau saudara rentan mengalami hambatan, perlu memohon perlindungan agar terhindar dari bencana. Bintang An Yao [[暗耀星]] memasuki istana — bila tidak ada konflik hukum yang buruk, bencana dapat dinetralkan oleh peristiwa gembira di keluarga. Hindari bulan 2, 5, 8, dan 12 lunar. Mohon perlindungan Tuhan. Rentan terhadap urusan hukum, hukuman, dan sengketa. Fisik dan mental JS cenderung melemah tahun ini — tampak kurang sehat dari luar, namun bukan sakit sungguhan. Lebih cocok mengerjakan pekerjaan umum yang tidak terlalu menguras jiwa dan raga. Hubungan dengan orang tua cenderung renggang, namun JS kaya empati dan kemanusiaan, senang menolong orang lain."
+    }
+  ],
+  "ziwei_su_ming": "JS cenderung menganggap semua hal sebagai takdir dan menyerah berjuang, sehingga aktivitas kehidupan tidak berkembang sepenuhnya. Bagi mereka yang berpindah-pindah ranting (istana bergerak), nasib tubuh juga ikut bergelora. Dengan menghadapi berbagai perubahan, JS dapat dengan cerdik mengembangkan takdirnya sendiri. Namun bagi mereka yang berada di istana yang bergerak, setiap kali melakukan gerakan besar atau menghadapi perubahan, selalu mengalami rintangan dan cobaan. Pada saat itu, kekuatan Istana Ming Gong [[命宮]], Fu De [[福德宮]], dan Istana Cinta perlu ikut diperhitungkan.",
+  "ziwei_stars": null,
+  "shiye_favorable_full": [
+    {
+      "hz": "火熱光性工廠",
+      "id": "Pabrik barang panas/cahaya"
+    },
+    {
+      "hz": "眼相",
+      "id": "Kacamata/Optometri"
+    },
+    {
+      "hz": "電器",
+      "id": "Elektronik"
+    },
+    {
+      "hz": "光學",
+      "id": "Optik"
+    },
+    {
+      "hz": "眼鏡",
+      "id": "Kacamata"
+    },
+    {
+      "hz": "熱飲小吃",
+      "id": "Minuman panas & makanan ringan"
+    },
+    {
+      "hz": "食品工廠",
+      "id": "Pabrik makanan"
+    },
+    {
+      "hz": "湯髮美容",
+      "id": "Salon rambut & kecantikan"
+    },
+    {
+      "hz": "衣帽百貨",
+      "id": "Pakaian & aksesori"
+    },
+    {
+      "hz": "評論家",
+      "id": "Kritikus/Analis"
+    },
+    {
+      "hz": "化妝品",
+      "id": "Kosmetik"
+    },
+    {
+      "hz": "軍界",
+      "id": "Militer"
+    },
+    {
+      "hz": "煙酒",
+      "id": "Rokok & alkohol"
+    }
+  ],
+  "shiye_supportive_full": [
+    {
+      "hz": "建築",
+      "id": "Konstruksi bangunan"
+    },
+    {
+      "hz": "當舖",
+      "id": "Pegadaian"
+    },
+    {
+      "hz": "畜牧",
+      "id": "Peternakan"
+    },
+    {
+      "hz": "水泥建材",
+      "id": "Material bangunan & semen"
+    },
+    {
+      "hz": "房地產買賣",
+      "id": "Jual beli properti"
+    },
+    {
+      "hz": "殯儀館",
+      "id": "Perusahaan pemakaman"
+    },
+    {
+      "hz": "墓碑石店",
+      "id": "Batu nisan"
+    },
+    {
+      "hz": "地師",
+      "id": "Konsultan feng shui"
+    },
+    {
+      "hz": "古董",
+      "id": "Barang antik"
+    },
+    {
+      "hz": "顧問",
+      "id": "Konsultan"
+    }
+  ],
+  "shiye_short": null,
+  "shen_sha_detail": [
+    {
+      "hz": "將星",
+      "pinyin": "Jiang Xing",
+      "label_id": "Bintang Panglima",
+      "tafsir_hz": "在官界顯達，可以掌握權柄",
+      "tafsir_id": "Bersinar di dunia birokrasi dan pemerintahan, mampu mengendalikan kekuasaan."
+    },
+    {
+      "hz": "劫煞",
+      "pinyin": "Jie Sha",
+      "label_id": "Bintang Perampok",
+      "tafsir_hz": "聰明敏捷、才智過人，巧於諸事",
+      "tafsir_id": "Cerdas dan tangkas, bakat melampaui rata-rata, mahir dalam berbagai urusan."
+    },
+    {
+      "hz": "文昌貴",
+      "pinyin": "Wen Chang Gui",
+      "label_id": "Kemuliaan Wen Chang",
+      "tafsir_hz": "聰明過人，機緣多變之人，逢凶化吉",
+      "tafsir_id": "Sangat cerdas, penuh kebetulan yang berubah-ubah, mampu mengubah nasib buruk menjadi baik."
+    },
+    {
+      "hz": "元辰大耗",
+      "pinyin": "Yuan Chen Da Hao",
+      "label_id": "Pengeluaran Besar Yuan Chen",
+      "tafsir_hz": "手腳強硬，不別是非，寒酸，貪歡好情，聲雄性滿，不遵禮法，一生多災",
+      "tafsir_id": "Keras kepala, tidak membedakan benar dan salah, kikir namun rakus akan kesenangan dan nafsu, mengabaikan tata krama, sepanjang hidup banyak bencana."
+    }
+  ],
+  "marriage_cocok_tafsir": "Saling menghormati satu sama lain, hawa ungu datang dari timur, menikmati kemakmuran dan kekayaan, keluarga sejahtera makmur hingga anak cucu selamanya.",
+  "marriage_hindari_tafsir": "Di pertengahan hidup setelah menikmati kesenangan, datang kelemahan fisik dan umur yang pendek, sulit meraih kebahagiaan, energi buruk sangat kuat, penuh kekacauan dan tanda-tanda bencana, sepanjang hidup penuh kesulitan dan penderitaan, kehilangan pasangan, anak-anak berpisah.",
+  "gushu_quotes": null,
+  "xiongnian_list": null,
+  "xing_qing_poem_hz": null,
+  "xing_qing_poem_id": null,
+  "xing_qing_prose_id": null,
+  "fulu_body_id": null,
+  "mingyun_body_id": null,
+  "qinshu_tou_main_id": null,
+  "qinshu_tou_youyue_id": null,
+  "qinshu_zhong_main_id": null,
+  "qinshu_zhong_youyue_id": null,
+  "qinshu_mo_main_id": null,
+  "qinshu_mo_youyue_id": null,
+  "jie_e_palace_hz": null,
+  "jie_e_palace_id": "Rentan terhadap penyakit seperti muntah darah dan buang air besar berdarah, serta penyakit pada usus kecil. Juga rentan terhadap perdarahan otak serta gangguan pada kepala dan pergelangan tangan. Saat masih kecil, JS kemungkinan pernah meninggalkan bekas luka di wajah atau tangan-kaki. Bila istana berada di ranting Chou, Chen, Wei, atau Xu, lukanya tidak terlalu parah. Namun bila bintang buruk berada satu istana, sepanjang hidup JS tidak luput dari penyakit dan cedera. Rentan pula terhadap penyakit sistem pernapasan dan paru-paru. Sejak kecil JS rentan sakit-sakitan. Setelah dewasa, rentan pula terhadap penyakit kulit dan penyakit jantung. Bila bintang Lian Zhen [[廉貞星]] berada satu istana, waspadai penyakit mata.",
+  "jie_e_organ_focus_id": "Usus kecil, otak/kepala, paru-paru, jantung",
+  "bagua_sectors": null,
+  "bagua_life_type_hz": null,
+  "bagua_life_type_id": null,
+  "bagua_nayin_hz": null,
+  "bagua_nayin_id": null,
+  "bagua_taisui_hz": null,
+  "bagua_taisui_id": null,
+  "bagua_warning_hz": null,
+  "bagua_warning_id": null,
+  "bagua_virtue_hz": null,
+  "bagua_virtue_id": null,
+  "bagua_zuo_xiang_hz": null,
+  "bagua_zuo_xiang_id": null,
+  "hongshui_pages": null,
+  "mantra": {
+    "hz": "—",
+    "pinyin": "—"
+  },
+  "_xq_radar_poly": "          <polygon points=\"200,56 311.2,136 311.2,264 200,328 102.7,256 144.4,168\"\n            fill=\"rgba(139,26,26,0.18)\" stroke=\"#8B1A1A\" stroke-width=\"1.5\"/>\n          <circle cx=\"200\" cy=\"56\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"136\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"264\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"200\" cy=\"328\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"102.7\" cy=\"256\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"144.4\" cy=\"168\" r=\"3\" fill=\"#8B1A1A\"/>",
+  "_xq_radar_labels": "          <g font-family=\"Noto Serif TC,serif\">\n            <text x=\"200\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">剛硬</text>\n            <text x=\"200\" y=\"33\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Gāngyìng · Tegas · 9</text>\n\n            <text x=\"358\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">領導</text>\n            <text x=\"358\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Lǐngdǎo · Memimpin · 8</text>\n\n            <text x=\"358\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">直率</text>\n            <text x=\"358\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Zhíshuài · Terus-terang · 8</text>\n\n            <text x=\"200\" y=\"382\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">進取</text>\n            <text x=\"200\" y=\"393\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Jìnqǔ · Pelopor · 8</text>\n\n            <text x=\"42\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">急性</text>\n            <text x=\"42\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Jíxìng · Cepat panas · 7</text>\n\n            <text x=\"42\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">細膩</text>\n            <text x=\"42\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Xìnì · Halus · 4</text>\n          </g>",
+  "_xq_motto": [
+    "劍",
+    "Pedang",
+    "本性 剛健",
+    "剛健中正"
+  ],
+  "_tafsir": {
+    "kepribadian": "JS adalah pria kelahiran 1978 dengan Batang Hari <span class=\"hz\">日主</span> 庚金— logam murni yang teguh dan berkarakter. Dalam format 食神格 <span class=\"hz\">食神格</span>, kecerdasan dan ekspresi diri menjadi motor penggeraknya. Dengan 土 sebagai Yong Shen <span class=\"hz\">用神</span> dan 火 sebagai Xi Shen <span class=\"hz\">喜神</span>, JS berkembang pesat dalam lingkungan yang memberi ruang kreasi dan kepercayaan.",
+    "_kepribadian_struct": {
+      "paragraf": "JS adalah pria kelahiran 1978 dengan Batang Hari [[日主]] 庚金— logam murni yang teguh dan berkarakter. Dalam format 食神格 [[食神格]], kecerdasan dan ekspresi diri menjadi motor penggeraknya. Dengan 土 sebagai Yong Shen [[用神]] dan 火 sebagai Xi Shen [[喜神]], JS berkembang pesat dalam lingkungan yang memberi ruang kreasi dan kepercayaan.",
+      "power": [
+        "Kepemimpinan alami yang menonjol — mampu tampil sebagai inti kelompok tanpa perlu meminta",
+        "Kecerdasan dan keberanian melampaui rintangan hidup dengan tenang dan percaya diri",
+        "Dapat dipercaya penuh oleh orang-orang di sekitarnya berkat kejujuran dan sikap terbuka"
+      ],
+      "shadow": [
+        "Sulit fokus pada satu hal secara konsisten — pikiran cenderung menyebar",
+        "Kepribadian yang terlalu blak-blakan dapat mengurangi kedalaman kesan pertama",
+        "Kurang fleksibel dalam beradaptasi dengan sistem organisasi besar"
+      ],
+      "optimum": [
+        "Pilih bidang kerja yang menonjolkan keunikan pribadi dan memberi ruang ekspresi penuh",
+        "Latih kelembutan dan kedalaman dalam komunikasi untuk memperluas pengaruh",
+        "Manfaatkan kekuatan 土火 (yong/xi shen) — karir di bidang kreatif, edukasi, atau kewirausahaan"
+      ]
+    },
+    "xingqing_full": "<p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">1</span>Keras kepala namun tegas dalam pendirian, menekankan nilai diri sendiri; kuat namun tidak gegabah, kaya kemampuan dalam menghadapi urusan, tidak ganas, bersifat tegas dan kemampuan operasional kuat.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">2</span>Mengutamakan kebenaran dan tidak segan menghabiskan harta; jujur dan tidak berpura-pura, tidak terikat pada uang — dermawan dan tidak materialistis. Meski mampu mengelola keuangan namun tidak terlalu mementingkan harta; mengendalikan hal konkret yang bisa dikendalikan namun tidak terikat padanya.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">3</span>Tidak memiliki pandangan yang populis, berjiwa besar, pantang menyerah, bersifat otoriter, berbicara tajam, memiliki ketegasan dan kemampuan memimpin yang kuat.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">4</span>Pandai mengkategorikan namun ingin belajar banyak contoh; tidak mau menyakiti orang lain dan tidak mau disakiti, sulit membantah pendapat orang lain namun juga tidak sembarangan menerimanya; tampak berbudaya namun kurang pandai bersosial, tidak suka berbicara banyak.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">5</span>Berjiwa ksatria, kuat namun tidak gegabah, mandiri namun tidak menyakiti, bebas dan tanpa rasa takut, keras namun tidak sempit pikiran, kasar namun jujur dan segar, suka tampil menonjol.</p>",
+    "xingqing_full_action": "Inti watak diri sebagaimana terbaca dari layar 性情.",
+    "overview_full": "<div style=\"display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm;\"><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Pasangan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Cenderung kurang mengutamakan perasaan, lebih mudah menghabiskan uang</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Putra</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Lebih mengutamakan perasaan dan emosi, cenderung hemat dalam keuangan</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Hubungan dengan Ibu</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Sulit menerima kata-kata ibu, hubungan verbal cenderung terbatas</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Kepemimpinan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Kemampuan kepemimpinan relatif terbatas, tidak mudah menguasai kekuasaan besar</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Kekayaan Tidak Terduga</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Sumber pemasukan tidak terduga (偏財) berlimpah — hubungan erat, biasanya mudah diperoleh</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Pendapatan Tetap</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Sumber pendapatan reguler (正財) rata-rata — hubungan erat, biasanya mudah diperoleh</div></div></div>",
+    "overview_full_action": "Pesan inti hubungan terdekat dari layar 全局總論.",
+    "family": "pasangan: - vibe: Tegas dan Terbuka · Butuh Pasangan yang Kuat headline: Pasangan ideal dari shio Harimau, Kambing, atau Anjing cocok_list: - shio: 虎 (Harimau) label: 大吉 teks: Saling menghormati satu sama lain, hawa ungu datang dari timur, menikmati kemakmuran dan kekayaan, keluarga sejahtera makmur hingga anak cucu selamanya. - shio: 羊 (Kambing) label: 大吉 teks: Saling menghormati satu sama lain, hawa ungu datang dari timur, menikmati kemakmuran dan kekayaan, keluarga sejahtera makmur hingga anak cucu selamanya. - shio: 狗 (Anjing) label: 大吉 teks: Saling menghormati satu sama lain, hawa ungu datang dari timur, menikmati kemakmuran dan kekayaan, keluarga sejahtera makmur hingga anak cucu selamanya. hindari_list: - shio: 鼠 (Tikus) teks: Di pertengahan hidup setelah menikmati kesenangan, datang kelemahan fisik dan umur pendek, sulit meraih kebahagiaan, energi buruk sangat kuat, penuh kekacauan dan tanda-tanda bencana, sepanjang hidup penuh kesulitan dan penderitaan, kehilangan pasangan, anak-anak berpisah. - shio: 牛 (Kerbau) teks: Di pertengahan hidup setelah menikmati kesenangan, datang kelemahan fisik dan umur pendek, sulit meraih kebahagiaan, energi buruk sangat kuat, penuh kekacauan dan tanda-tanda bencana, sepanjang hidup penuh kesulitan dan penderitaan, kehilangan pasangan, anak-anak berpisah. - shio: 兔 (Kelinci) teks: Di pertengahan hidup setelah menikmati kesenangan, datang kelemahan fisik dan umur pendek, sulit meraih kebahagiaan, energi buruk sangat kuat, penuh kekacauan dan tanda-tanda bencana, sepanjang hidup penuh kesulitan dan penderitaan, kehilangan pasangan, anak-anak berpisah. - shio: 馬 (Kuda) teks: Di pertengahan hidup setelah menikmati kesenangan, datang kelemahan fisik dan umur pendek, sulit meraih kebahagiaan, energi buruk sangat kuat, penuh kekacauan dan tanda-tanda bencana, sepanjang hidup penuh kesulitan dan penderitaan, kehilangan pasangan, anak-anak berpisah.",
+    "_family_struct": {
+      "pasangan": {
+        "vibe": "Tegas dan Terbuka · Butuh Pasangan yang Kuat"
+      }
+    },
+    "career": "<p>JS dengan Batang Hari Geng Metal <span class=\"hz\">庚金</span> dalam format 食神格 sangat cocok di bidang yang terukur dan konkret — dari manufaktur, teknisi, hingga medis dan kuliner. Dengan 土 sebagai Yong Shen dan 火 sebagai Xi Shen, JS tumbuh dalam lingkungan yang memberi kepercayaan dan ruang gerak mandiri, dan perlu menghindari bidang yang terlalu abstrak atau bergantung pada Air <span class=\"hz\">水</span> (Ji Shen <span class=\"hz\">忌神</span>).</p>",
+    "_career_struct": {},
+    "sintesis": "JS, dengan 庚金 <span class=\"hz\">庚金</span> sebagai Batang Hari dan format 食神格, membawa kekuatan logam yang teguh namun memerlukan api dan bumi untuk bersinar sepenuhnya. Lima langkah berikut adalah kompas praktis untuk menjalani kehidupan secara optimal.",
+    "_sintesis_struct": {
+      "opening": "JS, dengan 庚金 [[庚金]] sebagai Batang Hari dan format 食神格, membawa kekuatan logam yang teguh namun memerlukan api dan bumi untuk bersinar sepenuhnya. Lima langkah berikut adalah kompas praktis untuk menjalani kehidupan secara optimal.",
+      "trio": {
+        "kekuatan": {
+          "hanzi": "庚",
+          "pinyin": "Gēng",
+          "arti": "Logam Pedang",
+          "body": "Teguh, jujur, dan pemimpin alami — mampu tampil di garis depan tanpa perlu meminta. Kecerdasan 食神格 membuat JS ekspresif dan kreatif dalam setiap pekerjaan konkret."
+        },
+        "tantangan": {
+          "hanzi": "弱",
+          "pinyin": "Ruò",
+          "arti": "Badan Lemah",
+          "body": "Dengan skor DM negatif melebihi positif, energi inti JS memerlukan dukungan lingkungan yang tepat. Terlalu banyak Air [[水]] (Ji Shen) mengikis keseimbangan dan memperlemah fokus."
+        },
+        "tindakan": {
+          "hanzi": "土火",
+          "pinyin": "Tǔ Huǒ",
+          "arti": "Bumi & Api",
+          "body": "Yong Shen 土 [[用神]] dan Xi Shen 火 [[喜神]] adalah dua kunci utama JS — fondasi bumi yang stabil dan nyala api yang memberi arah dan semangat."
+        }
+      },
+      "actions": [
+        {
+          "title": "Pakai elemen 水 sebagai **pendingin** sebelum eksekusi",
+          "context": "Diam, amati, baru bertindak — bukan berarti takut, tapi logam perlu didinginkan agar tajam.",
+          "tag": "ji_shen"
+        },
+        {
+          "title": "Perkuat 土 (Yong Shen) di lingkungan sehari-hari",
+          "context": "Pilih properti, karir, dan lingkungan yang stabil dan terukur. Fondasi bumi adalah energi terkuat JS.",
+          "tag": "yong_shen"
+        },
+        {
+          "title": "Aktifkan energi 火 (Xi Shen) lewat ekspresi diri",
+          "context": "Bidang seni, edukasi, kepemimpinan, dan kreativitas adalah lahan subur. Di sini JS bersinar seperti logam ditempa api.",
+          "tag": "xi_shen"
+        },
+        {
+          "title": "Era 戊辰 偏印 (usia 46-56): belajar dalam, tunda ekspansi besar",
+          "context": "Investasikan waktu ke skill baru dan jaringan terpercaya. Ini era konsolidasi, bukan perluasan agresif.",
+          "tag": "da_yun"
+        },
+        {
+          "title": "Jaga kesehatan 庚辛 — paru-paru dan usus besar",
+          "context": "Hindari polusi udara, stres kronik, dan gaya hidup terlalu dingin. Elemen Metal butuh udara bersih dan ritme teratur.",
+          "tag": "jie_e"
+        }
+      ]
+    },
+    "palace1": "<p>ming_gong: - star: 天同 - insight: Seperti pohon besar yang terus tumbuh menjulang ke langit biru tanpa henti, JS mampu menjalani kehidupan yang lancar dan mengalir dengan baik sepanjang hidupnya. JS adalah pribadi yang cerdas, berpikiran terbuka, dan memancarkan semangat jiwa yang membara — sekaligus sehat jasmani maupun rohaninya. Secara khusus, mereka yang memiliki bintang Tian Tong <span class=\"hz\">天同星</span> di Istana Ming Gong, baik pria maupun wanita, termasuk dalam tipe yang bebas dan berkelas. Mereka pandai menangani hubungan antar manusia dengan cekatan, namun tidak mampu memusatkan pikiran secara penuh pada satu hal. Setidaknya, mereka memiliki kecerdasan dan keberanian yang cukup untuk dengan mudah mengatasi berbagai rintangan di kehidupan. Kaum perempuan pada tipe ini memiliki kepribadian yang cerah sekaligus reaksi pikiran yang cepat, menjadikan mereka sosok unggul yang dihargai di tempat kerja. Berkat sikap berhati-hati dan konservatif, tipe ini umumnya disenangi banyak orang. Bila bintang Wen Chang <span class=\"hz\">文昌星</span> atau Wen Qu <span class=\"hz\">文曲星</span> berada satu istana, keberuntungan semakin berlipat — bukan hanya diakui di bidang profesi, bahkan mampu menjadi pemimpin wilayah, dan dengan berkontribusi di majalah sastra pun dapat mengharumkan nama sekaligus masuk dalam daftar penulis ternama. Namun bila bintang Tai Yin <span class=\"hz\">太陰星</span> berada satu istana, situasinya kurang menggembirakan — kaum perempuan berpotensi melemah dalam prinsip kesetiaan, dan pada akhirnya dapat berkembang menjadi sosok yang tidak teguh pendirian. JS memiliki karakter yang terus terang, jujur, dan mampu berdiri di atas orang lain, menduduki posisi kepemimpinan <span class=\"hz\">居領導地位</span>. Sifatnya yang terbuka dan bertindak dengan penuh kendali menjadikannya pribadi yang dipercaya oleh banyak orang. Dalam kelompok apapun yang membutuhkan kepemimpinan, JS pasti tampil di garis terdepan dan menjadi inti kelompok tersebut. Bila bintang Tian Ji <span class=\"hz\">天機星</span> berada satu istana, JS dapat meraih kemasyhuran lewat bakat sastra, sekaligus mendapatkan kekayaan dari sana. Bagi perempuan, karakter cenderung maskulin — karena kepribadian yang terlalu blak-blakan, kesan pertama saat bertemu tidak begitu mendalam. Sejak kecil terbiasa bermain bersama anak laki-laki, sehingga karakter menjadi sedikit ringan. Meski demikian, mereka yang mengenal kejujuran dan ketulusan JS pasti menaruh kepercayaan besar padanya. Yang perlu diperhatikan: jadilah sedikit lebih lembut, itu sudah cukup. Bagi mereka yang bergerak di bidang pekerjaan yang menonjolkan keunikan individu <span class=\"hz\">個人獨特性</span>, kemampuan dapat berkembang sepenuhnya dan bakat pun terwujud. Namun sulit menyesuaikan diri dengan arah organisasi besar — hanya dalam pekerjaan yang bernuansa personal kuat, JS benar-benar dapat bergerak bebas dan bersinar seperti ikan di air <span class=\"hz\">如魚得水</span>. - action: null</p><p>xiongdi: - star: null - insight: Hubungan JS dengan saudara kandung dan teman tidak terlalu aktif dalam pergaulan. Namun begitu hubungan terjalin, meskipun bersifat sederhana, dapat bertahan lama dan langgeng. JS memiliki saudara dan teman yang dapat diandalkan sepenuhnya. Jika bintang baik lain berada satu istana, ikatan persaudaraan menjadi sangat dalam hingga membuat orang lain iri. Namun jika hanya ada satu bintang baik bersama, mudah timbul perpecahan antar saudara. Bila bintang Tian Xiang <span class=\"hz\">天相</span>, Wen Chang <span class=\"hz\">文昌</span>, atau Wen Qu <span class=\"hz\">文曲</span> berada satu istana, jumlah saudara maupun teman pasti cukup banyak. Kemungkinan anak tunggal, atau memiliki saudara namun tinggal berjauhan — menunjukkan hubungan persaudaraan yang tipis <span class=\"hz\">兄弟緣薄</span>. Tanpa bintang baik Wen Chang <span class=\"hz\">文昌</span> atau Wen Qu <span class=\"hz\">文曲</span> yang menetralkan energi buruk di istana ini, sulit sekali mendapatkan pertolongan dari teman. Nasib persaudaraan dan persahabatan JS tergolong cukup memuaskan. Teman cenderung lebih banyak dari saudara kandung, dan kesenangan terbesar diperoleh melalui pertukaran pikiran yang bermakna <span class=\"hz\">智性的交流</span>. - action: null</p><p>fuqi: - star: null - insight: Hubungan pernikahan JS bersifat tenang dan tidak berapi-api. Namun cinta di antara pasangan sangat intens — ini bukan hubungan yang dingin atau seperti orang asing. Keduanya saling mengakui kebebasan satu sama lain, menjalani kehidupan pernikahan yang bebas tanpa belenggu. Jika JS adalah pria, disarankan menikah dengan wanita yang lebih muda. Jika JS adalah wanita, disarankan menikah dengan pria yang lebih tua dan dapat diandalkan sepenuhnya. Bila bintang Tian Liang <span class=\"hz\">天梁星</span> berada satu istana, pria cenderung menikahi wanita yang lebih tua, sedangkan wanita cenderung menikahi suami yang lebih muda. Bila bintang Tai Yin <span class=\"hz\">太陰星</span> berada satu istana, pria dapat memperoleh pasangan yang cantik dan bahkan meraih sukses berkat dukungan istri <span class=\"hz\">妻內助而功成名就</span>. Wanita pun dapat menikahi suami yang baik. Bila bintang buruk <span class=\"hz\">凶星</span> hadir, ada risiko perceraian — menikah di usia lebih matang dapat menghindari bencana ini. Terlalu banyak mencampuri kehidupan pasangan juga berisiko ditinggalkan. - action: null</p><p>zinu: - star: null - insight: null - action: null</p>",
+    "_palace1_struct": {
+      "ming_gong": {
+        "star": "天同",
+        "insight": "Seperti pohon besar yang terus tumbuh menjulang ke langit biru tanpa henti, JS mampu menjalani kehidupan yang lancar dan mengalir dengan baik sepanjang hidupnya. JS adalah pribadi yang cerdas, berpikiran terbuka, dan memancarkan semangat jiwa yang membara — sekaligus sehat jasmani maupun rohaninya. Secara khusus, mereka yang memiliki bintang Tian Tong [[天同星]] di Istana Ming Gong, baik pria maupun wanita, termasuk dalam tipe yang bebas dan berkelas. Mereka pandai menangani hubungan antar manusia dengan cekatan, namun tidak mampu memusatkan pikiran secara penuh pada satu hal. Setidaknya, mereka memiliki kecerdasan dan keberanian yang cukup untuk dengan mudah mengatasi berbagai rintangan di kehidupan. Kaum perempuan pada tipe ini memiliki kepribadian yang cerah sekaligus reaksi pikiran yang cepat, menjadikan mereka sosok unggul yang dihargai di tempat kerja. Berkat sikap berhati-hati dan konservatif, tipe ini umumnya disenangi banyak orang. Bila bintang Wen Chang [[文昌星]] atau Wen Qu [[文曲星]] berada satu istana, keberuntungan semakin berlipat — bukan hanya diakui di bidang profesi, bahkan mampu menjadi pemimpin wilayah, dan dengan berkontribusi di majalah sastra pun dapat mengharumkan nama sekaligus masuk dalam daftar penulis ternama. Namun bila bintang Tai Yin [[太陰星]] berada satu istana, situasinya kurang menggembirakan — kaum perempuan berpotensi melemah dalam prinsip kesetiaan, dan pada akhirnya dapat berkembang menjadi sosok yang tidak teguh pendirian. JS memiliki karakter yang terus terang, jujur, dan mampu berdiri di atas orang lain, menduduki posisi kepemimpinan [[居領導地位]]. Sifatnya yang terbuka dan bertindak dengan penuh kendali menjadikannya pribadi yang dipercaya oleh banyak orang. Dalam kelompok apapun yang membutuhkan kepemimpinan, JS pasti tampil di garis terdepan dan menjadi inti kelompok tersebut. Bila bintang Tian Ji [[天機星]] berada satu istana, JS dapat meraih kemasyhuran lewat bakat sastra, sekaligus mendapatkan kekayaan dari sana. Bagi perempuan, karakter cenderung maskulin — karena kepribadian yang terlalu blak-blakan, kesan pertama saat bertemu tidak begitu mendalam. Sejak kecil terbiasa bermain bersama anak laki-laki, sehingga karakter menjadi sedikit ringan. Meski demikian, mereka yang mengenal kejujuran dan ketulusan JS pasti menaruh kepercayaan besar padanya. Yang perlu diperhatikan: jadilah sedikit lebih lembut, itu sudah cukup. Bagi mereka yang bergerak di bidang pekerjaan yang menonjolkan keunikan individu [[個人獨特性]], kemampuan dapat berkembang sepenuhnya dan bakat pun terwujud. Namun sulit menyesuaikan diri dengan arah organisasi besar — hanya dalam pekerjaan yang bernuansa personal kuat, JS benar-benar dapat bergerak bebas dan bersinar seperti ikan di air [[如魚得水]]."
+      },
+      "xiongdi": {
+        "insight": "Hubungan JS dengan saudara kandung dan teman tidak terlalu aktif dalam pergaulan. Namun begitu hubungan terjalin, meskipun bersifat sederhana, dapat bertahan lama dan langgeng. JS memiliki saudara dan teman yang dapat diandalkan sepenuhnya. Jika bintang baik lain berada satu istana, ikatan persaudaraan menjadi sangat dalam hingga membuat orang lain iri. Namun jika hanya ada satu bintang baik bersama, mudah timbul perpecahan antar saudara. Bila bintang Tian Xiang [[天相]], Wen Chang [[文昌]], atau Wen Qu [[文曲]] berada satu istana, jumlah saudara maupun teman pasti cukup banyak. Kemungkinan anak tunggal, atau memiliki saudara namun tinggal berjauhan — menunjukkan hubungan persaudaraan yang tipis [[兄弟緣薄]]. Tanpa bintang baik Wen Chang [[文昌]] atau Wen Qu [[文曲]] yang menetralkan energi buruk di istana ini, sulit sekali mendapatkan pertolongan dari teman. Nasib persaudaraan dan persahabatan JS tergolong cukup memuaskan. Teman cenderung lebih banyak dari saudara kandung, dan kesenangan terbesar diperoleh melalui pertukaran pikiran yang bermakna [[智性的交流]]."
+      },
+      "fuqi": {
+        "insight": "Hubungan pernikahan JS bersifat tenang dan tidak berapi-api. Namun cinta di antara pasangan sangat intens — ini bukan hubungan yang dingin atau seperti orang asing. Keduanya saling mengakui kebebasan satu sama lain, menjalani kehidupan pernikahan yang bebas tanpa belenggu. Jika JS adalah pria, disarankan menikah dengan wanita yang lebih muda. Jika JS adalah wanita, disarankan menikah dengan pria yang lebih tua dan dapat diandalkan sepenuhnya. Bila bintang Tian Liang [[天梁星]] berada satu istana, pria cenderung menikahi wanita yang lebih tua, sedangkan wanita cenderung menikahi suami yang lebih muda. Bila bintang Tai Yin [[太陰星]] berada satu istana, pria dapat memperoleh pasangan yang cantik dan bahkan meraih sukses berkat dukungan istri [[妻內助而功成名就]]. Wanita pun dapat menikahi suami yang baik. Bila bintang buruk [[凶星]] hadir, ada risiko perceraian — menikah di usia lebih matang dapat menghindari bencana ini. Terlalu banyak mencampuri kehidupan pasangan juga berisiko ditinggalkan."
+      }
+    },
+    "palace2": "<p>caibo: - star: null - insight: Meski hemat dalam menabung, JS sama sekali tidak pelit. JS memahami dengan baik cara menggunakan uang secara tepat <span class=\"hz\">正確地用錢之道</span>. Keberuntungan finansial JS berlimpah — khususnya bila ada bintang baik berada satu istana, hari-hari meraup penghasilan besar dapat diharapkan datang. Bila bintang Ju Men <span class=\"hz\">巨門星</span> berada satu istana, dengan kerja keras dan hidup hemat, JS dapat meninggalkan warisan kekayaan yang berarti bagi generasi berikutnya. - action: null</p><p>jie_e: - star: null - insight: Rentan terhadap penyakit seperti muntah darah dan buang air besar berdarah, serta penyakit pada usus kecil. Juga rentan terhadap perdarahan otak serta gangguan pada kepala dan pergelangan tangan. Saat masih kecil, JS kemungkinan pernah meninggalkan bekas luka di wajah atau tangan-kaki. Bila istana berada di ranting Chou <span class=\"hz\">丑</span>, Chen <span class=\"hz\">辰</span>, Wei <span class=\"hz\">未</span>, atau Xu <span class=\"hz\">戌</span>, lukanya tidak terlalu parah. Namun bila bintang buruk <span class=\"hz\">凶星</span> berada satu istana, sepanjang hidup JS tidak luput dari penyakit dan cedera. Rentan pula terhadap penyakit sistem pernapasan dan paru-paru. Sejak kecil JS rentan sakit-sakitan. Setelah dewasa, rentan pula terhadap penyakit kulit dan penyakit jantung. Bila bintang Lian Zhen <span class=\"hz\">廉貞星</span> berada satu istana, waspadai penyakit mata. - action: null</p><p>qianyi: - star: null - insight: Begitu JS memutuskan arah, JS melangkah terus sampai akhir dan tidak pernah mundur <span class=\"hz\">毫不退縮</span>. Setiap kali JS menghadapi jalan buntu atau hambatan, pasti muncul seorang pendamping yang lebih tua untuk membantu melewati bahaya. Karena perubahan terus-menerus dalam hidup, bakat JS semakin diakui oleh masyarakat — oleh karena itu, bila JS merasa bingung, tidak ada salahnya dengan tegas berganti bidang! Khususnya mereka yang memiliki bintang Tian Liang <span class=\"hz\">天梁</span> satu istana memiliki nasib yang semakin beruntung. Namun bila bintang Ju Men <span class=\"hz\">巨門</span> atau Tai Yin <span class=\"hz\">太陰</span> berada satu istana, JS akan sibuk dan lelah bekerja keras sepanjang hidup. Ambisi besar, masa depan tanpa batas <span class=\"hz\">前途無量</span>. Bagi JS, perubahan takdir adalah kesempatan untuk meningkatkan status sosial. Dalam proses perpindahan karir, studi di luar negeri, atau perjalanan mengikuti perubahan, JS dapat menjalin hubungan dengan orang-orang berkapabilitas dan mendapat bantuan mereka untuk mencapai hal-hal besar. Bila bintang Tian Tong <span class=\"hz\">天同星</span> berada satu istana adalah nasib terbaik <span class=\"hz\">最理想的鴻運</span>. Bila bintang Tian Ji <span class=\"hz\">天機星</span> berada satu istana, bidang sastra atau seni mungkin lebih ideal. - action: null</p><p>puyi: - star: null - insight: Bawahan JS lebih tepat disebut lamban dan kurang responsif, bukan jujur dan tulus. Kemampuan mereka tidak terlalu menonjol. Setelah memasuki usia paruh baya, JS dapat memperoleh bawahan yang benar-benar kompeten dan berbakat. Jika JS berencana mendirikan perusahaan bersama orang-orang yang lebih muda, mulai usia empat puluh tahun adalah waktu yang lebih tepat. Bila bintang Zi Wei <span class=\"hz\">紫微星</span> berada satu istana, JS akan mendapat banyak pemujaan dari kaum yang lebih muda. Namun bila bintang Wu Qu <span class=\"hz\">武曲星</span> berada satu istana, JS berisiko menghadapi ketidaksukaan dari bawahan atau rekan kerja. - action: null</p>",
+    "_palace2_struct": {
+      "caibo": {
+        "insight": "Meski hemat dalam menabung, JS sama sekali tidak pelit. JS memahami dengan baik cara menggunakan uang secara tepat [[正確地用錢之道]]. Keberuntungan finansial JS berlimpah — khususnya bila ada bintang baik berada satu istana, hari-hari meraup penghasilan besar dapat diharapkan datang. Bila bintang Ju Men [[巨門星]] berada satu istana, dengan kerja keras dan hidup hemat, JS dapat meninggalkan warisan kekayaan yang berarti bagi generasi berikutnya."
+      },
+      "jie_e": {
+        "insight": "Rentan terhadap penyakit seperti muntah darah dan buang air besar berdarah, serta penyakit pada usus kecil. Juga rentan terhadap perdarahan otak serta gangguan pada kepala dan pergelangan tangan. Saat masih kecil, JS kemungkinan pernah meninggalkan bekas luka di wajah atau tangan-kaki. Bila istana berada di ranting Chou [[丑]], Chen [[辰]], Wei [[未]], atau Xu [[戌]], lukanya tidak terlalu parah. Namun bila bintang buruk [[凶星]] berada satu istana, sepanjang hidup JS tidak luput dari penyakit dan cedera. Rentan pula terhadap penyakit sistem pernapasan dan paru-paru. Sejak kecil JS rentan sakit-sakitan. Setelah dewasa, rentan pula terhadap penyakit kulit dan penyakit jantung. Bila bintang Lian Zhen [[廉貞星]] berada satu istana, waspadai penyakit mata."
+      },
+      "qianyi": {
+        "insight": "Begitu JS memutuskan arah, JS melangkah terus sampai akhir dan tidak pernah mundur [[毫不退縮]]. Setiap kali JS menghadapi jalan buntu atau hambatan, pasti muncul seorang pendamping yang lebih tua untuk membantu melewati bahaya. Karena perubahan terus-menerus dalam hidup, bakat JS semakin diakui oleh masyarakat — oleh karena itu, bila JS merasa bingung, tidak ada salahnya dengan tegas berganti bidang! Khususnya mereka yang memiliki bintang Tian Liang [[天梁]] satu istana memiliki nasib yang semakin beruntung. Namun bila bintang Ju Men [[巨門]] atau Tai Yin [[太陰]] berada satu istana, JS akan sibuk dan lelah bekerja keras sepanjang hidup. Ambisi besar, masa depan tanpa batas [[前途無量]]. Bagi JS, perubahan takdir adalah kesempatan untuk meningkatkan status sosial. Dalam proses perpindahan karir, studi di luar negeri, atau perjalanan mengikuti perubahan, JS dapat menjalin hubungan dengan orang-orang berkapabilitas dan mendapat bantuan mereka untuk mencapai hal-hal besar. Bila bintang Tian Tong [[天同星]] berada satu istana adalah nasib terbaik [[最理想的鴻運]]. Bila bintang Tian Ji [[天機星]] berada satu istana, bidang sastra atau seni mungkin lebih ideal."
+      },
+      "puyi": {
+        "insight": "Bawahan JS lebih tepat disebut lamban dan kurang responsif, bukan jujur dan tulus. Kemampuan mereka tidak terlalu menonjol. Setelah memasuki usia paruh baya, JS dapat memperoleh bawahan yang benar-benar kompeten dan berbakat. Jika JS berencana mendirikan perusahaan bersama orang-orang yang lebih muda, mulai usia empat puluh tahun adalah waktu yang lebih tepat. Bila bintang Zi Wei [[紫微星]] berada satu istana, JS akan mendapat banyak pemujaan dari kaum yang lebih muda. Namun bila bintang Wu Qu [[武曲星]] berada satu istana, JS berisiko menghadapi ketidaksukaan dari bawahan atau rekan kerja."
+      }
+    },
+    "palace3": "<p>guanlu: - star: null - insight: Profesi yang cocok bagi JS: dokter, perawat, koki, politikus, tokoh agama, teknisi. JS cenderung kesulitan menghadapi hal-hal yang bersifat abstrak, namun sangat mahir dalam hal-hal konkret dan nyata. Sifat ini juga tercermin dalam karir — JS cocok memilih pekerjaan yang jelas dan terukur secara nyata, seperti dokter, koki, industri manufaktur, ahli kecantikan, pengrajin, atau akuntan. JS adalah pribadi yang jujur dari sananya, dan begitu mulai bekerja langsung fokus penuh dan berdedikasi <span class=\"hz\">心致志於工作上</span>. Sekaligus memiliki semangat kuat untuk menghasilkan uang. Namun karena terlalu mementingkan uang, bisa jadi dikomentari sebagai orang yang pelit di belakang, atau terlibat konflik karena masalah finansial. Selain itu, JS adalah tipe orang yang menyimpan pikiran dalam-dalam dan tidak mudah mengungkapkan hati kepada orang lain <span class=\"hz\">深藏不露</span> — akibatnya rekan kerja mungkin menjaga jarak. Dalam karir JS, menjaga hubungan antar manusia yang harmonis adalah hal yang harus selalu diperhatikan. - action: null</p><p>tianzhai: - star: null - insight: JS mengelola aset dengan hati-hati dan konservatif — tampaknya sulit untuk berkembang besar dalam hal properti. Bintang Lian Zhen <span class=\"hz\">廉貞星</span> pada dasarnya bukan pertanda keberuntungan properti — diperlukan bintang baik satu istana untuk menetralkan energi buruk agar properti dapat diperoleh. Tanpanya, properti yang susah payah didapat bisa berpindah tangan akibat konflik dengan orang-orang di sekitar — Lian Zhen memang bintang yang penuh kekacauan tanpa henti <span class=\"hz\">紛擾不斷之星</span>. Namun bila bintang Qi Sha <span class=\"hz\">七殺</span> berada satu istana, usaha mandiri dapat menghasilkan kekayaan dan properti. Arah Selatan sangat baik. Bila istana berada di ranting Yin <span class=\"hz\">寅</span>, Mao <span class=\"hz\">卯</span>, Si <span class=\"hz\">巳</span>, atau Wu <span class=\"hz\">午</span>, JS masih bisa memperoleh tanah atau rumah dari kedua orang tua. Dalam upaya mendapatkan properti, kadang ada kecenderungan tidak memilih cara. Namun JS memiliki kemampuan analisis yang tajam dalam menilai properti yang baik dan buruk. Bila bintang Wu Qu <span class=\"hz\">武曲</span> berada satu istana, properti dapat diperoleh di masa tua. Properti yang berkaitan dengan unsur kayu atau tanaman lebih cocok. Arah Timur sangat baik. - action: null</p><p>fude: - star: null - insight: JS memiliki kepribadian yang tenang, stabil, dan dilimpahi berkah serta kebajikan yang berlimpah <span class=\"hz\">豐厚的福德</span>. JS juga memiliki kecenderungan untuk mengejar impian yang romantis dan idealis. Hanya dengan kehadiran bintang Tai Yin <span class=\"hz\">太陰星</span> saja di Istana Fu De, keberuntungan hidup akan selalu menyertai sepanjang usia — sekaligus dapat menjaga umur panjang. Bila Tai Yin <span class=\"hz\">太陰星</span> sebagai satu-satunya bintang di istana ini, hal itu sudah cukup untuk menjalani hidup yang sangat beruntung. Bila bintang Tai Yang <span class=\"hz\">太陽星</span> juga berada satu istana, JS niscaya akan memiliki kehidupan yang bahagia dan memuaskan jiwa raga <span class=\"hz\">身心皆令人滿意的幸福人生</span>. Namun bila bintang Tian Ji <span class=\"hz\">天機星</span> berada satu istana, pikiran JS tidak pernah benar-benar beristirahat. - action: null</p><p>fumu: - star: null - insight: Meski mengalami tidak sedikit rasa kecewa, JS tidak akan pernah meninggalkan sisi orang tua. Selama tidak ada bintang buruk yang menghalangi, istana ini adalah bintang kebahagiaan <span class=\"hz\">幸福之星</span>. Kedua orang tua JS adalah pribadi yang tenang dan adil — mungkin butuh beberapa waktu, namun pada akhirnya mereka pasti akan memahami tindakan dan pilihan JS. JS dapat dengan tenang dan terbuka bergaul jujur dengan kedua orang tua. Khususnya bila bintang Zi Wei <span class=\"hz\">紫微</span> atau Wu Qu <span class=\"hz\">武曲</span> berada satu istana, hubungan orang tua dan anak tidak diragukan lagi sangat hangat dan penuh kasih sayang. Selain itu, bintang Tian Fu <span class=\"hz\">天府星</span> adalah bintang yang menguasai kekayaan — JS kemungkinan besar tumbuh dalam keluarga yang berkecukupan! - action: null</p>",
+    "_palace3_struct": {
+      "guanlu": {
+        "insight": "Profesi yang cocok bagi JS: dokter, perawat, koki, politikus, tokoh agama, teknisi. JS cenderung kesulitan menghadapi hal-hal yang bersifat abstrak, namun sangat mahir dalam hal-hal konkret dan nyata. Sifat ini juga tercermin dalam karir — JS cocok memilih pekerjaan yang jelas dan terukur secara nyata, seperti dokter, koki, industri manufaktur, ahli kecantikan, pengrajin, atau akuntan. JS adalah pribadi yang jujur dari sananya, dan begitu mulai bekerja langsung fokus penuh dan berdedikasi [[心致志於工作上]]. Sekaligus memiliki semangat kuat untuk menghasilkan uang. Namun karena terlalu mementingkan uang, bisa jadi dikomentari sebagai orang yang pelit di belakang, atau terlibat konflik karena masalah finansial. Selain itu, JS adalah tipe orang yang menyimpan pikiran dalam-dalam dan tidak mudah mengungkapkan hati kepada orang lain [[深藏不露]] — akibatnya rekan kerja mungkin menjaga jarak. Dalam karir JS, menjaga hubungan antar manusia yang harmonis adalah hal yang harus selalu diperhatikan."
+      },
+      "tianzhai": {
+        "insight": "JS mengelola aset dengan hati-hati dan konservatif — tampaknya sulit untuk berkembang besar dalam hal properti. Bintang Lian Zhen [[廉貞星]] pada dasarnya bukan pertanda keberuntungan properti — diperlukan bintang baik satu istana untuk menetralkan energi buruk agar properti dapat diperoleh. Tanpanya, properti yang susah payah didapat bisa berpindah tangan akibat konflik dengan orang-orang di sekitar — Lian Zhen memang bintang yang penuh kekacauan tanpa henti [[紛擾不斷之星]]. Namun bila bintang Qi Sha [[七殺]] berada satu istana, usaha mandiri dapat menghasilkan kekayaan dan properti. Arah Selatan sangat baik. Bila istana berada di ranting Yin [[寅]], Mao [[卯]], Si [[巳]], atau Wu [[午]], JS masih bisa memperoleh tanah atau rumah dari kedua orang tua. Dalam upaya mendapatkan properti, kadang ada kecenderungan tidak memilih cara. Namun JS memiliki kemampuan analisis yang tajam dalam menilai properti yang baik dan buruk. Bila bintang Wu Qu [[武曲]] berada satu istana, properti dapat diperoleh di masa tua. Properti yang berkaitan dengan unsur kayu atau tanaman lebih cocok. Arah Timur sangat baik."
+      },
+      "fude": {
+        "insight": "JS memiliki kepribadian yang tenang, stabil, dan dilimpahi berkah serta kebajikan yang berlimpah [[豐厚的福德]]. JS juga memiliki kecenderungan untuk mengejar impian yang romantis dan idealis. Hanya dengan kehadiran bintang Tai Yin [[太陰星]] saja di Istana Fu De, keberuntungan hidup akan selalu menyertai sepanjang usia — sekaligus dapat menjaga umur panjang. Bila Tai Yin [[太陰星]] sebagai satu-satunya bintang di istana ini, hal itu sudah cukup untuk menjalani hidup yang sangat beruntung. Bila bintang Tai Yang [[太陽星]] juga berada satu istana, JS niscaya akan memiliki kehidupan yang bahagia dan memuaskan jiwa raga [[身心皆令人滿意的幸福人生]]. Namun bila bintang Tian Ji [[天機星]] berada satu istana, pikiran JS tidak pernah benar-benar beristirahat."
+      },
+      "fumu": {
+        "insight": "Meski mengalami tidak sedikit rasa kecewa, JS tidak akan pernah meninggalkan sisi orang tua. Selama tidak ada bintang buruk yang menghalangi, istana ini adalah bintang kebahagiaan [[幸福之星]]. Kedua orang tua JS adalah pribadi yang tenang dan adil — mungkin butuh beberapa waktu, namun pada akhirnya mereka pasti akan memahami tindakan dan pilihan JS. JS dapat dengan tenang dan terbuka bergaul jujur dengan kedua orang tua. Khususnya bila bintang Zi Wei [[紫微]] atau Wu Qu [[武曲]] berada satu istana, hubungan orang tua dan anak tidak diragukan lagi sangat hangat dan penuh kasih sayang. Selain itu, bintang Tian Fu [[天府星]] adalah bintang yang menguasai kekayaan — JS kemungkinan besar tumbuh dalam keluarga yang berkecukupan!"
+      }
+    },
+    "_dmcard": "\n        <div class=\"dmc-eyebrow\">本 命 · Penguasa Hari</div>\n        <div class=\"dmc-stem\">庚</div>\n        <div class=\"dmc-element\">金 · Logam Yang</div>\n        <div class=\"dmc-pinyin\">Gēng 金, \"Pedang\"</div>\n        <div class=\"dmc-strength\">Status: <span class=\"val\">KUAT</span> · 旺</div>\n      ",
+    "_jishen_body": "<strong>水</strong> (Shuǐ · Air), Air berlebih dapat menggerus pondasi; hindari emosi mendung berkepanjangan, basah/lembap, dan keputusan impulsif.",
+    "fam_pasangan_vibe": "Tegas dan Terbuka · Butuh Pasangan yang Kuat",
+    "caifu_zheng_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "caifu_pian_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "_p1_ming_gong": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Diri</span><span class=\"pn-meta\">Mìng Gōng<span class=\"hz\">命宮</span></span></div></div><div class=\"pal-body\"><p>Seperti pohon besar yang terus tumbuh menjulang ke langit biru tanpa henti, JS mampu menjalani kehidupan yang lancar dan mengalir dengan baik sepanjang hidupnya. JS adalah pribadi yang cerdas, berpikiran terbuka, dan memancarkan semangat jiwa yang membara — sekaligus sehat jasmani maupun rohaninya. Secara khusus, mereka yang memiliki bintang Tian Tong <span class=\"hz\">天同星</span> di Istana Ming Gong, baik pria maupun wanita, termasuk dalam tipe yang bebas dan berkelas. Mereka pandai menangani hubungan antar manusia dengan cekatan, namun tidak mampu memusatkan pikiran secara penuh pada satu hal. Setidaknya, mereka memiliki kecerdasan dan keberanian yang cukup untuk dengan mudah mengatasi berbagai rintangan di kehidupan. Kaum perempuan pada tipe ini memiliki kepribadian yang cerah sekaligus reaksi pikiran yang cepat, menjadikan mereka sosok unggul yang dihargai di tempat kerja. Berkat sikap berhati-hati dan konservatif, tipe ini umumnya disenangi banyak orang. Bila bintang Wen Chang <span class=\"hz\">文昌星</span> atau Wen Qu <span class=\"hz\">文曲星</span> berada satu istana, keberuntungan semakin berlipat — bukan hanya diakui di bidang profesi, bahkan mampu menjadi pemimpin wilayah, dan dengan berkontribusi di majalah sastra pun dapat mengharumkan nama sekaligus masuk dalam daftar penulis ternama. Namun bila bintang Tai Yin <span class=\"hz\">太陰星</span> berada satu istana, situasinya kurang menggembirakan — kaum perempuan berpotensi melemah dalam prinsip kesetiaan, dan pada akhirnya dapat berkembang menjadi sosok yang tidak teguh pendirian. JS memiliki karakter yang terus terang, jujur, dan mampu berdiri di atas orang lain, menduduki posisi kepemimpinan <span class=\"hz\">居領導地位</span>. Sifatnya yang terbuka dan bertindak dengan penuh kendali menjadikannya pribadi yang dipercaya oleh banyak orang. Dalam kelompok apapun yang membutuhkan kepemimpinan, JS pasti tampil di garis terdepan dan menjadi inti kelompok tersebut. Bila bintang Tian Ji <span class=\"hz\">天機星</span> berada satu istana, JS dapat meraih kemasyhuran lewat bakat sastra, sekaligus mendapatkan kekayaan dari sana. Bagi perempuan, karakter cenderung maskulin — karena kepribadian yang terlalu blak-blakan, kesan pertama saat bertemu tidak begitu mendalam. Sejak kecil terbiasa bermain bersama anak laki-laki, sehingga karakter menjadi sedikit ringan. Meski demikian, mereka yang mengenal kejujuran dan ketulusan JS pasti menaruh kepercayaan besar padanya. Yang perlu diperhatikan: jadilah sedikit lebih lembut, itu sudah cukup. Bagi mereka yang bergerak di bidang pekerjaan yang menonjolkan keunikan individu <span class=\"hz\">個人獨特性</span>, kemampuan dapat berkembang sepenuhnya dan bakat pun terwujud. Namun sulit menyesuaikan diri dengan arah organisasi besar — hanya dalam pekerjaan yang bernuansa personal kuat, JS benar-benar dapat bergerak bebas dan bersinar seperti ikan di air <span class=\"hz\">如魚得水</span>.</p></div>",
+    "_solo_ming_gong_body": "<style>.palace-solo .ps-body p { font-size: 8pt; line-height: 1.4; margin: 0 0 1.8mm 0; }</style><style>.palace-solo .ps-action{display:none!important}</style><p>Seperti pohon besar yang terus tumbuh menjulang ke langit biru tanpa henti, JS mampu menjalani kehidupan yang lancar dan mengalir dengan baik sepanjang hidupnya. JS adalah pribadi yang cerdas, berpikiran terbuka, dan memancarkan semangat jiwa yang membara — sekaligus sehat jasmani maupun rohaninya. Secara khusus, mereka yang memiliki bintang Tian Tong <span class=\"hz\">天同星</span> di Istana Ming Gong, baik pria maupun wanita, termasuk dalam tipe yang bebas dan berkelas. Mereka pandai menangani hubungan antar manusia dengan cekatan, namun tidak mampu memusatkan pikiran secara penuh pada satu hal. Setidaknya, mereka memiliki kecerdasan dan keberanian yang cukup untuk dengan mudah mengatasi berbagai rintangan di kehidupan. Kaum perempuan pada tipe ini memiliki kepribadian yang cerah sekaligus reaksi pikiran yang cepat, menjadikan mereka sosok unggul yang dihargai di tempat kerja. Berkat sikap berhati-hati dan konservatif, tipe ini umumnya disenangi banyak orang. Bila bintang Wen Chang <span class=\"hz\">文昌星</span> atau Wen Qu <span class=\"hz\">文曲星</span> berada satu istana, keberuntungan semakin berlipat — bukan hanya diakui di bidang profesi, bahkan mampu menjadi pemimpin wilayah, dan dengan berkontribusi di majalah sastra pun dapat mengharumkan nama sekaligus masuk dalam daftar penulis ternama. Namun bila bintang Tai Yin <span class=\"hz\">太陰星</span> berada satu istana, situasinya kurang menggembirakan — kaum perempuan berpotensi melemah dalam prinsip kesetiaan, dan pada akhirnya dapat berkembang menjadi sosok yang tidak teguh pendirian. JS memiliki karakter yang terus terang, jujur, dan mampu berdiri di atas orang lain, menduduki posisi kepemimpinan <span class=\"hz\">居領導地位</span>. Sifatnya yang terbuka dan bertindak dengan penuh kendali menjadikannya pribadi yang dipercaya oleh banyak orang. Dalam kelompok apapun yang membutuhkan kepemimpinan, JS pasti tampil di garis terdepan dan menjadi inti kelompok tersebut. Bila bintang Tian Ji <span class=\"hz\">天機星</span> berada satu istana, JS dapat meraih kemasyhuran lewat bakat sastra, sekaligus mendapatkan kekayaan dari sana. Bagi perempuan, karakter cenderung maskulin — karena kepribadian yang terlalu blak-blakan, kesan pertama saat bertemu tidak begitu mendalam. Sejak kecil terbiasa bermain bersama anak laki-laki, sehingga karakter menjadi sedikit ringan. Meski demikian, mereka yang mengenal kejujuran dan ketulusan JS pasti menaruh kepercayaan besar padanya. Yang perlu diperhatikan: jadilah sedikit lebih lembut, itu sudah cukup. Bagi mereka yang bergerak di bidang pekerjaan yang menonjolkan keunikan individu <span class=\"hz\">個人獨特性</span>, kemampuan dapat berkembang sepenuhnya dan bakat pun terwujud. Namun sulit menyesuaikan diri dengan arah organisasi besar — hanya dalam pekerjaan yang bernuansa personal kuat, JS benar-benar dapat bergerak bebas dan bersinar seperti ikan di air <span class=\"hz\">如魚得水</span>.</p>",
+    "_p1_xiongdi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Saudara</span><span class=\"pn-meta\">Xiōng Dì<span class=\"hz\">兄弟</span></span></div></div><div class=\"pal-body\"><p>Hubungan JS dengan saudara kandung dan teman tidak terlalu aktif dalam pergaulan. Namun begitu hubungan terjalin, meskipun bersifat sederhana, dapat bertahan lama dan langgeng. JS memiliki saudara dan teman yang dapat diandalkan sepenuhnya. Jika bintang baik lain berada satu istana, ikatan persaudaraan menjadi sangat dalam hingga membuat orang lain iri. Namun jika hanya ada satu bintang baik bersama, mudah timbul perpecahan antar saudara. Bila bintang Tian Xiang <span class=\"hz\">天相</span>, Wen Chang <span class=\"hz\">文昌</span>, atau Wen Qu <span class=\"hz\">文曲</span> berada satu istana, jumlah saudara maupun teman pasti cukup banyak. Kemungkinan anak tunggal, atau memiliki saudara namun tinggal berjauhan — menunjukkan hubungan persaudaraan yang tipis <span class=\"hz\">兄弟緣薄</span>. Tanpa bintang baik Wen Chang <span class=\"hz\">文昌</span> atau Wen Qu <span class=\"hz\">文曲</span> yang menetralkan energi buruk di istana ini, sulit sekali mendapatkan pertolongan dari teman. Nasib persaudaraan dan persahabatan JS tergolong cukup memuaskan. Teman cenderung lebih banyak dari saudara kandung, dan kesenangan terbesar diperoleh melalui pertukaran pikiran yang bermakna <span class=\"hz\">智性的交流</span>.</p></div>",
+    "_solo_xiongdi_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>Hubungan JS dengan saudara kandung dan teman tidak terlalu aktif dalam pergaulan. Namun begitu hubungan terjalin, meskipun bersifat sederhana, dapat bertahan lama dan langgeng. JS memiliki saudara dan teman yang dapat diandalkan sepenuhnya. Jika bintang baik lain berada satu istana, ikatan persaudaraan menjadi sangat dalam hingga membuat orang lain iri. Namun jika hanya ada satu bintang baik bersama, mudah timbul perpecahan antar saudara. Bila bintang Tian Xiang <span class=\"hz\">天相</span>, Wen Chang <span class=\"hz\">文昌</span>, atau Wen Qu <span class=\"hz\">文曲</span> berada satu istana, jumlah saudara maupun teman pasti cukup banyak. Kemungkinan anak tunggal, atau memiliki saudara namun tinggal berjauhan — menunjukkan hubungan persaudaraan yang tipis <span class=\"hz\">兄弟緣薄</span>. Tanpa bintang baik Wen Chang <span class=\"hz\">文昌</span> atau Wen Qu <span class=\"hz\">文曲</span> yang menetralkan energi buruk di istana ini, sulit sekali mendapatkan pertolongan dari teman. Nasib persaudaraan dan persahabatan JS tergolong cukup memuaskan. Teman cenderung lebih banyak dari saudara kandung, dan kesenangan terbesar diperoleh melalui pertukaran pikiran yang bermakna <span class=\"hz\">智性的交流</span>.</p>",
+    "_p1_fuqi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pasangan</span><span class=\"pn-meta\">Fū Qī<span class=\"hz\">夫妻</span></span></div></div><div class=\"pal-body\"><p>Hubungan pernikahan JS bersifat tenang dan tidak berapi-api. Namun cinta di antara pasangan sangat intens — ini bukan hubungan yang dingin atau seperti orang asing. Keduanya saling mengakui kebebasan satu sama lain, menjalani kehidupan pernikahan yang bebas tanpa belenggu. Jika JS adalah pria, disarankan menikah dengan wanita yang lebih muda. Jika JS adalah wanita, disarankan menikah dengan pria yang lebih tua dan dapat diandalkan sepenuhnya. Bila bintang Tian Liang <span class=\"hz\">天梁星</span> berada satu istana, pria cenderung menikahi wanita yang lebih tua, sedangkan wanita cenderung menikahi suami yang lebih muda. Bila bintang Tai Yin <span class=\"hz\">太陰星</span> berada satu istana, pria dapat memperoleh pasangan yang cantik dan bahkan meraih sukses berkat dukungan istri <span class=\"hz\">妻內助而功成名就</span>. Wanita pun dapat menikahi suami yang baik. Bila bintang buruk <span class=\"hz\">凶星</span> hadir, ada risiko perceraian — menikah di usia lebih matang dapat menghindari bencana ini. Terlalu banyak mencampuri kehidupan pasangan juga berisiko ditinggalkan.</p></div>",
+    "_solo_fuqi_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>Hubungan pernikahan JS bersifat tenang dan tidak berapi-api. Namun cinta di antara pasangan sangat intens — ini bukan hubungan yang dingin atau seperti orang asing. Keduanya saling mengakui kebebasan satu sama lain, menjalani kehidupan pernikahan yang bebas tanpa belenggu. Jika JS adalah pria, disarankan menikah dengan wanita yang lebih muda. Jika JS adalah wanita, disarankan menikah dengan pria yang lebih tua dan dapat diandalkan sepenuhnya. Bila bintang Tian Liang <span class=\"hz\">天梁星</span> berada satu istana, pria cenderung menikahi wanita yang lebih tua, sedangkan wanita cenderung menikahi suami yang lebih muda. Bila bintang Tai Yin <span class=\"hz\">太陰星</span> berada satu istana, pria dapat memperoleh pasangan yang cantik dan bahkan meraih sukses berkat dukungan istri <span class=\"hz\">妻內助而功成名就</span>. Wanita pun dapat menikahi suami yang baik. Bila bintang buruk <span class=\"hz\">凶星</span> hadir, ada risiko perceraian — menikah di usia lebih matang dapat menghindari bencana ini. Terlalu banyak mencampuri kehidupan pasangan juga berisiko ditinggalkan.</p>",
+    "_p1_zinu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Anak</span><span class=\"pn-meta\">Zǐ Nǚ<span class=\"hz\">子女</span></span></div></div>",
+    "_p2_caibo": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Rezeki</span><span class=\"pn-meta\">Cái Bó<span class=\"hz\">財帛</span></span></div></div><div class=\"pal-body\"><p>Meski hemat dalam menabung, JS sama sekali tidak pelit. JS memahami dengan baik cara menggunakan uang secara tepat <span class=\"hz\">正確地用錢之道</span>. Keberuntungan finansial JS berlimpah — khususnya bila ada bintang baik berada satu istana, hari-hari meraup penghasilan besar dapat diharapkan datang. Bila bintang Ju Men <span class=\"hz\">巨門星</span> berada satu istana, dengan kerja keras dan hidup hemat, JS dapat meninggalkan warisan kekayaan yang berarti bagi generasi berikutnya.</p></div>",
+    "_solo_caibo_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>Meski hemat dalam menabung, JS sama sekali tidak pelit. JS memahami dengan baik cara menggunakan uang secara tepat <span class=\"hz\">正確地用錢之道</span>. Keberuntungan finansial JS berlimpah — khususnya bila ada bintang baik berada satu istana, hari-hari meraup penghasilan besar dapat diharapkan datang. Bila bintang Ju Men <span class=\"hz\">巨門星</span> berada satu istana, dengan kerja keras dan hidup hemat, JS dapat meninggalkan warisan kekayaan yang berarti bagi generasi berikutnya.</p>",
+    "_p2_jie_e": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Kesehatan</span><span class=\"pn-meta\">Jí È<span class=\"hz\">疾厄</span></span></div></div><div class=\"pal-body\"><p>Rentan terhadap penyakit seperti muntah darah dan buang air besar berdarah, serta penyakit pada usus kecil. Juga rentan terhadap perdarahan otak serta gangguan pada kepala dan pergelangan tangan. Saat masih kecil, JS kemungkinan pernah meninggalkan bekas luka di wajah atau tangan-kaki. Bila istana berada di ranting Chou <span class=\"hz\">丑</span>, Chen <span class=\"hz\">辰</span>, Wei <span class=\"hz\">未</span>, atau Xu <span class=\"hz\">戌</span>, lukanya tidak terlalu parah. Namun bila bintang buruk <span class=\"hz\">凶星</span> berada satu istana, sepanjang hidup JS tidak luput dari penyakit dan cedera. Rentan pula terhadap penyakit sistem pernapasan dan paru-paru. Sejak kecil JS rentan sakit-sakitan. Setelah dewasa, rentan pula terhadap penyakit kulit dan penyakit jantung. Bila bintang Lian Zhen <span class=\"hz\">廉貞星</span> berada satu istana, waspadai penyakit mata.</p></div>",
+    "_solo_jie_e_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>Rentan terhadap penyakit seperti muntah darah dan buang air besar berdarah, serta penyakit pada usus kecil. Juga rentan terhadap perdarahan otak serta gangguan pada kepala dan pergelangan tangan. Saat masih kecil, JS kemungkinan pernah meninggalkan bekas luka di wajah atau tangan-kaki. Bila istana berada di ranting Chou <span class=\"hz\">丑</span>, Chen <span class=\"hz\">辰</span>, Wei <span class=\"hz\">未</span>, atau Xu <span class=\"hz\">戌</span>, lukanya tidak terlalu parah. Namun bila bintang buruk <span class=\"hz\">凶星</span> berada satu istana, sepanjang hidup JS tidak luput dari penyakit dan cedera. Rentan pula terhadap penyakit sistem pernapasan dan paru-paru. Sejak kecil JS rentan sakit-sakitan. Setelah dewasa, rentan pula terhadap penyakit kulit dan penyakit jantung. Bila bintang Lian Zhen <span class=\"hz\">廉貞星</span> berada satu istana, waspadai penyakit mata.</p>",
+    "_p2_qianyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Perpindahan</span><span class=\"pn-meta\">Qiān Yí<span class=\"hz\">遷移</span></span></div></div><div class=\"pal-body\"><p>Begitu JS memutuskan arah, JS melangkah terus sampai akhir dan tidak pernah mundur <span class=\"hz\">毫不退縮</span>. Setiap kali JS menghadapi jalan buntu atau hambatan, pasti muncul seorang pendamping yang lebih tua untuk membantu melewati bahaya. Karena perubahan terus-menerus dalam hidup, bakat JS semakin diakui oleh masyarakat — oleh karena itu, bila JS merasa bingung, tidak ada salahnya dengan tegas berganti bidang! Khususnya mereka yang memiliki bintang Tian Liang <span class=\"hz\">天梁</span> satu istana memiliki nasib yang semakin beruntung. Namun bila bintang Ju Men <span class=\"hz\">巨門</span> atau Tai Yin <span class=\"hz\">太陰</span> berada satu istana, JS akan sibuk dan lelah bekerja keras sepanjang hidup. Ambisi besar, masa depan tanpa batas <span class=\"hz\">前途無量</span>. Bagi JS, perubahan takdir adalah kesempatan untuk meningkatkan status sosial. Dalam proses perpindahan karir, studi di luar negeri, atau perjalanan mengikuti perubahan, JS dapat menjalin hubungan dengan orang-orang berkapabilitas dan mendapat bantuan mereka untuk mencapai hal-hal besar. Bila bintang Tian Tong <span class=\"hz\">天同星</span> berada satu istana adalah nasib terbaik <span class=\"hz\">最理想的鴻運</span>. Bila bintang Tian Ji <span class=\"hz\">天機星</span> berada satu istana, bidang sastra atau seni mungkin lebih ideal.</p></div>",
+    "_solo_qianyi_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>Begitu JS memutuskan arah, JS melangkah terus sampai akhir dan tidak pernah mundur <span class=\"hz\">毫不退縮</span>. Setiap kali JS menghadapi jalan buntu atau hambatan, pasti muncul seorang pendamping yang lebih tua untuk membantu melewati bahaya. Karena perubahan terus-menerus dalam hidup, bakat JS semakin diakui oleh masyarakat — oleh karena itu, bila JS merasa bingung, tidak ada salahnya dengan tegas berganti bidang! Khususnya mereka yang memiliki bintang Tian Liang <span class=\"hz\">天梁</span> satu istana memiliki nasib yang semakin beruntung. Namun bila bintang Ju Men <span class=\"hz\">巨門</span> atau Tai Yin <span class=\"hz\">太陰</span> berada satu istana, JS akan sibuk dan lelah bekerja keras sepanjang hidup. Ambisi besar, masa depan tanpa batas <span class=\"hz\">前途無量</span>. Bagi JS, perubahan takdir adalah kesempatan untuk meningkatkan status sosial. Dalam proses perpindahan karir, studi di luar negeri, atau perjalanan mengikuti perubahan, JS dapat menjalin hubungan dengan orang-orang berkapabilitas dan mendapat bantuan mereka untuk mencapai hal-hal besar. Bila bintang Tian Tong <span class=\"hz\">天同星</span> berada satu istana adalah nasib terbaik <span class=\"hz\">最理想的鴻運</span>. Bila bintang Tian Ji <span class=\"hz\">天機星</span> berada satu istana, bidang sastra atau seni mungkin lebih ideal.</p>",
+    "_p2_puyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pertemanan</span><span class=\"pn-meta\">Pú Yì<span class=\"hz\">僕役</span></span></div></div><div class=\"pal-body\"><p>Bawahan JS lebih tepat disebut lamban dan kurang responsif, bukan jujur dan tulus. Kemampuan mereka tidak terlalu menonjol. Setelah memasuki usia paruh baya, JS dapat memperoleh bawahan yang benar-benar kompeten dan berbakat. Jika JS berencana mendirikan perusahaan bersama orang-orang yang lebih muda, mulai usia empat puluh tahun adalah waktu yang lebih tepat. Bila bintang Zi Wei <span class=\"hz\">紫微星</span> berada satu istana, JS akan mendapat banyak pemujaan dari kaum yang lebih muda. Namun bila bintang Wu Qu <span class=\"hz\">武曲星</span> berada satu istana, JS berisiko menghadapi ketidaksukaan dari bawahan atau rekan kerja.</p></div>",
+    "_solo_puyi_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>Bawahan JS lebih tepat disebut lamban dan kurang responsif, bukan jujur dan tulus. Kemampuan mereka tidak terlalu menonjol. Setelah memasuki usia paruh baya, JS dapat memperoleh bawahan yang benar-benar kompeten dan berbakat. Jika JS berencana mendirikan perusahaan bersama orang-orang yang lebih muda, mulai usia empat puluh tahun adalah waktu yang lebih tepat. Bila bintang Zi Wei <span class=\"hz\">紫微星</span> berada satu istana, JS akan mendapat banyak pemujaan dari kaum yang lebih muda. Namun bila bintang Wu Qu <span class=\"hz\">武曲星</span> berada satu istana, JS berisiko menghadapi ketidaksukaan dari bawahan atau rekan kerja.</p>",
+    "_p3_guanlu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Karir</span><span class=\"pn-meta\">Guān Lù<span class=\"hz\">官祿</span></span></div></div><div class=\"pal-body\"><p>Profesi yang cocok bagi JS: dokter, perawat, koki, politikus, tokoh agama, teknisi. JS cenderung kesulitan menghadapi hal-hal yang bersifat abstrak, namun sangat mahir dalam hal-hal konkret dan nyata. Sifat ini juga tercermin dalam karir — JS cocok memilih pekerjaan yang jelas dan terukur secara nyata, seperti dokter, koki, industri manufaktur, ahli kecantikan, pengrajin, atau akuntan. JS adalah pribadi yang jujur dari sananya, dan begitu mulai bekerja langsung fokus penuh dan berdedikasi <span class=\"hz\">心致志於工作上</span>. Sekaligus memiliki semangat kuat untuk menghasilkan uang. Namun karena terlalu mementingkan uang, bisa jadi dikomentari sebagai orang yang pelit di belakang, atau terlibat konflik karena masalah finansial. Selain itu, JS adalah tipe orang yang menyimpan pikiran dalam-dalam dan tidak mudah mengungkapkan hati kepada orang lain <span class=\"hz\">深藏不露</span> — akibatnya rekan kerja mungkin menjaga jarak. Dalam karir JS, menjaga hubungan antar manusia yang harmonis adalah hal yang harus selalu diperhatikan.</p></div>",
+    "_solo_guanlu_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>Profesi yang cocok bagi JS: dokter, perawat, koki, politikus, tokoh agama, teknisi. JS cenderung kesulitan menghadapi hal-hal yang bersifat abstrak, namun sangat mahir dalam hal-hal konkret dan nyata. Sifat ini juga tercermin dalam karir — JS cocok memilih pekerjaan yang jelas dan terukur secara nyata, seperti dokter, koki, industri manufaktur, ahli kecantikan, pengrajin, atau akuntan. JS adalah pribadi yang jujur dari sananya, dan begitu mulai bekerja langsung fokus penuh dan berdedikasi <span class=\"hz\">心致志於工作上</span>. Sekaligus memiliki semangat kuat untuk menghasilkan uang. Namun karena terlalu mementingkan uang, bisa jadi dikomentari sebagai orang yang pelit di belakang, atau terlibat konflik karena masalah finansial. Selain itu, JS adalah tipe orang yang menyimpan pikiran dalam-dalam dan tidak mudah mengungkapkan hati kepada orang lain <span class=\"hz\">深藏不露</span> — akibatnya rekan kerja mungkin menjaga jarak. Dalam karir JS, menjaga hubungan antar manusia yang harmonis adalah hal yang harus selalu diperhatikan.</p>",
+    "_p3_tianzhai": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Properti</span><span class=\"pn-meta\">Tián Zhái<span class=\"hz\">田宅</span></span></div></div><div class=\"pal-body\"><p>JS mengelola aset dengan hati-hati dan konservatif — tampaknya sulit untuk berkembang besar dalam hal properti. Bintang Lian Zhen <span class=\"hz\">廉貞星</span> pada dasarnya bukan pertanda keberuntungan properti — diperlukan bintang baik satu istana untuk menetralkan energi buruk agar properti dapat diperoleh. Tanpanya, properti yang susah payah didapat bisa berpindah tangan akibat konflik dengan orang-orang di sekitar — Lian Zhen memang bintang yang penuh kekacauan tanpa henti <span class=\"hz\">紛擾不斷之星</span>. Namun bila bintang Qi Sha <span class=\"hz\">七殺</span> berada satu istana, usaha mandiri dapat menghasilkan kekayaan dan properti. Arah Selatan sangat baik. Bila istana berada di ranting Yin <span class=\"hz\">寅</span>, Mao <span class=\"hz\">卯</span>, Si <span class=\"hz\">巳</span>, atau Wu <span class=\"hz\">午</span>, JS masih bisa memperoleh tanah atau rumah dari kedua orang tua. Dalam upaya mendapatkan properti, kadang ada kecenderungan tidak memilih cara. Namun JS memiliki kemampuan analisis yang tajam dalam menilai properti yang baik dan buruk. Bila bintang Wu Qu <span class=\"hz\">武曲</span> berada satu istana, properti dapat diperoleh di masa tua. Properti yang berkaitan dengan unsur kayu atau tanaman lebih cocok. Arah Timur sangat baik.</p></div>",
+    "_solo_tianzhai_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>JS mengelola aset dengan hati-hati dan konservatif — tampaknya sulit untuk berkembang besar dalam hal properti. Bintang Lian Zhen <span class=\"hz\">廉貞星</span> pada dasarnya bukan pertanda keberuntungan properti — diperlukan bintang baik satu istana untuk menetralkan energi buruk agar properti dapat diperoleh. Tanpanya, properti yang susah payah didapat bisa berpindah tangan akibat konflik dengan orang-orang di sekitar — Lian Zhen memang bintang yang penuh kekacauan tanpa henti <span class=\"hz\">紛擾不斷之星</span>. Namun bila bintang Qi Sha <span class=\"hz\">七殺</span> berada satu istana, usaha mandiri dapat menghasilkan kekayaan dan properti. Arah Selatan sangat baik. Bila istana berada di ranting Yin <span class=\"hz\">寅</span>, Mao <span class=\"hz\">卯</span>, Si <span class=\"hz\">巳</span>, atau Wu <span class=\"hz\">午</span>, JS masih bisa memperoleh tanah atau rumah dari kedua orang tua. Dalam upaya mendapatkan properti, kadang ada kecenderungan tidak memilih cara. Namun JS memiliki kemampuan analisis yang tajam dalam menilai properti yang baik dan buruk. Bila bintang Wu Qu <span class=\"hz\">武曲</span> berada satu istana, properti dapat diperoleh di masa tua. Properti yang berkaitan dengan unsur kayu atau tanaman lebih cocok. Arah Timur sangat baik.</p>",
+    "_p3_fude": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Berkah</span><span class=\"pn-meta\">Fú Dé<span class=\"hz\">福德</span></span></div></div><div class=\"pal-body\"><p>JS memiliki kepribadian yang tenang, stabil, dan dilimpahi berkah serta kebajikan yang berlimpah <span class=\"hz\">豐厚的福德</span>. JS juga memiliki kecenderungan untuk mengejar impian yang romantis dan idealis. Hanya dengan kehadiran bintang Tai Yin <span class=\"hz\">太陰星</span> saja di Istana Fu De, keberuntungan hidup akan selalu menyertai sepanjang usia — sekaligus dapat menjaga umur panjang. Bila Tai Yin <span class=\"hz\">太陰星</span> sebagai satu-satunya bintang di istana ini, hal itu sudah cukup untuk menjalani hidup yang sangat beruntung. Bila bintang Tai Yang <span class=\"hz\">太陽星</span> juga berada satu istana, JS niscaya akan memiliki kehidupan yang bahagia dan memuaskan jiwa raga <span class=\"hz\">身心皆令人滿意的幸福人生</span>. Namun bila bintang Tian Ji <span class=\"hz\">天機星</span> berada satu istana, pikiran JS tidak pernah benar-benar beristirahat.</p></div>",
+    "_solo_fude_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>JS memiliki kepribadian yang tenang, stabil, dan dilimpahi berkah serta kebajikan yang berlimpah <span class=\"hz\">豐厚的福德</span>. JS juga memiliki kecenderungan untuk mengejar impian yang romantis dan idealis. Hanya dengan kehadiran bintang Tai Yin <span class=\"hz\">太陰星</span> saja di Istana Fu De, keberuntungan hidup akan selalu menyertai sepanjang usia — sekaligus dapat menjaga umur panjang. Bila Tai Yin <span class=\"hz\">太陰星</span> sebagai satu-satunya bintang di istana ini, hal itu sudah cukup untuk menjalani hidup yang sangat beruntung. Bila bintang Tai Yang <span class=\"hz\">太陽星</span> juga berada satu istana, JS niscaya akan memiliki kehidupan yang bahagia dan memuaskan jiwa raga <span class=\"hz\">身心皆令人滿意的幸福人生</span>. Namun bila bintang Tian Ji <span class=\"hz\">天機星</span> berada satu istana, pikiran JS tidak pernah benar-benar beristirahat.</p>",
+    "_p3_fumu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Orang Tua</span><span class=\"pn-meta\">Fù Mǔ<span class=\"hz\">父母</span></span></div></div><div class=\"pal-body\"><p>Meski mengalami tidak sedikit rasa kecewa, JS tidak akan pernah meninggalkan sisi orang tua. Selama tidak ada bintang buruk yang menghalangi, istana ini adalah bintang kebahagiaan <span class=\"hz\">幸福之星</span>. Kedua orang tua JS adalah pribadi yang tenang dan adil — mungkin butuh beberapa waktu, namun pada akhirnya mereka pasti akan memahami tindakan dan pilihan JS. JS dapat dengan tenang dan terbuka bergaul jujur dengan kedua orang tua. Khususnya bila bintang Zi Wei <span class=\"hz\">紫微</span> atau Wu Qu <span class=\"hz\">武曲</span> berada satu istana, hubungan orang tua dan anak tidak diragukan lagi sangat hangat dan penuh kasih sayang. Selain itu, bintang Tian Fu <span class=\"hz\">天府星</span> adalah bintang yang menguasai kekayaan — JS kemungkinan besar tumbuh dalam keluarga yang berkecukupan!</p></div>",
+    "_solo_fumu_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>Meski mengalami tidak sedikit rasa kecewa, JS tidak akan pernah meninggalkan sisi orang tua. Selama tidak ada bintang buruk yang menghalangi, istana ini adalah bintang kebahagiaan <span class=\"hz\">幸福之星</span>. Kedua orang tua JS adalah pribadi yang tenang dan adil — mungkin butuh beberapa waktu, namun pada akhirnya mereka pasti akan memahami tindakan dan pilihan JS. JS dapat dengan tenang dan terbuka bergaul jujur dengan kedua orang tua. Khususnya bila bintang Zi Wei <span class=\"hz\">紫微</span> atau Wu Qu <span class=\"hz\">武曲</span> berada satu istana, hubungan orang tua dan anak tidak diragukan lagi sangat hangat dan penuh kasih sayang. Selain itu, bintang Tian Fu <span class=\"hz\">天府星</span> adalah bintang yang menguasai kekayaan — JS kemungkinan besar tumbuh dalam keluarga yang berkecukupan!</p>",
+    "_kes_narrative": "<p>JS, lahir tahun 1978 dengan Batang Hari Geng Metal <span class=\"hz\">庚金</span> dalam format 食神格 <span class=\"hz\">食神格</span>, adalah sosok yang teguh, jujur, dan penuh dengan potensi kepemimpinan yang alami. Seperti logam murni yang menunggu ditempa, karakter JS membutuhkan lingkungan yang tepat untuk bersinar sepenuhnya. Dengan 土 (Yong Shen <span class=\"hz\">用神</span>) dan 火 (Xi Shen <span class=\"hz\">喜神</span>) sebagai elemen sahabat, JS berkembang paling baik di lingkungan yang memberi ruang ekspresi, kreativitas, dan kepercayaan. Dalam perjalanan hidup, JS ditandai oleh sifat yang keras kepala namun tegas, dermawan namun tidak materialistis, dan berjiwa ksatria yang pantang menyerah. Kecerdasan dan keberanian JS mampu melampaui rintangan hidup dengan tenang — namun tantangan terbesarnya adalah menjaga fokus dan fleksibilitas dalam berorganisasi. Di bidang karir, JS paling bersinar dalam pekerjaan konkret dan terukur — bidang medis, manufaktur, teknisi, atau wirausaha mandiri. Keberuntungan finansial cukup berlimpah, terutama melalui sumber pemasukan tidak terduga (偏財). Dalam urusan cinta dan pernikahan, pasangan ideal berasal dari shio Harimau, Kambing, atau Anjing — pasangan yang saling menghormati dan memberi kebebasan satu sama lain. Kesehatan perlu diwaspadai terutama pada sistem pernapasan, usus, dan jantung. Dalam spiritualitas, JS cenderung pasif terhadap nasib — namun justru di situlah kekuatan tersembunyi: setiap perubahan adalah kesempatan untuk naik kelas. Bagi JS, paruh kedua kehidupan (terutama setelah usia 50) menjanjikan ketenangan dan kebahagiaan yang lebih dalam dibanding masa mudanya.</p>",
+    "_kes_stats": "\n      <div class=\"kes-stat s1\"><div class=\"ks-eb\">Penguasa Hari · 日主</div><div class=\"ks-num\"><span class=\"hz\">庚金</span><span class=\"unit\">— · None</span></div><div class=\"ks-title\">Logam Pedang —</div><div class=\"ks-desc\">Total Wu Xing 8, 金 <strong>25.0%</strong> dari distribusi total</div></div>\n      <div class=\"kes-stat s2\"><div class=\"ks-eb\">Format · 格局</div><div class=\"ks-num\"><span class=\"hz\">食神格</span><span class=\"unit\">FORMAT</span></div><div class=\"ks-title\">Shi Shen Ge, Pencipta Lembut</div><div class=\"ks-desc\">Konfigurasi BaZi yang membentuk pola karakter dan jalur takdir utama subjek.</div></div>\n      <div class=\"kes-stat s3\"><div class=\"ks-eb\">Yong Shen · 喜用神</div><div class=\"ks-num\"><span class=\"hz\">土</span><span class=\"unit\">MENDUKUNG</span></div><div class=\"ks-title\">Tanah, Penopang &amp; Pengarah</div><div class=\"ks-desc\">Unsur penopang yang sebaiknya diaktifkan lewat lingkungan, profesi, warna, dan keputusan hidup.</div></div>\n      <div class=\"kes-stat s4\"><div class=\"ks-eb\">Da Yun · 大運</div><div class=\"ks-num\">Fase 5<span class=\"unit\">dari 10</span></div><div class=\"ks-title\">Fase Mentor (46-55)</div><div class=\"ks-desc\">Cycle 10 tahun yang sedang dijalani, periode pembentukan tema utama dekade ini.</div></div>\n      <div class=\"kes-stat s5\"><div class=\"ks-eb\">Umur Subjek</div><div class=\"ks-num\">49<span class=\"unit\">tahun</span></div><div class=\"ks-title\">Era 40–49</div><div class=\"ks-desc\">Tahap kehidupan saat laporan ini dibuat, rentang dekade aktif subjek.</div></div>\n      <div class=\"kes-stat s6\"><div class=\"ks-eb\">Jodoh · 婚配 / 陽宅</div><div class=\"ks-num\">3 <span class=\"unit\">cocok · 4 hindari</span></div><div class=\"ks-desc\">Hindari: Tikus (子) · Kerbau (丑) · Kelinci (卯) · Kuda (午) · Trigram <strong>Gunung</strong> (艮) · Kelompok Barat</div></div>\n    ",
+    "_kes_age": "49",
+    "_kes_lifemap": "\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">過<span class=\"id-label\">Lalu</span></div><div class=\"klm-row-text\"><span class=\"lbl\">MASA LALU</span>4 fase telah dilalui, fondasi terbentuk lewat tempaan zaman muda hingga awal dewasa.</div></div>\n          <div class=\"klm-row now\"><div class=\"klm-row-icon\">今<span class=\"id-label\">Kini</span></div><div class=\"klm-row-text\"><span class=\"lbl\">SEKARANG</span>Fase Mentor 戊辰 (46-55), tema utama mentor membentuk dekade ini.</div></div>\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">未<span class=\"id-label\">Nanti</span></div><div class=\"klm-row-text\"><span class=\"lbl\">BERIKUTNYA</span>Fase 己巳 Pelajaran (56-65), transisi menuju tema baru.</div></div>\n        ",
+    "_kes_position": "\n          <div class=\"klp-eb\">Posisi Sekarang</div>\n          <div class=\"klp-hz\">夏</div>\n          <div class=\"klp-id\">Xià, \"Musim Panas Hidup\"</div>\n          <div class=\"klp-bar\">\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell now\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n          </div>\n          <div class=\"klp-meta\">Fase <strong>5 dari 10</strong> · Umur <strong>46-55</strong> · <strong>金 Logam</strong> dominan · Musim Panas Hidup</div>\n        ",
+    "_syn_attrib": "Logam Pedang · 食神格 · Shi Shen Ge",
+    "_syn_trio": "\n      <div class=\"syn-card strength\">\n        <div class=\"syn-card-num\">力</div>\n        <div class=\"syn-card-eyebrow\">Kekuatan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">庚</span>\n          <span class=\"syn-card-id\">Gēng</span>\n          <span class=\"syn-card-arti\">Logam Pedang</span>\n        </div>\n        <div class=\"syn-card-body\">Teguh, jujur, dan pemimpin alami — mampu tampil di garis depan tanpa perlu meminta. Kecerdasan 食神格 membuat JS ekspresif dan kreatif dalam setiap pekerjaan konkret.</div>\n      </div>\n      <div class=\"syn-card challenge\">\n        <div class=\"syn-card-num\">驗</div>\n        <div class=\"syn-card-eyebrow\">Tantangan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">弱</span>\n          <span class=\"syn-card-id\">Ruò</span>\n          <span class=\"syn-card-arti\">Badan Lemah</span>\n        </div>\n        <div class=\"syn-card-body\">Dengan skor DM negatif melebihi positif, energi inti JS memerlukan dukungan lingkungan yang tepat. Terlalu banyak Air <span class=\"hz\">水</span> (Ji Shen) mengikis keseimbangan dan memperlemah fokus.</div>\n      </div>\n      <div class=\"syn-card action\">\n        <div class=\"syn-card-num\">為</div>\n        <div class=\"syn-card-eyebrow\">Tindakan</div>\n        <div class=\"syn-card-title\">\n          <span class=\"syn-card-hz\">土火</span>\n          <span class=\"syn-card-id\">Tǔ Huǒ</span>\n          <span class=\"syn-card-arti\">Bumi &amp; Api</span>\n        </div>\n        <div class=\"syn-card-body\">Yong Shen 土 <span class=\"hz\">用神</span> dan Xi Shen 火 <span class=\"hz\">喜神</span> adalah dua kunci utama JS — fondasi bumi yang stabil dan nyala api yang memberi arah dan semangat.</div>\n      </div>\n    ",
+    "_syn_actions": "\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">1</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Pakai elemen 水 sebagai <strong>pendingin</strong> sebelum eksekusi</div>\n            <div class=\"syn-action-context\">Diam, amati, baru bertindak — bukan berarti takut, tapi logam perlu didinginkan agar tajam.</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">2</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Perkuat 土 (Yong Shen) di lingkungan sehari-hari</div>\n            <div class=\"syn-action-context\">Pilih properti, karir, dan lingkungan yang stabil dan terukur. Fondasi bumi adalah energi terkuat JS.</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">3</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Aktifkan energi 火 (Xi Shen) lewat ekspresi diri</div>\n            <div class=\"syn-action-context\">Bidang seni, edukasi, kepemimpinan, dan kreativitas adalah lahan subur. Di sini JS bersinar seperti logam ditempa api.</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">4</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Era 戊辰 偏印 (usia 46-56): belajar dalam, tunda ekspansi besar</div>\n            <div class=\"syn-action-context\">Investasikan waktu ke skill baru dan jaringan terpercaya. Ini era konsolidasi, bukan perluasan agresif.</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">5</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Jaga kesehatan 庚辛 — paru-paru dan usus besar</div>\n            <div class=\"syn-action-context\">Hindari polusi udara, stres kronik, dan gaya hidup terlalu dingin. Elemen Metal butuh udara bersih dan ritme teratur.</div>\n          </div>\n        </div>\n      ",
+    "_career_wuxing": "\n        <div class=\"wux-cell self\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">金 Logam<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell unfav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">水 Air<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">木 Kayu<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:50%\"></div></div>\n          <div class=\"wux-label\">火 Api<span class=\"v\">1</span></div>\n        </div>\n        <div class=\"wux-cell fav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:50%\"></div></div>\n          <div class=\"wux-label\">土 Tanah<span class=\"v\">1</span></div>\n        </div>\n",
+    "_career_title": "Tanah adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini",
+    "_career_avoid": "Industri ber-unsur <strong>水 (Air)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.",
+    "_xqcards": "\n      <div class=\"xq-card power\">\n        <div class=\"xqc-eb\">魄 力 · Kekuatan</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">優勢</span><span class=\"xqc-name\">Yōu Shì<br>Keunggulan</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kepemimpinan alami yang menonjol — mampu tampil sebagai inti kelompok tanpa perlu meminta</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kecerdasan dan keberanian melampaui rintangan hidup dengan tenang dan percaya diri</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Dapat dipercaya penuh oleh orang-orang di sekitarnya berkat kejujuran dan sikap terbuka</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card shadow\">\n        <div class=\"xqc-eb\">陰 影 · Shadow</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">隱 患</span><span class=\"xqc-name\">Yǐn Huàn<br>Sisi Gelap</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Sulit fokus pada satu hal secara konsisten — pikiran cenderung menyebar</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kepribadian yang terlalu blak-blakan dapat mengurangi kedalaman kesan pertama</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kurang fleksibel dalam beradaptasi dengan sistem organisasi besar</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card optimum\">\n        <div class=\"xqc-eb\">最 佳 · Optimum</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">應 用</span><span class=\"xqc-name\">Yīng Yòng<br>Cara Optimal</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Pilih bidang kerja yang menonjolkan keunikan pribadi dan memberi ruang ekspresi penuh</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Latih kelembutan dan kedalaman dalam komunikasi untuk memperluas pengaruh</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Manfaatkan kekuatan 土火 (yong/xi shen) — karir di bidang kreatif, edukasi, atau kewirausahaan</span></div>\n        </div>\n      </div>\n    "
+  }
+}

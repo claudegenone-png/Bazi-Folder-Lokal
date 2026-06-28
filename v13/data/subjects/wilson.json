@@ -1,0 +1,798 @@
+{
+  "subject_id": "wilson",
+  "_built_by": "build_from_ocr.py V4.5 FULL-MD",
+  "identity": {
+    "name_id": "WILLSON",
+    "name_hanzi": "",
+    "gender_id": "Pria",
+    "birth_date": "1993-04-30",
+    "birth_time": "10:30",
+    "birth_day_name": "Jumat",
+    "birth_period_id": "pagi",
+    "birth_hour_branch_hz": "巳",
+    "birth_hour_period_label": "pagi · 巳時",
+    "lunar_date_text_new": "tanggal 9 bulan 3 tahun 癸酉 (Gui You · 1993)",
+    "lunar_year_pillar_hz": "癸酉",
+    "lunar_republic_text": "民國 82 年 3 月 9 日",
+    "age_at_report": 34
+  },
+  "shio": {
+    "branch_hz": "酉",
+    "branch_pinyin": "Yǒu",
+    "id": "Ayam",
+    "id_upper": "AYAM",
+    "svg_red": "Ayam-Merah.svg",
+    "svg_black": "Ayam-Hitam.svg"
+  },
+  "ti_xiang": null,
+  "day_master": {
+    "stem_hz": "丙",
+    "stem_element_hz": "火",
+    "stem_element_id": "Api",
+    "polarity_id": "Yang",
+    "label_id": "Api Matahari",
+    "label_long_id": "Api",
+    "pinyin": "Bǐng 火",
+    "strength_id": "—",
+    "strength_hz": null
+  },
+  "pillars": {
+    "year": {
+      "stem_hz": "癸",
+      "branch_hz": "酉"
+    },
+    "month": {
+      "stem_hz": "丙",
+      "branch_hz": "辰"
+    },
+    "day": {
+      "stem_hz": "丙",
+      "branch_hz": "巳"
+    },
+    "hour": {
+      "stem_hz": "癸",
+      "branch_hz": "巳"
+    }
+  },
+  "wuxing": {
+    "jin": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Logam"
+    },
+    "shui": {
+      "value": 2.0,
+      "percent": 25.0,
+      "label_id": "Air"
+    },
+    "mu": {
+      "value": 0.0,
+      "percent": 0.0,
+      "label_id": "Kayu"
+    },
+    "huo": {
+      "value": 4.0,
+      "percent": 50.0,
+      "label_id": "Api"
+    },
+    "tu": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Tanah"
+    },
+    "total": 8.0,
+    "self_value": 4.0,
+    "self_el_hz": "—",
+    "fav_hz": "—",
+    "unfav_hz": "—",
+    "axis_max": "—",
+    "insight_id": null,
+    "_empty": false
+  },
+  "yong_shen": {
+    "elements_hz": "—",
+    "elements_id": "—",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—",
+    "label_id": "—"
+  },
+  "ji_shen": {
+    "elements_hz": "—",
+    "elements_id": "—",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—",
+    "label_id": "—"
+  },
+  "format": {
+    "hz": "—",
+    "glyph_hz": "—",
+    "pinyin": "—",
+    "label_id": "—"
+  },
+  "da_yun": {
+    "_empty": true,
+    "cycles": [
+      {
+        "n": 1,
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 2,
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 3,
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 4,
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 5,
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 6,
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 7,
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 8,
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 9,
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 10,
+        "stem_hz": "—",
+        "branch_hz": "—",
+        "ten_god_hz": "—",
+        "ten_god_id": "—",
+        "age_start": "—",
+        "age_end": "—",
+        "element_class": "el-mu"
+      }
+    ],
+    "current_index": 0
+  },
+  "marriage": {
+    "self_branch_index": 9,
+    "cocok": [
+      {
+        "branch_hz": "丑",
+        "id": "Kerbau",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "辰",
+        "id": "Naga",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "巳",
+        "id": "Ular",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      }
+    ],
+    "hindari": [
+      {
+        "branch_hz": "子",
+        "id": "Tikus",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "卯",
+        "id": "Kelinci",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "酉",
+        "id": "Ayam",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "戌",
+        "id": "Anjing",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      }
+    ],
+    "_empty": false
+  },
+  "yang_zhai": {
+    "gua_hz": "兌",
+    "gua_pinyin": "Duì",
+    "gua_label_id": "Danau",
+    "gua_direction_id": "Barat",
+    "gua_direction_abbr": "B",
+    "group_id": "Barat",
+    "desc_id": "Elemen Logam-Danau — menyenangkan, tajam, elegan. Kelompok Barat (西四命): ekspresif, diplomatis, dan memiliki daya tarik sosial tinggi.",
+    "sumbu_hoki_hz": "西↔東",
+    "sumbu_hoki_id": "B ↔ T",
+    "sumbu_rumah_hz": "東北↔西南",
+    "sumbu_rumah_id": "TL ↔ BD",
+    "rumah_axis_pos": "NE",
+    "trigram_symbol": "☱",
+    "zones": {
+      "rumah": {
+        "dirs_hz": [
+          "坐東北向西南",
+          "西北向東南"
+        ],
+        "dirs_abbr": [
+          "坐東北西南",
+          "西北東南"
+        ],
+        "note_id": "Rumah ideal menghadap Barat Daya dari Timur Laut, atau menghadap Tenggara dari Barat Laut — keduanya sangat baik."
+      },
+      "pintu": {
+        "dirs_hz": [
+          "西北方",
+          "西南方",
+          "東北方",
+          "西方"
+        ],
+        "dirs_abbr": [
+          "BL",
+          "BD",
+          "TL",
+          "B"
+        ],
+        "note_id": "Pintu masuk di arah Barat Laut, Barat Daya, Timur Laut, atau Barat membawa keberuntungan."
+      },
+      "dapur": {
+        "dirs_hz": [
+          "東南向西北方"
+        ],
+        "dirs_abbr": [
+          "東南西北"
+        ],
+        "note_id": "Dapur sebaiknya ditempatkan di arah Tenggara menghadap ke Barat Laut."
+      },
+      "kamar": {
+        "dirs_hz": [
+          "南",
+          "西北方",
+          "西方",
+          "東北方"
+        ],
+        "dirs_abbr": [
+          "S",
+          "BL",
+          "B",
+          "TL"
+        ],
+        "note_id": "Kamar tidur ideal di arah Selatan, Barat Laut, Barat, atau Timur Laut."
+      },
+      "ranjang": {
+        "dirs_hz": [
+          "東北",
+          "西南",
+          "西方",
+          "西北方"
+        ],
+        "dirs_abbr": [
+          "TL",
+          "BD",
+          "B",
+          "BL"
+        ],
+        "note_id": "Posisi ranjang terbaik di arah Timur Laut, Barat Daya, Barat, atau Barat Laut."
+      },
+      "altar": {
+        "dirs_hz": [
+          "東北方",
+          "西南方",
+          "西北方",
+          "西方"
+        ],
+        "dirs_abbr": [
+          "TL",
+          "BD",
+          "BL",
+          "B"
+        ],
+        "note_id": "Altar/tempat sembahyang paling baik di arah Timur Laut, Barat Daya, Barat Laut, atau Barat — termasuk arah keberuntungan tahun ini."
+      },
+      "kamar_mandi": {
+        "dirs_hz": [
+          "東方",
+          "南方",
+          "北方"
+        ],
+        "dirs_abbr": [
+          "T",
+          "S",
+          "U"
+        ],
+        "note_id": "Kamar mandi cocok di arah Timur, Selatan, atau Utara."
+      }
+    }
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "貪狼",
+    "shen_zhu_hz": "天同",
+    "ming_gong_hz": "子",
+    "shen_gong_hz": "戌",
+    "wu_xing_ju_hz": "金四局",
+    "shi_jun_hz": "—",
+    "palaces": null,
+    "ming_gong_id": "Istana Hidup · Tikus",
+    "shen_gong_id": "Istana Tubuh · Anjing",
+    "shi_jun_id": "—",
+    "ming_zhu_id": "Penguasa Hidup",
+    "shen_zhu_id": "Penguasa Tubuh",
+    "wu_xing_ju_id": "Aliran Logam Empat"
+  },
+  "shen_sha_list": [],
+  "kesimpulan_narrative": "WILLSON adalah pribadi yang mengalir bagai air — selalu bergerak, selalu berpindah, namun di balik itu tersimpan api semangat yang tak pernah padam. Dengan Day Master 丙火 (Api Yang), WILLSON terlahir dengan kehangatan alami yang membuat orang mudah merasa nyaman di dekatnya. Kemampuan bergaul dengan siapa pun, fisik yang lebih kuat dari rata-rata, dan daya pikir yang cepat menjadi aset besar dalam hidupnya. Sifat suka menolong — bahkan tanpa diminta — telah membangun jaringan pertemanan yang luas dan menjadikannya sosok yang diandalkan oleh mereka yang lebih muda. Namun sifat yang sama ini juga bisa menjadi bumerang: terlalu ikut campur, keras kepala, dan sulit menerima nasihat dari orang-orang terdekat adalah tantangan yang perlu terus dikelola. Dalam hal finansial, WILLSON tidak terlalu terikat pada materi, namun perlu disiplin agar kekayaan tidak habis begitu saja — aset nyata dan properti adalah cara terbaik untuk mengamankan rezeki. Rezeki besar baru mulai mengalir sejak pertengahan umur, sehingga konsistensi dan kesabaran adalah investasi terpenting. Untuk urusan asmara, WILLSON paling cocok dengan pasangan dari shio Kerbau, Naga, atau Ular yang dapat membawa kemakmuran dan keharmonisan jangka panjang. Menikah di usia muda sangat tidak disarankan — waktu dan pertimbangan matang adalah kunci. Karir terbaik WILLSON ada di bidang intelektual: pendidikan, penerbitan, hukum, konsultasi, atau pekerjaan kreatif. Kesehatan perlu dijaga terutama pada sistem pencernaan dan kandung kemih. Dengan menjaga keseimbangan antara semangat dan ketenangan, antara membantu dan memberi ruang, WILLSON memiliki semua modal untuk menjalani kehidupan yang bermakna dan penuh pencapaian.",
+  "dm_pos_score": null,
+  "dm_neg_score": null,
+  "xiantian_per_stem": null,
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": null,
+  "canggan_shi_shen": null,
+  "chang_sheng_per_pilar": null,
+  "kong_wang": null,
+  "ming_gong_bazi": null,
+  "bone_weight": null,
+  "liu_nian_predictions": [
+    {
+      "tahun": 2024,
+      "umur": 32,
+      "ganzhi": "甲辰",
+      "prose": "Keberuntungan Naga [[龍德]] mengalir masuk di tahun 2024 — rezeki hadir di semua musim dan rumah WILLSON banyak berkah, tidak ada musibah di perjalanan. Namun di balik keberuntungan ini, energi emosional tidak stabil; suasana hati mudah berubah dan ketenangan sulit dijaga. Banyaknya keluhan dan omelan yang meningkat tajam menguras konsentrasi dan membuat tujuan ideal terasa jauh, meski usaha yang dicurahkan terlihat setara dengan hasilnya. Arus tahun ini juga membawa risiko perselisihan keluarga atau kedukaan — bila orang baik datang membawa kebahagiaan, bencana bisa dihindari, namun tetap waspada terhadap pencurian dan gangguan tersembunyi. Kondisi lingkungan yang terasa terbatas mendorong perubahan yang tidak selalu dikehendaki. Hindari bulan ke-1, 4, 7, atau 12, dan berhati-hatilah dalam berbuat kebaikan. Kerja keras akhirnya akan menarik bantuan dari orang berpengaruh. Separuh pertama kehidupan WILLSON memang penuh rintangan, namun separuh kedua semakin beruntung dan sejahtera."
+    },
+    {
+      "tahun": 2025,
+      "umur": 33,
+      "ganzhi": "乙巳",
+      "prose": "Dua bintang berlawanan meramaikan tahun 2025 bagi WILLSON: Harimau Putih [[白虎]] yang membawa risiko pertengkaran mulut, kerugian materi, dan ancaman dari berbagai arah — berpadu dengan Kegembiraan Langit [[天喜]] yang menghadirkan berita bahagia, kemudahan rezeki, dan kegembiraan di rumah. Mana yang dominan sangat bergantung pada pilihan WILLSON. Di sisi finansial, pengeluaran di luar rencana terasa besar dan sulit ditahan, ditambah risiko penyakit kronis yang perlu diwaspadai. Hubungan cinta dan rumah tangga bergolak — bagi yang sudah menikah, ada potensi pendinginan; bagi yang belum, urusan asmara justru semakin aktif. Karir pun tidak statis dan akan banyak berubah. Berhati-hatilah di bulan ke-1, 4, 7, atau 11 — risiko cedera fisik dan ketidakharmonisan keluarga mengintai. Kondisi lingkungan yang membatasi turut mendorong perubahan; sifat terburu-buru dan tendensi mempersulit diri sendiri bisa memperburuk keadaan jika tidak dikelola. Wanita hamil perlu sangat berhati-hati. Hubungan suami istri cenderung mudah berubah dan risiko perpisahan lebih besar dari bertahan bersama hingga tua."
+    },
+    {
+      "tahun": 2026,
+      "umur": 34,
+      "ganzhi": "丙午",
+      "prose": "Stamina fisik dan mental WILLSON melemah di tahun 2026 — penampilan terlihat kurang segar meski tidak benar-benar sakit, dan tubuh lebih cocok untuk pekerjaan ringan dan administratif daripada yang menguras tenaga sekaligus pikiran. Pengeluaran di luar rencana sangat tinggi dan penyakit kronis perlu diwaspadai, membuat cita-cita sulit terwujud. Bintang Ketidakpastian [[無常]] melintas: waspada kejadian tak terduga, risiko kedukaan di musim gugur, namun setelah melewati masa berat itu hati bisa kembali tenang. Di sisi lain, Kebajikan [[福德]] hadir dalam posisi sebaliknya — membawa peluang kenaikan jabatan, pertumbuhan aset, dan kemampuan memecahkan masalah lewat perencanaan matang. Hindari bulan ke-4, 7, dan 8, serta waspadai ancaman air dan api. Kerja keras tetap akan membuahkan hasil dan menarik bantuan orang berpengaruh. Hubungan dengan orang tua relatif renggang, namun empati WILLSON terhadap sesama justru semakin menonjol di tahun yang penuh tekanan ini."
+    },
+    {
+      "tahun": 2027,
+      "umur": 35,
+      "ganzhi": "丁未",
+      "prose": "Waspada terhadap jebakan orang lain di tahun 2027 — perlu sangat berhati-hati agar tidak dijebak, karena ada risiko perubahan buruk di lingkungan atau karir, perselisihan yang meningkat tajam, bahkan berujung pada urusan hukum. Bintang Pelayat [[吊客]] melintas membawa risiko kedukaan berulang dan kehilangan dalam keluarga. Sebagai penyeimbang, bintang Kebajikan Matahari [[陽德]] hadir: kabar gembira bisa datang, ketenangan bisa diraih, dan setiap perbuatan baik yang dilakukan WILLSON akan mengalir balik sebagai kelancaran. Kunci tahun ini adalah menjaga mulut dan tidak membiarkan pertengkaran kecil berkembang. Pengeluaran besar masih menjadi beban, dan tujuan ideal tetap terasa sulit dijangkau — tidak banyak penolong yang bisa diandalkan. Hindari bulan ke-1, 4, 7, atau 11. WILLSON tampil lebih pendiam dan konservatif tahun ini — tidak suka menonjolkan diri dan lebih memilih ketenangan, sifat ini justru menjadi pelindung alami dari berbagai risiko."
+    },
+    {
+      "tahun": 2028,
+      "umur": 36,
+      "ganzhi": "戊申",
+      "prose": "Pergeseran posisi karir mewarnai tahun 2028 — jabatan atau bidang kerja WILLSON mengalami perubahan yang bisa jadi mengejutkan, dan suasana hati pun ikut tertekan. Bantuan dari saudara dan teman-teman bisa diandalkan sehingga tujuan yang memuaskan dapat dicapai, meski dari luar semua tampak datar dan tidak mencerminkan hasil finansial yang sesungguhnya. Bintang Penyakit [[病符]] masuk ke dalam nasib — waspada terhadap gangguan kesehatan, perselisihan, dan kedukaan; perbanyak doa dan jaga kebersihan keluarga agar terhindar dari infeksi penyakit menular. Bintang Keindahan [[錦繡]] hadir sebagai penyelaras — mengisyaratkan kegembiraan, tamu yang membawa kabar baik, dan permintaan yang dikabulkan. Waspada perselisihan di bulan ke-3, 6, 9, atau 12. Dalam urusan asmara, yang sudah menikah mungkin merasakan kerenggangan; yang lajang justru semakin dekat dengan kekasih. Di sisi karakter, ambisi WILLSON sangat tinggi tahun ini — harga diri kuat, pantang menyerah, dan naluri mengambil risiko meningkat pesat."
+    },
+    {
+      "tahun": 2029,
+      "umur": 37,
+      "ganzhi": "己酉",
+      "prose": "Bintang Pelindung Tahunan [[太歲]] berdiri tepat di atas kepala WILLSON di tahun 2029 — segala bencana luruh, tidak ada hukuman fisik, dan ini adalah tahun terbaik untuk menyusun rencana besar. Namun hati-hati: keberuntungan dan ketidakberuntungan tahun ini cenderung ekstrem — jangan setengah-setengah dalam mengambil keputusan. Bintang Tangisan Langit [[天哭]] mengingatkan untuk berwaspada terhadap penyakit dan kedukaan — meski kebahagiaan keluarga juga hadir, pertengkaran mulut sulit dihindari. Hindari bulan ke-2, 3, 5, atau 11. Perubahan fisik lingkungan seperti renovasi atau pindah tempat bisa terjadi — lebih baik tidak melakukan perubahan besar jika tidak perlu. Dalam relasi, dinamika dengan pasangan ada namun tidak sampai bermasalah serius; yang lajang semakin hangat bersama kekasih. Karir dan jabatan pun bergeser. Karakter WILLSON tampil luhur, matang, dan penuh kemandirian di tahun ini — lebih suka merintis sendiri dan tidak bergantung pada warisan."
+    },
+    {
+      "tahun": 2030,
+      "umur": 38,
+      "ganzhi": "庚戌",
+      "prose": "Reputasi dan nama baik WILLSON bersinar di tahun 2030 — bintang Matahari [[太陽]] masuk ke dalam nasib, membawa harmoni di semua urusan, keseimbangan terjaga, dan berkah yang mengalir lancar. Bintang Kebajikan [[福德]] turut memperkuat: WILLSON dikenal sebagai pribadi yang baik, banyak orang mempercayakan urusan kepadanya, dan perjalanan hidup di penghujung justru melampaui separuh pertama — bagi yang sedang dalam periode sial atau sakit, tahun ini membawa pertanda perbaikan. Di sisi lain, omelan dan keluhan tetap banyak bermunculan dan suasana hati masih bisa goyah — penolong sejati tidak mudah ditemukan. Hindari bulan ke-2, 4, 8, atau 11. Dari sisi karakter, strategi dan kalkulasi menjadi andalan WILLSON: rasa kehormatan tinggi, pantang menyerah, dan naluri bermain taktik sangat tajam — usaha yang dicurahkan akhirnya tampak setara dengan hasilnya."
+    },
+    {
+      "tahun": 2031,
+      "umur": 39,
+      "ganzhi": "辛亥",
+      "prose": "Kejernihan pikiran adalah hadiah terbesar tahun 2031 bagi WILLSON — kemampuan berpikir strategis meningkat drastis, semua ide bisa dipikirkan hingga tuntas, dan bila momen dimanfaatkan dengan baik, tujuan yang diinginkan pasti dapat diraih. Namun secara spiritual, bintang Pintu Berkabung [[喪門]] dan Ular Hitam [[黑蛇]] hadir bersamaan — memperingatkan risiko kedukaan, kerugian finansial, dan orang-orang jahat yang mengintai. Jangan mengunjungi orang sakit parah maupun menghadiri acara duka di tahun ini agar tidak membawa kesialan; ada risiko kerabat atau teman mengalami sakit parah atau meninggal. Bila ada kegembiraan di rumah, keselamatan terjaga. Hindari bulan ke-6, 8, atau 12. Karir mengalami banyak pergerakan, dan usaha yang dicurahkan akhirnya tampak setara dengan hasilnya. Di sisi karakter, WILLSON mudah bosan dan tidak stabil di tahun ini — mudah terpengaruh lingkungan, keras kepala, dan sering berganti pekerjaan atau tempat tinggal tanpa alasan yang kuat."
+    }
+  ],
+  "ziwei_su_ming": "WILLSON menjalani perjalanan hidup sesuai garis takdir yang telah ditetapkan. Istana Cinta dan istana Badan WILLSON sama-sama kuat dan bersemangat — dengan dorongan dan kasih sayang dari pasangan hidup yang tepat, WILLSON pasti akan menjalani kehidupan yang penuh kepuasan. Namun apabila urusan asmara melemah, rumah tangga akan menjadi tidak harmonis dan kehidupan bisa berubah menjadi penuh ketidakbahagiaan. Dalam situasi seperti ini, kekuatan istana Kehidupan, istana Karir, istana Perpindahan, dan istana Kebajikan juga perlu diperhitungkan bersama.",
+  "ziwei_stars": null,
+  "shiye_favorable_full": [
+    {
+      "hz": "文具",
+      "id": "Alat tulis"
+    },
+    {
+      "hz": "出版",
+      "id": "Penerbitan"
+    },
+    {
+      "hz": "書店",
+      "id": "Toko buku"
+    },
+    {
+      "hz": "農業蔬果",
+      "id": "Pertanian & sayuran"
+    },
+    {
+      "hz": "木材",
+      "id": "Material kayu"
+    },
+    {
+      "hz": "傢俱",
+      "id": "Furnitur"
+    },
+    {
+      "hz": "裝璜",
+      "id": "Dekorasi interior"
+    },
+    {
+      "hz": "紙",
+      "id": "Industri kertas"
+    },
+    {
+      "hz": "木器或工藝",
+      "id": "Kerajinan kayu"
+    },
+    {
+      "hz": "花苗園藝",
+      "id": "Tanaman & hortikultura"
+    },
+    {
+      "hz": "菸草",
+      "id": "Tembakau"
+    },
+    {
+      "hz": "布疋",
+      "id": "Tekstil"
+    },
+    {
+      "hz": "教育",
+      "id": "Pendidikan"
+    },
+    {
+      "hz": "公務員",
+      "id": "Pegawai negeri"
+    },
+    {
+      "hz": "政治",
+      "id": "Politik"
+    },
+    {
+      "hz": "宗教家",
+      "id": "Rohaniwan"
+    }
+  ],
+  "shiye_supportive_full": [
+    {
+      "hz": "流動擺販",
+      "id": "Pedagang keliling"
+    },
+    {
+      "hz": "運動家",
+      "id": "Atlet"
+    },
+    {
+      "hz": "介紹中人",
+      "id": "Makelar/Perantara"
+    },
+    {
+      "hz": "醫師",
+      "id": "Dokter"
+    },
+    {
+      "hz": "清潔隊",
+      "id": "Petugas kebersihan"
+    },
+    {
+      "hz": "記者",
+      "id": "Jurnalis"
+    },
+    {
+      "hz": "護士",
+      "id": "Perawat"
+    },
+    {
+      "hz": "導遊",
+      "id": "Pemandu wisata"
+    },
+    {
+      "hz": "航海",
+      "id": "Pelayaran"
+    },
+    {
+      "hz": "漁業",
+      "id": "Perikanan"
+    },
+    {
+      "hz": "冷凍業",
+      "id": "Industri pendingin"
+    },
+    {
+      "hz": "水產業",
+      "id": "Industri perairan"
+    },
+    {
+      "hz": "碼頭工",
+      "id": "Pekerja pelabuhan"
+    },
+    {
+      "hz": "消防隊",
+      "id": "Pemadam kebakaran"
+    },
+    {
+      "hz": "貿易公司",
+      "id": "Perusahaan dagang"
+    }
+  ],
+  "shiye_short": null,
+  "shen_sha_detail": [
+    {
+      "hz": "將星",
+      "pinyin": "Jiang Xing",
+      "label_id": "Bintang Jenderal",
+      "tafsir_hz": "在官界顯達，可以掌握槓柄。",
+      "tafsir_id": "Menonjol di lingkungan pemerintahan dan resmi — WILLSON memiliki potensi untuk naik tinggi dan memegang kendali kekuasaan."
+    },
+    {
+      "hz": "掃帚",
+      "pinyin": "Sao Zhou",
+      "label_id": "Bintang Sapu",
+      "tafsir_hz": "財入而多陸家庭。",
+      "tafsir_id": "Rezeki yang masuk banyak tersalurkan untuk keperluan keluarga dan rumah tangga."
+    }
+  ],
+  "marriage_cocok_tafsir": "Cocok dengan shio Kerbau, Naga, dan Ular (sangat baik), serta shio-shio yang sefase lainnya (cukup baik). Pasangan dari kelompok ini membawa kemakmuran turun-temurun, menikmati berkah yang dianugerahkan langit, disertai nama baik dan pencapaian yang gemilang — sebuah pernikahan yang penuh wibawa, kemuliaan, dan kejayaan keluarga yang berkembang pesat.",
+  "marriage_hindari_tafsir": "Kurang cocok dengan shio Tikus, Kelinci, Ayam, dan Anjing. Meski sifat dasarnya cukup baik, namun rentan terhadap bencana tak terduga — hubungan keluarga kurang harmonis, keturunan tidak banyak, sering menghadapi kesulitan dan cobaan berat dalam pernikahan. Namun demikian bukan membawa malapetaka besar — pasangan ini masih bisa dijalani, hanya saja penuh tantangan.",
+  "gushu_quotes": null,
+  "xiongnian_list": null,
+  "xing_qing_poem_hz": null,
+  "xing_qing_poem_id": null,
+  "xing_qing_prose_id": null,
+  "fulu_body_id": null,
+  "mingyun_body_id": null,
+  "qinshu_tou_main_id": null,
+  "qinshu_tou_youyue_id": null,
+  "qinshu_zhong_main_id": null,
+  "qinshu_zhong_youyue_id": null,
+  "qinshu_mo_main_id": null,
+  "qinshu_mo_youyue_id": null,
+  "jie_e_palace_hz": null,
+  "jie_e_palace_id": "WILLSON rentan terhadap penyakit yang berkaitan dengan sistem pencernaan. Selain itu juga perlu mewaspadai gangguan kandung kemih, masalah pelupa, kelelahan kronis, serta gangguan pada pergelangan tangan dan bibir. Bintang Tian Xiang [[天相]] adalah bintang yang secara umum bersifat membawa penyakit, namun sesekali membawa keberuntungan yang jarang. Bila Tian Xiang berada bersama bintang Zi Wei [[紫微]] di istana yang sama, kemungkinan besar WILLSON jarang berurusan dengan dokter sepanjang hidup. Namun apabila istana Kesehatan berada di posisi Mao [[卯]] atau You [[酉]], sulit bagi Tian Xiang untuk menjalankan fungsi baiknya — dan WILLSON kemungkinan besar rentan terhadap penyakit kulit atau penyakit kuning.",
+  "jie_e_organ_focus_id": "Sistem pencernaan, kandung kemih, pergelangan tangan, bibir",
+  "bagua_sectors": null,
+  "bagua_life_type_hz": null,
+  "bagua_life_type_id": null,
+  "bagua_nayin_hz": null,
+  "bagua_nayin_id": null,
+  "bagua_taisui_hz": null,
+  "bagua_taisui_id": null,
+  "bagua_warning_hz": null,
+  "bagua_warning_id": null,
+  "bagua_virtue_hz": null,
+  "bagua_virtue_id": null,
+  "bagua_zuo_xiang_hz": null,
+  "bagua_zuo_xiang_id": null,
+  "hongshui_pages": null,
+  "mantra": {
+    "hz": "—",
+    "pinyin": "—"
+  },
+  "_xq_radar_poly": "          <polygon points=\"200,56 311.2,136 311.2,264 200,328 102.7,256 102.7,144\"\n            fill=\"rgba(139,26,26,0.18)\" stroke=\"#8B1A1A\" stroke-width=\"1.5\"/>\n          <circle cx=\"200\" cy=\"56\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"136\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"264\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"200\" cy=\"328\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"102.7\" cy=\"256\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"102.7\" cy=\"144\" r=\"3\" fill=\"#8B1A1A\"/>",
+  "_xq_radar_labels": "          <g font-family=\"Noto Serif TC,serif\">\n            <text x=\"200\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">表現</text>\n            <text x=\"200\" y=\"33\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Biǎoxiàn · Bersinar · 9</text>\n\n            <text x=\"358\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">領導</text>\n            <text x=\"358\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Lǐngdǎo · Memimpin · 8</text>\n\n            <text x=\"358\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">創新</text>\n            <text x=\"358\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Chuàngxīn · Inovatif · 8</text>\n\n            <text x=\"200\" y=\"382\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">急性</text>\n            <text x=\"200\" y=\"393\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Jíxìng · Cepat panas · 8</text>\n\n            <text x=\"42\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">直率</text>\n            <text x=\"42\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Zhíshuài · Terus-terang · 7</text>\n\n            <text x=\"42\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">包容</text>\n            <text x=\"42\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Bāoróng · Toleran · 7</text>\n          </g>",
+  "_xq_motto": [
+    "日",
+    "Matahari",
+    "本性 光明",
+    "光明磊落"
+  ],
+  "_tafsir": {
+    "kepribadian": "WILLSON adalah pria dengan Day Master 丙 (Api Yang) — pribadi yang hangat, bersinar, dan penuh semangat. Di balik ketenangan permukaannya tersimpan api semangat yang tak pernah padam, menjadikannya sosok yang mudah disukai sekaligus penuh tekad. Kekuatan terbesarnya ada pada kemampuan bergaul, jiwa mandiri, dan sifat bawaan untuk membantu orang lain.",
+    "_kepribadian_struct": {
+      "paragraf": "WILLSON adalah pria dengan Day Master 丙 (Api Yang) — pribadi yang hangat, bersinar, dan penuh semangat. Di balik ketenangan permukaannya tersimpan api semangat yang tak pernah padam, menjadikannya sosok yang mudah disukai sekaligus penuh tekad. Kekuatan terbesarnya ada pada kemampuan bergaul, jiwa mandiri, dan sifat bawaan untuk membantu orang lain.",
+      "power": [
+        "Ramah dan mudah bergaul dengan siapa pun, memiliki daya pikir cepat dan kemampuan operasional yang tinggi.",
+        "Fisik kuat, mandiri, dan berani mengambil tindakan nyata untuk menyelesaikan masalah.",
+        "Jujur, bertanggung jawab, dan menghormati aturan — dipercaya sebagai sosok yang diandalkan orang lain."
+      ],
+      "shadow": [
+        "Cenderung keras kepala dan suka ikut campur urusan orang lain, bahkan tanpa diminta.",
+        "Kurang teliti dalam detail dan kurang mampu membedakan hal-hal secara mendalam.",
+        "Karakter kurang teguh — mudah terbawa perasaan, rasa gengsi tinggi, dan tergesa-gesa dalam bertindak."
+      ],
+      "optimum": [
+        "Latih diri untuk menahan dorongan ikut campur urusan orang — beri ruang bagi orang lain untuk menyelesaikan masalahnya sendiri.",
+        "Tingkatkan ketelitian dan kemampuan analisis detail agar potensi kepemimpinan dan operasional bisa lebih maksimal.",
+        "Jaga keseimbangan antara tindakan cepat dan pertimbangan matang — kegegabahan bisa merusak hasil yang sudah dibangun."
+      ]
+    },
+    "xingqing_full": "<p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">1</span>Menyukai generalisasi dan cenderung melihat segala hal secara garis besar — kurang teliti dan kurang mampu membedakan hal secara detail. WILLSON tertarik pada kepercayaan dan agama, meyakini hal-hal yang tidak tampak oleh mata, serta memiliki kesabaran yang baik dan pembawaan yang damai.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">2</span>Memiliki fisik yang kuat dan penuh semangat juang — bertindak sesuai apa yang dipikirkan tanpa banyak menunda. Dorongan untuk beraksi dan bergerak sangat kuat; tidak terlalu mementingkan kenikmatan fisik. WILLSON tidak takut terhadap risiko dan kesulitan, bersifat mandiri, dan lebih memilih menyelesaikan masalah dengan tindakan nyata — hidupnya penuh kesibukan dan mengandalkan kerja keras.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">3</span>Berkarakter jujur, konservatif, dan bertanggung jawab. WILLSON menghormati aturan dan hukum, menjaga nama baik dan martabat diri, serta sangat memperhatikan pandangan dan opini masyarakat.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">4</span>Memiliki hasrat kuat untuk bertindak dan cenderung terburu-buru — agresif dalam pendekatan namun tidak takut menghadapi konflik. Memiliki aura yang kuat tetapi kurang dalam keteguhan tekad. Sangat mengutamakan perasaan namun karakternya kurang teguh; rasa gengsi tinggi dan sangat menjaga citra di mata orang lain.</p>",
+    "xingqing_full_action": "Inti watak diri sebagaimana terbaca dari layar 性情.",
+    "overview_full": "<div style=\"display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm;\"><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Pasangan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Pasangan WILLSON cenderung memiliki reputasi baik, sifat konservatif, tidak mudah terpengaruh hal buruk, dan berwatak rasional.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Finansial</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">WILLSON tidak terlalu terikat pada harta benda dan tidak menjadikan uang sebagai prioritas utama dalam hidupnya.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Kepemimpinan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">WILLSON kurang memiliki jiwa kepemimpinan yang kuat dan cenderung sulit memegang kendali penuh atas kekuasaan besar.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Ekspresi Diri</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Terhadap segala hal, WILLSON banyak berpikir namun sering kali kesulitan untuk mengekspresikan atau mewujudkannya secara nyata.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Karakter</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">WILLSON adalah pribadi yang jujur, tulus, dan baik hati dalam bergaul — seorang yang tebal rasa kemanusiaannya.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Keluarga</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Tidak merasa takut kepada ayah maupun istri, dan cenderung sulit menerima nasihat atau saran dari keduanya.</div></div></div>",
+    "overview_full_action": "Pesan inti hubungan terdekat dari layar 全局總論.",
+    "family": "pasangan: - vibe: Hangat &amp; Terbuka · Hindari Menikah di Usia Muda - headline: Pasangan terbaik dari shio Kerbau, Naga, atau Ular - cocok_list: - shio: 牛 label: 大吉 teks: Pasangan dari shio Kerbau membawa kemakmuran turun-temurun, menikmati berkah langit, nama baik dan pencapaian gemilang — pernikahan penuh wibawa dan kejayaan keluarga. - shio: 龍 label: 大吉 teks: Pasangan dari shio Naga membawa kemakmuran turun-temurun, menikmati berkah langit, nama baik dan pencapaian gemilang — pernikahan penuh wibawa dan kejayaan keluarga. - shio: 蛇 label: 大吉 teks: Pasangan dari shio Ular membawa kemakmuran turun-temurun, menikmati berkah langit, nama baik dan pencapaian gemilang — pernikahan penuh wibawa dan kejayaan keluarga. - hindari_list: - shio: 鼠 teks: Rentan terhadap bencana tak terduga, hubungan keluarga kurang harmonis, keturunan tidak banyak, sering menghadapi cobaan berat — namun bukan membawa malapetaka besar. - shio: 兔 teks: Rentan terhadap bencana tak terduga, hubungan keluarga kurang harmonis, keturunan tidak banyak, sering menghadapi cobaan berat — namun bukan membawa malapetaka besar. - shio: 雞 teks: Rentan terhadap bencana tak terduga, hubungan keluarga kurang harmonis, keturunan tidak banyak, sering menghadapi cobaan berat — namun bukan membawa malapetaka besar. - shio: 狗 teks: Rentan terhadap bencana tak terduga, hubungan keluarga kurang harmonis, keturunan tidak banyak, sering menghadapi cobaan berat — namun bukan membawa malapetaka besar.",
+    "_family_struct": {
+      "pasangan": {
+        "vibe": "Hangat & Terbuka · Hindari Menikah di Usia Muda",
+        "headline": "Pasangan terbaik dari shio Kerbau, Naga, atau Ular"
+      }
+    },
+    "career": "<p>WILLSON paling cocok dengan pekerjaan intelektual yang membutuhkan penilaian tenang dan rasional — bidang pendidikan, penerbitan, hukum, dan konsultasi sangat sesuai dengan karakter Day Master 丙火 yang hangat dan bermartabat. Rezeki besar baru mulai mengalir sejak pertengahan umur, sehingga konsistensi dan kesabaran adalah kunci utama.</p>",
+    "_career_struct": {},
+    "palace1": "<p>ming_gong: - star: null - insight: WILLSON memiliki perjalanan hidup yang mengalir bagai air, tiada henti bergerak dan terus berpindah — sebuah nasib yang selalu dalam gerak dinamis. Sebagai pribadi, WILLSON dikenal tenang dan berpikiran jernih, namun di balik ketenangan itu tersimpan api semangat yang tak pernah padam, selalu membara di dalam dirinya. Postur tubuh WILLSON cenderung lebih tinggi dan lebih bugar dibanding kebanyakan orang. Ciri khasnya adalah kemampuannya bergaul akrab dengan siapa pun tanpa terkecuali, sekaligus memiliki daya pikir yang berputar sangat cepat dan responsif. Sifatnya lemah lembut, ramah dalam pergaulan, dan penuh keluwesan — namun di sisi lain juga bisa keras kepala dan memiliki kecenderungan senang ikut campur urusan orang lain. Setiap kali WILLSON menyaksikan orang lain menghadapi kesulitan, ia tidak bisa berdiam diri — ia pasti akan ikut turun tangan, bahkan tanpa diminta sekalipun. Ketika melihat orang lain yang kurang cakap menangani suatu perkara atau kesulitan mengutarakan kata-kata, WILLSON dengan tulus dan penuh semangat menawarkan bantuan, bak tangan yang selalu siap menolong. Berkat sifat bawaan ini — senang berpihak dan menolong sesama — WILLSON memiliki jaringan pertemanan yang cukup luas, dan sering dipandang sebagai sosok kakak sulung yang bisa diandalkan oleh mereka yang lebih muda. Namun, oleh mereka yang lebih tua, ia kadang justru dipandang sebagai sosok yang suka ikut campur urusan orang. Untuk wanita dengan profil ini, mereka umumnya termasuk dalam golongan wanita berbakat dan cerdas — bahkan melampaui laki-laki dalam banyak hal — dan tidak mau kalah dalam persaingan apa pun. Setelah menikah, WILLSON (wanita) cenderung menjadi istri yang cakap dan berkarakter kuat, mampu memimpin dan memengaruhi suami dengan penuh wibawa. Hal yang perlu diperhatikan adalah agar tidak terlalu dalam mengatur dan mencampuri tindakan pasangan. - action: null</p><p>xiongdi: - star: null - insight: WILLSON menjalani hubungan persaudaraan yang terasa jauh secara emosional — ada namun tidak terasa dekat, seperti dua dunia yang berbeda. Saudara kandung maupun sahabat seolah seperti orang asing di jalanan bagi WILLSON, tidak memberikan kontribusi maupun bantuan yang berarti dalam perjalanan hidupnya. - action: null</p><p>fuqi: - star: null - insight: WILLSON memiliki kepribadian yang ramah dan menyenangkan, sehingga mudah mendapat kasih sayang dan perhatian dari orang-orang sekitarnya. Hubungan cinta WILLSON seharusnya tidak mudah berakhir karena pertengkaran — dan setelah menikah, WILLSON mampu membangun keluarga yang stabil dan penuh kebahagiaan. Namun karena pengaruh bintang Matahari <span class=\"hz\">太陽</span> yang terlalu dominan, menikah di usia muda sangat tidak menguntungkan. Jika memungkinkan, jangan terburu-buru dalam memutuskan pernikahan — pertimbangkan dengan matang dan jalani secara perlahan. Untuk pria, pasangan ideal adalah wanita yang ceria dan sehat secara fisik. Untuk wanita, WILLSON dapat menemukan pria berjiwa besar dan lapang dada. Namun apabila bintang buruk turut menghalangi, WILLSON hampir dapat dipastikan akan langsung menghadapi ancaman perceraian. - action: null</p><p>zinu: - star: null - insight: Anak-anak WILLSON berpotensi bersifat pemberontak — sering berselisih dengan orang tua, dan bahkan bisa pergi meninggalkan rumah sewaktu-waktu. Ada kemungkinan tidak memiliki keturunan, atau jika ada, kemungkinan hanya satu orang saja. Apabila bintang Qi Sha <span class=\"hz\">七殺</span> dan Ju Men <span class=\"hz\">巨門</span> turut hadir di istana ini, ada risiko perpisahan dengan anak — baik hidup berjauhan maupun kehilangan. Bila bersama bintang Tan Lang <span class=\"hz\">貪狼</span>, kebaikan dan dukungan dari anak-anak akan terasa nyata di hari tua WILLSON. Bila hanya Wu Qu <span class=\"hz\">武曲</span> yang hadir tanpa bintang lain, anak dari luar pernikahan atau anak angkat justru lebih berpotensi membantu kesuksesan WILLSON. Bintang Qi Sha <span class=\"hz\">七殺</span> juga dikenal sebagai bintang pemutus keturunan — bahkan jika ada anak, sifatnya sangat keras kepala dan seringkali berada di posisi bertentangan. Namun apabila Zi Wei <span class=\"hz\">紫微</span> turut hadir di istana ini, pengaruh buruk dapat dinetralkan dan WILLSON mampu membesarkan anak dengan baik. Di sisi lain, anak-anak WILLSON pada dasarnya terlahir dengan bakat seni yang tinggi — hubungan orang tua dan anak penuh keharmonisan dan kebahagiaan, jauh dari perselisihan. Namun bila bintang buruk turut hadir, memiliki anak menjadi sulit; dan bahkan jika ada, urusan mendidik dan mengelola anak menjadi persoalan yang tak ada habisnya. - action: null</p>",
+    "_palace1_struct": {
+      "ming_gong": {
+        "insight": "WILLSON memiliki perjalanan hidup yang mengalir bagai air, tiada henti bergerak dan terus berpindah — sebuah nasib yang selalu dalam gerak dinamis. Sebagai pribadi, WILLSON dikenal tenang dan berpikiran jernih, namun di balik ketenangan itu tersimpan api semangat yang tak pernah padam, selalu membara di dalam dirinya. Postur tubuh WILLSON cenderung lebih tinggi dan lebih bugar dibanding kebanyakan orang. Ciri khasnya adalah kemampuannya bergaul akrab dengan siapa pun tanpa terkecuali, sekaligus memiliki daya pikir yang berputar sangat cepat dan responsif. Sifatnya lemah lembut, ramah dalam pergaulan, dan penuh keluwesan — namun di sisi lain juga bisa keras kepala dan memiliki kecenderungan senang ikut campur urusan orang lain. Setiap kali WILLSON menyaksikan orang lain menghadapi kesulitan, ia tidak bisa berdiam diri — ia pasti akan ikut turun tangan, bahkan tanpa diminta sekalipun. Ketika melihat orang lain yang kurang cakap menangani suatu perkara atau kesulitan mengutarakan kata-kata, WILLSON dengan tulus dan penuh semangat menawarkan bantuan, bak tangan yang selalu siap menolong. Berkat sifat bawaan ini — senang berpihak dan menolong sesama — WILLSON memiliki jaringan pertemanan yang cukup luas, dan sering dipandang sebagai sosok kakak sulung yang bisa diandalkan oleh mereka yang lebih muda. Namun, oleh mereka yang lebih tua, ia kadang justru dipandang sebagai sosok yang suka ikut campur urusan orang. Untuk wanita dengan profil ini, mereka umumnya termasuk dalam golongan wanita berbakat dan cerdas — bahkan melampaui laki-laki dalam banyak hal — dan tidak mau kalah dalam persaingan apa pun. Setelah menikah, WILLSON (wanita) cenderung menjadi istri yang cakap dan berkarakter kuat, mampu memimpin dan memengaruhi suami dengan penuh wibawa. Hal yang perlu diperhatikan adalah agar tidak terlalu dalam mengatur dan mencampuri tindakan pasangan."
+      },
+      "xiongdi": {
+        "insight": "WILLSON menjalani hubungan persaudaraan yang terasa jauh secara emosional — ada namun tidak terasa dekat, seperti dua dunia yang berbeda. Saudara kandung maupun sahabat seolah seperti orang asing di jalanan bagi WILLSON, tidak memberikan kontribusi maupun bantuan yang berarti dalam perjalanan hidupnya."
+      },
+      "fuqi": {
+        "insight": "WILLSON memiliki kepribadian yang ramah dan menyenangkan, sehingga mudah mendapat kasih sayang dan perhatian dari orang-orang sekitarnya. Hubungan cinta WILLSON seharusnya tidak mudah berakhir karena pertengkaran — dan setelah menikah, WILLSON mampu membangun keluarga yang stabil dan penuh kebahagiaan. Namun karena pengaruh bintang Matahari [[太陽]] yang terlalu dominan, menikah di usia muda sangat tidak menguntungkan. Jika memungkinkan, jangan terburu-buru dalam memutuskan pernikahan — pertimbangkan dengan matang dan jalani secara perlahan. Untuk pria, pasangan ideal adalah wanita yang ceria dan sehat secara fisik. Untuk wanita, WILLSON dapat menemukan pria berjiwa besar dan lapang dada. Namun apabila bintang buruk turut menghalangi, WILLSON hampir dapat dipastikan akan langsung menghadapi ancaman perceraian."
+      },
+      "zinu": {
+        "insight": "Anak-anak WILLSON berpotensi bersifat pemberontak — sering berselisih dengan orang tua, dan bahkan bisa pergi meninggalkan rumah sewaktu-waktu. Ada kemungkinan tidak memiliki keturunan, atau jika ada, kemungkinan hanya satu orang saja. Apabila bintang Qi Sha [[七殺]] dan Ju Men [[巨門]] turut hadir di istana ini, ada risiko perpisahan dengan anak — baik hidup berjauhan maupun kehilangan. Bila bersama bintang Tan Lang [[貪狼]], kebaikan dan dukungan dari anak-anak akan terasa nyata di hari tua WILLSON. Bila hanya Wu Qu [[武曲]] yang hadir tanpa bintang lain, anak dari luar pernikahan atau anak angkat justru lebih berpotensi membantu kesuksesan WILLSON. Bintang Qi Sha [[七殺]] juga dikenal sebagai bintang pemutus keturunan — bahkan jika ada anak, sifatnya sangat keras kepala dan seringkali berada di posisi bertentangan. Namun apabila Zi Wei [[紫微]] turut hadir di istana ini, pengaruh buruk dapat dinetralkan dan WILLSON mampu membesarkan anak dengan baik. Di sisi lain, anak-anak WILLSON pada dasarnya terlahir dengan bakat seni yang tinggi — hubungan orang tua dan anak penuh keharmonisan dan kebahagiaan, jauh dari perselisihan. Namun bila bintang buruk turut hadir, memiliki anak menjadi sulit; dan bahkan jika ada, urusan mendidik dan mengelola anak menjadi persoalan yang tak ada habisnya."
+      }
+    },
+    "palace2": "<p>caibo: - star: null - insight: WILLSON adalah pribadi yang terencana dan cermat dalam mengelola uang — selalu berhitung teliti dalam setiap pengeluaran. Kekayaan dibangun dari nol dengan kemampuan sendiri, menguasai peluang menghasilkan uang secara mandiri — namun rezeki besar baru mulai mengalir sejak pertengahan umur. Bila bintang Tian Liang <span class=\"hz\">天梁</span> turut hadir, WILLSON berpotensi menjadi seorang pemilik aset yang sangat kuat. Bahkan bila ada bintang buruk yang turut hadir, jika WILLSON memilih profesi sebagai dokter, ilmuwan, seniman, atau konsultan, keberuntungan finansial tetap terjaga dengan baik. Secara keseluruhan, WILLSON dapat menjalani hidup yang berkecukupan dan makmur. Bila bintang Zi Wei <span class=\"hz\">紫微</span> turut hadir, aliran keuangan menjadi lebih lancar disertai pendapatan yang stabil, dan seringkali mendapat kesempatan menghasilkan uang besar. Bila bersama Wu Qu <span class=\"hz\">武曲</span>, WILLSON rajin menerapkan berbagai strategi untuk mengoptimalkan pendapatan. Bila bersama Lian Zhen <span class=\"hz\">廉貞</span>, kekayaan dapat dicapai melalui bisnis nyata dan industri. - action: null</p><p>jie_e: - star: 天相 - insight: WILLSON rentan terhadap penyakit yang berkaitan dengan sistem pencernaan. Selain itu juga perlu mewaspadai gangguan kandung kemih, masalah pelupa, kelelahan kronis, serta gangguan pada pergelangan tangan dan bibir. Bintang Langit <span class=\"hz\">天相</span> adalah bintang yang secara umum bersifat membawa penyakit, namun sesekali membawa keberuntungan yang jarang. Bila bintang Zi Wei <span class=\"hz\">紫微</span> turut berada di istana yang sama, kemungkinan besar WILLSON jarang berurusan dengan dokter sepanjang hidup. Namun apabila istana Kesehatan berada di posisi Mao <span class=\"hz\">卯</span> atau You <span class=\"hz\">酉</span>, sulit bagi bintang Langit untuk menjalankan fungsi baiknya — dan WILLSON kemungkinan besar rentan terhadap penyakit kulit atau penyakit kuning. - action: null</p><p>qianyi: - star: null - insight: WILLSON termasuk tipe pribadi yang penuh semangat membara — bertindak dengan penuh antusias, bak api yang menyala, dengan gaya bergerak yang impulsif dan penuh gairah. Namun setiap kali menghadapi perubahan besar, WILLSON kerap menemukan nasib buruk yang sudah menanti. Misalnya, setelah pindah rumah baru kemudian menyadari properti tersebut cacat atau tidak lengkap fasilitasnya; atau berpindah ke perusahaan baru namun kemudian mengetahui kondisi perusahaan itu buruk, bahkan tiba-tiba gulung tikar tidak lama kemudian. Singkatnya, ke mana pun WILLSON pergi, selalu ada hal tidak menyenangkan yang sudah menunggu. Sungguh hampir tidak ada waktu untuk menjaga ketenangan batin. Jika memungkinkan, hindari terlalu sering melakukan perubahan besar — dan apabila terjadi peristiwa tidak menyenangkan, lebih baik menahannya dalam hati dan tidak bereaksi berlebihan. - action: null</p><p>puyi: - star: null - insight: WILLSON dapat menemukan bawahan yang terampil, selektif, dan penuh pertimbangan. Namun kemungkinan besar sering dibuat pusing oleh bawahan yang memberontak! Bila berada di dalam istana ini, ada risiko dikhianati oleh bawahan — namun di masa tua, barulah WILLSON mendapatkan bawahan yang benar-benar loyal dan mendukung. Bila bersama Tan Lang <span class=\"hz\">貪狼</span>, WILLSON murni hanya menjadi alat yang dimanfaatkan para bawahan. Bila bersama Qi Sha <span class=\"hz\">七殺</span>, sering dikhianati oleh teman sendiri. Bila bersama Tian Tong <span class=\"hz\">天同</span>, banyak teman dan bawahan dari kalangan usia muda. Secara umum, WILLSON sulit mendapatkan dukungan sejati dari bawahan; jika bawahannya adalah wanita, mereka cenderung berambisi tinggi dan suka bersaing. Teman-teman di usia muda pun jarang, dan yang ada sebenarnya kebanyakan hanya ingin memanfaatkan WILLSON. Di sisi lain, bawahan WILLSON yang sesungguhnya amat bersemangat dalam pekerjaan dan berbakat mandiri — sehingga dapat dijadikan tangan kanan yang andal. Namun apabila berada di posisi istana Yin <span class=\"hz\">寅</span>, Wu <span class=\"hz\">午</span>, atau Xu <span class=\"hz\">戌</span>, hubungan dapat memburuk atau bahkan berujung pengkhianatan — hal ini patut diwaspadai. - action: null</p>",
+    "_palace2_struct": {
+      "caibo": {
+        "insight": "WILLSON adalah pribadi yang terencana dan cermat dalam mengelola uang — selalu berhitung teliti dalam setiap pengeluaran. Kekayaan dibangun dari nol dengan kemampuan sendiri, menguasai peluang menghasilkan uang secara mandiri — namun rezeki besar baru mulai mengalir sejak pertengahan umur. Bila bintang Tian Liang [[天梁]] turut hadir, WILLSON berpotensi menjadi seorang pemilik aset yang sangat kuat. Bahkan bila ada bintang buruk yang turut hadir, jika WILLSON memilih profesi sebagai dokter, ilmuwan, seniman, atau konsultan, keberuntungan finansial tetap terjaga dengan baik. Secara keseluruhan, WILLSON dapat menjalani hidup yang berkecukupan dan makmur. Bila bintang Zi Wei [[紫微]] turut hadir, aliran keuangan menjadi lebih lancar disertai pendapatan yang stabil, dan seringkali mendapat kesempatan menghasilkan uang besar. Bila bersama Wu Qu [[武曲]], WILLSON rajin menerapkan berbagai strategi untuk mengoptimalkan pendapatan. Bila bersama Lian Zhen [[廉貞]], kekayaan dapat dicapai melalui bisnis nyata dan industri."
+      },
+      "jie_e": {
+        "star": "天相",
+        "insight": "WILLSON rentan terhadap penyakit yang berkaitan dengan sistem pencernaan. Selain itu juga perlu mewaspadai gangguan kandung kemih, masalah pelupa, kelelahan kronis, serta gangguan pada pergelangan tangan dan bibir. Bintang Langit [[天相]] adalah bintang yang secara umum bersifat membawa penyakit, namun sesekali membawa keberuntungan yang jarang. Bila bintang Zi Wei [[紫微]] turut berada di istana yang sama, kemungkinan besar WILLSON jarang berurusan dengan dokter sepanjang hidup. Namun apabila istana Kesehatan berada di posisi Mao [[卯]] atau You [[酉]], sulit bagi bintang Langit untuk menjalankan fungsi baiknya — dan WILLSON kemungkinan besar rentan terhadap penyakit kulit atau penyakit kuning."
+      },
+      "qianyi": {
+        "insight": "WILLSON termasuk tipe pribadi yang penuh semangat membara — bertindak dengan penuh antusias, bak api yang menyala, dengan gaya bergerak yang impulsif dan penuh gairah. Namun setiap kali menghadapi perubahan besar, WILLSON kerap menemukan nasib buruk yang sudah menanti. Misalnya, setelah pindah rumah baru kemudian menyadari properti tersebut cacat atau tidak lengkap fasilitasnya; atau berpindah ke perusahaan baru namun kemudian mengetahui kondisi perusahaan itu buruk, bahkan tiba-tiba gulung tikar tidak lama kemudian. Singkatnya, ke mana pun WILLSON pergi, selalu ada hal tidak menyenangkan yang sudah menunggu. Sungguh hampir tidak ada waktu untuk menjaga ketenangan batin. Jika memungkinkan, hindari terlalu sering melakukan perubahan besar — dan apabila terjadi peristiwa tidak menyenangkan, lebih baik menahannya dalam hati dan tidak bereaksi berlebihan."
+      },
+      "puyi": {
+        "insight": "WILLSON dapat menemukan bawahan yang terampil, selektif, dan penuh pertimbangan. Namun kemungkinan besar sering dibuat pusing oleh bawahan yang memberontak! Bila berada di dalam istana ini, ada risiko dikhianati oleh bawahan — namun di masa tua, barulah WILLSON mendapatkan bawahan yang benar-benar loyal dan mendukung. Bila bersama Tan Lang [[貪狼]], WILLSON murni hanya menjadi alat yang dimanfaatkan para bawahan. Bila bersama Qi Sha [[七殺]], sering dikhianati oleh teman sendiri. Bila bersama Tian Tong [[天同]], banyak teman dan bawahan dari kalangan usia muda. Secara umum, WILLSON sulit mendapatkan dukungan sejati dari bawahan; jika bawahannya adalah wanita, mereka cenderung berambisi tinggi dan suka bersaing. Teman-teman di usia muda pun jarang, dan yang ada sebenarnya kebanyakan hanya ingin memanfaatkan WILLSON. Di sisi lain, bawahan WILLSON yang sesungguhnya amat bersemangat dalam pekerjaan dan berbakat mandiri — sehingga dapat dijadikan tangan kanan yang andal. Namun apabila berada di posisi istana Yin [[寅]], Wu [[午]], atau Xu [[戌]], hubungan dapat memburuk atau bahkan berujung pengkhianatan — hal ini patut diwaspadai."
+      }
+    },
+    "palace3": "<p>guanlu: - star: null - insight: WILLSON paling cocok dengan profesi pendidik, rohaniwan, penerbit, politisi, pengacara, pertambangan, atau bidang perantara dan konsultasi. Secara umum, WILLSON paling sesuai dengan pekerjaan intelektual yang membutuhkan penilaian tenang dan rasional. Bila berkarir sebagai programmer, pengacara, sekretaris, editor, atau desainer teknis, WILLSON dapat berkembang pesat di masyarakat. Namun apabila istana Karir berada di posisi Si <span class=\"hz\">巳</span> atau Wu <span class=\"hz\">午</span>, karir cenderung bergeser ke arah yang terlalu tinggi angan-angannya. Karir WILLSON juga cenderung banyak berubah — bukan tipe yang bisa bertahan lama dalam satu bidang yang sama. Bila bersama bintang Tian Tong <span class=\"hz\">天同</span>, kemampuan menulis cukup baik dan menekuni jalur penulisan akan memberikan pencapaian yang signifikan. Bila bersama Tian Ji <span class=\"hz\">天機</span>, mengisyaratkan bahwa kerja keras yang panjang akhirnya akan berbuah hasil yang manis. - action: null</p><p>tianzhai: - star: 天府 - insight: WILLSON mendapatkan berkah properti, meski jumlahnya tidak terlalu besar. Di satu sisi, WILLSON dapat mempertahankan warisan properti dari kedua orang tua, sekaligus mampu membeli sejumlah properti sendiri. Bintang Pelindung Kekayaan <span class=\"hz\">天府</span> pada dasarnya menguasai kekuatan finansial dan kekayaan — sehingga urusan properti WILLSON terbilang cukup stabil. Namun karena perkembangan ini sangat bergantung pada dukungan keluarga, apabila WILLSON terlalu mencolok dan melakukan transaksi properti skala besar, pasti akan mendapat tekanan dan hambatan. Tanah atau lahan yang bersifat kering sangat menguntungkan bagi WILLSON. - action: null</p><p>fude: - star: null - insight: WILLSON adalah pribadi yang menyimpan kebajikan dan keberuntungan dalam dirinya — murah hati dan penuh pesona alami. Hal ini mengisyaratkan adanya keberuntungan yang mengalir dari kebajikan yang dimiliki. WILLSON sangat pandai dalam bergaul dan memperhatikan cara memperlakukan orang lain. Namun apabila terhalang oleh kritik atau penentangan dari orang lain, keberuntungan yang sudah di tangan bisa sirna begitu saja. Tidak semua hal bisa berjalan sesuai keinginan WILLSON — namun bila menjaga kesehatan dengan serius, rezeki akan datang dengan sendirinya dan kehidupan yang memuaskan pun dapat diraih. Hindari terlalu menonjolkan diri; dengan mengambil peran sebagai pendukung dan pelengkap bagi orang lain, pada akhirnya WILLSON pasti akan mencapai sesuatu yang berarti. - action: null</p><p>fumu: - star: null - insight: WILLSON mungkin memiliki kekurangan dalam hal menyesuaikan diri dengan pandangan orang lain, namun hubungan antara anak dan orang tua tetap terasa hangat. WILLSON memiliki orang tua yang berprestasi tinggi di masyarakat dan berkedudukan terpandang — hubungan keluarga harmonis dan penuh kerukunan. Kedua orang tua juga gemar menabung, sehingga kemungkinan besar meninggalkan warisan yang cukup bagi WILLSON. Pengaruh orang tua sudah tertanam kuat dalam diri WILLSON — kebiasaan menabung sudah mengakar sejak dini. Orang tua sangat memperhatikan etika dan sopan santun, tidak pernah setengah hati dalam mendidik. Apabila hubungan dengan orang tua tidak harmonis, kemungkinan besar karena orang tua meragukan perilaku WILLSON. Konflik dengan orang tua tidak jarang terjadi — namun ketika WILLSON pergi merantau, hubungan justru bisa menjadi lebih harmonis secara tak terduga. Orang tua WILLSON biasanya tenang dan berwibawa, namun jika sudah marah bisa meledak seperti gunung berapi. Apa pun yang sedang WILLSON pikirkan langsung bisa dibaca oleh orang tua — tidak mungkin menyembunyikan apa pun. Bila bersama Wu Qu <span class=\"hz\">武曲</span> atau Lian Zhen <span class=\"hz\">廉貞</span>, WILLSON cenderung berpisah dengan orang tua sejak muda. Bila bersama Zi Wei <span class=\"hz\">紫微</span>, hubungan orang tua-anak jauh dari pertengkaran dan tidak akan sampai pemutusan hubungan. - action: null</p>",
+    "_palace3_struct": {
+      "guanlu": {
+        "insight": "WILLSON paling cocok dengan profesi pendidik, rohaniwan, penerbit, politisi, pengacara, pertambangan, atau bidang perantara dan konsultasi. Secara umum, WILLSON paling sesuai dengan pekerjaan intelektual yang membutuhkan penilaian tenang dan rasional. Bila berkarir sebagai programmer, pengacara, sekretaris, editor, atau desainer teknis, WILLSON dapat berkembang pesat di masyarakat. Namun apabila istana Karir berada di posisi Si [[巳]] atau Wu [[午]], karir cenderung bergeser ke arah yang terlalu tinggi angan-angannya. Karir WILLSON juga cenderung banyak berubah — bukan tipe yang bisa bertahan lama dalam satu bidang yang sama. Bila bersama bintang Tian Tong [[天同]], kemampuan menulis cukup baik dan menekuni jalur penulisan akan memberikan pencapaian yang signifikan. Bila bersama Tian Ji [[天機]], mengisyaratkan bahwa kerja keras yang panjang akhirnya akan berbuah hasil yang manis."
+      },
+      "tianzhai": {
+        "star": "天府",
+        "insight": "WILLSON mendapatkan berkah properti, meski jumlahnya tidak terlalu besar. Di satu sisi, WILLSON dapat mempertahankan warisan properti dari kedua orang tua, sekaligus mampu membeli sejumlah properti sendiri. Bintang Pelindung Kekayaan [[天府]] pada dasarnya menguasai kekuatan finansial dan kekayaan — sehingga urusan properti WILLSON terbilang cukup stabil. Namun karena perkembangan ini sangat bergantung pada dukungan keluarga, apabila WILLSON terlalu mencolok dan melakukan transaksi properti skala besar, pasti akan mendapat tekanan dan hambatan. Tanah atau lahan yang bersifat kering sangat menguntungkan bagi WILLSON."
+      },
+      "fude": {
+        "insight": "WILLSON adalah pribadi yang menyimpan kebajikan dan keberuntungan dalam dirinya — murah hati dan penuh pesona alami. Hal ini mengisyaratkan adanya keberuntungan yang mengalir dari kebajikan yang dimiliki. WILLSON sangat pandai dalam bergaul dan memperhatikan cara memperlakukan orang lain. Namun apabila terhalang oleh kritik atau penentangan dari orang lain, keberuntungan yang sudah di tangan bisa sirna begitu saja. Tidak semua hal bisa berjalan sesuai keinginan WILLSON — namun bila menjaga kesehatan dengan serius, rezeki akan datang dengan sendirinya dan kehidupan yang memuaskan pun dapat diraih. Hindari terlalu menonjolkan diri; dengan mengambil peran sebagai pendukung dan pelengkap bagi orang lain, pada akhirnya WILLSON pasti akan mencapai sesuatu yang berarti."
+      },
+      "fumu": {
+        "insight": "WILLSON mungkin memiliki kekurangan dalam hal menyesuaikan diri dengan pandangan orang lain, namun hubungan antara anak dan orang tua tetap terasa hangat. WILLSON memiliki orang tua yang berprestasi tinggi di masyarakat dan berkedudukan terpandang — hubungan keluarga harmonis dan penuh kerukunan. Kedua orang tua juga gemar menabung, sehingga kemungkinan besar meninggalkan warisan yang cukup bagi WILLSON. Pengaruh orang tua sudah tertanam kuat dalam diri WILLSON — kebiasaan menabung sudah mengakar sejak dini. Orang tua sangat memperhatikan etika dan sopan santun, tidak pernah setengah hati dalam mendidik. Apabila hubungan dengan orang tua tidak harmonis, kemungkinan besar karena orang tua meragukan perilaku WILLSON. Konflik dengan orang tua tidak jarang terjadi — namun ketika WILLSON pergi merantau, hubungan justru bisa menjadi lebih harmonis secara tak terduga. Orang tua WILLSON biasanya tenang dan berwibawa, namun jika sudah marah bisa meledak seperti gunung berapi. Apa pun yang sedang WILLSON pikirkan langsung bisa dibaca oleh orang tua — tidak mungkin menyembunyikan apa pun. Bila bersama Wu Qu [[武曲]] atau Lian Zhen [[廉貞]], WILLSON cenderung berpisah dengan orang tua sejak muda. Bila bersama Zi Wei [[紫微]], hubungan orang tua-anak jauh dari pertengkaran dan tidak akan sampai pemutusan hubungan."
+      }
+    },
+    "sintesis": "WILLSON adalah sosok yang mengalir bagai air namun menyimpan api — tenang di luar, penuh semangat di dalam. Dengan kemampuan bergaul yang luar biasa dan sifat bawaan untuk menolong sesama, WILLSON mudah dicintai oleh banyak orang di sekitarnya.",
+    "_sintesis_struct": {
+      "opening": "WILLSON adalah sosok yang mengalir bagai air namun menyimpan api — tenang di luar, penuh semangat di dalam. Dengan kemampuan bergaul yang luar biasa dan sifat bawaan untuk menolong sesama, WILLSON mudah dicintai oleh banyak orang di sekitarnya.",
+      "actions": [
+        {
+          "title": "Bangun Fondasi Finansial"
+        },
+        {
+          "title": "Pilih Karir Intelektual"
+        },
+        {
+          "title": "Pertimbangkan Pernikahan Matang"
+        },
+        {
+          "title": "Jaga Kesehatan Pencernaan"
+        },
+        {
+          "title": "Latih Keteguhan & Ketelitian"
+        }
+      ]
+    },
+    "_dmcard": "\n        <div class=\"dmc-eyebrow\">本 命 · Penguasa Hari</div>\n        <div class=\"dmc-stem\">丙</div>\n        <div class=\"dmc-element\">火 · Api Yang</div>\n        <div class=\"dmc-pinyin\">Bǐng 火, \"Matahari\"</div>\n        <div class=\"dmc-strength\">Status: <span class=\"val\">KUAT</span> · 旺</div>\n      ",
+    "fam_pasangan_vibe": "Hangat &amp; Terbuka · Hindari Menikah di Usia Muda",
+    "fam_pasangan_headline": "Pasangan terbaik dari shio Kerbau, Naga, atau Ular",
+    "caifu_zheng_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "caifu_pian_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "_p1_ming_gong": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Diri</span><span class=\"pn-meta\">Mìng Gōng<span class=\"hz\">命宮</span></span></div></div><div class=\"pal-body\"><p>WILLSON memiliki perjalanan hidup yang mengalir bagai air, tiada henti bergerak dan terus berpindah — sebuah nasib yang selalu dalam gerak dinamis. Sebagai pribadi, WILLSON dikenal tenang dan berpikiran jernih, namun di balik ketenangan itu tersimpan api semangat yang tak pernah padam, selalu membara di dalam dirinya. Postur tubuh WILLSON cenderung lebih tinggi dan lebih bugar dibanding kebanyakan orang. Ciri khasnya adalah kemampuannya bergaul akrab dengan siapa pun tanpa terkecuali, sekaligus memiliki daya pikir yang berputar sangat cepat dan responsif. Sifatnya lemah lembut, ramah dalam pergaulan, dan penuh keluwesan — namun di sisi lain juga bisa keras kepala dan memiliki kecenderungan senang ikut campur urusan orang lain. Setiap kali WILLSON menyaksikan orang lain menghadapi kesulitan, ia tidak bisa berdiam diri — ia pasti akan ikut turun tangan, bahkan tanpa diminta sekalipun. Ketika melihat orang lain yang kurang cakap menangani suatu perkara atau kesulitan mengutarakan kata-kata, WILLSON dengan tulus dan penuh semangat menawarkan bantuan, bak tangan yang selalu siap menolong. Berkat sifat bawaan ini — senang berpihak dan menolong sesama — WILLSON memiliki jaringan pertemanan yang cukup luas, dan sering dipandang sebagai sosok kakak sulung yang bisa diandalkan oleh mereka yang lebih muda. Namun, oleh mereka yang lebih tua, ia kadang justru dipandang sebagai sosok yang suka ikut campur urusan orang. Untuk wanita dengan profil ini, mereka umumnya termasuk dalam golongan wanita berbakat dan cerdas — bahkan melampaui laki-laki dalam banyak hal — dan tidak mau kalah dalam persaingan apa pun. Setelah menikah, WILLSON (wanita) cenderung menjadi istri yang cakap dan berkarakter kuat, mampu memimpin dan memengaruhi suami dengan penuh wibawa. Hal yang perlu diperhatikan adalah agar tidak terlalu dalam mengatur dan mencampuri tindakan pasangan.</p></div>",
+    "_solo_ming_gong_body": "<style>.palace-solo .ps-body p { font-size: 9pt; line-height: 1.48; margin: 0 0 2.2mm 0; }</style><style>.palace-solo .ps-action{display:none!important}</style><p>WILLSON memiliki perjalanan hidup yang mengalir bagai air, tiada henti bergerak dan terus berpindah — sebuah nasib yang selalu dalam gerak dinamis. Sebagai pribadi, WILLSON dikenal tenang dan berpikiran jernih, namun di balik ketenangan itu tersimpan api semangat yang tak pernah padam, selalu membara di dalam dirinya. Postur tubuh WILLSON cenderung lebih tinggi dan lebih bugar dibanding kebanyakan orang. Ciri khasnya adalah kemampuannya bergaul akrab dengan siapa pun tanpa terkecuali, sekaligus memiliki daya pikir yang berputar sangat cepat dan responsif. Sifatnya lemah lembut, ramah dalam pergaulan, dan penuh keluwesan — namun di sisi lain juga bisa keras kepala dan memiliki kecenderungan senang ikut campur urusan orang lain. Setiap kali WILLSON menyaksikan orang lain menghadapi kesulitan, ia tidak bisa berdiam diri — ia pasti akan ikut turun tangan, bahkan tanpa diminta sekalipun. Ketika melihat orang lain yang kurang cakap menangani suatu perkara atau kesulitan mengutarakan kata-kata, WILLSON dengan tulus dan penuh semangat menawarkan bantuan, bak tangan yang selalu siap menolong. Berkat sifat bawaan ini — senang berpihak dan menolong sesama — WILLSON memiliki jaringan pertemanan yang cukup luas, dan sering dipandang sebagai sosok kakak sulung yang bisa diandalkan oleh mereka yang lebih muda. Namun, oleh mereka yang lebih tua, ia kadang justru dipandang sebagai sosok yang suka ikut campur urusan orang. Untuk wanita dengan profil ini, mereka umumnya termasuk dalam golongan wanita berbakat dan cerdas — bahkan melampaui laki-laki dalam banyak hal — dan tidak mau kalah dalam persaingan apa pun. Setelah menikah, WILLSON (wanita) cenderung menjadi istri yang cakap dan berkarakter kuat, mampu memimpin dan memengaruhi suami dengan penuh wibawa. Hal yang perlu diperhatikan adalah agar tidak terlalu dalam mengatur dan mencampuri tindakan pasangan.</p>",
+    "_p1_xiongdi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Saudara</span><span class=\"pn-meta\">Xiōng Dì<span class=\"hz\">兄弟</span></span></div></div><div class=\"pal-body\"><p>WILLSON menjalani hubungan persaudaraan yang terasa jauh secara emosional — ada namun tidak terasa dekat, seperti dua dunia yang berbeda. Saudara kandung maupun sahabat seolah seperti orang asing di jalanan bagi WILLSON, tidak memberikan kontribusi maupun bantuan yang berarti dalam perjalanan hidupnya.</p></div>",
+    "_solo_xiongdi_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>WILLSON menjalani hubungan persaudaraan yang terasa jauh secara emosional — ada namun tidak terasa dekat, seperti dua dunia yang berbeda. Saudara kandung maupun sahabat seolah seperti orang asing di jalanan bagi WILLSON, tidak memberikan kontribusi maupun bantuan yang berarti dalam perjalanan hidupnya.</p>",
+    "_p1_fuqi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pasangan</span><span class=\"pn-meta\">Fū Qī<span class=\"hz\">夫妻</span></span></div></div><div class=\"pal-body\"><p>WILLSON memiliki kepribadian yang ramah dan menyenangkan, sehingga mudah mendapat kasih sayang dan perhatian dari orang-orang sekitarnya. Hubungan cinta WILLSON seharusnya tidak mudah berakhir karena pertengkaran — dan setelah menikah, WILLSON mampu membangun keluarga yang stabil dan penuh kebahagiaan. Namun karena pengaruh bintang Matahari <span class=\"hz\">太陽</span> yang terlalu dominan, menikah di usia muda sangat tidak menguntungkan. Jika memungkinkan, jangan terburu-buru dalam memutuskan pernikahan — pertimbangkan dengan matang dan jalani secara perlahan. Untuk pria, pasangan ideal adalah wanita yang ceria dan sehat secara fisik. Untuk wanita, WILLSON dapat menemukan pria berjiwa besar dan lapang dada. Namun apabila bintang buruk turut menghalangi, WILLSON hampir dapat dipastikan akan langsung menghadapi ancaman perceraian.</p></div>",
+    "_solo_fuqi_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>WILLSON memiliki kepribadian yang ramah dan menyenangkan, sehingga mudah mendapat kasih sayang dan perhatian dari orang-orang sekitarnya. Hubungan cinta WILLSON seharusnya tidak mudah berakhir karena pertengkaran — dan setelah menikah, WILLSON mampu membangun keluarga yang stabil dan penuh kebahagiaan. Namun karena pengaruh bintang Matahari <span class=\"hz\">太陽</span> yang terlalu dominan, menikah di usia muda sangat tidak menguntungkan. Jika memungkinkan, jangan terburu-buru dalam memutuskan pernikahan — pertimbangkan dengan matang dan jalani secara perlahan. Untuk pria, pasangan ideal adalah wanita yang ceria dan sehat secara fisik. Untuk wanita, WILLSON dapat menemukan pria berjiwa besar dan lapang dada. Namun apabila bintang buruk turut menghalangi, WILLSON hampir dapat dipastikan akan langsung menghadapi ancaman perceraian.</p>",
+    "_p1_zinu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Anak</span><span class=\"pn-meta\">Zǐ Nǚ<span class=\"hz\">子女</span></span></div></div><div class=\"pal-body\"><p>Anak-anak WILLSON berpotensi bersifat pemberontak — sering berselisih dengan orang tua, dan bahkan bisa pergi meninggalkan rumah sewaktu-waktu. Ada kemungkinan tidak memiliki keturunan, atau jika ada, kemungkinan hanya satu orang saja. Apabila bintang Qi Sha <span class=\"hz\">七殺</span> dan Ju Men <span class=\"hz\">巨門</span> turut hadir di istana ini, ada risiko perpisahan dengan anak — baik hidup berjauhan maupun kehilangan. Bila bersama bintang Tan Lang <span class=\"hz\">貪狼</span>, kebaikan dan dukungan dari anak-anak akan terasa nyata di hari tua WILLSON. Bila hanya Wu Qu <span class=\"hz\">武曲</span> yang hadir tanpa bintang lain, anak dari luar pernikahan atau anak angkat justru lebih berpotensi membantu kesuksesan WILLSON. Bintang Qi Sha <span class=\"hz\">七殺</span> juga dikenal sebagai bintang pemutus keturunan — bahkan jika ada anak, sifatnya sangat keras kepala dan seringkali berada di posisi bertentangan. Namun apabila Zi Wei <span class=\"hz\">紫微</span> turut hadir di istana ini, pengaruh buruk dapat dinetralkan dan WILLSON mampu membesarkan anak dengan baik. Di sisi lain, anak-anak WILLSON pada dasarnya terlahir dengan bakat seni yang tinggi — hubungan orang tua dan anak penuh keharmonisan dan kebahagiaan, jauh dari perselisihan. Namun bila bintang buruk turut hadir, memiliki anak menjadi sulit; dan bahkan jika ada, urusan mendidik dan mengelola anak menjadi persoalan yang tak ada habisnya.</p></div>",
+    "_solo_zinu_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>Anak-anak WILLSON berpotensi bersifat pemberontak — sering berselisih dengan orang tua, dan bahkan bisa pergi meninggalkan rumah sewaktu-waktu. Ada kemungkinan tidak memiliki keturunan, atau jika ada, kemungkinan hanya satu orang saja. Apabila bintang Qi Sha <span class=\"hz\">七殺</span> dan Ju Men <span class=\"hz\">巨門</span> turut hadir di istana ini, ada risiko perpisahan dengan anak — baik hidup berjauhan maupun kehilangan. Bila bersama bintang Tan Lang <span class=\"hz\">貪狼</span>, kebaikan dan dukungan dari anak-anak akan terasa nyata di hari tua WILLSON. Bila hanya Wu Qu <span class=\"hz\">武曲</span> yang hadir tanpa bintang lain, anak dari luar pernikahan atau anak angkat justru lebih berpotensi membantu kesuksesan WILLSON. Bintang Qi Sha <span class=\"hz\">七殺</span> juga dikenal sebagai bintang pemutus keturunan — bahkan jika ada anak, sifatnya sangat keras kepala dan seringkali berada di posisi bertentangan. Namun apabila Zi Wei <span class=\"hz\">紫微</span> turut hadir di istana ini, pengaruh buruk dapat dinetralkan dan WILLSON mampu membesarkan anak dengan baik. Di sisi lain, anak-anak WILLSON pada dasarnya terlahir dengan bakat seni yang tinggi — hubungan orang tua dan anak penuh keharmonisan dan kebahagiaan, jauh dari perselisihan. Namun bila bintang buruk turut hadir, memiliki anak menjadi sulit; dan bahkan jika ada, urusan mendidik dan mengelola anak menjadi persoalan yang tak ada habisnya.</p>",
+    "_p2_caibo": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Rezeki</span><span class=\"pn-meta\">Cái Bó<span class=\"hz\">財帛</span></span></div></div><div class=\"pal-body\"><p>WILLSON adalah pribadi yang terencana dan cermat dalam mengelola uang — selalu berhitung teliti dalam setiap pengeluaran. Kekayaan dibangun dari nol dengan kemampuan sendiri, menguasai peluang menghasilkan uang secara mandiri — namun rezeki besar baru mulai mengalir sejak pertengahan umur. Bila bintang Tian Liang <span class=\"hz\">天梁</span> turut hadir, WILLSON berpotensi menjadi seorang pemilik aset yang sangat kuat. Bahkan bila ada bintang buruk yang turut hadir, jika WILLSON memilih profesi sebagai dokter, ilmuwan, seniman, atau konsultan, keberuntungan finansial tetap terjaga dengan baik. Secara keseluruhan, WILLSON dapat menjalani hidup yang berkecukupan dan makmur. Bila bintang Zi Wei <span class=\"hz\">紫微</span> turut hadir, aliran keuangan menjadi lebih lancar disertai pendapatan yang stabil, dan seringkali mendapat kesempatan menghasilkan uang besar. Bila bersama Wu Qu <span class=\"hz\">武曲</span>, WILLSON rajin menerapkan berbagai strategi untuk mengoptimalkan pendapatan. Bila bersama Lian Zhen <span class=\"hz\">廉貞</span>, kekayaan dapat dicapai melalui bisnis nyata dan industri.</p></div>",
+    "_solo_caibo_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>WILLSON adalah pribadi yang terencana dan cermat dalam mengelola uang — selalu berhitung teliti dalam setiap pengeluaran. Kekayaan dibangun dari nol dengan kemampuan sendiri, menguasai peluang menghasilkan uang secara mandiri — namun rezeki besar baru mulai mengalir sejak pertengahan umur. Bila bintang Tian Liang <span class=\"hz\">天梁</span> turut hadir, WILLSON berpotensi menjadi seorang pemilik aset yang sangat kuat. Bahkan bila ada bintang buruk yang turut hadir, jika WILLSON memilih profesi sebagai dokter, ilmuwan, seniman, atau konsultan, keberuntungan finansial tetap terjaga dengan baik. Secara keseluruhan, WILLSON dapat menjalani hidup yang berkecukupan dan makmur. Bila bintang Zi Wei <span class=\"hz\">紫微</span> turut hadir, aliran keuangan menjadi lebih lancar disertai pendapatan yang stabil, dan seringkali mendapat kesempatan menghasilkan uang besar. Bila bersama Wu Qu <span class=\"hz\">武曲</span>, WILLSON rajin menerapkan berbagai strategi untuk mengoptimalkan pendapatan. Bila bersama Lian Zhen <span class=\"hz\">廉貞</span>, kekayaan dapat dicapai melalui bisnis nyata dan industri.</p>",
+    "_p2_jie_e": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Kesehatan</span><span class=\"pn-meta\">Jí È<span class=\"hz\">疾厄</span></span></div></div><div class=\"pal-body\"><p>WILLSON rentan terhadap penyakit yang berkaitan dengan sistem pencernaan. Selain itu juga perlu mewaspadai gangguan kandung kemih, masalah pelupa, kelelahan kronis, serta gangguan pada pergelangan tangan dan bibir. Bintang Langit <span class=\"hz\">天相</span> adalah bintang yang secara umum bersifat membawa penyakit, namun sesekali membawa keberuntungan yang jarang. Bila bintang Zi Wei <span class=\"hz\">紫微</span> turut berada di istana yang sama, kemungkinan besar WILLSON jarang berurusan dengan dokter sepanjang hidup. Namun apabila istana Kesehatan berada di posisi Mao <span class=\"hz\">卯</span> atau You <span class=\"hz\">酉</span>, sulit bagi bintang Langit untuk menjalankan fungsi baiknya — dan WILLSON kemungkinan besar rentan terhadap penyakit kulit atau penyakit kuning.</p></div>",
+    "_solo_jie_e_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>WILLSON rentan terhadap penyakit yang berkaitan dengan sistem pencernaan. Selain itu juga perlu mewaspadai gangguan kandung kemih, masalah pelupa, kelelahan kronis, serta gangguan pada pergelangan tangan dan bibir. Bintang Langit <span class=\"hz\">天相</span> adalah bintang yang secara umum bersifat membawa penyakit, namun sesekali membawa keberuntungan yang jarang. Bila bintang Zi Wei <span class=\"hz\">紫微</span> turut berada di istana yang sama, kemungkinan besar WILLSON jarang berurusan dengan dokter sepanjang hidup. Namun apabila istana Kesehatan berada di posisi Mao <span class=\"hz\">卯</span> atau You <span class=\"hz\">酉</span>, sulit bagi bintang Langit untuk menjalankan fungsi baiknya — dan WILLSON kemungkinan besar rentan terhadap penyakit kulit atau penyakit kuning.</p>",
+    "_p2_qianyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Perpindahan</span><span class=\"pn-meta\">Qiān Yí<span class=\"hz\">遷移</span></span></div></div><div class=\"pal-body\"><p>WILLSON termasuk tipe pribadi yang penuh semangat membara — bertindak dengan penuh antusias, bak api yang menyala, dengan gaya bergerak yang impulsif dan penuh gairah. Namun setiap kali menghadapi perubahan besar, WILLSON kerap menemukan nasib buruk yang sudah menanti. Misalnya, setelah pindah rumah baru kemudian menyadari properti tersebut cacat atau tidak lengkap fasilitasnya; atau berpindah ke perusahaan baru namun kemudian mengetahui kondisi perusahaan itu buruk, bahkan tiba-tiba gulung tikar tidak lama kemudian. Singkatnya, ke mana pun WILLSON pergi, selalu ada hal tidak menyenangkan yang sudah menunggu. Sungguh hampir tidak ada waktu untuk menjaga ketenangan batin. Jika memungkinkan, hindari terlalu sering melakukan perubahan besar — dan apabila terjadi peristiwa tidak menyenangkan, lebih baik menahannya dalam hati dan tidak bereaksi berlebihan.</p></div>",
+    "_solo_qianyi_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>WILLSON termasuk tipe pribadi yang penuh semangat membara — bertindak dengan penuh antusias, bak api yang menyala, dengan gaya bergerak yang impulsif dan penuh gairah. Namun setiap kali menghadapi perubahan besar, WILLSON kerap menemukan nasib buruk yang sudah menanti. Misalnya, setelah pindah rumah baru kemudian menyadari properti tersebut cacat atau tidak lengkap fasilitasnya; atau berpindah ke perusahaan baru namun kemudian mengetahui kondisi perusahaan itu buruk, bahkan tiba-tiba gulung tikar tidak lama kemudian. Singkatnya, ke mana pun WILLSON pergi, selalu ada hal tidak menyenangkan yang sudah menunggu. Sungguh hampir tidak ada waktu untuk menjaga ketenangan batin. Jika memungkinkan, hindari terlalu sering melakukan perubahan besar — dan apabila terjadi peristiwa tidak menyenangkan, lebih baik menahannya dalam hati dan tidak bereaksi berlebihan.</p>",
+    "_p2_puyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pertemanan</span><span class=\"pn-meta\">Pú Yì<span class=\"hz\">僕役</span></span></div></div><div class=\"pal-body\"><p>WILLSON dapat menemukan bawahan yang terampil, selektif, dan penuh pertimbangan. Namun kemungkinan besar sering dibuat pusing oleh bawahan yang memberontak! Bila berada di dalam istana ini, ada risiko dikhianati oleh bawahan — namun di masa tua, barulah WILLSON mendapatkan bawahan yang benar-benar loyal dan mendukung. Bila bersama Tan Lang <span class=\"hz\">貪狼</span>, WILLSON murni hanya menjadi alat yang dimanfaatkan para bawahan. Bila bersama Qi Sha <span class=\"hz\">七殺</span>, sering dikhianati oleh teman sendiri. Bila bersama Tian Tong <span class=\"hz\">天同</span>, banyak teman dan bawahan dari kalangan usia muda. Secara umum, WILLSON sulit mendapatkan dukungan sejati dari bawahan; jika bawahannya adalah wanita, mereka cenderung berambisi tinggi dan suka bersaing. Teman-teman di usia muda pun jarang, dan yang ada sebenarnya kebanyakan hanya ingin memanfaatkan WILLSON. Di sisi lain, bawahan WILLSON yang sesungguhnya amat bersemangat dalam pekerjaan dan berbakat mandiri — sehingga dapat dijadikan tangan kanan yang andal. Namun apabila berada di posisi istana Yin <span class=\"hz\">寅</span>, Wu <span class=\"hz\">午</span>, atau Xu <span class=\"hz\">戌</span>, hubungan dapat memburuk atau bahkan berujung pengkhianatan — hal ini patut diwaspadai.</p></div>",
+    "_solo_puyi_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>WILLSON dapat menemukan bawahan yang terampil, selektif, dan penuh pertimbangan. Namun kemungkinan besar sering dibuat pusing oleh bawahan yang memberontak! Bila berada di dalam istana ini, ada risiko dikhianati oleh bawahan — namun di masa tua, barulah WILLSON mendapatkan bawahan yang benar-benar loyal dan mendukung. Bila bersama Tan Lang <span class=\"hz\">貪狼</span>, WILLSON murni hanya menjadi alat yang dimanfaatkan para bawahan. Bila bersama Qi Sha <span class=\"hz\">七殺</span>, sering dikhianati oleh teman sendiri. Bila bersama Tian Tong <span class=\"hz\">天同</span>, banyak teman dan bawahan dari kalangan usia muda. Secara umum, WILLSON sulit mendapatkan dukungan sejati dari bawahan; jika bawahannya adalah wanita, mereka cenderung berambisi tinggi dan suka bersaing. Teman-teman di usia muda pun jarang, dan yang ada sebenarnya kebanyakan hanya ingin memanfaatkan WILLSON. Di sisi lain, bawahan WILLSON yang sesungguhnya amat bersemangat dalam pekerjaan dan berbakat mandiri — sehingga dapat dijadikan tangan kanan yang andal. Namun apabila berada di posisi istana Yin <span class=\"hz\">寅</span>, Wu <span class=\"hz\">午</span>, atau Xu <span class=\"hz\">戌</span>, hubungan dapat memburuk atau bahkan berujung pengkhianatan — hal ini patut diwaspadai.</p>",
+    "_p3_guanlu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Karir</span><span class=\"pn-meta\">Guān Lù<span class=\"hz\">官祿</span></span></div></div><div class=\"pal-body\"><p>WILLSON paling cocok dengan profesi pendidik, rohaniwan, penerbit, politisi, pengacara, pertambangan, atau bidang perantara dan konsultasi. Secara umum, WILLSON paling sesuai dengan pekerjaan intelektual yang membutuhkan penilaian tenang dan rasional. Bila berkarir sebagai programmer, pengacara, sekretaris, editor, atau desainer teknis, WILLSON dapat berkembang pesat di masyarakat. Namun apabila istana Karir berada di posisi Si <span class=\"hz\">巳</span> atau Wu <span class=\"hz\">午</span>, karir cenderung bergeser ke arah yang terlalu tinggi angan-angannya. Karir WILLSON juga cenderung banyak berubah — bukan tipe yang bisa bertahan lama dalam satu bidang yang sama. Bila bersama bintang Tian Tong <span class=\"hz\">天同</span>, kemampuan menulis cukup baik dan menekuni jalur penulisan akan memberikan pencapaian yang signifikan. Bila bersama Tian Ji <span class=\"hz\">天機</span>, mengisyaratkan bahwa kerja keras yang panjang akhirnya akan berbuah hasil yang manis.</p></div>",
+    "_solo_guanlu_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>WILLSON paling cocok dengan profesi pendidik, rohaniwan, penerbit, politisi, pengacara, pertambangan, atau bidang perantara dan konsultasi. Secara umum, WILLSON paling sesuai dengan pekerjaan intelektual yang membutuhkan penilaian tenang dan rasional. Bila berkarir sebagai programmer, pengacara, sekretaris, editor, atau desainer teknis, WILLSON dapat berkembang pesat di masyarakat. Namun apabila istana Karir berada di posisi Si <span class=\"hz\">巳</span> atau Wu <span class=\"hz\">午</span>, karir cenderung bergeser ke arah yang terlalu tinggi angan-angannya. Karir WILLSON juga cenderung banyak berubah — bukan tipe yang bisa bertahan lama dalam satu bidang yang sama. Bila bersama bintang Tian Tong <span class=\"hz\">天同</span>, kemampuan menulis cukup baik dan menekuni jalur penulisan akan memberikan pencapaian yang signifikan. Bila bersama Tian Ji <span class=\"hz\">天機</span>, mengisyaratkan bahwa kerja keras yang panjang akhirnya akan berbuah hasil yang manis.</p>",
+    "_p3_tianzhai": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Properti</span><span class=\"pn-meta\">Tián Zhái<span class=\"hz\">田宅</span></span></div></div><div class=\"pal-body\"><p>WILLSON mendapatkan berkah properti, meski jumlahnya tidak terlalu besar. Di satu sisi, WILLSON dapat mempertahankan warisan properti dari kedua orang tua, sekaligus mampu membeli sejumlah properti sendiri. Bintang Pelindung Kekayaan <span class=\"hz\">天府</span> pada dasarnya menguasai kekuatan finansial dan kekayaan — sehingga urusan properti WILLSON terbilang cukup stabil. Namun karena perkembangan ini sangat bergantung pada dukungan keluarga, apabila WILLSON terlalu mencolok dan melakukan transaksi properti skala besar, pasti akan mendapat tekanan dan hambatan. Tanah atau lahan yang bersifat kering sangat menguntungkan bagi WILLSON.</p></div>",
+    "_solo_tianzhai_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>WILLSON mendapatkan berkah properti, meski jumlahnya tidak terlalu besar. Di satu sisi, WILLSON dapat mempertahankan warisan properti dari kedua orang tua, sekaligus mampu membeli sejumlah properti sendiri. Bintang Pelindung Kekayaan <span class=\"hz\">天府</span> pada dasarnya menguasai kekuatan finansial dan kekayaan — sehingga urusan properti WILLSON terbilang cukup stabil. Namun karena perkembangan ini sangat bergantung pada dukungan keluarga, apabila WILLSON terlalu mencolok dan melakukan transaksi properti skala besar, pasti akan mendapat tekanan dan hambatan. Tanah atau lahan yang bersifat kering sangat menguntungkan bagi WILLSON.</p>",
+    "_p3_fude": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Berkah</span><span class=\"pn-meta\">Fú Dé<span class=\"hz\">福德</span></span></div></div><div class=\"pal-body\"><p>WILLSON adalah pribadi yang menyimpan kebajikan dan keberuntungan dalam dirinya — murah hati dan penuh pesona alami. Hal ini mengisyaratkan adanya keberuntungan yang mengalir dari kebajikan yang dimiliki. WILLSON sangat pandai dalam bergaul dan memperhatikan cara memperlakukan orang lain. Namun apabila terhalang oleh kritik atau penentangan dari orang lain, keberuntungan yang sudah di tangan bisa sirna begitu saja. Tidak semua hal bisa berjalan sesuai keinginan WILLSON — namun bila menjaga kesehatan dengan serius, rezeki akan datang dengan sendirinya dan kehidupan yang memuaskan pun dapat diraih. Hindari terlalu menonjolkan diri; dengan mengambil peran sebagai pendukung dan pelengkap bagi orang lain, pada akhirnya WILLSON pasti akan mencapai sesuatu yang berarti.</p></div>",
+    "_solo_fude_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>WILLSON adalah pribadi yang menyimpan kebajikan dan keberuntungan dalam dirinya — murah hati dan penuh pesona alami. Hal ini mengisyaratkan adanya keberuntungan yang mengalir dari kebajikan yang dimiliki. WILLSON sangat pandai dalam bergaul dan memperhatikan cara memperlakukan orang lain. Namun apabila terhalang oleh kritik atau penentangan dari orang lain, keberuntungan yang sudah di tangan bisa sirna begitu saja. Tidak semua hal bisa berjalan sesuai keinginan WILLSON — namun bila menjaga kesehatan dengan serius, rezeki akan datang dengan sendirinya dan kehidupan yang memuaskan pun dapat diraih. Hindari terlalu menonjolkan diri; dengan mengambil peran sebagai pendukung dan pelengkap bagi orang lain, pada akhirnya WILLSON pasti akan mencapai sesuatu yang berarti.</p>",
+    "_p3_fumu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Orang Tua</span><span class=\"pn-meta\">Fù Mǔ<span class=\"hz\">父母</span></span></div></div><div class=\"pal-body\"><p>WILLSON mungkin memiliki kekurangan dalam hal menyesuaikan diri dengan pandangan orang lain, namun hubungan antara anak dan orang tua tetap terasa hangat. WILLSON memiliki orang tua yang berprestasi tinggi di masyarakat dan berkedudukan terpandang — hubungan keluarga harmonis dan penuh kerukunan. Kedua orang tua juga gemar menabung, sehingga kemungkinan besar meninggalkan warisan yang cukup bagi WILLSON. Pengaruh orang tua sudah tertanam kuat dalam diri WILLSON — kebiasaan menabung sudah mengakar sejak dini. Orang tua sangat memperhatikan etika dan sopan santun, tidak pernah setengah hati dalam mendidik. Apabila hubungan dengan orang tua tidak harmonis, kemungkinan besar karena orang tua meragukan perilaku WILLSON. Konflik dengan orang tua tidak jarang terjadi — namun ketika WILLSON pergi merantau, hubungan justru bisa menjadi lebih harmonis secara tak terduga. Orang tua WILLSON biasanya tenang dan berwibawa, namun jika sudah marah bisa meledak seperti gunung berapi. Apa pun yang sedang WILLSON pikirkan langsung bisa dibaca oleh orang tua — tidak mungkin menyembunyikan apa pun. Bila bersama Wu Qu <span class=\"hz\">武曲</span> atau Lian Zhen <span class=\"hz\">廉貞</span>, WILLSON cenderung berpisah dengan orang tua sejak muda. Bila bersama Zi Wei <span class=\"hz\">紫微</span>, hubungan orang tua-anak jauh dari pertengkaran dan tidak akan sampai pemutusan hubungan.</p></div>",
+    "_solo_fumu_body": "<style>.palace-solo .ps-action{display:none!important}</style><p>WILLSON mungkin memiliki kekurangan dalam hal menyesuaikan diri dengan pandangan orang lain, namun hubungan antara anak dan orang tua tetap terasa hangat. WILLSON memiliki orang tua yang berprestasi tinggi di masyarakat dan berkedudukan terpandang — hubungan keluarga harmonis dan penuh kerukunan. Kedua orang tua juga gemar menabung, sehingga kemungkinan besar meninggalkan warisan yang cukup bagi WILLSON. Pengaruh orang tua sudah tertanam kuat dalam diri WILLSON — kebiasaan menabung sudah mengakar sejak dini. Orang tua sangat memperhatikan etika dan sopan santun, tidak pernah setengah hati dalam mendidik. Apabila hubungan dengan orang tua tidak harmonis, kemungkinan besar karena orang tua meragukan perilaku WILLSON. Konflik dengan orang tua tidak jarang terjadi — namun ketika WILLSON pergi merantau, hubungan justru bisa menjadi lebih harmonis secara tak terduga. Orang tua WILLSON biasanya tenang dan berwibawa, namun jika sudah marah bisa meledak seperti gunung berapi. Apa pun yang sedang WILLSON pikirkan langsung bisa dibaca oleh orang tua — tidak mungkin menyembunyikan apa pun. Bila bersama Wu Qu <span class=\"hz\">武曲</span> atau Lian Zhen <span class=\"hz\">廉貞</span>, WILLSON cenderung berpisah dengan orang tua sejak muda. Bila bersama Zi Wei <span class=\"hz\">紫微</span>, hubungan orang tua-anak jauh dari pertengkaran dan tidak akan sampai pemutusan hubungan.</p>",
+    "_kes_narrative": "<p>WILLSON adalah pribadi yang mengalir bagai air — selalu bergerak, selalu berpindah, namun di balik itu tersimpan api semangat yang tak pernah padam. Dengan Day Master 丙火 (Api Yang), WILLSON terlahir dengan kehangatan alami yang membuat orang mudah merasa nyaman di dekatnya. Kemampuan bergaul dengan siapa pun, fisik yang lebih kuat dari rata-rata, dan daya pikir yang cepat menjadi aset besar dalam hidupnya. Sifat suka menolong — bahkan tanpa diminta — telah membangun jaringan pertemanan yang luas dan menjadikannya sosok yang diandalkan oleh mereka yang lebih muda. Namun sifat yang sama ini juga bisa menjadi bumerang: terlalu ikut campur, keras kepala, dan sulit menerima nasihat dari orang-orang terdekat adalah tantangan yang perlu terus dikelola. Dalam hal finansial, WILLSON tidak terlalu terikat pada materi, namun perlu disiplin agar kekayaan tidak habis begitu saja — aset nyata dan properti adalah cara terbaik untuk mengamankan rezeki. Rezeki besar baru mulai mengalir sejak pertengahan umur, sehingga konsistensi dan kesabaran adalah investasi terpenting. Untuk urusan asmara, WILLSON paling cocok dengan pasangan dari shio Kerbau, Naga, atau Ular yang dapat membawa kemakmuran dan keharmonisan jangka panjang. Menikah di usia muda sangat tidak disarankan — waktu dan pertimbangan matang adalah kunci. Karir terbaik WILLSON ada di bidang intelektual: pendidikan, penerbitan, hukum, konsultasi, atau pekerjaan kreatif. Kesehatan perlu dijaga terutama pada sistem pencernaan dan kandung kemih. Dengan menjaga keseimbangan antara semangat dan ketenangan, antara membantu dan memberi ruang, WILLSON memiliki semua modal untuk menjalani kehidupan yang bermakna dan penuh pencapaian.</p>",
+    "_kes_stats": "\n      <div class=\"kes-stat s1\"><div class=\"ks-eb\">Penguasa Hari · 日主</div><div class=\"ks-num\"><span class=\"hz\">丙火</span><span class=\"unit\">— · None</span></div><div class=\"ks-title\">Api Matahari —</div><div class=\"ks-desc\">Total Wu Xing 8, 火 <strong>50.0%</strong> dari distribusi total</div></div>\n      <div class=\"kes-stat s2\"><div class=\"ks-eb\">Format · 格局</div><div class=\"ks-num\"><span class=\"hz\">—</span><span class=\"unit\">FORMAT</span></div><div class=\"ks-title\">—, —</div><div class=\"ks-desc\">Konfigurasi BaZi yang membentuk pola karakter dan jalur takdir utama subjek.</div></div>\n      <div class=\"kes-stat s3\"><div class=\"ks-eb\">Yong Shen · 喜用神</div><div class=\"ks-num\"><span class=\"hz\">—</span><span class=\"unit\">MENDUKUNG</span></div><div class=\"ks-title\">—, —</div><div class=\"ks-desc\">Unsur penopang yang sebaiknya diaktifkan lewat lingkungan, profesi, warna, dan keputusan hidup.</div></div>\n      <div class=\"kes-stat s4\"><div class=\"ks-eb\">Da Yun · 大運</div><div class=\"ks-num\">Fase 1<span class=\"unit\">dari 10</span></div><div class=\"ks-title\">Fase — (—-—)</div><div class=\"ks-desc\">Cycle 10 tahun yang sedang dijalani, periode pembentukan tema utama dekade ini.</div></div>\n      <div class=\"kes-stat s5\"><div class=\"ks-eb\">Umur Subjek</div><div class=\"ks-num\">34<span class=\"unit\">tahun</span></div><div class=\"ks-title\">Era 30–39</div><div class=\"ks-desc\">Tahap kehidupan saat laporan ini dibuat, rentang dekade aktif subjek.</div></div>\n      <div class=\"kes-stat s6\"><div class=\"ks-eb\">Jodoh · 婚配 / 陽宅</div><div class=\"ks-num\">3 <span class=\"unit\">cocok · 4 hindari</span></div><div class=\"ks-desc\">Hindari: Tikus (子) · Kelinci (卯) · Ayam (酉) · Anjing (戌) · Trigram <strong>Danau</strong> (兌) · Kelompok Barat</div></div>\n    ",
+    "_kes_age": "34",
+    "_kes_lifemap": "\n          <div class=\"klm-row now\"><div class=\"klm-row-icon\">今<span class=\"id-label\">Kini</span></div><div class=\"klm-row-text\"><span class=\"lbl\">SEKARANG</span>Fase — —— (—-—), tema utama — membentuk dekade ini.</div></div>\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">未<span class=\"id-label\">Nanti</span></div><div class=\"klm-row-text\"><span class=\"lbl\">BERIKUTNYA</span>Fase —— — (—-—), transisi menuju tema baru.</div></div>\n        ",
+    "_kes_position": "\n          <div class=\"klp-eb\">Posisi Sekarang</div>\n          <div class=\"klp-hz\">春</div>\n          <div class=\"klp-id\">Chūn, \"Musim Semi Hidup\"</div>\n          <div class=\"klp-bar\">\n            <div class=\"klp-bar-cell now\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n          </div>\n          <div class=\"klp-meta\">Fase <strong>1 dari 10</strong> · Umur <strong>—-—</strong> · <strong>火 Api</strong> dominan · Musim Semi Hidup</div>\n        ",
+    "_syn_attrib": "Api Matahari · — · —",
+    "_syn_actions": "\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">1</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Bangun Fondasi Finansial</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">2</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Pilih Karir Intelektual</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">3</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Pertimbangkan Pernikahan Matang</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">4</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Jaga Kesehatan Pencernaan</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">5</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Latih Keteguhan &amp; Ketelitian</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n      ",
+    "_career_wuxing": "\n        <div class=\"wux-cell self\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">火 Api<span class=\"v\">4</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:50%\"></div></div>\n          <div class=\"wux-label\">水 Air<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:25%\"></div></div>\n          <div class=\"wux-label\">金 Logam<span class=\"v\">1</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:25%\"></div></div>\n          <div class=\"wux-label\">土 Tanah<span class=\"v\">1</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:0%\"></div></div>\n          <div class=\"wux-label\">木 Kayu<span class=\"v\">0</span></div>\n        </div>\n",
+    "_career_title": "— adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini",
+    "_xqcards": "\n      <div class=\"xq-card power\">\n        <div class=\"xqc-eb\">魄 力 · Kekuatan</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">優勢</span><span class=\"xqc-name\">Yōu Shì<br>Keunggulan</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Ramah dan mudah bergaul dengan siapa pun, memiliki daya pikir cepat dan kemampuan operasional yang tinggi.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Fisik kuat, mandiri, dan berani mengambil tindakan nyata untuk menyelesaikan masalah.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Jujur, bertanggung jawab, dan menghormati aturan — dipercaya sebagai sosok yang diandalkan orang lain.</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card shadow\">\n        <div class=\"xqc-eb\">陰 影 · Shadow</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">隱 患</span><span class=\"xqc-name\">Yǐn Huàn<br>Sisi Gelap</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Cenderung keras kepala dan suka ikut campur urusan orang lain, bahkan tanpa diminta.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kurang teliti dalam detail dan kurang mampu membedakan hal-hal secara mendalam.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Karakter kurang teguh — mudah terbawa perasaan, rasa gengsi tinggi, dan tergesa-gesa dalam bertindak.</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card optimum\">\n        <div class=\"xqc-eb\">最 佳 · Optimum</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">應 用</span><span class=\"xqc-name\">Yīng Yòng<br>Cara Optimal</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Latih diri untuk menahan dorongan ikut campur urusan orang — beri ruang bagi orang lain untuk menyelesaikan masalahnya sendiri.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Tingkatkan ketelitian dan kemampuan analisis detail agar potensi kepemimpinan dan operasional bisa lebih maksimal.</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Jaga keseimbangan antara tindakan cepat dan pertimbangan matang — kegegabahan bisa merusak hasil yang sudah dibangun.</span></div>\n        </div>\n      </div>\n    "
+  }
+}

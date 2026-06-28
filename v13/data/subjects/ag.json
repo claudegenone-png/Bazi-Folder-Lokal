@@ -1,0 +1,892 @@
+{
+  "subject_id": "ag",
+  "_built_by": "build_from_ocr.py V4.5 FULL-MD",
+  "identity": {
+    "name_id": "AGUS H",
+    "name_hanzi": "",
+    "gender_id": "Pria",
+    "birth_date": "1978-08-10",
+    "birth_time": "10:20",
+    "birth_day_name": "Kamis",
+    "birth_period_id": "pagi",
+    "birth_hour_branch_hz": "巳",
+    "birth_hour_period_label": "pagi · 巳時",
+    "lunar_date_text_new": "tanggal 7 bulan 7 tahun 戊午 (Wu Wu · 1978)",
+    "lunar_year_pillar_hz": "戊午",
+    "lunar_republic_text": "民國 67 年 7 月 7 日",
+    "age_at_report": 49
+  },
+  "shio": {
+    "branch_hz": "午",
+    "branch_pinyin": "Wǔ",
+    "id": "Kuda",
+    "id_upper": "KUDA",
+    "svg_red": "Kuda-Merah.svg",
+    "svg_black": "Kuda-Hitam.svg"
+  },
+  "ti_xiang": null,
+  "day_master": {
+    "stem_hz": "甲",
+    "stem_element_hz": "木",
+    "stem_element_id": "Kayu",
+    "polarity_id": "Yang",
+    "label_id": "Pohon Besar",
+    "label_long_id": "Kayu",
+    "pinyin": "Jiǎ 木",
+    "strength_id": "—",
+    "strength_hz": null
+  },
+  "pillars": {
+    "year": {
+      "stem_hz": "戊",
+      "branch_hz": "午"
+    },
+    "month": {
+      "stem_hz": "庚",
+      "branch_hz": "申"
+    },
+    "day": {
+      "stem_hz": "甲",
+      "branch_hz": "辰"
+    },
+    "hour": {
+      "stem_hz": "己",
+      "branch_hz": "巳"
+    }
+  },
+  "wuxing": {
+    "jin": {
+      "value": 2.0,
+      "percent": 25.0,
+      "label_id": "Logam"
+    },
+    "shui": {
+      "value": 0.0,
+      "percent": 0.0,
+      "label_id": "Air"
+    },
+    "mu": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Kayu"
+    },
+    "huo": {
+      "value": 2.0,
+      "percent": 25.0,
+      "label_id": "Api"
+    },
+    "tu": {
+      "value": 3.0,
+      "percent": 37.5,
+      "label_id": "Tanah"
+    },
+    "total": 8.0,
+    "self_value": 1.0,
+    "self_el_hz": "—",
+    "fav_hz": "—",
+    "unfav_hz": "—",
+    "axis_max": "—",
+    "insight_id": null,
+    "_empty": false
+  },
+  "yong_shen": {
+    "elements_hz": "火",
+    "elements_id": "Api",
+    "label_id": "Penopang & Pengarah",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "ji_shen": {
+    "elements_hz": "金",
+    "elements_id": "Logam",
+    "label_id": "Pelumat & Pemicu",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "format": {
+    "hz": "七殺格",
+    "pinyin": "Qi Sha Ge",
+    "label_id": "Pemurnian",
+    "glyph_hz": "—"
+  },
+  "da_yun": {
+    "start_age": 11,
+    "direction_id": "forward",
+    "current_index": 3,
+    "axis_marks": [
+      11,
+      21,
+      31,
+      41,
+      51,
+      61,
+      71,
+      81,
+      91,
+      101,
+      111
+    ],
+    "cycles": [
+      {
+        "n": 1,
+        "age_start": 11,
+        "age_end": 20,
+        "stem_hz": "辛",
+        "branch_hz": "酉",
+        "ten_god_hz": "正官",
+        "ten_god_id": "Otoritas",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 2,
+        "age_start": 21,
+        "age_end": 30,
+        "stem_hz": "壬",
+        "branch_hz": "戌",
+        "ten_god_hz": "偏印",
+        "ten_god_id": "Mentor",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 3,
+        "age_start": 31,
+        "age_end": 40,
+        "stem_hz": "癸",
+        "branch_hz": "亥",
+        "ten_god_hz": "正印",
+        "ten_god_id": "Pelajaran",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 4,
+        "age_start": 41,
+        "age_end": 50,
+        "stem_hz": "甲",
+        "branch_hz": "子",
+        "ten_god_hz": "比肩",
+        "ten_god_id": "Pundak Sama",
+        "element_class": "el-mu",
+        "is_current": true
+      },
+      {
+        "n": 5,
+        "age_start": 51,
+        "age_end": 60,
+        "stem_hz": "乙",
+        "branch_hz": "丑",
+        "ten_god_hz": "劫財",
+        "ten_god_id": "Saudara Sebanding",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 6,
+        "age_start": 61,
+        "age_end": 70,
+        "stem_hz": "丙",
+        "branch_hz": "寅",
+        "ten_god_hz": "食神",
+        "ten_god_id": "Pencipta",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 7,
+        "age_start": 71,
+        "age_end": 80,
+        "stem_hz": "丁",
+        "branch_hz": "卯",
+        "ten_god_hz": "傷官",
+        "ten_god_id": "Kritikus Tajam",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 8,
+        "age_start": 81,
+        "age_end": 90,
+        "stem_hz": "戊",
+        "branch_hz": "辰",
+        "ten_god_hz": "偏財",
+        "ten_god_id": "Rezeki Bisnis",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 9,
+        "age_start": 91,
+        "age_end": 100,
+        "stem_hz": "己",
+        "branch_hz": "巳",
+        "ten_god_hz": "正財",
+        "ten_god_id": "Rezeki Tetap",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 10,
+        "age_start": 101,
+        "age_end": 110,
+        "stem_hz": "庚",
+        "branch_hz": "午",
+        "ten_god_hz": "七殺",
+        "ten_god_id": "Pemurnian",
+        "element_class": "el-jin"
+      }
+    ],
+    "seasons": [
+      {
+        "el_class": "s-jin",
+        "el_hz": "金",
+        "name_id": "Pemurnian Awal",
+        "age_start": 11,
+        "age_end": 30
+      },
+      {
+        "el_class": "s-shui",
+        "el_hz": "水",
+        "name_id": "Belajar & Mentor",
+        "age_start": 31,
+        "age_end": 50,
+        "is_current": true
+      },
+      {
+        "el_class": "s-mu",
+        "el_hz": "木",
+        "name_id": "Berbagi Panggung",
+        "age_start": 51,
+        "age_end": 70
+      },
+      {
+        "el_class": "s-huo",
+        "el_hz": "火",
+        "name_id": "Berkarya Tenang",
+        "age_start": 71,
+        "age_end": 90
+      },
+      {
+        "el_class": "s-tu",
+        "el_hz": "土",
+        "name_id": "Memetik Rezeki",
+        "age_start": 91,
+        "age_end": 110
+      }
+    ],
+    "spotlight_headline_html": "Fase <span class=\"hz\">比肩</span> (Pundak Sama), periode utama untuk membangun kemandirian",
+    "spotlight_tag_tone_html": "Kayu · pertumbuhan",
+    "spotlight_tag_combo_html": "Sekutu Sebanding",
+    "spotlight_tag_combo_pair": [
+      "甲",
+      "子"
+    ],
+    "spotlight_bullets_html": [
+      "<strong>Fokus utama</strong>, pilar <span class=\"hz\">比肩</span> mendorong Anda untuk membangun kemandirian. Selaraskan agenda 10 tahun ini ke arah tersebut.",
+      "<strong>Energi 木</strong>, batang <span class=\"hz\">甲</span> (木) berinteraksi dengan Day Master <span class=\"hz\">甲</span> (木); tone fase: Kayu · pertumbuhan.",
+      "<strong>Cabang <span class=\"hz\">子</span></strong> menentukan medan harian, kebiasaan, lingkungan, dan relasi yang dibangun di rentang umur 41–50 akan jadi pondasi fase berikutnya.",
+      "<strong>Setelah 50</strong> masuk <span class=\"hz\">乙丑 (劫財)</span>, uji solidaritas & finansial. Siapkan transisi sekarang."
+    ],
+    "footer_caption_html": "AGUS H sedang di fase <span style=\"font-family:'Noto Serif TC',serif;color:var(--red)\">比肩</span> (41–50), membangun kemandirian. Periode 41–60 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir."
+  },
+  "marriage": {
+    "self_branch_index": 6,
+    "cocok": [
+      {
+        "branch_hz": "寅",
+        "id": "Harimau",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "未",
+        "id": "Kambing",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "戌",
+        "id": "Anjing",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      }
+    ],
+    "hindari": [
+      {
+        "branch_hz": "子",
+        "id": "Tikus",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "丑",
+        "id": "Kerbau",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "卯",
+        "id": "Kelinci",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "午",
+        "id": "Kuda",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      }
+    ],
+    "_empty": false
+  },
+  "yang_zhai": {
+    "gua_hz": "艮",
+    "gua_pinyin": "Gèn",
+    "gua_label_id": "Gunung",
+    "gua_direction_id": "Timur Laut",
+    "gua_direction_abbr": "TL",
+    "group_id": "Barat",
+    "desc_id": "Elemen Tanah-Gunung — kokoh, diam, teguh. Kelompok Barat (西四命): stabil, sabar, dan memiliki daya tahan jangka panjang.",
+    "sumbu_hoki_hz": "東北↔西南",
+    "sumbu_hoki_id": "TL ↔ BD",
+    "sumbu_rumah_hz": "南↔北",
+    "sumbu_rumah_id": "S ↔ U",
+    "rumah_axis_pos": "S",
+    "trigram_symbol": "☶",
+    "zones": {
+      "rumah": {
+        "dirs_hz": [
+          "南北"
+        ],
+        "dirs_abbr": [
+          "南北"
+        ],
+        "note_id": "Rumah menghadap Selatan (坐Utara menghadap Selatan) atau menghadap Utara (坐Selatan menghadap Utara) sangat menguntungkan"
+      },
+      "pintu": {
+        "dirs_hz": [
+          "南",
+          "北",
+          "東"
+        ],
+        "dirs_abbr": [
+          "S",
+          "U",
+          "T"
+        ],
+        "note_id": "Pintu utama sebaiknya berada di sisi Selatan, Utara, atau Timur"
+      },
+      "dapur": {
+        "dirs_hz": [
+          "西向東"
+        ],
+        "dirs_abbr": [
+          "西東"
+        ],
+        "note_id": "Dapur atau kompor sebaiknya ditempatkan menghadap ke arah Timur"
+      },
+      "kamar": {
+        "dirs_hz": [
+          "東南",
+          "東",
+          "北",
+          "南"
+        ],
+        "dirs_abbr": [
+          "TG",
+          "T",
+          "U",
+          "S"
+        ],
+        "note_id": "Kamar tidur sebaiknya diletakkan di sisi Tenggara, Timur, Utara, atau Selatan"
+      },
+      "ranjang": {
+        "dirs_hz": [
+          "南",
+          "北",
+          "東",
+          "東南"
+        ],
+        "dirs_abbr": [
+          "S",
+          "U",
+          "T",
+          "TG"
+        ],
+        "note_id": "Posisi ranjang tidur sebaiknya menghadap atau berada di sisi Selatan, Utara, Timur, atau Tenggara"
+      },
+      "altar": {
+        "dirs_hz": [
+          "南",
+          "東",
+          "東南",
+          "北"
+        ],
+        "dirs_abbr": [
+          "S",
+          "T",
+          "TG",
+          "U"
+        ],
+        "note_id": "Altar atau tempat sembahyang sebaiknya ditempatkan di sisi Selatan, Timur, Tenggara, atau Utara"
+      },
+      "kamar_mandi": {
+        "dirs_hz": [
+          "東北",
+          "西北",
+          "西",
+          "西南"
+        ],
+        "dirs_abbr": [
+          "TL",
+          "BL",
+          "B",
+          "BD"
+        ],
+        "note_id": "Toilet atau kamar mandi sebaiknya ditempatkan di sisi Timur Laut, Barat Laut, Barat, atau Barat Daya"
+      }
+    }
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "文曲",
+    "shen_zhu_hz": "火星",
+    "ming_gong_hz": "卯",
+    "shen_gong_hz": "丑",
+    "wu_xing_ju_hz": "水二局",
+    "shi_jun_hz": "亥",
+    "palaces": null,
+    "ming_gong_id": "Istana Hidup · Kelinci",
+    "shen_gong_id": "Istana Tubuh · Kerbau",
+    "shi_jun_id": "Penguasa Waktu · Babi",
+    "ming_zhu_id": "Penguasa Hidup",
+    "shen_zhu_id": "Penguasa Tubuh",
+    "wu_xing_ju_id": "Aliran Air Dua"
+  },
+  "shen_sha_list": [],
+  "kesimpulan_narrative": "AGUS H adalah sosok pria yang lahir dengan Day Master 甲木 (Yang Wood) dalam format 七殺格 — bagaikan pohon besar yang tumbuh kokoh namun terus diuji oleh angin kencang dari berbagai arah. Kekuatan terbesarnya terletak pada ketangguhan mental dan jiwa penolong yang tulus: selalu hadir membantu orang lain tanpa diminta, memiliki pikiran yang berputar cepat, dan membangun jaringan pertemanan yang luas secara alami. Namun di balik kehangatan yang terpancar ke luar, AGUS H adalah sosok yang dalam dan penuh kalkulasi — memendam segalanya di dalam hati, sulit dibaca orang lain, dan rentan terhadap kecurigaan yang menumpuk jika tidak dikelola. Perjalanan finansial AGUS H bukan jalan yang mulus di awal: sumber kekayaan tidak berlimpah, uang sulit dipertahankan dalam bentuk tunai, dan investasi properti adalah satu-satunya cara terbukti untuk menjaga harta tetap awet. Namun kunci besarnya adalah waktu — puncak finansial dan pencapaian terbesar baru benar-benar datang di usia pertengahan ke atas. Dalam hal asmara dan keluarga, AGUS H perlu berhati-hati: pernikahan di usia muda kurang disarankan; pasangan ideal adalah mereka yang berjiwa sehat dan terbuka, terutama dari shio Harimau, Kambing, atau Anjing. Hubungan dengan ibu dan saudara perempuan cenderung kurang harmonis secara komunikasi. Sementara dalam karir, AGUS H bersinar paling terang bukan sebagai pemimpin puncak, melainkan sebagai perencana, konsultan, atau ahli yang bekerja di balik layar — bidang konstruksi, teknik, kepenulisan, atau profesi sosial adalah ladang paling subur. Tahun-tahun ke depan (2026-2031) membawa dinamika yang variatif: 2026 penuh perubahan lingkungan dan tekanan ekstrem; 2027 membawa berkah finansial dan masa senja yang lebih baik; 2028 adalah tahun terberat dengan risiko penyakit kronis dan pengeluaran besar; 2029 membawa semangat baru dan peruntungan bulan; 2030 penuh tekanan hukum dan perlu ekstra waspada; 2031 adalah tahun terbaik di mana bantuan senior dan pencapaian nyata akhirnya terwujud. Pesan inti untuk AGUS H: jadikan ketangguhan sebagai aset, bukan beban. Belajar membuka diri — komunikasi yang lebih transparan akan memperkuat semua hubungan yang dibangun. Dan percayakan proses pada waktu: fondasi yang dibangun hari ini akan berbuah besar setelah usia 50-an.",
+  "dm_pos_score": 1978.0,
+  "dm_neg_score": 6480.0,
+  "xiantian_per_stem": {
+    "jia": 1,
+    "yi": 1,
+    "bing": 1,
+    "ding": 1,
+    "wu": 4,
+    "ji": 1,
+    "geng": 3,
+    "xin": 0,
+    "ren": 1,
+    "gui": 1
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": null,
+  "canggan_shi_shen": null,
+  "chang_sheng_per_pilar": null,
+  "kong_wang": null,
+  "ming_gong_bazi": null,
+  "bone_weight": null,
+  "liu_nian_predictions": [
+    {
+      "tahun": 2026,
+      "umur": 49,
+      "ganzhi": "丙午",
+      "prose": "Tahun 2026 membuka peluang di mana ide-ide yang lahir dari kerja pikir menunjukkan kontras menarik dengan urusan finansial. AGUS H perlu memanfaatkan kekuatan berpikir sepenuhnya dan terus mengasah wawasan — dengan demikian, target ideal pasti dapat dicapai. Lingkungan sekitar mengalami perubahan besar seperti renovasi rumah, pindah tempat tinggal, atau penataan ulang interior. Meski perubahan makro sedang terjadi, hindari langkah-langkah impulsif yang tergesa. Energi Tai Sui (太歲) [[太歲]] bersinar di posisi puncak — bencana tidak meninggalkan jejak, tubuh terbebas dari tekanan dan konflik, dan seluruh tahun baik untuk perencanaan strategis. Waspadai Tian Sha (天煞) [[天煞]] yang hadir — ada risiko penyakit dan musibah berkabung; bila kepala keluarga memiliki masalah kesehatan, perselisihan verbal pun bisa ikut muncul. Hindari bulan ke-2, 3, 5, atau 11. Pasang persembahan kepada Bintang Tai Sui pada tanggal 9 bulan pertama lunar untuk keselamatan dan keberuntungan. Peruntungan baik maupun buruk tahun ini cenderung sangat ekstrem. Secara karakter, AGUS H cenderung lebih mudah gelisah dan kurang tegas dalam mengambil keputusan tahun ini — sangat cerdas namun terlalu sering mempersulit hal kecil hingga menciptakan kekhawatiran yang tidak perlu. Keharmonisan pernikahan cenderung tipis dan rapuh, dengan risiko perubahan yang menyulitkan untuk tetap bersama; angka pernikahan kembali cenderung tinggi di tahun ini."
+    },
+    {
+      "tahun": 2027,
+      "umur": 50,
+      "ganzhi": "丁未",
+      "prose": "Perhatikan kesehatan di tahun 2027 — kekayaan datang namun musibah pun bisa ikut hadir; secara substantif, mencapai tujuan ideal sepenuhnya masih terasa berat. Lingkungan makro akan mengalami tekanan dan pembatasan yang menimbulkan guncangan. Bintang Matahari (太陽) [[太陽]] memasuki istana kehidupan AGUS H — segala urusan menjadi harmonis, yin-yang dalam keseimbangan yang tepat, berkah dan kekayaan pun ikut datang. Bintang Kebajikan (福德) [[福德]] juga memasuki istana — AGUS H dikenal sebagai pribadi berkarakter baik sepanjang hidup; dalam mencari kekayaan dan berbuat kebaikan, dukungan dari orang lain selalu datang; peruntungan bertemu masa senja yang lebih gemilang dari sebelumnya. Hindari bulan ke-2, 4, 8, atau 11. Bagi yang sudah lama sakit atau mengalami kesialan, ini adalah pertanda pemulihan dan perbaikan yang akan datang. Kepribadian AGUS H tahun ini cenderung lebih introvert dengan beberapa kebiasaan yang tak lazim; tidak terlalu peduli pada penampilan luar. Ikatan dengan saudara kandung agak renggang di periode ini. Ini adalah masa penimbunan dan pengumpulan — ada kecenderungan hobi mengumpulkan benda kecil; sebagian besar energi terfokus pada menabung. Disarankan untuk membuka hati lebih lebar dan berjuang aktif — peruntungan finansial masih cukup baik. Paruh pertama kehidupan memang lebih berat dan penuh hambatan, namun paruh kedua semakin beruntung dan penuh berkah."
+    },
+    {
+      "tahun": 2028,
+      "umur": 51,
+      "ganzhi": "戊申",
+      "prose": "Di tahun 2028, usaha keras dan energi mental yang dikerahkan AGUS H tampaknya tidak langsung sebanding dengan imbalan finansial yang terlihat di permukaan. Waspadai penyakit kronis yang mungkin muncul — pengeluaran di tahun ini sangat besar, dan secara substantif, pencapaian ideal terasa sulit diraih sepenuhnya. Ada kemungkinan perubahan karir atau posisi jabatan yang signifikan. Kondisi emosi pun relatif kurang stabil. Bagi yang sudah menikah, hubungan suami-istri mungkin diuji namun tidak sampai terlalu serius; bagi yang belum menikah, ikatan emosi dengan pasangan semakin mendalam. Hati-hati terhadap Sang Men (喪門) [[喪門]] yang memasuki istana kehidupan — membawa risiko musibah berkabung dan kerugian finansial. Bintang Hei Sha (黑煞) [[黑煞]] juga masuk ke istana — peruntungan terbalik secara mengejutkan; jika tidak ada hukuman atau musibah berkabung, waspadai pencuri dan orang-orang jahat di sekitar. Bila ada acara gembira di keluarga, keselamatan tetap dapat terjaga. Hindari bulan ke-6, 8, 9, 12. Tahun ini jangan mengunjungi orang yang sakit parah atau menghadiri pemakaman — untuk menghindari kesialan; ada risiko kerabat atau sahabat menderita penyakit serius atau meninggal. Karakter AGUS H di tahun ini cenderung lebih impulsif dan mudah bersemangat sebentar lalu berhenti — memulai banyak hal namun jarang menyelesaikan; mudah tertipu dan terlena oleh pencapaian kecil, sering bertindak gegabah dan berulang kali mengalami kegagalan. Namun di balik semua itu, ada energi \"bangkit dari titik terbawah\" (絕處逢生) [[絕處逢生]] yang bisa mengubah keadaan secara dramatis."
+    },
+    {
+      "tahun": 2029,
+      "umur": 52,
+      "ganzhi": "己酉",
+      "prose": "Energi dan kerja pikir yang dikerahkan AGUS H di tahun 2029 tampaknya tidak langsung sebanding dengan imbalan finansial yang tampak di permukaan. Waspadai munculnya penyakit kronis — pengeluaran sangat besar dan pencapaian ideal terasa berat secara substantif. Bagi yang menikah, keharmonisan pasangan mungkin diuji namun tidak serius; bagi yang belum menikah, kedekatan emosional dengan pasangan semakin dalam. Perubahan karir atau posisi jabatan kemungkinan akan terjadi. Bintang Bulan (太陰) [[太陰]] memasuki istana kehidupan — kegembiraan dan kekayaan datang; orang-orang berpengaruh dan baik hati hadir memberi dukungan; segala urusan menjadi harmonis. Bintang Wen Chang (文昌) [[文昌]] memasuki peruntungan tahunan — acara-acara bahagia datang; para pelajar dan pejabat meraih keberhasilan; orang biasa menarik rezeki dan kehamilan bagi wanita. Hindari bulan ke-2, 5, 8, atau 12. Waspada terhadap kebencian atau perselisihan dari lawan jenis; hindari berjalan di gang gelap larut malam. Karakter AGUS H di tahun ini: penuh rasa ingin tahu dan semangat menyelidiki; memiliki jiwa yang segar dan bersemangat, kreatif, penuh humor dan kehangatan. Ini adalah tipe \"kebijaksanaan besar yang tampak sederhana\" (大智若愚) [[大智若愚]] — keberuntungan adalah tamu yang sering datang. Kesehatan mungkin tidak terlalu kuat secara bawaan, namun semakin bertambah usia semakin menguat. Bagi wanita tipe ini, peluang melahirkan anak perempuan lebih tinggi."
+    },
+    {
+      "tahun": 2030,
+      "umur": 53,
+      "ganzhi": "庚戌",
+      "prose": "Di tahun 2030, tekanan hidup AGUS H terasa lebih berat — perlu memperhatikan gangguan fisik yang muncul. Waspadai kesehatan karena kekayaan datang namun musibah pun ikut hadir; secara substantif, tujuan ideal masih terasa berat untuk dicapai sepenuhnya. Bagi yang menikah, keharmonisan pasangan bisa diuji; bagi yang belum menikah, perkembangan emosi mulai berjalan. Lingkungan makro akan terasa tertekan dan mengalami hambatan. Bintang Guan Fu (官符) [[官符]] memasuki istana kehidupan — urusan hukum dan keresahan datang; hubungan dengan orang tua, pasangan, dan keuangan terasa tertekan; masalah jantung perlu diwaspadai. Bintang Api Pembunuh (火殺) [[火殺]] juga memasuki istana — perselisihan hukum dan verbal muncul; waspadai musibah berkabung, penyakit, orang jahat, dan pencuri. Hindari bulan ke-1, 4, 7, atau 11. Kurangi ikut campur urusan orang lain — keselamatan dapat terjaga. Waspada terhadap gangguan energi negatif, penyakit aneh, orang-orang jahat yang menyerang dari belakang, dan kerugian finansial. Secara karakter, AGUS H lebih pandai bergaul dan berdiplomasi namun kurang memiliki ambisi besar; cenderung puas dengan kondisi yang ada. Ikatan dengan orang tua kandung relatif tipis — sering tumbuh sebagai anak angkat atau diasuh orang lain. Namun karena posisi ini adalah \"gerbang umur panjang,\" selama AGUS H terus berjuang dengan tekun, pencapaian yang tinggi dan besar tetap dapat diraih."
+    },
+    {
+      "tahun": 2031,
+      "umur": 54,
+      "ganzhi": "辛亥",
+      "prose": "Tahun 2031 membawa kabar baik — AGUS H dapat memperoleh bantuan dan dukungan dari para sesepuh, guru, atau senior yang berpengaruh; dan secara substantif, tujuan ideal benar-benar dapat dicapai tahun ini. Meski demikian, tekanan tetap terasa berat dan perlu memperhatikan gangguan fisik yang muncul. Perubahan karir juga akan terjadi di tahun ini. Waspadai bintang Si Fu (死符) [[死符]] yang memasuki istana — membawa duka dan kesedihan, serta risiko konflik yang mempengaruhi orang tua atau saudara; perbanyak doa untuk menghindari musibah. Bintang Gelap An Yao (暗耀) [[暗耀]] juga masuk ke istana — tanpa perselisihan verbal, bencana berkabung bisa datang tiba-tiba; bila ada acara gembira di keluarga, kerugian besar bisa menyertai. Wanita perlu berhati-hati ekstra soal kesehatan dan persalinan. Hindari bulan ke-2, 5, 8, atau 12; perbanyak doa kepada pelindung spiritual. Rentan terkena bencana hukum, hukuman, tuntutan, cedera fisik, dan penderitaan mental. Dari sisi karakter, AGUS H di tahun ini memancarkan loyalitas, kelembutan, kesopanan, kebaikan, dan kesempurnaan akhlak. Daya tarik sosial sangat tinggi — diakui, disambut, dan dipromosikan oleh orang-orang di sekitar; mudah naik pangkat dan meraih posisi lebih tinggi. Dikaruniai bakat teknis dan artistik; kemampuan belajar sangat kuat. Namun tidak cocok berada di posisi puncak kepemimpinan — justru bersinar sebagai asisten, perencana, atau konsultan strategis yang sangat berkualitas, dengan ruang yang luas untuk berkreasi dan memberikan dampak nyata."
+    }
+  ],
+  "ziwei_su_ming": "Langkah AGUS H cenderung lambat dalam bertindak, dan karena itulah keberuntungan bawaan yang seharusnya sudah ada sejak lahir bisa terlewatkan begitu saja. Istana asmara AGUS H kuat, dan peruntungan istana tubuh pun sedang bersinar. Dengan dorongan kasih sayang dan cinta dari pasangan hidup, AGUS H pasti akan melalui kehidupan yang memuaskan dan melampaui harapan biasa. Namun apabila istana asmara melemah, kehidupan keluarga menjadi tidak harmonis dan hidup berbalik menjadi pengalaman yang negatif dan penuh kesulitan. Dalam kondisi seperti itu, kekuatan dan kelemahan istana Kehidupan (命宮), Karir (職業宮), Pergerakan (移動宮), dan Kebijaksanaan Batiniah (福德宮) harus ikut dipertimbangkan bersama-sama sebagai satu kesatuan.",
+  "ziwei_stars": null,
+  "shiye_favorable_full": [
+    {
+      "hz": "火熱光性工廠",
+      "id": "Pabrik berbasis panas/cahaya"
+    },
+    {
+      "hz": "照相",
+      "id": "Fotografi"
+    },
+    {
+      "hz": "電器",
+      "id": "Elektronik"
+    },
+    {
+      "hz": "光學",
+      "id": "Optik"
+    },
+    {
+      "hz": "眼鏡",
+      "id": "Toko kacamata"
+    },
+    {
+      "hz": "熱飲小吃",
+      "id": "Minuman panas dan jajanan"
+    },
+    {
+      "hz": "食品工廠",
+      "id": "Pabrik makanan"
+    },
+    {
+      "hz": "湯髮美容",
+      "id": "Salon rambut/kecantikan"
+    },
+    {
+      "hz": "衣帽百貨",
+      "id": "Toko pakaian dan aksesori"
+    },
+    {
+      "hz": "化妝品",
+      "id": "Kosmetik"
+    },
+    {
+      "hz": "軍界",
+      "id": "Militer"
+    },
+    {
+      "hz": "煙酒",
+      "id": "Rokok dan minuman keras"
+    }
+  ],
+  "shiye_supportive_full": [
+    {
+      "hz": "流動擺攤販",
+      "id": "Pedagang kaki lima"
+    },
+    {
+      "hz": "介紹中人",
+      "id": "Makelar atau perantara"
+    },
+    {
+      "hz": "醫師",
+      "id": "Dokter"
+    },
+    {
+      "hz": "清潔隊",
+      "id": "Petugas kebersihan"
+    },
+    {
+      "hz": "記者",
+      "id": "Jurnalis"
+    },
+    {
+      "hz": "護士",
+      "id": "Perawat"
+    },
+    {
+      "hz": "導遊",
+      "id": "Pemandu wisata"
+    },
+    {
+      "hz": "馬戲園",
+      "id": "Sirkus"
+    },
+    {
+      "hz": "航海",
+      "id": "Pelaut/navigasi"
+    },
+    {
+      "hz": "漁業",
+      "id": "Perikanan"
+    },
+    {
+      "hz": "冷凍業",
+      "id": "Industri pendingin/beku"
+    },
+    {
+      "hz": "水產業",
+      "id": "Budidaya perairan"
+    },
+    {
+      "hz": "碼頭工",
+      "id": "Buruh pelabuhan"
+    },
+    {
+      "hz": "消防隊",
+      "id": "Pemadam kebakaran"
+    },
+    {
+      "hz": "貿易公司",
+      "id": "Perusahaan dagang"
+    }
+  ],
+  "shiye_short": null,
+  "shen_sha_detail": [
+    {
+      "hz": "劫煞",
+      "pinyin": "Jie Sha",
+      "label_id": "Rampasan Kilat",
+      "tafsir_hz": "聰明敏捷、才智過人、巧於謀事",
+      "tafsir_id": "Cerdas dan tangkas, bakat dan kecerdasan di atas rata-rata, mahir dalam perencanaan dan strategi"
+    },
+    {
+      "hz": "孤辰",
+      "pinyin": "Gu Chen",
+      "label_id": "Bintang Kesepian",
+      "tafsir_hz": "形孤骨露、面無和氣、六親終有也如無",
+      "tafsir_id": "Penampilan yang terisolasi dan berkesan kaku; wajah kurang memancarkan kehangatan; walau memiliki saudara dan keluarga, pada akhirnya terasa seolah tidak punya siapa pun"
+    },
+    {
+      "hz": "寡宿",
+      "pinyin": "Gua Su",
+      "label_id": "Bintang Kesunyian",
+      "tafsir_hz": "形孤骨露、面無和氣、六親終有也如無",
+      "tafsir_id": "Penampilan yang terisolasi dan sepi; wajah kurang memancarkan keramahan alami; walau ada keluarga di sekitar, pada akhirnya lebih sering merasa seorang diri"
+    }
+  ],
+  "marriage_cocok_tafsir": "Pasangan dari shio Harimau, Kambing, atau Anjing membawa keserasian dan saling menghormati bagai tamu terhormat. Energi ungu keberuntungan mengalir dari timur, membawa kenikmatan kekayaan dan status sosial secara tenang. Rumah tangga akan berkembang pesat dan makmur, dengan berkah yang mengalir hingga ke anak cucu sepanjang zaman.",
+  "marriage_hindari_tafsir": "Bertemu pasangan dari shio Tikus, Kerbau, Kelinci, atau Ayam dapat membawa kesenangan sesaat di pertengahan usia, namun kemudian disusul oleh kelemahan fisik, umur pendek, dan sulitnya meraih kebahagiaan sejati. Energi negatif menumpuk berat, pertanda kekacauan dan malapetaka terus hadir, mengakibatkan kesulitan dan penderitaan sepanjang hidup, keretakan dalam hubungan pernikahan, serta perpisahan dari anak-anak.",
+  "gushu_quotes": [
+    {
+      "source_hz": "三命通會批",
+      "source_id": "Kompilasi Tiga Nasib",
+      "text_hz": "詩曰：甲乙書乎木得宜，要知金水旺為奇，春從南往秋歸北，冬夏西行發福基。",
+      "text_id": "Puisi berkata: Kayu Jia dan Yi berjalan sesuai jalurnya yang tepat; ketahuilah bahwa Logam dan Air yang kuat adalah yang paling istimewa; di musim semi bergeraklah ke selatan, di musim gugur kembali ke utara; di musim dingin dan panas bergerak ke barat sebagai fondasi kemakmuran."
+    },
+    {
+      "source_hz": "滴天髓",
+      "source_id": "Di Tian Sui",
+      "text_hz": "甲木參天，脫胎要火，春不容金，秋不容土，火熾乘龍，水蕩騎虎；地潤天和，值立千古。",
+      "text_id": "Kayu Jia menjulang setinggi langit; untuk melepaskan diri dari kondisi awal diperlukan Api; di musim semi tidak cocok dengan Logam, di musim gugur tidak cocok dengan Tanah; saat Api berkobar keras naiklah ke Naga; saat Air meluap deras tunggangilah Harimau; bumi yang subur dan langit yang harmonis, tegak kokoh sepanjang masa."
+    },
+    {
+      "source_hz": "詩云",
+      "source_id": "Puisi Klasik",
+      "text_hz": "申金剛健月支達，水土長生在此宮，已午爐中成劍戟，子辰局裡得風光，木多無火終能勝，土重埋金卻有凶，欲識斯神何所似，溫柔珠玉不相似。",
+      "text_id": "Logam Shen yang kokoh menjangkau cabang bulan; Air dan Tanah tumbuh panjang di istana ini; di perapian Si dan Wu terbentuk senjata tajam; di persekutuan Zi dan Chen keindahan terungkap; kayu yang berlimpah tanpa Api pada akhirnya tetap mampu unggul; Tanah yang berlebihan mengubur Logam justru membawa celaka; ingin mengenal watak elemen ini? Ia berbeda dari mutiara dan giok yang halus lembut."
+    },
+    {
+      "source_hz": "批命古詩",
+      "source_id": "Puisi Nasib Kayu Jia",
+      "text_hz": "木天干作首排，原無枝葉與根莖，欲存天地千年久，直向沙泥萬丈埋，斯就梯梁金得用，化成灰炭火為災，露然魂物無機事，一任春秋自往來。",
+      "text_id": "Kayu sebagai batang langit menduduki posisi pertama; sesungguhnya ia tiada daun, ranting, maupun akar; untuk bertahan sepanjang langit dan bumi selama seribu tahun, ia harus terkubur dalam lumpur dan pasir sedalam ribuan kaki; dengan begitu ia menjadi balok bangunan dengan Logam sebagai kegunaan; jika berubah menjadi arang karena Api, itulah bencana; saat terlepas dari keduniawian, jiwa ini tak terlibat urusan duniawi; ia membiarkan musim semi dan gugur silih berganti dengan sendirinya."
+    }
+  ],
+  "xiongnian_list": null,
+  "xing_qing_poem_hz": null,
+  "xing_qing_poem_id": null,
+  "xing_qing_prose_id": null,
+  "fulu_body_id": null,
+  "mingyun_body_id": null,
+  "qinshu_tou_main_id": null,
+  "qinshu_tou_youyue_id": null,
+  "qinshu_zhong_main_id": null,
+  "qinshu_zhong_youyue_id": null,
+  "qinshu_mo_main_id": null,
+  "qinshu_mo_youyue_id": null,
+  "jie_e_palace_hz": null,
+  "jie_e_palace_id": "AGUS H rentan terhadap penyakit pada bagian bawah tubuh, termasuk gangguan pada organ rahim dan penyakit wasir (痔瘡) [[痔瘡]] serta gangguan otak atau pikiran. Pada masa kanak-kanak, seringkali terganggu oleh benjolan atau tonjolan di tubuh. Apabila bintang Wu Qu (武曲星) [[武曲星]] turut menghuni istana yang sama, penyakit mata menjadi hal yang perlu diwaspadai. Apabila bintang Lian Zhen (廉貞星) [[廉貞星]] hadir bersama, tangan dan kaki mudah mengalami cedera atau luka.",
+  "jie_e_organ_focus_id": "Bagian bawah tubuh, organ reproduksi wanita, wasir, gangguan otak, mata (kondisional), cedera tangan/kaki (kondisional)",
+  "bagua_sectors": null,
+  "bagua_life_type_hz": null,
+  "bagua_life_type_id": null,
+  "bagua_nayin_hz": null,
+  "bagua_nayin_id": null,
+  "bagua_taisui_hz": null,
+  "bagua_taisui_id": null,
+  "bagua_warning_hz": null,
+  "bagua_warning_id": null,
+  "bagua_virtue_hz": null,
+  "bagua_virtue_id": null,
+  "bagua_zuo_xiang_hz": null,
+  "bagua_zuo_xiang_id": null,
+  "hongshui_pages": null,
+  "mantra": {
+    "hz": "—",
+    "pinyin": "—"
+  },
+  "_xq_radar_poly": "          <polygon points=\"200,56 311.2,136 311.2,264 200,312 102.7,256 130.5,160\"\n            fill=\"rgba(139,26,26,0.18)\" stroke=\"#8B1A1A\" stroke-width=\"1.5\"/>\n          <circle cx=\"200\" cy=\"56\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"136\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"264\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"200\" cy=\"312\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"102.7\" cy=\"256\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"130.5\" cy=\"160\" r=\"3\" fill=\"#8B1A1A\"/>",
+  "_xq_radar_labels": "          <g font-family=\"Noto Serif TC,serif\">\n            <text x=\"200\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">進取</text>\n            <text x=\"200\" y=\"33\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Jìnqǔ · Pelopor · 9</text>\n\n            <text x=\"358\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">創新</text>\n            <text x=\"358\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Chuàngxīn · Inovatif · 8</text>\n\n            <text x=\"358\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">領導</text>\n            <text x=\"358\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Lǐngdǎo · Memimpin · 8</text>\n\n            <text x=\"200\" y=\"382\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">急性</text>\n            <text x=\"200\" y=\"393\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Jíxìng · Cepat panas · 7</text>\n\n            <text x=\"42\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">直率</text>\n            <text x=\"42\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Zhíshuài · Terus-terang · 7</text>\n\n            <text x=\"42\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">包容</text>\n            <text x=\"42\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Bāoróng · Toleran · 5</text>\n          </g>",
+  "_xq_motto": [
+    "樹",
+    "Pohon Besar",
+    "本性 浩然",
+    "君子之風"
+  ],
+  "_tafsir": {
+    "kepribadian": "AGUS H adalah sosok dengan Day Master 甲木 (Yang Wood) dalam format 七殺格, yang membawa jiwa kepemimpinan alami namun penuh tantangan dari 庚金 (Tujuh Pembunuh). Unsur sahabat 火 (Api) dan 水 (Air) menjadi kekuatan penggerak, sementara 金 (Logam) sebagai ji shen adalah elemen yang patut diwaspadai dalam perjalanan hidup AGUS H.",
+    "_kepribadian_struct": {
+      "paragraf": "AGUS H adalah sosok dengan Day Master 甲木 (Yang Wood) dalam format 七殺格, yang membawa jiwa kepemimpinan alami namun penuh tantangan dari 庚金 (Tujuh Pembunuh). Unsur sahabat 火 (Api) dan 水 (Air) menjadi kekuatan penggerak, sementara 金 (Logam) sebagai ji shen adalah elemen yang patut diwaspadai dalam perjalanan hidup AGUS H.",
+      "power": [
+        "Hangat, ramah, dan mudah didekati siapa pun — membangun jaringan pertemanan yang luas secara alami",
+        "Pikiran tajam dan cepat berputar, mampu membaca situasi dengan presisi",
+        "Berjiwa penolong sejati — bertindak tanpa diminta saat melihat orang membutuhkan bantuan"
+      ],
+      "shadow": [
+        "Kecenderungan terlalu ikut campur urusan orang lain dapat menimbulkan gesekan sosial",
+        "Memendam segalanya dalam hati sehingga orang sulit memahami perasaan dan pikiran sebenarnya",
+        "Jika kecurigaan terus menumpuk, bisa berubah menjadi sifat paranoid yang merusak hubungan"
+      ],
+      "optimum": [
+        "Salurkan energi membantu melalui peran formal seperti konsultan, mentor, atau pemimpin tim",
+        "Latih diri untuk lebih transparan dalam berkomunikasi agar orang di sekitar merasa dipercaya",
+        "Perluas wawasan dari berbagai bidang ilmu agar menjadi pribadi berwawasan luas dan berjiwa besar"
+      ]
+    },
+    "xingqing_full": "<p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">1</span>Cenderung melihat segala sesuatu secara general — kurang memperhatikan detail kecil dan perbedaan halus; memiliki ketertarikan pada hal-hal spiritual dan keyakinan akan sesuatu yang tidak kasatmata; bersifat sabar dan penuh ketenangan batin</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">2</span>Memiliki stamina dan keberanian fisik yang kuat — bertindak cepat berdasarkan dorongan naluri; tidak terikat pada kenikmatan ragawi; mandiri dan berani; kemampuan eksekusi sangat tinggi, pekerja keras, dan penuh ambisi</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">3</span>Menjunjung tinggi nilai dan kesetiaan melebihi harta benda — berterus terang dan tidak berpura-pura; bisa dermawan dengan uang; tidak terikat secara emosional pada materi; namun kurang pandai dalam mengelola keuangan sehari-hari</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">4</span>Menghargai dunia nyata dan konkret namun tidak terikat pada benda; terampil dalam eksekusi dan operasional; daya tangkap kuat; berjiwa ambisius; berkepribadian kuat dan berprinsip; berhati lembut dan jujur — namun kurang gesit dalam beradaptasi saat situasi berubah mendadak</p>",
+    "xingqing_full_action": "Inti watak diri sebagaimana terbaca dari layar 性情.",
+    "overview_full": "<div style=\"display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm;\"><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Pasangan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Pasangan cenderung kurang mementingkan perasaan dan lebih gemar membelanjakan uang</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Hubungan Ibu</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Kata-kata dan nasihat ibu sulit diterima — komunikasi dengan ibu cenderung tersendat dan tidak banyak bicara</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Hubungan Saudari</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Nasihat kakak atau adik perempuan juga tidak mudah diterima</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Otoritas</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Memiliki posisi dan kekuasaan yang cukup kuat dalam lingkungan sosial maupun profesional</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Pasangan &amp; Orang Tua</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Pasangan yang disukai cenderung dapat cocok dan serasi dengan kedua orang tua</div></div></div>",
+    "overview_full_action": "Pesan inti hubungan terdekat dari layar 全局總論.",
+    "family": "pasangan: - vibe: Penuh Ketegasan · Butuh Keserasian - headline: Pasangan ideal dari shio Harimau, Kambing, atau Anjing - cocok_list: - shio: 虎 (Harimau) label: 大吉 teks: Pasangan Harimau membawa keserasian dan saling menghormati bagai tamu terhormat, keluarga makmur dan berkah mengalir ke anak cucu. - shio: 羊 (Kambing) label: 大吉 teks: Bersama Kambing, rumah tangga tumbuh dalam ketenangan dan kemakmuran, energi keberuntungan mengalir dan status sosial meningkat bersama. - shio: 狗 (Anjing) label: 大吉 teks: Bersama Anjing, hubungan dipenuhi rasa hormat dan kesetiaan, membentuk fondasi keluarga yang kokoh dan abadi lintas generasi. - hindari_list: - shio: 鼠 (Tikus) teks: Pertemuan dengan Tikus membawa kesenangan sesaat namun disusul kelemahan, kesulitan, dan perpisahan yang menyakitkan. - shio: 牛 (Kerbau) teks: Pasangan Kerbau cenderung membawa beban berat dan akumulasi energi negatif yang sulit diatasi sepanjang pernikahan. - shio: 兔 (Kelinci) teks: Kelinci membawa pertanda kekacauan dan malapetaka, mempersulit terbentuknya keharmonisan rumah tangga yang stabil. - shio: 馬 (Kuda) teks: Kuda membawa energi yang berlawanan — cenderung menyebabkan keretakan hubungan dan perpisahan dari anak-anak.",
+    "_family_struct": {
+      "pasangan": {
+        "vibe": "Penuh Ketegasan · Butuh Keserasian",
+        "headline": "Pasangan ideal dari shio Harimau, Kambing, atau Anjing"
+      }
+    },
+    "career": "<p>AGUS H dengan Day Master 甲木 dalam format 七殺格 memiliki kecenderungan alami ke bidang yang membutuhkan kepemimpinan dan ketangkasan berpikir, didukung unsur sahabat Api (火) dan Air (水); perlu menghindari tekanan berlebih dari industri berbasis Logam (金) yang menjadi ji shen dan dapat menguras energi.</p>",
+    "_career_struct": {},
+    "palace1": "<p>ming_gong: - star: 貪狼化祿 - insight: Bagaikan tanaman obat yang tumbuh di bawah pohon besar, AGUS H memiliki sisi yang gelap dan suram, namun sekaligus memiliki ketangguhan layaknya rumput liar yang sulit dipatahkan. Postur AGUS H cenderung lebih tinggi dan bertubuh lebih kekar dibandingkan orang kebanyakan. Ciri khas yang menonjol adalah kemampuan bersikap hangat dan ramah kepada siapa pun, sementara pikiran juga berputar dengan sangat cepat. Kepribadian AGUS H lembut dan mudah bergaul, fleksibel dalam berinteraksi dengan siapa pun. Di sisi lain, ada juga sifat keras kepala dan gemar ikut campur urusan orang lain — ketika melihat seseorang dalam kesulitan, meski tanpa diminta, AGUS H akan dengan penuh semangat mengulurkan bantuan. Karena watak suka membantu yang sudah menjadi pembawaan alami ini, AGUS H memiliki lingkaran pertemanan yang cukup luas dan dipandang oleh orang-orang yang lebih muda sebagai kakak yang dapat diandalkan. Namun di mata orang yang lebih tua, AGUS H bisa dengan mudah dianggap sebagai sosok yang terlalu banyak mencampuri urusan orang lain. Teman-teman perempuan AGUS H kebanyakan termasuk dalam golongan wanita berbakat dan berprestasi, sementara teman pria memiliki semangat bersaing yang tak kalah tingginya — dalam hal apa pun, selalu ingin mengadu panjang-pendek dengan orang lain. Setelah menikah, AGUS H berubah menjadi pasangan yang cakap dan berperan besar dalam mengarahkan langkah sang suami/istri. Yang perlu diperhatikan: jangan sampai terlalu jauh mencampuri urusan pasangan. AGUS H adalah sosok yang membumi, berjiwa dalam, dan penuh perhitungan jauh ke depan. Mereka tidak pernah mengucapkan sepatah kata pun yang tidak perlu terkait urusan orang lain; bahkan ketika menghadapi penderitaan besar sekalipun, semuanya ditahan kuat-kuat di dalam hati — sehingga orang lain seringkali merasa sulit menebak, tidak tahu apa sebenarnya yang sedang dipikirkan oleh AGUS H. Orang-orang seperti ini kerap memendam kecurigaan di dalam hati; jika kecurigaan itu terus menumpuk dan semakin berat, pada akhirnya akan berubah menjadi sifat paranoid berlebihan. Namun, bila AGUS H mampu menyerap ilmu pengetahuan dari berbagai bidang secara luas, ada harapan untuk menjadi pribadi yang berwawasan luas dan berjiwa besar. Kepribadian yang dingin dan penuh kalkulasi ini, apabila posisi Istana Kehidupan juga jatuh di 子 atau 亥, maka barangkali tidak terhindarkan dari permainan nasib yang mengejutkan. Ketika bintang Gerbang Kegelapan (巨門星) <span class=\"hz\">巨門星</span> menampakkan wujud aslinya secara penuh, kekayaan bisa mengalir deras tanpa henti — namun karena AGUS H dengan segenap tekad mengejar uang, bahkan jika menggunakan cara-cara yang keras sekalipun, hati tetap tenang dan tidak terguncang. - action: Kenali dan manfaatkan kekuatan batin yang dalam ini — jadikan kemampuan berhitung dan membaca situasi sebagai aset profesional, bukan beban emosional.</p><p>xiongdi: - star: null - insight: null - action: null</p><p>fuqi: - star: 太陽, 太陰 - insight: Hubungan asmara AGUS H bagaikan tanaman yang suka naungan — cenderung tersembunyi dan tidak bersinar terang di permukaan. Mudah terbentuk hubungan yang penuh karma atau penderitaan, dan tidak sedikit yang berakhir tragis. Namun sekali sudah menikah, pada umumnya tidak sampai berpisah. Karena bintang Matahari (太陽星) <span class=\"hz\">太陽星</span> bergerak dengan energi yang terlampau kuat dalam istana ini, pernikahan di usia muda cukup membawa sial bagi AGUS H. Bila memungkinkan, jangan terburu-buru menikah — ambil waktu untuk mempertimbangkan secara matang dan perlahan. Bagi pria: cari pasangan wanita yang bersemangat dan sehat. Bagi wanita: berpotensi menemukan pria mapan dan bermurah hati sebagai pasangan hidup. Apabila bintang jahat turut menghuni istana ini, hampir bisa dikatakan langsung menghadapi ancaman perceraian. Bintang Bulan (太陰星) <span class=\"hz\">太陰星</span> melambangkan cahaya bulan yang murni dan jernih — karena itu, pria maupun wanita dari tipe ini cenderung bersifat polos dan lembut. Bila juga ditemani bintang Wen Chang (文昌) <span class=\"hz\">文昌</span> dan Wen Qu (文曲) <span class=\"hz\">文曲</span> dalam istana yang sama, kualitas kepribadian dan pendidikan semakin menonjol. Pria berpeluang mendapatkan istri yang tenang dan berhati lembut. Wanita mungkin akan menikah dengan tipe seniman yang bersih jiwanya. Ketika bersama 太陽 <span class=\"hz\">太陽</span>, kehidupan pernikahan berjalan harmonis dan penuh. Ketika bersama bintang Langit Cerdas (天機星) <span class=\"hz\">天機星</span>, pasangan ini menjadi idaman orang lain — serasi luar dalam. Namun bila bintang jahat turut hadir, ada risiko situasi yang memalukan atau menyulitkan. - action: Tidak perlu terburu-buru dalam memilih pasangan — pertimbangkan dengan matang, dan carilah sosok yang sehat, stabil, serta memiliki ketenangan jiwa yang serasi dengan kepribadian AGUS H.</p><p>zinu: - star: null - insight: null - action: null</p>",
+    "_palace1_struct": {
+      "ming_gong": {
+        "star": "貪狼化祿",
+        "insight": "Bagaikan tanaman obat yang tumbuh di bawah pohon besar, AGUS H memiliki sisi yang gelap dan suram, namun sekaligus memiliki ketangguhan layaknya rumput liar yang sulit dipatahkan. Postur AGUS H cenderung lebih tinggi dan bertubuh lebih kekar dibandingkan orang kebanyakan. Ciri khas yang menonjol adalah kemampuan bersikap hangat dan ramah kepada siapa pun, sementara pikiran juga berputar dengan sangat cepat. Kepribadian AGUS H lembut dan mudah bergaul, fleksibel dalam berinteraksi dengan siapa pun. Di sisi lain, ada juga sifat keras kepala dan gemar ikut campur urusan orang lain — ketika melihat seseorang dalam kesulitan, meski tanpa diminta, AGUS H akan dengan penuh semangat mengulurkan bantuan. Karena watak suka membantu yang sudah menjadi pembawaan alami ini, AGUS H memiliki lingkaran pertemanan yang cukup luas dan dipandang oleh orang-orang yang lebih muda sebagai kakak yang dapat diandalkan. Namun di mata orang yang lebih tua, AGUS H bisa dengan mudah dianggap sebagai sosok yang terlalu banyak mencampuri urusan orang lain. Teman-teman perempuan AGUS H kebanyakan termasuk dalam golongan wanita berbakat dan berprestasi, sementara teman pria memiliki semangat bersaing yang tak kalah tingginya — dalam hal apa pun, selalu ingin mengadu panjang-pendek dengan orang lain. Setelah menikah, AGUS H berubah menjadi pasangan yang cakap dan berperan besar dalam mengarahkan langkah sang suami/istri. Yang perlu diperhatikan: jangan sampai terlalu jauh mencampuri urusan pasangan. AGUS H adalah sosok yang membumi, berjiwa dalam, dan penuh perhitungan jauh ke depan. Mereka tidak pernah mengucapkan sepatah kata pun yang tidak perlu terkait urusan orang lain; bahkan ketika menghadapi penderitaan besar sekalipun, semuanya ditahan kuat-kuat di dalam hati — sehingga orang lain seringkali merasa sulit menebak, tidak tahu apa sebenarnya yang sedang dipikirkan oleh AGUS H. Orang-orang seperti ini kerap memendam kecurigaan di dalam hati; jika kecurigaan itu terus menumpuk dan semakin berat, pada akhirnya akan berubah menjadi sifat paranoid berlebihan. Namun, bila AGUS H mampu menyerap ilmu pengetahuan dari berbagai bidang secara luas, ada harapan untuk menjadi pribadi yang berwawasan luas dan berjiwa besar. Kepribadian yang dingin dan penuh kalkulasi ini, apabila posisi Istana Kehidupan juga jatuh di 子 atau 亥, maka barangkali tidak terhindarkan dari permainan nasib yang mengejutkan. Ketika bintang Gerbang Kegelapan (巨門星) [[巨門星]] menampakkan wujud aslinya secara penuh, kekayaan bisa mengalir deras tanpa henti — namun karena AGUS H dengan segenap tekad mengejar uang, bahkan jika menggunakan cara-cara yang keras sekalipun, hati tetap tenang dan tidak terguncang.",
+        "action": "Kenali dan manfaatkan kekuatan batin yang dalam ini — jadikan kemampuan berhitung dan membaca situasi sebagai aset profesional, bukan beban emosional."
+      },
+      "fuqi": {
+        "star": "太陽, 太陰",
+        "insight": "Hubungan asmara AGUS H bagaikan tanaman yang suka naungan — cenderung tersembunyi dan tidak bersinar terang di permukaan. Mudah terbentuk hubungan yang penuh karma atau penderitaan, dan tidak sedikit yang berakhir tragis. Namun sekali sudah menikah, pada umumnya tidak sampai berpisah. Karena bintang Matahari (太陽星) [[太陽星]] bergerak dengan energi yang terlampau kuat dalam istana ini, pernikahan di usia muda cukup membawa sial bagi AGUS H. Bila memungkinkan, jangan terburu-buru menikah — ambil waktu untuk mempertimbangkan secara matang dan perlahan. Bagi pria: cari pasangan wanita yang bersemangat dan sehat. Bagi wanita: berpotensi menemukan pria mapan dan bermurah hati sebagai pasangan hidup. Apabila bintang jahat turut menghuni istana ini, hampir bisa dikatakan langsung menghadapi ancaman perceraian. Bintang Bulan (太陰星) [[太陰星]] melambangkan cahaya bulan yang murni dan jernih — karena itu, pria maupun wanita dari tipe ini cenderung bersifat polos dan lembut. Bila juga ditemani bintang Wen Chang (文昌) [[文昌]] dan Wen Qu (文曲) [[文曲]] dalam istana yang sama, kualitas kepribadian dan pendidikan semakin menonjol. Pria berpeluang mendapatkan istri yang tenang dan berhati lembut. Wanita mungkin akan menikah dengan tipe seniman yang bersih jiwanya. Ketika bersama 太陽 [[太陽]], kehidupan pernikahan berjalan harmonis dan penuh. Ketika bersama bintang Langit Cerdas (天機星) [[天機星]], pasangan ini menjadi idaman orang lain — serasi luar dalam. Namun bila bintang jahat turut hadir, ada risiko situasi yang memalukan atau menyulitkan.",
+        "action": "Tidak perlu terburu-buru dalam memilih pasangan — pertimbangkan dengan matang, dan carilah sosok yang sehat, stabil, serta memiliki ketenangan jiwa yang serasi dengan kepribadian AGUS H."
+      }
+    },
+    "palace2": "<p>caibo: - star: null - insight: Cara AGUS H mengelola uang cenderung terbalik dari kebiasaan umum — boros dalam pengeluaran, namun penghasilan yang masuk justru terasa tipis dan minim. AGUS H membangun segalanya dari nol dengan kekuatan sendiri, secara mandiri menangkap peluang untuk menghasilkan uang. Namun masa memperoleh penghasilan besar baru benar-benar datang mulai dari usia pertengahan ke atas. Apabila bintang Tian Liang (天梁星) <span class=\"hz\">天梁星</span> turut menghuni istana yang sama, AGUS H berpotensi menjadi pemegang aset yang cukup kuat dan berpengaruh. Bahkan ketika bintang buruk pun turut hadir, selama AGUS H memilih profesi seperti dokter, akademisi, seniman, atau ahli ramalan, peruntungan finansial tetap terjaga dengan cukup baik. Dari sisi BaZi, sumber kekayaan — baik langsung maupun spekulatif — tidak berlimpah dan sulit ditahan dalam bentuk tunai; investasi properti adalah cara terbaik menjaga kekayaan agar awet. - action: Fokuskan energi pada pembangunan karir jangka panjang — puncak finansial baru akan terasa setelah usia pertengahan; jangan hamburkan uang di masa muda dan pertimbangkan profesi-profesi yang disebutkan untuk memperkuat peruntungan.</p><p>jie_e: - star: null - insight: AGUS H rentan terhadap penyakit pada bagian bawah tubuh, termasuk gangguan pada organ rahim dan penyakit wasir (痔瘡) <span class=\"hz\">痔瘡</span> serta gangguan fungsi otak dan mental. Pada masa kanak-kanak, sering terganggu oleh benjolan atau tonjolan di tubuh. Apabila bintang Wu Qu (武曲星) <span class=\"hz\">武曲星</span> turut menghuni istana yang sama, penyakit mata menjadi hal yang perlu diwaspadai secara khusus. Apabila bintang Lian Zhen (廉貞星) <span class=\"hz\">廉貞星</span> hadir bersama, tangan dan kaki mudah mengalami cedera atau luka fisik. - action: Perhatikan kesehatan area tubuh bagian bawah, lakukan pemeriksaan rutin untuk deteksi dini; lindungi mata dan hindari aktivitas berisiko cedera pada tangan serta kaki.</p><p>qianyi: - star: null - insight: AGUS H cenderung sering mengubah arah dan tidak terpaku pada satu jalur perjalanan yang tetap — pergerakan dan pergantian profesi adalah bagian dari dinamika hidup yang alami. Meski demikian, peruntungan AGUS H sesungguhnya cukup stabil, baik dalam kehidupan internal maupun dalam hubungan dengan dunia luar. Di lingkungan keluarga maupun tempat kerja, jarang sekali terjadi perubahan yang mendadak dan dramatis. Berkat ketenangan jiwa yang menjadi fondasinya, AGUS H tidak akan pernah terdorong untuk bepergian jauh hanya demi melupakan segalanya, atau berpindah profesi sekadar untuk mencoba hal baru. Yang perlu disadari: berdiam diri dan tidak terburu-buru bergerak justru adalah jalur terbaik untuk mencapai tujuan. Apabila bintang-bintang baik turut bersama dalam istana ini, setiap kali perubahan terjadi di sekitar AGUS H, akan selalu ada atasan atau orang yang lebih tinggi posisinya yang hadir untuk membantu melewati masa-masa kritis tersebut. - action: Manfaatkan kestabilan batin sebagai kekuatan — tidak perlu terburu-buru berpindah atau mengubah strategi; percayakan proses dan biarkan bintang-bintang baik bekerja mendukung dari atas.</p><p>puyi: - star: null - insight: Bawahan atau pengikut AGUS H cenderung sangat kaku dan tidak mau berkompromi — bagaikan ujung tombak yang tersangkut di sudut sempit, menolak untuk lentur sedikit pun. AGUS H akan merasa sangat sulit untuk membangun kedekatan dengan mereka. Kemungkinan besar AGUS H sering direpotkan oleh bawahan yang gemar membangkang dan melawan. Apabila istana ini berada di posisi 亥 <span class=\"hz\">亥</span>, AGUS H akan mengalami pengkhianatan dari bawahan. Namun di usia senja, AGUS H akhirnya dapat memperoleh asisten dan pendamping yang berkualitas dan penuh kapabilitas. Ketika bintang Greedy Wolf (貪狼) <span class=\"hz\">貪狼</span> turut hadir dalam istana yang sama, AGUS H berpotensi hanya dijadikan alat kepentingan oleh para bawahan. Ketika bintang Seven Killings (七殺) <span class=\"hz\">七殺</span> hadir bersama, sering mengalami pengkhianatan dari orang-orang yang dianggap sahabat. Ketika bintang Heavenly Harmony (天同星) <span class=\"hz\">天同星</span> hadir, akan banyak dikelilingi teman-teman muda dan bawahan yang setia. - action: Bangun sistem kepemimpinan yang jelas dan terstruktur — jangan terlalu bergantung pada loyalitas bawahan; waspada terhadap dinamika kelompok yang bisa berubah menjadi pengkhianatan, terutama di posisi 亥.</p>",
+    "_palace2_struct": {
+      "caibo": {
+        "insight": "Cara AGUS H mengelola uang cenderung terbalik dari kebiasaan umum — boros dalam pengeluaran, namun penghasilan yang masuk justru terasa tipis dan minim. AGUS H membangun segalanya dari nol dengan kekuatan sendiri, secara mandiri menangkap peluang untuk menghasilkan uang. Namun masa memperoleh penghasilan besar baru benar-benar datang mulai dari usia pertengahan ke atas. Apabila bintang Tian Liang (天梁星) [[天梁星]] turut menghuni istana yang sama, AGUS H berpotensi menjadi pemegang aset yang cukup kuat dan berpengaruh. Bahkan ketika bintang buruk pun turut hadir, selama AGUS H memilih profesi seperti dokter, akademisi, seniman, atau ahli ramalan, peruntungan finansial tetap terjaga dengan cukup baik. Dari sisi BaZi, sumber kekayaan — baik langsung maupun spekulatif — tidak berlimpah dan sulit ditahan dalam bentuk tunai; investasi properti adalah cara terbaik menjaga kekayaan agar awet.",
+        "action": "Fokuskan energi pada pembangunan karir jangka panjang — puncak finansial baru akan terasa setelah usia pertengahan; jangan hamburkan uang di masa muda dan pertimbangkan profesi-profesi yang disebutkan untuk memperkuat peruntungan."
+      },
+      "jie_e": {
+        "insight": "AGUS H rentan terhadap penyakit pada bagian bawah tubuh, termasuk gangguan pada organ rahim dan penyakit wasir (痔瘡) [[痔瘡]] serta gangguan fungsi otak dan mental. Pada masa kanak-kanak, sering terganggu oleh benjolan atau tonjolan di tubuh. Apabila bintang Wu Qu (武曲星) [[武曲星]] turut menghuni istana yang sama, penyakit mata menjadi hal yang perlu diwaspadai secara khusus. Apabila bintang Lian Zhen (廉貞星) [[廉貞星]] hadir bersama, tangan dan kaki mudah mengalami cedera atau luka fisik.",
+        "action": "Perhatikan kesehatan area tubuh bagian bawah, lakukan pemeriksaan rutin untuk deteksi dini; lindungi mata dan hindari aktivitas berisiko cedera pada tangan serta kaki."
+      },
+      "qianyi": {
+        "insight": "AGUS H cenderung sering mengubah arah dan tidak terpaku pada satu jalur perjalanan yang tetap — pergerakan dan pergantian profesi adalah bagian dari dinamika hidup yang alami. Meski demikian, peruntungan AGUS H sesungguhnya cukup stabil, baik dalam kehidupan internal maupun dalam hubungan dengan dunia luar. Di lingkungan keluarga maupun tempat kerja, jarang sekali terjadi perubahan yang mendadak dan dramatis. Berkat ketenangan jiwa yang menjadi fondasinya, AGUS H tidak akan pernah terdorong untuk bepergian jauh hanya demi melupakan segalanya, atau berpindah profesi sekadar untuk mencoba hal baru. Yang perlu disadari: berdiam diri dan tidak terburu-buru bergerak justru adalah jalur terbaik untuk mencapai tujuan. Apabila bintang-bintang baik turut bersama dalam istana ini, setiap kali perubahan terjadi di sekitar AGUS H, akan selalu ada atasan atau orang yang lebih tinggi posisinya yang hadir untuk membantu melewati masa-masa kritis tersebut.",
+        "action": "Manfaatkan kestabilan batin sebagai kekuatan — tidak perlu terburu-buru berpindah atau mengubah strategi; percayakan proses dan biarkan bintang-bintang baik bekerja mendukung dari atas."
+      },
+      "puyi": {
+        "insight": "Bawahan atau pengikut AGUS H cenderung sangat kaku dan tidak mau berkompromi — bagaikan ujung tombak yang tersangkut di sudut sempit, menolak untuk lentur sedikit pun. AGUS H akan merasa sangat sulit untuk membangun kedekatan dengan mereka. Kemungkinan besar AGUS H sering direpotkan oleh bawahan yang gemar membangkang dan melawan. Apabila istana ini berada di posisi 亥 [[亥]], AGUS H akan mengalami pengkhianatan dari bawahan. Namun di usia senja, AGUS H akhirnya dapat memperoleh asisten dan pendamping yang berkualitas dan penuh kapabilitas. Ketika bintang Greedy Wolf (貪狼) [[貪狼]] turut hadir dalam istana yang sama, AGUS H berpotensi hanya dijadikan alat kepentingan oleh para bawahan. Ketika bintang Seven Killings (七殺) [[七殺]] hadir bersama, sering mengalami pengkhianatan dari orang-orang yang dianggap sahabat. Ketika bintang Heavenly Harmony (天同星) [[天同星]] hadir, akan banyak dikelilingi teman-teman muda dan bawahan yang setia.",
+        "action": "Bangun sistem kepemimpinan yang jelas dan terstruktur — jangan terlalu bergantung pada loyalitas bawahan; waspada terhadap dinamika kelompok yang bisa berubah menjadi pengkhianatan, terutama di posisi 亥."
+      }
+    },
+    "palace3": "<p>guanlu: - star: null - insight: Istana Karir AGUS H menunjukkan kecocokan dengan bidang-bidang seperti teknik sipil (土木) <span class=\"hz\">土木</span> dan konstruksi/arsitektur (建築業) <span class=\"hz\">建築業</span>, profesi teknik atau ahli di bidang tertentu (技師) <span class=\"hz\">技師</span>, wirausaha sosial atau tokoh yang berkontribusi pada masyarakat (社會事業家) <span class=\"hz\">社會事業家</span>, serta dunia kepenulisan dan sastra (作家) <span class=\"hz\">作家</span>. - action: Pertimbangkan jalur karir di bidang konstruksi, teknik, atau kegiatan sosial yang berdampak luas — bidang-bidang ini selaras dengan konfigurasi istana karir AGUS H dan berpotensi membawa kepuasan serta pencapaian yang signifikan.</p><p>tianzhai: - star: null - insight: Peruntungan properti AGUS H membara bagaikan nyala api yang bergejolak — penuh semangat dan bertenaga. Ada potensi untuk memiliki aset properti yang cukup besar dan berlimpah, namun AGUS H harus waspada agar kobaran api ini tidak terlampau berlebihan hingga berakhir meluluhlantakkan segalanya. Ketika bintang-bintang baik menghuni istana ini bersama, AGUS H berpeluang memperoleh properti yang jauh melampaui orang-orang di sekitarnya. Sebaliknya, ketika bintang jahat hadir, risiko kebangkrutan menjadi ancaman nyata yang tidak bisa diabaikan. Ini adalah istana properti yang penuh perubahan dan ketidakpastian. Ada kemungkinan AGUS H memperoleh properti secara tidak terduga, atau lahan dan bangunan yang masuk melalui cara-cara yang tidak lazim. Dari sisi arah, arah Barat sangat menguntungkan untuk urusan properti. - action: Manfaatkan energi properti yang kuat ini secara bijak — investasi properti direkomendasikan, namun jaga agar tidak terlalu agresif; waspadai juga kemungkinan risiko kebangkrutan saat kondisi bintang kurang menguntungkan.</p><p>fude: - star: null - insight: Meski lingkup hidup AGUS H tidak terlalu besar dan megah, karena penekanan yang kuat pada etika dan tata krama, keberkahan dan kebajikan dapat menarik dirinya sendiri datang. Tidak semua hal berjalan sesuai keinginan — namun jika AGUS H memperhatikan kesehatan dengan seksama, peruntungan finansial akan datang secara alami sebagai berkah tersendiri, membawa kehidupan yang memuaskan. Jangan terlalu menonjolkan diri — dengan mengambil peran pendukung bagi orang lain dan bertindak dalam kapasitas itu, pada akhirnya akan ada pencapaian yang berarti. Tanda-tanda kuat menunjukkan peruntungan kebahagiaan yang menyertai AGUS H, dan usia panjang pun kemungkinan besar akan dinikmati. Pada saat yang sama, ada sisi yang tak acuh dalam diri AGUS H — bahkan saat menghadapi krisis besar pun, AGUS H tetap tenang dan tidak panik, mampu menghadapinya dengan kepala dingin. Namun apabila istana ini berada di posisi 寅 atau 卯 <span class=\"hz\">寅</span> <span class=\"hz\">卯</span>, atau terhalang oleh bintang-bintang jahat, kedamaian menjadi hal yang sulit diraih dan hidup dipenuhi perubahan tanpa henti. Ketika kekerasan hati di dalam diri berubah menjadi kesombongan, AGUS H akan menjalani hidup yang terisolasi dan menyendiri dalam keangkuhan. - action: Jaga kerendahan hati dan tetap berperan sebagai pendukung orang lain — jangan terlalu menonjolkan diri; perhatikan kesehatan sebagai fondasi menarik peruntungan finansial secara alami.</p><p>fumu: - star: null - insight: AGUS H dikaruniai kedua orang tua yang dapat diandalkan dan memiliki kedudukan sosial yang cukup tinggi. Hubungan orang tua-anak berjalan dalam suasana harmonis dan penuh kehangatatan. Orang tua juga memiliki kebiasaan menabung yang baik, dan kemungkinan besar akan meninggalkan warisan yang cukup besar untuk AGUS H. Karena dibesarkan di bawah pengaruh orang tua tersebut, AGUS H pun sudah menanamkan kebiasaan menabung yang kuat sejak dini. Orang tua sangat menekankan tata krama dan kesopanan, serta tidak pernah lelah dalam mendidik AGUS H dengan sepenuh hati. Apabila hubungan dengan orang tua tidak dapat dipertahankan secara harmonis, kemungkinan hal itu disebabkan oleh kontrol berlebihan yang orang tua terapkan terhadap tindakan-tindakan AGUS H. Apabila istana ini berada di posisi 子 atau 亥 <span class=\"hz\">子</span> <span class=\"hz\">亥</span>, kedua orang tua berpeluang menikmati umur panjang, dan hubungan orang tua-anak pun terpenuhi dengan baik. Orang tua AGUS H adalah orang-orang yang bijaksana dan masuk akal — menikmati hari-hari yang damai dan menyenangkan dalam hidup, dengan watak yang optimistis dan ceria. Cara mereka menjalani kehidupan juga terampil, dan AGUS H yang tumbuh di bawah bimbingan mereka, secara alami juga belajar kecerdasan hidup yang sama. Apabila bintang Wu Qu (武曲星) <span class=\"hz\">武曲星</span> atau Lian Zhen (廉貞星) <span class=\"hz\">廉貞星</span> turut hadir dalam istana ini, mungkin ada gesekan atau konflik dengan orang tua. - action: Jaga hubungan dengan orang tua dengan komunikasi yang terbuka dan saling menghormati — warisan nilai dan kebiasaan baik mereka adalah aset seumur hidup yang tidak ternilai.</p>",
+    "_palace3_struct": {
+      "guanlu": {
+        "insight": "Istana Karir AGUS H menunjukkan kecocokan dengan bidang-bidang seperti teknik sipil (土木) [[土木]] dan konstruksi/arsitektur (建築業) [[建築業]], profesi teknik atau ahli di bidang tertentu (技師) [[技師]], wirausaha sosial atau tokoh yang berkontribusi pada masyarakat (社會事業家) [[社會事業家]], serta dunia kepenulisan dan sastra (作家) [[作家]].",
+        "action": "Pertimbangkan jalur karir di bidang konstruksi, teknik, atau kegiatan sosial yang berdampak luas — bidang-bidang ini selaras dengan konfigurasi istana karir AGUS H dan berpotensi membawa kepuasan serta pencapaian yang signifikan."
+      },
+      "tianzhai": {
+        "insight": "Peruntungan properti AGUS H membara bagaikan nyala api yang bergejolak — penuh semangat dan bertenaga. Ada potensi untuk memiliki aset properti yang cukup besar dan berlimpah, namun AGUS H harus waspada agar kobaran api ini tidak terlampau berlebihan hingga berakhir meluluhlantakkan segalanya. Ketika bintang-bintang baik menghuni istana ini bersama, AGUS H berpeluang memperoleh properti yang jauh melampaui orang-orang di sekitarnya. Sebaliknya, ketika bintang jahat hadir, risiko kebangkrutan menjadi ancaman nyata yang tidak bisa diabaikan. Ini adalah istana properti yang penuh perubahan dan ketidakpastian. Ada kemungkinan AGUS H memperoleh properti secara tidak terduga, atau lahan dan bangunan yang masuk melalui cara-cara yang tidak lazim. Dari sisi arah, arah Barat sangat menguntungkan untuk urusan properti.",
+        "action": "Manfaatkan energi properti yang kuat ini secara bijak — investasi properti direkomendasikan, namun jaga agar tidak terlalu agresif; waspadai juga kemungkinan risiko kebangkrutan saat kondisi bintang kurang menguntungkan."
+      },
+      "fude": {
+        "insight": "Meski lingkup hidup AGUS H tidak terlalu besar dan megah, karena penekanan yang kuat pada etika dan tata krama, keberkahan dan kebajikan dapat menarik dirinya sendiri datang. Tidak semua hal berjalan sesuai keinginan — namun jika AGUS H memperhatikan kesehatan dengan seksama, peruntungan finansial akan datang secara alami sebagai berkah tersendiri, membawa kehidupan yang memuaskan. Jangan terlalu menonjolkan diri — dengan mengambil peran pendukung bagi orang lain dan bertindak dalam kapasitas itu, pada akhirnya akan ada pencapaian yang berarti. Tanda-tanda kuat menunjukkan peruntungan kebahagiaan yang menyertai AGUS H, dan usia panjang pun kemungkinan besar akan dinikmati. Pada saat yang sama, ada sisi yang tak acuh dalam diri AGUS H — bahkan saat menghadapi krisis besar pun, AGUS H tetap tenang dan tidak panik, mampu menghadapinya dengan kepala dingin. Namun apabila istana ini berada di posisi 寅 atau 卯 [[寅]] [[卯]], atau terhalang oleh bintang-bintang jahat, kedamaian menjadi hal yang sulit diraih dan hidup dipenuhi perubahan tanpa henti. Ketika kekerasan hati di dalam diri berubah menjadi kesombongan, AGUS H akan menjalani hidup yang terisolasi dan menyendiri dalam keangkuhan.",
+        "action": "Jaga kerendahan hati dan tetap berperan sebagai pendukung orang lain — jangan terlalu menonjolkan diri; perhatikan kesehatan sebagai fondasi menarik peruntungan finansial secara alami."
+      },
+      "fumu": {
+        "insight": "AGUS H dikaruniai kedua orang tua yang dapat diandalkan dan memiliki kedudukan sosial yang cukup tinggi. Hubungan orang tua-anak berjalan dalam suasana harmonis dan penuh kehangatatan. Orang tua juga memiliki kebiasaan menabung yang baik, dan kemungkinan besar akan meninggalkan warisan yang cukup besar untuk AGUS H. Karena dibesarkan di bawah pengaruh orang tua tersebut, AGUS H pun sudah menanamkan kebiasaan menabung yang kuat sejak dini. Orang tua sangat menekankan tata krama dan kesopanan, serta tidak pernah lelah dalam mendidik AGUS H dengan sepenuh hati. Apabila hubungan dengan orang tua tidak dapat dipertahankan secara harmonis, kemungkinan hal itu disebabkan oleh kontrol berlebihan yang orang tua terapkan terhadap tindakan-tindakan AGUS H. Apabila istana ini berada di posisi 子 atau 亥 [[子]] [[亥]], kedua orang tua berpeluang menikmati umur panjang, dan hubungan orang tua-anak pun terpenuhi dengan baik. Orang tua AGUS H adalah orang-orang yang bijaksana dan masuk akal — menikmati hari-hari yang damai dan menyenangkan dalam hidup, dengan watak yang optimistis dan ceria. Cara mereka menjalani kehidupan juga terampil, dan AGUS H yang tumbuh di bawah bimbingan mereka, secara alami juga belajar kecerdasan hidup yang sama. Apabila bintang Wu Qu (武曲星) [[武曲星]] atau Lian Zhen (廉貞星) [[廉貞星]] turut hadir dalam istana ini, mungkin ada gesekan atau konflik dengan orang tua.",
+        "action": "Jaga hubungan dengan orang tua dengan komunikasi yang terbuka dan saling menghormati — warisan nilai dan kebiasaan baik mereka adalah aset seumur hidup yang tidak ternilai."
+      }
+    },
+    "sintesis": "AGUS H adalah pribadi yang tangguh secara mental dengan kecerdasan strategis yang dalam — seperti rumput liar yang tetap berdiri meski ditekan dari segala arah, ketangguhan menjadi aset terbesar dalam mengarungi dinamika hidup.",
+    "_sintesis_struct": {
+      "opening": "AGUS H adalah pribadi yang tangguh secara mental dengan kecerdasan strategis yang dalam — seperti rumput liar yang tetap berdiri meski ditekan dari segala arah, ketangguhan menjadi aset terbesar dalam mengarungi dinamika hidup.",
+      "actions": [
+        {
+          "title": "Kelola Kecurigaan Internal"
+        },
+        {
+          "title": "Perkuat Jaringan Setara"
+        },
+        {
+          "title": "Evaluasi Cara Mencari Nafkah"
+        },
+        {
+          "title": "Berikan Ruang bagi Pasangan"
+        },
+        {
+          "title": "Serap Ilmu dari Berbagai Bidang"
+        }
+      ]
+    },
+    "_dmcard": "\n        <div class=\"dmc-eyebrow\">本 命 · Penguasa Hari</div>\n        <div class=\"dmc-stem\">甲</div>\n        <div class=\"dmc-element\">木 · Kayu Yang</div>\n        <div class=\"dmc-pinyin\">Jiǎ 木, \"Pohon Besar\"</div>\n        <div class=\"dmc-strength\">Status: <span class=\"val\">KUAT</span> · 旺</div>\n      ",
+    "_jishen_body": "<strong>金</strong> (Jīn · Logam), Logam tajam yang dapat melukai bila terlalu dominan; hindari lingkungan terlalu kaku, hierarkis, dan kompetitif berlebih.",
+    "fam_pasangan_vibe": "Penuh Ketegasan · Butuh Keserasian",
+    "fam_pasangan_headline": "Pasangan ideal dari shio Harimau, Kambing, atau Anjing",
+    "caifu_zheng_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "caifu_pian_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "_p1_ming_gong": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Diri</span><span class=\"pn-meta\">Mìng Gōng<span class=\"hz\">命宮</span></span></div></div><div class=\"pal-body\"><p>Bagaikan tanaman obat yang tumbuh di bawah pohon besar, AGUS H memiliki sisi yang gelap dan suram, namun sekaligus memiliki ketangguhan layaknya rumput liar yang sulit dipatahkan. Postur AGUS H cenderung lebih tinggi dan bertubuh lebih kekar dibandingkan orang kebanyakan. Ciri khas yang menonjol adalah kemampuan bersikap hangat dan ramah kepada siapa pun, sementara pikiran juga berputar dengan sangat cepat. Kepribadian AGUS H lembut dan mudah bergaul, fleksibel dalam berinteraksi dengan siapa pun. Di sisi lain, ada juga sifat keras kepala dan gemar ikut campur urusan orang lain — ketika melihat seseorang dalam kesulitan, meski tanpa diminta, AGUS H akan dengan penuh semangat mengulurkan bantuan. Karena watak suka membantu yang sudah menjadi pembawaan alami ini, AGUS H memiliki lingkaran pertemanan yang cukup luas dan dipandang oleh orang-orang yang lebih muda sebagai kakak yang dapat diandalkan. Namun di mata orang yang lebih tua, AGUS H bisa dengan mudah dianggap sebagai sosok yang terlalu banyak mencampuri urusan orang lain. Teman-teman perempuan AGUS H kebanyakan termasuk dalam golongan wanita berbakat dan berprestasi, sementara teman pria memiliki semangat bersaing yang tak kalah tingginya — dalam hal apa pun, selalu ingin mengadu panjang-pendek dengan orang lain. Setelah menikah, AGUS H berubah menjadi pasangan yang cakap dan berperan besar dalam mengarahkan langkah sang suami/istri. Yang perlu diperhatikan: jangan sampai terlalu jauh mencampuri urusan pasangan. AGUS H adalah sosok yang membumi, berjiwa dalam, dan penuh perhitungan jauh ke depan. Mereka tidak pernah mengucapkan sepatah kata pun yang tidak perlu terkait urusan orang lain; bahkan ketika menghadapi penderitaan besar sekalipun, semuanya ditahan kuat-kuat di dalam hati — sehingga orang lain seringkali merasa sulit menebak, tidak tahu apa sebenarnya yang sedang dipikirkan oleh AGUS H. Orang-orang seperti ini kerap memendam kecurigaan di dalam hati; jika kecurigaan itu terus menumpuk dan semakin berat, pada akhirnya akan berubah menjadi sifat paranoid berlebihan. Namun, bila AGUS H mampu menyerap ilmu pengetahuan dari berbagai bidang secara luas, ada harapan untuk menjadi pribadi yang berwawasan luas dan berjiwa besar. Kepribadian yang dingin dan penuh kalkulasi ini, apabila posisi Istana Kehidupan juga jatuh di 子 atau 亥, maka barangkali tidak terhindarkan dari permainan nasib yang mengejutkan. Ketika bintang Gerbang Kegelapan (巨門星) <span class=\"hz\">巨門星</span> menampakkan wujud aslinya secara penuh, kekayaan bisa mengalir deras tanpa henti — namun karena AGUS H dengan segenap tekad mengejar uang, bahkan jika menggunakan cara-cara yang keras sekalipun, hati tetap tenang dan tidak terguncang.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Kenali dan manfaatkan kekuatan batin yang dalam ini — jadikan kemampuan berhitung dan membaca situasi sebagai aset profesional, bukan beban emosional.</span></div></div>",
+    "_solo_ming_gong_body": "<style>.palace-solo .ps-body p { font-size: 8pt; line-height: 1.4; margin: 0 0 1.8mm 0; }</style><p>Bagaikan tanaman obat yang tumbuh di bawah pohon besar, AGUS H memiliki sisi yang gelap dan suram, namun sekaligus memiliki ketangguhan layaknya rumput liar yang sulit dipatahkan. Postur AGUS H cenderung lebih tinggi dan bertubuh lebih kekar dibandingkan orang kebanyakan. Ciri khas yang menonjol adalah kemampuan bersikap hangat dan ramah kepada siapa pun, sementara pikiran juga berputar dengan sangat cepat. Kepribadian AGUS H lembut dan mudah bergaul, fleksibel dalam berinteraksi dengan siapa pun. Di sisi lain, ada juga sifat keras kepala dan gemar ikut campur urusan orang lain — ketika melihat seseorang dalam kesulitan, meski tanpa diminta, AGUS H akan dengan penuh semangat mengulurkan bantuan. Karena watak suka membantu yang sudah menjadi pembawaan alami ini, AGUS H memiliki lingkaran pertemanan yang cukup luas dan dipandang oleh orang-orang yang lebih muda sebagai kakak yang dapat diandalkan. Namun di mata orang yang lebih tua, AGUS H bisa dengan mudah dianggap sebagai sosok yang terlalu banyak mencampuri urusan orang lain. Teman-teman perempuan AGUS H kebanyakan termasuk dalam golongan wanita berbakat dan berprestasi, sementara teman pria memiliki semangat bersaing yang tak kalah tingginya — dalam hal apa pun, selalu ingin mengadu panjang-pendek dengan orang lain. Setelah menikah, AGUS H berubah menjadi pasangan yang cakap dan berperan besar dalam mengarahkan langkah sang suami/istri. Yang perlu diperhatikan: jangan sampai terlalu jauh mencampuri urusan pasangan. AGUS H adalah sosok yang membumi, berjiwa dalam, dan penuh perhitungan jauh ke depan. Mereka tidak pernah mengucapkan sepatah kata pun yang tidak perlu terkait urusan orang lain; bahkan ketika menghadapi penderitaan besar sekalipun, semuanya ditahan kuat-kuat di dalam hati — sehingga orang lain seringkali merasa sulit menebak, tidak tahu apa sebenarnya yang sedang dipikirkan oleh AGUS H. Orang-orang seperti ini kerap memendam kecurigaan di dalam hati; jika kecurigaan itu terus menumpuk dan semakin berat, pada akhirnya akan berubah menjadi sifat paranoid berlebihan. Namun, bila AGUS H mampu menyerap ilmu pengetahuan dari berbagai bidang secara luas, ada harapan untuk menjadi pribadi yang berwawasan luas dan berjiwa besar. Kepribadian yang dingin dan penuh kalkulasi ini, apabila posisi Istana Kehidupan juga jatuh di 子 atau 亥, maka barangkali tidak terhindarkan dari permainan nasib yang mengejutkan. Ketika bintang Gerbang Kegelapan (巨門星) <span class=\"hz\">巨門星</span> menampakkan wujud aslinya secara penuh, kekayaan bisa mengalir deras tanpa henti — namun karena AGUS H dengan segenap tekad mengejar uang, bahkan jika menggunakan cara-cara yang keras sekalipun, hati tetap tenang dan tidak terguncang.</p>",
+    "_solo_ming_gong_action": "Kenali dan manfaatkan kekuatan batin yang dalam ini — jadikan kemampuan berhitung dan membaca situasi sebagai aset profesional, bukan beban emosional.",
+    "_p1_xiongdi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Saudara</span><span class=\"pn-meta\">Xiōng Dì<span class=\"hz\">兄弟</span></span></div></div>",
+    "_p1_fuqi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pasangan</span><span class=\"pn-meta\">Fū Qī<span class=\"hz\">夫妻</span></span></div></div><div class=\"pal-body\"><p>Hubungan asmara AGUS H bagaikan tanaman yang suka naungan — cenderung tersembunyi dan tidak bersinar terang di permukaan. Mudah terbentuk hubungan yang penuh karma atau penderitaan, dan tidak sedikit yang berakhir tragis. Namun sekali sudah menikah, pada umumnya tidak sampai berpisah. Karena bintang Matahari (太陽星) <span class=\"hz\">太陽星</span> bergerak dengan energi yang terlampau kuat dalam istana ini, pernikahan di usia muda cukup membawa sial bagi AGUS H. Bila memungkinkan, jangan terburu-buru menikah — ambil waktu untuk mempertimbangkan secara matang dan perlahan. Bagi pria: cari pasangan wanita yang bersemangat dan sehat. Bagi wanita: berpotensi menemukan pria mapan dan bermurah hati sebagai pasangan hidup. Apabila bintang jahat turut menghuni istana ini, hampir bisa dikatakan langsung menghadapi ancaman perceraian. Bintang Bulan (太陰星) <span class=\"hz\">太陰星</span> melambangkan cahaya bulan yang murni dan jernih — karena itu, pria maupun wanita dari tipe ini cenderung bersifat polos dan lembut. Bila juga ditemani bintang Wen Chang (文昌) <span class=\"hz\">文昌</span> dan Wen Qu (文曲) <span class=\"hz\">文曲</span> dalam istana yang sama, kualitas kepribadian dan pendidikan semakin menonjol. Pria berpeluang mendapatkan istri yang tenang dan berhati lembut. Wanita mungkin akan menikah dengan tipe seniman yang bersih jiwanya. Ketika bersama 太陽 <span class=\"hz\">太陽</span>, kehidupan pernikahan berjalan harmonis dan penuh. Ketika bersama bintang Langit Cerdas (天機星) <span class=\"hz\">天機星</span>, pasangan ini menjadi idaman orang lain — serasi luar dalam. Namun bila bintang jahat turut hadir, ada risiko situasi yang memalukan atau menyulitkan.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Tidak perlu terburu-buru dalam memilih pasangan — pertimbangkan dengan matang, dan carilah sosok yang sehat, stabil, serta memiliki ketenangan jiwa yang serasi dengan kepribadian AGUS H.</span></div></div>",
+    "_solo_fuqi_body": "<style>.palace-solo .ps-body p { font-size: 9pt; line-height: 1.48; margin: 0 0 2.2mm 0; }</style><p>Hubungan asmara AGUS H bagaikan tanaman yang suka naungan — cenderung tersembunyi dan tidak bersinar terang di permukaan. Mudah terbentuk hubungan yang penuh karma atau penderitaan, dan tidak sedikit yang berakhir tragis. Namun sekali sudah menikah, pada umumnya tidak sampai berpisah. Karena bintang Matahari (太陽星) <span class=\"hz\">太陽星</span> bergerak dengan energi yang terlampau kuat dalam istana ini, pernikahan di usia muda cukup membawa sial bagi AGUS H. Bila memungkinkan, jangan terburu-buru menikah — ambil waktu untuk mempertimbangkan secara matang dan perlahan. Bagi pria: cari pasangan wanita yang bersemangat dan sehat. Bagi wanita: berpotensi menemukan pria mapan dan bermurah hati sebagai pasangan hidup. Apabila bintang jahat turut menghuni istana ini, hampir bisa dikatakan langsung menghadapi ancaman perceraian. Bintang Bulan (太陰星) <span class=\"hz\">太陰星</span> melambangkan cahaya bulan yang murni dan jernih — karena itu, pria maupun wanita dari tipe ini cenderung bersifat polos dan lembut. Bila juga ditemani bintang Wen Chang (文昌) <span class=\"hz\">文昌</span> dan Wen Qu (文曲) <span class=\"hz\">文曲</span> dalam istana yang sama, kualitas kepribadian dan pendidikan semakin menonjol. Pria berpeluang mendapatkan istri yang tenang dan berhati lembut. Wanita mungkin akan menikah dengan tipe seniman yang bersih jiwanya. Ketika bersama 太陽 <span class=\"hz\">太陽</span>, kehidupan pernikahan berjalan harmonis dan penuh. Ketika bersama bintang Langit Cerdas (天機星) <span class=\"hz\">天機星</span>, pasangan ini menjadi idaman orang lain — serasi luar dalam. Namun bila bintang jahat turut hadir, ada risiko situasi yang memalukan atau menyulitkan.</p>",
+    "_solo_fuqi_action": "Tidak perlu terburu-buru dalam memilih pasangan — pertimbangkan dengan matang, dan carilah sosok yang sehat, stabil, serta memiliki ketenangan jiwa yang serasi dengan kepribadian AGUS H.",
+    "_p1_zinu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Anak</span><span class=\"pn-meta\">Zǐ Nǚ<span class=\"hz\">子女</span></span></div></div>",
+    "_p2_caibo": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Rezeki</span><span class=\"pn-meta\">Cái Bó<span class=\"hz\">財帛</span></span></div></div><div class=\"pal-body\"><p>Cara AGUS H mengelola uang cenderung terbalik dari kebiasaan umum — boros dalam pengeluaran, namun penghasilan yang masuk justru terasa tipis dan minim. AGUS H membangun segalanya dari nol dengan kekuatan sendiri, secara mandiri menangkap peluang untuk menghasilkan uang. Namun masa memperoleh penghasilan besar baru benar-benar datang mulai dari usia pertengahan ke atas. Apabila bintang Tian Liang (天梁星) <span class=\"hz\">天梁星</span> turut menghuni istana yang sama, AGUS H berpotensi menjadi pemegang aset yang cukup kuat dan berpengaruh. Bahkan ketika bintang buruk pun turut hadir, selama AGUS H memilih profesi seperti dokter, akademisi, seniman, atau ahli ramalan, peruntungan finansial tetap terjaga dengan cukup baik. Dari sisi BaZi, sumber kekayaan — baik langsung maupun spekulatif — tidak berlimpah dan sulit ditahan dalam bentuk tunai; investasi properti adalah cara terbaik menjaga kekayaan agar awet.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Fokuskan energi pada pembangunan karir jangka panjang — puncak finansial baru akan terasa setelah usia pertengahan; jangan hamburkan uang di masa muda dan pertimbangkan profesi-profesi yang disebutkan untuk memperkuat peruntungan.</span></div></div>",
+    "_solo_caibo_body": "<p>Cara AGUS H mengelola uang cenderung terbalik dari kebiasaan umum — boros dalam pengeluaran, namun penghasilan yang masuk justru terasa tipis dan minim. AGUS H membangun segalanya dari nol dengan kekuatan sendiri, secara mandiri menangkap peluang untuk menghasilkan uang. Namun masa memperoleh penghasilan besar baru benar-benar datang mulai dari usia pertengahan ke atas. Apabila bintang Tian Liang (天梁星) <span class=\"hz\">天梁星</span> turut menghuni istana yang sama, AGUS H berpotensi menjadi pemegang aset yang cukup kuat dan berpengaruh. Bahkan ketika bintang buruk pun turut hadir, selama AGUS H memilih profesi seperti dokter, akademisi, seniman, atau ahli ramalan, peruntungan finansial tetap terjaga dengan cukup baik. Dari sisi BaZi, sumber kekayaan — baik langsung maupun spekulatif — tidak berlimpah dan sulit ditahan dalam bentuk tunai; investasi properti adalah cara terbaik menjaga kekayaan agar awet.</p>",
+    "_solo_caibo_action": "Fokuskan energi pada pembangunan karir jangka panjang — puncak finansial baru akan terasa setelah usia pertengahan; jangan hamburkan uang di masa muda dan pertimbangkan profesi-profesi yang disebutkan untuk memperkuat peruntungan.",
+    "_p2_jie_e": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Kesehatan</span><span class=\"pn-meta\">Jí È<span class=\"hz\">疾厄</span></span></div></div><div class=\"pal-body\"><p>AGUS H rentan terhadap penyakit pada bagian bawah tubuh, termasuk gangguan pada organ rahim dan penyakit wasir (痔瘡) <span class=\"hz\">痔瘡</span> serta gangguan fungsi otak dan mental. Pada masa kanak-kanak, sering terganggu oleh benjolan atau tonjolan di tubuh. Apabila bintang Wu Qu (武曲星) <span class=\"hz\">武曲星</span> turut menghuni istana yang sama, penyakit mata menjadi hal yang perlu diwaspadai secara khusus. Apabila bintang Lian Zhen (廉貞星) <span class=\"hz\">廉貞星</span> hadir bersama, tangan dan kaki mudah mengalami cedera atau luka fisik.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Perhatikan kesehatan area tubuh bagian bawah, lakukan pemeriksaan rutin untuk deteksi dini; lindungi mata dan hindari aktivitas berisiko cedera pada tangan serta kaki.</span></div></div>",
+    "_solo_jie_e_body": "<p>AGUS H rentan terhadap penyakit pada bagian bawah tubuh, termasuk gangguan pada organ rahim dan penyakit wasir (痔瘡) <span class=\"hz\">痔瘡</span> serta gangguan fungsi otak dan mental. Pada masa kanak-kanak, sering terganggu oleh benjolan atau tonjolan di tubuh. Apabila bintang Wu Qu (武曲星) <span class=\"hz\">武曲星</span> turut menghuni istana yang sama, penyakit mata menjadi hal yang perlu diwaspadai secara khusus. Apabila bintang Lian Zhen (廉貞星) <span class=\"hz\">廉貞星</span> hadir bersama, tangan dan kaki mudah mengalami cedera atau luka fisik.</p>",
+    "_solo_jie_e_action": "Perhatikan kesehatan area tubuh bagian bawah, lakukan pemeriksaan rutin untuk deteksi dini; lindungi mata dan hindari aktivitas berisiko cedera pada tangan serta kaki.",
+    "_p2_qianyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Perpindahan</span><span class=\"pn-meta\">Qiān Yí<span class=\"hz\">遷移</span></span></div></div><div class=\"pal-body\"><p>AGUS H cenderung sering mengubah arah dan tidak terpaku pada satu jalur perjalanan yang tetap — pergerakan dan pergantian profesi adalah bagian dari dinamika hidup yang alami. Meski demikian, peruntungan AGUS H sesungguhnya cukup stabil, baik dalam kehidupan internal maupun dalam hubungan dengan dunia luar. Di lingkungan keluarga maupun tempat kerja, jarang sekali terjadi perubahan yang mendadak dan dramatis. Berkat ketenangan jiwa yang menjadi fondasinya, AGUS H tidak akan pernah terdorong untuk bepergian jauh hanya demi melupakan segalanya, atau berpindah profesi sekadar untuk mencoba hal baru. Yang perlu disadari: berdiam diri dan tidak terburu-buru bergerak justru adalah jalur terbaik untuk mencapai tujuan. Apabila bintang-bintang baik turut bersama dalam istana ini, setiap kali perubahan terjadi di sekitar AGUS H, akan selalu ada atasan atau orang yang lebih tinggi posisinya yang hadir untuk membantu melewati masa-masa kritis tersebut.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Manfaatkan kestabilan batin sebagai kekuatan — tidak perlu terburu-buru berpindah atau mengubah strategi; percayakan proses dan biarkan bintang-bintang baik bekerja mendukung dari atas.</span></div></div>",
+    "_solo_qianyi_body": "<p>AGUS H cenderung sering mengubah arah dan tidak terpaku pada satu jalur perjalanan yang tetap — pergerakan dan pergantian profesi adalah bagian dari dinamika hidup yang alami. Meski demikian, peruntungan AGUS H sesungguhnya cukup stabil, baik dalam kehidupan internal maupun dalam hubungan dengan dunia luar. Di lingkungan keluarga maupun tempat kerja, jarang sekali terjadi perubahan yang mendadak dan dramatis. Berkat ketenangan jiwa yang menjadi fondasinya, AGUS H tidak akan pernah terdorong untuk bepergian jauh hanya demi melupakan segalanya, atau berpindah profesi sekadar untuk mencoba hal baru. Yang perlu disadari: berdiam diri dan tidak terburu-buru bergerak justru adalah jalur terbaik untuk mencapai tujuan. Apabila bintang-bintang baik turut bersama dalam istana ini, setiap kali perubahan terjadi di sekitar AGUS H, akan selalu ada atasan atau orang yang lebih tinggi posisinya yang hadir untuk membantu melewati masa-masa kritis tersebut.</p>",
+    "_solo_qianyi_action": "Manfaatkan kestabilan batin sebagai kekuatan — tidak perlu terburu-buru berpindah atau mengubah strategi; percayakan proses dan biarkan bintang-bintang baik bekerja mendukung dari atas.",
+    "_p2_puyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pertemanan</span><span class=\"pn-meta\">Pú Yì<span class=\"hz\">僕役</span></span></div></div><div class=\"pal-body\"><p>Bawahan atau pengikut AGUS H cenderung sangat kaku dan tidak mau berkompromi — bagaikan ujung tombak yang tersangkut di sudut sempit, menolak untuk lentur sedikit pun. AGUS H akan merasa sangat sulit untuk membangun kedekatan dengan mereka. Kemungkinan besar AGUS H sering direpotkan oleh bawahan yang gemar membangkang dan melawan. Apabila istana ini berada di posisi 亥 <span class=\"hz\">亥</span>, AGUS H akan mengalami pengkhianatan dari bawahan. Namun di usia senja, AGUS H akhirnya dapat memperoleh asisten dan pendamping yang berkualitas dan penuh kapabilitas. Ketika bintang Greedy Wolf (貪狼) <span class=\"hz\">貪狼</span> turut hadir dalam istana yang sama, AGUS H berpotensi hanya dijadikan alat kepentingan oleh para bawahan. Ketika bintang Seven Killings (七殺) <span class=\"hz\">七殺</span> hadir bersama, sering mengalami pengkhianatan dari orang-orang yang dianggap sahabat. Ketika bintang Heavenly Harmony (天同星) <span class=\"hz\">天同星</span> hadir, akan banyak dikelilingi teman-teman muda dan bawahan yang setia.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun sistem kepemimpinan yang jelas dan terstruktur — jangan terlalu bergantung pada loyalitas bawahan; waspada terhadap dinamika kelompok yang bisa berubah menjadi pengkhianatan, terutama di posisi 亥.</span></div></div>",
+    "_solo_puyi_body": "<p>Bawahan atau pengikut AGUS H cenderung sangat kaku dan tidak mau berkompromi — bagaikan ujung tombak yang tersangkut di sudut sempit, menolak untuk lentur sedikit pun. AGUS H akan merasa sangat sulit untuk membangun kedekatan dengan mereka. Kemungkinan besar AGUS H sering direpotkan oleh bawahan yang gemar membangkang dan melawan. Apabila istana ini berada di posisi 亥 <span class=\"hz\">亥</span>, AGUS H akan mengalami pengkhianatan dari bawahan. Namun di usia senja, AGUS H akhirnya dapat memperoleh asisten dan pendamping yang berkualitas dan penuh kapabilitas. Ketika bintang Greedy Wolf (貪狼) <span class=\"hz\">貪狼</span> turut hadir dalam istana yang sama, AGUS H berpotensi hanya dijadikan alat kepentingan oleh para bawahan. Ketika bintang Seven Killings (七殺) <span class=\"hz\">七殺</span> hadir bersama, sering mengalami pengkhianatan dari orang-orang yang dianggap sahabat. Ketika bintang Heavenly Harmony (天同星) <span class=\"hz\">天同星</span> hadir, akan banyak dikelilingi teman-teman muda dan bawahan yang setia.</p>",
+    "_solo_puyi_action": "Bangun sistem kepemimpinan yang jelas dan terstruktur — jangan terlalu bergantung pada loyalitas bawahan; waspada terhadap dinamika kelompok yang bisa berubah menjadi pengkhianatan, terutama di posisi 亥.",
+    "_p3_guanlu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Karir</span><span class=\"pn-meta\">Guān Lù<span class=\"hz\">官祿</span></span></div></div><div class=\"pal-body\"><p>Istana Karir AGUS H menunjukkan kecocokan dengan bidang-bidang seperti teknik sipil (土木) <span class=\"hz\">土木</span> dan konstruksi/arsitektur (建築業) <span class=\"hz\">建築業</span>, profesi teknik atau ahli di bidang tertentu (技師) <span class=\"hz\">技師</span>, wirausaha sosial atau tokoh yang berkontribusi pada masyarakat (社會事業家) <span class=\"hz\">社會事業家</span>, serta dunia kepenulisan dan sastra (作家) <span class=\"hz\">作家</span>.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Pertimbangkan jalur karir di bidang konstruksi, teknik, atau kegiatan sosial yang berdampak luas — bidang-bidang ini selaras dengan konfigurasi istana karir AGUS H dan berpotensi membawa kepuasan serta pencapaian yang signifikan.</span></div></div>",
+    "_solo_guanlu_body": "<p>Istana Karir AGUS H menunjukkan kecocokan dengan bidang-bidang seperti teknik sipil (土木) <span class=\"hz\">土木</span> dan konstruksi/arsitektur (建築業) <span class=\"hz\">建築業</span>, profesi teknik atau ahli di bidang tertentu (技師) <span class=\"hz\">技師</span>, wirausaha sosial atau tokoh yang berkontribusi pada masyarakat (社會事業家) <span class=\"hz\">社會事業家</span>, serta dunia kepenulisan dan sastra (作家) <span class=\"hz\">作家</span>.</p>",
+    "_solo_guanlu_action": "Pertimbangkan jalur karir di bidang konstruksi, teknik, atau kegiatan sosial yang berdampak luas — bidang-bidang ini selaras dengan konfigurasi istana karir AGUS H dan berpotensi membawa kepuasan serta pencapaian yang signifikan.",
+    "_p3_tianzhai": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Properti</span><span class=\"pn-meta\">Tián Zhái<span class=\"hz\">田宅</span></span></div></div><div class=\"pal-body\"><p>Peruntungan properti AGUS H membara bagaikan nyala api yang bergejolak — penuh semangat dan bertenaga. Ada potensi untuk memiliki aset properti yang cukup besar dan berlimpah, namun AGUS H harus waspada agar kobaran api ini tidak terlampau berlebihan hingga berakhir meluluhlantakkan segalanya. Ketika bintang-bintang baik menghuni istana ini bersama, AGUS H berpeluang memperoleh properti yang jauh melampaui orang-orang di sekitarnya. Sebaliknya, ketika bintang jahat hadir, risiko kebangkrutan menjadi ancaman nyata yang tidak bisa diabaikan. Ini adalah istana properti yang penuh perubahan dan ketidakpastian. Ada kemungkinan AGUS H memperoleh properti secara tidak terduga, atau lahan dan bangunan yang masuk melalui cara-cara yang tidak lazim. Dari sisi arah, arah Barat sangat menguntungkan untuk urusan properti.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Manfaatkan energi properti yang kuat ini secara bijak — investasi properti direkomendasikan, namun jaga agar tidak terlalu agresif; waspadai juga kemungkinan risiko kebangkrutan saat kondisi bintang kurang menguntungkan.</span></div></div>",
+    "_solo_tianzhai_body": "<p>Peruntungan properti AGUS H membara bagaikan nyala api yang bergejolak — penuh semangat dan bertenaga. Ada potensi untuk memiliki aset properti yang cukup besar dan berlimpah, namun AGUS H harus waspada agar kobaran api ini tidak terlampau berlebihan hingga berakhir meluluhlantakkan segalanya. Ketika bintang-bintang baik menghuni istana ini bersama, AGUS H berpeluang memperoleh properti yang jauh melampaui orang-orang di sekitarnya. Sebaliknya, ketika bintang jahat hadir, risiko kebangkrutan menjadi ancaman nyata yang tidak bisa diabaikan. Ini adalah istana properti yang penuh perubahan dan ketidakpastian. Ada kemungkinan AGUS H memperoleh properti secara tidak terduga, atau lahan dan bangunan yang masuk melalui cara-cara yang tidak lazim. Dari sisi arah, arah Barat sangat menguntungkan untuk urusan properti.</p>",
+    "_solo_tianzhai_action": "Manfaatkan energi properti yang kuat ini secara bijak — investasi properti direkomendasikan, namun jaga agar tidak terlalu agresif; waspadai juga kemungkinan risiko kebangkrutan saat kondisi bintang kurang menguntungkan.",
+    "_p3_fude": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Berkah</span><span class=\"pn-meta\">Fú Dé<span class=\"hz\">福德</span></span></div></div><div class=\"pal-body\"><p>Meski lingkup hidup AGUS H tidak terlalu besar dan megah, karena penekanan yang kuat pada etika dan tata krama, keberkahan dan kebajikan dapat menarik dirinya sendiri datang. Tidak semua hal berjalan sesuai keinginan — namun jika AGUS H memperhatikan kesehatan dengan seksama, peruntungan finansial akan datang secara alami sebagai berkah tersendiri, membawa kehidupan yang memuaskan. Jangan terlalu menonjolkan diri — dengan mengambil peran pendukung bagi orang lain dan bertindak dalam kapasitas itu, pada akhirnya akan ada pencapaian yang berarti. Tanda-tanda kuat menunjukkan peruntungan kebahagiaan yang menyertai AGUS H, dan usia panjang pun kemungkinan besar akan dinikmati. Pada saat yang sama, ada sisi yang tak acuh dalam diri AGUS H — bahkan saat menghadapi krisis besar pun, AGUS H tetap tenang dan tidak panik, mampu menghadapinya dengan kepala dingin. Namun apabila istana ini berada di posisi 寅 atau 卯 <span class=\"hz\">寅</span> <span class=\"hz\">卯</span>, atau terhalang oleh bintang-bintang jahat, kedamaian menjadi hal yang sulit diraih dan hidup dipenuhi perubahan tanpa henti. Ketika kekerasan hati di dalam diri berubah menjadi kesombongan, AGUS H akan menjalani hidup yang terisolasi dan menyendiri dalam keangkuhan.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga kerendahan hati dan tetap berperan sebagai pendukung orang lain — jangan terlalu menonjolkan diri; perhatikan kesehatan sebagai fondasi menarik peruntungan finansial secara alami.</span></div></div>",
+    "_solo_fude_body": "<p>Meski lingkup hidup AGUS H tidak terlalu besar dan megah, karena penekanan yang kuat pada etika dan tata krama, keberkahan dan kebajikan dapat menarik dirinya sendiri datang. Tidak semua hal berjalan sesuai keinginan — namun jika AGUS H memperhatikan kesehatan dengan seksama, peruntungan finansial akan datang secara alami sebagai berkah tersendiri, membawa kehidupan yang memuaskan. Jangan terlalu menonjolkan diri — dengan mengambil peran pendukung bagi orang lain dan bertindak dalam kapasitas itu, pada akhirnya akan ada pencapaian yang berarti. Tanda-tanda kuat menunjukkan peruntungan kebahagiaan yang menyertai AGUS H, dan usia panjang pun kemungkinan besar akan dinikmati. Pada saat yang sama, ada sisi yang tak acuh dalam diri AGUS H — bahkan saat menghadapi krisis besar pun, AGUS H tetap tenang dan tidak panik, mampu menghadapinya dengan kepala dingin. Namun apabila istana ini berada di posisi 寅 atau 卯 <span class=\"hz\">寅</span> <span class=\"hz\">卯</span>, atau terhalang oleh bintang-bintang jahat, kedamaian menjadi hal yang sulit diraih dan hidup dipenuhi perubahan tanpa henti. Ketika kekerasan hati di dalam diri berubah menjadi kesombongan, AGUS H akan menjalani hidup yang terisolasi dan menyendiri dalam keangkuhan.</p>",
+    "_solo_fude_action": "Jaga kerendahan hati dan tetap berperan sebagai pendukung orang lain — jangan terlalu menonjolkan diri; perhatikan kesehatan sebagai fondasi menarik peruntungan finansial secara alami.",
+    "_p3_fumu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Orang Tua</span><span class=\"pn-meta\">Fù Mǔ<span class=\"hz\">父母</span></span></div></div><div class=\"pal-body\"><p>AGUS H dikaruniai kedua orang tua yang dapat diandalkan dan memiliki kedudukan sosial yang cukup tinggi. Hubungan orang tua-anak berjalan dalam suasana harmonis dan penuh kehangatatan. Orang tua juga memiliki kebiasaan menabung yang baik, dan kemungkinan besar akan meninggalkan warisan yang cukup besar untuk AGUS H. Karena dibesarkan di bawah pengaruh orang tua tersebut, AGUS H pun sudah menanamkan kebiasaan menabung yang kuat sejak dini. Orang tua sangat menekankan tata krama dan kesopanan, serta tidak pernah lelah dalam mendidik AGUS H dengan sepenuh hati. Apabila hubungan dengan orang tua tidak dapat dipertahankan secara harmonis, kemungkinan hal itu disebabkan oleh kontrol berlebihan yang orang tua terapkan terhadap tindakan-tindakan AGUS H. Apabila istana ini berada di posisi 子 atau 亥 <span class=\"hz\">子</span> <span class=\"hz\">亥</span>, kedua orang tua berpeluang menikmati umur panjang, dan hubungan orang tua-anak pun terpenuhi dengan baik. Orang tua AGUS H adalah orang-orang yang bijaksana dan masuk akal — menikmati hari-hari yang damai dan menyenangkan dalam hidup, dengan watak yang optimistis dan ceria. Cara mereka menjalani kehidupan juga terampil, dan AGUS H yang tumbuh di bawah bimbingan mereka, secara alami juga belajar kecerdasan hidup yang sama. Apabila bintang Wu Qu (武曲星) <span class=\"hz\">武曲星</span> atau Lian Zhen (廉貞星) <span class=\"hz\">廉貞星</span> turut hadir dalam istana ini, mungkin ada gesekan atau konflik dengan orang tua.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga hubungan dengan orang tua dengan komunikasi yang terbuka dan saling menghormati — warisan nilai dan kebiasaan baik mereka adalah aset seumur hidup yang tidak ternilai.</span></div></div>",
+    "_solo_fumu_body": "<p>AGUS H dikaruniai kedua orang tua yang dapat diandalkan dan memiliki kedudukan sosial yang cukup tinggi. Hubungan orang tua-anak berjalan dalam suasana harmonis dan penuh kehangatatan. Orang tua juga memiliki kebiasaan menabung yang baik, dan kemungkinan besar akan meninggalkan warisan yang cukup besar untuk AGUS H. Karena dibesarkan di bawah pengaruh orang tua tersebut, AGUS H pun sudah menanamkan kebiasaan menabung yang kuat sejak dini. Orang tua sangat menekankan tata krama dan kesopanan, serta tidak pernah lelah dalam mendidik AGUS H dengan sepenuh hati. Apabila hubungan dengan orang tua tidak dapat dipertahankan secara harmonis, kemungkinan hal itu disebabkan oleh kontrol berlebihan yang orang tua terapkan terhadap tindakan-tindakan AGUS H. Apabila istana ini berada di posisi 子 atau 亥 <span class=\"hz\">子</span> <span class=\"hz\">亥</span>, kedua orang tua berpeluang menikmati umur panjang, dan hubungan orang tua-anak pun terpenuhi dengan baik. Orang tua AGUS H adalah orang-orang yang bijaksana dan masuk akal — menikmati hari-hari yang damai dan menyenangkan dalam hidup, dengan watak yang optimistis dan ceria. Cara mereka menjalani kehidupan juga terampil, dan AGUS H yang tumbuh di bawah bimbingan mereka, secara alami juga belajar kecerdasan hidup yang sama. Apabila bintang Wu Qu (武曲星) <span class=\"hz\">武曲星</span> atau Lian Zhen (廉貞星) <span class=\"hz\">廉貞星</span> turut hadir dalam istana ini, mungkin ada gesekan atau konflik dengan orang tua.</p>",
+    "_solo_fumu_action": "Jaga hubungan dengan orang tua dengan komunikasi yang terbuka dan saling menghormati — warisan nilai dan kebiasaan baik mereka adalah aset seumur hidup yang tidak ternilai.",
+    "_kes_narrative": "<p>AGUS H adalah sosok pria yang lahir dengan Day Master 甲木 (Yang Wood) dalam format 七殺格 — bagaikan pohon besar yang tumbuh kokoh namun terus diuji oleh angin kencang dari berbagai arah. Kekuatan terbesarnya terletak pada ketangguhan mental dan jiwa penolong yang tulus: selalu hadir membantu orang lain tanpa diminta, memiliki pikiran yang berputar cepat, dan membangun jaringan pertemanan yang luas secara alami. Namun di balik kehangatan yang terpancar ke luar, AGUS H adalah sosok yang dalam dan penuh kalkulasi — memendam segalanya di dalam hati, sulit dibaca orang lain, dan rentan terhadap kecurigaan yang menumpuk jika tidak dikelola. Perjalanan finansial AGUS H bukan jalan yang mulus di awal: sumber kekayaan tidak berlimpah, uang sulit dipertahankan dalam bentuk tunai, dan investasi properti adalah satu-satunya cara terbukti untuk menjaga harta tetap awet. Namun kunci besarnya adalah waktu — puncak finansial dan pencapaian terbesar baru benar-benar datang di usia pertengahan ke atas. Dalam hal asmara dan keluarga, AGUS H perlu berhati-hati: pernikahan di usia muda kurang disarankan; pasangan ideal adalah mereka yang berjiwa sehat dan terbuka, terutama dari shio Harimau, Kambing, atau Anjing. Hubungan dengan ibu dan saudara perempuan cenderung kurang harmonis secara komunikasi. Sementara dalam karir, AGUS H bersinar paling terang bukan sebagai pemimpin puncak, melainkan sebagai perencana, konsultan, atau ahli yang bekerja di balik layar — bidang konstruksi, teknik, kepenulisan, atau profesi sosial adalah ladang paling subur. Tahun-tahun ke depan (2026-2031) membawa dinamika yang variatif: 2026 penuh perubahan lingkungan dan tekanan ekstrem; 2027 membawa berkah finansial dan masa senja yang lebih baik; 2028 adalah tahun terberat dengan risiko penyakit kronis dan pengeluaran besar; 2029 membawa semangat baru dan peruntungan bulan; 2030 penuh tekanan hukum dan perlu ekstra waspada; 2031 adalah tahun terbaik di mana bantuan senior dan pencapaian nyata akhirnya terwujud. Pesan inti untuk AGUS H: jadikan ketangguhan sebagai aset, bukan beban. Belajar membuka diri — komunikasi yang lebih transparan akan memperkuat semua hubungan yang dibangun. Dan percayakan proses pada waktu: fondasi yang dibangun hari ini akan berbuah besar setelah usia 50-an.</p>",
+    "_kes_stats": "\n      <div class=\"kes-stat s1\"><div class=\"ks-eb\">Penguasa Hari · 日主</div><div class=\"ks-num\"><span class=\"hz\">甲木</span><span class=\"unit\">— · None</span></div><div class=\"ks-title\">Pohon Besar —</div><div class=\"ks-desc\">Total Wu Xing 8, 木 <strong>12.5%</strong> dari distribusi total</div></div>\n      <div class=\"kes-stat s2\"><div class=\"ks-eb\">Format · 格局</div><div class=\"ks-num\"><span class=\"hz\">七殺格</span><span class=\"unit\">FORMAT</span></div><div class=\"ks-title\">Qi Sha Ge, Pemurnian</div><div class=\"ks-desc\">Konfigurasi BaZi yang membentuk pola karakter dan jalur takdir utama subjek.</div></div>\n      <div class=\"kes-stat s3\"><div class=\"ks-eb\">Yong Shen · 喜用神</div><div class=\"ks-num\"><span class=\"hz\">火</span><span class=\"unit\">MENDUKUNG</span></div><div class=\"ks-title\">Api, Penopang &amp; Pengarah</div><div class=\"ks-desc\">Unsur penopang yang sebaiknya diaktifkan lewat lingkungan, profesi, warna, dan keputusan hidup.</div></div>\n      <div class=\"kes-stat s4\"><div class=\"ks-eb\">Da Yun · 大運</div><div class=\"ks-num\">Fase 4<span class=\"unit\">dari 10</span></div><div class=\"ks-title\">Fase Pundak Sama (41-50)</div><div class=\"ks-desc\">Cycle 10 tahun yang sedang dijalani, periode pembentukan tema utama dekade ini.</div></div>\n      <div class=\"kes-stat s5\"><div class=\"ks-eb\">Umur Subjek</div><div class=\"ks-num\">49<span class=\"unit\">tahun</span></div><div class=\"ks-title\">Era 40–49</div><div class=\"ks-desc\">Tahap kehidupan saat laporan ini dibuat, rentang dekade aktif subjek.</div></div>\n      <div class=\"kes-stat s6\"><div class=\"ks-eb\">Jodoh · 婚配 / 陽宅</div><div class=\"ks-num\">3 <span class=\"unit\">cocok · 4 hindari</span></div><div class=\"ks-desc\">Hindari: Tikus (子) · Kerbau (丑) · Kelinci (卯) · Kuda (午) · Trigram <strong>Gunung</strong> (艮) · Kelompok Barat</div></div>\n    ",
+    "_kes_age": "49",
+    "_kes_lifemap": "\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">過<span class=\"id-label\">Lalu</span></div><div class=\"klm-row-text\"><span class=\"lbl\">MASA LALU</span>3 fase telah dilalui, fondasi terbentuk lewat tempaan zaman muda hingga awal dewasa.</div></div>\n          <div class=\"klm-row now\"><div class=\"klm-row-icon\">今<span class=\"id-label\">Kini</span></div><div class=\"klm-row-text\"><span class=\"lbl\">SEKARANG</span>Fase Pundak Sama 甲子 (41-50), tema utama pundak sama membentuk dekade ini.</div></div>\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">未<span class=\"id-label\">Nanti</span></div><div class=\"klm-row-text\"><span class=\"lbl\">BERIKUTNYA</span>Fase 乙丑 Saudara Sebanding (51-60), transisi menuju tema baru.</div></div>\n        ",
+    "_kes_position": "\n          <div class=\"klp-eb\">Posisi Sekarang</div>\n          <div class=\"klp-hz\">夏</div>\n          <div class=\"klp-id\">Xià, \"Musim Panas Hidup\"</div>\n          <div class=\"klp-bar\">\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell now\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n          </div>\n          <div class=\"klp-meta\">Fase <strong>4 dari 10</strong> · Umur <strong>41-50</strong> · <strong>木 Kayu</strong> dominan · Musim Panas Hidup</div>\n        ",
+    "_syn_attrib": "Pohon Besar · 七殺格 · Qi Sha Ge",
+    "_syn_actions": "\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">1</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Kelola Kecurigaan Internal</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">2</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Perkuat Jaringan Setara</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">3</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Evaluasi Cara Mencari Nafkah</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">4</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Berikan Ruang bagi Pasangan</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">5</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Serap Ilmu dari Berbagai Bidang</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n      ",
+    "_career_wuxing": "\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">土 Tanah<span class=\"v\">3</span></div>\n        </div>\n        <div class=\"wux-cell unfav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:67%\"></div></div>\n          <div class=\"wux-label\">金 Logam<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell fav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:67%\"></div></div>\n          <div class=\"wux-label\">火 Api<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell self\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:33%\"></div></div>\n          <div class=\"wux-label\">木 Kayu<span class=\"v\">1</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:0%\"></div></div>\n          <div class=\"wux-label\">水 Air<span class=\"v\">0</span></div>\n        </div>\n",
+    "_career_title": "Api adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini",
+    "_career_avoid": "Industri ber-unsur <strong>金 (Logam)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.",
+    "_xqcards": "\n      <div class=\"xq-card power\">\n        <div class=\"xqc-eb\">魄 力 · Kekuatan</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">優勢</span><span class=\"xqc-name\">Yōu Shì<br>Keunggulan</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Hangat, ramah, dan mudah didekati siapa pun — membangun jaringan pertemanan yang luas secara alami</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Pikiran tajam dan cepat berputar, mampu membaca situasi dengan presisi</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Berjiwa penolong sejati — bertindak tanpa diminta saat melihat orang membutuhkan bantuan</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card shadow\">\n        <div class=\"xqc-eb\">陰 影 · Shadow</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">隱 患</span><span class=\"xqc-name\">Yǐn Huàn<br>Sisi Gelap</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kecenderungan terlalu ikut campur urusan orang lain dapat menimbulkan gesekan sosial</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Memendam segalanya dalam hati sehingga orang sulit memahami perasaan dan pikiran sebenarnya</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Jika kecurigaan terus menumpuk, bisa berubah menjadi sifat paranoid yang merusak hubungan</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card optimum\">\n        <div class=\"xqc-eb\">最 佳 · Optimum</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">應 用</span><span class=\"xqc-name\">Yīng Yòng<br>Cara Optimal</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Salurkan energi membantu melalui peran formal seperti konsultan, mentor, atau pemimpin tim</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Latih diri untuk lebih transparan dalam berkomunikasi agar orang di sekitar merasa dipercaya</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Perluas wawasan dari berbagai bidang ilmu agar menjadi pribadi berwawasan luas dan berjiwa besar</span></div>\n        </div>\n      </div>\n    "
+  }
+}

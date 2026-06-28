@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Lin Ru Yi, 全局總論 Pandangan Keluarga</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-fam { grid-template-rows: 1fr !important; gap: 5mm; }
+
+  .fam-headline {
+    background: linear-gradient(135deg, #FFFEF8 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 4mm 6mm;
+    display: grid; grid-template-columns: auto 1fr auto;
+    gap: 6mm; align-items: center;
+    overflow: hidden;
+  }
+  .fh-seal {
+    width: 18mm; height: 18mm; background: var(--red); color: white;
+    font-family: 'Noto Serif TC', serif; font-size: 14pt; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 1.5mm; transform: rotate(-3deg);
+    letter-spacing: 1px;
+  }
+  .fh-text { text-align: center; }
+  .fh-eb { font-size: 6.5pt; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; font-weight: 700; }
+  .fh-quote {
+    font-family: 'Playfair Display', serif; font-size: 12pt;
+    color: var(--text); line-height: 1.3; font-style: italic;
+    margin-top: 1mm;
+  }
+  .fh-quote .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-style: normal; font-weight: 700; }
+  .fh-meta { font-family: 'Noto Serif TC', serif; font-size: 14pt; color: var(--red); font-weight: 700; letter-spacing: 2px; line-height: 1; }
+
+  .fam-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4mm; overflow: hidden;
+  }
+  .fam-card {
+    border-radius: 2mm; padding: 4mm 5mm;
+    background: var(--bg-card);
+    border: 0.4mm solid var(--gold-soft);
+    display: grid;
+    grid-template-columns: 28mm 1fr;
+    gap: 4mm; align-items: stretch;
+    overflow: hidden;
+    position: relative;
+  }
+  .fam-icon-block {
+    background: linear-gradient(180deg, #FFF8E1, #F5EBD0);
+    border-radius: 1.5mm;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 3mm 2mm; text-align: center;
+    border: 0.3mm solid var(--gold-soft);
+  }
+  .fic-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 22pt;
+    color: var(--red); font-weight: 700; line-height: 1;
+  }
+  .fic-id {
+    font-family: 'Playfair Display', serif; font-size: 9pt;
+    color: var(--text); font-weight: 600; letter-spacing: 1px;
+    margin-top: 1.5mm;
+  }
+  .fic-pinyin { font-size: 6pt; color: var(--text-muted); font-style: italic; margin-top: 0.3mm; }
+  .fic-vibe {
+    font-size: 6pt; color: var(--gold); letter-spacing: 1px;
+    text-transform: uppercase; font-weight: 600; margin-top: 1.5mm;
+    border-top: 0.2mm solid var(--gold-soft); padding-top: 1mm; width: 100%;
+  }
+
+  .fam-content {
+    display: grid; grid-template-rows: auto auto 1fr; gap: 1.5mm;
+    overflow: hidden; min-width: 0;
+  }
+  .fc-eb { font-size: 6.5pt; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
+  .fc-headline {
+    font-family: 'Playfair Display', serif; font-size: 10pt;
+    color: var(--red); line-height: 1.25; font-weight: 600;
+  }
+  .fc-headline .hz { font-family: 'Noto Serif TC', serif; color: var(--text); font-weight: 700; margin: 0 0.5mm; }
+  .fc-body {
+    font-size: 7.5pt; line-height: 1.4; color: var(--text);
+    border-top: 0.2mm solid var(--gold-soft); padding-top: 1.5mm;
+  }
+  .fc-body strong { color: var(--red); }
+  .fc-body .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+
+  .fam-strip {
+    background: var(--green-bg);
+    border-left: 1mm solid var(--green);
+    border-radius: 0 1.5mm 1.5mm 0;
+    padding: 3mm 5mm;
+    display: grid; grid-template-columns: auto 1fr;
+    gap: 5mm; align-items: center;
+    overflow: hidden;
+  }
+  .fs-label {
+    font-family: 'Noto Serif TC', serif; font-size: 14pt;
+    color: var(--green); font-weight: 700;
+    border-right: 0.3mm solid var(--green); padding-right: 5mm;
+    letter-spacing: 2px;
+  }
+  .fs-text {
+    font-size: 8pt; line-height: 1.45; color: var(--text);
+    overflow: hidden;
+  }
+  .fs-text strong { color: var(--green); }
+  .fs-text .hz { font-family: 'Noto Serif TC', serif; color: var(--green); font-weight: 600; }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">{{PAGE_NUM_PADDED}}</div>
+    <div class="h-titles"><div class="h-cn">全 局 總 論</div><div class="h-id">Pandangan Keluarga</div></div>
+    <div class="h-section">Bagian I · BaZi 八字</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Babi-Merah.svg" alt="Babi"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Lin Ru Yi · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">亥 Babi</span></div>
+      <div class="subject-detail">Pandangan menyeluruh tentang relasi keluarga &amp; kepemimpinan</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">辛金 · Logam Halus</div></div>
+  </div>
+
+  <main class="content content-fam">
+
+    <div class="fam-grid">
+
+      <!-- Pasangan -->
+      <div class="fam-card">
+        <div class="fam-icon-block">
+          <div class="fic-hz">配偶</div>
+          <div class="fic-id">Pasangan</div>
+          <div class="fic-pinyin">Pèi Ǒu · Pasangan</div>
+          <div class="fic-vibe"><!-- TAFSIR:fam_pasangan_vibe -->Cerdas · Ekstrover<!-- /TAFSIR --></div>
+        </div>
+        <div class="fam-content">
+          <div class="fc-eb">配偶 · Pasangan</div>
+          <div class="fc-headline"><!-- TAFSIR:fam_pasangan_headline -->Pasangan cerdas &amp; ekstrover, komplementer untuk Anda<!-- /TAFSIR --></div>
+          <div class="fc-body">
+<!-- TAFSIR:fam_pasangan_body -->
+            Pasangan Anda <strong>cerdas, ekstrover, agak terburu-buru</strong>. Ini komplementer untuk <span class="hz">辛金</span> yang condong introspektif: biarkan dia jadi "suara keluar", Anda jadi "otak proses".
+<!-- /TAFSIR -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Anak -->
+      <div class="fam-card">
+        <div class="fam-icon-block">
+          <div class="fic-hz">兒子</div>
+          <div class="fic-id">Anak</div>
+          <div class="fic-pinyin">Ér Zǐ · Anak</div>
+          <div class="fic-vibe"><!-- TAFSIR:fam_anak_vibe -->Lembut · Berbakti<!-- /TAFSIR --></div>
+        </div>
+        <div class="fam-content">
+          <div class="fc-eb">兒女 · Anak</div>
+          <div class="fc-headline"><!-- TAFSIR:fam_anak_headline -->Anak laki-laki berbudi &amp; lembut hati<!-- /TAFSIR --></div>
+          <div class="fc-body">
+<!-- TAFSIR:fam_anak_body -->
+            Anak laki-laki Anda <strong>cukup berbudi &amp; lembut hati</strong>. Palace 子女 dengan <span class="hz">天府</span> mengindikasikan stabilitas keluarga.
+<!-- /TAFSIR -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Saudara -->
+      <div class="fam-card">
+        <div class="fam-icon-block">
+          <div class="fic-hz">兄弟</div>
+          <div class="fic-id">Saudara</div>
+          <div class="fic-pinyin">Xiōng Dì · Saudara Kandung</div>
+          <div class="fic-vibe"><!-- TAFSIR:fam_saudara_vibe -->Sensor · Penyeimbang<!-- /TAFSIR --></div>
+        </div>
+        <div class="fam-content">
+          <div class="fc-eb">兄弟 · Saudara Kandung</div>
+          <div class="fc-headline"><!-- TAFSIR:fam_saudara_headline -->Saran saudara sulit Anda terima, itu sinyal<!-- /TAFSIR --></div>
+          <div class="fc-body">
+<!-- TAFSIR:fam_saudara_body -->
+            Anda <strong>kurang mudah menerima saran dari saudara kandung</strong>. Saat mereka sebut Anda terlalu keras, anggap itu data, bukan serangan.
+<!-- /TAFSIR -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Kepemimpinan -->
+      <div class="fam-card">
+        <div class="fam-icon-block">
+          <div class="fic-hz">領導</div>
+          <div class="fic-id">Kepemimpinan</div>
+          <div class="fic-pinyin">Lǐng Dǎo · Pemimpin</div>
+          <div class="fic-vibe"><!-- TAFSIR:fam_kepemimpinan_vibe -->Eksekutor &gt; Penguasa<!-- /TAFSIR --></div>
+        </div>
+        <div class="fam-content">
+          <div class="fc-eb">領導 · Kepemimpinan</div>
+          <div class="fc-headline"><!-- TAFSIR:fam_kepemimpinan_headline -->Eksekutor handal · bukan pemegang kekuasaan besar<!-- /TAFSIR --></div>
+          <div class="fc-body">
+<!-- TAFSIR:fam_kepemimpinan_body -->
+            <strong>Kemampuan kepemimpinan terbatas</strong> di skala besar, tetapi sebagai <strong>eksekutor handal</strong> Anda langka.
+<!-- /TAFSIR -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-meta"><span>Halaman {{PAGE_NUM}} / {{TOTAL_PAGES}}</span></div>
+  </footer>
+</section>
+</body>
+</html>

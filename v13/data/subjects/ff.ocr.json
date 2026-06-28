@@ -1,0 +1,414 @@
+{
+  "name_id": "FF",
+  "gender_hz": "陽女",
+  "birth_solar": "1976-10-29 23:10",
+  "pillars": {
+    "year": {
+      "stem_hz": "丙",
+      "branch_hz": "辰"
+    },
+    "month": {
+      "stem_hz": "戊",
+      "branch_hz": "戌"
+    },
+    "day": {
+      "stem_hz": "甲",
+      "branch_hz": "寅"
+    },
+    "hour": {
+      "stem_hz": "丙",
+      "branch_hz": "子"
+    }
+  },
+  "yong_shen_hz": "木",
+  "ji_shen_hz": "土",
+  "xi_yong_shen_hz": "水",
+  "xian_shen_hz": "金",
+  "chou_shen_hz": "火",
+  "format_hz": "偏財格",
+  "liu_nian_predictions": [
+    {
+      "tahun": 2026,
+      "umur": 51,
+      "ganzhi": "丙午",
+      "prose": "Tahun 2026 membuka tema uang dan urusan materi yang tampak biasa dari luar, tetapi sebenarnya perlu diperlakukan dengan hati-hati. FF tidak disarankan bergerak terlalu tergesa-gesa, karena kualitas hasil tahun ini belum tentu mencapai keadaan ideal. Pada hubungan, pasangan yang sudah menikah dapat mengalami naik-turun perasaan yang masih tidak sampai menjadi luka besar; bagi yang belum menikah, kedekatan dengan teman laki-laki atau perempuan bisa semakin terasa. Karier memiliki tanda perubahan, sementara batin FF seperti tertahan dan lebih mudah tidak stabil. Catatan喪門 menandai potensi urusan duka/bakti, benturan, pengeluaran harta, serta gangguan dari pihak kecil yang perlu diwaspadai. Catatan黑煞 membuat tahun ini mudah mengejutkan, tersandung, atau terganggu oleh kejadian yang mendadak; namun bila tidak disertai pengaruh buruk berat, keselamatan masih dapat dijaga. Urusan keluarga yang menggembirakan tetap dapat menjadi penenang, terutama bila bulan keenam, kedelapan, atau kedua belas dijalani dengan doa dan niat baik. Hindari meremehkan orang sakit berat, urusan pemakaman, atau kabar duka. Watak tahun ini cenderung terburu-buru, kurang tegas, mudah masuk ke situasi tidak menentu, dan bisa tampak pandai berbicara tetapi menyukai jalan yang berliku. Hubungan suami istri juga perlu dirawat karena ikatan mudah menipis dan berubah bila dibiarkan."
+    },
+    {
+      "tahun": 2027,
+      "umur": 52,
+      "ganzhi": "丁未",
+      "prose": "Tahun 2027 menaruh perhatian FF pada uang, harta, dan hal-hal yang dipikirkan secara pribadi, walau dari permukaan belum tentu terlihat besar. Kesehatan perlu dijaga karena ada tanda urusan tubuh dan finansial dapat saling memengaruhi, sementara hasil nyata belum tentu setinggi harapan. Sisi baiknya, 太陰 membawa peluang melihat kegembiraan, memperoleh harta, dibantu orang mulia, dan membuat banyak urusan lebih selaras. 文昌 juga memberi tanda kabar baik mendekati pintu, urusan belajar atau anak lebih memuaskan, dan rezeki dapat tertarik masuk. Meski begitu, bulan kedua, kelima, kedelapan, atau kedua belas perlu hati-hati terhadap rasa tidak suka dari lawan jenis, angin/gelombang masalah, dan perjalanan malam di jalan gelap. Pembawaan tahun ini lebih tertutup, unik, tidak terlalu suka memperindah penampilan, serta relasi dengan saudara dan teman terasa lebih tipis. Ada kecenderungan menyukai atau mengumpulkan benda kecil. Bila dorongan ini diarahkan menjadi kebiasaan menabung dan mengumpulkan uang secara disiplin, keberuntungan finansial masih dapat dikatakan baik. Pola hidup juga menunjukkan paruh awal lebih berat, sedangkan paruh kemudian lebih mudah menikmati keberuntungan."
+    },
+    {
+      "tahun": 2028,
+      "umur": 53,
+      "ganzhi": "戊申",
+      "prose": "Tahun 2028 memberi FF peluang mendapat bantuan orang mulia dan mencapai hasil yang cukup ideal, tetapi tenaga serta pikiran yang keluar belum tentu langsung sebanding dengan uang yang terlihat. Perubahan dapat muncul pada karier atau posisi kerja. Bagi yang sudah menikah, hubungan pasangan masih bisa berjalan dalam rasa yang terbuka; bagi yang belum menikah, jalur perasaan bergerak lebih aktif. Lingkungan besar ikut berubah karena ada keterikatan atau situasi yang menahan. 官符 menandai urusan resmi, kesedihan, perhatian terhadap orang tua, pasangan, atau harta; ketulusan hati menjadi cara meredakan bencana. 火煞 menambah kewaspadaan terhadap mulut/perkataan, hukuman, penyakit, gangguan harta, dan pihak kecil yang merugikan, walau keadaan tetap bisa dilewati bila tidak diperberat bintang buruk. Bulan pertama, keempat, ketujuh, dan kesebelas perlu lebih hati-hati, tidak banyak mencampuri urusan orang, dan menjaga kedamaian. Tahun ini mudah menarik gangguan tersembunyi, penyakit aneh, kerugian harta, serta orang kecil yang diam-diam merugikan. Wataknya cepat panas, mudah mulai tanpa selesai, suka hal baru, mudah bosan, impulsif, kurang berpikir jauh, dan mudah tertipu saat sedang senang. Meski tidak stabil, masih ada peluang keluar dari titik sulit dan menemukan jalan baru."
+    },
+    {
+      "tahun": 2029,
+      "umur": 54,
+      "ganzhi": "己酉",
+      "prose": "Tahun 2029 masih memperlihatkan bantuan orang mulia dan potensi hasil yang cukup ideal, namun tenaga mental maupun usaha yang dikeluarkan tidak selalu tampak sepadan dengan uang yang diterima. Perubahan lingkungan besar terjadi karena adanya ikatan, batasan, atau pengaruh yang menahan ruang gerak. 死符 menunjukkan tanda duka, luka, serta perhatian khusus kepada orang tua dan saudara; doa dan kehati-hatian diperlukan agar bencana dapat dihindari. 暗曜 memberi gambaran bahwa bila tidak ada gangguan mulut, hukuman, atau bintang buruk yang berat, FF masih dapat menghindari bahaya; keluarga pun bisa memiliki urusan gembira yang memecah suasana kering. Bagi wanita, kesehatan, penyakit, dan urusan produksi/reproduksi perlu diperhatikan, sementara lingkungan yang menyenangkan membantu menenangkan kemarahan. Bulan kedua, kelima, kedelapan, dan kedua belas baik dipakai untuk memohon perlindungan. Tahun ini mudah bersinggungan dengan urusan pejabat, hukuman, perkara, luka, dan tekanan batin. Sisi uniknya, rasa ingin tahu dan semangat meneliti meningkat; ada jiwa baru, rasa segar, kreativitas, humor gelap, dan rasa kemanusiaan. Bila kecerdasan diarahkan benar, keberuntungan masih sering datang, walau kondisi tubuh tidak selalu kuat."
+    },
+    {
+      "tahun": 2030,
+      "umur": 55,
+      "ganzhi": "庚戌",
+      "prose": "Tahun 2030 membuat nilai yang FF keluarkan, baik tenaga maupun daya pribadi, terlihat lebih berhubungan langsung dengan uang. Kesehatan dan harta perlu dijaga bersamaan, karena bencana finansial atau urusan harta dapat datang dan hasil nyata belum tentu ideal. Dalam hubungan, pasangan yang sudah menikah dapat mengalami pergerakan rasa tetapi tidak sampai menjadi masalah besar; bagi yang belum menikah, kedekatan dengan teman laki-laki atau perempuan dapat semakin rapat. Perubahan lingkungan tampak jelas melalui renovasi rumah, pindah tempat, atau penataan ulang perabot di dalam ruangan. Suasana hati juga tidak terlalu stabil. 歲破 menandai kerugian harta yang tidak boleh dianggap ringan, perlunya menjaga hubungan kerabat, dan pentingnya berbuat baik untuk menjaga ketenangan. 太陰 membawa urusan gembira, kelancaran rezeki, serta bantuan orang dalam mengambil keputusan, tetapi juga ada pola kehilangan di satu sisi dan memperoleh hal lain di sisi berbeda. Bulan ketiga, keenam, kesembilan, dan kedua belas perlu dipakai untuk menjaga ketenangan dan membina berkah. Kesalahan tindakan, perubahan yang kurang cermat, atau urusan denda dapat merugikan uang maupun tubuh. Wataknya jujur, tebal dalam relasi, kurang ambisi besar, cenderung puas, hubungan dengan orang tua kandung tipis, dan sering terkait dengan anak/anggota keluarga yang bukan garis langsung; meski begitu, kerja keras tetap membuka pencapaian besar."
+    },
+    {
+      "tahun": 2031,
+      "umur": 56,
+      "ganzhi": "辛亥",
+      "prose": "Tahun 2031 menampilkan usaha dan nilai yang FF keluarkan sebagai sesuatu yang dapat disejajarkan dengan uang, dengan dukungan kuat dari orang yang lebih tua atau guru. Secara kualitas, hasil tahun ini dapat mencapai kondisi ideal. Bagi yang sudah menikah, hubungan pasangan bergerak dalam perasaan yang terbuka namun tidak sampai melukai; bagi yang belum menikah, kedekatan dengan teman laki-laki atau perempuan dapat bertambah intim. 龍德 membawa gambaran empat musim memperoleh uang dan harta, banyak keberuntungan di rumah, serta keluar rumah tanpa bencana. 天掃 menunjukkan pertemuan dengan keberuntungan, namun juga menyinggung urusan bakti dan keadaan yang sempat berantakan; bila ada orang mulia dan urusan gembira, bencana dapat dihindari, tetapi tetap perlu mencegah pihak kecil menelan atau menghabiskan harta. Bulan pertama, keempat, ketujuh, dan kedua belas perlu hati-hati ketika berbuat baik atau menolong orang. Bila FF berusaha, ia dapat memperoleh keuntungan atau bantuan orang mulia. Sifat tahun ini lebih setia, lembut, sopan, baik, penuh, dan relasinya sangat kuat; FF mudah disukai, disambut, diangkat, dan didorong naik. Bakat teknis, artistik, serta kemampuan belajar sangat baik, tetapi lebih cocok menjadi asisten, staf, sekretaris, atau pendamping unggul daripada langsung memegang kursi pemimpin puncak."
+    }
+  ],
+  "ziwei_su_ming": "Arah perjalanan hidup FF berjalan sesuai dengan garis takdir (宿命) yang telah ditentukan. Apabila nasib FF kuat namun kekuatan batinnya lemah, FF masih mampu memanfaatkan bakat dan menyelaraskan diri dengan takdir untuk meraih perkembangan yang gemilang. Namun bila kekuatan Istana Kehidupan (命宮) melemah, keberhasilan yang datang dengan sendirinya tidak dapat diharapkan. Dalam kondisi seperti ini, kekuatan Istana Perpindahan (遷移宮), Istana Kekayaan (財帛宮), dan Istana Karier (官祿宮) juga harus diperhitungkan secara bersamaan.",
+  "jie_e_palace_id": "FF mudah mengalami gangguan pada tenggorokan, masuk angin, sakit gigi, penyakit terkait hati, serta bila bertemu bintang buruk perlu menjaga kulit dan mata. Bila bersama 太陰, tubuh dapat mudah mengalami pembengkakan atau rasa tidak nyaman karena sumbatan; bagi wanita, perlu memperhatikan ketidaklancaran fisiologis.",
+  "jie_e_organ_focus_id": "Tenggorokan, flu/masuk angin, gigi, hati, kulit, mata, pembengkakan, dan siklus fisiologis wanita.",
+  "marriage_cocok_tafsir": "Pasangan yang cocok akan menjalin ikatan yang indah dan bermakna — bersama-sama meraih kemakmuran dan kesuksesan, membangun kehidupan dengan rajin dan hemat, semakin berjaya di hari tua, serta mewariskan kebahagiaan yang berlimpah kepada keturunan generasi demi generasi.",
+  "marriage_hindari_tafsir": "Pasangan yang bertentangan ini tidak dapat hidup harmonis hingga akhir hayat — hubungan berisiko perpecahan dan perpisahan, kondisi keluarga tidak menentu, nasib terasa kompleks dan berat, membawa tanda kemerosotan, menjadi sumber ketidakberuntungan seumur hidup, mengundang bencana bertubi-tubi, dan penuh dengan kepedihan.",
+  "shen_sha_detail": [
+    {
+      "hz": "華蓋",
+      "pinyin": "Hua Gai",
+      "label_id": "Kanopi Bakat Artistik",
+      "tafsir_hz": "求學能自動，自悟以達最高學歷，天性對美術、設計、裝璜、音樂、文學方面大興趣及天才",
+      "tafsir_id": "FF memiliki dorongan belajar yang muncul dari dalam diri, mampu memahami sesuatu secara mandiri hingga mencapai tingkat pendidikan atau penguasaan tertinggi. Secara alami FF memiliki minat dan bakat besar pada bidang seni, desain, dekorasi, musik, serta sastra."
+    }
+  ],
+  "shiye_favorable_full": [
+    {
+      "hz": "文具",
+      "id": "Alat tulis"
+    },
+    {
+      "hz": "出版",
+      "id": "Penerbitan"
+    },
+    {
+      "hz": "書店",
+      "id": "Toko buku"
+    },
+    {
+      "hz": "農業蔬果",
+      "id": "Pertanian sayur dan buah"
+    },
+    {
+      "hz": "木材",
+      "id": "Kayu"
+    },
+    {
+      "hz": "傢俱",
+      "id": "Mebel"
+    },
+    {
+      "hz": "裝璜",
+      "id": "Dekorasi interior"
+    },
+    {
+      "hz": "紙",
+      "id": "Kertas"
+    },
+    {
+      "hz": "木器或工藝",
+      "id": "Kerajinan kayu atau kriya"
+    },
+    {
+      "hz": "花苗園藝",
+      "id": "Bibit bunga dan hortikultura"
+    },
+    {
+      "hz": "菜草",
+      "id": "Sayur dan tanaman rumput"
+    },
+    {
+      "hz": "布疋",
+      "id": "Tekstil/kain"
+    },
+    {
+      "hz": "教育",
+      "id": "Pendidikan"
+    },
+    {
+      "hz": "公務員",
+      "id": "Pegawai negeri"
+    },
+    {
+      "hz": "政治",
+      "id": "Politik"
+    },
+    {
+      "hz": "宗教家",
+      "id": "Tokoh/agama"
+    }
+  ],
+  "shiye_supportive_full": [
+    {
+      "hz": "流動攤販",
+      "id": "Pedagang keliling"
+    },
+    {
+      "hz": "運動家",
+      "id": "Atlet/olahragawan"
+    },
+    {
+      "hz": "介紹中人",
+      "id": "Perantara/makelar"
+    },
+    {
+      "hz": "醫師",
+      "id": "Dokter"
+    },
+    {
+      "hz": "清潔隊",
+      "id": "Petugas kebersihan"
+    },
+    {
+      "hz": "記者",
+      "id": "Reporter/jurnalis"
+    },
+    {
+      "hz": "護士",
+      "id": "Perawat"
+    },
+    {
+      "hz": "導遊",
+      "id": "Pemandu wisata"
+    },
+    {
+      "hz": "馬戲團",
+      "id": "Sirkus/hiburan keliling"
+    },
+    {
+      "hz": "航海",
+      "id": "Pelayaran"
+    },
+    {
+      "hz": "漁業",
+      "id": "Perikanan"
+    },
+    {
+      "hz": "冷凍業",
+      "id": "Industri pendingin/beku"
+    },
+    {
+      "hz": "水產業",
+      "id": "Hasil laut/akuakultur"
+    },
+    {
+      "hz": "碼頭工",
+      "id": "Pekerja dermaga"
+    },
+    {
+      "hz": "消防隊",
+      "id": "Pemadam kebakaran"
+    },
+    {
+      "hz": "貿易公司",
+      "id": "Perusahaan perdagangan"
+    }
+  ],
+  "da_yun": [
+    {
+      "age_start": 8,
+      "age_end": 17,
+      "stem_hz": "丁",
+      "branch_hz": "酉"
+    },
+    {
+      "age_start": 18,
+      "age_end": 27,
+      "stem_hz": "丙",
+      "branch_hz": "申"
+    },
+    {
+      "age_start": 28,
+      "age_end": 37,
+      "stem_hz": "乙",
+      "branch_hz": "未"
+    },
+    {
+      "age_start": 38,
+      "age_end": 47,
+      "stem_hz": "甲",
+      "branch_hz": "午"
+    },
+    {
+      "age_start": 48,
+      "age_end": 57,
+      "stem_hz": "癸",
+      "branch_hz": "巳"
+    },
+    {
+      "age_start": 58,
+      "age_end": 67,
+      "stem_hz": "壬",
+      "branch_hz": "辰"
+    },
+    {
+      "age_start": 68,
+      "age_end": 77,
+      "stem_hz": "辛",
+      "branch_hz": "卯"
+    },
+    {
+      "age_start": 78,
+      "age_end": 87,
+      "stem_hz": "庚",
+      "branch_hz": "寅"
+    },
+    {
+      "age_start": 88,
+      "age_end": 97,
+      "stem_hz": "己",
+      "branch_hz": "丑"
+    },
+    {
+      "age_start": 98,
+      "age_end": 107,
+      "stem_hz": "戊",
+      "branch_hz": "子"
+    }
+  ],
+  "marriage": {
+    "cocok_branches": [
+      "子",
+      "申",
+      "酉"
+    ],
+    "hindari_branches": [
+      "丑",
+      "卯",
+      "戌",
+      "辰"
+    ],
+    "cocok_relationships": {
+      "子": "大吉",
+      "申": "大吉",
+      "酉": "大吉"
+    }
+  },
+  "shio_hz": "龍",
+  "kesimpulan_narrative": "Secara keseluruhan, FF adalah pribadi yang kuat, berani bergerak, dan punya dorongan hidup yang besar. Dari luar FF bisa terlihat tenang, rapi, sopan, dan cukup terdidik, tetapi di dalam dirinya ada api semangat yang sangat besar. Jika sudah memiliki tujuan atau sudah menyukai sesuatu, FF cenderung ingin segera bergerak dan mengejarnya dengan serius. Kekuatan terbesar FF adalah ketulusan, keberanian, daya tahan, kemampuan membangun kepercayaan, dan aura yang membuat orang lain mudah merasa yakin kepadanya. Namun sisi yang perlu dijaga adalah emosi yang intens, standar yang tinggi, rasa tidak puas yang mudah muncul, serta kecenderungan bertindak cepat ketika hati sedang panas. Dalam hubungan, FF bukan tipe yang main-main. Ia membutuhkan hubungan yang nyata, serius, dan saling menghormati. Karena itu, sikap pasangan yang ringan, sembrono, atau tidak jelas bisa sangat mengganggu FF. Cinta dan pernikahan dapat berjalan penuh gelombang bila kedua pihak sama-sama keras atau terlalu menuntut. Kuncinya adalah memberi ruang pribadi, membuat aturan komunikasi yang jelas, dan tidak melihat pernikahan sebagai pembatas kebebasan. Dalam keluarga, FF menerima pengaruh yang kuat dari ibu dan berasal dari gambaran keluarga yang cukup memperhatikan reaksi emosionalnya. Hubungan dengan orang tua perlu dijaga dengan komunikasi yang lembut, terutama saat terjadi salah paham. Dalam pekerjaan, FF cocok pada bidang yang membutuhkan ketelitian, tanggung jawab, relasi manusia, administrasi, keuangan, pelayanan, pendidikan, penulisan, seni, dekorasi, perdagangan, kesehatan, wisata, atau pekerjaan yang membuat FF bisa memakai kemampuan bahasa, rasa estetika, dan kecakapan mengatur orang. FF bisa terlihat berbakat di tempat kerja, tetapi perlu mengurangi kecenderungan perfeksionis atau terlalu mudah menilai pekerjaan orang lain kurang baik. Dalam uang dan aset, ada potensi memperoleh rezeki, menabung, atau mendapatkan nilai besar, tetapi kemurahan hati dan pengeluaran perlu dikontrol. Keputusan properti juga sebaiknya tidak terlalu dipengaruhi teman atau keluarga; FF perlu memakai hitungan yang jelas dan memilih lingkungan yang stabil. Dalam kesehatan, perhatian utama ada pada tenggorokan, flu/masuk angin, gigi, hati, kulit, mata, pembengkakan, serta siklus fisiologis wanita. Secara batin, FF perlu belajar menenangkan rasa tidak puas dan tidak selalu mengejar rangsangan baru. Periode tahunan 2026 sampai 2031 menunjukkan tema besar uang, perubahan pekerjaan/lingkungan, hubungan, kesehatan, dan bantuan orang mulia. Ada tahun-tahun yang membawa peluang rezeki dan dukungan, tetapi tetap disertai peringatan agar tidak tergesa-gesa, menjaga kesehatan, menghindari perkara, dan berhati-hati terhadap orang kecil atau keputusan yang merugikan. Bila FF mampu menahan impuls, menjaga relasi, mengelola uang dengan disiplin, dan memilih pekerjaan yang stabil tetapi tetap memberi ruang berkembang, perjalanan hidupnya dapat bergerak lebih kuat, matang, dan menghasilkan pencapaian yang besar secara bertahap.",
+  "yang_zhai_gua_hz": "震",
+  "yang_zhai_zone_rumah_hz": "坐南向北",
+  "yang_zhai_zones_foto": {
+    "rumah": {
+      "dirs_hz": [
+        "坐南向北"
+      ],
+      "dirs_abbr": [
+        "坐南北"
+      ],
+      "note_id": "Rumah sebaiknya duduk di Selatan menghadap Utara, sangat menguntungkan"
+    },
+    "pintu": {
+      "dirs_hz": [
+        "北",
+        "東",
+        "東南"
+      ],
+      "dirs_abbr": [
+        "U",
+        "T",
+        "TG"
+      ],
+      "note_id": "Pintu baik ke Utara, Timur, Tenggara"
+    },
+    "dapur": {
+      "dirs_hz": [
+        "西北向東南"
+      ],
+      "dirs_abbr": [
+        "西北東南"
+      ],
+      "note_id": "Kompor sebaiknya di Barat Laut menghadap Tenggara"
+    },
+    "kamar": {
+      "dirs_hz": [
+        "南",
+        "東"
+      ],
+      "dirs_abbr": [
+        "S",
+        "T"
+      ],
+      "note_id": "Kamar tidur baik di Selatan, Timur"
+    },
+    "ranjang": {
+      "dirs_hz": [
+        "南",
+        "東南",
+        "東"
+      ],
+      "dirs_abbr": [
+        "S",
+        "TG",
+        "T"
+      ],
+      "note_id": "Posisi ranjang baik di Selatan, Tenggara, Timur"
+    },
+    "altar": {
+      "dirs_hz": [
+        "東",
+        "東南",
+        "南",
+        "本年大利方"
+      ],
+      "dirs_abbr": [
+        "T",
+        "TG",
+        "S",
+        "本年大利"
+      ],
+      "note_id": "Altar sebaiknya di Timur, Tenggara, Selatan, serta arah keberuntungan tahun ini"
+    },
+    "kamar_mandi": {
+      "dirs_hz": [
+        "東北",
+        "西南",
+        "西"
+      ],
+      "dirs_abbr": [
+        "TL",
+        "BD",
+        "B"
+      ],
+      "note_id": "Kamar mandi/WC sebaiknya di Timur Laut, Barat Daya, Barat"
+    }
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "祿存",
+    "shen_zhu_hz": "文昌",
+    "ming_gong_hz": "戌",
+    "shen_gong_hz": "戌",
+    "wu_xing_ju_hz": "木三局",
+    "shi_jun_hz": "辰"
+  },
+  "dm_strength_hz": null,
+  "dm_strength_label_id": null,
+  "dm_pos_score": 3272.0,
+  "dm_neg_score": 5228.0,
+  "xiantian_per_stem": {
+    "jia": 2,
+    "yi": 1,
+    "bing": 3,
+    "ding": 1,
+    "wu": 1,
+    "ji": 0,
+    "geng": 0,
+    "xin": 1,
+    "ren": 0,
+    "gui": 2
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "da_yun_arah_id": "backward",
+  "da_yun_start_age": 8,
+  "shen_sha_list": null,
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": null,
+  "_source": "MD via Web Claude (parse_md.py)"
+}

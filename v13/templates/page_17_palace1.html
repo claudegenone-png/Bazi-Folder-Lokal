@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Lin Ru Yi, Palace Detail 1</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .content-pal { grid-template-rows: 1fr !important; gap: 0; }
+
+  .pal-grid {
+    display: grid;
+    grid-template-columns: 1.65fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 4mm; overflow: hidden;
+  }
+  .pal-card {
+    background: var(--bg-card);
+    border: 0.4mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    display: grid;
+    grid-template-rows: auto 1fr 22mm;
+    gap: 2mm;
+    overflow: hidden;
+    position: relative;
+  }
+  .pal-card.life {
+    grid-column: 1;
+    grid-row: 1 / span 4;
+    background: linear-gradient(180deg, #FFF8E1, #F5EBD0);
+    border: 0.5mm solid var(--gold);
+    grid-template-rows: auto 1fr auto;
+  }
+  .pal-card.life .pal-body { font-size: 7.0pt; line-height: 1.32; overflow: hidden; }
+  .pal-card.life .pal-body p { margin: 0 0 1.1mm 0; text-align: justify; }
+  .pal-card.life .pal-body p:last-child { margin-bottom: 0; }
+  .pal-card.xiongdi, .pal-card.fuqi-tall, .pal-card.zinu { grid-column: 2; }
+  .pal-card.xiongdi { grid-row: 1; }
+  .pal-card.fuqi-tall { grid-row: 2 / span 2; }
+  .pal-card.zinu { grid-row: 4; }
+  .pal-card.xiongdi .pal-body, .pal-card.fuqi-tall .pal-body, .pal-card.zinu .pal-body { font-size: 6.0pt; line-height: 1.28; overflow: hidden; }
+  .pal-card.xiongdi .pal-body p, .pal-card.fuqi-tall .pal-body p, .pal-card.zinu .pal-body p { margin: 0 0 0.9mm 0; text-align: justify; }
+  .pal-card.xiongdi .pal-body p:last-child, .pal-card.fuqi-tall .pal-body p:last-child, .pal-card.zinu .pal-body p:last-child { margin-bottom: 0; }
+  .pal-card.xiongdi .pal-name .pn-id, .pal-card.fuqi-tall .pal-name .pn-id, .pal-card.zinu .pal-name .pn-id { font-size: 11pt; }
+  .pal-card.xiongdi, .pal-card.fuqi-tall, .pal-card.zinu { grid-template-rows: auto 1fr; }
+  .pal-card.xiongdi .pal-actions, .pal-card.fuqi-tall .pal-actions, .pal-card.zinu .pal-actions { display: none; }
+  .pal-card.life .pal-actions { display: none; }
+  .pal-card.life { grid-template-rows: auto 1fr; }
+  .pal-card::before {
+    content: ''; position: absolute;
+    top: 0; right: 0; width: 14mm; height: 14mm;
+    background-color: transparent;
+    background-image: radial-gradient(circle at top right, rgba(201,169,97,0.15) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .pal-head {
+    display: grid; grid-template-columns: auto 1fr auto;
+    gap: 3mm; align-items: baseline;
+    border-bottom: 0.2mm solid var(--gold-soft);
+    padding-bottom: 1.5mm;
+  }
+  .pal-name { display: block; line-height: 1.1; }
+  .pal-name .pn-id { display: block; font-family: 'Playfair Display', serif; font-size: 14pt; color: var(--red); font-weight: 700; letter-spacing: 0.3px; }
+  .pal-name .pn-meta { display: block; font-family: 'Inter', sans-serif; font-size: 7.5pt; color: var(--text-muted); letter-spacing: 0.5px; margin-top: 1mm; font-style: italic; }
+  .pal-name .pn-meta .hz { font-family: 'Noto Serif TC', serif; color: var(--text); font-style: normal; font-weight: 600; margin-left: 1.5mm; }
+  .pal-branch {
+    text-align: center;
+    font-family: 'Noto Serif TC', serif; font-size: 11pt;
+    color: var(--text); font-weight: 600;
+  }
+  .pal-branch .id {
+    display: block; font-size: 5.5pt; color: var(--text-muted);
+    font-style: italic; margin-top: 0.3mm;
+  }
+  .pal-age {
+    font-family: 'Playfair Display', serif; font-size: 8.5pt;
+    color: var(--gold); font-weight: 700;
+    text-align: right; letter-spacing: 0.5px;
+  }
+  .pal-age .lbl {
+    display: block; font-size: 5.5pt; color: var(--text-muted);
+    letter-spacing: 1px; text-transform: uppercase;
+    font-weight: 500; margin-top: 0.3mm;
+  }
+
+  .pal-stars {
+    display: flex; gap: 2mm; flex-wrap: wrap;
+    align-items: center;
+  }
+  .pal-star {
+    background: linear-gradient(135deg, white, #FFF8E1);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 1.5mm;
+    padding: 1.5mm 3mm;
+    display: grid; grid-template-columns: auto auto;
+    gap: 2mm; align-items: baseline;
+  }
+  .pal-star.main { border-color: var(--gold); background: linear-gradient(135deg, #FFF8E1, #F5EBD0); }
+  .pal-star-hz {
+    font-family: 'Noto Serif TC', serif; font-size: 11pt;
+    color: var(--red); font-weight: 700; line-height: 1;
+  }
+  .pal-star-id { font-size: 6.5pt; color: var(--text-muted); font-style: italic; letter-spacing: 0.3px; }
+
+  .pal-insight {
+    background: linear-gradient(90deg, var(--gold-bg), transparent);
+    border-left: 0.8mm solid var(--gold);
+    border-radius: 0 1mm 1mm 0;
+    padding: 1.5mm 3mm;
+    font-family: 'Playfair Display', serif; font-size: 9.5pt;
+    color: var(--red); line-height: 1.3; font-weight: 600; font-style: italic;
+  }
+  .pal-insight .hz { font-family: 'Noto Serif TC', serif; color: var(--text); font-style: normal; font-weight: 700; }
+
+  .pal-body { font-size: 7.5pt; line-height: 1.45; color: var(--text); overflow: hidden; }
+  .pal-body strong { color: var(--red); }
+  .pal-body .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+
+  .pal-actions {
+    display: grid; gap: 1.2mm;
+    border-top: 0.2mm dashed var(--gold-soft); padding-top: 1.5mm;
+  }
+  .pal-actions-header { font-family: 'Playfair Display', serif; font-size: 11pt; color: var(--green); font-weight: 700; letter-spacing: 0.5px; margin-bottom: 1.2mm; }
+  .pal-action { display: grid; grid-template-columns: 4mm 1fr; gap: 2mm; font-size: 7.5pt; line-height: 1.45; color: var(--text); }
+  .pal-action .ico { color: var(--green); font-weight: 700; }
+  .pal-action strong { color: var(--red); }
+  .pal-action .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 600; }
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="page-header">
+    <div class="h-num">{{PAGE_NUM_PADDED}}</div>
+    <div class="h-titles"><div class="h-cn">命 兄 夫 子</div><div class="h-id">Diri · Saudara · Pasangan · Anak</div></div>
+    <div class="h-section">Bagian II · Zi Wei 紫微</div>
+  </header>
+
+  <div class="subject-bar">
+    <div class="subject-shio"><img src="Babi-Merah.svg" alt="Babi"></div>
+    <div class="subject-meta">
+      <div class="subject-name">Lin Ru Yi · <span style="font-family:'Noto Serif TC',serif;color:var(--red)">亥 Babi</span></div>
+      <div class="subject-detail">Detail 4 istana lingkaran-dalam, diri &amp; relasi inti</div>
+    </div>
+    <div class="subject-dm"><div class="label">Penguasa Hari</div><div class="value">辛金 · Logam Halus</div></div>
+  </div>
+
+  <main class="content content-pal">
+    <div class="pal-grid">
+
+      <!-- 命宮 DIRI -->
+      <div class="pal-card life"><!-- TAFSIR:_p1_ming_gong --><div class="pal-head"><div class="pal-name">命宮<span class="id">Mìng Gōng · Diri</span></div></div><!-- /TAFSIR --></div>
+
+      <!-- 兄弟 SAUDARA -->
+      <div class="pal-card xiongdi"><!-- TAFSIR:_p1_xiongdi --><div class="pal-head"><div class="pal-name">兄弟<span class="id">Xiōng Dì · Saudara</span></div></div><!-- /TAFSIR --></div>
+
+      <!-- 夫妻 PASANGAN -->
+      <div class="pal-card fuqi-tall"><!-- TAFSIR:_p1_fuqi --><div class="pal-head"><div class="pal-name">夫妻<span class="id">Fū Qī · Pasangan</span></div></div><!-- /TAFSIR --></div>
+
+      <!-- 子女 ANAK -->
+      <div class="pal-card zinu"><!-- TAFSIR:_p1_zinu --><div class="pal-head"><div class="pal-name">子女<span class="id">Zǐ Nǚ · Anak</span></div></div><!-- /TAFSIR --></div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-meta"><span>Halaman {{PAGE_NUM}} / {{TOTAL_PAGES}}</span></div>
+  </footer>
+</section>
+</body>
+</html>

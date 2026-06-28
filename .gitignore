@@ -9,6 +9,13 @@ v7.4/_AUDIT_LOGS/
 v11/_AUDIT_LOGS/
 v71_fast/_AUDIT_LOGS/
 v71_lntest/_AUDIT_LOGS/
+v13/_AUDIT_LOGS/
+
+# Build artifacts (rendered HTML per subject — regenerable)
+v13/_build/
+
+# Foto klien (jangan commit foto asli)
+foto/
 
 # Archive files
 *.rar

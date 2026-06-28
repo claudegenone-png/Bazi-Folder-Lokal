@@ -1,0 +1,333 @@
+{
+  "name_id": "BHAKTI",
+  "gender_hz": "陰女",
+  "birth_solar": "1997-02-26 09:15",
+  "pillars": {
+    "year": {
+      "stem_hz": "丁",
+      "branch_hz": "丑"
+    },
+    "month": {
+      "stem_hz": "壬",
+      "branch_hz": "寅"
+    },
+    "day": {
+      "stem_hz": "己",
+      "branch_hz": "巳"
+    },
+    "hour": {
+      "stem_hz": "己",
+      "branch_hz": "酉"
+    }
+  },
+  "yong_shen_hz": "金",
+  "ji_shen_hz": "土",
+  "xi_yong_shen_hz": "水",
+  "xian_shen_hz": "木",
+  "chou_shen_hz": "火",
+  "format_hz": "正官格",
+  "marriage_cocok_tafsir": "Pasangan terbaik bagi BHAKTI adalah dari shio Tikus, Ular, dan Ayam — ikatan yang sungguh diberkahi langit. Rumah tangga niscaya berkembang pesat dan nama keluarga pasti harum, kemakmuran berlimpah dan martabat terjaga, perilaku terpuji dan berbudi luhur, keluarga besar dan harmonis, hidup tenang penuh kebaikan dan kebahagiaan hingga akhir hayat.",
+  "marriage_hindari_tafsir": "Pernikahan BHAKTI dengan pasangan dari shio Naga, Kuda, Kambing, atau Anjing membawa campuran suka dan duka; kebahagiaan dan kepahitan berjalan berdampingan — setengah hidup pertama cenderung lebih beruntung, namun tanpa semangat kemajuan. Di dalam batin seringkali dilanda kegelisahan dan kesedihan mendalam, dan pada akhirnya akan mengalami kemunduran yang menyedihkan.",
+  "shiye_favorable_full": [
+    {
+      "hz": "鋼鐵工廠",
+      "id": "pabrik besi dan baja"
+    },
+    {
+      "hz": "五金行",
+      "id": "toko perkakas dan logam"
+    },
+    {
+      "hz": "採礦",
+      "id": "pertambangan"
+    },
+    {
+      "hz": "汽車",
+      "id": "otomotif"
+    },
+    {
+      "hz": "機械",
+      "id": "mesin dan mekanik"
+    },
+    {
+      "hz": "科學家",
+      "id": "ilmuwan"
+    },
+    {
+      "hz": "律師",
+      "id": "pengacara"
+    },
+    {
+      "hz": "歌影星",
+      "id": "bintang lagu dan film"
+    },
+    {
+      "hz": "音樂家",
+      "id": "musisi"
+    },
+    {
+      "hz": "武術館",
+      "id": "perguruan atau sasana bela diri"
+    },
+    {
+      "hz": "會計",
+      "id": "akuntansi"
+    },
+    {
+      "hz": "金融界",
+      "id": "sektor keuangan"
+    }
+  ],
+  "shiye_supportive_full": [
+    {
+      "hz": "流動攤販",
+      "id": "pedagang keliling atau kaki lima"
+    },
+    {
+      "hz": "運動家",
+      "id": "atlet atau olahragawan"
+    },
+    {
+      "hz": "介紹中人",
+      "id": "perantara atau agen pengenal"
+    },
+    {
+      "hz": "醫師",
+      "id": "dokter"
+    },
+    {
+      "hz": "清潔隊",
+      "id": "petugas kebersihan"
+    },
+    {
+      "hz": "記者",
+      "id": "wartawan"
+    },
+    {
+      "hz": "護士",
+      "id": "perawat"
+    },
+    {
+      "hz": "導遊",
+      "id": "pemandu wisata"
+    },
+    {
+      "hz": "馬戲團",
+      "id": "sirkus"
+    },
+    {
+      "hz": "航海",
+      "id": "pelayaran"
+    },
+    {
+      "hz": "漁業",
+      "id": "perikanan"
+    },
+    {
+      "hz": "冷凍業",
+      "id": "industri pendingin atau pembekuan"
+    },
+    {
+      "hz": "水產業",
+      "id": "industri hasil perairan"
+    },
+    {
+      "hz": "碼頭工",
+      "id": "pekerja dermaga atau pelabuhan"
+    },
+    {
+      "hz": "消防隊",
+      "id": "pemadam kebakaran"
+    },
+    {
+      "hz": "貿易公司",
+      "id": "perusahaan perdagangan"
+    }
+  ],
+  "da_yun": [
+    {
+      "age_start": 3,
+      "age_end": 12,
+      "stem_hz": "癸",
+      "branch_hz": "卯",
+      "ten_god_hz_md": "偏財"
+    },
+    {
+      "age_start": 13,
+      "age_end": 22,
+      "stem_hz": "甲",
+      "branch_hz": "辰",
+      "ten_god_hz_md": "正官"
+    },
+    {
+      "age_start": 23,
+      "age_end": 32,
+      "stem_hz": "乙",
+      "branch_hz": "巳",
+      "ten_god_hz_md": "七殺"
+    },
+    {
+      "age_start": 33,
+      "age_end": 42,
+      "stem_hz": "丙",
+      "branch_hz": "午",
+      "ten_god_hz_md": "正印"
+    },
+    {
+      "age_start": 43,
+      "age_end": 52,
+      "stem_hz": "丁",
+      "branch_hz": "未",
+      "ten_god_hz_md": "偏印"
+    },
+    {
+      "age_start": 53,
+      "age_end": 62,
+      "stem_hz": "戊",
+      "branch_hz": "申",
+      "ten_god_hz_md": "劫財"
+    },
+    {
+      "age_start": 63,
+      "age_end": 72,
+      "stem_hz": "己",
+      "branch_hz": "酉",
+      "ten_god_hz_md": "比肩"
+    },
+    {
+      "age_start": 73,
+      "age_end": 82,
+      "stem_hz": "庚",
+      "branch_hz": "戌",
+      "ten_god_hz_md": "傷官"
+    },
+    {
+      "age_start": 83,
+      "age_end": 92,
+      "stem_hz": "辛",
+      "branch_hz": "亥",
+      "ten_god_hz_md": "食神"
+    },
+    {
+      "age_start": 93,
+      "age_end": 102,
+      "stem_hz": "壬",
+      "branch_hz": "子",
+      "ten_god_hz_md": "正財"
+    }
+  ],
+  "marriage": {
+    "cocok_branches": [
+      "子",
+      "巳",
+      "酉"
+    ],
+    "hindari_branches": [
+      "辰",
+      "午",
+      "未",
+      "戌"
+    ],
+    "cocok_relationships": {
+      "子": "大吉",
+      "巳": "大吉",
+      "酉": "大吉"
+    }
+  },
+  "shio_hz": "牛",
+  "yang_zhai_gua_hz": "震",
+  "yang_zhai_zone_rumah_hz": "南/北",
+  "yang_zhai_zones_foto": {
+    "rumah": {
+      "dirs_hz": [
+        "南/北"
+      ],
+      "dirs_abbr": [
+        "南/北"
+      ],
+      "note_id": "Rumah sebaiknya duduk di Utara menghadap Selatan或坐Selatan menghadap Utara, sangat menguntungkan"
+    },
+    "pintu": {
+      "dirs_hz": [
+        "南"
+      ],
+      "dirs_abbr": [
+        "S"
+      ],
+      "note_id": "Pintu baik ke Selatan, Utara, Tenggara"
+    },
+    "dapur": {
+      "dirs_hz": [
+        "西"
+      ],
+      "dirs_abbr": [
+        "B"
+      ],
+      "note_id": "Kompor sebaiknya di Barat menghadap Timur或Barat Laut menghadap Tenggara"
+    },
+    "kamar": {
+      "dirs_hz": [
+        "南"
+      ],
+      "dirs_abbr": [
+        "S"
+      ],
+      "note_id": "Kamar tidur baik di 安Selatan, Utara, Timur, Tenggara"
+    },
+    "ranjang": {
+      "dirs_hz": [
+        "東"
+      ],
+      "dirs_abbr": [
+        "T"
+      ],
+      "note_id": "Posisi ranjang sebaiknya di Timur, Tenggara, Selatan, Utara"
+    },
+    "altar": {
+      "dirs_hz": [
+        "南"
+      ],
+      "dirs_abbr": [
+        "S"
+      ],
+      "note_id": "神位宜安Selatan或Utara, Timur, dan arah keberuntungan tahun ini"
+    },
+    "kamar_mandi": {
+      "dirs_hz": [
+        "東北"
+      ],
+      "dirs_abbr": [
+        "TL"
+      ],
+      "note_id": "Kamar mandi/WC sebaiknya di Timur Laut, Barat Laut, Barat, Barat Daya"
+    }
+  },
+  "zi_wei": {
+    "shen_zhu_hz": "天機",
+    "ming_gong_hz": "酉"
+  },
+  "dm_strength_hz": null,
+  "dm_strength_label_id": null,
+  "dm_pos_score": 5050.0,
+  "dm_neg_score": 3640.0,
+  "xiantian_per_stem": {
+    "jia": 2,
+    "yi": 0,
+    "bing": 2,
+    "ding": 1,
+    "wu": 2,
+    "ji": 3,
+    "geng": 1,
+    "xin": 2,
+    "ren": 2,
+    "gui": 1
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "da_yun_arah_id": "forward",
+  "da_yun_start_age": 3,
+  "shen_sha_list": null,
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": null,
+  "_source": "MD via Web Claude (parse_md.py)"
+}

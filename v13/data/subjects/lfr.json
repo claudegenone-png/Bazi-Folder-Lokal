@@ -1,0 +1,940 @@
+{
+  "subject_id": "lfr",
+  "_built_by": "build_from_ocr.py V4.5 FULL-MD",
+  "identity": {
+    "name_id": "LFR",
+    "name_hanzi": "",
+    "gender_id": "Wanita",
+    "birth_date": "1998-01-27",
+    "birth_time": "01:50",
+    "birth_day_name": "Selasa",
+    "birth_period_id": "malam",
+    "birth_hour_branch_hz": "丑",
+    "birth_hour_period_label": "malam · 丑時",
+    "lunar_date_text_new": "tanggal 29 bulan 12 tahun 丁丑 (Ding Chou · 1997)",
+    "lunar_year_pillar_hz": "丁丑",
+    "lunar_republic_text": "民國 86 年 12 月 29 日",
+    "age_at_report": 29
+  },
+  "shio": {
+    "branch_hz": "丑",
+    "branch_pinyin": "Chǒu",
+    "id": "Kerbau",
+    "id_upper": "KERBAU",
+    "svg_red": "Kerbau-Merah.svg",
+    "svg_black": "Kerbau-Hitam.svg"
+  },
+  "ti_xiang": null,
+  "day_master": {
+    "stem_hz": "甲",
+    "stem_element_hz": "木",
+    "stem_element_id": "Kayu",
+    "polarity_id": "Yang",
+    "label_id": "Pohon Besar",
+    "label_long_id": "Kayu",
+    "pinyin": "Jiǎ 木",
+    "strength_id": "—",
+    "strength_hz": null
+  },
+  "pillars": {
+    "year": {
+      "stem_hz": "丁",
+      "branch_hz": "丑"
+    },
+    "month": {
+      "stem_hz": "癸",
+      "branch_hz": "丑"
+    },
+    "day": {
+      "stem_hz": "甲",
+      "branch_hz": "戌"
+    },
+    "hour": {
+      "stem_hz": "乙",
+      "branch_hz": "丑"
+    }
+  },
+  "wuxing": {
+    "jin": {
+      "value": 0.0,
+      "percent": 0.0,
+      "label_id": "Logam"
+    },
+    "shui": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Air"
+    },
+    "mu": {
+      "value": 2.0,
+      "percent": 25.0,
+      "label_id": "Kayu"
+    },
+    "huo": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Api"
+    },
+    "tu": {
+      "value": 4.0,
+      "percent": 50.0,
+      "label_id": "Tanah"
+    },
+    "total": 8.0,
+    "self_value": 2.0,
+    "self_el_hz": "—",
+    "fav_hz": "—",
+    "unfav_hz": "—",
+    "axis_max": "—",
+    "insight_id": null,
+    "_empty": false
+  },
+  "yong_shen": {
+    "elements_hz": "木",
+    "elements_id": "Kayu",
+    "label_id": "Penopang & Pengarah",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "ji_shen": {
+    "elements_hz": "土",
+    "elements_id": "Tanah",
+    "label_id": "Pelumat & Pemicu",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "format": {
+    "hz": "正財格",
+    "pinyin": "Zheng Cai Ge",
+    "label_id": "Pengelola Disiplin",
+    "glyph_hz": "—"
+  },
+  "da_yun": {
+    "start_age": 4,
+    "direction_id": "forward",
+    "current_index": 2,
+    "axis_marks": [
+      4,
+      14,
+      24,
+      34,
+      44,
+      54,
+      64,
+      74,
+      84,
+      94,
+      104
+    ],
+    "cycles": [
+      {
+        "n": 1,
+        "age_start": 4,
+        "age_end": 13,
+        "stem_hz": "甲",
+        "branch_hz": "寅",
+        "ten_god_hz": "比肩",
+        "ten_god_id": "Pundak Sama",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 2,
+        "age_start": 14,
+        "age_end": 23,
+        "stem_hz": "乙",
+        "branch_hz": "卯",
+        "ten_god_hz": "劫財",
+        "ten_god_id": "Saudara Sebanding",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 3,
+        "age_start": 24,
+        "age_end": 33,
+        "stem_hz": "丙",
+        "branch_hz": "辰",
+        "ten_god_hz": "食神",
+        "ten_god_id": "Pencipta",
+        "element_class": "el-huo",
+        "is_current": true
+      },
+      {
+        "n": 4,
+        "age_start": 34,
+        "age_end": 43,
+        "stem_hz": "丁",
+        "branch_hz": "巳",
+        "ten_god_hz": "傷官",
+        "ten_god_id": "Kritikus Tajam",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 5,
+        "age_start": 44,
+        "age_end": 53,
+        "stem_hz": "戊",
+        "branch_hz": "午",
+        "ten_god_hz": "偏財",
+        "ten_god_id": "Rezeki Bisnis",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 6,
+        "age_start": 54,
+        "age_end": 63,
+        "stem_hz": "己",
+        "branch_hz": "未",
+        "ten_god_hz": "正財",
+        "ten_god_id": "Rezeki Tetap",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 7,
+        "age_start": 64,
+        "age_end": 73,
+        "stem_hz": "庚",
+        "branch_hz": "申",
+        "ten_god_hz": "七殺",
+        "ten_god_id": "Pemurnian",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 8,
+        "age_start": 74,
+        "age_end": 83,
+        "stem_hz": "辛",
+        "branch_hz": "酉",
+        "ten_god_hz": "正官",
+        "ten_god_id": "Otoritas",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 9,
+        "age_start": 84,
+        "age_end": 93,
+        "stem_hz": "壬",
+        "branch_hz": "戌",
+        "ten_god_hz": "偏印",
+        "ten_god_id": "Mentor",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 10,
+        "age_start": 94,
+        "age_end": 103,
+        "stem_hz": "癸",
+        "branch_hz": "亥",
+        "ten_god_hz": "正印",
+        "ten_god_id": "Pelajaran",
+        "element_class": "el-shui"
+      }
+    ],
+    "seasons": [
+      {
+        "el_class": "s-mu",
+        "el_hz": "木",
+        "name_id": "Pemurnian Awal",
+        "age_start": 4,
+        "age_end": 23
+      },
+      {
+        "el_class": "s-huo",
+        "el_hz": "火",
+        "name_id": "Belajar & Mentor",
+        "age_start": 24,
+        "age_end": 43,
+        "is_current": true
+      },
+      {
+        "el_class": "s-tu",
+        "el_hz": "土",
+        "name_id": "Berbagi Panggung",
+        "age_start": 44,
+        "age_end": 63
+      },
+      {
+        "el_class": "s-jin",
+        "el_hz": "金",
+        "name_id": "Berkarya Tenang",
+        "age_start": 64,
+        "age_end": 83
+      },
+      {
+        "el_class": "s-shui",
+        "el_hz": "水",
+        "name_id": "Memetik Rezeki",
+        "age_start": 84,
+        "age_end": 103
+      }
+    ],
+    "spotlight_headline_html": "Fase <span class=\"hz\">食神</span> (Pencipta), periode utama untuk mengalirkan ide jadi karya",
+    "spotlight_tag_tone_html": "Api · ekspresi",
+    "spotlight_tag_combo_html": "Output Mekar",
+    "spotlight_tag_combo_pair": [
+      "丙",
+      "辰"
+    ],
+    "spotlight_bullets_html": [
+      "<strong>Fokus utama</strong>, pilar <span class=\"hz\">食神</span> mendorong Anda untuk mengalirkan ide jadi karya. Selaraskan agenda 10 tahun ini ke arah tersebut.",
+      "<strong>Energi 火</strong>, batang <span class=\"hz\">丙</span> (火) berinteraksi dengan Day Master <span class=\"hz\">甲</span> (木); tone fase: Api · ekspresi.",
+      "<strong>Cabang <span class=\"hz\">辰</span></strong> menentukan medan harian, kebiasaan, lingkungan, dan relasi yang dibangun di rentang umur 24–33 akan jadi pondasi fase berikutnya.",
+      "<strong>Setelah 33</strong> masuk <span class=\"hz\">丁巳 (傷官)</span>, berekspresi tajam & memberontak halus. Siapkan transisi sekarang."
+    ],
+    "footer_caption_html": "LFR sedang di fase <span style=\"font-family:'Noto Serif TC',serif;color:var(--red)\">食神</span> (24–33), mengalirkan ide jadi karya. Periode 24–43 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir."
+  },
+  "marriage": {
+    "self_branch_index": 1,
+    "cocok": [
+      {
+        "branch_hz": "子",
+        "id": "Tikus",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "巳",
+        "id": "Ular",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "酉",
+        "id": "Ayam",
+        "relationship_hz": "cocok",
+        "relationship_id": "Cocok",
+        "reason_id": null
+      }
+    ],
+    "hindari": [
+      {
+        "branch_hz": "辰",
+        "id": "Naga",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "午",
+        "id": "Kuda",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "未",
+        "id": "Kambing",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "戌",
+        "id": "Anjing",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      }
+    ],
+    "_empty": false
+  },
+  "yang_zhai": {
+    "gua_hz": "坎",
+    "gua_pinyin": "Kǎn",
+    "gua_label_id": "Air",
+    "gua_direction_id": "Utara",
+    "gua_direction_abbr": "U",
+    "group_id": "Timur",
+    "sumbu_hoki_hz": "北↔南",
+    "sumbu_hoki_id": "U ↔ S",
+    "trigram_symbol": "☵",
+    "zones": {
+      "rumah": {
+        "dirs_hz": [
+          "南",
+          "北"
+        ],
+        "dirs_abbr": [
+          "S",
+          "U"
+        ],
+        "note_id": "Rumah duduk di Selatan menghadap Utara atau duduk di Utara menghadap Selatan sangat menguntungkan"
+      },
+      "pintu": {
+        "dirs_hz": [
+          "南",
+          "北",
+          "東"
+        ],
+        "dirs_abbr": [
+          "S",
+          "U",
+          "T"
+        ],
+        "note_id": "Pintu utama baik dibuka ke arah Selatan, Utara, atau Timur"
+      },
+      "dapur": {
+        "dirs_hz": [
+          "西"
+        ],
+        "dirs_abbr": [
+          "B"
+        ],
+        "note_id": "Kompor sebaiknya diletakkan di Barat menghadap Timur"
+      },
+      "kamar": {
+        "dirs_hz": [
+          "東南",
+          "東",
+          "北",
+          "南"
+        ],
+        "dirs_abbr": [
+          "TG",
+          "T",
+          "U",
+          "S"
+        ],
+        "note_id": "Kamar tidur baik di Tenggara, Timur, Utara, atau Selatan"
+      },
+      "ranjang": {
+        "dirs_hz": [
+          "南",
+          "北",
+          "東",
+          "東南"
+        ],
+        "dirs_abbr": [
+          "S",
+          "U",
+          "T",
+          "TG"
+        ],
+        "note_id": "Posisi ranjang baik di Selatan, Utara, Timur, atau Tenggara"
+      },
+      "altar": {
+        "dirs_hz": [
+          "南",
+          "東",
+          "東南",
+          "北"
+        ],
+        "dirs_abbr": [
+          "S",
+          "T",
+          "TG",
+          "U"
+        ],
+        "note_id": "Altar/tempat sembahyang baik di Selatan, Timur, Tenggara, atau Utara (arah besar keberuntungan tahun ini)"
+      },
+      "kamar_mandi": {
+        "dirs_hz": [
+          "東北",
+          "西北",
+          "西",
+          "西南"
+        ],
+        "dirs_abbr": [
+          "TL",
+          "BL",
+          "B",
+          "BD"
+        ],
+        "note_id": "Kamar mandi/WC sebaiknya di Timur Laut, Barat Laut, Barat, atau Barat Daya"
+      }
+    }
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "貪狼",
+    "shen_zhu_hz": "天相",
+    "ming_gong_hz": "子",
+    "shen_gong_hz": "寅",
+    "wu_xing_ju_hz": "木三局",
+    "shi_jun_hz": "寅",
+    "palaces": null,
+    "ming_gong_id": "Istana Hidup · Tikus",
+    "shen_gong_id": "Istana Tubuh · Harimau",
+    "shi_jun_id": "Penguasa Waktu · Harimau",
+    "ming_zhu_id": "Penguasa Hidup",
+    "shen_zhu_id": "Penguasa Tubuh",
+    "wu_xing_ju_id": "Aliran Kayu Tiga"
+  },
+  "shen_sha_list": [],
+  "kesimpulan_narrative": "LFR lahir 27 Januari 1998 pukul 01:50 ([[丑時]]) dengan shio Kerbau ([[牛/丑]]). Penguasa hidupnya adalah Kayu Yang ([[甲木]]) dengan format [[正財格]]. Skor DM: +4.210 / -4.426, kondisi DM sedikit lemah (身弱). Lahir dalam skema ZiWei [[木三局]], Istana Nasib ([[命宮]]) di [[子]] dengan bintang [[七殺]], Istana Jiwa ([[身宮]]) di [[寅]]. || Karakter inti: bersemangat, penuh gairah tersembunyi di balik penampilan dingin, memiliki aura pemimpin yang kuat namun mudah terpinggirkan, tidak mau tunduk pada siapapun. Dari sisi ZiWei [[命宮七殺]]: bersifat pejuang sejati, penuh tekad, tidak mudah menyerah sebelum orang lain menerima pandangannya. Sisi 神煞: [[天乙貴人]] memberkahi dengan kecerdasan dan jaringan pertolongan; [[寡宿]] menandakan kecenderungan kesendirian dalam relasi kerabat. || [[喜用神]]: 用神=[[木]] (比劫, dukung DM lemah), 喜神=[[水]] (印, bangkitkan DM). Elemen dihindari: [[火]] (仇神, terkuras), [[土]] (忌神, melemahkan). Karier yang cocok: pendidikan, penerbitan, furnitur-kayu, pertanian, makelar/agen, atau pelayaran-perdagangan. || Da Yun saat ini (2026, usia 28) adalah [[丙辰]] (食神) fase 24–33. [[丙]] adalah [[食神]] untuk [[甲木]], masa eksplorasi kreativitas dan ekspresi diri. Tahun 2026 ([[丙午]], usia 28): ada bintang [[死符]] dan [[暗耀]], perlu hati-hati, jauhi suasana duka. Tahun 2028 ([[戊申]]): bantuan dari orang berpengaruh, bintang [[龍德]] membawa keberuntungan. || Pasangan terbaik: shio Tikus, Ular, Ayam ([[大吉]]). Hindari shio Naga, Kuda, Kambing, Anjing. ZiWei [[夫妻宮]]: pasangan memiliki pesona tersendiri, pernikahan cenderung terlambat namun bisa harmonis; ada risiko gesekan jika ada bintang penghalang. || Kesehatan: rentan penyakit sistem pencernaan, pankreas, jantung, dan mata. [[先天體檢]]: organ 庚大腸/壬膀胱/癸腎 berisiko tinggi (skor 4); usus besar, ginjal, dan kandung kemih perlu perhatian khusus. || Hunian: Gua [[坎]], rumah duduk Selatan-Utara sangat baik. Pintu di Selatan/Utara/Timur, dapur di Barat menghadap Timur, kamar tidur di Tenggara/Timur/Utara, ranjang di Selatan/Utara/Timur/Tenggara, toilet di Timur Laut/Barat Laut/Barat/Barat Daya. || Puisi klasik [[甲木]]: \"甲木參天，脫胎要火，春不容金，秋不容土；地潤天和，直立千古\" — Kayu 甲 menjulang ke langit, butuh Api untuk berkembang, tanah lembab dan harmoni langit menjadikannya tegak selamanya.",
+  "dm_pos_score": 4210.0,
+  "dm_neg_score": 4426.0,
+  "xiantian_per_stem": {
+    "jia": 1,
+    "yi": 1,
+    "bing": 0,
+    "ding": 2,
+    "wu": 1,
+    "ji": 3,
+    "geng": 0,
+    "xin": 4,
+    "ren": 0,
+    "gui": 4
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": null,
+  "canggan_shi_shen": null,
+  "chang_sheng_per_pilar": null,
+  "kong_wang": null,
+  "ming_gong_bazi": null,
+  "bone_weight": null,
+  "liu_nian_predictions": [
+    {
+      "tahun": 2026,
+      "umur": 28,
+      "ganzhi": "丙午",
+      "prose": "Tahun ini apa yang dipikirkan dan direncanakan tampaknya di permukaan tidak menghasilkan apa-apa. Perlu waspada terhadap segala hal, semuanya sulit untuk bergerak cepat, secara substansial sulit mencapai apa yang diinginkan. Yang sudah menikah, hubungan suami-istri ada gesekan. Yang belum menikah, ada kisah cinta baru. Bintang [[死符]] masuk Istana Nasib: ada kesedihan, duka dari pakaian duka, orang tua dan saudara kandung perlu dijaga, berdoa mohon perlindungan dari bencana. Bintang [[暗耀]] masuk nasib: ada hal-hal yang bersinar secara tersembunyi; jika tidak ada benturan mulut, keluarga akan ada kejadian gembira namun ada yang pecah. Wanita wajib hati-hati dalam kehamilan dan persalinan. Hindari bulan 2, 5, 8, atau 12, berdoa memohon perlindungan dewa. Mudah mengalami masalah pemerintahan, hukuman, tuntutan hukum, cedera, dan penderitaan mental. Sifat mudah terburu-buru, kurang kemampuan pengambilan keputusan, suka hal ekstrem dan detail yang rumit, sering menyiksa diri sendiri dengan kekhawatiran tak berdasar. Hubungan suami-istri tipis dan mudah berubah, sulit bersama hingga tua, yang menikah lagi lebih banyak."
+    },
+    {
+      "tahun": 2027,
+      "umur": 29,
+      "ganzhi": "丁未",
+      "prose": "Tahun ini apa yang dipikirkan tampaknya di permukaan tidak menghasilkan apa-apa. Perlu perhatian ekstra pada kesehatan; rezeki datang bencana pun ikut datang, secara substansial sulit mencapai harapan. Karier akan mengalami pergerakan. Lingkungan besar membaik, seperti renovasi rumah, pindah tempat, atau memindahkan perabotan. Suasana hati relatif tidak stabil. Bintang [[歲破]] masuk nasib: harta terurai dan tidak bisa ditahan, waspadai enam kerabat, berbuat kebajikan untuk menjaga keselamatan. Bintang [[太陰]] masuk perjalanan nasib: ada kebahagiaan yang datang beriringan, mencari harta dengan tekad kuat, keberuntungan bergantian antara Timur dan Barat. Hindari bulan 3, 6, 9, atau 12, tenangkan hati dan berzikir. Memiliki kebiasaan mengumpulkan benda-benda kecil dan suka menabung. Paruh pertama kehidupan cukup banyak kesulitan dan penderitaan, namun paruh kedua semakin beruntung dan menikmati hidup."
+    },
+    {
+      "tahun": 2028,
+      "umur": 30,
+      "ganzhi": "戊申",
+      "prose": "Bisa mendapat bantuan dari orang-orang berpengaruh, secara substansial bisa mencapai cita-cita yang cukup tinggi. Tenaga dan pikiran yang dicurahkan tidak sebanding dengan uang di permukaan. Bintang [[龍德]] masuk nasib: empat musim mendatangkan uang, di rumah penuh keberuntungan, bepergian keluar tidak ada bencana. Bintang [[天掃]] masuk perjalanan nasib: utamanya ada duka dan kekacauan; jika mendapat orang mulia membawa berita gembira, bencana bisa dihindari; waspadai pencuri dan penjahat. Hindari bulan 1, 4, 7, atau 12, berhati-hati berbuat baik. Berusaha keras akan mendapat pertanda datangnya bantuan dari orang mulia. Sifat mudah terburu-buru, semua hal panas tiga menit, suka yang baru bosan yang lama. Kepribadian impulsif, kurang berpikir panjang, gampang ditipu, sering bertindak gegabah. Namun memiliki kemampuan [[絕處逢生]] (bangkit dari titik nol)."
+    },
+    {
+      "tahun": 2029,
+      "umur": 31,
+      "ganzhi": "己酉",
+      "prose": "Bisa mendapat bantuan dari orang-orang berpengaruh, secara substansial bisa mencapai cita-cita yang cukup tinggi. Tenaga dan pikiran yang dicurahkan tidak sebanding dengan uang di permukaan. Karier akan ada pergerakan atau perubahan jabatan. Lingkungan besar berubah karena ada hambatan yang mengendalikan. Suasana hati kurang stabil, ada beberapa pengekangan. Bintang [[白虎]] masuk nasib: mulut dan sengketa finansial, waspadai enam kerabat, berbuat kebajikan menjaga keselamatan. Bintang [[天喜]] masuk nasib: ada kegembiraan menyambut musim semi, segalanya berjalan mulus dan baik. Wanita wajib berhati-hati dalam kehamilan. Hindari bulan 1, 4, 7, atau 11. Hati-hati jangan sampai terjerumus konflik dan kecelakaan, mudah terluka atau mengalami kehilangan yang menyentuh. Penuh rasa ingin tahu dan jiwa penelitian, memiliki jiwa muda dan kreativitas tinggi, penuh selera humor dan kehangatan sosial. Semakin bertambah usia, fisik semakin menguat. Wanita dengan konfigurasi ini lebih mudah melahirkan anak perempuan."
+    },
+    {
+      "tahun": 2030,
+      "umur": 32,
+      "ganzhi": "庚戌",
+      "prose": "Tahun ini ada yang harus dibayar sebagai harga, di permukaan masih bisa sebanding dengan uang. Perlu perhatian ekstra pada kesehatan; rezeki datang bencana pun datang, secara substansial tidak bisa mencapai cita-cita. Yang sudah menikah ada gesekan suami-istri, yang belum menikah ada kisah cinta. Bintang [[無常]] masuk nasib: muncul hal-hal tak terduga, keberuntungan bisa jatuh tiba-tiba di musim gugur, namun jika bebas dari bencana hati bisa tenang sendiri. Dikhawatirkan ada penyakit dan kehilangan harta, hindari bulan 4, 7, dan 8, waspada air dan api. Bintang [[福德]] masuk perjalanan: naik jabatan dan menambah keterampilan, ciptakan banyak hal baru di ladang/usaha, segalanya layak dicari. Cenderung pendiam, penuh kekayaan batin, kurang ambisi besar, puas dengan kondisi apa adanya. Hubungan dengan orang tua kandung relatif tipis, sering menjadi anak angkat atau menantu orang. Namun selama terus berusaha, tetap bisa meraih pencapaian yang cukup tinggi."
+    },
+    {
+      "tahun": 2031,
+      "umur": 33,
+      "ganzhi": "辛亥",
+      "prose": "Tahun ini ada yang harus dibayar sebagai harga, di permukaan masih bisa sebanding dengan uang. Bisa mendapat bantuan dari orang-orang senior dan guru, secara substansial bisa mencapai cita-cita finansial. Bintang [[吊客]] masuk nasib: duka dan pakaian berkabung datang berlapis, ada masalah pejabat dan penyakit darah, anggota keluarga kecil ada kemunduran. Bintang [[陽德]] masuk nasib: ada kegembiraan bersinar di depan pintu, pertengahan banyak perayaan tanpa masalah, terus berbuat kebajikan untuk segalanya berjalan lancar. Hindari bulan 1, 4, 7, atau 11, berbuat baik secara mulia dan bijaksana. Hati-hati jangan sampai ditipu atau ada perubahan lingkungan kerja yang tidak menguntungkan. Setia, hangat, bersahaja, penuh kebaikan; sangat disukai dan dihormati orang lain, mudah mendapat promosi dan pengakuan. Sangat cocok sebagai asisten, perencana, dan staf yang unggul, lebih mudah memiliki ruang berkembang yang besar."
+    }
+  ],
+  "ziwei_su_ming": "Tipe yang memanfaatkan bakat alami dan terus tumbuh berkembang tanpa henti. Selama Istana Kebajikan [[福德宮]] kuat dan berdaya, Istana Jiwa [[身宮]] pun ikut menguat. Penuh kehangatan dan keramahan kepribadian, kebajikan hatimu bisa mendatangkan banyak keberuntungan. Namun jika Istana Kebajikan lemah, hubungan antarmanusia tidak bisa harmonis dan keberuntungan pun ikut sirna. Dalam kondisi ini, kekuatan [[命宮]] (Istana Nasib), istana kekayaan, istana asmara, dan istana perpindahan juga harus diperhitungkan bersama.",
+  "ziwei_stars": null,
+  "shiye_favorable_full": [
+    {
+      "hz": "文具",
+      "id": "Alat Tulis"
+    },
+    {
+      "hz": "出版",
+      "id": "Penerbitan"
+    },
+    {
+      "hz": "書店",
+      "id": "Toko Buku"
+    },
+    {
+      "hz": "農業蔬果",
+      "id": "Pertanian dan Sayur-Buah"
+    },
+    {
+      "hz": "木材",
+      "id": "Kayu"
+    },
+    {
+      "hz": "傢俱",
+      "id": "Furnitur"
+    },
+    {
+      "hz": "裝璜",
+      "id": "Dekorasi Interior"
+    },
+    {
+      "hz": "紙",
+      "id": "Kertas"
+    },
+    {
+      "hz": "木器或工藝",
+      "id": "Kerajinan Kayu"
+    },
+    {
+      "hz": "花苗園藝",
+      "id": "Tanaman dan Taman"
+    },
+    {
+      "hz": "菜草",
+      "id": "Sayuran dan Herbal"
+    },
+    {
+      "hz": "布疋",
+      "id": "Kain Tekstil"
+    },
+    {
+      "hz": "教育",
+      "id": "Pendidikan"
+    },
+    {
+      "hz": "公務員",
+      "id": "Pegawai Negeri"
+    },
+    {
+      "hz": "政治",
+      "id": "Politik"
+    },
+    {
+      "hz": "宗教家",
+      "id": "Rohaniawan"
+    }
+  ],
+  "shiye_supportive_full": [
+    {
+      "hz": "流動擺販",
+      "id": "Pedagang Keliling"
+    },
+    {
+      "hz": "運動家",
+      "id": "Atlet"
+    },
+    {
+      "hz": "介紹中人",
+      "id": "Makelar atau Perantara"
+    },
+    {
+      "hz": "醫師",
+      "id": "Dokter"
+    },
+    {
+      "hz": "清潔隊",
+      "id": "Jasa Kebersihan"
+    },
+    {
+      "hz": "記者",
+      "id": "Jurnalis"
+    },
+    {
+      "hz": "護士",
+      "id": "Perawat"
+    },
+    {
+      "hz": "導遊",
+      "id": "Pemandu Wisata"
+    },
+    {
+      "hz": "馬戲團",
+      "id": "Sirkus"
+    },
+    {
+      "hz": "航海",
+      "id": "Pelayaran"
+    },
+    {
+      "hz": "漁業",
+      "id": "Perikanan"
+    },
+    {
+      "hz": "冷凍業",
+      "id": "Industri Pembekuan"
+    },
+    {
+      "hz": "水產業",
+      "id": "Akuakultur"
+    },
+    {
+      "hz": "碼頭工",
+      "id": "Buruh Pelabuhan"
+    },
+    {
+      "hz": "消防隊",
+      "id": "Pemadam Kebakaran"
+    },
+    {
+      "hz": "貿易公司",
+      "id": "Perusahaan Dagang"
+    }
+  ],
+  "shiye_short": null,
+  "shen_sha_detail": [
+    {
+      "hz": "天乙貴人",
+      "pinyin": "Tian Yi Gui Ren",
+      "label_id": "Bidadari Langit",
+      "tafsir_hz": "主聰明智慧、易得人助、逢凶化吉",
+      "tafsir_id": "Menandakan kecerdasan dan kebijaksanaan tinggi, mudah mendapat pertolongan dari orang lain, mampu mengubah nasib buruk menjadi keberuntungan"
+    },
+    {
+      "hz": "寡宿",
+      "pinyin": "Gua Su",
+      "label_id": "Bintang Kesepian",
+      "tafsir_hz": "形孤骨露、面無和氣、六親終有也如無",
+      "tafsir_id": "Penampilan tegar namun dingin, hubungan dengan enam jalur kerabat pada akhirnya seolah tidak ada meskipun ada"
+    },
+    {
+      "hz": "福星貴",
+      "pinyin": "Fu Xing Gui",
+      "label_id": "Bintang Keberuntungan",
+      "tafsir_hz": "名望高、權威大、智能雖高，但自信過度，易招大敗須填之",
+      "tafsir_id": "Nama dan wibawa tinggi, kecerdasan juga tinggi, namun terlalu percaya diri sehingga mudah mengalami kekalahan besar yang harus diwaspadai"
+    }
+  ],
+  "marriage_cocok_tafsir": "天作良緣，必定家聲克振，富豪門墻，秉心淑篤，家勢盛大，安穩吉慶美德終世。 — Jodoh yang ditakdirkan surga, nama keluarga pasti semakin berjaya, kemakmuran dan keluhuran, berhati murni dan berbudi luhur, keluarga besar dan sejahtera, hidup tenteram penuh kebaikan dan kebajikan hingga akhir hayat.",
+  "marriage_hindari_tafsir": "有吉亦有凶，甘苦相並，快樂窮迫各半，是以前半世幸福，無進取之氣象，內心多憂苦慘，終必破敗。 — Ada kebaikan namun juga ada keburukan, pahit manis beriringan, setengah bahagia setengah tersiksa kemiskinan; paruh pertama kehidupan cukup bahagia namun tanpa semangat maju, batin banyak menanggung kesedihan dan kesengsaraan, pada akhirnya pasti mengalami kehancuran.",
+  "gushu_quotes": [
+    {
+      "source_hz": "三命通會注",
+      "source_id": "Tiga Nasib Pertemuan (San Ming Tong Hui)",
+      "text_hz": "詩曰：甲乙貴平木得宜，要知金水旺為奇，春從南往秋歸北，冬夏西行發福基。青龍伏形：甲乙如居申西鄉，木逢春旺最為良，四柱若逢庫相助，財官雙美不尋常。",
+      "text_id": "Syair: Kayu 甲/乙 sangat sesuai dan cocok dalam ketenangan, ketahuilah bahwa Logam dan Air yang kuat adalah hal luar biasa; di musim semi bergerak ke Selatan, musim gugur kembali ke Utara, musim dingin dan panas bergerak ke Barat membangun fondasi keberuntungan. Naga Hijau Bersembunyi: jika 甲/乙 tinggal di wilayah 申/酉, Kayu yang bertemu musim semi paling kuat dan baik; jika dalam empat pilar bertemu Gudang yang membantu, kekayaan dan jabatan keduanya indah luar biasa."
+    },
+    {
+      "source_hz": "滴天髓",
+      "source_id": "Tetes Langit (Di Tian Sui)",
+      "text_hz": "甲木參天，脫胎要火，春不容金，秋不容土，火熾乘龍，水蕩騎虎；地潤天和，直立千古。",
+      "text_id": "Kayu 甲 menjulang ke langit; untuk mengeluarkan bakat perlu Api; di musim semi tidak tahan Logam, di musim gugur tidak tahan Tanah; Api membara menunggangi Naga, Air mengalir menunggangi Harimau; jika bumi lembab dan langit harmonis, akan berdiri tegak selamanya."
+    },
+    {
+      "source_hz": "詩云",
+      "source_id": "Syair Klasik",
+      "text_hz": "隆冬建丑怯冰霜，誰識天時轉二陽，暖士誠能生萬物，寒金難道首低藏，刑中成未非無用，類聚雜蛇信有方，春在日時多水木，直須行入桑離鄉。",
+      "text_id": "Musim dingin yang panjang di bulan 丑 gentar menghadapi es dan salju; siapa yang tahu waktu langit berbalik ke arah dua Yang; tanah hangat sungguh bisa menumbuhkan segala sesuatu; Logam dingin mana bisa menundukkan kepala dan bersembunyi; 刑 di 成/未 bukan tanpa guna; golongan bersatu dengan ular memiliki caranya sendiri; jika di pilar hari-jam banyak Air dan Kayu, harus terus maju ke arah desa Murbei dan Jauh."
+    }
+  ],
+  "xiongnian_list": null,
+  "xing_qing_poem_hz": null,
+  "xing_qing_poem_id": null,
+  "xing_qing_prose_id": null,
+  "fulu_body_id": null,
+  "mingyun_body_id": null,
+  "qinshu_tou_main_id": null,
+  "qinshu_tou_youyue_id": null,
+  "qinshu_zhong_main_id": null,
+  "qinshu_zhong_youyue_id": null,
+  "qinshu_mo_main_id": null,
+  "qinshu_mo_youyue_id": null,
+  "jie_e_palace_hz": "易患消化系統的疾病。胰臟、健忘症、萎倦感，及手腕、嘴唇的障礙等等。易患與心臟有關的疾病，如有太陰星同宮的話，對眼睛更須絕對注意。有凶星同宮時，易患痔瘡、皮膚病、冷感症等等。如位於寅、辰、巳、午之宮內，必易患疾病。除此之外大可放心，不會有什麼妨礙。能與太陽星同宮更好，永遠健康。如與凶星同宮的話，很容易患眼睛疾病。必須留意因水而引起的疾病以及水難。",
+  "jie_e_palace_id": "Mudah menderita penyakit [[消化系統]] (sistem pencernaan). Penyakit [[胰臟]] (pankreas), [[健忘症]] (pelupa), [[萎倦感]] (kelelahan), serta gangguan pada pergelangan tangan dan bibir. Mudah menderita penyakit terkait [[心臟]] (jantung). Jika ada bintang [[太陰星]] satu istana, perhatian ekstra pada mata mutlak diperlukan. Jika ada bintang [[凶星]] satu istana, mudah terkena [[痔瘡]] (wasir), [[皮膚病]] (penyakit kulit), dan gangguan sensitivitas. Jika berada di rasi [[寅/辰/巳/午]], pasti mudah sakit. Di luar itu tidak perlu khawatir, tidak akan ada gangguan berarti. Jika bersama bintang [[太陽星]] lebih baik lagi, sehat selamanya. Jika bersama [[凶星]], sangat mudah terkena penyakit mata. Wajib waspada terhadap penyakit yang dipicu air dan bahaya air.",
+  "jie_e_organ_focus_id": "Yang utama wajib dijaga: sistem pencernaan dan pankreas, jantung, serta kesehatan mata — terutama jika ada [[太陰星]] atau [[凶星]] di istana yang sama; waspada pula terhadap risiko bahaya air.",
+  "bagua_sectors": null,
+  "bagua_life_type_hz": null,
+  "bagua_life_type_id": null,
+  "bagua_nayin_hz": null,
+  "bagua_nayin_id": null,
+  "bagua_taisui_hz": null,
+  "bagua_taisui_id": null,
+  "bagua_warning_hz": null,
+  "bagua_warning_id": null,
+  "bagua_virtue_hz": null,
+  "bagua_virtue_id": null,
+  "bagua_zuo_xiang_hz": null,
+  "bagua_zuo_xiang_id": null,
+  "hongshui_pages": null,
+  "mantra": {
+    "hz": "—",
+    "pinyin": "—"
+  },
+  "_xq_radar_poly": "          <polygon points=\"200,56 311.2,136 311.2,264 200,312 102.7,256 130.5,160\"\n            fill=\"rgba(139,26,26,0.18)\" stroke=\"#8B1A1A\" stroke-width=\"1.5\"/>\n          <circle cx=\"200\" cy=\"56\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"136\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"264\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"200\" cy=\"312\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"102.7\" cy=\"256\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"130.5\" cy=\"160\" r=\"3\" fill=\"#8B1A1A\"/>",
+  "_xq_radar_labels": "          <g font-family=\"Noto Serif TC,serif\">\n            <text x=\"200\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">進取</text>\n            <text x=\"200\" y=\"33\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Jìnqǔ · Pelopor · 9</text>\n\n            <text x=\"358\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">創新</text>\n            <text x=\"358\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Chuàngxīn · Inovatif · 8</text>\n\n            <text x=\"358\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">領導</text>\n            <text x=\"358\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Lǐngdǎo · Memimpin · 8</text>\n\n            <text x=\"200\" y=\"382\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">急性</text>\n            <text x=\"200\" y=\"393\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Jíxìng · Cepat panas · 7</text>\n\n            <text x=\"42\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">直率</text>\n            <text x=\"42\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Zhíshuài · Terus-terang · 7</text>\n\n            <text x=\"42\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">包容</text>\n            <text x=\"42\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Bāoróng · Toleran · 5</text>\n          </g>",
+  "_xq_motto": [
+    "樹",
+    "Pohon Besar",
+    "本性 浩然",
+    "君子之風"
+  ],
+  "_tafsir": {
+    "xingqing_full": "<p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">1</span>Cerdas dan terbuka, suka kebebasan, rasa ingin tahu tinggi, cenderung mementingkan diri sendiri secara wajar; berpikiran luas, banyak mengenal orang namun kurang selektif dalam berteman, lebih suka melawan arus dari pada mengikuti konvensi</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">2</span>Mampu mengatur dan menyusun berbagai hal dengan teratur; pandai membayangkan gambaran tiga dimensi dalam pikiran, namun kurang nyaman dengan kebutuhan fisik dan kecenderungan lebih mementingkan pikiran daripada tubuh</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">3</span>Konservatif, pendiam, memiliki standar diri yang tinggi, sifat rasional dan hati-hati, sangat menjaga harga diri, mengutamakan keputusan kelompok</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">4</span>Sangat menghargai dunia nyata dan materi, namun tidak terlalu terikat pada benda-benda; cekatan dalam praktik, daya tangkap umumnya kuat, memiliki ambisi maju, teguh dan berprinsip</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">5</span>Berjiwa lurus dan baik hati, namun kurang memiliki fleksibilitas dan kemampuan beradaptasi cepat terhadap situasi yang berubah</p>",
+    "xingqing_full_action": "Inti watak diri sebagaimana terbaca dari layar 性情.",
+    "overview_full": "<div style=\"display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm;\"><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Pasangan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Kurang mementingkan perasaan, lebih suka menghabiskan uang; sulit menerima kata-kata dan nasihat pasangan</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Anak Laki-laki</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Memiliki kemampuan operasional kuat dan pandai menggunakan uang</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Kemandirian</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Kurang suka diatur oleh orang lain, tidak mudah tunduk pada otoritas</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Kepemimpinan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Kurang memiliki jiwa kepemimpinan dan sulit mengendalikan hal-hal besar</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Relasi Ibu</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Sulit menerima perkataan dan nasihat ibu, kurang banyak bicara dalam komunikasi dengan ibu</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Perantauan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Akan merantau dan pindah jauh dari kampung halaman</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Konsistensi</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Sering memulai sesuatu dengan semangat namun tidak menyelesaikannya hingga tuntas</div></div></div>",
+    "overview_full_action": "Pesan inti hubungan terdekat dari layar 全局總論.",
+    "career": "<ul><li><strong>Pendidikan / Penerbit Buku</strong> (unsur 木), 教育/書店/出版 dari foto 事業, selaras 用神 木 yang mendukung DM</li><li><strong>Furnitur / Kerajinan Kayu</strong> (unsur 木), 木材/傢俱/木器工藝/裝璜 dari foto 事業, domain alami elemen Kayu</li><li><strong>Pertanian Sayur-Buah / Tanaman</strong> (unsur 木), 農業蔬果/花苗園藝/菜草 dari foto 事業, Kayu identik dengan tumbuhan</li><li><strong>Perdagangan / Ekspor-Impor</strong> (unsur 水), 貿易公司/航海 dari foto 事業, Air melambangkan aliran dan mobilitas sesuai 喜神 水</li><li><strong>Makelar / Agen Perantara</strong> (unsur 水), 介紹中人 dari foto 事業, peran perantara yang fleksibel cocok dengan sifat Air mengalir</li></ul>",
+    "_career_struct": {
+      "tags": {
+        "fav_1": [
+          "木",
+          "Kayu (pendidikan, penerbitan, furnitur, kerajinan kayu, pertanian)"
+        ],
+        "fav_2": [
+          "水",
+          "Air (pelayaran, perikanan, perdagangan, makelar, jasa keliling)"
+        ],
+        "unfav_1": [
+          "火",
+          "Api (industri api/panas, hindari sebagai bidang utama)"
+        ],
+        "unfav_2": [
+          "土",
+          "Tanah (properti tanah berat, pertambangan bumi, hindari)"
+        ]
+      },
+      "industri": [
+        {
+          "nama": "Pendidikan / Penerbit Buku",
+          "unsur": "木",
+          "alasan": "教育/書店/出版 dari foto 事業, selaras 用神 木 yang mendukung DM"
+        },
+        {
+          "nama": "Furnitur / Kerajinan Kayu",
+          "unsur": "木",
+          "alasan": "木材/傢俱/木器工藝/裝璜 dari foto 事業, domain alami elemen Kayu"
+        },
+        {
+          "nama": "Pertanian Sayur-Buah / Tanaman",
+          "unsur": "木",
+          "alasan": "農業蔬果/花苗園藝/菜草 dari foto 事業, Kayu identik dengan tumbuhan"
+        },
+        {
+          "nama": "Perdagangan / Ekspor-Impor",
+          "unsur": "水",
+          "alasan": "貿易公司/航海 dari foto 事業, Air melambangkan aliran dan mobilitas sesuai 喜神 水"
+        },
+        {
+          "nama": "Makelar / Agen Perantara",
+          "unsur": "水",
+          "alasan": "介紹中人 dari foto 事業, peran perantara yang fleksibel cocok dengan sifat Air mengalir"
+        }
+      ]
+    },
+    "sintesis": "LFR adalah <span class=\"hz\">甲木</span> yang menjulang tinggi namun sedikit lemah; kunci sukses ada pada memilih bidang sesuai 用神 <span class=\"hz\">木</span> dan 喜神 <span class=\"hz\">水</span>, membangun jaringan yang solid, dan memanfaatkan fase Da Yun <span class=\"hz\">丙辰</span> (24–33) yang penuh ekspresi kreatif ini dengan bijak.",
+    "_sintesis_struct": {
+      "opening": "LFR adalah [[甲木]] yang menjulang tinggi namun sedikit lemah; kunci sukses ada pada memilih bidang sesuai 用神 [[木]] dan 喜神 [[水]], membangun jaringan yang solid, dan memanfaatkan fase Da Yun [[丙辰]] (24–33) yang penuh ekspresi kreatif ini dengan bijak.",
+      "actions": [
+        {
+          "title": "Fokus karier di bidang 用神 木",
+          "context": "Pendidikan, penerbitan, furnitur, kerajinan, atau pertanian sangat sesuai untuk fase Da Yun 丙辰. Bintang [[天乙貴人]] memudahkan mendapat bantuan orang di jalur ini."
+        },
+        {
+          "title": "Investasikan dalam properti untuk menjaga kekayaan",
+          "context": "Dari foto 財富, baik 正財 maupun 偏財 tidak mudah disimpan dalam bentuk tunai"
+        },
+        {
+          "title": "Jaga hunian sesuai gua 坎",
+          "context": "Rumah duduk Selatan-Utara, pintu di Selatan/Utara/Timur. Elemen Air (坎 = Utara) selaras dengan 喜神 水 untuk memperkuat DM."
+        },
+        {
+          "title": "Waspada tahun 2026 (丙午, usia 28)",
+          "context": "Bintang [[死符]] dan [[暗耀]] aktif, risiko duka dan kesulitan meningkat. Pertimbangkan ritual kebajikan dan hindari kegiatan duka/pemakaman di bulan 2, 5, 8, atau 12."
+        },
+        {
+          "title": "Kembangkan kemampuan lewat jaringan dan perpindahan",
+          "context": "Dari foto 遷移, perpindahan dan mobilitas adalah keberuntungan. Jangan takut pindah kota atau bidang kerja — setiap pergerakan membuka peluang baru, terutama jika bersama [[貪狼]] di istana terkait."
+        }
+      ]
+    },
+    "palace1": "<p>ming_gong: - star: 七殺 - insight: Seperti air yang mengalir tanpa henti, nasib terus bergerak tanpa bisa ditahan. Berpenampilan dingin dan tenang, namun di sisi lain ada api semangat yang selalu menyala-nyala abadi. Memiliki daya magis yang mampu menekan dan mengendalikan orang-orang di sekitar, yaitu aura yang disebut sebagai \"kepahlawanan sejati <span class=\"hz\">英雄豪傑</span>\", namun sikapnya terkadang terkesan sedikit arogan dan sombong, mudah terjerumus ke jalan yang salah. Harga diri tinggi, memiliki idealisme yang kuat, sehingga sering merasa puas dengan pencapaian diri sendiri; di balik itu juga sering mendapat kritikan dari orang lain. Namun tak terduga juga ada sisi yang lembut tersembunyi; ketika mendapat tekanan berat apapun bisa langsung jatuh terpuruk, dan sangat sulit bangkit kembali secara normal. Boleh dikatakan kurang baik dalam menghadapi kegagalan dan cobaan. Untuk perempuan, jika tidak ada bintang keberuntungan yang kuat satu istana untuk menetralisir pengaruh <span class=\"hz\">凶</span> (ketidakberuntungan), perjalanan hidup mungkin kurang menyenangkan. Namun, selama <span class=\"hz\">命宮</span> membawa bintang <span class=\"hz\">七殺</span>, baik pria maupun wanita, tidak akan pernah menyerah sebelum orang lain menerima pandangan dan pendapatnya. Karena kurangnya sifat fleksibel ini, sering berada dalam posisi yang terisolasi; banyak wanita yang akhirnya menjalani hidup dalam kesendirian, namun karena secara bawaan termasuk tipe penyendiri, justru kaya rasa dan bisa pula menjalani hidup yang penuh variasi dan perubahan. - action: Kembangkan sisi lembut untuk menyeimbangkan ketegasan bawaan. Hindari sikap arogan yang bisa mengisolasi diri. Manfaatkan aura kepemimpinan alami untuk memimpin tim kecil, bukan mendikte orang lain.</p><p>xiongdi: - star: null - insight: Hubungan persaudaraan yang dingin dan berjarak. Saudara dan sahabat terasa seperti orang asing yang tidak memberikan manfaat nyata apapun. Jika saudara dan teman berjumlah sedikit, bisa terjalin perasaan yang ideal satu sama lain; namun jika terlalu banyak, mudah terjadi perselisihan yang tak henti. Jika ada bintang <span class=\"hz\">凶星</span> satu istana, entah Anda adalah anak tunggal atau hubungan antar saudara kandung sangat dingin dan renggang. - action: Tidak perlu berharap banyak dari saudara kandung untuk bantuan praktis. Fokuslah membangun lingkaran sahabat yang kecil namun berkualitas dan saling mendukung dengan tulus.</p><p>fuqi: - star: null - insight: Tipe yang ramah dan menyenangkan, sehingga mendapat kasih sayang dan dukungan dari banyak orang. Seharusnya tidak akan berpisah dengan kekasih karena pertengkaran. Setelah menikah bisa membangun rumah tangga yang stabil dan bahagia. Meskipun menikah terlambat, bisa mendapatkan pasangan yang luar biasa. Pasangan Anda adalah sosok yang penuh pesona tak terhingga; dalam setiap percakapan, selalu menghadirkan kehangatan yang terasa. Juga merupakan pasangan yang saling mencintai seumur hidup. Namun hati-hati juga dengan cinta — karena terlalu berhati-hati, terkadang melewatkan kesempatan emas. Jika ada bintang <span class=\"hz\">凶星</span> satu istana, kepribadian dengan pasangan tidak cocok dan sering bertengkar. Pasangan yang beruntung dalam cinta: pria bisa menikahi wanita cantik yang cerdas. Wanita tampaknya cocok dengan pria yang memiliki kepribadian unik tersendiri. Jika ada <span class=\"hz\">紫微</span> satu istana, selamanya mempertahankan suasana romantis masa awal pernikahan, layaknya pasangan yang selalu muda dan berseri. Pria maupun wanita, kelemahan bersama adalah sedikit sembrono. Khususnya wanita lebih sering jadi bahan berita percintaan. Namun tampaknya mudah terpengaruh oleh pasangan. Jika ada <span class=\"hz\">武曲</span> atau <span class=\"hz\">廉貞</span> satu istana, pasti akan menimbulkan hambatan tertentu dan sering terjadi konflik suami-istri. Namun jika <span class=\"hz\">命宮</span> berada di <span class=\"hz\">子/丑/寅/申</span>, tidak perlu khawatir hal itu menyebabkan perceraian. - action: Prioritaskan menikah di usia yang lebih matang untuk mendapatkan kebahagiaan pernikahan yang nyata. Kembangkan keberanian dalam mengambil langkah cinta sebelum kesempatan berlalu.</p><p>zinu: - star: null - insight: Tipe anak yang suka melawan. Sering konflik dengan kedua orang tua, bisa saja suatu saat pergi meninggalkan rumah. Namun memiliki kecenderungan untuk merangsang dan memotivasi orang lain secara langsung. Namun kemungkinan besar tidak memiliki keturunan. Jika ada bintang <span class=\"hz\">凶星</span> lain satu istana, maka sepanjang hidup benar-benar jangan berharap memiliki anak sama sekali! Pengecualiannya: jika <span class=\"hz\">子女宮</span> berada di <span class=\"hz\">酉</span>, masih bisa memiliki beberapa anak. Umumnya, jika <span class=\"hz\">子女宮</span> berada di <span class=\"hz\">酉</span>, hubungan orang tua-anak harmonis. Anak cenderung pendiam dan suka menyendiri, terkadang berjalan sendiri tanpa teman, tidak diketahui apa yang sedang ada dalam pikirannya. Bintang keberuntungan yang bisa memberikan berkah anak: jika ada bintang keberuntungan lain satu istana, jumlah anak banyak. Atau jika ada pengaruh bintang keberuntungan <span class=\"hz\">文曲/天府</span>, anak-anak pasti memiliki nasib yang sangat baik. - action: Jangan terlalu cemas soal keturunan. Fokus pada kualitas hubungan dengan anak yang ada. Jika ingin memiliki anak, pertimbangkan waktu dan kondisi yang paling optimal.</p>",
+    "_palace1_struct": {
+      "ming_gong": {
+        "star": "七殺",
+        "insight": "Seperti air yang mengalir tanpa henti, nasib terus bergerak tanpa bisa ditahan. Berpenampilan dingin dan tenang, namun di sisi lain ada api semangat yang selalu menyala-nyala abadi. Memiliki daya magis yang mampu menekan dan mengendalikan orang-orang di sekitar, yaitu aura yang disebut sebagai \"kepahlawanan sejati [[英雄豪傑]]\", namun sikapnya terkadang terkesan sedikit arogan dan sombong, mudah terjerumus ke jalan yang salah. Harga diri tinggi, memiliki idealisme yang kuat, sehingga sering merasa puas dengan pencapaian diri sendiri; di balik itu juga sering mendapat kritikan dari orang lain. Namun tak terduga juga ada sisi yang lembut tersembunyi; ketika mendapat tekanan berat apapun bisa langsung jatuh terpuruk, dan sangat sulit bangkit kembali secara normal. Boleh dikatakan kurang baik dalam menghadapi kegagalan dan cobaan. Untuk perempuan, jika tidak ada bintang keberuntungan yang kuat satu istana untuk menetralisir pengaruh [[凶]] (ketidakberuntungan), perjalanan hidup mungkin kurang menyenangkan. Namun, selama [[命宮]] membawa bintang [[七殺]], baik pria maupun wanita, tidak akan pernah menyerah sebelum orang lain menerima pandangan dan pendapatnya. Karena kurangnya sifat fleksibel ini, sering berada dalam posisi yang terisolasi; banyak wanita yang akhirnya menjalani hidup dalam kesendirian, namun karena secara bawaan termasuk tipe penyendiri, justru kaya rasa dan bisa pula menjalani hidup yang penuh variasi dan perubahan.",
+        "action": "Kembangkan sisi lembut untuk menyeimbangkan ketegasan bawaan. Hindari sikap arogan yang bisa mengisolasi diri. Manfaatkan aura kepemimpinan alami untuk memimpin tim kecil, bukan mendikte orang lain."
+      },
+      "xiongdi": {
+        "insight": "Hubungan persaudaraan yang dingin dan berjarak. Saudara dan sahabat terasa seperti orang asing yang tidak memberikan manfaat nyata apapun. Jika saudara dan teman berjumlah sedikit, bisa terjalin perasaan yang ideal satu sama lain; namun jika terlalu banyak, mudah terjadi perselisihan yang tak henti. Jika ada bintang [[凶星]] satu istana, entah Anda adalah anak tunggal atau hubungan antar saudara kandung sangat dingin dan renggang.",
+        "action": "Tidak perlu berharap banyak dari saudara kandung untuk bantuan praktis. Fokuslah membangun lingkaran sahabat yang kecil namun berkualitas dan saling mendukung dengan tulus."
+      },
+      "fuqi": {
+        "insight": "Tipe yang ramah dan menyenangkan, sehingga mendapat kasih sayang dan dukungan dari banyak orang. Seharusnya tidak akan berpisah dengan kekasih karena pertengkaran. Setelah menikah bisa membangun rumah tangga yang stabil dan bahagia. Meskipun menikah terlambat, bisa mendapatkan pasangan yang luar biasa. Pasangan Anda adalah sosok yang penuh pesona tak terhingga; dalam setiap percakapan, selalu menghadirkan kehangatan yang terasa. Juga merupakan pasangan yang saling mencintai seumur hidup. Namun hati-hati juga dengan cinta — karena terlalu berhati-hati, terkadang melewatkan kesempatan emas. Jika ada bintang [[凶星]] satu istana, kepribadian dengan pasangan tidak cocok dan sering bertengkar. Pasangan yang beruntung dalam cinta: pria bisa menikahi wanita cantik yang cerdas. Wanita tampaknya cocok dengan pria yang memiliki kepribadian unik tersendiri. Jika ada [[紫微]] satu istana, selamanya mempertahankan suasana romantis masa awal pernikahan, layaknya pasangan yang selalu muda dan berseri. Pria maupun wanita, kelemahan bersama adalah sedikit sembrono. Khususnya wanita lebih sering jadi bahan berita percintaan. Namun tampaknya mudah terpengaruh oleh pasangan. Jika ada [[武曲]] atau [[廉貞]] satu istana, pasti akan menimbulkan hambatan tertentu dan sering terjadi konflik suami-istri. Namun jika [[命宮]] berada di [[子/丑/寅/申]], tidak perlu khawatir hal itu menyebabkan perceraian.",
+        "action": "Prioritaskan menikah di usia yang lebih matang untuk mendapatkan kebahagiaan pernikahan yang nyata. Kembangkan keberanian dalam mengambil langkah cinta sebelum kesempatan berlalu."
+      },
+      "zinu": {
+        "insight": "Tipe anak yang suka melawan. Sering konflik dengan kedua orang tua, bisa saja suatu saat pergi meninggalkan rumah. Namun memiliki kecenderungan untuk merangsang dan memotivasi orang lain secara langsung. Namun kemungkinan besar tidak memiliki keturunan. Jika ada bintang [[凶星]] lain satu istana, maka sepanjang hidup benar-benar jangan berharap memiliki anak sama sekali! Pengecualiannya: jika [[子女宮]] berada di [[酉]], masih bisa memiliki beberapa anak. Umumnya, jika [[子女宮]] berada di [[酉]], hubungan orang tua-anak harmonis. Anak cenderung pendiam dan suka menyendiri, terkadang berjalan sendiri tanpa teman, tidak diketahui apa yang sedang ada dalam pikirannya. Bintang keberuntungan yang bisa memberikan berkah anak: jika ada bintang keberuntungan lain satu istana, jumlah anak banyak. Atau jika ada pengaruh bintang keberuntungan [[文曲/天府]], anak-anak pasti memiliki nasib yang sangat baik.",
+        "action": "Jangan terlalu cemas soal keturunan. Fokus pada kualitas hubungan dengan anak yang ada. Jika ingin memiliki anak, pertimbangkan waktu dan kondisi yang paling optimal."
+      }
+    },
+    "palace2": "<p>caibo: - star: null - insight: Seseorang yang merencanakan cara menggunakan uang terlebih dahulu sebelum bertindak, sehingga dalam pengeluaran selalu cermat dan hemat. Sering mendapatkan uang dalam jumlah besar secara tak terduga. Sekaligus apapun yang diinginkan pasti diupayakan dengan segala cara untuk mendapatkannya, sehingga keberuntungan finansial cukup pesat; tanpa perlu banyak usaha pun sering mendapatkan uang. Jika ada <span class=\"hz\">紫微</span> satu istana, membangun dari nol dan secara bertahap mengumpulkan kekayaan. Jika ada bintang <span class=\"hz\">凶星</span>, meskipun di tengah jalan mengalami beberapa hambatan, hasilnya tetap bisa mendapatkan uang yang cukup banyak. - action: Manfaatkan kemampuan perencanaan keuangan yang kuat ini. Investasikan ke aset nyata (properti) karena kekayaan sulit disimpan dalam bentuk tunai sesuai analisis BaZi.</p><p>jie_e: - star: null - insight: Mudah menderita penyakit sistem pencernaan — pankreas, mudah lupa, kelelahan kronis, serta gangguan pada pergelangan tangan dan bibir. Mudah menderita penyakit terkait jantung. Jika ada <span class=\"hz\">太陰星</span> satu istana, perhatian ekstra pada mata mutlak diperlukan. Jika ada <span class=\"hz\">凶星</span>, mudah terkena wasir, penyakit kulit, dan gangguan sensitivitas. Jika <span class=\"hz\">疾厄宮</span> berada di <span class=\"hz\">寅/辰/巳/午</span>, pasti mudah sakit. Di luar itu tidak perlu khawatir. Jika bersama <span class=\"hz\">太陽星</span> lebih baik lagi, sehat selamanya. Jika bersama <span class=\"hz\">凶星</span>, sangat mudah terkena penyakit mata. Wajib waspada terhadap penyakit yang dipicu air dan bahaya air. - action: Rutin periksa kesehatan sistem pencernaan, jantung, dan mata. Hindari gaya hidup yang memicu kelelahan kronis. Waspada terhadap lingkungan yang berhubungan dengan air (banjir, kebocoran, olahraga air berisiko tinggi).</p><p>qianyi: - star: null - insight: Tipe yang penuh perubahan dan bersemangat tinggi, bergerak aktif dan penuh tekad layaknya api yang membakar habis. Sepanjang hidup banyak berpindah tempat dan tidak bisa menetap. Adalah tipe orang yang dalam bahasa umum disebut \"gila pindah rumah\". Dalam pekerjaan, hampir tidak bisa bertahan di satu tempat lebih dari tiga bulan! Atau akan bekerja di perusahaan yang sering melakukan rotasi dan dinas luar. Namun berpindah-pindah justru lebih baik bagi Anda. Jika memungkinkan, lebih sering keluar dan berpetualang! Jika ada <span class=\"hz\">貪狼</span> satu istana, apapun usaha yang Anda lakukan bisa sukses besar. Pindah ke tempat lain untuk mencari nafkah tidak perlu khawatir akan gagal. Dari sisi nasib pun tidak ada perubahan drastis yang buruk; karena suatu situasi tertentu mengharuskan berganti profesi, secara umum bisa mendapat bimbingan orang yang lebih tua untuk maju dan berkembang. Selain itu, ketika ingin mencoba mengubah gaya hidup, mungkin bertemu keberuntungan tak terduga. Jika ada <span class=\"hz\">紫微</span> satu istana, adalah pembangun usaha yang cukup handal. Jika ada <span class=\"hz\">廉貞</span> satu istana, sesekali mungkin mendapat peluang besar dalam semalam. - action: Jangan takut untuk berpindah kota atau mengubah bidang kerja — mobilitas adalah kunci keberuntungan Anda. Setiap perpindahan membawa peluang baru yang lebih besar.</p><p>puyi: - star: null - insight: Bisa mendapatkan bawahan yang sopan, bertatakrama baik, dan berhati-hati. Anda bisa memiliki bawahan dari golongan berpengaruh dan berkemampuan tinggi. Jika ada <span class=\"hz\">巨門星</span> satu istana, pada awalnya hubungan dengan bawahan tidak serasi dan tidak cocok; namun tidak lama kemudian, karena terbiasa bekerja bersama dan saling memahami, akhirnya bisa berhubungan dengan harmonis dan baik. Jika ada <span class=\"hz\">太陰星</span> atau <span class=\"hz\">天梁星</span> satu istana, bisa mendapatkan bawahan yang benar-benar berkapasitas dan berpengaruh. Bawahan Anda termasuk tipe cendekiawan yang teguh dan praktis, bisa berperan sebagai penasihat strategi dan sangat bermanfaat untuk pekerjaan Anda. Dalam aktivitas tim kecil atau kelompok — seperti pekerjaan di bidang akuntansi, pelaporan, dan sejenisnya — pasti akan sepenuhnya mengekspresikan kecerdasan dan bakatnya. Namun jika <span class=\"hz\">僕役宮</span> berada di istana <span class=\"hz\">午</span> atau <span class=\"hz\">戌</span>, bawahan cenderung sedikit kurang serius dan tidak bisa dipercaya untuk tugas-tugas penting. - action: Rekrut bawahan dari tipe cendekiawan yang praktis dan analitis untuk pekerjaan detail dan pelaporan. Beri waktu adaptasi awal. Jika rasi <span class=\"hz\">僕役宮</span> di 午/戌, lebih selektif dalam memberikan tanggung jawab besar.</p>",
+    "_palace2_struct": {
+      "caibo": {
+        "insight": "Seseorang yang merencanakan cara menggunakan uang terlebih dahulu sebelum bertindak, sehingga dalam pengeluaran selalu cermat dan hemat. Sering mendapatkan uang dalam jumlah besar secara tak terduga. Sekaligus apapun yang diinginkan pasti diupayakan dengan segala cara untuk mendapatkannya, sehingga keberuntungan finansial cukup pesat; tanpa perlu banyak usaha pun sering mendapatkan uang. Jika ada [[紫微]] satu istana, membangun dari nol dan secara bertahap mengumpulkan kekayaan. Jika ada bintang [[凶星]], meskipun di tengah jalan mengalami beberapa hambatan, hasilnya tetap bisa mendapatkan uang yang cukup banyak.",
+        "action": "Manfaatkan kemampuan perencanaan keuangan yang kuat ini. Investasikan ke aset nyata (properti) karena kekayaan sulit disimpan dalam bentuk tunai sesuai analisis BaZi."
+      },
+      "jie_e": {
+        "insight": "Mudah menderita penyakit sistem pencernaan — pankreas, mudah lupa, kelelahan kronis, serta gangguan pada pergelangan tangan dan bibir. Mudah menderita penyakit terkait jantung. Jika ada [[太陰星]] satu istana, perhatian ekstra pada mata mutlak diperlukan. Jika ada [[凶星]], mudah terkena wasir, penyakit kulit, dan gangguan sensitivitas. Jika [[疾厄宮]] berada di [[寅/辰/巳/午]], pasti mudah sakit. Di luar itu tidak perlu khawatir. Jika bersama [[太陽星]] lebih baik lagi, sehat selamanya. Jika bersama [[凶星]], sangat mudah terkena penyakit mata. Wajib waspada terhadap penyakit yang dipicu air dan bahaya air.",
+        "action": "Rutin periksa kesehatan sistem pencernaan, jantung, dan mata. Hindari gaya hidup yang memicu kelelahan kronis. Waspada terhadap lingkungan yang berhubungan dengan air (banjir, kebocoran, olahraga air berisiko tinggi)."
+      },
+      "qianyi": {
+        "insight": "Tipe yang penuh perubahan dan bersemangat tinggi, bergerak aktif dan penuh tekad layaknya api yang membakar habis. Sepanjang hidup banyak berpindah tempat dan tidak bisa menetap. Adalah tipe orang yang dalam bahasa umum disebut \"gila pindah rumah\". Dalam pekerjaan, hampir tidak bisa bertahan di satu tempat lebih dari tiga bulan! Atau akan bekerja di perusahaan yang sering melakukan rotasi dan dinas luar. Namun berpindah-pindah justru lebih baik bagi Anda. Jika memungkinkan, lebih sering keluar dan berpetualang! Jika ada [[貪狼]] satu istana, apapun usaha yang Anda lakukan bisa sukses besar. Pindah ke tempat lain untuk mencari nafkah tidak perlu khawatir akan gagal. Dari sisi nasib pun tidak ada perubahan drastis yang buruk; karena suatu situasi tertentu mengharuskan berganti profesi, secara umum bisa mendapat bimbingan orang yang lebih tua untuk maju dan berkembang. Selain itu, ketika ingin mencoba mengubah gaya hidup, mungkin bertemu keberuntungan tak terduga. Jika ada [[紫微]] satu istana, adalah pembangun usaha yang cukup handal. Jika ada [[廉貞]] satu istana, sesekali mungkin mendapat peluang besar dalam semalam.",
+        "action": "Jangan takut untuk berpindah kota atau mengubah bidang kerja — mobilitas adalah kunci keberuntungan Anda. Setiap perpindahan membawa peluang baru yang lebih besar."
+      },
+      "puyi": {
+        "insight": "Bisa mendapatkan bawahan yang sopan, bertatakrama baik, dan berhati-hati. Anda bisa memiliki bawahan dari golongan berpengaruh dan berkemampuan tinggi. Jika ada [[巨門星]] satu istana, pada awalnya hubungan dengan bawahan tidak serasi dan tidak cocok; namun tidak lama kemudian, karena terbiasa bekerja bersama dan saling memahami, akhirnya bisa berhubungan dengan harmonis dan baik. Jika ada [[太陰星]] atau [[天梁星]] satu istana, bisa mendapatkan bawahan yang benar-benar berkapasitas dan berpengaruh. Bawahan Anda termasuk tipe cendekiawan yang teguh dan praktis, bisa berperan sebagai penasihat strategi dan sangat bermanfaat untuk pekerjaan Anda. Dalam aktivitas tim kecil atau kelompok — seperti pekerjaan di bidang akuntansi, pelaporan, dan sejenisnya — pasti akan sepenuhnya mengekspresikan kecerdasan dan bakatnya. Namun jika [[僕役宮]] berada di istana [[午]] atau [[戌]], bawahan cenderung sedikit kurang serius dan tidak bisa dipercaya untuk tugas-tugas penting.",
+        "action": "Rekrut bawahan dari tipe cendekiawan yang praktis dan analitis untuk pekerjaan detail dan pelaporan. Beri waktu adaptasi awal. Jika rasi [[僕役宮]] di 午/戌, lebih selektif dalam memberikan tanggung jawab besar."
+      }
+    },
+    "palace3": "<p>guanlu: - star: null - insight: Cocok sebagai pendidik, rohaniawan, pengusaha, politisi, pengacara, di bidang pertambangan, atau agen perantara. Paling cocok menjadi petugas penegak keamanan dan hukum. Khususnya yang ada <span class=\"hz\">廉貞星</span> satu istana, sama sekali tidak cocok dengan pekerjaan bebas; sebaiknya memilih profesi yang terstruktur dan disiplin. Kelemahannya adalah tidak bisa bertahan di pekerjaan tetap, mudah berganti-ganti profesi, dan sering mengalami ketidakstabilan emosional dalam bekerja. Selain itu, tampaknya sulit menabung uang — uang yang di tangan mungkin cepat habis! Untuk wanita, umumnya adalah wanita karier. - action: Pilih karier yang terstruktur dengan jenjang karier yang jelas. Pertimbangkan profesi di bidang pendidikan, hukum, atau layanan publik yang sesuai dengan bintang <span class=\"hz\">官祿宮</span>.</p><p>tianzhai: - star: null - insight: Meskipun ada anugerah properti dan real estate, namun jumlahnya tidak terlalu banyak. - action: Tidak perlu mengharapkan warisan properti besar dari keluarga. Bangun aset properti sendiri secara bertahap melalui tabungan dan investasi yang terencana.</p><p>fude: - star: null - insight: Terkumpul segala kebajikan dalam diri, adalah sosok yang dermawan dan bebas. Pada dasarnya adalah pertanda dimainkan oleh takdir; namun jika mau berusaha keras dan maju, pasti bisa mengubah nasib buruk menjadi keberuntungan. Meskipun penampilan luar terkesan dingin, di dalam hati sesungguhnya tersembunyi semangat yang membara. Batin penuh gairah dan antusiasme, namun di luar berpura-pura tenang, menunggu kematangan kesempatan; ini adalah tipe intelektual yang berbasis pikiran. Dalam aspek mental, karena benturan antara ketenangan dan semangat yang berapi-api, mungkin cukup sering mengalami kebingungan dan kontradiksi batin. - action: Manfaatkan energi batin yang kuat ini untuk dorongan dalam mengejar impian. Latih keseimbangan antara analisis dingin dan semangat yang menggebu agar bisa bertindak efektif pada waktu yang tepat.</p><p>fumu: - star: null - insight: Mungkin ada beberapa hal yang kurang lancar dalam komunikasi, namun hubungan orang tua-anak tetap hangat dan harmonis. Sejak kecil sudah mendapat pengaruh kuat dari ayah. Kedua orang tua adalah orang yang berjiwa mulia dan baik hati, hubungan orang tua-anak cukup erat dan jelas. Hampir tidak ada banyak hambatan besar di antara mereka. Jika <span class=\"hz\">父母宮</span> berada di <span class=\"hz\">申/午</span>, pasti terlahir dari keluarga yang cukup kaya. Jika berada di <span class=\"hz\">寅/辰</span>, terlahir dari keluarga biasa; awalnya terpisah dari ayah, kemudian ibu juga mengalami penderitaan. Namun selama tidak ada <span class=\"hz\">凶星</span> yang masuk, hubungan orang tua-anak tetap aman dan tenteram. Anda secara khusus mendapat pengaruh kuat dari ibu. Kedua orang tua adalah orang yang tenang, berselera tinggi, dan berani tampil beda. Sekaligus sangat memperhatikan reaksi Anda; sekecil apapun perubahan emosi sulit luput dari perhatian mereka. Namun jika ada <span class=\"hz\">凶星</span>, hubungan dengan ibu memburuk, atau berpisah lebih awal dari ibu, atau orang tua memiliki kebiasaan buruk seperti alkohol. Kondisi paling ideal jika bisa bersama <span class=\"hz\">太陽</span> satu istana, tanpa ada <span class=\"hz\">凶星</span> yang menghalangi. - action: Jaga komunikasi terbuka dengan kedua orang tua, terutama ibu yang pengaruhnya sangat kuat. Perhatikan jika ada bintang penghalang yang aktif di tahun-tahun tertentu yang bisa mempengaruhi hubungan keluarga.</p>",
+    "_palace3_struct": {
+      "guanlu": {
+        "insight": "Cocok sebagai pendidik, rohaniawan, pengusaha, politisi, pengacara, di bidang pertambangan, atau agen perantara. Paling cocok menjadi petugas penegak keamanan dan hukum. Khususnya yang ada [[廉貞星]] satu istana, sama sekali tidak cocok dengan pekerjaan bebas; sebaiknya memilih profesi yang terstruktur dan disiplin. Kelemahannya adalah tidak bisa bertahan di pekerjaan tetap, mudah berganti-ganti profesi, dan sering mengalami ketidakstabilan emosional dalam bekerja. Selain itu, tampaknya sulit menabung uang — uang yang di tangan mungkin cepat habis! Untuk wanita, umumnya adalah wanita karier.",
+        "action": "Pilih karier yang terstruktur dengan jenjang karier yang jelas. Pertimbangkan profesi di bidang pendidikan, hukum, atau layanan publik yang sesuai dengan bintang [[官祿宮]]."
+      },
+      "tianzhai": {
+        "insight": "Meskipun ada anugerah properti dan real estate, namun jumlahnya tidak terlalu banyak.",
+        "action": "Tidak perlu mengharapkan warisan properti besar dari keluarga. Bangun aset properti sendiri secara bertahap melalui tabungan dan investasi yang terencana."
+      },
+      "fude": {
+        "insight": "Terkumpul segala kebajikan dalam diri, adalah sosok yang dermawan dan bebas. Pada dasarnya adalah pertanda dimainkan oleh takdir; namun jika mau berusaha keras dan maju, pasti bisa mengubah nasib buruk menjadi keberuntungan. Meskipun penampilan luar terkesan dingin, di dalam hati sesungguhnya tersembunyi semangat yang membara. Batin penuh gairah dan antusiasme, namun di luar berpura-pura tenang, menunggu kematangan kesempatan; ini adalah tipe intelektual yang berbasis pikiran. Dalam aspek mental, karena benturan antara ketenangan dan semangat yang berapi-api, mungkin cukup sering mengalami kebingungan dan kontradiksi batin.",
+        "action": "Manfaatkan energi batin yang kuat ini untuk dorongan dalam mengejar impian. Latih keseimbangan antara analisis dingin dan semangat yang menggebu agar bisa bertindak efektif pada waktu yang tepat."
+      },
+      "fumu": {
+        "insight": "Mungkin ada beberapa hal yang kurang lancar dalam komunikasi, namun hubungan orang tua-anak tetap hangat dan harmonis. Sejak kecil sudah mendapat pengaruh kuat dari ayah. Kedua orang tua adalah orang yang berjiwa mulia dan baik hati, hubungan orang tua-anak cukup erat dan jelas. Hampir tidak ada banyak hambatan besar di antara mereka. Jika [[父母宮]] berada di [[申/午]], pasti terlahir dari keluarga yang cukup kaya. Jika berada di [[寅/辰]], terlahir dari keluarga biasa; awalnya terpisah dari ayah, kemudian ibu juga mengalami penderitaan. Namun selama tidak ada [[凶星]] yang masuk, hubungan orang tua-anak tetap aman dan tenteram. Anda secara khusus mendapat pengaruh kuat dari ibu. Kedua orang tua adalah orang yang tenang, berselera tinggi, dan berani tampil beda. Sekaligus sangat memperhatikan reaksi Anda; sekecil apapun perubahan emosi sulit luput dari perhatian mereka. Namun jika ada [[凶星]], hubungan dengan ibu memburuk, atau berpisah lebih awal dari ibu, atau orang tua memiliki kebiasaan buruk seperti alkohol. Kondisi paling ideal jika bisa bersama [[太陽]] satu istana, tanpa ada [[凶星]] yang menghalangi.",
+        "action": "Jaga komunikasi terbuka dengan kedua orang tua, terutama ibu yang pengaruhnya sangat kuat. Perhatikan jika ada bintang penghalang yang aktif di tahun-tahun tertentu yang bisa mempengaruhi hubungan keluarga."
+      }
+    },
+    "_dmcard": "\n        <div class=\"dmc-eyebrow\">本 命 · Penguasa Hari</div>\n        <div class=\"dmc-stem\">甲</div>\n        <div class=\"dmc-element\">木 · Kayu Yang</div>\n        <div class=\"dmc-pinyin\">Jiǎ 木, \"Pohon Besar\"</div>\n        <div class=\"dmc-strength\">Status: <span class=\"val\">KUAT</span> · 旺</div>\n      ",
+    "_jishen_body": "<strong>土</strong> (Tǔ · Tanah), Tanah berlebih membuat stagnasi; hindari berat/lembam, kebiasaan menumpuk, dan resisten terhadap perubahan.",
+    "caifu_zheng_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "caifu_pian_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "_p1_ming_gong": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Diri</span><span class=\"pn-meta\">Mìng Gōng<span class=\"hz\">命宮</span></span></div></div><div class=\"pal-body\"><p>Seperti air yang mengalir tanpa henti, nasib terus bergerak tanpa bisa ditahan. Berpenampilan dingin dan tenang, namun di sisi lain ada api semangat yang selalu menyala-nyala abadi. Memiliki daya magis yang mampu menekan dan mengendalikan orang-orang di sekitar, yaitu aura yang disebut sebagai \"kepahlawanan sejati <span class=\"hz\">英雄豪傑</span>\", namun sikapnya terkadang terkesan sedikit arogan dan sombong, mudah terjerumus ke jalan yang salah. Harga diri tinggi, memiliki idealisme yang kuat, sehingga sering merasa puas dengan pencapaian diri sendiri; di balik itu juga sering mendapat kritikan dari orang lain. Namun tak terduga juga ada sisi yang lembut tersembunyi; ketika mendapat tekanan berat apapun bisa langsung jatuh terpuruk, dan sangat sulit bangkit kembali secara normal. Boleh dikatakan kurang baik dalam menghadapi kegagalan dan cobaan. Untuk perempuan, jika tidak ada bintang keberuntungan yang kuat satu istana untuk menetralisir pengaruh <span class=\"hz\">凶</span> (ketidakberuntungan), perjalanan hidup mungkin kurang menyenangkan. Namun, selama <span class=\"hz\">命宮</span> membawa bintang <span class=\"hz\">七殺</span>, baik pria maupun wanita, tidak akan pernah menyerah sebelum orang lain menerima pandangan dan pendapatnya. Karena kurangnya sifat fleksibel ini, sering berada dalam posisi yang terisolasi; banyak wanita yang akhirnya menjalani hidup dalam kesendirian, namun karena secara bawaan termasuk tipe penyendiri, justru kaya rasa dan bisa pula menjalani hidup yang penuh variasi dan perubahan.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Kembangkan sisi lembut untuk menyeimbangkan ketegasan bawaan. Hindari sikap arogan yang bisa mengisolasi diri. Manfaatkan aura kepemimpinan alami untuk memimpin tim kecil, bukan mendikte orang lain.</span></div></div>",
+    "_solo_ming_gong_body": "<p>Seperti air yang mengalir tanpa henti, nasib terus bergerak tanpa bisa ditahan. Berpenampilan dingin dan tenang, namun di sisi lain ada api semangat yang selalu menyala-nyala abadi. Memiliki daya magis yang mampu menekan dan mengendalikan orang-orang di sekitar, yaitu aura yang disebut sebagai \"kepahlawanan sejati <span class=\"hz\">英雄豪傑</span>\", namun sikapnya terkadang terkesan sedikit arogan dan sombong, mudah terjerumus ke jalan yang salah. Harga diri tinggi, memiliki idealisme yang kuat, sehingga sering merasa puas dengan pencapaian diri sendiri; di balik itu juga sering mendapat kritikan dari orang lain. Namun tak terduga juga ada sisi yang lembut tersembunyi; ketika mendapat tekanan berat apapun bisa langsung jatuh terpuruk, dan sangat sulit bangkit kembali secara normal. Boleh dikatakan kurang baik dalam menghadapi kegagalan dan cobaan. Untuk perempuan, jika tidak ada bintang keberuntungan yang kuat satu istana untuk menetralisir pengaruh <span class=\"hz\">凶</span> (ketidakberuntungan), perjalanan hidup mungkin kurang menyenangkan. Namun, selama <span class=\"hz\">命宮</span> membawa bintang <span class=\"hz\">七殺</span>, baik pria maupun wanita, tidak akan pernah menyerah sebelum orang lain menerima pandangan dan pendapatnya. Karena kurangnya sifat fleksibel ini, sering berada dalam posisi yang terisolasi; banyak wanita yang akhirnya menjalani hidup dalam kesendirian, namun karena secara bawaan termasuk tipe penyendiri, justru kaya rasa dan bisa pula menjalani hidup yang penuh variasi dan perubahan.</p>",
+    "_solo_ming_gong_action": "Kembangkan sisi lembut untuk menyeimbangkan ketegasan bawaan. Hindari sikap arogan yang bisa mengisolasi diri. Manfaatkan aura kepemimpinan alami untuk memimpin tim kecil, bukan mendikte orang lain.",
+    "_p1_xiongdi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Saudara</span><span class=\"pn-meta\">Xiōng Dì<span class=\"hz\">兄弟</span></span></div></div><div class=\"pal-body\"><p>Hubungan persaudaraan yang dingin dan berjarak. Saudara dan sahabat terasa seperti orang asing yang tidak memberikan manfaat nyata apapun. Jika saudara dan teman berjumlah sedikit, bisa terjalin perasaan yang ideal satu sama lain; namun jika terlalu banyak, mudah terjadi perselisihan yang tak henti. Jika ada bintang <span class=\"hz\">凶星</span> satu istana, entah Anda adalah anak tunggal atau hubungan antar saudara kandung sangat dingin dan renggang.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Tidak perlu berharap banyak dari saudara kandung untuk bantuan praktis. Fokuslah membangun lingkaran sahabat yang kecil namun berkualitas dan saling mendukung dengan tulus.</span></div></div>",
+    "_solo_xiongdi_body": "<p>Hubungan persaudaraan yang dingin dan berjarak. Saudara dan sahabat terasa seperti orang asing yang tidak memberikan manfaat nyata apapun. Jika saudara dan teman berjumlah sedikit, bisa terjalin perasaan yang ideal satu sama lain; namun jika terlalu banyak, mudah terjadi perselisihan yang tak henti. Jika ada bintang <span class=\"hz\">凶星</span> satu istana, entah Anda adalah anak tunggal atau hubungan antar saudara kandung sangat dingin dan renggang.</p>",
+    "_solo_xiongdi_action": "Tidak perlu berharap banyak dari saudara kandung untuk bantuan praktis. Fokuslah membangun lingkaran sahabat yang kecil namun berkualitas dan saling mendukung dengan tulus.",
+    "_p1_fuqi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pasangan</span><span class=\"pn-meta\">Fū Qī<span class=\"hz\">夫妻</span></span></div></div><div class=\"pal-body\"><p>Tipe yang ramah dan menyenangkan, sehingga mendapat kasih sayang dan dukungan dari banyak orang. Seharusnya tidak akan berpisah dengan kekasih karena pertengkaran. Setelah menikah bisa membangun rumah tangga yang stabil dan bahagia. Meskipun menikah terlambat, bisa mendapatkan pasangan yang luar biasa. Pasangan Anda adalah sosok yang penuh pesona tak terhingga; dalam setiap percakapan, selalu menghadirkan kehangatan yang terasa. Juga merupakan pasangan yang saling mencintai seumur hidup. Namun hati-hati juga dengan cinta — karena terlalu berhati-hati, terkadang melewatkan kesempatan emas. Jika ada bintang <span class=\"hz\">凶星</span> satu istana, kepribadian dengan pasangan tidak cocok dan sering bertengkar. Pasangan yang beruntung dalam cinta: pria bisa menikahi wanita cantik yang cerdas. Wanita tampaknya cocok dengan pria yang memiliki kepribadian unik tersendiri. Jika ada <span class=\"hz\">紫微</span> satu istana, selamanya mempertahankan suasana romantis masa awal pernikahan, layaknya pasangan yang selalu muda dan berseri. Pria maupun wanita, kelemahan bersama adalah sedikit sembrono. Khususnya wanita lebih sering jadi bahan berita percintaan. Namun tampaknya mudah terpengaruh oleh pasangan. Jika ada <span class=\"hz\">武曲</span> atau <span class=\"hz\">廉貞</span> satu istana, pasti akan menimbulkan hambatan tertentu dan sering terjadi konflik suami-istri. Namun jika <span class=\"hz\">命宮</span> berada di <span class=\"hz\">子/丑/寅/申</span>, tidak perlu khawatir hal itu menyebabkan perceraian.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Prioritaskan menikah di usia yang lebih matang untuk mendapatkan kebahagiaan pernikahan yang nyata. Kembangkan keberanian dalam mengambil langkah cinta sebelum kesempatan berlalu.</span></div></div>",
+    "_solo_fuqi_body": "<p>Tipe yang ramah dan menyenangkan, sehingga mendapat kasih sayang dan dukungan dari banyak orang. Seharusnya tidak akan berpisah dengan kekasih karena pertengkaran. Setelah menikah bisa membangun rumah tangga yang stabil dan bahagia. Meskipun menikah terlambat, bisa mendapatkan pasangan yang luar biasa. Pasangan Anda adalah sosok yang penuh pesona tak terhingga; dalam setiap percakapan, selalu menghadirkan kehangatan yang terasa. Juga merupakan pasangan yang saling mencintai seumur hidup. Namun hati-hati juga dengan cinta — karena terlalu berhati-hati, terkadang melewatkan kesempatan emas. Jika ada bintang <span class=\"hz\">凶星</span> satu istana, kepribadian dengan pasangan tidak cocok dan sering bertengkar. Pasangan yang beruntung dalam cinta: pria bisa menikahi wanita cantik yang cerdas. Wanita tampaknya cocok dengan pria yang memiliki kepribadian unik tersendiri. Jika ada <span class=\"hz\">紫微</span> satu istana, selamanya mempertahankan suasana romantis masa awal pernikahan, layaknya pasangan yang selalu muda dan berseri. Pria maupun wanita, kelemahan bersama adalah sedikit sembrono. Khususnya wanita lebih sering jadi bahan berita percintaan. Namun tampaknya mudah terpengaruh oleh pasangan. Jika ada <span class=\"hz\">武曲</span> atau <span class=\"hz\">廉貞</span> satu istana, pasti akan menimbulkan hambatan tertentu dan sering terjadi konflik suami-istri. Namun jika <span class=\"hz\">命宮</span> berada di <span class=\"hz\">子/丑/寅/申</span>, tidak perlu khawatir hal itu menyebabkan perceraian.</p>",
+    "_solo_fuqi_action": "Prioritaskan menikah di usia yang lebih matang untuk mendapatkan kebahagiaan pernikahan yang nyata. Kembangkan keberanian dalam mengambil langkah cinta sebelum kesempatan berlalu.",
+    "_p1_zinu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Anak</span><span class=\"pn-meta\">Zǐ Nǚ<span class=\"hz\">子女</span></span></div></div><div class=\"pal-body\"><p>Tipe anak yang suka melawan. Sering konflik dengan kedua orang tua, bisa saja suatu saat pergi meninggalkan rumah. Namun memiliki kecenderungan untuk merangsang dan memotivasi orang lain secara langsung. Namun kemungkinan besar tidak memiliki keturunan. Jika ada bintang <span class=\"hz\">凶星</span> lain satu istana, maka sepanjang hidup benar-benar jangan berharap memiliki anak sama sekali! Pengecualiannya: jika <span class=\"hz\">子女宮</span> berada di <span class=\"hz\">酉</span>, masih bisa memiliki beberapa anak. Umumnya, jika <span class=\"hz\">子女宮</span> berada di <span class=\"hz\">酉</span>, hubungan orang tua-anak harmonis. Anak cenderung pendiam dan suka menyendiri, terkadang berjalan sendiri tanpa teman, tidak diketahui apa yang sedang ada dalam pikirannya. Bintang keberuntungan yang bisa memberikan berkah anak: jika ada bintang keberuntungan lain satu istana, jumlah anak banyak. Atau jika ada pengaruh bintang keberuntungan <span class=\"hz\">文曲/天府</span>, anak-anak pasti memiliki nasib yang sangat baik.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jangan terlalu cemas soal keturunan. Fokus pada kualitas hubungan dengan anak yang ada. Jika ingin memiliki anak, pertimbangkan waktu dan kondisi yang paling optimal.</span></div></div>",
+    "_solo_zinu_body": "<p>Tipe anak yang suka melawan. Sering konflik dengan kedua orang tua, bisa saja suatu saat pergi meninggalkan rumah. Namun memiliki kecenderungan untuk merangsang dan memotivasi orang lain secara langsung. Namun kemungkinan besar tidak memiliki keturunan. Jika ada bintang <span class=\"hz\">凶星</span> lain satu istana, maka sepanjang hidup benar-benar jangan berharap memiliki anak sama sekali! Pengecualiannya: jika <span class=\"hz\">子女宮</span> berada di <span class=\"hz\">酉</span>, masih bisa memiliki beberapa anak. Umumnya, jika <span class=\"hz\">子女宮</span> berada di <span class=\"hz\">酉</span>, hubungan orang tua-anak harmonis. Anak cenderung pendiam dan suka menyendiri, terkadang berjalan sendiri tanpa teman, tidak diketahui apa yang sedang ada dalam pikirannya. Bintang keberuntungan yang bisa memberikan berkah anak: jika ada bintang keberuntungan lain satu istana, jumlah anak banyak. Atau jika ada pengaruh bintang keberuntungan <span class=\"hz\">文曲/天府</span>, anak-anak pasti memiliki nasib yang sangat baik.</p>",
+    "_solo_zinu_action": "Jangan terlalu cemas soal keturunan. Fokus pada kualitas hubungan dengan anak yang ada. Jika ingin memiliki anak, pertimbangkan waktu dan kondisi yang paling optimal.",
+    "_p2_caibo": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Rezeki</span><span class=\"pn-meta\">Cái Bó<span class=\"hz\">財帛</span></span></div></div><div class=\"pal-body\"><p>Seseorang yang merencanakan cara menggunakan uang terlebih dahulu sebelum bertindak, sehingga dalam pengeluaran selalu cermat dan hemat. Sering mendapatkan uang dalam jumlah besar secara tak terduga. Sekaligus apapun yang diinginkan pasti diupayakan dengan segala cara untuk mendapatkannya, sehingga keberuntungan finansial cukup pesat; tanpa perlu banyak usaha pun sering mendapatkan uang. Jika ada <span class=\"hz\">紫微</span> satu istana, membangun dari nol dan secara bertahap mengumpulkan kekayaan. Jika ada bintang <span class=\"hz\">凶星</span>, meskipun di tengah jalan mengalami beberapa hambatan, hasilnya tetap bisa mendapatkan uang yang cukup banyak.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Manfaatkan kemampuan perencanaan keuangan yang kuat ini. Investasikan ke aset nyata (properti) karena kekayaan sulit disimpan dalam bentuk tunai sesuai analisis BaZi.</span></div></div>",
+    "_solo_caibo_body": "<p>Seseorang yang merencanakan cara menggunakan uang terlebih dahulu sebelum bertindak, sehingga dalam pengeluaran selalu cermat dan hemat. Sering mendapatkan uang dalam jumlah besar secara tak terduga. Sekaligus apapun yang diinginkan pasti diupayakan dengan segala cara untuk mendapatkannya, sehingga keberuntungan finansial cukup pesat; tanpa perlu banyak usaha pun sering mendapatkan uang. Jika ada <span class=\"hz\">紫微</span> satu istana, membangun dari nol dan secara bertahap mengumpulkan kekayaan. Jika ada bintang <span class=\"hz\">凶星</span>, meskipun di tengah jalan mengalami beberapa hambatan, hasilnya tetap bisa mendapatkan uang yang cukup banyak.</p>",
+    "_solo_caibo_action": "Manfaatkan kemampuan perencanaan keuangan yang kuat ini. Investasikan ke aset nyata (properti) karena kekayaan sulit disimpan dalam bentuk tunai sesuai analisis BaZi.",
+    "_p2_jie_e": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Kesehatan</span><span class=\"pn-meta\">Jí È<span class=\"hz\">疾厄</span></span></div></div><div class=\"pal-body\"><p>Mudah menderita penyakit sistem pencernaan — pankreas, mudah lupa, kelelahan kronis, serta gangguan pada pergelangan tangan dan bibir. Mudah menderita penyakit terkait jantung. Jika ada <span class=\"hz\">太陰星</span> satu istana, perhatian ekstra pada mata mutlak diperlukan. Jika ada <span class=\"hz\">凶星</span>, mudah terkena wasir, penyakit kulit, dan gangguan sensitivitas. Jika <span class=\"hz\">疾厄宮</span> berada di <span class=\"hz\">寅/辰/巳/午</span>, pasti mudah sakit. Di luar itu tidak perlu khawatir. Jika bersama <span class=\"hz\">太陽星</span> lebih baik lagi, sehat selamanya. Jika bersama <span class=\"hz\">凶星</span>, sangat mudah terkena penyakit mata. Wajib waspada terhadap penyakit yang dipicu air dan bahaya air.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Rutin periksa kesehatan sistem pencernaan, jantung, dan mata. Hindari gaya hidup yang memicu kelelahan kronis. Waspada terhadap lingkungan yang berhubungan dengan air (banjir, kebocoran, olahraga air berisiko tinggi).</span></div></div>",
+    "_solo_jie_e_body": "<p>Mudah menderita penyakit sistem pencernaan — pankreas, mudah lupa, kelelahan kronis, serta gangguan pada pergelangan tangan dan bibir. Mudah menderita penyakit terkait jantung. Jika ada <span class=\"hz\">太陰星</span> satu istana, perhatian ekstra pada mata mutlak diperlukan. Jika ada <span class=\"hz\">凶星</span>, mudah terkena wasir, penyakit kulit, dan gangguan sensitivitas. Jika <span class=\"hz\">疾厄宮</span> berada di <span class=\"hz\">寅/辰/巳/午</span>, pasti mudah sakit. Di luar itu tidak perlu khawatir. Jika bersama <span class=\"hz\">太陽星</span> lebih baik lagi, sehat selamanya. Jika bersama <span class=\"hz\">凶星</span>, sangat mudah terkena penyakit mata. Wajib waspada terhadap penyakit yang dipicu air dan bahaya air.</p>",
+    "_solo_jie_e_action": "Rutin periksa kesehatan sistem pencernaan, jantung, dan mata. Hindari gaya hidup yang memicu kelelahan kronis. Waspada terhadap lingkungan yang berhubungan dengan air (banjir, kebocoran, olahraga air berisiko tinggi).",
+    "_p2_qianyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Perpindahan</span><span class=\"pn-meta\">Qiān Yí<span class=\"hz\">遷移</span></span></div></div><div class=\"pal-body\"><p>Tipe yang penuh perubahan dan bersemangat tinggi, bergerak aktif dan penuh tekad layaknya api yang membakar habis. Sepanjang hidup banyak berpindah tempat dan tidak bisa menetap. Adalah tipe orang yang dalam bahasa umum disebut \"gila pindah rumah\". Dalam pekerjaan, hampir tidak bisa bertahan di satu tempat lebih dari tiga bulan! Atau akan bekerja di perusahaan yang sering melakukan rotasi dan dinas luar. Namun berpindah-pindah justru lebih baik bagi Anda. Jika memungkinkan, lebih sering keluar dan berpetualang! Jika ada <span class=\"hz\">貪狼</span> satu istana, apapun usaha yang Anda lakukan bisa sukses besar. Pindah ke tempat lain untuk mencari nafkah tidak perlu khawatir akan gagal. Dari sisi nasib pun tidak ada perubahan drastis yang buruk; karena suatu situasi tertentu mengharuskan berganti profesi, secara umum bisa mendapat bimbingan orang yang lebih tua untuk maju dan berkembang. Selain itu, ketika ingin mencoba mengubah gaya hidup, mungkin bertemu keberuntungan tak terduga. Jika ada <span class=\"hz\">紫微</span> satu istana, adalah pembangun usaha yang cukup handal. Jika ada <span class=\"hz\">廉貞</span> satu istana, sesekali mungkin mendapat peluang besar dalam semalam.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jangan takut untuk berpindah kota atau mengubah bidang kerja — mobilitas adalah kunci keberuntungan Anda. Setiap perpindahan membawa peluang baru yang lebih besar.</span></div></div>",
+    "_solo_qianyi_body": "<p>Tipe yang penuh perubahan dan bersemangat tinggi, bergerak aktif dan penuh tekad layaknya api yang membakar habis. Sepanjang hidup banyak berpindah tempat dan tidak bisa menetap. Adalah tipe orang yang dalam bahasa umum disebut \"gila pindah rumah\". Dalam pekerjaan, hampir tidak bisa bertahan di satu tempat lebih dari tiga bulan! Atau akan bekerja di perusahaan yang sering melakukan rotasi dan dinas luar. Namun berpindah-pindah justru lebih baik bagi Anda. Jika memungkinkan, lebih sering keluar dan berpetualang! Jika ada <span class=\"hz\">貪狼</span> satu istana, apapun usaha yang Anda lakukan bisa sukses besar. Pindah ke tempat lain untuk mencari nafkah tidak perlu khawatir akan gagal. Dari sisi nasib pun tidak ada perubahan drastis yang buruk; karena suatu situasi tertentu mengharuskan berganti profesi, secara umum bisa mendapat bimbingan orang yang lebih tua untuk maju dan berkembang. Selain itu, ketika ingin mencoba mengubah gaya hidup, mungkin bertemu keberuntungan tak terduga. Jika ada <span class=\"hz\">紫微</span> satu istana, adalah pembangun usaha yang cukup handal. Jika ada <span class=\"hz\">廉貞</span> satu istana, sesekali mungkin mendapat peluang besar dalam semalam.</p>",
+    "_solo_qianyi_action": "Jangan takut untuk berpindah kota atau mengubah bidang kerja — mobilitas adalah kunci keberuntungan Anda. Setiap perpindahan membawa peluang baru yang lebih besar.",
+    "_p2_puyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pertemanan</span><span class=\"pn-meta\">Pú Yì<span class=\"hz\">僕役</span></span></div></div><div class=\"pal-body\"><p>Bisa mendapatkan bawahan yang sopan, bertatakrama baik, dan berhati-hati. Anda bisa memiliki bawahan dari golongan berpengaruh dan berkemampuan tinggi. Jika ada <span class=\"hz\">巨門星</span> satu istana, pada awalnya hubungan dengan bawahan tidak serasi dan tidak cocok; namun tidak lama kemudian, karena terbiasa bekerja bersama dan saling memahami, akhirnya bisa berhubungan dengan harmonis dan baik. Jika ada <span class=\"hz\">太陰星</span> atau <span class=\"hz\">天梁星</span> satu istana, bisa mendapatkan bawahan yang benar-benar berkapasitas dan berpengaruh. Bawahan Anda termasuk tipe cendekiawan yang teguh dan praktis, bisa berperan sebagai penasihat strategi dan sangat bermanfaat untuk pekerjaan Anda. Dalam aktivitas tim kecil atau kelompok — seperti pekerjaan di bidang akuntansi, pelaporan, dan sejenisnya — pasti akan sepenuhnya mengekspresikan kecerdasan dan bakatnya. Namun jika <span class=\"hz\">僕役宮</span> berada di istana <span class=\"hz\">午</span> atau <span class=\"hz\">戌</span>, bawahan cenderung sedikit kurang serius dan tidak bisa dipercaya untuk tugas-tugas penting.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Rekrut bawahan dari tipe cendekiawan yang praktis dan analitis untuk pekerjaan detail dan pelaporan. Beri waktu adaptasi awal. Jika rasi <span class=\"hz\">僕役宮</span> di 午/戌, lebih selektif dalam memberikan tanggung jawab besar.</span></div></div>",
+    "_solo_puyi_body": "<p>Bisa mendapatkan bawahan yang sopan, bertatakrama baik, dan berhati-hati. Anda bisa memiliki bawahan dari golongan berpengaruh dan berkemampuan tinggi. Jika ada <span class=\"hz\">巨門星</span> satu istana, pada awalnya hubungan dengan bawahan tidak serasi dan tidak cocok; namun tidak lama kemudian, karena terbiasa bekerja bersama dan saling memahami, akhirnya bisa berhubungan dengan harmonis dan baik. Jika ada <span class=\"hz\">太陰星</span> atau <span class=\"hz\">天梁星</span> satu istana, bisa mendapatkan bawahan yang benar-benar berkapasitas dan berpengaruh. Bawahan Anda termasuk tipe cendekiawan yang teguh dan praktis, bisa berperan sebagai penasihat strategi dan sangat bermanfaat untuk pekerjaan Anda. Dalam aktivitas tim kecil atau kelompok — seperti pekerjaan di bidang akuntansi, pelaporan, dan sejenisnya — pasti akan sepenuhnya mengekspresikan kecerdasan dan bakatnya. Namun jika <span class=\"hz\">僕役宮</span> berada di istana <span class=\"hz\">午</span> atau <span class=\"hz\">戌</span>, bawahan cenderung sedikit kurang serius dan tidak bisa dipercaya untuk tugas-tugas penting.</p>",
+    "_solo_puyi_action": "Rekrut bawahan dari tipe cendekiawan yang praktis dan analitis untuk pekerjaan detail dan pelaporan. Beri waktu adaptasi awal. Jika rasi <span class=\"hz\">僕役宮</span> di 午/戌, lebih selektif dalam memberikan tanggung jawab besar.",
+    "_p3_guanlu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Karir</span><span class=\"pn-meta\">Guān Lù<span class=\"hz\">官祿</span></span></div></div><div class=\"pal-body\"><p>Cocok sebagai pendidik, rohaniawan, pengusaha, politisi, pengacara, di bidang pertambangan, atau agen perantara. Paling cocok menjadi petugas penegak keamanan dan hukum. Khususnya yang ada <span class=\"hz\">廉貞星</span> satu istana, sama sekali tidak cocok dengan pekerjaan bebas; sebaiknya memilih profesi yang terstruktur dan disiplin. Kelemahannya adalah tidak bisa bertahan di pekerjaan tetap, mudah berganti-ganti profesi, dan sering mengalami ketidakstabilan emosional dalam bekerja. Selain itu, tampaknya sulit menabung uang — uang yang di tangan mungkin cepat habis! Untuk wanita, umumnya adalah wanita karier.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Pilih karier yang terstruktur dengan jenjang karier yang jelas. Pertimbangkan profesi di bidang pendidikan, hukum, atau layanan publik yang sesuai dengan bintang <span class=\"hz\">官祿宮</span>.</span></div></div>",
+    "_solo_guanlu_body": "<p>Cocok sebagai pendidik, rohaniawan, pengusaha, politisi, pengacara, di bidang pertambangan, atau agen perantara. Paling cocok menjadi petugas penegak keamanan dan hukum. Khususnya yang ada <span class=\"hz\">廉貞星</span> satu istana, sama sekali tidak cocok dengan pekerjaan bebas; sebaiknya memilih profesi yang terstruktur dan disiplin. Kelemahannya adalah tidak bisa bertahan di pekerjaan tetap, mudah berganti-ganti profesi, dan sering mengalami ketidakstabilan emosional dalam bekerja. Selain itu, tampaknya sulit menabung uang — uang yang di tangan mungkin cepat habis! Untuk wanita, umumnya adalah wanita karier.</p>",
+    "_solo_guanlu_action": "Pilih karier yang terstruktur dengan jenjang karier yang jelas. Pertimbangkan profesi di bidang pendidikan, hukum, atau layanan publik yang sesuai dengan bintang <span class=\"hz\">官祿宮</span>.",
+    "_p3_tianzhai": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Properti</span><span class=\"pn-meta\">Tián Zhái<span class=\"hz\">田宅</span></span></div></div><div class=\"pal-body\"><p>Meskipun ada anugerah properti dan real estate, namun jumlahnya tidak terlalu banyak.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Tidak perlu mengharapkan warisan properti besar dari keluarga. Bangun aset properti sendiri secara bertahap melalui tabungan dan investasi yang terencana.</span></div></div>",
+    "_solo_tianzhai_body": "<p>Meskipun ada anugerah properti dan real estate, namun jumlahnya tidak terlalu banyak.</p>",
+    "_solo_tianzhai_action": "Tidak perlu mengharapkan warisan properti besar dari keluarga. Bangun aset properti sendiri secara bertahap melalui tabungan dan investasi yang terencana.",
+    "_p3_fude": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Berkah</span><span class=\"pn-meta\">Fú Dé<span class=\"hz\">福德</span></span></div></div><div class=\"pal-body\"><p>Terkumpul segala kebajikan dalam diri, adalah sosok yang dermawan dan bebas. Pada dasarnya adalah pertanda dimainkan oleh takdir; namun jika mau berusaha keras dan maju, pasti bisa mengubah nasib buruk menjadi keberuntungan. Meskipun penampilan luar terkesan dingin, di dalam hati sesungguhnya tersembunyi semangat yang membara. Batin penuh gairah dan antusiasme, namun di luar berpura-pura tenang, menunggu kematangan kesempatan; ini adalah tipe intelektual yang berbasis pikiran. Dalam aspek mental, karena benturan antara ketenangan dan semangat yang berapi-api, mungkin cukup sering mengalami kebingungan dan kontradiksi batin.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Manfaatkan energi batin yang kuat ini untuk dorongan dalam mengejar impian. Latih keseimbangan antara analisis dingin dan semangat yang menggebu agar bisa bertindak efektif pada waktu yang tepat.</span></div></div>",
+    "_solo_fude_body": "<p>Terkumpul segala kebajikan dalam diri, adalah sosok yang dermawan dan bebas. Pada dasarnya adalah pertanda dimainkan oleh takdir; namun jika mau berusaha keras dan maju, pasti bisa mengubah nasib buruk menjadi keberuntungan. Meskipun penampilan luar terkesan dingin, di dalam hati sesungguhnya tersembunyi semangat yang membara. Batin penuh gairah dan antusiasme, namun di luar berpura-pura tenang, menunggu kematangan kesempatan; ini adalah tipe intelektual yang berbasis pikiran. Dalam aspek mental, karena benturan antara ketenangan dan semangat yang berapi-api, mungkin cukup sering mengalami kebingungan dan kontradiksi batin.</p>",
+    "_solo_fude_action": "Manfaatkan energi batin yang kuat ini untuk dorongan dalam mengejar impian. Latih keseimbangan antara analisis dingin dan semangat yang menggebu agar bisa bertindak efektif pada waktu yang tepat.",
+    "_p3_fumu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Orang Tua</span><span class=\"pn-meta\">Fù Mǔ<span class=\"hz\">父母</span></span></div></div><div class=\"pal-body\"><p>Mungkin ada beberapa hal yang kurang lancar dalam komunikasi, namun hubungan orang tua-anak tetap hangat dan harmonis. Sejak kecil sudah mendapat pengaruh kuat dari ayah. Kedua orang tua adalah orang yang berjiwa mulia dan baik hati, hubungan orang tua-anak cukup erat dan jelas. Hampir tidak ada banyak hambatan besar di antara mereka. Jika <span class=\"hz\">父母宮</span> berada di <span class=\"hz\">申/午</span>, pasti terlahir dari keluarga yang cukup kaya. Jika berada di <span class=\"hz\">寅/辰</span>, terlahir dari keluarga biasa; awalnya terpisah dari ayah, kemudian ibu juga mengalami penderitaan. Namun selama tidak ada <span class=\"hz\">凶星</span> yang masuk, hubungan orang tua-anak tetap aman dan tenteram. Anda secara khusus mendapat pengaruh kuat dari ibu. Kedua orang tua adalah orang yang tenang, berselera tinggi, dan berani tampil beda. Sekaligus sangat memperhatikan reaksi Anda; sekecil apapun perubahan emosi sulit luput dari perhatian mereka. Namun jika ada <span class=\"hz\">凶星</span>, hubungan dengan ibu memburuk, atau berpisah lebih awal dari ibu, atau orang tua memiliki kebiasaan buruk seperti alkohol. Kondisi paling ideal jika bisa bersama <span class=\"hz\">太陽</span> satu istana, tanpa ada <span class=\"hz\">凶星</span> yang menghalangi.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga komunikasi terbuka dengan kedua orang tua, terutama ibu yang pengaruhnya sangat kuat. Perhatikan jika ada bintang penghalang yang aktif di tahun-tahun tertentu yang bisa mempengaruhi hubungan keluarga.</span></div></div>",
+    "_solo_fumu_body": "<p>Mungkin ada beberapa hal yang kurang lancar dalam komunikasi, namun hubungan orang tua-anak tetap hangat dan harmonis. Sejak kecil sudah mendapat pengaruh kuat dari ayah. Kedua orang tua adalah orang yang berjiwa mulia dan baik hati, hubungan orang tua-anak cukup erat dan jelas. Hampir tidak ada banyak hambatan besar di antara mereka. Jika <span class=\"hz\">父母宮</span> berada di <span class=\"hz\">申/午</span>, pasti terlahir dari keluarga yang cukup kaya. Jika berada di <span class=\"hz\">寅/辰</span>, terlahir dari keluarga biasa; awalnya terpisah dari ayah, kemudian ibu juga mengalami penderitaan. Namun selama tidak ada <span class=\"hz\">凶星</span> yang masuk, hubungan orang tua-anak tetap aman dan tenteram. Anda secara khusus mendapat pengaruh kuat dari ibu. Kedua orang tua adalah orang yang tenang, berselera tinggi, dan berani tampil beda. Sekaligus sangat memperhatikan reaksi Anda; sekecil apapun perubahan emosi sulit luput dari perhatian mereka. Namun jika ada <span class=\"hz\">凶星</span>, hubungan dengan ibu memburuk, atau berpisah lebih awal dari ibu, atau orang tua memiliki kebiasaan buruk seperti alkohol. Kondisi paling ideal jika bisa bersama <span class=\"hz\">太陽</span> satu istana, tanpa ada <span class=\"hz\">凶星</span> yang menghalangi.</p>",
+    "_solo_fumu_action": "Jaga komunikasi terbuka dengan kedua orang tua, terutama ibu yang pengaruhnya sangat kuat. Perhatikan jika ada bintang penghalang yang aktif di tahun-tahun tertentu yang bisa mempengaruhi hubungan keluarga.",
+    "_kes_narrative": "<p>LFR lahir 27 Januari 1998 pukul 01:50 (<span class=\"hz\">丑時</span>) dengan shio Kerbau (<span class=\"hz\">牛/丑</span>). Penguasa hidupnya adalah Kayu Yang (<span class=\"hz\">甲木</span>) dengan format <span class=\"hz\">正財格</span>. Skor DM: +4.210 / -4.426, kondisi DM sedikit lemah (身弱). Lahir dalam skema ZiWei <span class=\"hz\">木三局</span>, Istana Nasib (<span class=\"hz\">命宮</span>) di <span class=\"hz\">子</span> dengan bintang <span class=\"hz\">七殺</span>, Istana Jiwa (<span class=\"hz\">身宮</span>) di <span class=\"hz\">寅</span>.</p><p>Karakter inti: bersemangat, penuh gairah tersembunyi di balik penampilan dingin, memiliki aura pemimpin yang kuat namun mudah terpinggirkan, tidak mau tunduk pada siapapun. Dari sisi ZiWei <span class=\"hz\">命宮七殺</span>: bersifat pejuang sejati, penuh tekad, tidak mudah menyerah sebelum orang lain menerima pandangannya. Sisi 神煞: <span class=\"hz\">天乙貴人</span> memberkahi dengan kecerdasan dan jaringan pertolongan; <span class=\"hz\">寡宿</span> menandakan kecenderungan kesendirian dalam relasi kerabat.</p><p><span class=\"hz\">喜用神</span>: 用神=<span class=\"hz\">木</span> (比劫, dukung DM lemah), 喜神=<span class=\"hz\">水</span> (印, bangkitkan DM). Elemen dihindari: <span class=\"hz\">火</span> (仇神, terkuras), <span class=\"hz\">土</span> (忌神, melemahkan). Karier yang cocok: pendidikan, penerbitan, furnitur-kayu, pertanian, makelar/agen, atau pelayaran-perdagangan.</p><p>Da Yun saat ini (2026, usia 28) adalah <span class=\"hz\">丙辰</span> (食神) fase 24–33. <span class=\"hz\">丙</span> adalah <span class=\"hz\">食神</span> untuk <span class=\"hz\">甲木</span>, masa eksplorasi kreativitas dan ekspresi diri. Tahun 2026 (<span class=\"hz\">丙午</span>, usia 28): ada bintang <span class=\"hz\">死符</span> dan <span class=\"hz\">暗耀</span>, perlu hati-hati, jauhi suasana duka. Tahun 2028 (<span class=\"hz\">戊申</span>): bantuan dari orang berpengaruh, bintang <span class=\"hz\">龍德</span> membawa keberuntungan.</p><p>Pasangan terbaik: shio Tikus, Ular, Ayam (<span class=\"hz\">大吉</span>). Hindari shio Naga, Kuda, Kambing, Anjing. ZiWei <span class=\"hz\">夫妻宮</span>: pasangan memiliki pesona tersendiri, pernikahan cenderung terlambat namun bisa harmonis; ada risiko gesekan jika ada bintang penghalang.</p><p>Kesehatan: rentan penyakit sistem pencernaan, pankreas, jantung, dan mata. <span class=\"hz\">先天體檢</span>: organ 庚大腸/壬膀胱/癸腎 berisiko tinggi (skor 4); usus besar, ginjal, dan kandung kemih perlu perhatian khusus.</p><p>Hunian: Gua <span class=\"hz\">坎</span>, rumah duduk Selatan-Utara sangat baik. Pintu di Selatan/Utara/Timur, dapur di Barat menghadap Timur, kamar tidur di Tenggara/Timur/Utara, ranjang di Selatan/Utara/Timur/Tenggara, toilet di Timur Laut/Barat Laut/Barat/Barat Daya.</p><p>Puisi klasik <span class=\"hz\">甲木</span>: \"甲木參天，脫胎要火，春不容金，秋不容土；地潤天和，直立千古\" — Kayu 甲 menjulang ke langit, butuh Api untuk berkembang, tanah lembab dan harmoni langit menjadikannya tegak selamanya.</p>",
+    "_kes_stats": "\n      <div class=\"kes-stat s1\"><div class=\"ks-eb\">Penguasa Hari · 日主</div><div class=\"ks-num\"><span class=\"hz\">甲木</span><span class=\"unit\">— · None</span></div><div class=\"ks-title\">Pohon Besar —</div><div class=\"ks-desc\">Total Wu Xing 8, 木 <strong>25.0%</strong> dari distribusi total</div></div>\n      <div class=\"kes-stat s2\"><div class=\"ks-eb\">Format · 格局</div><div class=\"ks-num\"><span class=\"hz\">正財格</span><span class=\"unit\">FORMAT</span></div><div class=\"ks-title\">Zheng Cai Ge, Pengelola Disiplin</div><div class=\"ks-desc\">Konfigurasi BaZi yang membentuk pola karakter dan jalur takdir utama subjek.</div></div>\n      <div class=\"kes-stat s3\"><div class=\"ks-eb\">Yong Shen · 喜用神</div><div class=\"ks-num\"><span class=\"hz\">木</span><span class=\"unit\">MENDUKUNG</span></div><div class=\"ks-title\">Kayu, Penopang &amp; Pengarah</div><div class=\"ks-desc\">Unsur penopang yang sebaiknya diaktifkan lewat lingkungan, profesi, warna, dan keputusan hidup.</div></div>\n      <div class=\"kes-stat s4\"><div class=\"ks-eb\">Da Yun · 大運</div><div class=\"ks-num\">Fase 3<span class=\"unit\">dari 10</span></div><div class=\"ks-title\">Fase Pencipta (24-33)</div><div class=\"ks-desc\">Cycle 10 tahun yang sedang dijalani, periode pembentukan tema utama dekade ini.</div></div>\n      <div class=\"kes-stat s5\"><div class=\"ks-eb\">Umur Subjek</div><div class=\"ks-num\">29<span class=\"unit\">tahun</span></div><div class=\"ks-title\">Era 20–29</div><div class=\"ks-desc\">Tahap kehidupan saat laporan ini dibuat, rentang dekade aktif subjek.</div></div>\n      <div class=\"kes-stat s6\"><div class=\"ks-eb\">Jodoh · 婚配 / 陽宅</div><div class=\"ks-num\">3 <span class=\"unit\">cocok · 4 hindari</span></div><div class=\"ks-desc\">Hindari: Naga (辰) · Kuda (午) · Kambing (未) · Anjing (戌) · Trigram <strong>Air</strong> (坎) · Kelompok Timur</div></div>\n    ",
+    "_kes_age": "29",
+    "_kes_lifemap": "\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">過<span class=\"id-label\">Lalu</span></div><div class=\"klm-row-text\"><span class=\"lbl\">MASA LALU</span>2 fase telah dilalui, fondasi terbentuk lewat tempaan zaman muda hingga awal dewasa.</div></div>\n          <div class=\"klm-row now\"><div class=\"klm-row-icon\">今<span class=\"id-label\">Kini</span></div><div class=\"klm-row-text\"><span class=\"lbl\">SEKARANG</span>Fase Pencipta 丙辰 (24-33), tema utama pencipta membentuk dekade ini.</div></div>\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">未<span class=\"id-label\">Nanti</span></div><div class=\"klm-row-text\"><span class=\"lbl\">BERIKUTNYA</span>Fase 丁巳 Kritikus Tajam (34-43), transisi menuju tema baru.</div></div>\n        ",
+    "_kes_position": "\n          <div class=\"klp-eb\">Posisi Sekarang</div>\n          <div class=\"klp-hz\">夏</div>\n          <div class=\"klp-id\">Xià, \"Musim Panas Hidup\"</div>\n          <div class=\"klp-bar\">\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell now\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n          </div>\n          <div class=\"klp-meta\">Fase <strong>3 dari 10</strong> · Umur <strong>24-33</strong> · <strong>木 Kayu</strong> dominan · Musim Panas Hidup</div>\n        ",
+    "_syn_attrib": "Pohon Besar · 正財格 · Zheng Cai Ge",
+    "_syn_actions": "\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">1</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Fokus karier di bidang 用神 木</div>\n            <div class=\"syn-action-context\">Pendidikan, penerbitan, furnitur, kerajinan, atau pertanian sangat sesuai untuk fase Da Yun 丙辰. Bintang <span class=\"hz\">天乙貴人</span> memudahkan mendapat bantuan orang di jalur ini.</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">2</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Investasikan dalam properti untuk menjaga kekayaan</div>\n            <div class=\"syn-action-context\">Dari foto 財富, baik 正財 maupun 偏財 tidak mudah disimpan dalam bentuk tunai</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">3</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Jaga hunian sesuai gua 坎</div>\n            <div class=\"syn-action-context\">Rumah duduk Selatan-Utara, pintu di Selatan/Utara/Timur. Elemen Air (坎 = Utara) selaras dengan 喜神 水 untuk memperkuat DM.</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">4</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Waspada tahun 2026 (丙午, usia 28)</div>\n            <div class=\"syn-action-context\">Bintang <span class=\"hz\">死符</span> dan <span class=\"hz\">暗耀</span> aktif, risiko duka dan kesulitan meningkat. Pertimbangkan ritual kebajikan dan hindari kegiatan duka/pemakaman di bulan 2, 5, 8, atau 12.</div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">5</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Kembangkan kemampuan lewat jaringan dan perpindahan</div>\n            <div class=\"syn-action-context\">Dari foto 遷移, perpindahan dan mobilitas adalah keberuntungan. Jangan takut pindah kota atau bidang kerja — setiap pergerakan membuka peluang baru, terutama jika bersama <span class=\"hz\">貪狼</span> di istana terkait.</div>\n          </div>\n        </div>\n      ",
+    "_career_wuxing": "\n        <div class=\"wux-cell unfav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">土 Tanah<span class=\"v\">4</span></div>\n        </div>\n        <div class=\"wux-cell self\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:50%\"></div></div>\n          <div class=\"wux-label\">木 Kayu<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:25%\"></div></div>\n          <div class=\"wux-label\">水 Air<span class=\"v\">1</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:25%\"></div></div>\n          <div class=\"wux-label\">火 Api<span class=\"v\">1</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:0%\"></div></div>\n          <div class=\"wux-label\">金 Logam<span class=\"v\">0</span></div>\n        </div>\n",
+    "_career_title": "Kayu adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini",
+    "_career_avoid": "Industri ber-unsur <strong>土 (Tanah)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.",
+    "_career_tags": "\n          <span class=\"insight-tag\">木 Kayu (pendidikan, penerbitan, furnitur, kerajinan kayu, pertanian)</span>\n          <span class=\"insight-tag\">水 Air (pelayaran, perikanan, perdagangan, makelar, jasa keliling)</span>\n          <span class=\"insight-tag bad\">火 Api (industri api/panas, hindari sebagai bidang utama)</span>\n          <span class=\"insight-tag bad\">土 Tanah (properti tanah berat, pertambangan bumi, hindari)</span>\n        ",
+    "_career_industri": "\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">🌳</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Pendidikan / Penerbit Buku</div>\n            <div class=\"ind-reason\">Unsur 木, 教育/書店/出版 dari foto 事業, selaras 用神 木 yang mendukung DM</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:95%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row top\">\n          <div class=\"ind-icon\">🌳</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Furnitur / Kerajinan Kayu</div>\n            <div class=\"ind-reason\">Unsur 木, 木材/傢俱/木器工藝/裝璜 dari foto 事業, domain alami elemen Kayu</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:88%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">🌳</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Pertanian Sayur-Buah / Tanaman</div>\n            <div class=\"ind-reason\">Unsur 木, 農業蔬果/花苗園藝/菜草 dari foto 事業, Kayu identik dengan tumbuhan</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:82%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">💧</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Perdagangan / Ekspor-Impor</div>\n            <div class=\"ind-reason\">Unsur 水, 貿易公司/航海 dari foto 事業, Air melambangkan aliran dan mobilitas sesuai 喜神 水</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:76%\"></div></div>\n          </div>\n        </div>\n        <div class=\"ind-row\">\n          <div class=\"ind-icon\">💧</div>\n          <div class=\"ind-info\">\n            <div class=\"ind-name\">Makelar / Agen Perantara</div>\n            <div class=\"ind-reason\">Unsur 水, 介紹中人 dari foto 事業, peran perantara yang fleksibel cocok dengan sifat Air mengalir</div>\n          </div>\n          <div class=\"fit-col\">\n            <div class=\"fit-bar-track\"><div class=\"fit-bar-fill\" style=\"width:70%\"></div></div>\n          </div>\n        </div>\n",
+    "_xqcards": "\n      <div class=\"xq-card power\">\n        <div class=\"xqc-eb\">魄 力 · Kekuatan</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">優勢</span><span class=\"xqc-name\">Yōu Shì<br>Keunggulan</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><strong>Pemimpin alami</strong>, visi jauh ke depan, berani memulai</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><span class='hz'>創新精神</span> energi pelopor (Chuàng Xīn Jīng Shén)</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><strong>Idealis</strong>, pegang prinsip, sulit dibengkokkan</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Tegar berdiri sendiri, kekuatan internal kokoh</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card shadow\">\n        <div class=\"xqc-eb\">陰 影 · Shadow</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">隱 患</span><span class=\"xqc-name\">Yǐn Huàn<br>Sisi Gelap</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><span class='hz'>頑固</span> keras kepala (Wán Gù), sulit kompromi</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><strong>Egosentris</strong>, pandangan sendiri sering dianggap mutlak</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Cepat mulai, lama menyelesaikan, perlu disiplin tahap eksekusi</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><span class='hz'>急躁</span> sering tergesa, abai detail kecil</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card optimum\">\n        <div class=\"xqc-eb\">最 佳 · Optimum</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">應 用</span><span class=\"xqc-name\">Yīng Yòng<br>Cara Optimal</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Peran <strong>founder / visioner</strong>, bukan eksekutor harian</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Cari partner ber-<span class='hz'>金</span> (disiplin) sebagai pemangkas</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Pakai <span class='hz'>火</span> (ekspresi) untuk menyalurkan energi</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Tunda keputusan besar 24 jam, hindari impulsif</span></div>\n        </div>\n      </div>\n    "
+  }
+}

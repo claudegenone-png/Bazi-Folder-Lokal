@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Feng Shui Hunian</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .page.fs-cover {
+    background: linear-gradient(160deg, #FFFEF8 0%, #FFF8E1 60%, #F5EBD0 100%);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 0; position: relative; overflow: hidden;
+  }
+
+  /* Decorative corner borders */
+  .fs-cover::before, .fs-cover::after {
+    content: '';
+    position: absolute;
+    width: 32mm; height: 32mm;
+    border-color: var(--gold);
+    border-style: solid;
+  }
+  .fs-cover::before { top: 8mm; left: 8mm; border-width: 0.5mm 0 0 0.5mm; }
+  .fs-cover::after  { bottom: 8mm; right: 8mm; border-width: 0 0.5mm 0.5mm 0; }
+
+  .fs-cover-inner {
+    display: flex; flex-direction: column; align-items: center;
+    gap: 0; text-align: center;
+    width: 160mm;
+  }
+
+  /* Section eyebrow */
+  .fsc-eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 7pt; letter-spacing: 5px; text-transform: uppercase;
+    color: var(--gold); font-weight: 700;
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 1mm; padding: 1mm 5mm;
+    margin-bottom: 8mm;
+  }
+
+  /* Main Hanzi title */
+  .fsc-hz-title {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 42pt; color: var(--red);
+    font-weight: 400; letter-spacing: 8px;
+    line-height: 1.1;
+    margin-bottom: 2mm;
+  }
+
+  .fsc-id-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 13pt; color: var(--text);
+    font-style: italic; letter-spacing: 1px;
+    margin-bottom: 10mm;
+  }
+
+  /* Gold divider */
+  .fsc-divider {
+    width: 80mm; height: 0.4mm;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin-bottom: 10mm;
+  }
+
+  /* Subject name */
+  .fsc-name-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 28pt; color: var(--red); font-weight: 700;
+    letter-spacing: 4px; line-height: 1;
+    margin-bottom: 1mm;
+  }
+  .fsc-name-id {
+    font-family: 'Playfair Display', serif;
+    font-size: 11pt; color: var(--text);
+    font-style: italic; letter-spacing: 1px;
+    margin-bottom: 8mm;
+  }
+
+  /* Info pills row */
+  .fsc-info-row {
+    display: flex; gap: 4mm; justify-content: center;
+    flex-wrap: wrap; margin-bottom: 10mm;
+  }
+  .fsc-info-pill {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 6mm; padding: 1.5mm 5mm;
+    font-size: 8pt; color: var(--text);
+    display: flex; gap: 2mm; align-items: baseline;
+  }
+  .fsc-info-pill .lbl {
+    font-family: 'Inter', sans-serif;
+    font-size: 6pt; color: var(--gold); font-weight: 700;
+    letter-spacing: 1px; text-transform: uppercase;
+  }
+  .fsc-info-pill .val {
+    font-family: 'Playfair Display', serif; font-style: italic;
+  }
+  .fsc-info-pill .hz {
+    font-family: 'Noto Serif TC', serif; color: var(--red);
+    font-size: 9pt;
+  }
+
+  /* Bottom subtitle */
+  .fsc-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 6.5pt; color: var(--text-muted);
+    letter-spacing: 3px; text-transform: uppercase;
+    margin-top: 6mm;
+  }
+
+  /* Watermark gua */
+  .fsc-watermark {
+    position: absolute; bottom: 14mm; right: 14mm;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 72pt; color: var(--gold);
+    opacity: 0.07; font-weight: 700;
+    line-height: 1; pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<section class="page fs-cover">
+
+  <div class="fsc-watermark">巽</div>
+
+  <div class="fs-cover-inner">
+
+    <div class="fsc-eyebrow">Laporan · Feng Shui Hunian · 風水</div>
+
+    <div class="fsc-hz-title">陽 宅<br>吉 凶 鑑 定</div>
+    <div class="fsc-id-title">Analisis Feng Shui Delapan Rumah</div>
+
+    <div class="fsc-divider"></div>
+
+    <div class="fsc-name-hz">{{SUBJECT_NAME_HZ}}</div>
+    <div class="fsc-name-id">{{SUBJECT_NAME_FULL}}</div>
+
+    <div class="fsc-info-row">
+      <div class="fsc-info-pill">
+        <span class="lbl">Lahir</span>
+        <span class="val">{{SUBJECT_BIRTH_DATE_ID}}</span>
+      </div>
+      <div class="fsc-info-pill">
+        <span class="lbl">Waktu</span>
+        <span class="val">{{SUBJECT_BIRTH_TIME}}</span>
+      </div>
+      <div class="fsc-info-pill">
+        <span class="lbl">Shio</span>
+        <span class="hz">{{SUBJECT_SHIO_BRANCH_HZ}}</span>
+        <span class="val">{{SUBJECT_SHIO_ID_TITLE}}</span>
+      </div>
+    </div>
+
+    <div class="fsc-subtitle">本命卦 · {{BAGUA_LIFE_TYPE_HZ}} · {{BAGUA_LIFE_TYPE_ID}}</div>
+
+  </div>
+
+</section>
+</body>
+</html>

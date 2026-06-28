@@ -1,0 +1,869 @@
+{
+  "subject_id": "dn",
+  "_built_by": "build_from_ocr.py V4.5 FULL-MD",
+  "identity": {
+    "name_id": "DN",
+    "name_hanzi": "",
+    "gender_id": "Pria",
+    "birth_date": "1980-03-12",
+    "birth_time": "08:10",
+    "birth_day_name": "Rabu",
+    "birth_period_id": "pagi",
+    "birth_hour_branch_hz": "辰",
+    "birth_hour_period_label": "pagi · 辰時",
+    "lunar_date_text_new": "tanggal 26 bulan 1 tahun 庚申 (Geng Shen · 1980)",
+    "lunar_year_pillar_hz": "庚申",
+    "lunar_republic_text": "民國 69 年 1 月 26 日",
+    "age_at_report": 47
+  },
+  "shio": {
+    "branch_hz": "申",
+    "branch_pinyin": "Shēn",
+    "id": "Monyet",
+    "id_upper": "MONYET",
+    "svg_red": "Monyet-Merah.svg",
+    "svg_black": "Monyet-Hitam.svg"
+  },
+  "ti_xiang": null,
+  "day_master": {
+    "stem_hz": "甲",
+    "stem_element_hz": "木",
+    "stem_element_id": "Kayu",
+    "polarity_id": "Yang",
+    "label_id": "Pohon Besar",
+    "label_long_id": "Kayu",
+    "pinyin": "Jiǎ 木",
+    "strength_id": "—",
+    "strength_hz": null
+  },
+  "pillars": {
+    "year": {
+      "stem_hz": "庚",
+      "branch_hz": "申"
+    },
+    "month": {
+      "stem_hz": "己",
+      "branch_hz": "卯"
+    },
+    "day": {
+      "stem_hz": "甲",
+      "branch_hz": "申"
+    },
+    "hour": {
+      "stem_hz": "戊",
+      "branch_hz": "辰"
+    }
+  },
+  "wuxing": {
+    "jin": {
+      "value": 3.0,
+      "percent": 37.5,
+      "label_id": "Logam"
+    },
+    "shui": {
+      "value": 0.0,
+      "percent": 0.0,
+      "label_id": "Air"
+    },
+    "mu": {
+      "value": 2.0,
+      "percent": 25.0,
+      "label_id": "Kayu"
+    },
+    "huo": {
+      "value": 0.0,
+      "percent": 0.0,
+      "label_id": "Api"
+    },
+    "tu": {
+      "value": 3.0,
+      "percent": 37.5,
+      "label_id": "Tanah"
+    },
+    "total": 8.0,
+    "self_value": 2.0,
+    "self_el_hz": "—",
+    "fav_hz": "—",
+    "unfav_hz": "—",
+    "axis_max": "—",
+    "insight_id": null,
+    "_empty": false
+  },
+  "yong_shen": {
+    "elements_hz": "火",
+    "elements_id": "Api",
+    "label_id": "Penopang & Pengarah",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "ji_shen": {
+    "elements_hz": "金",
+    "elements_id": "Logam",
+    "label_id": "Pelumat & Pemicu",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "format": {
+    "hz": "比肩格",
+    "pinyin": "Bi Jian Ge",
+    "label_id": "Pundak Sama",
+    "glyph_hz": "—"
+  },
+  "da_yun": {
+    "start_age": 8,
+    "direction_id": "forward",
+    "current_index": 3,
+    "axis_marks": [
+      8,
+      18,
+      28,
+      38,
+      48,
+      58,
+      68,
+      78,
+      88,
+      98,
+      108
+    ],
+    "cycles": [
+      {
+        "n": 1,
+        "age_start": 8,
+        "age_end": 17,
+        "stem_hz": "庚",
+        "branch_hz": "辰",
+        "ten_god_hz": "七殺",
+        "ten_god_id": "Pemurnian",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 2,
+        "age_start": 18,
+        "age_end": 27,
+        "stem_hz": "辛",
+        "branch_hz": "巳",
+        "ten_god_hz": "正官",
+        "ten_god_id": "Otoritas",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 3,
+        "age_start": 28,
+        "age_end": 37,
+        "stem_hz": "壬",
+        "branch_hz": "午",
+        "ten_god_hz": "偏印",
+        "ten_god_id": "Mentor",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 4,
+        "age_start": 38,
+        "age_end": 47,
+        "stem_hz": "癸",
+        "branch_hz": "未",
+        "ten_god_hz": "正印",
+        "ten_god_id": "Pelajaran",
+        "element_class": "el-shui",
+        "is_current": true
+      },
+      {
+        "n": 5,
+        "age_start": 48,
+        "age_end": 57,
+        "stem_hz": "甲",
+        "branch_hz": "申",
+        "ten_god_hz": "比肩",
+        "ten_god_id": "Pundak Sama",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 6,
+        "age_start": 58,
+        "age_end": 67,
+        "stem_hz": "乙",
+        "branch_hz": "酉",
+        "ten_god_hz": "劫財",
+        "ten_god_id": "Saudara Sebanding",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 7,
+        "age_start": 68,
+        "age_end": 77,
+        "stem_hz": "丙",
+        "branch_hz": "戌",
+        "ten_god_hz": "食神",
+        "ten_god_id": "Pencipta",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 8,
+        "age_start": 78,
+        "age_end": 87,
+        "stem_hz": "丁",
+        "branch_hz": "亥",
+        "ten_god_hz": "傷官",
+        "ten_god_id": "Kritikus Tajam",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 9,
+        "age_start": 88,
+        "age_end": 97,
+        "stem_hz": "戊",
+        "branch_hz": "子",
+        "ten_god_hz": "偏財",
+        "ten_god_id": "Rezeki Bisnis",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 10,
+        "age_start": 98,
+        "age_end": 107,
+        "stem_hz": "己",
+        "branch_hz": "丑",
+        "ten_god_hz": "正財",
+        "ten_god_id": "Rezeki Tetap",
+        "element_class": "el-tu"
+      }
+    ],
+    "seasons": [
+      {
+        "el_class": "s-jin",
+        "el_hz": "金",
+        "name_id": "Pemurnian Awal",
+        "age_start": 8,
+        "age_end": 27
+      },
+      {
+        "el_class": "s-shui",
+        "el_hz": "水",
+        "name_id": "Belajar & Mentor",
+        "age_start": 28,
+        "age_end": 47,
+        "is_current": true
+      },
+      {
+        "el_class": "s-mu",
+        "el_hz": "木",
+        "name_id": "Berbagi Panggung",
+        "age_start": 48,
+        "age_end": 67
+      },
+      {
+        "el_class": "s-huo",
+        "el_hz": "火",
+        "name_id": "Berkarya Tenang",
+        "age_start": 68,
+        "age_end": 87
+      },
+      {
+        "el_class": "s-tu",
+        "el_hz": "土",
+        "name_id": "Memetik Rezeki",
+        "age_start": 88,
+        "age_end": 107
+      }
+    ],
+    "spotlight_headline_html": "Fase <span class=\"hz\">正印</span> (Pelajaran), periode utama untuk menyerap ilmu & dukungan tetua",
+    "spotlight_tag_tone_html": "Air · adaptasi",
+    "spotlight_tag_combo_html": "Belajar Tenang",
+    "spotlight_tag_combo_pair": [
+      "癸",
+      "未"
+    ],
+    "spotlight_bullets_html": [
+      "<strong>Fokus utama</strong>, pilar <span class=\"hz\">正印</span> mendorong Anda untuk menyerap ilmu & dukungan tetua. Selaraskan agenda 10 tahun ini ke arah tersebut.",
+      "<strong>Energi 水</strong>, batang <span class=\"hz\">癸</span> (水) berinteraksi dengan Day Master <span class=\"hz\">甲</span> (木); tone fase: Air · adaptasi.",
+      "<strong>Cabang <span class=\"hz\">未</span></strong> menentukan medan harian, kebiasaan, lingkungan, dan relasi yang dibangun di rentang umur 38–47 akan jadi pondasi fase berikutnya.",
+      "<strong>Setelah 47</strong> masuk <span class=\"hz\">甲申 (比肩)</span>, membangun kemandirian. Siapkan transisi sekarang."
+    ],
+    "footer_caption_html": "DN sedang di fase <span style=\"font-family:'Noto Serif TC',serif;color:var(--red)\">正印</span> (38–47), menyerap ilmu & dukungan tetua. Periode 38–57 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir."
+  },
+  "marriage": {
+    "self_branch_index": 8,
+    "cocok": [
+      {
+        "branch_hz": "子",
+        "id": "Tikus",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "辰",
+        "id": "Naga",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      }
+    ],
+    "hindari": [
+      {
+        "branch_hz": "寅",
+        "id": "Harimau",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "巳",
+        "id": "Ular",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "亥",
+        "id": "Babi",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      }
+    ],
+    "_empty": false
+  },
+  "yang_zhai": {
+    "gua_hz": "坤",
+    "gua_pinyin": "Kūn",
+    "gua_label_id": "Bumi",
+    "gua_direction_id": "Barat Daya",
+    "gua_direction_abbr": "BD",
+    "group_id": "Barat",
+    "desc_id": "Elemen Bumi — mengayomi, setia, penuh perhatian. Kelompok Barat (西四命): sabar, dapat diandalkan, dan kuat dalam memelihara hubungan.",
+    "sumbu_hoki_hz": "西南↔東北",
+    "sumbu_hoki_id": "BD ↔ TL",
+    "sumbu_rumah_hz": "東北↔西南",
+    "sumbu_rumah_id": "TL ↔ BD",
+    "rumah_axis_pos": "NE",
+    "trigram_symbol": "☷",
+    "zones": {
+      "rumah": {
+        "dirs_hz": [
+          "東北",
+          "西南"
+        ],
+        "dirs_abbr": [
+          "TL",
+          "BD"
+        ],
+        "note_id": "Rumah sangat baik bila duduk di timur laut menghadap barat daya, atau duduk di barat daya menghadap timur laut."
+      },
+      "pintu": {
+        "dirs_hz": [
+          "西",
+          "西北"
+        ],
+        "dirs_abbr": [
+          "B",
+          "BL"
+        ],
+        "note_id": "Pintu atau jalur masuk baik dibuka di sektor barat atau barat laut."
+      },
+      "dapur": {
+        "dirs_hz": [
+          "東"
+        ],
+        "dirs_abbr": [
+          "T"
+        ],
+        "note_id": "Kompor baik ditempatkan di timur dengan arah menghadap barat."
+      },
+      "kamar": {
+        "dirs_hz": [
+          "西",
+          "西北",
+          "西南",
+          "東北"
+        ],
+        "dirs_abbr": [
+          "B",
+          "BL",
+          "BD",
+          "TL"
+        ],
+        "note_id": "Kamar baik ditempatkan di sektor barat, barat laut, barat daya, atau timur laut."
+      },
+      "ranjang": {
+        "dirs_hz": [
+          "西",
+          "西南",
+          "東北",
+          "西北"
+        ],
+        "dirs_abbr": [
+          "B",
+          "BD",
+          "TL",
+          "BL"
+        ],
+        "note_id": "Posisi ranjang baik berada di sektor barat, barat daya, timur laut, atau barat laut."
+      },
+      "altar": {
+        "dirs_hz": [
+          "西",
+          "西北",
+          "西南",
+          "東北"
+        ],
+        "dirs_abbr": [
+          "B",
+          "BL",
+          "BD",
+          "TL"
+        ],
+        "note_id": "Altar baik ditempatkan di sektor barat, barat laut, barat daya, timur laut, atau arah keberuntungan utama pada tahun berjalan."
+      },
+      "kamar_mandi": {
+        "dirs_hz": [
+          "北",
+          "東",
+          "東南",
+          "南"
+        ],
+        "dirs_abbr": [
+          "U",
+          "T",
+          "TG",
+          "S"
+        ],
+        "note_id": "Toilet atau kamar mandi baik ditempatkan di sektor utara, timur, tenggara, atau selatan."
+      }
+    }
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "祿存",
+    "shen_zhu_hz": "天梁",
+    "ming_gong_hz": "戌",
+    "shen_gong_hz": "午",
+    "wu_xing_ju_hz": "土五局",
+    "shi_jun_hz": "辰",
+    "palaces": null,
+    "ming_gong_id": "Istana Hidup · Anjing",
+    "shen_gong_id": "Istana Tubuh · Kuda",
+    "shi_jun_id": "Penguasa Waktu · Naga",
+    "ming_zhu_id": "Penguasa Hidup",
+    "shen_zhu_id": "Penguasa Tubuh",
+    "wu_xing_ju_id": "Aliran Tanah Lima"
+  },
+  "shen_sha_list": [],
+  "kesimpulan_narrative": "DN adalah pribadi yang kuat, terbuka, hangat, dan mudah mengambil peran penting di tengah orang lain. Ia mempunyai naluri menolong yang besar, cepat memahami keadaan, dan cenderung menjadi tempat bergantung bagi orang yang lebih muda maupun kelompok yang membutuhkan arah. Kemampuan memimpin ini tumbuh bersama sifat jujur, keberanian, ketegasan, dan dorongan untuk maju. Namun, kekuatan yang sama dapat berubah menjadi sikap terlalu ikut campur, keras kepala, atau terlalu cepat mengambil alih urusan orang lain. Karena itu, perjalanan terbaik bagi DN bukanlah mengurangi kepedulian, melainkan belajar menolong dengan izin, memberi ruang, dan menyampaikan ketegasan secara lebih lembut. Dalam hubungan keluarga dan pasangan, kesungguhan DN sangat kuat. Ia tidak menyukai hubungan yang dimainkan dan menuntut standar yang tinggi dari diri sendiri maupun orang terdekat. Sikap ini dapat membangun kesetiaan, tetapi juga mudah menimbulkan pertengkaran bila kecemburuan, tuntutan, atau perbedaan tidak dibicarakan dengan tenang. Pernikahan yang dipilih setelah pertimbangan matang lebih sesuai daripada keputusan yang terburu-buru. Kecocokan dengan Shio Tikus dan Naga memberi gambaran hubungan yang saling melengkapi, sedangkan hubungan dengan Shio Harimau, Ular, dan Babi memerlukan kewaspadaan lebih besar karena sumber menunjukkan lebih banyak tekanan, kesulitan, dan gangguan kesehatan atau keluarga. Hubungan dengan anak juga membutuhkan kesabaran. Anak dapat keras dalam mengejar keinginan, membutuhkan perhatian besar pada masa kecil, dan baru kemudian berkembang menjadi pendamping yang membantu. Dengan saudara, teman, bawahan, dan rekan kerja, DN perlu menjaga konsistensi komunikasi serta membangun batas kepercayaan yang jelas. Jumlah orang dekat mungkin tidak banyak, tetapi hubungan yang dijaga dengan baik dapat menjadi sumber bantuan nyata. Dalam pekerjaan, DN mempunyai pilihan yang luas. Bidang panas, cahaya, listrik, optik, fotografi, makanan, kecantikan, kosmetik, militer, kesehatan, pelayanan, hukum, perjalanan, perairan, perdagangan, dan pekerjaan lapangan semuanya muncul dalam sumber. Ia juga mempunyai bakat dalam seni, desain, dekorasi, musik, sastra, menulis, teknik, serta pembelajaran mandiri. Posisi yang memberinya tanggung jawab nyata, kesempatan memimpin, dan ruang menggunakan kemampuan praktis akan terasa hidup baginya. Meski demikian, ada masa ketika peran perencana, pendamping utama, atau staf strategis justru membuat kemampuannya lebih leluasa berkembang daripada memegang jabatan tertinggi. Secara finansial, DN mampu membangun hasil melalui kekuatan sendiri dan peluang yang lebih besar terbuka setelah usia pertengahan. Tantangan utamanya bukan sekadar memperoleh uang, melainkan mempertahankan dan mengubahnya menjadi sesuatu yang tahan lama. Karena uang mudah keluar, aset tidak bergerak menjadi sarana penting untuk menjaga nilai. Ia berpotensi memiliki banyak properti, tetapi perlu rencana yang jelas agar aset tersebut tidak hanya tersimpan tanpa dimanfaatkan secara luwes. Kesehatan secara umum memiliki daya pulih yang baik, tetapi DN tetap perlu memperhatikan tenggorokan, gigi, lambung, tulang, persendian, hati, empedu, saraf, sirkulasi kaki, serta risiko luka dari benda tajam, mesin, dan fasilitas logam. Menghindari perkelahian, tempat kerja berbahaya, dan kebiasaan menunda pemeriksaan akan sangat membantu. Periode 2026 sampai 2031 memperlihatkan perubahan yang cukup kuat. Tahun 2026 menonjolkan hasil dari pikiran, tetapi juga menuntut kewaspadaan terhadap konflik, perkara, kesehatan, dan kestabilan rumah tangga. Tahun 2027 membawa peluang sukacita dan tabungan, disertai tekanan kesehatan dan suasana hati. Tahun 2028 merupakan fase perubahan pekerjaan, tempat tinggal, pengeluaran, kesehatan kronis, serta hubungan; keputusan yang gegabah harus dihindari. Tahun 2029 masih membawa perubahan dan pengeluaran, tetapi juga memberi tanda perbaikan bagi keadaan yang sebelumnya kurang baik, kreativitas, dan keberuntungan. Tahun 2030 membutuhkan perhatian terbesar pada tekanan, pengeluaran, kesehatan, keamanan, orang yang berniat buruk, dan kabar dari kerabat atau teman. Tahun 2031 membuka bantuan dari orang tua atau pembimbing, peluang finansial, penghargaan, pembelajaran, dan kemajuan melalui peran strategis. Secara keseluruhan, hidup DN paling berkembang ketika keberanian dipadukan dengan kesabaran, kepedulian dipadukan dengan batas yang sehat, dan pendapatan dipadukan dengan disiplin menjaga aset. Ia tidak kekurangan daya untuk maju. Yang menentukan kualitas hasilnya adalah kemampuan menuntaskan apa yang dimulai, tidak terlalu cepat bereaksi, tidak membiarkan pendapat sekitar mengacaukan keputusan, dan tetap rendah hati ketika kepercayaan serta kewenangan berada di tangannya.",
+  "dm_pos_score": 3560.0,
+  "dm_neg_score": 4900.0,
+  "xiantian_per_stem": {
+    "jia": 1,
+    "yi": 2,
+    "bing": 0,
+    "ding": 0,
+    "wu": 4,
+    "ji": 1,
+    "geng": 3,
+    "xin": 0,
+    "ren": 2,
+    "gui": 1
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": null,
+  "canggan_shi_shen": null,
+  "chang_sheng_per_pilar": null,
+  "kong_wang": null,
+  "ming_gong_bazi": null,
+  "bone_weight": null,
+  "liu_nian_predictions": [
+    {
+      "tahun": 2026,
+      "umur": 47,
+      "ganzhi": "丙午",
+      "prose": "Tahun 2026 membuka peluang bagi DN untuk mengubah kecerdikan dan gagasan menjadi hasil yang bernilai. Ia mampu memakai pikirannya untuk menemukan jalan bagi berbagai urusan, sehingga perlu menangkap kesempatan, lebih banyak menggunakan daya pikir, dan dengan itu dapat mencapai hasil ideal. Tanda Diao Ke menyebut rangkaian urusan duka, kemungkinan perkara hukum atau gangguan yang berkaitan dengan darah, serta kabar dukacita yang menyentuh anggota keluarga lebih muda. Namun, bintang kebajikan Yang De membawa peluang peristiwa menggembirakan, kehormatan bagi rumah, dan perayaan yang berjalan tanpa masalah; dengan menumpuk kebajikan dan melakukan kebaikan, urusan dapat berlangsung lancar. Perhatian khusus diperlukan pada bulan pertama, keempat, kesepuluh, atau kesebelas; kebaikan perlu dilakukan dengan tulus dan pertengkaran harus dihindari. DN juga perlu lebih waspada agar tidak dijebak orang lain, tidak mengalami perubahan lingkungan atau pekerjaan yang merugikan, dan tidak terseret perselisihan, ucapan yang menimbulkan perkara, gugatan hukum, penahanan, atau cedera. Pada tahun ini sifatnya lebih mudah terburu-buru dan kemampuan memutuskan dapat melemah, sehingga ia ragu-ragu meskipun sangat cerdas. Kecenderungan memikirkan persoalan terlalu sempit dapat menimbulkan beban dan gangguan yang sebenarnya tidak perlu. Hubungan suami istri juga cenderung tipis dan mudah berubah, sehingga menjaga komunikasi dan komitmen menjadi penting; sumber bahkan menyebut kecenderungan pernikahan ulang lebih banyak muncul pada pola ini."
+    },
+    {
+      "tahun": 2027,
+      "umur": 48,
+      "ganzhi": "丁未",
+      "prose": "Tahun 2027 mempertemukan potensi finansial dari pemikiran DN dengan kebutuhan menjaga tubuh dan kestabilan batin. Datangnya rezeki dapat disertai masalah, dan hasil nyata belum tentu mencapai keadaan ideal. Situasi tahun ini menekan perasaan sehingga suasana hati juga kurang stabil. Tanda Bing Fu menunjukkan kemungkinan penyakit, persoalan resmi, kemunduran, atau urusan duka, sehingga sumber menyarankan memohon perlindungan spiritual. Di sisi lain, bintang Jin Xiu membawa peristiwa gembira, rumah yang ramai oleh tamu, peluang memperoleh keturunan sesuai harapan, dan keberuntungan yang masuk ke keluarga. DN perlu mewaspadai perkara resmi pada bulan ketiga, keenam, kesembilan, atau kedua belas. Selama seluruh keluarga memperhatikan perubahan cuaca dan menghindari penularan penyakit, keadaan dapat berjalan tanpa masalah besar. Pada tahun ini sifat tertutup, kebiasaan yang agak tidak lazim, dan kurangnya minat menghias penampilan dapat lebih terlihat. Hubungan dengan saudara kandung cenderung tipis. DN juga menyukai pengumpulan benda kecil dan termasuk orang yang ingin menabung dengan sungguh-sungguh. Ia dianjurkan membuka hati dan bergerak maju dengan tekun agar keberuntungan keuangan dapat menjadi baik. Pola hidup yang lebih berat dan penuh kesulitan pada paruh pertama kehidupan dapat berbalik menjadi semakin beruntung dan nyaman pada paruh kedua."
+    },
+    {
+      "tahun": 2028,
+      "umur": 49,
+      "ganzhi": "戊申",
+      "prose": "Tahun 2028 menjadi fase perubahan besar yang menuntut lebih banyak tenaga daripada imbalan yang langsung terlihat. DN perlu mewaspadai penyakit kronis dan pengeluaran yang sangat besar, sementara hasil nyata sulit mencapai keadaan ideal. Usaha atau kedudukan kerja dapat mengalami perubahan. Lingkungan besar juga berubah, misalnya rumah direnovasi kembali, pindah tempat tinggal, atau memindahkan perabot dan tata ruang. Bagi yang telah menikah, hubungan suami istri mudah mengalami gejolak perasaan; bagi yang belum menikah, perjalanan hubungan cinta menjadi lebih aktif. Tanda Tai Sui menyebut tekanan berada tepat di hadapan, tetapi bila tubuh tidak mengalami benturan berat, tahun ini masih dapat dipakai untuk merencanakan dan menjalankan urusan dengan baik. Tanda Tian Ku membawa risiko penyakit dan urusan duka; bila istri atau keluarga mengalami peristiwa kelahiran yang menggembirakan, tekanan dapat bergeser menjadi pertengkaran lisan tanpa bencana yang lebih berat. Bulan kedua, ketiga, kelima, atau kesebelas perlu diwaspadai. Sumber juga menyarankan penghormatan kepada Tai Sui pada tanggal sembilan bulan pertama lunar untuk memohon keselamatan. Arah baik dan buruk tahun ini cenderung ekstrem. DN menjadi lebih mudah terburu-buru, cepat bersemangat tetapi juga cepat berhenti, memulai tanpa menuntaskan, serta menyukai hal baru dan mudah bosan terhadap yang lama. Dorongan spontan dan kurangnya pemikiran jauh dapat membuatnya ringan dalam bertindak, mudah ditipu, terlena oleh keberhasilan, dan gagal karena langkah yang gegabah. Walaupun perjalanan tahun ini tidak tenang, ia tetap mempunyai peluang menemukan jalan hidup ketika keadaan sudah berada di titik paling sulit."
+    },
+    {
+      "tahun": 2029,
+      "umur": 50,
+      "ganzhi": "己酉",
+      "prose": "Tahun 2029 menguji kemampuan DN menjaga keseimbangan antara tenaga yang dicurahkan, pengeluaran, dan hasil yang diterima. Ia perlu mewaspadai penyakit kronis dan pengeluaran yang sangat besar, sedangkan hasil nyata sulit mencapai keadaan ideal. Suasana hati relatif tidak stabil. Usaha atau kedudukan kerja juga dapat mengalami perubahan. Bintang Matahari Tai Yang membawa keharmonisan dalam berbagai urusan, keseimbangan yang tidak melenceng, berkah, dan peluang memperoleh harta. Bintang Fu De yang masuk ke perjalanan tahunan menunjukkan akhlak yang baik, dukungan orang lain dalam mencari rezeki dan urusan gembira, serta masa kemudian yang lebih baik daripada perjalanan sebelumnya. Bulan kedua, keempat, kedelapan, atau kesebelas perlu diwaspadai. Bagi orang yang sebelumnya sakit atau sedang bernasib kurang baik, tahun ini memberi isyarat adanya perbaikan. Rasa ingin tahu dan semangat penelitian DN menjadi kuat. Ia memiliki jiwa yang terus memperbarui diri, menyukai kesegaran, kreatif, penuh humor, dan mempunyai kehangatan kemanusiaan. Sifatnya termasuk cerdas tetapi tidak selalu mempertontonkan kecerdasan tersebut, dan keberuntungan cukup sering mendatanginya. Tubuhnya tidak selalu berada dalam kondisi sehat, tetapi semakin bertambah usia justru dapat semakin kuat. Bagi wanita dengan pola ini, kemungkinan melahirkan anak perempuan dinilai lebih tinggi."
+    },
+    {
+      "tahun": 2030,
+      "umur": 51,
+      "ganzhi": "庚戌",
+      "prose": "Tahun 2030 membawa tekanan yang lebih berat, arus pengeluaran yang membesar, dan perubahan yang perlu dihadapi dengan tenang. Kondisi tubuh perlu diperhatikan. Datangnya rezeki juga dapat disertai masalah, sementara hasil nyata belum tentu mencapai keadaan ideal. Usaha atau pekerjaan dapat mengalami perubahan. Keadaan tahun ini menekan perasaan sehingga suasana hati pun kurang stabil. Tanda Sang Men menunjukkan urusan duka, benturan atau gangguan, kerusakan, pengeluaran, dan kehilangan harta. Tanda Hei Sha menyebut perjalanan yang terbalik atau mengejutkan; bila tidak ada benturan berat, urusan duka tetap perlu diwaspadai, demikian pula gangguan pencuri atau orang yang berniat buruk. Peristiwa menggembirakan dalam keluarga dapat membantu menjaga keselamatan. Bulan keenam, kedelapan, atau kesebelas perlu diwaspadai, dan sumber menyarankan memelihara hati yang baik untuk mengundang berkah. Pada tahun ini DN tidak disarankan menjenguk orang yang sakit berat atau menghadiri urusan pemakaman agar tidak menarik kemerosotan, dan terdapat kemungkinan kerabat atau teman mengalami penyakit berat atau meninggal. Sifatnya cenderung jujur dan bersahaja, serta cukup terampil dalam pergaulan, tetapi tidak selalu mempunyai ambisi besar dan lebih mudah merasa cukup dengan keadaan sekarang. Hubungan dengan orang tua kandung relatif tipis; pola ini juga dikaitkan dengan kemungkinan diasuh keluarga lain atau masuk ke keluarga pasangan. Walaupun demikian, selama DN tetap berusaha maju, ia masih dapat mencapai keberhasilan yang tinggi dan besar."
+    },
+    {
+      "tahun": 2031,
+      "umur": 52,
+      "ganzhi": "辛亥",
+      "prose": "Tahun 2031 menghadirkan dukungan dari orang yang lebih tua dan para pembimbing, sehingga peluang mencapai hasil ideal menjadi lebih terbuka. Meskipun demikian, tekanan tahun ini cukup berat dan pengeluaran besar, sehingga gangguan tubuh perlu diperhatikan. Keadaan juga menahan perasaan dan membuat suasana hati kurang stabil. Bintang Tai Yin membawa peristiwa menggembirakan, perolehan harta, bantuan orang berpengaruh, dan keharmonisan dalam banyak urusan. Bintang Wen Chang yang masuk ke perjalanan tahunan membawa kabar bahagia ke rumah; pelajar atau orang yang mengejar prestasi dapat memperoleh hasil baik, masyarakat umum memperoleh peluang rezeki, dan wanita dapat menerima kabar kehamilan. Bulan kedua, kelima, kedelapan, atau kedua belas perlu diwaspadai. DN juga dapat menarik rasa tidak suka atau gejolak dari lawan jenis dan sebaiknya tidak berjalan di tempat gelap pada larut malam. Sifat jujur, lembut, sopan, baik, dan matang menjadi lebih menonjol. Hubungan sosialnya sangat baik sehingga ia mudah dihargai, diterima, disukai, dan diangkat oleh orang lain, serta berpeluang naik dengan cepat. Ia mempunyai bakat teknik dan seni serta kemampuan belajar yang kuat. Namun, sumber menilai bahwa ia kurang sesuai memegang lapisan kepemimpinan tertinggi; kemampuannya justru sangat baik ketika berperan sebagai pendamping utama, perencana, atau staf strategis, karena di posisi tersebut ruang untuk memperlihatkan kemampuan menjadi lebih luas."
+    }
+  ],
+  "ziwei_su_ming": "Baik atau buruknya perjalanan hidup dipandang sebagai bagian dari ketetapan nasib. Selama kekuatan istana keuangan baik, istana tubuh juga menjadi kuat. Dengan dukungan keberuntungan finansial, DN dapat menjalani hidup tanpa terlalu mencemaskan kelapangan uang. Sebaliknya, bila istana keuangan lemah, ia dapat bekerja keras sepanjang hidup demi uang dan justru dipermainkan oleh urusan keuangan. Dalam menilai keadaan tersebut, kekuatan istana diri Ming Gong [[命宮]], istana kebahagiaan Fu De Gong [[福德宮]], dan istana karier Guan Lu Gong [[官祿宮]] juga harus dipertimbangkan bersama.",
+  "ziwei_stars": null,
+  "shiye_favorable_full": [
+    {
+      "hz": "火熱光性工廠或物品",
+      "id": "Pabrik atau produk panas"
+    },
+    {
+      "hz": "",
+      "id": "api"
+    },
+    {
+      "hz": "",
+      "id": "dan cahaya"
+    },
+    {
+      "hz": "照相",
+      "id": "Fotografi"
+    },
+    {
+      "hz": "電器",
+      "id": "Peralatan listrik"
+    },
+    {
+      "hz": "光學",
+      "id": "Optik"
+    },
+    {
+      "hz": "眼鏡",
+      "id": "Kacamata"
+    },
+    {
+      "hz": "熱飲小吃",
+      "id": "Minuman panas dan makanan ringan"
+    },
+    {
+      "hz": "食品工廠",
+      "id": "Pabrik makanan"
+    },
+    {
+      "hz": "燙髮美容",
+      "id": "Tata rambut dan kecantikan"
+    },
+    {
+      "hz": "衣帽百貨",
+      "id": "Toko pakaian"
+    },
+    {
+      "hz": "",
+      "id": "topi"
+    },
+    {
+      "hz": "",
+      "id": "atau serba ada"
+    },
+    {
+      "hz": "評論家",
+      "id": "Kritikus"
+    },
+    {
+      "hz": "化妝品",
+      "id": "Kosmetik"
+    },
+    {
+      "hz": "軍界",
+      "id": "Bidang militer"
+    },
+    {
+      "hz": "煙酒",
+      "id": "Usaha rokok dan minuman beralkohol"
+    }
+  ],
+  "shiye_supportive_full": [
+    {
+      "hz": "流動攤販",
+      "id": "Pedagang keliling"
+    },
+    {
+      "hz": "運動家",
+      "id": "Atlet"
+    },
+    {
+      "hz": "介紹中人",
+      "id": "Perantara"
+    },
+    {
+      "hz": "醫師",
+      "id": "Dokter"
+    },
+    {
+      "hz": "清潔隊",
+      "id": "Petugas kebersihan"
+    },
+    {
+      "hz": "記者",
+      "id": "Jurnalis"
+    },
+    {
+      "hz": "護士",
+      "id": "Perawat"
+    },
+    {
+      "hz": "導遊",
+      "id": "Pemandu wisata"
+    },
+    {
+      "hz": "馬戲團",
+      "id": "Sirkus"
+    },
+    {
+      "hz": "航海",
+      "id": "Pelayaran"
+    },
+    {
+      "hz": "漁業",
+      "id": "Perikanan"
+    },
+    {
+      "hz": "水產業",
+      "id": "Industri hasil perairan"
+    },
+    {
+      "hz": "碼頭工",
+      "id": "Pekerja dermaga"
+    },
+    {
+      "hz": "消防隊",
+      "id": "Pemadam kebakaran"
+    },
+    {
+      "hz": "貿易公司",
+      "id": "Perusahaan perdagangan"
+    }
+  ],
+  "shiye_short": null,
+  "shen_sha_detail": [
+    {
+      "hz": "華蓋",
+      "pinyin": "Hua Gai",
+      "label_id": "Kanopi Kemuliaan",
+      "tafsir_hz": "求學能自動，自悟以達最高學歷，天性對美術、設計、裝潢、音樂、文學方面大興趣及天才。",
+      "tafsir_id": "DN mempunyai dorongan belajar mandiri dan kemampuan memahami sesuatu melalui perenungan sendiri hingga berpotensi mencapai pendidikan tinggi. Secara alami ia memiliki minat besar dan bakat dalam seni rupa, desain, dekorasi, musik, serta sastra."
+    },
+    {
+      "hz": "元辰大耗",
+      "pinyin": "Yuan Chen Da Hao",
+      "label_id": "Kehilangan Besar Yuan Chen",
+      "tafsir_hz": "手腳強硬，不別是非，寒酸，貪飲好情，逞雄性獨，不遵禮法，一生多災。",
+      "tafsir_id": "DN dapat bertindak keras, kurang membedakan benar dan salah ketika dorongan pribadinya menguat, bersikap kaku atau terlalu perhitungan, menyukai minuman dan urusan perasaan, ingin menonjolkan kekuatan secara sendiri, serta kurang memedulikan tata krama. Pola ini perlu dikendalikan karena dapat mendatangkan banyak kesulitan sepanjang hidup."
+    }
+  ],
+  "marriage_cocok_tafsir": "Bak permata yang saling melengkapi [[珠聯璧合]], perjalanan kehidupan bersama akan berjalan mulus dan lancar. Tidak ada halangan yang berarti — kesuksesan dan kemakmuran [[成功富貴]] akan hadir, keturunan berkembang pesat, dan kemakmuran keluarga berlanjut selama lima generasi [[五世其昌]].",
+  "marriage_hindari_tafsir": "Pada awal kehidupan bersama, berbagai bencana dan kesulitan datang silih berganti. Menjelang usia tua barulah kebahagiaan hadir bersama. Di pertengahan perjalanan, mungkin terjadi kesulitan besar atau musibah [[災殃]], atau kehilangan sandaran orang tua sejak masih muda [[少小怙恃]], atau umur yang tidak panjang [[壽不永]] — malapetaka [[災難]] dan penyakit yang menyengsarakan [[病疾困苦]] dapat menghampiri.",
+  "gushu_quotes": null,
+  "xiongnian_list": null,
+  "xing_qing_poem_hz": null,
+  "xing_qing_poem_id": null,
+  "xing_qing_prose_id": null,
+  "fulu_body_id": null,
+  "mingyun_body_id": null,
+  "qinshu_tou_main_id": null,
+  "qinshu_tou_youyue_id": null,
+  "qinshu_zhong_main_id": null,
+  "qinshu_zhong_youyue_id": null,
+  "qinshu_mo_main_id": null,
+  "qinshu_mo_youyue_id": null,
+  "jie_e_palace_hz": null,
+  "jie_e_palace_id": "DN cenderung mudah mengalami gangguan tenggorokan, flu, sakit gigi, dan keluhan sejenis. Secara umum ia jarang terserang penyakit atau cedera; bila sakit, pemulihan melalui pengobatan juga cenderung berlangsung cepat. Bila berada bersama bintang yang kurang baik, ia lebih mudah mengalami gangguan lambung, beri-beri, atau keluhan sejenis. Bila berada bersama bintang Kaisar Ungu Zi Wei [[紫微]], kondisi kesehatannya sangat baik dan tidak perlu terlalu mencemaskan penyakit.",
+  "jie_e_organ_focus_id": "Tenggorokan, gigi, lambung, dan sirkulasi atau saraf kaki.",
+  "bagua_sectors": null,
+  "bagua_life_type_hz": null,
+  "bagua_life_type_id": null,
+  "bagua_nayin_hz": null,
+  "bagua_nayin_id": null,
+  "bagua_taisui_hz": null,
+  "bagua_taisui_id": null,
+  "bagua_warning_hz": null,
+  "bagua_warning_id": null,
+  "bagua_virtue_hz": null,
+  "bagua_virtue_id": null,
+  "bagua_zuo_xiang_hz": null,
+  "bagua_zuo_xiang_id": null,
+  "hongshui_pages": null,
+  "mantra": {
+    "hz": "—",
+    "pinyin": "—"
+  },
+  "_xq_radar_poly": "          <polygon points=\"200,56 311.2,136 311.2,264 200,312 102.7,256 130.5,160\"\n            fill=\"rgba(139,26,26,0.18)\" stroke=\"#8B1A1A\" stroke-width=\"1.5\"/>\n          <circle cx=\"200\" cy=\"56\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"136\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"264\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"200\" cy=\"312\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"102.7\" cy=\"256\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"130.5\" cy=\"160\" r=\"3\" fill=\"#8B1A1A\"/>",
+  "_xq_radar_labels": "          <g font-family=\"Noto Serif TC,serif\">\n            <text x=\"200\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">進取</text>\n            <text x=\"200\" y=\"33\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Jìnqǔ · Pelopor · 9</text>\n\n            <text x=\"358\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">創新</text>\n            <text x=\"358\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Chuàngxīn · Inovatif · 8</text>\n\n            <text x=\"358\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">領導</text>\n            <text x=\"358\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Lǐngdǎo · Memimpin · 8</text>\n\n            <text x=\"200\" y=\"382\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">急性</text>\n            <text x=\"200\" y=\"393\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Jíxìng · Cepat panas · 7</text>\n\n            <text x=\"42\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">直率</text>\n            <text x=\"42\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Zhíshuài · Terus-terang · 7</text>\n\n            <text x=\"42\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">包容</text>\n            <text x=\"42\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Bāoróng · Toleran · 5</text>\n          </g>",
+  "_xq_motto": [
+    "樹",
+    "Pohon Besar",
+    "本性 浩然",
+    "君子之風"
+  ],
+  "_tafsir": {
+    "kepribadian": "DN adalah sosok dengan elemen utama Kayu Yang <span class=\"hz\">甲木</span> dalam format Bixing <span class=\"hz\">比肩格</span>, yang mencerminkan kepribadian mandiri, berani, dan penuh semangat bersaing. Dengan Api (火) sebagai yong shen <span class=\"hz\">用神</span> dan Air (水) sebagai xi yong shen <span class=\"hz\">喜神</span>, ia memerlukan lingkungan yang dinamis dan mendukung ekspresi diri. Sebaliknya, Metal <span class=\"hz\">金</span> sebagai ji shen adalah elemen yang perlu diwaspadai dalam pilihan karir dan relasi.",
+    "_kepribadian_struct": {
+      "paragraf": "DN adalah sosok dengan elemen utama Kayu Yang [[甲木]] dalam format Bixing [[比肩格]], yang mencerminkan kepribadian mandiri, berani, dan penuh semangat bersaing. Dengan Api (火) sebagai yong shen [[用神]] dan Air (水) sebagai xi yong shen [[喜神]], ia memerlukan lingkungan yang dinamis dan mendukung ekspresi diri. Sebaliknya, Metal [[金]] sebagai ji shen adalah elemen yang perlu diwaspadai dalam pilihan karir dan relasi."
+    },
+    "xingqing_full": "<p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">1</span>DN menjunjung kesetiaan dan tidak segan mengeluarkan harta; ia terus terang tanpa kepura-puraan, tidak mudah melekat, dan dapat memanfaatkan uang yang tersedia dengan murah hati serta sikap yang relatif sederhana. Walaupun mampu mengelola keuangan, ia tidak memandang harta sebagai pusat hidup. Ia ingin mengendalikan benda atau perkara konkret yang memang berada dalam jangkauannya, tetapi tidak terus melekat pada benda atau perkara tersebut.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">2</span>DN tidak selalu mengikuti pandangan umum. Ia memiliki keberanian, tidak mudah mengaku kalah, dapat bersikap dominan, keras, dan tajam, serta mempunyai ketegasan dalam mengambil keputusan dan kemampuan memimpin yang kuat.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">3</span>Ketika membuat pengelompokan atau analogi, DN cenderung ingin menyertakan banyak contoh. Ia tidak ingin melanggar batas orang lain dan juga tidak ingin batasnya dilanggar. Walaupun tidak selalu membantah pendapat orang lain, ia pun tidak menerimanya begitu saja. Dari luar ia tampak beradab, tetapi kadang kurang luwes dalam pergaulan dan tidak terlalu suka banyak bicara.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">4</span>DN menaruh perhatian pada dunia material yang konkret, tetapi tidak melekat pada benda. Ia cakap menangani hal praktis, memiliki daya tangkap yang kuat, dorongan untuk maju, watak teguh dan berprinsip, serta hati yang baik dan lurus. Namun, kemampuan beradaptasi secara cepat ketika keadaan berubah perlu dilatih.</p>",
+    "xingqing_full_action": "Inti watak diri sebagaimana terbaca dari layar 性情.",
+    "overview_full": "<div style=\"display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm;\"><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Relasi pasangan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Pasangan DN dapat bersikap mengatur dan sesekali sulit diajak bernalar.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Anak</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Putra DN cenderung tidak terlalu menonjolkan keterikatan emosional, cukup murah hati dalam menggunakan uang, dan memiliki kemampuan dalam bidang menulis.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Hubungan dengan ibu</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">DN cenderung sulit menerima perkataan ibunya dan komunikasi di antara keduanya relatif tidak banyak.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Cara berpikir</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">DN relatif kurang menonjol dalam pemikiran yang panjang atau rumit.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Wewenang</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">DN memiliki kecenderungan memegang kuasa atau kewenangan yang cukup besar.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Kesehatan dan keselamatan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">DN perlu mewaspadai gangguan tulang, persendian, hati dan empedu, kejang, serta kelemahan saraf. Ia juga lebih mudah mengalami luka akibat pisau, senjata, benda logam, atau benturan dan tekanan, sehingga sebaiknya menghindari perkelahian serta tidak mendekati motor, ruang mesin, atau fasilitas logam berbahaya.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Pertemuan pasangan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Peluang DN berkenalan dengan pasangan berkaitan dengan pekerjaan atau urusan karier.</div></div></div>",
+    "overview_full_action": "Pesan inti hubungan terdekat dari layar 全局總論.",
+    "family": "pasangan: - vibe: Dinamis &amp; Perlu Keseimbangan - headline: Pasangan ideal dari Shio Tikus atau Naga - cocok_list: - shio: 鼠 label: 大吉 teks: Bak permata yang saling melengkapi, perjalanan bersama akan mulus dan lancar. Kesuksesan, kemakmuran, dan keturunan yang berkembang hadir bersama. - shio: 龍 label: 大吉 teks: Bak permata yang saling melengkapi, perjalanan bersama akan mulus dan lancar. Tidak ada halangan yang berarti — kemakmuran keluarga berlanjut lima generasi. - hindari_list: - shio: 虎 teks: Pada awal bersama, bencana datang silih berganti. Di pertengahan hidup mungkin terjadi musibah besar, kehilangan sandaran orang tua saat muda, atau umur yang tidak panjang — penyakit dan kesulitan menghampiri. - shio: 蛇 teks: Pada awal bersama, bencana datang silih berganti. Malapetaka dan penyakit yang menyengsarakan dapat menghampiri sepanjang perjalanan hidup bersama. - shio: 豬 teks: Pada awal bersama, bencana datang silih berganti. Menjelang tua barulah kebahagiaan mungkin hadir — namun jalan menuju kesana penuh dengan rintangan dan kesedihan.",
+    "_family_struct": {
+      "pasangan": {
+        "vibe": "Dinamis & Perlu Keseimbangan",
+        "headline": "Pasangan ideal dari Shio Tikus atau Naga"
+      }
+    },
+    "career": "<p>DN memiliki Day Master Kayu Yang dalam format rekan sejajar, dengan Api dan Air sebagai unsur pendukung. Bidang yang berkaitan dengan panas, cahaya, listrik, seni, layanan, kesehatan, perjalanan, perairan, serta perdagangan terbuka baginya, sedangkan lingkungan Logam yang terlalu keras perlu dikelola dengan hati-hati.</p>",
+    "_career_struct": {},
+    "palace1": "<p>ming_gong: - star: 紫微、七殺 - insight: DN adalah sosok yang meski memiliki kelemahan sifat lamban dan suka bertele-tele <span class=\"hz\">拖泥帶水</span>, namun perjalanan hidupnya tetap cerah dan kokoh. Postur tubuhnya relatif tinggi <span class=\"hz\">身材較高</span>, lebih kekar dan sehat dibandingkan orang kebanyakan. Ciri khas utamanya adalah sikap yang hangat dan mudah bergaul dengan siapa pun <span class=\"hz\">和藹可親</span>, disertai kemampuan berpikir yang sangat cepat dan tajam. Karakternya lembut dan bersahabat <span class=\"hz\">性格溫馴待人和氣</span>, kaya akan keluwesan dan fleksibilitas <span class=\"hz\">柔軟性</span> — namun di sisi lain, ia juga memiliki sisi keras kepala <span class=\"hz\">執拗</span> dan gemar turut campur urusan orang lain. Apapun urusan orang lain, selama ia bersinggungan dengannya, ia pasti akan ikut terlibat. Justru karena naluri bawaan yang gemar membantu ini, bahkan tanpa diminta sekalipun, ia dengan antusias akan mengulurkan tangan <span class=\"hz\">熱心地幫助</span> — sehingga ia memiliki banyak teman, dan dihormati oleh mereka yang lebih muda sebagai kakak tertua yang bisa diandalkan <span class=\"hz\">足可信賴的老大哥</span>. Namun, mereka yang lebih tua cenderung memandangnya sebagai orang yang suka ikut campur urusan orang lain. Bagi perempuan dengan bintang istana kehidupan ini, umumnya termasuk dalam kelompok perempuan berbakat <span class=\"hz\">才女之流</span> yang kemampuannya tak kalah dari kaum pria, bahkan bisa melampaui mereka. Dalam hal apapun, selalu ingin bersaing dan membuktikan diri. Setelah menikah, akan menjadi istri yang cakap sekaligus pemimpin yang tegas <span class=\"hz\">能幹妻子</span>, bahkan mampu mengambil alih peran kepemimpinan dari suami. Yang perlu diperhatikan adalah jangan terlalu berlebihan dalam mencampuri urusan pasangan. DN memiliki karakter yang lurus, jujur, dan berjiwa besar <span class=\"hz\">豪爽正直</span>, mampu berdiri di atas orang lain dan menempati posisi kepemimpinan <span class=\"hz\">領導地位</span>. Dengan sifat yang terbuka dan teratur dalam bertindak <span class=\"hz\">爽朗行事也有節制</span>, ia mudah mendapat kepercayaan dari banyak pihak. Dalam setiap kegiatan kelompok, ia pasti akan menempati posisi pemimpin dan menjadi figur inti <span class=\"hz\">核心人物</span> yang diandalkan oleh komunitas. Apabila bintang Tianji <span class=\"hz\">天機星</span> berada dalam satu istana yang sama, bakat sastra dan kecerdasan intelektual <span class=\"hz\">文才</span> dapat mengantarkannya pada ketenaran, sekaligus mendatangkan keberuntungan finansial. Bagi kaum perempuan dengan konfigurasi ini, sifat yang terlalu maskulin akibat kepribadian yang terlalu bersemangat justru membuat kesan pertama kurang mendalam. Sejak kecil sering bermain bersama anak laki-laki, sehingga kepribadiannya cenderung sedikit ceroboh <span class=\"hz\">輕佻</span> dan tidak terlalu feminin. Namun demikian, mereka yang benar-benar mengenal kejujuran dan ketulusan hatimu <span class=\"hz\">腸子不虛偽</span> pasti akan menaruh kepercayaan yang mendalam padamu. Yang perlu kamu perhatikan hanyalah menjadi sedikit lebih lembut dalam bersikap — dan itu sudah lebih dari cukup. - action: DN perlu menyalurkan naluri memimpin dan menolong dengan batas yang sehat, meminta persetujuan sebelum ikut campur, serta menyampaikan ketegasan dengan cara yang lebih lembut.</p><p>xiongdi: - star: 天機、天梁 - insight: Istana saudara memberi isyarat adanya perubahan yang mudah terjadi. Perasaan DN dapat berulang kali berubah, sehingga hubungan dengan teman maupun saudara tidak selalu mampu bertahan lama. Walaupun jumlah saudara dan teman dekatnya tidak tergolong banyak, mereka tetap dapat saling membantu ketika diperlukan. Bila konfigurasi ini berada bersama bintang yang kurang menguntungkan, hal kecil yang tidak terduga dapat menyebabkan DN kehilangan hubungan dengan saudara atau teman. - action: DN perlu menjaga hubungan inti melalui komunikasi yang konsisten dan tidak membiarkan persoalan kecil berkembang menjadi putusnya hubungan.</p><p>fuqi: - star: 太陽、巨門 - insight: DN memiliki pandangan cinta yang sungguh-sungguh dan tidak berniat mempermainkan hubungan. Karena itu, ia sama sekali tidak dapat menerima pasangan yang bersikap ringan atau bermain-main. Standar yang ia terapkan kepada diri sendiri dan pasangannya sama-sama ketat, sehingga perjalanan cintanya mungkin mengalami gelombang yang besar. Karena pengaruh bintang Matahari Tai Yang <span class=\"hz\">太陽</span> terlalu kuat, pernikahan pada usia terlalu muda dinilai kurang menguntungkan. Bila memungkinkan, DN tidak perlu terburu-buru menikah; keputusan sebaiknya dijalankan perlahan setelah pertimbangan yang matang. Bagi pria, konfigurasi ini memberi peluang memperoleh istri yang ceria dan sehat, sedangkan bagi wanita memberi peluang menikah dengan pria yang murah hati dan berjiwa besar. Namun, ketika bintang kurang baik ikut menghalangi, hubungan dapat berhadapan langsung dengan krisis perceraian. Pertengkaran antarpasangan mudah muncul. Meskipun demikian, bila bintang Matahari Tai Yang <span class=\"hz\">太陽</span> berada bersama tanpa bintang buruk lain, atau berada bersama bintang Keharmonisan Langit Tian Tong <span class=\"hz\">天同</span> dan bintang Mekanisme Langit Tian Ji <span class=\"hz\">天機</span>, DN dapat memperoleh pasangan yang cerdas dan membangun keluarga yang harmonis. Rasa cemburunya secara alami kuat, tetapi biasanya tidak ia tunjukkan lewat kata-kata. Bagi pria, bila bintang Sastra Wen Chang <span class=\"hz\">文昌</span> dan bintang Mekanisme Langit Tian Ji <span class=\"hz\">天機</span> menempati posisi terkait, ada kecenderungan membangun hubungan atau tempat tinggal lain di luar pernikahan. Pria dengan konfigurasi ini menyukai wanita yang berpenampilan dingin tetapi menarik. Bagi wanita, ada hubungan kuat dengan pria yang berpikiran cerdas dan memiliki daya finansial. Baik pria maupun wanita sama-sama peka terhadap cinta, sehingga tampak mempunyai kecenderungan menikah lebih awal. Pria mungkin menikah dengan wanita yang penuh kebijaksanaan, sedangkan wanita mungkin bertemu pria yang kecerdasannya menonjol; wanita juga cenderung menikah dengan pria bertubuh tinggi. Bila bintang baik lain ikut berada di istana ini, kedekatan emosional suami istri dapat sangat baik. Sebaliknya, bila bintang buruk hadir, sikap ringan dalam hubungan dapat menjadi penyebab perpisahan. - action: DN perlu memilih pasangan dengan matang, menunda keputusan yang terlalu cepat, menjaga batas kesetiaan, dan membahas kecemburuan serta perbedaan secara terbuka sebelum berubah menjadi pertengkaran.</p><p>zinu: - star: 武曲、貪狼 - insight: DN berpotensi mempunyai putra yang lembut dan patuh, tetapi gerak atau responsnya agak lambat. Ada kemungkinan jumlah keturunan sedikit; sekalipun mempunyai anak, jumlahnya mungkin hanya satu. Bila bintang Tujuh Pembunuh Qi Sha <span class=\"hz\">七殺</span> dan bintang Gerbang Raksasa Ju Men <span class=\"hz\">巨門</span> ikut berada di istana anak, terdapat risiko mengalami perpisahan berat dengan anak. Bila bersama bintang Serigala Rakus Tan Lang <span class=\"hz\">貪狼</span>, pada masa tua DN dapat menerima berkah dan dukungan dari anak. Bila bintang Bela Diri Wu Qu <span class=\"hz\">武曲</span> berada sendiri tanpa bintang lain, anak yang lahir dari hubungan di luar pasangan atau anak angkat justru lebih mungkin membantu keberhasilan DN. Walaupun memiliki keturunan, anak dapat sering menghindar, menentang, atau tidak mampu memberikan bantuan yang diharapkan. Jika bintang Bela Diri Wu Qu <span class=\"hz\">武曲</span> kembali hadir bersama, anak memerlukan perhatian dan perawatan besar pada masa kecil, tetapi setelah dewasa dapat menjadi tangan kanan yang membantu perkembangan DN. Bila hanya bintang Serigala Rakus Tan Lang <span class=\"hz\">貪狼</span> yang menempati posisi ini, anak DN tidak mudah berhenti sebelum memperoleh hal yang diinginkannya. - action: DN perlu mengasuh dengan sabar sejak dini, memberi batas yang jelas tanpa memutus kedekatan, dan mengarahkan kegigihan anak menjadi kemampuan produktif.</p>",
+    "_palace1_struct": {
+      "ming_gong": {
+        "star": "紫微、七殺",
+        "insight": "DN adalah sosok yang meski memiliki kelemahan sifat lamban dan suka bertele-tele [[拖泥帶水]], namun perjalanan hidupnya tetap cerah dan kokoh. Postur tubuhnya relatif tinggi [[身材較高]], lebih kekar dan sehat dibandingkan orang kebanyakan. Ciri khas utamanya adalah sikap yang hangat dan mudah bergaul dengan siapa pun [[和藹可親]], disertai kemampuan berpikir yang sangat cepat dan tajam. Karakternya lembut dan bersahabat [[性格溫馴待人和氣]], kaya akan keluwesan dan fleksibilitas [[柔軟性]] — namun di sisi lain, ia juga memiliki sisi keras kepala [[執拗]] dan gemar turut campur urusan orang lain. Apapun urusan orang lain, selama ia bersinggungan dengannya, ia pasti akan ikut terlibat. Justru karena naluri bawaan yang gemar membantu ini, bahkan tanpa diminta sekalipun, ia dengan antusias akan mengulurkan tangan [[熱心地幫助]] — sehingga ia memiliki banyak teman, dan dihormati oleh mereka yang lebih muda sebagai kakak tertua yang bisa diandalkan [[足可信賴的老大哥]]. Namun, mereka yang lebih tua cenderung memandangnya sebagai orang yang suka ikut campur urusan orang lain. Bagi perempuan dengan bintang istana kehidupan ini, umumnya termasuk dalam kelompok perempuan berbakat [[才女之流]] yang kemampuannya tak kalah dari kaum pria, bahkan bisa melampaui mereka. Dalam hal apapun, selalu ingin bersaing dan membuktikan diri. Setelah menikah, akan menjadi istri yang cakap sekaligus pemimpin yang tegas [[能幹妻子]], bahkan mampu mengambil alih peran kepemimpinan dari suami. Yang perlu diperhatikan adalah jangan terlalu berlebihan dalam mencampuri urusan pasangan. DN memiliki karakter yang lurus, jujur, dan berjiwa besar [[豪爽正直]], mampu berdiri di atas orang lain dan menempati posisi kepemimpinan [[領導地位]]. Dengan sifat yang terbuka dan teratur dalam bertindak [[爽朗行事也有節制]], ia mudah mendapat kepercayaan dari banyak pihak. Dalam setiap kegiatan kelompok, ia pasti akan menempati posisi pemimpin dan menjadi figur inti [[核心人物]] yang diandalkan oleh komunitas. Apabila bintang Tianji [[天機星]] berada dalam satu istana yang sama, bakat sastra dan kecerdasan intelektual [[文才]] dapat mengantarkannya pada ketenaran, sekaligus mendatangkan keberuntungan finansial. Bagi kaum perempuan dengan konfigurasi ini, sifat yang terlalu maskulin akibat kepribadian yang terlalu bersemangat justru membuat kesan pertama kurang mendalam. Sejak kecil sering bermain bersama anak laki-laki, sehingga kepribadiannya cenderung sedikit ceroboh [[輕佻]] dan tidak terlalu feminin. Namun demikian, mereka yang benar-benar mengenal kejujuran dan ketulusan hatimu [[腸子不虛偽]] pasti akan menaruh kepercayaan yang mendalam padamu. Yang perlu kamu perhatikan hanyalah menjadi sedikit lebih lembut dalam bersikap — dan itu sudah lebih dari cukup.",
+        "action": "DN perlu menyalurkan naluri memimpin dan menolong dengan batas yang sehat, meminta persetujuan sebelum ikut campur, serta menyampaikan ketegasan dengan cara yang lebih lembut."
+      },
+      "xiongdi": {
+        "star": "天機、天梁",
+        "insight": "Istana saudara memberi isyarat adanya perubahan yang mudah terjadi. Perasaan DN dapat berulang kali berubah, sehingga hubungan dengan teman maupun saudara tidak selalu mampu bertahan lama. Walaupun jumlah saudara dan teman dekatnya tidak tergolong banyak, mereka tetap dapat saling membantu ketika diperlukan. Bila konfigurasi ini berada bersama bintang yang kurang menguntungkan, hal kecil yang tidak terduga dapat menyebabkan DN kehilangan hubungan dengan saudara atau teman.",
+        "action": "DN perlu menjaga hubungan inti melalui komunikasi yang konsisten dan tidak membiarkan persoalan kecil berkembang menjadi putusnya hubungan."
+      },
+      "fuqi": {
+        "star": "太陽、巨門",
+        "insight": "DN memiliki pandangan cinta yang sungguh-sungguh dan tidak berniat mempermainkan hubungan. Karena itu, ia sama sekali tidak dapat menerima pasangan yang bersikap ringan atau bermain-main. Standar yang ia terapkan kepada diri sendiri dan pasangannya sama-sama ketat, sehingga perjalanan cintanya mungkin mengalami gelombang yang besar. Karena pengaruh bintang Matahari Tai Yang [[太陽]] terlalu kuat, pernikahan pada usia terlalu muda dinilai kurang menguntungkan. Bila memungkinkan, DN tidak perlu terburu-buru menikah; keputusan sebaiknya dijalankan perlahan setelah pertimbangan yang matang. Bagi pria, konfigurasi ini memberi peluang memperoleh istri yang ceria dan sehat, sedangkan bagi wanita memberi peluang menikah dengan pria yang murah hati dan berjiwa besar. Namun, ketika bintang kurang baik ikut menghalangi, hubungan dapat berhadapan langsung dengan krisis perceraian. Pertengkaran antarpasangan mudah muncul. Meskipun demikian, bila bintang Matahari Tai Yang [[太陽]] berada bersama tanpa bintang buruk lain, atau berada bersama bintang Keharmonisan Langit Tian Tong [[天同]] dan bintang Mekanisme Langit Tian Ji [[天機]], DN dapat memperoleh pasangan yang cerdas dan membangun keluarga yang harmonis. Rasa cemburunya secara alami kuat, tetapi biasanya tidak ia tunjukkan lewat kata-kata. Bagi pria, bila bintang Sastra Wen Chang [[文昌]] dan bintang Mekanisme Langit Tian Ji [[天機]] menempati posisi terkait, ada kecenderungan membangun hubungan atau tempat tinggal lain di luar pernikahan. Pria dengan konfigurasi ini menyukai wanita yang berpenampilan dingin tetapi menarik. Bagi wanita, ada hubungan kuat dengan pria yang berpikiran cerdas dan memiliki daya finansial. Baik pria maupun wanita sama-sama peka terhadap cinta, sehingga tampak mempunyai kecenderungan menikah lebih awal. Pria mungkin menikah dengan wanita yang penuh kebijaksanaan, sedangkan wanita mungkin bertemu pria yang kecerdasannya menonjol; wanita juga cenderung menikah dengan pria bertubuh tinggi. Bila bintang baik lain ikut berada di istana ini, kedekatan emosional suami istri dapat sangat baik. Sebaliknya, bila bintang buruk hadir, sikap ringan dalam hubungan dapat menjadi penyebab perpisahan.",
+        "action": "DN perlu memilih pasangan dengan matang, menunda keputusan yang terlalu cepat, menjaga batas kesetiaan, dan membahas kecemburuan serta perbedaan secara terbuka sebelum berubah menjadi pertengkaran."
+      },
+      "zinu": {
+        "star": "武曲、貪狼",
+        "insight": "DN berpotensi mempunyai putra yang lembut dan patuh, tetapi gerak atau responsnya agak lambat. Ada kemungkinan jumlah keturunan sedikit; sekalipun mempunyai anak, jumlahnya mungkin hanya satu. Bila bintang Tujuh Pembunuh Qi Sha [[七殺]] dan bintang Gerbang Raksasa Ju Men [[巨門]] ikut berada di istana anak, terdapat risiko mengalami perpisahan berat dengan anak. Bila bersama bintang Serigala Rakus Tan Lang [[貪狼]], pada masa tua DN dapat menerima berkah dan dukungan dari anak. Bila bintang Bela Diri Wu Qu [[武曲]] berada sendiri tanpa bintang lain, anak yang lahir dari hubungan di luar pasangan atau anak angkat justru lebih mungkin membantu keberhasilan DN. Walaupun memiliki keturunan, anak dapat sering menghindar, menentang, atau tidak mampu memberikan bantuan yang diharapkan. Jika bintang Bela Diri Wu Qu [[武曲]] kembali hadir bersama, anak memerlukan perhatian dan perawatan besar pada masa kecil, tetapi setelah dewasa dapat menjadi tangan kanan yang membantu perkembangan DN. Bila hanya bintang Serigala Rakus Tan Lang [[貪狼]] yang menempati posisi ini, anak DN tidak mudah berhenti sebelum memperoleh hal yang diinginkannya.",
+        "action": "DN perlu mengasuh dengan sabar sejak dini, memberi batas yang jelas tanpa memutus kedekatan, dan mengarahkan kegigihan anak menjadi kemampuan produktif."
+      }
+    },
+    "palace2": "<p>caibo: - star: 天同、太陰 - insight: Sumber kekayaan tidak tetap atau spekulatif DN tidak tergolong berlimpah. Ketika mempunyai uang, ia cenderung sulit mempertahankannya; pembelian aset tidak bergerak menjadi cara yang lebih baik untuk menjaga nilai kekayaan. Walaupun kaitannya dengan rezeki tidak tetap cukup kuat, jenis rezeki ini tidak mudah diperoleh. Sumber pendapatan tetap DN juga tidak tergolong berlimpah. Uang yang tersedia relatif sulit disimpan, sehingga aset tidak bergerak kembali menjadi sarana penting untuk mempertahankannya. Hubungannya dengan penghasilan tetap cukup kuat, tetapi penghasilan itu tetap memerlukan usaha dan tidak datang dengan mudah. Dalam istilah sumber, rezeki tetap Zheng Cai <span class=\"hz\">正財</span> berarti sumber penghasilan yang bersifat tetap, seperti gaji, sedangkan rezeki sampingan Pian Cai <span class=\"hz\">偏財</span> berarti sumber yang bersifat peluang, seperti komisi. DN sangat murah hati ketika membelanjakan uang, tetapi pada saat yang sama mampu memperoleh kembali imbalan yang sepadan. Ia berpotensi membangun usaha dari nol dengan kekuatan pribadi dan memegang sendiri kesempatan menghasilkan uang, sedangkan fase menghasilkan kekayaan besar cenderung dimulai setelah usia pertengahan. Bila berada bersama bintang Balok Langit Tian Liang <span class=\"hz\">天梁</span>, ia dapat menjadi pengusaha nyata yang cukup berpengaruh. Sekalipun ada bintang kurang baik, pilihan profesi sebagai dokter, akademisi, seniman, atau ahli peramalan tetap dapat memberikan keberuntungan finansial yang cukup baik. Bintang Bulan Tai Yin <span class=\"hz\">太陰</span> memiliki ikatan dengan harta. Bila bersama bintang Mekanisme Langit Tian Ji <span class=\"hz\">天機</span>, DN dapat berangkat tanpa modal berarti lalu menghasilkan kekayaan yang cukup besar. Bila bersama bintang Keharmonisan Langit Tian Tong <span class=\"hz\">天同</span>, ia kerap menjumpai kesempatan memperoleh uang besar. Bila bersama bintang baik lainnya, uang yang masuk dapat disimpan dan berkembang sehingga ia menjadi pemilik aset yang cukup kuat. Pada dasarnya DN tidak perlu terlalu khawatir akan dikekang oleh masalah uang. Namun, bila konfigurasi berada di cabang Macan Yin <span class=\"hz\">寅</span> atau Kuda Wu <span class=\"hz\">午</span>, daya bintang Sastra Wen Chang <span class=\"hz\">文昌</span> melemah; akibatnya kekayaan sulit ditumpuk dan uang dapat habis dalam waktu singkat. - action: DN sebaiknya mengubah kelebihan arus kas menjadi aset nyata dan memakai aturan simpan otomatis agar pendapatan tetap maupun peluang tidak cepat habis.</p><p>jie_e: - star: 天府 - insight: DN cenderung mudah mengalami gangguan tenggorokan, flu, sakit gigi, dan keluhan sejenis. Secara umum ia jarang terserang penyakit atau cedera; bila sakit, pemulihan melalui pengobatan juga cenderung berlangsung cepat. Bila berada bersama bintang yang kurang baik, ia lebih mudah mengalami gangguan lambung, beri-beri, atau keluhan sejenis. Bila berada bersama bintang Kaisar Ungu Zi Wei <span class=\"hz\">紫微</span>, kondisi kesehatannya sangat baik dan tidak perlu terlalu mencemaskan penyakit. - action: DN sebaiknya menjaga tenggorokan, kesehatan gigi, pola makan, dan sirkulasi kaki, serta segera memeriksakan keluhan agar kecenderungan pulih cepat dapat dimanfaatkan.</p><p>qianyi: - star: null - insight: Dalam pergerakan, perjalanan, dan perubahan lingkungan, DN mempunyai rasa stabil. Ia tidak cenderung menerobos secara membabi buta dan relatif kecil kemungkinannya tersesat ke arah atau jalan yang keliru. Sikap bergeraknya lebih terukur daripada impulsif. - action: DN dapat mempertahankan kebiasaan memeriksa arah dan tujuan sebelum mengambil langkah besar di luar lingkungan yang sudah dikenal.</p><p>puyi: - star: 廉貞、破軍 - insight: DN cenderung memiliki bawahan yang sangat bergantung dan menuntut perhatian rinci darinya. Ia mungkin sering merasa dirugikan oleh bawahan yang melawan. Bila istana berada pada cabang Babi Hai <span class=\"hz\">亥</span>, bawahan dapat mengkhianati kepercayaannya, tetapi pada masa tua DN dapat memperoleh dukungan dari bawahan yang kuat. Bila bersama bintang Serigala Rakus Tan Lang <span class=\"hz\">貪狼</span>, DN berisiko hanya dijadikan alat oleh bawahan. Bila bersama bintang Tujuh Pembunuh Qi Sha <span class=\"hz\">七殺</span>, ia sering menghadapi pengkhianatan teman. Bila bersama bintang Keharmonisan Langit Tian Tong <span class=\"hz\">天同</span>, jumlah teman muda dan bawahannya banyak. Bila istana berada pada cabang Tikus Zi <span class=\"hz\">子</span>, Naga Chen <span class=\"hz\">辰</span>, Kuda Wu <span class=\"hz\">午</span>, Anjing Xu <span class=\"hz\">戌</span>, atau Babi Hai <span class=\"hz\">亥</span>, bawahannya termasuk orang yang memiliki kemampuan nyata. Walaupun masih muda, cukup banyak temannya yang berbakat. Bila bersama bintang Kaisar Ungu Zi Wei <span class=\"hz\">紫微</span>, bawahan atau teman yang lebih muda sering membantu DN secara diam-diam. Pada konfigurasi istana lain, bawahan dapat menyimpan kebencian lalu mengkhianatinya, sementara teman yang lebih muda justru mungkin membalas keburukan dengan kebaikan. - action: DN perlu membangun sistem kerja, batas kewenangan, dan pemeriksaan kepercayaan yang jelas agar bantuan bawahan tidak berubah menjadi ketergantungan atau pengkhianatan.</p>",
+    "_palace2_struct": {
+      "caibo": {
+        "star": "天同、太陰",
+        "insight": "Sumber kekayaan tidak tetap atau spekulatif DN tidak tergolong berlimpah. Ketika mempunyai uang, ia cenderung sulit mempertahankannya; pembelian aset tidak bergerak menjadi cara yang lebih baik untuk menjaga nilai kekayaan. Walaupun kaitannya dengan rezeki tidak tetap cukup kuat, jenis rezeki ini tidak mudah diperoleh. Sumber pendapatan tetap DN juga tidak tergolong berlimpah. Uang yang tersedia relatif sulit disimpan, sehingga aset tidak bergerak kembali menjadi sarana penting untuk mempertahankannya. Hubungannya dengan penghasilan tetap cukup kuat, tetapi penghasilan itu tetap memerlukan usaha dan tidak datang dengan mudah. Dalam istilah sumber, rezeki tetap Zheng Cai [[正財]] berarti sumber penghasilan yang bersifat tetap, seperti gaji, sedangkan rezeki sampingan Pian Cai [[偏財]] berarti sumber yang bersifat peluang, seperti komisi. DN sangat murah hati ketika membelanjakan uang, tetapi pada saat yang sama mampu memperoleh kembali imbalan yang sepadan. Ia berpotensi membangun usaha dari nol dengan kekuatan pribadi dan memegang sendiri kesempatan menghasilkan uang, sedangkan fase menghasilkan kekayaan besar cenderung dimulai setelah usia pertengahan. Bila berada bersama bintang Balok Langit Tian Liang [[天梁]], ia dapat menjadi pengusaha nyata yang cukup berpengaruh. Sekalipun ada bintang kurang baik, pilihan profesi sebagai dokter, akademisi, seniman, atau ahli peramalan tetap dapat memberikan keberuntungan finansial yang cukup baik. Bintang Bulan Tai Yin [[太陰]] memiliki ikatan dengan harta. Bila bersama bintang Mekanisme Langit Tian Ji [[天機]], DN dapat berangkat tanpa modal berarti lalu menghasilkan kekayaan yang cukup besar. Bila bersama bintang Keharmonisan Langit Tian Tong [[天同]], ia kerap menjumpai kesempatan memperoleh uang besar. Bila bersama bintang baik lainnya, uang yang masuk dapat disimpan dan berkembang sehingga ia menjadi pemilik aset yang cukup kuat. Pada dasarnya DN tidak perlu terlalu khawatir akan dikekang oleh masalah uang. Namun, bila konfigurasi berada di cabang Macan Yin [[寅]] atau Kuda Wu [[午]], daya bintang Sastra Wen Chang [[文昌]] melemah; akibatnya kekayaan sulit ditumpuk dan uang dapat habis dalam waktu singkat.",
+        "action": "DN sebaiknya mengubah kelebihan arus kas menjadi aset nyata dan memakai aturan simpan otomatis agar pendapatan tetap maupun peluang tidak cepat habis."
+      },
+      "jie_e": {
+        "star": "天府",
+        "insight": "DN cenderung mudah mengalami gangguan tenggorokan, flu, sakit gigi, dan keluhan sejenis. Secara umum ia jarang terserang penyakit atau cedera; bila sakit, pemulihan melalui pengobatan juga cenderung berlangsung cepat. Bila berada bersama bintang yang kurang baik, ia lebih mudah mengalami gangguan lambung, beri-beri, atau keluhan sejenis. Bila berada bersama bintang Kaisar Ungu Zi Wei [[紫微]], kondisi kesehatannya sangat baik dan tidak perlu terlalu mencemaskan penyakit.",
+        "action": "DN sebaiknya menjaga tenggorokan, kesehatan gigi, pola makan, dan sirkulasi kaki, serta segera memeriksakan keluhan agar kecenderungan pulih cepat dapat dimanfaatkan."
+      },
+      "qianyi": {
+        "insight": "Dalam pergerakan, perjalanan, dan perubahan lingkungan, DN mempunyai rasa stabil. Ia tidak cenderung menerobos secara membabi buta dan relatif kecil kemungkinannya tersesat ke arah atau jalan yang keliru. Sikap bergeraknya lebih terukur daripada impulsif.",
+        "action": "DN dapat mempertahankan kebiasaan memeriksa arah dan tujuan sebelum mengambil langkah besar di luar lingkungan yang sudah dikenal."
+      },
+      "puyi": {
+        "star": "廉貞、破軍",
+        "insight": "DN cenderung memiliki bawahan yang sangat bergantung dan menuntut perhatian rinci darinya. Ia mungkin sering merasa dirugikan oleh bawahan yang melawan. Bila istana berada pada cabang Babi Hai [[亥]], bawahan dapat mengkhianati kepercayaannya, tetapi pada masa tua DN dapat memperoleh dukungan dari bawahan yang kuat. Bila bersama bintang Serigala Rakus Tan Lang [[貪狼]], DN berisiko hanya dijadikan alat oleh bawahan. Bila bersama bintang Tujuh Pembunuh Qi Sha [[七殺]], ia sering menghadapi pengkhianatan teman. Bila bersama bintang Keharmonisan Langit Tian Tong [[天同]], jumlah teman muda dan bawahannya banyak. Bila istana berada pada cabang Tikus Zi [[子]], Naga Chen [[辰]], Kuda Wu [[午]], Anjing Xu [[戌]], atau Babi Hai [[亥]], bawahannya termasuk orang yang memiliki kemampuan nyata. Walaupun masih muda, cukup banyak temannya yang berbakat. Bila bersama bintang Kaisar Ungu Zi Wei [[紫微]], bawahan atau teman yang lebih muda sering membantu DN secara diam-diam. Pada konfigurasi istana lain, bawahan dapat menyimpan kebencian lalu mengkhianatinya, sementara teman yang lebih muda justru mungkin membalas keburukan dengan kebaikan.",
+        "action": "DN perlu membangun sistem kerja, batas kewenangan, dan pemeriksaan kepercayaan yang jelas agar bantuan bawahan tidak berubah menjadi ketergantungan atau pengkhianatan."
+      }
+    },
+    "palace3": "<p>guanlu: - star: null - insight: Sumber istana karier menyebutkan bahwa DN sesuai menjalani pekerjaan sebagai dokter, perawat, pengasuh anak, pengacara, dan pekerjaan lain yang sejenis. Arah ini menempatkan pelayanan, perawatan, perlindungan, dan pendampingan profesional sebagai jalur kerja yang relevan bagi DN. - action: DN dapat memprioritaskan profesi yang memadukan tanggung jawab, pelayanan langsung, dan keahlian profesional.</p><p>tianzhai: - star: null - insight: DN berpotensi memiliki aset tidak bergerak dalam jumlah besar. Namun, ia cenderung kurang luwes dalam memanfaatkan, mengelola, atau mengembangkan penggunaan aset-aset tersebut, sehingga besarnya kepemilikan belum tentu langsung menghasilkan manfaat yang optimal. - action: DN perlu membuat rencana fungsi, hasil, dan waktu evaluasi untuk setiap properti agar aset besar tidak berhenti sebagai kepemilikan pasif.</p><p>fude: - star: null - insight: DN memiliki pembawaan yang cerah, menarik, dan lembut; baik pria maupun wanita dengan konfigurasi ini umumnya mempunyai hubungan sosial yang baik. Istana ini memberi isyarat bahwa ia dapat menerima berkah kebahagiaan. Ia cukup cakap menghadapi kehidupan dan sangat memperhatikan cara berhubungan dengan orang lain. Namun, bila pendapat di sekelilingnya mengacaukan keputusan, keberuntungan yang sudah berada di tangan dapat menghilang. Berkah cenderung menyertai DN sepanjang hidup dan sekaligus mendukung umur panjang. Ia juga mempunyai kecenderungan mengejar impian yang romantis. Bila hanya bintang Bulan Tai Yin <span class=\"hz\">太陰</span> berada di istana kebahagiaan, ia sudah dapat menjalani hidup yang sangat beruntung. Bila bintang Matahari Tai Yang <span class=\"hz\">太陽</span> turut hadir, ia hampir pasti berpeluang menikmati kehidupan bahagia yang memuaskan tubuh dan batin. Namun, bila bersama bintang Mekanisme Langit Tian Ji <span class=\"hz\">天機</span>, pikirannya hampir tidak pernah benar-benar beristirahat. Konfigurasi ini memberi tanda kuat tentang kebahagiaan dan umur panjang. DN juga mempunyai sisi tenang dan tidak terlalu memusingkan keadaan; bahkan ketika menghadapi krisis besar, ia dapat tetap tidak panik dan menanganinya dengan tenang. Akan tetapi, bila istana berada pada cabang Macan Yin <span class=\"hz\">寅</span> atau Kelinci Mao <span class=\"hz\">卯</span>, atau bila bintang kurang baik menghalangi, ketenangan sulit diperoleh dan hidup menjadi penuh perubahan. Bila kekerasan batin berkembang menjadi kesombongan, DN dapat memilih kehidupan yang sunyi dan berdiri sendiri. - action: DN perlu menjaga ketenangan batin, menyaring pendapat luar, memberi ruang istirahat bagi pikiran, dan memastikan keteguhan tidak berubah menjadi kesombongan atau keterasingan.</p><p>fumu: - star: 七殺 - insight: Orang tua DN dapat tampak murung dan kurang menunjukkan semangat. Di sisi lain, ia memiliki orang tua yang unggul dan berkedudukan sosial cukup tinggi. Hubungan orang tua dan anak pada dasarnya dapat berlangsung harmonis. Kedua orang tua juga rajin menabung dan mungkin meninggalkan harta yang besar bagi DN. Karena pengaruh mereka, kebiasaan menabung yang kuat kemungkinan telah tertanam dalam dirinya sejak awal. Orang tuanya sangat memperhatikan tata krama dan berusaha sungguh-sungguh mendidik keluarga. Bila hubungan dengan orang tua tidak harmonis, penyebabnya kemungkinan karena mereka menyimpan keraguan terhadap tindakan DN. DN juga dapat berpisah dari orang tua atau anggota keluarga sejak relatif dini. Orang tuanya merupakan pribadi keras dan tidak mudah berkompromi; bila DN tidak bertindak sesuai kehendak mereka, ia sulit memperoleh pengertian. Namun, mereka juga tidak mudah menolak permintaan orang lain. Sikap yang bertentangan ini dapat menimbulkan konflik mendalam antara DN dan orang tua. Bila berada bersama bintang Kaisar Ungu Zi Wei <span class=\"hz\">紫微</span> atau beberapa bintang baik, risiko perpisahan atau putusnya hubungan orang tua dan anak berkurang. Walaupun demikian, pengaruh bintang Tujuh Pembunuh Qi Sha <span class=\"hz\">七殺</span> tetap perlu diingat sebagai unsur yang membawa tekanan. - action: DN perlu menjaga hormat tanpa kehilangan batas pribadi, membicarakan keputusan penting lebih awal, dan memisahkan perbedaan cara berpikir dari kasih keluarga.</p>",
+    "_palace3_struct": {
+      "guanlu": {
+        "insight": "Sumber istana karier menyebutkan bahwa DN sesuai menjalani pekerjaan sebagai dokter, perawat, pengasuh anak, pengacara, dan pekerjaan lain yang sejenis. Arah ini menempatkan pelayanan, perawatan, perlindungan, dan pendampingan profesional sebagai jalur kerja yang relevan bagi DN.",
+        "action": "DN dapat memprioritaskan profesi yang memadukan tanggung jawab, pelayanan langsung, dan keahlian profesional."
+      },
+      "tianzhai": {
+        "insight": "DN berpotensi memiliki aset tidak bergerak dalam jumlah besar. Namun, ia cenderung kurang luwes dalam memanfaatkan, mengelola, atau mengembangkan penggunaan aset-aset tersebut, sehingga besarnya kepemilikan belum tentu langsung menghasilkan manfaat yang optimal.",
+        "action": "DN perlu membuat rencana fungsi, hasil, dan waktu evaluasi untuk setiap properti agar aset besar tidak berhenti sebagai kepemilikan pasif."
+      },
+      "fude": {
+        "insight": "DN memiliki pembawaan yang cerah, menarik, dan lembut; baik pria maupun wanita dengan konfigurasi ini umumnya mempunyai hubungan sosial yang baik. Istana ini memberi isyarat bahwa ia dapat menerima berkah kebahagiaan. Ia cukup cakap menghadapi kehidupan dan sangat memperhatikan cara berhubungan dengan orang lain. Namun, bila pendapat di sekelilingnya mengacaukan keputusan, keberuntungan yang sudah berada di tangan dapat menghilang. Berkah cenderung menyertai DN sepanjang hidup dan sekaligus mendukung umur panjang. Ia juga mempunyai kecenderungan mengejar impian yang romantis. Bila hanya bintang Bulan Tai Yin [[太陰]] berada di istana kebahagiaan, ia sudah dapat menjalani hidup yang sangat beruntung. Bila bintang Matahari Tai Yang [[太陽]] turut hadir, ia hampir pasti berpeluang menikmati kehidupan bahagia yang memuaskan tubuh dan batin. Namun, bila bersama bintang Mekanisme Langit Tian Ji [[天機]], pikirannya hampir tidak pernah benar-benar beristirahat. Konfigurasi ini memberi tanda kuat tentang kebahagiaan dan umur panjang. DN juga mempunyai sisi tenang dan tidak terlalu memusingkan keadaan; bahkan ketika menghadapi krisis besar, ia dapat tetap tidak panik dan menanganinya dengan tenang. Akan tetapi, bila istana berada pada cabang Macan Yin [[寅]] atau Kelinci Mao [[卯]], atau bila bintang kurang baik menghalangi, ketenangan sulit diperoleh dan hidup menjadi penuh perubahan. Bila kekerasan batin berkembang menjadi kesombongan, DN dapat memilih kehidupan yang sunyi dan berdiri sendiri.",
+        "action": "DN perlu menjaga ketenangan batin, menyaring pendapat luar, memberi ruang istirahat bagi pikiran, dan memastikan keteguhan tidak berubah menjadi kesombongan atau keterasingan."
+      },
+      "fumu": {
+        "star": "七殺",
+        "insight": "Orang tua DN dapat tampak murung dan kurang menunjukkan semangat. Di sisi lain, ia memiliki orang tua yang unggul dan berkedudukan sosial cukup tinggi. Hubungan orang tua dan anak pada dasarnya dapat berlangsung harmonis. Kedua orang tua juga rajin menabung dan mungkin meninggalkan harta yang besar bagi DN. Karena pengaruh mereka, kebiasaan menabung yang kuat kemungkinan telah tertanam dalam dirinya sejak awal. Orang tuanya sangat memperhatikan tata krama dan berusaha sungguh-sungguh mendidik keluarga. Bila hubungan dengan orang tua tidak harmonis, penyebabnya kemungkinan karena mereka menyimpan keraguan terhadap tindakan DN. DN juga dapat berpisah dari orang tua atau anggota keluarga sejak relatif dini. Orang tuanya merupakan pribadi keras dan tidak mudah berkompromi; bila DN tidak bertindak sesuai kehendak mereka, ia sulit memperoleh pengertian. Namun, mereka juga tidak mudah menolak permintaan orang lain. Sikap yang bertentangan ini dapat menimbulkan konflik mendalam antara DN dan orang tua. Bila berada bersama bintang Kaisar Ungu Zi Wei [[紫微]] atau beberapa bintang baik, risiko perpisahan atau putusnya hubungan orang tua dan anak berkurang. Walaupun demikian, pengaruh bintang Tujuh Pembunuh Qi Sha [[七殺]] tetap perlu diingat sebagai unsur yang membawa tekanan.",
+        "action": "DN perlu menjaga hormat tanpa kehilangan batas pribadi, membicarakan keputusan penting lebih awal, dan memisahkan perbedaan cara berpikir dari kasih keluarga."
+      }
+    },
+    "sintesis": "DN adalah sosok berjiwa pemimpin yang hangat, jujur, dan penuh semangat membantu — dengan kemampuan berpikir cepat dan naluri sosial yang kuat, ia mampu menjadi figur inti yang diandalkan dalam komunitas maupun organisasi.",
+    "_sintesis_struct": {
+      "opening": "DN adalah sosok berjiwa pemimpin yang hangat, jujur, dan penuh semangat membantu — dengan kemampuan berpikir cepat dan naluri sosial yang kuat, ia mampu menjadi figur inti yang diandalkan dalam komunitas maupun organisasi.",
+      "actions": [
+        {
+          "title": "Perkuat Peran Pemimpin"
+        },
+        {
+          "title": "Kelola Batasan Relasi"
+        },
+        {
+          "title": "Aktifkan Unsur Api"
+        },
+        {
+          "title": "Bangun Jaringan Lintas Generasi"
+        },
+        {
+          "title": "Hindari Lingkungan Metal Berlebih"
+        }
+      ]
+    },
+    "_dmcard": "\n        <div class=\"dmc-eyebrow\">本 命 · Penguasa Hari</div>\n        <div class=\"dmc-stem\">甲</div>\n        <div class=\"dmc-element\">木 · Kayu Yang</div>\n        <div class=\"dmc-pinyin\">Jiǎ 木, \"Pohon Besar\"</div>\n        <div class=\"dmc-strength\">Status: <span class=\"val\">KUAT</span> · 旺</div>\n      ",
+    "_jishen_body": "<strong>金</strong> (Jīn · Logam), Logam tajam yang dapat melukai bila terlalu dominan; hindari lingkungan terlalu kaku, hierarkis, dan kompetitif berlebih.",
+    "fam_pasangan_vibe": "Dinamis &amp; Perlu Keseimbangan",
+    "fam_pasangan_headline": "Pasangan ideal dari Shio Tikus atau Naga",
+    "caifu_zheng_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "caifu_pian_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "_p1_ming_gong": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Diri</span><span class=\"pn-meta\">Mìng Gōng<span class=\"hz\">命宮</span></span></div></div><div class=\"pal-body\"><p>DN adalah sosok yang meski memiliki kelemahan sifat lamban dan suka bertele-tele <span class=\"hz\">拖泥帶水</span>, namun perjalanan hidupnya tetap cerah dan kokoh. Postur tubuhnya relatif tinggi <span class=\"hz\">身材較高</span>, lebih kekar dan sehat dibandingkan orang kebanyakan. Ciri khas utamanya adalah sikap yang hangat dan mudah bergaul dengan siapa pun <span class=\"hz\">和藹可親</span>, disertai kemampuan berpikir yang sangat cepat dan tajam. Karakternya lembut dan bersahabat <span class=\"hz\">性格溫馴待人和氣</span>, kaya akan keluwesan dan fleksibilitas <span class=\"hz\">柔軟性</span> — namun di sisi lain, ia juga memiliki sisi keras kepala <span class=\"hz\">執拗</span> dan gemar turut campur urusan orang lain. Apapun urusan orang lain, selama ia bersinggungan dengannya, ia pasti akan ikut terlibat. Justru karena naluri bawaan yang gemar membantu ini, bahkan tanpa diminta sekalipun, ia dengan antusias akan mengulurkan tangan <span class=\"hz\">熱心地幫助</span> — sehingga ia memiliki banyak teman, dan dihormati oleh mereka yang lebih muda sebagai kakak tertua yang bisa diandalkan <span class=\"hz\">足可信賴的老大哥</span>. Namun, mereka yang lebih tua cenderung memandangnya sebagai orang yang suka ikut campur urusan orang lain. Bagi perempuan dengan bintang istana kehidupan ini, umumnya termasuk dalam kelompok perempuan berbakat <span class=\"hz\">才女之流</span> yang kemampuannya tak kalah dari kaum pria, bahkan bisa melampaui mereka. Dalam hal apapun, selalu ingin bersaing dan membuktikan diri. Setelah menikah, akan menjadi istri yang cakap sekaligus pemimpin yang tegas <span class=\"hz\">能幹妻子</span>, bahkan mampu mengambil alih peran kepemimpinan dari suami. Yang perlu diperhatikan adalah jangan terlalu berlebihan dalam mencampuri urusan pasangan. DN memiliki karakter yang lurus, jujur, dan berjiwa besar <span class=\"hz\">豪爽正直</span>, mampu berdiri di atas orang lain dan menempati posisi kepemimpinan <span class=\"hz\">領導地位</span>. Dengan sifat yang terbuka dan teratur dalam bertindak <span class=\"hz\">爽朗行事也有節制</span>, ia mudah mendapat kepercayaan dari banyak pihak. Dalam setiap kegiatan kelompok, ia pasti akan menempati posisi pemimpin dan menjadi figur inti <span class=\"hz\">核心人物</span> yang diandalkan oleh komunitas. Apabila bintang Tianji <span class=\"hz\">天機星</span> berada dalam satu istana yang sama, bakat sastra dan kecerdasan intelektual <span class=\"hz\">文才</span> dapat mengantarkannya pada ketenaran, sekaligus mendatangkan keberuntungan finansial. Bagi kaum perempuan dengan konfigurasi ini, sifat yang terlalu maskulin akibat kepribadian yang terlalu bersemangat justru membuat kesan pertama kurang mendalam. Sejak kecil sering bermain bersama anak laki-laki, sehingga kepribadiannya cenderung sedikit ceroboh <span class=\"hz\">輕佻</span> dan tidak terlalu feminin. Namun demikian, mereka yang benar-benar mengenal kejujuran dan ketulusan hatimu <span class=\"hz\">腸子不虛偽</span> pasti akan menaruh kepercayaan yang mendalam padamu. Yang perlu kamu perhatikan hanyalah menjadi sedikit lebih lembut dalam bersikap — dan itu sudah lebih dari cukup.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>DN perlu menyalurkan naluri memimpin dan menolong dengan batas yang sehat, meminta persetujuan sebelum ikut campur, serta menyampaikan ketegasan dengan cara yang lebih lembut.</span></div></div>",
+    "_solo_ming_gong_body": "<style>.palace-solo .ps-body p { font-size: 8pt; line-height: 1.4; margin: 0 0 1.8mm 0; }</style><p>DN adalah sosok yang meski memiliki kelemahan sifat lamban dan suka bertele-tele <span class=\"hz\">拖泥帶水</span>, namun perjalanan hidupnya tetap cerah dan kokoh. Postur tubuhnya relatif tinggi <span class=\"hz\">身材較高</span>, lebih kekar dan sehat dibandingkan orang kebanyakan. Ciri khas utamanya adalah sikap yang hangat dan mudah bergaul dengan siapa pun <span class=\"hz\">和藹可親</span>, disertai kemampuan berpikir yang sangat cepat dan tajam. Karakternya lembut dan bersahabat <span class=\"hz\">性格溫馴待人和氣</span>, kaya akan keluwesan dan fleksibilitas <span class=\"hz\">柔軟性</span> — namun di sisi lain, ia juga memiliki sisi keras kepala <span class=\"hz\">執拗</span> dan gemar turut campur urusan orang lain. Apapun urusan orang lain, selama ia bersinggungan dengannya, ia pasti akan ikut terlibat. Justru karena naluri bawaan yang gemar membantu ini, bahkan tanpa diminta sekalipun, ia dengan antusias akan mengulurkan tangan <span class=\"hz\">熱心地幫助</span> — sehingga ia memiliki banyak teman, dan dihormati oleh mereka yang lebih muda sebagai kakak tertua yang bisa diandalkan <span class=\"hz\">足可信賴的老大哥</span>. Namun, mereka yang lebih tua cenderung memandangnya sebagai orang yang suka ikut campur urusan orang lain. Bagi perempuan dengan bintang istana kehidupan ini, umumnya termasuk dalam kelompok perempuan berbakat <span class=\"hz\">才女之流</span> yang kemampuannya tak kalah dari kaum pria, bahkan bisa melampaui mereka. Dalam hal apapun, selalu ingin bersaing dan membuktikan diri. Setelah menikah, akan menjadi istri yang cakap sekaligus pemimpin yang tegas <span class=\"hz\">能幹妻子</span>, bahkan mampu mengambil alih peran kepemimpinan dari suami. Yang perlu diperhatikan adalah jangan terlalu berlebihan dalam mencampuri urusan pasangan. DN memiliki karakter yang lurus, jujur, dan berjiwa besar <span class=\"hz\">豪爽正直</span>, mampu berdiri di atas orang lain dan menempati posisi kepemimpinan <span class=\"hz\">領導地位</span>. Dengan sifat yang terbuka dan teratur dalam bertindak <span class=\"hz\">爽朗行事也有節制</span>, ia mudah mendapat kepercayaan dari banyak pihak. Dalam setiap kegiatan kelompok, ia pasti akan menempati posisi pemimpin dan menjadi figur inti <span class=\"hz\">核心人物</span> yang diandalkan oleh komunitas. Apabila bintang Tianji <span class=\"hz\">天機星</span> berada dalam satu istana yang sama, bakat sastra dan kecerdasan intelektual <span class=\"hz\">文才</span> dapat mengantarkannya pada ketenaran, sekaligus mendatangkan keberuntungan finansial. Bagi kaum perempuan dengan konfigurasi ini, sifat yang terlalu maskulin akibat kepribadian yang terlalu bersemangat justru membuat kesan pertama kurang mendalam. Sejak kecil sering bermain bersama anak laki-laki, sehingga kepribadiannya cenderung sedikit ceroboh <span class=\"hz\">輕佻</span> dan tidak terlalu feminin. Namun demikian, mereka yang benar-benar mengenal kejujuran dan ketulusan hatimu <span class=\"hz\">腸子不虛偽</span> pasti akan menaruh kepercayaan yang mendalam padamu. Yang perlu kamu perhatikan hanyalah menjadi sedikit lebih lembut dalam bersikap — dan itu sudah lebih dari cukup.</p>",
+    "_solo_ming_gong_action": "DN perlu menyalurkan naluri memimpin dan menolong dengan batas yang sehat, meminta persetujuan sebelum ikut campur, serta menyampaikan ketegasan dengan cara yang lebih lembut.",
+    "_p1_xiongdi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Saudara</span><span class=\"pn-meta\">Xiōng Dì<span class=\"hz\">兄弟</span></span></div></div><div class=\"pal-body\"><p>Istana saudara memberi isyarat adanya perubahan yang mudah terjadi. Perasaan DN dapat berulang kali berubah, sehingga hubungan dengan teman maupun saudara tidak selalu mampu bertahan lama. Walaupun jumlah saudara dan teman dekatnya tidak tergolong banyak, mereka tetap dapat saling membantu ketika diperlukan. Bila konfigurasi ini berada bersama bintang yang kurang menguntungkan, hal kecil yang tidak terduga dapat menyebabkan DN kehilangan hubungan dengan saudara atau teman.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>DN perlu menjaga hubungan inti melalui komunikasi yang konsisten dan tidak membiarkan persoalan kecil berkembang menjadi putusnya hubungan.</span></div></div>",
+    "_solo_xiongdi_body": "<p>Istana saudara memberi isyarat adanya perubahan yang mudah terjadi. Perasaan DN dapat berulang kali berubah, sehingga hubungan dengan teman maupun saudara tidak selalu mampu bertahan lama. Walaupun jumlah saudara dan teman dekatnya tidak tergolong banyak, mereka tetap dapat saling membantu ketika diperlukan. Bila konfigurasi ini berada bersama bintang yang kurang menguntungkan, hal kecil yang tidak terduga dapat menyebabkan DN kehilangan hubungan dengan saudara atau teman.</p>",
+    "_solo_xiongdi_action": "DN perlu menjaga hubungan inti melalui komunikasi yang konsisten dan tidak membiarkan persoalan kecil berkembang menjadi putusnya hubungan.",
+    "_p1_fuqi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pasangan</span><span class=\"pn-meta\">Fū Qī<span class=\"hz\">夫妻</span></span></div></div><div class=\"pal-body\"><p>DN memiliki pandangan cinta yang sungguh-sungguh dan tidak berniat mempermainkan hubungan. Karena itu, ia sama sekali tidak dapat menerima pasangan yang bersikap ringan atau bermain-main. Standar yang ia terapkan kepada diri sendiri dan pasangannya sama-sama ketat, sehingga perjalanan cintanya mungkin mengalami gelombang yang besar. Karena pengaruh bintang Matahari Tai Yang <span class=\"hz\">太陽</span> terlalu kuat, pernikahan pada usia terlalu muda dinilai kurang menguntungkan. Bila memungkinkan, DN tidak perlu terburu-buru menikah; keputusan sebaiknya dijalankan perlahan setelah pertimbangan yang matang. Bagi pria, konfigurasi ini memberi peluang memperoleh istri yang ceria dan sehat, sedangkan bagi wanita memberi peluang menikah dengan pria yang murah hati dan berjiwa besar. Namun, ketika bintang kurang baik ikut menghalangi, hubungan dapat berhadapan langsung dengan krisis perceraian. Pertengkaran antarpasangan mudah muncul. Meskipun demikian, bila bintang Matahari Tai Yang <span class=\"hz\">太陽</span> berada bersama tanpa bintang buruk lain, atau berada bersama bintang Keharmonisan Langit Tian Tong <span class=\"hz\">天同</span> dan bintang Mekanisme Langit Tian Ji <span class=\"hz\">天機</span>, DN dapat memperoleh pasangan yang cerdas dan membangun keluarga yang harmonis. Rasa cemburunya secara alami kuat, tetapi biasanya tidak ia tunjukkan lewat kata-kata. Bagi pria, bila bintang Sastra Wen Chang <span class=\"hz\">文昌</span> dan bintang Mekanisme Langit Tian Ji <span class=\"hz\">天機</span> menempati posisi terkait, ada kecenderungan membangun hubungan atau tempat tinggal lain di luar pernikahan. Pria dengan konfigurasi ini menyukai wanita yang berpenampilan dingin tetapi menarik. Bagi wanita, ada hubungan kuat dengan pria yang berpikiran cerdas dan memiliki daya finansial. Baik pria maupun wanita sama-sama peka terhadap cinta, sehingga tampak mempunyai kecenderungan menikah lebih awal. Pria mungkin menikah dengan wanita yang penuh kebijaksanaan, sedangkan wanita mungkin bertemu pria yang kecerdasannya menonjol; wanita juga cenderung menikah dengan pria bertubuh tinggi. Bila bintang baik lain ikut berada di istana ini, kedekatan emosional suami istri dapat sangat baik. Sebaliknya, bila bintang buruk hadir, sikap ringan dalam hubungan dapat menjadi penyebab perpisahan.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>DN perlu memilih pasangan dengan matang, menunda keputusan yang terlalu cepat, menjaga batas kesetiaan, dan membahas kecemburuan serta perbedaan secara terbuka sebelum berubah menjadi pertengkaran.</span></div></div>",
+    "_solo_fuqi_body": "<style>.palace-solo .ps-body p { font-size: 9pt; line-height: 1.48; margin: 0 0 2.2mm 0; }</style><p>DN memiliki pandangan cinta yang sungguh-sungguh dan tidak berniat mempermainkan hubungan. Karena itu, ia sama sekali tidak dapat menerima pasangan yang bersikap ringan atau bermain-main. Standar yang ia terapkan kepada diri sendiri dan pasangannya sama-sama ketat, sehingga perjalanan cintanya mungkin mengalami gelombang yang besar. Karena pengaruh bintang Matahari Tai Yang <span class=\"hz\">太陽</span> terlalu kuat, pernikahan pada usia terlalu muda dinilai kurang menguntungkan. Bila memungkinkan, DN tidak perlu terburu-buru menikah; keputusan sebaiknya dijalankan perlahan setelah pertimbangan yang matang. Bagi pria, konfigurasi ini memberi peluang memperoleh istri yang ceria dan sehat, sedangkan bagi wanita memberi peluang menikah dengan pria yang murah hati dan berjiwa besar. Namun, ketika bintang kurang baik ikut menghalangi, hubungan dapat berhadapan langsung dengan krisis perceraian. Pertengkaran antarpasangan mudah muncul. Meskipun demikian, bila bintang Matahari Tai Yang <span class=\"hz\">太陽</span> berada bersama tanpa bintang buruk lain, atau berada bersama bintang Keharmonisan Langit Tian Tong <span class=\"hz\">天同</span> dan bintang Mekanisme Langit Tian Ji <span class=\"hz\">天機</span>, DN dapat memperoleh pasangan yang cerdas dan membangun keluarga yang harmonis. Rasa cemburunya secara alami kuat, tetapi biasanya tidak ia tunjukkan lewat kata-kata. Bagi pria, bila bintang Sastra Wen Chang <span class=\"hz\">文昌</span> dan bintang Mekanisme Langit Tian Ji <span class=\"hz\">天機</span> menempati posisi terkait, ada kecenderungan membangun hubungan atau tempat tinggal lain di luar pernikahan. Pria dengan konfigurasi ini menyukai wanita yang berpenampilan dingin tetapi menarik. Bagi wanita, ada hubungan kuat dengan pria yang berpikiran cerdas dan memiliki daya finansial. Baik pria maupun wanita sama-sama peka terhadap cinta, sehingga tampak mempunyai kecenderungan menikah lebih awal. Pria mungkin menikah dengan wanita yang penuh kebijaksanaan, sedangkan wanita mungkin bertemu pria yang kecerdasannya menonjol; wanita juga cenderung menikah dengan pria bertubuh tinggi. Bila bintang baik lain ikut berada di istana ini, kedekatan emosional suami istri dapat sangat baik. Sebaliknya, bila bintang buruk hadir, sikap ringan dalam hubungan dapat menjadi penyebab perpisahan.</p>",
+    "_solo_fuqi_action": "DN perlu memilih pasangan dengan matang, menunda keputusan yang terlalu cepat, menjaga batas kesetiaan, dan membahas kecemburuan serta perbedaan secara terbuka sebelum berubah menjadi pertengkaran.",
+    "_p1_zinu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Anak</span><span class=\"pn-meta\">Zǐ Nǚ<span class=\"hz\">子女</span></span></div></div><div class=\"pal-body\"><p>DN berpotensi mempunyai putra yang lembut dan patuh, tetapi gerak atau responsnya agak lambat. Ada kemungkinan jumlah keturunan sedikit; sekalipun mempunyai anak, jumlahnya mungkin hanya satu. Bila bintang Tujuh Pembunuh Qi Sha <span class=\"hz\">七殺</span> dan bintang Gerbang Raksasa Ju Men <span class=\"hz\">巨門</span> ikut berada di istana anak, terdapat risiko mengalami perpisahan berat dengan anak. Bila bersama bintang Serigala Rakus Tan Lang <span class=\"hz\">貪狼</span>, pada masa tua DN dapat menerima berkah dan dukungan dari anak. Bila bintang Bela Diri Wu Qu <span class=\"hz\">武曲</span> berada sendiri tanpa bintang lain, anak yang lahir dari hubungan di luar pasangan atau anak angkat justru lebih mungkin membantu keberhasilan DN. Walaupun memiliki keturunan, anak dapat sering menghindar, menentang, atau tidak mampu memberikan bantuan yang diharapkan. Jika bintang Bela Diri Wu Qu <span class=\"hz\">武曲</span> kembali hadir bersama, anak memerlukan perhatian dan perawatan besar pada masa kecil, tetapi setelah dewasa dapat menjadi tangan kanan yang membantu perkembangan DN. Bila hanya bintang Serigala Rakus Tan Lang <span class=\"hz\">貪狼</span> yang menempati posisi ini, anak DN tidak mudah berhenti sebelum memperoleh hal yang diinginkannya.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>DN perlu mengasuh dengan sabar sejak dini, memberi batas yang jelas tanpa memutus kedekatan, dan mengarahkan kegigihan anak menjadi kemampuan produktif.</span></div></div>",
+    "_solo_zinu_body": "<p>DN berpotensi mempunyai putra yang lembut dan patuh, tetapi gerak atau responsnya agak lambat. Ada kemungkinan jumlah keturunan sedikit; sekalipun mempunyai anak, jumlahnya mungkin hanya satu. Bila bintang Tujuh Pembunuh Qi Sha <span class=\"hz\">七殺</span> dan bintang Gerbang Raksasa Ju Men <span class=\"hz\">巨門</span> ikut berada di istana anak, terdapat risiko mengalami perpisahan berat dengan anak. Bila bersama bintang Serigala Rakus Tan Lang <span class=\"hz\">貪狼</span>, pada masa tua DN dapat menerima berkah dan dukungan dari anak. Bila bintang Bela Diri Wu Qu <span class=\"hz\">武曲</span> berada sendiri tanpa bintang lain, anak yang lahir dari hubungan di luar pasangan atau anak angkat justru lebih mungkin membantu keberhasilan DN. Walaupun memiliki keturunan, anak dapat sering menghindar, menentang, atau tidak mampu memberikan bantuan yang diharapkan. Jika bintang Bela Diri Wu Qu <span class=\"hz\">武曲</span> kembali hadir bersama, anak memerlukan perhatian dan perawatan besar pada masa kecil, tetapi setelah dewasa dapat menjadi tangan kanan yang membantu perkembangan DN. Bila hanya bintang Serigala Rakus Tan Lang <span class=\"hz\">貪狼</span> yang menempati posisi ini, anak DN tidak mudah berhenti sebelum memperoleh hal yang diinginkannya.</p>",
+    "_solo_zinu_action": "DN perlu mengasuh dengan sabar sejak dini, memberi batas yang jelas tanpa memutus kedekatan, dan mengarahkan kegigihan anak menjadi kemampuan produktif.",
+    "_p2_caibo": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Rezeki</span><span class=\"pn-meta\">Cái Bó<span class=\"hz\">財帛</span></span></div></div><div class=\"pal-body\"><p>Sumber kekayaan tidak tetap atau spekulatif DN tidak tergolong berlimpah. Ketika mempunyai uang, ia cenderung sulit mempertahankannya; pembelian aset tidak bergerak menjadi cara yang lebih baik untuk menjaga nilai kekayaan. Walaupun kaitannya dengan rezeki tidak tetap cukup kuat, jenis rezeki ini tidak mudah diperoleh. Sumber pendapatan tetap DN juga tidak tergolong berlimpah. Uang yang tersedia relatif sulit disimpan, sehingga aset tidak bergerak kembali menjadi sarana penting untuk mempertahankannya. Hubungannya dengan penghasilan tetap cukup kuat, tetapi penghasilan itu tetap memerlukan usaha dan tidak datang dengan mudah. Dalam istilah sumber, rezeki tetap Zheng Cai <span class=\"hz\">正財</span> berarti sumber penghasilan yang bersifat tetap, seperti gaji, sedangkan rezeki sampingan Pian Cai <span class=\"hz\">偏財</span> berarti sumber yang bersifat peluang, seperti komisi. DN sangat murah hati ketika membelanjakan uang, tetapi pada saat yang sama mampu memperoleh kembali imbalan yang sepadan. Ia berpotensi membangun usaha dari nol dengan kekuatan pribadi dan memegang sendiri kesempatan menghasilkan uang, sedangkan fase menghasilkan kekayaan besar cenderung dimulai setelah usia pertengahan. Bila berada bersama bintang Balok Langit Tian Liang <span class=\"hz\">天梁</span>, ia dapat menjadi pengusaha nyata yang cukup berpengaruh. Sekalipun ada bintang kurang baik, pilihan profesi sebagai dokter, akademisi, seniman, atau ahli peramalan tetap dapat memberikan keberuntungan finansial yang cukup baik. Bintang Bulan Tai Yin <span class=\"hz\">太陰</span> memiliki ikatan dengan harta. Bila bersama bintang Mekanisme Langit Tian Ji <span class=\"hz\">天機</span>, DN dapat berangkat tanpa modal berarti lalu menghasilkan kekayaan yang cukup besar. Bila bersama bintang Keharmonisan Langit Tian Tong <span class=\"hz\">天同</span>, ia kerap menjumpai kesempatan memperoleh uang besar. Bila bersama bintang baik lainnya, uang yang masuk dapat disimpan dan berkembang sehingga ia menjadi pemilik aset yang cukup kuat. Pada dasarnya DN tidak perlu terlalu khawatir akan dikekang oleh masalah uang. Namun, bila konfigurasi berada di cabang Macan Yin <span class=\"hz\">寅</span> atau Kuda Wu <span class=\"hz\">午</span>, daya bintang Sastra Wen Chang <span class=\"hz\">文昌</span> melemah; akibatnya kekayaan sulit ditumpuk dan uang dapat habis dalam waktu singkat.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>DN sebaiknya mengubah kelebihan arus kas menjadi aset nyata dan memakai aturan simpan otomatis agar pendapatan tetap maupun peluang tidak cepat habis.</span></div></div>",
+    "_solo_caibo_body": "<style>.palace-solo .ps-body p { font-size: 9pt; line-height: 1.48; margin: 0 0 2.2mm 0; }</style><p>Sumber kekayaan tidak tetap atau spekulatif DN tidak tergolong berlimpah. Ketika mempunyai uang, ia cenderung sulit mempertahankannya; pembelian aset tidak bergerak menjadi cara yang lebih baik untuk menjaga nilai kekayaan. Walaupun kaitannya dengan rezeki tidak tetap cukup kuat, jenis rezeki ini tidak mudah diperoleh. Sumber pendapatan tetap DN juga tidak tergolong berlimpah. Uang yang tersedia relatif sulit disimpan, sehingga aset tidak bergerak kembali menjadi sarana penting untuk mempertahankannya. Hubungannya dengan penghasilan tetap cukup kuat, tetapi penghasilan itu tetap memerlukan usaha dan tidak datang dengan mudah. Dalam istilah sumber, rezeki tetap Zheng Cai <span class=\"hz\">正財</span> berarti sumber penghasilan yang bersifat tetap, seperti gaji, sedangkan rezeki sampingan Pian Cai <span class=\"hz\">偏財</span> berarti sumber yang bersifat peluang, seperti komisi. DN sangat murah hati ketika membelanjakan uang, tetapi pada saat yang sama mampu memperoleh kembali imbalan yang sepadan. Ia berpotensi membangun usaha dari nol dengan kekuatan pribadi dan memegang sendiri kesempatan menghasilkan uang, sedangkan fase menghasilkan kekayaan besar cenderung dimulai setelah usia pertengahan. Bila berada bersama bintang Balok Langit Tian Liang <span class=\"hz\">天梁</span>, ia dapat menjadi pengusaha nyata yang cukup berpengaruh. Sekalipun ada bintang kurang baik, pilihan profesi sebagai dokter, akademisi, seniman, atau ahli peramalan tetap dapat memberikan keberuntungan finansial yang cukup baik. Bintang Bulan Tai Yin <span class=\"hz\">太陰</span> memiliki ikatan dengan harta. Bila bersama bintang Mekanisme Langit Tian Ji <span class=\"hz\">天機</span>, DN dapat berangkat tanpa modal berarti lalu menghasilkan kekayaan yang cukup besar. Bila bersama bintang Keharmonisan Langit Tian Tong <span class=\"hz\">天同</span>, ia kerap menjumpai kesempatan memperoleh uang besar. Bila bersama bintang baik lainnya, uang yang masuk dapat disimpan dan berkembang sehingga ia menjadi pemilik aset yang cukup kuat. Pada dasarnya DN tidak perlu terlalu khawatir akan dikekang oleh masalah uang. Namun, bila konfigurasi berada di cabang Macan Yin <span class=\"hz\">寅</span> atau Kuda Wu <span class=\"hz\">午</span>, daya bintang Sastra Wen Chang <span class=\"hz\">文昌</span> melemah; akibatnya kekayaan sulit ditumpuk dan uang dapat habis dalam waktu singkat.</p>",
+    "_solo_caibo_action": "DN sebaiknya mengubah kelebihan arus kas menjadi aset nyata dan memakai aturan simpan otomatis agar pendapatan tetap maupun peluang tidak cepat habis.",
+    "_p2_jie_e": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Kesehatan</span><span class=\"pn-meta\">Jí È<span class=\"hz\">疾厄</span></span></div></div><div class=\"pal-body\"><p>DN cenderung mudah mengalami gangguan tenggorokan, flu, sakit gigi, dan keluhan sejenis. Secara umum ia jarang terserang penyakit atau cedera; bila sakit, pemulihan melalui pengobatan juga cenderung berlangsung cepat. Bila berada bersama bintang yang kurang baik, ia lebih mudah mengalami gangguan lambung, beri-beri, atau keluhan sejenis. Bila berada bersama bintang Kaisar Ungu Zi Wei <span class=\"hz\">紫微</span>, kondisi kesehatannya sangat baik dan tidak perlu terlalu mencemaskan penyakit.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>DN sebaiknya menjaga tenggorokan, kesehatan gigi, pola makan, dan sirkulasi kaki, serta segera memeriksakan keluhan agar kecenderungan pulih cepat dapat dimanfaatkan.</span></div></div>",
+    "_solo_jie_e_body": "<p>DN cenderung mudah mengalami gangguan tenggorokan, flu, sakit gigi, dan keluhan sejenis. Secara umum ia jarang terserang penyakit atau cedera; bila sakit, pemulihan melalui pengobatan juga cenderung berlangsung cepat. Bila berada bersama bintang yang kurang baik, ia lebih mudah mengalami gangguan lambung, beri-beri, atau keluhan sejenis. Bila berada bersama bintang Kaisar Ungu Zi Wei <span class=\"hz\">紫微</span>, kondisi kesehatannya sangat baik dan tidak perlu terlalu mencemaskan penyakit.</p>",
+    "_solo_jie_e_action": "DN sebaiknya menjaga tenggorokan, kesehatan gigi, pola makan, dan sirkulasi kaki, serta segera memeriksakan keluhan agar kecenderungan pulih cepat dapat dimanfaatkan.",
+    "_p2_qianyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Perpindahan</span><span class=\"pn-meta\">Qiān Yí<span class=\"hz\">遷移</span></span></div></div><div class=\"pal-body\"><p>Dalam pergerakan, perjalanan, dan perubahan lingkungan, DN mempunyai rasa stabil. Ia tidak cenderung menerobos secara membabi buta dan relatif kecil kemungkinannya tersesat ke arah atau jalan yang keliru. Sikap bergeraknya lebih terukur daripada impulsif.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>DN dapat mempertahankan kebiasaan memeriksa arah dan tujuan sebelum mengambil langkah besar di luar lingkungan yang sudah dikenal.</span></div></div>",
+    "_solo_qianyi_body": "<p>Dalam pergerakan, perjalanan, dan perubahan lingkungan, DN mempunyai rasa stabil. Ia tidak cenderung menerobos secara membabi buta dan relatif kecil kemungkinannya tersesat ke arah atau jalan yang keliru. Sikap bergeraknya lebih terukur daripada impulsif.</p>",
+    "_solo_qianyi_action": "DN dapat mempertahankan kebiasaan memeriksa arah dan tujuan sebelum mengambil langkah besar di luar lingkungan yang sudah dikenal.",
+    "_p2_puyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pertemanan</span><span class=\"pn-meta\">Pú Yì<span class=\"hz\">僕役</span></span></div></div><div class=\"pal-body\"><p>DN cenderung memiliki bawahan yang sangat bergantung dan menuntut perhatian rinci darinya. Ia mungkin sering merasa dirugikan oleh bawahan yang melawan. Bila istana berada pada cabang Babi Hai <span class=\"hz\">亥</span>, bawahan dapat mengkhianati kepercayaannya, tetapi pada masa tua DN dapat memperoleh dukungan dari bawahan yang kuat. Bila bersama bintang Serigala Rakus Tan Lang <span class=\"hz\">貪狼</span>, DN berisiko hanya dijadikan alat oleh bawahan. Bila bersama bintang Tujuh Pembunuh Qi Sha <span class=\"hz\">七殺</span>, ia sering menghadapi pengkhianatan teman. Bila bersama bintang Keharmonisan Langit Tian Tong <span class=\"hz\">天同</span>, jumlah teman muda dan bawahannya banyak. Bila istana berada pada cabang Tikus Zi <span class=\"hz\">子</span>, Naga Chen <span class=\"hz\">辰</span>, Kuda Wu <span class=\"hz\">午</span>, Anjing Xu <span class=\"hz\">戌</span>, atau Babi Hai <span class=\"hz\">亥</span>, bawahannya termasuk orang yang memiliki kemampuan nyata. Walaupun masih muda, cukup banyak temannya yang berbakat. Bila bersama bintang Kaisar Ungu Zi Wei <span class=\"hz\">紫微</span>, bawahan atau teman yang lebih muda sering membantu DN secara diam-diam. Pada konfigurasi istana lain, bawahan dapat menyimpan kebencian lalu mengkhianatinya, sementara teman yang lebih muda justru mungkin membalas keburukan dengan kebaikan.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>DN perlu membangun sistem kerja, batas kewenangan, dan pemeriksaan kepercayaan yang jelas agar bantuan bawahan tidak berubah menjadi ketergantungan atau pengkhianatan.</span></div></div>",
+    "_solo_puyi_body": "<p>DN cenderung memiliki bawahan yang sangat bergantung dan menuntut perhatian rinci darinya. Ia mungkin sering merasa dirugikan oleh bawahan yang melawan. Bila istana berada pada cabang Babi Hai <span class=\"hz\">亥</span>, bawahan dapat mengkhianati kepercayaannya, tetapi pada masa tua DN dapat memperoleh dukungan dari bawahan yang kuat. Bila bersama bintang Serigala Rakus Tan Lang <span class=\"hz\">貪狼</span>, DN berisiko hanya dijadikan alat oleh bawahan. Bila bersama bintang Tujuh Pembunuh Qi Sha <span class=\"hz\">七殺</span>, ia sering menghadapi pengkhianatan teman. Bila bersama bintang Keharmonisan Langit Tian Tong <span class=\"hz\">天同</span>, jumlah teman muda dan bawahannya banyak. Bila istana berada pada cabang Tikus Zi <span class=\"hz\">子</span>, Naga Chen <span class=\"hz\">辰</span>, Kuda Wu <span class=\"hz\">午</span>, Anjing Xu <span class=\"hz\">戌</span>, atau Babi Hai <span class=\"hz\">亥</span>, bawahannya termasuk orang yang memiliki kemampuan nyata. Walaupun masih muda, cukup banyak temannya yang berbakat. Bila bersama bintang Kaisar Ungu Zi Wei <span class=\"hz\">紫微</span>, bawahan atau teman yang lebih muda sering membantu DN secara diam-diam. Pada konfigurasi istana lain, bawahan dapat menyimpan kebencian lalu mengkhianatinya, sementara teman yang lebih muda justru mungkin membalas keburukan dengan kebaikan.</p>",
+    "_solo_puyi_action": "DN perlu membangun sistem kerja, batas kewenangan, dan pemeriksaan kepercayaan yang jelas agar bantuan bawahan tidak berubah menjadi ketergantungan atau pengkhianatan.",
+    "_p3_guanlu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Karir</span><span class=\"pn-meta\">Guān Lù<span class=\"hz\">官祿</span></span></div></div><div class=\"pal-body\"><p>Sumber istana karier menyebutkan bahwa DN sesuai menjalani pekerjaan sebagai dokter, perawat, pengasuh anak, pengacara, dan pekerjaan lain yang sejenis. Arah ini menempatkan pelayanan, perawatan, perlindungan, dan pendampingan profesional sebagai jalur kerja yang relevan bagi DN.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>DN dapat memprioritaskan profesi yang memadukan tanggung jawab, pelayanan langsung, dan keahlian profesional.</span></div></div>",
+    "_solo_guanlu_body": "<p>Sumber istana karier menyebutkan bahwa DN sesuai menjalani pekerjaan sebagai dokter, perawat, pengasuh anak, pengacara, dan pekerjaan lain yang sejenis. Arah ini menempatkan pelayanan, perawatan, perlindungan, dan pendampingan profesional sebagai jalur kerja yang relevan bagi DN.</p>",
+    "_solo_guanlu_action": "DN dapat memprioritaskan profesi yang memadukan tanggung jawab, pelayanan langsung, dan keahlian profesional.",
+    "_p3_tianzhai": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Properti</span><span class=\"pn-meta\">Tián Zhái<span class=\"hz\">田宅</span></span></div></div><div class=\"pal-body\"><p>DN berpotensi memiliki aset tidak bergerak dalam jumlah besar. Namun, ia cenderung kurang luwes dalam memanfaatkan, mengelola, atau mengembangkan penggunaan aset-aset tersebut, sehingga besarnya kepemilikan belum tentu langsung menghasilkan manfaat yang optimal.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>DN perlu membuat rencana fungsi, hasil, dan waktu evaluasi untuk setiap properti agar aset besar tidak berhenti sebagai kepemilikan pasif.</span></div></div>",
+    "_solo_tianzhai_body": "<p>DN berpotensi memiliki aset tidak bergerak dalam jumlah besar. Namun, ia cenderung kurang luwes dalam memanfaatkan, mengelola, atau mengembangkan penggunaan aset-aset tersebut, sehingga besarnya kepemilikan belum tentu langsung menghasilkan manfaat yang optimal.</p>",
+    "_solo_tianzhai_action": "DN perlu membuat rencana fungsi, hasil, dan waktu evaluasi untuk setiap properti agar aset besar tidak berhenti sebagai kepemilikan pasif.",
+    "_p3_fude": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Berkah</span><span class=\"pn-meta\">Fú Dé<span class=\"hz\">福德</span></span></div></div><div class=\"pal-body\"><p>DN memiliki pembawaan yang cerah, menarik, dan lembut; baik pria maupun wanita dengan konfigurasi ini umumnya mempunyai hubungan sosial yang baik. Istana ini memberi isyarat bahwa ia dapat menerima berkah kebahagiaan. Ia cukup cakap menghadapi kehidupan dan sangat memperhatikan cara berhubungan dengan orang lain. Namun, bila pendapat di sekelilingnya mengacaukan keputusan, keberuntungan yang sudah berada di tangan dapat menghilang. Berkah cenderung menyertai DN sepanjang hidup dan sekaligus mendukung umur panjang. Ia juga mempunyai kecenderungan mengejar impian yang romantis. Bila hanya bintang Bulan Tai Yin <span class=\"hz\">太陰</span> berada di istana kebahagiaan, ia sudah dapat menjalani hidup yang sangat beruntung. Bila bintang Matahari Tai Yang <span class=\"hz\">太陽</span> turut hadir, ia hampir pasti berpeluang menikmati kehidupan bahagia yang memuaskan tubuh dan batin. Namun, bila bersama bintang Mekanisme Langit Tian Ji <span class=\"hz\">天機</span>, pikirannya hampir tidak pernah benar-benar beristirahat. Konfigurasi ini memberi tanda kuat tentang kebahagiaan dan umur panjang. DN juga mempunyai sisi tenang dan tidak terlalu memusingkan keadaan; bahkan ketika menghadapi krisis besar, ia dapat tetap tidak panik dan menanganinya dengan tenang. Akan tetapi, bila istana berada pada cabang Macan Yin <span class=\"hz\">寅</span> atau Kelinci Mao <span class=\"hz\">卯</span>, atau bila bintang kurang baik menghalangi, ketenangan sulit diperoleh dan hidup menjadi penuh perubahan. Bila kekerasan batin berkembang menjadi kesombongan, DN dapat memilih kehidupan yang sunyi dan berdiri sendiri.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>DN perlu menjaga ketenangan batin, menyaring pendapat luar, memberi ruang istirahat bagi pikiran, dan memastikan keteguhan tidak berubah menjadi kesombongan atau keterasingan.</span></div></div>",
+    "_solo_fude_body": "<p>DN memiliki pembawaan yang cerah, menarik, dan lembut; baik pria maupun wanita dengan konfigurasi ini umumnya mempunyai hubungan sosial yang baik. Istana ini memberi isyarat bahwa ia dapat menerima berkah kebahagiaan. Ia cukup cakap menghadapi kehidupan dan sangat memperhatikan cara berhubungan dengan orang lain. Namun, bila pendapat di sekelilingnya mengacaukan keputusan, keberuntungan yang sudah berada di tangan dapat menghilang. Berkah cenderung menyertai DN sepanjang hidup dan sekaligus mendukung umur panjang. Ia juga mempunyai kecenderungan mengejar impian yang romantis. Bila hanya bintang Bulan Tai Yin <span class=\"hz\">太陰</span> berada di istana kebahagiaan, ia sudah dapat menjalani hidup yang sangat beruntung. Bila bintang Matahari Tai Yang <span class=\"hz\">太陽</span> turut hadir, ia hampir pasti berpeluang menikmati kehidupan bahagia yang memuaskan tubuh dan batin. Namun, bila bersama bintang Mekanisme Langit Tian Ji <span class=\"hz\">天機</span>, pikirannya hampir tidak pernah benar-benar beristirahat. Konfigurasi ini memberi tanda kuat tentang kebahagiaan dan umur panjang. DN juga mempunyai sisi tenang dan tidak terlalu memusingkan keadaan; bahkan ketika menghadapi krisis besar, ia dapat tetap tidak panik dan menanganinya dengan tenang. Akan tetapi, bila istana berada pada cabang Macan Yin <span class=\"hz\">寅</span> atau Kelinci Mao <span class=\"hz\">卯</span>, atau bila bintang kurang baik menghalangi, ketenangan sulit diperoleh dan hidup menjadi penuh perubahan. Bila kekerasan batin berkembang menjadi kesombongan, DN dapat memilih kehidupan yang sunyi dan berdiri sendiri.</p>",
+    "_solo_fude_action": "DN perlu menjaga ketenangan batin, menyaring pendapat luar, memberi ruang istirahat bagi pikiran, dan memastikan keteguhan tidak berubah menjadi kesombongan atau keterasingan.",
+    "_p3_fumu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Orang Tua</span><span class=\"pn-meta\">Fù Mǔ<span class=\"hz\">父母</span></span></div></div><div class=\"pal-body\"><p>Orang tua DN dapat tampak murung dan kurang menunjukkan semangat. Di sisi lain, ia memiliki orang tua yang unggul dan berkedudukan sosial cukup tinggi. Hubungan orang tua dan anak pada dasarnya dapat berlangsung harmonis. Kedua orang tua juga rajin menabung dan mungkin meninggalkan harta yang besar bagi DN. Karena pengaruh mereka, kebiasaan menabung yang kuat kemungkinan telah tertanam dalam dirinya sejak awal. Orang tuanya sangat memperhatikan tata krama dan berusaha sungguh-sungguh mendidik keluarga. Bila hubungan dengan orang tua tidak harmonis, penyebabnya kemungkinan karena mereka menyimpan keraguan terhadap tindakan DN. DN juga dapat berpisah dari orang tua atau anggota keluarga sejak relatif dini. Orang tuanya merupakan pribadi keras dan tidak mudah berkompromi; bila DN tidak bertindak sesuai kehendak mereka, ia sulit memperoleh pengertian. Namun, mereka juga tidak mudah menolak permintaan orang lain. Sikap yang bertentangan ini dapat menimbulkan konflik mendalam antara DN dan orang tua. Bila berada bersama bintang Kaisar Ungu Zi Wei <span class=\"hz\">紫微</span> atau beberapa bintang baik, risiko perpisahan atau putusnya hubungan orang tua dan anak berkurang. Walaupun demikian, pengaruh bintang Tujuh Pembunuh Qi Sha <span class=\"hz\">七殺</span> tetap perlu diingat sebagai unsur yang membawa tekanan.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>DN perlu menjaga hormat tanpa kehilangan batas pribadi, membicarakan keputusan penting lebih awal, dan memisahkan perbedaan cara berpikir dari kasih keluarga.</span></div></div>",
+    "_solo_fumu_body": "<p>Orang tua DN dapat tampak murung dan kurang menunjukkan semangat. Di sisi lain, ia memiliki orang tua yang unggul dan berkedudukan sosial cukup tinggi. Hubungan orang tua dan anak pada dasarnya dapat berlangsung harmonis. Kedua orang tua juga rajin menabung dan mungkin meninggalkan harta yang besar bagi DN. Karena pengaruh mereka, kebiasaan menabung yang kuat kemungkinan telah tertanam dalam dirinya sejak awal. Orang tuanya sangat memperhatikan tata krama dan berusaha sungguh-sungguh mendidik keluarga. Bila hubungan dengan orang tua tidak harmonis, penyebabnya kemungkinan karena mereka menyimpan keraguan terhadap tindakan DN. DN juga dapat berpisah dari orang tua atau anggota keluarga sejak relatif dini. Orang tuanya merupakan pribadi keras dan tidak mudah berkompromi; bila DN tidak bertindak sesuai kehendak mereka, ia sulit memperoleh pengertian. Namun, mereka juga tidak mudah menolak permintaan orang lain. Sikap yang bertentangan ini dapat menimbulkan konflik mendalam antara DN dan orang tua. Bila berada bersama bintang Kaisar Ungu Zi Wei <span class=\"hz\">紫微</span> atau beberapa bintang baik, risiko perpisahan atau putusnya hubungan orang tua dan anak berkurang. Walaupun demikian, pengaruh bintang Tujuh Pembunuh Qi Sha <span class=\"hz\">七殺</span> tetap perlu diingat sebagai unsur yang membawa tekanan.</p>",
+    "_solo_fumu_action": "DN perlu menjaga hormat tanpa kehilangan batas pribadi, membicarakan keputusan penting lebih awal, dan memisahkan perbedaan cara berpikir dari kasih keluarga.",
+    "_kes_narrative": "<style>.kes-narr .kn-body p { font-size: 8.5pt; line-height: 1.45; margin: 0 0 2mm 0; }</style><p>DN adalah pribadi yang kuat, terbuka, hangat, dan mudah mengambil peran penting di tengah orang lain. Ia mempunyai naluri menolong yang besar, cepat memahami keadaan, dan cenderung menjadi tempat bergantung bagi orang yang lebih muda maupun kelompok yang membutuhkan arah. Kemampuan memimpin ini tumbuh bersama sifat jujur, keberanian, ketegasan, dan dorongan untuk maju. Namun, kekuatan yang sama dapat berubah menjadi sikap terlalu ikut campur, keras kepala, atau terlalu cepat mengambil alih urusan orang lain. Karena itu, perjalanan terbaik bagi DN bukanlah mengurangi kepedulian, melainkan belajar menolong dengan izin, memberi ruang, dan menyampaikan ketegasan secara lebih lembut. Dalam hubungan keluarga dan pasangan, kesungguhan DN sangat kuat. Ia tidak menyukai hubungan yang dimainkan dan menuntut standar yang tinggi dari diri sendiri maupun orang terdekat. Sikap ini dapat membangun kesetiaan, tetapi juga mudah menimbulkan pertengkaran bila kecemburuan, tuntutan, atau perbedaan tidak dibicarakan dengan tenang. Pernikahan yang dipilih setelah pertimbangan matang lebih sesuai daripada keputusan yang terburu-buru. Kecocokan dengan Shio Tikus dan Naga memberi gambaran hubungan yang saling melengkapi, sedangkan hubungan dengan Shio Harimau, Ular, dan Babi memerlukan kewaspadaan lebih besar karena sumber menunjukkan lebih banyak tekanan, kesulitan, dan gangguan kesehatan atau keluarga. Hubungan dengan anak juga membutuhkan kesabaran. Anak dapat keras dalam mengejar keinginan, membutuhkan perhatian besar pada masa kecil, dan baru kemudian berkembang menjadi pendamping yang membantu. Dengan saudara, teman, bawahan, dan rekan kerja, DN perlu menjaga konsistensi komunikasi serta membangun batas kepercayaan yang jelas. Jumlah orang dekat mungkin tidak banyak, tetapi hubungan yang dijaga dengan baik dapat menjadi sumber bantuan nyata. Dalam pekerjaan, DN mempunyai pilihan yang luas. Bidang panas, cahaya, listrik, optik, fotografi, makanan, kecantikan, kosmetik, militer, kesehatan, pelayanan, hukum, perjalanan, perairan, perdagangan, dan pekerjaan lapangan semuanya muncul dalam sumber. Ia juga mempunyai bakat dalam seni, desain, dekorasi, musik, sastra, menulis, teknik, serta pembelajaran mandiri. Posisi yang memberinya tanggung jawab nyata, kesempatan memimpin, dan ruang menggunakan kemampuan praktis akan terasa hidup baginya. Meski demikian, ada masa ketika peran perencana, pendamping utama, atau staf strategis justru membuat kemampuannya lebih leluasa berkembang daripada memegang jabatan tertinggi. Secara finansial, DN mampu membangun hasil melalui kekuatan sendiri dan peluang yang lebih besar terbuka setelah usia pertengahan. Tantangan utamanya bukan sekadar memperoleh uang, melainkan mempertahankan dan mengubahnya menjadi sesuatu yang tahan lama. Karena uang mudah keluar, aset tidak bergerak menjadi sarana penting untuk menjaga nilai. Ia berpotensi memiliki banyak properti, tetapi perlu rencana yang jelas agar aset tersebut tidak hanya tersimpan tanpa dimanfaatkan secara luwes. Kesehatan secara umum memiliki daya pulih yang baik, tetapi DN tetap perlu memperhatikan tenggorokan, gigi, lambung, tulang, persendian, hati, empedu, saraf, sirkulasi kaki, serta risiko luka dari benda tajam, mesin, dan fasilitas logam. Menghindari perkelahian, tempat kerja berbahaya, dan kebiasaan menunda pemeriksaan akan sangat membantu. Periode 2026 sampai 2031 memperlihatkan perubahan yang cukup kuat. Tahun 2026 menonjolkan hasil dari pikiran, tetapi juga menuntut kewaspadaan terhadap konflik, perkara, kesehatan, dan kestabilan rumah tangga. Tahun 2027 membawa peluang sukacita dan tabungan, disertai tekanan kesehatan dan suasana hati. Tahun 2028 merupakan fase perubahan pekerjaan, tempat tinggal, pengeluaran, kesehatan kronis, serta hubungan; keputusan yang gegabah harus dihindari. Tahun 2029 masih membawa perubahan dan pengeluaran, tetapi juga memberi tanda perbaikan bagi keadaan yang sebelumnya kurang baik, kreativitas, dan keberuntungan. Tahun 2030 membutuhkan perhatian terbesar pada tekanan, pengeluaran, kesehatan, keamanan, orang yang berniat buruk, dan kabar dari kerabat atau teman. Tahun 2031 membuka bantuan dari orang tua atau pembimbing, peluang finansial, penghargaan, pembelajaran, dan kemajuan melalui peran strategis. Secara keseluruhan, hidup DN paling berkembang ketika keberanian dipadukan dengan kesabaran, kepedulian dipadukan dengan batas yang sehat, dan pendapatan dipadukan dengan disiplin menjaga aset. Ia tidak kekurangan daya untuk maju. Yang menentukan kualitas hasilnya adalah kemampuan menuntaskan apa yang dimulai, tidak terlalu cepat bereaksi, tidak membiarkan pendapat sekitar mengacaukan keputusan, dan tetap rendah hati ketika kepercayaan serta kewenangan berada di tangannya.</p>",
+    "_kes_stats": "\n      <div class=\"kes-stat s1\"><div class=\"ks-eb\">Penguasa Hari · 日主</div><div class=\"ks-num\"><span class=\"hz\">甲木</span><span class=\"unit\">— · None</span></div><div class=\"ks-title\">Pohon Besar —</div><div class=\"ks-desc\">Total Wu Xing 8, 木 <strong>25.0%</strong> dari distribusi total</div></div>\n      <div class=\"kes-stat s2\"><div class=\"ks-eb\">Format · 格局</div><div class=\"ks-num\"><span class=\"hz\">比肩格</span><span class=\"unit\">FORMAT</span></div><div class=\"ks-title\">Bi Jian Ge, Pundak Sama</div><div class=\"ks-desc\">Konfigurasi BaZi yang membentuk pola karakter dan jalur takdir utama subjek.</div></div>\n      <div class=\"kes-stat s3\"><div class=\"ks-eb\">Yong Shen · 喜用神</div><div class=\"ks-num\"><span class=\"hz\">火</span><span class=\"unit\">MENDUKUNG</span></div><div class=\"ks-title\">Api, Penopang &amp; Pengarah</div><div class=\"ks-desc\">Unsur penopang yang sebaiknya diaktifkan lewat lingkungan, profesi, warna, dan keputusan hidup.</div></div>\n      <div class=\"kes-stat s4\"><div class=\"ks-eb\">Da Yun · 大運</div><div class=\"ks-num\">Fase 4<span class=\"unit\">dari 10</span></div><div class=\"ks-title\">Fase Pelajaran (38-47)</div><div class=\"ks-desc\">Cycle 10 tahun yang sedang dijalani, periode pembentukan tema utama dekade ini.</div></div>\n      <div class=\"kes-stat s5\"><div class=\"ks-eb\">Umur Subjek</div><div class=\"ks-num\">47<span class=\"unit\">tahun</span></div><div class=\"ks-title\">Era 40–49</div><div class=\"ks-desc\">Tahap kehidupan saat laporan ini dibuat, rentang dekade aktif subjek.</div></div>\n      <div class=\"kes-stat s6\"><div class=\"ks-eb\">Jodoh · 婚配 / 陽宅</div><div class=\"ks-num\">2 <span class=\"unit\">cocok · 3 hindari</span></div><div class=\"ks-desc\">Hindari: Macan (寅) · Ular (巳) · Babi (亥) · Trigram <strong>Bumi</strong> (坤) · Kelompok Barat</div></div>\n    ",
+    "_kes_age": "47",
+    "_kes_lifemap": "\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">過<span class=\"id-label\">Lalu</span></div><div class=\"klm-row-text\"><span class=\"lbl\">MASA LALU</span>3 fase telah dilalui, fondasi terbentuk lewat tempaan zaman muda hingga awal dewasa.</div></div>\n          <div class=\"klm-row now\"><div class=\"klm-row-icon\">今<span class=\"id-label\">Kini</span></div><div class=\"klm-row-text\"><span class=\"lbl\">SEKARANG</span>Fase Pelajaran 癸未 (38-47), tema utama pelajaran membentuk dekade ini.</div></div>\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">未<span class=\"id-label\">Nanti</span></div><div class=\"klm-row-text\"><span class=\"lbl\">BERIKUTNYA</span>Fase 甲申 Pundak Sama (48-57), transisi menuju tema baru.</div></div>\n        ",
+    "_kes_position": "\n          <div class=\"klp-eb\">Posisi Sekarang</div>\n          <div class=\"klp-hz\">夏</div>\n          <div class=\"klp-id\">Xià, \"Musim Panas Hidup\"</div>\n          <div class=\"klp-bar\">\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell now\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n          </div>\n          <div class=\"klp-meta\">Fase <strong>4 dari 10</strong> · Umur <strong>38-47</strong> · <strong>木 Kayu</strong> dominan · Musim Panas Hidup</div>\n        ",
+    "_syn_attrib": "Pohon Besar · 比肩格 · Bi Jian Ge",
+    "_syn_actions": "\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">1</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Perkuat Peran Pemimpin</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">2</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Kelola Batasan Relasi</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">3</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Aktifkan Unsur Api</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">4</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Bangun Jaringan Lintas Generasi</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">5</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Hindari Lingkungan Metal Berlebih</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n      ",
+    "_career_wuxing": "\n        <div class=\"wux-cell unfav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">金 Logam<span class=\"v\">3</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">土 Tanah<span class=\"v\">3</span></div>\n        </div>\n        <div class=\"wux-cell self\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:67%\"></div></div>\n          <div class=\"wux-label\">木 Kayu<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:0%\"></div></div>\n          <div class=\"wux-label\">水 Air<span class=\"v\">0</span></div>\n        </div>\n        <div class=\"wux-cell fav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:0%\"></div></div>\n          <div class=\"wux-label\">火 Api<span class=\"v\">0</span></div>\n        </div>\n",
+    "_career_title": "Api adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini",
+    "_career_avoid": "Industri ber-unsur <strong>金 (Logam)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.",
+    "_xqcards": "\n      <div class=\"xq-card power\">\n        <div class=\"xqc-eb\">魄 力 · Kekuatan</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">優勢</span><span class=\"xqc-name\">Yōu Shì<br>Keunggulan</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><strong>Pemimpin alami</strong>, visi jauh ke depan, berani memulai</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><span class='hz'>創新精神</span> energi pelopor (Chuàng Xīn Jīng Shén)</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><strong>Idealis</strong>, pegang prinsip, sulit dibengkokkan</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Tegar berdiri sendiri, kekuatan internal kokoh</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card shadow\">\n        <div class=\"xqc-eb\">陰 影 · Shadow</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">隱 患</span><span class=\"xqc-name\">Yǐn Huàn<br>Sisi Gelap</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><span class='hz'>頑固</span> keras kepala (Wán Gù), sulit kompromi</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><strong>Egosentris</strong>, pandangan sendiri sering dianggap mutlak</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Cepat mulai, lama menyelesaikan, perlu disiplin tahap eksekusi</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><span class='hz'>急躁</span> sering tergesa, abai detail kecil</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card optimum\">\n        <div class=\"xqc-eb\">最 佳 · Optimum</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">應 用</span><span class=\"xqc-name\">Yīng Yòng<br>Cara Optimal</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Peran <strong>founder / visioner</strong>, bukan eksekutor harian</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Cari partner ber-<span class='hz'>金</span> (disiplin) sebagai pemangkas</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Pakai <span class='hz'>火</span> (ekspresi) untuk menyalurkan energi</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Tunda keputusan besar 24 jam, hindari impulsif</span></div>\n        </div>\n      </div>\n    "
+  }
+}

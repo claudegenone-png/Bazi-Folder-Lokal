@@ -1,0 +1,890 @@
+{
+  "subject_id": "ff",
+  "_built_by": "build_from_ocr.py V4.5 FULL-MD",
+  "identity": {
+    "name_id": "FF",
+    "name_hanzi": "",
+    "gender_id": "Wanita",
+    "birth_date": "1976-10-29",
+    "birth_time": "23:10",
+    "birth_day_name": "Jumat",
+    "birth_period_id": "malam",
+    "birth_hour_branch_hz": "子",
+    "birth_hour_period_label": "malam · 子時",
+    "lunar_date_text_new": "tanggal 7 bulan 9 tahun 丙辰 (Bing Chen · 1976)",
+    "lunar_year_pillar_hz": "丙辰",
+    "lunar_republic_text": "民國 65 年 9 月 7 日",
+    "age_at_report": 51
+  },
+  "shio": {
+    "branch_hz": "辰",
+    "branch_pinyin": "Chén",
+    "id": "Naga",
+    "id_upper": "NAGA",
+    "svg_red": "Naga-Merah.svg",
+    "svg_black": "Naga-Hitam.svg"
+  },
+  "ti_xiang": null,
+  "day_master": {
+    "stem_hz": "甲",
+    "stem_element_hz": "木",
+    "stem_element_id": "Kayu",
+    "polarity_id": "Yang",
+    "label_id": "Pohon Besar",
+    "label_long_id": "Kayu",
+    "pinyin": "Jiǎ 木",
+    "strength_id": "—",
+    "strength_hz": null
+  },
+  "pillars": {
+    "year": {
+      "stem_hz": "丙",
+      "branch_hz": "辰"
+    },
+    "month": {
+      "stem_hz": "戊",
+      "branch_hz": "戌"
+    },
+    "day": {
+      "stem_hz": "甲",
+      "branch_hz": "寅"
+    },
+    "hour": {
+      "stem_hz": "丙",
+      "branch_hz": "子"
+    }
+  },
+  "wuxing": {
+    "jin": {
+      "value": 0.0,
+      "percent": 0.0,
+      "label_id": "Logam"
+    },
+    "shui": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Air"
+    },
+    "mu": {
+      "value": 2.0,
+      "percent": 25.0,
+      "label_id": "Kayu"
+    },
+    "huo": {
+      "value": 2.0,
+      "percent": 25.0,
+      "label_id": "Api"
+    },
+    "tu": {
+      "value": 3.0,
+      "percent": 37.5,
+      "label_id": "Tanah"
+    },
+    "total": 8.0,
+    "self_value": 2.0,
+    "self_el_hz": "—",
+    "fav_hz": "—",
+    "unfav_hz": "—",
+    "axis_max": "—",
+    "insight_id": null,
+    "_empty": false
+  },
+  "yong_shen": {
+    "elements_hz": "木",
+    "elements_id": "Kayu",
+    "label_id": "Penopang & Pengarah",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "ji_shen": {
+    "elements_hz": "土",
+    "elements_id": "Tanah",
+    "label_id": "Pelumat & Pemicu",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "format": {
+    "hz": "偏財格",
+    "pinyin": "Pian Cai Ge",
+    "label_id": "Pengusaha Lincah",
+    "glyph_hz": "—"
+  },
+  "da_yun": {
+    "start_age": 8,
+    "direction_id": "backward",
+    "current_index": 4,
+    "axis_marks": [
+      8,
+      18,
+      28,
+      38,
+      48,
+      58,
+      68,
+      78,
+      88,
+      98,
+      108
+    ],
+    "cycles": [
+      {
+        "n": 1,
+        "age_start": 8,
+        "age_end": 17,
+        "stem_hz": "丁",
+        "branch_hz": "酉",
+        "ten_god_hz": "傷官",
+        "ten_god_id": "Kritikus Tajam",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 2,
+        "age_start": 18,
+        "age_end": 27,
+        "stem_hz": "丙",
+        "branch_hz": "申",
+        "ten_god_hz": "食神",
+        "ten_god_id": "Pencipta",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 3,
+        "age_start": 28,
+        "age_end": 37,
+        "stem_hz": "乙",
+        "branch_hz": "未",
+        "ten_god_hz": "劫財",
+        "ten_god_id": "Saudara Sebanding",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 4,
+        "age_start": 38,
+        "age_end": 47,
+        "stem_hz": "甲",
+        "branch_hz": "午",
+        "ten_god_hz": "比肩",
+        "ten_god_id": "Pundak Sama",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 5,
+        "age_start": 48,
+        "age_end": 57,
+        "stem_hz": "癸",
+        "branch_hz": "巳",
+        "ten_god_hz": "正印",
+        "ten_god_id": "Pelajaran",
+        "element_class": "el-shui",
+        "is_current": true
+      },
+      {
+        "n": 6,
+        "age_start": 58,
+        "age_end": 67,
+        "stem_hz": "壬",
+        "branch_hz": "辰",
+        "ten_god_hz": "偏印",
+        "ten_god_id": "Mentor",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 7,
+        "age_start": 68,
+        "age_end": 77,
+        "stem_hz": "辛",
+        "branch_hz": "卯",
+        "ten_god_hz": "正官",
+        "ten_god_id": "Otoritas",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 8,
+        "age_start": 78,
+        "age_end": 87,
+        "stem_hz": "庚",
+        "branch_hz": "寅",
+        "ten_god_hz": "七殺",
+        "ten_god_id": "Pemurnian",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 9,
+        "age_start": 88,
+        "age_end": 97,
+        "stem_hz": "己",
+        "branch_hz": "丑",
+        "ten_god_hz": "正財",
+        "ten_god_id": "Rezeki Tetap",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 10,
+        "age_start": 98,
+        "age_end": 107,
+        "stem_hz": "戊",
+        "branch_hz": "子",
+        "ten_god_hz": "偏財",
+        "ten_god_id": "Rezeki Bisnis",
+        "element_class": "el-tu"
+      }
+    ],
+    "seasons": [
+      {
+        "el_class": "s-huo",
+        "el_hz": "火",
+        "name_id": "Pemurnian Awal",
+        "age_start": 8,
+        "age_end": 27
+      },
+      {
+        "el_class": "s-mu",
+        "el_hz": "木",
+        "name_id": "Belajar & Mentor",
+        "age_start": 28,
+        "age_end": 47
+      },
+      {
+        "el_class": "s-shui",
+        "el_hz": "水",
+        "name_id": "Berbagi Panggung",
+        "age_start": 48,
+        "age_end": 67,
+        "is_current": true
+      },
+      {
+        "el_class": "s-jin",
+        "el_hz": "金",
+        "name_id": "Berkarya Tenang",
+        "age_start": 68,
+        "age_end": 87
+      },
+      {
+        "el_class": "s-tu",
+        "el_hz": "土",
+        "name_id": "Memetik Rezeki",
+        "age_start": 88,
+        "age_end": 107
+      }
+    ],
+    "spotlight_headline_html": "Fase <span class=\"hz\">正印</span> (Pelajaran), periode utama untuk menyerap ilmu & dukungan tetua",
+    "spotlight_tag_tone_html": "Air · adaptasi",
+    "spotlight_tag_combo_html": "Belajar Tenang",
+    "spotlight_tag_combo_pair": [
+      "癸",
+      "巳"
+    ],
+    "spotlight_bullets_html": [
+      "<strong>Fokus utama</strong>, pilar <span class=\"hz\">正印</span> mendorong Anda untuk menyerap ilmu & dukungan tetua. Selaraskan agenda 10 tahun ini ke arah tersebut.",
+      "<strong>Energi 水</strong>, batang <span class=\"hz\">癸</span> (水) berinteraksi dengan Day Master <span class=\"hz\">甲</span> (木); tone fase: Air · adaptasi.",
+      "<strong>Cabang <span class=\"hz\">巳</span></strong> menentukan medan harian, kebiasaan, lingkungan, dan relasi yang dibangun di rentang umur 48–57 akan jadi pondasi fase berikutnya.",
+      "<strong>Setelah 57</strong> masuk <span class=\"hz\">壬辰 (偏印)</span>, intuisi & jalur tidak konvensional. Siapkan transisi sekarang."
+    ],
+    "footer_caption_html": "FF sedang di fase <span style=\"font-family:'Noto Serif TC',serif;color:var(--red)\">正印</span> (48–57), menyerap ilmu & dukungan tetua. Periode 48–67 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir."
+  },
+  "marriage": {
+    "self_branch_index": 4,
+    "cocok": [
+      {
+        "branch_hz": "子",
+        "id": "Tikus",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "申",
+        "id": "Monyet",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "酉",
+        "id": "Ayam",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      }
+    ],
+    "hindari": [
+      {
+        "branch_hz": "丑",
+        "id": "Kerbau",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "卯",
+        "id": "Kelinci",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "戌",
+        "id": "Anjing",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "辰",
+        "id": "Naga",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      }
+    ],
+    "_empty": false
+  },
+  "yang_zhai": {
+    "gua_hz": "震",
+    "gua_pinyin": "Zhèn",
+    "gua_label_id": "Petir",
+    "gua_direction_id": "Timur",
+    "gua_direction_abbr": "T",
+    "group_id": "Timur",
+    "desc_id": "Elemen Kayu-Petir — dinamis, penuh inisiatif, gerak maju. Kelompok Timur (東四命): berani, visioner, dan cepat mengambil tindakan.",
+    "sumbu_hoki_hz": "東↔西",
+    "sumbu_hoki_id": "T ↔ B",
+    "sumbu_rumah_hz": "南↔北",
+    "sumbu_rumah_id": "S ↔ U",
+    "rumah_axis_pos": "S",
+    "trigram_symbol": "☳",
+    "zones": {
+      "rumah": {
+        "dirs_hz": [
+          "坐南向北"
+        ],
+        "dirs_abbr": [
+          "坐南北"
+        ],
+        "note_id": "Rumah sebaiknya duduk di Selatan menghadap Utara, sangat menguntungkan"
+      },
+      "pintu": {
+        "dirs_hz": [
+          "北",
+          "東",
+          "東南"
+        ],
+        "dirs_abbr": [
+          "U",
+          "T",
+          "TG"
+        ],
+        "note_id": "Pintu baik ke Utara, Timur, Tenggara"
+      },
+      "dapur": {
+        "dirs_hz": [
+          "西北向東南"
+        ],
+        "dirs_abbr": [
+          "西北東南"
+        ],
+        "note_id": "Kompor sebaiknya di Barat Laut menghadap Tenggara"
+      },
+      "kamar": {
+        "dirs_hz": [
+          "南",
+          "東"
+        ],
+        "dirs_abbr": [
+          "S",
+          "T"
+        ],
+        "note_id": "Kamar tidur baik di Selatan, Timur"
+      },
+      "ranjang": {
+        "dirs_hz": [
+          "南",
+          "東南",
+          "東"
+        ],
+        "dirs_abbr": [
+          "S",
+          "TG",
+          "T"
+        ],
+        "note_id": "Posisi ranjang baik di Selatan, Tenggara, Timur"
+      },
+      "altar": {
+        "dirs_hz": [
+          "東",
+          "東南",
+          "南",
+          "本年大利方"
+        ],
+        "dirs_abbr": [
+          "T",
+          "TG",
+          "S",
+          "本年大利"
+        ],
+        "note_id": "Altar sebaiknya di Timur, Tenggara, Selatan, serta arah keberuntungan tahun ini"
+      },
+      "kamar_mandi": {
+        "dirs_hz": [
+          "東北",
+          "西南",
+          "西"
+        ],
+        "dirs_abbr": [
+          "TL",
+          "BD",
+          "B"
+        ],
+        "note_id": "Kamar mandi/WC sebaiknya di Timur Laut, Barat Daya, Barat"
+      }
+    }
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "祿存",
+    "shen_zhu_hz": "文昌",
+    "ming_gong_hz": "戌",
+    "shen_gong_hz": "戌",
+    "wu_xing_ju_hz": "木三局",
+    "shi_jun_hz": "辰",
+    "palaces": null,
+    "ming_gong_id": "Istana Hidup · Anjing",
+    "shen_gong_id": "Istana Tubuh · Anjing",
+    "shi_jun_id": "Penguasa Waktu · Naga",
+    "ming_zhu_id": "Penguasa Hidup",
+    "shen_zhu_id": "Penguasa Tubuh",
+    "wu_xing_ju_id": "Aliran Kayu Tiga"
+  },
+  "shen_sha_list": [],
+  "kesimpulan_narrative": "Secara keseluruhan, FF adalah pribadi yang kuat, berani bergerak, dan punya dorongan hidup yang besar. Dari luar FF bisa terlihat tenang, rapi, sopan, dan cukup terdidik, tetapi di dalam dirinya ada api semangat yang sangat besar. Jika sudah memiliki tujuan atau sudah menyukai sesuatu, FF cenderung ingin segera bergerak dan mengejarnya dengan serius. Kekuatan terbesar FF adalah ketulusan, keberanian, daya tahan, kemampuan membangun kepercayaan, dan aura yang membuat orang lain mudah merasa yakin kepadanya. Namun sisi yang perlu dijaga adalah emosi yang intens, standar yang tinggi, rasa tidak puas yang mudah muncul, serta kecenderungan bertindak cepat ketika hati sedang panas. Dalam hubungan, FF bukan tipe yang main-main. Ia membutuhkan hubungan yang nyata, serius, dan saling menghormati. Karena itu, sikap pasangan yang ringan, sembrono, atau tidak jelas bisa sangat mengganggu FF. Cinta dan pernikahan dapat berjalan penuh gelombang bila kedua pihak sama-sama keras atau terlalu menuntut. Kuncinya adalah memberi ruang pribadi, membuat aturan komunikasi yang jelas, dan tidak melihat pernikahan sebagai pembatas kebebasan. Dalam keluarga, FF menerima pengaruh yang kuat dari ibu dan berasal dari gambaran keluarga yang cukup memperhatikan reaksi emosionalnya. Hubungan dengan orang tua perlu dijaga dengan komunikasi yang lembut, terutama saat terjadi salah paham. Dalam pekerjaan, FF cocok pada bidang yang membutuhkan ketelitian, tanggung jawab, relasi manusia, administrasi, keuangan, pelayanan, pendidikan, penulisan, seni, dekorasi, perdagangan, kesehatan, wisata, atau pekerjaan yang membuat FF bisa memakai kemampuan bahasa, rasa estetika, dan kecakapan mengatur orang. FF bisa terlihat berbakat di tempat kerja, tetapi perlu mengurangi kecenderungan perfeksionis atau terlalu mudah menilai pekerjaan orang lain kurang baik. Dalam uang dan aset, ada potensi memperoleh rezeki, menabung, atau mendapatkan nilai besar, tetapi kemurahan hati dan pengeluaran perlu dikontrol. Keputusan properti juga sebaiknya tidak terlalu dipengaruhi teman atau keluarga; FF perlu memakai hitungan yang jelas dan memilih lingkungan yang stabil. Dalam kesehatan, perhatian utama ada pada tenggorokan, flu/masuk angin, gigi, hati, kulit, mata, pembengkakan, serta siklus fisiologis wanita. Secara batin, FF perlu belajar menenangkan rasa tidak puas dan tidak selalu mengejar rangsangan baru. Periode tahunan 2026 sampai 2031 menunjukkan tema besar uang, perubahan pekerjaan/lingkungan, hubungan, kesehatan, dan bantuan orang mulia. Ada tahun-tahun yang membawa peluang rezeki dan dukungan, tetapi tetap disertai peringatan agar tidak tergesa-gesa, menjaga kesehatan, menghindari perkara, dan berhati-hati terhadap orang kecil atau keputusan yang merugikan. Bila FF mampu menahan impuls, menjaga relasi, mengelola uang dengan disiplin, dan memilih pekerjaan yang stabil tetapi tetap memberi ruang berkembang, perjalanan hidupnya dapat bergerak lebih kuat, matang, dan menghasilkan pencapaian yang besar secara bertahap.",
+  "dm_pos_score": 3272.0,
+  "dm_neg_score": 5228.0,
+  "xiantian_per_stem": {
+    "jia": 2,
+    "yi": 1,
+    "bing": 3,
+    "ding": 1,
+    "wu": 1,
+    "ji": 0,
+    "geng": 0,
+    "xin": 1,
+    "ren": 0,
+    "gui": 2
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": null,
+  "canggan_shi_shen": null,
+  "chang_sheng_per_pilar": null,
+  "kong_wang": null,
+  "ming_gong_bazi": null,
+  "bone_weight": null,
+  "liu_nian_predictions": [
+    {
+      "tahun": 2026,
+      "umur": 51,
+      "ganzhi": "丙午",
+      "prose": "Tahun 2026 membuka tema uang dan urusan materi yang tampak biasa dari luar, tetapi sebenarnya perlu diperlakukan dengan hati-hati. FF tidak disarankan bergerak terlalu tergesa-gesa, karena kualitas hasil tahun ini belum tentu mencapai keadaan ideal. Pada hubungan, pasangan yang sudah menikah dapat mengalami naik-turun perasaan yang masih tidak sampai menjadi luka besar; bagi yang belum menikah, kedekatan dengan teman laki-laki atau perempuan bisa semakin terasa. Karier memiliki tanda perubahan, sementara batin FF seperti tertahan dan lebih mudah tidak stabil. Catatan喪門 menandai potensi urusan duka/bakti, benturan, pengeluaran harta, serta gangguan dari pihak kecil yang perlu diwaspadai. Catatan黑煞 membuat tahun ini mudah mengejutkan, tersandung, atau terganggu oleh kejadian yang mendadak; namun bila tidak disertai pengaruh buruk berat, keselamatan masih dapat dijaga. Urusan keluarga yang menggembirakan tetap dapat menjadi penenang, terutama bila bulan keenam, kedelapan, atau kedua belas dijalani dengan doa dan niat baik. Hindari meremehkan orang sakit berat, urusan pemakaman, atau kabar duka. Watak tahun ini cenderung terburu-buru, kurang tegas, mudah masuk ke situasi tidak menentu, dan bisa tampak pandai berbicara tetapi menyukai jalan yang berliku. Hubungan suami istri juga perlu dirawat karena ikatan mudah menipis dan berubah bila dibiarkan."
+    },
+    {
+      "tahun": 2027,
+      "umur": 52,
+      "ganzhi": "丁未",
+      "prose": "Tahun 2027 menaruh perhatian FF pada uang, harta, dan hal-hal yang dipikirkan secara pribadi, walau dari permukaan belum tentu terlihat besar. Kesehatan perlu dijaga karena ada tanda urusan tubuh dan finansial dapat saling memengaruhi, sementara hasil nyata belum tentu setinggi harapan. Sisi baiknya, 太陰 membawa peluang melihat kegembiraan, memperoleh harta, dibantu orang mulia, dan membuat banyak urusan lebih selaras. 文昌 juga memberi tanda kabar baik mendekati pintu, urusan belajar atau anak lebih memuaskan, dan rezeki dapat tertarik masuk. Meski begitu, bulan kedua, kelima, kedelapan, atau kedua belas perlu hati-hati terhadap rasa tidak suka dari lawan jenis, angin/gelombang masalah, dan perjalanan malam di jalan gelap. Pembawaan tahun ini lebih tertutup, unik, tidak terlalu suka memperindah penampilan, serta relasi dengan saudara dan teman terasa lebih tipis. Ada kecenderungan menyukai atau mengumpulkan benda kecil. Bila dorongan ini diarahkan menjadi kebiasaan menabung dan mengumpulkan uang secara disiplin, keberuntungan finansial masih dapat dikatakan baik. Pola hidup juga menunjukkan paruh awal lebih berat, sedangkan paruh kemudian lebih mudah menikmati keberuntungan."
+    },
+    {
+      "tahun": 2028,
+      "umur": 53,
+      "ganzhi": "戊申",
+      "prose": "Tahun 2028 memberi FF peluang mendapat bantuan orang mulia dan mencapai hasil yang cukup ideal, tetapi tenaga serta pikiran yang keluar belum tentu langsung sebanding dengan uang yang terlihat. Perubahan dapat muncul pada karier atau posisi kerja. Bagi yang sudah menikah, hubungan pasangan masih bisa berjalan dalam rasa yang terbuka; bagi yang belum menikah, jalur perasaan bergerak lebih aktif. Lingkungan besar ikut berubah karena ada keterikatan atau situasi yang menahan. 官符 menandai urusan resmi, kesedihan, perhatian terhadap orang tua, pasangan, atau harta; ketulusan hati menjadi cara meredakan bencana. 火煞 menambah kewaspadaan terhadap mulut/perkataan, hukuman, penyakit, gangguan harta, dan pihak kecil yang merugikan, walau keadaan tetap bisa dilewati bila tidak diperberat bintang buruk. Bulan pertama, keempat, ketujuh, dan kesebelas perlu lebih hati-hati, tidak banyak mencampuri urusan orang, dan menjaga kedamaian. Tahun ini mudah menarik gangguan tersembunyi, penyakit aneh, kerugian harta, serta orang kecil yang diam-diam merugikan. Wataknya cepat panas, mudah mulai tanpa selesai, suka hal baru, mudah bosan, impulsif, kurang berpikir jauh, dan mudah tertipu saat sedang senang. Meski tidak stabil, masih ada peluang keluar dari titik sulit dan menemukan jalan baru."
+    },
+    {
+      "tahun": 2029,
+      "umur": 54,
+      "ganzhi": "己酉",
+      "prose": "Tahun 2029 masih memperlihatkan bantuan orang mulia dan potensi hasil yang cukup ideal, namun tenaga mental maupun usaha yang dikeluarkan tidak selalu tampak sepadan dengan uang yang diterima. Perubahan lingkungan besar terjadi karena adanya ikatan, batasan, atau pengaruh yang menahan ruang gerak. 死符 menunjukkan tanda duka, luka, serta perhatian khusus kepada orang tua dan saudara; doa dan kehati-hatian diperlukan agar bencana dapat dihindari. 暗曜 memberi gambaran bahwa bila tidak ada gangguan mulut, hukuman, atau bintang buruk yang berat, FF masih dapat menghindari bahaya; keluarga pun bisa memiliki urusan gembira yang memecah suasana kering. Bagi wanita, kesehatan, penyakit, dan urusan produksi/reproduksi perlu diperhatikan, sementara lingkungan yang menyenangkan membantu menenangkan kemarahan. Bulan kedua, kelima, kedelapan, dan kedua belas baik dipakai untuk memohon perlindungan. Tahun ini mudah bersinggungan dengan urusan pejabat, hukuman, perkara, luka, dan tekanan batin. Sisi uniknya, rasa ingin tahu dan semangat meneliti meningkat; ada jiwa baru, rasa segar, kreativitas, humor gelap, dan rasa kemanusiaan. Bila kecerdasan diarahkan benar, keberuntungan masih sering datang, walau kondisi tubuh tidak selalu kuat."
+    },
+    {
+      "tahun": 2030,
+      "umur": 55,
+      "ganzhi": "庚戌",
+      "prose": "Tahun 2030 membuat nilai yang FF keluarkan, baik tenaga maupun daya pribadi, terlihat lebih berhubungan langsung dengan uang. Kesehatan dan harta perlu dijaga bersamaan, karena bencana finansial atau urusan harta dapat datang dan hasil nyata belum tentu ideal. Dalam hubungan, pasangan yang sudah menikah dapat mengalami pergerakan rasa tetapi tidak sampai menjadi masalah besar; bagi yang belum menikah, kedekatan dengan teman laki-laki atau perempuan dapat semakin rapat. Perubahan lingkungan tampak jelas melalui renovasi rumah, pindah tempat, atau penataan ulang perabot di dalam ruangan. Suasana hati juga tidak terlalu stabil. 歲破 menandai kerugian harta yang tidak boleh dianggap ringan, perlunya menjaga hubungan kerabat, dan pentingnya berbuat baik untuk menjaga ketenangan. 太陰 membawa urusan gembira, kelancaran rezeki, serta bantuan orang dalam mengambil keputusan, tetapi juga ada pola kehilangan di satu sisi dan memperoleh hal lain di sisi berbeda. Bulan ketiga, keenam, kesembilan, dan kedua belas perlu dipakai untuk menjaga ketenangan dan membina berkah. Kesalahan tindakan, perubahan yang kurang cermat, atau urusan denda dapat merugikan uang maupun tubuh. Wataknya jujur, tebal dalam relasi, kurang ambisi besar, cenderung puas, hubungan dengan orang tua kandung tipis, dan sering terkait dengan anak/anggota keluarga yang bukan garis langsung; meski begitu, kerja keras tetap membuka pencapaian besar."
+    },
+    {
+      "tahun": 2031,
+      "umur": 56,
+      "ganzhi": "辛亥",
+      "prose": "Tahun 2031 menampilkan usaha dan nilai yang FF keluarkan sebagai sesuatu yang dapat disejajarkan dengan uang, dengan dukungan kuat dari orang yang lebih tua atau guru. Secara kualitas, hasil tahun ini dapat mencapai kondisi ideal. Bagi yang sudah menikah, hubungan pasangan bergerak dalam perasaan yang terbuka namun tidak sampai melukai; bagi yang belum menikah, kedekatan dengan teman laki-laki atau perempuan dapat bertambah intim. 龍德 membawa gambaran empat musim memperoleh uang dan harta, banyak keberuntungan di rumah, serta keluar rumah tanpa bencana. 天掃 menunjukkan pertemuan dengan keberuntungan, namun juga menyinggung urusan bakti dan keadaan yang sempat berantakan; bila ada orang mulia dan urusan gembira, bencana dapat dihindari, tetapi tetap perlu mencegah pihak kecil menelan atau menghabiskan harta. Bulan pertama, keempat, ketujuh, dan kedua belas perlu hati-hati ketika berbuat baik atau menolong orang. Bila FF berusaha, ia dapat memperoleh keuntungan atau bantuan orang mulia. Sifat tahun ini lebih setia, lembut, sopan, baik, penuh, dan relasinya sangat kuat; FF mudah disukai, disambut, diangkat, dan didorong naik. Bakat teknis, artistik, serta kemampuan belajar sangat baik, tetapi lebih cocok menjadi asisten, staf, sekretaris, atau pendamping unggul daripada langsung memegang kursi pemimpin puncak."
+    }
+  ],
+  "ziwei_su_ming": "Arah perjalanan hidup FF berjalan sesuai dengan garis takdir (宿命) yang telah ditentukan. Apabila nasib FF kuat namun kekuatan batinnya lemah, FF masih mampu memanfaatkan bakat dan menyelaraskan diri dengan takdir untuk meraih perkembangan yang gemilang. Namun bila kekuatan Istana Kehidupan (命宮) melemah, keberhasilan yang datang dengan sendirinya tidak dapat diharapkan. Dalam kondisi seperti ini, kekuatan Istana Perpindahan (遷移宮), Istana Kekayaan (財帛宮), dan Istana Karier (官祿宮) juga harus diperhitungkan secara bersamaan.",
+  "ziwei_stars": null,
+  "shiye_favorable_full": [
+    {
+      "hz": "文具",
+      "id": "Alat tulis"
+    },
+    {
+      "hz": "出版",
+      "id": "Penerbitan"
+    },
+    {
+      "hz": "書店",
+      "id": "Toko buku"
+    },
+    {
+      "hz": "農業蔬果",
+      "id": "Pertanian sayur dan buah"
+    },
+    {
+      "hz": "木材",
+      "id": "Kayu"
+    },
+    {
+      "hz": "傢俱",
+      "id": "Mebel"
+    },
+    {
+      "hz": "裝璜",
+      "id": "Dekorasi interior"
+    },
+    {
+      "hz": "紙",
+      "id": "Kertas"
+    },
+    {
+      "hz": "木器或工藝",
+      "id": "Kerajinan kayu atau kriya"
+    },
+    {
+      "hz": "花苗園藝",
+      "id": "Bibit bunga dan hortikultura"
+    },
+    {
+      "hz": "菜草",
+      "id": "Sayur dan tanaman rumput"
+    },
+    {
+      "hz": "布疋",
+      "id": "Tekstil/kain"
+    },
+    {
+      "hz": "教育",
+      "id": "Pendidikan"
+    },
+    {
+      "hz": "公務員",
+      "id": "Pegawai negeri"
+    },
+    {
+      "hz": "政治",
+      "id": "Politik"
+    },
+    {
+      "hz": "宗教家",
+      "id": "Tokoh/agama"
+    }
+  ],
+  "shiye_supportive_full": [
+    {
+      "hz": "流動攤販",
+      "id": "Pedagang keliling"
+    },
+    {
+      "hz": "運動家",
+      "id": "Atlet/olahragawan"
+    },
+    {
+      "hz": "介紹中人",
+      "id": "Perantara/makelar"
+    },
+    {
+      "hz": "醫師",
+      "id": "Dokter"
+    },
+    {
+      "hz": "清潔隊",
+      "id": "Petugas kebersihan"
+    },
+    {
+      "hz": "記者",
+      "id": "Reporter/jurnalis"
+    },
+    {
+      "hz": "護士",
+      "id": "Perawat"
+    },
+    {
+      "hz": "導遊",
+      "id": "Pemandu wisata"
+    },
+    {
+      "hz": "馬戲團",
+      "id": "Sirkus/hiburan keliling"
+    },
+    {
+      "hz": "航海",
+      "id": "Pelayaran"
+    },
+    {
+      "hz": "漁業",
+      "id": "Perikanan"
+    },
+    {
+      "hz": "冷凍業",
+      "id": "Industri pendingin/beku"
+    },
+    {
+      "hz": "水產業",
+      "id": "Hasil laut/akuakultur"
+    },
+    {
+      "hz": "碼頭工",
+      "id": "Pekerja dermaga"
+    },
+    {
+      "hz": "消防隊",
+      "id": "Pemadam kebakaran"
+    },
+    {
+      "hz": "貿易公司",
+      "id": "Perusahaan perdagangan"
+    }
+  ],
+  "shiye_short": null,
+  "shen_sha_detail": [
+    {
+      "hz": "華蓋",
+      "pinyin": "Hua Gai",
+      "label_id": "Kanopi Bakat Artistik",
+      "tafsir_hz": "求學能自動，自悟以達最高學歷，天性對美術、設計、裝璜、音樂、文學方面大興趣及天才",
+      "tafsir_id": "FF memiliki dorongan belajar yang muncul dari dalam diri, mampu memahami sesuatu secara mandiri hingga mencapai tingkat pendidikan atau penguasaan tertinggi. Secara alami FF memiliki minat dan bakat besar pada bidang seni, desain, dekorasi, musik, serta sastra."
+    }
+  ],
+  "marriage_cocok_tafsir": "Pasangan yang cocok akan menjalin ikatan yang indah dan bermakna — bersama-sama meraih kemakmuran dan kesuksesan, membangun kehidupan dengan rajin dan hemat, semakin berjaya di hari tua, serta mewariskan kebahagiaan yang berlimpah kepada keturunan generasi demi generasi.",
+  "marriage_hindari_tafsir": "Pasangan yang bertentangan ini tidak dapat hidup harmonis hingga akhir hayat — hubungan berisiko perpecahan dan perpisahan, kondisi keluarga tidak menentu, nasib terasa kompleks dan berat, membawa tanda kemerosotan, menjadi sumber ketidakberuntungan seumur hidup, mengundang bencana bertubi-tubi, dan penuh dengan kepedihan.",
+  "gushu_quotes": null,
+  "xiongnian_list": null,
+  "xing_qing_poem_hz": null,
+  "xing_qing_poem_id": null,
+  "xing_qing_prose_id": null,
+  "fulu_body_id": null,
+  "mingyun_body_id": null,
+  "qinshu_tou_main_id": null,
+  "qinshu_tou_youyue_id": null,
+  "qinshu_zhong_main_id": null,
+  "qinshu_zhong_youyue_id": null,
+  "qinshu_mo_main_id": null,
+  "qinshu_mo_youyue_id": null,
+  "jie_e_palace_hz": null,
+  "jie_e_palace_id": "FF mudah mengalami gangguan pada tenggorokan, masuk angin, sakit gigi, penyakit terkait hati, serta bila bertemu bintang buruk perlu menjaga kulit dan mata. Bila bersama 太陰, tubuh dapat mudah mengalami pembengkakan atau rasa tidak nyaman karena sumbatan; bagi wanita, perlu memperhatikan ketidaklancaran fisiologis.",
+  "jie_e_organ_focus_id": "Tenggorokan, flu/masuk angin, gigi, hati, kulit, mata, pembengkakan, dan siklus fisiologis wanita.",
+  "bagua_sectors": null,
+  "bagua_life_type_hz": null,
+  "bagua_life_type_id": null,
+  "bagua_nayin_hz": null,
+  "bagua_nayin_id": null,
+  "bagua_taisui_hz": null,
+  "bagua_taisui_id": null,
+  "bagua_warning_hz": null,
+  "bagua_warning_id": null,
+  "bagua_virtue_hz": null,
+  "bagua_virtue_id": null,
+  "bagua_zuo_xiang_hz": null,
+  "bagua_zuo_xiang_id": null,
+  "hongshui_pages": null,
+  "mantra": {
+    "hz": "—",
+    "pinyin": "—"
+  },
+  "_xq_radar_poly": "          <polygon points=\"200,56 311.2,136 311.2,264 200,312 102.7,256 130.5,160\"\n            fill=\"rgba(139,26,26,0.18)\" stroke=\"#8B1A1A\" stroke-width=\"1.5\"/>\n          <circle cx=\"200\" cy=\"56\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"136\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"264\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"200\" cy=\"312\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"102.7\" cy=\"256\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"130.5\" cy=\"160\" r=\"3\" fill=\"#8B1A1A\"/>",
+  "_xq_radar_labels": "          <g font-family=\"Noto Serif TC,serif\">\n            <text x=\"200\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">進取</text>\n            <text x=\"200\" y=\"33\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Jìnqǔ · Pelopor · 9</text>\n\n            <text x=\"358\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">創新</text>\n            <text x=\"358\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Chuàngxīn · Inovatif · 8</text>\n\n            <text x=\"358\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">領導</text>\n            <text x=\"358\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Lǐngdǎo · Memimpin · 8</text>\n\n            <text x=\"200\" y=\"382\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">急性</text>\n            <text x=\"200\" y=\"393\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Jíxìng · Cepat panas · 7</text>\n\n            <text x=\"42\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">直率</text>\n            <text x=\"42\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Zhíshuài · Terus-terang · 7</text>\n\n            <text x=\"42\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">包容</text>\n            <text x=\"42\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Bāoróng · Toleran · 5</text>\n          </g>",
+  "_xq_motto": [
+    "樹",
+    "Pohon Besar",
+    "本性 浩然",
+    "君子之風"
+  ],
+  "_tafsir": {
+    "kepribadian": "FF adalah wanita berhari lahir Kayu Yang (甲木) dengan format 偏財格 — karakter yang luwes, suka bergaul luas, dan berbakat dalam membaca peluang. Unsur sahabat yang menguatkan FF adalah Kayu (用神) dan Air (喜神), sementara Tanah (忌神) dan Api (仇神) perlu diwaspadai karena dapat menguras energi dan fokus.",
+    "_kepribadian_struct": {
+      "paragraf": "FF adalah wanita berhari lahir Kayu Yang (甲木) dengan format 偏財格 — karakter yang luwes, suka bergaul luas, dan berbakat dalam membaca peluang. Unsur sahabat yang menguatkan FF adalah Kayu (用神) dan Air (喜神), sementara Tanah (忌神) dan Api (仇神) perlu diwaspadai karena dapat menguras energi dan fokus.",
+      "power": [
+        "Mandiri dan berani bertindak tanpa menunggu izin dari siapapun",
+        "Memiliki daya tarik kuat dan kemampuan membangun kepercayaan dengan mudah",
+        "Berjiwa besar, tulus, dan bebas dari sifat licik atau manipulatif"
+      ],
+      "shadow": [
+        "Kecenderungan impulsif yang bisa memicu konflik dengan orang-orang di sekitar",
+        "Kadang terlalu keras kepala dan sulit berkompromi demi mempertahankan pendiriannya",
+        "Emosi yang intens bisa membuat FF kurang mempertimbangkan kondisi orang lain"
+      ],
+      "optimum": [
+        "Manfaatkan kekuatan intuisi dan keberanian untuk memimpin, bukan mendominasi",
+        "Bangun saluran komunikasi yang lebih terbuka agar konflik interpersonal berkurang",
+        "Arahkan energi emosional yang besar ke dalam kreativitas dan proyek jangka panjang"
+      ]
+    },
+    "xingqing_full": "<p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">1</span>Saat menghadapi urusan, FF tidak mudah takut, tetapi juga tidak tergesa-gesa; ia memiliki kemampuan operasional yang baik, walau ritme tindakannya cenderung lebih lambat. FF memiliki batas pribadi yang tidak boleh dilanggar, namun ia pun tidak sembarangan melanggar orang lain; pembawaannya percaya diri dan daya keteguhannya kuat.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">2</span>FF mampu memberi perhatian kepada orang lain dan makhluk kecil tanpa banyak perhitungan; ia bisa menikmati keadaan dengan tenang, memiliki kemampuan bahasa yang baik, serta mempunyai daya apresiasi dan ekspresi artistik yang kuat, termasuk bakat dalam nyanyian maupun tarian.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">3</span>Dalam urusan harta dan benda, FF mampu menata serta mengatur dengan pantas; ia dapat memutar dan membayangkan pola tiga dimensi dalam pikirannya. Namun terhadap kenyamanan tubuh secara langsung, ada kecenderungan merasa kurang melekat; ia juga mampu menata rumah kecil atau lingkungan pribadi dengan baik.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">4</span>FF menghargai dunia materi yang konkret, tetapi tidak terlalu melekat pada benda. Ia cakap dalam pengoperasian, memiliki daya persepsi umum yang kuat, berjiwa maju, berkarakter kokoh dan berprinsip, berhati welas asih serta lurus, namun kurang cepat dalam merespons perubahan mendadak.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">5</span>Pengaruh 文昌星 menunjukkan bakat kuat dalam seni, sastra, dan akademik. Daya ingat FF relatif unggul, prestasi belajar mudah menonjol, dan dalam hidup ada perlindungan yang membantu melewati masalah secara lebih stabil.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">6</span>Di balik kelembutan dan keramahan FF, ada sisi tegas yang kadang mengejutkan orang sekitar; seperti pasir emas, tampilan luar terlihat halus, tetapi di dalam tersimpan kristal yang keras dan berketetapan.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">7</span>Bagi wanita, foto menandai kemungkinan datangnya keberuntungan yang tidak terduga. Namun bila terkena pengaruh bintang buruk, FF perlu berhati-hati agar tidak terseret oleh dorongan emosional atau hubungan yang menempatkannya pada posisi tersembunyi dan tidak ideal.</p>",
+    "xingqing_full_action": "Inti watak diri sebagaimana terbaca dari layar 性情.",
+    "overview_full": "<div style=\"display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm;\"><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Pasangan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Pasangan FF memiliki kemampuan operasional yang kuat, tetapi cenderung berkepribadian introvert.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Anak</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Anak laki-laki cenderung lebih tertutup, namun cerdas dan memiliki pembawaan halus.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Kemandirian</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">FF kurang suka dikekang atau diatur oleh orang lain, dan tidak terlalu mudah menerima perkataan saudara.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Orang Tua</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">FF tidak takut kepada ayah, tetapi sulit menerima perkataannya; terhadap ibu pun cenderung sulit menerima ucapan dan tidak banyak bicara.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Kepemimpinan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Kemampuan memimpin relatif tidak kuat, sehingga sulit menggenggam wewenang besar secara penuh.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Relasi Suami</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">FF tidak takut kepada suami dan sulit menerima perkataan maupun nasihat dari pasangan.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Pola Pikir</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Dalam banyak hal FF memikirkan banyak kemungkinan, tetapi sering kesulitan mengekspresikan atau mewujudkannya.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Perpindahan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Ada tanda meninggalkan kampung halaman dan menetap di tempat yang cukup jauh dari daerah kelahiran.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Keselarasan Keluarga</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Tipe pasangan yang disukai FF cenderung lebih mudah cocok dengan orang tua.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Arah Takdir</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Perjalanan sebelum usia menengah cenderung bergerak seperti gambaran宿命. Bila Istana Kehidupan kuat, bakat dan kemampuan dapat dipakai untuk menentukan arah hidup, menjalani perkembangan yang kuat dan jelas. Namun bila Istana Kehidupan lemah, keberhasilan tidak mudah langsung datang; saat menilai masa depan, kelemahan pada Istana Perpindahan, Harta, dan Jabatan juga perlu ikut dipertimbangkan.</div></div></div>",
+    "overview_full_action": "Pesan inti hubungan terdekat dari layar 全局總論.",
+    "family": "pasangan: - vibe: Penuh Gairah · Teguh Pendirian · Setia Tanpa Syarat - headline: Pasangan ideal dari Shio Tikus, Monyet, atau Ayam - cocok_list: - shio: 鼠 label: 大吉 teks: Pasangan Shio Tikus bersama FF akan menjalin ikatan yang indah — bersama meraih kemakmuran, membangun kehidupan dengan tekun dan hemat, semakin berjaya di hari tua, mewariskan kebahagiaan berlimpah kepada generasi berikutnya. - shio: 猴 label: 大吉 teks: Bersama Shio Monyet, FF akan menemukan keselarasan yang mendalam — ikatan yang terjalin membawa kesuksesan bersama, keuletan dalam membangun rumah tangga, dan warisan kebahagiaan yang mengalir turun-temurun. - shio: 雞 label: 大吉 teks: Pasangan Shio Ayam melengkapi FF dengan sempurna — kehidupan bersama dipenuhi kemakmuran, keberhasilan yang dibangun dari kerja keras, dan hari tua yang semakin cerah penuh berkah. - hindari_list: - shio: 牛 teks: Pasangan Shio Kerbau tidak dapat hidup harmonis hingga akhir hayat — hubungan berisiko perpecahan, kondisi keluarga tidak menentu, dan membawa benih ketidakberuntungan yang berkelanjutan. - shio: 兔 teks: Bersama Shio Kelinci, FF berisiko menghadapi perpisahan dan kekacauan dalam kehidupan keluarga — nasib menjadi kompleks, penuh kesulitan, dan jauh dari ketenangan. - shio: 狗 teks: Pasangan Shio Anjing membawa potensi konflik yang dalam — tanda-tanda kemerosotan keluarga, bencana bertubi-tubi, dan kehidupan yang terasa berat hingga akhir. - shio: 龍 teks: Sesama Shio Naga tidak saling mendukung — kombinasi ini rentan terhadap perselisihan besar, kegagalan bersama, dan ketidakharmonisan yang sulit diperbaiki.",
+    "_family_struct": {
+      "pasangan": {
+        "vibe": "Penuh Gairah · Teguh Pendirian · Setia Tanpa Syarat",
+        "headline": "Pasangan ideal dari Shio Tikus, Monyet, atau Ayam"
+      }
+    },
+    "career": "<p>Berdasarkan foto 事業, FF cocok diarahkan ke bidang yang berkaitan dengan pendidikan, buku, penerbitan, kayu, pertanian, dekorasi, tekstil, kerajinan, pelayanan publik, politik, dan kegiatan keagamaan; bidang pendukungnya mencakup perdagangan bergerak, perantara, profesi medis, kebersihan, jurnalistik, wisata, pelayaran, perikanan, pemadam kebakaran, dan perusahaan perdagangan.</p>",
+    "_career_struct": {},
+    "palace1": "<p>ming_gong: - star: 太陰, 紅鸞 - insight: Meskipun FF memiliki kecenderungan untuk bersikap ragu-ragu dan lambat dalam mengambil keputusan <span class=\"hz\">拖泥帶水</span>, perjalanan hidupnya tetap cerah dan kokoh <span class=\"hz\">明朗堅實的運勢</span>. FF adalah sosok yang sering bertindak secara mandiri dan penuh tekad <span class=\"hz\">獨行之人</span> — begitu semangat dan inspirasi muncul, tidak ada seorang pun yang mampu menghalangi FF untuk segera mengambil tindakan <span class=\"hz\">立即展開行動</span>. Hal ini menyebabkan munculnya konflik dengan orang lain secara berulang-ulang <span class=\"hz\">衝突的事例層出不窮</span>. Apabila Istana Kehidupan berada di 巳, kecenderungan ini akan semakin kuat <span class=\"hz\">傾向更為強烈</span>. FF memiliki fisik yang kuat dan sehat <span class=\"hz\">體魄健壯</span>, seolah-olah energinya bersumber dari sebuah inti yang terkonsentrasi <span class=\"hz\">凝聚體一般</span>. Ketertarikan FF terhadap lawan jenis pun sama intens dan berpijarnya <span class=\"hz\">對異性的關心度也同樣地激烈</span>. Begitu FF menyukai seseorang, tanpa mempertimbangkan perasaan atau situasi orang tersebut, FF akan segera mengejar dengan penuh gairah <span class=\"hz\">立即展開熱烈的追求</span>. Namun demikian, ada kalanya FF menyembunyikan emosi membara itu jauh di dalam lubuk hati <span class=\"hz\">把火熱的情感隱藏於內心底</span>. Meski api semangat dalam hati berkobar tinggi <span class=\"hz\">心中熱情之火高漲</span>, penampilan luar tetap tenang dan dingin <span class=\"hz\">外表上仍然裝得很冷靜</span>, menunggu saat yang tepat untuk bertindak <span class=\"hz\">等待成熟的機會來臨</span>. Inilah ciri khas pribadi yang cerdas dan strategis <span class=\"hz\">智慧型的人物</span>. Apabila bintang 廉貞 berada di istana 申, atau berbagi istana dengan bintang pembatas <span class=\"hz\">囚星</span>, bencana menjadi tak terhindarkan <span class=\"hz\">絕無法避免災禍</span>. Bagi wanita, meski memiliki kebajikan feminin yang alami <span class=\"hz\">女性固有美德</span>, FF juga memiliki sisi yang sangat keras kepala dan penuh kegigihan <span class=\"hz\">相當執著的一面</span>. Demi pria yang dicintai, FF rela menghadapi bahaya dan pengorbanan apapun <span class=\"hz\">無論上刀山下油鍋她都心甘情願</span>. Dari segi penampilan, FF memancarkan kesan individu yang berpendidikan baik, lemah lembut, dan berkelas <span class=\"hz\">教養良好溫文儒雅</span>. Berkat kejujuran dan keterusterangan dalam karakter <span class=\"hz\">性格方面的直滿</span>, FF mampu meraih rasa cinta dan hormat dari orang-orang di sekitarnya <span class=\"hz\">能受到大家的愛戴</span>. Selain itu, FF dikenal berjiwa besar dan tulus <span class=\"hz\">心胸真大</span> — tidak ada sifat licik atau penuh perhitungan dalam dirinya <span class=\"hz\">找不出工於算計的性格</span>. FF memiliki aura yang kuat dan berwibawa <span class=\"hz\">說不出的雄壯感</span>, sehingga sering mendapatkan kepercayaan dan dukungan dari orang lain <span class=\"hz\">常能獲得人他人的信賴與支持</span>. Apabila ada bintang keberuntungan lain yang berbagi istana, peluang sukses dan kemajuan akan datang dengan cepat dan stabil <span class=\"hz\">發跡成功的機會必快又穩定</span>. FF sebagai wanita sepenuhnya memiliki kualitas seorang wanita berbakat dan berprestasi <span class=\"hz\">才媛的素質</span>. Secara fisik, FF umumnya memiliki wajah bulat yang cantik <span class=\"hz\">圓臉的美人</span>. Karakter FF lurus dan tegas <span class=\"hz\">性格爽直</span> — sekali berjanji, akan ditepati sampai tuntas <span class=\"hz\">約定之事必恪遵到底</span>. Meskipun pada dasarnya ceria dan terbuka <span class=\"hz\">屬開朗的性格</span>, terdapat nuansa kekakuan dalam penampilan luar FF <span class=\"hz\">外觀仍有拘束感</span> — pakaian maupun ruangan ditata dengan rapi dan indah <span class=\"hz\">服裝或房間也修飾得美</span>. - action: Gunakan keberanian dan aura kepercayaan FF untuk tujuan yang jelas, tetapi beri jeda sebelum bertindak ketika emosi sedang tinggi. Dalam relasi dan keputusan besar, pastikan ruang pribadi tetap ada tanpa mengabaikan perasaan orang lain.</p><p>xiongdi: - star: 化科, 天府, 文昌, 鈴星 - insight: Pada bagian saudara dan pertemanan, foto menunjukkan tanda perubahan yang mudah terjadi. Suasana hati FF dapat berbalik atau berubah cukup sering, sehingga cara FF berhubungan dengan teman maupun saudara tidak selalu stabil dalam jangka panjang. Hubungan yang awalnya terasa dekat dapat menjadi renggang bila emosi sedang berubah, dan kedekatan dengan teman atau saudara cenderung sulit bertahan lama apabila tidak dijaga secara sadar. Intinya, sumber utama yang perlu diperhatikan adalah perubahan perasaan dan respons batin yang tidak tetap, karena hal itulah yang membuat relasi saudara maupun teman mudah naik turun. - action: Jaga ritme komunikasi dengan saudara dan teman dekat; hindari mengambil jarak atau membuat keputusan relasi ketika emosi sedang berubah cepat.</p><p>fuqi: - star: 天馬, 天喜, 貴秀, 八座 - insight: FF memiliki pandangan cinta yang serius, nyata, dan tidak bermain-main. Dalam hubungan, FF tidak memiliki niat mempermainkan pasangan, sehingga ia juga sangat sulit menerima sikap ringan, sembrono, atau main-main dari pihak lain. Karena standar FF terhadap diri sendiri dan pasangan sama-sama keras, perjalanan cinta dapat terasa bergelombang dan penuh ujian. Bila berada bersama 紫微, laki-laki cenderung menikah dengan wanita yang lebih tua, sedangkan wanita cenderung menikah dengan pria yang lebih muda, dan masih dapat melewati kehidupan pernikahan yang relatif stabil. Di luar kondisi bersama 紫微, kehidupan cinta dan pernikahan mudah diwarnai perselisihan berulang, sehingga sulit disebut sebagai pernikahan bahagia menurut pandangan umum. Pola dasarnya menunjukkan bahwa orang dengan 破軍 di Istana Pasangan sering sulit merasa tenang dalam kehidupan keluarga yang terlalu biasa, bahkan sejak awal dapat menganggap pernikahan sebagai sesuatu yang membatasi kebebasan pribadi. Namun bila Istana Pasangan wanita berada di 子 atau 午, masih ada kemampuan untuk menyeimbangkan pekerjaan dan keluarga. - action: Perlakukan pernikahan sebagai kesepakatan yang memberi ruang, bukan sebagai batasan. Buat aturan komunikasi yang jelas agar standar yang tinggi tidak berubah menjadi tekanan atau pertengkaran berulang.</p><p>zinu: - star: 天機, 天鉞, 貫索 - insight: Anak-anak FF cenderung berwatak lembut dan penurut, namun kekurangannya adalah gerak atau respons mereka bisa terasa agak lambat. FF berpotensi membina anak-anak yang berprestasi baik; tetapi bila ada bintang buruk yang menghalangi, ikatan dengan anak menjadi lebih tipis. Bila 天同 berada di Istana Anak, terutama pada posisi 巳 atau 午, anak dapat cenderung hanya menjawab dan berbicara tetapi kurang menjalankan tindakan nyata. Dalam kondisi berat, peluang memiliki keturunan bisa menjadi lemah; namun bila Istana Anak berada di 酉 dan disertai bintang baik lain, masih ada peluang memiliki beberapa anak. Secara umum, bila bersama bintang baik seperti 天同, hubungan orang tua-anak akan lebih harmonis. Anak-anak cenderung pendiam, kadang melamun sendiri, sehingga sulit diketahui apa yang sebenarnya sedang mereka pikirkan. - action: Bangun komunikasi yang pelan dan sabar dengan anak; jangan hanya menuntut jawaban, tetapi bantu mereka mengubah niat menjadi tindakan nyata.</p>",
+    "_palace1_struct": {
+      "ming_gong": {
+        "star": "太陰, 紅鸞",
+        "insight": "Meskipun FF memiliki kecenderungan untuk bersikap ragu-ragu dan lambat dalam mengambil keputusan [[拖泥帶水]], perjalanan hidupnya tetap cerah dan kokoh [[明朗堅實的運勢]]. FF adalah sosok yang sering bertindak secara mandiri dan penuh tekad [[獨行之人]] — begitu semangat dan inspirasi muncul, tidak ada seorang pun yang mampu menghalangi FF untuk segera mengambil tindakan [[立即展開行動]]. Hal ini menyebabkan munculnya konflik dengan orang lain secara berulang-ulang [[衝突的事例層出不窮]]. Apabila Istana Kehidupan berada di 巳, kecenderungan ini akan semakin kuat [[傾向更為強烈]]. FF memiliki fisik yang kuat dan sehat [[體魄健壯]], seolah-olah energinya bersumber dari sebuah inti yang terkonsentrasi [[凝聚體一般]]. Ketertarikan FF terhadap lawan jenis pun sama intens dan berpijarnya [[對異性的關心度也同樣地激烈]]. Begitu FF menyukai seseorang, tanpa mempertimbangkan perasaan atau situasi orang tersebut, FF akan segera mengejar dengan penuh gairah [[立即展開熱烈的追求]]. Namun demikian, ada kalanya FF menyembunyikan emosi membara itu jauh di dalam lubuk hati [[把火熱的情感隱藏於內心底]]. Meski api semangat dalam hati berkobar tinggi [[心中熱情之火高漲]], penampilan luar tetap tenang dan dingin [[外表上仍然裝得很冷靜]], menunggu saat yang tepat untuk bertindak [[等待成熟的機會來臨]]. Inilah ciri khas pribadi yang cerdas dan strategis [[智慧型的人物]]. Apabila bintang 廉貞 berada di istana 申, atau berbagi istana dengan bintang pembatas [[囚星]], bencana menjadi tak terhindarkan [[絕無法避免災禍]]. Bagi wanita, meski memiliki kebajikan feminin yang alami [[女性固有美德]], FF juga memiliki sisi yang sangat keras kepala dan penuh kegigihan [[相當執著的一面]]. Demi pria yang dicintai, FF rela menghadapi bahaya dan pengorbanan apapun [[無論上刀山下油鍋她都心甘情願]]. Dari segi penampilan, FF memancarkan kesan individu yang berpendidikan baik, lemah lembut, dan berkelas [[教養良好溫文儒雅]]. Berkat kejujuran dan keterusterangan dalam karakter [[性格方面的直滿]], FF mampu meraih rasa cinta dan hormat dari orang-orang di sekitarnya [[能受到大家的愛戴]]. Selain itu, FF dikenal berjiwa besar dan tulus [[心胸真大]] — tidak ada sifat licik atau penuh perhitungan dalam dirinya [[找不出工於算計的性格]]. FF memiliki aura yang kuat dan berwibawa [[說不出的雄壯感]], sehingga sering mendapatkan kepercayaan dan dukungan dari orang lain [[常能獲得人他人的信賴與支持]]. Apabila ada bintang keberuntungan lain yang berbagi istana, peluang sukses dan kemajuan akan datang dengan cepat dan stabil [[發跡成功的機會必快又穩定]]. FF sebagai wanita sepenuhnya memiliki kualitas seorang wanita berbakat dan berprestasi [[才媛的素質]]. Secara fisik, FF umumnya memiliki wajah bulat yang cantik [[圓臉的美人]]. Karakter FF lurus dan tegas [[性格爽直]] — sekali berjanji, akan ditepati sampai tuntas [[約定之事必恪遵到底]]. Meskipun pada dasarnya ceria dan terbuka [[屬開朗的性格]], terdapat nuansa kekakuan dalam penampilan luar FF [[外觀仍有拘束感]] — pakaian maupun ruangan ditata dengan rapi dan indah [[服裝或房間也修飾得美]].",
+        "action": "Gunakan keberanian dan aura kepercayaan FF untuk tujuan yang jelas, tetapi beri jeda sebelum bertindak ketika emosi sedang tinggi. Dalam relasi dan keputusan besar, pastikan ruang pribadi tetap ada tanpa mengabaikan perasaan orang lain."
+      },
+      "xiongdi": {
+        "star": "化科, 天府, 文昌, 鈴星",
+        "insight": "Pada bagian saudara dan pertemanan, foto menunjukkan tanda perubahan yang mudah terjadi. Suasana hati FF dapat berbalik atau berubah cukup sering, sehingga cara FF berhubungan dengan teman maupun saudara tidak selalu stabil dalam jangka panjang. Hubungan yang awalnya terasa dekat dapat menjadi renggang bila emosi sedang berubah, dan kedekatan dengan teman atau saudara cenderung sulit bertahan lama apabila tidak dijaga secara sadar. Intinya, sumber utama yang perlu diperhatikan adalah perubahan perasaan dan respons batin yang tidak tetap, karena hal itulah yang membuat relasi saudara maupun teman mudah naik turun.",
+        "action": "Jaga ritme komunikasi dengan saudara dan teman dekat; hindari mengambil jarak atau membuat keputusan relasi ketika emosi sedang berubah cepat."
+      },
+      "fuqi": {
+        "star": "天馬, 天喜, 貴秀, 八座",
+        "insight": "FF memiliki pandangan cinta yang serius, nyata, dan tidak bermain-main. Dalam hubungan, FF tidak memiliki niat mempermainkan pasangan, sehingga ia juga sangat sulit menerima sikap ringan, sembrono, atau main-main dari pihak lain. Karena standar FF terhadap diri sendiri dan pasangan sama-sama keras, perjalanan cinta dapat terasa bergelombang dan penuh ujian. Bila berada bersama 紫微, laki-laki cenderung menikah dengan wanita yang lebih tua, sedangkan wanita cenderung menikah dengan pria yang lebih muda, dan masih dapat melewati kehidupan pernikahan yang relatif stabil. Di luar kondisi bersama 紫微, kehidupan cinta dan pernikahan mudah diwarnai perselisihan berulang, sehingga sulit disebut sebagai pernikahan bahagia menurut pandangan umum. Pola dasarnya menunjukkan bahwa orang dengan 破軍 di Istana Pasangan sering sulit merasa tenang dalam kehidupan keluarga yang terlalu biasa, bahkan sejak awal dapat menganggap pernikahan sebagai sesuatu yang membatasi kebebasan pribadi. Namun bila Istana Pasangan wanita berada di 子 atau 午, masih ada kemampuan untuk menyeimbangkan pekerjaan dan keluarga.",
+        "action": "Perlakukan pernikahan sebagai kesepakatan yang memberi ruang, bukan sebagai batasan. Buat aturan komunikasi yang jelas agar standar yang tinggi tidak berubah menjadi tekanan atau pertengkaran berulang."
+      },
+      "zinu": {
+        "star": "天機, 天鉞, 貫索",
+        "insight": "Anak-anak FF cenderung berwatak lembut dan penurut, namun kekurangannya adalah gerak atau respons mereka bisa terasa agak lambat. FF berpotensi membina anak-anak yang berprestasi baik; tetapi bila ada bintang buruk yang menghalangi, ikatan dengan anak menjadi lebih tipis. Bila 天同 berada di Istana Anak, terutama pada posisi 巳 atau 午, anak dapat cenderung hanya menjawab dan berbicara tetapi kurang menjalankan tindakan nyata. Dalam kondisi berat, peluang memiliki keturunan bisa menjadi lemah; namun bila Istana Anak berada di 酉 dan disertai bintang baik lain, masih ada peluang memiliki beberapa anak. Secara umum, bila bersama bintang baik seperti 天同, hubungan orang tua-anak akan lebih harmonis. Anak-anak cenderung pendiam, kadang melamun sendiri, sehingga sulit diketahui apa yang sebenarnya sedang mereka pikirkan.",
+        "action": "Bangun komunikasi yang pelan dan sabar dengan anak; jangan hanya menuntut jawaban, tetapi bantu mereka mengubah niat menjadi tindakan nyata."
+      }
+    },
+    "palace2": "<p>caibo: - star: 紫微, 羊刃, 陀羅, 台輔, 鳳閣 - insight: FF cenderung cukup murah hati dan besar dalam pengeluaran, tetapi pada saat yang sama mampu memperoleh kembali nilai atau imbalan yang sepadan. Ada tanda lahir atau tumbuh dalam lingkungan keluarga yang berkecukupan serta menerima berkah rezeki. Namun bila terdapat bintang buruk yang menghambat keberuntungan finansial dalam istana yang sama, efek keberuntungan 紫微 sebagai bintang rezeki tidak dapat berkembang penuh. Bila bersama 天相, FF cakap dalam menabung; bila bersama 天府, hidup tidak perlu terlalu khawatir terhadap aliran uang yang terus datang. Bila bersama 七殺, ada kemungkinan memperoleh rezeki mendadak seperti hadiah besar, warisan bernilai tinggi, atau uang dalam jumlah besar yang datang secara tiba-tiba. - action: Kelola kemurahan hati dengan sistem tabungan dan aset yang jelas; ketika rezeki besar datang tiba-tiba, langsung pisahkan untuk keamanan jangka panjang.</p><p>jie_e: - star: 天使, 博士, 劫煞 - insight: Bagian kesehatan menunjukkan FF mudah mengalami gangguan pada tenggorokan, masuk angin, sakit gigi, dan keluhan sejenis. Ada kecenderungan mudah mengalami penyakit yang berkaitan dengan hati. Bila bertemu bintang buruk dalam istana yang sama, perlu memperhatikan penyakit kulit atau mata. Jika bersama 太陰, tubuh dapat lebih sering mengalami pembengkakan atau rasa tidak nyaman karena sumbatan/peredaran yang kurang lancar. Untuk wanita, ada kemungkinan mengalami ketidaklancaran fisiologis yang menimbulkan rasa sulit atau tidak nyaman. - action: Jaga pola tidur, pernapasan, gigi, dan pemeriksaan berkala untuk mata, kulit, serta fungsi hati. Bila muncul pembengkakan, gangguan siklus, atau keluhan berulang, jangan ditunda dan segera periksa secara medis.</p><p>qianyi: - star: 天梁, 孤辰 - insight: Dalam urusan perpindahan, perubahan lingkungan, atau hidup di luar, FF memiliki rasa stabil yang cukup kuat. Arah geraknya tidak cocok dengan benturan langsung, tindakan gegabah, atau masuk ke tempat yang berliku dan penuh risiko. FF sulit merasa tenang bila berada jauh dari rumah, tetapi justru karena itu ia berpeluang melewati kehidupan yang banyak berpindah dan sering bertemu peluang dari perjalanan. Bahkan bila bekerja, ada keinginan kuat untuk mencoba pekerjaan baru lalu meninggalkan pola lama. Jika 廉貞 berada satu istana dengan 武曲, dalam perputaran yang terus bergerak FF malah dapat menggenggam kesempatan; bila bersama 紫微, demi mencapai tujuan FF perlu berani mengubah pola hidup yang sedang dijalani. Secara umum, keberuntungan FF baik di dalam maupun di luar relatif stabil. Baik di rumah, lingkungan sekitar, maupun perusahaan, biasanya tidak banyak perubahan yang mendadak dan tajam. Karena kondisi batin relatif stabil, FF cenderung tidak punya dorongan besar untuk sering bepergian jauh atau mengganti pekerjaan secara tiba-tiba. Diam dan tidak banyak bergerak justru menjadi jalur yang lebih baik untuk mencapai tujuan. Bila ada bintang baik lain yang membantu, setiap kali muncul perubahan di sekitar FF, biasanya ada atasan atau pihak berwenang yang membantu melewati krisis. - action: Hindari keputusan pindah, bepergian jauh, atau ganti pekerjaan karena dorongan sesaat. Bila memang harus berubah, lakukan bertahap, siapkan dukungan dari atasan atau orang yang berwenang, dan pastikan tujuan perubahan sudah jelas.</p><p>puyi: - star: 太陽, 天梁, 恩光 - insight: Dalam hubungan dengan bawahan, rekan kerja yang membantu, atau orang yang berada di bawah koordinasi FF, ada kecenderungan FF harus cukup banyak mengurus bagian-bagian kecil yang kurang diperhatikan oleh mereka. FF dapat memperoleh bawahan yang aktif, tetapi bila bawahan atau relasi kerja berada pada posisi 壬, 戌, atau 亥, sifat mereka bisa keras dan mudah menantang FF. Bila bersama 太陰, ada peluang memiliki cukup banyak teman yang lebih muda; bila bersama 巨門, hubungan emosional dengan bawahan dapat lebih menyatu. Dengan bantuan bawahan dan teman muda, perkembangan pekerjaan FF dapat berjalan lebih lancar. Namun bila bersama 天同, FF berpotensi mendapatkan bawahan yang kurang teliti. Pada saat yang sama, teman-teman muda juga cenderung mau mendekat dan bekerja untuk FF. Bila bersama 天機, ada tanda munculnya perselisihan atau urusan yang tidak selesai dengan bawahan maupun teman yang lebih muda. - action: Pilih pembantu kerja yang teliti dan tetapkan batas tugas secara jelas. Manfaatkan dukungan orang muda, tetapi jangan biarkan kedekatan emosional membuat pengawasan dan standar kerja menjadi longgar.</p>",
+    "_palace2_struct": {
+      "caibo": {
+        "star": "紫微, 羊刃, 陀羅, 台輔, 鳳閣",
+        "insight": "FF cenderung cukup murah hati dan besar dalam pengeluaran, tetapi pada saat yang sama mampu memperoleh kembali nilai atau imbalan yang sepadan. Ada tanda lahir atau tumbuh dalam lingkungan keluarga yang berkecukupan serta menerima berkah rezeki. Namun bila terdapat bintang buruk yang menghambat keberuntungan finansial dalam istana yang sama, efek keberuntungan 紫微 sebagai bintang rezeki tidak dapat berkembang penuh. Bila bersama 天相, FF cakap dalam menabung; bila bersama 天府, hidup tidak perlu terlalu khawatir terhadap aliran uang yang terus datang. Bila bersama 七殺, ada kemungkinan memperoleh rezeki mendadak seperti hadiah besar, warisan bernilai tinggi, atau uang dalam jumlah besar yang datang secara tiba-tiba.",
+        "action": "Kelola kemurahan hati dengan sistem tabungan dan aset yang jelas; ketika rezeki besar datang tiba-tiba, langsung pisahkan untuk keamanan jangka panjang."
+      },
+      "jie_e": {
+        "star": "天使, 博士, 劫煞",
+        "insight": "Bagian kesehatan menunjukkan FF mudah mengalami gangguan pada tenggorokan, masuk angin, sakit gigi, dan keluhan sejenis. Ada kecenderungan mudah mengalami penyakit yang berkaitan dengan hati. Bila bertemu bintang buruk dalam istana yang sama, perlu memperhatikan penyakit kulit atau mata. Jika bersama 太陰, tubuh dapat lebih sering mengalami pembengkakan atau rasa tidak nyaman karena sumbatan/peredaran yang kurang lancar. Untuk wanita, ada kemungkinan mengalami ketidaklancaran fisiologis yang menimbulkan rasa sulit atau tidak nyaman.",
+        "action": "Jaga pola tidur, pernapasan, gigi, dan pemeriksaan berkala untuk mata, kulit, serta fungsi hati. Bila muncul pembengkakan, gangguan siklus, atau keluhan berulang, jangan ditunda dan segera periksa secara medis."
+      },
+      "qianyi": {
+        "star": "天梁, 孤辰",
+        "insight": "Dalam urusan perpindahan, perubahan lingkungan, atau hidup di luar, FF memiliki rasa stabil yang cukup kuat. Arah geraknya tidak cocok dengan benturan langsung, tindakan gegabah, atau masuk ke tempat yang berliku dan penuh risiko. FF sulit merasa tenang bila berada jauh dari rumah, tetapi justru karena itu ia berpeluang melewati kehidupan yang banyak berpindah dan sering bertemu peluang dari perjalanan. Bahkan bila bekerja, ada keinginan kuat untuk mencoba pekerjaan baru lalu meninggalkan pola lama. Jika 廉貞 berada satu istana dengan 武曲, dalam perputaran yang terus bergerak FF malah dapat menggenggam kesempatan; bila bersama 紫微, demi mencapai tujuan FF perlu berani mengubah pola hidup yang sedang dijalani. Secara umum, keberuntungan FF baik di dalam maupun di luar relatif stabil. Baik di rumah, lingkungan sekitar, maupun perusahaan, biasanya tidak banyak perubahan yang mendadak dan tajam. Karena kondisi batin relatif stabil, FF cenderung tidak punya dorongan besar untuk sering bepergian jauh atau mengganti pekerjaan secara tiba-tiba. Diam dan tidak banyak bergerak justru menjadi jalur yang lebih baik untuk mencapai tujuan. Bila ada bintang baik lain yang membantu, setiap kali muncul perubahan di sekitar FF, biasanya ada atasan atau pihak berwenang yang membantu melewati krisis.",
+        "action": "Hindari keputusan pindah, bepergian jauh, atau ganti pekerjaan karena dorongan sesaat. Bila memang harus berubah, lakukan bertahap, siapkan dukungan dari atasan atau orang yang berwenang, dan pastikan tujuan perubahan sudah jelas."
+      },
+      "puyi": {
+        "star": "太陽, 天梁, 恩光",
+        "insight": "Dalam hubungan dengan bawahan, rekan kerja yang membantu, atau orang yang berada di bawah koordinasi FF, ada kecenderungan FF harus cukup banyak mengurus bagian-bagian kecil yang kurang diperhatikan oleh mereka. FF dapat memperoleh bawahan yang aktif, tetapi bila bawahan atau relasi kerja berada pada posisi 壬, 戌, atau 亥, sifat mereka bisa keras dan mudah menantang FF. Bila bersama 太陰, ada peluang memiliki cukup banyak teman yang lebih muda; bila bersama 巨門, hubungan emosional dengan bawahan dapat lebih menyatu. Dengan bantuan bawahan dan teman muda, perkembangan pekerjaan FF dapat berjalan lebih lancar. Namun bila bersama 天同, FF berpotensi mendapatkan bawahan yang kurang teliti. Pada saat yang sama, teman-teman muda juga cenderung mau mendekat dan bekerja untuk FF. Bila bersama 天機, ada tanda munculnya perselisihan atau urusan yang tidak selesai dengan bawahan maupun teman yang lebih muda.",
+        "action": "Pilih pembantu kerja yang teliti dan tetapkan batas tugas secara jelas. Manfaatkan dukungan orang muda, tetapi jangan biarkan kedekatan emosional membuat pengawasan dan standar kerja menjadi longgar."
+      }
+    },
+    "palace3": "<p>guanlu: - star: 天相, 天月, 天哭 - insight: Bidang kerja yang disebutkan cocok meliputi dokter, perawat, pekerjaan keagamaan, dan pengacara. Di mana pun FF berjalan, ia berpeluang memperoleh pekerjaan dengan penghasilan yang tetap dan cukup tinggi. Bila bersama 文昌 atau 文曲, posisi sebagai pegawai negeri atau pekerjaan berbasis administrasi dinilai baik. Sikap FF terhadap pekerjaan cenderung tulus, serius, dan hampir mencapai tingkat yang tidak mudah berkompromi. Karena itu FF cocok dengan pekerjaan keuangan atau akuntansi. Namun bila 武曲 juga hadir sebagai bintang yang menandakan perubahan, perlu berhati-hati terhadap kelalaian atau permainan yang muncul di tempat kerja, bahkan bisa berujung pada kegagalan dalam urusan perselisihan tenaga kerja atau pemecatan. Bila ada bintang seperti 貪狼, 破軍, 七殺 dalam istana yang sama, perlu lebih waspada agar tidak sering melewati hari dalam kegelisahan dan ketidaktenangan. FF memiliki sifat連貫性, kemampuan menyambut orang, dan kecakapan hubungan manusia yang baik. Profesi yang membutuhkan koordinasi relasi, seperti resepsionis, pariwisata, asuransi, penjualan, atau penulis lepas, dapat memunculkan bakatnya. Namun FF juga punya kecenderungan perfeksionis yang kuat terhadap pekerjaan, sehingga sering merasa pekerjaan orang lain kurang sempurna, bahkan mengkritik kinerja mereka sampai menimbulkan penolakan dari rekan kerja. Di dalam perusahaan, FF mungkin dipandang sebagai pribadi yang berbakat; bila bersama 武曲 atau 廉貞, keberhasilan karier bahkan dapat diperoleh saat pergi ke luar negeri. - action: Pilih pekerjaan yang memberi struktur jelas, penghasilan stabil, dan ruang memakai kemampuan relasi. Kurangi kritik berlebihan terhadap hasil kerja orang lain agar bakat FF tidak berubah menjadi sumber resistensi di lingkungan kerja.</p><p>tianzhai: - star: 破碎, 巨門, 化祿, 紫宿 - insight: FF berpotensi memiliki properti atau aset tanah dalam jumlah besar, tetapi cenderung kurang luwes dalam menggunakan dan mengelola kemampuan terkait properti tersebut. Bila mampu memanfaatkan keunggulan properti dengan baik, seperti mengelola apartemen, membeli atau menjual tanah, kemampuan FF dapat berkembang kuat. Kelemahannya, FF mudah dipengaruhi oleh pendapat lingkungan sekitar. Saat melakukan transaksi properti, sebisa mungkin jangan membiarkan pendapat teman atau kerabat terlalu memengaruhi keputusan. Arah utara dinilai sangat baik. Bila berada pada istana 壬, 辰, 未, 酉, atau 戌, ada peluang memperoleh properti yang cukup besar melalui cara yang mirip paksaan atau tekanan. Sebaliknya, bila berada pada 子 atau 亥, urusan properti justru dapat membuat FF sibuk dan tidak tenang. Secara umum, bila bersama 巨門 dan 土地, hubungan dengan tanah dan rumah kurang berjodoh; jika ada bintang buruk lain dalam istana yang sama, hubungan dengan properti bisa terasa semakin terputus. Dibanding tinggal di rumah tanah yang kering dan keras, lebih cocok tinggal di rumah yang datar dan memiliki nuansa tanah berlumpur/lebih lembap. Lahan basah dinilai sangat baik. - action: Ambil keputusan properti berdasarkan hitungan sendiri yang jelas, bukan tekanan teman atau keluarga. Bila membeli, menjual, atau menyewakan aset, pilih lokasi dan kondisi lingkungan yang benar-benar mendukung stabilitas jangka panjang.</p><p>fude: - star: 紫微, 廉貞, 台輔, 鳳閣, 三台 - insight: Dalam sisi batin dan keberkahan, FF memiliki pembawaan yang hangat, cerah, indah, dan halus, sehingga baik pria maupun wanita cenderung memiliki hubungan antarmanusia yang baik. Namun bila tidak ada 紫微 dalam istana yang sama, hidup FF sulit melewati kehidupan mental yang benar-benar stabil. Di dalam hati sering ada rasa tidak puas, mudah merasa terikat oleh keadaan, dan perjalanan hidup dapat terasa naik turun. Hal ini muncul karena standar dan tuntutan FF terlalu tinggi, tidak puas pada keadaan sekarang, serta selalu gelisah mengejar rangsangan atau pembaruan yang lebih kuat. Bahkan bila bersama 紫微, kestabilan baru lebih mudah diperoleh pada usia lanjut. - action: Latih kepuasan dan ritme hidup yang stabil. Jangan terus mengejar rangsangan baru hanya karena tidak puas pada kondisi sekarang; ketenangan FF tumbuh dari pengendalian harapan dan kedewasaan batin.</p><p>fumu: - star: 祿存, 文曲, 陀羅, 解神 - insight: Bagi FF, gambaran keluarga menunjukkan suasana yang harmonis, tenang, dan relatif bebas dari suasana suram atau tekanan berat. FF menerima pengaruh yang kuat dari ibu. Kedua orang tua digambarkan sebagai sosok yang tenang, berbudaya, dan memiliki selera yang baik. Mereka juga sangat memperhatikan reaksi FF; perubahan kecil dalam suasana hati FF pun sulit luput dari pengamatan mereka. Namun bila bintang buruk masuk, hubungan emosional dengan ibu dapat menjadi kurang baik, ada kemungkinan berpisah lebih awal dari ibu, atau orang tua memiliki sisi buruk seperti kebiasaan minum. Kondisi paling ideal adalah bila dapat bersama 太陽 dalam istana yang sama dan tidak ada bintang buruk yang menghalangi. - action: Jaga komunikasi emosional dengan orang tua, terutama ibu, karena pengaruh keluarga terhadap batin FF cukup kuat. Bila muncul jarak atau salah paham, selesaikan dengan tenang sebelum menjadi pola yang menetap.</p>",
+    "_palace3_struct": {
+      "guanlu": {
+        "star": "天相, 天月, 天哭",
+        "insight": "Bidang kerja yang disebutkan cocok meliputi dokter, perawat, pekerjaan keagamaan, dan pengacara. Di mana pun FF berjalan, ia berpeluang memperoleh pekerjaan dengan penghasilan yang tetap dan cukup tinggi. Bila bersama 文昌 atau 文曲, posisi sebagai pegawai negeri atau pekerjaan berbasis administrasi dinilai baik. Sikap FF terhadap pekerjaan cenderung tulus, serius, dan hampir mencapai tingkat yang tidak mudah berkompromi. Karena itu FF cocok dengan pekerjaan keuangan atau akuntansi. Namun bila 武曲 juga hadir sebagai bintang yang menandakan perubahan, perlu berhati-hati terhadap kelalaian atau permainan yang muncul di tempat kerja, bahkan bisa berujung pada kegagalan dalam urusan perselisihan tenaga kerja atau pemecatan. Bila ada bintang seperti 貪狼, 破軍, 七殺 dalam istana yang sama, perlu lebih waspada agar tidak sering melewati hari dalam kegelisahan dan ketidaktenangan. FF memiliki sifat連貫性, kemampuan menyambut orang, dan kecakapan hubungan manusia yang baik. Profesi yang membutuhkan koordinasi relasi, seperti resepsionis, pariwisata, asuransi, penjualan, atau penulis lepas, dapat memunculkan bakatnya. Namun FF juga punya kecenderungan perfeksionis yang kuat terhadap pekerjaan, sehingga sering merasa pekerjaan orang lain kurang sempurna, bahkan mengkritik kinerja mereka sampai menimbulkan penolakan dari rekan kerja. Di dalam perusahaan, FF mungkin dipandang sebagai pribadi yang berbakat; bila bersama 武曲 atau 廉貞, keberhasilan karier bahkan dapat diperoleh saat pergi ke luar negeri.",
+        "action": "Pilih pekerjaan yang memberi struktur jelas, penghasilan stabil, dan ruang memakai kemampuan relasi. Kurangi kritik berlebihan terhadap hasil kerja orang lain agar bakat FF tidak berubah menjadi sumber resistensi di lingkungan kerja."
+      },
+      "tianzhai": {
+        "star": "破碎, 巨門, 化祿, 紫宿",
+        "insight": "FF berpotensi memiliki properti atau aset tanah dalam jumlah besar, tetapi cenderung kurang luwes dalam menggunakan dan mengelola kemampuan terkait properti tersebut. Bila mampu memanfaatkan keunggulan properti dengan baik, seperti mengelola apartemen, membeli atau menjual tanah, kemampuan FF dapat berkembang kuat. Kelemahannya, FF mudah dipengaruhi oleh pendapat lingkungan sekitar. Saat melakukan transaksi properti, sebisa mungkin jangan membiarkan pendapat teman atau kerabat terlalu memengaruhi keputusan. Arah utara dinilai sangat baik. Bila berada pada istana 壬, 辰, 未, 酉, atau 戌, ada peluang memperoleh properti yang cukup besar melalui cara yang mirip paksaan atau tekanan. Sebaliknya, bila berada pada 子 atau 亥, urusan properti justru dapat membuat FF sibuk dan tidak tenang. Secara umum, bila bersama 巨門 dan 土地, hubungan dengan tanah dan rumah kurang berjodoh; jika ada bintang buruk lain dalam istana yang sama, hubungan dengan properti bisa terasa semakin terputus. Dibanding tinggal di rumah tanah yang kering dan keras, lebih cocok tinggal di rumah yang datar dan memiliki nuansa tanah berlumpur/lebih lembap. Lahan basah dinilai sangat baik.",
+        "action": "Ambil keputusan properti berdasarkan hitungan sendiri yang jelas, bukan tekanan teman atau keluarga. Bila membeli, menjual, atau menyewakan aset, pilih lokasi dan kondisi lingkungan yang benar-benar mendukung stabilitas jangka panjang."
+      },
+      "fude": {
+        "star": "紫微, 廉貞, 台輔, 鳳閣, 三台",
+        "insight": "Dalam sisi batin dan keberkahan, FF memiliki pembawaan yang hangat, cerah, indah, dan halus, sehingga baik pria maupun wanita cenderung memiliki hubungan antarmanusia yang baik. Namun bila tidak ada 紫微 dalam istana yang sama, hidup FF sulit melewati kehidupan mental yang benar-benar stabil. Di dalam hati sering ada rasa tidak puas, mudah merasa terikat oleh keadaan, dan perjalanan hidup dapat terasa naik turun. Hal ini muncul karena standar dan tuntutan FF terlalu tinggi, tidak puas pada keadaan sekarang, serta selalu gelisah mengejar rangsangan atau pembaruan yang lebih kuat. Bahkan bila bersama 紫微, kestabilan baru lebih mudah diperoleh pada usia lanjut.",
+        "action": "Latih kepuasan dan ritme hidup yang stabil. Jangan terus mengejar rangsangan baru hanya karena tidak puas pada kondisi sekarang; ketenangan FF tumbuh dari pengendalian harapan dan kedewasaan batin."
+      },
+      "fumu": {
+        "star": "祿存, 文曲, 陀羅, 解神",
+        "insight": "Bagi FF, gambaran keluarga menunjukkan suasana yang harmonis, tenang, dan relatif bebas dari suasana suram atau tekanan berat. FF menerima pengaruh yang kuat dari ibu. Kedua orang tua digambarkan sebagai sosok yang tenang, berbudaya, dan memiliki selera yang baik. Mereka juga sangat memperhatikan reaksi FF; perubahan kecil dalam suasana hati FF pun sulit luput dari pengamatan mereka. Namun bila bintang buruk masuk, hubungan emosional dengan ibu dapat menjadi kurang baik, ada kemungkinan berpisah lebih awal dari ibu, atau orang tua memiliki sisi buruk seperti kebiasaan minum. Kondisi paling ideal adalah bila dapat bersama 太陽 dalam istana yang sama dan tidak ada bintang buruk yang menghalangi.",
+        "action": "Jaga komunikasi emosional dengan orang tua, terutama ibu, karena pengaruh keluarga terhadap batin FF cukup kuat. Bila muncul jarak atau salah paham, selesaikan dengan tenang sebelum menjadi pola yang menetap."
+      }
+    },
+    "sintesis": "FF adalah wanita dengan semangat hidup yang kuat, keberanian mengambil tindakan, dan kejujuran yang membuat orang lain mudah percaya. Secara umum, FF bukan pribadi yang setengah-setengah: ketika hati sudah tertarik pada tujuan, pekerjaan, hubungan, atau orang tertentu, ia bisa mengejarnya dengan sangat serius. Dari luar FF dapat terlihat tenang, rapi, dan cukup elegan, tetapi di dalam dirinya ada dorongan besar untuk bergerak, memperbaiki keadaan, dan membuktikan kemampuan. Kekuatan ini dapat membawa FF pada pencapaian yang baik, terutama bila diarahkan ke pekerjaan yang stabil, relasi yang sehat, dan pengelolaan uang yang disiplin.",
+    "_sintesis_struct": {
+      "opening": "FF adalah wanita dengan semangat hidup yang kuat, keberanian mengambil tindakan, dan kejujuran yang membuat orang lain mudah percaya. Secara umum, FF bukan pribadi yang setengah-setengah: ketika hati sudah tertarik pada tujuan, pekerjaan, hubungan, atau orang tertentu, ia bisa mengejarnya dengan sangat serius. Dari luar FF dapat terlihat tenang, rapi, dan cukup elegan, tetapi di dalam dirinya ada dorongan besar untuk bergerak, memperbaiki keadaan, dan membuktikan kemampuan. Kekuatan ini dapat membawa FF pada pencapaian yang baik, terutama bila diarahkan ke pekerjaan yang stabil, relasi yang sehat, dan pengelolaan uang yang disiplin.",
+      "actions": [
+        {
+          "title": "Tenangkan Api Sebelum Bertindak"
+        },
+        {
+          "title": "Jaga Hubungan dengan Ruang dan Aturan"
+        },
+        {
+          "title": "Pakai Bakat Komunikasi dan Estetika"
+        },
+        {
+          "title": "Disiplinkan Uang dan Properti"
+        },
+        {
+          "title": "Jaga Tubuh dan Ritme Hidup"
+        },
+        {
+          "title": "Baca 2026-2031 sebagai Masa Pengujian dan Penguatan"
+        }
+      ]
+    },
+    "_dmcard": "\n        <div class=\"dmc-eyebrow\">本 命 · Penguasa Hari</div>\n        <div class=\"dmc-stem\">甲</div>\n        <div class=\"dmc-element\">木 · Kayu Yang</div>\n        <div class=\"dmc-pinyin\">Jiǎ 木, \"Pohon Besar\"</div>\n        <div class=\"dmc-strength\">Status: <span class=\"val\">KUAT</span> · 旺</div>\n      ",
+    "_jishen_body": "<strong>土</strong> (Tǔ · Tanah), Tanah berlebih membuat stagnasi; hindari berat/lembam, kebiasaan menumpuk, dan resisten terhadap perubahan.",
+    "fam_pasangan_vibe": "Penuh Gairah · Teguh Pendirian · Setia Tanpa Syarat",
+    "fam_pasangan_headline": "Pasangan ideal dari Shio Tikus, Monyet, atau Ayam",
+    "caifu_zheng_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "caifu_pian_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "_p1_ming_gong": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Diri</span><span class=\"pn-meta\">Mìng Gōng<span class=\"hz\">命宮</span></span></div></div><div class=\"pal-body\"><p>Meskipun FF memiliki kecenderungan untuk bersikap ragu-ragu dan lambat dalam mengambil keputusan <span class=\"hz\">拖泥帶水</span>, perjalanan hidupnya tetap cerah dan kokoh <span class=\"hz\">明朗堅實的運勢</span>. FF adalah sosok yang sering bertindak secara mandiri dan penuh tekad <span class=\"hz\">獨行之人</span> — begitu semangat dan inspirasi muncul, tidak ada seorang pun yang mampu menghalangi FF untuk segera mengambil tindakan <span class=\"hz\">立即展開行動</span>. Hal ini menyebabkan munculnya konflik dengan orang lain secara berulang-ulang <span class=\"hz\">衝突的事例層出不窮</span>. Apabila Istana Kehidupan berada di 巳, kecenderungan ini akan semakin kuat <span class=\"hz\">傾向更為強烈</span>. FF memiliki fisik yang kuat dan sehat <span class=\"hz\">體魄健壯</span>, seolah-olah energinya bersumber dari sebuah inti yang terkonsentrasi <span class=\"hz\">凝聚體一般</span>. Ketertarikan FF terhadap lawan jenis pun sama intens dan berpijarnya <span class=\"hz\">對異性的關心度也同樣地激烈</span>. Begitu FF menyukai seseorang, tanpa mempertimbangkan perasaan atau situasi orang tersebut, FF akan segera mengejar dengan penuh gairah <span class=\"hz\">立即展開熱烈的追求</span>. Namun demikian, ada kalanya FF menyembunyikan emosi membara itu jauh di dalam lubuk hati <span class=\"hz\">把火熱的情感隱藏於內心底</span>. Meski api semangat dalam hati berkobar tinggi <span class=\"hz\">心中熱情之火高漲</span>, penampilan luar tetap tenang dan dingin <span class=\"hz\">外表上仍然裝得很冷靜</span>, menunggu saat yang tepat untuk bertindak <span class=\"hz\">等待成熟的機會來臨</span>. Inilah ciri khas pribadi yang cerdas dan strategis <span class=\"hz\">智慧型的人物</span>. Apabila bintang 廉貞 berada di istana 申, atau berbagi istana dengan bintang pembatas <span class=\"hz\">囚星</span>, bencana menjadi tak terhindarkan <span class=\"hz\">絕無法避免災禍</span>. Bagi wanita, meski memiliki kebajikan feminin yang alami <span class=\"hz\">女性固有美德</span>, FF juga memiliki sisi yang sangat keras kepala dan penuh kegigihan <span class=\"hz\">相當執著的一面</span>. Demi pria yang dicintai, FF rela menghadapi bahaya dan pengorbanan apapun <span class=\"hz\">無論上刀山下油鍋她都心甘情願</span>. Dari segi penampilan, FF memancarkan kesan individu yang berpendidikan baik, lemah lembut, dan berkelas <span class=\"hz\">教養良好溫文儒雅</span>. Berkat kejujuran dan keterusterangan dalam karakter <span class=\"hz\">性格方面的直滿</span>, FF mampu meraih rasa cinta dan hormat dari orang-orang di sekitarnya <span class=\"hz\">能受到大家的愛戴</span>. Selain itu, FF dikenal berjiwa besar dan tulus <span class=\"hz\">心胸真大</span> — tidak ada sifat licik atau penuh perhitungan dalam dirinya <span class=\"hz\">找不出工於算計的性格</span>. FF memiliki aura yang kuat dan berwibawa <span class=\"hz\">說不出的雄壯感</span>, sehingga sering mendapatkan kepercayaan dan dukungan dari orang lain <span class=\"hz\">常能獲得人他人的信賴與支持</span>. Apabila ada bintang keberuntungan lain yang berbagi istana, peluang sukses dan kemajuan akan datang dengan cepat dan stabil <span class=\"hz\">發跡成功的機會必快又穩定</span>. FF sebagai wanita sepenuhnya memiliki kualitas seorang wanita berbakat dan berprestasi <span class=\"hz\">才媛的素質</span>. Secara fisik, FF umumnya memiliki wajah bulat yang cantik <span class=\"hz\">圓臉的美人</span>. Karakter FF lurus dan tegas <span class=\"hz\">性格爽直</span> — sekali berjanji, akan ditepati sampai tuntas <span class=\"hz\">約定之事必恪遵到底</span>. Meskipun pada dasarnya ceria dan terbuka <span class=\"hz\">屬開朗的性格</span>, terdapat nuansa kekakuan dalam penampilan luar FF <span class=\"hz\">外觀仍有拘束感</span> — pakaian maupun ruangan ditata dengan rapi dan indah <span class=\"hz\">服裝或房間也修飾得美</span>.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Gunakan keberanian dan aura kepercayaan FF untuk tujuan yang jelas, tetapi beri jeda sebelum bertindak ketika emosi sedang tinggi. Dalam relasi dan keputusan besar, pastikan ruang pribadi tetap ada tanpa mengabaikan perasaan orang lain.</span></div></div>",
+    "_solo_ming_gong_body": "<style>.palace-solo .ps-body p { font-size: 8pt; line-height: 1.4; margin: 0 0 1.8mm 0; }</style><p>Meskipun FF memiliki kecenderungan untuk bersikap ragu-ragu dan lambat dalam mengambil keputusan <span class=\"hz\">拖泥帶水</span>, perjalanan hidupnya tetap cerah dan kokoh <span class=\"hz\">明朗堅實的運勢</span>. FF adalah sosok yang sering bertindak secara mandiri dan penuh tekad <span class=\"hz\">獨行之人</span> — begitu semangat dan inspirasi muncul, tidak ada seorang pun yang mampu menghalangi FF untuk segera mengambil tindakan <span class=\"hz\">立即展開行動</span>. Hal ini menyebabkan munculnya konflik dengan orang lain secara berulang-ulang <span class=\"hz\">衝突的事例層出不窮</span>. Apabila Istana Kehidupan berada di 巳, kecenderungan ini akan semakin kuat <span class=\"hz\">傾向更為強烈</span>. FF memiliki fisik yang kuat dan sehat <span class=\"hz\">體魄健壯</span>, seolah-olah energinya bersumber dari sebuah inti yang terkonsentrasi <span class=\"hz\">凝聚體一般</span>. Ketertarikan FF terhadap lawan jenis pun sama intens dan berpijarnya <span class=\"hz\">對異性的關心度也同樣地激烈</span>. Begitu FF menyukai seseorang, tanpa mempertimbangkan perasaan atau situasi orang tersebut, FF akan segera mengejar dengan penuh gairah <span class=\"hz\">立即展開熱烈的追求</span>. Namun demikian, ada kalanya FF menyembunyikan emosi membara itu jauh di dalam lubuk hati <span class=\"hz\">把火熱的情感隱藏於內心底</span>. Meski api semangat dalam hati berkobar tinggi <span class=\"hz\">心中熱情之火高漲</span>, penampilan luar tetap tenang dan dingin <span class=\"hz\">外表上仍然裝得很冷靜</span>, menunggu saat yang tepat untuk bertindak <span class=\"hz\">等待成熟的機會來臨</span>. Inilah ciri khas pribadi yang cerdas dan strategis <span class=\"hz\">智慧型的人物</span>. Apabila bintang 廉貞 berada di istana 申, atau berbagi istana dengan bintang pembatas <span class=\"hz\">囚星</span>, bencana menjadi tak terhindarkan <span class=\"hz\">絕無法避免災禍</span>. Bagi wanita, meski memiliki kebajikan feminin yang alami <span class=\"hz\">女性固有美德</span>, FF juga memiliki sisi yang sangat keras kepala dan penuh kegigihan <span class=\"hz\">相當執著的一面</span>. Demi pria yang dicintai, FF rela menghadapi bahaya dan pengorbanan apapun <span class=\"hz\">無論上刀山下油鍋她都心甘情願</span>. Dari segi penampilan, FF memancarkan kesan individu yang berpendidikan baik, lemah lembut, dan berkelas <span class=\"hz\">教養良好溫文儒雅</span>. Berkat kejujuran dan keterusterangan dalam karakter <span class=\"hz\">性格方面的直滿</span>, FF mampu meraih rasa cinta dan hormat dari orang-orang di sekitarnya <span class=\"hz\">能受到大家的愛戴</span>. Selain itu, FF dikenal berjiwa besar dan tulus <span class=\"hz\">心胸真大</span> — tidak ada sifat licik atau penuh perhitungan dalam dirinya <span class=\"hz\">找不出工於算計的性格</span>. FF memiliki aura yang kuat dan berwibawa <span class=\"hz\">說不出的雄壯感</span>, sehingga sering mendapatkan kepercayaan dan dukungan dari orang lain <span class=\"hz\">常能獲得人他人的信賴與支持</span>. Apabila ada bintang keberuntungan lain yang berbagi istana, peluang sukses dan kemajuan akan datang dengan cepat dan stabil <span class=\"hz\">發跡成功的機會必快又穩定</span>. FF sebagai wanita sepenuhnya memiliki kualitas seorang wanita berbakat dan berprestasi <span class=\"hz\">才媛的素質</span>. Secara fisik, FF umumnya memiliki wajah bulat yang cantik <span class=\"hz\">圓臉的美人</span>. Karakter FF lurus dan tegas <span class=\"hz\">性格爽直</span> — sekali berjanji, akan ditepati sampai tuntas <span class=\"hz\">約定之事必恪遵到底</span>. Meskipun pada dasarnya ceria dan terbuka <span class=\"hz\">屬開朗的性格</span>, terdapat nuansa kekakuan dalam penampilan luar FF <span class=\"hz\">外觀仍有拘束感</span> — pakaian maupun ruangan ditata dengan rapi dan indah <span class=\"hz\">服裝或房間也修飾得美</span>.</p>",
+    "_solo_ming_gong_action": "Gunakan keberanian dan aura kepercayaan FF untuk tujuan yang jelas, tetapi beri jeda sebelum bertindak ketika emosi sedang tinggi. Dalam relasi dan keputusan besar, pastikan ruang pribadi tetap ada tanpa mengabaikan perasaan orang lain.",
+    "_p1_xiongdi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Saudara</span><span class=\"pn-meta\">Xiōng Dì<span class=\"hz\">兄弟</span></span></div></div><div class=\"pal-body\"><p>Pada bagian saudara dan pertemanan, foto menunjukkan tanda perubahan yang mudah terjadi. Suasana hati FF dapat berbalik atau berubah cukup sering, sehingga cara FF berhubungan dengan teman maupun saudara tidak selalu stabil dalam jangka panjang. Hubungan yang awalnya terasa dekat dapat menjadi renggang bila emosi sedang berubah, dan kedekatan dengan teman atau saudara cenderung sulit bertahan lama apabila tidak dijaga secara sadar. Intinya, sumber utama yang perlu diperhatikan adalah perubahan perasaan dan respons batin yang tidak tetap, karena hal itulah yang membuat relasi saudara maupun teman mudah naik turun.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga ritme komunikasi dengan saudara dan teman dekat; hindari mengambil jarak atau membuat keputusan relasi ketika emosi sedang berubah cepat.</span></div></div>",
+    "_solo_xiongdi_body": "<p>Pada bagian saudara dan pertemanan, foto menunjukkan tanda perubahan yang mudah terjadi. Suasana hati FF dapat berbalik atau berubah cukup sering, sehingga cara FF berhubungan dengan teman maupun saudara tidak selalu stabil dalam jangka panjang. Hubungan yang awalnya terasa dekat dapat menjadi renggang bila emosi sedang berubah, dan kedekatan dengan teman atau saudara cenderung sulit bertahan lama apabila tidak dijaga secara sadar. Intinya, sumber utama yang perlu diperhatikan adalah perubahan perasaan dan respons batin yang tidak tetap, karena hal itulah yang membuat relasi saudara maupun teman mudah naik turun.</p>",
+    "_solo_xiongdi_action": "Jaga ritme komunikasi dengan saudara dan teman dekat; hindari mengambil jarak atau membuat keputusan relasi ketika emosi sedang berubah cepat.",
+    "_p1_fuqi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pasangan</span><span class=\"pn-meta\">Fū Qī<span class=\"hz\">夫妻</span></span></div></div><div class=\"pal-body\"><p>FF memiliki pandangan cinta yang serius, nyata, dan tidak bermain-main. Dalam hubungan, FF tidak memiliki niat mempermainkan pasangan, sehingga ia juga sangat sulit menerima sikap ringan, sembrono, atau main-main dari pihak lain. Karena standar FF terhadap diri sendiri dan pasangan sama-sama keras, perjalanan cinta dapat terasa bergelombang dan penuh ujian. Bila berada bersama 紫微, laki-laki cenderung menikah dengan wanita yang lebih tua, sedangkan wanita cenderung menikah dengan pria yang lebih muda, dan masih dapat melewati kehidupan pernikahan yang relatif stabil. Di luar kondisi bersama 紫微, kehidupan cinta dan pernikahan mudah diwarnai perselisihan berulang, sehingga sulit disebut sebagai pernikahan bahagia menurut pandangan umum. Pola dasarnya menunjukkan bahwa orang dengan 破軍 di Istana Pasangan sering sulit merasa tenang dalam kehidupan keluarga yang terlalu biasa, bahkan sejak awal dapat menganggap pernikahan sebagai sesuatu yang membatasi kebebasan pribadi. Namun bila Istana Pasangan wanita berada di 子 atau 午, masih ada kemampuan untuk menyeimbangkan pekerjaan dan keluarga.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Perlakukan pernikahan sebagai kesepakatan yang memberi ruang, bukan sebagai batasan. Buat aturan komunikasi yang jelas agar standar yang tinggi tidak berubah menjadi tekanan atau pertengkaran berulang.</span></div></div>",
+    "_solo_fuqi_body": "<p>FF memiliki pandangan cinta yang serius, nyata, dan tidak bermain-main. Dalam hubungan, FF tidak memiliki niat mempermainkan pasangan, sehingga ia juga sangat sulit menerima sikap ringan, sembrono, atau main-main dari pihak lain. Karena standar FF terhadap diri sendiri dan pasangan sama-sama keras, perjalanan cinta dapat terasa bergelombang dan penuh ujian. Bila berada bersama 紫微, laki-laki cenderung menikah dengan wanita yang lebih tua, sedangkan wanita cenderung menikah dengan pria yang lebih muda, dan masih dapat melewati kehidupan pernikahan yang relatif stabil. Di luar kondisi bersama 紫微, kehidupan cinta dan pernikahan mudah diwarnai perselisihan berulang, sehingga sulit disebut sebagai pernikahan bahagia menurut pandangan umum. Pola dasarnya menunjukkan bahwa orang dengan 破軍 di Istana Pasangan sering sulit merasa tenang dalam kehidupan keluarga yang terlalu biasa, bahkan sejak awal dapat menganggap pernikahan sebagai sesuatu yang membatasi kebebasan pribadi. Namun bila Istana Pasangan wanita berada di 子 atau 午, masih ada kemampuan untuk menyeimbangkan pekerjaan dan keluarga.</p>",
+    "_solo_fuqi_action": "Perlakukan pernikahan sebagai kesepakatan yang memberi ruang, bukan sebagai batasan. Buat aturan komunikasi yang jelas agar standar yang tinggi tidak berubah menjadi tekanan atau pertengkaran berulang.",
+    "_p1_zinu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Anak</span><span class=\"pn-meta\">Zǐ Nǚ<span class=\"hz\">子女</span></span></div></div><div class=\"pal-body\"><p>Anak-anak FF cenderung berwatak lembut dan penurut, namun kekurangannya adalah gerak atau respons mereka bisa terasa agak lambat. FF berpotensi membina anak-anak yang berprestasi baik; tetapi bila ada bintang buruk yang menghalangi, ikatan dengan anak menjadi lebih tipis. Bila 天同 berada di Istana Anak, terutama pada posisi 巳 atau 午, anak dapat cenderung hanya menjawab dan berbicara tetapi kurang menjalankan tindakan nyata. Dalam kondisi berat, peluang memiliki keturunan bisa menjadi lemah; namun bila Istana Anak berada di 酉 dan disertai bintang baik lain, masih ada peluang memiliki beberapa anak. Secara umum, bila bersama bintang baik seperti 天同, hubungan orang tua-anak akan lebih harmonis. Anak-anak cenderung pendiam, kadang melamun sendiri, sehingga sulit diketahui apa yang sebenarnya sedang mereka pikirkan.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun komunikasi yang pelan dan sabar dengan anak; jangan hanya menuntut jawaban, tetapi bantu mereka mengubah niat menjadi tindakan nyata.</span></div></div>",
+    "_solo_zinu_body": "<p>Anak-anak FF cenderung berwatak lembut dan penurut, namun kekurangannya adalah gerak atau respons mereka bisa terasa agak lambat. FF berpotensi membina anak-anak yang berprestasi baik; tetapi bila ada bintang buruk yang menghalangi, ikatan dengan anak menjadi lebih tipis. Bila 天同 berada di Istana Anak, terutama pada posisi 巳 atau 午, anak dapat cenderung hanya menjawab dan berbicara tetapi kurang menjalankan tindakan nyata. Dalam kondisi berat, peluang memiliki keturunan bisa menjadi lemah; namun bila Istana Anak berada di 酉 dan disertai bintang baik lain, masih ada peluang memiliki beberapa anak. Secara umum, bila bersama bintang baik seperti 天同, hubungan orang tua-anak akan lebih harmonis. Anak-anak cenderung pendiam, kadang melamun sendiri, sehingga sulit diketahui apa yang sebenarnya sedang mereka pikirkan.</p>",
+    "_solo_zinu_action": "Bangun komunikasi yang pelan dan sabar dengan anak; jangan hanya menuntut jawaban, tetapi bantu mereka mengubah niat menjadi tindakan nyata.",
+    "_p2_caibo": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Rezeki</span><span class=\"pn-meta\">Cái Bó<span class=\"hz\">財帛</span></span></div></div><div class=\"pal-body\"><p>FF cenderung cukup murah hati dan besar dalam pengeluaran, tetapi pada saat yang sama mampu memperoleh kembali nilai atau imbalan yang sepadan. Ada tanda lahir atau tumbuh dalam lingkungan keluarga yang berkecukupan serta menerima berkah rezeki. Namun bila terdapat bintang buruk yang menghambat keberuntungan finansial dalam istana yang sama, efek keberuntungan 紫微 sebagai bintang rezeki tidak dapat berkembang penuh. Bila bersama 天相, FF cakap dalam menabung; bila bersama 天府, hidup tidak perlu terlalu khawatir terhadap aliran uang yang terus datang. Bila bersama 七殺, ada kemungkinan memperoleh rezeki mendadak seperti hadiah besar, warisan bernilai tinggi, atau uang dalam jumlah besar yang datang secara tiba-tiba.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Kelola kemurahan hati dengan sistem tabungan dan aset yang jelas; ketika rezeki besar datang tiba-tiba, langsung pisahkan untuk keamanan jangka panjang.</span></div></div>",
+    "_solo_caibo_body": "<p>FF cenderung cukup murah hati dan besar dalam pengeluaran, tetapi pada saat yang sama mampu memperoleh kembali nilai atau imbalan yang sepadan. Ada tanda lahir atau tumbuh dalam lingkungan keluarga yang berkecukupan serta menerima berkah rezeki. Namun bila terdapat bintang buruk yang menghambat keberuntungan finansial dalam istana yang sama, efek keberuntungan 紫微 sebagai bintang rezeki tidak dapat berkembang penuh. Bila bersama 天相, FF cakap dalam menabung; bila bersama 天府, hidup tidak perlu terlalu khawatir terhadap aliran uang yang terus datang. Bila bersama 七殺, ada kemungkinan memperoleh rezeki mendadak seperti hadiah besar, warisan bernilai tinggi, atau uang dalam jumlah besar yang datang secara tiba-tiba.</p>",
+    "_solo_caibo_action": "Kelola kemurahan hati dengan sistem tabungan dan aset yang jelas; ketika rezeki besar datang tiba-tiba, langsung pisahkan untuk keamanan jangka panjang.",
+    "_p2_jie_e": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Kesehatan</span><span class=\"pn-meta\">Jí È<span class=\"hz\">疾厄</span></span></div></div><div class=\"pal-body\"><p>Bagian kesehatan menunjukkan FF mudah mengalami gangguan pada tenggorokan, masuk angin, sakit gigi, dan keluhan sejenis. Ada kecenderungan mudah mengalami penyakit yang berkaitan dengan hati. Bila bertemu bintang buruk dalam istana yang sama, perlu memperhatikan penyakit kulit atau mata. Jika bersama 太陰, tubuh dapat lebih sering mengalami pembengkakan atau rasa tidak nyaman karena sumbatan/peredaran yang kurang lancar. Untuk wanita, ada kemungkinan mengalami ketidaklancaran fisiologis yang menimbulkan rasa sulit atau tidak nyaman.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga pola tidur, pernapasan, gigi, dan pemeriksaan berkala untuk mata, kulit, serta fungsi hati. Bila muncul pembengkakan, gangguan siklus, atau keluhan berulang, jangan ditunda dan segera periksa secara medis.</span></div></div>",
+    "_solo_jie_e_body": "<p>Bagian kesehatan menunjukkan FF mudah mengalami gangguan pada tenggorokan, masuk angin, sakit gigi, dan keluhan sejenis. Ada kecenderungan mudah mengalami penyakit yang berkaitan dengan hati. Bila bertemu bintang buruk dalam istana yang sama, perlu memperhatikan penyakit kulit atau mata. Jika bersama 太陰, tubuh dapat lebih sering mengalami pembengkakan atau rasa tidak nyaman karena sumbatan/peredaran yang kurang lancar. Untuk wanita, ada kemungkinan mengalami ketidaklancaran fisiologis yang menimbulkan rasa sulit atau tidak nyaman.</p>",
+    "_solo_jie_e_action": "Jaga pola tidur, pernapasan, gigi, dan pemeriksaan berkala untuk mata, kulit, serta fungsi hati. Bila muncul pembengkakan, gangguan siklus, atau keluhan berulang, jangan ditunda dan segera periksa secara medis.",
+    "_p2_qianyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Perpindahan</span><span class=\"pn-meta\">Qiān Yí<span class=\"hz\">遷移</span></span></div></div><div class=\"pal-body\"><p>Dalam urusan perpindahan, perubahan lingkungan, atau hidup di luar, FF memiliki rasa stabil yang cukup kuat. Arah geraknya tidak cocok dengan benturan langsung, tindakan gegabah, atau masuk ke tempat yang berliku dan penuh risiko. FF sulit merasa tenang bila berada jauh dari rumah, tetapi justru karena itu ia berpeluang melewati kehidupan yang banyak berpindah dan sering bertemu peluang dari perjalanan. Bahkan bila bekerja, ada keinginan kuat untuk mencoba pekerjaan baru lalu meninggalkan pola lama. Jika 廉貞 berada satu istana dengan 武曲, dalam perputaran yang terus bergerak FF malah dapat menggenggam kesempatan; bila bersama 紫微, demi mencapai tujuan FF perlu berani mengubah pola hidup yang sedang dijalani. Secara umum, keberuntungan FF baik di dalam maupun di luar relatif stabil. Baik di rumah, lingkungan sekitar, maupun perusahaan, biasanya tidak banyak perubahan yang mendadak dan tajam. Karena kondisi batin relatif stabil, FF cenderung tidak punya dorongan besar untuk sering bepergian jauh atau mengganti pekerjaan secara tiba-tiba. Diam dan tidak banyak bergerak justru menjadi jalur yang lebih baik untuk mencapai tujuan. Bila ada bintang baik lain yang membantu, setiap kali muncul perubahan di sekitar FF, biasanya ada atasan atau pihak berwenang yang membantu melewati krisis.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Hindari keputusan pindah, bepergian jauh, atau ganti pekerjaan karena dorongan sesaat. Bila memang harus berubah, lakukan bertahap, siapkan dukungan dari atasan atau orang yang berwenang, dan pastikan tujuan perubahan sudah jelas.</span></div></div>",
+    "_solo_qianyi_body": "<p>Dalam urusan perpindahan, perubahan lingkungan, atau hidup di luar, FF memiliki rasa stabil yang cukup kuat. Arah geraknya tidak cocok dengan benturan langsung, tindakan gegabah, atau masuk ke tempat yang berliku dan penuh risiko. FF sulit merasa tenang bila berada jauh dari rumah, tetapi justru karena itu ia berpeluang melewati kehidupan yang banyak berpindah dan sering bertemu peluang dari perjalanan. Bahkan bila bekerja, ada keinginan kuat untuk mencoba pekerjaan baru lalu meninggalkan pola lama. Jika 廉貞 berada satu istana dengan 武曲, dalam perputaran yang terus bergerak FF malah dapat menggenggam kesempatan; bila bersama 紫微, demi mencapai tujuan FF perlu berani mengubah pola hidup yang sedang dijalani. Secara umum, keberuntungan FF baik di dalam maupun di luar relatif stabil. Baik di rumah, lingkungan sekitar, maupun perusahaan, biasanya tidak banyak perubahan yang mendadak dan tajam. Karena kondisi batin relatif stabil, FF cenderung tidak punya dorongan besar untuk sering bepergian jauh atau mengganti pekerjaan secara tiba-tiba. Diam dan tidak banyak bergerak justru menjadi jalur yang lebih baik untuk mencapai tujuan. Bila ada bintang baik lain yang membantu, setiap kali muncul perubahan di sekitar FF, biasanya ada atasan atau pihak berwenang yang membantu melewati krisis.</p>",
+    "_solo_qianyi_action": "Hindari keputusan pindah, bepergian jauh, atau ganti pekerjaan karena dorongan sesaat. Bila memang harus berubah, lakukan bertahap, siapkan dukungan dari atasan atau orang yang berwenang, dan pastikan tujuan perubahan sudah jelas.",
+    "_p2_puyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pertemanan</span><span class=\"pn-meta\">Pú Yì<span class=\"hz\">僕役</span></span></div></div><div class=\"pal-body\"><p>Dalam hubungan dengan bawahan, rekan kerja yang membantu, atau orang yang berada di bawah koordinasi FF, ada kecenderungan FF harus cukup banyak mengurus bagian-bagian kecil yang kurang diperhatikan oleh mereka. FF dapat memperoleh bawahan yang aktif, tetapi bila bawahan atau relasi kerja berada pada posisi 壬, 戌, atau 亥, sifat mereka bisa keras dan mudah menantang FF. Bila bersama 太陰, ada peluang memiliki cukup banyak teman yang lebih muda; bila bersama 巨門, hubungan emosional dengan bawahan dapat lebih menyatu. Dengan bantuan bawahan dan teman muda, perkembangan pekerjaan FF dapat berjalan lebih lancar. Namun bila bersama 天同, FF berpotensi mendapatkan bawahan yang kurang teliti. Pada saat yang sama, teman-teman muda juga cenderung mau mendekat dan bekerja untuk FF. Bila bersama 天機, ada tanda munculnya perselisihan atau urusan yang tidak selesai dengan bawahan maupun teman yang lebih muda.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Pilih pembantu kerja yang teliti dan tetapkan batas tugas secara jelas. Manfaatkan dukungan orang muda, tetapi jangan biarkan kedekatan emosional membuat pengawasan dan standar kerja menjadi longgar.</span></div></div>",
+    "_solo_puyi_body": "<p>Dalam hubungan dengan bawahan, rekan kerja yang membantu, atau orang yang berada di bawah koordinasi FF, ada kecenderungan FF harus cukup banyak mengurus bagian-bagian kecil yang kurang diperhatikan oleh mereka. FF dapat memperoleh bawahan yang aktif, tetapi bila bawahan atau relasi kerja berada pada posisi 壬, 戌, atau 亥, sifat mereka bisa keras dan mudah menantang FF. Bila bersama 太陰, ada peluang memiliki cukup banyak teman yang lebih muda; bila bersama 巨門, hubungan emosional dengan bawahan dapat lebih menyatu. Dengan bantuan bawahan dan teman muda, perkembangan pekerjaan FF dapat berjalan lebih lancar. Namun bila bersama 天同, FF berpotensi mendapatkan bawahan yang kurang teliti. Pada saat yang sama, teman-teman muda juga cenderung mau mendekat dan bekerja untuk FF. Bila bersama 天機, ada tanda munculnya perselisihan atau urusan yang tidak selesai dengan bawahan maupun teman yang lebih muda.</p>",
+    "_solo_puyi_action": "Pilih pembantu kerja yang teliti dan tetapkan batas tugas secara jelas. Manfaatkan dukungan orang muda, tetapi jangan biarkan kedekatan emosional membuat pengawasan dan standar kerja menjadi longgar.",
+    "_p3_guanlu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Karir</span><span class=\"pn-meta\">Guān Lù<span class=\"hz\">官祿</span></span></div></div><div class=\"pal-body\"><p>Bidang kerja yang disebutkan cocok meliputi dokter, perawat, pekerjaan keagamaan, dan pengacara. Di mana pun FF berjalan, ia berpeluang memperoleh pekerjaan dengan penghasilan yang tetap dan cukup tinggi. Bila bersama 文昌 atau 文曲, posisi sebagai pegawai negeri atau pekerjaan berbasis administrasi dinilai baik. Sikap FF terhadap pekerjaan cenderung tulus, serius, dan hampir mencapai tingkat yang tidak mudah berkompromi. Karena itu FF cocok dengan pekerjaan keuangan atau akuntansi. Namun bila 武曲 juga hadir sebagai bintang yang menandakan perubahan, perlu berhati-hati terhadap kelalaian atau permainan yang muncul di tempat kerja, bahkan bisa berujung pada kegagalan dalam urusan perselisihan tenaga kerja atau pemecatan. Bila ada bintang seperti 貪狼, 破軍, 七殺 dalam istana yang sama, perlu lebih waspada agar tidak sering melewati hari dalam kegelisahan dan ketidaktenangan. FF memiliki sifat連貫性, kemampuan menyambut orang, dan kecakapan hubungan manusia yang baik. Profesi yang membutuhkan koordinasi relasi, seperti resepsionis, pariwisata, asuransi, penjualan, atau penulis lepas, dapat memunculkan bakatnya. Namun FF juga punya kecenderungan perfeksionis yang kuat terhadap pekerjaan, sehingga sering merasa pekerjaan orang lain kurang sempurna, bahkan mengkritik kinerja mereka sampai menimbulkan penolakan dari rekan kerja. Di dalam perusahaan, FF mungkin dipandang sebagai pribadi yang berbakat; bila bersama 武曲 atau 廉貞, keberhasilan karier bahkan dapat diperoleh saat pergi ke luar negeri.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Pilih pekerjaan yang memberi struktur jelas, penghasilan stabil, dan ruang memakai kemampuan relasi. Kurangi kritik berlebihan terhadap hasil kerja orang lain agar bakat FF tidak berubah menjadi sumber resistensi di lingkungan kerja.</span></div></div>",
+    "_solo_guanlu_body": "<p>Bidang kerja yang disebutkan cocok meliputi dokter, perawat, pekerjaan keagamaan, dan pengacara. Di mana pun FF berjalan, ia berpeluang memperoleh pekerjaan dengan penghasilan yang tetap dan cukup tinggi. Bila bersama 文昌 atau 文曲, posisi sebagai pegawai negeri atau pekerjaan berbasis administrasi dinilai baik. Sikap FF terhadap pekerjaan cenderung tulus, serius, dan hampir mencapai tingkat yang tidak mudah berkompromi. Karena itu FF cocok dengan pekerjaan keuangan atau akuntansi. Namun bila 武曲 juga hadir sebagai bintang yang menandakan perubahan, perlu berhati-hati terhadap kelalaian atau permainan yang muncul di tempat kerja, bahkan bisa berujung pada kegagalan dalam urusan perselisihan tenaga kerja atau pemecatan. Bila ada bintang seperti 貪狼, 破軍, 七殺 dalam istana yang sama, perlu lebih waspada agar tidak sering melewati hari dalam kegelisahan dan ketidaktenangan. FF memiliki sifat連貫性, kemampuan menyambut orang, dan kecakapan hubungan manusia yang baik. Profesi yang membutuhkan koordinasi relasi, seperti resepsionis, pariwisata, asuransi, penjualan, atau penulis lepas, dapat memunculkan bakatnya. Namun FF juga punya kecenderungan perfeksionis yang kuat terhadap pekerjaan, sehingga sering merasa pekerjaan orang lain kurang sempurna, bahkan mengkritik kinerja mereka sampai menimbulkan penolakan dari rekan kerja. Di dalam perusahaan, FF mungkin dipandang sebagai pribadi yang berbakat; bila bersama 武曲 atau 廉貞, keberhasilan karier bahkan dapat diperoleh saat pergi ke luar negeri.</p>",
+    "_solo_guanlu_action": "Pilih pekerjaan yang memberi struktur jelas, penghasilan stabil, dan ruang memakai kemampuan relasi. Kurangi kritik berlebihan terhadap hasil kerja orang lain agar bakat FF tidak berubah menjadi sumber resistensi di lingkungan kerja.",
+    "_p3_tianzhai": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Properti</span><span class=\"pn-meta\">Tián Zhái<span class=\"hz\">田宅</span></span></div></div><div class=\"pal-body\"><p>FF berpotensi memiliki properti atau aset tanah dalam jumlah besar, tetapi cenderung kurang luwes dalam menggunakan dan mengelola kemampuan terkait properti tersebut. Bila mampu memanfaatkan keunggulan properti dengan baik, seperti mengelola apartemen, membeli atau menjual tanah, kemampuan FF dapat berkembang kuat. Kelemahannya, FF mudah dipengaruhi oleh pendapat lingkungan sekitar. Saat melakukan transaksi properti, sebisa mungkin jangan membiarkan pendapat teman atau kerabat terlalu memengaruhi keputusan. Arah utara dinilai sangat baik. Bila berada pada istana 壬, 辰, 未, 酉, atau 戌, ada peluang memperoleh properti yang cukup besar melalui cara yang mirip paksaan atau tekanan. Sebaliknya, bila berada pada 子 atau 亥, urusan properti justru dapat membuat FF sibuk dan tidak tenang. Secara umum, bila bersama 巨門 dan 土地, hubungan dengan tanah dan rumah kurang berjodoh; jika ada bintang buruk lain dalam istana yang sama, hubungan dengan properti bisa terasa semakin terputus. Dibanding tinggal di rumah tanah yang kering dan keras, lebih cocok tinggal di rumah yang datar dan memiliki nuansa tanah berlumpur/lebih lembap. Lahan basah dinilai sangat baik.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Ambil keputusan properti berdasarkan hitungan sendiri yang jelas, bukan tekanan teman atau keluarga. Bila membeli, menjual, atau menyewakan aset, pilih lokasi dan kondisi lingkungan yang benar-benar mendukung stabilitas jangka panjang.</span></div></div>",
+    "_solo_tianzhai_body": "<p>FF berpotensi memiliki properti atau aset tanah dalam jumlah besar, tetapi cenderung kurang luwes dalam menggunakan dan mengelola kemampuan terkait properti tersebut. Bila mampu memanfaatkan keunggulan properti dengan baik, seperti mengelola apartemen, membeli atau menjual tanah, kemampuan FF dapat berkembang kuat. Kelemahannya, FF mudah dipengaruhi oleh pendapat lingkungan sekitar. Saat melakukan transaksi properti, sebisa mungkin jangan membiarkan pendapat teman atau kerabat terlalu memengaruhi keputusan. Arah utara dinilai sangat baik. Bila berada pada istana 壬, 辰, 未, 酉, atau 戌, ada peluang memperoleh properti yang cukup besar melalui cara yang mirip paksaan atau tekanan. Sebaliknya, bila berada pada 子 atau 亥, urusan properti justru dapat membuat FF sibuk dan tidak tenang. Secara umum, bila bersama 巨門 dan 土地, hubungan dengan tanah dan rumah kurang berjodoh; jika ada bintang buruk lain dalam istana yang sama, hubungan dengan properti bisa terasa semakin terputus. Dibanding tinggal di rumah tanah yang kering dan keras, lebih cocok tinggal di rumah yang datar dan memiliki nuansa tanah berlumpur/lebih lembap. Lahan basah dinilai sangat baik.</p>",
+    "_solo_tianzhai_action": "Ambil keputusan properti berdasarkan hitungan sendiri yang jelas, bukan tekanan teman atau keluarga. Bila membeli, menjual, atau menyewakan aset, pilih lokasi dan kondisi lingkungan yang benar-benar mendukung stabilitas jangka panjang.",
+    "_p3_fude": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Berkah</span><span class=\"pn-meta\">Fú Dé<span class=\"hz\">福德</span></span></div></div><div class=\"pal-body\"><p>Dalam sisi batin dan keberkahan, FF memiliki pembawaan yang hangat, cerah, indah, dan halus, sehingga baik pria maupun wanita cenderung memiliki hubungan antarmanusia yang baik. Namun bila tidak ada 紫微 dalam istana yang sama, hidup FF sulit melewati kehidupan mental yang benar-benar stabil. Di dalam hati sering ada rasa tidak puas, mudah merasa terikat oleh keadaan, dan perjalanan hidup dapat terasa naik turun. Hal ini muncul karena standar dan tuntutan FF terlalu tinggi, tidak puas pada keadaan sekarang, serta selalu gelisah mengejar rangsangan atau pembaruan yang lebih kuat. Bahkan bila bersama 紫微, kestabilan baru lebih mudah diperoleh pada usia lanjut.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Latih kepuasan dan ritme hidup yang stabil. Jangan terus mengejar rangsangan baru hanya karena tidak puas pada kondisi sekarang; ketenangan FF tumbuh dari pengendalian harapan dan kedewasaan batin.</span></div></div>",
+    "_solo_fude_body": "<p>Dalam sisi batin dan keberkahan, FF memiliki pembawaan yang hangat, cerah, indah, dan halus, sehingga baik pria maupun wanita cenderung memiliki hubungan antarmanusia yang baik. Namun bila tidak ada 紫微 dalam istana yang sama, hidup FF sulit melewati kehidupan mental yang benar-benar stabil. Di dalam hati sering ada rasa tidak puas, mudah merasa terikat oleh keadaan, dan perjalanan hidup dapat terasa naik turun. Hal ini muncul karena standar dan tuntutan FF terlalu tinggi, tidak puas pada keadaan sekarang, serta selalu gelisah mengejar rangsangan atau pembaruan yang lebih kuat. Bahkan bila bersama 紫微, kestabilan baru lebih mudah diperoleh pada usia lanjut.</p>",
+    "_solo_fude_action": "Latih kepuasan dan ritme hidup yang stabil. Jangan terus mengejar rangsangan baru hanya karena tidak puas pada kondisi sekarang; ketenangan FF tumbuh dari pengendalian harapan dan kedewasaan batin.",
+    "_p3_fumu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Orang Tua</span><span class=\"pn-meta\">Fù Mǔ<span class=\"hz\">父母</span></span></div></div><div class=\"pal-body\"><p>Bagi FF, gambaran keluarga menunjukkan suasana yang harmonis, tenang, dan relatif bebas dari suasana suram atau tekanan berat. FF menerima pengaruh yang kuat dari ibu. Kedua orang tua digambarkan sebagai sosok yang tenang, berbudaya, dan memiliki selera yang baik. Mereka juga sangat memperhatikan reaksi FF; perubahan kecil dalam suasana hati FF pun sulit luput dari pengamatan mereka. Namun bila bintang buruk masuk, hubungan emosional dengan ibu dapat menjadi kurang baik, ada kemungkinan berpisah lebih awal dari ibu, atau orang tua memiliki sisi buruk seperti kebiasaan minum. Kondisi paling ideal adalah bila dapat bersama 太陽 dalam istana yang sama dan tidak ada bintang buruk yang menghalangi.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Jaga komunikasi emosional dengan orang tua, terutama ibu, karena pengaruh keluarga terhadap batin FF cukup kuat. Bila muncul jarak atau salah paham, selesaikan dengan tenang sebelum menjadi pola yang menetap.</span></div></div>",
+    "_solo_fumu_body": "<p>Bagi FF, gambaran keluarga menunjukkan suasana yang harmonis, tenang, dan relatif bebas dari suasana suram atau tekanan berat. FF menerima pengaruh yang kuat dari ibu. Kedua orang tua digambarkan sebagai sosok yang tenang, berbudaya, dan memiliki selera yang baik. Mereka juga sangat memperhatikan reaksi FF; perubahan kecil dalam suasana hati FF pun sulit luput dari pengamatan mereka. Namun bila bintang buruk masuk, hubungan emosional dengan ibu dapat menjadi kurang baik, ada kemungkinan berpisah lebih awal dari ibu, atau orang tua memiliki sisi buruk seperti kebiasaan minum. Kondisi paling ideal adalah bila dapat bersama 太陽 dalam istana yang sama dan tidak ada bintang buruk yang menghalangi.</p>",
+    "_solo_fumu_action": "Jaga komunikasi emosional dengan orang tua, terutama ibu, karena pengaruh keluarga terhadap batin FF cukup kuat. Bila muncul jarak atau salah paham, selesaikan dengan tenang sebelum menjadi pola yang menetap.",
+    "_kes_narrative": "<p>Secara keseluruhan, FF adalah pribadi yang kuat, berani bergerak, dan punya dorongan hidup yang besar. Dari luar FF bisa terlihat tenang, rapi, sopan, dan cukup terdidik, tetapi di dalam dirinya ada api semangat yang sangat besar. Jika sudah memiliki tujuan atau sudah menyukai sesuatu, FF cenderung ingin segera bergerak dan mengejarnya dengan serius. Kekuatan terbesar FF adalah ketulusan, keberanian, daya tahan, kemampuan membangun kepercayaan, dan aura yang membuat orang lain mudah merasa yakin kepadanya. Namun sisi yang perlu dijaga adalah emosi yang intens, standar yang tinggi, rasa tidak puas yang mudah muncul, serta kecenderungan bertindak cepat ketika hati sedang panas. Dalam hubungan, FF bukan tipe yang main-main. Ia membutuhkan hubungan yang nyata, serius, dan saling menghormati. Karena itu, sikap pasangan yang ringan, sembrono, atau tidak jelas bisa sangat mengganggu FF. Cinta dan pernikahan dapat berjalan penuh gelombang bila kedua pihak sama-sama keras atau terlalu menuntut. Kuncinya adalah memberi ruang pribadi, membuat aturan komunikasi yang jelas, dan tidak melihat pernikahan sebagai pembatas kebebasan. Dalam keluarga, FF menerima pengaruh yang kuat dari ibu dan berasal dari gambaran keluarga yang cukup memperhatikan reaksi emosionalnya. Hubungan dengan orang tua perlu dijaga dengan komunikasi yang lembut, terutama saat terjadi salah paham. Dalam pekerjaan, FF cocok pada bidang yang membutuhkan ketelitian, tanggung jawab, relasi manusia, administrasi, keuangan, pelayanan, pendidikan, penulisan, seni, dekorasi, perdagangan, kesehatan, wisata, atau pekerjaan yang membuat FF bisa memakai kemampuan bahasa, rasa estetika, dan kecakapan mengatur orang. FF bisa terlihat berbakat di tempat kerja, tetapi perlu mengurangi kecenderungan perfeksionis atau terlalu mudah menilai pekerjaan orang lain kurang baik. Dalam uang dan aset, ada potensi memperoleh rezeki, menabung, atau mendapatkan nilai besar, tetapi kemurahan hati dan pengeluaran perlu dikontrol. Keputusan properti juga sebaiknya tidak terlalu dipengaruhi teman atau keluarga; FF perlu memakai hitungan yang jelas dan memilih lingkungan yang stabil. Dalam kesehatan, perhatian utama ada pada tenggorokan, flu/masuk angin, gigi, hati, kulit, mata, pembengkakan, serta siklus fisiologis wanita. Secara batin, FF perlu belajar menenangkan rasa tidak puas dan tidak selalu mengejar rangsangan baru. Periode tahunan 2026 sampai 2031 menunjukkan tema besar uang, perubahan pekerjaan/lingkungan, hubungan, kesehatan, dan bantuan orang mulia. Ada tahun-tahun yang membawa peluang rezeki dan dukungan, tetapi tetap disertai peringatan agar tidak tergesa-gesa, menjaga kesehatan, menghindari perkara, dan berhati-hati terhadap orang kecil atau keputusan yang merugikan. Bila FF mampu menahan impuls, menjaga relasi, mengelola uang dengan disiplin, dan memilih pekerjaan yang stabil tetapi tetap memberi ruang berkembang, perjalanan hidupnya dapat bergerak lebih kuat, matang, dan menghasilkan pencapaian yang besar secara bertahap.</p>",
+    "_kes_stats": "\n      <div class=\"kes-stat s1\"><div class=\"ks-eb\">Penguasa Hari · 日主</div><div class=\"ks-num\"><span class=\"hz\">甲木</span><span class=\"unit\">— · None</span></div><div class=\"ks-title\">Pohon Besar —</div><div class=\"ks-desc\">Total Wu Xing 8, 木 <strong>25.0%</strong> dari distribusi total</div></div>\n      <div class=\"kes-stat s2\"><div class=\"ks-eb\">Format · 格局</div><div class=\"ks-num\"><span class=\"hz\">偏財格</span><span class=\"unit\">FORMAT</span></div><div class=\"ks-title\">Pian Cai Ge, Pengusaha Lincah</div><div class=\"ks-desc\">Konfigurasi BaZi yang membentuk pola karakter dan jalur takdir utama subjek.</div></div>\n      <div class=\"kes-stat s3\"><div class=\"ks-eb\">Yong Shen · 喜用神</div><div class=\"ks-num\"><span class=\"hz\">木</span><span class=\"unit\">MENDUKUNG</span></div><div class=\"ks-title\">Kayu, Penopang &amp; Pengarah</div><div class=\"ks-desc\">Unsur penopang yang sebaiknya diaktifkan lewat lingkungan, profesi, warna, dan keputusan hidup.</div></div>\n      <div class=\"kes-stat s4\"><div class=\"ks-eb\">Da Yun · 大運</div><div class=\"ks-num\">Fase 5<span class=\"unit\">dari 10</span></div><div class=\"ks-title\">Fase Pelajaran (48-57)</div><div class=\"ks-desc\">Cycle 10 tahun yang sedang dijalani, periode pembentukan tema utama dekade ini.</div></div>\n      <div class=\"kes-stat s5\"><div class=\"ks-eb\">Umur Subjek</div><div class=\"ks-num\">51<span class=\"unit\">tahun</span></div><div class=\"ks-title\">Era 50–59</div><div class=\"ks-desc\">Tahap kehidupan saat laporan ini dibuat, rentang dekade aktif subjek.</div></div>\n      <div class=\"kes-stat s6\"><div class=\"ks-eb\">Jodoh · 婚配 / 陽宅</div><div class=\"ks-num\">3 <span class=\"unit\">cocok · 4 hindari</span></div><div class=\"ks-desc\">Hindari: Kerbau (丑) · Kelinci (卯) · Anjing (戌) · Naga (辰) · Trigram <strong>Petir</strong> (震) · Kelompok Timur</div></div>\n    ",
+    "_kes_age": "51",
+    "_kes_lifemap": "\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">過<span class=\"id-label\">Lalu</span></div><div class=\"klm-row-text\"><span class=\"lbl\">MASA LALU</span>4 fase telah dilalui, fondasi terbentuk lewat tempaan zaman muda hingga awal dewasa.</div></div>\n          <div class=\"klm-row now\"><div class=\"klm-row-icon\">今<span class=\"id-label\">Kini</span></div><div class=\"klm-row-text\"><span class=\"lbl\">SEKARANG</span>Fase Pelajaran 癸巳 (48-57), tema utama pelajaran membentuk dekade ini.</div></div>\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">未<span class=\"id-label\">Nanti</span></div><div class=\"klm-row-text\"><span class=\"lbl\">BERIKUTNYA</span>Fase 壬辰 Mentor (58-67), transisi menuju tema baru.</div></div>\n        ",
+    "_kes_position": "\n          <div class=\"klp-eb\">Posisi Sekarang</div>\n          <div class=\"klp-hz\">夏</div>\n          <div class=\"klp-id\">Xià, \"Musim Panas Hidup\"</div>\n          <div class=\"klp-bar\">\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell now\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n          </div>\n          <div class=\"klp-meta\">Fase <strong>5 dari 10</strong> · Umur <strong>48-57</strong> · <strong>木 Kayu</strong> dominan · Musim Panas Hidup</div>\n        ",
+    "_syn_attrib": "Pohon Besar · 偏財格 · Pian Cai Ge",
+    "_syn_actions": "\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">1</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Tenangkan Api Sebelum Bertindak</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">2</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Jaga Hubungan dengan Ruang dan Aturan</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">3</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Pakai Bakat Komunikasi dan Estetika</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">4</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Disiplinkan Uang dan Properti</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">5</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Jaga Tubuh dan Ritme Hidup</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n      ",
+    "_career_wuxing": "\n        <div class=\"wux-cell unfav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">土 Tanah<span class=\"v\">3</span></div>\n        </div>\n        <div class=\"wux-cell self\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:67%\"></div></div>\n          <div class=\"wux-label\">木 Kayu<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:67%\"></div></div>\n          <div class=\"wux-label\">火 Api<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:33%\"></div></div>\n          <div class=\"wux-label\">水 Air<span class=\"v\">1</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:0%\"></div></div>\n          <div class=\"wux-label\">金 Logam<span class=\"v\">0</span></div>\n        </div>\n",
+    "_career_title": "Kayu adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini",
+    "_career_avoid": "Industri ber-unsur <strong>土 (Tanah)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.",
+    "_xqcards": "\n      <div class=\"xq-card power\">\n        <div class=\"xqc-eb\">魄 力 · Kekuatan</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">優勢</span><span class=\"xqc-name\">Yōu Shì<br>Keunggulan</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Mandiri dan berani bertindak tanpa menunggu izin dari siapapun</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Memiliki daya tarik kuat dan kemampuan membangun kepercayaan dengan mudah</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Berjiwa besar, tulus, dan bebas dari sifat licik atau manipulatif</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card shadow\">\n        <div class=\"xqc-eb\">陰 影 · Shadow</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">隱 患</span><span class=\"xqc-name\">Yǐn Huàn<br>Sisi Gelap</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kecenderungan impulsif yang bisa memicu konflik dengan orang-orang di sekitar</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kadang terlalu keras kepala dan sulit berkompromi demi mempertahankan pendiriannya</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Emosi yang intens bisa membuat FF kurang mempertimbangkan kondisi orang lain</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card optimum\">\n        <div class=\"xqc-eb\">最 佳 · Optimum</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">應 用</span><span class=\"xqc-name\">Yīng Yòng<br>Cara Optimal</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Manfaatkan kekuatan intuisi dan keberanian untuk memimpin, bukan mendominasi</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Bangun saluran komunikasi yang lebih terbuka agar konflik interpersonal berkurang</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Arahkan energi emosional yang besar ke dalam kreativitas dan proyek jangka panjang</span></div>\n        </div>\n      </div>\n    "
+  }
+}

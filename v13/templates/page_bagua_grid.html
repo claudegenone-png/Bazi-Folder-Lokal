@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>八卦廿四山方位圖 — Ringkasan 8 Sektor</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* PAGE: Bagua Grid */
+  .content-bagua-grid {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 4mm;
+    overflow: hidden;
+  }
+  .bg-center-panel {
+    background: linear-gradient(135deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 3mm 5mm;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2mm 4mm;
+    font-size: 8pt;
+  }
+  .bg-center-item { display: flex; flex-direction: column; gap: 0.5mm; }
+  .bg-center-label {
+    font-family: 'Inter', sans-serif; font-size: 6pt;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--gold); font-weight: 700;
+  }
+  .bg-center-val { font-size: 8.5pt; color: var(--text); line-height: 1.3; }
+  .bg-center-val .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 700; }
+
+  /* 3×3 sector grid */
+  .bg-sector-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2mm;
+    overflow: hidden;
+  }
+  .bg-sector-card {
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 2mm 3mm;
+    display: flex; flex-direction: column; gap: 1mm;
+    overflow: hidden;
+  }
+  .bg-sector-card.grade-ji  { border-left: 1mm solid #2E7D32; }
+  .bg-sector-card.grade-xiong { border-left: 1mm solid #B71C1C; }
+  .bg-sector-eyebrow {
+    font-family: 'Inter', sans-serif; font-size: 5.5pt;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    color: #6B5B3F; font-weight: 600;
+  }
+  .bg-sector-type {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 13pt; font-weight: 700; line-height: 1;
+  }
+  .bg-sector-type.grade-ji    { color: #1B5E20; }
+  .bg-sector-type.grade-xiong { color: #B71C1C; }
+  .bg-sector-star {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 9pt; color: var(--text); opacity: 0.85;
+  }
+  .bg-sector-meta {
+    font-family: 'Inter', sans-serif; font-size: 7pt;
+    color: #6B5B3F; line-height: 1.4;
+  }
+  .bg-sector-mountains {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 8pt; color: #8B1A1A; letter-spacing: 2px;
+  }
+  .bg-grade-badge {
+    display: inline-block;
+    font-size: 6pt; font-weight: 700; padding: 0.3mm 1.5mm;
+    border-radius: 1mm; letter-spacing: 0.5px;
+  }
+  .bg-grade-badge.grade-ji    { background: #E8F5E9; color: #1B5E20; border: 0.3mm solid #2E7D32; }
+  .bg-grade-badge.grade-xiong { background: #FFEBEE; color: #B71C1C; border: 0.3mm solid #B71C1C; }
+  .bg-sector-content {
+    font-size: 7.5pt; color: var(--text); line-height: 1.4;
+    border-top: 0.2mm solid var(--gold-soft); padding-top: 1mm;
+    margin-top: auto;
+  }
+  /* Center slot (position 5 in 3×3) */
+  .bg-sector-center {
+    background: linear-gradient(135deg, #FFF8E1 0%, #F5EBD0 100%);
+    border: 0.5mm solid var(--gold);
+    border-radius: 2mm;
+    padding: 2.5mm 3mm;
+    display: flex; flex-direction: column; justify-content: center; gap: 1.5mm;
+    overflow: hidden;
+    text-align: center;
+  }
+  .bg-center-main-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 11pt; color: var(--red); font-weight: 700;
+  }
+  .bg-center-type {
+    font-size: 7.5pt; color: #6B5B3F;
+    font-family: 'Inter', sans-serif;
+  }
+  .bg-center-note {
+    font-size: 6.5pt; color: #8B1A1A; font-style: italic;
+    line-height: 1.4;
+  }
+</style>
+</head>
+<body>
+<section class="page no-bar">
+  <header class="page-header">
+    <div class="h-num">{{PAGE_NUM_PADDED}}</div>
+    <div class="h-titles">
+      <div class="h-cn">八 卦 廿 四 山</div>
+      <div class="h-id">Feng Shui Delapan Rumah</div>
+    </div>
+    <div class="h-section">Bagian I · 風水</div>
+  </header>
+
+  <main class="content content-bagua-grid">
+
+    <!-- INFO ATAS: identitas feng shui subjek -->
+    <div class="bg-center-panel">
+      <div class="bg-center-item">
+        <div class="bg-center-label">Orientasi Rumah</div>
+        <div class="bg-center-val">
+          <span class="hz">{{BAGUA_ZUO_XIANG_HZ}}</span><br>{{BAGUA_ZUO_XIANG_ID}}
+        </div>
+      </div>
+      <div class="bg-center-item">
+        <div class="bg-center-label">Tipe Rumah</div>
+        <div class="bg-center-val">
+          <span class="hz">{{BAGUA_LIFE_TYPE_HZ}}</span><br>{{BAGUA_LIFE_TYPE_ID}}
+        </div>
+      </div>
+      <div class="bg-center-item">
+        <div class="bg-center-label">Nada Kelahiran</div>
+        <div class="bg-center-val">
+          <span class="hz">{{BAGUA_NAYIN_HZ}}</span><br>{{BAGUA_NAYIN_ID}}
+        </div>
+      </div>
+      <div class="bg-center-item">
+        <div class="bg-center-label">Tai Sui Tahun</div>
+        <div class="bg-center-val">
+          <span class="hz">{{BAGUA_TAISUI_HZ}}</span> {{BAGUA_TAISUI_ID}}
+        </div>
+      </div>
+      <div class="bg-center-item">
+        <div class="bg-center-label">Pantangan</div>
+        <div class="bg-center-val">
+          <span class="hz">{{BAGUA_WARNING_HZ}}</span><br>{{BAGUA_WARNING_ID}}
+        </div>
+      </div>
+      <div class="bg-center-item">
+        <div class="bg-center-label">Kebajikan</div>
+        <div class="bg-center-val">
+          <span class="hz">{{BAGUA_VIRTUE_HZ}}</span><br>{{BAGUA_VIRTUE_ID}}
+        </div>
+      </div>
+    </div>
+
+    <!-- GRID 3×3: 8 sektor + center -->
+    <div class="bg-sector-grid">
+
+      <!-- Baris 1 -->
+      <div class="bg-sector-card {{BAGUA_SECTOR_SHENGQI_GRADE_CLASS}}">
+        <div class="bg-sector-eyebrow">{{BAGUA_SECTOR_SHENGQI_DIRECTION_ID}}</div>
+        <div class="bg-sector-type {{BAGUA_SECTOR_SHENGQI_GRADE_CLASS}}">{{BAGUA_SECTOR_SHENGQI_LABEL_HZ}}</div>
+        <div class="bg-sector-star">{{BAGUA_SECTOR_SHENGQI_STAR_HZ}}</div>
+        <div class="bg-sector-meta">{{BAGUA_SECTOR_SHENGQI_LABEL_ID}} · {{BAGUA_SECTOR_SHENGQI_STAR_ID}}</div>
+        <div class="bg-sector-mountains">{{BAGUA_SECTOR_SHENGQI_MOUNTAINS_HZ}}</div>
+        <div class="bg-grade-badge {{BAGUA_SECTOR_SHENGQI_GRADE_CLASS}}">{{BAGUA_SECTOR_SHENGQI_GRADE_HZ}} · {{BAGUA_SECTOR_SHENGQI_GRADE_ID}}</div>
+        <div class="bg-sector-content">{{BAGUA_SECTOR_SHENGQI_CONTENT_ID}}</div>
+      </div>
+
+      <div class="bg-sector-card {{BAGUA_SECTOR_TIANYI_GRADE_CLASS}}">
+        <div class="bg-sector-eyebrow">{{BAGUA_SECTOR_TIANYI_DIRECTION_ID}}</div>
+        <div class="bg-sector-type {{BAGUA_SECTOR_TIANYI_GRADE_CLASS}}">{{BAGUA_SECTOR_TIANYI_LABEL_HZ}}</div>
+        <div class="bg-sector-star">{{BAGUA_SECTOR_TIANYI_STAR_HZ}}</div>
+        <div class="bg-sector-meta">{{BAGUA_SECTOR_TIANYI_LABEL_ID}} · {{BAGUA_SECTOR_TIANYI_STAR_ID}}</div>
+        <div class="bg-sector-mountains">{{BAGUA_SECTOR_TIANYI_MOUNTAINS_HZ}}</div>
+        <div class="bg-grade-badge {{BAGUA_SECTOR_TIANYI_GRADE_CLASS}}">{{BAGUA_SECTOR_TIANYI_GRADE_HZ}} · {{BAGUA_SECTOR_TIANYI_GRADE_ID}}</div>
+        <div class="bg-sector-content">{{BAGUA_SECTOR_TIANYI_CONTENT_ID}}</div>
+      </div>
+
+      <div class="bg-sector-card {{BAGUA_SECTOR_YANNIAN_GRADE_CLASS}}">
+        <div class="bg-sector-eyebrow">{{BAGUA_SECTOR_YANNIAN_DIRECTION_ID}}</div>
+        <div class="bg-sector-type {{BAGUA_SECTOR_YANNIAN_GRADE_CLASS}}">{{BAGUA_SECTOR_YANNIAN_LABEL_HZ}}</div>
+        <div class="bg-sector-star">{{BAGUA_SECTOR_YANNIAN_STAR_HZ}}</div>
+        <div class="bg-sector-meta">{{BAGUA_SECTOR_YANNIAN_LABEL_ID}} · {{BAGUA_SECTOR_YANNIAN_STAR_ID}}</div>
+        <div class="bg-sector-mountains">{{BAGUA_SECTOR_YANNIAN_MOUNTAINS_HZ}}</div>
+        <div class="bg-grade-badge {{BAGUA_SECTOR_YANNIAN_GRADE_CLASS}}">{{BAGUA_SECTOR_YANNIAN_GRADE_HZ}} · {{BAGUA_SECTOR_YANNIAN_GRADE_ID}}</div>
+        <div class="bg-sector-content">{{BAGUA_SECTOR_YANNIAN_CONTENT_ID}}</div>
+      </div>
+
+      <!-- Baris 2 -->
+      <div class="bg-sector-card {{BAGUA_SECTOR_HUO_HAI_GRADE_CLASS}}">
+        <div class="bg-sector-eyebrow">{{BAGUA_SECTOR_HUO_HAI_DIRECTION_ID}}</div>
+        <div class="bg-sector-type {{BAGUA_SECTOR_HUO_HAI_GRADE_CLASS}}">{{BAGUA_SECTOR_HUO_HAI_LABEL_HZ}}</div>
+        <div class="bg-sector-star">{{BAGUA_SECTOR_HUO_HAI_STAR_HZ}}</div>
+        <div class="bg-sector-meta">{{BAGUA_SECTOR_HUO_HAI_LABEL_ID}} · {{BAGUA_SECTOR_HUO_HAI_STAR_ID}}</div>
+        <div class="bg-sector-mountains">{{BAGUA_SECTOR_HUO_HAI_MOUNTAINS_HZ}}</div>
+        <div class="bg-grade-badge {{BAGUA_SECTOR_HUO_HAI_GRADE_CLASS}}">{{BAGUA_SECTOR_HUO_HAI_GRADE_HZ}} · {{BAGUA_SECTOR_HUO_HAI_GRADE_ID}}</div>
+        <div class="bg-sector-content">{{BAGUA_SECTOR_HUO_HAI_CONTENT_ID}}</div>
+      </div>
+
+      <!-- CENTER SLOT -->
+      <div class="bg-sector-center">
+        <div class="bg-center-main-hz">{{BAGUA_LIFE_TYPE_HZ}}</div>
+        <div class="bg-center-type">{{BAGUA_LIFE_TYPE_ID}}</div>
+        <div class="bg-center-note">
+          <span style="font-family:'Noto Serif TC',serif;">{{BAGUA_NAYIN_HZ}}</span>
+          &nbsp;·&nbsp;{{BAGUA_NAYIN_ID}}<br>
+          <span style="font-family:'Noto Serif TC',serif;">{{BAGUA_WARNING_HZ}}</span>
+        </div>
+      </div>
+
+      <div class="bg-sector-card {{BAGUA_SECTOR_LIU_SHA_GRADE_CLASS}}">
+        <div class="bg-sector-eyebrow">{{BAGUA_SECTOR_LIU_SHA_DIRECTION_ID}}</div>
+        <div class="bg-sector-type {{BAGUA_SECTOR_LIU_SHA_GRADE_CLASS}}">{{BAGUA_SECTOR_LIU_SHA_LABEL_HZ}}</div>
+        <div class="bg-sector-star">{{BAGUA_SECTOR_LIU_SHA_STAR_HZ}}</div>
+        <div class="bg-sector-meta">{{BAGUA_SECTOR_LIU_SHA_LABEL_ID}} · {{BAGUA_SECTOR_LIU_SHA_STAR_ID}}</div>
+        <div class="bg-sector-mountains">{{BAGUA_SECTOR_LIU_SHA_MOUNTAINS_HZ}}</div>
+        <div class="bg-grade-badge {{BAGUA_SECTOR_LIU_SHA_GRADE_CLASS}}">{{BAGUA_SECTOR_LIU_SHA_GRADE_HZ}} · {{BAGUA_SECTOR_LIU_SHA_GRADE_ID}}</div>
+        <div class="bg-sector-content">{{BAGUA_SECTOR_LIU_SHA_CONTENT_ID}}</div>
+      </div>
+
+      <!-- Baris 3 -->
+      <div class="bg-sector-card {{BAGUA_SECTOR_JUE_MING_GRADE_CLASS}}">
+        <div class="bg-sector-eyebrow">{{BAGUA_SECTOR_JUE_MING_DIRECTION_ID}}</div>
+        <div class="bg-sector-type {{BAGUA_SECTOR_JUE_MING_GRADE_CLASS}}">{{BAGUA_SECTOR_JUE_MING_LABEL_HZ}}</div>
+        <div class="bg-sector-star">{{BAGUA_SECTOR_JUE_MING_STAR_HZ}}</div>
+        <div class="bg-sector-meta">{{BAGUA_SECTOR_JUE_MING_LABEL_ID}} · {{BAGUA_SECTOR_JUE_MING_STAR_ID}}</div>
+        <div class="bg-sector-mountains">{{BAGUA_SECTOR_JUE_MING_MOUNTAINS_HZ}}</div>
+        <div class="bg-grade-badge {{BAGUA_SECTOR_JUE_MING_GRADE_CLASS}}">{{BAGUA_SECTOR_JUE_MING_GRADE_HZ}} · {{BAGUA_SECTOR_JUE_MING_GRADE_ID}}</div>
+        <div class="bg-sector-content">{{BAGUA_SECTOR_JUE_MING_CONTENT_ID}}</div>
+      </div>
+
+      <div class="bg-sector-card {{BAGUA_SECTOR_FUWEI_GRADE_CLASS}}">
+        <div class="bg-sector-eyebrow">{{BAGUA_SECTOR_FUWEI_DIRECTION_ID}}</div>
+        <div class="bg-sector-type {{BAGUA_SECTOR_FUWEI_GRADE_CLASS}}">{{BAGUA_SECTOR_FUWEI_LABEL_HZ}}</div>
+        <div class="bg-sector-star">{{BAGUA_SECTOR_FUWEI_STAR_HZ}}</div>
+        <div class="bg-sector-meta">{{BAGUA_SECTOR_FUWEI_LABEL_ID}} · {{BAGUA_SECTOR_FUWEI_STAR_ID}}</div>
+        <div class="bg-sector-mountains">{{BAGUA_SECTOR_FUWEI_MOUNTAINS_HZ}}</div>
+        <div class="bg-grade-badge {{BAGUA_SECTOR_FUWEI_GRADE_CLASS}}">{{BAGUA_SECTOR_FUWEI_GRADE_HZ}} · {{BAGUA_SECTOR_FUWEI_GRADE_ID}}</div>
+        <div class="bg-sector-content">{{BAGUA_SECTOR_FUWEI_CONTENT_ID}}</div>
+      </div>
+
+      <div class="bg-sector-card {{BAGUA_SECTOR_WU_GUI_GRADE_CLASS}}">
+        <div class="bg-sector-eyebrow">{{BAGUA_SECTOR_WU_GUI_DIRECTION_ID}}</div>
+        <div class="bg-sector-type {{BAGUA_SECTOR_WU_GUI_GRADE_CLASS}}">{{BAGUA_SECTOR_WU_GUI_LABEL_HZ}}</div>
+        <div class="bg-sector-star">{{BAGUA_SECTOR_WU_GUI_STAR_HZ}}</div>
+        <div class="bg-sector-meta">{{BAGUA_SECTOR_WU_GUI_LABEL_ID}} · {{BAGUA_SECTOR_WU_GUI_STAR_ID}}</div>
+        <div class="bg-sector-mountains">{{BAGUA_SECTOR_WU_GUI_MOUNTAINS_HZ}}</div>
+        <div class="bg-grade-badge {{BAGUA_SECTOR_WU_GUI_GRADE_CLASS}}">{{BAGUA_SECTOR_WU_GUI_GRADE_HZ}} · {{BAGUA_SECTOR_WU_GUI_GRADE_ID}}</div>
+        <div class="bg-sector-content">{{BAGUA_SECTOR_WU_GUI_CONTENT_ID}}</div>
+      </div>
+
+    </div><!-- /bg-sector-grid -->
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="pg-num">{{PAGE_NUM}} / {{TOTAL_PAGES}}</div>
+  </footer>
+</section>
+</body>
+</html>

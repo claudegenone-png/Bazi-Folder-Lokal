@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>八卦廿四山方位圖 — Peta Radial Arah Rumah</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ── Two-column: left=chart+legend | right=full panel ── */
+  .content-bagua-rect {
+    display: grid;
+    grid-template-columns: 65fr 35fr;
+    gap: 4mm;
+    overflow: hidden;
+  }
+
+  /* ── Left column ── */
+  .br-left {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 3mm;
+    overflow: hidden;
+    min-height: 0;
+  }
+  .br-chart { overflow: hidden; }
+  .br-chart .bagua-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* ── Legend strip (bottom of left col) ── */
+  .br-legend {
+    display: grid;
+    grid-template-columns: 26mm 1fr 1fr;
+    gap: 2.5mm;
+    border-top: 0.3mm solid var(--gold-soft);
+    padding-top: 2mm;
+    overflow: hidden;
+    min-height: 0;
+    align-content: start;
+  }
+  .br-leg-title {
+    font-size: 5.5pt; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--gold); font-weight: 700; margin-bottom: 1.5mm;
+    border-bottom: 0.2mm solid var(--gold-soft); padding-bottom: 0.5mm;
+  }
+  .br-elemen-list { display: flex; flex-direction: column; gap: 1mm; }
+  .br-elemen-row  { display: flex; align-items: center; gap: 1.5mm; font-size: 6.5pt; }
+  .br-elemen-dot  { width: 3mm; height: 3mm; border-radius: 50%; flex-shrink: 0; }
+  .br-leg-table   { width: 100%; border-collapse: collapse; }
+  .br-leg-table td {
+    font-size: 5.8pt; padding: 0.3mm 0; color: var(--text); vertical-align: top;
+    line-height: 1.3;
+  }
+  .br-leg-table td:first-child {
+    color: var(--text-muted); white-space: nowrap; padding-right: 1.5mm;
+    font-family: 'Noto Serif TC', serif; font-size: 6pt; width: 22mm;
+  }
+  .br-leg-table td .tri { margin-right: 0.5mm; }
+  .br-cara {
+    font-size: 5pt; color: var(--text-muted); line-height: 1.4;
+    border-top: 0.2mm solid var(--gold-soft); padding-top: 1mm; margin-top: 1mm;
+    grid-column: 1 / -1;
+  }
+  .br-cara strong { color: var(--text); }
+
+  /* ── Right panel ── */
+  .br-panel {
+    display: flex; flex-direction: column; gap: 1.5mm;
+    overflow: hidden; min-height: 0;
+  }
+  .br-panel-header {
+    background: var(--red); color: #fff;
+    padding: 2mm 2.5mm; border-radius: 1.5mm 1.5mm 0 0;
+  }
+  .br-panel-title {
+    font-family: 'Noto Serif TC', serif; font-size: 9.5pt;
+    font-weight: 700; letter-spacing: 1px; line-height: 1.2;
+  }
+  .br-panel-subtitle {
+    font-size: 5.5pt; letter-spacing: 1.5px; text-transform: uppercase;
+    opacity: 0.85; margin-top: 0.5mm;
+  }
+
+  /* Info cards */
+  .br-card {
+    background: var(--bg-card); border: 0.3mm solid var(--gold-soft);
+    border-radius: 1.5mm; padding: 1.5mm 2mm; overflow: hidden;
+  }
+  .br-card-label {
+    font-size: 5pt; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--gold); font-weight: 700; margin-bottom: 1mm;
+    border-bottom: 0.2mm solid var(--gold-soft); padding-bottom: 0.5mm;
+  }
+  .br-table { width: 100%; border-collapse: collapse; }
+  .br-table td {
+    padding: 0.3mm 0; font-size: 6.5pt; color: var(--text);
+    vertical-align: top; line-height: 1.35;
+  }
+  .br-table td:first-child {
+    color: var(--text-muted); white-space: nowrap; padding-right: 1.5mm; width: 22mm;
+  }
+  .br-table .hz { font-family: 'Noto Serif TC', serif; color: var(--red); font-weight: 700; }
+  .br-table .val-hz {
+    font-family: 'Noto Serif TC', serif; color: var(--red); font-size: 7.5pt; font-weight: 700;
+  }
+
+  /* Arah chips */
+  .br-dirs { display: flex; flex-wrap: wrap; gap: 1mm; margin-top: 1mm; }
+  .br-dir-chip {
+    background: var(--green-bg); border: 0.3mm solid var(--green);
+    border-radius: 1mm; padding: 0.3mm 1.5mm;
+    font-size: 6.5pt; color: var(--green); font-weight: 600;
+  }
+
+  /* Note box */
+  .br-note {
+    background: #FFF3E0; border: 0.3mm solid #E65100;
+    border-radius: 1mm; padding: 1.5mm 2mm;
+    font-size: 6pt; color: #BF360C; line-height: 1.4;
+  }
+  .br-note strong { font-size: 5.5pt; letter-spacing: 1px; text-transform: uppercase; display: block; margin-bottom: 0.5mm; }
+</style>
+</head>
+<body>
+<section class="page no-bar">
+  <header class="page-header">
+    <div class="h-num">{{PAGE_NUM_PADDED}}</div>
+    <div class="h-titles">
+      <div class="h-cn">八 卦 廿 四 山</div>
+      <div class="h-id">Peta Radial Arah Rumah</div>
+    </div>
+    <div class="h-section">Bagian I · 風水</div>
+  </header>
+
+  <main class="content content-bagua-rect">
+
+    <!-- ── LEFT: chart + legend ── -->
+    <div class="br-left">
+
+      <!-- Chart SVG -->
+      <div class="br-chart">{{BAGUA_RECT_SVG}}</div>
+
+      <!-- Legend strip -->
+      <div class="br-legend">
+
+        <div>
+          <div class="br-leg-title">5 Elemen</div>
+          <div class="br-elemen-list">
+            <div class="br-elemen-row">
+              <div class="br-elemen-dot" style="background:#2E7D32;border:0.3mm solid #1B5E20;"></div>
+              <span style="color:#1B5E20;font-weight:600;">Kayu (木)</span>
+            </div>
+            <div class="br-elemen-row">
+              <div class="br-elemen-dot" style="background:#C62828;border:0.3mm solid #B71C1C;"></div>
+              <span style="color:#B71C1C;font-weight:600;">Api (火)</span>
+            </div>
+            <div class="br-elemen-row">
+              <div class="br-elemen-dot" style="background:#BF6C00;border:0.3mm solid #E65100;"></div>
+              <span style="color:#BF6C00;font-weight:600;">Tanah (土)</span>
+            </div>
+            <div class="br-elemen-row">
+              <div class="br-elemen-dot" style="background:#455A64;border:0.3mm solid #37474F;"></div>
+              <span style="color:#455A64;font-weight:600;">Logam (金)</span>
+            </div>
+            <div class="br-elemen-row">
+              <div class="br-elemen-dot" style="background:#1565C0;border:0.3mm solid #0D47A1;"></div>
+              <span style="color:#1565C0;font-weight:600;">Air (水)</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="br-leg-title">Arah &amp; Makna</div>
+          <table class="br-leg-table">
+            <tr><td>Utara (水)</td><td>Karir, Jalan Hidup</td></tr>
+            <tr><td>Timur (木)</td><td>Keluarga, Kesehatan</td></tr>
+            <tr><td>Selatan (火)</td><td>Reputasi, Ketenaran</td></tr>
+            <tr><td>Barat (金)</td><td>Anak-anak, Kreativitas</td></tr>
+            <tr><td>Tenggara (木)</td><td>Kekayaan, Kelimpahan</td></tr>
+            <tr><td>Barat Daya (土)</td><td>Cinta, Pernikahan</td></tr>
+            <tr><td>Barat Laut (金)</td><td>Pembimbing, Dukungan</td></tr>
+            <tr><td>Timur Laut (土)</td><td>Pengetahuan, Keilmuan</td></tr>
+          </table>
+        </div>
+
+        <div>
+          <div class="br-leg-title">Nomor &amp; Trigram (Ba Gua)</div>
+          <table class="br-leg-table">
+            <tr><td>Kan 1</td><td><span class="tri">☵</span>Air – Karir</td></tr>
+            <tr><td>Kun 2</td><td><span class="tri">☷</span>Tanah – Ibu</td></tr>
+            <tr><td>Zhen 3</td><td><span class="tri">☳</span>Kayu – Keluarga</td></tr>
+            <tr><td>Xun 4</td><td><span class="tri">☴</span>Kayu – Kekayaan</td></tr>
+            <tr><td>Li 9</td><td><span class="tri">☲</span>Api – Reputasi</td></tr>
+            <tr><td>Dui 7</td><td><span class="tri">☱</span>Logam – Anak</td></tr>
+            <tr><td>Qian 6</td><td><span class="tri">☰</span>Logam – Ayah</td></tr>
+            <tr><td>Gen 8</td><td><span class="tri">☶</span>Tanah – Ilmu</td></tr>
+          </table>
+        </div>
+
+        <div class="br-cara">
+          <strong>Cara Penggunaan:</strong>
+          Gunakan peta ini untuk menentukan arah terbaik saat bekerja, belajar, atau menata ruangan.
+          <em>Sumber: Metode Hong Shui / Feng Shui Tradisional.</em>
+        </div>
+
+      </div><!-- /br-legend -->
+    </div><!-- /br-left -->
+
+    <!-- ── RIGHT: info panel ── -->
+    <div class="br-panel">
+
+      <div class="br-panel-header">
+        <div class="br-panel-title">KARTU HONG SHUI</div>
+        <div class="br-panel-subtitle">Analisis Energi &amp; Arah Kelahiran</div>
+      </div>
+
+      <div class="br-card">
+        <div class="br-card-label">Identitas Subjek</div>
+        <table class="br-table">
+          <tr><td>Nama</td><td><span class="val-hz">{{BR_NAME_HZ}}</span><br>{{BR_NAME_ID}}</td></tr>
+          <tr><td>Kelamin</td><td>{{BR_GENDER_ID}}</td></tr>
+          <tr><td>Shio</td><td><span class="hz">{{BR_SHIO_HZ}}</span> {{BR_SHIO_ID}}</td></tr>
+        </table>
+      </div>
+
+      <div class="br-card">
+        <div class="br-card-label">Informasi Kelahiran</div>
+        <table class="br-table">
+          <tr><td>Tahun</td><td>{{BR_BIRTH_YEAR}} · Shio {{BR_SHIO_ID}}</td></tr>
+          <tr><td>Pilar Tahun</td><td><span class="hz">{{BR_YEAR_PILLAR_HZ}}</span></td></tr>
+          <tr><td>Tanggal</td><td>{{BR_BIRTH_DATE_ID}}</td></tr>
+          <tr><td>Lunar</td><td>{{BR_LUNAR_DATE_ID}}</td></tr>
+          <tr><td>Waktu</td><td>{{BR_BIRTH_TIME}} ({{BR_BIRTH_PERIOD_ID}})</td></tr>
+        </table>
+      </div>
+
+      <div class="br-card">
+        <div class="br-card-label">Posisi Energi Pribadi</div>
+        <table class="br-table">
+          <tr><td>Tipe Hunian</td><td><span class="hz">{{BR_LIFE_TYPE_HZ}}</span> {{BR_LIFE_TYPE_ID}}</td></tr>
+          <tr><td>Gua</td><td><span class="hz">{{BR_GUA_HZ}}</span> {{BR_GUA_ID}}</td></tr>
+          <tr><td>Nada Lahir</td><td><span class="hz">{{BR_NAYIN_HZ}}</span> {{BR_NAYIN_ID}}</td></tr>
+          <tr><td>Elemen Diri</td><td><span class="hz">{{BR_DM_HZ}}</span> {{BR_DM_LABEL_ID}}</td></tr>
+        </table>
+      </div>
+
+      <div class="br-card">
+        <div class="br-card-label">Arah yang Didukung (Si Ming)</div>
+        <div class="br-dirs">{{BR_LUCKY_DIRS_HTML}}</div>
+      </div>
+
+      <div class="br-note">
+        <strong>Catatan Penting</strong>
+        {{BR_NOTE_ID}}
+      </div>
+
+    </div><!-- /br-panel -->
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="pg-num">{{PAGE_NUM}} / {{TOTAL_PAGES}}</div>
+  </footer>
+</section>
+</body>
+</html>

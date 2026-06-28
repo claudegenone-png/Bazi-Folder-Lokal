@@ -1,0 +1,835 @@
+{
+  "subject_id": "ng",
+  "_built_by": "build_from_ocr.py V4.5 FULL-MD",
+  "identity": {
+    "name_id": "DING",
+    "name_hanzi": "",
+    "gender_id": "Wanita",
+    "birth_date": "1969-03-08",
+    "birth_time": "13:13",
+    "birth_day_name": "Sabtu",
+    "birth_period_id": "siang",
+    "birth_hour_branch_hz": "未",
+    "birth_hour_period_label": "siang · 未時",
+    "lunar_date_text_new": "tanggal 20 bulan 1 tahun 己酉 (Ji You · 1969)",
+    "lunar_year_pillar_hz": "己酉",
+    "lunar_republic_text": "民國 58 年 1 月 20 日",
+    "age_at_report": 58
+  },
+  "shio": {
+    "branch_hz": "酉",
+    "branch_pinyin": "Yǒu",
+    "id": "Ayam",
+    "id_upper": "AYAM",
+    "svg_red": "Ayam-Merah.svg",
+    "svg_black": "Ayam-Hitam.svg"
+  },
+  "ti_xiang": null,
+  "day_master": {
+    "stem_hz": "壬",
+    "stem_element_hz": "水",
+    "stem_element_id": "Air",
+    "polarity_id": "Yang",
+    "label_id": "Air Sungai",
+    "label_long_id": "Air",
+    "pinyin": "Rén 水",
+    "strength_id": "—",
+    "strength_hz": null
+  },
+  "pillars": {
+    "year": {
+      "stem_hz": "己",
+      "branch_hz": "酉"
+    },
+    "month": {
+      "stem_hz": "丁",
+      "branch_hz": "卯"
+    },
+    "day": {
+      "stem_hz": "壬",
+      "branch_hz": "午"
+    },
+    "hour": {
+      "stem_hz": "丁",
+      "branch_hz": "未"
+    }
+  },
+  "wuxing": {
+    "jin": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Logam"
+    },
+    "shui": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Air"
+    },
+    "mu": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Kayu"
+    },
+    "huo": {
+      "value": 3.0,
+      "percent": 37.5,
+      "label_id": "Api"
+    },
+    "tu": {
+      "value": 2.0,
+      "percent": 25.0,
+      "label_id": "Tanah"
+    },
+    "total": 8.0,
+    "self_value": 1.0,
+    "self_el_hz": "—",
+    "fav_hz": "—",
+    "unfav_hz": "—",
+    "axis_max": "—",
+    "insight_id": null,
+    "_empty": false
+  },
+  "yong_shen": {
+    "elements_hz": "木",
+    "elements_id": "Kayu",
+    "label_id": "Penopang & Pengarah",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "ji_shen": {
+    "elements_hz": "金",
+    "elements_id": "Logam",
+    "label_id": "Pelumat & Pemicu",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "format": {
+    "hz": "食神格",
+    "pinyin": "Shi Shen Ge",
+    "label_id": "Pencipta Lembut",
+    "glyph_hz": "—"
+  },
+  "da_yun": {
+    "start_age": 10,
+    "direction_id": "forward",
+    "current_index": 4,
+    "axis_marks": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100,
+      110
+    ],
+    "cycles": [
+      {
+        "n": 1,
+        "age_start": 10,
+        "age_end": 19,
+        "stem_hz": "戊",
+        "branch_hz": "辰",
+        "ten_god_hz": "偏官",
+        "ten_god_id": "偏官",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 2,
+        "age_start": 20,
+        "age_end": 29,
+        "stem_hz": "己",
+        "branch_hz": "巳",
+        "ten_god_hz": "正官",
+        "ten_god_id": "Otoritas",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 3,
+        "age_start": 30,
+        "age_end": 39,
+        "stem_hz": "庚",
+        "branch_hz": "午",
+        "ten_god_hz": "偏印",
+        "ten_god_id": "Mentor",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 4,
+        "age_start": 40,
+        "age_end": 49,
+        "stem_hz": "辛",
+        "branch_hz": "未",
+        "ten_god_hz": "正印",
+        "ten_god_id": "Pelajaran",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 5,
+        "age_start": 50,
+        "age_end": 59,
+        "stem_hz": "壬",
+        "branch_hz": "申",
+        "ten_god_hz": "比肩",
+        "ten_god_id": "Pundak Sama",
+        "element_class": "el-shui",
+        "is_current": true
+      },
+      {
+        "n": 6,
+        "age_start": 60,
+        "age_end": 69,
+        "stem_hz": "癸",
+        "branch_hz": "酉",
+        "ten_god_hz": "劫財",
+        "ten_god_id": "Saudara Sebanding",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 7,
+        "age_start": 70,
+        "age_end": 79,
+        "stem_hz": "甲",
+        "branch_hz": "戌",
+        "ten_god_hz": "食神",
+        "ten_god_id": "Pencipta",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 8,
+        "age_start": 80,
+        "age_end": 89,
+        "stem_hz": "乙",
+        "branch_hz": "亥",
+        "ten_god_hz": "傷官",
+        "ten_god_id": "Kritikus Tajam",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 9,
+        "age_start": 90,
+        "age_end": 99,
+        "stem_hz": "丙",
+        "branch_hz": "子",
+        "ten_god_hz": "偏財",
+        "ten_god_id": "Rezeki Bisnis",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 10,
+        "age_start": 100,
+        "age_end": 109,
+        "stem_hz": "丁",
+        "branch_hz": "丑",
+        "ten_god_hz": "正財",
+        "ten_god_id": "Rezeki Tetap",
+        "element_class": "el-huo"
+      }
+    ],
+    "seasons": [
+      {
+        "el_class": "s-tu",
+        "el_hz": "土",
+        "name_id": "Pemurnian Awal",
+        "age_start": 10,
+        "age_end": 29
+      },
+      {
+        "el_class": "s-jin",
+        "el_hz": "金",
+        "name_id": "Belajar & Mentor",
+        "age_start": 30,
+        "age_end": 49
+      },
+      {
+        "el_class": "s-shui",
+        "el_hz": "水",
+        "name_id": "Berbagi Panggung",
+        "age_start": 50,
+        "age_end": 69,
+        "is_current": true
+      },
+      {
+        "el_class": "s-mu",
+        "el_hz": "木",
+        "name_id": "Berkarya Tenang",
+        "age_start": 70,
+        "age_end": 89
+      },
+      {
+        "el_class": "s-huo",
+        "el_hz": "火",
+        "name_id": "Memetik Rezeki",
+        "age_start": 90,
+        "age_end": 109
+      }
+    ],
+    "spotlight_headline_html": "Fase <span class=\"hz\">比肩</span> (Pundak Sama), periode utama untuk membangun kemandirian",
+    "spotlight_tag_tone_html": "Air · adaptasi",
+    "spotlight_tag_combo_html": "Sekutu Sebanding",
+    "spotlight_tag_combo_pair": [
+      "壬",
+      "申"
+    ],
+    "spotlight_bullets_html": [
+      "<strong>Fokus utama</strong>, pilar <span class=\"hz\">比肩</span> mendorong Anda untuk membangun kemandirian. Selaraskan agenda 10 tahun ini ke arah tersebut.",
+      "<strong>Energi 水</strong>, batang <span class=\"hz\">壬</span> (水) berinteraksi dengan Day Master <span class=\"hz\">壬</span> (水); tone fase: Air · adaptasi.",
+      "<strong>Cabang <span class=\"hz\">申</span></strong> menentukan medan harian, kebiasaan, lingkungan, dan relasi yang dibangun di rentang umur 50–59 akan jadi pondasi fase berikutnya.",
+      "<strong>Setelah 59</strong> masuk <span class=\"hz\">癸酉 (劫財)</span>, uji solidaritas & finansial. Siapkan transisi sekarang."
+    ],
+    "footer_caption_html": "DING sedang di fase <span style=\"font-family:'Noto Serif TC',serif;color:var(--red)\">比肩</span> (50–59), membangun kemandirian. Periode 50–69 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir."
+  },
+  "marriage": {
+    "self_branch_index": 9,
+    "cocok": [
+      {
+        "branch_hz": "丑",
+        "id": "Kerbau",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "辰",
+        "id": "Naga",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "巳",
+        "id": "Ular",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      }
+    ],
+    "hindari": [
+      {
+        "branch_hz": "子",
+        "id": "Tikus",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "卯",
+        "id": "Kelinci",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "酉",
+        "id": "Ayam",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "戌",
+        "id": "Anjing",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      }
+    ],
+    "_empty": false
+  },
+  "yang_zhai": {
+    "gua_hz": "坤",
+    "gua_pinyin": "Kūn",
+    "gua_label_id": "Bumi",
+    "gua_direction_id": "Barat Daya",
+    "gua_direction_abbr": "BD",
+    "group_id": "Barat",
+    "desc_id": "Elemen Bumi — mengayomi, setia, penuh perhatian. Kelompok Barat (西四命): sabar, dapat diandalkan, dan kuat dalam memelihara hubungan.",
+    "sumbu_hoki_hz": "西南↔東北",
+    "sumbu_hoki_id": "BD ↔ TL",
+    "sumbu_rumah_hz": "東北↔西南",
+    "sumbu_rumah_id": "TL ↔ BD",
+    "rumah_axis_pos": "NE",
+    "trigram_symbol": "☷",
+    "zones": {
+      "rumah": {
+        "dirs_hz": [
+          "東北"
+        ],
+        "dirs_abbr": [
+          "TL"
+        ],
+        "note_id": "Rumah ideal menghadap Barat Daya dari Timur Laut (atau sebaliknya) untuk keberuntungan terbaik"
+      },
+      "pintu": {
+        "dirs_hz": [
+          "西"
+        ],
+        "dirs_abbr": [
+          "B"
+        ],
+        "note_id": "Pintu utama sebaiknya menghadap ke arah Barat atau Barat Laut"
+      },
+      "dapur": {
+        "dirs_hz": [
+          "東"
+        ],
+        "dirs_abbr": [
+          "T"
+        ],
+        "note_id": "Dapur/kompor sebaiknya ditempatkan di sisi Timur dengan posisi menghadap ke Barat"
+      },
+      "kamar": {
+        "dirs_hz": [
+          "西"
+        ],
+        "dirs_abbr": [
+          "B"
+        ],
+        "note_id": "Kamar tidur terbaik di Barat, Barat Laut, Barat Daya, atau Timur Laut"
+      },
+      "ranjang": {
+        "dirs_hz": [
+          "西"
+        ],
+        "dirs_abbr": [
+          "B"
+        ],
+        "note_id": "Posisi ranjang terbaik di Barat, Barat Daya, Timur Laut, atau Barat Laut"
+      },
+      "altar": {
+        "dirs_hz": [
+          "西"
+        ],
+        "dirs_abbr": [
+          "B"
+        ],
+        "note_id": "Altar/tempat sembahyang terbaik di Barat, Barat Laut, Barat Daya, Timur Laut, atau arah keberuntungan tahun berjalan"
+      },
+      "kamar_mandi": {
+        "dirs_hz": [
+          "北"
+        ],
+        "dirs_abbr": [
+          "U"
+        ],
+        "note_id": "Kamar mandi/toilet sebaiknya di Utara, Timur, Tenggara, atau Selatan"
+      }
+    }
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "武曲",
+    "shen_zhu_hz": "天同",
+    "ming_gong_hz": "未",
+    "shen_gong_hz": "酉",
+    "wu_xing_ju_hz": "土五局",
+    "shi_jun_hz": "未",
+    "palaces": null,
+    "ming_gong_id": "Istana Hidup · Kambing",
+    "shen_gong_id": "Istana Tubuh · Ayam",
+    "shi_jun_id": "Penguasa Waktu · Kambing",
+    "ming_zhu_id": "Penguasa Hidup",
+    "shen_zhu_id": "Penguasa Tubuh",
+    "wu_xing_ju_id": "Aliran Tanah Lima"
+  },
+  "shen_sha_list": [],
+  "kesimpulan_narrative": "DING adalah wanita kelahiran 1969 dengan Day Master 壬 (Air Yang) dalam format 食神格 — sosok yang hangat, penuh kepedulian tulus, dan memiliki bakat seni serta bahasa yang luar biasa. Yong shen Kayu (木) dan 喜神 Air (水) mendukung jalur kreativitas, ekspresi, dan pelayanan kepada orang lain; sementara ji shen Logam (金) sebaiknya dihindari dalam karir berat atau spekulasi finansial. Dalam hal keuangan, DING perlu mengalihkan uang tunai ke investasi properti karena itulah cara terbaik menjaga dan menumbuhkan asetnya — istana 田宅 yang kuat menjadi kekuatan alaminya. Karir paling cocok di bidang pendidikan, penerbitan, seni, atau media; DING disenangi oleh senior dan mudah mendapat promosi. Dalam urusan asmara dan pernikahan, DING perlu berhati-hati: istana 夫妻 memiliki bintang buruk yang signifikan, sehingga menikah di usia matang dan memilih pasangan yang sabar adalah kunci menghindari siklus konflik berkepanjangan. Mobilitas tinggi DING (sering berpindah tempat) adalah kekuatan yang perlu diarahkan dengan sengaja ke ekspansi karir dan bisnis. Di usia pertengahan ke atas, kehidupan DING akan jauh lebih bahagia dan stabil — teruslah berusaha keras karena separuh kedua kehidupan menjanjikan keberuntungan dan keberkahan yang lebih besar dari masa muda.",
+  "dm_pos_score": 2000.0,
+  "dm_neg_score": 6900.0,
+  "xiantian_per_stem": {
+    "jia": 0,
+    "yi": 4,
+    "bing": 0,
+    "ding": 4,
+    "wu": 0,
+    "ji": 3,
+    "geng": 0,
+    "xin": 1,
+    "ren": 1,
+    "gui": 0
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": null,
+  "canggan_shi_shen": null,
+  "chang_sheng_per_pilar": null,
+  "kong_wang": null,
+  "ming_gong_bazi": null,
+  "bone_weight": null,
+  "liu_nian_predictions": [
+    {
+      "tahun": 2026,
+      "umur": 58,
+      "ganzhi": "丙午",
+      "prose": "Tahun ini usaha fisik dan pikiran DING terlihat sebanding dengan hasil finansial yang didapat — berbagai peluang terbuka dan cita-cita awal bisa diraih. Perlu menjaga kesehatan; pasangan mungkin mengalami ketegangan perasaan, kedua pihak perlu saling bertoleransi. Bagi yang sudah menikah, hubungan bisa memanas; bagi yang belum menikah, ada perkembangan dalam urusan asmara. Karir dan jabatan kemungkinan mengalami perubahan atau pergeseran. Sisi 福德 mengisyaratkan kenaikan pangkat dan penambahan aset properti — baik untuk merancang langkah besar. Waspadai kejadian tak terduga, penyakit, dan kerugian finansial; hindari bulan ke-4, 7, dan 8, waspada bencana air dan api. Akan ada tanda-tanda mendapat bantuan dari orang berpengaruh [[貴人]]. Rasa ingin tahu dan kreativitas meningkat, humor kaya, kehangatan sosial tinggi. Kesehatan fisik tidak terlalu prima namun semakin bertambah usia justru semakin menguat. Bagi wanita, kemungkinan lebih tinggi melahirkan anak perempuan di tahun ini."
+    },
+    {
+      "tahun": 2027,
+      "umur": 59,
+      "ganzhi": "丁未",
+      "prose": "Pengeluaran tahun ini sangat besar dan cita-cita semula sulit tercapai sepenuhnya — waspadai penyakit kronis [[慢性病]]. Hubungan suami-istri bisa memanas namun tidak merusak; yang belum menikah semakin dekat dengan pasangan. Karir mengalami perubahan dan suasana hati tidak stabil. Bintang 帶客 mengisyaratkan potensi duka dan masalah di sekitar; bintang 陽德 membawa berita gembira namun diselingi rintangan — berbuat kebaikan dan hindari pertengkaran agar tidak dijebak orang lain. Waspadai konflik mulut dan masalah hukum, khususnya di bulan ke-1, 4, 7, dan 11. DING berwatak santun dan mahir bergaul, namun cenderung kurang berambisi dan mudah puas dengan keadaan. Selama terus berusaha keras, tetap bisa meraih pencapaian besar."
+    },
+    {
+      "tahun": 2028,
+      "umur": 60,
+      "ganzhi": "戊申",
+      "prose": "Tekanan tahun ini cukup berat dan pengeluaran besar — waspadai masalah kesehatan fisik dan banyaknya hal yang menjengkelkan. Dukungan orang berpengaruh kurang terasa. Bintang 病符 [[Bing Fu]] hadir: waspadai penyakit, masalah hukum, dan bencana — perbanyak doa. Namun bintang 錦繡 [[Jin Xiu]] membawa berita gembira dan harapan yang terkabulkan. Waspada masalah hukum di bulan ke-3, 6, 9, dan 12; selama keluarga menjaga kesehatan dan tidak tertular penyakit, semuanya akan baik. DING disukai, dihargai, dan mudah dipromosikan — dapat naik pangkat dengan cepat [[平步青雲]]. Cocok sebagai penasehat, perencana, atau staf strategis yang handal, bukan sebagai pemimpin langsung."
+    },
+    {
+      "tahun": 2029,
+      "umur": 61,
+      "ganzhi": "己酉",
+      "prose": "Tekanan tahun ini cukup berat, pengeluaran besar — perlu waspada terhadap masalah kesehatan fisik. Banyak hal menjengkelkan; dukungan orang berpengaruh kurang dan sulit mencapai cita-cita semula. Kondisi lingkungan berubah namun lebih baik tidak banyak berubah — renovasi, pindah rumah, atau menggeser perabotan bisa terjadi. Suasana hati tidak stabil. Bintang 太歲 [[Tai Sui]] tepat di hadapan: segala bencana berlalu, sepanjang tahun baik untuk merencanakan langkah besar. Bintang 天哭 [[Tian Ku]] hadir: ada kekhawatiran penyakit dan duka; jika ada berita gembira di rumah, hanya perselisihan mulut yang datang; hindari bulan ke-2, 3, 5, dan 11; pasang tablet 太歲 di hari ke-9 bulan pertama untuk keselamatan. Keberuntungan dan kesialan tahun ini cenderung sangat ekstrem. DING mudah bosan dengan yang lama, tidak terlalu konsisten, mudah terpengaruh lingkungan, hubungan pernikahan mudah goyah, serta sering berganti pekerjaan atau tempat tinggal."
+    },
+    {
+      "tahun": 2030,
+      "umur": 62,
+      "ganzhi": "庚戌",
+      "prose": "Tampilan luar tahun ini kurang menarik dan tidak sebanding dengan kondisi finansial — pengeluaran besar dan sulit mencapai cita-cita semula; waspadai penyakit kronis. Suasana hati tidak stabil. Hubungan suami-istri bisa memanas namun tidak merusak; yang belum menikah makin dekat dengan pasangan. Bintang 太陽 [[Tai Yang]] membawa keharmonisan dan keseimbangan, berkah dan rezeki hadir. Bintang 福德 mengisyaratkan karir baik dan dipercaya orang — keberuntungan di usia senja lebih baik dari masa muda; hindari bulan ke-2, 4, 8, dan 11. Bagi yang sedang sakit atau sial, ini adalah pertanda akan membaik. DING memiliki semangat nama dan kehormatan yang tinggi [[名聲心旺盛]], pantang menyerah, namun cenderung bermain strategi dan taktik secara kalkulatif."
+    },
+    {
+      "tahun": 2031,
+      "umur": 63,
+      "ganzhi": "辛亥",
+      "prose": "Tahun ini DING bisa mendapat bantuan dari saudara dan teman-teman [[兄弟朋友的幫助]], dan secara substansial mencapai cita-cita yang memadai. Namun penampilan luar kurang menarik dan tidak sebanding finansial; suasana hati tidak stabil; karir mengalami perubahan jabatan. Bintang 喪門 [[Sang Men]] hadir: waspadai duka, masalah hukum, dan kerugian finansial. Bintang 黑煞 [[Hei Sha]] membuat keadaan serba terbalik — waspada pencuri dan musuh tersembunyi; hindari bulan ke-6, 8, dan 12; jangan mengunjungi orang sakit parah atau menghadiri upacara duka. DING berkarakter mulia, jujur, matang, dan penuh integritas [[正大光明]] dengan jiwa kemandirian kuat — lebih suka merintis sendiri daripada mewarisi usaha keluarga. Karakter setengah babak: sebelum usia pertengahan penuh perjuangan, setelah usia pertengahan akan menikmati kebahagiaan dan kemakmuran."
+    }
+  ],
+  "ziwei_su_ming": "Terlepas dari nasib baik atau buruk, semua akan berjalan sesuai takdir yang sudah digariskan, namun dengan pola yang berbeda dari perkiraan umum. Selama 福德宮 (istana Kemakmuran & Kebajikan) DING dalam keadaan kuat dan semarak, 身宮 (istana Diri) pun akan turut menguat. Kepribadian yang hangat dan penuh empati [[充滿人情味]], serta kebajikan dan keluhuran budi akan mendatangkan banyak keberuntungan bagi DING. Namun apabila 福德宮 lemah dan surut, hubungan sosial menjadi tidak harmonis dan keberkahan pun ikut melenyap. Pada saat itu, kondisi 命宮 (istana Kehidupan), 財帛宮 (istana Keuangan), 夫妻宮 (istana Cinta), dan 遷移宮 (istana Pergerakan) masing-masing perlu diperhitungkan bersama.",
+  "ziwei_stars": null,
+  "shiye_favorable_full": [
+    {
+      "hz": "文具",
+      "id": "Alat tulis"
+    },
+    {
+      "hz": "出版",
+      "id": "Penerbitan"
+    },
+    {
+      "hz": "書店",
+      "id": "Toko buku"
+    },
+    {
+      "hz": "農業蔬果",
+      "id": "Pertanian & sayuran"
+    },
+    {
+      "hz": "木材",
+      "id": "Kayu & bahan bangunan"
+    },
+    {
+      "hz": "傢俱",
+      "id": "Furnitur"
+    },
+    {
+      "hz": "裝璜",
+      "id": "Dekorasi interior"
+    },
+    {
+      "hz": "紙",
+      "id": "Industri kertas"
+    },
+    {
+      "hz": "木器工藝",
+      "id": "Kerajinan kayu"
+    },
+    {
+      "hz": "花苗園藝",
+      "id": "Florikultura & taman"
+    },
+    {
+      "hz": "蠶草",
+      "id": "Budidaya sutera & tanaman"
+    },
+    {
+      "hz": "布定",
+      "id": "Tekstil & kain"
+    },
+    {
+      "hz": "教育",
+      "id": "Pendidikan"
+    },
+    {
+      "hz": "公務員",
+      "id": "PNS"
+    },
+    {
+      "hz": "政治",
+      "id": "Politik"
+    },
+    {
+      "hz": "宗教家",
+      "id": "Tokoh agama"
+    }
+  ],
+  "shiye_supportive_full": [
+    {
+      "hz": "流動攤販",
+      "id": "Pedagang keliling"
+    },
+    {
+      "hz": "運動家",
+      "id": "Atlet"
+    },
+    {
+      "hz": "介紹中人",
+      "id": "Mediator & makelar"
+    },
+    {
+      "hz": "醫師",
+      "id": "Dokter"
+    },
+    {
+      "hz": "清潔隊",
+      "id": "Petugas kebersihan"
+    },
+    {
+      "hz": "記者",
+      "id": "Jurnalis"
+    },
+    {
+      "hz": "讀士",
+      "id": "Cendekiawan"
+    },
+    {
+      "hz": "導遊",
+      "id": "Pemandu wisata"
+    },
+    {
+      "hz": "馬戲圈",
+      "id": "Pertunjukan sirkus"
+    },
+    {
+      "hz": "航海",
+      "id": "Pelayaran"
+    },
+    {
+      "hz": "漁業",
+      "id": "Perikanan"
+    },
+    {
+      "hz": "冷凍業",
+      "id": "Industri pangan beku"
+    },
+    {
+      "hz": "水產業",
+      "id": "Budidaya air"
+    },
+    {
+      "hz": "碼頭工",
+      "id": "Buruh pelabuhan"
+    },
+    {
+      "hz": "消防隊",
+      "id": "Pemadam kebakaran"
+    },
+    {
+      "hz": "貿易公司",
+      "id": "Perusahaan perdagangan"
+    }
+  ],
+  "shiye_short": null,
+  "shen_sha_detail": [
+    {
+      "hz": "桃花",
+      "pinyin": "Tao Hua",
+      "label_id": "Bunga Persik",
+      "tafsir_hz": "色慾心太強，好色好酒，愛美，人緣好。",
+      "tafsir_id": "Hasrat asmara dan keindahan sangat kuat, menyukai kesenangan, disukai banyak orang."
+    },
+    {
+      "hz": "寡宿",
+      "pinyin": "Gua Su",
+      "label_id": "Bintang Kesepian",
+      "tafsir_hz": "形孤骨露，面無和氣、六親終有也如無。",
+      "tafsir_id": "Penampilan soliter dan terbuka, kurang kehangatan, hubungan dengan keluarga dekat ibarat ada tapi tiada."
+    },
+    {
+      "hz": "從掃",
+      "pinyin": "Cong Sao",
+      "label_id": "Bintang Sapu",
+      "tafsir_hz": "財入而多隆家庭。",
+      "tafsir_id": "Kekayaan masuk namun banyak dihabiskan untuk keperluan keluarga."
+    }
+  ],
+  "marriage_cocok_tafsir": "Keberuntungan berlipat turun-temurun, menikmati berkah yang dilimpahkan langit, memiliki nama dan kehormatan, karir dan materi gemilang, wibawa yang agung, serta keluarga yang sejahtera dan harmonis.",
+  "marriage_hindari_tafsir": "Meski secara watak cukup baik, namun hubungan ini rentan menghadapi bencana tak terduga, kurang kecocokan dengan keluarga pasangan, keturunan sedikit, sering didera kesulitan dan musibah, meskipun tidak sampai menimbulkan bahaya besar.",
+  "gushu_quotes": null,
+  "xiongnian_list": null,
+  "xing_qing_poem_hz": null,
+  "xing_qing_poem_id": null,
+  "xing_qing_prose_id": null,
+  "fulu_body_id": null,
+  "mingyun_body_id": null,
+  "qinshu_tou_main_id": null,
+  "qinshu_tou_youyue_id": null,
+  "qinshu_zhong_main_id": null,
+  "qinshu_zhong_youyue_id": null,
+  "qinshu_mo_main_id": null,
+  "qinshu_mo_youyue_id": null,
+  "jie_e_palace_hz": null,
+  "jie_e_palace_id": "DING rentan terhadap penyakit empedu [[腑囊]], penyakit persendian [[關節]] dan kepala/otak [[腦部]], serta neuralgia [[神經痛]] dan rematik [[風濕病]]. Penyakit yang berkaitan dengan jantung juga perlu diwaspadai; apabila bintang 太陰 [[Tai Yin]] berada satu istana, perhatian ekstra pada kesehatan mata sangat diperlukan. Ketika ada bintang buruk [[凶星]] di istana yang sama, rentan terhadap wasir [[痔瘡]], penyakit kulit [[皮膚病]], dan insomnia [[冷眠症]]. Nampaknya juga mudah terserang gangguan pada lambung, usus, dan kandung kemih, serta gangguan kulit. Apabila bintang 太陽 [[Tai Yang]] berada satu istana, rentan pada penyakit leher [[頸部]]; dan apabila ada bintang buruk lain di istana yang sama, perlu berhati-hati karena dapat terserang penyakit akibat konsumsi alkohol berlebihan atau gaya hidup tidak terkontrol.",
+  "jie_e_organ_focus_id": "Empedu, persendian, kepala/otak, jantung, kandung kemih",
+  "bagua_sectors": null,
+  "bagua_life_type_hz": null,
+  "bagua_life_type_id": null,
+  "bagua_nayin_hz": null,
+  "bagua_nayin_id": null,
+  "bagua_taisui_hz": null,
+  "bagua_taisui_id": null,
+  "bagua_warning_hz": null,
+  "bagua_warning_id": null,
+  "bagua_virtue_hz": null,
+  "bagua_virtue_id": null,
+  "bagua_zuo_xiang_hz": null,
+  "bagua_zuo_xiang_id": null,
+  "hongshui_pages": null,
+  "mantra": {
+    "hz": "—",
+    "pinyin": "—"
+  },
+  "_xq_radar_poly": "          <polygon points=\"200,56 325.1,128 311.2,264 200,312 102.7,256 116.6,152\"\n            fill=\"rgba(139,26,26,0.18)\" stroke=\"#8B1A1A\" stroke-width=\"1.5\"/>\n          <circle cx=\"200\" cy=\"56\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"325.1\" cy=\"128\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"264\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"200\" cy=\"312\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"102.7\" cy=\"256\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"116.6\" cy=\"152\" r=\"3\" fill=\"#8B1A1A\"/>",
+  "_xq_radar_labels": "          <g font-family=\"Noto Serif TC,serif\">\n            <text x=\"200\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">創新</text>\n            <text x=\"200\" y=\"33\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Chuàngxīn · Inovatif · 9</text>\n\n            <text x=\"358\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">變通</text>\n            <text x=\"358\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Biàntōng · Fleksibel · 9</text>\n\n            <text x=\"358\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">表現</text>\n            <text x=\"358\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Biǎoxiàn · Ekspresi · 8</text>\n\n            <text x=\"200\" y=\"382\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">領導</text>\n            <text x=\"200\" y=\"393\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Lǐngdǎo · Memimpin · 7</text>\n\n            <text x=\"42\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">急性</text>\n            <text x=\"42\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Jíxìng · Cepat panas · 7</text>\n\n            <text x=\"42\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">包容</text>\n            <text x=\"42\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Bāoróng · Toleran · 6</text>\n          </g>",
+  "_xq_motto": [
+    "江",
+    "Sungai Besar",
+    "本性 浩瀚",
+    "海納百川"
+  ],
+  "_tafsir": {
+    "kepribadian": "DING adalah sosok dengan Day Master 壬 (Air Yang) dalam format 食神格, didukung oleh yong shen Kayu (木) dan 喜神 Air (水). Perpaduan ini melahirkan pribadi yang hangat, artistik, dan penuh inisiatif — namun perlu kewaspadaan terhadap ji shen Logam (金) yang dapat menghambat aliran kreativitas dan keputusan finansialnya.",
+    "_kepribadian_struct": {
+      "paragraf": "DING adalah sosok dengan Day Master 壬 (Air Yang) dalam format 食神格, didukung oleh yong shen Kayu (木) dan 喜神 Air (水). Perpaduan ini melahirkan pribadi yang hangat, artistik, dan penuh inisiatif — namun perlu kewaspadaan terhadap ji shen Logam (金) yang dapat menghambat aliran kreativitas dan keputusan finansialnya."
+    },
+    "xingqing_full": "<p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">1</span>DING mampu peduli pada orang lain dan binatang kecil dengan tulus tanpa pamrih, sering dapat menikmati ketenangan alam dan melupakan urusan duniawi, memiliki kemampuan bahasa yang sangat baik, daya apresiasi seni yang luar biasa, dan berbakat dalam menyanyi dan menari.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">2</span>Cerdas membedakan benar dan salah, teguh pada sesuatu yang sudah menjadi miliknya — khususnya soal keuangan dan harta benda. Sangat mengutamakan manfaat praktis, berorientasi mengumpulkan kekayaan sebanyak-banyaknya, dan sekali keuangan sudah di tangan sulit untuk dikeluarkan kembali.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">3</span>Bersifat konservatif dan penurut, kadang memaksa diri sendiri melebihi batas, memiliki rasa rendah diri, bertindak rasional dan berhati-hati, sangat menjaga gengsi, serta mengutamakan keputusan bersama dalam kelompok.</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">4</span>Berminat dalam bidang seni dan sastra, pemikiran mengalir lancar, mampu menganalisis segala hal dengan cermat dan teliti. Bersifat optimis dan ekstrovert, pandai memanfaatkan peluang, cerdas dalam strategi. Meski memiliki kemampuan intelektual dan praktis yang baik, terkadang bertindak sesuka hati dan kurang disiplin pada diri sendiri.</p>",
+    "xingqing_full_action": "Inti watak diri sebagaimana terbaca dari layar 性情.",
+    "overview_full": "<div style=\"display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm;\"><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Pasangan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Pasangan DING cenderung mengutamakan perasaan dan bersifat hemat.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Putra</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Anak laki-laki cenderung penuh perasaan dan hemat.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Saudara</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Nasihat dari saudara kandung kurang mudah diterima.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Kepemimpinan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Kurang memiliki jiwa kepemimpinan, sulit memegang kendali besar.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Ibu</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Sulit menerima arahan ibu, komunikasi dengan ibu cenderung terbatas.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Watak</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Pribadi yang jujur, lugas, dan tulus dalam pergaulan.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Suami</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Sangat mengutamakan dan menghargai suami.</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Tempat Tinggal</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Merantau dan pernah berpindah ke tempat yang jauh dari tanah kelahiran.</div></div></div>",
+    "overview_full_action": "Pesan inti hubungan terdekat dari layar 全局總論.",
+    "family": "pasangan:<br><br>- vibe: null<br><br>headline: null<br><br>cocok_list:<br><br>- shio: 牛<br><br>label: 大吉<br><br>teks: Keberuntungan berlipat turun-temurun, menikmati berkah langit, memiliki nama dan kehormatan, karir dan materi gemilang, wibawa agung, keluarga sejahtera dan harmonis.<br><br>- shio: 龍<br><br>label: 大吉<br><br>teks: Keberuntungan berlipat turun-temurun, menikmati berkah langit, memiliki nama dan kehormatan, karir dan materi gemilang, wibawa agung, keluarga sejahtera dan harmonis.<br><br>- shio: 蛇<br><br>label: 大吉<br><br>teks: Keberuntungan berlipat turun-temurun, menikmati berkah langit, memiliki nama dan kehormatan, karir dan materi gemilang, wibawa agung, keluarga sejahtera dan harmonis.<br><br>hindari_list:<br><br>- shio: 鼠<br><br>teks: Rentan menghadapi bencana tak terduga, kurang kecocokan dengan keluarga pasangan, keturunan sedikit, sering didera kesulitan dan musibah.<br><br>- shio: 兔<br><br>teks: Rentan menghadapi bencana tak terduga, kurang kecocokan dengan keluarga pasangan, keturunan sedikit, sering didera kesulitan dan musibah.<br><br>- shio: 雞<br><br>teks: Rentan menghadapi bencana tak terduga, kurang kecocokan dengan keluarga pasangan, keturunan sedikit, sering didera kesulitan dan musibah.<br><br>- shio: 狗<br><br>teks: Rentan menghadapi bencana tak terduga, kurang kecocokan dengan keluarga pasangan, keturunan sedikit, sering didera kesulitan dan musibah.",
+    "_family_struct": {},
+    "career": "<p>DING dengan Day Master 壬 (Air Yang) dalam format 食神格 memiliki kecenderungan karir di bidang seni, pendidikan, dan pelayanan kreatif — yong shen Kayu (木) mendukung jalur penerbitan, pertanian, dan kerajinan kayu; sementara ji shen Logam (金) sebaiknya dihindari dalam industri berat atau spekulasi finansial jangka pendek.</p>",
+    "_career_struct": {},
+    "palace1": "<p>ming_gong:</p><p>- star: null</p><p>- insight: null</p><p>- action: null</p><p>xiongdi:</p><p>- star: null</p><p>- insight: null</p><p>- action: null</p><p>fuqi:</p><p>- star: null</p><p>- insight: Hubungan pernikahan DING berjalan dengan rasa saling menghormati namun disertai jarak tertentu <span class=\"hz\">相敬如賓</span>. Kedua pasangan saling memahami bahwa suami memiliki dunia pribadinya sendiri, dan istri pun demikian — sehingga tidak mudah bertengkar karena alasan apapun. Meski cenderung terlambat menikah, namun akan mendapatkan pasangan yang membawa berkah baik. Pasangan DING adalah sosok yang penuh pesona dan daya tarik, dan setiap percakapan dengannya terasa hangat dan nyaman — keduanya adalah pasangan yang saling mencintai seumur hidup tanpa goyah. Namun DING terlalu berhati-hati dalam urusan cinta, sehingga kadang melewatkan kesempatan baik. Ketika dipengaruhi bintang buruk <span class=\"hz\">凶星</span>, kepribadian keduanya tidak serasi sehingga pertengkaran tidak bisa dihindari. Masa awal pernikahan cenderung diwarnai perselisihan yang terus-menerus, bahkan bisa berujung pada perceraian <span class=\"hz\">離婚</span>. Jika DING saat ini masih lajang, menikah di usia yang lebih matang justru lebih baik — pernikahan yang ditunda pasti dapat menghindari kesialan. Terlepas dari jenis kelamin, calon pasangan cenderung berkarakter sangat keras kepala dan egois; sebagus apapun usaha yang dilakukan, konflik pendapat tidak bisa sepenuhnya dihindari, hanya bisa dikurangi dampak terburuknya. Selain itu ada bintang buruk lain yang ikut berdiam di istana ini, sehingga kemungkinan besar hidup akan dihabiskan dalam siklus menikah dan bercerai yang berulang.</p><p>- action: Prioritaskan pernikahan di usia matang untuk menghindari kesialan; pilih pasangan yang sabar dan fleksibel, bukan yang keras kepala.</p><p>zinu:</p><p>- star: null</p><p>- insight: Anak-anak DING termasuk tipe yang dapat dipercaya dan diandalkan untuk segalanya <span class=\"hz\">可託付一切</span>. Menariknya, hubungan dengan anak angkat atau anak yang lahir di luar pernikahan justru terasa lebih kuat dibandingkan dengan anak kandung. Anak-anak DING berwatak baik hati <span class=\"hz\">心地善良</span>, namun memiliki kecenderungan langsung mengkritik atau mengomentari orang lain. Bagi mereka yang bintang 天梁 <span class=\"hz\">Tian Liang</span> berada di istana Anak, anak pertama kemungkinan besar perempuan — meski perempuan, tapi kemungkinan besar sangat aktif dan lincah. Apabila bintang-bintang 天同 <span class=\"hz\">Tian Tong</span>, 文昌 <span class=\"hz\">Wen Chang</span>, 文曲 <span class=\"hz\">Wen Qu</span> turut hadir di istana yang sama, jumlah anak akan banyak. Namun apabila ada bintang buruk <span class=\"hz\">凶星</span> yang menghalangi, DING mungkin tidak dapat memiliki anak.</p><p>- action: Bangun relasi hangat dengan anak melalui komunikasi terbuka; pertimbangkan pendidikan dan pengembangan karakter sebagai investasi utama.</p>",
+    "_palace1_struct": {
+      "fuqi": {
+        "insight": "Hubungan pernikahan DING berjalan dengan rasa saling menghormati namun disertai jarak tertentu [[相敬如賓]]. Kedua pasangan saling memahami bahwa suami memiliki dunia pribadinya sendiri, dan istri pun demikian — sehingga tidak mudah bertengkar karena alasan apapun. Meski cenderung terlambat menikah, namun akan mendapatkan pasangan yang membawa berkah baik. Pasangan DING adalah sosok yang penuh pesona dan daya tarik, dan setiap percakapan dengannya terasa hangat dan nyaman — keduanya adalah pasangan yang saling mencintai seumur hidup tanpa goyah. Namun DING terlalu berhati-hati dalam urusan cinta, sehingga kadang melewatkan kesempatan baik. Ketika dipengaruhi bintang buruk [[凶星]], kepribadian keduanya tidak serasi sehingga pertengkaran tidak bisa dihindari. Masa awal pernikahan cenderung diwarnai perselisihan yang terus-menerus, bahkan bisa berujung pada perceraian [[離婚]]. Jika DING saat ini masih lajang, menikah di usia yang lebih matang justru lebih baik — pernikahan yang ditunda pasti dapat menghindari kesialan. Terlepas dari jenis kelamin, calon pasangan cenderung berkarakter sangat keras kepala dan egois; sebagus apapun usaha yang dilakukan, konflik pendapat tidak bisa sepenuhnya dihindari, hanya bisa dikurangi dampak terburuknya. Selain itu ada bintang buruk lain yang ikut berdiam di istana ini, sehingga kemungkinan besar hidup akan dihabiskan dalam siklus menikah dan bercerai yang berulang.",
+        "action": "Prioritaskan pernikahan di usia matang untuk menghindari kesialan; pilih pasangan yang sabar dan fleksibel, bukan yang keras kepala."
+      },
+      "zinu": {
+        "insight": "Anak-anak DING termasuk tipe yang dapat dipercaya dan diandalkan untuk segalanya [[可託付一切]]. Menariknya, hubungan dengan anak angkat atau anak yang lahir di luar pernikahan justru terasa lebih kuat dibandingkan dengan anak kandung. Anak-anak DING berwatak baik hati [[心地善良]], namun memiliki kecenderungan langsung mengkritik atau mengomentari orang lain. Bagi mereka yang bintang 天梁 [[Tian Liang]] berada di istana Anak, anak pertama kemungkinan besar perempuan — meski perempuan, tapi kemungkinan besar sangat aktif dan lincah. Apabila bintang-bintang 天同 [[Tian Tong]], 文昌 [[Wen Chang]], 文曲 [[Wen Qu]] turut hadir di istana yang sama, jumlah anak akan banyak. Namun apabila ada bintang buruk [[凶星]] yang menghalangi, DING mungkin tidak dapat memiliki anak.",
+        "action": "Bangun relasi hangat dengan anak melalui komunikasi terbuka; pertimbangkan pendidikan dan pengembangan karakter sebagai investasi utama."
+      }
+    },
+    "palace2": "<p>caibo:</p><p>- star: null</p><p>- insight: DING menghadapi keuangan dengan sikap yang sangat berhati-hati <span class=\"hz\">拘謹</span>, sehingga sulit memanfaatkan uang secara fleksibel dan cerdas. Sumber kekayaan tak terduga (偏財) tidak terlalu melimpah dan keuangan sulit dipertahankan dalam bentuk tunai — perlu dikonversi ke aset properti agar bisa bertahan. Sumber penghasilan tetap (正財) tergolong biasa namun hubungannya erat dan biasanya mudah diraih. Apabila istana 財帛 berada di posisi 辰, 午, 未, 戌 dan terdapat bintang 天梁 <span class=\"hz\">Tian Liang</span> di dalamnya, DING lahir dari keluarga yang mapan dan tidak akan mengkhawatirkan masalah keuangan sepanjang hidup. Namun apabila bintang 天梁 berada di rasi 巳, 申, 亥, meski ada warisan harta orang tua yang besar, sulit dipertahankan dan tidak lama kemudian habis. Bagi mereka yang bersama bintang 天同 <span class=\"hz\">Tian Tong</span>, perlu merantau dan mengandalkan tangan sendiri; bagi mereka yang bersama 天機 <span class=\"hz\">Tian Ji</span>, hasil kerja keras akan terakumulasi menjadi kekayaan yang dapat diwariskan. Setidaknya DING tidak perlu khawatir terikat masalah keuangan berat. Namun apabila istana berada di posisi 寅 atau 午, efektivitas bintang 文昌 <span class=\"hz\">Wen Chang</span> melemah, harta sulit terakumulasi dan cenderung habis dalam sekejap.</p><p>- action: Alokasikan keuangan ke aset tetap (properti) bukan tunai; hindari spekulasi jangka pendek dan manfaatkan penghasilan tetap yang stabil.</p><p>jie_e:</p><p>- star: null</p><p>- insight: DING rentan terhadap penyakit empedu <span class=\"hz\">腑囊</span>, penyakit persendian <span class=\"hz\">關節</span> dan kepala/otak <span class=\"hz\">腦部</span>, serta neuralgia <span class=\"hz\">神經痛</span> dan rematik <span class=\"hz\">風濕病</span>. Penyakit yang berkaitan dengan jantung juga perlu diwaspadai; apabila bintang 太陰 <span class=\"hz\">Tai Yin</span> berada satu istana, perhatian ekstra pada kesehatan mata sangat diperlukan. Ketika ada bintang buruk <span class=\"hz\">凶星</span> di istana yang sama, rentan terhadap wasir <span class=\"hz\">痔瘡</span>, penyakit kulit <span class=\"hz\">皮膚病</span>, dan insomnia <span class=\"hz\">冷眠症</span>. Nampaknya juga mudah terserang gangguan pada lambung, usus, dan kandung kemih, serta gangguan kulit. Apabila bintang 太陽 <span class=\"hz\">Tai Yang</span> berada satu istana, rentan pada penyakit leher <span class=\"hz\">頸部</span>; dan apabila ada bintang buruk lain di istana yang sama, perlu berhati-hati karena dapat terserang penyakit akibat konsumsi alkohol berlebihan atau gaya hidup tidak terkontrol.</p><p>- action: Periksakan empedu, persendian, dan jantung secara rutin; hindari konsumsi alkohol berlebihan dan jaga pola hidup teratur.</p><p>qianyi:</p><p>- star: null</p><p>- insight: DING cenderung mengalami hambatan dalam pergerakan dan sulit bergerak bebas <span class=\"hz\">行動受阻</span>. Namun paradoksnya, sepanjang hidup DING akan banyak berpindah-pindah dan sulit menetap di satu tempat — tipikal \"maniak pindah rumah\". Dalam dunia kerja, hampir tidak mampu bertahan di satu tempat lebih dari tiga bulan, atau akan bekerja di perusahaan yang sering melakukan mutasi dan perjalanan dinas. Justru lebih baik bagi DING untuk sering berpindah dan keluar menjelajah — apabila bintang 貪狼 <span class=\"hz\">Tan Lang</span> berada satu istana, apapun bisnis yang dijalankan akan meraih kesuksesan besar. Kehidupan penuh perubahan ini akan selalu membuat DING sibuk berganti pekerjaan dan pindah rumah. Namun jika bersungguh-sungguh dan gigih <span class=\"hz\">背繩繃努力</span>, bisa mendapatkan penghasilan di luar dugaan! Terutama ketika bintang 武曲 <span class=\"hz\">Wu Qu</span> berada satu istana, mungkin tiba-tiba mendapat warisan atau sejumlah besar uang yang tidak terduga. Apabila ada bintang buruk <span class=\"hz\">凶星</span> di istana yang sama, DING sebaiknya bersiap menghadapi bencana besar dalam hidupnya.</p><p>- action: Manfaatkan mobilitas tinggi sebagai keunggulan — karir terbaik di bidang yang melibatkan perjalanan, perubahan, atau kewirausahaan lintas lokasi.</p><p>puyi:</p><p>- star: null</p><p>- insight: Bawahan atau teman-teman dekat DING termasuk tipe yang cerdas dan gesit <span class=\"hz\">腦筋聰明、敏捷</span>. DING dapat memiliki bawahan yang berkaliber dan berkapasitas tinggi. Apabila bintang 巨門 <span class=\"hz\">Ju Men</span> berada satu istana, pada awalnya DING mungkin tidak cocok dengan bawahan, namun setelah saling berinteraksi dalam pekerjaan akan saling memahami dan akhirnya bisa harmonis. Apabila bintang 太陰 <span class=\"hz\">Tai Yin</span> atau 天梁 <span class=\"hz\">Tian Liang</span> berada satu istana, DING dapat mendapatkan bawahan yang benar-benar berkapasitas tinggi. Apabila istana berada di rasi 子, 丑, 酉, 戌, 亥, DING bisa mendapatkan bantuan dari bawahan yang setia; namun di rasi lain, bawahan cenderung tidak konsisten dan tidak bisa dipercaya untuk tugas penting. Apabila bintang 天機 <span class=\"hz\">Tian Ji</span> berada satu istana, sebaiknya tidak mendelegasikan pekerjaan penting kepada mereka. DING juga mungkin membangun persahabatan murni dengan lawan jenis yang lebih muda.</p><p>- action: Seleksi tim kerja berdasarkan kapasitas nyata; hindari mendelegasikan tugas kritis ke orang yang belum terbukti konsisten.</p>",
+    "_palace2_struct": {
+      "caibo": {
+        "insight": "DING menghadapi keuangan dengan sikap yang sangat berhati-hati [[拘謹]], sehingga sulit memanfaatkan uang secara fleksibel dan cerdas. Sumber kekayaan tak terduga (偏財) tidak terlalu melimpah dan keuangan sulit dipertahankan dalam bentuk tunai — perlu dikonversi ke aset properti agar bisa bertahan. Sumber penghasilan tetap (正財) tergolong biasa namun hubungannya erat dan biasanya mudah diraih. Apabila istana 財帛 berada di posisi 辰, 午, 未, 戌 dan terdapat bintang 天梁 [[Tian Liang]] di dalamnya, DING lahir dari keluarga yang mapan dan tidak akan mengkhawatirkan masalah keuangan sepanjang hidup. Namun apabila bintang 天梁 berada di rasi 巳, 申, 亥, meski ada warisan harta orang tua yang besar, sulit dipertahankan dan tidak lama kemudian habis. Bagi mereka yang bersama bintang 天同 [[Tian Tong]], perlu merantau dan mengandalkan tangan sendiri; bagi mereka yang bersama 天機 [[Tian Ji]], hasil kerja keras akan terakumulasi menjadi kekayaan yang dapat diwariskan. Setidaknya DING tidak perlu khawatir terikat masalah keuangan berat. Namun apabila istana berada di posisi 寅 atau 午, efektivitas bintang 文昌 [[Wen Chang]] melemah, harta sulit terakumulasi dan cenderung habis dalam sekejap.",
+        "action": "Alokasikan keuangan ke aset tetap (properti) bukan tunai; hindari spekulasi jangka pendek dan manfaatkan penghasilan tetap yang stabil."
+      },
+      "jie_e": {
+        "insight": "DING rentan terhadap penyakit empedu [[腑囊]], penyakit persendian [[關節]] dan kepala/otak [[腦部]], serta neuralgia [[神經痛]] dan rematik [[風濕病]]. Penyakit yang berkaitan dengan jantung juga perlu diwaspadai; apabila bintang 太陰 [[Tai Yin]] berada satu istana, perhatian ekstra pada kesehatan mata sangat diperlukan. Ketika ada bintang buruk [[凶星]] di istana yang sama, rentan terhadap wasir [[痔瘡]], penyakit kulit [[皮膚病]], dan insomnia [[冷眠症]]. Nampaknya juga mudah terserang gangguan pada lambung, usus, dan kandung kemih, serta gangguan kulit. Apabila bintang 太陽 [[Tai Yang]] berada satu istana, rentan pada penyakit leher [[頸部]]; dan apabila ada bintang buruk lain di istana yang sama, perlu berhati-hati karena dapat terserang penyakit akibat konsumsi alkohol berlebihan atau gaya hidup tidak terkontrol.",
+        "action": "Periksakan empedu, persendian, dan jantung secara rutin; hindari konsumsi alkohol berlebihan dan jaga pola hidup teratur."
+      },
+      "qianyi": {
+        "insight": "DING cenderung mengalami hambatan dalam pergerakan dan sulit bergerak bebas [[行動受阻]]. Namun paradoksnya, sepanjang hidup DING akan banyak berpindah-pindah dan sulit menetap di satu tempat — tipikal \"maniak pindah rumah\". Dalam dunia kerja, hampir tidak mampu bertahan di satu tempat lebih dari tiga bulan, atau akan bekerja di perusahaan yang sering melakukan mutasi dan perjalanan dinas. Justru lebih baik bagi DING untuk sering berpindah dan keluar menjelajah — apabila bintang 貪狼 [[Tan Lang]] berada satu istana, apapun bisnis yang dijalankan akan meraih kesuksesan besar. Kehidupan penuh perubahan ini akan selalu membuat DING sibuk berganti pekerjaan dan pindah rumah. Namun jika bersungguh-sungguh dan gigih [[背繩繃努力]], bisa mendapatkan penghasilan di luar dugaan! Terutama ketika bintang 武曲 [[Wu Qu]] berada satu istana, mungkin tiba-tiba mendapat warisan atau sejumlah besar uang yang tidak terduga. Apabila ada bintang buruk [[凶星]] di istana yang sama, DING sebaiknya bersiap menghadapi bencana besar dalam hidupnya.",
+        "action": "Manfaatkan mobilitas tinggi sebagai keunggulan — karir terbaik di bidang yang melibatkan perjalanan, perubahan, atau kewirausahaan lintas lokasi."
+      },
+      "puyi": {
+        "insight": "Bawahan atau teman-teman dekat DING termasuk tipe yang cerdas dan gesit [[腦筋聰明、敏捷]]. DING dapat memiliki bawahan yang berkaliber dan berkapasitas tinggi. Apabila bintang 巨門 [[Ju Men]] berada satu istana, pada awalnya DING mungkin tidak cocok dengan bawahan, namun setelah saling berinteraksi dalam pekerjaan akan saling memahami dan akhirnya bisa harmonis. Apabila bintang 太陰 [[Tai Yin]] atau 天梁 [[Tian Liang]] berada satu istana, DING dapat mendapatkan bawahan yang benar-benar berkapasitas tinggi. Apabila istana berada di rasi 子, 丑, 酉, 戌, 亥, DING bisa mendapatkan bantuan dari bawahan yang setia; namun di rasi lain, bawahan cenderung tidak konsisten dan tidak bisa dipercaya untuk tugas penting. Apabila bintang 天機 [[Tian Ji]] berada satu istana, sebaiknya tidak mendelegasikan pekerjaan penting kepada mereka. DING juga mungkin membangun persahabatan murni dengan lawan jenis yang lebih muda.",
+        "action": "Seleksi tim kerja berdasarkan kapasitas nyata; hindari mendelegasikan tugas kritis ke orang yang belum terbukti konsisten."
+      }
+    },
+    "palace3": "<p>guanlu:</p><p>- star: null</p><p>- insight: Profesi yang cocok untuk DING meliputi dokter bedah <span class=\"hz\">外科醫生</span>, teknisi, pendeta/rohaniwan <span class=\"hz\">僧侶</span>, dan pedagang logam mulia <span class=\"hz\">貴金屬商</span>. Meniti karir sebagai PNS atau guru memungkinkan DING memanfaatkan kemampuannya secara penuh. Apabila istana berada di rasi 卯 atau 亥, DING dapat meraih kesuksesan melalui kemampuan menulis. DING akan disenangi oleh orang-orang yang lebih tua dan dapat naik jabatan serta meraih cita-cita besar — karir stabil dengan penghasilan yang memuaskan. Namun apabila bintang menunjukkan sisi negatif, DING bisa menjadi sosok yang materialistis dan hanya memikirkan cara menghasilkan uang. Apabila bintang 紫微 <span class=\"hz\">Zi Wei</span> berada satu istana, DING bisa terkenal dan diakui di dunia yang lebih luas. Daya observasi DING tajam dan kemampuan ekspresi unggul <span class=\"hz\">觀察力敏銳</span>, sangat cocok menjadi penulis reportase, novelis, pelukis, atau bekerja di bidang media massa — juga cocok untuk pekerjaan spiritual/keagamaan. Dapat menikmati karir yang stabil dan lancar. Kelemahannya, meski perencanaan detail dan matang, hasil akhirnya sering tidak sepenuhnya sesuai rencana, atau mudah terpengaruh suasana sekitar. Apabila bintang 天機 <span class=\"hz\">Tian Ji</span> dan 太陰 <span class=\"hz\">Tai Yin</span> berada satu istana, DING berpotensi naik ke posisi manajer dalam perusahaan.</p><p>- action: Bidik karir di sektor pendidikan, penulisan, atau media massa; bangun hubungan baik dengan mentor senior yang dapat mendorong kenaikan jabatan.</p><p>tianzhai:</p><p>- star: null</p><p>- insight: Istana 田宅 (Properti) DING merupakan tipikal istana aset yang kuat <span class=\"hz\">資產宮運</span>, dengan kemampuan memanfaatkan properti dan aset tidak bergerak yang besar secara cerdas dan fleksibel. DING memiliki bakat alami dalam mengelola aset fisik dan properti berskala besar.</p><p>- action: Alokasikan kelebihan finansial ke investasi properti — ini adalah area kekuatan alami DING sesuai dengan karakter 田宅宮 yang kuat.</p><p>fude:</p><p>- star: null</p><p>- insight: Watak yang tidak konsisten dan mudah goyah <span class=\"hz\">搖擺不定</span> turut menggerus keberkahan hidup DING. Sejatinya takdir seakan suka mempermainkan DING — namun apabila berusaha keras untuk maju, pasti bisa mengubah kesialan menjadi keberuntungan <span class=\"hz\">轉禍為福</span>. Meski tampak dingin di luar, di dalam hati DING selalu menyimpan kehangatan yang tulus. Penuh gairah di dalam namun berpura-pura tenang di luar, menunggu saat yang tepat untuk bertindak — inilah tipe yang lebih mengandalkan intelektual <span class=\"hz\">智性</span> dibanding emosi mentah. Dalam hal spiritual, karena konflik antara sikap dingin dan gairah yang membara, DING kemungkinan besar sering merasakan dilema batin yang menyiksa. Apabila istana berada di rasi 子 atau 亥, DING dapat menikmati umur panjang <span class=\"hz\">長壽</span>. Meski pekerja keras yang rajin, sering kali hasil tidak sebanding usaha — kesibukan sehari-hari diwarnai rasa gelisah dan frustrasi. Ini mengisyaratkan kecenderungan gaya hidup yang kurang terstruktur. Namun apabila bintang 紫微 <span class=\"hz\">Zi Wei</span> berada satu istana, DING dapat memulihkan ketenangan dan kedamaian batin yang sesungguhnya.</p><p>- action: Latih konsistensi dan ketekunan — hasil jangka panjang akan datang hanya dengan kedisiplinan yang terjaga; jangan berganti arah saat menghadapi hambatan kecil.</p><p>fumu:</p><p>- star: null</p><p>- insight: DING sangat tidak menyukai orang tua yang keras dan tidak toleran terhadap kesalahan <span class=\"hz\">厭惡做錯事的嚴厲雙親</span> — pola asuh yang otoriter dan penuh tuntutan justru menimbulkan penolakan dan jarak emosional.</p><p>- action: Bangun hubungan dengan orang tua atau figur otoritas atas dasar pengertian mutual, bukan ketakutan atau tekanan.</p>",
+    "_palace3_struct": {
+      "guanlu": {
+        "insight": "Profesi yang cocok untuk DING meliputi dokter bedah [[外科醫生]], teknisi, pendeta/rohaniwan [[僧侶]], dan pedagang logam mulia [[貴金屬商]]. Meniti karir sebagai PNS atau guru memungkinkan DING memanfaatkan kemampuannya secara penuh. Apabila istana berada di rasi 卯 atau 亥, DING dapat meraih kesuksesan melalui kemampuan menulis. DING akan disenangi oleh orang-orang yang lebih tua dan dapat naik jabatan serta meraih cita-cita besar — karir stabil dengan penghasilan yang memuaskan. Namun apabila bintang menunjukkan sisi negatif, DING bisa menjadi sosok yang materialistis dan hanya memikirkan cara menghasilkan uang. Apabila bintang 紫微 [[Zi Wei]] berada satu istana, DING bisa terkenal dan diakui di dunia yang lebih luas. Daya observasi DING tajam dan kemampuan ekspresi unggul [[觀察力敏銳]], sangat cocok menjadi penulis reportase, novelis, pelukis, atau bekerja di bidang media massa — juga cocok untuk pekerjaan spiritual/keagamaan. Dapat menikmati karir yang stabil dan lancar. Kelemahannya, meski perencanaan detail dan matang, hasil akhirnya sering tidak sepenuhnya sesuai rencana, atau mudah terpengaruh suasana sekitar. Apabila bintang 天機 [[Tian Ji]] dan 太陰 [[Tai Yin]] berada satu istana, DING berpotensi naik ke posisi manajer dalam perusahaan.",
+        "action": "Bidik karir di sektor pendidikan, penulisan, atau media massa; bangun hubungan baik dengan mentor senior yang dapat mendorong kenaikan jabatan."
+      },
+      "tianzhai": {
+        "insight": "Istana 田宅 (Properti) DING merupakan tipikal istana aset yang kuat [[資產宮運]], dengan kemampuan memanfaatkan properti dan aset tidak bergerak yang besar secara cerdas dan fleksibel. DING memiliki bakat alami dalam mengelola aset fisik dan properti berskala besar.",
+        "action": "Alokasikan kelebihan finansial ke investasi properti — ini adalah area kekuatan alami DING sesuai dengan karakter 田宅宮 yang kuat."
+      },
+      "fude": {
+        "insight": "Watak yang tidak konsisten dan mudah goyah [[搖擺不定]] turut menggerus keberkahan hidup DING. Sejatinya takdir seakan suka mempermainkan DING — namun apabila berusaha keras untuk maju, pasti bisa mengubah kesialan menjadi keberuntungan [[轉禍為福]]. Meski tampak dingin di luar, di dalam hati DING selalu menyimpan kehangatan yang tulus. Penuh gairah di dalam namun berpura-pura tenang di luar, menunggu saat yang tepat untuk bertindak — inilah tipe yang lebih mengandalkan intelektual [[智性]] dibanding emosi mentah. Dalam hal spiritual, karena konflik antara sikap dingin dan gairah yang membara, DING kemungkinan besar sering merasakan dilema batin yang menyiksa. Apabila istana berada di rasi 子 atau 亥, DING dapat menikmati umur panjang [[長壽]]. Meski pekerja keras yang rajin, sering kali hasil tidak sebanding usaha — kesibukan sehari-hari diwarnai rasa gelisah dan frustrasi. Ini mengisyaratkan kecenderungan gaya hidup yang kurang terstruktur. Namun apabila bintang 紫微 [[Zi Wei]] berada satu istana, DING dapat memulihkan ketenangan dan kedamaian batin yang sesungguhnya.",
+        "action": "Latih konsistensi dan ketekunan — hasil jangka panjang akan datang hanya dengan kedisiplinan yang terjaga; jangan berganti arah saat menghadapi hambatan kecil."
+      },
+      "fumu": {
+        "insight": "DING sangat tidak menyukai orang tua yang keras dan tidak toleran terhadap kesalahan [[厭惡做錯事的嚴厲雙親]] — pola asuh yang otoriter dan penuh tuntutan justru menimbulkan penolakan dan jarak emosional.",
+        "action": "Bangun hubungan dengan orang tua atau figur otoritas atas dasar pengertian mutual, bukan ketakutan atau tekanan."
+      }
+    },
+    "sintesis": "DING adalah sosok yang hangat, artistik, dan penuh kepedulian tulus dengan Day Master 壬 (Air Yang) dalam format 食神格 — memiliki daya apresiasi seni dan kemampuan bahasa yang luar biasa, namun kerap berjuang dengan ketidakkonsistensian diri, kecenderungan memegang erat keuangan, dan hubungan pernikahan yang rentan ketidakstabilan.",
+    "_sintesis_struct": {
+      "opening": "DING adalah sosok yang hangat, artistik, dan penuh kepedulian tulus dengan Day Master 壬 (Air Yang) dalam format 食神格 — memiliki daya apresiasi seni dan kemampuan bahasa yang luar biasa, namun kerap berjuang dengan ketidakkonsistensian diri, kecenderungan memegang erat keuangan, dan hubungan pernikahan yang rentan ketidakstabilan.",
+      "actions": [
+        {
+          "title": "Fokus Karir Ekspresi"
+        },
+        {
+          "title": "Konversi Tunai ke Properti"
+        },
+        {
+          "title": "Jaga Konsistensi Diri"
+        },
+        {
+          "title": "Manfaatkan Mobilitas Tinggi"
+        },
+        {
+          "title": "Pilih Pasangan dengan Cermat"
+        }
+      ]
+    },
+    "_dmcard": "\n        <div class=\"dmc-eyebrow\">本 命 · Penguasa Hari</div>\n        <div class=\"dmc-stem\">壬</div>\n        <div class=\"dmc-element\">水 · Air Yang</div>\n        <div class=\"dmc-pinyin\">Rén 水, \"Sungai Besar\"</div>\n        <div class=\"dmc-strength\">Status: <span class=\"val\">KUAT</span> · 旺</div>\n      ",
+    "_jishen_body": "<strong>金</strong> (Jīn · Logam), Logam tajam yang dapat melukai bila terlalu dominan; hindari lingkungan terlalu kaku, hierarkis, dan kompetitif berlebih.",
+    "caifu_zheng_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "caifu_pian_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "_p1_ming_gong": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Diri</span><span class=\"pn-meta\">Mìng Gōng<span class=\"hz\">命宮</span></span></div></div>",
+    "_p1_xiongdi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Saudara</span><span class=\"pn-meta\">Xiōng Dì<span class=\"hz\">兄弟</span></span></div></div>",
+    "_p1_fuqi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pasangan</span><span class=\"pn-meta\">Fū Qī<span class=\"hz\">夫妻</span></span></div></div><div class=\"pal-body\"><p>Hubungan pernikahan DING berjalan dengan rasa saling menghormati namun disertai jarak tertentu <span class=\"hz\">相敬如賓</span>. Kedua pasangan saling memahami bahwa suami memiliki dunia pribadinya sendiri, dan istri pun demikian — sehingga tidak mudah bertengkar karena alasan apapun. Meski cenderung terlambat menikah, namun akan mendapatkan pasangan yang membawa berkah baik. Pasangan DING adalah sosok yang penuh pesona dan daya tarik, dan setiap percakapan dengannya terasa hangat dan nyaman — keduanya adalah pasangan yang saling mencintai seumur hidup tanpa goyah. Namun DING terlalu berhati-hati dalam urusan cinta, sehingga kadang melewatkan kesempatan baik. Ketika dipengaruhi bintang buruk <span class=\"hz\">凶星</span>, kepribadian keduanya tidak serasi sehingga pertengkaran tidak bisa dihindari. Masa awal pernikahan cenderung diwarnai perselisihan yang terus-menerus, bahkan bisa berujung pada perceraian <span class=\"hz\">離婚</span>. Jika DING saat ini masih lajang, menikah di usia yang lebih matang justru lebih baik — pernikahan yang ditunda pasti dapat menghindari kesialan. Terlepas dari jenis kelamin, calon pasangan cenderung berkarakter sangat keras kepala dan egois; sebagus apapun usaha yang dilakukan, konflik pendapat tidak bisa sepenuhnya dihindari, hanya bisa dikurangi dampak terburuknya. Selain itu ada bintang buruk lain yang ikut berdiam di istana ini, sehingga kemungkinan besar hidup akan dihabiskan dalam siklus menikah dan bercerai yang berulang.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Prioritaskan pernikahan di usia matang untuk menghindari kesialan; pilih pasangan yang sabar dan fleksibel, bukan yang keras kepala.</span></div></div>",
+    "_solo_fuqi_body": "<p>Hubungan pernikahan DING berjalan dengan rasa saling menghormati namun disertai jarak tertentu <span class=\"hz\">相敬如賓</span>. Kedua pasangan saling memahami bahwa suami memiliki dunia pribadinya sendiri, dan istri pun demikian — sehingga tidak mudah bertengkar karena alasan apapun. Meski cenderung terlambat menikah, namun akan mendapatkan pasangan yang membawa berkah baik. Pasangan DING adalah sosok yang penuh pesona dan daya tarik, dan setiap percakapan dengannya terasa hangat dan nyaman — keduanya adalah pasangan yang saling mencintai seumur hidup tanpa goyah. Namun DING terlalu berhati-hati dalam urusan cinta, sehingga kadang melewatkan kesempatan baik. Ketika dipengaruhi bintang buruk <span class=\"hz\">凶星</span>, kepribadian keduanya tidak serasi sehingga pertengkaran tidak bisa dihindari. Masa awal pernikahan cenderung diwarnai perselisihan yang terus-menerus, bahkan bisa berujung pada perceraian <span class=\"hz\">離婚</span>. Jika DING saat ini masih lajang, menikah di usia yang lebih matang justru lebih baik — pernikahan yang ditunda pasti dapat menghindari kesialan. Terlepas dari jenis kelamin, calon pasangan cenderung berkarakter sangat keras kepala dan egois; sebagus apapun usaha yang dilakukan, konflik pendapat tidak bisa sepenuhnya dihindari, hanya bisa dikurangi dampak terburuknya. Selain itu ada bintang buruk lain yang ikut berdiam di istana ini, sehingga kemungkinan besar hidup akan dihabiskan dalam siklus menikah dan bercerai yang berulang.</p>",
+    "_solo_fuqi_action": "Prioritaskan pernikahan di usia matang untuk menghindari kesialan; pilih pasangan yang sabar dan fleksibel, bukan yang keras kepala.",
+    "_p1_zinu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Anak</span><span class=\"pn-meta\">Zǐ Nǚ<span class=\"hz\">子女</span></span></div></div><div class=\"pal-body\"><p>Anak-anak DING termasuk tipe yang dapat dipercaya dan diandalkan untuk segalanya <span class=\"hz\">可託付一切</span>. Menariknya, hubungan dengan anak angkat atau anak yang lahir di luar pernikahan justru terasa lebih kuat dibandingkan dengan anak kandung. Anak-anak DING berwatak baik hati <span class=\"hz\">心地善良</span>, namun memiliki kecenderungan langsung mengkritik atau mengomentari orang lain. Bagi mereka yang bintang 天梁 <span class=\"hz\">Tian Liang</span> berada di istana Anak, anak pertama kemungkinan besar perempuan — meski perempuan, tapi kemungkinan besar sangat aktif dan lincah. Apabila bintang-bintang 天同 <span class=\"hz\">Tian Tong</span>, 文昌 <span class=\"hz\">Wen Chang</span>, 文曲 <span class=\"hz\">Wen Qu</span> turut hadir di istana yang sama, jumlah anak akan banyak. Namun apabila ada bintang buruk <span class=\"hz\">凶星</span> yang menghalangi, DING mungkin tidak dapat memiliki anak.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun relasi hangat dengan anak melalui komunikasi terbuka; pertimbangkan pendidikan dan pengembangan karakter sebagai investasi utama.</span></div></div>",
+    "_solo_zinu_body": "<p>Anak-anak DING termasuk tipe yang dapat dipercaya dan diandalkan untuk segalanya <span class=\"hz\">可託付一切</span>. Menariknya, hubungan dengan anak angkat atau anak yang lahir di luar pernikahan justru terasa lebih kuat dibandingkan dengan anak kandung. Anak-anak DING berwatak baik hati <span class=\"hz\">心地善良</span>, namun memiliki kecenderungan langsung mengkritik atau mengomentari orang lain. Bagi mereka yang bintang 天梁 <span class=\"hz\">Tian Liang</span> berada di istana Anak, anak pertama kemungkinan besar perempuan — meski perempuan, tapi kemungkinan besar sangat aktif dan lincah. Apabila bintang-bintang 天同 <span class=\"hz\">Tian Tong</span>, 文昌 <span class=\"hz\">Wen Chang</span>, 文曲 <span class=\"hz\">Wen Qu</span> turut hadir di istana yang sama, jumlah anak akan banyak. Namun apabila ada bintang buruk <span class=\"hz\">凶星</span> yang menghalangi, DING mungkin tidak dapat memiliki anak.</p>",
+    "_solo_zinu_action": "Bangun relasi hangat dengan anak melalui komunikasi terbuka; pertimbangkan pendidikan dan pengembangan karakter sebagai investasi utama.",
+    "_p2_caibo": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Rezeki</span><span class=\"pn-meta\">Cái Bó<span class=\"hz\">財帛</span></span></div></div><div class=\"pal-body\"><p>DING menghadapi keuangan dengan sikap yang sangat berhati-hati <span class=\"hz\">拘謹</span>, sehingga sulit memanfaatkan uang secara fleksibel dan cerdas. Sumber kekayaan tak terduga (偏財) tidak terlalu melimpah dan keuangan sulit dipertahankan dalam bentuk tunai — perlu dikonversi ke aset properti agar bisa bertahan. Sumber penghasilan tetap (正財) tergolong biasa namun hubungannya erat dan biasanya mudah diraih. Apabila istana 財帛 berada di posisi 辰, 午, 未, 戌 dan terdapat bintang 天梁 <span class=\"hz\">Tian Liang</span> di dalamnya, DING lahir dari keluarga yang mapan dan tidak akan mengkhawatirkan masalah keuangan sepanjang hidup. Namun apabila bintang 天梁 berada di rasi 巳, 申, 亥, meski ada warisan harta orang tua yang besar, sulit dipertahankan dan tidak lama kemudian habis. Bagi mereka yang bersama bintang 天同 <span class=\"hz\">Tian Tong</span>, perlu merantau dan mengandalkan tangan sendiri; bagi mereka yang bersama 天機 <span class=\"hz\">Tian Ji</span>, hasil kerja keras akan terakumulasi menjadi kekayaan yang dapat diwariskan. Setidaknya DING tidak perlu khawatir terikat masalah keuangan berat. Namun apabila istana berada di posisi 寅 atau 午, efektivitas bintang 文昌 <span class=\"hz\">Wen Chang</span> melemah, harta sulit terakumulasi dan cenderung habis dalam sekejap.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Alokasikan keuangan ke aset tetap (properti) bukan tunai; hindari spekulasi jangka pendek dan manfaatkan penghasilan tetap yang stabil.</span></div></div>",
+    "_solo_caibo_body": "<p>DING menghadapi keuangan dengan sikap yang sangat berhati-hati <span class=\"hz\">拘謹</span>, sehingga sulit memanfaatkan uang secara fleksibel dan cerdas. Sumber kekayaan tak terduga (偏財) tidak terlalu melimpah dan keuangan sulit dipertahankan dalam bentuk tunai — perlu dikonversi ke aset properti agar bisa bertahan. Sumber penghasilan tetap (正財) tergolong biasa namun hubungannya erat dan biasanya mudah diraih. Apabila istana 財帛 berada di posisi 辰, 午, 未, 戌 dan terdapat bintang 天梁 <span class=\"hz\">Tian Liang</span> di dalamnya, DING lahir dari keluarga yang mapan dan tidak akan mengkhawatirkan masalah keuangan sepanjang hidup. Namun apabila bintang 天梁 berada di rasi 巳, 申, 亥, meski ada warisan harta orang tua yang besar, sulit dipertahankan dan tidak lama kemudian habis. Bagi mereka yang bersama bintang 天同 <span class=\"hz\">Tian Tong</span>, perlu merantau dan mengandalkan tangan sendiri; bagi mereka yang bersama 天機 <span class=\"hz\">Tian Ji</span>, hasil kerja keras akan terakumulasi menjadi kekayaan yang dapat diwariskan. Setidaknya DING tidak perlu khawatir terikat masalah keuangan berat. Namun apabila istana berada di posisi 寅 atau 午, efektivitas bintang 文昌 <span class=\"hz\">Wen Chang</span> melemah, harta sulit terakumulasi dan cenderung habis dalam sekejap.</p>",
+    "_solo_caibo_action": "Alokasikan keuangan ke aset tetap (properti) bukan tunai; hindari spekulasi jangka pendek dan manfaatkan penghasilan tetap yang stabil.",
+    "_p2_jie_e": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Kesehatan</span><span class=\"pn-meta\">Jí È<span class=\"hz\">疾厄</span></span></div></div><div class=\"pal-body\"><p>DING rentan terhadap penyakit empedu <span class=\"hz\">腑囊</span>, penyakit persendian <span class=\"hz\">關節</span> dan kepala/otak <span class=\"hz\">腦部</span>, serta neuralgia <span class=\"hz\">神經痛</span> dan rematik <span class=\"hz\">風濕病</span>. Penyakit yang berkaitan dengan jantung juga perlu diwaspadai; apabila bintang 太陰 <span class=\"hz\">Tai Yin</span> berada satu istana, perhatian ekstra pada kesehatan mata sangat diperlukan. Ketika ada bintang buruk <span class=\"hz\">凶星</span> di istana yang sama, rentan terhadap wasir <span class=\"hz\">痔瘡</span>, penyakit kulit <span class=\"hz\">皮膚病</span>, dan insomnia <span class=\"hz\">冷眠症</span>. Nampaknya juga mudah terserang gangguan pada lambung, usus, dan kandung kemih, serta gangguan kulit. Apabila bintang 太陽 <span class=\"hz\">Tai Yang</span> berada satu istana, rentan pada penyakit leher <span class=\"hz\">頸部</span>; dan apabila ada bintang buruk lain di istana yang sama, perlu berhati-hati karena dapat terserang penyakit akibat konsumsi alkohol berlebihan atau gaya hidup tidak terkontrol.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Periksakan empedu, persendian, dan jantung secara rutin; hindari konsumsi alkohol berlebihan dan jaga pola hidup teratur.</span></div></div>",
+    "_solo_jie_e_body": "<p>DING rentan terhadap penyakit empedu <span class=\"hz\">腑囊</span>, penyakit persendian <span class=\"hz\">關節</span> dan kepala/otak <span class=\"hz\">腦部</span>, serta neuralgia <span class=\"hz\">神經痛</span> dan rematik <span class=\"hz\">風濕病</span>. Penyakit yang berkaitan dengan jantung juga perlu diwaspadai; apabila bintang 太陰 <span class=\"hz\">Tai Yin</span> berada satu istana, perhatian ekstra pada kesehatan mata sangat diperlukan. Ketika ada bintang buruk <span class=\"hz\">凶星</span> di istana yang sama, rentan terhadap wasir <span class=\"hz\">痔瘡</span>, penyakit kulit <span class=\"hz\">皮膚病</span>, dan insomnia <span class=\"hz\">冷眠症</span>. Nampaknya juga mudah terserang gangguan pada lambung, usus, dan kandung kemih, serta gangguan kulit. Apabila bintang 太陽 <span class=\"hz\">Tai Yang</span> berada satu istana, rentan pada penyakit leher <span class=\"hz\">頸部</span>; dan apabila ada bintang buruk lain di istana yang sama, perlu berhati-hati karena dapat terserang penyakit akibat konsumsi alkohol berlebihan atau gaya hidup tidak terkontrol.</p>",
+    "_solo_jie_e_action": "Periksakan empedu, persendian, dan jantung secara rutin; hindari konsumsi alkohol berlebihan dan jaga pola hidup teratur.",
+    "_p2_qianyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Perpindahan</span><span class=\"pn-meta\">Qiān Yí<span class=\"hz\">遷移</span></span></div></div><div class=\"pal-body\"><p>DING cenderung mengalami hambatan dalam pergerakan dan sulit bergerak bebas <span class=\"hz\">行動受阻</span>. Namun paradoksnya, sepanjang hidup DING akan banyak berpindah-pindah dan sulit menetap di satu tempat — tipikal \"maniak pindah rumah\". Dalam dunia kerja, hampir tidak mampu bertahan di satu tempat lebih dari tiga bulan, atau akan bekerja di perusahaan yang sering melakukan mutasi dan perjalanan dinas. Justru lebih baik bagi DING untuk sering berpindah dan keluar menjelajah — apabila bintang 貪狼 <span class=\"hz\">Tan Lang</span> berada satu istana, apapun bisnis yang dijalankan akan meraih kesuksesan besar. Kehidupan penuh perubahan ini akan selalu membuat DING sibuk berganti pekerjaan dan pindah rumah. Namun jika bersungguh-sungguh dan gigih <span class=\"hz\">背繩繃努力</span>, bisa mendapatkan penghasilan di luar dugaan! Terutama ketika bintang 武曲 <span class=\"hz\">Wu Qu</span> berada satu istana, mungkin tiba-tiba mendapat warisan atau sejumlah besar uang yang tidak terduga. Apabila ada bintang buruk <span class=\"hz\">凶星</span> di istana yang sama, DING sebaiknya bersiap menghadapi bencana besar dalam hidupnya.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Manfaatkan mobilitas tinggi sebagai keunggulan — karir terbaik di bidang yang melibatkan perjalanan, perubahan, atau kewirausahaan lintas lokasi.</span></div></div>",
+    "_solo_qianyi_body": "<p>DING cenderung mengalami hambatan dalam pergerakan dan sulit bergerak bebas <span class=\"hz\">行動受阻</span>. Namun paradoksnya, sepanjang hidup DING akan banyak berpindah-pindah dan sulit menetap di satu tempat — tipikal \"maniak pindah rumah\". Dalam dunia kerja, hampir tidak mampu bertahan di satu tempat lebih dari tiga bulan, atau akan bekerja di perusahaan yang sering melakukan mutasi dan perjalanan dinas. Justru lebih baik bagi DING untuk sering berpindah dan keluar menjelajah — apabila bintang 貪狼 <span class=\"hz\">Tan Lang</span> berada satu istana, apapun bisnis yang dijalankan akan meraih kesuksesan besar. Kehidupan penuh perubahan ini akan selalu membuat DING sibuk berganti pekerjaan dan pindah rumah. Namun jika bersungguh-sungguh dan gigih <span class=\"hz\">背繩繃努力</span>, bisa mendapatkan penghasilan di luar dugaan! Terutama ketika bintang 武曲 <span class=\"hz\">Wu Qu</span> berada satu istana, mungkin tiba-tiba mendapat warisan atau sejumlah besar uang yang tidak terduga. Apabila ada bintang buruk <span class=\"hz\">凶星</span> di istana yang sama, DING sebaiknya bersiap menghadapi bencana besar dalam hidupnya.</p>",
+    "_solo_qianyi_action": "Manfaatkan mobilitas tinggi sebagai keunggulan — karir terbaik di bidang yang melibatkan perjalanan, perubahan, atau kewirausahaan lintas lokasi.",
+    "_p2_puyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pertemanan</span><span class=\"pn-meta\">Pú Yì<span class=\"hz\">僕役</span></span></div></div><div class=\"pal-body\"><p>Bawahan atau teman-teman dekat DING termasuk tipe yang cerdas dan gesit <span class=\"hz\">腦筋聰明、敏捷</span>. DING dapat memiliki bawahan yang berkaliber dan berkapasitas tinggi. Apabila bintang 巨門 <span class=\"hz\">Ju Men</span> berada satu istana, pada awalnya DING mungkin tidak cocok dengan bawahan, namun setelah saling berinteraksi dalam pekerjaan akan saling memahami dan akhirnya bisa harmonis. Apabila bintang 太陰 <span class=\"hz\">Tai Yin</span> atau 天梁 <span class=\"hz\">Tian Liang</span> berada satu istana, DING dapat mendapatkan bawahan yang benar-benar berkapasitas tinggi. Apabila istana berada di rasi 子, 丑, 酉, 戌, 亥, DING bisa mendapatkan bantuan dari bawahan yang setia; namun di rasi lain, bawahan cenderung tidak konsisten dan tidak bisa dipercaya untuk tugas penting. Apabila bintang 天機 <span class=\"hz\">Tian Ji</span> berada satu istana, sebaiknya tidak mendelegasikan pekerjaan penting kepada mereka. DING juga mungkin membangun persahabatan murni dengan lawan jenis yang lebih muda.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Seleksi tim kerja berdasarkan kapasitas nyata; hindari mendelegasikan tugas kritis ke orang yang belum terbukti konsisten.</span></div></div>",
+    "_solo_puyi_body": "<p>Bawahan atau teman-teman dekat DING termasuk tipe yang cerdas dan gesit <span class=\"hz\">腦筋聰明、敏捷</span>. DING dapat memiliki bawahan yang berkaliber dan berkapasitas tinggi. Apabila bintang 巨門 <span class=\"hz\">Ju Men</span> berada satu istana, pada awalnya DING mungkin tidak cocok dengan bawahan, namun setelah saling berinteraksi dalam pekerjaan akan saling memahami dan akhirnya bisa harmonis. Apabila bintang 太陰 <span class=\"hz\">Tai Yin</span> atau 天梁 <span class=\"hz\">Tian Liang</span> berada satu istana, DING dapat mendapatkan bawahan yang benar-benar berkapasitas tinggi. Apabila istana berada di rasi 子, 丑, 酉, 戌, 亥, DING bisa mendapatkan bantuan dari bawahan yang setia; namun di rasi lain, bawahan cenderung tidak konsisten dan tidak bisa dipercaya untuk tugas penting. Apabila bintang 天機 <span class=\"hz\">Tian Ji</span> berada satu istana, sebaiknya tidak mendelegasikan pekerjaan penting kepada mereka. DING juga mungkin membangun persahabatan murni dengan lawan jenis yang lebih muda.</p>",
+    "_solo_puyi_action": "Seleksi tim kerja berdasarkan kapasitas nyata; hindari mendelegasikan tugas kritis ke orang yang belum terbukti konsisten.",
+    "_p3_guanlu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Karir</span><span class=\"pn-meta\">Guān Lù<span class=\"hz\">官祿</span></span></div></div><div class=\"pal-body\"><p>Profesi yang cocok untuk DING meliputi dokter bedah <span class=\"hz\">外科醫生</span>, teknisi, pendeta/rohaniwan <span class=\"hz\">僧侶</span>, dan pedagang logam mulia <span class=\"hz\">貴金屬商</span>. Meniti karir sebagai PNS atau guru memungkinkan DING memanfaatkan kemampuannya secara penuh. Apabila istana berada di rasi 卯 atau 亥, DING dapat meraih kesuksesan melalui kemampuan menulis. DING akan disenangi oleh orang-orang yang lebih tua dan dapat naik jabatan serta meraih cita-cita besar — karir stabil dengan penghasilan yang memuaskan. Namun apabila bintang menunjukkan sisi negatif, DING bisa menjadi sosok yang materialistis dan hanya memikirkan cara menghasilkan uang. Apabila bintang 紫微 <span class=\"hz\">Zi Wei</span> berada satu istana, DING bisa terkenal dan diakui di dunia yang lebih luas. Daya observasi DING tajam dan kemampuan ekspresi unggul <span class=\"hz\">觀察力敏銳</span>, sangat cocok menjadi penulis reportase, novelis, pelukis, atau bekerja di bidang media massa — juga cocok untuk pekerjaan spiritual/keagamaan. Dapat menikmati karir yang stabil dan lancar. Kelemahannya, meski perencanaan detail dan matang, hasil akhirnya sering tidak sepenuhnya sesuai rencana, atau mudah terpengaruh suasana sekitar. Apabila bintang 天機 <span class=\"hz\">Tian Ji</span> dan 太陰 <span class=\"hz\">Tai Yin</span> berada satu istana, DING berpotensi naik ke posisi manajer dalam perusahaan.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bidik karir di sektor pendidikan, penulisan, atau media massa; bangun hubungan baik dengan mentor senior yang dapat mendorong kenaikan jabatan.</span></div></div>",
+    "_solo_guanlu_body": "<p>Profesi yang cocok untuk DING meliputi dokter bedah <span class=\"hz\">外科醫生</span>, teknisi, pendeta/rohaniwan <span class=\"hz\">僧侶</span>, dan pedagang logam mulia <span class=\"hz\">貴金屬商</span>. Meniti karir sebagai PNS atau guru memungkinkan DING memanfaatkan kemampuannya secara penuh. Apabila istana berada di rasi 卯 atau 亥, DING dapat meraih kesuksesan melalui kemampuan menulis. DING akan disenangi oleh orang-orang yang lebih tua dan dapat naik jabatan serta meraih cita-cita besar — karir stabil dengan penghasilan yang memuaskan. Namun apabila bintang menunjukkan sisi negatif, DING bisa menjadi sosok yang materialistis dan hanya memikirkan cara menghasilkan uang. Apabila bintang 紫微 <span class=\"hz\">Zi Wei</span> berada satu istana, DING bisa terkenal dan diakui di dunia yang lebih luas. Daya observasi DING tajam dan kemampuan ekspresi unggul <span class=\"hz\">觀察力敏銳</span>, sangat cocok menjadi penulis reportase, novelis, pelukis, atau bekerja di bidang media massa — juga cocok untuk pekerjaan spiritual/keagamaan. Dapat menikmati karir yang stabil dan lancar. Kelemahannya, meski perencanaan detail dan matang, hasil akhirnya sering tidak sepenuhnya sesuai rencana, atau mudah terpengaruh suasana sekitar. Apabila bintang 天機 <span class=\"hz\">Tian Ji</span> dan 太陰 <span class=\"hz\">Tai Yin</span> berada satu istana, DING berpotensi naik ke posisi manajer dalam perusahaan.</p>",
+    "_solo_guanlu_action": "Bidik karir di sektor pendidikan, penulisan, atau media massa; bangun hubungan baik dengan mentor senior yang dapat mendorong kenaikan jabatan.",
+    "_p3_tianzhai": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Properti</span><span class=\"pn-meta\">Tián Zhái<span class=\"hz\">田宅</span></span></div></div><div class=\"pal-body\"><p>Istana 田宅 (Properti) DING merupakan tipikal istana aset yang kuat <span class=\"hz\">資產宮運</span>, dengan kemampuan memanfaatkan properti dan aset tidak bergerak yang besar secara cerdas dan fleksibel. DING memiliki bakat alami dalam mengelola aset fisik dan properti berskala besar.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Alokasikan kelebihan finansial ke investasi properti — ini adalah area kekuatan alami DING sesuai dengan karakter 田宅宮 yang kuat.</span></div></div>",
+    "_solo_tianzhai_body": "<p>Istana 田宅 (Properti) DING merupakan tipikal istana aset yang kuat <span class=\"hz\">資產宮運</span>, dengan kemampuan memanfaatkan properti dan aset tidak bergerak yang besar secara cerdas dan fleksibel. DING memiliki bakat alami dalam mengelola aset fisik dan properti berskala besar.</p>",
+    "_solo_tianzhai_action": "Alokasikan kelebihan finansial ke investasi properti — ini adalah area kekuatan alami DING sesuai dengan karakter 田宅宮 yang kuat.",
+    "_p3_fude": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Berkah</span><span class=\"pn-meta\">Fú Dé<span class=\"hz\">福德</span></span></div></div><div class=\"pal-body\"><p>Watak yang tidak konsisten dan mudah goyah <span class=\"hz\">搖擺不定</span> turut menggerus keberkahan hidup DING. Sejatinya takdir seakan suka mempermainkan DING — namun apabila berusaha keras untuk maju, pasti bisa mengubah kesialan menjadi keberuntungan <span class=\"hz\">轉禍為福</span>. Meski tampak dingin di luar, di dalam hati DING selalu menyimpan kehangatan yang tulus. Penuh gairah di dalam namun berpura-pura tenang di luar, menunggu saat yang tepat untuk bertindak — inilah tipe yang lebih mengandalkan intelektual <span class=\"hz\">智性</span> dibanding emosi mentah. Dalam hal spiritual, karena konflik antara sikap dingin dan gairah yang membara, DING kemungkinan besar sering merasakan dilema batin yang menyiksa. Apabila istana berada di rasi 子 atau 亥, DING dapat menikmati umur panjang <span class=\"hz\">長壽</span>. Meski pekerja keras yang rajin, sering kali hasil tidak sebanding usaha — kesibukan sehari-hari diwarnai rasa gelisah dan frustrasi. Ini mengisyaratkan kecenderungan gaya hidup yang kurang terstruktur. Namun apabila bintang 紫微 <span class=\"hz\">Zi Wei</span> berada satu istana, DING dapat memulihkan ketenangan dan kedamaian batin yang sesungguhnya.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Latih konsistensi dan ketekunan — hasil jangka panjang akan datang hanya dengan kedisiplinan yang terjaga; jangan berganti arah saat menghadapi hambatan kecil.</span></div></div>",
+    "_solo_fude_body": "<p>Watak yang tidak konsisten dan mudah goyah <span class=\"hz\">搖擺不定</span> turut menggerus keberkahan hidup DING. Sejatinya takdir seakan suka mempermainkan DING — namun apabila berusaha keras untuk maju, pasti bisa mengubah kesialan menjadi keberuntungan <span class=\"hz\">轉禍為福</span>. Meski tampak dingin di luar, di dalam hati DING selalu menyimpan kehangatan yang tulus. Penuh gairah di dalam namun berpura-pura tenang di luar, menunggu saat yang tepat untuk bertindak — inilah tipe yang lebih mengandalkan intelektual <span class=\"hz\">智性</span> dibanding emosi mentah. Dalam hal spiritual, karena konflik antara sikap dingin dan gairah yang membara, DING kemungkinan besar sering merasakan dilema batin yang menyiksa. Apabila istana berada di rasi 子 atau 亥, DING dapat menikmati umur panjang <span class=\"hz\">長壽</span>. Meski pekerja keras yang rajin, sering kali hasil tidak sebanding usaha — kesibukan sehari-hari diwarnai rasa gelisah dan frustrasi. Ini mengisyaratkan kecenderungan gaya hidup yang kurang terstruktur. Namun apabila bintang 紫微 <span class=\"hz\">Zi Wei</span> berada satu istana, DING dapat memulihkan ketenangan dan kedamaian batin yang sesungguhnya.</p>",
+    "_solo_fude_action": "Latih konsistensi dan ketekunan — hasil jangka panjang akan datang hanya dengan kedisiplinan yang terjaga; jangan berganti arah saat menghadapi hambatan kecil.",
+    "_p3_fumu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Orang Tua</span><span class=\"pn-meta\">Fù Mǔ<span class=\"hz\">父母</span></span></div></div><div class=\"pal-body\"><p>DING sangat tidak menyukai orang tua yang keras dan tidak toleran terhadap kesalahan <span class=\"hz\">厭惡做錯事的嚴厲雙親</span> — pola asuh yang otoriter dan penuh tuntutan justru menimbulkan penolakan dan jarak emosional.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Bangun hubungan dengan orang tua atau figur otoritas atas dasar pengertian mutual, bukan ketakutan atau tekanan.</span></div></div>",
+    "_solo_fumu_body": "<p>DING sangat tidak menyukai orang tua yang keras dan tidak toleran terhadap kesalahan <span class=\"hz\">厭惡做錯事的嚴厲雙親</span> — pola asuh yang otoriter dan penuh tuntutan justru menimbulkan penolakan dan jarak emosional.</p>",
+    "_solo_fumu_action": "Bangun hubungan dengan orang tua atau figur otoritas atas dasar pengertian mutual, bukan ketakutan atau tekanan.",
+    "_kes_narrative": "<p>DING adalah wanita kelahiran 1969 dengan Day Master 壬 (Air Yang) dalam format 食神格 — sosok yang hangat, penuh kepedulian tulus, dan memiliki bakat seni serta bahasa yang luar biasa. Yong shen Kayu (木) dan 喜神 Air (水) mendukung jalur kreativitas, ekspresi, dan pelayanan kepada orang lain; sementara ji shen Logam (金) sebaiknya dihindari dalam karir berat atau spekulasi finansial. Dalam hal keuangan, DING perlu mengalihkan uang tunai ke investasi properti karena itulah cara terbaik menjaga dan menumbuhkan asetnya — istana 田宅 yang kuat menjadi kekuatan alaminya. Karir paling cocok di bidang pendidikan, penerbitan, seni, atau media; DING disenangi oleh senior dan mudah mendapat promosi. Dalam urusan asmara dan pernikahan, DING perlu berhati-hati: istana 夫妻 memiliki bintang buruk yang signifikan, sehingga menikah di usia matang dan memilih pasangan yang sabar adalah kunci menghindari siklus konflik berkepanjangan. Mobilitas tinggi DING (sering berpindah tempat) adalah kekuatan yang perlu diarahkan dengan sengaja ke ekspansi karir dan bisnis. Di usia pertengahan ke atas, kehidupan DING akan jauh lebih bahagia dan stabil — teruslah berusaha keras karena separuh kedua kehidupan menjanjikan keberuntungan dan keberkahan yang lebih besar dari masa muda.</p>",
+    "_kes_stats": "\n      <div class=\"kes-stat s1\"><div class=\"ks-eb\">Penguasa Hari · 日主</div><div class=\"ks-num\"><span class=\"hz\">壬水</span><span class=\"unit\">— · None</span></div><div class=\"ks-title\">Air Sungai —</div><div class=\"ks-desc\">Total Wu Xing 8, 水 <strong>12.5%</strong> dari distribusi total</div></div>\n      <div class=\"kes-stat s2\"><div class=\"ks-eb\">Format · 格局</div><div class=\"ks-num\"><span class=\"hz\">食神格</span><span class=\"unit\">FORMAT</span></div><div class=\"ks-title\">Shi Shen Ge, Pencipta Lembut</div><div class=\"ks-desc\">Konfigurasi BaZi yang membentuk pola karakter dan jalur takdir utama subjek.</div></div>\n      <div class=\"kes-stat s3\"><div class=\"ks-eb\">Yong Shen · 喜用神</div><div class=\"ks-num\"><span class=\"hz\">木</span><span class=\"unit\">MENDUKUNG</span></div><div class=\"ks-title\">Kayu, Penopang &amp; Pengarah</div><div class=\"ks-desc\">Unsur penopang yang sebaiknya diaktifkan lewat lingkungan, profesi, warna, dan keputusan hidup.</div></div>\n      <div class=\"kes-stat s4\"><div class=\"ks-eb\">Da Yun · 大運</div><div class=\"ks-num\">Fase 5<span class=\"unit\">dari 10</span></div><div class=\"ks-title\">Fase Pundak Sama (50-59)</div><div class=\"ks-desc\">Cycle 10 tahun yang sedang dijalani, periode pembentukan tema utama dekade ini.</div></div>\n      <div class=\"kes-stat s5\"><div class=\"ks-eb\">Umur Subjek</div><div class=\"ks-num\">58<span class=\"unit\">tahun</span></div><div class=\"ks-title\">Era 50–59</div><div class=\"ks-desc\">Tahap kehidupan saat laporan ini dibuat, rentang dekade aktif subjek.</div></div>\n      <div class=\"kes-stat s6\"><div class=\"ks-eb\">Jodoh · 婚配 / 陽宅</div><div class=\"ks-num\">3 <span class=\"unit\">cocok · 4 hindari</span></div><div class=\"ks-desc\">Hindari: Tikus (子) · Kelinci (卯) · Ayam (酉) · Anjing (戌) · Trigram <strong>Bumi</strong> (坤) · Kelompok Barat</div></div>\n    ",
+    "_kes_age": "58",
+    "_kes_lifemap": "\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">過<span class=\"id-label\">Lalu</span></div><div class=\"klm-row-text\"><span class=\"lbl\">MASA LALU</span>4 fase telah dilalui, fondasi terbentuk lewat tempaan zaman muda hingga awal dewasa.</div></div>\n          <div class=\"klm-row now\"><div class=\"klm-row-icon\">今<span class=\"id-label\">Kini</span></div><div class=\"klm-row-text\"><span class=\"lbl\">SEKARANG</span>Fase Pundak Sama 壬申 (50-59), tema utama pundak sama membentuk dekade ini.</div></div>\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">未<span class=\"id-label\">Nanti</span></div><div class=\"klm-row-text\"><span class=\"lbl\">BERIKUTNYA</span>Fase 癸酉 Saudara Sebanding (60-69), transisi menuju tema baru.</div></div>\n        ",
+    "_kes_position": "\n          <div class=\"klp-eb\">Posisi Sekarang</div>\n          <div class=\"klp-hz\">夏</div>\n          <div class=\"klp-id\">Xià, \"Musim Panas Hidup\"</div>\n          <div class=\"klp-bar\">\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell now\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n          </div>\n          <div class=\"klp-meta\">Fase <strong>5 dari 10</strong> · Umur <strong>50-59</strong> · <strong>水 Air</strong> dominan · Musim Panas Hidup</div>\n        ",
+    "_syn_attrib": "Air Sungai · 食神格 · Shi Shen Ge",
+    "_syn_actions": "\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">1</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Fokus Karir Ekspresi</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">2</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Konversi Tunai ke Properti</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">3</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Jaga Konsistensi Diri</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">4</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Manfaatkan Mobilitas Tinggi</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">5</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Pilih Pasangan dengan Cermat</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n      ",
+    "_career_wuxing": "\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">火 Api<span class=\"v\">3</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:67%\"></div></div>\n          <div class=\"wux-label\">土 Tanah<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell unfav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:33%\"></div></div>\n          <div class=\"wux-label\">金 Logam<span class=\"v\">1</span></div>\n        </div>\n        <div class=\"wux-cell self\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:33%\"></div></div>\n          <div class=\"wux-label\">水 Air<span class=\"v\">1</span></div>\n        </div>\n        <div class=\"wux-cell fav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:33%\"></div></div>\n          <div class=\"wux-label\">木 Kayu<span class=\"v\">1</span></div>\n        </div>\n",
+    "_career_title": "Kayu adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini",
+    "_career_avoid": "Industri ber-unsur <strong>金 (Logam)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.",
+    "_xqcards": "\n      <div class=\"xq-card power\">\n        <div class=\"xqc-eb\">魄 力 · Kekuatan</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">優勢</span><span class=\"xqc-name\">Yōu Shì<br>Keunggulan</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><strong>Pelopor dinamis</strong>, selalu mencari arus baru</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><span class='hz'>海納百川</span> menampung perspektif beragam</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><strong>Networker</strong>, mudah bergerak antar lingkaran</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Adaptif & cepat baca peluang</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card shadow\">\n        <div class=\"xqc-eb\">陰 影 · Shadow</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">隱 患</span><span class=\"xqc-name\">Yǐn Huàn<br>Sisi Gelap</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><span class='hz'>多變</span> mudah berubah (Duō Biàn)</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span><strong>Sulit fokus</strong>, terlalu banyak pintu terbuka</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Komitmen jangka panjang sering kompromi</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Energi keluar tanpa wadah → boros</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card optimum\">\n        <div class=\"xqc-eb\">最 佳 · Optimum</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">應 用</span><span class=\"xqc-name\">Yīng Yòng<br>Cara Optimal</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Peran <strong>strategist / penghubung lintas-domain</strong></span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Bangun <em>satu</em> wadah jangka panjang sebagai jangkar</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Pakai <span class='hz'>木</span> (saluran) + <span class='hz'>火</span> (tujuan)</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Komitmen kontrak tertulis, anti-drift halus</span></div>\n        </div>\n      </div>\n    "
+  }
+}

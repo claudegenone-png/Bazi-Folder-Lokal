@@ -1,0 +1,729 @@
+{
+  "subject_id": "bhakti",
+  "_built_by": "build_from_ocr.py V4.5 FULL-MD",
+  "identity": {
+    "name_id": "BHAKTI",
+    "name_hanzi": "",
+    "gender_id": "Wanita",
+    "birth_date": "1997-02-26",
+    "birth_time": "09:15",
+    "birth_day_name": "Rabu",
+    "birth_period_id": "pagi",
+    "birth_hour_branch_hz": "酉",
+    "birth_hour_period_label": "pagi · 酉時",
+    "lunar_date_text_new": "tanggal 20 bulan 1 tahun 丁丑 (Ding Chou · 1997)",
+    "lunar_year_pillar_hz": "丁丑",
+    "lunar_republic_text": "民國 86 年 1 月 20 日",
+    "age_at_report": 30
+  },
+  "shio": {
+    "branch_hz": "丑",
+    "branch_pinyin": "Chǒu",
+    "id": "Kerbau",
+    "id_upper": "KERBAU",
+    "svg_red": "Kerbau-Merah.svg",
+    "svg_black": "Kerbau-Hitam.svg"
+  },
+  "ti_xiang": null,
+  "day_master": {
+    "stem_hz": "己",
+    "stem_element_hz": "土",
+    "stem_element_id": "Tanah",
+    "polarity_id": "Yin",
+    "label_id": "Tanah Sawah",
+    "label_long_id": "Tanah",
+    "pinyin": "Jǐ 土",
+    "strength_id": "—",
+    "strength_hz": null
+  },
+  "pillars": {
+    "year": {
+      "stem_hz": "丁",
+      "branch_hz": "丑"
+    },
+    "month": {
+      "stem_hz": "壬",
+      "branch_hz": "寅"
+    },
+    "day": {
+      "stem_hz": "己",
+      "branch_hz": "巳"
+    },
+    "hour": {
+      "stem_hz": "己",
+      "branch_hz": "酉"
+    }
+  },
+  "wuxing": {
+    "jin": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Logam"
+    },
+    "shui": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Air"
+    },
+    "mu": {
+      "value": 1.0,
+      "percent": 12.5,
+      "label_id": "Kayu"
+    },
+    "huo": {
+      "value": 2.0,
+      "percent": 25.0,
+      "label_id": "Api"
+    },
+    "tu": {
+      "value": 3.0,
+      "percent": 37.5,
+      "label_id": "Tanah"
+    },
+    "total": 8.0,
+    "self_value": 3.0,
+    "self_el_hz": "—",
+    "fav_hz": "—",
+    "unfav_hz": "—",
+    "axis_max": "—",
+    "insight_id": null,
+    "_empty": false
+  },
+  "yong_shen": {
+    "elements_hz": "金",
+    "elements_id": "Logam",
+    "label_id": "Penopang & Pengarah",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "ji_shen": {
+    "elements_hz": "土",
+    "elements_id": "Tanah",
+    "label_id": "Pelumat & Pemicu",
+    "glyph_hz": "—",
+    "name_id": "—",
+    "desc_id": "—"
+  },
+  "format": {
+    "hz": "正官格",
+    "pinyin": "Zheng Guan Ge",
+    "label_id": "Penjaga Disiplin",
+    "glyph_hz": "—"
+  },
+  "da_yun": {
+    "start_age": 3,
+    "direction_id": "forward",
+    "current_index": 2,
+    "axis_marks": [
+      3,
+      13,
+      23,
+      33,
+      43,
+      53,
+      63,
+      73,
+      83,
+      93,
+      103
+    ],
+    "cycles": [
+      {
+        "n": 1,
+        "age_start": 3,
+        "age_end": 12,
+        "stem_hz": "癸",
+        "branch_hz": "卯",
+        "ten_god_hz": "偏財",
+        "ten_god_id": "Rezeki Bisnis",
+        "element_class": "el-shui"
+      },
+      {
+        "n": 2,
+        "age_start": 13,
+        "age_end": 22,
+        "stem_hz": "甲",
+        "branch_hz": "辰",
+        "ten_god_hz": "正官",
+        "ten_god_id": "Otoritas",
+        "element_class": "el-mu"
+      },
+      {
+        "n": 3,
+        "age_start": 23,
+        "age_end": 32,
+        "stem_hz": "乙",
+        "branch_hz": "巳",
+        "ten_god_hz": "七殺",
+        "ten_god_id": "Pemurnian",
+        "element_class": "el-mu",
+        "is_current": true
+      },
+      {
+        "n": 4,
+        "age_start": 33,
+        "age_end": 42,
+        "stem_hz": "丙",
+        "branch_hz": "午",
+        "ten_god_hz": "正印",
+        "ten_god_id": "Pelajaran",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 5,
+        "age_start": 43,
+        "age_end": 52,
+        "stem_hz": "丁",
+        "branch_hz": "未",
+        "ten_god_hz": "偏印",
+        "ten_god_id": "Mentor",
+        "element_class": "el-huo"
+      },
+      {
+        "n": 6,
+        "age_start": 53,
+        "age_end": 62,
+        "stem_hz": "戊",
+        "branch_hz": "申",
+        "ten_god_hz": "劫財",
+        "ten_god_id": "Saudara Sebanding",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 7,
+        "age_start": 63,
+        "age_end": 72,
+        "stem_hz": "己",
+        "branch_hz": "酉",
+        "ten_god_hz": "比肩",
+        "ten_god_id": "Pundak Sama",
+        "element_class": "el-tu"
+      },
+      {
+        "n": 8,
+        "age_start": 73,
+        "age_end": 82,
+        "stem_hz": "庚",
+        "branch_hz": "戌",
+        "ten_god_hz": "傷官",
+        "ten_god_id": "Kritikus Tajam",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 9,
+        "age_start": 83,
+        "age_end": 92,
+        "stem_hz": "辛",
+        "branch_hz": "亥",
+        "ten_god_hz": "食神",
+        "ten_god_id": "Pencipta",
+        "element_class": "el-jin"
+      },
+      {
+        "n": 10,
+        "age_start": 93,
+        "age_end": 102,
+        "stem_hz": "壬",
+        "branch_hz": "子",
+        "ten_god_hz": "正財",
+        "ten_god_id": "Rezeki Tetap",
+        "element_class": "el-shui"
+      }
+    ],
+    "seasons": [
+      {
+        "el_class": "s-shui",
+        "el_hz": "水",
+        "name_id": "Pemurnian Awal",
+        "age_start": 3,
+        "age_end": 22
+      },
+      {
+        "el_class": "s-mu",
+        "el_hz": "木",
+        "name_id": "Belajar & Mentor",
+        "age_start": 23,
+        "age_end": 42,
+        "is_current": true
+      },
+      {
+        "el_class": "s-huo",
+        "el_hz": "火",
+        "name_id": "Berbagi Panggung",
+        "age_start": 43,
+        "age_end": 62
+      },
+      {
+        "el_class": "s-tu",
+        "el_hz": "土",
+        "name_id": "Berkarya Tenang",
+        "age_start": 63,
+        "age_end": 82
+      },
+      {
+        "el_class": "s-jin",
+        "el_hz": "金",
+        "name_id": "Memetik Rezeki",
+        "age_start": 83,
+        "age_end": 102
+      }
+    ],
+    "spotlight_headline_html": "Fase <span class=\"hz\">七殺</span> (Pemurnian), periode utama untuk menempa diri lewat tekanan",
+    "spotlight_tag_tone_html": "Kayu · pertumbuhan",
+    "spotlight_tag_combo_html": "Tantangan Tegas",
+    "spotlight_tag_combo_pair": [
+      "乙",
+      "巳"
+    ],
+    "spotlight_bullets_html": [
+      "<strong>Fokus utama</strong>, pilar <span class=\"hz\">七殺</span> mendorong Anda untuk menempa diri lewat tekanan. Selaraskan agenda 10 tahun ini ke arah tersebut.",
+      "<strong>Energi 木</strong>, batang <span class=\"hz\">乙</span> (木) berinteraksi dengan Day Master <span class=\"hz\">己</span> (土); tone fase: Kayu · pertumbuhan.",
+      "<strong>Cabang <span class=\"hz\">巳</span></strong> menentukan medan harian, kebiasaan, lingkungan, dan relasi yang dibangun di rentang umur 23–32 akan jadi pondasi fase berikutnya.",
+      "<strong>Setelah 32</strong> masuk <span class=\"hz\">丙午 (正印)</span>, menyerap ilmu & dukungan tetua. Siapkan transisi sekarang."
+    ],
+    "footer_caption_html": "BHAKTI sedang di fase <span style=\"font-family:'Noto Serif TC',serif;color:var(--red)\">七殺</span> (23–32), menempa diri lewat tekanan. Periode 23–42 adalah jendela kunci membentuk kebiasaan, jaringan, dan arah karir."
+  },
+  "marriage": {
+    "self_branch_index": 1,
+    "cocok": [
+      {
+        "branch_hz": "子",
+        "id": "Tikus",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "巳",
+        "id": "Ular",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "酉",
+        "id": "Ayam",
+        "relationship_hz": "大吉",
+        "relationship_id": "Sangat Cocok",
+        "reason_id": null
+      }
+    ],
+    "hindari": [
+      {
+        "branch_hz": "辰",
+        "id": "Naga",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "午",
+        "id": "Kuda",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "未",
+        "id": "Kambing",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      },
+      {
+        "branch_hz": "戌",
+        "id": "Anjing",
+        "relationship_hz": "hindari",
+        "relationship_id": "Hindari",
+        "reason_id": null
+      }
+    ],
+    "_empty": false
+  },
+  "yang_zhai": {
+    "gua_hz": "震",
+    "gua_pinyin": "Zhèn",
+    "gua_label_id": "Petir",
+    "gua_direction_id": "Timur",
+    "gua_direction_abbr": "T",
+    "group_id": "Timur",
+    "desc_id": "Elemen Kayu-Petir — dinamis, penuh inisiatif, gerak maju. Kelompok Timur (東四命): berani, visioner, dan cepat mengambil tindakan.",
+    "sumbu_hoki_hz": "東↔西",
+    "sumbu_hoki_id": "T ↔ B",
+    "sumbu_rumah_hz": "南↔北",
+    "sumbu_rumah_id": "S ↔ U",
+    "rumah_axis_pos": "S",
+    "trigram_symbol": "☳",
+    "zones": {
+      "rumah": {
+        "dirs_hz": [
+          "南/北"
+        ],
+        "dirs_abbr": [
+          "南/北"
+        ],
+        "note_id": "Rumah sebaiknya duduk di Utara menghadap Selatan或坐Selatan menghadap Utara, sangat menguntungkan"
+      },
+      "pintu": {
+        "dirs_hz": [
+          "南"
+        ],
+        "dirs_abbr": [
+          "S"
+        ],
+        "note_id": "Pintu baik ke Selatan, Utara, Tenggara"
+      },
+      "dapur": {
+        "dirs_hz": [
+          "西"
+        ],
+        "dirs_abbr": [
+          "B"
+        ],
+        "note_id": "Kompor sebaiknya di Barat menghadap Timur或Barat Laut menghadap Tenggara"
+      },
+      "kamar": {
+        "dirs_hz": [
+          "南"
+        ],
+        "dirs_abbr": [
+          "S"
+        ],
+        "note_id": "Kamar tidur baik di 安Selatan, Utara, Timur, Tenggara"
+      },
+      "ranjang": {
+        "dirs_hz": [
+          "東"
+        ],
+        "dirs_abbr": [
+          "T"
+        ],
+        "note_id": "Posisi ranjang sebaiknya di Timur, Tenggara, Selatan, Utara"
+      },
+      "altar": {
+        "dirs_hz": [
+          "南"
+        ],
+        "dirs_abbr": [
+          "S"
+        ],
+        "note_id": "神位宜安Selatan或Utara, Timur, dan arah keberuntungan tahun ini"
+      },
+      "kamar_mandi": {
+        "dirs_hz": [
+          "東北"
+        ],
+        "dirs_abbr": [
+          "TL"
+        ],
+        "note_id": "Kamar mandi/WC sebaiknya di Timur Laut, Barat Laut, Barat, Barat Daya"
+      }
+    }
+  },
+  "zi_wei": {
+    "ming_zhu_hz": "—",
+    "shen_zhu_hz": "天機",
+    "ming_gong_hz": "酉",
+    "shen_gong_hz": "—",
+    "wu_xing_ju_hz": "—",
+    "shi_jun_hz": "—",
+    "palaces": null,
+    "ming_gong_id": "Istana Hidup · Ayam",
+    "shen_gong_id": "—",
+    "shi_jun_id": "—",
+    "ming_zhu_id": "—",
+    "shen_zhu_id": "Penguasa Tubuh",
+    "wu_xing_ju_id": "—"
+  },
+  "shen_sha_list": [],
+  "kesimpulan_narrative": null,
+  "dm_pos_score": 5050.0,
+  "dm_neg_score": 3640.0,
+  "xiantian_per_stem": {
+    "jia": 2,
+    "yi": 0,
+    "bing": 2,
+    "ding": 1,
+    "wu": 2,
+    "ji": 3,
+    "geng": 1,
+    "xin": 2,
+    "ren": 2,
+    "gui": 1
+  },
+  "wangdu_per_stem": null,
+  "wangdu_total": null,
+  "nayin_per_pillar": null,
+  "canggan_per_pillar": null,
+  "canggan_shi_shen": null,
+  "chang_sheng_per_pilar": null,
+  "kong_wang": null,
+  "ming_gong_bazi": null,
+  "bone_weight": null,
+  "liu_nian_predictions": null,
+  "ziwei_su_ming": null,
+  "ziwei_stars": null,
+  "shiye_favorable_full": [
+    {
+      "hz": "鋼鐵工廠",
+      "id": "pabrik besi dan baja"
+    },
+    {
+      "hz": "五金行",
+      "id": "toko perkakas dan logam"
+    },
+    {
+      "hz": "採礦",
+      "id": "pertambangan"
+    },
+    {
+      "hz": "汽車",
+      "id": "otomotif"
+    },
+    {
+      "hz": "機械",
+      "id": "mesin dan mekanik"
+    },
+    {
+      "hz": "科學家",
+      "id": "ilmuwan"
+    },
+    {
+      "hz": "律師",
+      "id": "pengacara"
+    },
+    {
+      "hz": "歌影星",
+      "id": "bintang lagu dan film"
+    },
+    {
+      "hz": "音樂家",
+      "id": "musisi"
+    },
+    {
+      "hz": "武術館",
+      "id": "perguruan atau sasana bela diri"
+    },
+    {
+      "hz": "會計",
+      "id": "akuntansi"
+    },
+    {
+      "hz": "金融界",
+      "id": "sektor keuangan"
+    }
+  ],
+  "shiye_supportive_full": [
+    {
+      "hz": "流動攤販",
+      "id": "pedagang keliling atau kaki lima"
+    },
+    {
+      "hz": "運動家",
+      "id": "atlet atau olahragawan"
+    },
+    {
+      "hz": "介紹中人",
+      "id": "perantara atau agen pengenal"
+    },
+    {
+      "hz": "醫師",
+      "id": "dokter"
+    },
+    {
+      "hz": "清潔隊",
+      "id": "petugas kebersihan"
+    },
+    {
+      "hz": "記者",
+      "id": "wartawan"
+    },
+    {
+      "hz": "護士",
+      "id": "perawat"
+    },
+    {
+      "hz": "導遊",
+      "id": "pemandu wisata"
+    },
+    {
+      "hz": "馬戲團",
+      "id": "sirkus"
+    },
+    {
+      "hz": "航海",
+      "id": "pelayaran"
+    },
+    {
+      "hz": "漁業",
+      "id": "perikanan"
+    },
+    {
+      "hz": "冷凍業",
+      "id": "industri pendingin atau pembekuan"
+    },
+    {
+      "hz": "水產業",
+      "id": "industri hasil perairan"
+    },
+    {
+      "hz": "碼頭工",
+      "id": "pekerja dermaga atau pelabuhan"
+    },
+    {
+      "hz": "消防隊",
+      "id": "pemadam kebakaran"
+    },
+    {
+      "hz": "貿易公司",
+      "id": "perusahaan perdagangan"
+    }
+  ],
+  "shiye_short": null,
+  "shen_sha_detail": null,
+  "marriage_cocok_tafsir": "Pasangan terbaik bagi BHAKTI adalah dari shio Tikus, Ular, dan Ayam — ikatan yang sungguh diberkahi langit. Rumah tangga niscaya berkembang pesat dan nama keluarga pasti harum, kemakmuran berlimpah dan martabat terjaga, perilaku terpuji dan berbudi luhur, keluarga besar dan harmonis, hidup tenang penuh kebaikan dan kebahagiaan hingga akhir hayat.",
+  "marriage_hindari_tafsir": "Pernikahan BHAKTI dengan pasangan dari shio Naga, Kuda, Kambing, atau Anjing membawa campuran suka dan duka; kebahagiaan dan kepahitan berjalan berdampingan — setengah hidup pertama cenderung lebih beruntung, namun tanpa semangat kemajuan. Di dalam batin seringkali dilanda kegelisahan dan kesedihan mendalam, dan pada akhirnya akan mengalami kemunduran yang menyedihkan.",
+  "gushu_quotes": null,
+  "xiongnian_list": null,
+  "xing_qing_poem_hz": null,
+  "xing_qing_poem_id": null,
+  "xing_qing_prose_id": null,
+  "fulu_body_id": null,
+  "mingyun_body_id": null,
+  "qinshu_tou_main_id": null,
+  "qinshu_tou_youyue_id": null,
+  "qinshu_zhong_main_id": null,
+  "qinshu_zhong_youyue_id": null,
+  "qinshu_mo_main_id": null,
+  "qinshu_mo_youyue_id": null,
+  "jie_e_palace_hz": null,
+  "jie_e_palace_id": null,
+  "jie_e_organ_focus_id": null,
+  "bagua_sectors": null,
+  "bagua_life_type_hz": null,
+  "bagua_life_type_id": null,
+  "bagua_nayin_hz": null,
+  "bagua_nayin_id": null,
+  "bagua_taisui_hz": null,
+  "bagua_taisui_id": null,
+  "bagua_warning_hz": null,
+  "bagua_warning_id": null,
+  "bagua_virtue_hz": null,
+  "bagua_virtue_id": null,
+  "bagua_zuo_xiang_hz": null,
+  "bagua_zuo_xiang_id": null,
+  "hongshui_pages": null,
+  "mantra": {
+    "hz": "—",
+    "pinyin": "—"
+  },
+  "_xq_radar_poly": "          <polygon points=\"200,56 311.2,136 311.2,264 200,312 102.7,256 116.6,152\"\n            fill=\"rgba(139,26,26,0.18)\" stroke=\"#8B1A1A\" stroke-width=\"1.5\"/>\n          <circle cx=\"200\" cy=\"56\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"136\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"311.2\" cy=\"264\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"200\" cy=\"312\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"102.7\" cy=\"256\" r=\"3\" fill=\"#8B1A1A\"/>\n          <circle cx=\"116.6\" cy=\"152\" r=\"3\" fill=\"#8B1A1A\"/>",
+  "_xq_radar_labels": "          <g font-family=\"Noto Serif TC,serif\">\n            <text x=\"200\" y=\"22\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">包容</text>\n            <text x=\"200\" y=\"33\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Bāoróng · Toleran · 9</text>\n\n            <text x=\"358\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">同理</text>\n            <text x=\"358\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Tónglǐ · Empati · 8</text>\n\n            <text x=\"358\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">韌性</text>\n            <text x=\"358\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Rènxìng · Ulet · 8</text>\n\n            <text x=\"200\" y=\"382\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">守信</text>\n            <text x=\"200\" y=\"393\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Shǒuxìn · Dapat dipercaya · 7</text>\n\n            <text x=\"42\" y=\"290\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">沉穩</text>\n            <text x=\"42\" y=\"301\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Chénwěn · Tenang · 7</text>\n\n            <text x=\"42\" y=\"113\" text-anchor=\"middle\" font-size=\"14\" fill=\"#8B1A1A\" font-weight=\"700\">變通</text>\n            <text x=\"42\" y=\"124\" text-anchor=\"middle\" font-size=\"6\" fill=\"#6B5B3F\" font-style=\"italic\">Biàntōng · Fleksibel · 6</text>\n          </g>",
+  "_xq_motto": [
+    "田",
+    "Tanah Subur",
+    "本性 慈悲",
+    "厚德育物"
+  ],
+  "_tafsir": {
+    "kepribadian": "BHAKTI adalah sosok Hari Bumi Yin <span class=\"hz\">己土</span> berformat Pejabat Sejati <span class=\"hz\">正官格</span> — berkarakter tenang namun penuh tekad, dengan kecerdasan yang halus dan kemampuan mengeksekusi rencana yang kuat. Unsur sahabat Emas <span class=\"hz\">金</span> dan Air <span class=\"hz\">水</span> memberinya ketajaman analisis dan adaptabilitas; sebaliknya unsur Tanah <span class=\"hz\">土</span> yang berlebih perlu diwaspadai karena menjadi sumber hambatan dan konflik batin.",
+    "_kepribadian_struct": {
+      "paragraf": "BHAKTI adalah sosok Hari Bumi Yin [[己土]] berformat Pejabat Sejati [[正官格]] — berkarakter tenang namun penuh tekad, dengan kecerdasan yang halus dan kemampuan mengeksekusi rencana yang kuat. Unsur sahabat Emas [[金]] dan Air [[水]] memberinya ketajaman analisis dan adaptabilitas; sebaliknya unsur Tanah [[土]] yang berlebih perlu diwaspadai karena menjadi sumber hambatan dan konflik batin.",
+      "power": [
+        "Tekad dan keteguhan — begitu memutuskan sesuatu, BHAKTI bergerak tanpa goyah",
+        "Kecerdasan strategi yang melampaui rata-rata, berpotensi menjadi pemimpin atau peneliti berprestasi",
+        "Kesetiaan yang luar biasa dalam hubungan — rela berkorban demi orang yang dicintai"
+      ],
+      "shadow": [
+        "Kecenderungan bertindak impulsif saat tertarik pada sesuatu, mengabaikan kondisi sekitar",
+        "Potensi konflik interpersonal akibat sifat yang sulit dibelokkan",
+        "Jika upaya tidak dihargai, perubahan karakter yang drastis di bawah kemarahan bisa merusak hubungan"
+      ],
+      "optimum": [
+        "Arahkan energi dan gairah ke bidang yang terstruktur dan memiliki jalur jelas",
+        "Latih kesabaran dalam menunggu momen yang tepat sebelum bertindak",
+        "Pertahankan kedekatan dengan unsur Emas (besi, logam, dunia keuangan) dan Air (komunikasi, ilmu)"
+      ]
+    },
+    "xingqing_full": "<p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">1</span>BHAKTI memiliki ketegasan alami yang kuat namun juga kemampuan beradaptasi secara luwes sesuai situasi</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">2</span>Sosok bertekad tinggi yang tidak bisa dihentikan saat sudah memiliki tujuan, namun ini kerap memicu pergesekan dengan orang lain</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">3</span>Energi fisik yang luar biasa — fisik kuat dan bugar, seolah merupakan perwujudan dari sumber daya vitalitas yang tak habis</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">4</span>Ketertarikan pada lawan jenis yang intens; punya keberanian langsung mengambil tindakan tanpa terlalu banyak berpikir</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">5</span>Di balik tampilan tenang ada strategi yang matang — mampu menyembunyikan emosi sambil menunggu momen terbaik untuk bergerak</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">6</span>Karakter jujur dan apa adanya, namun menyimpan sisi melankolis yang mendalam di balik penampilan sehari-hari</p><p style=\"margin: 0 0 1.8mm 0; padding: 1mm 3mm 1mm 8.5mm; position: relative; font-size: 9pt; line-height: 1.5;\"><span style=\"position: absolute; left: 1mm; top: 1.5mm; width: 5.5mm; height: 5.5mm; background: var(--red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 9pt; font-weight: 700;\">7</span>Kecerdasan di atas rata-rata yang sering tidak terlihat dari penampilan luar — potensi akademisi atau peneliti</p>",
+    "xingqing_full_action": "Inti watak diri sebagaimana terbaca dari layar 性情.",
+    "overview_full": "<div style=\"display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm;\"><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Energi Dominan</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Bumi Yin <span class=\"hz\">己土</span> dengan dukungan logam <span class=\"hz\">金</span> — tenang di luar, berapi-api di dalam</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Jalur Hidup</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Penuh dinamika dan pergerakan; kemungkinan besar tidak akan menetap di satu tempat seumur hidup</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Kekuatan Tersembunyi</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Kecerdasan yang melampaui penampilan luar; potensi besar di bidang riset dan akademik</div></div><div style=\"background: var(--bg-card); border-left: 0.7mm solid var(--red); border-radius: 0 1.5mm 1.5mm 0; padding: 1.6mm 3mm; box-shadow: 0 0.3mm 1mm rgba(139,26,26,0.05);\"><div style=\"font-family: 'Inter', sans-serif; font-size: 7pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.8mm;\">Relasi &amp; Cinta</div><div style=\"font-size: 8.5pt; line-height: 1.4; color: var(--text);\">Intensitas tinggi dalam hubungan; kesetiaan tanpa batas namun butuh pasangan yang tepat</div></div></div>",
+    "overview_full_action": "Pesan inti hubungan terdekat dari layar 全局總論.",
+    "family": "pasangan: - vibe: Intens &amp; Setia · Butuh Pasangan yang Stabil - headline: Pasangan terbaik dari shio Tikus, Ular, atau Ayam - cocok_list: - shio: 鼠 (Tikus) label: 大吉 teks: Ikatan yang diberkahi langit — rumah tangga berkembang pesat, kemakmuran berlimpah, keluarga besar dan harmonis, hidup tenang penuh berkah hingga akhir hayat. - shio: 蛇 (Ular) label: 大吉 teks: Pasangan yang saling melengkapi dengan sempurna — nama keluarga harum, perilaku terpuji berbudi luhur, martabat terjaga, dan kebahagiaan abadi sepanjang hayat. - shio: 雞 (Ayam) label: 大吉 teks: Hubungan yang kuat dan saling mendukung — fondasi keluarga kokoh, kesejahteraan terwujud, dan ketenangan hidup bersama yang bertahan lama. - hindari_list: - shio: 龍 (Naga) teks: Campuran suka dan duka; kebahagiaan dan kepahitan berjalan beriringan, setengah hidup pertama beruntung namun tanpa semangat maju, akhirnya berpotensi mengalami kemunduran. - shio: 馬 (Kuda) teks: Ada sisi positif namun konflik kerap muncul; kesedihan batin mendalam dan potensi kemunduran di paruh kedua kehidupan. - shio: 羊 (Kambing) teks: Hubungan yang menguras energi; kegelisahan batin seringkali mendominasi dan berpotensi berakhir dengan kerugian. - shio: 狗 (Anjing) teks: Perpaduan yang kurang harmonis; meski ada kebaikan di awal, akhirnya justru menimbulkan kesedihan dan kemunduran yang disayangkan.",
+    "_family_struct": {
+      "pasangan": {
+        "vibe": "Intens & Setia · Butuh Pasangan yang Stabil",
+        "headline": "Pasangan terbaik dari shio Tikus, Ular, atau Ayam"
+      }
+    },
+    "career": "<p>BHAKTI dengan Hari Bumi Yin <span class=\"hz\">己土</span> berformat Pejabat Sejati <span class=\"hz\">正官格</span> memiliki kecenderungan alami pada bidang yang terstruktur, berorientasi pada aturan dan kepemimpinan; unsur Emas <span class=\"hz\">金</span> sebagai Dewa Keberuntungan memberi affinitas kuat pada industri keuangan, logam, dan teknologi, sementara unsur Tanah <span class=\"hz\">土</span> sebagai hambatan yang perlu dihindari dalam jalur karir jangka panjang.</p>",
+    "_career_struct": {},
+    "palace1": "<p>ming_gong: - star: null - insight: BHAKTI memiliki sisi ketegasan yang kuat, namun di sisi lain juga mampu bersikap luwes dan fleksibel <span class=\"hz\">剛中有柔</span>. Ia melangkah maju dengan sikap yang lembut namun penuh keteguhan di jalur yang telah ia tetapkan untuk dirinya. Terhadap hal-hal yang menimbulkan kerumitan atau masalah, BHAKTI cenderung menolak secara tegas tanpa kompromi. BHAKTI adalah sosok yang gemar menyusun rencana berlapis dan bertindak dengan penuh perhitungan <span class=\"hz\">多層特意謀行之人</span>. Begitu hatinya sudah tertarik pada sesuatu, tidak ada yang mampu menghentikannya; ia langsung bergerak dan mengambil tindakan tanpa menunggu. Sikap ini kerap memicu pergesekan dan konflik dengan orang-orang di sekitarnya, dan kejadian seperti ini bukanlah hal yang langka baginya. Apabila Istana Kehidupan <span class=\"hz\">命宮</span> berada di posisi Ular <span class=\"hz\">巳</span>, kecenderungan ini menjadi semakin kuat dan intens. Fisik BHAKTI tegap dan bugar, seolah ia adalah perwujudan dari cadangan energi yang terkonsentrasi dalam satu sosok. Ketertarikannya terhadap lawan jenis pun tidak kalah intensnya; begitu menyukai seseorang, kondisi dan perasaan lawan jenis tidak lagi menjadi pertimbangannya, ia langsung melancarkan pendekatan dengan penuh semangat yang membara. Namun, ada pula di antara mereka yang memilih menyimpan kehangatan perasaan itu jauh di dalam hati. Meski api gairah bergejolak di dalam, tampilan luar tetap dingin dan terkendali, dengan sabar menunggu momen yang paling tepat untuk bertindak; inilah sosok yang cerdas secara strategi dan emosional <span class=\"hz\">智慧型的人物</span>. Apabila bintang Lian Zhen <span class=\"hz\">廉貞星</span> berada di Istana Kehidupan di posisi Monyet <span class=\"hz\">申</span>, atau berada bersama bintang buruk <span class=\"hz\">凶星</span> lainnya, malapetaka hampir tidak bisa dihindari. Bagi pria, sifat semena-mena dapat membuat orang lain merasa tidak nyaman dan antipati. Selain itu, keterlibatan dalam perjudian atau skandal asmara yang berulang juga kerap menjadi sumber masalah yang tak berkesudahan. Bagi wanita seperti BHAKTI, meski menampilkan wajah kebajikan dan keanggunan di hadapan umum, di baliknya tersimpan keteguhan dan kesetiaan yang luar biasa. Demi pria yang dicintainya, BHAKTI rela menghadapi rintangan dan bahaya sebesar apapun tanpa keraguan <span class=\"hz\">上刀山下油鍋她都心甘情願</span>. Apabila Istana Kehidupan berada di posisi Tikus <span class=\"hz\">子</span> atau Babi <span class=\"hz\">亥</span>, BHAKTI berpotensi besar menjadi sosok berpengaruh yang namanya dikenal luas ke mana-mana <span class=\"hz\">名揚四方</span>. Tentu saja, ketenangan dan kehidupan yang umum dan biasa bukan sesuatu yang bisa diharapkan darinya. Kemungkinan besar ia tidak akan menetap di satu tempat seumur hidupnya; takdir yang penuh gejolak dan perjalanan panjang yang dinamis mungkin merupakan hal yang tidak bisa dihindari <span class=\"hz\">一生動盪流浪的命運</span>. Karakter BHAKTI jujur, apa adanya, dan bersemangat, namun di balik itu terdapat sisi pendiam dan sedikit melankolis yang tersimpan <span class=\"hz\">稍帶點陰沉</span>. Meski penampilan luar tidak terlalu mencolok atau glamor, kecerdasan dan wawasannya jauh melampaui rata-rata; banyak yang pada akhirnya berhasil menjadi akademisi atau peneliti berprestasi. Namun, apabila kerja keras dan usahanya tidak mendapat balasan yang setimpal, karakter BHAKTI dapat berubah drastis di bawah tekanan kemarahan yang memuncak. Apabila bersama dengan Bintang Sastra Wen Chang <span class=\"hz\">文昌星</span>, niscaya BHAKTI memiliki kemampuan intelektual dan bakat seni yang sangat menonjol.</p><p>BHAKTI adalah sosok yang gemar menyusun rencana berlapis dan bertindak dengan penuh perhitungan <span class=\"hz\">多層特意謀行之人</span>. Begitu hatinya sudah tertarik pada sesuatu, tidak ada yang mampu menghentikannya — ia langsung bergerak dan mengambil tindakan tanpa menunggu. Sikap ini kerap memicu pergesekan dan konflik dengan orang-orang di sekitarnya, dan kejadian seperti ini bukanlah hal yang langka baginya. Apabila Istana Kehidupan <span class=\"hz\">命宮</span> berada di posisi Ular <span class=\"hz\">巳</span>, kecenderungan ini menjadi semakin kuat dan intens. Fisik BHAKTI tegap dan bugar, seolah ia adalah perwujudan dari cadangan energi yang terkonsentrasi dalam satu sosok. Ketertarikannya terhadap lawan jenis pun tidak kalah intensnya — begitu menyukai seseorang, kondisi dan perasaan lawan jenis tidak lagi menjadi pertimbangannya; ia langsung melancarkan pendekatan dengan penuh semangat yang membara. Namun, ada pula di antara mereka yang memilih menyimpan kehangatan perasaan itu jauh di dalam hati. Meski api gairah bergejolak di dalam, tampilan luar tetap dingin dan terkendali, dengan sabar menunggu momen yang paling tepat untuk bertindak — inilah sosok yang cerdas secara strategi dan emosional <span class=\"hz\">智慧型的人物</span>. Apabila bintang Lian Zhen <span class=\"hz\">廉貞星</span> berada di Istana Kehidupan di posisi Monyet <span class=\"hz\">申</span>, atau berada bersama bintang buruk <span class=\"hz\">凶星</span> lainnya, malapetaka hampir tidak bisa dihindari. Bagi pria, sifat semena-mena dapat membuat orang lain merasa tidak nyaman dan antipati. Selain itu, keterlibatan dalam perjudian atau skandal asmara yang berulang juga kerap menjadi sumber masalah yang tak berkesudahan. Bagi wanita seperti BHAKTI, meski menampilkan wajah kebajikan dan keanggunan di hadapan umum, di baliknya tersimpan keteguhan dan kesetiaan yang luar biasa. Demi pria yang dicintainya, BHAKTI rela menghadapi rintangan dan bahaya sebesar apapun tanpa keraguan <span class=\"hz\">上刀山下油鍋她都心甘情願</span>.</p><p>Apabila Istana Kehidupan berada di posisi Tikus <span class=\"hz\">子</span> atau Babi <span class=\"hz\">亥</span>, BHAKTI berpotensi besar menjadi sosok berpengaruh yang namanya dikenal luas ke mana-mana <span class=\"hz\">名揚四方</span>. Tentu saja, ketenangan dan kehidupan yang umum dan biasa bukan sesuatu yang bisa diharapkan darinya. Kemungkinan besar ia tidak akan menetap di satu tempat seumur hidupnya — takdir yang penuh gejolak dan perjalanan panjang yang dinamis mungkin merupakan hal yang tidak bisa dihindari <span class=\"hz\">一生動盪流浪的命運</span>. Karakter BHAKTI jujur, apa adanya, dan bersemangat, namun di balik itu terdapat sisi pendiam dan sedikit melankolis yang tersimpan <span class=\"hz\">稍帶點陰沈</span>. Meski penampilan luar tidak terlalu mencolok atau glamor, kecerdasan dan wawasannya jauh melampaui rata-rata — banyak yang pada akhirnya berhasil menjadi akademisi atau peneliti berprestasi. Namun, apabila kerja keras dan usahanya tidak mendapat balasan yang setimpal, karakter BHAKTI dapat berubah drastis di bawah tekanan kemarahan yang memuncak. Apabila bersama dengan Bintang Sastra Wen Chang <span class=\"hz\">文昌星</span>, niscaya BHAKTI memiliki kemampuan intelektual dan bakat seni yang sangat menonjol. - action: Arahkan intensitas dan kegigihan pada jalur yang terstruktur; latih kesabaran strategis sebelum bertindak agar energi besar yang dimiliki menghasilkan dampak positif yang maksimal.</p><p>xiongdi: - star: null - insight: null - action: null</p><p>fuqi: - star: null - insight: BHAKTI memiliki peruntungan cinta yang cenderung stabil, tenang, dan berjalan lancar. Pola hubungan yang terlihat dari foto bukan tipe cinta yang meledak-ledak, panas, atau terlalu dramatis; justru hubungan lebih mudah tumbuh dalam keadaan yang sangat alami. Benih cinta berkembang pelan, wajar, dan tidak dipaksakan. Walaupun tampak sederhana dan biasa, hubungan seperti ini berpeluang menjadi pernikahan yang memperoleh restu, dukungan, dan ucapan selamat yang tulus dari orang-orang di sekelilingnya. - action: Untuk BHAKTI, relasi terbaik bukan yang terburu-buru atau terlalu dramatis, melainkan hubungan yang diberi ruang untuk tumbuh alami. Jaga komunikasi tetap tenang, biarkan kedekatan berkembang secara wajar, dan pilih pasangan yang mampu menghadirkan rasa stabil serta restu lingkungan sekitar.</p><p>zinu: - star: null - insight: null - action: null</p>",
+    "_palace1_struct": {
+      "ming_gong": {
+        "insight": "BHAKTI memiliki sisi ketegasan yang kuat, namun di sisi lain juga mampu bersikap luwes dan fleksibel [[剛中有柔]]. Ia melangkah maju dengan sikap yang lembut namun penuh keteguhan di jalur yang telah ia tetapkan untuk dirinya. Terhadap hal-hal yang menimbulkan kerumitan atau masalah, BHAKTI cenderung menolak secara tegas tanpa kompromi. BHAKTI adalah sosok yang gemar menyusun rencana berlapis dan bertindak dengan penuh perhitungan [[多層特意謀行之人]]. Begitu hatinya sudah tertarik pada sesuatu, tidak ada yang mampu menghentikannya; ia langsung bergerak dan mengambil tindakan tanpa menunggu. Sikap ini kerap memicu pergesekan dan konflik dengan orang-orang di sekitarnya, dan kejadian seperti ini bukanlah hal yang langka baginya. Apabila Istana Kehidupan [[命宮]] berada di posisi Ular [[巳]], kecenderungan ini menjadi semakin kuat dan intens. Fisik BHAKTI tegap dan bugar, seolah ia adalah perwujudan dari cadangan energi yang terkonsentrasi dalam satu sosok. Ketertarikannya terhadap lawan jenis pun tidak kalah intensnya; begitu menyukai seseorang, kondisi dan perasaan lawan jenis tidak lagi menjadi pertimbangannya, ia langsung melancarkan pendekatan dengan penuh semangat yang membara. Namun, ada pula di antara mereka yang memilih menyimpan kehangatan perasaan itu jauh di dalam hati. Meski api gairah bergejolak di dalam, tampilan luar tetap dingin dan terkendali, dengan sabar menunggu momen yang paling tepat untuk bertindak; inilah sosok yang cerdas secara strategi dan emosional [[智慧型的人物]]. Apabila bintang Lian Zhen [[廉貞星]] berada di Istana Kehidupan di posisi Monyet [[申]], atau berada bersama bintang buruk [[凶星]] lainnya, malapetaka hampir tidak bisa dihindari. Bagi pria, sifat semena-mena dapat membuat orang lain merasa tidak nyaman dan antipati. Selain itu, keterlibatan dalam perjudian atau skandal asmara yang berulang juga kerap menjadi sumber masalah yang tak berkesudahan. Bagi wanita seperti BHAKTI, meski menampilkan wajah kebajikan dan keanggunan di hadapan umum, di baliknya tersimpan keteguhan dan kesetiaan yang luar biasa. Demi pria yang dicintainya, BHAKTI rela menghadapi rintangan dan bahaya sebesar apapun tanpa keraguan [[上刀山下油鍋她都心甘情願]]. Apabila Istana Kehidupan berada di posisi Tikus [[子]] atau Babi [[亥]], BHAKTI berpotensi besar menjadi sosok berpengaruh yang namanya dikenal luas ke mana-mana [[名揚四方]]. Tentu saja, ketenangan dan kehidupan yang umum dan biasa bukan sesuatu yang bisa diharapkan darinya. Kemungkinan besar ia tidak akan menetap di satu tempat seumur hidupnya; takdir yang penuh gejolak dan perjalanan panjang yang dinamis mungkin merupakan hal yang tidak bisa dihindari [[一生動盪流浪的命運]]. Karakter BHAKTI jujur, apa adanya, dan bersemangat, namun di balik itu terdapat sisi pendiam dan sedikit melankolis yang tersimpan [[稍帶點陰沉]]. Meski penampilan luar tidak terlalu mencolok atau glamor, kecerdasan dan wawasannya jauh melampaui rata-rata; banyak yang pada akhirnya berhasil menjadi akademisi atau peneliti berprestasi. Namun, apabila kerja keras dan usahanya tidak mendapat balasan yang setimpal, karakter BHAKTI dapat berubah drastis di bawah tekanan kemarahan yang memuncak. Apabila bersama dengan Bintang Sastra Wen Chang [[文昌星]], niscaya BHAKTI memiliki kemampuan intelektual dan bakat seni yang sangat menonjol."
+      },
+      "fuqi": {
+        "insight": "BHAKTI memiliki peruntungan cinta yang cenderung stabil, tenang, dan berjalan lancar. Pola hubungan yang terlihat dari foto bukan tipe cinta yang meledak-ledak, panas, atau terlalu dramatis; justru hubungan lebih mudah tumbuh dalam keadaan yang sangat alami. Benih cinta berkembang pelan, wajar, dan tidak dipaksakan. Walaupun tampak sederhana dan biasa, hubungan seperti ini berpeluang menjadi pernikahan yang memperoleh restu, dukungan, dan ucapan selamat yang tulus dari orang-orang di sekelilingnya.",
+        "action": "Untuk BHAKTI, relasi terbaik bukan yang terburu-buru atau terlalu dramatis, melainkan hubungan yang diberi ruang untuk tumbuh alami. Jaga komunikasi tetap tenang, biarkan kedekatan berkembang secara wajar, dan pilih pasangan yang mampu menghadirkan rasa stabil serta restu lingkungan sekitar."
+      }
+    },
+    "palace2": "<p>caibo: - star: null - insight: null - action: null</p><p>jie_e: - star: null - insight: null - action: null</p><p>qianyi: - star: null - insight: null - action: null</p><p>puyi: - star: null - insight: null - action: null</p>",
+    "_palace2_struct": {},
+    "palace3": "<p>guanlu: - star: null - insight: null - action: null</p><p>tianzhai: - star: null - insight: null - action: null</p><p>fude: - star: null - insight: null - action: null</p><p>fumu: - star: null - insight: null - action: null</p>",
+    "_palace3_struct": {},
+    "sintesis": "BHAKTI adalah sosok yang teguh sekaligus adaptif — memiliki energi dan tekad yang melampaui rata-rata, dengan kecerdasan yang sering tersembunyi di balik penampilan yang tidak mencolok.",
+    "_sintesis_struct": {
+      "opening": "BHAKTI adalah sosok yang teguh sekaligus adaptif — memiliki energi dan tekad yang melampaui rata-rata, dengan kecerdasan yang sering tersembunyi di balik penampilan yang tidak mencolok.",
+      "actions": [
+        {
+          "title": "Perkuat Jalur Karir Terstruktur"
+        },
+        {
+          "title": "Pilih Pasangan yang Menstabilkan"
+        },
+        {
+          "title": "Latih Kesabaran Strategis"
+        },
+        {
+          "title": "Jaga Kesehatan Fisik Proaktif"
+        },
+        {
+          "title": "Kembangkan Potensi Akademik"
+        }
+      ]
+    },
+    "_dmcard": "\n        <div class=\"dmc-eyebrow\">本 命 · Penguasa Hari</div>\n        <div class=\"dmc-stem\">己</div>\n        <div class=\"dmc-element\">土 · Tanah Yin</div>\n        <div class=\"dmc-pinyin\">Jǐ 土, \"Tanah Subur\"</div>\n        <div class=\"dmc-strength\">Status: <span class=\"val\">KUAT</span> · 旺</div>\n      ",
+    "_jishen_body": "<strong>土</strong> (Tǔ · Tanah), Tanah berlebih membuat stagnasi; hindari berat/lembam, kebiasaan menumpuk, dan resisten terhadap perubahan.",
+    "fam_pasangan_vibe": "Intens &amp; Setia · Butuh Pasangan yang Stabil",
+    "fam_pasangan_headline": "Pasangan terbaik dari shio Tikus, Ular, atau Ayam",
+    "caifu_zheng_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "caifu_pian_gauge": "<div class=\"cfm-gauge-fill\" style=\"display:none\"></div>",
+    "_p1_ming_gong": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Diri</span><span class=\"pn-meta\">Mìng Gōng<span class=\"hz\">命宮</span></span></div></div><div class=\"pal-body\"><p>BHAKTI memiliki sisi ketegasan yang kuat, namun di sisi lain juga mampu bersikap luwes dan fleksibel <span class=\"hz\">剛中有柔</span>. Ia melangkah maju dengan sikap yang lembut namun penuh keteguhan di jalur yang telah ia tetapkan untuk dirinya. Terhadap hal-hal yang menimbulkan kerumitan atau masalah, BHAKTI cenderung menolak secara tegas tanpa kompromi. BHAKTI adalah sosok yang gemar menyusun rencana berlapis dan bertindak dengan penuh perhitungan <span class=\"hz\">多層特意謀行之人</span>. Begitu hatinya sudah tertarik pada sesuatu, tidak ada yang mampu menghentikannya; ia langsung bergerak dan mengambil tindakan tanpa menunggu. Sikap ini kerap memicu pergesekan dan konflik dengan orang-orang di sekitarnya, dan kejadian seperti ini bukanlah hal yang langka baginya. Apabila Istana Kehidupan <span class=\"hz\">命宮</span> berada di posisi Ular <span class=\"hz\">巳</span>, kecenderungan ini menjadi semakin kuat dan intens. Fisik BHAKTI tegap dan bugar, seolah ia adalah perwujudan dari cadangan energi yang terkonsentrasi dalam satu sosok. Ketertarikannya terhadap lawan jenis pun tidak kalah intensnya; begitu menyukai seseorang, kondisi dan perasaan lawan jenis tidak lagi menjadi pertimbangannya, ia langsung melancarkan pendekatan dengan penuh semangat yang membara. Namun, ada pula di antara mereka yang memilih menyimpan kehangatan perasaan itu jauh di dalam hati. Meski api gairah bergejolak di dalam, tampilan luar tetap dingin dan terkendali, dengan sabar menunggu momen yang paling tepat untuk bertindak; inilah sosok yang cerdas secara strategi dan emosional <span class=\"hz\">智慧型的人物</span>. Apabila bintang Lian Zhen <span class=\"hz\">廉貞星</span> berada di Istana Kehidupan di posisi Monyet <span class=\"hz\">申</span>, atau berada bersama bintang buruk <span class=\"hz\">凶星</span> lainnya, malapetaka hampir tidak bisa dihindari. Bagi pria, sifat semena-mena dapat membuat orang lain merasa tidak nyaman dan antipati. Selain itu, keterlibatan dalam perjudian atau skandal asmara yang berulang juga kerap menjadi sumber masalah yang tak berkesudahan. Bagi wanita seperti BHAKTI, meski menampilkan wajah kebajikan dan keanggunan di hadapan umum, di baliknya tersimpan keteguhan dan kesetiaan yang luar biasa. Demi pria yang dicintainya, BHAKTI rela menghadapi rintangan dan bahaya sebesar apapun tanpa keraguan <span class=\"hz\">上刀山下油鍋她都心甘情願</span>. Apabila Istana Kehidupan berada di posisi Tikus <span class=\"hz\">子</span> atau Babi <span class=\"hz\">亥</span>, BHAKTI berpotensi besar menjadi sosok berpengaruh yang namanya dikenal luas ke mana-mana <span class=\"hz\">名揚四方</span>. Tentu saja, ketenangan dan kehidupan yang umum dan biasa bukan sesuatu yang bisa diharapkan darinya. Kemungkinan besar ia tidak akan menetap di satu tempat seumur hidupnya; takdir yang penuh gejolak dan perjalanan panjang yang dinamis mungkin merupakan hal yang tidak bisa dihindari <span class=\"hz\">一生動盪流浪的命運</span>. Karakter BHAKTI jujur, apa adanya, dan bersemangat, namun di balik itu terdapat sisi pendiam dan sedikit melankolis yang tersimpan <span class=\"hz\">稍帶點陰沉</span>. Meski penampilan luar tidak terlalu mencolok atau glamor, kecerdasan dan wawasannya jauh melampaui rata-rata; banyak yang pada akhirnya berhasil menjadi akademisi atau peneliti berprestasi. Namun, apabila kerja keras dan usahanya tidak mendapat balasan yang setimpal, karakter BHAKTI dapat berubah drastis di bawah tekanan kemarahan yang memuncak. Apabila bersama dengan Bintang Sastra Wen Chang <span class=\"hz\">文昌星</span>, niscaya BHAKTI memiliki kemampuan intelektual dan bakat seni yang sangat menonjol.</p></div>",
+    "_solo_ming_gong_body": "<style>.palace-solo .ps-body p { font-size: 8pt; line-height: 1.4; margin: 0 0 1.8mm 0; }</style><style>.palace-solo .ps-action{display:none!important}</style><p>BHAKTI memiliki sisi ketegasan yang kuat, namun di sisi lain juga mampu bersikap luwes dan fleksibel <span class=\"hz\">剛中有柔</span>. Ia melangkah maju dengan sikap yang lembut namun penuh keteguhan di jalur yang telah ia tetapkan untuk dirinya. Terhadap hal-hal yang menimbulkan kerumitan atau masalah, BHAKTI cenderung menolak secara tegas tanpa kompromi. BHAKTI adalah sosok yang gemar menyusun rencana berlapis dan bertindak dengan penuh perhitungan <span class=\"hz\">多層特意謀行之人</span>. Begitu hatinya sudah tertarik pada sesuatu, tidak ada yang mampu menghentikannya; ia langsung bergerak dan mengambil tindakan tanpa menunggu. Sikap ini kerap memicu pergesekan dan konflik dengan orang-orang di sekitarnya, dan kejadian seperti ini bukanlah hal yang langka baginya. Apabila Istana Kehidupan <span class=\"hz\">命宮</span> berada di posisi Ular <span class=\"hz\">巳</span>, kecenderungan ini menjadi semakin kuat dan intens. Fisik BHAKTI tegap dan bugar, seolah ia adalah perwujudan dari cadangan energi yang terkonsentrasi dalam satu sosok. Ketertarikannya terhadap lawan jenis pun tidak kalah intensnya; begitu menyukai seseorang, kondisi dan perasaan lawan jenis tidak lagi menjadi pertimbangannya, ia langsung melancarkan pendekatan dengan penuh semangat yang membara. Namun, ada pula di antara mereka yang memilih menyimpan kehangatan perasaan itu jauh di dalam hati. Meski api gairah bergejolak di dalam, tampilan luar tetap dingin dan terkendali, dengan sabar menunggu momen yang paling tepat untuk bertindak; inilah sosok yang cerdas secara strategi dan emosional <span class=\"hz\">智慧型的人物</span>. Apabila bintang Lian Zhen <span class=\"hz\">廉貞星</span> berada di Istana Kehidupan di posisi Monyet <span class=\"hz\">申</span>, atau berada bersama bintang buruk <span class=\"hz\">凶星</span> lainnya, malapetaka hampir tidak bisa dihindari. Bagi pria, sifat semena-mena dapat membuat orang lain merasa tidak nyaman dan antipati. Selain itu, keterlibatan dalam perjudian atau skandal asmara yang berulang juga kerap menjadi sumber masalah yang tak berkesudahan. Bagi wanita seperti BHAKTI, meski menampilkan wajah kebajikan dan keanggunan di hadapan umum, di baliknya tersimpan keteguhan dan kesetiaan yang luar biasa. Demi pria yang dicintainya, BHAKTI rela menghadapi rintangan dan bahaya sebesar apapun tanpa keraguan <span class=\"hz\">上刀山下油鍋她都心甘情願</span>. Apabila Istana Kehidupan berada di posisi Tikus <span class=\"hz\">子</span> atau Babi <span class=\"hz\">亥</span>, BHAKTI berpotensi besar menjadi sosok berpengaruh yang namanya dikenal luas ke mana-mana <span class=\"hz\">名揚四方</span>. Tentu saja, ketenangan dan kehidupan yang umum dan biasa bukan sesuatu yang bisa diharapkan darinya. Kemungkinan besar ia tidak akan menetap di satu tempat seumur hidupnya; takdir yang penuh gejolak dan perjalanan panjang yang dinamis mungkin merupakan hal yang tidak bisa dihindari <span class=\"hz\">一生動盪流浪的命運</span>. Karakter BHAKTI jujur, apa adanya, dan bersemangat, namun di balik itu terdapat sisi pendiam dan sedikit melankolis yang tersimpan <span class=\"hz\">稍帶點陰沉</span>. Meski penampilan luar tidak terlalu mencolok atau glamor, kecerdasan dan wawasannya jauh melampaui rata-rata; banyak yang pada akhirnya berhasil menjadi akademisi atau peneliti berprestasi. Namun, apabila kerja keras dan usahanya tidak mendapat balasan yang setimpal, karakter BHAKTI dapat berubah drastis di bawah tekanan kemarahan yang memuncak. Apabila bersama dengan Bintang Sastra Wen Chang <span class=\"hz\">文昌星</span>, niscaya BHAKTI memiliki kemampuan intelektual dan bakat seni yang sangat menonjol.</p>",
+    "_p1_xiongdi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Saudara</span><span class=\"pn-meta\">Xiōng Dì<span class=\"hz\">兄弟</span></span></div></div>",
+    "_p1_fuqi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pasangan</span><span class=\"pn-meta\">Fū Qī<span class=\"hz\">夫妻</span></span></div></div><div class=\"pal-body\"><p>BHAKTI memiliki peruntungan cinta yang cenderung stabil, tenang, dan berjalan lancar. Pola hubungan yang terlihat dari foto bukan tipe cinta yang meledak-ledak, panas, atau terlalu dramatis; justru hubungan lebih mudah tumbuh dalam keadaan yang sangat alami. Benih cinta berkembang pelan, wajar, dan tidak dipaksakan. Walaupun tampak sederhana dan biasa, hubungan seperti ini berpeluang menjadi pernikahan yang memperoleh restu, dukungan, dan ucapan selamat yang tulus dari orang-orang di sekelilingnya.</p></div><div class=\"pal-actions\"><div class=\"pal-actions-header\">Saran Tindakan</div><div class=\"pal-action\"><span class=\"ico\">▸</span><span>Untuk BHAKTI, relasi terbaik bukan yang terburu-buru atau terlalu dramatis, melainkan hubungan yang diberi ruang untuk tumbuh alami. Jaga komunikasi tetap tenang, biarkan kedekatan berkembang secara wajar, dan pilih pasangan yang mampu menghadirkan rasa stabil serta restu lingkungan sekitar.</span></div></div>",
+    "_solo_fuqi_body": "<p>BHAKTI memiliki peruntungan cinta yang cenderung stabil, tenang, dan berjalan lancar. Pola hubungan yang terlihat dari foto bukan tipe cinta yang meledak-ledak, panas, atau terlalu dramatis; justru hubungan lebih mudah tumbuh dalam keadaan yang sangat alami. Benih cinta berkembang pelan, wajar, dan tidak dipaksakan. Walaupun tampak sederhana dan biasa, hubungan seperti ini berpeluang menjadi pernikahan yang memperoleh restu, dukungan, dan ucapan selamat yang tulus dari orang-orang di sekelilingnya.</p>",
+    "_solo_fuqi_action": "Untuk BHAKTI, relasi terbaik bukan yang terburu-buru atau terlalu dramatis, melainkan hubungan yang diberi ruang untuk tumbuh alami. Jaga komunikasi tetap tenang, biarkan kedekatan berkembang secara wajar, dan pilih pasangan yang mampu menghadirkan rasa stabil serta restu lingkungan sekitar.",
+    "_p1_zinu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Anak</span><span class=\"pn-meta\">Zǐ Nǚ<span class=\"hz\">子女</span></span></div></div>",
+    "_p2_caibo": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Rezeki</span><span class=\"pn-meta\">Cái Bó<span class=\"hz\">財帛</span></span></div></div>",
+    "_p2_jie_e": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Kesehatan</span><span class=\"pn-meta\">Jí È<span class=\"hz\">疾厄</span></span></div></div>",
+    "_p2_qianyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Perpindahan</span><span class=\"pn-meta\">Qiān Yí<span class=\"hz\">遷移</span></span></div></div>",
+    "_p2_puyi": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Pertemanan</span><span class=\"pn-meta\">Pú Yì<span class=\"hz\">僕役</span></span></div></div>",
+    "_p3_guanlu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Karir</span><span class=\"pn-meta\">Guān Lù<span class=\"hz\">官祿</span></span></div></div>",
+    "_p3_tianzhai": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Properti</span><span class=\"pn-meta\">Tián Zhái<span class=\"hz\">田宅</span></span></div></div>",
+    "_p3_fude": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Berkah</span><span class=\"pn-meta\">Fú Dé<span class=\"hz\">福德</span></span></div></div>",
+    "_p3_fumu": "<div class=\"pal-head\"><div class=\"pal-name\"><span class=\"pn-id\">Orang Tua</span><span class=\"pn-meta\">Fù Mǔ<span class=\"hz\">父母</span></span></div></div>",
+    "_kes_stats": "\n      <div class=\"kes-stat s1\"><div class=\"ks-eb\">Penguasa Hari · 日主</div><div class=\"ks-num\"><span class=\"hz\">己土</span><span class=\"unit\">— · None</span></div><div class=\"ks-title\">Tanah Sawah —</div><div class=\"ks-desc\">Total Wu Xing 8, 土 <strong>37.5%</strong> dari distribusi total</div></div>\n      <div class=\"kes-stat s2\"><div class=\"ks-eb\">Format · 格局</div><div class=\"ks-num\"><span class=\"hz\">正官格</span><span class=\"unit\">FORMAT</span></div><div class=\"ks-title\">Zheng Guan Ge, Penjaga Disiplin</div><div class=\"ks-desc\">Konfigurasi BaZi yang membentuk pola karakter dan jalur takdir utama subjek.</div></div>\n      <div class=\"kes-stat s3\"><div class=\"ks-eb\">Yong Shen · 喜用神</div><div class=\"ks-num\"><span class=\"hz\">金</span><span class=\"unit\">MENDUKUNG</span></div><div class=\"ks-title\">Logam, Penopang &amp; Pengarah</div><div class=\"ks-desc\">Unsur penopang yang sebaiknya diaktifkan lewat lingkungan, profesi, warna, dan keputusan hidup.</div></div>\n      <div class=\"kes-stat s4\"><div class=\"ks-eb\">Da Yun · 大運</div><div class=\"ks-num\">Fase 3<span class=\"unit\">dari 10</span></div><div class=\"ks-title\">Fase Pemurnian (23-32)</div><div class=\"ks-desc\">Cycle 10 tahun yang sedang dijalani, periode pembentukan tema utama dekade ini.</div></div>\n      <div class=\"kes-stat s5\"><div class=\"ks-eb\">Umur Subjek</div><div class=\"ks-num\">30<span class=\"unit\">tahun</span></div><div class=\"ks-title\">Era 30–39</div><div class=\"ks-desc\">Tahap kehidupan saat laporan ini dibuat, rentang dekade aktif subjek.</div></div>\n      <div class=\"kes-stat s6\"><div class=\"ks-eb\">Jodoh · 婚配 / 陽宅</div><div class=\"ks-num\">3 <span class=\"unit\">cocok · 4 hindari</span></div><div class=\"ks-desc\">Hindari: Naga (辰) · Kuda (午) · Kambing (未) · Anjing (戌) · Trigram <strong>Petir</strong> (震) · Kelompok Timur</div></div>\n    ",
+    "_kes_age": "30",
+    "_kes_lifemap": "\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">過<span class=\"id-label\">Lalu</span></div><div class=\"klm-row-text\"><span class=\"lbl\">MASA LALU</span>2 fase telah dilalui, fondasi terbentuk lewat tempaan zaman muda hingga awal dewasa.</div></div>\n          <div class=\"klm-row now\"><div class=\"klm-row-icon\">今<span class=\"id-label\">Kini</span></div><div class=\"klm-row-text\"><span class=\"lbl\">SEKARANG</span>Fase Pemurnian 乙巳 (23-32), tema utama pemurnian membentuk dekade ini.</div></div>\n          <div class=\"klm-row\"><div class=\"klm-row-icon\">未<span class=\"id-label\">Nanti</span></div><div class=\"klm-row-text\"><span class=\"lbl\">BERIKUTNYA</span>Fase 丙午 Pelajaran (33-42), transisi menuju tema baru.</div></div>\n        ",
+    "_kes_position": "\n          <div class=\"klp-eb\">Posisi Sekarang</div>\n          <div class=\"klp-hz\">夏</div>\n          <div class=\"klp-id\">Xià, \"Musim Panas Hidup\"</div>\n          <div class=\"klp-bar\">\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell past\"></div>\n            <div class=\"klp-bar-cell now\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n            <div class=\"klp-bar-cell future\"></div>\n          </div>\n          <div class=\"klp-meta\">Fase <strong>3 dari 10</strong> · Umur <strong>23-32</strong> · <strong>土 Tanah</strong> dominan · Musim Panas Hidup</div>\n        ",
+    "_syn_attrib": "Tanah Sawah · 正官格 · Zheng Guan Ge",
+    "_syn_actions": "\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">1</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Perkuat Jalur Karir Terstruktur</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">2</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Pilih Pasangan yang Menstabilkan</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">3</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Latih Kesabaran Strategis</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">4</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Jaga Kesehatan Fisik Proaktif</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n        <div class=\"syn-action\">\n          <div class=\"syn-action-num\">5</div>\n          <div class=\"syn-action-content\">\n            <div class=\"syn-action-title\">Kembangkan Potensi Akademik</div>\n            <div class=\"syn-action-context\"></div>\n          </div>\n        </div>\n      ",
+    "_career_wuxing": "\n        <div class=\"wux-cell self\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:100%\"></div></div>\n          <div class=\"wux-label\">土 Tanah<span class=\"v\">3</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:67%\"></div></div>\n          <div class=\"wux-label\">火 Api<span class=\"v\">2</span></div>\n        </div>\n        <div class=\"wux-cell fav\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:33%\"></div></div>\n          <div class=\"wux-label\">金 Logam<span class=\"v\">1</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:33%\"></div></div>\n          <div class=\"wux-label\">水 Air<span class=\"v\">1</span></div>\n        </div>\n        <div class=\"wux-cell\">\n          <div class=\"wux-bar-track\"><div class=\"wux-bar-fill\" style=\"height:33%\"></div></div>\n          <div class=\"wux-label\">木 Kayu<span class=\"v\">1</span></div>\n        </div>\n",
+    "_career_title": "Logam adalah aliran utama, energi terbaik mengalir lewat industri ber-unsur ini",
+    "_career_avoid": "Industri ber-unsur <strong>土 (Tanah)</strong> sebaiknya dihindari, menambah dominasi yang sudah kuat, menyebabkan energi macet & pertumbuhan terhambat.",
+    "_xqcards": "\n      <div class=\"xq-card power\">\n        <div class=\"xqc-eb\">魄 力 · Kekuatan</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">優勢</span><span class=\"xqc-name\">Yōu Shì<br>Keunggulan</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Tekad dan keteguhan — begitu memutuskan sesuatu, BHAKTI bergerak tanpa goyah</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kecerdasan strategi yang melampaui rata-rata, berpotensi menjadi pemimpin atau peneliti berprestasi</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kesetiaan yang luar biasa dalam hubungan — rela berkorban demi orang yang dicintai</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card shadow\">\n        <div class=\"xqc-eb\">陰 影 · Shadow</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">隱 患</span><span class=\"xqc-name\">Yǐn Huàn<br>Sisi Gelap</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Kecenderungan bertindak impulsif saat tertarik pada sesuatu, mengabaikan kondisi sekitar</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Potensi konflik interpersonal akibat sifat yang sulit dibelokkan</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Jika upaya tidak dihargai, perubahan karakter yang drastis di bawah kemarahan bisa merusak hubungan</span></div>\n        </div>\n      </div>\n      <div class=\"xq-card optimum\">\n        <div class=\"xqc-eb\">最 佳 · Optimum</div>\n        <div class=\"xqc-title\"><span class=\"xqc-hz\">應 用</span><span class=\"xqc-name\">Yīng Yòng<br>Cara Optimal</span></div>\n        <div class=\"xqc-list\">\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Arahkan energi dan gairah ke bidang yang terstruktur dan memiliki jalur jelas</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Latih kesabaran dalam menunggu momen yang tepat sebelum bertindak</span></div>\n          <div class=\"xqc-item\"><span class=\"ico\">◆</span><span>Pertahankan kedekatan dengan unsur Emas (besi, logam, dunia keuangan) dan Air (komunikasi, ilmu)</span></div>\n        </div>\n      </div>\n    "
+  }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>陽宅吉凶鑑定</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* PAGE: Hongshui PAIR — 2 section per halaman */
+  .content-hongshui-pair {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 3mm;
+    overflow: hidden;
+  }
+
+  /* Header bar dengan pair indicator */
+  .hsp-header-bar {
+    display: flex; align-items: baseline; gap: 3mm;
+    border-bottom: 0.3mm solid var(--gold-soft);
+    padding-bottom: 2mm; flex-shrink: 0;
+  }
+  .hsp-main-title-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 14pt; color: var(--red); font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .hsp-main-title-id {
+    font-size: 8.5pt; color: var(--text);
+    font-family: 'Playfair Display', serif; font-style: italic;
+  }
+  .hsp-pair-tag {
+    margin-left: auto;
+    font-family: 'Inter', sans-serif; font-size: 6pt;
+    letter-spacing: 2px; text-transform: uppercase;
+    color: var(--gold); font-weight: 700;
+    background: var(--bg-card); border: 0.3mm solid var(--gold-soft);
+    border-radius: 1mm; padding: 0.5mm 2mm;
+  }
+
+  /* Atas-bawah layout */
+  .hsp-columns {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 3mm;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  /* Kalau satu section kosong → yang ada ambil full height */
+  .hsp-columns.left-only  { grid-template-rows: 1fr; }
+  .hsp-columns.right-only { grid-template-rows: 1fr; }
+
+  /* Divider horizontal antara atas dan bawah */
+  .hsp-columns:not(.left-only):not(.right-only) .hsp-col-left {
+    border-bottom: 0.3mm solid var(--gold-soft);
+    padding-bottom: 2mm;
+  }
+
+  /* Per-kolom */
+  .hsp-col {
+    display: flex; flex-direction: column; gap: 2mm;
+    overflow: hidden; min-height: 0;
+  }
+  .hsp-col[style*="display:none"] { display: none !important; }
+
+  .hsp-col-eyebrow {
+    display: flex; align-items: baseline; gap: 2mm;
+    border-bottom: 0.2mm solid var(--gold-soft);
+    padding-bottom: 1.5mm; flex-shrink: 0;
+  }
+  .hsp-col-title-hz {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 11pt; color: var(--red); font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .hsp-col-title-id {
+    font-size: 7.5pt; color: var(--text);
+    font-family: 'Playfair Display', serif; font-style: italic;
+  }
+  .hsp-col-idx {
+    margin-left: auto;
+    font-family: 'Inter', sans-serif; font-size: 5.5pt;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--gold); font-weight: 700;
+  }
+
+  .hsp-content-box {
+    flex: 1; overflow: hidden;
+    background: var(--bg-card);
+    border: 0.3mm solid var(--gold-soft);
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+  }
+  .hsp-para {
+    font-size: 8pt;
+    line-height: 1.6;
+    color: var(--text);
+    margin: 0 0 2.5mm 0;
+    text-align: justify;
+  }
+  .hsp-para:last-child { margin-bottom: 0; }
+  .hsp-para strong { color: var(--red); }
+  .hsp-hz-block {
+    margin-top: 3mm; padding-top: 2.5mm;
+    border-top: 0.2mm solid var(--gold-soft);
+    font-family: 'Noto Serif TC', serif;
+    font-size: 7pt; color: #6B5B3F;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+<section class="page no-bar">
+  <header class="page-header">
+    <div class="h-num">{{PAGE_NUM_PADDED}}</div>
+    <div class="h-titles">
+      <div class="h-cn">陽 宅 鑑 定</div>
+      <div class="h-id">Feng Shui Delapan Rumah</div>
+    </div>
+    <div class="h-section">Bagian I · 風水</div>
+  </header>
+
+  <main class="content content-hongshui-pair">
+
+    <div class="hsp-header-bar">
+      <div class="hsp-main-title-hz">陽宅吉凶鑑定</div>
+      <div class="hsp-main-title-id">Analisis Keberuntungan Hunian</div>
+      <div class="hsp-pair-tag">{{HONGSHUI_PAIR_LABEL}}</div>
+    </div>
+
+    <div class="hsp-columns {{HONGSHUI_PAIR_COLS_CLASS}}">
+
+      <!-- KOLOM KIRI -->
+      <div class="hsp-col hsp-col-left" style="{{HONGSHUI_LEFT_DISPLAY}}">
+        <div class="hsp-col-eyebrow">
+          <div class="hsp-col-title-hz">{{HONGSHUI_LEFT_TITLE_HZ}}</div>
+          <div class="hsp-col-title-id">{{HONGSHUI_LEFT_TITLE_ID}}</div>
+          <div class="hsp-col-idx">{{HONGSHUI_LEFT_IDX}} / 08</div>
+        </div>
+        <div class="hsp-content-box auto-fit">
+          {{HONGSHUI_LEFT_CONTENT_HTML}}
+          {{HONGSHUI_LEFT_HZ_BLOCK}}
+        </div>
+      </div>
+
+      <!-- KOLOM KANAN -->
+      <div class="hsp-col hsp-col-right" style="{{HONGSHUI_RIGHT_DISPLAY}}">
+        <div class="hsp-col-eyebrow">
+          <div class="hsp-col-title-hz">{{HONGSHUI_RIGHT_TITLE_HZ}}</div>
+          <div class="hsp-col-title-id">{{HONGSHUI_RIGHT_TITLE_ID}}</div>
+          <div class="hsp-col-idx">{{HONGSHUI_RIGHT_IDX}} / 08</div>
+        </div>
+        <div class="hsp-content-box auto-fit">
+          {{HONGSHUI_RIGHT_CONTENT_HTML}}
+          {{HONGSHUI_RIGHT_HZ_BLOCK}}
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="pg-num">{{PAGE_NUM}} / {{TOTAL_PAGES}}</div>
+  </footer>
+</section>
+</body>
+</html>
